@@ -7,7 +7,7 @@ import {useEffect, useRef} from 'react';
 import omit from 'lodash/omit';
 import React, {useState, useCallback} from 'react';
 import {Button, Modal, themeable, ThemeProps, utils} from 'amis';
-import {getSchemaTpl, JSONPipeIn, EditorManager} from 'amis-editor-core';
+import {getSchemaTpl, JSONPipeIn, EditorManager} from '@/packages/amis-editor-core/src';
 import {DSFeatureType, DSFeatureEnum, ModelDSBuilderKey} from '../../builder';
 
 import type {RendererProps, BaseApiObject} from 'amis';

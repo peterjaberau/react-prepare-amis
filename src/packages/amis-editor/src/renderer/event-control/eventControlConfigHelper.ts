@@ -5,7 +5,7 @@ import {
   PluginActions,
   RendererPluginAction,
   SubRendererPluginAction
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   filterTree,
   findTree,

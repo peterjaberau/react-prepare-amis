@@ -11,8 +11,8 @@ import {
   getSchemaTpl,
   registerEditorPlugin,
   PluginInterface
-} from 'amis-editor-core';
-import {InlineEditableElement} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {InlineEditableElement} from '@/packages/amis-editor-core/src';
 
 export class PanelPlugin extends BasePlugin {
   static id = 'PanelPlugin';

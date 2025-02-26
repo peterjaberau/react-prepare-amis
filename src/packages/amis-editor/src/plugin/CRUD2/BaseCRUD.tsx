@@ -20,7 +20,7 @@ import {
   defaultValue,
   getSchemaTpl,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   DSBuilderManager,
   DSFeatureEnum,
@@ -52,7 +52,7 @@ import type {
   EditorNodeType,
   RendererPluginEvent,
   RendererPluginAction
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 /** Attributes that need to be dynamically controlled*/
 export type CRUD2DynamicControls = Partial<

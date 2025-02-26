@@ -5,7 +5,7 @@
 import React from 'react';
 import cx from 'classnames';
 import {FormItem} from 'amis';
-import {autobind, getSchemaTpl, tipedLabel} from 'amis-editor-core';
+import {autobind, getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 import {FormControlProps, isObject} from 'amis-core';
 import type {SchemaApi} from 'amis';
 import debounce from 'lodash/debounce';

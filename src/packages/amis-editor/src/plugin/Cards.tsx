@@ -1,6 +1,6 @@
 import {Button, JSONValueMap, isObject} from 'amis';
 import React from 'react';
-import {EditorNodeType, registerEditorPlugin} from 'amis-editor-core';
+import {EditorNodeType, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -13,9 +13,9 @@ import {
   RegionConfig,
   RendererInfo,
   RendererInfoResolveEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {diff, JSONPipeOut, repeatArray} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {diff, JSONPipeOut, repeatArray} from '@/packages/amis-editor-core/src';
 import set from 'lodash/set';
 import merge from 'lodash/merge';
 import {escapeFormula, generateId, resolveArrayDatasource} from '../util';

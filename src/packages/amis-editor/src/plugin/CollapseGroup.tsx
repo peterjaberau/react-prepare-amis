@@ -2,12 +2,12 @@ import {
   RendererPluginEvent,
   getI18nEnabled,
   registerEditorPlugin
-} from 'amis-editor-core';
-import {BasePlugin, RegionConfig, BaseEventContext} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {BasePlugin, RegionConfig, BaseEventContext} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
-import {tipedLabel} from 'amis-editor-core';
-import {isObject} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
+import {isObject} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 import {generateId} from '../util';
 

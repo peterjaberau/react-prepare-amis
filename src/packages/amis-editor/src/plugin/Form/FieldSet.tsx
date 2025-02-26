@@ -1,8 +1,8 @@
 import {Button} from 'amis';
 import React from 'react';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin, RegionConfig} from 'amis-editor-core';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin, RegionConfig} from '@/packages/amis-editor-core/src';
 import {generateId} from '../../util';
 
 export class FieldSetControlPlugin extends BasePlugin {

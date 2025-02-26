@@ -1,5 +1,5 @@
 import {registerActionPanel} from '../../actionsPanelManager';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 registerActionPanel('download', {
   label: 'Download file',

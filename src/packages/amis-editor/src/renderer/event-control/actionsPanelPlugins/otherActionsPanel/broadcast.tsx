@@ -1,6 +1,6 @@
 import React from 'react';
 import {registerActionPanel} from '../../actionsPanelManager';
-import {getSchemaTpl, EditorManager} from 'amis-editor-core';
+import {getSchemaTpl, EditorManager} from '@/packages/amis-editor-core/src';
 
 registerActionPanel('broadcast', {
   label: 'Global broadcast event',

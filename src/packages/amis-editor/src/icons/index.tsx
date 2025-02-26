@@ -1,4 +1,4 @@
-import {registerIcon, Icon} from 'amis-editor-core';
+import {registerIcon, Icon} from '@/packages/amis-editor-core/src';
 
 /**
  * 新版Components icon

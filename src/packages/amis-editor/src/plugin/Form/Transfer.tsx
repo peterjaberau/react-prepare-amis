@@ -10,7 +10,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent,
   undefinedPipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {Schema} from 'amis';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {ValidatorTag} from '../../validator';

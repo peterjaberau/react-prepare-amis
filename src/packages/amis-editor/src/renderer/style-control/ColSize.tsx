@@ -1,7 +1,7 @@
 import {FormControlProps, FormItem} from 'amis-core';
 import React from 'react';
 import cx from 'classnames';
-import {JSONUpdate} from 'amis-editor-core';
+import {JSONUpdate} from '@/packages/amis-editor-core/src';
 
 const baseColSize = ['1/4', '1/3', '1/2', '2/3', '3/4', '1'];
 

@@ -11,7 +11,7 @@ import {
   BasePlugin,
   BaseEventContext,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

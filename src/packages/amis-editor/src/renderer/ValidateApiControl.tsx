@@ -5,7 +5,7 @@
 import React from 'react';
 import {FormItem} from 'amis';
 
-import {getSchemaTpl, tipedLabel} from 'amis-editor-core';
+import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {FormControlProps} from 'amis-core';
 

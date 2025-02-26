@@ -1,5 +1,5 @@
 import "@/apps/amis/styles/editor.scss"
-import "amis-editor-core/lib/style.css"
+import "@/apps/amis/styles/lib/style.css"
 import "@/apps/amis/styles/antd.css"
 import "@/apps/amis/styles/lib/helper.css"
 import "@/apps/amis/styles/lib/iconfont.css"
@@ -10,7 +10,7 @@ import { alert, confirm, SchemaObject } from "amis"
 import { copy, fetcher, notify } from "@/apps/amis/utils/amisEnvUtils"
 import { createStyles } from "antd-style"
 
-import { MiniEditor } from "amis-editor"
+import { MiniEditor } from "@/packages/amis-editor/src"
 import { getPageById } from "@/apps/amis/store/pagesStore.ts"
 
 const amisEnv = {

@@ -1,6 +1,6 @@
-import {RendererPluginAction, registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {RendererPluginAction, registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import {buildLinkActionDesc} from '../renderer/event-control';
 

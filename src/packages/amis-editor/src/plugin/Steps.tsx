@@ -1,9 +1,9 @@
 /**
  * @file Steps Steps bar
  */
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class StepsPlugin extends BasePlugin {
   static id = 'StepsPlugin';

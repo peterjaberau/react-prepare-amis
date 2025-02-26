@@ -3,7 +3,7 @@ import {
   getSchemaTpl,
   defaultValue,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import isNumber from 'lodash/isNumber';
 import isString from 'lodash/isString';
 import compact from 'lodash/compact';

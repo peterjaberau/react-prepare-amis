@@ -7,7 +7,7 @@ import {
   RendererInfoResolveEventContext,
   getSchemaTpl,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 export class ColumnToggler extends BasePlugin {
   static id = 'ColumnToggler';

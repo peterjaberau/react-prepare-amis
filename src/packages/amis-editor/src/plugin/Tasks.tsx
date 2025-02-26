@@ -2,9 +2,9 @@ import {
   BaseEventContext,
   getI18nEnabled,
   registerEditorPlugin
-} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class TasksPlugin extends BasePlugin {
   static id = 'TasksPlugin';

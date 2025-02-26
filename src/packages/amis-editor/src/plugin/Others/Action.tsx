@@ -1,15 +1,15 @@
 import {Button} from 'amis-ui';
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
   BasicPanelItem,
   BasicToolbarItem,
   BuildPanelEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {diff} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {diff} from '@/packages/amis-editor-core/src';
 import type {SchemaCollection} from 'amis';
 
 export class ActionPlugin extends BasePlugin {

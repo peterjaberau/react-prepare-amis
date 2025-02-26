@@ -2,9 +2,9 @@
  * @file trend chart
  */
 
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, BaseEventContext} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, BaseEventContext} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class SparklinePlugin extends BasePlugin {
   static id = 'SparklinePlugin';

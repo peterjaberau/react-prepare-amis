@@ -6,8 +6,8 @@ import React from 'react';
 import cx from 'classnames';
 import {FormItem, NumberInput} from 'amis';
 import type {FormControlProps} from 'amis-core';
-import {autobind} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+import {autobind} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 import type {Option} from 'amis';
 

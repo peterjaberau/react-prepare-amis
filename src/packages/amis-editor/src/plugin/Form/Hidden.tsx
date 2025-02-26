@@ -1,6 +1,6 @@
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class HiddenControlPlugin extends BasePlugin {
   static id = 'HiddenControlPlugin';

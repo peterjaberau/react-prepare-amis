@@ -5,11 +5,11 @@ import {
   undefinedPipeOut,
   registerEditorPlugin,
   BasePlugin
-} from 'amis-editor-core';
-import type {BaseEventContext} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import type {BaseEventContext} from '@/packages/amis-editor-core/src';
 import {ValidatorTag} from '../../validator';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
-import {RendererPluginEvent, RendererPluginAction} from 'amis-editor-core';
+import {RendererPluginEvent, RendererPluginAction} from '@/packages/amis-editor-core/src';
 import {getActionCommonProps} from '../../renderer/event-control/helper';
 
 export class DiffEditorControlPlugin extends BasePlugin {

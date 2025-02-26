@@ -1,4 +1,4 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -6,15 +6,15 @@ import {
   PluginInterface,
   RendererInfoResolveEventContext,
   tipedLabel
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {BUTTON_DEFAULT_ACTION} from '../component/BaseControl';
 import {getEventControlConfig} from '../renderer/event-control/helper';
-import {RendererPluginAction, RendererPluginEvent} from 'amis-editor-core';
+import {RendererPluginAction, RendererPluginEvent} from '@/packages/amis-editor-core/src';
 import type {SchemaObject} from 'amis';
 import {getOldActionSchema} from '../renderer/event-control/helper';
 import {buttonStateFunc} from '../renderer/style-control/helper';
-import {InlineEditableElement} from 'amis-editor-core';
+import {InlineEditableElement} from '@/packages/amis-editor-core/src';
 
 export class EuiButtonPlugin extends BasePlugin {
   static id = 'EuiButtonPlugin';

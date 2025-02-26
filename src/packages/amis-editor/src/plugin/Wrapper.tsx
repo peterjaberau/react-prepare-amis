@@ -1,10 +1,10 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   LayoutBasePlugin,
   RegionConfig,
   BaseEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class WrapperPlugin extends LayoutBasePlugin {
   static id = 'WrapperPlugin';

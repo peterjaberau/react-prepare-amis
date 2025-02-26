@@ -9,7 +9,7 @@ import {
   BasicToolbarItem,
   ContextMenuEventContext,
   ContextMenuItem
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {schemaArrayFormat, schemaToArray} from '../util';
 
 export class MappingPlugin extends BasePlugin {

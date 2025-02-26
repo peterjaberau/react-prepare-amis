@@ -8,9 +8,9 @@ import {findDOMNode} from 'react-dom';
 import {FormItem, Icon} from 'amis';
 
 import {FormControlProps, Option, optionValueCompare} from 'amis-core';
-import {BaseEventContext, getSchemaTpl} from 'amis-editor-core';
+import {BaseEventContext, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
-import {autobind} from 'amis-editor-core';
+import {autobind} from '@/packages/amis-editor-core/src';
 import {FormulaDateType} from './FormulaControl';
 
 const DefaultValue = [

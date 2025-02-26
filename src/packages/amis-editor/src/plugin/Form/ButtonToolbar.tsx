@@ -1,6 +1,6 @@
-import {registerEditorPlugin, translateSchema} from 'amis-editor-core';
-import {BasePlugin, RegionConfig, BaseEventContext} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin, translateSchema} from '@/packages/amis-editor-core/src';
+import {BasePlugin, RegionConfig, BaseEventContext} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 import {
   BUTTON_DEFAULT_ACTION,

@@ -3,7 +3,7 @@ import {
   getSchemaTpl,
   defaultValue,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {createAnimationStyle, formateId, type SchemaCollection} from 'amis';
 import kebabCase from 'lodash/kebabCase';
 import {styleManager} from 'amis-core';

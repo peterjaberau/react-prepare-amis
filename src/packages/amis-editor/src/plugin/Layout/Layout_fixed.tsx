@@ -1,4 +1,4 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {FlexPluginBase} from './FlexPluginBase';
 
 export default class Layout_fixed extends FlexPluginBase {

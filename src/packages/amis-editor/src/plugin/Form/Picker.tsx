@@ -10,8 +10,8 @@ import {
   getSchemaTpl,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -20,8 +20,8 @@ import {
   ContextMenuItem,
   defaultValue,
   tipedLabel
-} from 'amis-editor-core';
-import {diff} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {diff} from '@/packages/amis-editor-core/src';
 import {isPureVariable} from 'amis-core';
 import type {Schema} from 'amis';
 import {getEventControlConfig} from '../../renderer/event-control/helper';

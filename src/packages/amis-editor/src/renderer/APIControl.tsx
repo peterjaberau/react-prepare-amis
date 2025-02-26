@@ -15,7 +15,7 @@ import {
   tipedLabel,
   anyChanged,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 import type {SchemaObject, SchemaCollection, SchemaApi} from 'amis';
 import type {Api} from 'amis';

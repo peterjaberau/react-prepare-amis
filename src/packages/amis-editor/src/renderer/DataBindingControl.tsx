@@ -14,7 +14,7 @@ import {FormControlProps, Renderer, RendererProps} from 'amis-core';
 import debounce from 'lodash/debounce';
 import remove from 'lodash/remove';
 import React from 'react';
-import {EditorManager, EditorNodeType, autobind} from 'amis-editor-core';
+import {EditorManager, EditorNodeType, autobind} from '@/packages/amis-editor-core/src';
 import {matchSorter} from 'match-sorter';
 import {default as cx} from 'classnames';
 

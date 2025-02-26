@@ -8,7 +8,7 @@ import {findDOMNode} from 'react-dom';
 import Sortable from 'sortablejs';
 import {FormItem, Button, Icon, toast, Tag, Spinner, autobind} from 'amis';
 import {TooltipWrapper} from 'amis-ui';
-import {JSONPipeIn} from 'amis-editor-core';
+import {JSONPipeIn} from '@/packages/amis-editor-core/src';
 import AddColumnModal from './AddColumnModal';
 
 import type {FormControlProps} from 'amis';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {modalsToDefinitions} from 'amis-editor-core';
+import {modalsToDefinitions} from '@/packages/amis-editor-core/src';
 import {registerActionPanel} from '../../actionsPanelManager';
 import DialogActionPanel from '../../DialogActionPanel';
 import {TooltipWrapper} from 'amis';

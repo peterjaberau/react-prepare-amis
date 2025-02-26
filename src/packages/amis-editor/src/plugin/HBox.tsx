@@ -1,6 +1,6 @@
 import {Button} from 'amis';
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -10,14 +10,14 @@ import {
   RendererJSONSchemaResolveEventContext,
   VRendererConfig,
   ResizeMoveEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {EditorNodeType} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {EditorNodeType} from '@/packages/amis-editor-core/src';
 import {Schema} from 'amis';
-import {VRenderer} from 'amis-editor-core';
-import {RegionWrapper as Region} from 'amis-editor-core';
-import {JSONChangeInArray, JSONPipeIn, repeatArray} from 'amis-editor-core';
-import {Icon} from 'amis-editor-core';
+import {VRenderer} from '@/packages/amis-editor-core/src';
+import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
+import {JSONChangeInArray, JSONPipeIn, repeatArray} from '@/packages/amis-editor-core/src';
+import {Icon} from '@/packages/amis-editor-core/src';
 
 export class HBoxPlugin extends BasePlugin {
   static id = 'HBoxPlugin';

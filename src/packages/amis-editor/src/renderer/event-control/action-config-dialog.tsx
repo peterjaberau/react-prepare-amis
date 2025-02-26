@@ -9,7 +9,7 @@ import {
   getSchemaTpl,
   defaultValue,
   persistGet
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import {ActionConfig, ComponentInfo} from './types';
 import ActionConfigPanel from './action-config-panel';

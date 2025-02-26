@@ -13,7 +13,7 @@ import {
   JSONPipeOut,
   EditorNodeType,
   jsonToJsonSchema
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {generateId} from '../../util';
 
 export class SubFormControlPlugin extends BasePlugin {

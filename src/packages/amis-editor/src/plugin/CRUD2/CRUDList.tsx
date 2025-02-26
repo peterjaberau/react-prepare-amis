@@ -10,7 +10,7 @@ import {
   JSONPipeIn,
   BuildPanelEventContext,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DSBuilderManager, DSFeatureEnum} from '../../builder';
 import {Table2RenderereEvent, Table2RendererAction} from '../Table2';
 import {BaseCRUDPlugin} from './BaseCRUD';

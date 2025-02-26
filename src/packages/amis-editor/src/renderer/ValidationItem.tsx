@@ -6,9 +6,9 @@ import React from 'react';
 import cx from 'classnames';
 import {render, Button, Switch} from 'amis';
 
-import {autobind, getI18nEnabled} from 'amis-editor-core';
+import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {Validator} from '../validator';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import type {ConditionBuilderFields, Schema, SchemaCollection} from 'amis';
 
 export type ValidatorData = {

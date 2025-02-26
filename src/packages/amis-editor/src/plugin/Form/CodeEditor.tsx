@@ -7,8 +7,8 @@ import {
   BasePlugin,
   RendererPluginEvent,
   RendererPluginAction
-} from 'amis-editor-core';
-import type {BaseEventContext} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import type {BaseEventContext} from '@/packages/amis-editor-core/src';
 import {ValidatorTag} from '../../validator';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {getActionCommonProps} from '../../renderer/event-control/helper';

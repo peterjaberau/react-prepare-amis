@@ -3,15 +3,15 @@
  */
 
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BasePlugin,
   BasicRendererInfo,
   RendererInfoResolveEventContext,
   PluginInterface,
   RegionConfig
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import isArray from 'lodash/isArray';
 import {generateId} from '../util';
 

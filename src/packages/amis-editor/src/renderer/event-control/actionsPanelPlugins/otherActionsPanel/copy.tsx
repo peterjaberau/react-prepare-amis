@@ -1,7 +1,7 @@
 import React from 'react';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {getArgsWrapper} from '../../helper';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 registerActionPanel('copy', {
   label: 'Copy content',

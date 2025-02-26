@@ -5,7 +5,7 @@
 
 import {builderFactory, DSBuilderInterface} from './DSBuilder';
 
-import type {EditorManager} from 'amis-editor-core';
+import type {EditorManager} from '@/packages/amis-editor-core/src';
 import type {GenericSchema} from './type';
 import type {Option} from 'amis-core';
 

@@ -9,7 +9,7 @@ import {findDOMNode} from 'react-dom';
 import cx from 'classnames';
 import {FormItem, Button, Overlay, PopOver, Icon, Switch} from 'amis';
 
-import {isObject, autobind} from 'amis-editor-core';
+import {isObject, autobind} from '@/packages/amis-editor-core/src';
 
 import type {Action} from 'amis';
 import type {SchemaCollection} from 'amis';

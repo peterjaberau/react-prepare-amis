@@ -1,4 +1,4 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {ButtonPlugin} from './Button';
 
 export class SubmitPlugin extends ButtonPlugin {

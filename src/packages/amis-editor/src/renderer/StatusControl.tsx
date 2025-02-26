@@ -6,7 +6,7 @@ import React from 'react';
 import cx from 'classnames';
 import {FormItem, Switch, Option} from 'amis';
 
-import {autobind, getSchemaTpl} from 'amis-editor-core';
+import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 import type {FormControlProps} from 'amis-core';
 import type {SchemaCollection} from 'amis';

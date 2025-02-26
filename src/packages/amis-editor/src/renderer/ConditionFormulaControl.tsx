@@ -12,7 +12,7 @@ import {
 import cx from 'classnames';
 import {FormItem, Button, PickerContainer, ConditionBuilderFields} from 'amis';
 import {reaction} from 'mobx';
-import {getConditionVariables} from 'amis-editor-core';
+import {getConditionVariables} from '@/packages/amis-editor-core/src';
 
 interface ConditionFormulaControlProps extends FormControlProps {
   /**

@@ -1,7 +1,7 @@
 import {Renderer} from 'amis';
 import type {FormControlProps} from 'amis-core';
 import React from 'react';
-import {autobind, getSchemaTpl} from 'amis-editor-core';
+import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export interface DataMappingProps extends FormControlProps {
   schema?: string;

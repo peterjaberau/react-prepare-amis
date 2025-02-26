@@ -15,7 +15,7 @@ import {
   EditorNodeType,
   EditorManager,
   RAW_TYPE_MAP
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {someTree} from 'amis-core';
 import type {SchemaType} from 'amis';
 import {isObject} from 'amis';

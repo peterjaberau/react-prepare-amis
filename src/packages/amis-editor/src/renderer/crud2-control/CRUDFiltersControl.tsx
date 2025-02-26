@@ -27,7 +27,7 @@ import type {
   DSBuilderInterface,
   CRUDScaffoldConfig
 } from '../../builder';
-import type {EditorNodeType} from 'amis-editor-core';
+import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 import type {FormControlProps, PlainObject} from 'amis';
 
 interface Option {

@@ -1,6 +1,6 @@
 import 'amis';
 export * from './locale/index';
-export * from 'amis-editor-core';
+export * from '@/packages/amis-editor-core/src';
 export * from './builder';
 import './tpl/index';
 export * from './plugin';

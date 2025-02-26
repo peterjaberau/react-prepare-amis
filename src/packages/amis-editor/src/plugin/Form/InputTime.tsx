@@ -1,4 +1,4 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {DateControlPlugin} from './InputDate';
 
 export class TimeControlPlugin extends DateControlPlugin {

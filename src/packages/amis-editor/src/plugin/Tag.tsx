@@ -2,9 +2,9 @@ import {
   registerEditorPlugin,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {undefinedPipeOut, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {undefinedPipeOut, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 
 const presetColors = [

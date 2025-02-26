@@ -1,9 +1,9 @@
-import {EditorNodeType, getSchemaTpl} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, BaseEventContext} from 'amis-editor-core';
+import {EditorNodeType, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, BaseEventContext} from '@/packages/amis-editor-core/src';
 import {ValidatorTag} from '../../validator';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
-import {RendererPluginAction, RendererPluginEvent} from 'amis-editor-core';
+import {RendererPluginAction, RendererPluginEvent} from '@/packages/amis-editor-core/src';
 
 export class SignaturePlugin extends BasePlugin {
   static id = 'SignaturePlugin';

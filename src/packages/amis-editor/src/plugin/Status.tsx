@@ -1,12 +1,12 @@
 import React from 'react';
 import {render} from 'amis';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, BaseEventContext} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, BaseEventContext} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {Icon, TooltipWrapper} from 'amis-ui';
 import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
-import {getI18nEnabled} from 'amis-editor-core';
+import {getI18nEnabled} from '@/packages/amis-editor-core/src';
 
 export class StatusPlugin extends BasePlugin {
   static id = 'StatusPlugin';

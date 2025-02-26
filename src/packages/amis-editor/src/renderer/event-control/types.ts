@@ -1,5 +1,5 @@
 import {ListenerAction} from 'amis-core';
-import {RendererPluginAction} from 'amis-editor-core';
+import {RendererPluginAction} from '@/packages/amis-editor-core/src';
 
 export interface ActionConfig extends ListenerAction {
   [propName: string]: any;

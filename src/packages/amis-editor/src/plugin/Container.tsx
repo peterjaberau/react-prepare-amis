@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from 'amis';
-import {Icon} from 'amis-editor-core';
+import {Icon} from '@/packages/amis-editor-core/src';
 import {
   ActiveEventContext,
   BaseEventContext,
@@ -12,7 +12,7 @@ import {
   defaultValue,
   getSchemaTpl,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../renderer/event-control';
 // @ts-ignore
 import {EditorNodeType} from 'packages/amis-editor-core/lib';

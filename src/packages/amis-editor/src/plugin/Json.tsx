@@ -1,6 +1,6 @@
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import flatten from 'lodash/flatten';
 export class JsonPlugin extends BasePlugin {
   static id = 'JsonPlugin';

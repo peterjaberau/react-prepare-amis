@@ -1,22 +1,22 @@
-import {ContainerWrapper, JSONPipeOut} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {ContainerWrapper, JSONPipeOut} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
   getSchemaTpl,
   defaultValue
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   getEventControlConfig,
   getActionCommonProps
 } from '../renderer/event-control/helper';
-import {RendererPluginAction, RendererPluginEvent} from 'amis-editor-core';
+import {RendererPluginAction, RendererPluginEvent} from '@/packages/amis-editor-core/src';
 import type {SchemaObject} from 'amis';
-import {tipedLabel} from 'amis-editor-core';
-import {jsonToJsonSchema, EditorNodeType} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
+import {jsonToJsonSchema, EditorNodeType} from '@/packages/amis-editor-core/src';
 import omit from 'lodash/omit';
 import {generateId} from '../util';
-import {InlineEditableElement} from 'amis-editor-core';
+import {InlineEditableElement} from '@/packages/amis-editor-core/src';
 
 export class PagePlugin extends BasePlugin {
   static id = 'PagePlugin';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {getI18nEnabled, registerEditorPlugin} from 'amis-editor-core';
+import {getI18nEnabled, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -9,14 +9,14 @@ import {
   RegionConfig,
   RendererInfo,
   VRendererConfig
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {mapReactElement} from 'amis-editor-core';
-import {VRenderer} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {mapReactElement} from '@/packages/amis-editor-core/src';
+import {VRenderer} from '@/packages/amis-editor-core/src';
 import findIndex from 'lodash/findIndex';
-import {RegionWrapper as Region} from 'amis-editor-core';
+import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
 import {Tab} from 'amis';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {
   buildLinkActionDesc,
   getArgsWrapper,

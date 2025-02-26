@@ -1,4 +1,4 @@
-import {RendererPluginAction, EditorManager} from 'amis-editor-core';
+import {RendererPluginAction, EditorManager} from '@/packages/amis-editor-core/src';
 const builtInActionsPanel: Array<RendererPluginAction> = [];
 
 export interface ActionLeftPanelTree {

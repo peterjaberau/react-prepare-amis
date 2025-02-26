@@ -13,7 +13,7 @@ import {RootClose, isMobile} from 'amis-core';
 import FormulaPicker, {CustomFormulaPickerProps} from './FormulaPicker';
 import {reaction} from 'mobx';
 import {renderFormulaValue} from '../FormulaControl';
-import {getVariables, getQuickVariables} from 'amis-editor-core';
+import {getVariables, getQuickVariables} from '@/packages/amis-editor-core/src';
 import {findDOMNode} from 'react-dom';
 
 import type {VariableItem, CodeMirror} from 'amis-ui';

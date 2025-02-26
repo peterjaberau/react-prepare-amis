@@ -14,8 +14,8 @@ import {
   anyChanged,
   createObject,
   getSchemaTpl
-} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {SchemaObject, SchemaCollection, SchemaApi} from 'amis';
 import type {Api} from 'amis';

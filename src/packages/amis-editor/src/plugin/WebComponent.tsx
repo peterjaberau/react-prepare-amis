@@ -3,9 +3,9 @@ import {
   BasePlugin,
   BaseEventContext,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 // Need an example, otherwise the default one with no height cannot be selected
 class WebComponentDemo extends HTMLElement {

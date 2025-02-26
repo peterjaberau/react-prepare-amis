@@ -13,7 +13,7 @@ import {FormItem} from 'amis';
 
 import type {FormControlProps} from 'amis-core';
 import type {PlainObject} from './types';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 interface BackgroundProps extends FormControlProps {
   receiver?: string;
   value?: PlainObject;

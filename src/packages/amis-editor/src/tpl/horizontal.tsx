@@ -1,6 +1,6 @@
-import {setSchemaTpl, getSchemaTpl, defaultValue} from 'amis-editor-core';
+import {setSchemaTpl, getSchemaTpl, defaultValue} from '@/packages/amis-editor-core/src';
 import isObject from 'lodash/isObject';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 setSchemaTpl('horizontal-align', {
   type: 'button-group-select',

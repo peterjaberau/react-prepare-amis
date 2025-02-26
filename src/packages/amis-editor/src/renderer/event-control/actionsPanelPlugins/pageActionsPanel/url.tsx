@@ -1,7 +1,7 @@
 import React from 'react';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {getArgsWrapper} from '../../helper';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 registerActionPanel('url', {
   label: 'Jump link',

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button} from 'amis';
-import {getSchemaTpl} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, RegionConfig, BaseEventContext} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, RegionConfig, BaseEventContext} from '@/packages/amis-editor-core/src';
 import {formItemControl} from '../../component/BaseControl';
 import {generateId} from '../../util';
 

@@ -22,8 +22,8 @@ import {
   defaultValue,
   getSchemaTpl,
   tipedLabel
-} from 'amis-editor-core';
-import type {EditorManager} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import type {EditorManager} from '@/packages/amis-editor-core/src';
 import {setVariable, someTree} from 'amis-core';
 import {reaction} from 'mobx';
 import {DSBuilderManager} from '../builder/DSBuilderManager';

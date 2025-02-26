@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {PluginInterface, registerEditorPlugin} from 'amis-editor-core';
+import {PluginInterface, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -15,11 +15,11 @@ import {
   VRendererConfig,
   ContextMenuEventContext,
   ContextMenuItem
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {VRenderer} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {VRenderer} from '@/packages/amis-editor-core/src';
 import {type TableViewSchema} from 'amis';
-import {JSONGetById} from 'amis-editor-core';
+import {JSONGetById} from '@/packages/amis-editor-core/src';
 import {TableViewEditor} from '../component/TableViewEditor';
 import {generateId} from '../util';
 

@@ -1,7 +1,7 @@
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin, BasicToolbarItem} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {mockValue} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin, BasicToolbarItem} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {mockValue} from '@/packages/amis-editor-core/src';
 
 export class CarouselPlugin extends BasePlugin {
   static id = 'CarouselPlugin';

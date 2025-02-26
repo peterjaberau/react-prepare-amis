@@ -8,7 +8,7 @@ import {
   registerEditorPlugin,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {formItemControl} from '../../component/BaseControl';
 import {resolveOptionEventDataSchame, resolveOptionType} from '../../util';
 import type {Schema} from 'amis';

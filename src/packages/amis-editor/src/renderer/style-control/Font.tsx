@@ -6,9 +6,9 @@
 import React from 'react';
 import pick from 'lodash/pick';
 import mapValues from 'lodash/mapValues';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {fontFamilyList} from './font-family';
-import {string2CSSUnit, isObject} from 'amis-editor-core';
+import {string2CSSUnit, isObject} from '@/packages/amis-editor-core/src';
 import {FormItem} from 'amis';
 import type {FormControlProps} from 'amis-core';
 import type {PlainObject} from './types';

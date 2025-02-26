@@ -6,7 +6,7 @@ import {
   defaultValue,
   getSchemaTpl,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {getActionCommonProps} from '../renderer/event-control/helper';
 
 export class ProgressPlugin extends BasePlugin {

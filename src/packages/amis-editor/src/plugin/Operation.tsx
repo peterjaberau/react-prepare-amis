@@ -1,6 +1,6 @@
 import {Button} from 'amis';
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -8,8 +8,8 @@ import {
   RegionConfig,
   RendererEventContext,
   SubRendererInfo
-} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {generateId} from '../util';
 
 export class OperationPlugin extends BasePlugin {

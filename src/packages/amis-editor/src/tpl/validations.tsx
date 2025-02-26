@@ -4,7 +4,7 @@ import {
   defaultValue,
   getSchemaTpl,
   getI18nEnabled
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {ValidationOptions} from '../component/BaseControl';
 import {Schema, str2rules} from 'amis';
 import {ValidatorTag} from '../validator';

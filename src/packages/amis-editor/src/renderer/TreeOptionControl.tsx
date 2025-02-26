@@ -18,8 +18,8 @@ import {
   render as amisRender
 } from 'amis';
 
-import {autobind, getI18nEnabled} from 'amis-editor-core';
-import {getSchemaTpl, tipedLabel} from 'amis-editor-core';
+import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {Option} from 'amis';
 import type {FormControlProps} from 'amis-core';

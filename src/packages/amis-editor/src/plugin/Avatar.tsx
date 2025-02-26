@@ -1,10 +1,10 @@
 /**
  * @file avatar
  */
-import {registerEditorPlugin, RendererPluginEvent} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {getSchemaTpl, defaultValue} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+import {registerEditorPlugin, RendererPluginEvent} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl, defaultValue} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../renderer/event-control';
 
 const DefaultSize = 40;

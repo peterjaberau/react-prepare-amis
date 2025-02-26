@@ -20,12 +20,12 @@ import FormulaPicker, {
   CustomFormulaPickerProps
 } from './textarea-formula/FormulaPicker';
 import {FormulaPlugin, editorFactory} from './textarea-formula/plugin';
-import {JSONPipeOut, autobind, translateSchema} from 'amis-editor-core';
-import {EditorManager} from 'amis-editor-core';
+import {JSONPipeOut, autobind, translateSchema} from '@/packages/amis-editor-core/src';
+import {EditorManager} from '@/packages/amis-editor-core/src';
 import {reaction} from 'mobx';
-import {getVariables, getQuickVariables, utils} from 'amis-editor-core';
+import {getVariables, getQuickVariables, utils} from '@/packages/amis-editor-core/src';
 
-import type {BaseEventContext} from 'amis-editor-core';
+import type {BaseEventContext} from '@/packages/amis-editor-core/src';
 import type {VariableItem, FuncGroup} from 'amis-ui';
 // @ts-ignore
 import {SchemaType} from 'amis/lib/Schema';

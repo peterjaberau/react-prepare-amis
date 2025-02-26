@@ -8,7 +8,7 @@ import pick from 'lodash/pick';
 import mapValues from 'lodash/mapValues';
 import {FormItem} from 'amis';
 
-import {isObject} from 'amis-editor-core';
+import {isObject} from '@/packages/amis-editor-core/src';
 
 import type {FormControlProps} from 'amis-core';
 import type {PlainObject} from './types';

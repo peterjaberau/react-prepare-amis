@@ -1,4 +1,4 @@
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 interface InputStateOptions {
   state?: {
     label: string;

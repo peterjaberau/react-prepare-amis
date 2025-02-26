@@ -9,11 +9,11 @@ import {
   tipedLabel,
   RendererPluginEvent,
   diff
-} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {EditorNodeType} from 'amis-editor-core';
-import {mockValue} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {EditorNodeType} from '@/packages/amis-editor-core/src';
+import {mockValue} from '@/packages/amis-editor-core/src';
 
 //Copyable
 setSchemaTpl('copyable', {

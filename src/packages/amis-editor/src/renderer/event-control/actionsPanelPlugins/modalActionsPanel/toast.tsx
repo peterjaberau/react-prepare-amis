@@ -1,5 +1,5 @@
 import React from 'react';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {getArgsWrapper} from '../../helper';
 

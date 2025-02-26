@@ -10,7 +10,7 @@ import {
   defaultValue,
   getSchemaTpl,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {Schema} from 'amis-core';
 import type {SchemaType} from 'amis';
 import {ValidatorTag} from '../../validator';

@@ -9,7 +9,7 @@ import {
   BaseEventContext,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {Schema, SchemaType} from 'amis';
 import {ValidatorTag} from '../../validator';
 import {

@@ -1,11 +1,11 @@
 import React from 'react';
-import {registerEditorPlugin, translateSchema} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
-import {BasePlugin, RendererInfo, VRendererConfig} from 'amis-editor-core';
-import {VRenderer} from 'amis-editor-core';
-import {mapReactElement} from 'amis-editor-core';
+import {registerEditorPlugin, translateSchema} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {BasePlugin, RendererInfo, VRendererConfig} from '@/packages/amis-editor-core/src';
+import {VRenderer} from '@/packages/amis-editor-core/src';
+import {mapReactElement} from '@/packages/amis-editor-core/src';
 import findIndex from 'lodash/findIndex';
-import {RegionWrapper as Region} from 'amis-editor-core';
+import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
 import {AnchorNavSection} from 'amis-ui';
 import {registerFilter} from 'amis-formula';
 import {generateId} from '../util';

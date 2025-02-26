@@ -1,5 +1,5 @@
 import React from 'react';
-import {defaultValue} from 'amis-editor-core';
+import {defaultValue} from '@/packages/amis-editor-core/src';
 import without from 'lodash/without';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {renderCmptSelect, renderCmptIdInput} from './helper';

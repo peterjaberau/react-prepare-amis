@@ -1,9 +1,9 @@
 /**
  * @file log component
  */
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {getSchemaTpl, tipedLabel} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
 export class LogPlugin extends BasePlugin {
   static id = 'LogPlugin';

@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {autobind} from 'amis-editor-core';
+import {autobind} from '@/packages/amis-editor-core/src';
 import {FormControlProps} from 'amis-core';
 import {FormItem} from 'amis';
 // @ts-ignore

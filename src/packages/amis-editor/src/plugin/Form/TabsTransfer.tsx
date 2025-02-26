@@ -9,7 +9,7 @@ import {
   registerEditorPlugin,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   getEventControlConfig,
   getActionCommonProps,

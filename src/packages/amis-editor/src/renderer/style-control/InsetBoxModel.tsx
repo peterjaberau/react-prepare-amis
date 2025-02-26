@@ -8,7 +8,7 @@ import React from 'react';
 import {observer} from 'mobx-react';
 import camelCase from 'lodash/camelCase';
 import {FormItem} from 'amis';
-import {isNumeric} from 'amis-editor-core';
+import {isNumeric} from '@/packages/amis-editor-core/src';
 import type {FormControlProps} from 'amis-core';
 import {isAuto} from '../../util';
 import type {PlainObject} from './types';

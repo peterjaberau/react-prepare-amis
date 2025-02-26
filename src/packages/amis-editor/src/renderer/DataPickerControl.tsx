@@ -1,7 +1,7 @@
 import {Icon, InputBox, FormulaPicker, FormItem, DataSchema} from 'amis';
 import type {FormControlProps} from 'amis-core';
 import React from 'react';
-import {autobind} from 'amis-editor-core';
+import {autobind} from '@/packages/amis-editor-core/src';
 
 class DataPickerControl extends React.Component<FormControlProps> {
   @autobind

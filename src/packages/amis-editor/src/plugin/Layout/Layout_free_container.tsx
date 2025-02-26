@@ -1,5 +1,5 @@
-import type {BaseEventContext} from 'amis-editor-core';
-import {registerEditorPlugin, getSchemaTpl} from 'amis-editor-core';
+import type {BaseEventContext} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {ContainerPlugin} from '../Container';
 
 export default class Layout_free_container extends ContainerPlugin {

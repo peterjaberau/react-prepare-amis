@@ -8,7 +8,7 @@ import {
   getSchemaTpl,
   registerEditorPlugin,
   BasePlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {getActionCommonProps} from '../../renderer/event-control/helper';
 export class KVControlPlugin extends BasePlugin {
   static id = 'KVControlPlugin';

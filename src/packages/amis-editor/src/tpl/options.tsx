@@ -6,7 +6,7 @@ import {
   getI18nEnabled,
   tipedLabel,
   JSONPipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {findObjectsWithKey} from 'amis-core';
 import {Button, Icon} from 'amis-ui';
 import type {SchemaObject} from 'amis';
@@ -15,7 +15,7 @@ import cloneDeep from 'lodash/cloneDeep';
 import omit from 'lodash/omit';
 
 import type {RendererProps} from 'amis';
-import type {EditorManager} from 'amis-editor-core';
+import type {EditorManager} from '@/packages/amis-editor-core/src';
 
 setSchemaTpl('options', () => {
   const i18nEnabled = getI18nEnabled();

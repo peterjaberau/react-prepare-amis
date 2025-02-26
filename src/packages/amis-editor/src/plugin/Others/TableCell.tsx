@@ -5,7 +5,7 @@ import {
   getI18nEnabled,
   registerEditorPlugin,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   BasePlugin,
   BasicRendererInfo,
@@ -13,8 +13,8 @@ import {
   RendererInfoResolveEventContext,
   ReplaceEventContext,
   PluginEvent
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {getVariable} from 'amis-core';
 
 export class TableCellPlugin extends BasePlugin {

@@ -1,4 +1,4 @@
-import {getI18nEnabled, registerEditorPlugin} from 'amis-editor-core';
+import {getI18nEnabled, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -7,8 +7,8 @@ import {
   RendererEventContext,
   ScaffoldForm,
   SubRendererInfo
-} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';

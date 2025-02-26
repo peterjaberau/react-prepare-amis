@@ -13,7 +13,7 @@ import {
   RegionConfig,
   getSchemaTpl,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DSBuilderManager} from '../builder/DSBuilderManager';
 import {DSFeatureEnum, ModelDSBuilderKey, ApiDSBuilderKey} from '../builder';
 import {
@@ -27,7 +27,7 @@ import type {
   EditorManager,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 export class ServicePlugin extends BasePlugin {
   static id = 'ServicePlugin';

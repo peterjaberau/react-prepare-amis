@@ -4,9 +4,9 @@ import {
   defaultValue,
   RendererPluginEvent,
   tipedLabel
-} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {ValidatorTag} from '../../validator';
 

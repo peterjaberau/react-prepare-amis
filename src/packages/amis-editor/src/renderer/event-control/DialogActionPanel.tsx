@@ -11,7 +11,7 @@ import {
   getVariables,
   modalsToDefinitions,
   patchDiff
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import {observer} from 'mobx-react';
 import {JSONTraverse, JSONValueMap, RendererProps, guid} from 'amis-core';
@@ -24,7 +24,7 @@ import {
   Switch
 } from 'amis-ui';
 // @ts-ignore
-import type {EditorModalBody} from 'amis-editor-core/lib/store/editor';
+import type {EditorModalBody} from '@/packages/amis-editor-core/src/lib/store/editor';
 
 export interface DialogActionPanelProps extends RendererProps {
   manager: EditorManager;

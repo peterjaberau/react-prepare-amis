@@ -12,7 +12,7 @@ import {
   BuildPanelEventContext,
   EditorNodeType,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   DSBuilder,
   DSBuilderManager,

@@ -1,6 +1,6 @@
-import {getSchemaTpl} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
 
 export class RepeatControlPlugin extends BasePlugin {
   static id = 'RepeatControlPlugin';

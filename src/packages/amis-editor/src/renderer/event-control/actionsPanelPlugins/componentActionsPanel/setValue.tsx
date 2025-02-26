@@ -4,7 +4,7 @@ import {
   defaultValue,
   JSONGetById,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {getRendererByName} from 'amis-core';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {renderCmptActionSelect, renderCmptIdInput} from './helper';

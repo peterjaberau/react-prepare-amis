@@ -1,5 +1,5 @@
 import React from 'react';
-import {getI18nEnabled, registerEditorPlugin} from 'amis-editor-core';
+import {getI18nEnabled, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -10,9 +10,9 @@ import {
   RendererInfo,
   RendererInfoResolveEventContext,
   VRendererConfig
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {VRenderer} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {VRenderer} from '@/packages/amis-editor-core/src';
 
 export class ListItemPlugin extends BasePlugin {
   static id = 'ListItemPlugin';

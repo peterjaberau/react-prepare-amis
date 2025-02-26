@@ -1,4 +1,4 @@
-import {JSONGetById, EditorManager} from 'amis-editor-core';
+import {JSONGetById, EditorManager} from '@/packages/amis-editor-core/src';
 import {DataSchema} from 'amis-core';
 import CmptActionSelect from '../../comp-action-select';
 

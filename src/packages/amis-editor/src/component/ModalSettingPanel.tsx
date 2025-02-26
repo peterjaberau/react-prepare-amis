@@ -3,7 +3,7 @@ import {
   EditorStoreType,
   SchemaFrom,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {observer} from 'mobx-react';
 import React from 'react';
 

@@ -1,6 +1,6 @@
-import {RendererPluginAction, registerEditorPlugin} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+import {RendererPluginAction, registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 export class PdfViewerPlugin extends BasePlugin {
   static id = 'PdfViewerPlugin';

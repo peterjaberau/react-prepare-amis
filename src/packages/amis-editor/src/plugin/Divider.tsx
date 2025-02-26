@@ -7,7 +7,7 @@ import {
   registerEditorPlugin,
   tipedLabel,
   valuePipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 export class DividerPlugin extends BasePlugin {
   static id = 'DividerPlugin';

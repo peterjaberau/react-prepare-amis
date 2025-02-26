@@ -11,7 +11,7 @@ import {
   tipedLabel,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {isPureVariable} from 'amis';
 import omit from 'lodash/omit';
 import {inputStateTpl} from '../../renderer/style-control/helper';

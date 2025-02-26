@@ -1,5 +1,5 @@
 import {Button} from 'amis';
-import {EditorNodeType, registerEditorPlugin} from 'amis-editor-core';
+import {EditorNodeType, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -9,10 +9,10 @@ import {
   ContextMenuItem,
   RendererEventContext,
   SubRendererInfo
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl, valuePipeOut} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl, valuePipeOut} from '@/packages/amis-editor-core/src';
 import React from 'react';
-import {diff, JSONPipeOut} from 'amis-editor-core';
+import {diff, JSONPipeOut} from '@/packages/amis-editor-core/src';
 import {generateId} from '../../util';
 
 export class ArrayControlPlugin extends BasePlugin {

@@ -1,4 +1,4 @@
-import {registerEditorPlugin, RendererPluginEvent} from 'amis-editor-core';
+import {registerEditorPlugin, RendererPluginEvent} from '@/packages/amis-editor-core/src';
 
 import {TransferPlugin} from './Transfer';
 

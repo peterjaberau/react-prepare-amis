@@ -5,7 +5,7 @@ import {
   RendererPluginEvent,
   RendererPluginAction,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {type Schema} from 'amis-core';
 import {
   getEventControlConfig,

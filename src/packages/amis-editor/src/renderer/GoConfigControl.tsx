@@ -6,7 +6,7 @@ import React from 'react';
 import cx from 'classnames';
 import {Renderer, toast} from 'amis';
 
-import {EditorManager} from 'amis-editor-core';
+import {EditorManager} from '@/packages/amis-editor-core/src';
 import {autobind, FormControlProps} from 'amis-core';
 
 export interface GoCongigControlProps extends FormControlProps {

@@ -15,7 +15,7 @@ import {renderFormulaValue} from './FormulaControl';
 import FormulaPicker, {
   CustomFormulaPickerProps
 } from './textarea-formula/FormulaPicker';
-import {getVariables, getQuickVariables} from 'amis-editor-core';
+import {getVariables, getQuickVariables} from '@/packages/amis-editor-core/src';
 
 import type {VariableItem, CodeMirror} from 'amis-ui';
 

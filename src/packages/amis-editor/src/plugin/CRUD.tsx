@@ -11,7 +11,7 @@ import {
   jsonToJsonSchema,
   registerEditorPlugin,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -27,7 +27,7 @@ import {
   defaultValue,
   getSchemaTpl,
   JSONPipeIn
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {setVariable, someTree, normalizeApi} from 'amis-core';
 import type {CRUDCommonSchema} from 'amis';
 import {getEnv} from 'mobx-state-tree';
@@ -35,7 +35,7 @@ import type {
   EditorNodeType,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import isPlainObject from 'lodash/isPlainObject';
 import findLastIndex from 'lodash/findLastIndex';
 

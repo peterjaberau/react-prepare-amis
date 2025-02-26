@@ -12,12 +12,12 @@ import {
   isEmpty,
   getI18nEnabled,
   JSONPipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   getEventControlConfig,
   getActionCommonProps
 } from '../renderer/event-control/helper';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import omit from 'lodash/omit';
 import {InlineModal} from './Dialog';
 

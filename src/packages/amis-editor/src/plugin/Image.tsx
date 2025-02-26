@@ -3,16 +3,16 @@ import {
   RendererPluginEvent,
   getI18nEnabled,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   ActiveEventContext,
   BaseEventContext,
   BasePlugin,
   PluginEvent,
   ResizeMoveEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl, tipedLabel} from 'amis-editor-core';
-import {mockValue} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
+import {mockValue} from '@/packages/amis-editor-core/src';
 import {
   buildLinkActionDesc,
   getArgsWrapper,

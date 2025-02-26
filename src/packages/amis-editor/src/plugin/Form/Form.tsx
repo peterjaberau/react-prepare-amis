@@ -22,7 +22,7 @@ import {
   RegionConfig,
   registerEditorPlugin,
   JSONPipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {FormSchema} from 'amis';
 import type {
   IFormStore,
@@ -44,7 +44,7 @@ import {
 } from '../../renderer/event-control/helper';
 import {FieldSetting} from '../../renderer/FieldSetting';
 import {_isModelComp, generateId} from '../../util';
-import {InlineEditableElement} from 'amis-editor-core';
+import {InlineEditableElement} from '@/packages/amis-editor-core/src';
 
 import type {FormScaffoldConfig} from '../../builder';
 

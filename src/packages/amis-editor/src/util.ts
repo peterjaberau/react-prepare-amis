@@ -1,5 +1,5 @@
 import {JSONValueMap, findTree, resolveVariableAndFilter} from 'amis';
-import {EditorManager, guid} from 'amis-editor-core';
+import {EditorManager, guid} from '@/packages/amis-editor-core/src';
 import isString from 'lodash/isString';
 
 /**

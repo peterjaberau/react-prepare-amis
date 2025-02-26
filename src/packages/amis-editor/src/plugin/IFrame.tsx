@@ -1,12 +1,12 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BasePlugin,
   RegionConfig,
   RendererInfo,
   BaseEventContext,
   tipedLabel
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl, valuePipeOut} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl, valuePipeOut} from '@/packages/amis-editor-core/src';
 
 export class IFramePlugin extends BasePlugin {
   static id = 'IFramePlugin';

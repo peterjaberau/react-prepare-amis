@@ -17,14 +17,14 @@ import {
   tipedLabel,
   generateNodeId,
   JSONPipeOut
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DSBuilder, registerDSBuilder} from './DSBuilder';
 import {FormOperatorMap, DSFeatureEnum, DSFeature} from './constants';
 import {traverseSchemaDeep, displayType2inputType} from './utils';
 
 // @ts-ignore
 import type {ColumnSchema} from 'amis/lib/renderers/Table2';
-import type {EditorNodeType} from 'amis-editor-core';
+import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 import type {ButtonSchema} from 'amis';
 import type {
   DSRendererType,

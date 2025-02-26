@@ -9,7 +9,7 @@ import {
   BaseEventContext,
   defaultValue,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   buildLinkActionDesc,
   getEventControlConfig

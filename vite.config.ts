@@ -8,7 +8,13 @@ const monacoEditorPluginDefault = (monacoEditorPlugin as any).default as (option
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      babel: {
+        parserOpts: {
+          plugins: ['decorators-legacy', 'classProperties']
+        }
+      }
+    }),
     svgr({
       exportAsDefault: true,
       svgrOptions: {

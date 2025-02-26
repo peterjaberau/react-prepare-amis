@@ -1,6 +1,6 @@
 import React from 'react';
 import {GlobalVariableItem, noop, guid} from 'amis-core';
-import {PanelProps, SchemaForm, EditorManager} from 'amis-editor-core';
+import {PanelProps, SchemaForm, EditorManager} from '@/packages/amis-editor-core/src';
 import {observer} from 'mobx-react';
 import {Alert2, Button, ConfirmBox, LazyComponent, Spinner} from 'amis-ui';
 import {confirm} from 'amis';

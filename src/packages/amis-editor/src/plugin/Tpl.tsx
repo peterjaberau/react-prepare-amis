@@ -2,13 +2,13 @@ import {
   registerEditorPlugin,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
-import {BaseEventContext, BasePlugin} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl, setSchemaTpl} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl, setSchemaTpl} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 import {ValidatorTag} from '../validator';
-import {InlineEditableElement} from 'amis-editor-core';
+import {InlineEditableElement} from '@/packages/amis-editor-core/src';
 
 setSchemaTpl(
   'tpl:content',

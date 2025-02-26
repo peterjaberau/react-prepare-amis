@@ -1,6 +1,6 @@
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin} from 'amis-editor-core';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin} from '@/packages/amis-editor-core/src';
 
 export class FormulaControlPlugin extends BasePlugin {
   static id = 'FormulaControlPlugin';

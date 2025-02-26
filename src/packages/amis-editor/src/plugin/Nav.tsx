@@ -9,7 +9,7 @@ import {
   RendererPluginEvent,
   RendererPluginAction,
   tipedLabel
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   getEventControlConfig,
   getActionCommonProps,

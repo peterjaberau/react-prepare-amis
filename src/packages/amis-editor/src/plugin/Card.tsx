@@ -1,6 +1,6 @@
 import {Button} from 'amis-ui';
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -12,10 +12,10 @@ import {
   RendererInfo,
   RendererInfoResolveEventContext,
   VRendererConfig
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import flatten from 'lodash/flatten';
-import {VRenderer} from 'amis-editor-core';
+import {VRenderer} from '@/packages/amis-editor-core/src';
 import {generateId} from '../util';
 
 export class CardPlugin extends BasePlugin {

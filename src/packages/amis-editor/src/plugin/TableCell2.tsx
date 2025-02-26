@@ -15,7 +15,7 @@ import {
   getSchemaTpl,
   tipedLabel,
   BaseEventContext
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {remarkTpl} from '../component/BaseControl';
 
 import type {DSField} from '../builder';

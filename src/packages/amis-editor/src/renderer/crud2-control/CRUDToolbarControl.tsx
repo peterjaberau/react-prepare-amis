@@ -9,13 +9,13 @@ import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
 import {FormItem, Button, Icon, toast, Spinner, autobind} from 'amis';
 import {TooltipWrapper} from 'amis-ui';
-import {JSONPipeIn} from 'amis-editor-core';
+import {JSONPipeIn} from '@/packages/amis-editor-core/src';
 import {DSFeature, DSFeatureType, DSFeatureEnum} from '../../builder';
 import {traverseSchemaDeep} from '../../builder/utils';
 import {deepRemove, addSchema2Toolbar} from '../../plugin/CRUD2/utils';
 
 import type {FormControlProps} from 'amis';
-import type {EditorNodeType} from 'amis-editor-core';
+import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 // @ts-ignore
 import type {ColumnSchema} from 'amis/lib/renderers/Table2';
 import type {DSBuilderInterface} from '../../builder';

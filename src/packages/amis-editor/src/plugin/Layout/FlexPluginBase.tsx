@@ -8,8 +8,8 @@ import {
   PluginEvent,
   reGenerateID,
   tipedLabel
-} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {Button, PlainObject} from 'amis';
 import type {
   BaseEventContext,
@@ -18,9 +18,9 @@ import type {
   RendererJSONSchemaResolveEventContext,
   BasicToolbarItem,
   PluginInterface
-} from 'amis-editor-core';
-import {Icon} from 'amis-editor-core';
-import {JSONChangeInArray, JSONPipeIn, repeatArray} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {Icon} from '@/packages/amis-editor-core/src';
+import {JSONChangeInArray, JSONPipeIn, repeatArray} from '@/packages/amis-editor-core/src';
 import {isAlive} from 'mobx-state-tree';
 
 //Default column container Schema

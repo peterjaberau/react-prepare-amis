@@ -5,7 +5,7 @@ import {
   BasePlugin,
   BasicPanelItem,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {GlobalVarManagerPanel} from '../renderer/global-var-control/GlobalVarManagerPanel';
 
 /**

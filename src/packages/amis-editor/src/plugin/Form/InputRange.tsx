@@ -6,14 +6,14 @@ import {
   getSchemaTpl,
   tipedLabel,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {
   EditorNodeType,
   RendererPluginAction,
   RendererPluginEvent,
   BaseEventContext,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

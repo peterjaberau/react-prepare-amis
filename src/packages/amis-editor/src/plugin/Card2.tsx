@@ -6,7 +6,7 @@ import {
   getSchemaTpl,
   tipedLabel,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 export class Card2Plugin extends BasePlugin {
   static id = 'Card2Plugin';

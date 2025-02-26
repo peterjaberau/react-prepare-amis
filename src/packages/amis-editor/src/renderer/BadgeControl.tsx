@@ -14,8 +14,8 @@ import {
   isEmpty,
   anyChanged,
   getI18nEnabled
-} from 'amis-editor-core';
-import {defaultValue, tipedLabel} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {FormControlProps} from 'amis-core';
 import type {SchemaExpression} from 'amis';

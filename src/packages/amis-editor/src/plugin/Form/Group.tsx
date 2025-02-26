@@ -1,14 +1,14 @@
 import {Button} from 'amis';
 import React from 'react';
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BasePlugin,
   ContextMenuEventContext,
   ContextMenuItem,
   RegionConfig
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {JSONPipeIn, JSONUpdate, makeHorizontalDeeper} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {JSONPipeIn, JSONUpdate, makeHorizontalDeeper} from '@/packages/amis-editor-core/src';
 import {generateId} from '../../util';
 
 export class GroupControlPlugin extends BasePlugin {

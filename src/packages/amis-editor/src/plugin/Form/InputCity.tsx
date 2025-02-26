@@ -8,7 +8,7 @@ import {
   EditorNodeType,
   defaultValue,
   getSchemaTpl
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import cloneDeep from 'lodash/cloneDeep';
 import type {Schema} from 'amis';
 import {ValidatorTag} from '../../validator';

@@ -14,7 +14,7 @@ import {
   autobind,
   getConditionVariables,
   isObjectShallowModified
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import ValidationItem, {ValidatorData} from './ValidationItem';
 
 import type {FormControlProps} from 'amis-core';

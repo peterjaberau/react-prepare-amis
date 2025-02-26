@@ -4,7 +4,7 @@ import {
   EditorNodeType,
   getI18nEnabled,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,
   BasePlugin,
@@ -14,9 +14,9 @@ import {
   ContextMenuItem,
   PluginInterface,
   RendererInfoResolveEventContext
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {diff, JSONPipeOut, repeatArray} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {diff, JSONPipeOut, repeatArray} from '@/packages/amis-editor-core/src';
 import set from 'lodash/set';
 import {
   schemaArrayFormat,

@@ -54,11 +54,11 @@ import {
   RendererPluginEvent,
   SubRendererPluginAction,
   IGlobalEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 export * from './helper';
 import {i18n as _i18n} from 'i18n-runtime';
 import {reaction} from 'mobx';
-import {updateComponentContext} from 'amis-editor-core';
+import {updateComponentContext} from '@/packages/amis-editor-core/src';
 import type {VariableItem} from 'amis-ui';
 
 interface EventControlProps extends FormControlProps {

@@ -3,7 +3,7 @@
  */
 
 import {RendererProps, Schema} from 'amis-core';
-import {RendererPluginAction} from 'amis-editor-core';
+import {RendererPluginAction} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import cx from 'classnames';
 import isFunction from 'lodash/isFunction';

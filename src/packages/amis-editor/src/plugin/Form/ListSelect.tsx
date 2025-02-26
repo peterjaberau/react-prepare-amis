@@ -7,12 +7,12 @@ import {
   BasePlugin,
   BaseEventContext,
   diff
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {
   EditorManager,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {Schema} from 'amis';
 import {formItemControl} from '../../component/BaseControl';
 import {

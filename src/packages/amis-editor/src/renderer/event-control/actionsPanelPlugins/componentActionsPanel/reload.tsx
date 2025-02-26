@@ -6,7 +6,7 @@ import {
   JSONGetById,
   tipedLabel,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {renderCmptSelect, renderCmptIdInput} from './helper';
 import {buildLinkActionDesc} from '../../helper';

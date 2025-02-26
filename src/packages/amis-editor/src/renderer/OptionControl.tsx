@@ -20,9 +20,9 @@ import {
 // @ts-ignore
 import {value2array} from 'amis-ui/lib/components/Select';
 
-import {autobind, getI18nEnabled} from 'amis-editor-core';
-import {getSchemaTpl} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {Option} from 'amis';
 import {createObject, FormControlProps} from 'amis-core';

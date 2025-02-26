@@ -7,7 +7,7 @@ import {
   BaseEventContext,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {getRendererByName} from 'amis-core';
 import omit from 'lodash/omit';
 import type {Schema} from 'amis';

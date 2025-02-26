@@ -5,7 +5,7 @@ import {
   isObject,
   tipedLabel,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {render, type SchemaObject} from 'amis';
 import flatten from 'lodash/flatten';
 import {InputComponentName} from '../component/InputComponentName';

@@ -9,7 +9,7 @@ import {
   defaultValue,
   getSchemaTpl,
   registerEditorPlugin
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {formItemControl} from '../../component/BaseControl';
 import {getActionCommonProps} from '../../renderer/event-control/helper';
 

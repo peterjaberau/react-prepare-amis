@@ -13,7 +13,7 @@ import {
   persistSet,
   RendererPluginAction,
   RendererPluginEvent
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DataSchema, Schema, Option, getRendererByName} from 'amis-core';
 import {Button, toast, TooltipWrapper} from 'amis';
 import {i18n as _i18n} from 'i18n-runtime';

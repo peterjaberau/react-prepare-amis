@@ -4,8 +4,8 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {autobind, getSchemaTpl, setSchemaTpl} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+import {autobind, getSchemaTpl, setSchemaTpl} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {FormControlProps} from 'amis-core';
 import {FormItem, Icon, TooltipWrapper} from 'amis';
 // @ts-ignore

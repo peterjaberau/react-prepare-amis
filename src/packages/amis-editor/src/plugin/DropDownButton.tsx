@@ -11,7 +11,7 @@ import {
   defaultValue,
   getSchemaTpl,
   diff
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {BUTTON_DEFAULT_ACTION} from '../component/BaseControl';
 import {buttonStateFunc} from '../renderer/style-control/helper';
 import {generateId} from '../util';

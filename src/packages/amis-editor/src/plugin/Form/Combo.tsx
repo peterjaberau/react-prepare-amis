@@ -13,7 +13,7 @@ import {
   getI18nEnabled,
   EditorNodeType,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DSBuilderManager} from '../../builder/DSBuilderManager';
 import {ValidatorTag} from '../../validator';
 import {

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "useDefineForClassFields": true,
-    "lib": ["es2020", "DOM", "DOM.Iterable"],
+    "lib": ["es2020", "DOM", "DOM.Iterable", "ES6", "ES2015", "ES2021"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -17,11 +17,16 @@
 
     /* Linting */
     "strict": true,
-//    "noUnusedLocals": true,
-//    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+
+
+//    "emitDecoratorMetadata": true,
+//    "downlevelIteration": true,
+//    "composite": true,
+//    "allowJs": true,
+//
 
 
     "baseUrl": ".",

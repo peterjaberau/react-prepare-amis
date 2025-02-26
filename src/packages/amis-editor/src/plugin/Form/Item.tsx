@@ -1,7 +1,7 @@
 import {
   registerEditorPlugin,
   RendererInfoResolveEventContext
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {
   BasePlugin,
   BaseEventContext,
@@ -14,10 +14,10 @@ import {
   ContextMenuEventContext,
   ContextMenuItem,
   PluginInterface
-} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import find from 'lodash/find';
-import {JSONDelete, JSONPipeIn, JSONUpdate} from 'amis-editor-core';
+import {JSONDelete, JSONPipeIn, JSONUpdate} from '@/packages/amis-editor-core/src';
 import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from '../../renderer/event-control/constants';
 import {
   isExpression,

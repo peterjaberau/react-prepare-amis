@@ -21,7 +21,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent,
   BuildPanelEventContext
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import {DSBuilderManager} from '../builder/DSBuilderManager';
 import {DefaultMaxDisplayRows} from './CRUD2/constants';
 import {
@@ -32,7 +32,7 @@ import {resolveArrayDatasource} from '../util';
 
 import type {SchemaObject} from 'amis';
 import type {IFormItemStore, IFormStore} from 'amis-core';
-import type {EditorManager} from 'amis-editor-core';
+import type {EditorManager} from '@/packages/amis-editor-core/src';
 import {getActionCommonProps} from '../renderer/event-control/helper';
 import cloneDeep from 'lodash/cloneDeep';
 import {addSchema2Toolbar, deepRemove} from './CRUD2/utils';

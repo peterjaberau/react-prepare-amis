@@ -1,10 +1,10 @@
 /**
  * @file text prompt container
  */
-import {registerEditorPlugin} from 'amis-editor-core';
-import {BasePlugin, RegionConfig, BaseEventContext} from 'amis-editor-core';
-import {defaultValue, getSchemaTpl} from 'amis-editor-core';
-import {tipedLabel} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
+import {BasePlugin, RegionConfig, BaseEventContext} from '@/packages/amis-editor-core/src';
+import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {generateId} from '../util';
 
 export class TooltipWrapperPlugin extends BasePlugin {

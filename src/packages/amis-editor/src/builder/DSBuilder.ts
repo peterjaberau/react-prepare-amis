@@ -3,10 +3,10 @@
  * @desc Data source configuration builder
  */
 
-import {EditorManager} from 'amis-editor-core';
+import {EditorManager} from '@/packages/amis-editor-core/src';
 import {getFeatValueByKey, getFeatLabelByKey} from './utils';
 
-import type {EditorNodeType} from 'amis-editor-core';
+import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 import type {
   DSFeatureType,
   GenericSchema,

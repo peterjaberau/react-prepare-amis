@@ -7,7 +7,7 @@ import cx from 'classnames';
 import findIndex from 'lodash/findIndex';
 import {FormControlProps, FormItem, TreeSelection} from 'amis';
 import {toNumber} from 'amis-core';
-import {getSchemaTpl} from 'amis-editor-core';
+import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 interface optionType {
   label: string;

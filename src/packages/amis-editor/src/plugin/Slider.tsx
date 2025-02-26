@@ -6,7 +6,7 @@ import {
   RegionConfig,
   BaseEventContext,
   BasicToolbarItem
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 export class SliderPlugin extends BasePlugin {
   static id = 'SliderPlugin';

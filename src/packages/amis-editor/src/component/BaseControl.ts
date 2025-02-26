@@ -5,8 +5,8 @@
 import flatten from 'lodash/flatten';
 import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from '../renderer/event-control/constants';
 import {getEventControlConfig} from '../renderer/event-control/helper';
-import {getSchemaTpl, isObject, tipedLabel} from 'amis-editor-core';
-import type {BaseEventContext} from 'amis-editor-core';
+import {getSchemaTpl, isObject, tipedLabel} from '@/packages/amis-editor-core/src';
+import type {BaseEventContext} from '@/packages/amis-editor-core/src';
 import {getRendererByName} from 'amis-core';
 
 //Default action

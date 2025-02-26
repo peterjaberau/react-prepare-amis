@@ -6,14 +6,14 @@ import {
   tipedLabel,
   undefinedPipeOut,
   RAW_TYPE_MAP
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import type {
   EditorNodeType,
   RendererPluginAction,
   RendererPluginEvent,
   BaseEventContext,
   EditorManager
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 
 import {ValidatorTag} from '../../validator';
 import {

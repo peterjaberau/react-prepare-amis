@@ -8,7 +8,7 @@ import cx from 'classnames';
 import get from 'lodash/get';
 import Sortable from 'sortablejs';
 import {FormItem, Button, Icon, render as amisRender, toast} from 'amis';
-import {autobind} from 'amis-editor-core';
+import {autobind} from '@/packages/amis-editor-core/src';
 import type {Option} from 'amis';
 import {createObject, FormControlProps} from 'amis-core';
 import type {SchemaApi} from 'amis';

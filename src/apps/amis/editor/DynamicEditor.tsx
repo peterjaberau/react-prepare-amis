@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { DesktopOutlined, MobileOutlined } from "@ant-design/icons"
 import { alert, AlertComponent, confirm, SchemaObject, ToastComponent } from "amis"
-import { Editor, ShortcutKey } from "amis-editor-core"
+import { Editor, ShortcutKey } from "@/packages/amis-editor-core/src"
 import { copy, fetcher, notify } from "@/apps/amis/utils/amisEnvUtils"
 import "@/apps/amis/styles/editor.scss"
-import "amis-editor-core/lib/style.css";
+import "@/apps/amis/styles/lib/style.css"
 
 import "@/apps/amis/styles/cxd.css"
 import "@/apps/amis/styles/lib/helper.css"

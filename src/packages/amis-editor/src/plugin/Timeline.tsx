@@ -1,8 +1,8 @@
 import React from 'react';
 import {getEventControlConfig} from '../renderer/event-control/helper';
-import {tipedLabel} from 'amis-editor-core';
-import {registerEditorPlugin, getSchemaTpl, diff} from 'amis-editor-core';
-import {BasePlugin, BaseEventContext} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
+import {registerEditorPlugin, getSchemaTpl, diff} from '@/packages/amis-editor-core/src';
+import {BasePlugin, BaseEventContext} from '@/packages/amis-editor-core/src';
 import {schemaArrayFormat, schemaToArray} from '../util';
 
 export class TimelinePlugin extends BasePlugin {

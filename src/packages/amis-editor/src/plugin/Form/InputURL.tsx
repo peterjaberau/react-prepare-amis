@@ -1,4 +1,4 @@
-import {registerEditorPlugin} from 'amis-editor-core';
+import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {TextControlPlugin} from './InputText';
 
 export class URLControlPlugin extends TextControlPlugin {

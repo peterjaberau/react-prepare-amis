@@ -5,9 +5,9 @@
 import React from 'react';
 import {render as amisRender, FormItem} from 'amis';
 import type {SchemaApi} from 'amis';
-import {autobind, getSchemaTpl} from 'amis-editor-core';
+import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import cx from 'classnames';
-import {tipedLabel} from 'amis-editor-core';
+import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {FormControlProps} from 'amis-core';
 import type {Option} from 'amis';

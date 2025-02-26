@@ -3,7 +3,7 @@ import {
   getSchemaTpl,
   tipedLabel,
   BaseEventContext
-} from 'amis-editor-core';
+} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import {buildApi, Html} from 'amis';
 import get from 'lodash/get';
