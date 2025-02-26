@@ -3,7 +3,7 @@
  */
 import {hasIcon, mapObject, utils} from 'amis';
 import type {PlainObject, Schema, SchemaNode} from 'amis';
-import {getGlobalData} from 'amis-theme-editor-helper';
+import {getGlobalData} from '@/packages/amis-theme-editor-helper/src';
 import {
   mapTree,
   isExpression,

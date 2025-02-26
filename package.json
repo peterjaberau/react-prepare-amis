@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "tinycolor2": "^1.4.3",
     "tslib": "^2.8.1",
     "@ant-design/icons": "^5.5.1",
     "@ant-design/leva-panel": "^1.0.0",
@@ -27,8 +28,6 @@
     "@xstate/store": "^3.0.1",
     "amis": "6.10.0",
     "amis-core": "6.10.0",
-    "amis-editor": "6.10.0",
-    "amis-theme-editor-helper": "^2.0.26",
     "amis-ui": "6.10.0",
     "amis-formula": "^6.10.0",
     "antd": "5.23.0",
@@ -124,6 +123,7 @@
     "numfmt": "^2.5.2"
   },
   "devDependencies": {
+    "@types/tinycolor2": "^1.4.3",
     "@eslint/js": "^9.11.1",
     "@tailwindcss/typography": "^0.5.15",
     "@types/deep-diff": "^1.0.0",
@@ -205,7 +205,6 @@
     "immutable": "^4.1.0",
     "moment-timezone": "^0.5.34",
     "resize-observer-polyfill": "^1.5.1",
-    "@types/tinycolor2": "^1.4.3",
     "ajv": "^8.8.2",
     "css-loader": "^6.2.0",
     "faker": "^5.5.3",

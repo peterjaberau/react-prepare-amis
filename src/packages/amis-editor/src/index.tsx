@@ -63,7 +63,7 @@ import './renderer/InputRangeValueControl';
 import './renderer/FunctionEditorControl';
 import './renderer/ListItemControl';
 
-import 'amis-theme-editor-helper';
+import '@/packages/amis-theme-editor-helper/src';
 
 export * from './component/BaseControl';
 export * from './icons/index';
