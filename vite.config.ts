@@ -22,10 +22,14 @@ export default defineConfig({
     monacoEditorPluginDefault({}),
   ],
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
+    alias: [
+      { find: "@", replacement: path.resolve(__dirname, "src") },
+
+    ],
+
   },
+
+
   server: {
     host: "0.0.0.0",
     // port: 58760,

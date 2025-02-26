@@ -1,17 +1,17 @@
-import "@/amis/styles/editor.scss"
+import "@/apps/amis/styles/editor.scss"
 import "amis-editor-core/lib/style.css"
-import "@/amis/styles/antd.css"
-import "@/amis/styles/lib/helper.css"
-import "@/amis/styles/lib/iconfont.css"
+import "@/apps/amis/styles/antd.css"
+import "@/apps/amis/styles/lib/helper.css"
+import "@/apps/amis/styles/lib/iconfont.css"
 
 import React, { useEffect, useState } from "react"
 import { Flex, Card, ConfigProvider } from "antd"
 import { alert, confirm, SchemaObject } from "amis"
-import { copy, fetcher, notify } from "@/amis/amisEnvUtils"
+import { copy, fetcher, notify } from "@/apps/amis/utils/amisEnvUtils"
 import { createStyles } from "antd-style"
 
 import { MiniEditor } from "amis-editor"
-import { getPageById } from "@/amis/db/pages.ts"
+import { getPageById } from "@/apps/amis/store/pagesStore.ts"
 
 const amisEnv = {
   fetcher,
