@@ -14,7 +14,7 @@ import {
 } from 'amis';
 import {observer} from 'mobx-react';
 import {diff} from '../util';
-import {autobind, createObject} from 'amis-core';
+import {autobind, createObject} from '@/packages/amis-core/src';
 
 export interface ModalFormProps {
   store: EditorStoreType;

@@ -17,7 +17,7 @@ import {
   autobind,
   ucFirst,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 export type ValueType = string | number;
 

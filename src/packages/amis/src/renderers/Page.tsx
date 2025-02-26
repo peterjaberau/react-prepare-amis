@@ -5,9 +5,9 @@ import {
   RendererProps,
   filterTarget,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {observer} from 'mobx-react';
-import {ServiceStore, IServiceStore} from 'amis-core';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
 import {
   Api,
   SchemaNode,
@@ -16,18 +16,18 @@ import {
   ApiObject,
   FunctionPropertyNames,
   CustomStyle
-} from 'amis-core';
-import {filter, evalExpression} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter, evalExpression} from '@/packages/amis-core/src';
 import {
   isVisible,
   autobind,
   bulkBindFunctions,
   isObjectShallowModified,
   createObject
-} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import {Alert2 as Alert, SpinnerExtraProps} from '@/packages/amis-ui/src';
-import {isApiOutdated, isEffectiveApi} from 'amis-core';
+import {isApiOutdated, isEffectiveApi} from '@/packages/amis-core/src';
 import {Spinner} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
@@ -42,10 +42,10 @@ import {
 import {SchemaRemark} from './Remark';
 import {isAlive, onAction} from 'mobx-state-tree';
 import mapValues from 'lodash/mapValues';
-import {resolveVariable} from 'amis-core';
-import {buildStyle} from 'amis-core';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {buildStyle} from '@/packages/amis-core/src';
 import {PullRefresh} from '@/packages/amis-ui/src';
-import {scrollPosition, isMobile} from 'amis-core';
+import {scrollPosition, isMobile} from '@/packages/amis-core/src';
 
 /**
  * css 定义

@@ -6,7 +6,7 @@ import {
   tipedLabel,
   EditorManager
 } from '@/packages/amis-editor-core/src';
-import {render, type SchemaObject} from 'amis';
+import {render, type SchemaObject} from '@/packages/amis/src';
 import flatten from 'lodash/flatten';
 import {InputComponentName} from '../component/InputComponentName';
 import {FormulaDateType} from '../renderer/FormulaControl';
@@ -16,7 +16,7 @@ import reduce from 'lodash/reduce';
 import map from 'lodash/map';
 import omit from 'lodash/omit';
 import keys from 'lodash/keys';
-import type {Schema} from 'amis';
+import type {Schema} from '@/packages/amis/src';
 
 import type {DSField} from '../builder';
 

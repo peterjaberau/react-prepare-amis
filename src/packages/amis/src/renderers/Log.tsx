@@ -9,7 +9,7 @@ import {
   Renderer,
   RendererProps,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
 import {Icon, SearchBox, VirtualList} from '@/packages/amis-ui/src';
 

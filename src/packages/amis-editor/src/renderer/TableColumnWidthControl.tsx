@@ -5,8 +5,8 @@
 import React from 'react';
 import cx from 'classnames';
 import findIndex from 'lodash/findIndex';
-import {FormControlProps, FormItem, TreeSelection} from 'amis';
-import {toNumber} from 'amis-core';
+import {FormControlProps, FormItem, TreeSelection} from '@/packages/amis/src';
+import {toNumber} from '@/packages/amis-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 interface optionType {

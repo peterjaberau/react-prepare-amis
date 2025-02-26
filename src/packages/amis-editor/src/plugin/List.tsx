@@ -1,4 +1,4 @@
-import {Button, isObject} from 'amis';
+import {Button, isObject} from '@/packages/amis/src';
 import React from 'react';
 import {
   EditorNodeType,

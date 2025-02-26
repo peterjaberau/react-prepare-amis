@@ -10,9 +10,9 @@ import {
   LocaleProps,
   resolveEventData,
   TestIdBuilder
-} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
-import {autobind} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 import Select from './Select';
 

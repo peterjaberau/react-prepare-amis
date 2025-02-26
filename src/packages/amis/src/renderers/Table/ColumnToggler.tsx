@@ -2,22 +2,22 @@ import React from 'react';
 import {findDOMNode} from 'react-dom';
 import Sortable from 'sortablejs';
 import cloneDeep from 'lodash/cloneDeep';
-import {isMobile, RendererProps} from 'amis-core';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
+import {isMobile, RendererProps} from '@/packages/amis-core/src';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import {Modal} from '@/packages/amis-ui/src';
 import {Button} from '@/packages/amis-ui/src';
 import {Checkbox} from '@/packages/amis-ui/src';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
 
-import {noop, autobind, anyChanged, createObject} from 'amis-core';
-import {filter} from 'amis-core';
+import {noop, autobind, anyChanged, createObject} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {getIcon} from '@/packages/amis-ui/src';
-import {RootClose} from 'amis-core';
+import {RootClose} from '@/packages/amis-core/src';
 import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
-import {IColumn} from 'amis-core';
-import type {IColumn2} from 'amis-core';
+import {IColumn} from '@/packages/amis-core/src';
+import type {IColumn2} from '@/packages/amis-core/src';
 
 export interface ColumnTogglerProps extends RendererProps {
   /**

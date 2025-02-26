@@ -10,7 +10,7 @@ import {observer} from 'mobx-react';
 import {FormItem, Select, NumberInput} from 'amis';
 
 import type {PlainObject} from './types';
-import type {FormControlProps, RendererProps, SchemaNode} from 'amis-core';
+import type {FormControlProps, RendererProps, SchemaNode} from '@/packages/amis-core/src';
 
 const borderItems = [
   {

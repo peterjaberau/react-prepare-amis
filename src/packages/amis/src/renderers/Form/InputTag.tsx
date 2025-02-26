@@ -5,7 +5,7 @@ import {
   Option,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Downshift from 'downshift';
 import find from 'lodash/find';
 import isInteger from 'lodash/isInteger';
@@ -14,13 +14,13 @@ import compact from 'lodash/compact';
 import uniq from 'lodash/uniq';
 import {findDOMNode} from 'react-dom';
 import {PopUp, ResultBox, SpinnerExtraProps} from '@/packages/amis-ui/src';
-import {autobind, filterTree, createObject} from 'amis-core';
+import {autobind, filterTree, createObject} from '@/packages/amis-core/src';
 import {Spinner} from '@/packages/amis-ui/src';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import {ListMenu, Button} from '@/packages/amis-ui/src';
-import {ActionObject} from 'amis-core';
-import {isMobile} from 'amis-core';
+import {ActionObject} from '@/packages/amis-core/src';
+import {isMobile} from '@/packages/amis-core/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import {TooltipWrapperSchema} from '../TooltipWrapper';

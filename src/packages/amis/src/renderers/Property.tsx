@@ -3,11 +3,11 @@
  */
 
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaExpression, SchemaObject, SchemaTpl} from '../Schema';
-import {resolveVariableAndFilter} from 'amis-core';
-import {visibilityFilter} from 'amis-core';
-import {buildStyle} from 'amis-core';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {visibilityFilter} from '@/packages/amis-core/src';
+import {buildStyle} from '@/packages/amis-core/src';
 
 export type PropertyItemProps = {
   /**

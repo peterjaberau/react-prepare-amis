@@ -5,8 +5,8 @@ import {
   RendererProps,
   resolveEventData,
   setThemeClassName
-} from 'amis-core';
-import {ActionObject, isGlobalVarExpression} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ActionObject, isGlobalVarExpression} from '@/packages/amis-core/src';
 import find from 'lodash/find';
 import {
   isVisible,
@@ -16,7 +16,7 @@ import {
   createObject,
   getVariable,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import findIndex from 'lodash/findIndex';
 import {Tabs as CTabs, Tab} from '@/packages/amis-ui/src';
 import {
@@ -28,11 +28,11 @@ import {
   SchemaObject
 } from '../Schema';
 import {ActionSchema} from './Action';
-import {filter} from 'amis-core';
-import {resolveVariableAndFilter} from 'amis-core';
-import {FormHorizontal} from 'amis-core';
-import {str2AsyncFunction} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {FormHorizontal} from '@/packages/amis-core/src';
+import {str2AsyncFunction} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import type {TabsMode} from '@/packages/amis-ui/src/components/Tabs';
 import isNaN from 'lodash/isNaN';
 

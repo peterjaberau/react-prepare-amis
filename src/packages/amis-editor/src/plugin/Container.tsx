@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'amis';
+import {Button} from '@/packages/amis/src';
 import {Icon} from '@/packages/amis-editor-core/src';
 import {
   ActiveEventContext,

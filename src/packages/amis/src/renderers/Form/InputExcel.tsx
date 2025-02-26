@@ -13,7 +13,7 @@ import {
   dataMapping,
   TestIdBuilder,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {FormBaseControlSchema, SchemaTokenizeableString} from '../../Schema';
 import type {CellValue, CellRichTextValue} from 'exceljs';
 

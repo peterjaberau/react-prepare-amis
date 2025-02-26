@@ -16,7 +16,7 @@ import {
   Icon,
   RendererProps,
   normalizeApi
-} from 'amis';
+} from '@/packages/amis/src';
 // @ts-ignore
 import {value2array} from '@/packages/amis-ui/src/components/Select';
 
@@ -24,10 +24,10 @@ import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {Option} from 'amis';
-import {createObject, FormControlProps} from 'amis-core';
-import type {OptionValue} from 'amis-core';
-import type {SchemaApi} from 'amis';
+import type {Option} from '@/packages/amis/src';
+import {createObject, FormControlProps} from '@/packages/amis-core/src';
+import type {OptionValue} from '@/packages/amis-core/src';
+import type {SchemaApi} from '@/packages/amis/src';
 import debounce from 'lodash/debounce';
 import {valueType} from './ValueFormatControl';
 import {getOwnValue} from '../util';

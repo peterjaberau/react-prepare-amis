@@ -7,9 +7,9 @@ import isEqual from 'lodash/isEqual';
 import omit from 'lodash/omit';
 
 import {Option, Options} from './Select';
-import {ThemeProps, themeable} from 'amis-core';
-import {autobind, noop} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
+import {autobind, noop} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import {BaseSelectionProps} from './Selection';
 import Tree from './Tree';
 import TransferSearch from './TransferSearch';

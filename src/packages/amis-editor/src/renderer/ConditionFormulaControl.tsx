@@ -8,9 +8,9 @@ import {
   autobind,
   FormControlProps,
   flattenTree
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {FormItem, Button, PickerContainer, ConditionBuilderFields} from 'amis';
+import {FormItem, Button, PickerContainer, ConditionBuilderFields} from '@/packages/amis/src';
 import {reaction} from 'mobx';
 import {getConditionVariables} from '@/packages/amis-editor-core/src';
 

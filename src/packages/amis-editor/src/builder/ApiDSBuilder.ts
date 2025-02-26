@@ -10,8 +10,8 @@ import uniq from 'lodash/uniq';
 import omit from 'lodash/omit';
 import intersection from 'lodash/intersection';
 import isFunction from 'lodash/isFunction';
-import {isObject} from 'amis-core';
-import {toast} from 'amis';
+import {isObject} from '@/packages/amis-core/src';
+import {toast} from '@/packages/amis/src';
 import {
   getSchemaTpl,
   tipedLabel,
@@ -23,9 +23,9 @@ import {FormOperatorMap, DSFeatureEnum, DSFeature} from './constants';
 import {traverseSchemaDeep, displayType2inputType} from './utils';
 
 // @ts-ignore
-import type {ColumnSchema} from 'amis/lib/renderers/Table2';
+import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';
 import type {EditorNodeType} from '@/packages/amis-editor-core/src';
-import type {ButtonSchema} from 'amis';
+import type {ButtonSchema} from '@/packages/amis/src';
 import type {
   DSRendererType,
   DSFeatureType,

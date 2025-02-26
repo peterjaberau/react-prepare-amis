@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import {FormItem} from 'amis';
+import {FormItem} from '@/packages/amis/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import set from 'lodash/set';
 import get from 'lodash/get';
 

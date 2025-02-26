@@ -9,28 +9,28 @@ import {
   setThemeClassName,
   PlainObject,
   localeFormatter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 // import 'cropperjs/dist/cropper.css';
 const Cropper = React.lazy(() => import('react-cropper'));
 import DropZone from 'react-dropzone';
 import {FileRejection, ErrorCode, DropEvent} from 'react-dropzone';
 import 'blueimp-canvastoblob';
 import find from 'lodash/find';
-import {Payload, ActionObject} from 'amis-core';
+import {Payload, ActionObject} from '@/packages/amis-core/src';
 import {
   buildApi,
   isEffectiveApi,
   normalizeApi,
   isApiOutdated,
   isApiOutdatedWithData
-} from 'amis-core';
-import {createObject, qsstringify, guid, isEmpty, qsparse} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {createObject, qsstringify, guid, isEmpty, qsparse} from '@/packages/amis-core/src';
 import {Icon, TooltipWrapper, Button} from '@/packages/amis-ui/src';
 import accepts from 'attr-accept';
 import {getNameFromUrl} from './InputFile';
 import ImageComponent, {ImageThumbProps} from '../Image';
-import {TranslateFn} from 'amis-core';
-import {dataMapping} from 'amis-core';
+import {TranslateFn} from '@/packages/amis-core/src';
+import {dataMapping} from '@/packages/amis-core/src';
 import {
   FormBaseControlSchema,
   SchemaApi,
@@ -38,7 +38,7 @@ import {
   SchemaTokenizeableString,
   SchemaUrlPath
 } from '../../Schema';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import isPlainObject from 'lodash/isPlainObject';
 import merge from 'lodash/merge';
 import omit from 'lodash/omit';

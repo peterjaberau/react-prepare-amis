@@ -5,7 +5,7 @@
 
 import React from 'react';
 import Draggable from 'react-draggable';
-import {localeable, LocaleProps, themeable, ThemeProps} from 'amis-core';
+import {localeable, LocaleProps, themeable, ThemeProps} from '@/packages/amis-core/src';
 
 import type {
   DraggableEvent,

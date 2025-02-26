@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 /**

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon} from 'amis';
+import {Icon} from '@/packages/amis/src';
 import {
   BuildPanelEventContext,
   BasePlugin,

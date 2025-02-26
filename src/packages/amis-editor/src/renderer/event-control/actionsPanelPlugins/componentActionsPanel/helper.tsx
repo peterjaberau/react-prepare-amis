@@ -1,5 +1,5 @@
 import {JSONGetById, EditorManager} from '@/packages/amis-editor-core/src';
-import {DataSchema} from 'amis-core';
+import {DataSchema} from '@/packages/amis-core/src';
 import CmptActionSelect from '../../comp-action-select';
 
 // Pull down to display the range of assignable attributes

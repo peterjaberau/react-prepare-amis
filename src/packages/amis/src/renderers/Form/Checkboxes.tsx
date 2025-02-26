@@ -11,12 +11,12 @@ import {
   CustomStyle,
   setThemeClassName,
   formateCheckThemeCss
-} from 'amis-core';
-import type {ActionObject, Api, OptionsControlProps, Option} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {ActionObject, Api, OptionsControlProps, Option} from '@/packages/amis-core/src';
 import {Checkbox, Icon, Spinner} from '@/packages/amis-ui/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 import debounce from 'lodash/debounce';
 
 /**

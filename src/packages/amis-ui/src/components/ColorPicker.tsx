@@ -8,13 +8,13 @@ import React from 'react';
 import {findDOMNode} from 'react-dom';
 import {SketchPicker, GithubPicker, ColorResult} from 'react-color';
 import {Icon} from './icons';
-import {Overlay} from 'amis-core';
-import {uncontrollable} from 'amis-core';
-import {PopOver} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {autobind, isObject} from 'amis-core';
-import {localeable, LocaleProps} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind, isObject} from '@/packages/amis-core/src';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
 
 export type PresetColor = {color: string; title: string} | string;
 

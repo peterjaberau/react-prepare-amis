@@ -4,15 +4,15 @@ import {
   RendererProps,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
-import {filter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {
   resolveVariable,
   isPureVariable,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Image, {ImageThumbProps, imagePlaceholder} from './Image';
-import {autobind, getPropValue} from 'amis-core';
+import {autobind, getPropValue} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName, SchemaUrlPath} from '../Schema';
 import type {ImageToolbarAction} from './Image';
 

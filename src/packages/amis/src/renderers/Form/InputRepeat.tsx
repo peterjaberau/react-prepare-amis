@@ -7,8 +7,8 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {isMobile} from 'amis-core';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
 
 /**
  * Repeat
@@ -34,7 +34,7 @@ const LANG: {
 };
 import {Select} from '@/packages/amis-ui/src';
 import {Range as InputRange} from '@/packages/amis-ui/src';
-import {Option} from 'amis-core';
+import {Option} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 export interface RepeatProps extends FormControlProps {

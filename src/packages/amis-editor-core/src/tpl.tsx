@@ -1,4 +1,4 @@
-import type {SchemaObject} from 'amis';
+import type {SchemaObject} from '@/packages/amis/src';
 
 /**
  * @file amis schema configuration template, mainly many places need to be fully configured,

@@ -2,9 +2,9 @@
  * @file 用来展示颜色块。
  */
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 
 /**
  * Color 显示渲染器，格式说明。

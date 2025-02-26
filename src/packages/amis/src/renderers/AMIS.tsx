@@ -3,7 +3,7 @@ import {
   RendererProps,
   SchemaClassName,
   getPropValue
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
 import {
   BaseSchema,
@@ -11,7 +11,7 @@ import {
   SchemaCollection,
   SchemaIcon
 } from '../Schema';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 /**
  * 渲染数据里的 amis schema

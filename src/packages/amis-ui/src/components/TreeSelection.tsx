@@ -1,12 +1,12 @@
 import {BaseSelection, BaseSelectionProps} from './Selection';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import React from 'react';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {Option} from './Select';
-import {autobind, eachTree, everyTree} from 'amis-core';
+import {autobind, eachTree, everyTree} from '@/packages/amis-core/src';
 import Spinner, {SpinnerExtraProps} from './Spinner';
-import {localeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 export interface TreeSelectionProps

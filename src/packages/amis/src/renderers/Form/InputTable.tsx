@@ -31,7 +31,7 @@ import {
   everyTree,
   findTreeIndex,
   applyFilters
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Button, Icon} from '@/packages/amis-ui/src';
 import omit from 'lodash/omit';
 import findIndex from 'lodash/findIndex';
@@ -40,7 +40,7 @@ import {SchemaApi, SchemaCollection, SchemaClassName} from '../../Schema';
 import find from 'lodash/find';
 import debounce from 'lodash/debounce';
 import moment from 'moment';
-import {sortArray, str2function} from 'amis-core';
+import {sortArray, str2function} from '@/packages/amis-core/src';
 
 import type {SchemaTokenizeableString} from '../../Schema';
 

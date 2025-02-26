@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThemeProps, autobind, createObject, filter} from 'amis-core';
+import {ThemeProps, autobind, createObject, filter} from '@/packages/amis-core/src';
 import Tabs, {Tab} from './Tabs';
 import InputBox from './InputBox';
 import TableCheckboxes from './TableSelection';
@@ -8,9 +8,9 @@ import ChainedCheckboxes from './ChainedSelection';
 import ListCheckboxes from './GroupedSelection';
 import {Options, Option} from './Select';
 import Transfer, {TransferProps} from './Transfer';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import AssociatedCheckboxes from './AssociatedSelection';
-import {localeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
 import {ItemRenderStates} from './Selection';
 import {Icon} from './icons';
 import debounce from 'lodash/debounce';

@@ -1,4 +1,4 @@
-import {FormControlProps, FormItem} from 'amis-core';
+import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 import {Select} from '@/packages/amis-ui/src';
 import React from 'react';
 

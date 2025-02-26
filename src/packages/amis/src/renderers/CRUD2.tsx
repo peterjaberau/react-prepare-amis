@@ -32,7 +32,7 @@ import {
   resolveVariableAndFilter,
   parsePrimitiveQueryString,
   JSONTraverse
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import pickBy from 'lodash/pickBy';
 import {Html, PullRefresh, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {

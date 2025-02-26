@@ -2,7 +2,7 @@
  * @file icon button group
  */
 import React from 'react';
-import {FormItem, Button, Icon, hasIcon, FormControlProps} from 'amis';
+import {FormItem, Button, Icon, hasIcon, FormControlProps} from '@/packages/amis/src';
 import cx from 'classnames';
 
 export interface ButtonGroupControlProps extends FormControlProps {

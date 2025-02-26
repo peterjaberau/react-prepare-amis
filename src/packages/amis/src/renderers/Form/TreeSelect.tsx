@@ -7,8 +7,8 @@ import {
   hasAbility,
   resolveEventData,
   setThemeClassName
-} from 'amis-core';
-import {PopOver} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import {PopUp, SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 import {
@@ -17,25 +17,25 @@ import {
   Option,
   toNumber,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import {Tree as TreeSelector} from '@/packages/amis-ui/src';
 import {matchSorter} from 'match-sorter';
 import debouce from 'lodash/debounce';
 import find from 'lodash/find';
-import {Api} from 'amis-core';
-import {isEffectiveApi} from 'amis-core';
+import {Api} from '@/packages/amis-core/src';
+import {isEffectiveApi} from '@/packages/amis-core/src';
 import {Spinner} from '@/packages/amis-ui/src';
 import {ResultBox} from '@/packages/amis-ui/src';
-import {autobind, getTreeAncestors, isMobile, createObject} from 'amis-core';
+import {autobind, getTreeAncestors, isMobile, createObject} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
-import {normalizeOptions} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {normalizeOptions} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {FormOptionsSchema, SchemaApi, SchemaCollection} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import {TooltipWrapperSchema} from '../TooltipWrapper';
 import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 type NodeBehaviorType = 'unfold' | 'check';
 

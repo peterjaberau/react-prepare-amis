@@ -1,4 +1,4 @@
-import 'amis';
+import '@/packages/amis/src';
 export * from './locale/index';
 export * from '@/packages/amis-editor-core/src';
 export * from './builder';

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Renderer} from 'amis-core';
+import {Renderer} from '@/packages/amis-core/src';
 import {SchemaObject, BaseSchema} from '../Schema';
 import {DateControlRenderer} from './Form/InputDate';
-import type {SchemaClassName} from 'amis-core';
+import type {SchemaClassName} from '@/packages/amis-core/src';
 
 interface scheduleItem {
   startTime: string;

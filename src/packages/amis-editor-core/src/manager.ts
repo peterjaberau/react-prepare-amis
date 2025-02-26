@@ -8,7 +8,7 @@ import {parse, stringify} from 'json-ast-comments';
 import debounce from 'lodash/debounce';
 import findIndex from 'lodash/findIndex';
 import omit from 'lodash/omit';
-import {openContextMenus, toast, alert, DataScope, DataSchema} from 'amis';
+import {openContextMenus, toast, alert, DataScope, DataSchema} from '@/packages/amis/src';
 import {
   getRenderers,
   RenderOptions,
@@ -16,7 +16,7 @@ import {
   wrapFetcher,
   GlobalVariableItem,
   setVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   PluginInterface,
   BasicPanelItem,
@@ -78,10 +78,10 @@ import {EditorProps} from './component/Editor';
 import {EditorDNDManager} from './dnd';
 import {VariableManager} from './variable';
 
-import type {IScopedContext} from 'amis';
-import type {SchemaObject, SchemaCollection} from 'amis';
-import type {Api, Payload, RendererConfig, RendererEnv} from 'amis-core';
-import {loadAsyncRenderer} from 'amis-core';
+import type {IScopedContext} from '@/packages/amis/src';
+import type {SchemaObject, SchemaCollection} from '@/packages/amis/src';
+import type {Api, Payload, RendererConfig, RendererEnv} from '@/packages/amis-core/src';
+import {loadAsyncRenderer} from '@/packages/amis-core/src';
 import {startInlineEdit} from './inlineEdit';
 
 export interface EditorManagerConfig

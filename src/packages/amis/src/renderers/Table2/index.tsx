@@ -35,7 +35,7 @@ import {
   getPropValue,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon, Table, BadgeObject, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import type {
   SortProps,
@@ -59,7 +59,7 @@ import './TableCell';
 import './ColumnToggler';
 import {SchemaQuickEdit} from '../QuickEdit';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 /**
  * Table 表格2渲染器。

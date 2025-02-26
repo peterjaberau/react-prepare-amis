@@ -6,8 +6,8 @@
  */
 
 import React from 'react';
-import {FormItem} from 'amis';
-import type {FormControlProps} from 'amis';
+import {FormItem} from '@/packages/amis/src';
+import type {FormControlProps} from '@/packages/amis/src';
 
 export interface valueFormatControlProps extends FormControlProps {
   supportNumberType: boolean; // Whether to support number type, supported by default

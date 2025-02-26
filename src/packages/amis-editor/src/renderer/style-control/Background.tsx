@@ -11,7 +11,7 @@ import React, {useState, useEffect} from 'react';
 
 import {FormItem} from 'amis';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 interface BackgroundProps extends FormControlProps {

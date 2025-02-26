@@ -4,22 +4,22 @@
  */
 
 import React from 'react';
-import {eachTree, Payload, themeable, ThemeProps} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {eachTree, Payload, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import ResultBox from './ResultBox';
-import type {Option} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
 import Sortable from 'sortablejs';
 import PopUp from './PopUp';
 import InputBox from './InputBox';
 import {Icon} from './icons';
 import debounce from 'lodash/debounce';
-import {autobind, findTree} from 'amis-core';
+import {autobind, findTree} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {optionValueCompare, value2array} from './Select';
 import Spinner, {SpinnerExtraProps} from './Spinner';
 import flatten from 'lodash/flatten';
 import {findDOMNode} from 'react-dom';
-import {Api, PlainObject} from 'amis-core';
+import {Api, PlainObject} from '@/packages/amis-core/src';
 
 export interface UserSelectProps
   extends ThemeProps,

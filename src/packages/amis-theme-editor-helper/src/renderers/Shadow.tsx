@@ -6,8 +6,8 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 import cx from 'classnames';
-import {FormItem, PlainObject, render} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+import {FormItem, PlainObject, render} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {ShadowData} from '../helper/declares';
 import {NumberInput, Overlay, PopOver, Select} from '@/packages/amis-ui/src';
 import cloneDeep from 'lodash/cloneDeep';

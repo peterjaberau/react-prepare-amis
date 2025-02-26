@@ -1,15 +1,15 @@
 /**
  * @file Function class function collection.
  */
-import {hasIcon, mapObject, utils} from 'amis';
-import type {PlainObject, Schema, SchemaNode} from 'amis';
+import {hasIcon, mapObject, utils} from '@/packages/amis/src';
+import type {PlainObject, Schema, SchemaNode} from '@/packages/amis/src';
 import {getGlobalData} from '@/packages/amis-theme-editor-helper/src';
 import {
   mapTree,
   isExpression,
   resolveVariableAndFilter,
   filterTree
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import type {VariableItem} from '@/packages/amis-ui/src';
 import {isObservable, reaction} from 'mobx';
 import DeepDiff, {Diff} from 'deep-diff';
@@ -23,11 +23,11 @@ import merge from 'lodash/merge';
 import {EditorModalBody} from './store/editor';
 import {filter} from 'lodash';
 // @ts-ignore
-import type {SchemaType} from 'amis/lib/Schema';
+import type {SchemaType} from '@/packages/amis/src/Schema';
 // @ts-ignore
-import type {DialogSchema} from 'amis/lib/renderers/Dialog';
+import type {DialogSchema} from '@/packages/amis/src/renderers/Dialog';
 // @ts-ignore
-import type {DrawerSchema} from 'amis/lib/renderers/Drawer';
+import type {DrawerSchema} from '@/packages/amis/src/renderers/Drawer';
 
 const {
   guid,

@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import {matchSorter} from 'match-sorter';
-import {FormItem, FormControlProps, autobind} from 'amis-core';
+import {FormItem, FormControlProps, autobind} from '@/packages/amis-core/src';
 import {
   Modal,
   Button,

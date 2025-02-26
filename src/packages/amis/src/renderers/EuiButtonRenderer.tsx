@@ -1,7 +1,7 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import type {BaseSchema, SchemaCollection} from 'amis';
-import {MyEuiButton} from 'amis-ui';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import type {BaseSchema, SchemaCollection} from '@/packages/amis/src';
+import {MyEuiButton} from '@/packages/amis-ui/src';
 
 export interface EuiButtonSchema extends BaseSchema {
   id?: string;

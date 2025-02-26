@@ -5,11 +5,11 @@
 import React, {MouseEvent} from 'react';
 import cx from 'classnames';
 import {Icon, FormItem, TooltipWrapper, Spinner} from 'amis';
-import {autobind, FormControlProps, render as renderAmis} from 'amis-core';
+import {autobind, FormControlProps, render as renderAmis} from '@/packages/amis-core/src';
 import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
 import {FormulaPlugin, editorFactory} from './plugin';
 import {Button, Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
-import {RootClose, isMobile} from 'amis-core';
+import {RootClose, isMobile} from '@/packages/amis-core/src';
 import FormulaPicker, {CustomFormulaPickerProps} from './FormulaPicker';
 import {reaction} from 'mobx';
 import {renderFormulaValue} from '../FormulaControl';

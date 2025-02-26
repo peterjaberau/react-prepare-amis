@@ -14,13 +14,13 @@ import {
   findTree,
   filterTree,
   noop
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {matchSorter} from 'match-sorter';
 
 import {Icon} from './icons';
 import SearchBox from './SearchBox';
 import {Option} from './Select';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface DropDownSelectionProps
   extends ThemeProps,

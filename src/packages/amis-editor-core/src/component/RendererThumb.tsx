@@ -1,5 +1,5 @@
-import type {Schema} from 'amis-core';
-import {LazyComponent} from 'amis-core';
+import type {Schema} from '@/packages/amis-core/src';
+import {LazyComponent} from '@/packages/amis-core/src';
 import React from 'react';
 import {resizeSensor, render, Icon} from 'amis';
 

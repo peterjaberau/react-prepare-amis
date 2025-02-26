@@ -3,7 +3,7 @@
  * Provides two editing modes: plain text and rich text
  * Support setting cursor by mouse click position
  */
-import {guid} from 'amis-core';
+import {guid} from '@/packages/amis-core/src';
 import {InlineEditableElement} from './plugin';
 import {EditorNodeType} from './store/node';
 import keycode from 'keycode';

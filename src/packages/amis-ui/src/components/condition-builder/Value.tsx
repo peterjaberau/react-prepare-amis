@@ -6,14 +6,14 @@ import {
   localeable,
   LocaleProps,
   autobind
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import InputBox from '../InputBox';
 import NumberInput from '../NumberInput';
 import DatePicker from '../DatePicker';
 import {SelectWithRemoteOptions as Select} from '../Select';
 import Switch from '../Switch';
 import {FormulaPicker, FormulaPickerProps} from '../formula/Picker';
-import type {OperatorType, TestIdBuilder} from 'amis-core';
+import type {OperatorType, TestIdBuilder} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 
 export interface ValueProps extends ThemeProps, LocaleProps {

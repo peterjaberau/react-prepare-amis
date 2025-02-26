@@ -5,9 +5,9 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
-import {autobind, createObject, filter, toNumber} from 'amis-core';
-import {ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {autobind, createObject, filter, toNumber} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {Rating} from '@/packages/amis-ui/src';
 import type {textPositionType} from '@/packages/amis-ui/src/components/Rating';
 import {FormBaseControlSchema} from '../../Schema';

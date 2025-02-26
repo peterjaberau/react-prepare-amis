@@ -5,11 +5,11 @@ import {
   normalizeDate,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import moment, {Moment} from 'moment';
 import 'moment-timezone';
 import {BaseSchema} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 
 /**
  * Date 展示渲染器。

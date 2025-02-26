@@ -1,4 +1,4 @@
-import {SparkLine} from 'amis-ui';
+import {SparkLine} from '@/packages/amis-ui/src';
 import {
   Renderer,
   RendererProps,
@@ -6,9 +6,9 @@ import {
   createObject,
   getPropValue,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
-import {resolveVariableAndFilter} from 'amis-core';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName} from '../Schema';
 import {ActionSchema} from './Action';
 

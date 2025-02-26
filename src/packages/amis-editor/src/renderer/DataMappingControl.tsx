@@ -1,5 +1,5 @@
-import {Renderer} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import {Renderer} from '@/packages/amis/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import React from 'react';
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 

@@ -4,19 +4,19 @@
  */
 
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import ResultBox from './ResultBox';
 import UserSelect from './UserSelect';
-import type {Option} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
 import Sortable from 'sortablejs';
 import PopUp from './PopUp';
 import {Icon} from './icons';
-import {autobind, findTree} from 'amis-core';
+import {autobind, findTree} from '@/packages/amis-core/src';
 import {default as Tabs, Tab} from './Tabs';
 import {UserSelectProps} from './UserSelect';
-import type {PlainObject} from 'amis-core';
-import {resolveVariableAndFilter} from 'amis-core';
+import type {PlainObject} from '@/packages/amis-core/src';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 export interface UserSelectTop extends UserSelectProps {
   title: string;

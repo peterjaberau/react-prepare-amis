@@ -16,7 +16,7 @@ import {
   EditorManager,
   RAW_TYPE_MAP
 } from '@/packages/amis-editor-core/src';
-import {someTree} from 'amis-core';
+import {someTree} from '@/packages/amis-core/src';
 import type {SchemaType} from 'amis';
 import {isObject} from 'amis';
 import set from 'lodash/set';

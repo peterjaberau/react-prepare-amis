@@ -7,14 +7,14 @@ import {
   tipedLabel,
   JSONPipeOut
 } from '@/packages/amis-editor-core/src';
-import {findObjectsWithKey} from 'amis-core';
+import {findObjectsWithKey} from '@/packages/amis-core/src';
 import {Button, Icon} from '@/packages/amis-ui/src';
-import type {SchemaObject} from 'amis';
+import type {SchemaObject} from '@/packages/amis/src';
 import assign from 'lodash/assign';
 import cloneDeep from 'lodash/cloneDeep';
 import omit from 'lodash/omit';
 
-import type {RendererProps} from 'amis';
+import type {RendererProps} from '@/packages/amis/src';
 import type {EditorManager} from '@/packages/amis-editor-core/src';
 
 setSchemaTpl('options', () => {

@@ -2,8 +2,8 @@
  * Theme inner and outer margins
  */
 
-import {FormItem} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+import {FormItem} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {Overlay, PopOver} from '@/packages/amis-ui/src';
 import React, {useEffect, useState} from 'react';
 import cx from 'classnames';

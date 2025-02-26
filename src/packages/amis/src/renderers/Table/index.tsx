@@ -45,7 +45,7 @@ import {
   resolveVariableAndFilterForAsync,
   getMatchedEventTargets,
   loopTooMuch
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   Button,
   Icon,
@@ -76,7 +76,7 @@ import {exportExcel} from './exportExcel';
 import AutoFilterForm from './AutoFilterForm';
 import Cell from './Cell';
 
-import type {IColumn, IRow} from 'amis-core';
+import type {IColumn, IRow} from '@/packages/amis-core/src';
 
 /**
  * 表格列，不指定类型时默认为文本类型。

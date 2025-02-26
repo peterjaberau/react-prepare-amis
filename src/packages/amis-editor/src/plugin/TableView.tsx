@@ -18,7 +18,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {VRenderer} from '@/packages/amis-editor-core/src';
-import {type TableViewSchema} from 'amis';
+import {type TableViewSchema} from '@/packages/amis/src';
 import {JSONGetById} from '@/packages/amis-editor-core/src';
 import {TableViewEditor} from '../component/TableViewEditor';
 import {generateId} from '../util';

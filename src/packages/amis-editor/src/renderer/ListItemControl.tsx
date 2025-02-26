@@ -7,11 +7,11 @@ import {findDOMNode} from 'react-dom';
 import cx from 'classnames';
 import get from 'lodash/get';
 import Sortable from 'sortablejs';
-import {FormItem, Button, Icon, render as amisRender, toast} from 'amis';
+import {FormItem, Button, Icon, render as amisRender, toast} from '@/packages/amis/src';
 import {autobind} from '@/packages/amis-editor-core/src';
-import type {Option} from 'amis';
-import {createObject, FormControlProps} from 'amis-core';
-import type {SchemaApi} from 'amis';
+import type {Option} from '@/packages/amis/src';
+import {createObject, FormControlProps} from '@/packages/amis-core/src';
+import type {SchemaApi} from '@/packages/amis/src';
 import type {PlainObject} from './style-control/types';
 
 export type valueType = 'text' | 'boolean' | 'number';

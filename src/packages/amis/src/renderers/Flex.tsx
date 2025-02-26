@@ -9,8 +9,8 @@ import {
   RendererProps,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
-import {Schema} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Schema} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection, SchemaObject} from '../Schema';
 
 /**

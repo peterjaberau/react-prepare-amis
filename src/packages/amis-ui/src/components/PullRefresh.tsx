@@ -5,11 +5,11 @@
  */
 
 import React, {forwardRef, useEffect} from 'react';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 import {useOnScreen, useSetState} from '../hooks';
 import useTouch from '../hooks/use-touch';
 import {Icon} from './icons';
-import {TranslateFn} from 'amis-core';
+import {TranslateFn} from '@/packages/amis-core/src';
 
 export interface PullRefreshProps {
   classnames: ClassNamesFn;

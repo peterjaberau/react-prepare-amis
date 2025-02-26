@@ -9,8 +9,8 @@ import {
   isEffectiveApi,
   ApiObject,
   autobind
-} from 'amis-core';
-import {RemoteOptionsProps, withRemoteConfig, Timeline} from 'amis-ui';
+} from '@/packages/amis-core/src';
+import {RemoteOptionsProps, withRemoteConfig, Timeline} from '@/packages/amis-ui/src';
 
 import type {
   BaseSchema,
@@ -18,7 +18,7 @@ import type {
   SchemaCollection,
   SchemaTokenizeableString
 } from '../Schema';
-import type {IconCheckedSchema} from 'amis-ui';
+import type {IconCheckedSchema} from '@/packages/amis-ui/src';
 
 export interface TimelineItemSchema extends Omit<BaseSchema, 'type'> {
   /**

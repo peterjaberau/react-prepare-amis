@@ -9,14 +9,14 @@ import {
   createObject,
   evalExpression,
   ConditionRule
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   FormBaseControlSchema,
   SchemaApi,
   SchemaTokenizeableString
 } from '../../Schema';
 
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 import {
   ConditionBuilderFields,
   ConditionBuilderFuncs,
@@ -27,7 +27,7 @@ import {
 } from '@/packages/amis-ui/src';
 
 import {IconSchema} from '../Icon';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 import type {InputFormulaControlSchema} from './InputFormula';
 
 /**

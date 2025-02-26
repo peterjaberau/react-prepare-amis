@@ -5,13 +5,13 @@ import {
   Renderer,
   RendererProps,
   setThemeClassName
-} from 'amis-core';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
-import {TooltipWrapper} from 'amis-ui';
-import {isDisabled, isVisible, noop, filterClassNameObject} from 'amis-core';
-import {filter} from 'amis-core';
-import {Icon, hasIcon} from 'amis-ui';
+} from '@/packages/amis-core/src';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
+import {isDisabled, isVisible, noop, filterClassNameObject} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
+import {Icon, hasIcon} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaClassName,
@@ -20,13 +20,13 @@ import {
 } from '../Schema';
 import {ActionSchema} from './Action';
 import {DividerSchema} from './Divider';
-import {RootClose} from 'amis-core';
+import {RootClose} from '@/packages/amis-core/src';
 import type {
   TooltipObject,
   Trigger
 } from '@/packages/amis-ui/src/components/TooltipWrapper';
-import {resolveVariableAndFilter} from 'amis-core';
-import {isMobile} from 'amis-core';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {isMobile} from '@/packages/amis-core/src';
 
 export type DropdownButton =
   | (ActionSchema & {children?: Array<DropdownButton>})

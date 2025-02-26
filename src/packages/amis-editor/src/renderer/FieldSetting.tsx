@@ -8,7 +8,7 @@ import {reaction} from 'mobx';
 import pick from 'lodash/pick';
 import isEqual from 'lodash/isEqual';
 import debounce from 'lodash/debounce';
-import {isObject} from 'amis-core';
+import {isObject} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
 import {
   FormItem,
@@ -16,7 +16,7 @@ import {
   autobind,
   isValidApi,
   normalizeApi
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Button, toast} from '@/packages/amis-ui/src';
 import {DSFeatureEnum} from '../builder/constants';
 

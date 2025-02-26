@@ -10,7 +10,7 @@ import {
   setThemeClassName,
   TestIdBuilder,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {NumberInput, Select} from '@/packages/amis-ui/src';
 import {
@@ -23,7 +23,7 @@ import {
   Option,
   PlainObject,
   ActionObject
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

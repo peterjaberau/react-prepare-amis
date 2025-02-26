@@ -1,5 +1,5 @@
 import React from 'react';
-import {Renderer, isVisible, ClassNamesFn} from 'amis-core';
+import {Renderer, isVisible, ClassNamesFn} from '@/packages/amis-core/src';
 import {Checkbox} from '@/packages/amis-ui/src';
 
 import ColumnToggler, {ColumnTogglerProps} from '../Table/ColumnToggler';

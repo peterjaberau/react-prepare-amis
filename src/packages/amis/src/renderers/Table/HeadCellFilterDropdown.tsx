@@ -15,10 +15,10 @@ import {
   resolveVariableAndFilter,
   noop,
   autobind
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Checkbox, Icon, SearchBox} from '@/packages/amis-ui/src';
 
-import type {RendererProps, Option} from 'amis-core';
+import type {RendererProps, Option} from '@/packages/amis-core/src';
 import {matchSorter} from 'match-sorter';
 
 export interface QuickFilterConfig {

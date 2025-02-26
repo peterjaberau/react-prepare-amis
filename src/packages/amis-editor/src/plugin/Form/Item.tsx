@@ -23,7 +23,7 @@ import {
   isExpression,
   resolveVariableAndFilter,
   getRendererByName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 export class ItemPlugin extends BasePlugin {
   static id = 'ItemPlugin';

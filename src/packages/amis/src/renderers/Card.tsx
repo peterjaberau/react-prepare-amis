@@ -1,16 +1,16 @@
 import React from 'react';
 import omit from 'lodash/omit';
 import extend from 'lodash/extend';
-import {Renderer, RendererProps} from 'amis-core';
-import {SchemaNode, Schema, ActionObject, PlainObject} from 'amis-core';
-import {filter, evalExpression} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {SchemaNode, Schema, ActionObject, PlainObject} from '@/packages/amis-core/src';
+import {filter, evalExpression} from '@/packages/amis-core/src';
 import {Checkbox} from '@/packages/amis-ui/src';
-import {padArr, isVisible, isDisabled, noop, hashCode} from 'amis-core';
+import {padArr, isVisible, isDisabled, noop, hashCode} from '@/packages/amis-core/src';
 import {
   resolveVariable,
   resolveVariableAndFilter,
   filterClassNameObject
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import QuickEdit, {SchemaQuickEdit} from './QuickEdit';
 import PopOver, {SchemaPopOver} from './PopOver';
 import {TableCell} from './Table';
@@ -28,7 +28,7 @@ import {ActionSchema} from './Action';
 import {Card} from '@/packages/amis-ui/src';
 import {findDOMNode} from 'react-dom';
 import {Icon} from '@/packages/amis-ui/src';
-import type {IItem} from 'amis-core';
+import type {IItem} from '@/packages/amis-core/src';
 
 export type CardBodyField = SchemaObject & {
   /**

@@ -2,12 +2,12 @@
  * @file 用来渲染 Markdown
  */
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
-import {LazyComponent} from 'amis-core';
-import {getPropValue} from 'amis-core';
-import {isApiOutdated, isEffectiveApi} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {LazyComponent} from '@/packages/amis-core/src';
+import {getPropValue} from '@/packages/amis-core/src';
+import {isApiOutdated, isEffectiveApi} from '@/packages/amis-core/src';
 
 /**
  * Markdown 渲染

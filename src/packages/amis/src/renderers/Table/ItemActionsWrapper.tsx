@@ -1,7 +1,7 @@
 import {observer} from 'mobx-react';
 import React, {useEffect, useRef} from 'react';
-import {ITableStore} from 'amis-core';
-import {ClassNamesFn} from 'amis-core';
+import {ITableStore} from '@/packages/amis-core/src';
+import {ClassNamesFn} from '@/packages/amis-core/src';
 
 export interface ItemActionsProps {
   classnames: ClassNamesFn;

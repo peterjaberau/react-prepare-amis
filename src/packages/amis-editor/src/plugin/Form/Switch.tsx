@@ -10,7 +10,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import {isExpression, isPureVariable} from 'amis-core';
+import {isExpression, isPureVariable} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 import {ValidatorTag} from '../../validator';
 import {

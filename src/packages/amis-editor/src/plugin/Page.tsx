@@ -11,7 +11,7 @@ import {
   getActionCommonProps
 } from '../renderer/event-control/helper';
 import {RendererPluginAction, RendererPluginEvent} from '@/packages/amis-editor-core/src';
-import type {SchemaObject} from 'amis';
+import type {SchemaObject} from '@/packages/amis/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {jsonToJsonSchema, EditorNodeType} from '@/packages/amis-editor-core/src';
 import omit from 'lodash/omit';

@@ -1,4 +1,4 @@
-import {Button, JSONValueMap, isObject} from 'amis';
+import {Button, JSONValueMap, isObject} from '@/packages/amis/src';
 import React from 'react';
 import {EditorNodeType, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {

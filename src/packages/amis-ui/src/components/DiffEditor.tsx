@@ -1,6 +1,6 @@
 import React from 'react';
 import Editor, {EditorBaseProps} from './Editor';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 
 export interface DiffEditorProps extends EditorBaseProps {
   originValue?: string;

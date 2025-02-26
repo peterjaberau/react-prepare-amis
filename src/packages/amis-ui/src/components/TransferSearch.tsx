@@ -4,10 +4,10 @@
 import React from 'react';
 import debounce from 'lodash/debounce';
 
-import {ThemeProps, themeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {autobind} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import InputBox from './InputBox';
 
 export interface TransferSearchProps extends ThemeProps, LocaleProps {

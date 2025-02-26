@@ -4,10 +4,10 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {Renderer, toast} from 'amis';
+import {Renderer, toast} from '@/packages/amis/src';
 
 import {EditorManager} from '@/packages/amis-editor-core/src';
-import {autobind, FormControlProps} from 'amis-core';
+import {autobind, FormControlProps} from '@/packages/amis-core/src';
 
 export interface GoCongigControlProps extends FormControlProps {
   label: string;

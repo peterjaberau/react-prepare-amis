@@ -14,7 +14,7 @@ import AddColumnModal from './AddColumnModal';
 import type {FormControlProps} from 'amis';
 import type {SortableEvent} from 'sortablejs';
 // @ts-ignore
-import type {ColumnSchema} from 'amis/lib/renderers/Table2';
+import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';
 import type {DSBuilderInterface} from '../../builder';
 
 interface Option {

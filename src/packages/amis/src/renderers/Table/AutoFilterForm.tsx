@@ -4,7 +4,7 @@ import {
   RendererProps,
   createObject,
   padArr
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {observer} from 'mobx-react';
 import React from 'react';

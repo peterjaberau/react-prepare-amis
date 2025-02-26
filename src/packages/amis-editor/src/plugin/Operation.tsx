@@ -1,4 +1,4 @@
-import {Button} from 'amis';
+import {Button} from '@/packages/amis/src';
 import React from 'react';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {

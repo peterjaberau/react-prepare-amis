@@ -1,15 +1,15 @@
 import React from 'react';
-import {ClassNamesFn, RendererEvent, autobind} from 'amis-core';
+import {ClassNamesFn, RendererEvent, autobind} from '@/packages/amis-core/src';
 
-import {SchemaNode, ActionObject} from 'amis-core';
+import {SchemaNode, ActionObject} from '@/packages/amis-core/src';
 import TableRow from './TableRow';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import {observer} from 'mobx-react';
 import {trace, reaction} from 'mobx';
-import {createObject, flattenTree} from 'amis-core';
-import {LocaleProps} from 'amis-core';
+import {createObject, flattenTree} from '@/packages/amis-core/src';
+import {LocaleProps} from '@/packages/amis-core/src';
 import {ActionSchema} from '../Action';
-import type {IColumn, IRow, ITableStore, TestIdBuilder} from 'amis-core';
+import type {IColumn, IRow, ITableStore, TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface TableBodyProps extends LocaleProps {
   store: ITableStore;

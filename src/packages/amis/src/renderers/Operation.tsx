@@ -1,8 +1,8 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import {ServiceStore, IServiceStore} from 'amis-core';
-import {Api, SchemaNode, ActionObject} from 'amis-core';
-import {filter} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
+import {Api, SchemaNode, ActionObject} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import moment from 'moment';
 import {BaseSchema} from '../Schema';

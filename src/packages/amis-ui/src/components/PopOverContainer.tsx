@@ -1,5 +1,5 @@
 import React from 'react';
-import {autobind, PopOver, Overlay, toNumber} from 'amis-core';
+import {autobind, PopOver, Overlay, toNumber} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
 import {findDOMNode} from 'react-dom';
 import isNumber from 'lodash/isNumber';

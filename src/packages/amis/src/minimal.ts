@@ -1,8 +1,8 @@
 /**
  * Only contains the minimal set of amis, no other modules are introduced
  */
-import {registerRenderer} from 'amis-core';
-export * from 'amis-core';
+import {registerRenderer} from '@/packages/amis-core/src';
+export * from '@/packages/amis-core/src';
 import './preset';
 
 // Register the renderer

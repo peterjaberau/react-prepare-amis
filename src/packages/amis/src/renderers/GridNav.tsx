@@ -1,7 +1,7 @@
 import React from 'react';
-import {ClassName, Renderer, RendererProps} from 'amis-core';
-import {autobind, getPropValue} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {ClassName, Renderer, RendererProps} from '@/packages/amis-core/src';
+import {autobind, getPropValue} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaTokenizeableString,
@@ -9,10 +9,10 @@ import {
   SchemaUrlPath
 } from '../Schema';
 import {ActionSchema} from './Action';
-import {GridNav, GridNavDirection, GridNavItem} from 'amis-ui';
-import {BadgeObject} from 'amis-ui';
-import {handleAction} from 'amis-core';
-import {validations} from 'amis-core';
+import {GridNav, GridNavDirection, GridNavItem} from '@/packages/amis-ui/src';
+import {BadgeObject} from '@/packages/amis-ui/src';
+import {handleAction} from '@/packages/amis-core/src';
+import {validations} from '@/packages/amis-core/src';
 
 export interface ListItemSchema extends Omit<BaseSchema, 'type'> {
   /**

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import {AnchorNav as CAnchorNav, AnchorNavSection} from 'amis-ui';
-import {isVisible, autobind} from 'amis-core';
-import {filter} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {AnchorNav as CAnchorNav, AnchorNavSection} from '@/packages/amis-ui/src';
+import {isVisible, autobind} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
 
 /**

@@ -3,11 +3,11 @@
  */
 
 import React from 'react';
-import {FormItem} from 'amis';
+import {FormItem} from '@/packages/amis/src';
 
 import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 
 export interface ValidationApiControlProps extends FormControlProps {}
 

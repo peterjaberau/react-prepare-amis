@@ -1,8 +1,8 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaTpl} from '../Schema';
-import {autobind, createObject, getPropValue} from 'amis-core';
-import {filter} from 'amis-core';
+import {autobind, createObject, getPropValue} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
 import {Link} from '@/packages/amis-ui/src';
 

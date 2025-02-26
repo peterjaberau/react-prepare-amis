@@ -7,9 +7,9 @@
 import React from 'react';
 import moment from 'moment';
 import Calendar from './calendar/Calendar';
-import {themeable, ThemeProps} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
-import {autobind} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import {ShortCuts} from './DatePicker';
 import type {ViewMode} from './calendar/Calendar';
 import PopUp from './PopUp';

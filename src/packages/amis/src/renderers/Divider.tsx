@@ -6,7 +6,7 @@ import {
   setThemeClassName,
   isPureVariable,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
 
 /**

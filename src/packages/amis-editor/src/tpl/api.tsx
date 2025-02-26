@@ -5,7 +5,7 @@ import {
   BaseEventContext
 } from '@/packages/amis-editor-core/src';
 import React from 'react';
-import {buildApi, Html} from 'amis';
+import {buildApi, Html} from '@/packages/amis/src';
 import get from 'lodash/get';
 
 setSchemaTpl('source', (patch: any = {}) => {

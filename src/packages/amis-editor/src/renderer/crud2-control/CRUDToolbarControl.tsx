@@ -17,7 +17,7 @@ import {deepRemove, addSchema2Toolbar} from '../../plugin/CRUD2/utils';
 import type {FormControlProps} from 'amis';
 import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 // @ts-ignore
-import type {ColumnSchema} from 'amis/lib/renderers/Table2';
+import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';
 import type {DSBuilderInterface} from '../../builder';
 
 type ActionValue =

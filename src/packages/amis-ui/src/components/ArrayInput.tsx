@@ -1,11 +1,11 @@
 import React from 'react';
-import {ThemeProps, themeable} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import InputBox from './InputBox';
 import {Icon} from './icons';
 import Button from './Button';
-import {autobind, guid} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+import {autobind, guid} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import Sortable from 'sortablejs';
 import {findDOMNode} from 'react-dom';
 

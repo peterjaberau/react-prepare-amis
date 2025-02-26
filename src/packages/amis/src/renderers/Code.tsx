@@ -4,9 +4,9 @@
 import React from 'react';
 import isPlainObject from 'lodash/isPlainObject';
 import {BaseSchema} from '../Schema';
-import {Renderer, RendererProps, anyChanged} from 'amis-core';
-import {getPropValue} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {Renderer, RendererProps, anyChanged} from '@/packages/amis-core/src';
+import {getPropValue} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import type {editor as EditorNamespace} from 'monaco-editor';
 
 export type MonacoEditor = typeof EditorNamespace;

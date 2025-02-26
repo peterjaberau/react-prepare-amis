@@ -1,4 +1,4 @@
-import {PlainObject, filter} from 'amis-core';
+import {PlainObject, filter} from '@/packages/amis-core/src';
 import cloneDeep from 'lodash/cloneDeep';
 
 const THEME_CSS_VAR = [

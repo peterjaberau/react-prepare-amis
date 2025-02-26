@@ -1,7 +1,7 @@
 import React from 'react';
 import {findDOMNode} from 'react-dom';
-import {localeable, LocaleProps} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 // @ts-ignore
 import {matchSorter} from 'match-sorter';
 import PopOverContainer from './PopOverContainer';

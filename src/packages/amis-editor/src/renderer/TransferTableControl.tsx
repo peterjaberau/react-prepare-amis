@@ -3,14 +3,14 @@
  */
 
 import React from 'react';
-import {render as amisRender, FormItem} from 'amis';
-import type {SchemaApi} from 'amis';
+import {render as amisRender, FormItem} from '@/packages/amis/src';
+import type {SchemaApi} from '@/packages/amis/src';
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import cx from 'classnames';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
-import type {Option} from 'amis';
+import type {FormControlProps} from '@/packages/amis-core/src';
+import type {Option} from '@/packages/amis/src';
 
 interface OptionControlProps extends FormControlProps {
   className?: string;

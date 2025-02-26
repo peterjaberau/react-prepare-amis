@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Modal, Button} from 'amis';
-import {FormControlProps, resolveVariableAndFilter} from 'amis-core';
+import {FormControlProps, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {FormulaEditor} from '@/packages/amis-ui/src';
 

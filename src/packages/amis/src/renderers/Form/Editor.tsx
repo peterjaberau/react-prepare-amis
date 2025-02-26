@@ -5,14 +5,14 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
-import {LazyComponent} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {LazyComponent} from '@/packages/amis-core/src';
 import {Editor} from '@/packages/amis-ui/src';
-import {autobind} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 import type {Position} from 'monaco-editor';
-import type {ListenerAction} from 'amis-core';
+import type {ListenerAction} from '@/packages/amis-core/src';
 
 /**
  * Editor 代码编辑器

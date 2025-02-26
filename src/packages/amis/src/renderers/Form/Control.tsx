@@ -1,9 +1,9 @@
 import React from 'react';
-import {RendererProps, Renderer} from 'amis-core';
+import {RendererProps, Renderer} from '@/packages/amis-core/src';
 import {FormBaseControlSchema, SchemaCollection} from '../../Schema';
-import {autobind} from 'amis-core';
-import {resolveVariable} from 'amis-core';
-import {FormBaseControl, FormItemWrap} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {FormBaseControl, FormItemWrap} from '@/packages/amis-core/src';
 
 /**
  * Control 表单项包裹

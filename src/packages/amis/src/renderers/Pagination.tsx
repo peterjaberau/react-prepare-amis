@@ -7,9 +7,9 @@ import {
   isPureVariable,
   resolveEventData,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {Pagination as BasicPagination} from 'amis-ui';
+import {Pagination as BasicPagination} from '@/packages/amis-ui/src';
 import type {MODE_TYPE} from '@/packages/amis-ui/src/components/Pagination';
 
 export interface PaginationSchema extends BaseSchema {

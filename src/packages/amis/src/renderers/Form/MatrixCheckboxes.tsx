@@ -10,15 +10,15 @@ import {
   FormItem,
   getVariable,
   resolveEventData
-} from 'amis-core';
-import {buildApi, isValidApi, isEffectiveApi} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {buildApi, isValidApi, isEffectiveApi} from '@/packages/amis-core/src';
 import {Checkbox, Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
-import {setVariable, createObject} from 'amis-core';
-import {ApiObject, ActionObject, isMobile} from 'amis-core';
+import {setVariable, createObject} from '@/packages/amis-core/src';
+import {ApiObject, ActionObject, isMobile} from '@/packages/amis-core/src';
 import {FormBaseControlSchema, SchemaApi} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 /**
  * Matrix 选择控件。适合做权限勾选。

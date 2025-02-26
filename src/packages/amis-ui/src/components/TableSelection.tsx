@@ -1,11 +1,11 @@
 import {BaseSelection, BaseSelectionProps} from './Selection';
-import {noop, offset, themeable} from 'amis-core';
+import {noop, offset, themeable} from '@/packages/amis-core/src';
 import React from 'react';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {Option} from './Select';
-import {resolveVariable} from 'amis-core';
-import {localeable} from 'amis-core';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {localeable} from '@/packages/amis-core/src';
 import VirtualList, {AutoSizer, RenderedRows} from './virtual-list';
 import isEqual from 'lodash/isEqual';
 import forEach from 'lodash/forEach';

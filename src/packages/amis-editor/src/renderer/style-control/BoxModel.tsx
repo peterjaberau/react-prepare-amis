@@ -12,7 +12,7 @@ import {FormItem} from 'amis';
 import {isNumeric} from '@/packages/amis-editor-core/src';
 import {isAuto} from '../../util';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';
 
 export type Direction = 'left' | 'right' | 'top' | 'bottom';

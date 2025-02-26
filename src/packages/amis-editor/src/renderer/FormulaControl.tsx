@@ -6,8 +6,8 @@ import React from 'react';
 import isString from 'lodash/isString';
 import omit from 'lodash/omit';
 import cx from 'classnames';
-import {FormItem, Button, InputBox, Icon, TooltipWrapper} from 'amis';
-import {FormulaExec, isExpression} from 'amis';
+import {FormItem, Button, InputBox, Icon, TooltipWrapper} from '@/packages/amis/src';
+import {FormulaExec, isExpression} from '@/packages/amis/src';
 import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
 import {FormulaCodeEditor, Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
 import {
@@ -15,7 +15,7 @@ import {
   RootClose,
   isMobile,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import FormulaPicker, {
   CustomFormulaPickerProps
 } from './textarea-formula/FormulaPicker';
@@ -28,7 +28,7 @@ import {getVariables, getQuickVariables, utils} from '@/packages/amis-editor-cor
 import type {BaseEventContext} from '@/packages/amis-editor-core/src';
 import type {VariableItem, FuncGroup} from '@/packages/amis-ui/src';
 // @ts-ignore
-import {SchemaType} from 'amis/lib/Schema';
+import {SchemaType} from '@/packages/amis/src/Schema';
 
 export enum FormulaDateType {
   NotDate, // Not a time type

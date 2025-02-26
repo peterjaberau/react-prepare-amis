@@ -2,7 +2,7 @@ import React from 'react';
 import {EditorManager} from '../manager';
 import {EditorStoreType} from '../store/editor';
 import {render} from 'amis';
-import {createObject, RenderOptions} from 'amis-core';
+import {createObject, RenderOptions} from '@/packages/amis-core/src';
 
 import {observer} from 'mobx-react';
 import Editor from './Editor';

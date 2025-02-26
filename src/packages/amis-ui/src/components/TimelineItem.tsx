@@ -1,6 +1,6 @@
 import React, {ReactNode, useState} from 'react';
-import {localeable, LocaleProps} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 import type {IconCheckedSchema} from '../index';

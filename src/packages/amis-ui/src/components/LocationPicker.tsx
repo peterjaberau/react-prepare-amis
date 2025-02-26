@@ -1,13 +1,13 @@
 import React from 'react';
-import {themeable, ClassNamesFn, ThemeProps} from 'amis-core';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
+import {themeable, ClassNamesFn, ThemeProps} from '@/packages/amis-core/src';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 import Alert2 from './Alert2';
 import BaiduMapPicker from './BaiduMapPicker';
 import GaodeMapPicker from './GaodeMapPicker';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
 
 export interface LocationProps extends ThemeProps, LocaleProps {

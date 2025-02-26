@@ -1,4 +1,4 @@
-import {isObject} from 'amis';
+import {isObject} from '@/packages/amis/src';
 import React from 'react';
 import {EditorNodeType, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {BaseEventContext, BasePlugin} from '@/packages/amis-editor-core/src';

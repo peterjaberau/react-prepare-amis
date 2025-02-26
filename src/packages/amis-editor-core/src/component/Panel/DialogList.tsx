@@ -1,4 +1,4 @@
-import {ClassNamesFn} from 'amis-core';
+import {ClassNamesFn} from '@/packages/amis-core/src';
 import {observer} from 'mobx-react';
 import React from 'react';
 import {EditorStoreType} from '../../store/editor';

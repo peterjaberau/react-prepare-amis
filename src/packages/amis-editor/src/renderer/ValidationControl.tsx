@@ -7,7 +7,7 @@ import groupBy from 'lodash/groupBy';
 import remove from 'lodash/remove';
 import omit from 'lodash/omit';
 import cx from 'classnames';
-import {ConditionBuilderFields, FormItem, flattenTree} from 'amis';
+import {ConditionBuilderFields, FormItem, flattenTree} from '@/packages/amis/src';
 
 import {
   JSONPipeOut,
@@ -17,7 +17,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import ValidationItem, {ValidatorData} from './ValidationItem';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {
   getValidator,
   getValidatorsByTag,

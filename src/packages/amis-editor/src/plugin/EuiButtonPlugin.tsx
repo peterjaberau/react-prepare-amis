@@ -11,7 +11,7 @@ import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {BUTTON_DEFAULT_ACTION} from '../component/BaseControl';
 import {getEventControlConfig} from '../renderer/event-control/helper';
 import {RendererPluginAction, RendererPluginEvent} from '@/packages/amis-editor-core/src';
-import type {SchemaObject} from 'amis';
+import type {SchemaObject} from '@/packages/amis/src';
 import {getOldActionSchema} from '../renderer/event-control/helper';
 import {buttonStateFunc} from '../renderer/style-control/helper';
 import {InlineEditableElement} from '@/packages/amis-editor-core/src';

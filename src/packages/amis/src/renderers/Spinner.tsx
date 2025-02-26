@@ -1,5 +1,5 @@
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
-import {Renderer, RendererProps} from 'amis-core';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import React from 'react';
 import {BaseSchema, SchemaCollection} from '../Schema';
 

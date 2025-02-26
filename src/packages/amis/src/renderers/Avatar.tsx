@@ -2,11 +2,11 @@
  * @file 用来展示用户头像
  */
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {Avatar} from '@/packages/amis-ui/src';
 import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
 import {BaseSchema, SchemaClassName} from '../Schema';
-import {isPureVariable, resolveVariableAndFilter, autobind} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter, autobind} from '@/packages/amis-core/src';
 
 export interface AvatarSchema extends BaseSchema {
   // 指定类型

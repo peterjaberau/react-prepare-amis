@@ -7,14 +7,14 @@
 import React from 'react';
 import {BaseSelectionProps, BaseSelection} from './Selection';
 import {Options, Option} from './Select';
-import {autobind} from 'amis-core';
-import {themeable} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {themeable} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import GroupedSelection from './GroupedSelection';
 import TableSelection from './TableSelection';
 import ChainedSelection from './ChainedSelection';
 import {Icon} from './icons';
-import {localeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
 import Tree from './Tree';
 import {SpinnerExtraProps} from './Spinner';
 

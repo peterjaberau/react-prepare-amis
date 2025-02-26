@@ -1,9 +1,9 @@
 /**
  * Default env passed to the amis renderer
  */
-import {attachmentAdpator, RenderOptions} from 'amis-core';
+import {attachmentAdpator, RenderOptions} from '@/packages/amis-core/src';
 import axios from 'axios';
-import {alert, confirm, toast} from 'amis';
+import {alert, confirm, toast} from '@/packages/amis/src';
 
 export const env: RenderOptions = {
   updateLocation: () => {},

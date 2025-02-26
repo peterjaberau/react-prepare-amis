@@ -4,9 +4,9 @@
  */
 
 import React from 'react';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {ThemeProps} from 'amis-core';
+import {ThemeProps} from '@/packages/amis-core/src';
 import PopOverContainer from './PopOverContainer';
 
 /**

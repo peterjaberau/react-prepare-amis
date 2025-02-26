@@ -1,7 +1,7 @@
 import React from 'react';
 import {BaseSchema} from '../../Schema';
 import {ActionSchema} from '../Action';
-import {FormControlProps, FormItem} from 'amis-core';
+import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 
 /**
  * Button Toolar 渲染器。

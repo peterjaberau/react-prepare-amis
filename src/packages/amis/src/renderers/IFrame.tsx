@@ -7,14 +7,14 @@ import {
   runActions,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
-import {filter} from 'amis-core';
-import {autobind, createObject} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
-import {buildApi, isApiOutdated} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
+import {autobind, createObject} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
+import {buildApi, isApiOutdated} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaUrlPath} from '../Schema';
 import {ActionSchema} from './Action';
-import {dataMapping, resolveVariableAndFilter} from 'amis-core';
+import {dataMapping, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 /**
  * IFrame 渲染器

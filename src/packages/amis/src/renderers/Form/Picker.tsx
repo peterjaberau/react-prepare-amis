@@ -25,12 +25,12 @@ import {
   CustomStyle,
   isIntegerInRange,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Html, Icon, OverflowTpl, TooltipWrapper} from '@/packages/amis-ui/src';
 import {FormOptionsSchema, SchemaTpl} from '../../Schema';
 import intersectionWith from 'lodash/intersectionWith';
 import type {TooltipWrapperSchema} from '../TooltipWrapper';
-import type {Option} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
 import {supportStatic} from './StaticHoc';
 import {reaction} from 'mobx';
 

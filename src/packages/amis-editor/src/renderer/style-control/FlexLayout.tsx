@@ -4,7 +4,7 @@
 
 import React, {useEffect, useState} from 'react';
 import {InputBox, TooltipWrapper} from '@/packages/amis-ui/src';
-import {FormControlProps, FormItem} from 'amis-core';
+import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 import cx from 'classnames';
 
 function LayoutItem({

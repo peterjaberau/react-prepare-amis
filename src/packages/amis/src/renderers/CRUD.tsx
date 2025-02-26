@@ -10,9 +10,9 @@ import {
   filterTarget,
   mapTree,
   findTree
-} from 'amis-core';
-import {SchemaNode, Schema, ActionObject, PlainObject} from 'amis-core';
-import {CRUDStore, ICRUDStore, getMatchedEventTargets} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {SchemaNode, Schema, ActionObject, PlainObject} from '@/packages/amis-core/src';
+import {CRUDStore, ICRUDStore, getMatchedEventTargets} from '@/packages/amis-core/src';
 import {
   createObject,
   extendObject,
@@ -25,15 +25,15 @@ import {
   qsparse,
   isIntegerInRange,
   spliceTree
-} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import {Button, SpinnerExtraProps, TooltipWrapper} from '@/packages/amis-ui/src';
 import {Select} from '@/packages/amis-ui/src';
-import {getExprProperties, isObject} from 'amis-core';
+import {getExprProperties, isObject} from '@/packages/amis-core/src';
 import pick from 'lodash/pick';
 import {findDOMNode} from 'react-dom';
-import {evalExpression, filter} from 'amis-core';
-import {isEffectiveApi, isApiOutdated, str2function} from 'amis-core';
+import {evalExpression, filter} from '@/packages/amis-core/src';
+import {isEffectiveApi, isApiOutdated, str2function} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 import find from 'lodash/find';
 import findIndex from 'lodash/findIndex';
@@ -63,7 +63,7 @@ import {
   parseQuery,
   parsePrimitiveQueryString,
   isMobile
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import type {PaginationProps} from './Pagination';
 import {isAlive} from 'mobx-state-tree';

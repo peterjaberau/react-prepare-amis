@@ -6,7 +6,7 @@ import React from 'react';
 import cx from 'classnames';
 import camelCase from 'lodash/camelCase';
 import mapKeys from 'lodash/mapKeys';
-import {FormItem, Switch} from 'amis';
+import {FormItem, Switch} from '@/packages/amis/src';
 
 import {
   autobind,
@@ -17,8 +17,8 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
-import type {SchemaExpression} from 'amis';
+import type {FormControlProps} from '@/packages/amis-core/src';
+import type {SchemaExpression} from '@/packages/amis/src';
 
 export interface BadgeControlProps extends FormControlProps {
   /**

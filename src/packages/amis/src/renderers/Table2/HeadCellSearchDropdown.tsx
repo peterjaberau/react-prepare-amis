@@ -8,7 +8,7 @@ import {
   createObject,
   ClassNamesFn,
   ITableStore2
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon, HeadCellDropDown} from '@/packages/amis-ui/src';
 import type {FilterDropdownProps} from '@/packages/amis-ui/src/components/table/HeadCellDropDown';
 

@@ -7,7 +7,7 @@ import {
   filterClassNameObject,
   getMatchedEventTargets,
   getPropValue
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Button, Spinner, Checkbox, Icon, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   ListStore,
@@ -30,7 +30,7 @@ import {
   isDisabled,
   noop,
   isClickOnInput
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import QuickEdit, {SchemaQuickEdit} from './QuickEdit';
 import PopOver, {SchemaPopOver} from './PopOver';
@@ -48,8 +48,8 @@ import {
 } from '../Schema';
 import {ActionSchema} from './Action';
 import {SchemaRemark} from './Remark';
-import type {IItem, IScopedContext} from 'amis-core';
-import type {OnEventProps} from 'amis-core';
+import type {IItem, IScopedContext} from '@/packages/amis-core/src';
+import type {OnEventProps} from '@/packages/amis-core/src';
 import find from 'lodash/find';
 
 /**

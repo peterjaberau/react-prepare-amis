@@ -4,12 +4,12 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {FormItem, NumberInput} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import {FormItem, NumberInput} from '@/packages/amis/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {autobind} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 
-import type {Option} from 'amis';
+import type {Option} from '@/packages/amis/src';
 
 export type PartsOptionControlItem = Option & {number: number};
 export type MarksOptionControlItem = Option & {number: number; label: any};

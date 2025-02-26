@@ -1,5 +1,5 @@
 import {isObject} from 'amis';
-import type {IFormStore, IFormItemStore} from 'amis-core';
+import type {IFormStore, IFormItemStore} from '@/packages/amis-core/src';
 import {
   BasePlugin,
   defaultValue,

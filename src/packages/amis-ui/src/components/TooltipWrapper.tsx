@@ -6,12 +6,12 @@
 
 import React from 'react';
 import Html from './Html';
-import {EnvContext, uncontrollable} from 'amis-core';
+import {EnvContext, uncontrollable} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
 import Tooltip from './Tooltip';
-import {ClassNamesFn, themeable} from 'amis-core';
-import {Overlay} from 'amis-core';
-import {isObject} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
+import {Overlay} from '@/packages/amis-core/src';
+import {isObject} from '@/packages/amis-core/src';
 
 export type Trigger = 'hover' | 'click' | 'focus';
 

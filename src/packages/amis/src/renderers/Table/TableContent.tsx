@@ -7,7 +7,7 @@ import {
   LocaleProps,
   OnEventProps,
   RendererEvent
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {TableBody} from './TableBody';
 import {observer} from 'mobx-react';
 import {ActionSchema} from '../Action';
@@ -15,7 +15,7 @@ import ItemActionsWrapper from './ItemActionsWrapper';
 import {SchemaTpl} from '../../Schema';
 import {Icon} from '@/packages/amis-ui/src';
 
-import type {IColumn, IRow, TestIdBuilder} from 'amis-core';
+import type {IColumn, IRow, TestIdBuilder} from '@/packages/amis-core/src';
 import ColGroup from './ColGroup';
 
 export interface TableContentProps extends LocaleProps {

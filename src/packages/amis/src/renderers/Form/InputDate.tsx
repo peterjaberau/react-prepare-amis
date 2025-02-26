@@ -7,14 +7,14 @@ import {
   str2function,
   normalizeDate,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {filterDate, isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {filterDate, isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import moment from 'moment';
 import {DatePicker} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema, SchemaObject} from '../../Schema';
-import {createObject, anyChanged, isMobile, autobind} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {createObject, anyChanged, isMobile, autobind} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {supportStatic} from './StaticHoc';
 
 import type {ShortCuts} from '@/packages/amis-ui/src/components/DatePicker';

@@ -8,9 +8,9 @@ import {
   resolveVariableAndFilter,
   setThemeClassName,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection, SchemaObject} from '../Schema';
-import {CollapseGroup} from 'amis-ui';
+import {CollapseGroup} from '@/packages/amis-ui/src';
 import cx from 'classnames';
 
 /**

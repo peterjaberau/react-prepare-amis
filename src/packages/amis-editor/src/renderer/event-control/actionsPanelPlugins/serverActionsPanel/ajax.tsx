@@ -1,7 +1,7 @@
 import React from 'react';
 import {registerActionPanel} from '../../actionsPanelManager';
 import {defaultValue, getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
-import {normalizeApi} from 'amis-core';
+import {normalizeApi} from '@/packages/amis-core/src';
 
 registerActionPanel('ajax', {
   label: 'Send request',

@@ -5,19 +5,19 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {Select} from '@/packages/amis-ui/src';
 import {CityArea} from '@/packages/amis-ui/src';
-import {autobind, isMobile, createObject} from 'amis-core';
-import {ActionObject} from 'amis-core';
-import {Option} from 'amis-core';
-import {localeable, LocaleProps} from 'amis-core';
+import {autobind, isMobile, createObject} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
+import {Option} from '@/packages/amis-core/src';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 /**
  * City 城市选择框。

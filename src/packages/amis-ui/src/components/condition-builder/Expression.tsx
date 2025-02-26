@@ -15,7 +15,7 @@ import {
   LocaleProps,
   findTree,
   filterTree
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Value from './Value';
 import InputSwitch from './InputSwitch';
 import ConditionFunc from './Func';
@@ -27,7 +27,7 @@ import type {
   OperatorType,
   ExpressionFunc,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 /**
  * 支持4中表达式设置方式

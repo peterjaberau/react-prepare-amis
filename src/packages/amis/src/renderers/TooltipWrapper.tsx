@@ -4,12 +4,12 @@ import {
   RendererProps,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
-import {filter} from 'amis-core';
-import {escapeHtml} from 'amis-core';
-import {buildStyle} from 'amis-core';
-import {TooltipWrapper as TooltipWrapperComp} from 'amis-ui';
+import {filter} from '@/packages/amis-core/src';
+import {escapeHtml} from '@/packages/amis-core/src';
+import {buildStyle} from '@/packages/amis-core/src';
+import {TooltipWrapper as TooltipWrapperComp} from '@/packages/amis-ui/src';
 import type {
   TooltipObject,
   Trigger

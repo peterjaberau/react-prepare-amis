@@ -8,7 +8,7 @@ import {
   createObject,
   extractObjectChain,
   GlobalVariableItem
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {cast, getEnv, Instance, types} from 'mobx-state-tree';
 import {
   diff,
@@ -63,9 +63,9 @@ import findIndex from 'lodash/findIndex';
 import {matchSorter} from 'match-sorter';
 import debounce from 'lodash/debounce';
 // @ts-ignore
-import type {DialogSchema} from 'amis/lib/renderers/Dialog';
+import type {DialogSchema} from '@/packages/amis/src/renderers/Dialog';
 // @ts-ignore
-import type {DrawerSchema} from 'amis/lib/renderers/Drawer';
+import type {DrawerSchema} from '@/packages/amis/src/renderers/Drawer';
 import getLayoutInstance from '../layout';
 import {isAlive} from 'mobx-state-tree';
 

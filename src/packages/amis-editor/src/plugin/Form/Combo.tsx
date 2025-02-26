@@ -1,4 +1,4 @@
-import {setVariable, someTree} from 'amis-core';
+import {setVariable, someTree} from '@/packages/amis-core/src';
 import {
   BaseEventContext,
   BasePlugin,

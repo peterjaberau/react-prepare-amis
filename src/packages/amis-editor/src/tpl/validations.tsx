@@ -6,7 +6,7 @@ import {
   getI18nEnabled
 } from '@/packages/amis-editor-core/src';
 import {ValidationOptions} from '../component/BaseControl';
-import {Schema, str2rules} from 'amis';
+import {Schema, str2rules} from '@/packages/amis/src';
 import {ValidatorTag} from '../validator';
 
 import find from 'lodash/find';

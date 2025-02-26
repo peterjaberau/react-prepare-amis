@@ -2,7 +2,7 @@
  * @file icon button group
  */
 import React from 'react';
-import {FormControlProps, FormItem} from 'amis';
+import {FormControlProps, FormItem} from '@/packages/amis/src';
 import ButtonGroup from './ButtonGroupControl';
 
 interface PlainObject {

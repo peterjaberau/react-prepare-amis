@@ -22,7 +22,7 @@ import {
   tipedLabel
 } from '@/packages/amis-editor-core/src';
 import {diff} from '@/packages/amis-editor-core/src';
-import {isPureVariable} from 'amis-core';
+import {isPureVariable} from '@/packages/amis-core/src';
 import type {Schema} from 'amis';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {resolveOptionEventDataSchame, resolveOptionType} from '../../util';

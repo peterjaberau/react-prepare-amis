@@ -1,9 +1,9 @@
 import React from 'react';
-import {FormItem, Button, render as amisRender} from 'amis';
+import {FormItem, Button, render as amisRender} from '@/packages/amis/src';
 import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import uniqBy from 'lodash/uniqBy';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 
 interface IOption {
   label: string;

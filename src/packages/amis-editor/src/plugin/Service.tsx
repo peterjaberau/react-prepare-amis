@@ -1,7 +1,7 @@
 import React from 'react';
 import DeepDiff from 'deep-diff';
 import pick from 'lodash/pick';
-import {render as amisRender} from 'amis';
+import {render as amisRender} from '@/packages/amis/src';
 import flattenDeep from 'lodash/flattenDeep';
 import {
   EditorNodeType,
@@ -22,7 +22,7 @@ import {
   buildLinkActionDesc
 } from '../renderer/event-control/helper';
 
-import type {Schema} from 'amis-core';
+import type {Schema} from '@/packages/amis-core/src';
 import type {
   EditorManager,
   RendererPluginAction,

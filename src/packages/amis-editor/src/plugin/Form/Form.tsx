@@ -4,7 +4,7 @@ import DeepDiff from 'deep-diff';
 import flatten from 'lodash/flatten';
 import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
-import {isObject, getRendererByName, setVariable} from 'amis-core';
+import {isObject, getRendererByName, setVariable} from '@/packages/amis-core/src';
 import {
   BasePlugin,
   tipedLabel,
@@ -29,7 +29,7 @@ import type {
   IFormItemStore,
   Schema,
   RendererConfig
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   DSFeatureType,
   DSBuilderManager,

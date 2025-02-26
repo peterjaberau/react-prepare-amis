@@ -4,9 +4,9 @@ import {
   defaultValue,
   tipedLabel
 } from '@/packages/amis-editor-core/src';
-import {createAnimationStyle, formateId, type SchemaCollection} from 'amis';
+import {createAnimationStyle, formateId, type SchemaCollection} from '@/packages/amis/src';
 import kebabCase from 'lodash/kebabCase';
-import {styleManager} from 'amis-core';
+import {styleManager} from '@/packages/amis-core/src';
 
 const animationOptions = {
   enter: [

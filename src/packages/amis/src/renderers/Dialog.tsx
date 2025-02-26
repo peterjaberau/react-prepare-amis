@@ -9,10 +9,10 @@ import {
   setThemeClassName,
   ValidateError,
   RendererEvent
-} from 'amis-core';
-import {Renderer, RendererProps} from 'amis-core';
-import {SchemaNode, Schema, ActionObject} from 'amis-core';
-import {filter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {SchemaNode, Schema, ActionObject} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {Modal, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   guid,
@@ -20,13 +20,13 @@ import {
   autobind,
   createObject,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {reaction} from 'mobx';
 import {Icon} from '@/packages/amis-ui/src';
-import {ModalStore, IModalStore} from 'amis-core';
+import {ModalStore, IModalStore} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
 import {Spinner} from '@/packages/amis-ui/src';
-import {IServiceStore, CustomStyle} from 'amis-core';
+import {IServiceStore, CustomStyle} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaClassName,

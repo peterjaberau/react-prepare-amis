@@ -4,7 +4,7 @@ import {
   isSafari,
   type IColumn,
   type ITableStore
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {observer} from 'mobx-react';
 
 export function ColGroup({

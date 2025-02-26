@@ -11,8 +11,8 @@ export interface CollapseItem {
   [propName: string]: any;
 }
 
-import {ClassNamesFn, themeable, autobind} from 'amis-core';
-import type {SchemaNode, ThemeProps} from 'amis-core';
+import {ClassNamesFn, themeable, autobind} from '@/packages/amis-core/src';
+import type {SchemaNode, ThemeProps} from '@/packages/amis-core/src';
 import isEqual from 'lodash/isEqual';
 
 export interface CollapseGroupProps extends ThemeProps {

@@ -1,11 +1,11 @@
-import {localeable} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import React from 'react';
 import ResultBox from './ResultBox';
 import {Icon} from './icons';
 import PickerContainer from './PickerContainer';
-import {autobind, mapTree} from 'amis-core';
+import {autobind, mapTree} from '@/packages/amis-core/src';
 import TabsTransfer, {TabsTransferProps} from './TabsTransfer';
 
 export interface TabsTransferPickerProps

@@ -2,11 +2,11 @@ import React from 'react';
 import mergeWith from 'lodash/mergeWith';
 import cloneDeep from 'lodash/cloneDeep';
 import cx from 'classnames';
-import {FormItem, InputBox} from 'amis';
+import {FormItem, InputBox} from '@/packages/amis/src';
 import {PickerContainer} from '@/packages/amis-ui/src';
 
 import {getEnv} from 'mobx-state-tree';
-import {normalizeApi, isEffectiveApi, isApiOutdated} from 'amis-core';
+import {normalizeApi, isEffectiveApi, isApiOutdated} from '@/packages/amis-core/src';
 
 import {
   autobind,
@@ -17,10 +17,10 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {SchemaObject, SchemaCollection, SchemaApi} from 'amis';
-import type {Api} from 'amis';
-import type {FormControlProps} from 'amis-core';
-import type {ActionSchema} from 'amis';
+import type {SchemaObject, SchemaCollection, SchemaApi} from '@/packages/amis/src';
+import type {Api} from '@/packages/amis/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
+import type {ActionSchema} from '@/packages/amis/src';
 
 export interface APIControlProps extends FormControlProps {
   name?: string;

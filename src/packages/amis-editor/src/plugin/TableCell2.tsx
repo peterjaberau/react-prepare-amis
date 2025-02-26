@@ -1,8 +1,8 @@
 import React, {StrictMode} from 'react';
 import get from 'lodash/get';
 import flattenDeep from 'lodash/flattenDeep';
-import {Button, Icon} from 'amis';
-import {dataMapping, getVariable, isObject} from 'amis-core';
+import {Button, Icon} from '@/packages/amis/src';
+import {dataMapping, getVariable, isObject} from '@/packages/amis-core/src';
 import {
   BasePlugin,
   BasicRendererInfo,

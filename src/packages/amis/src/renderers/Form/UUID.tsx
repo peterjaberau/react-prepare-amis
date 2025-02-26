@@ -1,6 +1,6 @@
 import React from 'react';
-import {uuidv4} from 'amis-core';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
+import {uuidv4} from '@/packages/amis-core/src';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 /**

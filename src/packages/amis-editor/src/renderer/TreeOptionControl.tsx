@@ -16,14 +16,14 @@ import {
   Modal,
   toast,
   render as amisRender
-} from 'amis';
+} from '@/packages/amis/src';
 
 import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {Option} from 'amis';
-import type {FormControlProps} from 'amis-core';
-import type {SchemaApi} from 'amis';
+import type {Option} from '@/packages/amis/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
+import type {SchemaApi} from '@/packages/amis/src';
 
 export type OptionControlItem = Option & {checked?: boolean; _key?: string};
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import {Renderer, RendererProps, numberFormatter, stripNumber} from 'amis-core';
+import {Renderer, RendererProps, numberFormatter, stripNumber} from '@/packages/amis-core/src';
 import moment from 'moment';
 import {BaseSchema} from '../Schema';
 import isNumber from 'lodash/isNumber';
-import {getPropValue, Option, PlainObject, normalizeOptions} from 'amis-core';
+import {getPropValue, Option, PlainObject, normalizeOptions} from '@/packages/amis-core/src';
 
 import getMiniDecimal, {
   DecimalClass,

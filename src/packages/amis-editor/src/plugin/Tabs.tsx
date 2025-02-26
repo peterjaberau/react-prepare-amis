@@ -15,7 +15,7 @@ import {mapReactElement} from '@/packages/amis-editor-core/src';
 import {VRenderer} from '@/packages/amis-editor-core/src';
 import findIndex from 'lodash/findIndex';
 import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
-import {Tab} from 'amis';
+import {Tab} from '@/packages/amis/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {
   buildLinkActionDesc,

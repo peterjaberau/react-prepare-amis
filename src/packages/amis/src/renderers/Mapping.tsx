@@ -1,6 +1,6 @@
 import React from 'react';
-import {createObject, Renderer, RendererEnv, RendererProps} from 'amis-core';
-import {Api, Payload} from 'amis-core';
+import {createObject, Renderer, RendererEnv, RendererProps} from '@/packages/amis-core/src';
+import {Api, Payload} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaApi,
@@ -8,17 +8,17 @@ import {
   SchemaTpl,
   SchemaCollection
 } from '../Schema';
-import {withStore} from 'amis-ui';
+import {withStore} from '@/packages/amis-ui/src';
 import {flow, Instance, types} from 'mobx-state-tree';
-import {getPropValue, guid, isObject} from 'amis-core';
-import {StoreNode} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {getPropValue, guid, isObject} from '@/packages/amis-core/src';
+import {StoreNode} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {
   isApiOutdated,
   isEffectiveApi,
   normalizeApi,
   normalizeApiResponseData
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 /**
  * Mapping 映射展示控件。
  * 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/mapping

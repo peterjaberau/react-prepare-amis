@@ -1,7 +1,7 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
-import {resolveVariable, resolveVariableAndFilter} from 'amis-core';
+import {resolveVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import mapValues from 'lodash/mapValues';
 
 /**

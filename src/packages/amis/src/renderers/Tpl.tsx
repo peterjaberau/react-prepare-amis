@@ -6,14 +6,14 @@ import {
   RendererProps,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
-import {filter, asyncFilter, TestIdBuilder} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter, asyncFilter, TestIdBuilder} from '@/packages/amis-core/src';
 import isEmpty from 'lodash/isEmpty';
-import {anyChanged, getPropValue} from 'amis-core';
-import {escapeHtml} from 'amis-core';
+import {anyChanged, getPropValue} from '@/packages/amis-core/src';
+import {escapeHtml} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaTpl} from '../Schema';
 import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
-import {buildStyle} from 'amis-core';
+import {buildStyle} from '@/packages/amis-core/src';
 
 /**
  * tpl 渲染器

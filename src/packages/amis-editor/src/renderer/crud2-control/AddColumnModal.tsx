@@ -13,7 +13,7 @@ import {DSFeatureType, DSFeatureEnum, ModelDSBuilderKey} from '../../builder';
 import type {RendererProps, BaseApiObject} from 'amis';
 import type {CRUDColumnControlState} from './CRUDColumnControl';
 // @ts-ignore
-import type {ColumnSchema} from 'amis/lib/renderers/Table2';
+import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';
 import type {DSBuilderInterface} from '../../builder';
 
 type InitData = Exclude<CRUDColumnControlState['addModalData'], undefined>;

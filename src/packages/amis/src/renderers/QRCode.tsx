@@ -10,12 +10,12 @@ import {
   RendererProps,
   resolveVariableAndFilter,
   ScopedContext
-} from 'amis-core';
-import {FormItem, FormControlProps} from 'amis-core';
-import {filter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {FormItem, FormControlProps} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import QRCodeRender from 'qrcode.react';
 import {BaseSchema, SchemaClassName} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 import mapValues from 'lodash/mapValues';
 
 function downloadBlob(blob: Blob, filename: string) {

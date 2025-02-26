@@ -9,8 +9,8 @@ import {
   resolveVariableAndFilter,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
-import {DndContainer as DndWrapper} from 'amis-ui';
+} from '@/packages/amis-core/src';
+import {DndContainer as DndWrapper} from '@/packages/amis-ui/src';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
 
 /** 容器拖拽配置 */

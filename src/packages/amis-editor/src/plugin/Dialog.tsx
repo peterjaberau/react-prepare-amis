@@ -23,7 +23,7 @@ import {
   getActionCommonProps
 } from '../renderer/event-control/helper';
 import omit from 'lodash/omit';
-import type {RendererConfig, Schema} from 'amis-core';
+import type {RendererConfig, Schema} from '@/packages/amis-core/src';
 // @ts-ignore
 import {ModalProps} from '@/packages/amis-ui/src/components/Modal';
 import ModalSettingPanel from '../component/ModalSettingPanel';

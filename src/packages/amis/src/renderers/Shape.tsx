@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import {autobind, filter, Renderer, RendererProps} from 'amis-core';
+import {autobind, filter, Renderer, RendererProps} from '@/packages/amis-core/src';
 import {Shape, IShapeType} from '@/packages/amis-ui/src';
 import cx from 'classnames';
 import {BaseSchema} from '../Schema';

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Checkbox} from '@/packages/amis-ui/src';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
-import {autobind} from 'amis-core';
-import {buildStyle} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {buildStyle} from '@/packages/amis-core/src';
 
 /**
  * Card2 新卡片渲染器。

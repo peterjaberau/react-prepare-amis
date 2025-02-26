@@ -1,7 +1,7 @@
 /**
  * @file total entry
  */
-import 'amis';
+import '@/packages/amis/src';
 import './locale/index';
 import Editor from './component/Editor';
 import './component/ClassNameControl';

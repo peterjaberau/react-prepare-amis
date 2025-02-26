@@ -5,9 +5,9 @@
  */
 
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
-import {resizeSensor} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
+import {resizeSensor} from '@/packages/amis-core/src';
 import {SmoothSignature} from '../utils';
 import Button from './Button';
 import {Icon} from '../index';

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Renderer, RendererProps, normalizeDate} from 'amis-core';
+import {Renderer, RendererProps, normalizeDate} from '@/packages/amis-core/src';
 import moment from 'moment';
 import {BaseSchema} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 
 /**
  * DateRange 展示渲染器。

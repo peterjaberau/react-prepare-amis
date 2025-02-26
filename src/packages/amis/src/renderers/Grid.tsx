@@ -6,11 +6,11 @@ import {
   buildStyle,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import pick from 'lodash/pick';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
 
-import {ucFirst} from 'amis-core';
+import {ucFirst} from '@/packages/amis-core/src';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 export const ColProps = ['lg', 'md', 'sm', 'xs'];

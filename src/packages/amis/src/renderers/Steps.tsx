@@ -7,12 +7,12 @@ import {
   resolveVariableAndFilter,
   filter,
   getPropValue
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Steps, RemoteOptionsProps, withRemoteConfig} from '@/packages/amis-ui/src';
 import {StepStatus} from '@/packages/amis-ui/src/components/Steps';
 import {BaseSchema, SchemaCollection} from '../Schema';
 import isPlainObject from 'lodash/isPlainObject';
-import type {SchemaExpression} from 'amis-core';
+import type {SchemaExpression} from '@/packages/amis-core/src';
 
 export type StepSchema = {
   /**

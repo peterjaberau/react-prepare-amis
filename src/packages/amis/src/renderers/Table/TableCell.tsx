@@ -1,16 +1,16 @@
 import React from 'react';
-import {RendererProps, Renderer} from 'amis-core';
+import {RendererProps, Renderer} from '@/packages/amis-core/src';
 import QuickEdit from '../QuickEdit';
 import Copyable from '../Copyable';
 import PopOverable from '../PopOver';
 import {observer} from 'mobx-react';
 import omit from 'lodash/omit';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import {Badge} from '@/packages/amis-ui/src';
-import {ColorScale} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {ColorScale} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface TableCellProps extends RendererProps {
   wrapperComponent?: React.ElementType;

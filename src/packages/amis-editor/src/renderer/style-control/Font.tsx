@@ -10,7 +10,7 @@ import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {fontFamilyList} from './font-family';
 import {string2CSSUnit, isObject} from '@/packages/amis-editor-core/src';
 import {FormItem} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';
 
 export interface FontProps extends FormControlProps {

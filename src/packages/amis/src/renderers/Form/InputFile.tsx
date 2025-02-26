@@ -4,23 +4,23 @@ import {
   FormControlProps,
   prettyBytes,
   resolveEventData
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import find from 'lodash/find';
 import isPlainObject from 'lodash/isPlainObject';
-import {Payload, ApiObject, ApiString, ActionObject} from 'amis-core';
-import {qsstringify, createObject, guid, isEmpty} from 'amis-core';
+import {Payload, ApiObject, ApiString, ActionObject} from '@/packages/amis-core/src';
+import {qsstringify, createObject, guid, isEmpty} from '@/packages/amis-core/src';
 import {
   buildApi,
   isEffectiveApi,
   normalizeApi,
   isApiOutdated,
   isApiOutdatedWithData
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {TooltipWrapper, Button} from '@/packages/amis-ui/src';
 import DropZone from 'react-dropzone';
 import {FileRejection} from 'react-dropzone';
-import {dataMapping} from 'amis-core';
+import {dataMapping} from '@/packages/amis-core/src';
 import {
   FormBaseControlSchema,
   SchemaApi,
@@ -29,7 +29,7 @@ import {
 } from '../../Schema';
 import merge from 'lodash/merge';
 import omit from 'lodash/omit';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 
 /**
  * File 文件上传控件

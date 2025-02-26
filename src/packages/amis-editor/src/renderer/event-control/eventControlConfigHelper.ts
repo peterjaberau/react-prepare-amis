@@ -13,7 +13,7 @@ import {
   PlainObject,
   Schema,
   getRendererByName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {ActionConfig, ComponentInfo} from './types';
 import {ActionData} from '.';
 import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from './constants';

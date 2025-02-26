@@ -4,14 +4,14 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {FormItem, Switch, Option} from 'amis';
+import {FormItem, Switch, Option} from '@/packages/amis/src';
 
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
-import type {SchemaCollection} from 'amis';
+import type {FormControlProps} from '@/packages/amis-core/src';
+import type {SchemaCollection} from '@/packages/amis/src';
 // @ts-ignore
-import type {FormSchema} from 'amis/lib/Schema';
+import type {FormSchema} from '@/packages/amis/src/Schema';
 
 export interface StatusControlProps extends FormControlProps {
   name: string;

@@ -8,7 +8,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import {getRendererByName} from 'amis-core';
+import {getRendererByName} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 import type {Schema} from 'amis';
 import {ValidatorTag} from '../../validator';

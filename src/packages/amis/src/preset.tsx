@@ -5,8 +5,8 @@ import {
   render,
   themeable,
   ThemeProps
-} from 'amis-core';
-import {ImageGallery} from 'amis-ui';
+} from '@/packages/amis-core/src';
+import {ImageGallery} from '@/packages/amis-ui/src';
 import {setRenderSchemaFn} from '@/packages/amis-ui/src/components/Alert';
 import {alert, confirm} from '@/packages/amis-ui/src/components/Alert';
 import {toast} from '@/packages/amis-ui/src/components/Toast';

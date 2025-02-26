@@ -2,9 +2,9 @@
  * @file Password
  */
 import React from 'react';
-import {autobind, Renderer, RendererProps} from 'amis-core';
+import {autobind, Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 
 /**
  * Password

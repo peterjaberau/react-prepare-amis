@@ -4,8 +4,8 @@
 
 import React from 'react';
 import {autobind} from '@/packages/amis-editor-core/src';
-import {FormControlProps} from 'amis-core';
-import {FormItem} from 'amis';
+import {FormControlProps} from '@/packages/amis-core/src';
+import {FormItem} from '@/packages/amis/src';
 // @ts-ignore
 import {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 

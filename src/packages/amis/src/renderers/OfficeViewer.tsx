@@ -15,9 +15,9 @@ import {
   resolveVariable,
   resolveVariableAndFilter,
   ScopedContext
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import type {Word, Excel} from 'office-viewer';
-import {Spinner} from 'amis-ui';
+import {Spinner} from '@/packages/amis-ui/src';
 import {Payload} from '../types';
 
 export interface OfficeViewerSchema extends BaseSchema {

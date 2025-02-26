@@ -27,7 +27,7 @@ import {
   toNumber,
   evalExpression,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {SpinnerExtraProps, Transfer, Spinner, ResultList} from '@/packages/amis-ui/src';
 import {
   FormOptionsSchema,
@@ -39,7 +39,7 @@ import {
 import {supportStatic} from './StaticHoc';
 
 import type {ItemRenderStates} from '@/packages/amis-ui/src//components/Selection';
-import type {Option} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
 import type {PaginationSchema} from '../Pagination';
 
 /**

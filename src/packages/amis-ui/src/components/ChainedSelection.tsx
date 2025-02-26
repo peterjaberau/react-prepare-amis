@@ -2,15 +2,15 @@
  * 级联多选框，支持无限极。从左侧到右侧一层层点选。
  */
 import {BaseSelection, BaseSelectionProps} from './Selection';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import React from 'react';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {Option} from './Select';
-import {getTreeDepth} from 'amis-core';
+import {getTreeDepth} from '@/packages/amis-core/src';
 import times from 'lodash/times';
 import Spinner, {SpinnerExtraProps} from './Spinner';
-import {localeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
 import VirtualList, {AutoSizer} from './virtual-list';
 
 export interface ChainedSelectionProps

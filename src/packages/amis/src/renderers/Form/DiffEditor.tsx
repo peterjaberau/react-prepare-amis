@@ -5,13 +5,13 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {DiffEditor} from '@/packages/amis-ui/src';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {FormBaseControlSchema, SchemaTokenizeableString} from '../../Schema';
 
 import type {Position} from 'monaco-editor';
-import type {ListenerAction} from 'amis-core';
+import type {ListenerAction} from '@/packages/amis-core/src';
 
 /**
  * Diff 编辑器

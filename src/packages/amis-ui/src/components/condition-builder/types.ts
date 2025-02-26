@@ -1,4 +1,4 @@
-import type {BaseApiObject, OperatorType} from 'amis-core';
+import type {BaseApiObject, OperatorType} from '@/packages/amis-core/src';
 
 export type FieldTypes =
   | 'text'

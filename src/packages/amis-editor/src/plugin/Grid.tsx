@@ -1,4 +1,4 @@
-import {Button} from 'amis';
+import {Button} from '@/packages/amis/src';
 import React from 'react';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
@@ -13,7 +13,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {EditorNodeType} from '@/packages/amis-editor-core/src';
-import {Schema} from 'amis';
+import {Schema} from '@/packages/amis/src';
 import {VRenderer} from '@/packages/amis-editor-core/src';
 import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
 import {Icon} from '@/packages/amis-editor-core/src';

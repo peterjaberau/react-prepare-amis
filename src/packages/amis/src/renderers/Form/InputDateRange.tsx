@@ -5,16 +5,16 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {filterDate, parseDuration} from 'amis-core';
+import {filterDate, parseDuration} from '@/packages/amis-core/src';
 import {DateRangePicker} from '@/packages/amis-ui/src';
-import {isMobile, createObject, autobind} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {isMobile, createObject, autobind} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import type {ShortCuts} from '@/packages/amis-ui/src/components/DatePicker';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 /**
  * DateRange 日期范围控件
  * 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/date-range

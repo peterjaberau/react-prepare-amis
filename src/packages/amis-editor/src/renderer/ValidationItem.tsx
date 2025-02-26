@@ -4,12 +4,12 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {render, Button, Switch} from 'amis';
+import {render, Button, Switch} from '@/packages/amis/src';
 
 import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {Validator} from '../validator';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
-import type {ConditionBuilderFields, Schema, SchemaCollection} from 'amis';
+import type {ConditionBuilderFields, Schema, SchemaCollection} from '@/packages/amis/src';
 
 export type ValidatorData = {
   name: string;

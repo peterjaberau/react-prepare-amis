@@ -5,12 +5,12 @@ import {
   FormBaseControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {Checkbox} from '@/packages/amis-ui/src';
 import {withBadge, BadgeObject} from '@/packages/amis-ui/src';
-import {autobind, createObject} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {autobind, createObject} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {BaseSchema, FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

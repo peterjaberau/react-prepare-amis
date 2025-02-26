@@ -7,9 +7,9 @@ import {
   IFormItemStore,
   IFormStore,
   anyChanged
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {FormBaseControlSchema, SchemaCollection} from '../../Schema';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 
 /**
  * InputGroup

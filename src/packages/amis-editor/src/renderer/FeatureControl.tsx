@@ -9,9 +9,9 @@ import cx from 'classnames';
 import cloneDeep from 'lodash/cloneDeep';
 import remove from 'lodash/remove';
 import isPlainObject from 'lodash/isPlainObject';
-import {FormItem, Button, Icon, FormControlProps, autobind} from 'amis';
+import {FormItem, Button, Icon, FormControlProps, autobind} from '@/packages/amis/src';
 import {Checkbox} from '@/packages/amis-ui/src';
-import {evalExpression} from 'amis-core';
+import {evalExpression} from '@/packages/amis-core/src';
 import {GoConfigControl} from './GoConfigControl';
 
 const klass = 'ae-FeatureControl';

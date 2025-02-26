@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, resolveVariable} from 'amis';
-import type {DataScope, SchemaObject} from 'amis';
+import {Button, resolveVariable} from '@/packages/amis/src';
+import type {DataScope, SchemaObject} from '@/packages/amis/src';
 import {
   getI18nEnabled,
   RendererPluginAction,
@@ -24,7 +24,7 @@ import {
   tipedLabel
 } from '@/packages/amis-editor-core/src';
 import type {EditorManager} from '@/packages/amis-editor-core/src';
-import {setVariable, someTree} from 'amis-core';
+import {setVariable, someTree} from '@/packages/amis-core/src';
 import {reaction} from 'mobx';
 import {DSBuilderManager} from '../builder/DSBuilderManager';
 import {

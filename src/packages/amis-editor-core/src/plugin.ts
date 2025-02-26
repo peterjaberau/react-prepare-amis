@@ -14,13 +14,13 @@ import React from 'react';
 import {DiffChange} from './util';
 import find from 'lodash/find';
 import {RAW_TYPE_MAP} from './util';
-import type {GlobalVariableItem, RendererConfig, Schema} from 'amis-core';
+import type {GlobalVariableItem, RendererConfig, Schema} from '@/packages/amis-core/src';
 // @ts-ignore
 import type {MenuDivider, MenuItem} from '@/packages/amis-ui/src/components/ContextMenu';
-import type {BaseSchema, SchemaCollection} from 'amis';
+import type {BaseSchema, SchemaCollection} from '@/packages/amis/src';
 import type {AsyncLayerOptions} from './component/AsyncLayer';
 // @ts-ignore
-import type {SchemaType} from 'amis/lib/Schema';
+import type {SchemaType} from '@/packages/amis/src/Schema';
 
 /**
  * Region definition, container renderers need to define region information.

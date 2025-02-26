@@ -10,13 +10,13 @@ import {
   autobind,
   getPropValue,
   setVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import {BaseSchema, SchemaClassName} from '../Schema';
-import {SearchBox} from 'amis-ui';
+import {SearchBox} from '@/packages/amis-ui/src';
 
-import {ListenerAction, TestIdBuilder} from 'amis-core';
-import type {SpinnerExtraProps} from 'amis-ui';
+import {ListenerAction, TestIdBuilder} from '@/packages/amis-core/src';
+import type {SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 /**
  * 搜索框渲染器

@@ -10,14 +10,14 @@ import {
   createObject,
   resolveVariableAndFilter,
   isPureVariable
-} from 'amis-core';
-import {filter} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
-import {autobind, getPropValue} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind, getPropValue} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName, SchemaTpl, SchemaUrlPath} from '../Schema';
-import {handleAction} from 'amis-core';
+import {handleAction} from '@/packages/amis-core/src';
 import type {
   ImageAction,
   ImageActionKey

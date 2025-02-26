@@ -1,4 +1,4 @@
-import {FormControlProps, FormItem} from 'amis-core';
+import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 import React from 'react';
 import cx from 'classnames';
 import {JSONUpdate} from '@/packages/amis-editor-core/src';

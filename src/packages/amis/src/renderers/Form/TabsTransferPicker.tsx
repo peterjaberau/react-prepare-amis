@@ -3,18 +3,18 @@ import {
   OptionsControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTabsTransferRenderer} from './TabsTransfer';
 import {TabsTransferPicker} from '@/packages/amis-ui/src';
 import {TabsTransferControlSchema} from './TabsTransfer';
-import {autobind, createObject} from 'amis-core';
+import {autobind, createObject} from '@/packages/amis-core/src';
 import {Selection as BaseSelection} from '@/packages/amis-ui/src';
-import {ActionObject, toNumber} from 'amis-core';
+import {ActionObject, toNumber} from '@/packages/amis-core/src';
 import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import {supportStatic} from './StaticHoc';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 
 /**
  * TabsTransferPicker 穿梭器的弹框形态

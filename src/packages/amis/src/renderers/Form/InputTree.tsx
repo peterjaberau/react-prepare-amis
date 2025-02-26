@@ -26,7 +26,7 @@ import {
   CustomStyle,
   resizeSensor,
   anyChanged
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Spinner, SearchBox} from '@/packages/amis-ui/src';
 import {
   FormOptionsSchema,

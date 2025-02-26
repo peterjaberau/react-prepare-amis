@@ -8,14 +8,14 @@ import cloneDeep from 'lodash/cloneDeep';
 import cx from 'classnames';
 
 import {Option, Options} from './Select';
-import {ThemeProps, themeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {autobind, guid} from 'amis-core';
-import {LocaleProps, localeable, ClassNamesFn} from 'amis-core';
+import {autobind, guid} from '@/packages/amis-core/src';
+import {LocaleProps, localeable, ClassNamesFn} from '@/packages/amis-core/src';
 import TransferSearch from './TransferSearch';
 import VirtualList, {AutoSizer} from './virtual-list';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface ResultListProps extends ThemeProps, LocaleProps {
   className?: string;

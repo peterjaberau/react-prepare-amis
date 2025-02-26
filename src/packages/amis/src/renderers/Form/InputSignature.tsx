@@ -10,7 +10,7 @@ import {
   FormItem,
   FormControlProps,
   ScopedContext
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Signature} from '@/packages/amis-ui/src';
 import pick from 'lodash/pick';
 import {FormBaseControlSchema} from '../../Schema';

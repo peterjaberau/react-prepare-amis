@@ -9,8 +9,8 @@ import {
   Collapse,
   Checkbox,
   Spinner
-} from 'amis';
-import {FormControlProps, Renderer, RendererProps} from 'amis-core';
+} from '@/packages/amis/src';
+import {FormControlProps, Renderer, RendererProps} from '@/packages/amis-core/src';
 import debounce from 'lodash/debounce';
 import remove from 'lodash/remove';
 import React from 'react';
@@ -18,7 +18,7 @@ import {EditorManager, EditorNodeType, autobind} from '@/packages/amis-editor-co
 import {matchSorter} from 'match-sorter';
 import {default as cx} from 'classnames';
 
-import type {SchemaCollection} from 'amis';
+import type {SchemaCollection} from '@/packages/amis/src';
 import type {DSField, DSFieldGroup} from '../builder';
 
 export interface DataBindingProps extends FormControlProps {

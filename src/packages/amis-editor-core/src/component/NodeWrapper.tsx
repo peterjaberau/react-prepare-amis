@@ -1,4 +1,4 @@
-import {RendererProps, isObject} from 'amis-core';
+import {RendererProps, isObject} from '@/packages/amis-core/src';
 import {observer} from 'mobx-react';
 import {isAlive} from 'mobx-state-tree';
 import React from 'react';

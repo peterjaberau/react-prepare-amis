@@ -4,8 +4,8 @@
  */
 
 import React, {useEffect} from 'react';
-import {FormItem} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+import {FormItem} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
 import {TooltipWrapper} from '@/packages/amis-ui/src';

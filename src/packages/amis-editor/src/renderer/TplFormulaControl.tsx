@@ -6,10 +6,10 @@ import React from 'react';
 import cx from 'classnames';
 import {reaction} from 'mobx';
 import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
-import {Icon, Button, FormItem, TooltipWrapper} from 'amis';
-import {autobind, FormControlProps} from 'amis-core';
+import {Icon, Button, FormItem, TooltipWrapper} from '@/packages/amis/src';
+import {autobind, FormControlProps} from '@/packages/amis-core/src';
 import {Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
-import {RootClose, isMobile} from 'amis-core';
+import {RootClose, isMobile} from '@/packages/amis-core/src';
 import {FormulaPlugin, editorFactory} from './textarea-formula/plugin';
 import {renderFormulaValue} from './FormulaControl';
 import FormulaPicker, {
