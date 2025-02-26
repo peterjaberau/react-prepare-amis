@@ -14,7 +14,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import React from 'react';
 import {observer} from 'mobx-react';
-import {JSONTraverse, JSONValueMap, RendererProps, guid} from 'amis-core';
+import {JSONTraverse, JSONValueMap, RendererProps, guid} from '@/packages/amis-core/src';
 import {
   Button,
   FormField,

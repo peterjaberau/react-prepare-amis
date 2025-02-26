@@ -1,11 +1,11 @@
 import React from 'react';
-import {uncontrollable, flattenTree, TestIdBuilder} from 'amis-core';
+import {uncontrollable, flattenTree, TestIdBuilder} from '@/packages/amis-core/src';
 
 import {BaseSelection, BaseSelectionProps} from './Selection';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {Option} from './Select';
-import {localeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
 import VirtualList, {AutoSizer} from './virtual-list';
 
 export class GroupedSelection extends BaseSelection<BaseSelectionProps> {

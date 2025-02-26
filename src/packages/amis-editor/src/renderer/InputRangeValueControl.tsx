@@ -6,7 +6,7 @@
 import React, {useCallback} from 'react';
 import {FormItem} from 'amis';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 
 export interface InputRangeValueProps extends FormControlProps {
   value?: any;

@@ -24,7 +24,7 @@ import {
   findTree,
   getRendererByName,
   guid
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import ActionDialog from './action-config-dialog';
 import {
   getEventDesc,

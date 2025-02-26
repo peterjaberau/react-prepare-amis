@@ -14,8 +14,8 @@ import {
   findTree,
   eachTree,
   DATASCHEMA_TYPE_MAP
-} from 'amis-core';
-import type {Option} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {Option} from '@/packages/amis-core/src';
 
 export interface VariableGroup {
   /** Variable namespace */

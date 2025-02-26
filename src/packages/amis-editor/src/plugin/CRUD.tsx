@@ -28,7 +28,7 @@ import {
   getSchemaTpl,
   JSONPipeIn
 } from '@/packages/amis-editor-core/src';
-import {setVariable, someTree, normalizeApi} from 'amis-core';
+import {setVariable, someTree, normalizeApi} from '@/packages/amis-core/src';
 import type {CRUDCommonSchema} from 'amis';
 import {getEnv} from 'mobx-state-tree';
 import type {

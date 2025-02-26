@@ -1,10 +1,10 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
-import {resolveVariable} from 'amis-core';
-import {SchemaNode} from 'amis-core';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {SchemaNode} from '@/packages/amis-core/src';
 import mapValues from 'lodash/mapValues';
-import {buildStyle} from 'amis-core';
+import {buildStyle} from '@/packages/amis-core/src';
 
 /**
  * Wrapper 容器渲染器。

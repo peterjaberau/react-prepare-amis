@@ -15,7 +15,7 @@ import {
   PluginEvent
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
-import {getVariable} from 'amis-core';
+import {getVariable} from '@/packages/amis-core/src';
 
 export class TableCellPlugin extends BasePlugin {
   static id = 'TableCellPlugin';

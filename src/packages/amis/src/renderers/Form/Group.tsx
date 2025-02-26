@@ -1,14 +1,14 @@
 import React from 'react';
-import {filter, Renderer, RendererProps} from 'amis-core';
-import {isVisible, getWidthRate, makeHorizontalDeeper} from 'amis-core';
-import {FormBaseControl, FormItemWrap} from 'amis-core';
+import {filter, Renderer, RendererProps} from '@/packages/amis-core/src';
+import {isVisible, getWidthRate, makeHorizontalDeeper} from '@/packages/amis-core/src';
+import {FormBaseControl, FormItemWrap} from '@/packages/amis-core/src';
 
 import {
   FormBaseControlSchema,
   SchemaClassName,
   SchemaObject
 } from '../../Schema';
-import {FormHorizontal} from 'amis-core';
+import {FormHorizontal} from '@/packages/amis-core/src';
 import {reaction} from 'mobx';
 
 export type GroupSubControl = SchemaObject & {

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import {Api, SchemaNode, Schema, ActionObject} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {Api, SchemaNode, Schema, ActionObject} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {BaseSchema, SchemaObject} from '../Schema';
 

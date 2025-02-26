@@ -11,7 +11,7 @@ import {
   getSchemaTpl,
   tipedLabel
 } from '@/packages/amis-editor-core/src';
-import {Schema} from 'amis-core';
+import {Schema} from '@/packages/amis-core/src';
 import type {SchemaType} from 'amis';
 import {ValidatorTag} from '../../validator';
 import {

@@ -6,7 +6,7 @@ import {FormItem, Icon} from 'amis';
 import {Input, PickerContainer, Spinner} from '@/packages/amis-ui/src';
 
 import {getEnv} from 'mobx-state-tree';
-import {normalizeApi, isEffectiveApi, isApiOutdated} from 'amis-core';
+import {normalizeApi, isEffectiveApi, isApiOutdated} from '@/packages/amis-core/src';
 
 import {
   isObject,
@@ -19,7 +19,7 @@ import {
 
 import type {SchemaObject, SchemaCollection, SchemaApi} from 'amis';
 import type {Api} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {ActionSchema} from 'amis';
 import debounce from 'lodash/debounce';
 

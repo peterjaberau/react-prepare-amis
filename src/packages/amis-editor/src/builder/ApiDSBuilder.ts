@@ -10,7 +10,7 @@ import uniq from 'lodash/uniq';
 import omit from 'lodash/omit';
 import intersection from 'lodash/intersection';
 import isFunction from 'lodash/isFunction';
-import {isObject} from 'amis-core';
+import {isObject} from '@/packages/amis-core/src';
 import {toast} from 'amis';
 import {
   getSchemaTpl,

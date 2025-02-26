@@ -9,20 +9,20 @@ import moment from 'moment';
 import {findDOMNode} from 'react-dom';
 import cx from 'classnames';
 import {Icon} from './icons';
-import {Overlay} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
 import Calendar from './calendar/Calendar';
-import {PopOver} from 'amis-core';
+import {PopOver} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 
-import {noop} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {noop} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import {DateRangePicker} from './DateRangePicker';
 import capitalize from 'lodash/capitalize';
 import {ShortCuts, ShortCutDateRange} from './DatePicker';
 import {availableShortcuts} from './DateRangePicker';
 import CalendarMobile from './CalendarMobile';
-import type {PlainObject} from 'amis-core';
+import type {PlainObject} from '@/packages/amis-core/src';
 
 export interface MonthRangePickerProps extends ThemeProps, LocaleProps {
   className?: string;

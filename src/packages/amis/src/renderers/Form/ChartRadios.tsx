@@ -3,8 +3,8 @@ import {
   OptionsControl,
   OptionsControlProps,
   FormOptionsControl
-} from 'amis-core';
-import {autobind} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

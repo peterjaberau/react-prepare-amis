@@ -21,7 +21,7 @@ import {
   ucFirst,
   localeable,
   str2function
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 import {ShortCuts, ShortCutDateRange} from './DatePicker';
 import Calendar from './calendar/Calendar';
@@ -31,14 +31,14 @@ import Input from './Input';
 import Button from './Button';
 
 import type {Moment} from 'moment';
-import type {PlainObject, ThemeProps, LocaleProps} from 'amis-core';
+import type {PlainObject, ThemeProps, LocaleProps} from '@/packages/amis-core/src';
 import type {
   ViewMode,
   ChangeEventViewMode,
   MutableUnitOfTime,
   ChangeEventViewStatus
 } from './calendar/Calendar';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface DateRangePickerProps extends ThemeProps, LocaleProps {
   className?: string;

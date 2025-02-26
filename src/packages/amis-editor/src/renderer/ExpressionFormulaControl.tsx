@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {autobind, FormControlProps, isExpression} from 'amis-core';
+import {autobind, FormControlProps, isExpression} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {FormItem, Button, Icon, PickerContainer} from 'amis';
 import {FormulaCodeEditor, FormulaEditor, InputBox} from '@/packages/amis-ui/src';

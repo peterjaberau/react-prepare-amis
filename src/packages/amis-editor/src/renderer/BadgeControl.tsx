@@ -17,7 +17,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaExpression} from 'amis';
 
 export interface BadgeControlProps extends FormControlProps {

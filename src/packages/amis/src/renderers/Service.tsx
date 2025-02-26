@@ -1,17 +1,17 @@
 import React from 'react';
 import extend from 'lodash/extend';
 import cloneDeep from 'lodash/cloneDeep';
-import {Renderer, RendererProps, filterTarget} from 'amis-core';
-import {ServiceStore, IServiceStore} from 'amis-core';
-import {Api, RendererData, ActionObject} from 'amis-core';
-import {filter, evalExpression} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
+import {Renderer, RendererProps, filterTarget} from '@/packages/amis-core/src';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
+import {Api, RendererData, ActionObject} from '@/packages/amis-core/src';
+import {filter, evalExpression} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import {
   buildApi,
   isApiOutdated,
   isEffectiveApi,
   str2AsyncFunction
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Spinner, SpinnerExtraProps, Alert2 as Alert} from 'amis-ui';
 import {
   autobind,
@@ -23,7 +23,7 @@ import {
   createObject,
   extendObject,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaApi,
@@ -32,10 +32,10 @@ import {
   SchemaMessage,
   SchemaName
 } from '../Schema';
-import {IIRendererStore} from 'amis-core';
+import {IIRendererStore} from '@/packages/amis-core/src';
 
-import type {ListenerAction} from 'amis-core';
-import type {ScopedComponentType} from 'amis-core';
+import type {ListenerAction} from '@/packages/amis-core/src';
+import type {ScopedComponentType} from '@/packages/amis-core/src';
 import isPlainObject from 'lodash/isPlainObject';
 import {isAlive} from 'mobx-state-tree';
 

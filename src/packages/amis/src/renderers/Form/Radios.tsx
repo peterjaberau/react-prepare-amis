@@ -12,12 +12,12 @@ import {
   setThemeClassName,
   CustomStyle,
   formateCheckThemeCss
-} from 'amis-core';
-import {autobind, isEmpty, createObject} from 'amis-core';
-import {ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {autobind, isEmpty, createObject} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 
 /**
  * Radio 单选框。

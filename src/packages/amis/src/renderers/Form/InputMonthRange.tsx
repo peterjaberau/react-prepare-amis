@@ -1,11 +1,11 @@
 import React from 'react';
-import {FormItem} from 'amis-core';
+import {FormItem} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {filterDate, parseDuration} from 'amis-core';
+import {filterDate, parseDuration} from '@/packages/amis-core/src';
 import InputDateRange, {DateRangeControlSchema} from './InputDateRange';
 import {DateRangePicker} from '@/packages/amis-ui/src';
 import {supportStatic} from './StaticHoc';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 
 /**
  * MonthRange 月范围控件

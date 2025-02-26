@@ -1,9 +1,9 @@
 import React from 'react';
-import {autobind, createObject, Renderer, RendererProps} from 'amis-core';
-import {filter} from 'amis-core';
+import {autobind, createObject, Renderer, RendererProps} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {BaseSchema, SchemaTpl} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 
 /**
  * Plain 纯文本渲染器

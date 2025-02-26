@@ -7,10 +7,10 @@ import {
   buildStyle,
   getMatchedEventTargets,
   getPropValue
-} from 'amis-core';
-import {SchemaNode, Schema, ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {SchemaNode, Schema, ActionObject} from '@/packages/amis-core/src';
 import {Button, Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
-import {ListStore, IListStore} from 'amis-core';
+import {ListStore, IListStore} from '@/packages/amis-core/src';
 import {Action} from '../types';
 import {
   anyChanged,
@@ -21,14 +21,14 @@ import {
   createObject,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   isPureVariable,
   resolveVariableAndFilter,
   filterClassNameObject
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Sortable from 'sortablejs';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
@@ -40,7 +40,7 @@ import {
 } from '../Schema';
 import {CardProps, CardSchema} from './Card';
 import {Card2Props, Card2Schema} from './Card2';
-import type {IItem, IScopedContext} from 'amis-core';
+import type {IItem, IScopedContext} from '@/packages/amis-core/src';
 import find from 'lodash/find';
 
 /**

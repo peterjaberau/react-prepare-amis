@@ -1,7 +1,7 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {Alert2 as Alert} from '@/packages/amis-ui/src';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 import type {AlertProps} from '@/packages/amis-ui/src/components/Alert2';
 import type {BaseSchema, SchemaCollection, SchemaIcon} from '../Schema';

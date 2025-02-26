@@ -1,5 +1,5 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import type {BaseSchema, SchemaCollection} from 'amis';
 import {MyEuiButton} from 'amis-ui';
 

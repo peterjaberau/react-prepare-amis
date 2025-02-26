@@ -11,7 +11,7 @@ import {
   resolveVariableAndFilter,
   setThemeClassName,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Collapse as BasicCollapse, Icon} from 'amis-ui';
 import {BaseSchema, SchemaCollection, SchemaTpl, SchemaObject} from '../Schema';
 import classNames from 'classnames';

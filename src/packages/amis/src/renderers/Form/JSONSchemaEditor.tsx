@@ -1,13 +1,13 @@
 import React from 'react';
 import pick from 'lodash/pick';
-import {FormItem, FormControlProps} from 'amis-core';
+import {FormItem, FormControlProps} from '@/packages/amis-core/src';
 import {JSONSchemaEditor} from '@/packages/amis-ui/src';
-import {autobind, isObject} from 'amis-core';
+import {autobind, isObject} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 import {schemaEditorItemPlaceholder} from '@/packages/amis-ui/src/components/schema-editor/Common';
 import type {SchemaEditorItemPlaceholder} from '@/packages/amis-ui/src';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 
 /**
  * JSON Schema Editor

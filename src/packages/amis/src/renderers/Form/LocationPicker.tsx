@@ -7,19 +7,19 @@ import {
   PopOver,
   autobind,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   FormItem,
   FormBaseControl,
   FormControlProps,
   resolveEventData
-} from 'amis-core';
-import {Api, ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Api, ActionObject} from '@/packages/amis-core/src';
 import {LocationPicker, Alert2, BaiduMapPicker, Icon} from '@/packages/amis-ui/src';
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 /**
  * Location 选点组件
  * 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/location

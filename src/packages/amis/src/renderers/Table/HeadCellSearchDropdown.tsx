@@ -1,11 +1,11 @@
 import React from 'react';
-import {RendererProps} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {RendererProps} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
-import {setVariable, createObject} from 'amis-core';
-import type {TestIdBuilder} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
+import {setVariable, createObject} from '@/packages/amis-core/src';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface QuickSearchConfig {
   type?: string;

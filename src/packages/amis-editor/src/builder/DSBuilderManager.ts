@@ -7,7 +7,7 @@ import {builderFactory, DSBuilderInterface} from './DSBuilder';
 
 import type {EditorManager} from '@/packages/amis-editor-core/src';
 import type {GenericSchema} from './type';
-import type {Option} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
 
 export class DSBuilderManager {
   private builders: Map<string, DSBuilderInterface>;

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon, Button} from 'amis';
-import {setVariable, someTree, isObject} from 'amis-core';
+import {setVariable, someTree, isObject} from '@/packages/amis-core/src';
 import {
   BasePlugin,
   BaseEventContext,
@@ -31,7 +31,7 @@ import {
 import {resolveArrayDatasource} from '../util';
 
 import type {SchemaObject} from 'amis';
-import type {IFormItemStore, IFormStore} from 'amis-core';
+import type {IFormItemStore, IFormStore} from '@/packages/amis-core/src';
 import type {EditorManager} from '@/packages/amis-editor-core/src';
 import {getActionCommonProps} from '../renderer/event-control/helper';
 import cloneDeep from 'lodash/cloneDeep';

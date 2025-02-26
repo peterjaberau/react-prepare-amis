@@ -1,11 +1,11 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
-import {filter} from 'amis-core';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 import {hasIcon, Icon} from 'amis-ui';
 import {BaseSchema, SchemaClassName, SchemaIcon, SchemaTpl} from '../Schema';
-import {autobind, isMobile} from 'amis-core';
+import {autobind, isMobile} from '@/packages/amis-core/src';
 import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 /**

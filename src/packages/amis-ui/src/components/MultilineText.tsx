@@ -1,6 +1,6 @@
 import React from 'react';
-import {anyChanged, autobind, localeable, LocaleProps} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
+import {anyChanged, autobind, localeable, LocaleProps} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import Button from './Button';
 
 export interface MultilineTextProps extends ThemeProps, LocaleProps {

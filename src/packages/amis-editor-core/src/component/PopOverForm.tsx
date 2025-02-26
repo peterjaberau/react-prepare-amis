@@ -13,7 +13,7 @@ import {
 } from 'amis';
 import {observer} from 'mobx-react';
 import {diff} from '../util';
-import {createObject} from 'amis-core';
+import {createObject} from '@/packages/amis-core/src';
 
 export interface PopOverFormProps {
   store: EditorStoreType;

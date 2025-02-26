@@ -1,4 +1,4 @@
-import {DataChangeReason} from 'amis-core';
+import {DataChangeReason} from '@/packages/amis-core/src';
 import type {ActionSchema} from './renderers/Action';
 import {SchemaApi, SchemaApiObject} from './Schema';
 

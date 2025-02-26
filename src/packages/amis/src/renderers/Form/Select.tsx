@@ -19,7 +19,7 @@ import {
   getVariable,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {TransferDropDown, Spinner, Select, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {FormOptionsSchema, SchemaApi} from '../../Schema';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';

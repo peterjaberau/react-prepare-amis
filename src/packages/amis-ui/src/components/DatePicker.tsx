@@ -15,19 +15,19 @@ import {
   filterDate,
   string2regExp,
   autobind
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
-import {Overlay} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import Calendar from './calendar/Calendar';
-import {localeable, LocaleProps, TranslateFn} from 'amis-core';
-import {ucFirst} from 'amis-core';
+import {localeable, LocaleProps, TranslateFn} from '@/packages/amis-core/src';
+import {ucFirst} from '@/packages/amis-core/src';
 import CalendarMobile from './CalendarMobile';
 import Input from './Input';
 import Button from './Button';
 
 import type {Moment} from 'moment';
-import type {PlainObject, RendererEnv, TestIdBuilder} from 'amis-core';
+import type {PlainObject, RendererEnv, TestIdBuilder} from '@/packages/amis-core/src';
 import type {ChangeEventViewMode, MutableUnitOfTime} from './calendar/Calendar';
 
 const availableShortcuts: {[propName: string]: any} = {

@@ -9,7 +9,7 @@ import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import cx from 'classnames';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {Option} from 'amis';
 
 interface OptionControlProps extends FormControlProps {

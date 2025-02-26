@@ -13,12 +13,12 @@ import {
   isEffectiveApi,
   normalizeApi,
   normalizeApiResponseData
-} from 'amis-core';
-import type {RendererEnv} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter, tokenize} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {RendererEnv} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter, tokenize} from '@/packages/amis-core/src';
 import {reaction, comparer} from 'mobx';
-import {createObject, findTreeIndex, isObject} from 'amis-core';
-import {Api, ApiObject, Payload} from 'amis-core';
+import {createObject, findTreeIndex, isObject} from '@/packages/amis-core/src';
+import {Api, ApiObject, Payload} from '@/packages/amis-core/src';
 
 import {withStore} from './WithStore';
 

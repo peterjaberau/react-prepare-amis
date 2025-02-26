@@ -1,9 +1,9 @@
 import React, {Suspense} from 'react';
 import cx from 'classnames';
 
-import {FormItem, FormControlProps} from 'amis-core';
+import {FormItem, FormControlProps} from '@/packages/amis-core/src';
 import type {PresetColor} from '@/packages/amis-ui/src';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

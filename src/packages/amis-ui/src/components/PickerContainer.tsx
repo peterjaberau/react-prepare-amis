@@ -6,11 +6,11 @@ import {
   ThemeProps,
   localeable,
   LocaleProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Modal from './Modal';
 import Button from './Button';
 import ConfirmBox, {ConfirmBoxProps} from './ConfirmBox';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface PickerContainerProps
   extends ThemeProps,

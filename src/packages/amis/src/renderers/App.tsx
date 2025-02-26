@@ -14,17 +14,17 @@ import {
   envOverwrite,
   filter,
   replaceText
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaApi,
   SchemaClassName,
   SchemaCollection
 } from '../Schema';
-import {IScopedContext, ScopedContext} from 'amis-core';
-import {AppStore, IAppStore} from 'amis-core';
-import {isApiOutdated, isEffectiveApi} from 'amis-core';
-import {autobind} from 'amis-core';
+import {IScopedContext, ScopedContext} from '@/packages/amis-core/src';
+import {AppStore, IAppStore} from '@/packages/amis-core/src';
+import {isApiOutdated, isEffectiveApi} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 
 export interface AppPage extends SpinnerExtraProps {
   /**

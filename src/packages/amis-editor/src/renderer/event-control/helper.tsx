@@ -14,7 +14,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import {DataSchema, Schema, Option, getRendererByName} from 'amis-core';
+import {DataSchema, Schema, Option, getRendererByName} from '@/packages/amis-core/src';
 import {Button, toast, TooltipWrapper} from 'amis';
 import {i18n as _i18n} from 'i18n-runtime';
 import {ActionConfig} from './types';

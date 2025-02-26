@@ -17,7 +17,7 @@ import {
   findTree,
   noop,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from '../icons';
 
 import Expression from './Expression';
@@ -35,7 +35,7 @@ import type {
   ExpressionField,
   ExpressionComplex,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 const option2value = (item: any) => item.value;
 

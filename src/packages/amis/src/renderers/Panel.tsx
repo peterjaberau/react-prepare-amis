@@ -5,7 +5,7 @@ import {
   Renderer,
   RendererProps,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaClassName,
@@ -13,7 +13,7 @@ import {
   SchemaTpl
 } from '../Schema';
 import {ActionSchema} from './Action';
-import {FormHorizontal} from 'amis-core';
+import {FormHorizontal} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 import {Icon} from '@/packages/amis-ui/src';
 

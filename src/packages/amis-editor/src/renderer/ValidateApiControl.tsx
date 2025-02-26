@@ -7,7 +7,7 @@ import {FormItem} from 'amis';
 
 import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 
 export interface ValidationApiControlProps extends FormControlProps {}
 

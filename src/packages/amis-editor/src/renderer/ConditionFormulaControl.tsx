@@ -8,7 +8,7 @@ import {
   autobind,
   FormControlProps,
   flattenTree
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {FormItem, Button, PickerContainer, ConditionBuilderFields} from 'amis';
 import {reaction} from 'mobx';

@@ -5,11 +5,11 @@
 import React from 'react';
 
 import {BaseSelection, BaseSelectionProps} from './Selection';
-import {themeable} from 'amis-core';
+import {themeable} from '@/packages/amis-core/src';
 import {Option, Options} from './Select';
-import {resolveVariable} from 'amis-core';
-import {localeable} from 'amis-core';
-import {autobind} from 'amis-core';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {localeable} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import TransferSearch from './TransferSearch';
 
 import {CloseIcon} from './icons';

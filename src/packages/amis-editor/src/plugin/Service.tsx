@@ -22,7 +22,7 @@ import {
   buildLinkActionDesc
 } from '../renderer/event-control/helper';
 
-import type {Schema} from 'amis-core';
+import type {Schema} from '@/packages/amis-core/src';
 import type {
   EditorManager,
   RendererPluginAction,

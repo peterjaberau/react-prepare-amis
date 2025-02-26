@@ -129,8 +129,8 @@ import {
   FormOptionsControl,
   SchemaClassName,
   SchemaExpression
-} from 'amis-core';
-import type {FormSchemaBase, TestIdBuilder} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {FormSchemaBase, TestIdBuilder} from '@/packages/amis-core/src';
 import {MultilineTextSchema} from './renderers/MultilineText';
 import {DateRangeSchema} from './renderers/DateRange';
 import {PasswordSchema} from './renderers/Password';

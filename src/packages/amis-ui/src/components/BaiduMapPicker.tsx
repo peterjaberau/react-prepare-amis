@@ -1,6 +1,6 @@
 import React from 'react';
-import {ClassNamesFn, themeable} from 'amis-core';
-import {loadScript, autobind, uuid} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
+import {loadScript, autobind, uuid} from '@/packages/amis-core/src';
 import debounce from 'lodash/debounce';
 import {Icon} from './icons';
 

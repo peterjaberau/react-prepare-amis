@@ -1,7 +1,7 @@
 import React from 'react';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
-import {evalJS, filter} from 'amis-core';
-import {autobind, isObjectShallowModified, setVariable} from 'amis-core';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
+import {evalJS, filter} from '@/packages/amis-core/src';
+import {autobind, isObjectShallowModified, setVariable} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 /**

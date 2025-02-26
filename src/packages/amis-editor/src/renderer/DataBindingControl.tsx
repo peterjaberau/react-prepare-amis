@@ -10,7 +10,7 @@ import {
   Checkbox,
   Spinner
 } from 'amis';
-import {FormControlProps, Renderer, RendererProps} from 'amis-core';
+import {FormControlProps, Renderer, RendererProps} from '@/packages/amis-core/src';
 import debounce from 'lodash/debounce';
 import remove from 'lodash/remove';
 import React from 'react';

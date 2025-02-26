@@ -1,10 +1,10 @@
 import React from 'react';
-import {FormItem, FormBaseControl, FormControlProps} from 'amis-core';
+import {FormItem, FormBaseControl, FormControlProps} from '@/packages/amis-core/src';
 import {FormulaPicker} from '@/packages/amis-ui/src';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 
 import type {FormBaseControlSchema, SchemaIcon} from '../../Schema';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import type {
   FuncGroup,
   VariableItem

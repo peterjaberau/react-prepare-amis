@@ -6,11 +6,11 @@ import {
   Renderer,
   RendererProps,
   resolveVariableAndFilter
-} from 'amis-core';
-import {filter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {Icon} from 'amis-ui';
 import {BaseSchema} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 
 export interface StatusSource {
   [propName: string]: {

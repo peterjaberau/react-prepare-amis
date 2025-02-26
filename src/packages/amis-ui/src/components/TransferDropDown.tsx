@@ -1,7 +1,7 @@
-import {localeable} from 'amis-core';
-import {themeable} from 'amis-core';
+import {localeable} from '@/packages/amis-core/src';
+import {themeable} from '@/packages/amis-core/src';
 import {Transfer, TransferProps, TransferState} from './Transfer';
-import {uncontrollable, autobind} from 'amis-core';
+import {uncontrollable, autobind} from '@/packages/amis-core/src';
 import React from 'react';
 import ResultBox from './ResultBox';
 import {Icon} from './icons';

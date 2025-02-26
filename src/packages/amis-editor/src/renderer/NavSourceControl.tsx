@@ -9,13 +9,13 @@ import Sortable from 'sortablejs';
 import set from 'lodash/set';
 import get from 'lodash/get';
 import cloneDeep from 'lodash/cloneDeep';
-import {render as renderAmis} from 'amis-core';
+import {render as renderAmis} from '@/packages/amis-core/src';
 
 import {FormItem, Button, InputBox, Icon, Modal, toast} from 'amis';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
 
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaApi} from 'amis';
 import {getOwnValue} from '../util';
 

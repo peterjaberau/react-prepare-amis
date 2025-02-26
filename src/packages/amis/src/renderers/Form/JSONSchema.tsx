@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormItem, FormControlProps, FormBaseControl, autobind} from 'amis-core';
+import {FormItem, FormControlProps, FormBaseControl, autobind} from '@/packages/amis-core/src';
 import {InputJSONSchema} from '@/packages/amis-ui/src';
 import {withRemoteConfig} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema} from '../../Schema';

@@ -8,10 +8,10 @@ import {
   labelToString,
   Renderer,
   RendererProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaClassName, SchemaIcon} from '../Schema';
-import {getPropValue} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 
 import {Tag} from '@/packages/amis-ui/src';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {getRendererByName} from 'amis-core';
+import {getRendererByName} from '@/packages/amis-core/src';
 import {
   getSchemaTpl,
   defaultValue,

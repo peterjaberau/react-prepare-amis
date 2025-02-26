@@ -11,7 +11,7 @@ import {
   resolveVariableAndFilter,
   labelToString,
   filter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaObject} from '../Schema';
 import {Tag} from '@/packages/amis-ui/src';
 import {TagSchema} from './Tag';

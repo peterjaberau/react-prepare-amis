@@ -6,12 +6,12 @@ import {
   qsstringify,
   resolveEventData,
   autobind
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import isEqual from 'lodash/isEqual';
 import cx from 'classnames';
-import {LazyComponent} from 'amis-core';
-import {normalizeApi} from 'amis-core';
-import {ucFirst, anyChanged} from 'amis-core';
+import {LazyComponent} from '@/packages/amis-core/src';
+import {normalizeApi} from '@/packages/amis-core/src';
+import {ucFirst, anyChanged} from '@/packages/amis-core/src';
 import type {FormBaseControlSchema, SchemaApi} from '../../Schema';
 
 /**

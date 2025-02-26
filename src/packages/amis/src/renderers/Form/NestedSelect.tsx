@@ -33,7 +33,7 @@ import {
   labelToString,
   setThemeClassName,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
 import xor from 'lodash/xor';
 import union from 'lodash/union';

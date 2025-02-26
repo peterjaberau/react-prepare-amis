@@ -10,8 +10,8 @@ import {render as amisRender, FormItem, Icon} from 'amis';
 import {getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {autobind} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
-import {isExpression} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+import {isExpression} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaApi} from 'amis';
 
 type TimelineItem = {

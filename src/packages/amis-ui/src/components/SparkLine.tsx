@@ -6,8 +6,8 @@ import {
   themeable,
   ThemeProps,
   setThemeClassName
-} from 'amis-core';
-import type {PlainObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {PlainObject} from '@/packages/amis-core/src';
 
 export interface SparkLineProps extends ThemeProps, LocaleProps {
   className?: string;

@@ -3,10 +3,10 @@ import cx from 'classnames';
 import {matchSorter} from 'match-sorter';
 import keycode from 'keycode';
 import Downshift, {StateChangeOptions} from 'downshift';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 import {ICONS} from './IconPickerIcons';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
-import {Option} from 'amis-core';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
+import {Option} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema} from '../../Schema';
 

@@ -2,9 +2,9 @@
  * 扩展 Schema，目前用于实现 input-kv
  */
 import isEqual from 'lodash/isEqual';
-import {guid, Schema} from 'amis-core';
-import {addSchemaFilter} from 'amis-core';
-import {isObject} from 'amis-core';
+import {guid, Schema} from '@/packages/amis-core/src';
+import {addSchemaFilter} from '@/packages/amis-core/src';
+import {isObject} from '@/packages/amis-core/src';
 
 // input-kv 实际上是 combo 的一种扩展
 addSchemaFilter(function (schema: Schema, renderer, props?: any) {

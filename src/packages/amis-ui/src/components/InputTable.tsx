@@ -5,7 +5,7 @@ import {
   themeable,
   ThemeProps,
   TranslateFn
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
 import {
   Control,

@@ -1,10 +1,10 @@
 import React from 'react';
 import debounce from 'lodash/debounce';
-import {themeable, ClassNamesFn, ThemeProps} from 'amis-core';
-import {autobind} from 'amis-core';
+import {themeable, ClassNamesFn, ThemeProps} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import Modal from './Modal';
 import {Icon} from './icons';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 
 export enum ImageActionKey {
   /** 右旋转 */

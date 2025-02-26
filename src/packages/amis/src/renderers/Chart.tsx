@@ -10,21 +10,21 @@ import {
   CustomStyle,
   setThemeClassName,
   str2function
-} from 'amis-core';
-import {ServiceStore, IServiceStore} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
 
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {LazyComponent} from 'amis-core';
-import {resizeSensor} from 'amis-core';
-import {resolveVariableAndFilter, isPureVariable, dataMapping} from 'amis-core';
+import {LazyComponent} from '@/packages/amis-core/src';
+import {resizeSensor} from '@/packages/amis-core/src';
+import {resolveVariableAndFilter, isPureVariable, dataMapping} from '@/packages/amis-core/src';
 import {
   isApiOutdated,
   isEffectiveApi,
   normalizeApiResponseData
-} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
-import {createObject, findObjectsWithKey} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
+import {createObject, findObjectsWithKey} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaApi,
@@ -38,7 +38,7 @@ import {isAlive} from 'mobx-state-tree';
 import debounce from 'lodash/debounce';
 import pick from 'lodash/pick';
 import isString from 'lodash/isString';
-import {ApiObject} from 'amis-core';
+import {ApiObject} from '@/packages/amis-core/src';
 
 const DEFAULT_EVENT_PARAMS = [
   'componentType',

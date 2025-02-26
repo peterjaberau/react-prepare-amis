@@ -1,15 +1,15 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import {ServiceStore, IServiceStore} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {getExprProperties} from 'amis-core';
-import {Api, ApiObject, Payload} from 'amis-core';
+import {getExprProperties} from '@/packages/amis-core/src';
+import {Api, ApiObject, Payload} from '@/packages/amis-core/src';
 import update from 'immutability-helper';
-import {isEffectiveApi, isApiOutdated} from 'amis-core';
-import {ScopedContext, IScopedContext} from 'amis-core';
+import {isEffectiveApi, isApiOutdated} from '@/packages/amis-core/src';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseSchema, SchemaApi, SchemaClassName, SchemaName} from '../Schema';
-import {createObject} from 'amis-core';
+import {createObject} from '@/packages/amis-core/src';
 
 /**
  * Tasks 渲染器，格式说明

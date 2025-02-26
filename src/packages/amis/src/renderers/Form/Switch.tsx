@@ -6,9 +6,9 @@ import {
   resolveEventData,
   getVariable,
   ListenerAction
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon, Switch} from '@/packages/amis-ui/src';
-import {autobind, isObject} from 'amis-core';
+import {autobind, isObject} from '@/packages/amis-core/src';
 import {IconSchema} from '../Icon';
 import {FormBaseControlSchema, SchemaCollection} from '../../Schema';
 import {supportStatic} from './StaticHoc';

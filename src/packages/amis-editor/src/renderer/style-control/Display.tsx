@@ -10,7 +10,7 @@ import {FormItem} from 'amis';
 
 import {isObject} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';
 
 export interface DisplayProps extends FormControlProps {

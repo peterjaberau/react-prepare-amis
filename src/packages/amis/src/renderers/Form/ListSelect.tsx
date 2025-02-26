@@ -6,9 +6,9 @@ import {
   FormOptionsControl,
   getVariable,
   filter
-} from 'amis-core';
-import {ActionObject, Schema} from 'amis-core';
-import {createObject, isEmpty} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ActionObject, Schema} from '@/packages/amis-core/src';
+import {createObject, isEmpty} from '@/packages/amis-core/src';
 import {
   FormOptionsSchema,
   SchemaClassName,

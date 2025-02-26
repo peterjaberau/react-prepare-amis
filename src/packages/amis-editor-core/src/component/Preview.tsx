@@ -10,7 +10,7 @@ import {
 import React, {Component} from 'react';
 import cx from 'classnames';
 import {autobind, guid, noop, reactionWithOldValue} from '../util';
-import {clearStoresCache, RenderOptions} from 'amis-core';
+import {clearStoresCache, RenderOptions} from '@/packages/amis-core/src';
 import type {Schema} from 'amis';
 import {EditorStoreType} from '../store/editor';
 import {observer} from 'mobx-react';
@@ -19,10 +19,10 @@ import HighlightBox from './HighlightBox';
 import RegionHighlightBox from './RegionHLBox';
 import {ErrorRenderer} from './base/ErrorRenderer';
 import {isAlive} from 'mobx-state-tree';
-import {findTree} from 'amis-core';
+import {findTree} from '@/packages/amis-core/src';
 import BackTop from './base/BackTop';
 import {reaction} from 'mobx';
-import type {RendererConfig} from 'amis-core';
+import type {RendererConfig} from '@/packages/amis-core/src';
 import IFramePreview from './IFramePreview';
 
 export interface PreviewProps {

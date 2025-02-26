@@ -7,7 +7,7 @@ import {
   tipedLabel,
   JSONPipeOut
 } from '@/packages/amis-editor-core/src';
-import {findObjectsWithKey} from 'amis-core';
+import {findObjectsWithKey} from '@/packages/amis-core/src';
 import {Button, Icon} from '@/packages/amis-ui/src';
 import type {SchemaObject} from 'amis';
 import assign from 'lodash/assign';

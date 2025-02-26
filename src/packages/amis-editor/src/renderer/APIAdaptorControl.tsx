@@ -6,7 +6,7 @@ import React from 'react';
 import cx from 'classnames';
 import {autobind, getSchemaTpl, setSchemaTpl} from '@/packages/amis-editor-core/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
-import {FormControlProps} from 'amis-core';
+import {FormControlProps} from '@/packages/amis-core/src';
 import {FormItem, Icon, TooltipWrapper} from 'amis';
 // @ts-ignore
 import {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';

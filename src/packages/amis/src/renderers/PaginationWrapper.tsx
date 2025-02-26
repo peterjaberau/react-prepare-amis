@@ -1,7 +1,7 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
-import {IPaginationStore, PaginationStore} from 'amis-core';
+import {IPaginationStore, PaginationStore} from '@/packages/amis-core/src';
 
 /**
  * 分页容器功能性渲染器。详情请见：https://aisuda.bce.baidu.com/amis/zh-CN/components/pagination-wrapper

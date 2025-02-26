@@ -3,7 +3,7 @@
  */
 import React, {useEffect, useRef, useState} from 'react';
 import {Editor, Overlay, PopOver} from '@/packages/amis-ui/src';
-import {FormControlProps, FormItem} from 'amis-core';
+import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 // @ts-ignore
 import {parse as cssParse} from 'amis-postcss';
 import {PlainObject} from './types';

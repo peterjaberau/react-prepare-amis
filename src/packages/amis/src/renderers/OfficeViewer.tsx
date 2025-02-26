@@ -15,7 +15,7 @@ import {
   resolveVariable,
   resolveVariableAndFilter,
   ScopedContext
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import type {Word, Excel} from 'office-viewer';
 import {Spinner} from 'amis-ui';
 import {Payload} from '../types';

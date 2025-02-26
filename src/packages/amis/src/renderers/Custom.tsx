@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import memoize from 'lodash/memoize';
 import isString from 'lodash/isString';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {FormControlProps} from 'amis-core';
+import {FormControlProps} from '@/packages/amis-core/src';
 import isEqual from 'lodash/isEqual';
 
 /**

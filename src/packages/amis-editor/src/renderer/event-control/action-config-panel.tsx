@@ -2,7 +2,7 @@
  * Action configuration panel
  */
 
-import {RendererProps, Schema} from 'amis-core';
+import {RendererProps, Schema} from '@/packages/amis-core/src';
 import {RendererPluginAction} from '@/packages/amis-editor-core/src';
 import React from 'react';
 import cx from 'classnames';

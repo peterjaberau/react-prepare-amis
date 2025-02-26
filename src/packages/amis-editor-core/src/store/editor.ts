@@ -8,7 +8,7 @@ import {
   createObject,
   extractObjectChain,
   GlobalVariableItem
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {cast, getEnv, Instance, types} from 'mobx-state-tree';
 import {
   diff,

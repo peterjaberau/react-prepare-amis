@@ -1,9 +1,9 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {SchemaCollection, SchemaTpl} from '../../Schema';
 import Collapse, {CollapseSchema} from '../Collapse';
-import {FormBaseControl} from 'amis-core';
-import type {FormHorizontal} from 'amis-core';
+import {FormBaseControl} from '@/packages/amis-core/src';
+import type {FormHorizontal} from '@/packages/amis-core/src';
 
 /**
  * FieldSet 表单项集合

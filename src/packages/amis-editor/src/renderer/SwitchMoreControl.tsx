@@ -13,9 +13,9 @@ import {isObject, autobind} from '@/packages/amis-editor-core/src';
 
 import type {Action} from 'amis';
 import type {SchemaCollection} from 'amis';
-import type {IScopedContext} from 'amis-core';
+import type {IScopedContext} from '@/packages/amis-core/src';
 import type {FormSchema} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import fromPairs from 'lodash/fromPairs';
 import some from 'lodash/some';
 import pick from 'lodash/pick';

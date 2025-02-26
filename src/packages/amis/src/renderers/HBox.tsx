@@ -1,15 +1,15 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
-import {Api, SchemaNode, Schema, ActionObject} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {Api, SchemaNode, Schema, ActionObject} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {isVisible, ucFirst} from 'amis-core';
+import {isVisible, ucFirst} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaCollection,
   SchemaExpression,
   SchemaObject
 } from '../Schema';
-import {FormHorizontal} from 'amis-core';
+import {FormHorizontal} from '@/packages/amis-core/src';
 
 export type HBoxColumnObject = {
   /**

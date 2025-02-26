@@ -15,7 +15,7 @@ import {ActionConfig, ComponentInfo} from './types';
 import ActionConfigPanel from './action-config-panel';
 import {BASE_ACTION_PROPS} from './comp-action-select';
 import {findActionNode} from './eventControlConfigHelper';
-import {PlainObject, SchemaNode, Option} from 'amis-core';
+import {PlainObject, SchemaNode, Option} from '@/packages/amis-core/src';
 import {i18n as _i18n} from 'i18n-runtime';
 import './actionsPanelPlugins';
 

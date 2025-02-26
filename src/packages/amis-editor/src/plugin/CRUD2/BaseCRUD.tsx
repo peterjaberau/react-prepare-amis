@@ -44,7 +44,7 @@ import {
 } from './constants';
 import {FieldSetting} from '../../renderer/FieldSetting';
 
-import type {IFormItemStore, IFormStore} from 'amis-core';
+import type {IFormItemStore, IFormStore} from '@/packages/amis-core/src';
 import type {CRUDScaffoldConfig} from '../../builder/type';
 import type {
   ScaffoldForm,

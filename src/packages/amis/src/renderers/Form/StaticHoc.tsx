@@ -1,6 +1,6 @@
 import React from 'react';
-import {getPropValue, FormControlProps} from 'amis-core';
-import {ErrorBoundary} from 'amis-core';
+import {getPropValue, FormControlProps} from '@/packages/amis-core/src';
+import {ErrorBoundary} from '@/packages/amis-core/src';
 
 function renderCommonStatic(props: any, defaultValue: string) {
   const {type, render, staticSchema} = props;

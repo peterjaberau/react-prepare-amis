@@ -12,12 +12,12 @@ import {
   getRendererByName,
   noop,
   setVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import hoistNonReactStatic from 'hoist-non-react-statics';
-import {ActionObject} from 'amis-core';
+import {ActionObject} from '@/packages/amis-core/src';
 import keycode from 'keycode';
-import {Overlay} from 'amis-core';
-import {PopOver} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import {PopOver} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
 import {Icon} from 'amis-ui';
 import {SchemaCollection, SchemaObject} from '../Schema';

@@ -1,4 +1,4 @@
-import {RendererProps} from 'amis-core';
+import {RendererProps} from '@/packages/amis-core/src';
 import React, {useEffect, useState} from 'react';
 
 interface InputComponentNameProps extends RendererProps {

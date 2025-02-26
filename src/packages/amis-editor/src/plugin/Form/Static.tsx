@@ -1,6 +1,6 @@
 import React from 'react';
 import get from 'lodash/get';
-import {getVariable} from 'amis-core';
+import {getVariable} from '@/packages/amis-core/src';
 import {Button} from 'amis';
 import {
   defaultValue,

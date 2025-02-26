@@ -4,11 +4,11 @@
  */
 
 import React from 'react';
-import {RendererProps} from 'amis-core';
+import {RendererProps} from '@/packages/amis-core/src';
 
 import hoistNonReactStatic from 'hoist-non-react-statics';
 
-import {filter} from 'amis-core';
+import {filter} from '@/packages/amis-core/src';
 import {Icon, TooltipWrapper} from 'amis-ui';
 import {SchemaIcon, SchemaTpl} from '../Schema';
 

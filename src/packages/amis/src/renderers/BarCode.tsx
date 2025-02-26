@@ -2,9 +2,9 @@
  * @file 用来条形码
  */
 import React, {Suspense} from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
-import {getPropValue} from 'amis-core';
+import {getPropValue} from '@/packages/amis-core/src';
 const BarCode = React.lazy(() => import('@/packages/amis-ui/src/components/BarCode'));
 
 /**

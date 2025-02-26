@@ -16,7 +16,7 @@ import {
   wrapFetcher,
   GlobalVariableItem,
   setVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   PluginInterface,
   BasicPanelItem,
@@ -80,8 +80,8 @@ import {VariableManager} from './variable';
 
 import type {IScopedContext} from 'amis';
 import type {SchemaObject, SchemaCollection} from 'amis';
-import type {Api, Payload, RendererConfig, RendererEnv} from 'amis-core';
-import {loadAsyncRenderer} from 'amis-core';
+import type {Api, Payload, RendererConfig, RendererEnv} from '@/packages/amis-core/src';
+import {loadAsyncRenderer} from '@/packages/amis-core/src';
 import {startInlineEdit} from './inlineEdit';
 
 export interface EditorManagerConfig

@@ -7,12 +7,12 @@ import {
   ScopedContext,
   IScopedContext,
   ScopedComponentType
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import isEqual from 'lodash/isEqual';
 import pick from 'lodash/pick';
 import cx from 'classnames';
 import {BaseSchema, SchemaClassName, SchemaTpl} from '../Schema';
-import {autobind, getPropValue, createObject} from 'amis-core';
+import {autobind, getPropValue, createObject} from '@/packages/amis-core/src';
 
 import {Progress} from 'amis-ui';
 import type {ColorMapType} from '@/packages/amis-ui/src/components/Progress';

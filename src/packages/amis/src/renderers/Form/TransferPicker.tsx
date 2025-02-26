@@ -4,15 +4,15 @@ import {
   resolveEventData,
   evalExpression,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';
 import {TransferPicker} from '@/packages/amis-ui/src';
-import {autobind, createObject} from 'amis-core';
-import {ActionObject, toNumber} from 'amis-core';
+import {autobind, createObject} from '@/packages/amis-core/src';
+import {ActionObject, toNumber} from '@/packages/amis-core/src';
 import {supportStatic} from './StaticHoc';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 import pick from 'lodash/pick';
 
 /**

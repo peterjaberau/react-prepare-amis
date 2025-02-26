@@ -1,7 +1,7 @@
-import {ClassNamesFn, themeable} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 import React, {version} from 'react';
 import {render} from 'react-dom';
-import {autobind, calculatePosition} from 'amis-core';
+import {autobind, calculatePosition} from '@/packages/amis-core/src';
 import Transition, {
   ENTERED,
   ENTERING,

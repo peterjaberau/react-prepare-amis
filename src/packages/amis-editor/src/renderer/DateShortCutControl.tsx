@@ -7,7 +7,7 @@ import Sortable from 'sortablejs';
 import {findDOMNode} from 'react-dom';
 import {FormItem, Icon} from 'amis';
 
-import {FormControlProps, Option, optionValueCompare} from 'amis-core';
+import {FormControlProps, Option, optionValueCompare} from '@/packages/amis-core/src';
 import {BaseEventContext, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
 import {autobind} from '@/packages/amis-editor-core/src';

@@ -10,7 +10,7 @@ import Sortable from 'sortablejs';
 import {FormItem, Button, Icon, render as amisRender, toast} from 'amis';
 import {autobind} from '@/packages/amis-editor-core/src';
 import type {Option} from 'amis';
-import {createObject, FormControlProps} from 'amis-core';
+import {createObject, FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaApi} from 'amis';
 import type {PlainObject} from './style-control/types';
 

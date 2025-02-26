@@ -1,10 +1,10 @@
 import React from 'react';
 import upperFirst from 'lodash/upperFirst';
-import {Renderer, RendererProps} from 'amis-core';
-import {autobind, detectPropValueChanged, getPropValue} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {autobind, detectPropValueChanged, getPropValue} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
-import {resolveVariable} from 'amis-core';
-import {filter} from 'amis-core';
+import {resolveVariable} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaUrlPath} from '../Schema';
 
 /**

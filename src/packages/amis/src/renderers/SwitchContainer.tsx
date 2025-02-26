@@ -7,7 +7,7 @@ import {
   CustomStyle,
   isVisible,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {DndContainer as DndWrapper} from 'amis-ui';
 import {BaseSchema, SchemaCollection} from '../Schema';
 import {JSONSchema} from '../types';

@@ -15,9 +15,9 @@ import {
   getVariable,
   IFormItemStore,
   deleteVariable
-} from 'amis-core';
-import {ActionObject, Api} from 'amis-core';
-import {ComboStore, IComboStore} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ActionObject, Api} from '@/packages/amis-core/src';
+import {ComboStore, IComboStore} from '@/packages/amis-core/src';
 import {Tabs as CTabs, Tab, Button} from '@/packages/amis-ui/src';
 
 import {
@@ -28,18 +28,18 @@ import {
   extendObject,
   autobind,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Sortable from 'sortablejs';
 import {
   evalExpression,
   filter,
   isPureVariable,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import find from 'lodash/find';
 import {Select} from '@/packages/amis-ui/src';
-import {dataMapping, resolveVariable} from 'amis-core';
-import {isEffectiveApi, str2AsyncFunction} from 'amis-core';
+import {dataMapping, resolveVariable} from '@/packages/amis-core/src';
+import {isEffectiveApi, str2AsyncFunction} from '@/packages/amis-core/src';
 import {Alert2} from '@/packages/amis-ui/src';
 import memoize from 'lodash/memoize';
 import {Icon} from '@/packages/amis-ui/src';
@@ -55,12 +55,12 @@ import {
   SchemaObject,
   SchemaTpl
 } from '../../Schema';
-import {ListenerAction} from 'amis-core';
+import {ListenerAction} from '@/packages/amis-core/src';
 import type {SchemaTokenizeableString} from '../../Schema';
 import isPlainObject from 'lodash/isPlainObject';
 import isEqual from 'lodash/isEqual';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export type ComboCondition = {
   test: string;

@@ -6,7 +6,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {createAnimationStyle, formateId, type SchemaCollection} from 'amis';
 import kebabCase from 'lodash/kebabCase';
-import {styleManager} from 'amis-core';
+import {styleManager} from '@/packages/amis-core/src';
 
 const animationOptions = {
   enter: [

@@ -15,7 +15,7 @@ import {
   resolveVariableAndFilter,
   ScopedContext,
   getGlobalOptions
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
 
 export const PdfView = React.lazy(

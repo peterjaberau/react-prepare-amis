@@ -15,7 +15,7 @@ import {
   RootClose,
   isMobile,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import FormulaPicker, {
   CustomFormulaPickerProps
 } from './textarea-formula/FormulaPicker';

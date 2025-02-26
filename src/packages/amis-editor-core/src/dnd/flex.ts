@@ -2,7 +2,7 @@
  * Support up, down, left, and right drag mode
  */
 
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 
 import findIndex from 'lodash/findIndex';
 import {EditorDNDManager} from '.';

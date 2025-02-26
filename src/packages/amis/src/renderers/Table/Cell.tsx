@@ -9,7 +9,7 @@ import {
   buildTrackExpression,
   evalTrackExpression,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BadgeObject, Checkbox, Icon, Spinner} from '@/packages/amis-ui/src';
 import React from 'react';
 

@@ -6,10 +6,10 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react';
 import {findDOMNode} from 'react-dom';
 import omit from 'lodash/omit';
-import {themeable, isObject} from 'amis-core';
+import {themeable, isObject} from '@/packages/amis-core/src';
 import TooltipWrapper from './TooltipWrapper';
 
-import type {ThemeProps} from 'amis-core';
+import type {ThemeProps} from '@/packages/amis-core/src';
 import type {TooltipWrapperProps} from './TooltipWrapper';
 
 export interface OverflowTplProps extends ThemeProps {

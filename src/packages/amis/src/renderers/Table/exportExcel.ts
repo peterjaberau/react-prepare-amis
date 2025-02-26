@@ -2,9 +2,9 @@
  * 导出 Excel 功能
  */
 
-import {filter, isEffectiveApi, arraySlice, isObject} from 'amis-core';
+import {filter, isEffectiveApi, arraySlice, isObject} from '@/packages/amis-core/src';
 import './ColumnToggler';
-import {TableStore} from 'amis-core';
+import {TableStore} from '@/packages/amis-core/src';
 import {saveAs} from 'file-saver';
 import {
   getVariable,
@@ -12,10 +12,10 @@ import {
   decodeEntity,
   flattenTree,
   createObject
-} from 'amis-core';
-import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {isPureVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {BaseSchema} from '../../Schema';
-import {toDataURL, getImageDimensions} from 'amis-core';
+import {toDataURL, getImageDimensions} from '@/packages/amis-core/src';
 import memoize from 'lodash/memoize';
 import {getSnapshot} from 'mobx-state-tree';
 import moment from 'moment';

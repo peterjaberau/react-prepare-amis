@@ -8,9 +8,9 @@ import {
   setThemeClassName,
   ValidateError,
   RendererEvent
-} from 'amis-core';
-import {Renderer, RendererProps} from 'amis-core';
-import {SchemaNode, Schema, ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {SchemaNode, Schema, ActionObject} from '@/packages/amis-core/src';
 import {Drawer as DrawerContainer, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   guid,
@@ -18,13 +18,13 @@ import {
   autobind,
   createObject,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {reaction} from 'mobx';
 import {findDOMNode} from 'react-dom';
-import {IModalStore, ModalStore} from 'amis-core';
-import {filter} from 'amis-core';
+import {IModalStore, ModalStore} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {Spinner} from '@/packages/amis-ui/src';
-import {IServiceStore, CustomStyle} from 'amis-core';
+import {IServiceStore, CustomStyle} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   SchemaClassName,

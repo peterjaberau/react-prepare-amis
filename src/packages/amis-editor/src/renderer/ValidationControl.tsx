@@ -17,7 +17,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import ValidationItem, {ValidatorData} from './ValidationItem';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {
   getValidator,
   getValidatorsByTag,

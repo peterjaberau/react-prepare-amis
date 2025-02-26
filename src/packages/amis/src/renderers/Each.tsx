@@ -6,10 +6,10 @@ import {
   buildStyle,
   isPureVariable,
   setThemeClassName
-} from 'amis-core';
-import {Schema} from 'amis-core';
-import {resolveVariable, resolveVariableAndFilter} from 'amis-core';
-import {createObject, getPropValue, isObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Schema} from '@/packages/amis-core/src';
+import {resolveVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {createObject, getPropValue, isObject} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaCollection} from '../Schema';
 
 export interface EachExtraProps extends RendererProps {

@@ -1,19 +1,19 @@
 import React from 'react';
-import {ScopedContext, IScopedContext, filterTarget} from 'amis-core';
-import {Renderer, RendererProps} from 'amis-core';
-import {ServiceStore, IServiceStore} from 'amis-core';
-import {Api, ActionObject} from 'amis-core';
-import {filter, evalExpression} from 'amis-core';
-import {toNumber} from 'amis-core';
+import {ScopedContext, IScopedContext, filterTarget} from '@/packages/amis-core/src';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
+import {ServiceStore, IServiceStore} from '@/packages/amis-core/src';
+import {Api, ActionObject} from '@/packages/amis-core/src';
+import {filter, evalExpression} from '@/packages/amis-core/src';
+import {toNumber} from '@/packages/amis-core/src';
 import {
   createObject,
   until,
   isVisible,
   autobind,
   SkipOperation
-} from 'amis-core';
-import {isApiOutdated, isEffectiveApi} from 'amis-core';
-import {IFormStore} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {isApiOutdated, isEffectiveApi} from '@/packages/amis-core/src';
+import {IFormStore} from '@/packages/amis-core/src';
 import {Spinner, SpinnerExtraProps} from 'amis-ui';
 import {Steps} from 'amis-ui';
 import {
@@ -28,7 +28,7 @@ import {
 
 import {ActionSchema} from './Action';
 
-import {tokenize, evalExpressionWithConditionBuilderAsync} from 'amis-core';
+import {tokenize, evalExpressionWithConditionBuilderAsync} from '@/packages/amis-core/src';
 import {StepSchema} from './Steps';
 import isEqual from 'lodash/isEqual';
 

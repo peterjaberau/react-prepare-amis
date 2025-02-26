@@ -16,7 +16,7 @@ import {
   evalExpression,
   insertStyle,
   isObjectShallowModified
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   guid,
   autobind,
@@ -30,18 +30,18 @@ import {
   isObject,
   noop,
   str2function
-} from 'amis-core';
-import {isEffectiveApi} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {isEffectiveApi} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon, SpinnerExtraProps, SearchBox} from '@/packages/amis-ui/src';
 import {BadgeObject} from '@/packages/amis-ui/src';
 import {RemoteOptionsProps, withRemoteConfig} from '@/packages/amis-ui/src';
 import {Spinner, Menu} from '@/packages/amis-ui/src';
-import {ScopedContext, IScopedContext} from 'amis-core';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 import type {NavigationItem} from '@/packages/amis-ui/src/components/menu/index';
 import type {MenuItemProps} from '@/packages/amis-ui/src/components/menu/MenuItem';
 
-import type {Payload} from 'amis-core';
+import type {Payload} from '@/packages/amis-core/src';
 import type {
   BaseSchema,
   SchemaObject,

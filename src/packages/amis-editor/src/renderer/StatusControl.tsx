@@ -8,7 +8,7 @@ import {FormItem, Switch, Option} from 'amis';
 
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaCollection} from 'amis';
 // @ts-ignore
 import type {FormSchema} from 'amis/lib/Schema';

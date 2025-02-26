@@ -3,13 +3,13 @@ import {
   OptionsControl,
   resolveEventData,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import React from 'react';
 import find from 'lodash/find';
 import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';
 import {TabsTransfer} from '@/packages/amis-ui/src';
-import {Option, optionValueCompare} from 'amis-core';
+import {Option, optionValueCompare} from '@/packages/amis-core/src';
 import {
   autobind,
   string2regExp,
@@ -18,9 +18,9 @@ import {
   findTreeIndex,
   getTree,
   spliceTree
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSelection} from '@/packages/amis-ui/src/components/Selection';
-import {ActionObject, toNumber} from 'amis-core';
+import {ActionObject, toNumber} from '@/packages/amis-core/src';
 import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import {supportStatic} from './StaticHoc';
 import {matchSorter} from 'match-sorter';

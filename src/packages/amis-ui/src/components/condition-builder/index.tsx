@@ -12,15 +12,15 @@ import {
   mapTree,
   guid,
   noop
-} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import {ConditionBuilderFields, ConditionBuilderFuncs} from './types';
 import ConditionGroup from './Group';
 import defaultConfig, {ConditionBuilderConfig} from './config';
 import {FormulaPickerProps} from '../formula/Picker';
 import PickerContainer from '../PickerContainer';
 import ResultBox from '../ResultBox';
-import type {ConditionGroupValue, TestIdBuilder} from 'amis-core';
+import type {ConditionGroupValue, TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface ConditionBuilderProps extends ThemeProps, LocaleProps {
   builderMode?: 'simple' | 'full'; // 简单模式｜完整模式

@@ -4,7 +4,7 @@ import {
   FormControlProps,
   FormItem,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {FormBaseControlSchema} from '../../Schema';
 import {VerificationCode} from '@/packages/amis-ui/src';
 

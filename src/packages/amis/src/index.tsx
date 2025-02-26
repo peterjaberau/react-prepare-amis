@@ -5,7 +5,7 @@
  * This source code is licensed under the Apache license found in the
  * LICENSE file in the root directory of this source tree.
  */
-export * from 'amis-core';
+export * from '@/packages/amis-core/src';
 export * from '@/packages/amis-ui/src';
 import './minimal';
 import {registerFilter, registerFormula} from 'amis-formula';

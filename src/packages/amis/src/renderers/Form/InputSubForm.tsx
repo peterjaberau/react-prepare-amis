@@ -1,18 +1,18 @@
 import React from 'react';
-import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
+import {FormItem, FormControlProps, FormBaseControl} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import omit from 'lodash/omit';
 import pick from 'lodash/pick';
-import {createObject, guid} from 'amis-core';
+import {createObject, guid} from '@/packages/amis-core/src';
 import {Icon} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema, FormSchema, SchemaClassName} from '../../Schema';
 import Sortable from 'sortablejs';
 import {findDOMNode} from 'react-dom';
-import {isMobile} from 'amis-core';
+import {isMobile} from '@/packages/amis-core/src';
 import {PopUp} from '@/packages/amis-ui/src';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 /**
  * SubForm 子表单
  * 文档：https://aisuda.bce.baidu.com/amis/zh-CN/components/form/subform

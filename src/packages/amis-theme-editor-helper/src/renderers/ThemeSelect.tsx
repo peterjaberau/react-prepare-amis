@@ -7,8 +7,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import {Icon, Overlay, PopOver, TooltipWrapper} from '@/packages/amis-ui/src';
 import cloneDeep from 'lodash/cloneDeep';
 import debounce from 'lodash/debounce';
-import {FormItem, resolveVariableAndFilter, highlight} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+import {FormItem, resolveVariableAndFilter, highlight} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {getDefaultValue} from '../util';
 

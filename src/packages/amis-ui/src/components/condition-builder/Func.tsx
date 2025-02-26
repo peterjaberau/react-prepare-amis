@@ -13,14 +13,14 @@ import {
   LocaleProps,
   findTree,
   noop
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import PopOverContainer from '../PopOverContainer';
 import GroupedSelection from '../GroupedSelection';
 import ResultBox from '../ResultBox';
 import {Icon} from '../icons';
 import Expression from './Expression';
 import {ConditionBuilderConfig} from './config';
-import type {TestIdBuilder, ExpressionFunc} from 'amis-core';
+import type {TestIdBuilder, ExpressionFunc} from '@/packages/amis-core/src';
 
 export interface ConditionFuncProps extends ThemeProps, LocaleProps {
   value: ExpressionFunc;

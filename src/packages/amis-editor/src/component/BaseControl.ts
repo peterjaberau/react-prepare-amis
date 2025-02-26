@@ -7,7 +7,7 @@ import {NO_SUPPORT_STATIC_FORMITEM_CMPTS} from '../renderer/event-control/consta
 import {getEventControlConfig} from '../renderer/event-control/helper';
 import {getSchemaTpl, isObject, tipedLabel} from '@/packages/amis-editor-core/src';
 import type {BaseEventContext} from '@/packages/amis-editor-core/src';
-import {getRendererByName} from 'amis-core';
+import {getRendererByName} from '@/packages/amis-core/src';
 
 //Default action
 export const BUTTON_DEFAULT_ACTION = {

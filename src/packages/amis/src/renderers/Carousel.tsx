@@ -5,8 +5,8 @@ import Transition, {
   EXITING,
   EXITED
 } from 'react-transition-group/Transition';
-import {Renderer, RendererProps, setThemeClassName} from 'amis-core';
-import {resolveVariableAndFilter} from 'amis-core';
+import {Renderer, RendererProps, setThemeClassName} from '@/packages/amis-core/src';
+import {resolveVariableAndFilter} from '@/packages/amis-core/src';
 import {
   autobind,
   createObject,
@@ -14,13 +14,13 @@ import {
   isArrayChildrenModified,
   getPropValue,
   CustomStyle
-} from 'amis-core';
-import {ActionObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {Icon} from 'amis-ui';
 import {BaseSchema, SchemaCollection, SchemaName} from '../Schema';
 import {Html} from 'amis-ui';
 import Image from '../renderers/Image';
-import {ScopedContext, IScopedContext} from 'amis-core';
+import {ScopedContext, IScopedContext} from '@/packages/amis-core/src';
 
 /**
  * Carousel 轮播图渲染器。

@@ -11,8 +11,8 @@ import {
   classnames as amisCx,
   render,
   eachTree
-} from 'amis-core';
-import type {FormControlProps} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {SketchPicker} from 'react-color';
 import {

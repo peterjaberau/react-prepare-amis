@@ -1,4 +1,4 @@
-import {Renderer} from 'amis-core';
+import {Renderer} from '@/packages/amis-core/src';
 import {TableCell} from '../Table';
 import QuickEdit from '../QuickEdit';
 import Copyable from '../Copyable';

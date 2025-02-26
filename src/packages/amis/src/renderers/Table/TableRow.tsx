@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React from 'react';
-import type {IColumn, IRow} from 'amis-core/lib/store/table';
+import type {IColumn, IRow} from '@/packages/amis-core/src/lib/store/table';
 import {
   ITableStore,
   RendererEvent,
@@ -10,9 +10,9 @@ import {
   keyToPath,
   setVariable,
   traceProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Action} from '../Action';
-import {isClickOnInput} from 'amis-core';
+import {isClickOnInput} from '@/packages/amis-core/src';
 import {useInView} from 'react-intersection-observer';
 
 export interface TableRowProps extends Pick<RendererProps, 'render'> {

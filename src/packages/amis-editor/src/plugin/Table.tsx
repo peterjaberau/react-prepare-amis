@@ -24,7 +24,7 @@ import {
   tipedLabel
 } from '@/packages/amis-editor-core/src';
 import type {EditorManager} from '@/packages/amis-editor-core/src';
-import {setVariable, someTree} from 'amis-core';
+import {setVariable, someTree} from '@/packages/amis-core/src';
 import {reaction} from 'mobx';
 import {DSBuilderManager} from '../builder/DSBuilderManager';
 import {

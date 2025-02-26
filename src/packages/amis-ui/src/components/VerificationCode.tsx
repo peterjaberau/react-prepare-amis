@@ -10,7 +10,7 @@ import React, {
   useRef,
   useState
 } from 'react';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import InputComponent from './Input';
 import isEqualWith from 'lodash/isEqualWith';
 

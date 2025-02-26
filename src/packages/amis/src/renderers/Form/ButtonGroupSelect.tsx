@@ -5,11 +5,11 @@ import {
   FormOptionsControl,
   filter,
   getVariable
-} from 'amis-core';
-import {Option, TestIdBuilder} from 'amis-core';
-import {ActionObject, isObject} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {Option, TestIdBuilder} from '@/packages/amis-core/src';
+import {ActionObject, isObject} from '@/packages/amis-core/src';
 import type {BadgeObject} from '@/packages/amis-ui/src';
-import {getLevelFromClassName, autobind, isEmpty} from 'amis-core';
+import {getLevelFromClassName, autobind, isEmpty} from '@/packages/amis-core/src';
 import {ButtonGroupSchema} from '../ButtonGroup';
 import {supportStatic} from './StaticHoc';
 

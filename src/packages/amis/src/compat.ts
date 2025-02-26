@@ -2,15 +2,15 @@
  * @file compatibility configuration, make some adaptations for some unreasonable places in the old API design.
  * @author fex
  */
-import {Schema} from 'amis-core';
-import {addSchemaFilter} from 'amis-core';
+import {Schema} from '@/packages/amis-core/src';
+import {addSchemaFilter} from '@/packages/amis-core/src';
 import {CheckboxControlRenderer} from './renderers/Form/Checkbox';
-import {FormRenderer, isObjectShallowModified} from 'amis-core';
+import {FormRenderer, isObjectShallowModified} from '@/packages/amis-core/src';
 import {FieldSetRenderer} from './renderers/Form/FieldSet';
 import {CardRenderer} from './renderers/Card';
 import {ListItemRenderer} from './renderers/List';
 import {ButtonGroupControlRenderer} from './renderers/Form/ButtonGroupSelect';
-import {getLevelFromClassName} from 'amis-core';
+import {getLevelFromClassName} from '@/packages/amis-core/src';
 import {FileControlRenderer} from './renderers/Form/InputFile';
 import {ImageControlRenderer} from './renderers/Form/InputImage';
 import {RichTextControlRenderer} from './renderers/Form/InputRichText';

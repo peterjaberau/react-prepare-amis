@@ -22,7 +22,7 @@ import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl, tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {Option} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import type {SchemaApi} from 'amis';
 
 export type OptionControlItem = Option & {checked?: boolean; _key?: string};

@@ -1,14 +1,14 @@
 import React from 'react';
-import {Renderer, RendererProps} from 'amis-core';
+import {Renderer, RendererProps} from '@/packages/amis-core/src';
 
 import type {InteractionProps} from 'react-json-view';
-import {autobind, getPropValue, noop} from 'amis-core';
+import {autobind, getPropValue, noop} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
 import {
   resolveVariableAndFilter,
   isPureVariable,
   importLazyComponent
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 export const JsonView = React.lazy(() =>
   import('react-json-view').then(importLazyComponent)

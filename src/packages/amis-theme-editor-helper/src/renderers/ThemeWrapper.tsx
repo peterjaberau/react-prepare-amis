@@ -7,7 +7,7 @@ import React from 'react';
 import {render, Renderer} from 'amis';
 import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import {pick} from 'lodash';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
 

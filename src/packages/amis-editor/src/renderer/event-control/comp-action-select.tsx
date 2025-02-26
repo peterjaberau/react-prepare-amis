@@ -3,7 +3,7 @@
  */
 
 import {Option, Select} from 'amis';
-import {RendererProps, getRendererByName} from 'amis-core';
+import {RendererProps, getRendererByName} from '@/packages/amis-core/src';
 import React from 'react';
 import {getActionsByRendererName} from './helper';
 

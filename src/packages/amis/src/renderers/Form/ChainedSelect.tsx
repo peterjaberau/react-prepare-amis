@@ -9,12 +9,12 @@ import {
   getVariable,
   setThemeClassName,
   CustomStyle
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Select, Spinner} from '@/packages/amis-ui/src';
-import {Api, ApiObject} from 'amis-core';
-import {isEffectiveApi} from 'amis-core';
-import {isMobile, createObject} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {Api, ApiObject} from '@/packages/amis-core/src';
+import {isEffectiveApi} from '@/packages/amis-core/src';
+import {isMobile, createObject} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import find from 'lodash/find';

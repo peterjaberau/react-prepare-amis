@@ -1,5 +1,5 @@
 import {Icon, InputBox, FormulaPicker, FormItem, DataSchema} from 'amis';
-import type {FormControlProps} from 'amis-core';
+import type {FormControlProps} from '@/packages/amis-core/src';
 import React from 'react';
 import {autobind} from '@/packages/amis-editor-core/src';
 

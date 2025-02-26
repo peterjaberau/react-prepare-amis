@@ -12,8 +12,8 @@ import {
   uuid,
   setThemeClassName,
   RendererEvent
-} from 'amis-core';
-import {filter} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {filter} from '@/packages/amis-core/src';
 import {BadgeObject, Button, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import pick from 'lodash/pick';
 import omit from 'lodash/omit';
@@ -450,8 +450,8 @@ const ActionProps = [
   'downloadFileName'
 ];
 import {filterContents} from './Remark';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {autobind, createObject} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind, createObject} from '@/packages/amis-core/src';
 import {
   BaseSchema,
   FeedbackDialog,
@@ -468,7 +468,7 @@ import {DialogSchema, DialogSchemaBase} from './Dialog';
 import {DrawerSchema, DrawerSchemaBase} from './Drawer';
 import {ToastSchemaBase} from '../Schema';
 import {withBadge, Icon} from 'amis-ui';
-import {normalizeApi, str2AsyncFunction} from 'amis-core';
+import {normalizeApi, str2AsyncFunction} from '@/packages/amis-core/src';
 import {TooltipWrapper} from 'amis-ui';
 
 // 构造一个假的 React 事件避免可能的报错，主要用于快捷键功能

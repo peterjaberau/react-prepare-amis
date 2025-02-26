@@ -7,7 +7,7 @@ import {
   createObject,
   CustomStyle,
   setThemeClassName
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema, SchemaTpl} from '../Schema';
 import {
   BadgeObject,

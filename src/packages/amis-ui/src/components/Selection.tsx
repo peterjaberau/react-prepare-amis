@@ -23,7 +23,7 @@ import {
 import Checkbox from './Checkbox';
 import {Option, Options} from './Select';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface BaseSelectionProps extends ThemeProps, LocaleProps {
   options: Options;

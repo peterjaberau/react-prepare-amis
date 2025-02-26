@@ -9,7 +9,7 @@ import {
   isEffectiveApi,
   ApiObject,
   autobind
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {RemoteOptionsProps, withRemoteConfig, Timeline} from 'amis-ui';
 
 import type {

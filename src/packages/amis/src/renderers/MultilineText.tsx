@@ -8,7 +8,7 @@ import {
   filter,
   getPropValue,
   resolveVariableAndFilter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {BaseSchema} from '../Schema';
 import {MultilineText} from 'amis-ui';
 

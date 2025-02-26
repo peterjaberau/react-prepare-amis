@@ -5,7 +5,7 @@ import {
   render,
   themeable,
   ThemeProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {ImageGallery} from 'amis-ui';
 import {setRenderSchemaFn} from '@/packages/amis-ui/src/components/Alert';
 import {alert, confirm} from '@/packages/amis-ui/src/components/Alert';

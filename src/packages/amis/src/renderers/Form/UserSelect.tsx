@@ -6,13 +6,13 @@ import {
   Option,
   FormOptionsControl,
   resolveEventData
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {SpinnerExtraProps, UserSelect} from '@/packages/amis-ui/src';
 import {UserTabSelect} from '@/packages/amis-ui/src';
-import {isEffectiveApi} from 'amis-core';
+import {isEffectiveApi} from '@/packages/amis-core/src';
 import find from 'lodash/find';
-import {createObject, autobind} from 'amis-core';
-import {PlainObject} from 'amis-core';
+import {createObject, autobind} from '@/packages/amis-core/src';
+import {PlainObject} from '@/packages/amis-core/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

@@ -7,7 +7,7 @@ import cx from 'classnames';
 import {Renderer, toast} from 'amis';
 
 import {EditorManager} from '@/packages/amis-editor-core/src';
-import {autobind, FormControlProps} from 'amis-core';
+import {autobind, FormControlProps} from '@/packages/amis-core/src';
 
 export interface GoCongigControlProps extends FormControlProps {
   label: string;

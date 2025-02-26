@@ -8,15 +8,15 @@ import {
   setThemeClassName,
   CustomStyle,
   formateCheckThemeCss
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {Checkbox} from '@/packages/amis-ui/src';
 import {withBadge, BadgeObject} from '@/packages/amis-ui/src';
-import {autobind, createObject} from 'amis-core';
-import {ActionObject} from 'amis-core';
+import {autobind, createObject} from '@/packages/amis-core/src';
+import {ActionObject} from '@/packages/amis-core/src';
 import {BaseSchema, FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface SchemaMap {
   checkbox: CheckboxControlSchema;

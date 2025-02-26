@@ -21,14 +21,14 @@ import {
   ucFirst,
   isEffectiveApi,
   getVariable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon, SpinnerExtraProps, Input, Spinner, OverflowTpl} from '@/packages/amis-ui/src';
 import {ActionSchema} from '../Action';
 import {FormOptionsSchema, SchemaApi} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 
-import type {Option} from 'amis-core';
-import type {ListenerAction} from 'amis-core';
+import type {Option} from '@/packages/amis-core/src';
+import type {ListenerAction} from '@/packages/amis-core/src';
 
 // declare function matchSorter(items:Array<any>, input:any, options:any): Array<any>;
 

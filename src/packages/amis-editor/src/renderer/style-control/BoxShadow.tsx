@@ -14,7 +14,7 @@ import {FormItem} from 'amis';
 
 import {parseBoxShadow, normalizeBoxShadow} from './transformation';
 
-import type {FormControlProps, RendererProps} from 'amis-core';
+import type {FormControlProps, RendererProps} from '@/packages/amis-core/src';
 import type {BoxShadowProps} from './types';
 
 function BoxShadow({

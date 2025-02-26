@@ -25,8 +25,8 @@ import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {tipedLabel} from '@/packages/amis-editor-core/src';
 
 import type {Option} from 'amis';
-import {createObject, FormControlProps} from 'amis-core';
-import type {OptionValue} from 'amis-core';
+import {createObject, FormControlProps} from '@/packages/amis-core/src';
+import type {OptionValue} from '@/packages/amis-core/src';
 import type {SchemaApi} from 'amis';
 import debounce from 'lodash/debounce';
 import {valueType} from './ValueFormatControl';
