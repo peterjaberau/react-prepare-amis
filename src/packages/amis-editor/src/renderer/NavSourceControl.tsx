@@ -12,7 +12,7 @@ import cloneDeep from 'lodash/cloneDeep';
 import {render as renderAmis} from 'amis-core';
 
 import {FormItem, Button, InputBox, Icon, Modal, toast} from 'amis';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 
 import {autobind, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import type {FormControlProps} from 'amis-core';

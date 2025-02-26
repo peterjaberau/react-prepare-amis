@@ -1,6 +1,6 @@
 import {render} from 'amis';
 import React from 'react';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {
   registerEditorPlugin,
   BasePlugin,

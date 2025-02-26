@@ -6,9 +6,9 @@ import React, {MouseEvent} from 'react';
 import cx from 'classnames';
 import {Icon, FormItem, TooltipWrapper, Spinner} from 'amis';
 import {autobind, FormControlProps, render as renderAmis} from 'amis-core';
-import {CodeMirrorEditor, FormulaEditor} from 'amis-ui';
+import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
 import {FormulaPlugin, editorFactory} from './plugin';
-import {Button, Overlay, PopOver, VariableList} from 'amis-ui';
+import {Button, Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
 import {RootClose, isMobile} from 'amis-core';
 import FormulaPicker, {CustomFormulaPickerProps} from './FormulaPicker';
 import {reaction} from 'mobx';
@@ -16,7 +16,7 @@ import {renderFormulaValue} from '../FormulaControl';
 import {getVariables, getQuickVariables} from '@/packages/amis-editor-core/src';
 import {findDOMNode} from 'react-dom';
 
-import type {VariableItem, CodeMirror} from 'amis-ui';
+import type {VariableItem, CodeMirror} from '@/packages/amis-ui/src';
 
 export interface AdditionalMenuClickOpts {
   /**

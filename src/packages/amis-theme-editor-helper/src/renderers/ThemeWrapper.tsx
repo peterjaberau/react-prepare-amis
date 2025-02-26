@@ -9,7 +9,7 @@ import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
 import type {FormControlProps} from 'amis-core';
 import {pick} from 'lodash';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 
 interface ThemeWrapperProps {
   hasSenior?: boolean;

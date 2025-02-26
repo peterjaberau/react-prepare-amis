@@ -7,9 +7,9 @@ import {
   getVariable
 } from 'amis-core';
 import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
-import {Select} from 'amis-ui';
-import {CityArea} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
+import {Select} from '@/packages/amis-ui/src';
+import {CityArea} from '@/packages/amis-ui/src';
 import {autobind, isMobile, createObject} from 'amis-core';
 import {ActionObject} from 'amis-core';
 import {Option} from 'amis-core';
@@ -185,7 +185,7 @@ const getCityFromCode = ({
 };
 
 const loadDb = (callback: (db: any) => void): void => {
-  import('amis-ui/lib/components/CityDB').then(callback);
+  import('@/packages/amis-ui/src/components/CityDB').then(callback);
 };
 
 export class CityPicker extends React.Component<

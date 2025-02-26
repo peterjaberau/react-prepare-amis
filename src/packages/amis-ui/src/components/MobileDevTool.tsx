@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {Icon} from './icons';
-import {Select} from 'amis-ui';
+import {Select} from '@/packages/amis-ui/src';
 import debounce from 'lodash/debounce';
 import {Portal} from 'react-overlays';
 

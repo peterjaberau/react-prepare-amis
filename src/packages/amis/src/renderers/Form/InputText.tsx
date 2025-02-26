@@ -22,7 +22,7 @@ import {
   isEffectiveApi,
   getVariable
 } from 'amis-core';
-import {Icon, SpinnerExtraProps, Input, Spinner, OverflowTpl} from 'amis-ui';
+import {Icon, SpinnerExtraProps, Input, Spinner, OverflowTpl} from '@/packages/amis-ui/src';
 import {ActionSchema} from '../Action';
 import {FormOptionsSchema, SchemaApi} from '../../Schema';
 import {supportStatic} from './StaticHoc';

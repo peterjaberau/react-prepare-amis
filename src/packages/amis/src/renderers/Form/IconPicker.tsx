@@ -7,7 +7,7 @@ import {autobind} from 'amis-core';
 import {ICONS} from './IconPickerIcons';
 import {FormItem, FormControlProps, FormBaseControl} from 'amis-core';
 import {Option} from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema} from '../../Schema';
 
 /**

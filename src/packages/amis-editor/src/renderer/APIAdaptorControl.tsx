@@ -9,7 +9,7 @@ import {tipedLabel} from '@/packages/amis-editor-core/src';
 import {FormControlProps} from 'amis-core';
 import {FormItem, Icon, TooltipWrapper} from 'amis';
 // @ts-ignore
-import {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 interface AdaptorFuncParam {
   label: string;

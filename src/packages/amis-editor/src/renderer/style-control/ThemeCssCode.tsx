@@ -2,7 +2,7 @@
  * Class name input box + custom style source code editor
  */
 import React, {useEffect, useRef, useState} from 'react';
-import {Editor, Overlay, PopOver} from 'amis-ui';
+import {Editor, Overlay, PopOver} from '@/packages/amis-ui/src';
 import {FormControlProps, FormItem} from 'amis-core';
 // @ts-ignore
 import {parse as cssParse} from 'amis-postcss';

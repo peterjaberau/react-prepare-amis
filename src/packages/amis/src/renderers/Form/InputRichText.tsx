@@ -66,8 +66,8 @@ function loadRichText(
 ): () => Promise<any> {
   return () =>
     type === 'tinymce'
-      ? import('amis-ui/lib/components/Tinymce').then(item => item.default)
-      : import('amis-ui/lib/components/RichText').then(item => item.default);
+      ? import('@/packages/amis-ui/src/components/Tinymce').then(item => item.default)
+      : import('@/packages/amis-ui/src/components/RichText').then(item => item.default);
 }
 
 export default class RichTextControl extends React.Component<

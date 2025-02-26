@@ -36,7 +36,7 @@ export interface MarkdownSchema extends BaseSchema {
 }
 
 function loadComponent(): Promise<any> {
-  return import('amis-ui/lib/components/Markdown').then(item => item.default);
+  return import('@/packages/amis-ui/src/components/Markdown').then(item => item.default);
 }
 
 export interface MarkdownProps

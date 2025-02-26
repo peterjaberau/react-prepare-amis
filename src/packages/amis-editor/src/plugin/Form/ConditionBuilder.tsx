@@ -15,7 +15,7 @@ import isString from 'lodash/isString';
 // @ts-ignore
 import defaultConfig, {
   OperationMap
-} from 'amis-ui/lib/components/condition-builder/config';
+} from '@/packages/amis-ui/src/components/condition-builder/config';
 import {generateId} from '../../util';
 
 export class ConditionBilderPlugin extends BasePlugin {

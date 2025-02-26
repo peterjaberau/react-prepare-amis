@@ -13,7 +13,7 @@ import {
   formateCheckThemeCss
 } from 'amis-core';
 import type {ActionObject, Api, OptionsControlProps, Option} from 'amis-core';
-import {Checkbox, Icon, Spinner} from 'amis-ui';
+import {Checkbox, Icon, Spinner} from '@/packages/amis-ui/src';
 import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import type {TestIdBuilder} from 'amis-core';

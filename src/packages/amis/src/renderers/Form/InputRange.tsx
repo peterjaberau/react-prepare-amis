@@ -18,7 +18,7 @@ import {
   isNumeric,
   getVariable
 } from 'amis-core';
-import {Range as InputRange, NumberInput, Icon} from 'amis-ui';
+import {Range as InputRange, NumberInput, Icon} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema, SchemaObject} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 

@@ -116,7 +116,7 @@ async function startRichTextEdit({
   onCancel
 }: InlineEditContext) {
   // @ts-ignore
-  const {FroalaEditor} = await import('amis-ui/lib/components/RichText');
+  const {FroalaEditor} = await import('@/packages/amis-ui/src/components/RichText');
   const id = `u_${guid()}`;
   elem.setAttribute('data-froala-id', id);
 

@@ -6,7 +6,7 @@ import {VRenderer} from '@/packages/amis-editor-core/src';
 import {mapReactElement} from '@/packages/amis-editor-core/src';
 import findIndex from 'lodash/findIndex';
 import {RegionWrapper as Region} from '@/packages/amis-editor-core/src';
-import {AnchorNavSection} from 'amis-ui';
+import {AnchorNavSection} from '@/packages/amis-ui/src';
 import {registerFilter} from 'amis-formula';
 import {generateId} from '../util';
 registerFilter('appTranslate', (input: any) => translateSchema(input));

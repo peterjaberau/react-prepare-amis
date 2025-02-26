@@ -42,7 +42,7 @@ import {FormOptionsSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import {matchSorter} from 'match-sorter';
 
-import type {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 /**
  * Nested Select

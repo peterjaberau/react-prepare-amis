@@ -22,7 +22,7 @@ import {
   InputJSONSchema,
   Select,
   Switch
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 // @ts-ignore
 import type {EditorModalBody} from '@/packages/amis-editor-core/src/lib/store/editor';
 

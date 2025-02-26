@@ -3,7 +3,7 @@ import mergeWith from 'lodash/mergeWith';
 import cloneDeep from 'lodash/cloneDeep';
 import cx from 'classnames';
 import {FormItem, InputBox} from 'amis';
-import {PickerContainer} from 'amis-ui';
+import {PickerContainer} from '@/packages/amis-ui/src';
 
 import {getEnv} from 'mobx-state-tree';
 import {normalizeApi, isEffectiveApi, isApiOutdated} from 'amis-core';

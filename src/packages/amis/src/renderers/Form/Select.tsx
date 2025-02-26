@@ -20,13 +20,13 @@ import {
   CustomStyle,
   setThemeClassName
 } from 'amis-core';
-import {TransferDropDown, Spinner, Select, SpinnerExtraProps} from 'amis-ui';
+import {TransferDropDown, Spinner, Select, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {FormOptionsSchema, SchemaApi} from '../../Schema';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';
 import {supportStatic} from './StaticHoc';
 
 import type {SchemaClassName} from '../../Schema';
-import type {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 /**
  * Select 下拉选择框。

@@ -6,7 +6,7 @@ import {
   resolveEventData,
   getVariable
 } from 'amis-core';
-import {DiffEditor} from 'amis-ui';
+import {DiffEditor} from '@/packages/amis-ui/src';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 import {FormBaseControlSchema, SchemaTokenizeableString} from '../../Schema';
 

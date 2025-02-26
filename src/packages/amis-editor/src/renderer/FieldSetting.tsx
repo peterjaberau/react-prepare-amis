@@ -17,11 +17,11 @@ import {
   isValidApi,
   normalizeApi
 } from 'amis-core';
-import {Button, toast} from 'amis-ui';
+import {Button, toast} from '@/packages/amis-ui/src';
 import {DSFeatureEnum} from '../builder/constants';
 
 import type {IReactionDisposer} from 'mobx';
-import type {InputTableColumnProps} from 'amis-ui';
+import type {InputTableColumnProps} from '@/packages/amis-ui/src';
 import type {DSFeatureType, ScaffoldField} from '../builder/type';
 
 interface FieldSettingProps extends FormControlProps {

@@ -23,7 +23,7 @@ import {
   SearchBox,
   Select,
   TooltipWrapper
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 import type {GlobalData} from '../helper/getGlobalData';
 import cloneDeep from 'lodash/cloneDeep';
 import debounce from 'lodash/debounce';

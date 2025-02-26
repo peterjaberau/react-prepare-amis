@@ -12,7 +12,7 @@ import {
 } from '../plugin';
 import {registerEditorPlugin} from '../manager';
 // @ts-ignore
-import type {MenuItem} from 'amis-ui/lib/components/ContextMenu';
+import type {MenuItem} from '@/packages/amis-ui/src/components/ContextMenu';
 import {EditorNodeType} from '../store/node';
 
 /**

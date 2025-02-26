@@ -26,7 +26,7 @@ import {
   isIntegerInRange,
   setThemeClassName
 } from 'amis-core';
-import {Html, Icon, OverflowTpl, TooltipWrapper} from 'amis-ui';
+import {Html, Icon, OverflowTpl, TooltipWrapper} from '@/packages/amis-ui/src';
 import {FormOptionsSchema, SchemaTpl} from '../../Schema';
 import intersectionWith from 'lodash/intersectionWith';
 import type {TooltipWrapperSchema} from '../TooltipWrapper';

@@ -24,7 +24,7 @@ import {RootClose} from 'amis-core';
 import type {
   TooltipObject,
   Trigger
-} from 'amis-ui/lib/components/TooltipWrapper';
+} from '@/packages/amis-ui/src/components/TooltipWrapper';
 import {resolveVariableAndFilter} from 'amis-core';
 import {isMobile} from 'amis-core';
 

@@ -19,9 +19,9 @@ import {
   getTree,
   spliceTree
 } from 'amis-core';
-import {BaseSelection} from 'amis-ui/lib/components/Selection';
+import {BaseSelection} from '@/packages/amis-ui/src/components/Selection';
 import {ActionObject, toNumber} from 'amis-core';
-import type {ItemRenderStates} from 'amis-ui/lib/components/Selection';
+import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import {supportStatic} from './StaticHoc';
 import {matchSorter} from 'match-sorter';
 

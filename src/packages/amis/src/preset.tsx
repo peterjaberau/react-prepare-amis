@@ -7,9 +7,9 @@ import {
   ThemeProps
 } from 'amis-core';
 import {ImageGallery} from 'amis-ui';
-import {setRenderSchemaFn} from 'amis-ui/lib/components/Alert';
-import {alert, confirm} from 'amis-ui/lib/components/Alert';
-import {toast} from 'amis-ui/lib/components/Toast';
+import {setRenderSchemaFn} from '@/packages/amis-ui/src/components/Alert';
+import {alert, confirm} from '@/packages/amis-ui/src/components/Alert';
+import {toast} from '@/packages/amis-ui/src/components/Toast';
 import React from 'react';
 
 extendDefaultEnv({

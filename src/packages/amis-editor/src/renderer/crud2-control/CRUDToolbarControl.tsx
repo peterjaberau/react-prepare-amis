@@ -8,7 +8,7 @@ import {findDOMNode} from 'react-dom';
 import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
 import {FormItem, Button, Icon, toast, Spinner, autobind} from 'amis';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {JSONPipeIn} from '@/packages/amis-editor-core/src';
 import {DSFeature, DSFeatureType, DSFeatureEnum} from '../../builder';
 import {traverseSchemaDeep} from '../../builder/utils';

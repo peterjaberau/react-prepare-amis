@@ -10,7 +10,7 @@ import cloneDeep from 'lodash/cloneDeep';
 import remove from 'lodash/remove';
 import isPlainObject from 'lodash/isPlainObject';
 import {FormItem, Button, Icon, FormControlProps, autobind} from 'amis';
-import {Checkbox} from 'amis-ui';
+import {Checkbox} from '@/packages/amis-ui/src';
 import {evalExpression} from 'amis-core';
 import {GoConfigControl} from './GoConfigControl';
 

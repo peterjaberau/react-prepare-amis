@@ -7,7 +7,7 @@ import {
   getVariable
 } from 'amis-core';
 import {LazyComponent} from 'amis-core';
-import {Editor} from 'amis-ui';
+import {Editor} from '@/packages/amis-ui/src';
 import {autobind} from 'amis-core';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 

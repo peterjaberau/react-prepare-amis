@@ -16,8 +16,8 @@ import {
   isApiOutdated,
   isApiOutdatedWithData
 } from 'amis-core';
-import {Icon} from 'amis-ui';
-import {TooltipWrapper, Button} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
+import {TooltipWrapper, Button} from '@/packages/amis-ui/src';
 import DropZone from 'react-dropzone';
 import {FileRejection} from 'react-dropzone';
 import {dataMapping} from 'amis-core';

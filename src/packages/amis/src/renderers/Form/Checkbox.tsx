@@ -10,8 +10,8 @@ import {
   formateCheckThemeCss
 } from 'amis-core';
 import cx from 'classnames';
-import {Checkbox} from 'amis-ui';
-import {withBadge, BadgeObject} from 'amis-ui';
+import {Checkbox} from '@/packages/amis-ui/src';
+import {withBadge, BadgeObject} from '@/packages/amis-ui/src';
 import {autobind, createObject} from 'amis-core';
 import {ActionObject} from 'amis-core';
 import {BaseSchema, FormBaseControlSchema} from '../../Schema';

@@ -10,7 +10,7 @@ import {
   ITableStore2
 } from 'amis-core';
 import {Icon, HeadCellDropDown} from 'amis-ui';
-import type {FilterDropdownProps} from 'amis-ui/lib/components/table/HeadCellDropDown';
+import type {FilterDropdownProps} from '@/packages/amis-ui/src/components/table/HeadCellDropDown';
 
 export interface QuickSearchConfig {
   type?: string;

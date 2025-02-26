@@ -24,7 +24,7 @@ import {RightPanels} from './Panel/RightPanels';
 import type {SchemaObject} from 'amis';
 import type {VariableGroup, VariableOptions} from '../variable';
 import type {EditorNodeType} from '../store/node';
-import {MobileDevTool} from 'amis-ui';
+import {MobileDevTool} from '@/packages/amis-ui/src';
 import {LeftPanelsProps} from './Panel/LeftPanels';
 import {RightPanelsProps} from './Panel/RightPanels';
 

@@ -15,7 +15,7 @@ import {BaseSchema, SchemaClassName, SchemaTpl} from '../Schema';
 import {autobind, getPropValue, createObject} from 'amis-core';
 
 import {Progress} from 'amis-ui';
-import type {ColorMapType} from 'amis-ui/lib/components/Progress';
+import type {ColorMapType} from '@/packages/amis-ui/src/components/Progress';
 
 /**
  * 进度展示控件。

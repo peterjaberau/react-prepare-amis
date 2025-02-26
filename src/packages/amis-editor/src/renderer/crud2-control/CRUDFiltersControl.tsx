@@ -17,7 +17,7 @@ import {
   Tag,
   autobind
 } from 'amis';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {DSFeatureEnum, ModelDSBuilderKey} from '../../builder/constants';
 import {traverseSchemaDeep} from '../../builder/utils';
 import {deepRemove} from '../../plugin/CRUD2/utils';

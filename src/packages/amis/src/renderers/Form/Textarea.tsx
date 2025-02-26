@@ -8,7 +8,7 @@ import {
   CustomStyle,
   setThemeClassName
 } from 'amis-core';
-import {Textarea} from 'amis-ui';
+import {Textarea} from '@/packages/amis-ui/src';
 import type {ListenerAction} from 'amis-core';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';

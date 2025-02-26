@@ -5,7 +5,7 @@ import React, {Suspense} from 'react';
 import {Renderer, RendererProps} from 'amis-core';
 import {BaseSchema} from '../Schema';
 import {getPropValue} from 'amis-core';
-const BarCode = React.lazy(() => import('amis-ui/lib/components/BarCode'));
+const BarCode = React.lazy(() => import('@/packages/amis-ui/src/components/BarCode'));
 
 /**
  * BarCode 显示渲染器，格式说明。

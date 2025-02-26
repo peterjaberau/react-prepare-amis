@@ -1,6 +1,6 @@
 import React from 'react';
 import {FormItem, FormControlProps, FormBaseControl, autobind} from 'amis-core';
-import {InputJSONSchema} from 'amis-ui';
+import {InputJSONSchema} from '@/packages/amis-ui/src';
 import {withRemoteConfig} from 'amis-ui';
 import {FormBaseControlSchema} from '../../Schema';
 import {InputFormulaControlSchema} from './InputFormula';

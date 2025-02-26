@@ -59,7 +59,7 @@ export * from './helper';
 import {i18n as _i18n} from 'i18n-runtime';
 import {reaction} from 'mobx';
 import {updateComponentContext} from '@/packages/amis-editor-core/src';
-import type {VariableItem} from 'amis-ui';
+import type {VariableItem} from '@/packages/amis-ui/src';
 
 interface EventControlProps extends FormControlProps {
   manager: EditorManager;

@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import {Radios} from 'amis-ui';
+import {Radios} from '@/packages/amis-ui/src';
 import {
   OptionsControl,
   OptionsControlProps,

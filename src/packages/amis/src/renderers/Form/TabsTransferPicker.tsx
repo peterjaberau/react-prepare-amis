@@ -12,7 +12,7 @@ import {TabsTransferControlSchema} from './TabsTransfer';
 import {autobind, createObject} from 'amis-core';
 import {Selection as BaseSelection} from 'amis-ui';
 import {ActionObject, toNumber} from 'amis-core';
-import type {ItemRenderStates} from 'amis-ui/lib/components/Selection';
+import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import {supportStatic} from './StaticHoc';
 import {isMobile} from 'amis-core';
 

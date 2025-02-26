@@ -11,7 +11,7 @@ import {filterDate, parseDuration} from 'amis-core';
 import {DateRangePicker} from 'amis-ui';
 import {isMobile, createObject, autobind} from 'amis-core';
 import {ActionObject} from 'amis-core';
-import type {ShortCuts} from 'amis-ui/lib/components/DatePicker';
+import type {ShortCuts} from '@/packages/amis-ui/src/components/DatePicker';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import type {TestIdBuilder} from 'amis-core';

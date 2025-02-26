@@ -7,13 +7,13 @@ import {
   getVariable,
   ListenerAction
 } from 'amis-core';
-import {Icon, Switch} from 'amis-ui';
+import {Icon, Switch} from '@/packages/amis-ui/src';
 import {autobind, isObject} from 'amis-core';
 import {IconSchema} from '../Icon';
 import {FormBaseControlSchema, SchemaCollection} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 
-import type {SpinnerExtraProps} from 'amis-ui';
+import type {SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 /**
  * Switch

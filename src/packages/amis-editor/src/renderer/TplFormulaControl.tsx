@@ -5,10 +5,10 @@
 import React from 'react';
 import cx from 'classnames';
 import {reaction} from 'mobx';
-import {CodeMirrorEditor, FormulaEditor} from 'amis-ui';
+import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
 import {Icon, Button, FormItem, TooltipWrapper} from 'amis';
 import {autobind, FormControlProps} from 'amis-core';
-import {Overlay, PopOver, VariableList} from 'amis-ui';
+import {Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
 import {RootClose, isMobile} from 'amis-core';
 import {FormulaPlugin, editorFactory} from './textarea-formula/plugin';
 import {renderFormulaValue} from './FormulaControl';
@@ -17,7 +17,7 @@ import FormulaPicker, {
 } from './textarea-formula/FormulaPicker';
 import {getVariables, getQuickVariables} from '@/packages/amis-editor-core/src';
 
-import type {VariableItem, CodeMirror} from 'amis-ui';
+import type {VariableItem, CodeMirror} from '@/packages/amis-ui/src';
 
 export interface TplFormulaControlProps extends FormControlProps {
   /**

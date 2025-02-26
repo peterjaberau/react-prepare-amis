@@ -5,7 +5,7 @@ import {JSONSchemaEditor} from 'amis-ui';
 import {autobind, isObject} from 'amis-core';
 import {FormBaseControlSchema} from '../../Schema';
 
-import {schemaEditorItemPlaceholder} from 'amis-ui/lib/components/schema-editor/Common';
+import {schemaEditorItemPlaceholder} from '@/packages/amis-ui/src/components/schema-editor/Common';
 import type {SchemaEditorItemPlaceholder} from 'amis-ui';
 import {isMobile} from 'amis-core';
 

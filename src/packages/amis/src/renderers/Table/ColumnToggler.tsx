@@ -15,7 +15,7 @@ import {filter} from 'amis-core';
 import {Icon} from 'amis-ui';
 import {getIcon} from 'amis-ui';
 import {RootClose} from 'amis-core';
-import type {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 import {IColumn} from 'amis-core';
 import type {IColumn2} from 'amis-core';
 

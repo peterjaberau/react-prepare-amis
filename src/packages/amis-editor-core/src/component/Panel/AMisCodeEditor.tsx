@@ -1,5 +1,5 @@
 import React from 'react';
-import {Editor} from 'amis-ui';
+import {Editor} from '@/packages/amis-ui/src';
 import {
   isObjectShallowModified,
   guid,

@@ -8,7 +8,7 @@ import React, {useEffect, useState} from 'react';
 import {FormItem} from 'amis-core';
 import type {FormControlProps} from 'amis-core';
 import cloneDeep from 'lodash/cloneDeep';
-import {Select} from 'amis-ui';
+import {Select} from '@/packages/amis-ui/src';
 import ColorPicker from './ColorPicker';
 import ThemeSelect from './ThemeSelect';
 import {i18n as _i18n} from 'i18n-runtime';

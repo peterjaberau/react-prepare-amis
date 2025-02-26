@@ -34,7 +34,7 @@ import {ActionObject} from 'amis-core';
 import {FormOptionsSchema, SchemaApi, SchemaCollection} from '../../Schema';
 import {supportStatic} from './StaticHoc';
 import {TooltipWrapperSchema} from '../TooltipWrapper';
-import type {ItemRenderStates} from 'amis-ui/lib/components/Selection';
+import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import type {TestIdBuilder} from 'amis-core';
 
 type NodeBehaviorType = 'unfold' | 'check';

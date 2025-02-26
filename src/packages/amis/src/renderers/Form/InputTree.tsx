@@ -3,8 +3,8 @@ import omit from 'lodash/omit';
 import debounce from 'lodash/debounce';
 import cx from 'classnames';
 import {matchSorter} from 'match-sorter';
-import {SpinnerExtraProps, Tree as TreeSelector} from 'amis-ui';
-import {value2array} from 'amis-ui/lib/components/Select';
+import {SpinnerExtraProps, Tree as TreeSelector} from '@/packages/amis-ui/src';
+import {value2array} from '@/packages/amis-ui/src/components/Select';
 import {
   Option,
   OptionsControl,
@@ -27,7 +27,7 @@ import {
   resizeSensor,
   anyChanged
 } from 'amis-core';
-import {Spinner, SearchBox} from 'amis-ui';
+import {Spinner, SearchBox} from '@/packages/amis-ui/src';
 import {
   FormOptionsSchema,
   SchemaApi,
@@ -35,7 +35,7 @@ import {
   SchemaClassName
 } from '../../Schema';
 import {supportStatic} from './StaticHoc';
-import type {ItemRenderStates} from 'amis-ui/lib/components/Selection';
+import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 
 type NodeBehaviorType = 'unfold' | 'check';
 

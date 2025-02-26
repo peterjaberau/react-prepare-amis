@@ -4,7 +4,7 @@
 
 import {FormItem} from 'amis-core';
 import type {FormControlProps} from 'amis-core';
-import {Overlay, PopOver} from 'amis-ui';
+import {Overlay, PopOver} from '@/packages/amis-ui/src';
 import React, {useEffect, useState} from 'react';
 import cx from 'classnames';
 import cloneDeep from 'lodash/cloneDeep';

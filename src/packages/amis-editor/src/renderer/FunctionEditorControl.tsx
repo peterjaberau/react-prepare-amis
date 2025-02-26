@@ -7,7 +7,7 @@ import {autobind} from '@/packages/amis-editor-core/src';
 import {FormControlProps} from 'amis-core';
 import {FormItem} from 'amis';
 // @ts-ignore
-import {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 interface FuncParam {
   label: string;

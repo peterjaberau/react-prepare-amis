@@ -8,7 +8,7 @@ import {FormItem} from 'amis-core';
 import type {FormControlProps} from 'amis-core';
 import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 import ColorPicker from './ColorPicker';
 import cloneDeep from 'lodash/cloneDeep';
 import assign from 'lodash/assign';

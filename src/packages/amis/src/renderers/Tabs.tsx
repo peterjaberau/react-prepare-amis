@@ -33,7 +33,7 @@ import {resolveVariableAndFilter} from 'amis-core';
 import {FormHorizontal} from 'amis-core';
 import {str2AsyncFunction} from 'amis-core';
 import {ScopedContext, IScopedContext} from 'amis-core';
-import type {TabsMode} from 'amis-ui/lib/components/Tabs';
+import type {TabsMode} from '@/packages/amis-ui/src/components/Tabs';
 import isNaN from 'lodash/isNaN';
 
 export interface TabSchema extends Omit<BaseSchema, 'type'> {

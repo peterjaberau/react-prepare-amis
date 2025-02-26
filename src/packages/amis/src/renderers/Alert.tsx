@@ -3,7 +3,7 @@ import {Renderer, RendererProps} from 'amis-core';
 import {Alert2 as Alert} from 'amis-ui';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 
-import type {AlertProps} from 'amis-ui/lib/components/Alert2';
+import type {AlertProps} from '@/packages/amis-ui/src/components/Alert2';
 import type {BaseSchema, SchemaCollection, SchemaIcon} from '../Schema';
 
 /**

@@ -9,7 +9,7 @@ import {
   SearchBox,
   Icon,
   SpinnerExtraProps
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 
 import debounce from 'lodash/debounce';
 import find from 'lodash/find';

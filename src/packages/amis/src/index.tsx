@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 export * from 'amis-core';
-export * from 'amis-ui';
+export * from '@/packages/amis-ui/src';
 import './minimal';
 import {registerFilter, registerFormula} from 'amis-formula';
 

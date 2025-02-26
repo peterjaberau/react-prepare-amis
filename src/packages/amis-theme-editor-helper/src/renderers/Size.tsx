@@ -9,7 +9,7 @@ import {FormItem} from 'amis-core';
 import type {FormControlProps} from 'amis-core';
 import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
-import {Button} from 'amis-ui';
+import {Button} from '@/packages/amis-ui/src';
 import ThemeSelect from './ThemeSelect';
 import {find} from 'lodash';
 import {getDefaultValue} from '../util';

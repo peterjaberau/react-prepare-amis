@@ -8,8 +8,8 @@ import omit from 'lodash/omit';
 import cx from 'classnames';
 import {FormItem, Button, InputBox, Icon, TooltipWrapper} from 'amis';
 import {FormulaExec, isExpression} from 'amis';
-import {CodeMirrorEditor, FormulaEditor} from 'amis-ui';
-import {FormulaCodeEditor, Overlay, PopOver, VariableList} from 'amis-ui';
+import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
+import {FormulaCodeEditor, Overlay, PopOver, VariableList} from '@/packages/amis-ui/src';
 import {
   FormControlProps,
   RootClose,
@@ -26,7 +26,7 @@ import {reaction} from 'mobx';
 import {getVariables, getQuickVariables, utils} from '@/packages/amis-editor-core/src';
 
 import type {BaseEventContext} from '@/packages/amis-editor-core/src';
-import type {VariableItem, FuncGroup} from 'amis-ui';
+import type {VariableItem, FuncGroup} from '@/packages/amis-ui/src';
 // @ts-ignore
 import {SchemaType} from 'amis/lib/Schema';
 

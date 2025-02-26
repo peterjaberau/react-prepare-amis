@@ -23,7 +23,7 @@ import type {TableProps, ExportExcelToolbar} from './index';
 
 const loadDb = () => {
   // @ts-ignore
-  return import('amis-ui/lib/components/CityDB');
+  return import('@/packages/amis-ui/src/components/CityDB');
 };
 
 /**

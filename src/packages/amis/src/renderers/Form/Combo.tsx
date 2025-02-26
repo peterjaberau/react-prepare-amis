@@ -18,7 +18,7 @@ import {
 } from 'amis-core';
 import {ActionObject, Api} from 'amis-core';
 import {ComboStore, IComboStore} from 'amis-core';
-import {Tabs as CTabs, Tab, Button} from 'amis-ui';
+import {Tabs as CTabs, Tab, Button} from '@/packages/amis-ui/src';
 
 import {
   guid,
@@ -37,12 +37,12 @@ import {
   resolveVariableAndFilter
 } from 'amis-core';
 import find from 'lodash/find';
-import {Select} from 'amis-ui';
+import {Select} from '@/packages/amis-ui/src';
 import {dataMapping, resolveVariable} from 'amis-core';
 import {isEffectiveApi, str2AsyncFunction} from 'amis-core';
-import {Alert2} from 'amis-ui';
+import {Alert2} from '@/packages/amis-ui/src';
 import memoize from 'lodash/memoize';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {
   isAlive,
   clone as cloneModel,

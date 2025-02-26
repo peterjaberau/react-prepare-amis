@@ -9,7 +9,7 @@ import {
   getPropValue
 } from 'amis-core';
 import {Steps, RemoteOptionsProps, withRemoteConfig} from 'amis-ui';
-import {StepStatus} from 'amis-ui/lib/components/Steps';
+import {StepStatus} from '@/packages/amis-ui/src/components/Steps';
 import {BaseSchema, SchemaCollection} from '../Schema';
 import isPlainObject from 'lodash/isPlainObject';
 import type {SchemaExpression} from 'amis-core';

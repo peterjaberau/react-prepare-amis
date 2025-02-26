@@ -21,7 +21,7 @@ import {handleAction} from 'amis-core';
 import type {
   ImageAction,
   ImageActionKey
-} from 'amis-ui/lib/components/ImageGallery';
+} from '@/packages/amis-ui/src/components/ImageGallery';
 
 export interface ImageToolbarAction {
   key: keyof typeof ImageActionKey;

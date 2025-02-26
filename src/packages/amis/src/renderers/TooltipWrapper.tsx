@@ -13,7 +13,7 @@ import {TooltipWrapper as TooltipWrapperComp} from 'amis-ui';
 import type {
   TooltipObject,
   Trigger
-} from 'amis-ui/lib/components/TooltipWrapper';
+} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 export interface TooltipWrapperSchema extends BaseSchema {
   /**

@@ -18,7 +18,7 @@ import {
   normalizeApi
 } from 'amis';
 // @ts-ignore
-import {value2array} from 'amis-ui/lib/components/Select';
+import {value2array} from '@/packages/amis-ui/src/components/Select';
 
 import {autobind, getI18nEnabled} from '@/packages/amis-editor-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';

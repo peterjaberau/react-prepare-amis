@@ -6,7 +6,7 @@ import {ClassNamesFn, themeable} from 'amis-core';
 import {hasIcon, Icon} from 'amis-ui';
 import {BaseSchema, SchemaClassName, SchemaIcon, SchemaTpl} from '../Schema';
 import {autobind, isMobile} from 'amis-core';
-import type {TooltipObject} from 'amis-ui/lib/components/TooltipWrapper';
+import type {TooltipObject} from '@/packages/amis-ui/src/components/TooltipWrapper';
 
 /**
  * 提示渲染器，默认会显示个小图标，鼠标放上来的时候显示配置的内容。

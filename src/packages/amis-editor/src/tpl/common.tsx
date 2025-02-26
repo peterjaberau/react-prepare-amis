@@ -11,7 +11,7 @@ import flatten from 'lodash/flatten';
 import {InputComponentName} from '../component/InputComponentName';
 import {FormulaDateType} from '../renderer/FormulaControl';
 // @ts-ignore
-import type {VariableItem} from 'amis-ui/lib/components/formula/CodeEditor';
+import type {VariableItem} from '@/packages/amis-ui/src/components/formula/CodeEditor';
 import reduce from 'lodash/reduce';
 import map from 'lodash/map';
 import omit from 'lodash/omit';

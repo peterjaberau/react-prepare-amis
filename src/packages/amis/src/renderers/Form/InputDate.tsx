@@ -11,13 +11,13 @@ import {
 import cx from 'classnames';
 import {filterDate, isPureVariable, resolveVariableAndFilter} from 'amis-core';
 import moment from 'moment';
-import {DatePicker} from 'amis-ui';
+import {DatePicker} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema, SchemaObject} from '../../Schema';
 import {createObject, anyChanged, isMobile, autobind} from 'amis-core';
 import {ActionObject} from 'amis-core';
 import {supportStatic} from './StaticHoc';
 
-import type {ShortCuts} from 'amis-ui/lib/components/DatePicker';
+import type {ShortCuts} from '@/packages/amis-ui/src/components/DatePicker';
 
 export interface InputDateBaseControlSchema extends FormBaseControlSchema {
   /**

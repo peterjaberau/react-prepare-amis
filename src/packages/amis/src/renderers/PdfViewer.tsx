@@ -19,7 +19,7 @@ import {
 import {BaseSchema} from '../Schema';
 
 export const PdfView = React.lazy(
-  () => import('amis-ui/lib/components/PdfViewer')
+  () => import('@/packages/amis-ui/src/components/PdfViewer')
 );
 
 export interface PdfViewerSchema extends BaseSchema {
