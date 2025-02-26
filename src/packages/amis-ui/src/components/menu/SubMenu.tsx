@@ -14,7 +14,7 @@ import {
   createObject,
   TestIdBuilder,
   filter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import {getIcon, Icon} from '../icons';
 import {Badge} from '../Badge';

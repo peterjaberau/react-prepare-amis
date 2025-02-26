@@ -6,7 +6,7 @@ import {
   eachTree,
   resolveVariableAndFilterForAsync,
   uncontrollable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {
   parse,
   autobind,
@@ -14,7 +14,7 @@ import {
   ThemeProps,
   localeable,
   LocaleProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {editorFactory} from './plugin';
 import FuncList from './FuncList';
 import VariableList from './VariableList';

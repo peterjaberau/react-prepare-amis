@@ -11,10 +11,10 @@ import {
   ClassNamesFn,
   LocaleProps,
   localeable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from '../icons';
 import {ColumnProps} from './index';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface Props extends ThemeProps, LocaleProps {
   column: ColumnProps;

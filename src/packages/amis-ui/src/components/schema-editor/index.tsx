@@ -10,8 +10,8 @@ import {
   ThemeProps,
   autobind,
   JSONSchema
-} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import {SchemaEditorItem} from './Item';
 import {schemaEditorItemPlaceholder} from './Common';
 import type {JSONSchema7TypeName} from 'json-schema';

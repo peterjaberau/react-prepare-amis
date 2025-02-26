@@ -1,5 +1,5 @@
 import React from 'react';
-import {localeable, themeable} from 'amis-core';
+import {localeable, themeable} from '@/packages/amis-core/src';
 import PickerContainer from '../PickerContainer';
 import SchemaVariableList, {
   SchemaVariableListProps

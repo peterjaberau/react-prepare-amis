@@ -1,11 +1,11 @@
 import moment from 'moment';
 import React from 'react';
-import {localeable, LocaleProps, ThemeProps} from 'amis-core';
+import {localeable, LocaleProps, ThemeProps} from '@/packages/amis-core/src';
 import Picker from '../Picker';
 import {PickerColumnItem} from '../PickerColumn';
-import {getRange} from 'amis-core';
-import {autobind} from 'amis-core';
-import type {TestIdBuilder} from 'amis-core';
+import {getRange} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface QuarterViewProps extends LocaleProps, ThemeProps {
   viewDate: moment.Moment;

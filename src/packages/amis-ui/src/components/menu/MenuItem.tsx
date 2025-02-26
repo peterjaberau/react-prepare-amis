@@ -13,7 +13,7 @@ import {
   createObject,
   TestIdBuilder,
   filter
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import {Badge} from '../Badge';
 import {getIcon} from '../icons';

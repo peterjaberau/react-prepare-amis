@@ -19,7 +19,7 @@ import {
   getOptionValue,
   getOptionValueBindField,
   ClassNamesFn
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Checkbox from './Checkbox';
 import {Option, Options} from './Select';
 

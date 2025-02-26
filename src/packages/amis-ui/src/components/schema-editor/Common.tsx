@@ -1,5 +1,5 @@
 import React from 'react';
-import {LocaleProps, ThemeProps, autobind, JSONSchema} from 'amis-core';
+import {LocaleProps, ThemeProps, autobind, JSONSchema} from '@/packages/amis-core/src';
 import Button from '../Button';
 import Checkbox from '../Checkbox';
 import Form from '../Form';

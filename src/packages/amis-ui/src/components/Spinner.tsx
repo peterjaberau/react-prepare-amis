@@ -7,7 +7,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import Transition, {ENTERED, ENTERING} from 'react-transition-group/Transition';
 import {Icon, hasIcon} from './icons';
 import {types} from 'mobx-state-tree';

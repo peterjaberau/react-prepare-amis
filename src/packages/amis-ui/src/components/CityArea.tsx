@@ -6,9 +6,9 @@ import React, {useEffect, useState, memo} from 'react';
 import Picker from './Picker';
 import ResultBox from './ResultBox';
 import {useSetState, useUpdateEffect} from '../hooks';
-import {localeable, LocaleProps} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import PopUp from './PopUp';
 import {PickerObjectOption} from './PickerColumn';
 

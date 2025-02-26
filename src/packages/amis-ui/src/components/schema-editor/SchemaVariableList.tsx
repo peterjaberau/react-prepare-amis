@@ -7,7 +7,7 @@ import {
   LocaleProps,
   themeable,
   ThemeProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {VariableItem} from '../formula/CodeEditor';
 import VariableList from '../formula/VariableList';
 import TooltipWrapper from '../TooltipWrapper';

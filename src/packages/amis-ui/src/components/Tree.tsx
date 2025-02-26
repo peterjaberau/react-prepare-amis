@@ -29,12 +29,12 @@ import {
   flattenTree,
   flattenTreeWithLeafNodes,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Option, Options, value2array} from './Select';
-import {themeable, ThemeProps, highlight} from 'amis-core';
+import {themeable, ThemeProps, highlight} from '@/packages/amis-core/src';
 import {Icon, getIcon} from './icons';
 import Checkbox from './Checkbox';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import Spinner, {SpinnerExtraProps} from './Spinner';
 import {ItemRenderStates} from './Selection';
 import VirtualList from './virtual-list';

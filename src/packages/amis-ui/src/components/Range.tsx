@@ -10,14 +10,14 @@ import isString from 'lodash/isString';
 import difference from 'lodash/difference';
 import React from 'react';
 import TooltipWrapper from './TooltipWrapper';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 
-import {Overlay} from 'amis-core';
-import type {ThemeProps} from 'amis-core';
-import {themeable} from 'amis-core';
-import {autobind, camel} from 'amis-core';
-import {stripNumber} from 'amis-core';
-import {safeAdd, safeSub} from 'amis-core';
+import {Overlay} from '@/packages/amis-core/src';
+import type {ThemeProps} from '@/packages/amis-core/src';
+import {themeable} from '@/packages/amis-core/src';
+import {autobind, camel} from '@/packages/amis-core/src';
+import {stripNumber} from '@/packages/amis-core/src';
+import {safeAdd, safeSub} from '@/packages/amis-core/src';
 import {findDOMNode} from 'react-dom';
 import {Icon} from './icons';
 

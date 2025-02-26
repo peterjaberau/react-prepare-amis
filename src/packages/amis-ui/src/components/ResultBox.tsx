@@ -1,13 +1,13 @@
-import {TestIdBuilder, ThemeProps, themeable} from 'amis-core';
+import {TestIdBuilder, ThemeProps, themeable} from '@/packages/amis-core/src';
 import React from 'react';
 import omit from 'lodash/omit';
 import isInteger from 'lodash/isInteger';
 import {InputBoxProps} from './InputBox';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 import Input from './Input';
-import {autobind, ucFirst} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {autobind, ucFirst} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import isPlainObject from 'lodash/isPlainObject';
 import TooltipWrapper, {TooltipObject} from './TooltipWrapper';
 

@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import {TestIdBuilder, ThemeProps, themeable} from 'amis-core';
-import {autobind} from 'amis-core';
+import {TestIdBuilder, ThemeProps, themeable} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import Icon from './icons';
 
 const preventEvent = (e: any) => e.stopPropagation();

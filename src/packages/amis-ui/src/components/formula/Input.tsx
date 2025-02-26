@@ -11,7 +11,7 @@ import {
   findTree,
   isExpression,
   isObject
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 import {FormulaEditor} from './Editor';
 import ResultBox from '../ResultBox';

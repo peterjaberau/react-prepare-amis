@@ -13,10 +13,10 @@ import Transition, {
 } from 'react-transition-group/Transition';
 import Portal from 'react-overlays/Portal';
 import {current, addModal, removeModal} from './ModalManager';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {LocaleProps, localeable} from 'amis-core';
-import {autobind, getScrollbarWidth} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
+import {autobind, getScrollbarWidth} from '@/packages/amis-core/src';
 import {
   DraggableCore,
   type DraggableBounds,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {mapTree, themeable, ThemeProps} from 'amis-core';
+import {mapTree, themeable, ThemeProps} from '@/packages/amis-core/src';
 import Collapse from '../Collapse';
 import CollapseGroup from '../CollapseGroup';
 import SearchBox from '../SearchBox';

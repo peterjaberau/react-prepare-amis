@@ -5,9 +5,9 @@
 import React from 'react';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 
-import {evalExpression, buildStyle} from 'amis-core';
-import {resolveVariable, resolveVariableAndFilter} from 'amis-core';
-import {ClassNamesFn} from 'amis-core';
+import {evalExpression, buildStyle} from '@/packages/amis-core/src';
+import {resolveVariable, resolveVariableAndFilter} from '@/packages/amis-core/src';
+import {ClassNamesFn} from '@/packages/amis-core/src';
 
 /**
  * Badge 角标。

@@ -12,7 +12,7 @@ import {
   ClassNamesFn,
   LocaleProps,
   localeable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import HeadCellDropDown, {
   FilterPayload,
   FilterDropdownProps

@@ -1,7 +1,7 @@
 import React from 'react';
-import {isClickOnInput} from 'amis-core';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {buildStyle} from 'amis-core';
+import {isClickOnInput} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {buildStyle} from '@/packages/amis-core/src';
 export interface CardProps extends ThemeProps {
   className?: string;
   headerClassName?: string;

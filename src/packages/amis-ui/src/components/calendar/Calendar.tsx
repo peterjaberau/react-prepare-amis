@@ -10,12 +10,12 @@ import {
   themeable,
   ThemeProps,
   utils
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {PickerOption} from '../PickerColumn';
 import 'moment/locale/zh-cn';
 import 'moment/locale/de';
 
-import type {RendererEnv, TestIdBuilder} from 'amis-core';
+import type {RendererEnv, TestIdBuilder} from '@/packages/amis-core/src';
 import type {unitOfTime} from 'moment';
 
 /** 视图模式 */

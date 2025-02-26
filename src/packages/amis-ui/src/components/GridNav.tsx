@@ -4,7 +4,7 @@
  */
 
 import React, {useMemo} from 'react';
-import {ClassName, ClassNamesFn} from 'amis-core';
+import {ClassName, ClassNamesFn} from '@/packages/amis-core/src';
 import {Badge, BadgeProps} from './Badge';
 
 export type GridNavDirection = 'horizontal' | 'vertical';

@@ -2,7 +2,7 @@ import React from 'react';
 import isInteger from 'lodash/isInteger';
 import debounce from 'lodash/debounce';
 import moment from 'moment';
-import {TestIdBuilder, ThemeProps, themeable} from 'amis-core';
+import {TestIdBuilder, ThemeProps, themeable} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 import {uncontrollable} from 'amis-core';
 import {autobind} from 'amis-core';

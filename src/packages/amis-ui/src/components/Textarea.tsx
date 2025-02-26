@@ -1,9 +1,9 @@
 import React from 'react';
 import {findDOMNode} from 'react-dom';
 import BaseTextArea from 'react-textarea-autosize';
-import {localeable, LocaleProps, TestIdBuilder} from 'amis-core';
-import {themeable, ThemeProps} from 'amis-core';
-import {autobind, ucFirst} from 'amis-core';
+import {localeable, LocaleProps, TestIdBuilder} from '@/packages/amis-core/src';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind, ucFirst} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 export interface TextAreaProps extends ThemeProps, LocaleProps {

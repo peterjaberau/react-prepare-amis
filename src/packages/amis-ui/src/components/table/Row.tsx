@@ -6,7 +6,7 @@
 import React from 'react';
 import {InView} from 'react-intersection-observer';
 
-import {ThemeProps, isObject, autobind, isClickOnInput} from 'amis-core';
+import {ThemeProps, isObject, autobind, isClickOnInput} from '@/packages/amis-core/src';
 
 import CheckBox from '../Checkbox';
 import {Icon} from '../icons';
@@ -18,7 +18,7 @@ import {
   hasFixedColumn,
   levelsSplit
 } from './util';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface Props extends ThemeProps {
   data: any;

@@ -1,4 +1,4 @@
-import {theme} from 'amis-core';
+import {theme} from '@/packages/amis-core/src';
 
 theme('antd', {
   classPrefix: 'antd-',

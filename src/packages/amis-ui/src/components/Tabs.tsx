@@ -11,17 +11,17 @@ import {
   LocaleProps,
   Schema,
   TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import Transition, {ENTERED, ENTERING} from 'react-transition-group/Transition';
-import {themeable, ThemeProps, noop} from 'amis-core';
-import {uncontrollable} from 'amis-core';
-import {isObjectShallowModified} from 'amis-core';
-import {autobind, guid} from 'amis-core';
+import {themeable, ThemeProps, noop} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
+import {isObjectShallowModified} from '@/packages/amis-core/src';
+import {autobind, guid} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 import debounce from 'lodash/debounce';
 import {findDOMNode} from 'react-dom';
 import TooltipWrapper from './TooltipWrapper';
-import {resizeSensor} from 'amis-core';
+import {resizeSensor} from '@/packages/amis-core/src';
 import PopOverContainer from './PopOverContainer';
 
 import Sortable from 'sortablejs';

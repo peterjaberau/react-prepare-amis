@@ -1,6 +1,6 @@
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
-import {autobind} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 export interface LinkProps

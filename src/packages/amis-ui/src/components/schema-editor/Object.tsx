@@ -1,5 +1,5 @@
 import React from 'react';
-import {autobind, guid, JSONSchema} from 'amis-core';
+import {autobind, guid, JSONSchema} from '@/packages/amis-core/src';
 import Button from '../Button';
 import {Icon} from '../icons';
 import InputBox from '../InputBox';

@@ -7,14 +7,14 @@ import {
   ClassNamesFn,
   getRange,
   isObject
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import {Icon} from '../icons';
 import Picker from '../Picker';
 import {PickerColumnItem} from '../PickerColumn';
 import Downshift from 'downshift';
 
 import type {Moment} from 'moment';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 interface CustomTimeViewProps extends LocaleProps {
   viewDate: moment.Moment;

@@ -5,7 +5,7 @@ import {
   LocaleProps,
   themeable,
   ThemeProps
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import InputJSONSchemaItem from './Item';
 import {FormulaPickerProps} from '../formula/Picker';
 

@@ -5,7 +5,7 @@
  */
 
 import React, {useCallback, useEffect, useMemo} from 'react';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import useClickAway from '../hooks/use-click-away';
 
 interface SliderProps extends ThemeProps {

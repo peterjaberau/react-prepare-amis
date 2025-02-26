@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {findDOMNode} from 'react-dom';
-import {resizeSensor} from 'amis-core';
+import {resizeSensor} from '@/packages/amis-core/src';
 
 export type Size = {
   height: number;

@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import {ThemeProps} from 'amis-core';
+import {ThemeProps} from '@/packages/amis-core/src';
 
 import {SummaryProps} from './index';
 import {updateFixedRow, hasFixedColumn} from './util';

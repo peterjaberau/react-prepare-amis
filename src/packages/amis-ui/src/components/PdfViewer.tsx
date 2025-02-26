@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import {themeable, ThemeProps, getGlobalOptions} from 'amis-core';
+import {themeable, ThemeProps, getGlobalOptions} from '@/packages/amis-core/src';
 import {Document, Page, pdfjs} from 'react-pdf';
 import {Icon} from './icons';
 import Input from './Input';

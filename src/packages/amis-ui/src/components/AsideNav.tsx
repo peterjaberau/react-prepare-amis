@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import {TestIdBuilder, mapTree} from 'amis-core';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {TestIdBuilder, mapTree} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 
 export type LinkItem = LinkItemProps;
 interface LinkItemProps {

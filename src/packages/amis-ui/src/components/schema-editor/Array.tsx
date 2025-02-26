@@ -1,5 +1,5 @@
 import React from 'react';
-import {autobind} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
 import {Icon} from '../icons';
 import {ITEMMAP, SchemaEditorItemCommon} from './Common';
 import {SchemaEditorItem} from './Item';

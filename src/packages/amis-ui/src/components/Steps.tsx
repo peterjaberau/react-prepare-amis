@@ -1,5 +1,5 @@
 import React from 'react';
-import {ClassName, themeable, ThemeProps} from 'amis-core';
+import {ClassName, themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 export enum StepStatus {

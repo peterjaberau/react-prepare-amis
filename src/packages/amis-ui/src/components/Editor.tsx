@@ -6,10 +6,10 @@
 
 import React from 'react';
 import cx from 'classnames';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {autobind} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {autobind} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 
 // 用于发布 sdk 版本的时候替换，因为不确定 sdk 版本怎么部署，而 worker 地址路径不可知。
 // 所以会被 fis3 替换成取相对的代码。

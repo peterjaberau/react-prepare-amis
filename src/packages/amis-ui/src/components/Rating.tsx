@@ -5,11 +5,11 @@
  */
 
 import React from 'react';
-import {ClassNamesFn, themeable} from 'amis-core';
-import {isObject} from 'amis-core';
-import {validations} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
+import {isObject} from '@/packages/amis-core/src';
+import {validations} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {isObjectShallowModified} from 'amis-core';
+import {isObjectShallowModified} from '@/packages/amis-core/src';
 import isEmpty from 'lodash/isEmpty';
 
 export type textPositionType = 'left' | 'right';

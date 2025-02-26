@@ -5,8 +5,8 @@
 
 import React from 'react';
 import TooltipWrapper, {TooltipObject, Trigger} from './TooltipWrapper';
-import {TestIdBuilder, pickEventsProps} from 'amis-core';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {TestIdBuilder, pickEventsProps} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 import Spinner, {SpinnerExtraProps} from './Spinner';
 
 export interface ButtonProps

@@ -1,6 +1,6 @@
 import {useCallback, useState} from 'react';
 import isFunction from 'lodash/isFunction';
-import {TranslateFn} from 'amis-core';
+import {TranslateFn} from '@/packages/amis-core/src';
 import {useForm, UseFormReturn} from 'react-hook-form';
 import debounce from 'lodash/debounce';
 import React from 'react';

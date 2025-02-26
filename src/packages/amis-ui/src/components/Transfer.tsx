@@ -4,19 +4,19 @@ import includes from 'lodash/includes';
 import debounce from 'lodash/debounce';
 import isEqual from 'lodash/isEqual';
 import unionWith from 'lodash/unionWith';
-import {ThemeProps, themeable, findTree, differenceFromAll} from 'amis-core';
+import {ThemeProps, themeable, findTree, differenceFromAll} from '@/packages/amis-core/src';
 import {BaseSelectionProps, BaseSelection, ItemRenderStates} from './Selection';
 import {Options, Option} from './Select';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 import ResultList from './ResultList';
 import TableSelection from './TableSelection';
-import {autobind, flattenTree} from 'amis-core';
+import {autobind, flattenTree} from '@/packages/amis-core/src';
 import InputBox from './InputBox';
 import Checkbox from './Checkbox';
 import Tree from './Tree';
 import {Icon} from './icons';
 import AssociatedSelection from './AssociatedSelection';
-import {LocaleProps, localeable} from 'amis-core';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import GroupedSelection from './GroupedSelection';
 import ChainedSelection from './ChainedSelection';
 import {ItemRenderStates as ResultItemRenderStates} from './ResultList';
@@ -25,7 +25,7 @@ import ResultTreeList from './ResultTreeList';
 import {SpinnerExtraProps} from './Spinner';
 import Pagination from './Pagination';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export type SelectMode =
   | 'table'

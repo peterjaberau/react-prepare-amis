@@ -7,10 +7,10 @@ import React, {version} from 'react';
 import {render} from 'react-dom';
 import Modal from './Modal';
 import Button from './Button';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
 import Html from './Html';
-import type {PlainObject} from 'amis-core';
+import type {PlainObject} from '@/packages/amis-core/src';
 // import {createRoot} from 'react-dom/client';
 export interface AlertProps extends ThemeProps, LocaleProps {
   container?: any;

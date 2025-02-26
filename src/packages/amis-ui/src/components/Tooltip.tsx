@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 
 interface TooltipProps extends React.HTMLProps<HTMLDivElement> {
   title?: string;

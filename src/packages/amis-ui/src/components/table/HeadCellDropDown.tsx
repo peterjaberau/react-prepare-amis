@@ -14,9 +14,9 @@ import {
   ClassNamesFn,
   Overlay,
   PopOver
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface FilterPayload {
   closeDropdown?: boolean;

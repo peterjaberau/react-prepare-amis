@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ClassNamesFn, themeable, ThemeProps} from 'amis-core';
+import {ClassNamesFn, themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon, IconCheckedSchema} from './icons';
 
 /**

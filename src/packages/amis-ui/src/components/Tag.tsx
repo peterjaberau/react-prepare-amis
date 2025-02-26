@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import {Icon, getIcon} from './icons';
-import {autobind, noop} from 'amis-core';
+import {autobind, noop} from '@/packages/amis-core/src';
 
 export interface TagProps extends ThemeProps {
   style: React.CSSProperties;

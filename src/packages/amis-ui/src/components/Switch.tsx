@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import {ClassNamesFn, TestIdBuilder, themeable} from 'amis-core';
+import {ClassNamesFn, TestIdBuilder, themeable} from '@/packages/amis-core/src';
 import {Spinner} from './Spinner';
 
 const sizeMap = {

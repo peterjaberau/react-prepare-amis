@@ -3,7 +3,7 @@
  */
 
 import type CodeMirror from 'codemirror';
-import {findTree} from 'amis-core';
+import {findTree} from '@/packages/amis-core/src';
 import {FuncGroup, VariableItem} from './CodeEditor';
 import {parse} from 'amis-formula';
 import debounce from 'lodash/debounce';

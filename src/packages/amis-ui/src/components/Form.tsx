@@ -2,12 +2,12 @@
  * @file 给组件用的，渲染器里面不要用这个
  */
 import React from 'react';
-import {noop, themeable, ThemeProps} from 'amis-core';
+import {noop, themeable, ThemeProps} from '@/packages/amis-core/src';
 import {useForm, UseFormReturn, FormProvider} from 'react-hook-form';
 import {useValidationResolver} from '../hooks/use-validation-resolver';
-import {localeable, LocaleProps} from 'amis-core';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
 import debounce from 'lodash/debounce';
-import {isObjectShallowModified} from 'amis-core';
+import {isObjectShallowModified} from '@/packages/amis-core/src';
 
 export type FormRef = React.MutableRefObject<
   | {

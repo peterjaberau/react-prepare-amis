@@ -13,7 +13,7 @@ import {
   ClassNamesFn,
   LocaleProps,
   localeable
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 import HeadCellDropDown, {
   FilterDropdownProps,
   FilterPayload
@@ -21,7 +21,7 @@ import HeadCellDropDown, {
 import CheckBox from '../Checkbox';
 import Button from '../Button';
 import {Icon} from '../icons';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface Props extends ThemeProps, LocaleProps {
   column: any;

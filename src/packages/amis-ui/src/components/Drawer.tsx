@@ -15,8 +15,8 @@ import Portal from 'react-overlays/Portal';
 import {Icon} from './icons';
 import cx from 'classnames';
 import {current, addModal, removeModal} from './ModalManager';
-import {ClassNamesFn, themeable} from 'amis-core';
-import {noop, autobind, getScrollbarWidth} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
+import {noop, autobind, getScrollbarWidth} from '@/packages/amis-core/src';
 import {getContainerWithFullscreen} from './Modal';
 
 type DrawerPosition = 'top' | 'right' | 'bottom' | 'left';

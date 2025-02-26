@@ -1,4 +1,4 @@
-import {ThemeProps, themeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
 import React from 'react';
 import CodeMirrorEditor, {CodeMirrorEditorProps} from '../CodeMirror';
 import {FormulaPlugin, editorFactory as createEditor} from './plugin';

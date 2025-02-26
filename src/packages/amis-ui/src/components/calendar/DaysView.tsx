@@ -14,8 +14,8 @@ import {
   localeable,
   ClassNamesFn,
   convertArrayValueToMoment
-} from 'amis-core';
-import type {RendererEnv, TestIdBuilder} from 'amis-core';
+} from '@/packages/amis-core/src';
+import type {RendererEnv, TestIdBuilder} from '@/packages/amis-core/src';
 import Picker from '../Picker';
 import {PickerOption} from '../PickerColumn';
 import {DateType} from './Calendar';

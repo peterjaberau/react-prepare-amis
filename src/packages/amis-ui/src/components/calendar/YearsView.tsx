@@ -1,8 +1,8 @@
 import moment from 'moment';
 import React from 'react';
-import {LocaleProps, localeable, utils, getRange} from 'amis-core';
+import {LocaleProps, localeable, utils, getRange} from '@/packages/amis-core/src';
 import Picker from '../Picker';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 interface CustomYearsViewProps extends LocaleProps {
   viewDate: moment.Moment;

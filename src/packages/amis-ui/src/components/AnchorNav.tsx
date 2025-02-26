@@ -5,12 +5,12 @@
  */
 
 import React from 'react';
-import {ThemeProps, themeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
 
-import {autobind} from 'amis-core';
-import {uncontrollable} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {uncontrollable} from '@/packages/amis-core/src';
 import find from 'lodash/find';
-import type {Schema} from 'amis-core';
+import type {Schema} from '@/packages/amis-core/src';
 
 export interface AnchorNavSectionProps extends ThemeProps {
   title?: string; // 标题

@@ -5,10 +5,10 @@
 
 import React from 'react';
 
-import {ThemeProps, ClassNamesFn} from 'amis-core';
+import {ThemeProps, ClassNamesFn} from '@/packages/amis-core/src';
 
 import {ColumnProps} from './index';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 const zIndex = 1;
 

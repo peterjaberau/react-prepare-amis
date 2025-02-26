@@ -1,5 +1,5 @@
 import React from 'react';
-import {LocaleProps, ThemeProps} from 'amis-core';
+import {LocaleProps, ThemeProps} from '@/packages/amis-core/src';
 import {
   ITEMMAP,
   SchemaEditorItemCommon,

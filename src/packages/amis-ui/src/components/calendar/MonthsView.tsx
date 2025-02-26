@@ -1,10 +1,10 @@
 import moment from 'moment';
 import React from 'react';
-import {LocaleProps, localeable, getRange} from 'amis-core';
+import {LocaleProps, localeable, getRange} from '@/packages/amis-core/src';
 import Picker from '../Picker';
 import {PickerOption} from '../PickerColumn';
 import {DateType} from './Calendar';
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface OtherProps {
   inputFormat?: string;

@@ -13,10 +13,10 @@ import Transition, {
 import React from 'react';
 import cx from 'classnames';
 import Html from './Html';
-import {guid, autobind, noop, isMobile} from 'amis-core';
-import {ClassNamesFn, themeable, classnames, ThemeProps} from 'amis-core';
+import {guid, autobind, noop, isMobile} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable, classnames, ThemeProps} from '@/packages/amis-core/src';
 import {Icon} from './icons';
-import {LocaleProps, localeable, TranslateFn} from 'amis-core';
+import {LocaleProps, localeable, TranslateFn} from '@/packages/amis-core/src';
 import groupBy from 'lodash/groupBy';
 
 interface Config {

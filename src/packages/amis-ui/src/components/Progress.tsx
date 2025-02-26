@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import {Circle} from 'rc-progress';
-import {ClassNamesFn, ClassName, themeable, ThemeProps} from 'amis-core';
+import {ClassNamesFn, ClassName, themeable, ThemeProps} from '@/packages/amis-core/src';
 
 interface ColorProps {
   value: number;

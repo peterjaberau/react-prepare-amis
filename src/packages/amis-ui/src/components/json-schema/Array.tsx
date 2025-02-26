@@ -1,5 +1,5 @@
 import React from 'react';
-import {guid} from 'amis-core';
+import {guid} from '@/packages/amis-core/src';
 import Button from '../Button';
 import {Icon} from '../icons';
 import type {InputJSONSchemaItemProps} from './index';

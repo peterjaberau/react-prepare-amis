@@ -1,7 +1,7 @@
 import React from 'react';
-import {TestIdBuilder, ThemeProps, themeable} from 'amis-core';
+import {TestIdBuilder, ThemeProps, themeable} from '@/packages/amis-core/src';
 import Input from './Input';
-import {autobind, ucFirst} from 'amis-core';
+import {autobind, ucFirst} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 export interface InputBoxProps

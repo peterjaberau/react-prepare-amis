@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import {themeable, ClassNamesFn} from 'amis-core';
+import {themeable, ClassNamesFn} from '@/packages/amis-core/src';
 
 interface NotFoundProps {
   code?: string | number;

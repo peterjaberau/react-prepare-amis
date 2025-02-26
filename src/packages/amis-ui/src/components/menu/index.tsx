@@ -20,8 +20,8 @@ import {
   findTree,
   getTreeAncestors,
   TestIdBuilder
-} from 'amis-core';
-import {ClassNamesFn, themeable} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 
 import {Icon} from '../icons';
 import {BadgeObject} from '../Badge';

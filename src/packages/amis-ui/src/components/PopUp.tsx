@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
-import {localeable, LocaleProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
 import Transition, {
   ENTERED,
   EXITING,

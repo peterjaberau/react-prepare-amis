@@ -5,15 +5,15 @@
  */
 
 import React from 'react';
-import {ClassNamesFn, ThemeProps, themeable} from 'amis-core';
+import {ClassNamesFn, ThemeProps, themeable} from '@/packages/amis-core/src';
 import Transition, {
   EXITED,
   ENTERING,
   EXITING
 } from 'react-transition-group/Transition';
-import {autobind} from 'amis-core';
-import {isClickOnInput} from 'amis-core';
-import {TranslateFn} from 'amis-core';
+import {autobind} from '@/packages/amis-core/src';
+import {isClickOnInput} from '@/packages/amis-core/src';
+import {TranslateFn} from '@/packages/amis-core/src';
 import {Icon} from './icons';
 
 const collapseStyles: {

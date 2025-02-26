@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {ClassNamesFn, themeable} from 'amis-core';
+import {ClassNamesFn, themeable} from '@/packages/amis-core/src';
 
 import JsBarcode from 'jsbarcode';
 

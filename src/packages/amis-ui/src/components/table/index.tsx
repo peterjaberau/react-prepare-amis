@@ -22,10 +22,10 @@ import {
   offset,
   getScrollParent,
   position
-} from 'amis-core';
-import {resizeSensor} from 'amis-core';
-import {getStyleNumber} from 'amis-core';
-import {filterTree} from 'amis-core';
+} from '@/packages/amis-core/src';
+import {resizeSensor} from '@/packages/amis-core/src';
+import {getStyleNumber} from '@/packages/amis-core/src';
+import {filterTree} from '@/packages/amis-core/src';
 
 import Spinner, {SpinnerExtraProps} from '../Spinner';
 import ItemActionsWrapper from './ItemActionsWrapper';
@@ -43,7 +43,7 @@ import {
   getSortData
 } from './util';
 
-import type {TestIdBuilder} from 'amis-core';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface ColumnProps {
   title: string | React.ReactNode | Function;

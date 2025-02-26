@@ -1,8 +1,8 @@
-import {ThemeProps, themeable} from 'amis-core';
+import {ThemeProps, themeable} from '@/packages/amis-core/src';
 import React from 'react';
-import {Options, Option} from 'amis-core';
-import {LocaleProps, localeable} from 'amis-core';
-import type {TestIdBuilder} from 'amis-core';
+import {Options, Option} from '@/packages/amis-core/src';
+import {LocaleProps, localeable} from '@/packages/amis-core/src';
+import type {TestIdBuilder} from '@/packages/amis-core/src';
 
 export interface ListMenuProps extends ThemeProps, LocaleProps {
   options: Options;

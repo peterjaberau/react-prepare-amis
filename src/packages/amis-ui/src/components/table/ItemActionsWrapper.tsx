@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ClassNamesFn} from 'amis-core';
+import {ClassNamesFn} from '@/packages/amis-core/src';
 
 export interface ItemActionsProps {
   classnames: ClassNamesFn;

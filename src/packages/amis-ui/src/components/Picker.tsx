@@ -3,10 +3,10 @@
  * @description 移动端列滚动选择器
  */
 import React, {memo, ReactNode, useState, useEffect} from 'react';
-import {uncontrollable} from 'amis-core';
+import {uncontrollable} from '@/packages/amis-core/src';
 
-import {themeable, ThemeProps} from 'amis-core';
-import {localeable, LocaleProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
+import {localeable, LocaleProps} from '@/packages/amis-core/src';
 
 import Button from './Button';
 import {PickerColumnItem, default as Column} from './PickerColumn';

@@ -115,7 +115,7 @@ import {
   type CustomVendorFn,
   getCustomVendor,
   type TestIdBuilder
-} from 'amis-core';
+} from '@/packages/amis-core/src';
 
 // 兼容原来的用法，后续不直接试用。
 

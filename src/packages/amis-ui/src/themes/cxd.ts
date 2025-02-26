@@ -1,4 +1,4 @@
-import {theme, ClassNamesFn, makeClassnames} from 'amis-core';
+import {theme, ClassNamesFn, makeClassnames} from '@/packages/amis-core/src';
 
 export const classPrefix: string = 'cxd-';
 export const classnames: ClassNamesFn = makeClassnames(classPrefix);

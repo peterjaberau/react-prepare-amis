@@ -1,5 +1,5 @@
 import React from 'react';
-import {themeable, ThemeProps} from 'amis-core';
+import {themeable, ThemeProps} from '@/packages/amis-core/src';
 import TimelineItem, {TimelineItemProps} from './TimelineItem';
 
 export interface TimelineProps extends ThemeProps {
