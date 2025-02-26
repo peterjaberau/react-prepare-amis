@@ -8,7 +8,7 @@ import {
 } from 'amis-core';
 import cx from 'classnames';
 import {filterDate, parseDuration} from 'amis-core';
-import {DateRangePicker} from 'amis-ui';
+import {DateRangePicker} from '@/packages/amis-ui/src';
 import {isMobile, createObject, autobind} from 'amis-core';
 import {ActionObject} from 'amis-core';
 import type {ShortCuts} from '@/packages/amis-ui/src/components/DatePicker';

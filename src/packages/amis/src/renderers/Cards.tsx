@@ -9,7 +9,7 @@ import {
   getPropValue
 } from 'amis-core';
 import {SchemaNode, Schema, ActionObject} from 'amis-core';
-import {Button, Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Button, Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {ListStore, IListStore} from 'amis-core';
 import {Action} from '../types';
 import {
@@ -29,7 +29,7 @@ import {
 } from 'amis-core';
 import Sortable from 'sortablejs';
 import {filter} from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaClassName,

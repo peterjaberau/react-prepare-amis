@@ -5,7 +5,7 @@ import {
   createObject,
   padArr
 } from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {observer} from 'mobx-react';
 import React from 'react';
 

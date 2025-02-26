@@ -13,7 +13,7 @@ import {
   filter
 } from 'amis-core';
 import {BaseSchema, SchemaObject} from '../Schema';
-import {Tag} from 'amis-ui';
+import {Tag} from '@/packages/amis-ui/src';
 import {TagSchema} from './Tag';
 
 type Words = string | string[];

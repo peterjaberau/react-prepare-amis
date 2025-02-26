@@ -6,8 +6,8 @@ import {
   NotFound,
   Spinner,
   SpinnerExtraProps
-} from 'amis-ui';
-import {Layout} from 'amis-ui';
+} from '@/packages/amis-ui/src';
+import {Layout} from '@/packages/amis-ui/src';
 import {
   Renderer,
   RendererProps,

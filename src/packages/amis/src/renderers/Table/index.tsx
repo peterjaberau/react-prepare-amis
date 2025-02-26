@@ -53,7 +53,7 @@ import {
   Checkbox,
   Spinner,
   SpinnerExtraProps
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 import {TableCell} from './TableCell';
 import type {AutoGenerateFilterObject} from '../CRUD';
 import {HeadCellFilterDropDown} from './HeadCellFilterDropdown';

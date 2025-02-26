@@ -11,7 +11,7 @@ import {
   resolveVariableAndFilter
 } from 'amis-core';
 import {BaseSchema} from '../Schema';
-import {Icon, SearchBox, VirtualList} from 'amis-ui';
+import {Icon, SearchBox, VirtualList} from '@/packages/amis-ui/src';
 
 const foregroundColors = {
   '30': 'black',

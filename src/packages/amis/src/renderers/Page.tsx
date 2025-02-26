@@ -26,9 +26,9 @@ import {
   createObject
 } from 'amis-core';
 import {ScopedContext, IScopedContext} from 'amis-core';
-import {Alert2 as Alert, SpinnerExtraProps} from 'amis-ui';
+import {Alert2 as Alert, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {isApiOutdated, isEffectiveApi} from 'amis-core';
-import {Spinner} from 'amis-ui';
+import {Spinner} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaCollection,
@@ -44,7 +44,7 @@ import {isAlive, onAction} from 'mobx-state-tree';
 import mapValues from 'lodash/mapValues';
 import {resolveVariable} from 'amis-core';
 import {buildStyle} from 'amis-core';
-import {PullRefresh} from 'amis-ui';
+import {PullRefresh} from '@/packages/amis-ui/src';
 import {scrollPosition, isMobile} from 'amis-core';
 
 /**

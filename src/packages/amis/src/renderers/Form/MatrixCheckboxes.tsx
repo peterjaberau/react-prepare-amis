@@ -12,7 +12,7 @@ import {
   resolveEventData
 } from 'amis-core';
 import {buildApi, isValidApi, isEffectiveApi} from 'amis-core';
-import {Checkbox, Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Checkbox, Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {setVariable, createObject} from 'amis-core';
 import {ApiObject, ActionObject, isMobile} from 'amis-core';
 import {FormBaseControlSchema, SchemaApi} from '../../Schema';

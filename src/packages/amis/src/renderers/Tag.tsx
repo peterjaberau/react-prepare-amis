@@ -13,7 +13,7 @@ import {BaseSchema, SchemaClassName, SchemaIcon} from '../Schema';
 import {getPropValue} from 'amis-core';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 
-import {Tag} from 'amis-ui';
+import {Tag} from '@/packages/amis-ui/src';
 
 /**
  * Tag

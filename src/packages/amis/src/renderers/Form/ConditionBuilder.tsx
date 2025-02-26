@@ -24,7 +24,7 @@ import {
   withRemoteConfig,
   RemoteOptionsProps,
   ConditionBuilder
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 
 import {IconSchema} from '../Icon';
 import {isMobile} from 'amis-core';

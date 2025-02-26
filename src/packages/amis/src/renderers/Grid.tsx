@@ -11,7 +11,7 @@ import pick from 'lodash/pick';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
 
 import {ucFirst} from 'amis-core';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 export const ColProps = ['lg', 'md', 'sm', 'xs'];
 

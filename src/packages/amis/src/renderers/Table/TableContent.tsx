@@ -13,7 +13,7 @@ import {observer} from 'mobx-react';
 import {ActionSchema} from '../Action';
 import ItemActionsWrapper from './ItemActionsWrapper';
 import {SchemaTpl} from '../../Schema';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 
 import type {IColumn, IRow, TestIdBuilder} from 'amis-core';
 import ColGroup from './ColGroup';

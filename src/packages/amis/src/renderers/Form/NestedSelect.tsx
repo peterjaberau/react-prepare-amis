@@ -7,7 +7,7 @@ import {
   Checkbox,
   Cascader,
   SpinnerExtraProps
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 import {
   Overlay,
   resolveEventData,

@@ -8,7 +8,7 @@ import {
   getMatchedEventTargets,
   getPropValue
 } from 'amis-core';
-import {Button, Spinner, Checkbox, Icon, SpinnerExtraProps} from 'amis-ui';
+import {Button, Spinner, Checkbox, Icon, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   ListStore,
   IListStore,

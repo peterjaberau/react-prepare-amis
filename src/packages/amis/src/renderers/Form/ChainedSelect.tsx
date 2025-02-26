@@ -10,7 +10,7 @@ import {
   setThemeClassName,
   CustomStyle
 } from 'amis-core';
-import {Select, Spinner} from 'amis-ui';
+import {Select, Spinner} from '@/packages/amis-ui/src';
 import {Api, ApiObject} from 'amis-core';
 import {isEffectiveApi} from 'amis-core';
 import {isMobile, createObject} from 'amis-core';

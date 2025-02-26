@@ -15,7 +15,7 @@ import {
   resolveEventData
 } from 'amis-core';
 import {Api, ActionObject} from 'amis-core';
-import {LocationPicker, Alert2, BaiduMapPicker, Icon} from 'amis-ui';
+import {LocationPicker, Alert2, BaiduMapPicker, Icon} from '@/packages/amis-ui/src';
 import {filter} from 'amis-core';
 import {FormBaseControlSchema} from '../../Schema';
 import {supportStatic} from './StaticHoc';

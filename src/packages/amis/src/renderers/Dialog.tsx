@@ -13,7 +13,7 @@ import {
 import {Renderer, RendererProps} from 'amis-core';
 import {SchemaNode, Schema, ActionObject} from 'amis-core';
 import {filter} from 'amis-core';
-import {Modal, SpinnerExtraProps} from 'amis-ui';
+import {Modal, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   guid,
   isVisible,
@@ -22,10 +22,10 @@ import {
   isObjectShallowModified
 } from 'amis-core';
 import {reaction} from 'mobx';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {ModalStore, IModalStore} from 'amis-core';
 import {findDOMNode} from 'react-dom';
-import {Spinner} from 'amis-ui';
+import {Spinner} from '@/packages/amis-ui/src';
 import {IServiceStore, CustomStyle} from 'amis-core';
 import {
   BaseSchema,

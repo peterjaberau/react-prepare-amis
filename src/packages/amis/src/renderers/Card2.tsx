@@ -1,5 +1,5 @@
 import React from 'react';
-import {Checkbox} from 'amis-ui';
+import {Checkbox} from '@/packages/amis-ui/src';
 import {Renderer, RendererProps} from 'amis-core';
 import {BaseSchema, SchemaClassName, SchemaCollection} from '../Schema';
 import {autobind} from 'amis-core';

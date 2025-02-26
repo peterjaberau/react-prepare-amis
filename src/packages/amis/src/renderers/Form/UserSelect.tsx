@@ -7,8 +7,8 @@ import {
   FormOptionsControl,
   resolveEventData
 } from 'amis-core';
-import {SpinnerExtraProps, UserSelect} from 'amis-ui';
-import {UserTabSelect} from 'amis-ui';
+import {SpinnerExtraProps, UserSelect} from '@/packages/amis-ui/src';
+import {UserTabSelect} from '@/packages/amis-ui/src';
 import {isEffectiveApi} from 'amis-core';
 import find from 'lodash/find';
 import {createObject, autobind} from 'amis-core';

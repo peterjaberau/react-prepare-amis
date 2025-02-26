@@ -7,7 +7,7 @@ import {Api, ApiObject, Payload} from 'amis-core';
 import update from 'immutability-helper';
 import {isEffectiveApi, isApiOutdated} from 'amis-core';
 import {ScopedContext, IScopedContext} from 'amis-core';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseSchema, SchemaApi, SchemaClassName, SchemaName} from '../Schema';
 import {createObject} from 'amis-core';
 

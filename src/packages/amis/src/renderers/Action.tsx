@@ -14,7 +14,7 @@ import {
   RendererEvent
 } from 'amis-core';
 import {filter} from 'amis-core';
-import {BadgeObject, Button, SpinnerExtraProps} from 'amis-ui';
+import {BadgeObject, Button, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import pick from 'lodash/pick';
 import omit from 'lodash/omit';
 

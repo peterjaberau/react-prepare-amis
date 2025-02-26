@@ -12,7 +12,7 @@ import isEmpty from 'lodash/isEmpty';
 import {anyChanged, getPropValue} from 'amis-core';
 import {escapeHtml} from 'amis-core';
 import {BaseSchema, SchemaTpl} from '../Schema';
-import {BadgeObject, withBadge} from 'amis-ui';
+import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
 import {buildStyle} from 'amis-core';
 
 /**

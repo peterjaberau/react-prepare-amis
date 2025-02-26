@@ -8,7 +8,7 @@ import {
 } from 'amis-core';
 import {Option, TestIdBuilder} from 'amis-core';
 import {ActionObject, isObject} from 'amis-core';
-import type {BadgeObject} from 'amis-ui';
+import type {BadgeObject} from '@/packages/amis-ui/src';
 import {getLevelFromClassName, autobind, isEmpty} from 'amis-core';
 import {ButtonGroupSchema} from '../ButtonGroup';
 import {supportStatic} from './StaticHoc';

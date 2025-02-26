@@ -10,7 +10,7 @@ import {
   evalTrackExpression,
   TestIdBuilder
 } from 'amis-core';
-import {BadgeObject, Checkbox, Icon, Spinner} from 'amis-ui';
+import {BadgeObject, Checkbox, Icon, Spinner} from '@/packages/amis-ui/src';
 import React from 'react';
 
 export interface CellProps extends ThemeProps {

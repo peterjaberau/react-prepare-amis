@@ -15,7 +15,7 @@ import {
 import {ActionSchema} from './Action';
 import {FormHorizontal} from 'amis-core';
 import omit from 'lodash/omit';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 
 /**
  * Panel渲染器。

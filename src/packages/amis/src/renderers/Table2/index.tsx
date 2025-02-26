@@ -36,7 +36,7 @@ import {
   CustomStyle,
   setThemeClassName
 } from 'amis-core';
-import {Icon, Table, BadgeObject, SpinnerExtraProps} from 'amis-ui';
+import {Icon, Table, BadgeObject, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import type {
   SortProps,
   ColumnProps,

@@ -6,7 +6,7 @@ import {
   resolveVariableAndFilter
 } from 'amis-core';
 import {FormBaseControlSchema} from '../../Schema';
-import {VerificationCode} from 'amis-ui';
+import {VerificationCode} from '@/packages/amis-ui/src';
 
 export interface VerificationCodeSchema extends FormBaseControlSchema {
   value?: string;

@@ -4,12 +4,12 @@ import cx from 'classnames';
 import omit from 'lodash/omit';
 import pick from 'lodash/pick';
 import {createObject, guid} from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {FormBaseControlSchema, FormSchema, SchemaClassName} from '../../Schema';
 import Sortable from 'sortablejs';
 import {findDOMNode} from 'react-dom';
 import {isMobile} from 'amis-core';
-import {PopUp} from 'amis-ui';
+import {PopUp} from '@/packages/amis-ui/src';
 import {autobind} from 'amis-core';
 
 import type {TestIdBuilder} from 'amis-core';

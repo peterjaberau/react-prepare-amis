@@ -1,6 +1,6 @@
 import React from 'react';
 import {FormItem, FormBaseControl, FormControlProps} from 'amis-core';
-import {FormulaPicker} from 'amis-ui';
+import {FormulaPicker} from '@/packages/amis-ui/src';
 import {autobind} from 'amis-core';
 
 import type {FormBaseControlSchema, SchemaIcon} from '../../Schema';

@@ -3,7 +3,7 @@ import {FormItem} from 'amis-core';
 import cx from 'classnames';
 import {filterDate, parseDuration} from 'amis-core';
 import InputDateRange, {DateRangeControlSchema} from './InputDateRange';
-import {DateRangePicker} from 'amis-ui';
+import {DateRangePicker} from '@/packages/amis-ui/src';
 import {supportStatic} from './StaticHoc';
 import {isMobile} from 'amis-core';
 /**

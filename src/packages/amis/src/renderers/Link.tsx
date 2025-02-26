@@ -3,8 +3,8 @@ import {Renderer, RendererProps} from 'amis-core';
 import {BaseSchema, SchemaTpl} from '../Schema';
 import {autobind, createObject, getPropValue} from 'amis-core';
 import {filter} from 'amis-core';
-import {BadgeObject, withBadge} from 'amis-ui';
-import {Link} from 'amis-ui';
+import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
+import {Link} from '@/packages/amis-ui/src';
 
 /**
  * Link 链接展示控件。

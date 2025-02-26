@@ -32,8 +32,8 @@ const LANG: {
   monthly: '月',
   yearly: '年'
 };
-import {Select} from 'amis-ui';
-import {Range as InputRange} from 'amis-ui';
+import {Select} from '@/packages/amis-ui/src';
+import {Range as InputRange} from '@/packages/amis-ui/src';
 import {Option} from 'amis-core';
 import {FormBaseControlSchema} from '../../Schema';
 

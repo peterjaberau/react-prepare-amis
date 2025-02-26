@@ -1,6 +1,6 @@
 import React from 'react';
 import {Renderer, RendererProps} from 'amis-core';
-import {Alert2 as Alert} from 'amis-ui';
+import {Alert2 as Alert} from '@/packages/amis-ui/src';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 
 import type {AlertProps} from '@/packages/amis-ui/src/components/Alert2';

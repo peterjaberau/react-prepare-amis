@@ -16,7 +16,7 @@ import {
   noop,
   autobind
 } from 'amis-core';
-import {Checkbox, Icon, SearchBox} from 'amis-ui';
+import {Checkbox, Icon, SearchBox} from '@/packages/amis-ui/src';
 
 import type {RendererProps, Option} from 'amis-core';
 import {matchSorter} from 'match-sorter';

@@ -18,7 +18,7 @@ import {
   isObjectShallowModified
 } from 'amis-core';
 import findIndex from 'lodash/findIndex';
-import {Tabs as CTabs, Tab} from 'amis-ui';
+import {Tabs as CTabs, Tab} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaClassName,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {RendererProps} from 'amis-core';
 import {ActionObject} from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {Overlay} from 'amis-core';
 import {PopOver} from 'amis-core';
 import {setVariable, createObject} from 'amis-core';

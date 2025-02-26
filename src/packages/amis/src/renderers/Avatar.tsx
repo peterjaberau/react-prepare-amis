@@ -3,8 +3,8 @@
  */
 import React from 'react';
 import {Renderer, RendererProps} from 'amis-core';
-import {Avatar} from 'amis-ui';
-import {BadgeObject, withBadge} from 'amis-ui';
+import {Avatar} from '@/packages/amis-ui/src';
+import {BadgeObject, withBadge} from '@/packages/amis-ui/src';
 import {BaseSchema, SchemaClassName} from '../Schema';
 import {isPureVariable, resolveVariableAndFilter, autobind} from 'amis-core';
 

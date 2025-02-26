@@ -32,7 +32,7 @@ import {
   findTreeIndex,
   applyFilters
 } from 'amis-core';
-import {Button, Icon} from 'amis-ui';
+import {Button, Icon} from '@/packages/amis-ui/src';
 import omit from 'lodash/omit';
 import findIndex from 'lodash/findIndex';
 import {TableSchema} from '../Table';

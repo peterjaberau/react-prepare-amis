@@ -9,7 +9,7 @@ import {
   setThemeClassName
 } from 'amis-core';
 import {PopOver} from 'amis-core';
-import {PopUp, SpinnerExtraProps} from 'amis-ui';
+import {PopUp, SpinnerExtraProps} from '@/packages/amis-ui/src';
 
 import {
   OptionsControl,
@@ -19,14 +19,14 @@ import {
   CustomStyle
 } from 'amis-core';
 
-import {Tree as TreeSelector} from 'amis-ui';
+import {Tree as TreeSelector} from '@/packages/amis-ui/src';
 import {matchSorter} from 'match-sorter';
 import debouce from 'lodash/debounce';
 import find from 'lodash/find';
 import {Api} from 'amis-core';
 import {isEffectiveApi} from 'amis-core';
-import {Spinner} from 'amis-ui';
-import {ResultBox} from 'amis-ui';
+import {Spinner} from '@/packages/amis-ui/src';
+import {ResultBox} from '@/packages/amis-ui/src';
 import {autobind, getTreeAncestors, isMobile, createObject} from 'amis-core';
 import {findDOMNode} from 'react-dom';
 import {normalizeOptions} from 'amis-core';

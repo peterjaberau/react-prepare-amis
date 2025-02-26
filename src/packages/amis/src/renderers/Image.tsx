@@ -14,7 +14,7 @@ import {
 import {filter} from 'amis-core';
 import {themeable, ThemeProps} from 'amis-core';
 import {autobind, getPropValue} from 'amis-core';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import {LocaleProps, localeable} from 'amis-core';
 import {BaseSchema, SchemaClassName, SchemaTpl, SchemaUrlPath} from '../Schema';
 import {handleAction} from 'amis-core';

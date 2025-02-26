@@ -25,7 +25,7 @@ import {
   isApiOutdatedWithData
 } from 'amis-core';
 import {createObject, qsstringify, guid, isEmpty, qsparse} from 'amis-core';
-import {Icon, TooltipWrapper, Button} from 'amis-ui';
+import {Icon, TooltipWrapper, Button} from '@/packages/amis-ui/src';
 import accepts from 'attr-accept';
 import {getNameFromUrl} from './InputFile';
 import ImageComponent, {ImageThumbProps} from '../Image';

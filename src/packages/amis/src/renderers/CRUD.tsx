@@ -27,8 +27,8 @@ import {
   spliceTree
 } from 'amis-core';
 import {ScopedContext, IScopedContext} from 'amis-core';
-import {Button, SpinnerExtraProps, TooltipWrapper} from 'amis-ui';
-import {Select} from 'amis-ui';
+import {Button, SpinnerExtraProps, TooltipWrapper} from '@/packages/amis-ui/src';
+import {Select} from '@/packages/amis-ui/src';
 import {getExprProperties, isObject} from 'amis-core';
 import pick from 'lodash/pick';
 import {findDOMNode} from 'react-dom';
@@ -37,8 +37,8 @@ import {isEffectiveApi, isApiOutdated, str2function} from 'amis-core';
 import omit from 'lodash/omit';
 import find from 'lodash/find';
 import findIndex from 'lodash/findIndex';
-import {Html} from 'amis-ui';
-import {Icon, confirm} from 'amis-ui';
+import {Html} from '@/packages/amis-ui/src';
+import {Icon, confirm} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaApi,

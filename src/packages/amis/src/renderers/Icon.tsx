@@ -14,7 +14,7 @@ import {
   withBadge,
   Icon as IconUI,
   IconCheckedSchema
-} from 'amis-ui';
+} from '@/packages/amis-ui/src';
 
 /**
  * Icon 图标渲染器

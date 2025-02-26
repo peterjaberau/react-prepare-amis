@@ -5,12 +5,12 @@ import {
   getVariable
 } from 'amis-core';
 import React from 'react';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTabsTransferRenderer} from './TabsTransfer';
-import {TabsTransferPicker} from 'amis-ui';
+import {TabsTransferPicker} from '@/packages/amis-ui/src';
 import {TabsTransferControlSchema} from './TabsTransfer';
 import {autobind, createObject} from 'amis-core';
-import {Selection as BaseSelection} from 'amis-ui';
+import {Selection as BaseSelection} from '@/packages/amis-ui/src';
 import {ActionObject, toNumber} from 'amis-core';
 import type {ItemRenderStates} from '@/packages/amis-ui/src/components/Selection';
 import {supportStatic} from './StaticHoc';

@@ -6,7 +6,7 @@ import PopOverable from '../PopOver';
 import {observer} from 'mobx-react';
 import omit from 'lodash/omit';
 import {filter} from 'amis-core';
-import {Badge} from 'amis-ui';
+import {Badge} from '@/packages/amis-ui/src';
 import {ColorScale} from 'amis-core';
 import {isPureVariable, resolveVariableAndFilter} from 'amis-core';
 

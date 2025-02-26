@@ -1,6 +1,6 @@
 import React from 'react';
 import {Renderer, isVisible, ClassNamesFn} from 'amis-core';
-import {Checkbox} from 'amis-ui';
+import {Checkbox} from '@/packages/amis-ui/src';
 
 import ColumnToggler, {ColumnTogglerProps} from '../Table/ColumnToggler';
 import {BaseSchema} from '../../Schema';

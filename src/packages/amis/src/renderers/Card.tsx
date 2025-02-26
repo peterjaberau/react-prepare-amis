@@ -4,7 +4,7 @@ import extend from 'lodash/extend';
 import {Renderer, RendererProps} from 'amis-core';
 import {SchemaNode, Schema, ActionObject, PlainObject} from 'amis-core';
 import {filter, evalExpression} from 'amis-core';
-import {Checkbox} from 'amis-ui';
+import {Checkbox} from '@/packages/amis-ui/src';
 import {padArr, isVisible, isDisabled, noop, hashCode} from 'amis-core';
 import {
   resolveVariable,
@@ -25,9 +25,9 @@ import {
   SchemaUrlPath
 } from '../Schema';
 import {ActionSchema} from './Action';
-import {Card} from 'amis-ui';
+import {Card} from '@/packages/amis-ui/src';
 import {findDOMNode} from 'react-dom';
-import {Icon} from 'amis-ui';
+import {Icon} from '@/packages/amis-ui/src';
 import type {IItem} from 'amis-core';
 
 export type CardBodyField = SchemaObject & {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Renderer, RendererProps} from 'amis-core';
-import {TooltipWrapper} from 'amis-ui';
+import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {filter} from 'amis-core';
 import {ClassNamesFn, themeable} from 'amis-core';
 import {hasIcon, Icon} from 'amis-ui';

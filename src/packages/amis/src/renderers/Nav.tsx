@@ -33,10 +33,10 @@ import {
 } from 'amis-core';
 import {isEffectiveApi} from 'amis-core';
 import {themeable, ThemeProps} from 'amis-core';
-import {Icon, SpinnerExtraProps, SearchBox} from 'amis-ui';
-import {BadgeObject} from 'amis-ui';
-import {RemoteOptionsProps, withRemoteConfig} from 'amis-ui';
-import {Spinner, Menu} from 'amis-ui';
+import {Icon, SpinnerExtraProps, SearchBox} from '@/packages/amis-ui/src';
+import {BadgeObject} from '@/packages/amis-ui/src';
+import {RemoteOptionsProps, withRemoteConfig} from '@/packages/amis-ui/src';
+import {Spinner, Menu} from '@/packages/amis-ui/src';
 import {ScopedContext, IScopedContext} from 'amis-core';
 import type {NavigationItem} from '@/packages/amis-ui/src/components/menu/index';
 import type {MenuItemProps} from '@/packages/amis-ui/src/components/menu/MenuItem';

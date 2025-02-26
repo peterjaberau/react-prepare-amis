@@ -6,9 +6,9 @@ import {
 } from 'amis-core';
 import React from 'react';
 import find from 'lodash/find';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';
-import {TabsTransfer} from 'amis-ui';
+import {TabsTransfer} from '@/packages/amis-ui/src';
 import {Option, optionValueCompare} from 'amis-core';
 import {
   autobind,

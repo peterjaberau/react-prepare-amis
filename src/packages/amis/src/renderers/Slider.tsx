@@ -1,5 +1,5 @@
 import {autobind, Renderer, RendererProps} from 'amis-core';
-import {Slider} from 'amis-ui';
+import {Slider} from '@/packages/amis-ui/src';
 import React from 'react';
 import {BaseSchema} from '../Schema';
 

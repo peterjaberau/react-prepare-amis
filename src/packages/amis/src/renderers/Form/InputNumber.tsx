@@ -12,7 +12,7 @@ import {
   getVariable
 } from 'amis-core';
 import cx from 'classnames';
-import {NumberInput, Select} from 'amis-ui';
+import {NumberInput, Select} from '@/packages/amis-ui/src';
 import {
   filter,
   autobind,

@@ -6,9 +6,9 @@ import {
   getVariable
 } from 'amis-core';
 import React from 'react';
-import {Spinner, SpinnerExtraProps} from 'amis-ui';
+import {Spinner, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {BaseTransferRenderer, TransferControlSchema} from './Transfer';
-import {TransferPicker} from 'amis-ui';
+import {TransferPicker} from '@/packages/amis-ui/src';
 import {autobind, createObject} from 'amis-core';
 import {ActionObject, toNumber} from 'amis-core';
 import {supportStatic} from './StaticHoc';

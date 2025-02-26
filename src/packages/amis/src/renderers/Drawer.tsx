@@ -11,7 +11,7 @@ import {
 } from 'amis-core';
 import {Renderer, RendererProps} from 'amis-core';
 import {SchemaNode, Schema, ActionObject} from 'amis-core';
-import {Drawer as DrawerContainer, SpinnerExtraProps} from 'amis-ui';
+import {Drawer as DrawerContainer, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   guid,
   isVisible,
@@ -23,7 +23,7 @@ import {reaction} from 'mobx';
 import {findDOMNode} from 'react-dom';
 import {IModalStore, ModalStore} from 'amis-core';
 import {filter} from 'amis-core';
-import {Spinner} from 'amis-ui';
+import {Spinner} from '@/packages/amis-ui/src';
 import {IServiceStore, CustomStyle} from 'amis-core';
 import {
   BaseSchema,

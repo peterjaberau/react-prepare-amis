@@ -34,7 +34,7 @@ import {
   JSONTraverse
 } from 'amis-core';
 import pickBy from 'lodash/pickBy';
-import {Html, PullRefresh, SpinnerExtraProps} from 'amis-ui';
+import {Html, PullRefresh, SpinnerExtraProps} from '@/packages/amis-ui/src';
 import {
   BaseSchema,
   SchemaApi,

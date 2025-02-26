@@ -11,7 +11,7 @@ import {
   FormControlProps,
   ScopedContext
 } from 'amis-core';
-import {Signature} from 'amis-ui';
+import {Signature} from '@/packages/amis-ui/src';
 import pick from 'lodash/pick';
 import {FormBaseControlSchema} from '../../Schema';
 
