@@ -5,7 +5,7 @@
 
 import React from 'react';
 import sortBy from 'lodash/sortBy';
-import {autobind} from '@/packages/src';
+import {autobind} from '@/packages/amis-ui/src';
 import {
   EditorManager,
   JSONPipeIn,

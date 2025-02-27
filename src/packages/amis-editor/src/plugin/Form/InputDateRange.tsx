@@ -10,7 +10,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {getRendererByName} from '@/packages/amis-core/src';
 import omit from 'lodash/omit';
-import type {Schema} from '@/packages/src';
+import type {Schema} from '@/packages/amis-ui/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

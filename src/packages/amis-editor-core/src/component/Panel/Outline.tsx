@@ -3,10 +3,10 @@ import React from 'react';
 import {PanelProps} from '../../plugin';
 import cx from 'classnames';
 import {autobind, translateSchema} from '../../util';
-import {Icon, InputBox, Tab, Tabs} from '@/packages/src';
+import {Icon, InputBox, Tab, Tabs} from '@/packages/amis-ui/src';
 import {EditorNodeType} from '../../store/node';
 import {isAlive} from 'mobx-state-tree';
-import type {Schema} from '@/packages/src';
+import type {Schema} from '@/packages/amis-ui/src';
 import DialogList from './DialogList';
 
 @observer

@@ -12,7 +12,7 @@ import {
   tipedLabel,
   diff
 } from '@/packages/amis-editor-core/src';
-import type {Schema} from '@/packages/src';
+import type {Schema} from '@/packages/amis-ui/src';
 import {
   buildLinkActionDesc,
   getArgsWrapper,

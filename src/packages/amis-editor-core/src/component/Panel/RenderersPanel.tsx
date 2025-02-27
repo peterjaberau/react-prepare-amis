@@ -1,4 +1,4 @@
-import {Html, render, TestIdBuilder, TooltipWrapper} from '@/packages/src';
+import {Html, render, TestIdBuilder, TooltipWrapper} from '@/packages/amis-ui/src';
 import {observer} from 'mobx-react';
 import React from 'react';
 import cx from 'classnames';

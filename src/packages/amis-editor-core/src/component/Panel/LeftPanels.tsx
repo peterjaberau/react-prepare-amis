@@ -1,10 +1,10 @@
 import {observer} from 'mobx-react';
 import React from 'react';
-import {Icon} from '@/packages/src';
+import {Icon} from '@/packages/amis-ui/src';
 import cx from 'classnames';
 import {EditorManager} from '../../manager';
 import {EditorStoreType} from '../../store/editor';
-import {Tab, Tabs} from '@/packages/src';
+import {Tab, Tabs} from '@/packages/amis-ui/src';
 import {autobind} from '../../util';
 import {findDOMNode} from 'react-dom';
 import find from 'lodash/find';

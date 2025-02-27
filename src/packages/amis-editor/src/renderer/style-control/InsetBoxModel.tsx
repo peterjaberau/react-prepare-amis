@@ -7,7 +7,7 @@ import cx from 'classnames';
 import React from 'react';
 import {observer} from 'mobx-react';
 import camelCase from 'lodash/camelCase';
-import {FormItem} from '@/packages/src';
+import {FormItem} from '@/packages/amis-ui/src';
 import {isNumeric} from '@/packages/amis-editor-core/src';
 import type {FormControlProps} from '@/packages/amis-core/src';
 import {isAuto} from '../../util';

@@ -1,4 +1,4 @@
-import {isObject} from '@/packages/src';
+import {isObject} from '@/packages/amis-ui/src';
 import type {IFormStore, IFormItemStore} from '@/packages/amis-core/src';
 import {
   BasePlugin,

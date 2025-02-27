@@ -10,7 +10,7 @@ import {
   getSchemaTpl
 } from '@/packages/amis-editor-core/src';
 import cloneDeep from 'lodash/cloneDeep';
-import type {Schema} from '@/packages/src';
+import type {Schema} from '@/packages/amis-ui/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

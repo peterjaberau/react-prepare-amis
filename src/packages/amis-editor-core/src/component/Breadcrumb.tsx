@@ -1,6 +1,6 @@
 import React from 'react';
 import {reaction} from 'mobx';
-import {Icon, resizeSensor} from '@/packages/src';
+import {Icon, resizeSensor} from '@/packages/amis-ui/src';
 import {EditorStoreType} from '../store/editor';
 import {EditorManager} from '../manager';
 import {observer} from 'mobx-react';

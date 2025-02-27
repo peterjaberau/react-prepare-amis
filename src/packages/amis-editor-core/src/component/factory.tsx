@@ -1,4 +1,4 @@
-import {render, RendererProps} from '@/packages/src';
+import {render, RendererProps} from '@/packages/amis-ui/src';
 import {isAlive} from 'mobx-state-tree';
 import React from 'react';
 import {NodeWrapper} from './NodeWrapper';
@@ -15,10 +15,10 @@ import {render as reactRender, unmountComponentAtNode} from 'react-dom';
 import {autobind, JSONGetById, JSONUpdate, appTranslate} from '../util';
 import {ErrorBoundary} from '@/packages/amis-core/src';
 import {CommonConfigWrapper} from './CommonConfigWrapper';
-import type {Schema} from '@/packages/src';
+import type {Schema} from '@/packages/amis-ui/src';
 import type {DataScope} from '@/packages/amis-core/src';
 import type {RendererConfig} from '@/packages/amis-core/src';
-import type {SchemaCollection} from '@/packages/src';
+import type {SchemaCollection} from '@/packages/amis-ui/src';
 import {SchemaForm} from './base/SchemaForm';
 import memoize from 'lodash/memoize';
 import {FormConfigWrapper} from './FormConfigWrapper';

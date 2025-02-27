@@ -1,7 +1,7 @@
 import React from 'react';
 import {EditorManager} from '../manager';
 import {EditorStoreType} from '../store/editor';
-import {render, Modal, getTheme, Icon, Spinner, Button} from '@/packages/src';
+import {render, Modal, getTheme, Icon, Spinner, Button} from '@/packages/amis-ui/src';
 import {observer} from 'mobx-react';
 import {autobind, isObject} from '../util';
 

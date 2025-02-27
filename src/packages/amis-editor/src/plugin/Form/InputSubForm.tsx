@@ -1,5 +1,5 @@
-import {Button} from '@/packages/src';
-import type {SchemaCollection} from '@/packages/src';
+import {Button} from '@/packages/amis-ui/src';
+import type {SchemaCollection} from '@/packages/amis-ui/src';
 import React from 'react';
 import {
   BaseEventContext,

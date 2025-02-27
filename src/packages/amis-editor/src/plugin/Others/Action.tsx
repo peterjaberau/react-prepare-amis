@@ -10,7 +10,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {diff} from '@/packages/amis-editor-core/src';
-import type {SchemaCollection} from '@/packages/src';
+import type {SchemaCollection} from '@/packages/amis-ui/src';
 
 export class ActionPlugin extends BasePlugin {
   static id = 'ActionPlugin';

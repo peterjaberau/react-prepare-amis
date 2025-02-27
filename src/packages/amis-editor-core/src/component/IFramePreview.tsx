@@ -9,7 +9,7 @@ import {
   findTree,
   render,
   resizeSensor
-} from '@/packages/src';
+} from '@/packages/amis-ui/src';
 import {isAlive} from 'mobx-state-tree';
 
 /**

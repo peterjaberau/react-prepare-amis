@@ -7,14 +7,14 @@ import React from 'react';
 import {findDOMNode} from 'react-dom';
 import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
-import {FormItem, Button, Icon, toast, Spinner, autobind} from '@/packages/src';
+import {FormItem, Button, Icon, toast, Spinner, autobind} from '@/packages/amis-ui/src';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {JSONPipeIn} from '@/packages/amis-editor-core/src';
 import {DSFeature, DSFeatureType, DSFeatureEnum} from '../../builder';
 import {traverseSchemaDeep} from '../../builder/utils';
 import {deepRemove, addSchema2Toolbar} from '../../plugin/CRUD2/utils';
 
-import type {FormControlProps} from '@/packages/src';
+import type {FormControlProps} from '@/packages/amis-ui/src';
 import type {EditorNodeType} from '@/packages/amis-editor-core/src';
 // @ts-ignore
 import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';

@@ -10,7 +10,7 @@
 import React from 'react';
 import mapValues from 'lodash/mapValues';
 
-import {FormItem} from '@/packages/src';
+import {FormItem} from '@/packages/amis-ui/src';
 
 import {parseBoxShadow, normalizeBoxShadow} from './transformation';
 

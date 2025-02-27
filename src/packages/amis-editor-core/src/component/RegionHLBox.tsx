@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import {Icon} from '@/packages/src';
+import {Icon} from '@/packages/amis-ui/src';
 import {EditorStoreType} from '../store/editor';
 import {observer} from 'mobx-react';
 import {EditorManager} from '../manager';

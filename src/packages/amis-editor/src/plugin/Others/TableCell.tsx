@@ -1,4 +1,4 @@
-import {Button} from '@/packages/src';
+import {Button} from '@/packages/amis-ui/src';
 import React from 'react';
 import get from 'lodash/get';
 import {

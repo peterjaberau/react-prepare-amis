@@ -5,7 +5,7 @@ import {autobind} from '../util';
 import {MainStore, EditorStoreType} from '../store/editor';
 import {EditorManager, EditorManagerConfig, PluginClass} from '../manager';
 import {reaction} from 'mobx';
-import {RenderOptions, closeContextMenus, toast} from '@/packages/src';
+import {RenderOptions, closeContextMenus, toast} from '@/packages/amis-ui/src';
 import {
   PluginEventListener,
   RendererPluginAction,
@@ -21,7 +21,7 @@ import {ModalForm} from './ModalForm';
 import {ContextMenuPanel} from './Panel/ContextMenuPanel';
 import {LeftPanels} from './Panel/LeftPanels';
 import {RightPanels} from './Panel/RightPanels';
-import type {SchemaObject} from '@/packages/src';
+import type {SchemaObject} from '@/packages/amis-ui/src';
 import type {VariableGroup, VariableOptions} from '../variable';
 import type {EditorNodeType} from '../store/node';
 import {MobileDevTool} from '@/packages/amis-ui/src';

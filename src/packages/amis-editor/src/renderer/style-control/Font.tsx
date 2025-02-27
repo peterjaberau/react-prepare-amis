@@ -9,7 +9,7 @@ import mapValues from 'lodash/mapValues';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {fontFamilyList} from './font-family';
 import {string2CSSUnit, isObject} from '@/packages/amis-editor-core/src';
-import {FormItem} from '@/packages/src';
+import {FormItem} from '@/packages/amis-ui/src';
 import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';
 

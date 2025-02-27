@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Modal, Button} from '@/packages/src';
+import {Modal, Button} from '@/packages/amis-ui/src';
 import {FormControlProps, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {FormulaEditor} from '@/packages/amis-ui/src';

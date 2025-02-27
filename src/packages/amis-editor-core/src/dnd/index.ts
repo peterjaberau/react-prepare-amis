@@ -3,7 +3,7 @@
  */
 import find from 'lodash/find';
 import {isAlive} from 'mobx-state-tree';
-import {toast} from '@/packages/src';
+import {toast} from '@/packages/amis-ui/src';
 import debounce from 'lodash/debounce';
 import {EditorManager} from '../manager';
 import {DragEventContext, SubRendererInfo} from '../plugin';

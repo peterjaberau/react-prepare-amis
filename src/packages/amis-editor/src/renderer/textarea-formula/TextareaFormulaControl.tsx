@@ -4,7 +4,7 @@
 
 import React, {MouseEvent} from 'react';
 import cx from 'classnames';
-import {Icon, FormItem, TooltipWrapper, Spinner} from '@/packages/src';
+import {Icon, FormItem, TooltipWrapper, Spinner} from '@/packages/amis-ui/src';
 import {autobind, FormControlProps, render as renderAmis} from '@/packages/amis-core/src';
 import {CodeMirrorEditor, FormulaEditor} from '@/packages/amis-ui/src';
 import {FormulaPlugin, editorFactory} from './plugin';

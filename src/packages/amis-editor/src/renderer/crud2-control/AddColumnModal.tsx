@@ -6,11 +6,11 @@
 import {useEffect, useRef} from 'react';
 import omit from 'lodash/omit';
 import React, {useState, useCallback} from 'react';
-import {Button, Modal, themeable, ThemeProps, utils} from '@/packages/src';
+import {Button, Modal, themeable, ThemeProps, utils} from '@/packages/amis-ui/src';
 import {getSchemaTpl, JSONPipeIn, EditorManager} from '@/packages/amis-editor-core/src';
 import {DSFeatureType, DSFeatureEnum, ModelDSBuilderKey} from '../../builder';
 
-import type {RendererProps, BaseApiObject} from '@/packages/src';
+import type {RendererProps, BaseApiObject} from '@/packages/amis-ui/src';
 import type {CRUDColumnControlState} from './CRUDColumnControl';
 // @ts-ignore
 import type {ColumnSchema} from '@/packages/amis/src/renderers/Table2';

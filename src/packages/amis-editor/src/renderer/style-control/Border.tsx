@@ -7,7 +7,7 @@ import cx from 'classnames';
 import React, {useEffect, useState} from 'react';
 import camelCase from 'lodash/camelCase';
 import {observer} from 'mobx-react';
-import {FormItem, Select, NumberInput} from '@/packages/src';
+import {FormItem, Select, NumberInput} from '@/packages/amis-ui/src';
 
 import type {PlainObject} from './types';
 import type {FormControlProps, RendererProps, SchemaNode} from '@/packages/amis-core/src';

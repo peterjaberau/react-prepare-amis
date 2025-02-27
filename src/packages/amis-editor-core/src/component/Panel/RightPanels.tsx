@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React from 'react';
-import {Tab, Tabs, toast} from '@/packages/src';
+import {Tab, Tabs, toast} from '@/packages/amis-ui/src';
 import cx from 'classnames';
 import {EditorManager} from '../../manager';
 import {EditorStoreType} from '../../store/editor';
