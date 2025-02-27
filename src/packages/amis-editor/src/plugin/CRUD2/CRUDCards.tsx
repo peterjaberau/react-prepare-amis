@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import {autobind} from 'amis';
+import {autobind} from '@/packages/src';
 import {
   EditorManager,
   JSONPipeIn,

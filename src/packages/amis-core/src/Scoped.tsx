@@ -46,7 +46,7 @@ export function filterTarget(target: string, data: Record<string, any>) {
  * @param target
  * @returns
  */
-export function splitTarget(target: string): Array<string> {
+export function splitTarget(target: string | any): Array<string> {
   try {
     const ast = memoParse(target);
     const pos: Array<number> = [];
@@ -174,7 +174,7 @@ function createScopedTools(
         const paths = name.split('.');
         const len = paths.length;
 
-        return paths.reduce((scope, name, idx) => {
+        return paths.reduce((scope: any, name: any, idx: any) => {
           if (scope && scope.getComponentByName) {
             const result: ScopedComponentType = scope.getComponentByName(name);
             return result && idx < len - 1 ? result.context : result;
@@ -199,10 +199,10 @@ function createScopedTools(
     ) {
       let component = undefined;
       findTree(
-        [this],
+        [this as any],
         (item: TreeItem) =>
           item !== ignoreScope &&
-          item.getComponents().find((cmpt: ScopedComponentType) => {
+          item.getComponents().find((cmpt: ScopedComponentType | any) => {
             if (filter(cmpt.props.id, cmpt.props.data) === id) {
               component = cmpt;
               return true;
@@ -258,7 +258,7 @@ function createScopedTools(
       }
 
       const cmptMaps: Record<string, ScopedComponentType> = {};
-      let root: AliasIScopedContext = this;
+      let root: AliasIScopedContext | any = this;
 
       while (root.parent) {
         root = root.parent;
@@ -417,7 +417,7 @@ function createScopedTools(
         // Filtering is turned off. This happens when the user closes multiple pop-up box names.
         splitTarget(target)
           .map(name => scoped.getComponentByName(name))
-          .filter(component => component && component.props.show)
+          .filter((component: any) => component && component.props.show)
           .forEach(closeDialog);
       }
     },
@@ -489,11 +489,11 @@ function createScopedTools(
   return self;
 }
 
-function closeDialog(component: ScopedComponentType) {
+function closeDialog(component: ScopedComponentType | any) {
   (component.context as IScopedContext)
     .getComponents()
     .filter(
-      item =>
+      (item: any) =>
         item &&
         (item.props.type === 'dialog' || item.props.type === 'drawer') &&
         item.props.show
@@ -508,19 +508,19 @@ export function HocScoped<
     env: RendererEnv;
   }
 >(
-  ComposedComponent: React.ComponentType<T>,
-  rendererType?: string
+  ComposedComponent: React.ComponentType<T> | any,
+  rendererType?: string | any
 ): React.ComponentType<
   T & {
   scopeRef?: (ref: any) => void;
-}
+} | any
 > & {
   ComposedComponent: React.ComponentType<T>;
-} {
+} | any {
   type ScopedProps = T & {
     scopeRef?: (ref: any) => void;
-  };
-  class ScopedComponent extends React.Component<ScopedProps> {
+  } | any;
+  class ScopedComponent extends React.Component<ScopedProps | any, any> {
     static displayName = `Scoped(${
       ComposedComponent.displayName || ComposedComponent.name
     })`;

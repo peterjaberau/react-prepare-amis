@@ -37,8 +37,15 @@ export default defineConfig({
 
 
   server: {
-    host: "0.0.0.0",
-    // port: 58760,
+    // host: "0.0.0.0",
+    port: 3061,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3061',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
     // open: false,
     // cors: true,
     // hmr: true,

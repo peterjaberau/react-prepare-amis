@@ -1,4 +1,4 @@
-import {Button} from 'amis';
+import {Button} from '@/packages/src';
 import {EditorNodeType, registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
   BaseEventContext,

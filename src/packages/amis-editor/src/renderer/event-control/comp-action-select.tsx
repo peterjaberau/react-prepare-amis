@@ -2,7 +2,7 @@
  * Component-specific action selector
  */
 
-import {Option, Select} from 'amis';
+import {Option, Select} from '@/packages/src';
 import {RendererProps, getRendererByName} from '@/packages/amis-core/src';
 import React from 'react';
 import {getActionsByRendererName} from './helper';

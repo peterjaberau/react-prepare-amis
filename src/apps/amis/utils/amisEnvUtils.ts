@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ToastConf, ToastLevel, toast } from "amis";
+import { ToastConf, ToastLevel, toast } from "@/packages/amis/src";
 import copyToClipboard from "copy-to-clipboard";
 
 export const theme = "antd";

@@ -2,7 +2,7 @@ import React from 'react';
 import {modalsToDefinitions} from '@/packages/amis-editor-core/src';
 import {registerActionPanel} from '../../actionsPanelManager';
 import DialogActionPanel from '../../DialogActionPanel';
-import {TooltipWrapper} from 'amis';
+import {TooltipWrapper} from '@/packages/src';
 
 const modalDescDetail: (info: any, context: any, props: any) => any = (
   info,

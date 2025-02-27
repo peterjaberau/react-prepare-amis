@@ -26,7 +26,6 @@
     "@xstate/graph": "^3.0.2",
     "@xstate/react": "^5.0.2",
     "@xstate/store": "^3.0.1",
-    "amis": "6.10.0",
     "amis-formula": "^6.10.0",
     "antd": "5.23.0",
     "antd-style": "3.7.1",

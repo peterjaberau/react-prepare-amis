@@ -17,8 +17,8 @@ import {
   RAW_TYPE_MAP
 } from '@/packages/amis-editor-core/src';
 import {someTree} from '@/packages/amis-core/src';
-import type {SchemaType} from 'amis';
-import {isObject} from 'amis';
+import type {SchemaType} from '@/packages/src';
+import {isObject} from '@/packages/src';
 import set from 'lodash/set';
 import {DSBuilderManager} from '../../builder/DSBuilderManager';
 import {ValidatorTag} from '../../validator';

@@ -1,4 +1,4 @@
-import {EditorAvailableLanguages as availableLanguages} from 'amis';
+import {EditorAvailableLanguages as availableLanguages} from '@/packages/src';
 import {
   defaultValue,
   getSchemaTpl,

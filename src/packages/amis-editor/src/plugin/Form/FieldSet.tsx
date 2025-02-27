@@ -1,4 +1,4 @@
-import {Button} from 'amis';
+import {Button} from '@/packages/src';
 import React from 'react';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';

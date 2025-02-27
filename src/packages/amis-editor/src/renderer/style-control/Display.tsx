@@ -6,7 +6,7 @@
 import React from 'react';
 import pick from 'lodash/pick';
 import mapValues from 'lodash/mapValues';
-import {FormItem} from 'amis';
+import {FormItem} from '@/packages/src';
 
 import {isObject} from '@/packages/amis-editor-core/src';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'amis';
+import {Button} from '@/packages/src';
 import omit from 'lodash/omit';
 import uniq from 'lodash/uniq';
 import get from 'lodash/get';
@@ -23,7 +23,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {diff} from '@/packages/amis-editor-core/src';
 import {isPureVariable} from '@/packages/amis-core/src';
-import type {Schema} from 'amis';
+import type {Schema} from '@/packages/src';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {resolveOptionEventDataSchame, resolveOptionType} from '../../util';
 import {ValidatorTag} from '../../validator';

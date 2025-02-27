@@ -13,7 +13,7 @@ import uniqBy from 'lodash/uniqBy';
 import uniq from 'lodash/uniq';
 import sortBy from 'lodash/sortBy';
 import pick from 'lodash/pick';
-import {toast, autobind, isObject} from 'amis';
+import {toast, autobind, isObject} from '@/packages/src';
 import {
   BasePlugin,
   EditorManager,
@@ -34,7 +34,7 @@ import {
   getActionCommonProps,
   buildLinkActionDesc
 } from '../../renderer/event-control/helper';
-import {CRUD2Schema} from 'amis';
+import {CRUD2Schema} from '@/packages/src';
 import {deepRemove, findObj, findSchema} from './utils';
 import {
   ToolsConfig,

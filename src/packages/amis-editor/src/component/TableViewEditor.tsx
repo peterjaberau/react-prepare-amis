@@ -4,8 +4,8 @@
 
 import React from 'react';
 import isEqual from 'lodash/isEqual';
-import {toast} from 'amis';
-import {TableViewSchema, TrObject} from 'amis';
+import {toast} from '@/packages/src';
+import {TableViewSchema, TrObject} from '@/packages/src';
 import {EditorManager} from '@/packages/amis-editor-core/src';
 import {autobind, JSONGetById, EditorStoreType} from '@/packages/amis-editor-core/src';
 

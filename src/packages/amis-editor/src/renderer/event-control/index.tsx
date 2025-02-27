@@ -12,7 +12,7 @@ import {
   PopOverContainer,
   Tree,
   Button
-} from 'amis';
+} from '@/packages/src';
 import cloneDeep from 'lodash/cloneDeep';
 import groupBy from 'lodash/groupBy';
 import {

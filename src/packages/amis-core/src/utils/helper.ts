@@ -961,7 +961,7 @@ export function findTree<T extends TreeItem>(
       paths?: Array<T>
     ) => any;
   }
-): T | null {
+): T | null | any {
   const isValidateKey = (value: any) =>
     value !== '' && (isString(value) || isNumber(value));
   // 缓存优化

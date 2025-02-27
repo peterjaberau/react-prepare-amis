@@ -6,7 +6,7 @@ import "@/apps/amis/styles/lib/iconfont.css"
 
 import React, { useEffect, useState } from "react"
 import { Flex, Card, ConfigProvider } from "antd"
-import { alert, confirm, SchemaObject } from "amis"
+import { alert, confirm, SchemaObject } from "@/packages/amis/src"
 import { copy, fetcher, notify } from "@/apps/amis/utils/amisEnvUtils"
 import { createStyles } from "antd-style"
 

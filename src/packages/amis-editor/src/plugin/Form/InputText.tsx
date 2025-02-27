@@ -9,7 +9,7 @@ import {
   getSchemaTpl,
   tipedLabel
 } from '@/packages/amis-editor-core/src';
-import type {SchemaType} from 'amis';
+import type {SchemaType} from '@/packages/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

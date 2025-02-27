@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'amis';
+import {Button} from '@/packages/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {BasePlugin, RegionConfig, BaseEventContext} from '@/packages/amis-editor-core/src';

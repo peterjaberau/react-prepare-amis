@@ -1092,7 +1092,7 @@ export interface PluginActions {
  * Base class, all plugins can inherit from this one, so you can write less logic.
  */
 export abstract class BasePlugin implements PluginInterface {
-  constructor(readonly manager: EditorManager) {}
+  constructor(readonly manager: EditorManager | any) {}
 
   static scene = ['global'];
 
@@ -1276,7 +1276,7 @@ export abstract class BasePlugin implements PluginInterface {
     subRenderers: Array<SubRendererInfo>,
     renderers: Array<RendererConfig>
   ): BasicSubRenderInfo | Array<BasicSubRenderInfo> | void {
-    const plugin: PluginInterface = this;
+    const plugin: PluginInterface | any = this;
 
     if (Array.isArray(plugin.scaffolds)) {
       return plugin.scaffolds.map(scaffold => ({

@@ -12,7 +12,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import {isPureVariable} from 'amis';
+import {isPureVariable} from '@/packages/src';
 import omit from 'lodash/omit';
 import {inputStateTpl} from '../../renderer/style-control/helper';
 import {ValidatorTag} from '../../validator';

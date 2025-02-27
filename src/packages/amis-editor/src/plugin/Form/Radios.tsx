@@ -10,7 +10,7 @@ import {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import type {Schema, SchemaType} from 'amis';
+import type {Schema, SchemaType} from '@/packages/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

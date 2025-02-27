@@ -112,13 +112,6 @@ export type RendererComponent = React.ComponentType<RendererProps> & {
 };
 
 export interface RendererConfig extends RendererBasicConfig {
-  // Renderer component. The difference from Renderer is that this one may wrap the store.
-  component?: RendererComponent;
-  // Asynchronous renderer
-  getComponent?: () => Promise<{default: RendererComponent} | any>;
-
-  // Original component
-  Renderer?: RendererComponent;
 }
 
 export interface RenderSchemaFilter {
@@ -173,7 +166,7 @@ export function filterSchema(
 
 export function Renderer(config: RendererBasicConfig) {
   return function <T extends RendererComponent>(component: T): T {
-    const renderer = registerRenderer({
+    const renderer: any = registerRenderer({
       ...config,
       component: component
     });
@@ -184,7 +177,7 @@ export function Renderer(config: RendererBasicConfig) {
 // mobx-react's observer will modify the render method of the prototype chain
 // If you want to inherit the render method of the overridden component, you need to restore the prototype chain render
 // Otherwise the super.render method cannot be called
-function fixMobxInjectRender<T extends Function>(klass: T): T {
+function fixMobxInjectRender<T extends Function>(klass: T | any): T | any {
   const target = klass.prototype;
 
   // mobx-react records the original render before tampering
@@ -207,7 +200,7 @@ function fixMobxInjectRender<T extends Function>(klass: T): T {
 // Convert renderer to component
 function rendererToComponent(
   component: RendererComponent,
-  config: RendererConfig
+  config: RendererConfig | any
 ): RendererComponent {
   if (config.storeType && config.component) {
     component = HocStoreFactory({
@@ -223,7 +216,7 @@ function rendererToComponent(
   return component;
 }
 
-export function registerRenderer(config: RendererConfig): RendererConfig {
+export function registerRenderer(config: RendererConfig | any): RendererConfig {
   if (!config.test && !config.type) {
     throw new TypeError('please set config.type or config.test');
   } else if (!config.type && config.name !== 'static') {
@@ -246,7 +239,7 @@ export function registerRenderer(config: RendererConfig): RendererConfig {
       );
   }
 
-  const exists = renderersTypeMap[config.type || ''];
+  const exists: any = renderersTypeMap[config.type || ''];
   let renderer = {...config};
   if (
     exists &&
@@ -353,7 +346,7 @@ export function loadRendererError(schema: Schema, path: string) {
   );
 }
 
-export async function loadAsyncRenderer(renderer: RendererConfig) {
+export async function loadAsyncRenderer(renderer: RendererConfig | any) {
   if (!isAsyncRenderer(renderer)) {
     // already loaded
     return;
@@ -371,7 +364,7 @@ export async function loadAsyncRenderer(renderer: RendererConfig) {
   }
 }
 
-export function isAsyncRenderer(item: RendererConfig) {
+export function isAsyncRenderer(item: RendererConfig | any) {
   return (
     item &&
     (!item.component || item.component === Placeholder) &&
@@ -633,7 +626,7 @@ export function resolveRenderer(
     throw new Error('Path is too long, is it an infinite loop?');
   }
 
-  let renderer: null | RendererConfig = null;
+  let renderer: null | RendererConfig | any = null;
 
   renderers.some(item => {
     let matched = false;
@@ -656,7 +649,7 @@ export function resolveRenderer(
   // Because custom test functions may depend on schema results
   if (
     renderer !== null &&
-    (renderer as RendererConfig).component !== Placeholder &&
+    (renderer as RendererConfig | any).component !== Placeholder &&
     ((renderer as RendererConfig).type ||
       (renderer as RendererConfig).test instanceof RegExp ||
       (typeof (renderer as RendererConfig).test === 'function' &&

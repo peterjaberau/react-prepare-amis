@@ -16,7 +16,7 @@ import {
   Spinner,
   Tag,
   autobind
-} from 'amis';
+} from '@/packages/src';
 import {TooltipWrapper} from '@/packages/amis-ui/src';
 import {DSFeatureEnum, ModelDSBuilderKey} from '../../builder/constants';
 import {traverseSchemaDeep} from '../../builder/utils';
@@ -28,7 +28,7 @@ import type {
   CRUDScaffoldConfig
 } from '../../builder';
 import type {EditorNodeType} from '@/packages/amis-editor-core/src';
-import type {FormControlProps, PlainObject} from 'amis';
+import type {FormControlProps, PlainObject} from '@/packages/src';
 
 interface Option {
   label: string;
