@@ -1,4 +1,4 @@
-import {Button, Html, Icon, InputBox, render} from 'amis';
+import {Button, Html, Icon, InputBox, render} from '@/packages/src';
 import find from 'lodash/find';
 import {observer} from 'mobx-react';
 import React from 'react';

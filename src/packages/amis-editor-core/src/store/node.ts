@@ -14,7 +14,7 @@ import {
 import uniq from 'lodash/uniq';
 import {RegionConfig, RendererInfo} from '../plugin';
 import {guid, JSONPipeIn} from '../util';
-import {filterSchema} from 'amis';
+import {filterSchema} from '@/packages/src';
 import React from 'react';
 import {EditorStoreType} from './editor';
 import findIndex from 'lodash/findIndex';

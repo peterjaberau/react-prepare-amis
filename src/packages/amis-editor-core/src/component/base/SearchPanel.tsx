@@ -1,6 +1,6 @@
 import React from 'react';
 import {observer} from 'mobx-react';
-import {Icon, InputBox, resolveVariable} from 'amis';
+import {Icon, InputBox, resolveVariable} from '@/packages/src';
 import cx from 'classnames';
 import {autobind, stringRegExp} from '../../util';
 import isString from 'lodash/isString';

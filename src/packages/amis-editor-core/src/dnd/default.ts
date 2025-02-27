@@ -1,7 +1,7 @@
 /**
  * Default drag mode implementation.
  */
-import {animation} from 'amis';
+import {animation} from '@/packages/src';
 import findIndex from 'lodash/findIndex';
 import {EditorDNDManager} from '.';
 import {renderThumbToGhost} from '../component/factory';

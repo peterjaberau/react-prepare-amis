@@ -10,7 +10,7 @@ import {
   Button,
   Overlay,
   PopOver
-} from 'amis';
+} from '@/packages/src';
 import {observer} from 'mobx-react';
 import {diff} from '../util';
 import {createObject} from '@/packages/amis-core/src';

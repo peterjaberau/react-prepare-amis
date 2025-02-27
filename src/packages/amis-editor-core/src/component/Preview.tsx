@@ -6,12 +6,12 @@ import {
   Icon,
   resizeSensor,
   Spinner
-} from 'amis';
+} from '@/packages/src';
 import React, {Component} from 'react';
 import cx from 'classnames';
 import {autobind, guid, noop, reactionWithOldValue} from '../util';
 import {clearStoresCache, RenderOptions} from '@/packages/amis-core/src';
-import type {Schema} from 'amis';
+import type {Schema} from '@/packages/src';
 import {EditorStoreType} from '../store/editor';
 import {observer} from 'mobx-react';
 import {EditorManager} from '../manager';

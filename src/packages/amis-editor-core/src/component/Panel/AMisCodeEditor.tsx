@@ -7,7 +7,7 @@ import {
   filterSchemaForConfig
 } from '../../util';
 import cx from 'classnames';
-import {prompt, toast} from 'amis';
+import {prompt, toast} from '@/packages/src';
 import debounce from 'lodash/debounce';
 import isArray from 'lodash/isArray';
 import findIndex from 'lodash/findIndex';

@@ -51,8 +51,8 @@ import {
   JSONPipeOut,
   JSONUpdate
 } from '../util';
-import type {JSONSchema, Schema} from 'amis';
-import {toast, resolveVariable} from 'amis';
+import type {JSONSchema, Schema} from '@/packages/src';
+import {toast, resolveVariable} from '@/packages/src';
 import find from 'lodash/find';
 import {InsertSubRendererPanel} from '../component/Panel/InsertSubRendererPanel';
 import {AvailableRenderersPanel} from '../component/Panel/AvailableRenderersPanel';

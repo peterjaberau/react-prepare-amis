@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon} from 'amis';
+import {Icon} from '@/packages/src';
 import {registerEditorPlugin} from '../manager';
 import {
   BuildPanelEventContext,

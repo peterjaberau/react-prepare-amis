@@ -11,7 +11,7 @@ import {
   Overlay,
   PopOver,
   Drawer
-} from 'amis';
+} from '@/packages/src';
 import {observer} from 'mobx-react';
 import {diff} from '../util';
 import {autobind, createObject} from '@/packages/amis-core/src';
