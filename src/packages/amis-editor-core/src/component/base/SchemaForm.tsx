@@ -10,7 +10,7 @@ import {
   IFormStore,
   render,
   toast
-} from '@/packages/amis-ui/src';
+} from '@/packages/amis/src';
 import omit from 'lodash/omit';
 import cx from 'classnames';
 

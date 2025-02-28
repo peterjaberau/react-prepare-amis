@@ -1,4 +1,4 @@
-import {registerIcon, Icon} from 'amis';
+import {registerIcon, Icon} from '@/packages/amis/src';
 
 import CheckboxCheck from './checkbox-check.svg';
 import Checkbox from './checkbox.svg';

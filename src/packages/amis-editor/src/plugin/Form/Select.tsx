@@ -1,4 +1,4 @@
-import type {Schema, SchemaType} from '@/packages/amis-ui/src';
+import type {Schema, SchemaType} from '@/packages/amis/src';
 import {
   registerEditorPlugin,
   getSchemaTpl,

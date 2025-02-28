@@ -3,7 +3,7 @@ import cx from 'classnames';
 import {EditorStoreType} from '../store/editor';
 import {observer} from 'mobx-react';
 import {EditorNodeType} from '../store/node';
-import {Icon} from '@/packages/amis-ui/src';
+import {Icon} from '@/packages/amis/src';
 import {autobind, noop} from '../util';
 import {PluginEvent, ResizeMoveEventContext} from '../plugin';
 import {EditorManager} from '../manager';

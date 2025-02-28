@@ -9,7 +9,7 @@ import {
   BaseEventContext,
   tipedLabel
 } from '@/packages/amis-editor-core/src';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {ValidatorTag} from '../../validator';
 import {
   getEventControlConfig,

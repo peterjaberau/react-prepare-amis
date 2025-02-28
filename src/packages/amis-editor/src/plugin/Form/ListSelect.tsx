@@ -13,7 +13,7 @@ import type {
   RendererPluginAction,
   RendererPluginEvent
 } from '@/packages/amis-editor-core/src';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {formItemControl} from '../../component/BaseControl';
 import {
   resolveOptionEventDataSchame,

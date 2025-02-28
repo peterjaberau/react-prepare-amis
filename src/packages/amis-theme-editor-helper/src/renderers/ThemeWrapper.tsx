@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import {render, Renderer} from 'amis';
+import {render, Renderer} from '@/packages/amis/src';
 import {Icon as ThemeIcon} from '../icons/index';
 import cx from 'classnames';
 import type {FormControlProps} from '@/packages/amis-core/src';

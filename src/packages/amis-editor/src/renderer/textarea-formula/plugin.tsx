@@ -3,8 +3,8 @@
  */
 
 import {TextareaFormulaControlProps} from './TextareaFormulaControl';
-import {FormulaEditor} from '@/packages/amis-ui/src';
-import type {VariableItem, CodeMirror} from '@/packages/amis-ui/src';
+import {FormulaEditor} from '@/packages/amis/src';
+import type {VariableItem, CodeMirror} from '@/packages/amis/src';
 
 export function editorFactory(
   dom: HTMLElement,

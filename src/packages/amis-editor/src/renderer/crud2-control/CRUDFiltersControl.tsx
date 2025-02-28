@@ -16,8 +16,8 @@ import {
   Spinner,
   Tag,
   autobind
-} from '@/packages/amis-ui/src';
-import {TooltipWrapper} from '@/packages/amis-ui/src';
+} from '@/packages/amis/src';
+import {TooltipWrapper} from '@/packages/amis/src';
 import {DSFeatureEnum, ModelDSBuilderKey} from '../../builder/constants';
 import {traverseSchemaDeep} from '../../builder/utils';
 import {deepRemove} from '../../plugin/CRUD2/utils';
@@ -28,7 +28,7 @@ import type {
   CRUDScaffoldConfig
 } from '../../builder';
 import type {EditorNodeType} from '@/packages/amis-editor-core/src';
-import type {FormControlProps, PlainObject} from '@/packages/amis-ui/src';
+import type {FormControlProps, PlainObject} from '@/packages/amis/src';
 
 interface Option {
   label: string;

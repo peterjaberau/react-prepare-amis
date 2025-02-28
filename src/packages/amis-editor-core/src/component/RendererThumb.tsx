@@ -1,7 +1,7 @@
 import type {Schema} from '@/packages/amis-core/src';
 import {LazyComponent} from '@/packages/amis-core/src';
 import React from 'react';
-import {resizeSensor, render, Icon} from '@/packages/amis-ui/src';
+import {resizeSensor, render, Icon} from '@/packages/amis/src';
 
 interface ThumbProps {
   schema: Schema;

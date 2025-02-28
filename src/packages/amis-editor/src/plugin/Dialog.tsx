@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Drawer, Icon, Modal} from '@/packages/amis-ui/src';
+import {Button, Drawer, Icon, Modal} from '@/packages/amis/src';
 import {
   registerEditorPlugin,
   BaseEventContext,
@@ -25,7 +25,7 @@ import {
 import omit from 'lodash/omit';
 import type {RendererConfig, Schema} from '@/packages/amis-core/src';
 // @ts-ignore
-import {ModalProps} from '@/packages/amis-ui/src/components/Modal';
+import {ModalProps} from '@/packages/amis/src/components/Modal';
 import ModalSettingPanel from '../component/ModalSettingPanel';
 import find from 'lodash/find';
 

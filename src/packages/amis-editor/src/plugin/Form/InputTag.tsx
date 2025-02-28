@@ -11,7 +11,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {formItemControl} from '../../component/BaseControl';
 import {resolveOptionEventDataSchame, resolveOptionType} from '../../util';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {getActionCommonProps} from '../../renderer/event-control/helper';
 
 export class TagControlPlugin extends BasePlugin {

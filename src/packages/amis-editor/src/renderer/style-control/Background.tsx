@@ -9,7 +9,7 @@ import pick from 'lodash/pick';
 import omit from 'lodash/omit';
 import React, {useState, useEffect} from 'react';
 
-import {FormItem} from '@/packages/amis-ui/src';
+import {FormItem} from '@/packages/amis/src';
 
 import type {FormControlProps} from '@/packages/amis-core/src';
 import type {PlainObject} from './types';

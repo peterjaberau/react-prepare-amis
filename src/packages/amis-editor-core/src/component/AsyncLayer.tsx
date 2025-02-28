@@ -3,7 +3,7 @@
  * @desc Asynchronous loading layer
  */
 import React from 'react';
-import {Spinner} from '@/packages/amis-ui/src';
+import {Spinner} from '@/packages/amis/src';
 
 export interface AsyncLayerOptions {
   fallback?: React.ReactNode;

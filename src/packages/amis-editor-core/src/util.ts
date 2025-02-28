@@ -10,7 +10,7 @@ import {
   resolveVariableAndFilter,
   filterTree
 } from '@/packages/amis-core/src';
-import type {VariableItem} from '@/packages/amis-ui/src';
+import type {VariableItem} from '@/packages/amis/src';
 import {isObservable, reaction} from 'mobx';
 import DeepDiff, {Diff} from 'deep-diff';
 import assign from 'lodash/assign';

@@ -1,17 +1,19 @@
 import {
-  render,
   toast,
-  resolveRenderer,
   Modal,
   Icon,
-  resizeSensor,
   Spinner
-} from '@/packages/amis-ui/src';
+} from '@/packages/amis/src';
+import {
+  render,
+  resolveRenderer,
+  resizeSensor,
+} from '@/packages/amis-core/src';
 import React, {Component} from 'react';
 import cx from 'classnames';
 import {autobind, guid, noop, reactionWithOldValue} from '../util';
 import {clearStoresCache, RenderOptions} from '@/packages/amis-core/src';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {EditorStoreType} from '../store/editor';
 import {observer} from 'mobx-react';
 import {EditorManager} from '../manager';

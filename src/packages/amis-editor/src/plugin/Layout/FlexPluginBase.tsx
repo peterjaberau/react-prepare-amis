@@ -10,7 +10,7 @@ import {
   tipedLabel
 } from '@/packages/amis-editor-core/src';
 import {getSchemaTpl} from '@/packages/amis-editor-core/src';
-import {Button, PlainObject} from '@/packages/amis-ui/src';
+import {Button, PlainObject} from '@/packages/amis/src';
 import type {
   BaseEventContext,
   EditorNodeType,

@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React from 'react';
-import {Tab, Tabs} from '@/packages/amis-ui/src';
+import {Tab, Tabs} from '@/packages/amis/src';
 import RenderersPanel from './RenderersPanel';
 import {PanelProps} from '../../plugin';
 import {autobind} from '../../util';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Editor} from '@/packages/amis-ui/src';
+import {Editor} from '@/packages/amis/src';
 import {
   isObjectShallowModified,
   guid,
@@ -7,7 +7,7 @@ import {
   filterSchemaForConfig
 } from '../../util';
 import cx from 'classnames';
-import {prompt, toast} from '@/packages/amis-ui/src';
+import {prompt, toast} from '@/packages/amis/src';
 import debounce from 'lodash/debounce';
 import isArray from 'lodash/isArray';
 import findIndex from 'lodash/findIndex';
@@ -34,7 +34,7 @@ async function buildSchema(
       schemas.push({
         uri: schemaUrl,
         // @ts-ignore
-        schema: await import('amis/schema.json').then(item => item.default)
+        schema: await import('@/packages/amis/schema.json').then(item => item.default)
       });
   }
 

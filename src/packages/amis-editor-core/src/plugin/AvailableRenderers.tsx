@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon} from '@/packages/amis-ui/src';
+import {Icon} from '@/packages/amis/src';
 import {registerEditorPlugin} from '../manager';
 import {AvailableRenderersPanel} from '../component/Panel/AvailableRenderersPanel';
 import {BuildPanelEventContext, BasePlugin, BasicPanelItem} from '../plugin';

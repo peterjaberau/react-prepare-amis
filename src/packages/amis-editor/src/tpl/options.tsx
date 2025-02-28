@@ -8,7 +8,7 @@ import {
   JSONPipeOut
 } from '@/packages/amis-editor-core/src';
 import {findObjectsWithKey} from '@/packages/amis-core/src';
-import {Button, Icon} from '@/packages/amis-ui/src';
+import {Button, Icon} from '@/packages/amis/src';
 import type {SchemaObject} from '@/packages/amis/src';
 import assign from 'lodash/assign';
 import cloneDeep from 'lodash/cloneDeep';

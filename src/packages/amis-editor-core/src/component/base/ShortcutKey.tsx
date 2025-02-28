@@ -1,5 +1,5 @@
 import React from 'react';
-import {Modal, Icon} from '@/packages/amis-ui/src';
+import {Modal, Icon} from '@/packages/amis/src';
 import cx from 'classnames';
 import {autobind} from '../../util';
 

@@ -2,7 +2,7 @@ import {observer} from 'mobx-react';
 import React from 'react';
 import {EditorManager} from '../../manager';
 import {EditorStoreType} from '../../store/editor';
-import {Drawer} from '@/packages/amis-ui/src';
+import {Drawer} from '@/packages/amis/src';
 import {autobind} from '../../util';
 import {findDOMNode} from 'react-dom';
 import {EditorNodeType} from '../../store/node';

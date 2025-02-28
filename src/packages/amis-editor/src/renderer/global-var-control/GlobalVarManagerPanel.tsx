@@ -2,8 +2,8 @@ import React from 'react';
 import {GlobalVariableItem, noop, guid} from '@/packages/amis-core/src';
 import {PanelProps, SchemaForm, EditorManager} from '@/packages/amis-editor-core/src';
 import {observer} from 'mobx-react';
-import {Alert2, Button, ConfirmBox, LazyComponent, Spinner} from '@/packages/amis-ui/src';
-import {confirm} from '@/packages/amis-ui/src';
+import {Alert2, Button, ConfirmBox, LazyComponent, Spinner} from '@/packages/amis/src';
+import {confirm} from '@/packages/amis/src';
 import {Icon} from '../../icons/index';
 
 type PanelComponentProps = {

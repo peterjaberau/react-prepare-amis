@@ -1,4 +1,4 @@
-import {Button} from '@/packages/amis-ui/src';
+import {Button} from '@/packages/amis/src';
 import React from 'react';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {
@@ -10,7 +10,7 @@ import {
 } from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
 import {diff} from '@/packages/amis-editor-core/src';
-import type {SchemaCollection} from '@/packages/amis-ui/src';
+import type {SchemaCollection} from '@/packages/amis/src';
 
 export class ActionPlugin extends BasePlugin {
   static id = 'ActionPlugin';

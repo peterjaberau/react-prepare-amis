@@ -3,7 +3,7 @@
  */
 
 import React, {useEffect, useState} from 'react';
-import {InputBox, TooltipWrapper} from '@/packages/amis-ui/src';
+import {InputBox, TooltipWrapper} from '@/packages/amis/src';
 import {FormControlProps, FormItem} from '@/packages/amis-core/src';
 import cx from 'classnames';
 

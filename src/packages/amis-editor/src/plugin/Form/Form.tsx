@@ -23,7 +23,7 @@ import {
   registerEditorPlugin,
   JSONPipeOut
 } from '@/packages/amis-editor-core/src';
-import type {FormSchema} from '@/packages/amis-ui/src';
+import type {FormSchema} from '@/packages/amis/src';
 import type {
   IFormStore,
   IFormItemStore,

@@ -1,5 +1,5 @@
 import {FormControlProps, FormItem} from '@/packages/amis-core/src';
-import {Select} from '@/packages/amis-ui/src';
+import {Select} from '@/packages/amis/src';
 import React from 'react';
 
 const LabelAlign: React.FC<FormControlProps> = props => {

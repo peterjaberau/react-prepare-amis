@@ -11,7 +11,7 @@ import {
   RendererPluginEvent,
   undefinedPipeOut
 } from '@/packages/amis-editor-core/src';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {getEventControlConfig} from '../../renderer/event-control/helper';
 import {ValidatorTag} from '../../validator';
 import {resolveOptionEventDataSchame, resolveOptionType} from '../../util';

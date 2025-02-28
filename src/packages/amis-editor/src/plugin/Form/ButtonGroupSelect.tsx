@@ -10,7 +10,7 @@ import {
   getSchemaTpl,
   defaultValue
 } from '@/packages/amis-editor-core/src';
-import type {Schema} from '@/packages/amis-ui/src';
+import type {Schema} from '@/packages/amis/src';
 import {
   getEventControlConfig,
   getActionCommonProps

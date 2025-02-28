@@ -12,7 +12,7 @@ import {
   PopOverContainer,
   Tree,
   Button
-} from '@/packages/amis-ui/src';
+} from '@/packages/amis/src';
 import cloneDeep from 'lodash/cloneDeep';
 import groupBy from 'lodash/groupBy';
 import {
@@ -59,7 +59,7 @@ export * from './helper';
 import {i18n as _i18n} from 'i18n-runtime';
 import {reaction} from 'mobx';
 import {updateComponentContext} from '@/packages/amis-editor-core/src';
-import type {VariableItem} from '@/packages/amis-ui/src';
+import type {VariableItem} from '@/packages/amis/src';
 
 interface EventControlProps extends FormControlProps {
   manager: EditorManager;

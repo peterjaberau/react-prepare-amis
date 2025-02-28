@@ -4,12 +4,14 @@ import React, {memo} from 'react';
 import {EditorManager} from '../manager';
 import Frame, {useFrame} from 'react-frame-component';
 import {
-  autobind,
   closeContextMenus,
+} from '@/packages/amis/src';
+import {
+  autobind,
   findTree,
   render,
   resizeSensor
-} from '@/packages/amis-ui/src';
+} from '@/packages/amis-core/src';
 import {isAlive} from 'mobx-state-tree';
 
 /**

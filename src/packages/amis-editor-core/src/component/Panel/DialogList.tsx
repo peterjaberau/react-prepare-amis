@@ -8,7 +8,7 @@ import {
   reGenerateID,
   translateSchema
 } from '../../util';
-import {Button, Icon, ListMenu, PopOverContainer, confirm} from '@/packages/amis-ui/src';
+import {Button, Icon, ListMenu, PopOverContainer, confirm} from '@/packages/amis/src';
 import {EditorManager} from '../../manager';
 import cloneDeep from 'lodash/cloneDeep';
 

@@ -6,8 +6,8 @@ import React from 'react';
 import {autobind, FormControlProps, isExpression} from '@/packages/amis-core/src';
 import cx from 'classnames';
 import {FormItem, Button, Icon, PickerContainer} from '@/packages/amis/src';
-import {FormulaCodeEditor, FormulaEditor, InputBox} from '@/packages/amis-ui/src';
-import type {VariableItem} from '@/packages/amis-ui/src';
+import {FormulaCodeEditor, FormulaEditor, InputBox} from '@/packages/amis/src';
+import type {VariableItem} from '@/packages/amis/src';
 import {reaction} from 'mobx';
 import {getVariables} from '@/packages/amis-editor-core/src';
 

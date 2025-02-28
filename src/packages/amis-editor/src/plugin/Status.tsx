@@ -3,7 +3,7 @@ import {render} from '@/packages/amis/src';
 import {registerEditorPlugin} from '@/packages/amis-editor-core/src';
 import {BasePlugin, BaseEventContext} from '@/packages/amis-editor-core/src';
 import {defaultValue, getSchemaTpl} from '@/packages/amis-editor-core/src';
-import {Icon, TooltipWrapper} from '@/packages/amis-ui/src';
+import {Icon, TooltipWrapper} from '@/packages/amis/src';
 import cloneDeep from 'lodash/cloneDeep';
 import pick from 'lodash/pick';
 import {getI18nEnabled} from '@/packages/amis-editor-core/src';

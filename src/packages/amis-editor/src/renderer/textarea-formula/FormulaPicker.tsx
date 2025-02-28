@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import {Modal, Button} from '@/packages/amis-ui/src';
+import {Modal, Button} from '@/packages/amis/src';
 import {FormControlProps, resolveVariableAndFilter} from '@/packages/amis-core/src';
 import cx from 'classnames';
-import {FormulaEditor} from '@/packages/amis-ui/src';
+import {FormulaEditor} from '@/packages/amis/src';
 
 export interface FormulaPickerProps extends FormControlProps {
   onConfirm: (data: string | undefined) => void;
