@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import { contentItems, contentAmisEditorItems } from '@/apps/eui/utils/mapping'
+import { contentItems, contentModuleItems, contentAmisEditorItems } from '@/apps/eui/utils/mapping'
 
 import {
     EuiHeaderSectionItemButton,
@@ -703,6 +703,12 @@ const Header = () => {
     }))
 
 
+    const collapsibleNavModuleItems = contentModuleItems.map(item => ({
+        onClick: () => navigate(`/eui?type=module&render=${item.key}`),
+        title: item.title,
+    }))
+
+
     const collapsibleNavAmisEditorItems = contentAmisEditorItems().map(item => ({
         onClick: () => navigate(`/eui?type=amis&render=${item.key}`),
         title: item.title,
@@ -724,6 +730,15 @@ const Header = () => {
                     initialIsOpen
                     items={collapsibleNavItems}
                     title="Browse"
+                />
+
+                <EuiCollapsibleNavItem
+                  icon="desktop"
+                  isCollapsible={false}
+                  // @ts-ignore
+                  initialIsOpen
+                  items={collapsibleNavModuleItems}
+                  title="Modules"
                 />
 
                 <EuiCollapsibleNavItem

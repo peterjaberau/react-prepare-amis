@@ -7,6 +7,7 @@ import WithGridSearch from '@/apps/eui/views/withGridSearch'
 import WithTableSearch from '@/apps/eui/views/withTableSeach'
 import AntdPageExample from "@/apps/antd/views/AntdPageExample.tsx";
 import AmisExample from "@/apps/amis/views/AmisExample.tsx";
+import ReactGridLayoutApp from "@/apps/modules/react-grid-layout/ReactGridLayoutApp.tsx";
 import { DynamicEditor } from "@/apps/amis/editor/DynamicEditor";
 import { datasets as amisEditorDatasets } from "@/apps/amis/store/pagesStore";
 
@@ -153,6 +154,57 @@ export const contentItems = [
     }
 ] as const
 
+
+export const contentModuleItems = [
+    {
+        key: 'react-grid-layout',
+        component: ReactGridLayoutApp,
+        title: 'React Grid Layout',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'React Grid Layout',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
+    {
+        key: 'simple-module',
+        component: WithSimpleContent,
+        title: 'Simple Module',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Simple Content',
+                    iconType: 'globe'
+                }
+            }
+        },
+    },
+    {
+        key: 'basic-module',
+        component: WithBasicCards,
+        title: 'Basic Module',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Basic Cards',
+                    iconType: 'dashboardApp'
+                }
+            }
+        },
+    },
+
+] as const
+
 export const componentMapping: Record<string, React.ComponentType> =
     Object.fromEntries(
         contentItems.map(({ key, component }) => [key, component]),
@@ -181,3 +233,8 @@ export const contentAmisEditorItems = () => {
         },
     }));
 };
+
+export const componentModuleMapping: Record<string, React.ComponentType> =
+  Object.fromEntries(
+    contentModuleItems.map(({ key, component }) => [key, component]),
+  )
