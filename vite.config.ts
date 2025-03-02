@@ -2,12 +2,23 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import path from "path"
 import svgr from "vite-plugin-svgr"
+import { codeInspectorPlugin } from 'code-inspector-plugin';
 
 import monacoEditorPlugin, { type IMonacoEditorOpts } from "vite-plugin-monaco-editor"
 const monacoEditorPluginDefault = (monacoEditorPlugin as any).default as (options: IMonacoEditorOpts) => any
 
 export default defineConfig({
   plugins: [
+    codeInspectorPlugin({
+      bundler: 'vite',
+      editor: 'idea',
+      port: 3061,
+      behavior: {
+        locate: true,
+        copy: true,
+      },
+      showSwitch: true,
+    }),
     react({
       babel: {
         parserOpts: {

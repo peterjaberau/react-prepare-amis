@@ -1,14 +1,69 @@
 import React from 'react';
-import { LayoutDashboard, Briefcase, User } from 'lucide-react';
-import { Canvas } from '../types';
-import { analyticsDashboard, projectManagement, personalDashboard } from '../data/examples';
+import { LayoutDashboard } from 'lucide-react';
+import { useReactGridLayoutMachine } from "@/apps/modules/react-grid-layout/machines/reactGridLayoutMachineStore.ts";
 
-interface LoadFromMenuProps {
-  onSelect: (canvases: Canvas[]) => void;
-  onClose: () => void;
-}
+
+
+const LoadFromMenu: React.FC<any> = () => {
+
+  const { state, actor } = useReactGridLayoutMachine();
+
+  // Close the menu when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!(e.target as Element).closest('.load-from-menu') &&
+          !(e.target as Element).closest('button')) {
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div className="absolute right-0 top-full mt-2 w-80 bg-white rounded-md shadow-lg z-20 load-from-menu">
+      <div className="p-3 border-b">
+        <h3 className="text-sm font-semibold text-gray-700">Load Example Dashboard</h3>
+      </div>
+      <div className="py-2">
+        {state.context.data.map((example: any) => (
+          <button
+            key={example.id}
+            className="w-full text-left px-4 py-3 hover:bg-gray-50 flex items-start transition-colors"
+            onClick={() => actor.send({ type: 'LOAD_EXAMPLE',  params: { exampleId: example.id } })}
+          >
+            <div className="flex-shrink-0 mr-3 mt-1 p-2 bg-indigo-100 rounded-md text-indigo-600">
+              <LayoutDashboard size={18} />
+            </div>
+            <div>
+              <div className="font-medium text-gray-800">{example.name}</div>
+              <div className="text-sm text-gray-500">{example.description}</div>
+              <div className="text-xs text-gray-400 mt-1">
+                {example.canvasCount} canvas{example.canvasCount !== 1 ? 'es' : ''}, {example.widgetCount} widget{example.widgetCount !== 1 ? 's' : ''}
+              </div>
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default LoadFromMenu;
+
+
+
+/*
+
 
 const LoadFromMenu: React.FC<LoadFromMenuProps> = ({ onSelect, onClose }) => {
+
+  const { state, actor } = useReactGridLayoutMachine();
+
+
+
+
+
   const examples = [
     {
       id: 'analytics',
@@ -42,12 +97,12 @@ const LoadFromMenu: React.FC<LoadFromMenuProps> = ({ onSelect, onClose }) => {
   // Close the menu when clicking outside
   React.useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (!(e.target as Element).closest('.load-from-menu') && 
+      if (!(e.target as Element).closest('.load-from-menu') &&
           !(e.target as Element).closest('button')) {
         onClose();
       }
     };
-    
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [onClose]);
@@ -81,4 +136,5 @@ const LoadFromMenu: React.FC<LoadFromMenuProps> = ({ onSelect, onClose }) => {
   );
 };
 
-export default LoadFromMenu;
+
+ */

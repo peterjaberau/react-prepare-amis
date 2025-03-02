@@ -2,7 +2,7 @@ import React, { ReactNode, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { contentItems, contentModuleItems, contentAmisEditorItems } from '@/apps/eui/utils/mapping'
-
+import RightMenuReadGridLayoutState from "@/apps/modules/react-grid-layout/components/ReactGridLayoutStateInspector";
 import {
     EuiHeaderSectionItemButton,
     EuiHeaderLogo,
@@ -666,6 +666,72 @@ const SubHeaderRightMenu = () => {
     )
 }
 
+const SubHeaderRightMenuReadGridLayoutState = () => {
+
+
+    const { euiTheme } = useEuiTheme()
+    const [isFlyoutVisible, setIsFlyoutVisible] = useState(false)
+
+    const gearButton = (
+      <EuiHeaderSectionItemButton
+        aria-expanded={isFlyoutVisible}
+        onClick={() => setIsFlyoutVisible(!isFlyoutVisible)}
+      >
+          <EuiIcon type="eye" />
+      </EuiHeaderSectionItemButton>
+    )
+
+    const flyout = (
+      <EuiPortal>
+          <EuiFlyoutResizable
+            maxWidth={1000}
+            minWidth={300}
+            ownFocus={false}
+            type={'overlay'}
+            side={'right'}
+            onClose={() => { setIsFlyoutVisible(false) }}
+            size="s"
+            id={'reactgridlayoutFlyoutId'}
+            aria-labelledby={'reactgridlayoutFlyoutTitleId'}
+          >
+              <EuiFlyoutHeader hasBorder>
+                  <EuiTitle size="m">
+                      <h2 id={'reactgridlayoutFlyoutTitleId'}>React Grid Layout States</h2>
+                  </EuiTitle>
+              </EuiFlyoutHeader>
+              <EuiFlyoutBody>
+                  body here
+
+              </EuiFlyoutBody>
+              <EuiFlyoutFooter>
+                  <EuiFlexGroup
+                    justifyContent="spaceBetween"
+                    alignItems="center"
+                  >
+                      <EuiFlexItem grow={false}>
+                          <EuiButtonEmpty
+                            iconType="cross"
+                            onClick={() => setIsFlyoutVisible(false)}
+                            flush="left"
+                          >
+                              Close
+                          </EuiButtonEmpty>
+                      </EuiFlexItem>
+                  </EuiFlexGroup>
+              </EuiFlyoutFooter>
+          </EuiFlyoutResizable>
+      </EuiPortal>
+    )
+
+    return (
+      <>
+          {gearButton}
+          {isFlyoutVisible && flyout}
+      </>
+    )
+}
+
+
 const Header = () => {
     const search = (
         <EuiSelectableTemplateSitewide
@@ -1134,7 +1200,11 @@ const Header = () => {
                         ],
                     },
                     {
-                        items: [<SubHeaderRightMenu />],
+                        items: [
+                          <RightMenuReadGridLayoutState />,
+                          <SubHeaderRightMenuReadGridLayoutState />,
+                          <SubHeaderRightMenu />
+                        ],
                     },
                 ]}
             />

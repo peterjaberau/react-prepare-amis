@@ -4,11 +4,11 @@ import { Canvas, GridConfig } from '../types';
 import GridToolbar from './GridToolbar';
 import JSONModal from './JSONModal';
 import CanvasWidgetPopover from './CanvasWidgetPopover';
+import { useReactGridLayoutMachine } from '../machines/reactGridLayoutMachineStore';
 
 interface CanvasHeaderProps {
   canvas: Canvas;
   onRenameCanvas: (canvasId: string, newName: string) => void;
-  onRemoveCanvas: (canvasId: string) => void;
   canRemove: boolean;
   onUpdateCanvas?: (updatedCanvas: Canvas) => void;
 }
@@ -16,10 +16,12 @@ interface CanvasHeaderProps {
 const CanvasHeader: React.FC<CanvasHeaderProps> = ({
   canvas,
   onRenameCanvas,
-  onRemoveCanvas,
   canRemove,
   onUpdateCanvas
 }) => {
+
+  const { state, actor } = useReactGridLayoutMachine();
+
   const [isEditing, setIsEditing] = useState(false);
   const [newName, setNewName] = useState(canvas.name);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -59,9 +61,9 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
 
   const handleOpenWidgetPopover = (e: React.MouseEvent) => {
     const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-    setWidgetPopoverPosition({ 
-      x: rect.left, 
-      y: rect.bottom + window.scrollY 
+    setWidgetPopoverPosition({
+      x: rect.left,
+      y: rect.bottom + window.scrollY
     });
     setIsWidgetPopoverOpen(true);
   };
@@ -82,13 +84,13 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
         name: widgetName,
         canvasId: canvas.id
       };
-      
+
       // Update the canvas with the new widget
       const updatedCanvas = {
         ...canvas,
         widgets: [...canvas.widgets, newWidget]
       };
-      
+
       onUpdateCanvas(updatedCanvas);
       handleCloseWidgetPopover();
     }
@@ -106,13 +108,13 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
               className="border rounded px-3 py-2 text-lg w-64"
               autoFocus
             />
-            <button 
+            <button
               onClick={handleSaveCanvasName}
               className="p-2 hover:bg-gray-200 rounded"
             >
               <Check size={18} className="text-green-600" />
             </button>
-            <button 
+            <button
               onClick={handleCancelEditing}
               className="p-2 hover:bg-gray-200 rounded"
             >
@@ -120,9 +122,9 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
             </button>
           </div>
         ) : (
-          <h3 className="text-xl font-semibold text-gray-800">{canvas.name}</h3>
+          <h3 className="text-xl font-semibold text-gray-800">{canvas.name} - {canvas.id}</h3>
         )}
-        
+
         <div className="flex items-center space-x-2">
           <button
             onClick={handleOpenWidgetPopover}
@@ -146,7 +148,7 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
             <Settings size={18} className="text-gray-600" />
           </button>
           {!isEditing && (
-            <button 
+            <button
               onClick={handleStartEditing}
               className="p-2 hover:bg-gray-200 rounded-md"
               title="Rename Canvas"
@@ -154,8 +156,8 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
               <Edit size={18} className="text-blue-600" />
             </button>
           )}
-          <button 
-            onClick={() => onRemoveCanvas(canvas.id)}
+          <button
+            onClick={() => actor.send({ type: 'REMOVE_CANVAS', params: { canvasId: canvas.id } })}
             className="p-2 hover:bg-gray-200 rounded-md"
             disabled={!canRemove}
             title={canRemove ? "Remove Canvas" : "Cannot remove the last canvas"}
@@ -164,18 +166,18 @@ const CanvasHeader: React.FC<CanvasHeaderProps> = ({
           </button>
         </div>
       </div>
-      
+
       {isSettingsOpen && (
         <div className="p-4 bg-gray-50 border-t">
-          <GridToolbar 
-            config={canvas.config} 
+          <GridToolbar
+            config={canvas.config}
             onConfigChange={handleConfigChange}
             onShowJSON={() => setIsJSONModalOpen(true)}
           />
         </div>
       )}
-      
-      <JSONModal 
+
+      <JSONModal
         isOpen={isJSONModalOpen}
         onClose={() => setIsJSONModalOpen(false)}
         canvas={canvas}
