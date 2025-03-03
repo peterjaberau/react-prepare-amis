@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import CanvasHeader from "@/apps/modules/react-grid-layout/components/CanvasHeader.tsx";
 
 export const initialContext = {
   selected: {
@@ -468,6 +469,14 @@ export const initialContext = {
       widgetPopoverPosition: { x: 0, y: 0 },
       isGlobalJSONModalOpen: false,
       isLoadFromMenuOpen: false,
+    },
+    CanvasHeader: {
+      isEditing: false,
+      newName: "",
+      isSettingsOpen: false,
+      isJSONModalOpen: false,
+      isWidgetPopoverOpen: false,
+      newConfig: {},
     }
   }
 }

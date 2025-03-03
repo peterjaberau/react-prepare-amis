@@ -1,31 +1,17 @@
 import React, { useState } from "react";
 import GridCanvas from "./components/GridCanvas";
 import CanvasHeader from "./components/CanvasHeader";
-import WidgetCreationPopover from "./components/WidgetCreationPopover";
-import GlobalJSONModal from "./components/GlobalJSONModal";
-import LoadFromMenu from "./components/LoadFromMenu";
 import { Canvas } from "./types";
-import { v4 as uuidv4 } from "uuid";
-import { Code, Plus, FolderOpen, RefreshCw } from "lucide-react";
-import { emptyCanvas } from "./data/examples";
 import { useReactGridLayoutMachine } from "./machines/reactGridLayoutMachineStore";
+
 import "./index.css";
-import { EuiButton,EuiPopover } from "@elastic/eui";
+
+import { DashboardControls } from "@/apps/modules/react-grid-layout/components/DashboardControls.tsx";
+import GlobalJSONModal from "@/apps/modules/react-grid-layout/components/GlobalJSONModal.tsx";
+import { EuiCard, EuiSplitPanel, EuiFlexGroup, EuiFlexItem, EuiPanel, EuiText } from "@elastic/eui";
 
 function ReactGridLayoutApp() {
   const { state, actor } = useReactGridLayoutMachine();
-
-
-
-  const [isWidgetPopoverOpen, setIsWidgetPopoverOpen] = useState(false);
-  const [widgetPopoverPosition, setWidgetPopoverPosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  const [isGlobalJSONModalOpen, setIsGlobalJSONModalOpen] = useState(false);
-  const [isLoadFromMenuOpen, setIsLoadFromMenuOpen] = useState(false);
-
-
 
   const handleUpdateCanvas = (updatedCanvas: Canvas) => {
     // setCanvases(
@@ -39,131 +25,51 @@ function ReactGridLayoutApp() {
     widgetId: string,
     sourceCanvasId: string,
     targetCanvasId: string,
-  ) => {
-  };
-
-  // internal state
-  const handleOpenWidgetPopover = (event: React.MouseEvent) => {
-    setWidgetPopoverPosition({ x: event.clientX, y: event.clientY });
-    setIsWidgetPopoverOpen(true);
-  };
-
-  // internal state
-  const handleCloseWidgetPopover = () => {
-    setIsWidgetPopoverOpen(false);
-  };
-
-  const handleCreateWidget = (title: string, targetCanvasId: string) => {
-  };
-
-
+  ) => {};
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <>
       <main className="container mx-auto px-4 py-8">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-semibold text-gray-800">
-            Canvases - {state.value}{" "}
-          </h2>
-          <div className="flex items-center space-x-3">
-            {state.context.data.map((example: any) => (
-              <EuiButton
-                key={example.id}
-                size="s"
-                type="button"
-                iconSize="s"
-                color="text"
-                fill
-                onClick={() =>
-                  actor.send({
-                    type: "LOAD_EXAMPLE",
-                    params: { exampleId: example.id },
-                  })
-                }
-              >
-                {example.id}
-              </EuiButton>
-            ))}
-
-            <button
-              onClick={() => actor.send({ type: "NEW_SESSION" })}
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors flex items-center"
-              title="Start a new session"
-            >
-              <RefreshCw size={18} className="mr-2" />
-              New Session
-            </button>
-
-            <EuiPopover
-              id={'add-new-widget-popover'}
-              button={<EuiButton onClick={() => actor.send({ type: 'OPEN_WIDGET_POPOVER'})}>Add New Widget</EuiButton>}
-              isOpen={state.context.components.ReactGridLayoutApp.isWidgetPopoverOpen}
-              closePopover={() => actor.send({ type: "CLOSE_WIDGET_POPOVER" })}
-            >
-              <WidgetCreationPopover />
-            </EuiPopover>
-
-            <button
-              onClick={() => setIsGlobalJSONModalOpen(true)}
-              className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md transition-colors flex items-center"
-              title="View complete dashboard state"
-            >
-              <Code size={18} className="mr-2" />
-              View JSON
-            </button>
-
-            <button
-              onClick={handleOpenWidgetPopover}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors flex items-center"
-            >
-              <Plus size={18} className="mr-2" />
-              Add Widget
-            </button>
-
-            <button
-              onClick={() => actor.send({ type: "ADD_CANVAS" })}
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors"
-            >
-              Add Canvas
-            </button>
-          </div>
-        </div>
-
-        <div className="space-y-10">
+        <DashboardControls />
+        <EuiFlexGroup direction="column" gutterSize="m">
           {state.context.canvases.map((canvas: any) => (
-            <div
-              key={canvas.id}
-              className="bg-white shadow-md rounded-lg overflow-hidden"
-            >
+            <EuiFlexItem key={canvas.id}>
 
-              <CanvasHeader
-                canvas={canvas}
-                canRemove={state.context.canvases.length > 1}
-                onRenameCanvas={(canvasId: string, newName) => actor.send({ type: "RENAME_CANVAS", params: { canvasId: canvasId, newName: newName } })}
-                onUpdateCanvas={(updatedCanvas: any) => actor.send({ type: "UPDATE_CANVAS", params: { updatedCanvas: updatedCanvas } })}
-              />
+              <EuiSplitPanel.Outer >
+                <EuiSplitPanel.Inner paddingSize={'none'}>
+                  <CanvasHeader
+                    canvas={canvas}
+                  />
+                </EuiSplitPanel.Inner>
+                <EuiSplitPanel.Inner color="subdued">
+                  <GridCanvas
+                    canvas={canvas}
+                    allCanvases={state.context.canvases}
+                    onUpdateCanvas={handleUpdateCanvas}
+                    onMoveWidgetToCanvas={handleMoveWidgetToCanvas}
+                  />
+                </EuiSplitPanel.Inner>
 
-              <GridCanvas
-                canvas={canvas}
-                allCanvases={state.context.canvases}
-                onUpdateCanvas={handleUpdateCanvas}
-                onMoveWidgetToCanvas={handleMoveWidgetToCanvas}
-              />
-            </div>
+              </EuiSplitPanel.Outer>
+
+              <EuiPanel element="div" hasShadow={false} hasBorder={true} paddingSize="none" borderRadius="m" grow={true}>
+
+
+
+
+              </EuiPanel>
+
+
+            </EuiFlexItem>
           ))}
-        </div>
+        </EuiFlexGroup>
+
+
+
       </main>
 
-
-
-
-
-      <GlobalJSONModal
-        isOpen={isGlobalJSONModalOpen}
-        onClose={() => setIsGlobalJSONModalOpen(false)}
-        canvases={state.context.canvases}
-      />
-    </div>
+      <GlobalJSONModal />
+    </>
   );
 }
 

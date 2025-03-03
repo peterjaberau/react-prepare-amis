@@ -15,6 +15,11 @@ import {
   EuiButtonEmpty,
 } from "@elastic/eui";
 
+const formStateInit = {
+  title: "",
+  selectedCanvases: [],
+}
+
 const WidgetCreationPopover: React.FC<any> = () => {
   const { state, actor } = useReactGridLayoutMachine();
 
@@ -43,7 +48,17 @@ const WidgetCreationPopover: React.FC<any> = () => {
         targetCanvasId: (formState.selectedCanvases[0] as any).value,
       },
     });
+
+    handleClose();
+
+
   };
+
+  const handleClose = () => {
+    //e.preventDefault();
+    setFormState(formStateInit);
+    actor.send({ type: "CLOSE_WIDGET_POPOVER" });
+  }
 
   return (
     <>
@@ -61,6 +76,7 @@ const WidgetCreationPopover: React.FC<any> = () => {
         </EuiFormRow>
         <EuiFormRow label="Canvas" display={"columnCompressed"}>
           <EuiComboBox
+            isClearable={false}
             singleSelection={{ asPlainText: true }}
             compressed={true}
             options={canvasOptions}
@@ -78,7 +94,7 @@ const WidgetCreationPopover: React.FC<any> = () => {
         <EuiSpacer />
         <EuiFlexGroup component="span">
           <EuiFlexItem component="span">
-            <EuiButtonEmpty size={"s"}>Cancel</EuiButtonEmpty>
+            <EuiButtonEmpty onClick={handleClose} size={"s"}>Cancel</EuiButtonEmpty>
           </EuiFlexItem>
           <EuiFlexItem component="span">
             <EuiButton

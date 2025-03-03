@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+// @ts-ignore
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import Widget from './Widget';
 import { WidgetItem, Canvas } from '../types';
@@ -14,8 +15,8 @@ interface GridCanvasProps {
   onMoveWidgetToCanvas: (widgetId: string, sourceCanvasId: string, targetCanvasId: string) => void;
 }
 
-const GridCanvas: React.FC<GridCanvasProps> = ({ 
-  canvas, 
+const GridCanvas: React.FC<GridCanvasProps> = ({
+  canvas,
   allCanvases,
   onUpdateCanvas,
   onMoveWidgetToCanvas
@@ -29,18 +30,18 @@ const GridCanvas: React.FC<GridCanvasProps> = ({
       ...canvas,
       widgets: canvas.widgets.filter(widget => widget.i !== id)
     };
-    
+
     onUpdateCanvas(updatedCanvas);
   };
 
   const handleRenameWidget = (id: string, newName: string) => {
     const updatedCanvas = {
       ...canvas,
-      widgets: canvas.widgets.map(widget => 
+      widgets: canvas.widgets.map(widget =>
         widget.i === id ? { ...widget, name: newName } : widget
       )
     };
-    
+
     onUpdateCanvas(updatedCanvas);
   };
 
@@ -65,12 +66,12 @@ const GridCanvas: React.FC<GridCanvasProps> = ({
       }
       return widget;
     });
-    
+
     const updatedCanvas = {
       ...canvas,
       widgets: updatedWidgets
     };
-    
+
     onUpdateCanvas(updatedCanvas);
   }, [canvas, onUpdateCanvas]);
 
@@ -112,17 +113,17 @@ const GridCanvas: React.FC<GridCanvasProps> = ({
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDropTarget(false);
-    
+
     const widgetId = e.dataTransfer.getData('widgetId');
     const sourceCanvasId = e.dataTransfer.getData('sourceCanvasId');
-    
+
     if (widgetId && sourceCanvasId && sourceCanvasId !== canvas.id) {
       onMoveWidgetToCanvas(widgetId, sourceCanvasId, canvas.id);
     }
   };
 
   return (
-    <div 
+    <div
       className={`bg-gray-100 p-4 min-h-[400px] canvas-drop-target ${isDropTarget ? 'active' : ''}`}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
@@ -156,7 +157,7 @@ const GridCanvas: React.FC<GridCanvasProps> = ({
         >
           {canvas.widgets.map(widget => (
             <div key={widget.i} data-grid={widget}>
-              <Widget 
+              <Widget
                 widget={widget}
                 onRemove={handleRemoveWidget}
                 onRename={handleRenameWidget}

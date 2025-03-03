@@ -28,6 +28,24 @@ export const reactGridLayoutMachine = setup({
     events: {} as any,
   },
   actions: {
+
+    //common
+    renameCanvasAction: assign(({ context, event }) => {
+      return {
+        ...context,
+        canvases: context.canvases.map((canvas: any) => {
+          if (canvas.id === event.params.canvasId) {
+            return {
+              ...canvas,
+              name: event.params.newName,
+            };
+          }
+          return canvas;
+        }),
+      };
+    }),
+
+    //ReactGridLayoutApp
     setterNewSessionAction: assign(({ context, event }) => {
       console.log({ context: context, event: event });
 
@@ -77,20 +95,6 @@ export const reactGridLayoutMachine = setup({
         canvases: remainingCanvases,
       };
     }),
-    renameCanvasAction: assign(({ context, event }) => {
-      return {
-        ...context,
-        canvases: context.canvases.map((canvas: any) => {
-          if (canvas.id === event.params.canvasId) {
-            return {
-              ...canvas,
-              name: event.params.newName,
-            };
-          }
-          return canvas;
-        }),
-      };
-    }),
     updateCanvasAction: assign(({ context, event }) => {
 
       console.log('-----updateCanvasAction----', { context:context, event:event })
@@ -105,11 +109,6 @@ export const reactGridLayoutMachine = setup({
           return canvas;
         }),
       };
-    }),
-
-
-    closeWidgetPopoverAction: assign(({ context, event }) => {
-      context.components.ReactGridLayoutApp.isWidgetPopoverOpen = false
     }),
     createWidgetAction: assign(({ context, event }) => {
 
@@ -154,10 +153,115 @@ export const reactGridLayoutMachine = setup({
 
     }),
     openWidgetPopoverAction: assign(({ context, event }) => {
-      context.components.ReactGridLayoutApp.isWidgetPopoverOpen = true
+
+      const isOpen = context.components.ReactGridLayoutApp.isWidgetPopoverOpen
+      if (isOpen) {
+        context.components.ReactGridLayoutApp.isWidgetPopoverOpen = false
+      } else {
+        context.components.ReactGridLayoutApp.isWidgetPopoverOpen = true
+      }
+
+    }),
+    closeWidgetPopoverAction: assign(({ context, event }) => {
+      context.components.ReactGridLayoutApp.isWidgetPopoverOpen = false
+    }),
+    openLoadFromMenuPopoverAction: assign(({ context, event }) => {
+
+      const isOpen = context.components.ReactGridLayoutApp.isLoadFromMenuOpen
+      if (isOpen) {
+        context.components.ReactGridLayoutApp.isLoadFromMenuOpen = false
+      } else {
+        context.components.ReactGridLayoutApp.isLoadFromMenuOpen = true
+      }
+
+    }),
+    closeLoadFromMenuPopoverAction: assign(({ context, event }) => {
+      context.components.ReactGridLayoutApp.isLoadFromMenuOpen = false
+    }),
+    openGlobalJsonAction: assign(({ context, event }) => {
+      context.components.ReactGridLayoutApp.isGlobalJSONModalOpen = true
+    }),
+    closeGlobalJsonAction: assign(({ context, event }) => {
+      context.components.ReactGridLayoutApp.isGlobalJSONModalOpen = false
     }),
 
 
+    //CanvasHeader
+    startEditingCanvasAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.isEditing = true
+    }),
+    cancelEditingCanvasAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.isEditing = false
+    }),
+    updateLocalCanvasNameAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.localName = event.params.newName
+    }),
+
+    saveCanvasNameAction: assign(({ context, event }) => {
+
+      const updatedCanvasName = context.components.CanvasHeader.newName
+
+      return {
+        ...context,
+        canvases: context.canvases.map((canvas: any) => {
+          if (canvas.id === event.params.canvasId) {
+            return {
+              ...canvas,
+              name: updatedCanvasName,
+            };
+          }
+          return canvas;
+        }),
+      };
+
+      // return {
+      //   ...context,
+      //   canvases: context.canvases.map((canvas: any) => {
+      //     if (canvas.id === event.params.canvasId) {
+      //       return {
+      //         ...canvas,
+      //         name: event.params.newName,
+      //       };
+      //     }
+      //     return canvas;
+      //   }),
+      // };
+    }),
+
+
+    moveToCanvasAction: assign(({ context, event }) => {
+      const widgetId = event.params.widgetId;
+      const targetCanvasId = event.params.targetCanvasId;
+      // return handleMoveWidgetToCanvas(context, widgetId, targetCanvasId);
+    }),
+
+    toggleSettingsCanvasAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.isSettingsOpen = !context.components.CanvasHeader.isSettingsOpen
+    }),
+    changeConfigCanvasAction: assign(({ context, event }) => {
+      if (context.components.CanvasHeader.onUpdateCanvas) {
+        const updatedCanvas = {
+          ...context.components.CanvasHeader.canvas,
+          config: event.params.newConfig,
+        }
+        context.components.CanvasHeader.onUpdateCanvas(updatedCanvas)
+      }
+    }),
+    openWidgetCanvasPopoverAction: assign(({ context, event }) => {
+      const rect = (event as any).currentTarget.getBoundingClientRect()
+      context.components.CanvasHeader.widgetPopoverPosition = {
+        x: rect.left,
+        y: rect.bottom + window.scrollY,
+      }
+      context.components.CanvasHeader.isWidgetPopoverOpen = true
+    }),
+    closeWidgetCanvasPopoverAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.isWidgetPopoverOpen = false
+    }),
+    createWidgetFromCanvasHeaderAction: assign(({ context, event }) => {
+      context.components.CanvasHeader.isWidgetPopoverOpen = false
+      context.components.WidgetCreationPopover.selectedCanvases = [context.components.CanvasHeader.canvas]
+    }),
 
 
   },
@@ -185,6 +289,7 @@ export const reactGridLayoutMachine = setup({
     },
     ready: {
       on: {
+        //ReactGridLayoutApp
         LOAD_EXAMPLE: {
           target: "stateLoadExample",
         },
@@ -203,15 +308,57 @@ export const reactGridLayoutMachine = setup({
         UPDATE_CANVAS: {
           actions: "updateCanvasAction",
         },
-        CLOSE_WIDGET_POPOVER: {
-          actions: "closeWidgetPopoverAction",
-        },
         CREATE_WIDGET: {
           actions: "createWidgetAction",
         },
         OPEN_WIDGET_POPOVER: {
           actions: "openWidgetPopoverAction",
         },
+        CLOSE_WIDGET_POPOVER: {
+          actions: "closeWidgetPopoverAction",
+        },
+        OPEN_LOAD_FROM_MENU_POPOVER: {
+          actions: "openLoadFromMenuPopoverAction",
+        },
+        OPEN_GLOBAL_JSON: {
+          actions: "openGlobalJsonAction",
+        },
+        CLOSE_GLOBAL_JSON: {
+          actions: "closeGlobalJsonAction",
+        },
+
+        //CanvasHeader
+        MOVE_TO_CANVAS: {
+          actions: "moveToCanvasAction",
+        },
+        CANVAS_START_EDITING: {
+          actions: "startEditingCanvasAction",
+        },
+        CANVAS_UPDATE_LOCAL_NAME: {
+          actions: ["updateLocalCanvasNameAction"],
+        },
+        CANVAS_SAVE_NAME: {
+          actions: ["saveCanvasNameAction", "cancelEditingCanvasAction"],
+        },
+        CANVAS_CANCEL_EDITING: {
+          actions: "cancelEditingCanvasAction",
+        },
+        CANVAS_TOGGLE_SETTINGS: {
+          actions: "toggleSettingsCanvasAction",
+        },
+        CANVAS_CONFIG_CHANGE: {
+          actions: "changeConfigCanvasAction",
+        },
+        CANVAS_OPEN_WIDGET_POPOVER: {
+          actions: "openWidgetCanvasPopoverAction",
+        },
+        CANVAS_CLOSE_WIDGET_POPOVER: {
+          actions: "closeWidgetCanvasPopoverAction",
+        },
+        CANVAS_CREATE_WIDGET_FROM_CANVAS_HEADER: {
+          actions: "createWidgetFromCanvasHeaderAction",
+        },
+
 
       },
     },
@@ -241,10 +388,11 @@ export const reactGridLayoutMachine = setup({
         }),
         onDone: {
           target: "stateCompleted",
-          actions: "setterLoadExampleAction",
+          actions: ["setterLoadExampleAction", "closeLoadFromMenuPopoverAction"],
         },
       },
     },
+
     stateCompleted: {
       always: [
         {
