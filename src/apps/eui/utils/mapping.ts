@@ -10,6 +10,7 @@ import AmisExample from "@/apps/amis/views/AmisExample.tsx";
 import ReactGridLayoutApp from "@/apps/modules/react-grid-layout/ReactGridLayoutApp.tsx";
 import { DynamicEditor } from "@/apps/amis/editor/DynamicEditor";
 import { datasets as amisEditorDatasets } from "@/apps/amis/store/pagesStore";
+import { AppStateActors } from "@/apps/modules/state-actors/AppStateActors.tsx";
 
 const defaultProps = {
     page: {
@@ -175,6 +176,24 @@ export const contentModuleItems = [
         },
     },
     {
+        key: 'state-actors',
+        component: AppStateActors,
+        title: 'State Actors',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'State Actors',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
+    {
         key: 'simple-module',
         component: WithSimpleContent,
         title: 'Simple Module',
@@ -238,3 +257,4 @@ export const componentModuleMapping: Record<string, React.ComponentType> =
   Object.fromEntries(
     contentModuleItems.map(({ key, component }) => [key, component]),
   )
+

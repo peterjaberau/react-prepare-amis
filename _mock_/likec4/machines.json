@@ -1,0 +1,1122 @@
+{
+  "diagramMachine": {
+    "setup": {
+      "types": {
+        "context": {
+          "view": "DiagramView",
+          "xynodes": "Types.Node[]",
+          "xyedges": "Types.Edge[]",
+          "xystore": "XYStoreApi",
+          "zoomable": "boolean",
+          "pannable": "boolean",
+          "fitViewPadding": "number",
+          "features": "EnabledFeatures",
+          "toggledFeatures": "ToggledFeatures",
+          "initialized": "boolean",
+          "viewport": "Viewport",
+          "viewportChangedManually": "boolean",
+          "lastOnNavigate": "null | { fromView: ViewId, toView: ViewId, fromNode: NodeId | null }",
+          "navigationHistory": "NavigationHistory",
+          "lastClickedNode": "null | { id: NodeId, clicks: number, timestamp: number }",
+          "focusedNode": "NodeId | null",
+          "activeElementDetails": "null | { fqn: Fqn, fromNode: NodeId | null, nodeRect?: Rect | null, nodeRectScreen?: Rect | null }",
+          "viewportBeforeFocus": "null | Viewport",
+          "xyflow": "ReactFlowInstance<Types.Node, Types.Edge> | null",
+          "syncLayoutActorRef": "ActorRef<Snapshot<unknown>, SyncLayoutEvents, AnyEventObject>",
+          "activeWalkthrough": "null | { stepId: StepEdgeId, parallelPrefix: string | null }"
+        },
+        "events": {
+          "xyflow.init": {
+            "instance": "ReactFlowInstance<Types.Node, Types.Edge>"
+          },
+          "xyflow.applyNodeChanges": {
+            "changes": "NodeChange<Types.Node>[]"
+          },
+          "xyflow.applyEdgeChanges": {
+            "changes": "EdgeChange<Types.Edge>[]"
+          },
+          "xyflow.viewportMoved": {
+            "viewport": "Viewport",
+            "manually": "boolean"
+          },
+          "xyflow.nodeClick": {
+            "node": "Types.Node"
+          },
+          "xyflow.edgeClick": {
+            "edge": "Types.Edge"
+          },
+          "xyflow.paneClick": {},
+          "xyflow.paneDblClick": {},
+          "xyflow.resized": {},
+          "update.nodeData": {
+            "nodeId": "NodeId",
+            "data": "Partial<Types.NodeData>"
+          },
+          "update.edgeData": {
+            "edgeId": "EdgeId",
+            "data": "Partial<Types.Edge['data']>"
+          },
+          "update.view": {
+            "view": "DiagramView",
+            "xynodes": "Types.Node[]",
+            "xyedges": "Types.Edge[]"
+          },
+          "update.inputs": {
+            "inputs": "Partial<Omit<Input, 'view'>>"
+          },
+          "update.features": {
+            "features": "EnabledFeatures"
+          },
+          "fitDiagram": {
+            "duration?": "number",
+            "bounds?": "BBox"
+          },
+          "open.source": "OpenSourceParams",
+          "open.elementDetails": {
+            "fqn": "Fqn",
+            "fromNode?": "NodeId | undefined"
+          },
+          "open.relationshipDetails": {
+            "edgeId": "EdgeId"
+          },
+          "open.relationshipsBrowser": {
+            "fqn": "Fqn"
+          },
+          "navigate.to": {
+            "viewId": "ViewId",
+            "fromNode?": "NodeId | undefined"
+          },
+          "navigate.back": {},
+          "navigate.forward": {},
+          "layout.align": {
+            "mode": "AlignmentMode"
+          },
+          "layout.resetEdgeControlPoints": {},
+          "saveManualLayout.schedule": {},
+          "saveManualLayout.cancel": {},
+          "focus.node": {
+            "nodeId": "NodeId"
+          },
+          "walkthrough.start": {
+            "stepId?": "StepEdgeId"
+          },
+          "walkthrough.step": {
+            "direction": "'next' | 'previous'"
+          },
+          "walkthrough.end": {},
+          "toggle.feature": {
+            "feature": "FeatureName",
+            "forceValue?": "boolean"
+          }
+        },
+        "children": {
+          "syncLayout": "'syncManualLayoutActorLogic'",
+          "hotkey": "'hotkeyActorLogic'",
+          "overlays": "'overlaysActorLogic'"
+        }
+      },
+      "actions": {
+        "trigger:NavigateTo": "({ context }, params) => { /* implementation */ }",
+        "trigger:OnChange": "({ context }, params) => { /* implementation */ }",
+        "trigger:OpenSource": "({ context }, params) => { /* implementation */ }",
+        "assign lastClickedNode": "assign(({ context, event }) => { /* implementation */ })",
+        "open source of focused or last clicked node": "enqueueActions(({ context, enqueue }) => { /* implementation */ })",
+        "xyflow:fitDiagram": "({ context }, params) => { /* implementation */ }",
+        "xyflow:setViewportCenter": "({ context }, params) => { /* implementation */ })",
+        "xyflow:setViewport": "({ context }, params) => { /* implementation */ })",
+        "xyflow:alignNodeFromToAfterNavigate": "({ context }, params) => { /* implementation */ })",
+        "layout.align": "({ context }, params) => { /* implementation */ })",
+        "updateFeatures": "enqueueActions(({ enqueue, system, event }) => { /* implementation */ })",
+        "closeAllOverlays": "enqueueActions(({ system, enqueue }) => { /* implementation */ })",
+        "stopSyncLayout": "enqueueActions(({ context, enqueue }) => { /* implementation */ })"
+      },
+      "guards": {
+        "enabled: FitView": "({ context }) => context.features.enableFitView",
+        "enabled: FocusMode": "({ context }) => context.features.enableFocusMode",
+        "enabled: Readonly": "({ context }) => context.features.enableReadOnly",
+        "not readonly": "({ context }) => !context.features.enableReadOnly",
+        "is dynamic view": "({ context }) => context.view.__ === 'dynamic'",
+        "is another view": "({ context, event }) => { /* implementation */ })",
+        "click: selected node": "({ event }) => { /* implementation */ })",
+        "click: same node": "({ context, event }) => { /* implementation */ })",
+        "click: focused node": "({ context, event }) => { /* implementation */ })",
+        "click: node has connections": "({ context, event }) => { /* implementation */ })"
+      }
+    },
+    "machine": {
+      "initial": "initializing",
+      "context": {
+        "view": null,
+        "xynodes": [],
+        "xyedges": [],
+        "xystore": null,
+        "zoomable": true,
+        "pannable": true,
+        "fitViewPadding": 0,
+        "features": {},
+        "toggledFeatures": {},
+        "initialized": false,
+        "viewport": { "x": 0, "y": 0, "zoom": 1 },
+        "viewportChangedManually": false,
+        "lastOnNavigate": null,
+        "navigationHistory": { "currentIndex": 0, "history": [] },
+        "lastClickedNode": null,
+        "focusedNode": null,
+        "activeElementDetails": null,
+        "viewportBeforeFocus": null,
+        "xyflow": null,
+        "syncLayoutActorRef": null,
+        "activeWalkthrough": null
+      },
+      "states": {
+        "initializing": {
+          "on": {
+            "xyflow.init": {
+              "actions": "enqueueActions(({ enqueue, check }) => { /* implementation */ })",
+              "target": "idle"
+            }
+          }
+        },
+        "idle": {
+          "id": "idle",
+          "on": {
+            "xyflow.nodeClick": [
+              {
+                "guard": "and(['enabled: FocusMode', 'click: node has connections', or(['click: same node', 'click: selected node'])])",
+                "actions": [
+                  "assign({ lastClickedNode, focusedNode: ({ event }) => event.node.id })"
+                ],
+                "target": "focused"
+              },
+              {
+                "actions": [
+                  "assign lastClickedNode",
+                  "open source of focused or last clicked node"
+                ]
+              }
+            ],
+            "xyflow.paneClick": {
+              "actions": "assign({ lastClickedNode: null })"
+            },
+            "xyflow.paneDblClick": {
+              "actions": [
+                { "type": "xyflow:fitDiagram" },
+                { "type": "trigger:OpenSource", "params": "({ context }) => ({ view: context.view.id })" }
+              ]
+            },
+            "saveManualLayout.*": {
+              "guard": "not readonly",
+              "actions": "sendTo((c) => c.context.syncLayoutActorRef, ({ event }) => { /* implementation */ })"
+            },
+            "focus.node": {
+              "guard": "enabled: FocusMode",
+              "actions": "assign({ focusedNode: ({ event }) => event.nodeId })",
+              "target": "focused"
+            }
+          }
+        },
+        "focused": {
+          "entry": [
+            "assign(s => ({ ...focusNodesEdges(s), viewportBeforeFocus: { ...s.context.viewport } }))",
+            "open source of focused or last clicked node",
+            "spawnChild('hotkeyActorLogic', { id: 'hotkey' })",
+            { "type": "xyflow:fitDiagram", "params": "focusedBounds" }
+          ],
+          "exit": "enqueueActions(({ enqueue, context }) => { /* implementation */ })",
+          "on": {
+            "xyflow.nodeClick": [
+              {
+                "guard": "click: focused node",
+                "target": "#idle"
+              },
+              {
+                "actions": [
+                  "assign({ lastClickedNode, focusedNode: ({ event }) => event.node.id })",
+                  "assign(focusNodesEdges)",
+                  "open source of focused or last clicked node",
+                  { "type": "xyflow:fitDiagram", "params": "focusedBounds" }
+                ]
+              }
+            ],
+            "focus.node": {
+              "actions": [
+                "assign({ focusedNode: ({ event }) => event.nodeId })",
+                "assign(focusNodesEdges)",
+                "open source of focused or last clicked node",
+                { "type": "xyflow:fitDiagram", "params": "focusedBounds" }
+              ]
+            },
+            "key.esc": {
+              "target": "idle"
+            },
+            "xyflow.paneClick": {
+              "actions": "assign({ lastClickedNode: null })",
+              "target": "idle"
+            },
+            "saveManualLayout.*": {
+              "guard": "not readonly",
+              "actions": "sendTo(c => c.context.syncLayoutActorRef, ({ event }) => { /* implementation */ })"
+            }
+          }
+        },
+        "navigating": {
+          "entry": [
+            "closeAllOverlays",
+            "stopSyncLayout",
+            { "type": "trigger:NavigateTo", "params": "({ context }) => ({ viewId: nonNullable(context.lastOnNavigate, 'Invalid state, lastOnNavigate is null').toView })" }
+          ],
+          "exit": "assign({ syncLayoutActorRef: ({ self, context, spawn }) => spawn('syncManualLayoutActorLogic', { id: 'syncLayout', systemId: 'syncLayout', input: { parent: self, viewId: context.view.id } }) })",
+          "on": {
+            "update.view": {
+              "actions": "enqueueActions(({ enqueue, context, event }) => { /* implementation */ })",
+              "target": "#idle"
+            }
+          }
+        },
+        "walkthrough": {
+          "entry": [
+            "spawnChild('hotkeyActorLogic', { id: 'hotkey' })",
+            "assign({ viewportBeforeFocus: ({ context }) => context.viewport, activeWalkthrough: ({ context, event }) => { /* implementation */ } })",
+            "assign(updateActiveWalkthrough)",
+            { "type": "xyflow:fitDiagram", "params": "focusedBounds" }
+          ],
+          "on": {
+            "key.esc": {
+              "target": "idle"
+            },
+            "key.arrow.left": {
+              "actions": "raise({ type: 'walkthrough.step', direction: 'previous' })"
+            },
+            "key.arrow.right": {
+              "actions": "raise({ type: 'walkthrough.step', direction: 'next' })"
+            },
+            "walkthrough.step": {
+              "actions": "enqueueActions(({ enqueue, context, event }) => { /* implementation */ })"
+            },
+            "walkthrough.end": {
+              "target": "idle"
+            },
+            "update.view": {
+              "guard": "is another view",
+              "actions": "raise(({ event }) => event, { delay: 50 })",
+              "target": "idle"
+            }
+          },
+          "exit": "enqueueActions(({ enqueue, context }) => { /* implementation */ })"
+        }
+      },
+      "on": {
+        "xyflow.applyNodeChanges": {
+          "actions": "assign({ xynodes: ({ context, event }) => applyNodeChanges(event.changes, context.xynodes) })"
+        },
+        "xyflow.applyEdgeChanges": {
+          "actions": "assign({ xyedges: ({ context, event }) => applyEdgeChanges(event.changes, context.xyedges) })"
+        },
+        "xyflow.viewportMoved": {
+          "actions": "assign({ viewportChangedManually: (({ event }) => event.manually), viewport: (({ event }) => event.viewport) })"
+        },
+        "fitDiagram": {
+          "guard": "enabled: FitView",
+          "actions": { "type": "xyflow:fitDiagram", "params": "prop('event')" }
+        },
+        "navigate.to": {
+          "guard": "is another view",
+          "actions": "assign({ lastOnNavigate: ({ context, event }) => ({ fromView: context.view.id, toView: event.viewId, fromNode: event.fromNode ?? null }) })",
+          "target": ".navigating"
+        },
+        "navigate.back": {
+          "guard": "({ context }) => context.navigationHistory.currentIndex > 0",
+          "actions": "assign(navigateBack)",
+          "target": ".navigating"
+        },
+        "navigate.forward": {
+          "guard": "({ context }) => context.navigationHistory.currentIndex < context.navigationHistory.history.length - 1",
+          "actions": "assign(navigateForward)",
+          "target": ".navigating"
+        },
+        "update.view": {
+          "actions": "assign(updateNavigationHistory), enqueueActions(({ enqueue, event, check, context }) => { /* implementation */ })"
+        },
+        "update.inputs": {
+          "actions": "assign(({ event }) => ({ ...event.inputs }))"
+        },
+        "update.features": {
+          "actions": "updateFeatures"
+        },
+        "update.nodeData": {
+          "actions": "assign(updateNodeData)"
+        },
+        "update.edgeData": {
+          "actions": "assign(updateEdgeData)"
+        },
+        "layout.align": {
+          "guard": "not readonly",
+          "actions": [
+            { "type": "layout.align", "params": "({ event }) => ({ mode: event.mode })" },
+            "raise({ type: 'saveManualLayout.schedule' })"
+          ]
+        },
+        "layout.resetEdgeControlPoints": {
+          "guard": "not readonly",
+          "actions": [
+            "assign(resetEdgeControlPoints)",
+            "raise({ type: 'saveManualLayout.schedule' })"
+          ]
+        },
+        "xyflow.resized": {
+          "guard": "({ context }) => context.features.enableFitView && !context.viewportChangedManually",
+          "actions": [
+            "cancel('fitDiagram')",
+            "raise({ type: 'fitDiagram' }, { id: 'fitDiagram', delay: 200 })"
+          ]
+        },
+        "open.elementDetails": {
+          "actions": "enqueueActions(({ context, enqueue, system, event }) => { /* implementation */ })"
+        },
+        "open.relationshipsBrowser": {
+          "actions": "sendTo(({ system }) => typedSystem(system).overlaysActorRef!, ({ context, event }) => ({ /* implementation */ }))"
+        },
+        "open.relationshipDetails": {
+          "actions": "sendTo(({ system }) => typedSystem(system).overlaysActorRef!, ({ context, event }) => ({ /* implementation */ }))"
+        },
+        "open.source": {
+          "actions": { "type": "trigger:OpenSource", "params": "prop('event')" }
+        },
+        "walkthrough.start": {
+          "guard": "is dynamic view",
+          "target": ".walkthrough"
+        },
+        "toggle.feature": {
+          "actions": "assign({ toggledFeatures: ({ context, event }) => { /* implementation */ } })"
+        }
+      },
+      "exit": [
+        "stopSyncLayout",
+        "stopChild('hotkey')",
+        "assign({ xyflow: null, xystore: null, initialized: false, syncLayoutActorRef: null })"
+      ]
+    }
+  },
+
+  "xyflowMachine": {
+    "setup": {
+      "types": {
+        "context": {
+          "xyflow": "ReactFlowInstance<Base.Node, Base.Edge>",
+          "fitViewPadding": "number"
+        },
+        "events": {
+          "fitBounds": {
+            "bounds": "BBox",
+            "duration": "number"
+          },
+          "fitView": {
+            "duration": "number"
+          },
+          "setCenter": {
+            "center": {
+              "x": "number",
+              "y": "number"
+            },
+            "duration": "number"
+          },
+          "setViewport": {
+            "viewport": "Viewport",
+            "duration": "number"
+          }
+        }
+      },
+      "actions": {},
+      "actors": {},
+      "guards": {}
+    },
+    "machine": {
+      "id": "xyflow",
+      "initial": "initialState",
+      "context": {
+        "xyflow": null,
+        "fitViewPadding": 0
+      },
+      "states": {
+        "initialState": {
+          "on": {
+            "fitBounds": {
+              "actions": "fitBoundsAction"
+            },
+            "fitView": {
+              "actions": "fitViewAction"
+            },
+            "setCenter": {
+              "actions": "setCenterAction"
+            },
+            "setViewport": {
+              "actions": "setViewportAction"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "elementDetailsLogic": {
+    "setup": {
+      "types": {
+        "context": {
+          "subject": "Fqn",
+          "currentView": "DiagramView",
+          "initiatedFrom": {
+            "node": "NodeId | null",
+            "clientRect": "Rect | null"
+          }
+        },
+        "input": {
+          "subject": "Fqn",
+          "currentView": "DiagramView",
+          "initiatedFrom?": {
+            "node?": "NodeId",
+            "clientRect?": "Rect"
+          }
+        },
+        "events": {
+          "change.subject": {
+            "subject": "Fqn"
+          },
+          "close": {}
+        },
+        "children": {
+          "[key: `${string}-relationships`]": "'relationshipsBrowserLogic'"
+        }
+      },
+      "actors": {
+        "relationshipsBrowserLogic": "relationshipsBrowserLogic"
+      }
+    },
+    "machine": {
+      "id": "element-details",
+      "initial": "active",
+      "context": {
+        "subject": null,
+        "currentView": null,
+        "initiatedFrom": {
+          "node": null,
+          "clientRect": null
+        }
+      },
+      "states": {
+        "active": {
+          "entry": "spawnChild('relationshipsBrowserLogic', { id: ({ self }) => `${self.id}-relationships`, input: ({ context }) => ({ subject: context.subject, scope: context.currentView, enableNavigationMenu: false, closeable: false }) })",
+          "exit": [
+            "sendTo(({ self }) => `${self.id}-relationships`, { type: 'close' })",
+            "stopChild(({ self }) => `${self.id}-relationships`)"
+          ],
+          "on": {
+            "change.subject": {
+              "actions": "assign({ subject: ({ event }) => event.subject })"
+            },
+            "close": "closed"
+          }
+        },
+        "closed": {
+          "id": "closed",
+          "type": "final"
+        }
+      }
+    }
+  },
+
+  "overlaysActorLogic": {
+    "setup": {
+      "types": {
+        "context": {
+          "seq": "number",
+          "overlays": "Array<{ type: 'elementDetails' | 'relationshipDetails' | 'relationshipsBrowser'; id: string; subject?: Fqn }>"
+        },
+        "events": {
+          "open.elementDetails": {
+            "subject": "Fqn"
+          },
+          "open.relationshipDetails": {
+            "edgeId": "string"
+          },
+          "open.relationshipsBrowser": {
+            "subject": "Fqn"
+          },
+          "close": {
+            "actorId?": "string"
+          },
+          "close.all": {}
+        },
+        "emitted": {
+          "opened": {
+            "overlay": "'elementDetails' | 'relationshipsBrowser' | 'relationshipDetails'"
+          },
+          "closed": {
+            "overlay": "'elementDetails' | 'relationshipsBrowser' | 'relationshipDetails'"
+          },
+          "idle": {}
+        },
+        "children": {
+          "hotkey": "'hotkey'",
+          "[key: `elementDetails-${number}`]": "'elementDetails'",
+          "[key: `relationshipDetails-${number}`]": "'relationshipDetails'",
+          "[key: `relationshipsBrowser-${number}`]": "'relationshipsBrowser'"
+        }
+      },
+      "actions": {
+        "closeLastOverlay": "enqueueActions",
+        "closeSpecificOverlay": "enqueueActions",
+        "closeAllOverlays": "enqueueActions",
+        "openElementDetails": "enqueueActions",
+        "openRelationshipDetails": "enqueueActions",
+        "openRelationshipsBrowser": "enqueueActions",
+        "listenToEsc": "spawnChild",
+        "stopListeningToEsc": "stopChild"
+      },
+      "actors": {
+        "relationshipDetails": "relationshipDetailsLogic",
+        "elementDetails": "elementDetailsLogic",
+        "relationshipsBrowser": "relationshipsBrowserLogic",
+        "hotkey": "hotkeyLogic"
+      },
+      "guards": {
+        "has overlays?": "boolean",
+        "close specific overlay?": "boolean",
+        "last: is relationshipDetails?": "boolean",
+        "last: is relationshipsBrowser?": "boolean"
+      }
+    },
+    "machine": {
+      "id": "overlays",
+      "initial": "idle",
+      "context": {
+        "seq": 1,
+        "overlays": []
+      },
+      "states": {
+        "idle": {},
+        "active": {
+          "entry": "listenToEsc",
+          "exit": "stopListeningToEsc",
+          "on": {
+            "close": [
+              {
+                "guard": "close specific overlay?",
+                "actions": {
+                  "type": "closeSpecificOverlay",
+                  "params": {
+                    "actorId": "event.actorId"
+                  }
+                },
+                "target": "closing"
+              },
+              {
+                "actions": "closeLastOverlay",
+                "target": "closing"
+              }
+            ],
+            "close.all": {
+              "actions": [
+                "closeAllOverlays",
+                "stopListeningToEsc"
+              ],
+              "target": "idle"
+            }
+          }
+        },
+        "closing": {
+          "always": [
+            {
+              "guard": "has overlays?",
+              "target": "active"
+            },
+            {
+              "actions": "stopListeningToEsc",
+              "target": "idle"
+            }
+          ]
+        }
+      },
+      "exit": [
+        "stopListeningToEsc",
+        "closeAllOverlays"
+      ]
+    }
+  },
+
+  "relationshipDetailsLogic": {
+    "setup": {
+      "types": {
+        "context": {
+          "edgeId": "EdgeId",
+          "view": "DiagramView",
+          "xyflow": "ReactFlowInstance<RelationshipDetailsTypes.Node, RelationshipDetailsTypes.Edge> | null",
+          "initialized": "boolean",
+          "xynodes": "RelationshipDetailsTypes.Node[]",
+          "xyedges": "RelationshipDetailsTypes.Edge[]"
+        },
+        "events": {
+          "xyflow.init": {
+            "instance": "ReactFlowInstance<RelationshipDetailsTypes.Node, RelationshipDetailsTypes.Edge>"
+          },
+          "xyflow.nodeClick": {
+            "node": "RelationshipDetailsTypes.Node"
+          },
+          "xyflow.edgeClick": {
+            "edge": "RelationshipDetailsTypes.Edge"
+          },
+          "xyflow.edgeMouseEnter": {
+            "edge": "RelationshipDetailsTypes.Edge"
+          },
+          "xyflow.edgeMouseLeave": {
+            "edge": "RelationshipDetailsTypes.Edge"
+          },
+          "dim.nonhovered.edges": {},
+          "undim.edges": {},
+          "xyflow.selectionChange": {
+            "nodes": "RelationshipDetailsTypes.Node[]",
+            "edges": "RelationshipDetailsTypes.Edge[]"
+          },
+          "xyflow.applyNodeChanges": {
+            "changes": "NodeChange<RelationshipDetailsTypes.Node>[]"
+          },
+          "xyflow.applyEdgeChanges": {
+            "changes": "EdgeChange<RelationshipDetailsTypes.Edge>[]"
+          },
+          "xyflow.paneClick": {},
+          "xyflow.resized": {},
+          "update.xydata": {
+            "xynodes": "RelationshipDetailsTypes.Node[]",
+            "xyedges": "RelationshipDetailsTypes.Edge[]"
+          },
+          "fitDiagram": {
+            "duration?": "number",
+            "bounds?": "BBox"
+          },
+          "navigate.to": {
+            "edgeId": "EdgeId"
+          },
+          "close": {}
+        }
+      },
+      "actions": {
+        "xyflow:fitDiagram": "({ context }, params) => { /* implementation */ }"
+      },
+      "guards": {
+        "enable: navigate.to": "() => true"
+      }
+    },
+    "machine": {
+      "initial": "opening",
+      "context": {
+        "edgeId": null,
+        "view": null,
+        "xyflow": null,
+        "initialized": false,
+        "xynodes": [],
+        "xyedges": []
+      },
+      "states": {
+        "opening": {
+          "on": {
+            "xyflow.init": {
+              "actions": "assign({ initialized: true, xyflow: ({ event }) => event.instance })",
+              "target": "active"
+            },
+            "close": {
+              "target": "closed"
+            }
+          }
+        },
+        "active": {
+          "entry": {
+            "type": "xyflow:fitDiagram",
+            "params": { "duration": 0 }
+          },
+          "on": {
+            "xyflow.edgeMouseEnter": {
+              "actions": [
+                "assign({ xyedges: ({ context, event }) => { /* implementation */ } })",
+                "cancel('undim.edges')",
+                "cancel('dim.nonhovered.edges')",
+                "raise({ type: 'dim.nonhovered.edges' }, { id: 'dim.nonhovered.edges', delay: 100 })"
+              ]
+            },
+            "xyflow.edgeMouseLeave": {
+              "actions": [
+                "assign({ xyedges: ({ context, event }) => { /* implementation */ } })",
+                "cancel('dim.nonhovered.edges')",
+                "raise({ type: 'undim.edges' }, { id: 'undim.edges', delay: 400 })"
+              ]
+            },
+            "dim.nonhovered.edges": {
+              "actions": "assign({ xyedges: ({ context }) => { /* implementation */ } })"
+            },
+            "undim.edges": {
+              "actions": "assign({ xyedges: ({ context }) => { /* implementation */ } })"
+            },
+            "xyflow.selectionChange": {
+              "actions": "enqueueActions(({ event, context, enqueue }) => { /* implementation */ })"
+            },
+            "navigate.to": {
+              "actions": [
+                "assign({ edgeId: ({ event }) => event.edgeId })",
+                "raise({ type: 'fitDiagram' }, { delay: 50 })"
+              ]
+            },
+            "close": {
+              "target": "closed"
+            }
+          },
+          "exit": "assign({ initialized: false, xyflow: null })"
+        },
+        "closed": {
+          "type": "final"
+        }
+      },
+      "on": {
+        "fitDiagram": {
+          "actions": {
+            "type": "xyflow:fitDiagram",
+            "params": "prop('event')"
+          }
+        },
+        "xyflow.resized": {
+          "actions": [
+            "cancel('fitDiagram')",
+            "raise({ type: 'fitDiagram' }, { id: 'fitDiagram', delay: 200 })"
+          ]
+        },
+        "update.xydata": {
+          "actions": "assign({ xynodes: ({ event }) => event.xynodes, xyedges: ({ event }) => event.xyedges })"
+        },
+        "xyflow.applyNodeChanges": {
+          "actions": "assign({ xynodes: ({ context, event }) => applyNodeChanges(event.changes, context.xynodes) })"
+        },
+        "xyflow.applyEdgeChanges": {
+          "actions": "assign({ xyedges: ({ context, event }) => applyEdgeChanges(event.changes, context.xyedges) })"
+        }
+      }
+    }
+  },
+
+  "relationshipsBrowserLogic": {
+    "setup": {
+      "types": {
+        "context": {
+          "subject": "Fqn",
+          "scope": "DiagramView | null",
+          "closeable": "boolean",
+          "enableNavigationMenu": "boolean",
+          "xyflow": "ReactFlowInstance<RelationshipsBrowserTypes.Node, RelationshipsBrowserTypes.Edge> | null",
+          "xystore": "XYStoreApi | null",
+          "layouted": "LayoutRelationshipsViewResult | null",
+          "navigateFromNode": "string | null",
+          "xynodes": "RelationshipsBrowserTypes.Node[]",
+          "xyedges": "RelationshipsBrowserTypes.Edge[]"
+        },
+        "events": {
+          "xyflow.init": {
+            "instance": "ReactFlowInstance<RelationshipsBrowserTypes.Node, RelationshipsBrowserTypes.Edge>",
+            "store": "XYStoreApi"
+          },
+          "xyflow.nodeClick": {
+            "node": "RelationshipsBrowserTypes.Node"
+          },
+          "xyflow.edgeClick": {
+            "edge": "RelationshipsBrowserTypes.Edge"
+          },
+          "xyflow.applyNodeChanges": {
+            "changes": "NodeChange<RelationshipsBrowserTypes.Node>[]"
+          },
+          "xyflow.applyEdgeChanges": {
+            "changes": "EdgeChange<RelationshipsBrowserTypes.Edge>[]"
+          },
+          "xyflow.paneClick": {},
+          "xyflow.paneDblClick": {},
+          "xyflow.resized": {},
+          "xyflow.edgeMouseEnter": {
+            "edge": "RelationshipsBrowserTypes.Edge"
+          },
+          "xyflow.edgeMouseLeave": {
+            "edge": "RelationshipsBrowserTypes.Edge"
+          },
+          "xyflow.selectionChange": {
+            "nodes": "RelationshipsBrowserTypes.Node[]",
+            "edges": "RelationshipsBrowserTypes.Edge[]"
+          },
+          "dim.nonhovered.edges": {},
+          "undim.edges": {},
+          "xyflow.updateNodeInternals": {},
+          "xyflow.unmount": {},
+          "fitDiagram": {
+            "duration?": "number",
+            "bounds?": "BBox"
+          },
+          "navigate.to": {
+            "subject": "Fqn",
+            "fromNode?": "string"
+          },
+          "update.xydata": {
+            "xynodes": "RelationshipsBrowserTypes.Node[]",
+            "xyedges": "RelationshipsBrowserTypes.Edge[]"
+          },
+          "update.view": {
+            "layouted": "LayoutRelationshipsViewResult"
+          },
+          "close": {}
+        }
+      },
+      "actions": {
+        "xyflow:fitDiagram": "({ context }, params) => { /* implementation */ }",
+        "xyflow:init": "assign(({ event }) => { /* implementation */ })",
+        "update.view": "assign(({ event }) => { /* implementation */ })",
+        "xyflow:updateNodeInternals": "({ context }) => { /* implementation */ }"
+      },
+      "guards": {
+        "isReady": "({ context }) => context.xyflow !== null && context.xystore !== null && context.layouted !== null"
+      },
+      "actors": {
+        "layouter": "layouter"
+      }
+    },
+    "machine": {
+      "id": "relationships-browser",
+      "initial": "initializing",
+      "context": {
+        "subject": null,
+        "scope": null,
+        "closeable": true,
+        "enableNavigationMenu": true,
+        "xyflow": null,
+        "xystore": null,
+        "layouted": null,
+        "navigateFromNode": null,
+        "xynodes": [],
+        "xyedges": []
+      },
+      "states": {
+        "initializing": {
+          "on": {
+            "xyflow.init": {
+              "actions": "xyflow:init",
+              "target": "isReady"
+            },
+            "update.view": {
+              "actions": "update.view",
+              "target": "isReady"
+            },
+            "stop": "closed",
+            "close": "closed"
+          }
+        },
+        "isReady": {
+          "always": [
+            {
+              "guard": "isReady",
+              "actions": [
+                "raise({ type: 'fitDiagram', duration: 0 })",
+                "raise({ type: 'xyflow.updateNodeInternals' }, { delay: 100 })"
+              ],
+              "target": "active"
+            },
+            {
+              "target": "initializing"
+            }
+          ]
+        },
+        "active": {
+          "initial": "idle",
+          "states": {
+            "idle": {
+              "on": {
+                "xyflow.edgeMouseEnter": {
+                  "actions": [
+                    "assign({ xyedges: ({ context, event }) => { /* implementation */ } })",
+                    "cancel('undim.edges')",
+                    "cancel('dim.nonhovered.edges')",
+                    "raise({ type: 'dim.nonhovered.edges' }, { id: 'dim.nonhovered.edges', delay: 100 })"
+                  ]
+                },
+                "xyflow.edgeMouseLeave": {
+                  "actions": [
+                    "assign({ xyedges: ({ context, event }) => { /* implementation */ } })",
+                    "cancel('dim.nonhovered.edges')",
+                    "raise({ type: 'undim.edges' }, { id: 'undim.edges', delay: 400 })"
+                  ]
+                },
+                "dim.nonhovered.edges": {
+                  "actions": "assign({ xyedges: ({ context }) => { /* implementation */ } })"
+                },
+                "undim.edges": {
+                  "actions": "assign({ xyedges: ({ context }) => { /* implementation */ } })"
+                },
+                "xyflow.selectionChange": {
+                  "actions": "enqueueActions(({ event, context, enqueue }) => { /* implementation */ })"
+                }
+              }
+            },
+            "layouting": {
+              "invoke": {
+                "id": "layouter",
+                "src": "layouter",
+                "input": "({ context }) => { /* implementation */ }",
+                "onDone": {
+                  "target": "idle",
+                  "actions": "enqueueActions(({ enqueue, event }) => { /* implementation */ })"
+                }
+              },
+              "on": {
+                "update.xydata": {
+                  "actions": "assign({ xynodes: ({ event }) => event.xynodes, xyedges: ({ event }) => event.xyedges })"
+                }
+              }
+            }
+          },
+          "on": {
+            "xyflow.nodeClick": {
+              "actions": "enqueueActions(({ event, enqueue }) => { /* implementation */ })"
+            },
+            "navigate.to": {
+              "actions": [
+                "assign({ subject: ({ event }) => event.subject, navigateFromNode: ({ event }) => event.fromNode ?? null })"
+              ]
+            },
+            "xyflow.paneDblClick": {
+              "actions": "xyflow:fitDiagram"
+            },
+            "update.view": {
+              "actions": "assign({ layouted: ({ event }) => event.layouted })",
+              "target": ".layouting"
+            },
+            "xyflow.updateNodeInternals": {
+              "actions": "xyflow:updateNodeInternals"
+            },
+            "fitDiagram": {
+              "actions": "xyflow:fitDiagram"
+            },
+            "xyflow.resized": {
+              "actions": [
+                "cancel('fitDiagram')",
+                "raise({ type: 'fitDiagram' }, { id: 'fitDiagram', delay: 300 })"
+              ]
+            },
+            "xyflow.init": {
+              "actions": "xyflow:init"
+            },
+            "xyflow.unmount": {
+              "target": "initializing"
+            },
+            "close": "closed"
+          }
+        },
+        "closed": {
+          "type": "final"
+        }
+      },
+      "on": {
+        "xyflow.applyNodeChanges": {
+          "actions": "assign({ xynodes: ({ context, event }) => applyNodeChanges(event.changes, context.xynodes) })"
+        },
+        "xyflow.applyEdgeChanges": {
+          "actions": "assign({ xyedges: ({ context, event }) => applyEdgeChanges(event.changes, context.xyedges) })"
+        }
+      },
+      "exit": "assign({ xyflow: null, layouted: null, xystore: null, xyedges: [], xynodes: [] })"
+    }
+  },
+
+  "syncManualLayoutActorLogic": {
+    "setup": {
+      "types": {
+        "context": {
+          "parent": "ActorRef<MachineSnapshot<DiagramContext, DiagramEvents, any, any, any, any, any, any>, DiagramEvents, any>",
+          "viewId": "ViewId"
+        },
+        "events": {
+          "sync": {},
+          "synced": {},
+          "cancel": {},
+          "stop": {}
+        }
+      },
+      "actions": {
+        "trigger:OnChange": "({ context }, { change }) => { /* implementation */ }"
+      },
+      "guards": {
+        "same view": "({ context }) => context.parent.getSnapshot().context.view.id === context.viewId"
+      }
+    },
+    "machine": {
+      "initial": "idle",
+      "context": {
+        "parent": null,
+        "viewId": null
+      },
+      "states": {
+        "idle": {
+          "tags": "ready",
+          "on": {
+            "sync": {
+              "target": "pending"
+            }
+          }
+        },
+        "paused": {
+          "tags": "pending",
+          "on": {
+            "sync": {
+              "target": "pending"
+            }
+          }
+        },
+        "pending": {
+          "tags": "pending",
+          "on": {
+            "sync": {
+              "target": "pending",
+              "reenter": true
+            },
+            "cancel": {
+              "target": "paused"
+            }
+          },
+          "after": {
+            "timeout": [
+              {
+                "guard": "same view",
+                "actions": {
+                  "type": "trigger:OnChange",
+                  "params": "({ context }) => { /* implementation */ }"
+                },
+                "target": "synced"
+              },
+              {
+                "target": "stopped"
+              }
+            ]
+          }
+        },
+        "synced": {
+          "tags": "ready",
+          "on": {
+            "sync": {
+              "target": "pending"
+            }
+          }
+        },
+        "stopped": {
+          "entry": "assign({ parent: null })",
+          "type": "final"
+        }
+      },
+      "on": {
+        "synced": {
+          "target": ".synced"
+        },
+        "stop": {
+          "target": ".stopped"
+        }
+      }
+    }
+  }
+}

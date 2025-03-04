@@ -61,3 +61,5 @@ declare module 'stream' {
 declare module './src/views/eui/CoreApp/components/test/basic.js' {
     export const functionMapping: Record<string, any>;
 }
+
+declare module 'invariant';

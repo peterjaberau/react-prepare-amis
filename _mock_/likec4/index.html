@@ -1,0 +1,137 @@
+<XState>
+  <CreateMachine>
+    <diagramMachine/>
+
+    <xyflowMachine id="xyflow"/>
+    <elementDetailsLogic id="element-details"/>
+    <overlaysActorLogic id="overlays"/>
+    <relationshipDetailsLogic/>
+    <relationshipsBrowserLogic id="relationships-browser" />
+    <syncManualLayoutActorLogic />
+
+  </CreateMachine>
+
+
+  <Machine>
+    <diagram-machine/>
+
+
+    <xyflowMachine id="xyflow"/>
+    <actor/>
+    <assign/>
+    <overlaysActor/>
+    <relationship-details.actor/>
+    <relationships-browser.actor/>
+    <relationships-browser.hook/>
+    <syncManualLayoutActor/>
+    <utils/>
+
+    <DiagramActorProvider/>
+
+   <ConsumedIn>
+     <useDiagram />
+     <RelationshipEdge/>
+     <Overlays/>
+     <ElementDetails/>
+     <TabPanelRelationships/>
+   </ConsumedIn>
+  </Machine>
+
+</XState>
+
+
+<LikeC4Diagram>
+  <EnsureMantine>
+    <FramerMotionConfig>
+
+
+      <framer-motion.LazyMotion>
+        <framer-motion.MotionConfig>
+
+          <DiagramFeatures>
+            <DiagramEventHandlers>
+              <RootContainer>
+
+
+                <LikeC4CustomColors/>
+                <ReactFlowProvider>
+                  <BatchProvider>
+
+
+                    <DiagramActorProvider>
+
+                      <SyncStore/>
+                      <DiagramActorToggledFeatures>
+                        <DiagramFeatures>
+
+                          <BaseXYFlow>
+                            <ReactFlow>
+                              <Wrapper>
+
+                                <GraphView>
+                                  <FlowRenderer>
+                                    <ZoomPane>
+                                      <!-- more -->
+                                    </ZoomPane>
+
+                                  </FlowRenderer>
+
+                                </GraphView>
+                                <StoreUpdater/>
+                                <SelectionListener/>
+                                <Background/>
+                                <BaseXYFlowInner>
+                                  <ViewportResizeHanlder/>
+                                </BaseXYFlowInner>
+                                <DiagramUI>
+                                  <LayoutGroup></LayoutGroup>
+                                  <ActionIconGroup></ActionIconGroup>
+                                  <LikeC4Search>
+                                    <SearchControl></SearchControl>
+                                  </LikeC4Search>
+                                  <Overlays>
+                                    <DiagramFeatures>
+                                      <ErrorBoundary/>
+                                    </DiagramFeatures>
+                                  </Overlays>
+                                  <DiagramTitlePanel>
+                                    <AnimatePresence>
+                                      <PresenceChild></PresenceChild>
+                                    </AnimatePresence>
+                                  </DiagramTitlePanel>
+
+                                </DiagramUI>
+                                <Attribution>
+                                  <Panel/>
+                                </Attribution>
+
+                              </Wrapper>
+
+                            </ReactFlow>
+
+                          </BaseXYFlow>
+
+
+                        </DiagramFeatures>
+                      </DiagramActorToggledFeatures>
+
+
+                    </DiagramActorProvider>
+
+
+                  </BatchProvider>
+                </ReactFlowProvider>
+
+
+              </RootContainer>
+            </DiagramEventHandlers>
+          </DiagramFeatures>
+
+
+        </framer-motion.MotionConfig>
+      </framer-motion.LazyMotion>
+
+
+    </FramerMotionConfig>
+  </EnsureMantine>
+</LikeC4Diagram>
