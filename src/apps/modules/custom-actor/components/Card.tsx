@@ -76,7 +76,6 @@ export function Card({ data }: any) {
                 </EuiFlexItem>
               </EuiFlexGroup>
             </EuiFlexItem>
-
             <EuiFlexItem>
               <EuiText>{currentData.content}</EuiText>
               {isExpanded && (
@@ -84,7 +83,7 @@ export function Card({ data }: any) {
                   {childCards.length > 0 && (
                     <EuiFlexGroup gutterSize="m" direction="column">
                       {childCards.map((childCard: any) => (
-                        <EuiFlexItem>
+                        <EuiFlexItem key={`item${childCard.id}`}>
                           <Card key={childCard.id} data={childCard} />
                         </EuiFlexItem>
                       ))}
@@ -104,10 +103,24 @@ export function Card({ data }: any) {
                     State: {currentState as string}
                   </EuiText>
                 </EuiFlexItem>
-                <EuiFlexItem>
-                  <EuiText textAlign="right" size="xs">
-                    Actor ID: {actor.id}
-                  </EuiText>
+                <EuiFlexItem grow={false}>
+                  <EuiFlexGroup gutterSize={'s'} direction="row">
+                    <EuiFlexItem>
+                      <EuiButtonIcon
+                        title="Inspect Actor"
+                        iconType={"bug"}
+                        size="s"
+                        onClick={() => console.log(`Inspect Actor:${actor.id} ---`, actor)}
+                      />
+                    </EuiFlexItem>
+                    <EuiFlexItem>
+                      <EuiText textAlign="right" size="xs">
+                        <span>Actor ID: {actor.id}</span>
+                      </EuiText>
+                    </EuiFlexItem>
+                  </EuiFlexGroup>
+
+
                 </EuiFlexItem>
               </EuiFlexGroup>
             </EuiFlexItem>

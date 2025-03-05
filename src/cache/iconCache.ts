@@ -108,8 +108,9 @@ import { icon as EuiIconPlugs } from "@elastic/eui/es/components/icon/assets/plu
 import { icon as EuiIconLogoLogging } from "@elastic/eui/es/components/icon/assets/logo_logging";
 import { icon as EuiIconLogoBeats } from "@elastic/eui/es/components/icon/assets/logo_beats";
 import { icon as EuiIconPlus } from "@elastic/eui/es/components/icon/assets/plus";
-
+import { icon as EuiIconBug } from "@elastic/eui/es/components/icon/assets/bug";
 appendIconComponentCache({
+    bug: EuiIconBug,
     plus: EuiIconPlus,
     logoBeats: EuiIconLogoBeats,
     logoLogging: EuiIconLogoLogging,
