@@ -1,0 +1,393 @@
+{
+  "LikeC4Diagram": {
+    "imports": {
+      "context": [
+        "DiagramEventHandlers",
+        "DiagramFeatures",
+        "EnsureMantine",
+        "FramerMotionConfig",
+        "IconRendererProvider",
+        "RootContainer"
+      ],
+      "hooks": {
+        "useIsReducedGraphics": ["ReducedGraphicsContext"]
+      },
+      "LikeC4CustomColors": ["LikeC4CustomColors"],
+      "useViewToNodesEdges": ["useViewToNodeEdges"],
+      "likec4diagram.XYFlow": ["LikeC4DiagramXYFlow"],
+      "likec4model": ["useLikeC4Model"],
+      "state.DiagramActorProvider": ["DiagramActorProvider"]
+    },
+    "fn": ["LikeC4Diagram"]
+  },
+  "StaticLikeC4Diagram": {},
+  "LikeC4ModelProvider": {},
+  "base": {
+    "primitives": {
+      "compound": {
+        "CompoundActionButton": {},
+        "CompoundDetailsButton": {},
+        "CompoundNodeContainer": {},
+        "CompoundTitle": {}
+      },
+      "edge": {
+        "EdgeContainer": {},
+        "EdgeLabel": {},
+        "EdgeMarkers": {},
+        "EdgePath": {}
+      },
+      "element": {
+        "ElementActionButtons": {},
+        "ElementDetailsButton": {},
+        "ElementNodeContainer": {},
+        "ElementShape": {},
+        "ElementTitle": {}
+      },
+      "customEdge": {},
+      "customNode": {},
+      "NodeHandles": {}
+    },
+    "Background": {},
+    "BaseXYFlow": [
+      {
+        "fn": [
+          "BaseXYFlow",
+          "BaseXYFlowInner",
+          "ViewportResizeHanlder",
+          "selectDimensions"
+        ]
+      }
+    ],
+    "updateEdges": {},
+    "updateNodes": {},
+    "xyflowMachine": {
+      "id": "xyflow",
+      "context": ["xyflow as ReactFlowInstance"],
+      "events": ["fitBounds", "fitView", "setCenter", "setViewport"]
+    }
+  },
+
+  "Components": {
+    "Link": {},
+    "SeachControl": {}
+  },
+  "context": {
+    "DiagramEventHandlers": {
+      "fn": [
+        "DiagramEventHandlers",
+        "useDiagramEventHandlers",
+        "useDiagramEventHandlersRef"
+      ],
+      "handleNames": [
+        "onBurgerMenuClick",
+        "onNavigateTo",
+        "onOpenSource",
+        "onCanvasClick",
+        "OnCanvasContextMenu",
+        "onEdgeClick",
+        "onEdgeContextMenu",
+        "onNodeClick",
+        "onNodeContextMenu",
+        "onChange",
+        "onCanvasDblClick"
+      ]
+    },
+    "DiagramFeatures": {
+      "imports": {
+        "hooks.useIsReducedGraphics": ["depsShallowEqual"]
+      },
+      "fn": [
+        "AllDisabled",
+        "DiagramFeatures",
+        "useEnabledFeature",
+        "IfEnabled",
+        "IfNotEnabled",
+        "validate"
+      ],
+      "featureNames": [
+        "Controls",
+        "ReadOnly",
+        "FocusMode",
+        "NavigateTo",
+        "ElementDetails",
+        "RelationshipDetails",
+        "RelationshipBrowser",
+        "Search",
+        "NavigationButtons",
+        "Notations",
+        "DynamicViewWalkthrough",
+        "EdgeEditing",
+        "ViewTitle",
+        "FitView",
+        "LikeC4Model",
+        "Vscode"
+      ]
+    },
+    "FramerMotionConfig": {},
+    "IconRenderer": {},
+    "RootContainer": {
+      "imports": {
+        "hooks": ["useIsReducedGraphics"]
+      },
+      "fn": ["RootContainer", "useRootContainer", "useRootContainerRef"]
+    }
+  },
+  "hooks": {
+    "imports": {
+      "state.types": ["DiagramActorRef"]
+    },
+    "safeContext": {
+      "fn": ["DiagramActorSafeContext", "useDiagramActorRef"]
+    },
+    "useCurrentViewId": {
+      "imports": {
+        "state.types": ["DiagramContext"],
+        "useDiagram": ["useDiagramContext"]
+      },
+      "fn": ["selectViewId"]
+    },
+    "useDiagram": {
+      "imports": {
+        "state.types": [
+          "DiagramActorSnapshot",
+          "DiagramContext",
+          "SyncLayoutActorRef",
+          "SyncLayoutActorSnapshot"
+        ],
+        "safeContext": ["useDiagramActorRef"],
+        "utils": ["findDiagramEdge", "findDiagramNode"]
+      },
+      "fn": [
+        "useDiagram",
+        "useDiagramActorSnapshot",
+        "useDiagramSyncLayoutState",
+        "useDiagramContext"
+      ]
+    },
+    "useIsReducedGraphics": {},
+    "useMantinePortalProps": {
+      "imports": {
+        "context": ["useRootContainer"]
+      }
+    },
+    "useSetState": {},
+    "useUpdateEffect": {
+      "fn": ["depsShallowEqual", "useUpdateEffect"]
+    },
+    "useXYFlow": {
+      "fn": [
+        "useXYFlow",
+        "useXYStore",
+        "useXYStoreApi",
+        "useXYInternalNode",
+        "useIsZoomTooSmall"
+      ]
+    }
+  },
+  "utils": {
+    "xyflow": {
+      "fn": [
+        "toDomPrecision",
+        "distance",
+        "nodeToRect",
+        "isInside",
+        "bezierControlPoints",
+        "isClose",
+        "isSamePoint",
+        "distanceBetweenPoints",
+        "stopPropagation",
+        "centerXYInternalNode",
+        "bezierPath"
+      ]
+    }
+  },
+  "state": {
+    "aligners": {
+      "imports": {
+        "@xyflow": ["getNodeDimensions"]
+      },
+      "fn": ["getAligner", "toNodeRect", "getLinearAligner"],
+      "class": ["GridAligner", "LinearAligner", "Aligner"]
+    },
+    "assign": {
+      "imports": {
+        "@xyflow": ["getNodeDimensions"],
+        "diagram-machine": ["ActionArg", "Context as DiagramContext"]
+      },
+      "fn": [
+        "lastClickedNode",
+        "mergeXYNodesEdges",
+        "focusNodesEdges",
+        "unfocusNodesEdges",
+        "updateNavigationHistory",
+        "navigateBack",
+        "navigateForward",
+        "updateNodeData",
+        "updateEdgeData",
+        "resetEdgeControlPoints",
+        "updateActiveWalkthrough"
+      ]
+    },
+    "diagram-machine": {
+      "imports": {
+        "@xyflow": [
+          "applyEdgeChanges",
+          "applyNodeChanges",
+          "getViewportForBounds",
+          "useStoreApi",
+          "nodeToRect"
+        ],
+        "DiagramFeatures": ["AllDisabled"],
+        "useLayoutConstraints": ["createLayoutConstraints"],
+        "overlaysActor": ["overlaysActorLogic"],
+        "assign": [
+          "updateNavigationHistory",
+          "navigateBack",
+          "navigateForward",
+          "updateNodeData",
+          "updateEdgeData",
+          "resetEdgeControlPoints",
+          "updateActiveWalkthrough"
+        ],
+        "hotkeyActor": ["hotkeyActorLogic"],
+        "persistence": ["DiagramToggledFeaturesPersistence"],
+        "syncManualLayoutActor": [
+          "SyncLayoutEvents",
+          "syncManualLayoutActorLogic"
+        ],
+        "utils": ["findDiagramNode", "focusedBounds", "typedSystem"]
+      },
+      "events": [
+        "xyflow.init",
+        "xyflow.applyNodeChanges",
+        "xyflow.applyEdgeChanges",
+        "xyflow.viewportMoved",
+        "xyflow.nodeClick",
+        "xyflow.edgeClick",
+        "xyflow.paneClick",
+        "xyflow.paneDblClick",
+        "xyflow.resized",
+        "update.nodeData",
+        "update.edgeData",
+        "update.view",
+        "update.inputs",
+        "update.features",
+        "fitDiagram",
+        "open.source",
+        "open.elementDetails",
+        "open.relationshipDetails",
+        "open.relationshipBrowser",
+        "navigate.to",
+        "navigate.back",
+        "navigate.forward",
+        "layout.align",
+        "layout.resetEdgeControlPoints",
+        "saveManualLayout.schedule",
+        "saveManulaLayout.cancel",
+        "focus.node",
+        "walkthrough.start",
+        "walkthrough.end",
+        "toggle.feature"
+      ],
+      "fn": ["diagramMachine", "nodeRef", "findCorrespondingNode"]
+    },
+    "DiagramActorProvider": {
+      "imports": {
+        "state.types": ["DiagramActorRef"],
+        "state.syncManualLayoutActorLogic": ["syncManualLayoutActor"],
+        "DiagramEventHandlers": ["useDiagramEventHandlersRef"],
+        "DiagramFeatures": ["useEnabledFeature", "DiagramFeatures"],
+        "safeContext": ["DiagramActorSafeContext"],
+        "state.diagram-machine": ["diagramMachine"],
+        "hooks.useUpdateEffect": ["useUpdateEffect"],
+        "@xyflow": ["useStoreApi"]
+      },
+      "fn": ["DiagramActorProvider", "DiagramActorToggledFeatures", "SyncStore"]
+    },
+    "hotkeyActor": {},
+    "inspector": {},
+    "persistence": {},
+    "syncManualLayoutActor": {
+      "imports": {
+        "state.diagram-machine": ["DiagramContext", "Events as DiagramEvents"],
+        "utils": ["bezierControlPoints", "isSamePoint"]
+      },
+      "fn": ["syncManualLayoutActorLogic", "createViewChange"],
+      "events": ["sync", "synced", "cancel", "stop"]
+    },
+    "utils": {
+      "fn": [
+        "findDiagramEdge",
+        "findDiagramNode",
+        "focusedBounds",
+        "typedSystem"
+      ]
+    }
+  },
+  "overlays": {
+    "element-details": {},
+    "overlay": {},
+    "relationship-details": {},
+    "relationship-browser": {},
+    "Overlays": {},
+    "overlaysActor": {}
+  },
+  "likec4model": {
+    "LikeC4ModelContext": {},
+    "useLikeC4ElementsTree": {},
+    "useLikeC4Model": {}
+  },
+  "likec4diagram": {
+    "custom": {
+      "edges": {
+        "NodePopover": {},
+        "RelationshipsEdge": {},
+        "RelationshipsDropdownMenu": {},
+        "utils": {}
+      },
+      "nodes": {
+        "toolbar": {
+          "ColorButton": {},
+          "CompoundToolbar": {},
+          "ElementToolbar": {},
+          "Toolbar": {}
+        },
+        "CompoundActions": {},
+        "ElementActions": {},
+        "nodeTypes": {}
+      }
+    },
+    "ui": {
+      "controls": {
+        "ChangeAutoLayout": {},
+        "Controls": {},
+        "LayoutDrifNotification": {},
+        "ManualLayoutToolsButton": {},
+        "NavigationButtons": {},
+        "ToggleReadOnly": {}
+      },
+      "diagram-title": {
+        "DiagramTitlePanel": {},
+        "Link": {}
+      },
+      "notation": {
+        "NotationPanel": {}
+      },
+      "search": {
+        "ElementsColumn": {},
+        "LieC4Search": {},
+        "SearchInput": {},
+        "state": {},
+        "utils": {},
+        "ViewsColumn": {}
+      },
+      "walkthrough": {
+        "DynamicViewWalkthrough": {}
+      }
+    },
+    "DiagramUI": {},
+    "useLayoutConstraints": {},
+    "useViewToNodeEdges": {},
+    "XYFlow": {}
+  }
+}

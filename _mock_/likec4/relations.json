@@ -1,0 +1,17 @@
+{
+  "diagramMachine": {
+    "overlaysActorLogic": {
+      "relationshipDetails": {},
+      "elementDetailsLogic": {
+        "relationshipsBrowser": {
+          "layouter": {}
+        }
+
+      },
+      "relationshipsBrowser": {
+        "layouter": {}
+      },
+      "hotkey": {}
+    }
+  }
+}
