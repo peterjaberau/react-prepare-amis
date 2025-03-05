@@ -792,8 +792,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                     icon="desktop"
                     isCollapsible={true}
-                    // @ts-ignore
-                    initialIsOpen
                     items={collapsibleNavItems}
                     title="Browse"
                 />
@@ -801,8 +799,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                   icon="desktop"
                   isCollapsible={false}
-                  // @ts-ignore
-                  initialIsOpen
                   items={collapsibleNavModuleItems}
                   title="Modules"
                 />
@@ -810,8 +806,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                   icon="desktop"
                   isCollapsible={true}
-                  // @ts-ignore
-                  initialIsOpen
                   items={collapsibleNavAmisEditorItems}
                   title="Amis"
                 />
@@ -819,8 +813,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                     icon="desktop"
                     isCollapsible={true}
-                    // @ts-ignore
-                    initialIsOpen={false}
                     items={
                         [
                             {
@@ -846,8 +838,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                     icon="eye"
                     isCollapsible={true}
-                    // @ts-ignore
-                    initialIsOpen={false}
                     items={
                         [
                             {
@@ -907,8 +897,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                     icon="plugs"
                     isCollapsible={true}
-                    // @ts-ignore
-                    initialIsOpen={false}
                     items={
                         [
                             {
@@ -946,8 +934,6 @@ const Header = () => {
                 <EuiCollapsibleNavItem
                     icon="gear"
                     isCollapsible={true}
-                    // @ts-ignore
-                    initialIsOpen={false}
                     items={
                         [
                             {

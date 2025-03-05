@@ -55,7 +55,7 @@ export function Card({ data }: any) {
                       <EuiButtonIcon
                         iconType="plus"
                         onClick={() => actor.send({ type: "ADD_CHILD" })}
-                        title="Add child card"
+                        aria-label="Add child card"
                       />
                     </EuiFlexItem>
                     <EuiFlexItem>
@@ -63,6 +63,7 @@ export function Card({ data }: any) {
                         onClick={() => actor.send({ type: "EDIT" })}
                         iconType="pencil"
                         title="Edit card"
+                        aria-label="Edit card"
                       />
                     </EuiFlexItem>
 
@@ -70,6 +71,8 @@ export function Card({ data }: any) {
                       <EuiButtonIcon
                         onClick={() => actor.send({ type: "TOGGLE_EXPAND" })}
                         iconType={isExpanded ? "arrowUp" : "arrowDown"}
+                        aria-label={isExpanded ? "Collapse card" : "Expand card"}
+
                       />
                     </EuiFlexItem>
                   </EuiFlexGroup>
@@ -111,6 +114,7 @@ export function Card({ data }: any) {
                         iconType={"bug"}
                         size="s"
                         onClick={() => console.log(`Inspect Actor:${actor.id} ---`, actor)}
+                        aria-label="Inspect Actor"
                       />
                     </EuiFlexItem>
                     <EuiFlexItem>
