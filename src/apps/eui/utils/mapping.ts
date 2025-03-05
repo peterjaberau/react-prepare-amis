@@ -12,6 +12,7 @@ import { DynamicEditor } from "@/apps/amis/editor/DynamicEditor";
 import { datasets as amisEditorDatasets } from "@/apps/amis/store/pagesStore";
 import { AppStateActors } from "@/apps/modules/state-actors/AppStateActors.tsx";
 import { AppCustomActor } from "@/apps/modules/custom-actor/AppCustomActor.tsx";
+import WithDraggables from "@/apps/eui/views/withDraggables.tsx";
 
 const defaultProps = {
     page: {
@@ -53,6 +54,20 @@ export const contentItems = [
             ...{
                 pageHeader: {
                     title: 'Basic Cards',
+                    iconType: 'dashboardApp'
+                }
+            }
+        },
+    },
+    {
+        key: 'draggables',
+        component: WithDraggables,
+        title: 'Draggables',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Draggables',
                     iconType: 'dashboardApp'
                 }
             }
@@ -222,6 +237,7 @@ export const contentModuleItems = [
             }
         },
     },
+
 
     {
         key: 'custom-actor',
