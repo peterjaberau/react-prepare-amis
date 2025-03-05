@@ -1,0 +1,1105 @@
+[
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_AGGREGATOR",
+    "keywords": "APP_ACTION_AGGREGATOR",
+    "component": null,
+    "tooltip": "APP_ACTION_AGGREGATOR + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_AGGREGATOR_128x128.svg",
+    "title": "+ - Aggregator",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_CONDITION",
+    "keywords": "APP_ACTION_CONDITION",
+    "component": null,
+    "tooltip": "APP_ACTION_CONDITION + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_CONDITION_128x128.svg",
+    "title": "+ - Choice",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_FORLOOP",
+    "keywords": "APP_ACTION_FORLOOP",
+    "component": null,
+    "tooltip": "APP_ACTION_FORLOOP + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_FORLOOP_128x128.svg",
+    "title": "+ - For Loop",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_HTTP",
+    "keywords": "APP_CUSTOM_HTTP",
+    "component": null,
+    "tooltip": "APP_CUSTOM_HTTP + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_HTTP_128x128.svg",
+    "title": "+ - HTTP",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_WORKFLOW",
+    "keywords": "APP_CUSTOM_WORKFLOW",
+    "component": null,
+    "tooltip": "APP_CUSTOM_WORKFLOW + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_WORKFLOW_128x128.svg",
+    "title": "+ - Workflow",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_SCRIPT",
+    "keywords": "APP_CUSTOM_SCRIPT",
+    "component": null,
+    "tooltip": "APP_CUSTOM_SCRIPT + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_SCRIPT_128x128.svg",
+    "title": "+ - SCRIPT",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_TASK",
+    "keywords": "APP_CUSTOM_TASK",
+    "component": null,
+    "tooltip": "APP_CUSTOM_TASK + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_TASK_128x128.svg",
+    "title": "+ - TASK",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_CSV",
+    "keywords": "APP_CUSTOM_CSV - CSV - Excel",
+    "component": null,
+    "tooltip": "APP_CUSTOM_CSV + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_CSV_128x128.svg",
+    "title": "+ - CSV File",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_MAPPER",
+    "keywords": "APP_ACTION_MAPPER",
+    "component": null,
+    "tooltip": "APP_ACTION_MAPPER + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_MAPPER_128x128.svg",
+    "title": "+ - Mapper",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_RSS",
+    "keywords": "APP_CUSTOM_RSS",
+    "component": "ascx_custom_rss",
+    "tooltip": "APP_CUSTOM_RSS + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_RSS_128x128.svg",
+    "title": "+ - RSS",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_SETTER",
+    "keywords": "APP_ACTION_SETTER",
+    "component": null,
+    "tooltip": "APP_ACTION_SETTER + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_SETTER_128x128.svg",
+    "title": "+ - Values Setter",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_DATASTORE",
+    "keywords": "APP_CUSTOM_DATASTORE",
+    "component": null,
+    "tooltip": "APP_CUSTOM_DATASTORE + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_DATASTORE_128x128.svg",
+    "title": "- - Datastore",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_LOGS",
+    "keywords": "APP_CUSTOM_LOGS",
+    "component": null,
+    "tooltip": "APP_CUSTOM_LOGS + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_LOGS_128x128.svg",
+    "title": "- - Logs",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_DELAY",
+    "keywords": "APP_ACTION_DELAY",
+    "component": null,
+    "tooltip": "APP_ACTION_DELAY + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_DELAY_128x128.svg",
+    "title": "- - Wait",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_AURORADB",
+    "keywords": "AuroraDB",
+    "component": null,
+    "tooltip": "AuroraDB",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_AURORADB_128x128.svg",
+    "title": "? - AuroraDB",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "auroradb"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_MARIADB",
+    "keywords": "MariaDB",
+    "component": null,
+    "tooltip": "MariaDB",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_MARIADB_128x128.svg",
+    "title": "? - MariaDB",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "mariadb"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_MYSQL",
+    "keywords": "MySQL",
+    "component": null,
+    "tooltip": "MySQL",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_MYSQL_128x128.svg",
+    "title": "? - MySQL",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "mysql"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_ORACLEDB",
+    "keywords": "Oracle",
+    "component": null,
+    "tooltip": "Oracle",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_ORACLEDB_128x128.svg",
+    "title": "? - Oracle",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "oracledb"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_MSSQL",
+    "keywords": "Microsoft SQL Server",
+    "component": null,
+    "tooltip": "Microsoft SQL Server",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_MSSQL_128x128.svg",
+    "title": "? - SQL Server",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "mssql"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_POSTGRES",
+    "keywords": "postgresSQL",
+    "component": null,
+    "tooltip": "postgresSQL",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_POSTGRES_128x128.svg",
+    "title": "? - postgresSQL",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "postgres"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_AMAZONDYNAMODB",
+    "keywords": "Amazon Dynamodb",
+    "component": null,
+    "tooltip": "Amazon Dynamodb",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_AMAZONDYNAMODB_128x128.svg",
+    "title": "Amazon Dynamodb",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "amazonaws",
+      "database"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "amazonaws",
+      "database"
+    ],
+    "groupsCMS": [],
+    "securityType": "aws"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_AMAZONS3",
+    "keywords": "Amazon S3",
+    "component": null,
+    "tooltip": "Amazon S3",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_AMAZONS3_128x128.svg",
+    "title": "Amazon S3",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "amazonaws",
+      "document"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "amazonaws",
+      "document"
+    ],
+    "groupsCMS": [],
+    "securityType": "aws"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_BLOGGER",
+    "keywords": "Blogger",
+    "component": null,
+    "tooltip": "Blogger",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_BLOGGER_128x128.svg",
+    "title": "Blogger",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "cms"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "cms"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_CLICKSEND",
+    "keywords": "Click Send",
+    "component": null,
+    "tooltip": "Click Send",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CLICKSEND_128x128.svg",
+    "title": "Click Send",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "call"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "call"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_FACEBOOK",
+    "keywords": "Facebook",
+    "component": null,
+    "tooltip": "Facebook",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_FACEBOOK_128x128.svg",
+    "title": "Facebook",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "social"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "social"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_FACEBOOKPAGES",
+    "keywords": "Facebook Pages",
+    "component": null,
+    "tooltip": "Facebook Pages",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_FACEBOOK_128x128.svg",
+    "title": "Facebook Pages",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "social"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "social"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_GMAIL",
+    "keywords": "Gmail",
+    "component": "*",
+    "tooltip": "Gmail",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_GMAIL_128x128.svg",
+    "title": "Gmail",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "google",
+      "email"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "google",
+      "email"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_GOOGLECALENDAR",
+    "keywords": "Google Calendar",
+    "component": null,
+    "tooltip": "Google Calendar",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_GOOGLECALENDAR_128x128.svg",
+    "title": "Google Calendar",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "calendar",
+      "google"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "calendar",
+      "google"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_GOOGLEDRIVE",
+    "keywords": "Google Drive",
+    "component": null,
+    "tooltip": "Google Drive",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_GOOGLEDRIVE_128x128.svg",
+    "title": "Google Drive",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "document",
+      "google"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "document",
+      "google"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_GOOGLESHEETS",
+    "keywords": "Google Sheets",
+    "component": null,
+    "tooltip": "Google Sheets",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_GOOGLESHEETS_128x128.svg",
+    "title": "Google Sheets",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "spreadsheet",
+      "google"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "spreadsheet",
+      "google"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_GOOGLETASKS",
+    "keywords": "Google Tasks",
+    "component": null,
+    "tooltip": "Google Tasks",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_GOOGLETASKS_128x128.svg",
+    "title": "Google Tasks",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "productivity",
+      "google"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "productivity",
+      "google"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_MAILCHIMP",
+    "keywords": "Mailchimp",
+    "component": null,
+    "tooltip": "Mailchimp",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_MAILCHIMP_128x128.svg",
+    "title": "Mailchimp",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "email"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "email"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_MEDIUM",
+    "keywords": "Medium",
+    "component": null,
+    "tooltip": "Medium",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_MEDIUM_128x128.svg",
+    "title": "Medium",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "news",
+      "misc",
+      "cms"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "news",
+      "misc",
+      "cms"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_SALESFORCE",
+    "keywords": "Salesforce",
+    "component": null,
+    "tooltip": "Salesforce",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_SALESFORCE_128x128.svg",
+    "title": "Salesforce",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "crm"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "crm"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_SKYPE",
+    "keywords": "Skype",
+    "component": null,
+    "tooltip": "Skype",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_SKYPE_128x128.svg",
+    "title": "Skype",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "chat",
+      "microsoft"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "chat",
+      "microsoft"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_SLACK",
+    "keywords": "Slack",
+    "component": null,
+    "tooltip": "Slack",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_SLACK_128x128.svg",
+    "title": "Slack",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "chat"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "chat"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_TWITTER",
+    "keywords": "Twitter",
+    "component": null,
+    "tooltip": "Twitter",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_TWITTER_128x128.svg",
+    "title": "Twitter",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "popular",
+      "social",
+      "news"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "popular",
+      "social",
+      "news"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_WEBFLOW",
+    "keywords": "Webflow",
+    "component": null,
+    "tooltip": "Webflow",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_WEBFLOW_128x128.svg",
+    "title": "Webflow",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "cms"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "cms"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_WEEBLY",
+    "keywords": "Weebly",
+    "component": null,
+    "tooltip": "Weebly",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_WEEBLY_128x128.svg",
+    "title": "Weebly",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "cms"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "cms"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_WORDPRESS",
+    "keywords": "Wordpress",
+    "component": null,
+    "tooltip": "Wordpress",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_WORDPRESS_128x128.svg",
+    "title": "Wordpress",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "cms"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "cms"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "APP",
+    "identifier": "APP_XERO",
+    "keywords": "Xero",
+    "component": null,
+    "tooltip": "Xero",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_XERO_128x128.svg",
+    "title": "Xero",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "accounting"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "accounting"
+    ],
+    "groupsCMS": [],
+    "securityType": "oauth2"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_APPROVAL",
+    "keywords": "APP_CUSTOM_APPROVAL",
+    "component": null,
+    "tooltip": "APP_CUSTOM_APPROVAL + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_APPROVAL_128x128.svg",
+    "title": "~ - Approval",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_ARCHIVE",
+    "keywords": "APP_CUSTOM_ARCHIVE",
+    "component": null,
+    "tooltip": "APP_CUSTOM_ARCHIVE + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_ARCHIVE_128x128.svg",
+    "title": "~ - Archive (Zip)",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "ACTIONAPP",
+    "identifier": "APP_ACTION_ERRORHANDLER",
+    "keywords": "APP_ACTION_ERRORHANDLER",
+    "component": null,
+    "tooltip": "APP_ACTION_ERRORHANDLER + ACTIONAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_ACTION_ERRORHANDLER_128x128.svg",
+    "title": "~ - Error Handler",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_FTP",
+    "keywords": "APP_CUSTOM_FTP",
+    "component": null,
+    "tooltip": "APP_CUSTOM_FTP + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_FTP_128x128.svg",
+    "title": "~ - FTP",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "builtin"
+    ],
+    "groupsCMS": [],
+    "securityType": "ftp"
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_IMAGE",
+    "keywords": "APP_CUSTOM_IMAGE",
+    "component": null,
+    "tooltip": "APP_CUSTOM_IMAGE + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_IMAGE_128x128.svg",
+    "title": "~ - Image",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_PDF",
+    "keywords": "APP_CUSTOM_PDF",
+    "component": null,
+    "tooltip": "APP_CUSTOM_PDF + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_PDF_128x128.svg",
+    "title": "~ - PDF",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": false,
+    "groupsConnection": [],
+    "groupsCMS": [],
+    "securityType": ""
+  },
+
+  {
+    "type": "app.EmbeddedImageModel",
+    "shape": "CUSTOMAPP",
+    "identifier": "APP_CUSTOM_SSH",
+    "keywords": "APP_CUSTOM_SSH",
+    "component": null,
+    "tooltip": "APP_CUSTOM_SSH + CUSTOMAPP",
+    "image": "https://easyflow-assets.s3-us-west-2.amazonaws.com/stencils/APP_CUSTOM_SSH_128x128.svg",
+    "title": "~ - SSH",
+    "isActive": true,
+    "dateCreated": "2018-12-16T20:18:12",
+    "groups": [
+      "builtin"
+    ],
+    "isStencil": true,
+    "isConnection": true,
+    "groupsConnection": [
+      "builtin"
+    ],
+    "groupsCMS": [],
+    "securityType": "ssh"
+  }
+
+]
