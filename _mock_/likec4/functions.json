@@ -385,7 +385,14 @@
         "DynamicViewWalkthrough": {}
       }
     },
-    "DiagramUI": {},
+    "DiagramUI": {
+      "imports": {
+        "hooks.useDiagram": ["useDiagramActorSnapshot"],
+        "context": ["useEnabledFeatures"],
+        "Overlays": ["Overlays"],
+        "ui": ["Controls", "DiagramTitlePanel", "DynamicViewWalkthrough", "NotationPanel"]
+      }
+    },
     "useLayoutConstraints": {},
     "useViewToNodeEdges": {},
     "XYFlow": {}

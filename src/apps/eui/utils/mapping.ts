@@ -11,6 +11,7 @@ import ReactGridLayoutApp from "@/apps/modules/react-grid-layout/ReactGridLayout
 import { DynamicEditor } from "@/apps/amis/editor/DynamicEditor";
 import { datasets as amisEditorDatasets } from "@/apps/amis/store/pagesStore";
 import { AppStateActors } from "@/apps/modules/state-actors/AppStateActors.tsx";
+import { AppCustomActor } from "@/apps/modules/custom-actor/AppCustomActor.tsx";
 
 const defaultProps = {
     page: {
@@ -221,6 +222,27 @@ export const contentModuleItems = [
             }
         },
     },
+
+    {
+        key: 'custom-actor',
+        component: AppCustomActor,
+        title: 'Custom Actors',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Custom Actors',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: true,
+                },
+            }
+        },
+    },
+
+
 
 ] as const
 
