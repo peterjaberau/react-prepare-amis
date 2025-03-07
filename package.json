@@ -63,6 +63,7 @@
     "esm-env": "^1.2.2",
     "exceljs": "^4.4.0",
     "fast-equals": "^5.2.2",
+    "fast-memoize": "^2.5.2",
     "file-saver": "^2.0.2",
     "framer-motion": "^12.4.10",
     "froala-editor": "3.1.1",
@@ -99,6 +100,7 @@
     "prop-types": "^15.6.1",
     "qrcode.react": "^3.1.0",
     "qs": "6.9.7",
+    "query-string": "^9.1.1",
     "rc-input-number": "^7.4.0",
     "rc-menu": "^9.12.2",
     "rc-progress": "3.4.2",
@@ -129,6 +131,7 @@
     "sortablejs": "1.15.0",
     "style-inject": "^0.3.0",
     "tailwind-merge": "^2.5.4",
+    "tiny-emitter": "^2.1.0",
     "tiny-invariant": "^1.3.3",
     "tinycolor2": "^1.4.3",
     "tinymce": "^6.1.2",
@@ -140,7 +143,8 @@
     "video-react": "0.15.0",
     "viewerjs": "^1.11.6",
     "xlsx": "^0.18.5",
-    "xstate": "^5.19.2"
+    "xstate": "^5.19.2",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@elastic/datemath": "^5.0.3",

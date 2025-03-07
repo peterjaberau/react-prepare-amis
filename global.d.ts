@@ -2,6 +2,7 @@
 
 declare module "*.css";
 declare module "vite/client";
+declare module "query-string";
 
 
 declare module '*.png' {
