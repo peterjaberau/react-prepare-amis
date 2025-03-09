@@ -13,6 +13,8 @@ import { datasets as amisEditorDatasets } from "@/apps/amis/store/pagesStore";
 import { AppStateActors } from "@/apps/modules/state-actors/AppStateActors.tsx";
 import { AppCustomActor } from "@/apps/modules/custom-actor/AppCustomActor.tsx";
 import WithDraggables from "@/apps/eui/views/withDraggables.tsx";
+import { DashboardSceneApp } from "@/apps/grafana/dashboard/dashboard-scene-simple";
+import GridLayoutApp from "@/apps/modules/grid-layout/stories/GridLayoutApp.tsx";
 
 const defaultProps = {
     page: {
@@ -173,6 +175,8 @@ export const contentItems = [
 
 
 export const contentModuleItems = [
+
+
     {
         key: 'react-grid-layout',
         component: ReactGridLayoutApp,
@@ -182,6 +186,25 @@ export const contentModuleItems = [
             ...{
                 pageHeader: {
                     title: 'React Grid Layout',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
+
+    {
+        key: 'grid-layout',
+        component: GridLayoutApp,
+        title: 'Grid Layout App',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Grid Layout App',
                     iconType: 'globe'
                 },
                 page: {

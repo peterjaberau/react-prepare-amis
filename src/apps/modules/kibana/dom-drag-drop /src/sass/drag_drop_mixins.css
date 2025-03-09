@@ -1,0 +1,63 @@
+/* Variables */
+:root {
+    --domDragDropZLevel0: 0;
+    --domDragDropZLevel1: 1;
+    --domDragDropZLevel2: 2;
+    --domDragDropZLevel3: 3;
+    --euiBorderRadius: 4px; /* Replace with actual value */
+    --euiAnimSpeedFast: 0.2s; /* Replace with actual value */
+    --euiAnimSpeedSlow: 0.5s; /* Replace with actual value */
+    --euiSizeXS: 4px; /* Replace with actual value */
+    --euiColorBackgroundLightSuccess: #d4edda; /* Replace with actual value */
+    --euiColorBorderStrongSuccess: #28a745; /* Replace with actual value */
+    --euiColorBackgroundFilledSuccess: #c3e6cb; /* Replace with actual value */
+    --euiBorderWidthThin: 1px; /* Replace with actual value */
+}
+
+/* Mixin: mixinDomDragDrop */
+.domDragDrop {
+    transition: var(--euiAnimSpeedFast) ease-in-out;
+    transition-property: background-color, border-color, opacity;
+    z-index: var(--domDragDropZLevel1);
+    border-radius: var(--euiBorderRadius);
+}
+
+/* Mixin: mixinDomDraggableHover */
+.domDraggable:hover {
+    transform: translateX(var(--euiSizeXS));
+    transition: transform var(--euiAnimSpeedSlow) ease-out;
+}
+
+/* Mixin: mixinDomDroppable */
+.domDroppable:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: var(--euiBorderRadius);
+    border: var(--euiBorderWidthThin) dashed transparent;
+}
+
+/* Mixin: mixinDomDroppableActive */
+.domDroppable--active {
+    background-color: rgba(212, 237, 218, 0.7) !important; /* Replace with transparentize function equivalent */
+}
+.domDroppable--active:before {
+    border-color: var(--euiColorBorderStrongSuccess) !important;
+}
+
+/* Mixin: mixinDomDroppableHover */
+.domDroppable--hover {
+    background-color: rgba(195, 230, 203, 0.75) !important; /* Replace with transparentize function equivalent */
+}
+.domDroppable--hover:before {
+    border-color: var(--euiColorBorderStrongSuccess) !important;
+}
+
+/* Mixin: mixinDomDroppableNotAllowed */
+.domDroppable--notAllowed {
+    opacity: 0.5;
+}
