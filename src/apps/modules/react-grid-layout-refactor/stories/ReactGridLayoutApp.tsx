@@ -18,6 +18,7 @@ const dashboardConfigKeys = [
   "isDraggable",
   "isResizable",
   "isDroppable",
+  "measureBeforeMount",
 ];
 const ReactGridLayoutApp = () => {
   const [selectedKey, setSelectedKey]: any = useState("showcase" as any);
