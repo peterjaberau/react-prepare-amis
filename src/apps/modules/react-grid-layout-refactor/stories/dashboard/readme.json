@@ -1,0 +1,140 @@
+{
+  "Dashboard": {
+
+    "DashboardHeader": {
+      "DashboardHeaderInner": {
+        "DashboardHeaderView": {
+          "DashboardHeaderButtonRow": {
+            "Component": {}
+          }
+        }
+      }
+    },
+
+    "DashboardParameterPanel=DashboardContent": {
+      "DashboardEmptyState": {
+        "DashboardEmptyState": {
+          "EmptyStateWrapper": {}
+        },
+        "DashboardEmptyStateWithoutAddPrompt": {
+          "EmptyStateWrapper": {}
+        }
+      },
+
+      "DashboardGridConnected": {
+       "DashboardGrid":{
+         "DashboardGridInner": {
+           "GridLayout": {
+
+             "renderGridItem.renderDashCard": {
+               "DashCard": {
+                 "DashCardInner": {
+                   "DashCardActionsPanel": {},
+                   "DashCardVisualization": {
+
+                     "visualizationOverlay": {
+                       "Title": "placeholderText",
+                       "ClickBehaviorSidebarOverlay": {},
+
+                       "DashCardParameterMapper": {
+                         "DashCardCardParameterMapperConnected": {
+                           "DashCardCardParameterMapper": {
+                             "DashCardCardParameterMapperContent": {}
+                           }
+                         }
+                       }
+                     },
+
+
+                     "actionButtons": {
+                       "DashCardMenu": {}
+                     },
+
+
+
+                     "Visualization": {
+
+                       "ChartSettingsErrorButton": {},
+                       "extra.VisualizationActionButtonsContainer": "ref.actionButtons",
+
+
+                       "VisualizationRoot": {
+                         "VisualizationHeader": {
+                           "ChartCaption": {}
+                         },
+                         "NoResultsView": {},
+                         "ErrorView": {},
+                         "SmallGenericError": {},
+                         "LoadingView": {},
+
+
+
+                         "CardVisualization": {
+                           "actionButtons": "ref.actionButtons",
+                           "ComponentMap": {
+                             "types.Visualization.VisualizationDefinition.VisualizationDefinition.VisualizationDisplay": {
+                               "virtualCardDisplayTypes": [
+                                 "action",
+                                 "heading",
+                                 "link",
+                                 "placeholder",
+                                 "text",
+                                 "iframe"
+                               ],
+                               "VirtualCardDisplay": [
+                                 "table",
+                                 "bar",
+                                 "line",
+                                 "pie",
+                                 "scalar",
+                                 "row",
+                                 "area",
+                                 "combo",
+                                 "pivot",
+                                 "smartscalar",
+                                 "gauge",
+                                 "progress",
+                                 "funnel",
+                                 "object",
+                                 "map",
+                                 "scatter",
+                                 "waterfall",
+                                 "sankey"
+                               ]
+                             }
+                           }
+                         },
+                         "ChartTooltip": {
+                           "ConnectedClickActionsPopover": {}
+                         }
+
+                       }
+
+                     }
+
+                   }
+                 }
+               }
+             }
+
+           }
+         }
+       }
+      }
+    },
+
+    "DashboardSidebars": {
+      "AddCardSidebar": {},
+      "ActionSidebarConnected": {},
+      "ClickBehaviorSidebar": {},
+      "ParameterSidebar": {},
+      "DashboardSettingsSidebar": {},
+      "DashboardSubscriptionsSidebar":{},
+      "DashboardInfoSidebar": {}
+    },
+
+    "DashboardLoadingAndErrorWrapper": {
+      "ArchivedEntityBanner": {}
+    }
+  }
+}

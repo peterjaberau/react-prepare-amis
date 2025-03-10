@@ -16,6 +16,8 @@ import WithDraggables from "@/apps/eui/views/withDraggables.tsx";
 import { DashboardSceneApp } from "@/apps/grafana/dashboard/dashboard-scene-simple";
 import GridLayoutApp from "@/apps/modules/grid-layout/stories/GridLayoutApp.tsx";
 import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refactor/stories/ReactGridLayoutApp.tsx";
+import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/dashboard/Dashboard";
+
 const defaultProps = {
     page: {
         panelled: false,
@@ -176,6 +178,25 @@ export const contentItems = [
 
 export const contentModuleItems = [
     {
+        key: 'dashboard',
+        component: Dashboard,
+        title: 'Dashboard',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Dashboard',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
+
+  {
         key: 'react-grid-layout-refactored',
         component: ReactGridLayoutRefactoredApp,
         title: 'React Grid Layout Refactored',
