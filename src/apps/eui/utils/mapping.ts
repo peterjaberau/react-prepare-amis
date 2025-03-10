@@ -17,6 +17,7 @@ import { DashboardSceneApp } from "@/apps/grafana/dashboard/dashboard-scene-simp
 import GridLayoutApp from "@/apps/modules/grid-layout/stories/GridLayoutApp.tsx";
 import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refactor/stories/ReactGridLayoutApp.tsx";
 import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/dashboard/Dashboard";
+import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
 
 const defaultProps = {
     page: {
@@ -177,6 +178,24 @@ export const contentItems = [
 
 
 export const contentModuleItems = [
+    {
+        key: 'grid-stack',
+        component: GridstackApp,
+        title: 'Grid Stack App',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Grid Stack App',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
     {
         key: 'dashboard',
         component: Dashboard,

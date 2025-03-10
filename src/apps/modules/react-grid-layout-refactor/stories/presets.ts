@@ -11,7 +11,7 @@ export const data: any = {
     defaultProps: {
       className: "layout",
       rowHeight: 30,
-      autoSize: false,
+      autoSize: true,
       measureBeforeMount: false,
       cols: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 },
       layout: {
