@@ -37,7 +37,7 @@ const ReactGridLayoutApp = () => {
 
   return (
     <>
-      <EuiFlexGroup direction="column" >
+      <EuiFlexGroup direction="column"  >
         <EuiFlexItem>
           <EuiFlexGroup direction="row" justifyContent="flexStart" wrap={true}>
             <EuiFlexItem grow={false}></EuiFlexItem>
