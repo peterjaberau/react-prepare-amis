@@ -11,6 +11,7 @@ import { generateGridBackground } from "../../../packages/utils";
 import { Container } from "../Container";
 import { EuiFlexGroup, EuiFlexItem, EuiPanel, EuiText } from "@elastic/eui";
 import { solidGravityDynamic } from "@/apps/modules/grid-layout/packages";
+import { omit } from "lodash";
 
 const ResponsiveGridLayout = WidthProvider(ReactGridLayout);
 
@@ -33,23 +34,19 @@ export const Demo = (props: any) => {
   const { layout, ...rest } = defaultProps;
   const { name } = additionalProps;
 
-
-  const [internalLayout, setInternalLayout] = useState(layout);
-
-  useEffect(() => {
-    console.log("Demo", layout);
-
-    setInternalLayout(layout);
-  }, []);
+  const [internalState, setInternalState] = useState(defaultProps);
 
   useEffect(() => {
-    setInternalLayout(layout);
-  }, [layout]);
+    setInternalState(defaultProps);
+
+    console.log("internalState", internalState);
+  }, [defaultProps]);
+
 
   return (
     <>
-      <ResponsiveGridLayout layouts={internalLayout} {...rest}>
-        {internalLayout["lg"].map((item: any) => (
+      <ResponsiveGridLayout layouts={internalState.layout} {...omit(internalState, [layout])}>
+        {internalState.layout["lg"].map((item: any) => (
           <div key={item.i}>
             <ItemRenderer item={item} />
           </div>

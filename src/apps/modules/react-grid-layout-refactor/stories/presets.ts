@@ -2682,30 +2682,31 @@ export const data: any = {
       className: "layout",
       items: 3,
       rowHeight: 100,
-      layout: [
-        {
-          x: 0,
-          y: 0,
-          w: 1,
-          h: 1,
-          i: "1",
-        },
-        {
-          x: 1,
-          y: 0,
-          w: 1,
-          h: 1,
-          i: "2",
-        },
-        {
-          x: 0,
-          y: 1,
-          w: 2,
-          h: 2,
-          i: "3",
-        },
-      ],
-
+      layout: {
+        lg: [
+          {
+            x: 0,
+            y: 0,
+            w: 1,
+            h: 1,
+            i: "1",
+          },
+          {
+            x: 1,
+            y: 0,
+            w: 1,
+            h: 1,
+            i: "2",
+          },
+          {
+            x: 0,
+            y: 1,
+            w: 2,
+            h: 2,
+            i: "3",
+          },
+        ],
+      },
       cols: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 },
     },
     additionalProps: {},
@@ -3850,9 +3851,131 @@ export const data: any = {
 } as any;
 
 export const getPresetList = () => {
+  const groups = [
+    {
+      name: "empty",
+      enabled: false,
+      group: "misc",
+    },
+    {
+      name: "showcase",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "basic",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "noDragging",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "messy",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "gridProperty",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "staticElements",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "dynamicAddRemove",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "localStorage",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "localStorageResponsive",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "minMax",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "dynamicMinMax",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "noVerticalCompact",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "preventCollision",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "errorCase",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "toolbox",
+      enabled: true,
+      group: "misc",
+    },
+    {
+      name: "dragFromOutside",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "bounded",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "responsiveBootstrapStyle",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "scale",
+      enabled: true,
+      group: "layout",
+    },
+    {
+      name: "allowOverlap",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "resizableHandles",
+      enabled: true,
+      group: "interaction",
+    },
+    {
+      name: "horizontal",
+      enabled: true,
+      group: "layout",
+    },
+  ];
+
   return Object.keys(data).map((key) => ({
     name: key,
     enabled: data[key]?.additionalProps?.disabled !== true,
+    group:
+      groups.find(
+        (g) => g.name === key && typeof g.group === "string" && g.group,
+      )?.group || "misc",
   }));
 };
 
