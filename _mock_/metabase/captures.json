@@ -1,0 +1,433 @@
+{
+  "card": {
+    "original_card_id": 25,
+    "public_uuid": null,
+    "parameter_usage_count": 0,
+    "created_at": "2025-03-08T08:01:34.592223Z",
+    "parameters": [],
+    "metabase_version": null,
+    "collection": {
+      "authority_level": null,
+      "description": "Some examples to get started with",
+      "archived": false,
+      "slug": "examples",
+      "archive_operation_id": null,
+      "name": "Examples",
+      "personal_owner_id": null,
+      "type": null,
+      "is_sample": true,
+      "id": 2,
+      "archived_directly": null,
+      "entity_id": "HyB3nRtqb7pBPhFG26evI",
+      "location": "/",
+      "namespace": null,
+      "is_personal": false,
+      "created_at": "2025-03-08T08:01:34.592223Z"
+    },
+    "visualization_settings": {
+      "table.cell_column": "ACTIVE_SUBSCRIPTION",
+      "table.columns": [
+        {
+          "enabled": true,
+          "name": "ID"
+        },
+        {
+          "enabled": true,
+          "name": "FIRST_NAME"
+        },
+        {
+          "enabled": true,
+          "name": "LAST_NAME"
+        },
+        {
+          "enabled": true,
+          "name": "PLAN"
+        },
+        {
+          "enabled": false,
+          "name": "SOURCE"
+        },
+        {
+          "enabled": true,
+          "name": "CREATED_AT"
+        },
+        {
+          "enabled": true,
+          "name": "TRIAL_ENDS_AT"
+        },
+        {
+          "enabled": true,
+          "name": "CANCELED_AT"
+        },
+        {
+          "enabled": false,
+          "name": "TRIAL_CONVERTED"
+        },
+        {
+          "enabled": false,
+          "name": "ACTIVE_SUBSCRIPTION"
+        }
+      ],
+      "table.pivot_column": "CANCELED_AT"
+    },
+    "archived_directly": false,
+    "can_manage_db": true,
+    "parameter_mappings": [],
+    "dataset_query": {
+      "database": 1,
+      "query": {
+        "fields": [
+          [
+            "field",
+            24,
+            {
+              "base-type": "type/BigInteger"
+            }
+          ],
+          [
+            "field",
+            37,
+            {
+              "base-type": "type/Text"
+            }
+          ],
+          [
+            "field",
+            36,
+            {
+              "base-type": "type/Text"
+            }
+          ],
+          [
+            "field",
+            43,
+            {
+              "base-type": "type/Text"
+            }
+          ],
+          [
+            "field",
+            41,
+            {
+              "base-type": "type/Text"
+            }
+          ],
+          [
+            "field",
+            31,
+            {
+              "base-type": "type/DateTime"
+            }
+          ],
+          [
+            "field",
+            40,
+            {
+              "base-type": "type/DateTime"
+            }
+          ],
+          [
+            "field",
+            39,
+            {
+              "base-type": "type/DateTime"
+            }
+          ],
+          [
+            "field",
+            38,
+            {
+              "base-type": "type/Boolean"
+            }
+          ],
+          [
+            "field",
+            42,
+            {
+              "base-type": "type/Boolean"
+            }
+          ]
+        ],
+        "filter": [
+          "time-interval",
+          [
+            "field",
+            31,
+            {
+              "base-type": "type/DateTime"
+            }
+          ],
+          -12,
+          "month"
+        ],
+        "order-by": [
+          [
+            "desc",
+            [
+              "field",
+              31,
+              {
+                "base-type": "type/DateTime"
+              }
+            ]
+          ]
+        ],
+        "source-table": 6
+      },
+      "type": "query"
+    },
+    "cache_ttl": null,
+    "embedding_params": null,
+    "made_public_by_id": null,
+    "updated_at": "2025-03-08T08:01:34.592223Z",
+    "moderation_reviews": [],
+    "creator_id": 13371338,
+    "average_query_time": null,
+    "type": "question",
+    "last_query_start": null,
+    "query_type": "query",
+    "enable_embedding": false,
+    "initially_published_at": null,
+    "creator": {
+      "email": "internal@metabase.com",
+      "first_name": "Metabase",
+      "last_login": null,
+      "is_qbnewb": true,
+      "is_superuser": false,
+      "id": 13371338,
+      "last_name": "Internal",
+      "date_joined": "2025-03-08T08:01:33.796127Z",
+      "common_name": "Metabase Internal"
+    },
+    "result_metadata": [
+      {
+        "description": null,
+        "semantic_type": "type/PK",
+        "coercion_strategy": null,
+        "name": "ID",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          24,
+          {
+            "base-type": "type/BigInteger"
+          }
+        ],
+        "effective_type": "type/BigInteger",
+        "id": 24,
+        "visibility_type": "normal",
+        "display_name": "ID",
+        "base_type": "type/BigInteger"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Name",
+        "coercion_strategy": null,
+        "name": "FIRST_NAME",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          37,
+          {
+            "base-type": "type/Text"
+          }
+        ],
+        "effective_type": "type/Text",
+        "id": 37,
+        "visibility_type": "normal",
+        "display_name": "First Name",
+        "base_type": "type/Text"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Name",
+        "coercion_strategy": null,
+        "name": "LAST_NAME",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          36,
+          {
+            "base-type": "type/Text"
+          }
+        ],
+        "effective_type": "type/Text",
+        "id": 36,
+        "visibility_type": "normal",
+        "display_name": "Last Name",
+        "base_type": "type/Text"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Category",
+        "coercion_strategy": null,
+        "name": "PLAN",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          43,
+          {
+            "base-type": "type/Text"
+          }
+        ],
+        "effective_type": "type/Text",
+        "id": 43,
+        "visibility_type": "normal",
+        "display_name": "Plan",
+        "base_type": "type/Text"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Source",
+        "coercion_strategy": null,
+        "name": "SOURCE",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          41,
+          {
+            "base-type": "type/Text"
+          }
+        ],
+        "effective_type": "type/Text",
+        "id": 41,
+        "visibility_type": "normal",
+        "display_name": "Source",
+        "base_type": "type/Text"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/CreationTimestamp",
+        "coercion_strategy": null,
+        "name": "CREATED_AT",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          31,
+          {
+            "base-type": "type/DateTime"
+          }
+        ],
+        "effective_type": "type/DateTime",
+        "id": 31,
+        "visibility_type": "normal",
+        "display_name": "Created At",
+        "base_type": "type/DateTime"
+      },
+      {
+        "description": null,
+        "semantic_type": null,
+        "coercion_strategy": null,
+        "name": "TRIAL_ENDS_AT",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          40,
+          {
+            "base-type": "type/DateTime"
+          }
+        ],
+        "effective_type": "type/DateTime",
+        "id": 40,
+        "visibility_type": "normal",
+        "display_name": "Trial Ends At",
+        "base_type": "type/DateTime"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/CancelationTimestamp",
+        "coercion_strategy": null,
+        "name": "CANCELED_AT",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          39,
+          {
+            "base-type": "type/DateTime"
+          }
+        ],
+        "effective_type": "type/DateTime",
+        "id": 39,
+        "visibility_type": "normal",
+        "display_name": "Canceled At",
+        "base_type": "type/DateTime"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Category",
+        "coercion_strategy": null,
+        "name": "TRIAL_CONVERTED",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          38,
+          {
+            "base-type": "type/Boolean"
+          }
+        ],
+        "effective_type": "type/Boolean",
+        "id": 38,
+        "visibility_type": "normal",
+        "display_name": "Trial Converted",
+        "base_type": "type/Boolean"
+      },
+      {
+        "description": null,
+        "semantic_type": "type/Category",
+        "coercion_strategy": null,
+        "name": "ACTIVE_SUBSCRIPTION",
+        "settings": null,
+        "fk_target_field_id": null,
+        "field_ref": [
+          "field",
+          42,
+          {
+            "base-type": "type/Boolean"
+          }
+        ],
+        "effective_type": "type/Boolean",
+        "id": 42,
+        "visibility_type": "normal",
+        "display_name": "Active Subscription",
+        "base_type": "type/Boolean"
+      }
+    ],
+    "can_run_adhoc_query": true,
+    "table_id": 6,
+    "source_card_id": null,
+    "view_count": 0,
+    "cache_invalidated_at": null,
+    "model": "card",
+    "can_delete": false,
+    "dashboard_id": null,
+    "location": null,
+    "collection_preview": true,
+    "entity_id": "ucI5e9_FdTQF-1i7RdtIX",
+    "display": "table",
+    "id": 25,
+    "moderated_status": null,
+    "can_restore": false,
+    "dashboard": null,
+    "last_used_at": "2025-03-08T08:01:34.592223Z",
+    "fully_parameterized": true,
+    "dashboard_count": 0,
+    "name": "All subscriptions in table view",
+    "database_id": 1,
+    "can_write": true,
+    "collection_position": null,
+    "description": "More complete look at all recent subscriptions",
+    "archived": false,
+    "collection_id": 2,
+    "displayIsLocked": true
+  },
+  "cardId": 25
+}

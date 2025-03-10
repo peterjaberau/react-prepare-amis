@@ -1,7 +1,7 @@
-export const data = {
+export const data: any = {
   Disabled: {
     disabled: true,
-    initialLayout: [
+    layout: [
       { x: 0, y: -2, w: 2, h: 2, i: "1" },
       { x: -2, y: 0, w: 2, h: 2, i: "2" },
       { x: 0, y: 1, w: 20, h: 2, i: "3" },
@@ -9,26 +9,27 @@ export const data = {
       { x: 20, y: 0, w: 2, h: 2, i: "5" },
       { x: -2, y: -2, w: 20, h: 2, i: "6" },
     ],
-  },
+  } as any,
   Colsandrowheight: {
-    initialLayout: [
+    layout: [
       { x: 0, y: 0, w: 2, h: 8, i: "1" },
       { x: 2, y: 0, w: 2, h: 8, i: "2" },
       { x: 0, y: 8, w: 6, h: 2, i: "3" },
     ],
+    debug: false,
     cols: 6,
     rowHeight: 20,
-  },
+  } as any,
   CollisionWithPriority: {
     rowHeight: 24,
-    initialLayout: [
+    layout: [
       { w: 3, h: 10, x: 4, y: 0, i: "1" },
       { w: 3, h: 9, x: 3, y: 10, i: "2", priority: 1 },
       { w: 4, h: 14, x: 0, y: 0, i: "3" },
     ],
-  },
+  } as any,
   Bricks: {
-    initialLayout: [
+    layout: [
       { x: 1, y: 0, w: 2, h: 1, i: "17" },
       { x: 4, y: 0, w: 3, h: 1, i: "1" },
       { x: 8, y: 0, w: 2, h: 1, i: "18" },
@@ -50,9 +51,9 @@ export const data = {
       { x: 0, y: 9, w: 6, h: 4, i: "19" },
       { x: 6, y: 9, w: 6, h: 4, i: "20" },
     ],
-  },
+  } as any,
   Boundaries: {
-    initialLayout: [
+    layout: [
       { x: 0, y: 0, w: 2, h: 2, i: "1" },
       {
         x: 2,
@@ -74,9 +75,9 @@ export const data = {
       { x: 10, y: 0, w: 2, h: 2, i: "5" },
       { x: 10, y: 8, w: 2, h: 2, i: "6" },
     ],
-  },
+  } as any,
   InitialCollisions: {
-    initialLayout: [
+    layout: [
       { x: 0, y: 0, w: 2, h: 2, i: "1" },
       { x: 0, y: 0, w: 2, h: 2, i: "2" },
       { x: 0, y: 1, w: 2, h: 2, i: "3" },
@@ -86,7 +87,7 @@ export const data = {
     ],
   },
   LargeExample: {
-    initialLayout: Array.from({ length: 100 })
+    layout: Array.from({ length: 100 })
       .fill(null)
       .map((_, index) => [
         { x: 0, y: index * 10, w: 6, h: 4, i: String(index * 3 + 1) },
@@ -94,9 +95,9 @@ export const data = {
         { x: 0, y: index * 10 + 4, w: 12, h: 6, i: String(index * 3 + 3) },
       ])
       .reduce((prev, cur) => prev.concat(cur), []),
-  },
+  } as any,
   OutOfTheContainer: {
-    initialLayout: [
+    layout: [
       { x: 0, y: -2, w: 2, h: 2, i: "1" },
       { x: -2, y: 0, w: 2, h: 2, i: "2" },
       { x: 0, y: 1, w: 20, h: 2, i: "3" },
@@ -104,9 +105,9 @@ export const data = {
       { x: 20, y: 0, w: 2, h: 2, i: "5" },
       { x: -2, y: -2, w: 20, h: 2, i: "6" },
     ],
-  },
+  } as any,
   Scroll: {
-    initialLayout: Array.from({ length: 50 })
+    layout: Array.from({ length: 50 })
       .fill(null)
       .map((_, index) => ({
         x: 0,
@@ -115,5 +116,6 @@ export const data = {
         h: 1,
         i: String(index + 1),
       })),
-  },
-};
+  } as any,
+} as any;
+

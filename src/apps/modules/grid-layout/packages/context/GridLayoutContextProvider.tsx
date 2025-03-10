@@ -22,9 +22,9 @@ export const GridLayoutContextProvider: React.FC<Props> = ({
   cols = 12,
   rowHeight = 80,
   width = 0,
-  animation = 0,
-  animationTimingFunction = 'linear',
-  showAfterAdjustInitialSize = true,
+  animation = 0, // seconds
+  animationTimingFunction = 'linear', // ease, ease-in, ease-out, ease-in-out, linear
+  showAfterAdjustInitialSize = true, // show after adjust initial size
 }) => (
   <GridLayoutContext.Provider
     value={{

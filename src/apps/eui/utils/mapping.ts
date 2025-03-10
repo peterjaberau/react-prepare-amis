@@ -15,7 +15,7 @@ import { AppCustomActor } from "@/apps/modules/custom-actor/AppCustomActor.tsx";
 import WithDraggables from "@/apps/eui/views/withDraggables.tsx";
 import { DashboardSceneApp } from "@/apps/grafana/dashboard/dashboard-scene-simple";
 import GridLayoutApp from "@/apps/modules/grid-layout/stories/GridLayoutApp.tsx";
-
+import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refactor/stories/ReactGridLayoutApp.tsx";
 const defaultProps = {
     page: {
         panelled: false,
@@ -175,7 +175,24 @@ export const contentItems = [
 
 
 export const contentModuleItems = [
-
+    {
+        key: 'react-grid-layout-refactored',
+        component: ReactGridLayoutRefactoredApp,
+        title: 'React Grid Layout Refactored',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'React Grid Layout Refactored',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false
+                },
+            }
+        },
+    },
 
     {
         key: 'react-grid-layout',
