@@ -1,23 +1,22 @@
 import React from "react";
 import { useSelector } from "@xstate/react";
 import { createActor } from "xstate";
-import { ChevronDown, ChevronUp, Edit, Plus } from "lucide-react";
-import { createCardMachine } from "../machine/cardMachine";
 import { CardEdit } from "./CardEdit";
 import {
-  EuiButton,
   EuiButtonIcon,
   EuiFlexGroup,
   EuiFlexItem,
   EuiPanel,
-  EuiSplitPanel, EuiText
+  EuiText,
 } from "@elastic/eui";
+import { createCardMachine } from "../machine/cardMachine";
 
 export function Card({ data }: any) {
   const cardMachine = React.useMemo(
     () => createCardMachine(data.id),
     [data.id],
   );
+
   const actor = React.useMemo(
     () => createActor(cardMachine, { input: { data } }).start(),
     [cardMachine, data],
@@ -66,13 +65,13 @@ export function Card({ data }: any) {
                         aria-label="Edit card"
                       />
                     </EuiFlexItem>
-
                     <EuiFlexItem>
                       <EuiButtonIcon
                         onClick={() => actor.send({ type: "TOGGLE_EXPAND" })}
                         iconType={isExpanded ? "arrowUp" : "arrowDown"}
-                        aria-label={isExpanded ? "Collapse card" : "Expand card"}
-
+                        aria-label={
+                          isExpanded ? "Collapse card" : "Expand card"
+                        }
                       />
                     </EuiFlexItem>
                   </EuiFlexGroup>
@@ -107,13 +106,15 @@ export function Card({ data }: any) {
                   </EuiText>
                 </EuiFlexItem>
                 <EuiFlexItem grow={false}>
-                  <EuiFlexGroup gutterSize={'s'} direction="row">
+                  <EuiFlexGroup gutterSize={"s"} direction="row">
                     <EuiFlexItem>
                       <EuiButtonIcon
                         title="Inspect Actor"
                         iconType={"bug"}
                         size="s"
-                        onClick={() => console.log(`Inspect Actor:${actor.id} ---`, actor)}
+                        onClick={() =>
+                          console.log(`Inspect Actor:${actor.id} ---`, actor)
+                        }
                         aria-label="Inspect Actor"
                       />
                     </EuiFlexItem>
@@ -123,8 +124,6 @@ export function Card({ data }: any) {
                       </EuiText>
                     </EuiFlexItem>
                   </EuiFlexGroup>
-
-
                 </EuiFlexItem>
               </EuiFlexGroup>
             </EuiFlexItem>

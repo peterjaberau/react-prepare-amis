@@ -1,6 +1,10 @@
+import { GrafanaTheme  } from "@grafana/data";
+import { EuiProvider, EuiThemeProvider } from '@elastic/eui'
 import Router from "@/router.tsx";
 import cache from '@/cache/iconCache'
-import { EuiProvider, EuiThemeProvider } from '@elastic/eui'
+
+
+
 
 const App: React.FC = () => {
 

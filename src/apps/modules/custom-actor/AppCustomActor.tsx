@@ -1,13 +1,14 @@
-import { useActor } from "@xstate/react";
-import { EuiFlexGroup } from "@elastic/eui";
-import { CardList } from "@/apps/modules/custom-actor/components/CardList.tsx";
-
+import { createActor } from 'xstate';
+import { CardList } from './components/CardList';
+import { CardContext } from './machine/CardContext';
+import { parentCardMachine } from './machine/cardMachine';
 
 
 export function AppCustomActor() {
-
-
+  const parentActor = createActor(parentCardMachine).start();
   return (
-    <CardList />
+    <CardContext.Provider value={{ parentActor }}>
+          <CardList />
+    </CardContext.Provider>
   )
 }

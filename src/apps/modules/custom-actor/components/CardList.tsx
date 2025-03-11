@@ -1,14 +1,12 @@
 import React from 'react';
 import { useSelector } from '@xstate/react';
-import { createActor } from 'xstate';
-import { Plus } from 'lucide-react';
 import { Card } from './Card';
-import { parentCardMachine } from '../machine/cardMachine';
-import { EuiButton, EuiFlexGroup, EuiFlexItem, EuiPanel, EuiText } from "@elastic/eui";
+import { useCardContext } from '../machine/CardContext';
+import { EuiButton, EuiFlexGroup, EuiFlexItem, EuiText } from "@elastic/eui";
 
 export function CardList() {
-  const actor = React.useMemo(() => createActor(parentCardMachine).start(), []);
-  const cards = useSelector(actor, (state) => state.context.cards);
+  const { parentActor } = useCardContext();
+  const cards = useSelector(parentActor, (state) => state.context.cards);
 
   const handleAddCard = () => {
     const newCard = {
@@ -16,7 +14,7 @@ export function CardList() {
       title: 'New Card',
       content: 'Click edit to modify this card',
     };
-    actor.send({ type: 'ADD_CARD', card: newCard });
+    parentActor.send({ type: 'ADD_CARD', card: newCard });
   };
 
   return (
@@ -35,8 +33,7 @@ export function CardList() {
           </EuiFlexGroup>
         </EuiFlexItem>
         <EuiFlexItem>
-
-          <EuiFlexGroup gutterSize="s" direction="column" >
+          <EuiFlexGroup gutterSize="s" direction="column">
             {cards.map((card) => (
               <Card key={card.id} data={card} />
             ))}

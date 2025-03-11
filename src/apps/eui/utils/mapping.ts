@@ -18,6 +18,7 @@ import GridLayoutApp from "@/apps/modules/grid-layout/stories/GridLayoutApp.tsx"
 import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refactor/stories/ReactGridLayoutApp.tsx";
 import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/dashboard/Dashboard";
 import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
+import { AppCustomActorV1 } from "@/apps/modules/custom-actor-v1/AppCustomActor.tsx";
 
 const defaultProps = {
     page: {
@@ -271,6 +272,8 @@ export const contentModuleItems = [
             }
         },
     },
+
+
     {
         key: 'state-actors',
         component: AppStateActors,
@@ -314,6 +317,25 @@ export const contentModuleItems = [
                     title: 'Basic Cards',
                     iconType: 'dashboardApp'
                 }
+            }
+        },
+    },
+
+    {
+        key: 'custom-actor-v1',
+        component: AppCustomActorV1,
+        title: 'Custom Actors V1',
+        props: {
+            ...defaultProps,
+            ...{
+                pageHeader: {
+                    title: 'Custom Actors V1',
+                    iconType: 'globe'
+                },
+                page: {
+                    panelled: true,
+                    restrictWidth: false,
+                },
             }
         },
     },
