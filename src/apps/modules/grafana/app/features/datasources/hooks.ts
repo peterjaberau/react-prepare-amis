@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useLocalStorage } from 'react-use';
 import { Observable } from 'rxjs';
 
-import { DataSourceInstanceSettings, DataSourceRef } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceRef } from '@data/index';
 import { GetDataSourceListFilters, getDataSourceSrv } from '@runtime/index';
 
 export const LOCAL_STORAGE_KEY = 'grafana.features.datasources.components.picker.DataSourceDropDown.history';

@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import {
   QueryVariable,
@@ -11,7 +11,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   SceneVariableSet,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Box, Icon, LinkButton, Stack, Tab, TabsBar, ToolbarButton, Tooltip, useStyles2 } from '@grafana/ui';
 
 import { getExploreUrl } from '../../core/utils/explore';

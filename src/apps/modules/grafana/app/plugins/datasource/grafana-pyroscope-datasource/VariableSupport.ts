@@ -1,6 +1,6 @@
 import { from, map, Observable, of } from 'rxjs';
 
-import { CustomVariableSupport, DataQueryRequest, DataQueryResponse, MetricFindValue } from '@grafana/data';
+import { CustomVariableSupport, DataQueryRequest, DataQueryResponse, MetricFindValue } from '@data/index';
 
 import { getProfileTypeLabel, VariableQueryEditor } from './VariableQueryEditor';
 import { PyroscopeDataSource } from './datasource';

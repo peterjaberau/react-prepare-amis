@@ -1,6 +1,6 @@
-import { locationUtil, SetPanelAttentionEvent } from '@grafana/data';
+import { locationUtil, SetPanelAttentionEvent } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { sceneGraph, VizPanel } from '@grafana/scenes';
+import { sceneGraph, VizPanel } from '@scenes/index';
 import appEvents from 'app/core/app_events';
 import { KeybindingSet } from 'app/core/services/KeybindingSet';
 import { contextSrv } from 'app/core/services/context_srv';

@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
 
 import { InfluxQueryTag } from '../../../../../types';

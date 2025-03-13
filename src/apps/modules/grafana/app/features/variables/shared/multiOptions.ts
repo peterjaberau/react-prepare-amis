@@ -1,4 +1,4 @@
-import { VariableOption } from '@grafana/data';
+import { VariableOption } from '@data/index';
 
 export const alignCurrentWithMulti = (current: VariableOption, value: boolean): VariableOption => {
   if (!current) {

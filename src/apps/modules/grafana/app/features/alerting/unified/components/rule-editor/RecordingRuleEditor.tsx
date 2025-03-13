@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { FC, useCallback, useEffect, useState } from 'react';
 import { useAsync } from 'react-use';
 
-import { CoreApp, GrafanaTheme2, LoadingState, PanelData } from '@grafana/data';
+import { CoreApp, GrafanaTheme2, LoadingState, PanelData } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { useStyles2 } from '@grafana/ui';
 import { DataSourceType } from 'app/features/alerting/unified/utils/datasource';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';

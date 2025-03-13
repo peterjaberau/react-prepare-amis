@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ReactElement, useEffect, useState } from 'react';
 import { useAsync } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { CollapsableSection, HorizontalGroup, Icon, Spinner, Tooltip, useStyles2, VerticalGroup } from '@grafana/ui';
 

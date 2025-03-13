@@ -11,7 +11,7 @@ import {
   ThresholdsConfig,
   ThresholdsMode,
   ThemeContext,
-} from '@grafana/data';
+} from '@data/index';
 import { Button, ColorPicker, colors, IconButton, Input, Label, RadioButtonGroup, stylesFactory } from '@grafana/ui';
 
 const modes: Array<SelectableValue<ThresholdsMode>> = [

@@ -2,7 +2,7 @@ import saveAs from 'file-saver';
 import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { SceneComponentProps, SceneObjectBase } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { Button, ClipboardButton, CodeEditor, Field, Modal, Stack, Switch } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { DashboardExporter } from 'app/features/dashboard/components/DashExportModal';

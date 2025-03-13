@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Fragment } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, Stack, useStyles2 } from '@grafana/ui';
 

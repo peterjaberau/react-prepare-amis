@@ -1,4 +1,4 @@
-import { PanelData } from '@grafana/data';
+import { PanelData } from '@data/index';
 
 import { VizWrapper } from '../rule-editor/VizWrapper';
 import { ThresholdDefinition } from '../rule-editor/util';

@@ -1,4 +1,4 @@
-import { NavModelItem, NavModel } from '@grafana/data';
+import { NavModelItem, NavModel } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { ProBadge } from 'app/core/components/Upgrade/ProBadge';
 import config from 'app/core/config';

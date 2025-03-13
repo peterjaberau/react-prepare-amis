@@ -1,6 +1,6 @@
 import { map, without } from 'lodash';
 
-import { getValueFormats } from '@grafana/data';
+import { getValueFormats } from '@data/index';
 
 export class ColumnOptionsCtrl {
   panel: any;

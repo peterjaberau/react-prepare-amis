@@ -1,7 +1,7 @@
 import { isEqual } from 'lodash';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import {
   SceneComponentProps,
   SceneDataTransformer,
@@ -13,7 +13,7 @@ import {
   SceneQueryRunner,
   sceneUtils,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { LibraryPanel } from '@grafana/schema/';
 import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';

@@ -1,8 +1,8 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
 
-import { AppEvents, isTruthy, locationUtil } from '@grafana/data';
+import { AppEvents, isTruthy, locationUtil } from '@data/index';
 import { config, getBackendSrv, locationService } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 import { createBaseQuery, handleRequestError } from 'app/api/createBaseQuery';
 import appEvents from 'app/core/app_events';

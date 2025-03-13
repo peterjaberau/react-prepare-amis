@@ -7,7 +7,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { JoinByFieldOptions, JoinMode } from '@grafana/data/src/transformations/transformers/joinByField';
 import { getTemplateSrv } from '@runtime/index';
 import { Select, InlineFieldRow, InlineField } from '@grafana/ui';

@@ -1,5 +1,5 @@
-import { Scope } from '@grafana/data';
-import { sceneGraph, SceneObject } from '@grafana/scenes';
+import { Scope } from '@data/index';
+import { sceneGraph, SceneObject } from '@scenes/index';
 
 import { ScopesFacade } from './ScopesFacadeScene';
 import { scopesDashboardsScene, scopesSelectorScene } from './instance';

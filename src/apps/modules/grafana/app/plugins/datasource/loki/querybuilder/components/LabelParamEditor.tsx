@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DataSourceApi, SelectableValue } from '@grafana/data';
+import { DataSourceApi, SelectableValue } from '@data/index';
 import {
   QueryBuilderLabelFilter,
   QueryBuilderOperationParamEditorProps,

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { memo, ReactNode, useEffect, useId, useState } from 'react';
 
-import { GrafanaTheme2, store } from '@grafana/data';
+import { GrafanaTheme2, store } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import {
   Badge,

@@ -1,4 +1,4 @@
-import { VisualizationSuggestionsBuilder } from '@grafana/data';
+import { VisualizationSuggestionsBuilder } from '@data/index';
 import { checkFields } from '@grafana/flamegraph';
 import { SuggestionName } from 'app/types/suggestions';
 

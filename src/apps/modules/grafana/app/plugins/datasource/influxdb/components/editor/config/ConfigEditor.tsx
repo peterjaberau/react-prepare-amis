@@ -6,8 +6,8 @@ import {
   DataSourceSettings,
   SelectableValue,
   updateDatasourcePluginJsonDataOption,
-} from '@grafana/data';
-import { config } from '@grafana/runtime';
+} from '@data/index';
+import { config } from '@runtime/index';
 import { Alert, DataSourceHttpSettings, InlineField, Select, Field, Input, FieldSet } from '@grafana/ui';
 
 import { BROWSER_MODE_DISABLED_MESSAGE } from '../../../constants';

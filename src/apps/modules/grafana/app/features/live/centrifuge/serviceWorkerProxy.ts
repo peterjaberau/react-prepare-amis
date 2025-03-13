@@ -3,7 +3,7 @@ import './transferHandlers';
 import * as comlink from 'comlink';
 import { asyncScheduler, Observable, observeOn } from 'rxjs';
 
-import { LiveChannelAddress, LiveChannelEvent } from '@grafana/data';
+import { LiveChannelAddress, LiveChannelEvent } from '@data/index';
 
 import { createWorker } from './createCentrifugeServiceWorker';
 import { promiseWithRemoteObservableAsObservable } from './remoteObservable';

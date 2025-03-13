@@ -10,7 +10,7 @@ import {
   textUtil,
   UrlQueryValue,
   urlUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { useStyles2, IconButton, ScrollContainer } from '@grafana/ui';
 import { updateNavIndex } from 'app/core/actions';
 import { getConfig } from 'app/core/config';

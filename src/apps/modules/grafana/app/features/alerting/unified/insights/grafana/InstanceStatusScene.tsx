@@ -1,5 +1,5 @@
-import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 
 import { INSTANCE_ID, overrideToFixedColor } from '../../home/Insights';
 import { InsightsMenuButton } from '../InsightsMenuButton';

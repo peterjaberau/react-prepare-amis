@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { dateTimeFormat, dateTimeFormatTimeAgo } from '@grafana/data';
+import { dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
 import { config } from '@runtime/index';
 import { Badge, Button, Checkbox, Column, ConfirmModal, InteractiveTable, Stack, Text } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';

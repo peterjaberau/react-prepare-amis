@@ -3,7 +3,7 @@ import { autoUpdate, flip, shift, useFloating } from '@floating-ui/react';
 import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, VariableSuggestion } from '@grafana/data';
+import { GrafanaTheme2, VariableSuggestion } from '@data/index';
 import { FieldValidationMessage, Portal, ScrollContainer, TextArea, useTheme2 } from '@grafana/ui';
 import { DataLinkSuggestions } from '@grafana/ui/src/components/DataLinks/DataLinkSuggestions';
 import { Input } from '@grafana/ui/src/components/Input/Input';

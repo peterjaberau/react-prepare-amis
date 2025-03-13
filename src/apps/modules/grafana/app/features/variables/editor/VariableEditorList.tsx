@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
 import { ReactElement } from 'react';
 
-import { TypedVariableModel } from '@grafana/data';
+import { TypedVariableModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, useStyles2, Stack, EmptyState, TextLink } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

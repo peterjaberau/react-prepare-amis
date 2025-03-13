@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 import { useMedia } from 'react-use';
 
-import { GrafanaTheme2, NavModelItem } from '@grafana/data';
+import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, Box, Stack, TabContent, useStyles2 } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

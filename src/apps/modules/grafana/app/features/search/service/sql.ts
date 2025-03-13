@@ -1,4 +1,4 @@
-import { DataFrame, DataFrameView, FieldType, getDisplayProcessor, SelectableValue } from '@grafana/data';
+import { DataFrame, DataFrameView, FieldType, getDisplayProcessor, SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { TermCount } from 'app/core/components/TagFilter/TagFilter';
 import { backendSrv } from 'app/core/services/backend_srv';

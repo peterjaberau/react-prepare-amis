@@ -1,4 +1,4 @@
-import { Panel } from '@grafana/schema';
+import { Panel } from '@schema/index';
 
 import { getDashboardSrv } from '../../services/DashboardSrv';
 

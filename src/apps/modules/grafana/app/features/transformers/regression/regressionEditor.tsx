@@ -8,7 +8,7 @@ import {
   fieldMatchers,
   FieldMatcherID,
   Field,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineField, Select } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';

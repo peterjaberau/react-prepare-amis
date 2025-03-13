@@ -2,7 +2,7 @@ import deepEqual from 'fast-deep-equal';
 import { isEqual } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import { QueryEditorProps, getDefaultTimeRange, toOption } from '@grafana/data';
+import { QueryEditorProps, getDefaultTimeRange, toOption } from '@data/index';
 import { EditorRows } from '@grafana/plugin-ui';
 import { ConfirmModal } from '@grafana/ui';
 

@@ -1,7 +1,7 @@
 import { extend } from 'lodash';
 import { PureComponent } from 'react';
 
-import { AppEvents, PluginMeta, DataSourceApi } from '@grafana/data';
+import { AppEvents, PluginMeta, DataSourceApi } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { appEvents } from 'app/core/core';
 import DashboardsTable from 'app/features/datasources/components/DashboardsTable';

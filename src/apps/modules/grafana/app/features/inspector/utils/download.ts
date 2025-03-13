@@ -8,7 +8,7 @@ import {
   LogsModel,
   MutableDataFrame,
   toCSV,
-} from '@grafana/data';
+} from '@data/index';
 import { transformToOTLP } from '@grafana-plugins/tempo/resultTransformer';
 
 import { transformToJaeger } from '../../../plugins/datasource/jaeger/responseTransform';

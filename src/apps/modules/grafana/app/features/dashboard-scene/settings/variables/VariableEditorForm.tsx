@@ -3,10 +3,10 @@ import { FormEvent, useCallback, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 import { lastValueFrom } from 'rxjs';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { SceneVariable } from '@grafana/scenes';
-import { VariableHide, defaultVariableModel } from '@grafana/schema';
+import { SceneVariable } from '@scenes/index';
+import { VariableHide, defaultVariableModel } from '@schema/index';
 import { Button, LoadingPlaceholder, ConfirmModal, ModalsController, Stack, useStyles2 } from '@grafana/ui';
 import { VariableHideSelect } from 'app/features/dashboard-scene/settings/variables/components/VariableHideSelect';
 import { VariableLegend } from 'app/features/dashboard-scene/settings/variables/components/VariableLegend';

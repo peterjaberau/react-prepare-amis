@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Icon, Label, RadioButtonGroup, Tooltip } from '@grafana/ui';
 import { AlertState } from 'app/plugins/datasource/alertmanager/types';
 

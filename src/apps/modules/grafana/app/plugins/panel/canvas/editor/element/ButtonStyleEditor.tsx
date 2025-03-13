@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { SelectableValue, StandardEditorProps } from '@grafana/data';
+import { SelectableValue, StandardEditorProps } from '@data/index';
 import { ButtonVariant, InlineField, InlineFieldRow, Select } from '@grafana/ui';
 import { defaultStyleConfig } from 'app/features/canvas/elements/button';
 

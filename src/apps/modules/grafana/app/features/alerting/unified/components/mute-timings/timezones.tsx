@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Select, SelectCommonProps } from '@grafana/ui';
 
 const TIMEZONES = [

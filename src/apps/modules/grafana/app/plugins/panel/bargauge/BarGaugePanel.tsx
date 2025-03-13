@@ -11,8 +11,8 @@ import {
   getFieldDisplayValues,
   PanelProps,
   VizOrientation,
-} from '@grafana/data';
-import { BarGaugeSizing } from '@grafana/schema';
+} from '@data/index';
+import { BarGaugeSizing } from '@schema/index';
 import { BarGauge, DataLinksContextMenu, VizLayout, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
 import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
 import { config } from 'app/core/config';

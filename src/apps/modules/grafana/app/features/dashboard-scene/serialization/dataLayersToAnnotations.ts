@@ -1,5 +1,5 @@
-import { SceneDataLayerProvider, dataLayers } from '@grafana/scenes';
-import { AnnotationQuery } from '@grafana/schema';
+import { SceneDataLayerProvider, dataLayers } from '@scenes/index';
+import { AnnotationQuery } from '@schema/index';
 
 export function dataLayersToAnnotations(layers: SceneDataLayerProvider[]) {
   const annotations: AnnotationQuery[] = [];

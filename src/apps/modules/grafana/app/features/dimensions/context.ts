@@ -5,7 +5,7 @@ import {
   ScalarDimensionConfig,
   ScaleDimensionConfig,
   TextDimensionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { DimensionSupplier } from './types';
 

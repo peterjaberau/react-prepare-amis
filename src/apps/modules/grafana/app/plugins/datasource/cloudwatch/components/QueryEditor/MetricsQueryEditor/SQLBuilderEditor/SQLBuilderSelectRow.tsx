@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from 'react';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 import { EditorField, EditorFieldGroup, EditorSwitch } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { Select } from '@grafana/ui';
 
 import { CloudWatchDatasource } from '../../../../datasource';

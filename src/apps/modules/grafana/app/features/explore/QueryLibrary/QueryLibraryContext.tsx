@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext } from 'react';
 
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 
 import { OnSelectQueryType } from './types';
 

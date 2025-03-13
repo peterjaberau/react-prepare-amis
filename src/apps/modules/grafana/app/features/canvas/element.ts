@@ -1,8 +1,8 @@
 import { ComponentType } from 'react';
 
-import { DataLink, RegistryItem, Action } from '@grafana/data';
+import { DataLink, RegistryItem, Action } from '@data/index';
 import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
-import { ColorDimensionConfig, ScaleDimensionConfig } from '@grafana/schema';
+import { ColorDimensionConfig, ScaleDimensionConfig } from '@schema/index';
 import { config } from 'app/core/config';
 import { BackgroundConfig, Constraint, LineConfig, Placement } from 'app/plugins/panel/canvas/panelcfg.gen';
 

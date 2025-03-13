@@ -1,7 +1,7 @@
 import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CustomVariableSupport, DataQueryRequest, MetricFindValue, ScopedVars, TimeRange } from '@grafana/data';
+import { CustomVariableSupport, DataQueryRequest, MetricFindValue, ScopedVars, TimeRange } from '@data/index';
 
 import { LokiVariableQueryEditor } from './components/VariableQueryEditor';
 import { LokiDatasource } from './datasource';

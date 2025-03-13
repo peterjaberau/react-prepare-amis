@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { dateTimeFormat } from '@grafana/data';
+import { dateTimeFormat } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
 import { Box, Legend } from '@grafana/ui';
 import { Form } from 'app/core/components/Form/Form';

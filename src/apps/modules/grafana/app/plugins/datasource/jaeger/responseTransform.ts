@@ -5,7 +5,7 @@ import {
   MutableDataFrame,
   TraceLog,
   TraceSpanRow,
-} from '@grafana/data';
+} from '@data/index';
 
 import transformTraceData from './_importedDependencies/model/transform-trace-data';
 import { JaegerResponse, Span, TraceProcess, TraceResponse } from './types';

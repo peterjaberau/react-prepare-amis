@@ -1,9 +1,9 @@
 import { useLocation } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
-import { urlUtil } from '@grafana/data';
+import { urlUtil } from '@data/index';
 import { locationService, logInfo } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { Alert, Button } from '@grafana/ui';
 import { LogMessages } from 'app/features/alerting/unified/Analytics';
 import { scenesPanelToRuleFormValues } from 'app/features/alerting/unified/utils/rule-form';

@@ -1,5 +1,5 @@
-import { TimeRange, ScopedVars } from '@grafana/data';
-import { getTemplateSrv, setTemplateSrv } from '@grafana/runtime';
+import { TimeRange, ScopedVars } from '@data/index';
+import { getTemplateSrv, setTemplateSrv } from '@runtime/index';
 
 export const initTemplateSrv = (variables: Array<{ name: string }>, expectedValues: Record<string, string>) => {
   const replace = (target?: string, scopedVars?: ScopedVars, format?: string | Function): string => {

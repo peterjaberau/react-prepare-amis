@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { noop } from 'lodash';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Icon, IconButton, useStyles2 } from '@grafana/ui';
 
 type VersionHistoryHeaderProps = {

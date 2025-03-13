@@ -21,9 +21,9 @@ import {
   TraceLog,
   TraceSpanReference,
   TraceSpanRow,
-} from '@grafana/data';
+} from '@data/index';
 import { createNodeGraphFrames, TraceToProfilesData } from '@grafana/o11y-ds-frontend';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { getDataSourceSrv } from '@runtime/index';
 
 import { SearchTableType } from './dataquery.gen';
 import { Span, SpanAttributes, Spanset, TempoJsonData, TraceSearchMetadata } from './types';

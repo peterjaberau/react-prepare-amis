@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Button, Icon, InlineField, InlineFieldRow } from '@grafana/ui';
 
 import { ClassicCondition, ExpressionQuery } from '../types';

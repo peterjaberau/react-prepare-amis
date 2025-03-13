@@ -5,7 +5,7 @@ import {
   onUpdateDatasourceJsonDataOption,
   onUpdateDatasourceSecureJsonDataOption,
   updateDatasourcePluginResetOption,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineField, InlineFieldRow, Input, SecretInput } from '@grafana/ui';
 
 import { InfluxOptions, InfluxSecureJsonData } from '../../../types';

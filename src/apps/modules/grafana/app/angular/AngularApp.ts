@@ -7,7 +7,7 @@ import 'vendor/bootstrap/bootstrap';
 import angular from 'angular'; // eslint-disable-line no-duplicate-imports
 import { extend } from 'lodash';
 
-import { getTemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv } from '@runtime/index';
 import { coreModule, angularModules } from 'app/angular/core_module';
 import appEvents from 'app/core/app_events';
 import { config } from 'app/core/config';

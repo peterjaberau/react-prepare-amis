@@ -2,7 +2,7 @@ import { Feature } from 'ol';
 import { Geometry, LineString, Point } from 'ol/geom';
 import VectorSource from 'ol/source/Vector';
 
-import { DataFrame, Field } from '@grafana/data';
+import { DataFrame, Field } from '@data/index';
 
 import { getGeometryField, LocationFieldMatchers } from './location';
 

@@ -5,7 +5,7 @@ import {
   DataSourceJsonData,
   DataSourcePluginOptionsEditorProps,
   updateDatasourcePluginJsonDataOption,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana/ui';
 
 export interface TraceIdTimeParamsOptions {

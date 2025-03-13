@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, PluginErrorCode, PluginSignatureStatus, PluginType } from '@grafana/data';
+import { GrafanaTheme2, PluginErrorCode, PluginSignatureStatus, PluginType } from '@data/index';
 import { Alert, Icon, List, PluginSignatureBadge, Stack, useStyles2 } from '@grafana/ui';
 
 import { useGetErrors, useFetchStatus } from '../admin/state/hooks';

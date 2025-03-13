@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useObservable } from 'react-use';
 import { of } from 'rxjs';
 
-import { DataFrame, GrafanaTheme2 } from '@grafana/data';
+import { DataFrame, GrafanaTheme2 } from '@data/index';
 import { Input, usePanelContext, useStyles2 } from '@grafana/ui';
 import { DimensionContext } from 'app/features/dimensions/context';
 import { ColorDimensionEditor } from 'app/features/dimensions/editors/ColorDimensionEditor';

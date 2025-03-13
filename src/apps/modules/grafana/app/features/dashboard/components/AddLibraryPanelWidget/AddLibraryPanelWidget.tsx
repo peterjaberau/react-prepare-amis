@@ -2,8 +2,8 @@ import { css, cx, keyframes } from '@emotion/css';
 import * as React from 'react';
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { LibraryPanel } from '@grafana/schema';
+import { GrafanaTheme2 } from '@data/index';
+import { LibraryPanel } from '@schema/index';
 import { IconButton, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

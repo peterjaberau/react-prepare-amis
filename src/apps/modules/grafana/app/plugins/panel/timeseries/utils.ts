@@ -7,11 +7,11 @@ import {
   isBooleanUnit,
   TimeRange,
   cacheFieldDisplayNames,
-} from '@grafana/data';
+} from '@data/index';
 import { convertFieldType } from '@grafana/data/src/transformations/transformers/convertFieldType';
 import { applyNullInsertThreshold } from '@grafana/data/src/transformations/transformers/nulls/nullInsertThreshold';
 import { nullToValue } from '@grafana/data/src/transformations/transformers/nulls/nullToValue';
-import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@grafana/schema';
+import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
 import { buildScaleKey } from '@grafana/ui/src/components/uPlot/internal';
 
 import { HeatmapTooltip } from '../heatmap/panelcfg.gen';

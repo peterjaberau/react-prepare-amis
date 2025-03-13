@@ -11,9 +11,9 @@ import {
   DataSourceTestSucceeded,
   DataSourceTestFailed,
   GrafanaTheme2,
-} from '@grafana/data';
+} from '@data/index';
 import { ConfigSection } from '@grafana/plugin-ui';
-import { getAppEvents, usePluginInteractionReporter, getDataSourceSrv, config } from '@grafana/runtime';
+import { getAppEvents, usePluginInteractionReporter, getDataSourceSrv, config } from '@runtime/index';
 import { Alert, Input, FieldProps, Field, Divider, useStyles2 } from '@grafana/ui';
 
 import { CloudWatchDatasource } from '../../datasource';

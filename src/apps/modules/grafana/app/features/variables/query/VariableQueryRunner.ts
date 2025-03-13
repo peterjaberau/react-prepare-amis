@@ -11,7 +11,7 @@ import {
   PanelData,
   QueryVariableModel,
   ScopedVars,
-} from '@grafana/data';
+} from '@data/index';
 
 import { dispatch, getState } from '../../../store/store';
 import { StoreState, ThunkDispatch } from '../../../types';

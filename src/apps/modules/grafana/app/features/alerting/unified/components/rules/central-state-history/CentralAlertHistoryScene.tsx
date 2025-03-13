@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useMemo } from 'react';
 
-import { GrafanaTheme2, VariableHide } from '@grafana/data';
+import { GrafanaTheme2, VariableHide } from '@data/index';
 import {
   CustomVariable,
   EmbeddedScene,
@@ -22,7 +22,7 @@ import {
   VariableValueSelectors,
   sceneGraph,
   useUrlSync,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { GraphDrawStyle, VisibilityMode } from '@grafana/schema/dist/esm/index';
 import {
   Button,

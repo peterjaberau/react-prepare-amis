@@ -6,7 +6,7 @@ import {
   PanelDataSummary,
   VisualizationSuggestionsBuilder,
   VisualizationSuggestion,
-} from '@grafana/data';
+} from '@data/index';
 import { PanelDataErrorViewProps, locationService } from '@runtime/index';
 import { usePanelContext, useStyles2 } from '@grafana/ui';
 import { CardButton } from 'app/core/components/CardButton';

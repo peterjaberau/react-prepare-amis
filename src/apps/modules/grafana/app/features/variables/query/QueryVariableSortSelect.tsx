@@ -1,6 +1,6 @@
 import { PropsWithChildren, useMemo } from 'react';
 
-import { SelectableValue, VariableSort } from '@grafana/data';
+import { SelectableValue, VariableSort } from '@data/index';
 
 import { VariableSelectField } from '../../dashboard-scene/settings/variables/components/VariableSelectField';
 

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Dispatch, SetStateAction, useEffect, useId, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
 import {
   useStyles2,
   Button,

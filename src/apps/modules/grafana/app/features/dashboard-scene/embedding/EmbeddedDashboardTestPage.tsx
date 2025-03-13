@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { PageLayoutType } from '@grafana/data';
+import { PageLayoutType } from '@data/index';
 import { Box } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 

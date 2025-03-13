@@ -8,9 +8,9 @@ import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import * as React from 'react';
 import { Observable } from 'rxjs';
 
-import { DataSourceInstanceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+import { DataQuery, DataSourceRef } from '@schema/index';
 import { Button, Icon, Input, ModalsController, Portal, ScrollContainer, useStyles2 } from '@grafana/ui';
 import config from 'app/core/config';
 import { Trans } from 'app/core/internationalization';

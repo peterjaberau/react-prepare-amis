@@ -1,7 +1,7 @@
 import { isEmpty } from 'lodash';
 import { Observable, scan } from 'rxjs';
 
-import { createDataFrame, CustomTransformOperator, DataFrame, PartialDataFrame } from '@grafana/data';
+import { createDataFrame, CustomTransformOperator, DataFrame, PartialDataFrame } from '@data/index';
 
 import { LogFilter } from './LogViewFilters';
 

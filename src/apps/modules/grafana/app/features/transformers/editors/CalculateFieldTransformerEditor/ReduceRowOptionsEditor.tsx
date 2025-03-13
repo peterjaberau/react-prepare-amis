@@ -1,4 +1,4 @@
-import { ReducerID } from '@grafana/data';
+import { ReducerID } from '@data/index';
 import {
   CalculateFieldTransformerOptions,
   ReduceOptions,

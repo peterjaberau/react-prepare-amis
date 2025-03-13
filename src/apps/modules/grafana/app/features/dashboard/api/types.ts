@@ -1,4 +1,4 @@
-import { UrlQueryMap } from '@grafana/data';
+import { UrlQueryMap } from '@data/index';
 import { Resource } from 'app/features/apiserver/types';
 import { DeleteDashboardResponse } from 'app/features/manage-dashboards/types';
 import { AnnotationsPermissions, SaveDashboardResponseDTO } from 'app/types';

@@ -1,4 +1,4 @@
-import { unaryOperators, SelectableValue, UnaryOperationID } from '@grafana/data';
+import { unaryOperators, SelectableValue, UnaryOperationID } from '@data/index';
 import {
   UnaryOptions,
   CalculateFieldMode,

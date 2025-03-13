@@ -1,7 +1,7 @@
 import * as H from 'history';
 import { debounce } from 'lodash';
 
-import { NavIndex, PanelPlugin } from '@grafana/data';
+import { NavIndex, PanelPlugin } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import {
   PanelBuilders,
@@ -13,7 +13,7 @@ import {
   SceneQueryRunner,
   sceneUtils,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Panel } from '@grafana/schema/dist/esm/index.gen';
 import { OptionFilter } from 'app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
 import { getLastUsedDatasourceFromStorage } from 'app/features/dashboard/utils/dashboard';

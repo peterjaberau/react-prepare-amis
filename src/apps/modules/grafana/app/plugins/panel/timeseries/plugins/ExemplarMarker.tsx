@@ -12,9 +12,9 @@ import {
 import { CSSProperties, useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { DataFrame, DataFrameFieldIndex, Field, formattedValueToString, GrafanaTheme2, LinkModel } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
-import { TimeZone } from '@grafana/schema';
+import { DataFrame, DataFrameFieldIndex, Field, formattedValueToString, GrafanaTheme2, LinkModel } from '@data/index';
+import { selectors } from '@selectors/index';
+import { TimeZone } from '@schema/index';
 import { Portal, UPlotConfigBuilder, useStyles2 } from '@grafana/ui';
 import { DisplayValue } from 'app/features/visualization/data-hover/DataHoverView';
 import { ExemplarHoverView } from 'app/features/visualization/data-hover/ExemplarHoverView';

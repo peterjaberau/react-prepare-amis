@@ -4,9 +4,9 @@
 import { useMemo, useState } from 'react';
 import uPlot from 'uplot';
 
-import { Field, getDisplayProcessor, PanelProps } from '@grafana/data';
-import { PanelDataErrorView } from '@grafana/runtime';
-import { DashboardCursorSync, TooltipDisplayMode } from '@grafana/schema';
+import { Field, getDisplayProcessor, PanelProps } from '@data/index';
+import { PanelDataErrorView } from '@runtime/index';
+import { DashboardCursorSync, TooltipDisplayMode } from '@schema/index';
 import {
   EventBusPlugin,
   KeyboardPlugin,

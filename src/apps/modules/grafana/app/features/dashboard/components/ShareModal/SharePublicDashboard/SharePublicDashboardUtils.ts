@@ -1,4 +1,4 @@
-import { TypedVariableModel } from '@grafana/data';
+import { TypedVariableModel } from '@data/index';
 import { config, DataSourceWithBackend, featureEnabled } from '@runtime/index';
 import { getConfig } from 'app/core/config';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';

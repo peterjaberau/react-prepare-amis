@@ -5,8 +5,8 @@ import { transform } from 'ol/proj';
 import { PureComponent } from 'react';
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors/src';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { config } from 'app/core/config';
 
 interface Props {

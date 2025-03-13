@@ -1,4 +1,4 @@
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 
 import { getRawDashboardChanges } from './getDashboardChanges';
 

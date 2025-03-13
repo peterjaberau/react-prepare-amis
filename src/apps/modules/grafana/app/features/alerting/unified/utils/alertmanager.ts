@@ -1,6 +1,6 @@
 import { isEqual, uniqWith } from 'lodash';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import {
   AlertManagerCortexConfig,
   Matcher,

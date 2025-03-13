@@ -1,4 +1,4 @@
-import { AdHocVariableFilter, DataQuery, DataSourceJsonData } from '@grafana/data';
+import { AdHocVariableFilter, DataQuery, DataSourceJsonData } from '@data/index';
 
 export const DEFAULT_POLICY = 'default';
 

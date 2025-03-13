@@ -1,5 +1,5 @@
-import { VisualizationSuggestionsBuilder } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { VisualizationSuggestionsBuilder } from '@data/index';
+import { config } from '@runtime/index';
 
 import { prepareHeatmapData } from './fields';
 import { quantizeScheme } from './palettes';

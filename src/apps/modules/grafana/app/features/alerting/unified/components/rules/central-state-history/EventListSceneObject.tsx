@@ -3,7 +3,7 @@ import { ReactElement, useState } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 import { useMeasure } from 'react-use';
 
-import { GrafanaTheme2, IconName, TimeRange } from '@grafana/data';
+import { GrafanaTheme2, IconName, TimeRange } from '@data/index';
 import {
   CustomVariable,
   SceneComponentProps,
@@ -12,7 +12,7 @@ import {
   VariableDependencyConfig,
   VariableValue,
   sceneGraph,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Alert, Icon, LoadingBar, Pagination, Stack, Text, Tooltip, useStyles2, withErrorBoundary } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 import {

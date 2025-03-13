@@ -2,7 +2,7 @@ import { isString } from 'lodash';
 import { useMemo } from 'react';
 import { useObservable } from 'react-use';
 
-import { PluginExtensionLink, PluginExtensionTypes, usePluginContext } from '@grafana/data';
+import { PluginExtensionLink, PluginExtensionTypes, usePluginContext } from '@data/index';
 import { UsePluginLinksOptions, UsePluginLinksResult } from '@runtime/index';
 
 import { useAddedLinksRegistry } from './ExtensionRegistriesContext';

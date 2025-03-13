@@ -1,6 +1,6 @@
-import { LanguageProvider, SelectableValue } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
-import { VariableFormatID } from '@grafana/schema';
+import { LanguageProvider, SelectableValue } from '@data/index';
+import { getTemplateSrv } from '@runtime/index';
+import { VariableFormatID } from '@schema/index';
 
 import {
   filterToQuerySection,

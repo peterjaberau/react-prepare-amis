@@ -1,4 +1,4 @@
-import { InternalTimeZones, SelectableValue } from '@grafana/data';
+import { InternalTimeZones, SelectableValue } from '@data/index';
 
 import { defaultGeoHashPrecisionString } from '../../../queryDef';
 import { BucketsConfiguration } from '../../../types';

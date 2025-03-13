@@ -1,7 +1,7 @@
 import { debounce } from 'lodash';
 import { useState, useEffect } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { TabbedContainer, TabConfig } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 import {

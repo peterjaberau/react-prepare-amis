@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { getTimeZoneInfo, GrafanaTheme2, InternalTimeZones, TIME_FORMAT } from '@grafana/data';
+import { getTimeZoneInfo, GrafanaTheme2, InternalTimeZones, TIME_FORMAT } from '@data/index';
 import { convertRawToRange } from '@grafana/data/src/datetime/rangeutil';
 import { config } from '@runtime/index';
 import {
@@ -14,7 +14,7 @@ import {
   SceneTimeRange,
   sceneUtils,
   SceneVariableValueChangedEvent,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { appEvents } from 'app/core/app_events';
 import { RecordHistoryEntryEvent } from 'app/types/events';

@@ -7,9 +7,9 @@ import {
   DataSourceGetTagKeysOptions,
   DataSourceGetTagValuesOptions,
   PageLayoutType,
-} from '@grafana/data';
+} from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { SceneComponentProps, SceneObjectBase, SceneObjectState, UrlSyncContextProvider } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, SceneObjectState, UrlSyncContextProvider } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui/';
 import { Page } from 'app/core/components/Page/Page';
 import { getClosestScopesFacade, ScopesFacade, ScopesSelector } from 'app/features/scopes';

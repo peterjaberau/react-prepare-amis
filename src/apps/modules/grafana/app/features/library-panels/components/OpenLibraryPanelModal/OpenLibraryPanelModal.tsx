@@ -1,7 +1,7 @@
 import debounce from 'debounce-promise';
 import { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 
-import { SelectableValue, urlUtil } from '@grafana/data';
+import { SelectableValue, urlUtil } from '@data/index';
 import { locationService } from '@runtime/index';
 import { AsyncSelect, Button, Modal } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

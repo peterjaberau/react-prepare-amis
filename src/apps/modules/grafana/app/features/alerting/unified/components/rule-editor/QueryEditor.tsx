@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, PanelData } from '@grafana/data';
+import { GrafanaTheme2, PanelData } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 import { AlertQuery } from 'app/types/unified-alerting-dto';
 

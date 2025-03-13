@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { PluginExtensionPoints } from '@grafana/data';
+import { PluginExtensionPoints } from '@data/index';
 import { usePluginLinks } from '@runtime/index';
 import { CombinedRule, Rule, RuleGroupIdentifierV2 } from 'app/types/unified-alerting';
 import { PromRuleType } from 'app/types/unified-alerting-dto';

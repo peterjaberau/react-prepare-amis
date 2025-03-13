@@ -1,6 +1,6 @@
 import { forwardRef, PropsWithChildren } from 'react';
 
-import { IconName } from '@grafana/data';
+import { IconName } from '@data/index';
 import { Icon, Tooltip, Box, Stack } from '@grafana/ui';
 import { Unit } from 'app/types';
 

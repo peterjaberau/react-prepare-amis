@@ -1,4 +1,4 @@
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 import coreModule from 'app/angular/core_module';
 import config from 'app/core/config';
 import { getNotFoundNav } from 'app/core/navigation/errorModels';

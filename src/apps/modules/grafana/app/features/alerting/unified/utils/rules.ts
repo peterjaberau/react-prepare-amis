@@ -1,6 +1,6 @@
 import { capitalize } from 'lodash';
 
-import { AlertState } from '@grafana/data';
+import { AlertState } from '@data/index';
 import { config } from '@runtime/index';
 import {
   Alert,

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useObservable } from 'react-use';
 
-import { PluginExtensionComponentMeta, PluginExtensionTypes, usePluginContext } from '@grafana/data';
+import { PluginExtensionComponentMeta, PluginExtensionTypes, usePluginContext } from '@data/index';
 import { UsePluginComponentsOptions, UsePluginComponentsResult } from '@runtime/index';
 
 import { useAddedComponentsRegistry } from './ExtensionRegistriesContext';

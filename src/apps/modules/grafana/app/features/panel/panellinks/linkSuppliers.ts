@@ -10,8 +10,8 @@ import {
   LinkModelSupplier,
   ScopedVar,
   ScopedVars,
-} from '@grafana/data';
-import { VizPanel } from '@grafana/scenes';
+} from '@data/index';
+import { VizPanel } from '@scenes/index';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';
 import { dashboardSceneGraph } from 'app/features/dashboard-scene/utils/dashboardSceneGraph';
 

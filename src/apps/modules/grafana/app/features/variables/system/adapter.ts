@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 
-import { LoadingState, SystemVariable, VariableHide } from '@grafana/data';
+import { LoadingState, SystemVariable, VariableHide } from '@data/index';
 
 import { VariableAdapter } from '../adapters';
 import { VariableEditorProps } from '../editor/types';

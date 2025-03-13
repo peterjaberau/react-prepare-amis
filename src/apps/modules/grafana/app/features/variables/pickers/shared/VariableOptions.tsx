@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, VariableOption } from '@grafana/data';
+import { GrafanaTheme2, VariableOption } from '@data/index';
 import { Tooltip, Themeable2, withTheme2, clearButtonStyles, stylesFactory } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 

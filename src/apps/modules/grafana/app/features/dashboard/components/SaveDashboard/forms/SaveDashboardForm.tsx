@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import { Button, Checkbox, TextArea, useStyles2, Stack } from '@grafana/ui';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 import { SaveDashboardResponseDTO } from 'app/types';

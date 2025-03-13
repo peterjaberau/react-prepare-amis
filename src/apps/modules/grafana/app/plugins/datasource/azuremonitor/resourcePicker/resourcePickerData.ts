@@ -1,4 +1,4 @@
-import { DataSourceWithBackend, reportInteraction } from '@grafana/runtime';
+import { DataSourceWithBackend, reportInteraction } from '@runtime/index';
 
 import { logsResourceTypes, resourceTypeDisplayNames, resourceTypes } from '../azureMetadata';
 import AzureMonitorDatasource from '../azure_monitor/azure_monitor_datasource';

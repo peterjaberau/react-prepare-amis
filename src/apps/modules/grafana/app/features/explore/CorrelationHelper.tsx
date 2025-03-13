@@ -3,7 +3,7 @@ import { useState, useEffect, useId } from 'react';
 import { useForm } from 'react-hook-form';
 import { useAsync } from 'react-use';
 
-import { DataLinkTransformationConfig, ExploreCorrelationHelperData, GrafanaTheme2 } from '@grafana/data';
+import { DataLinkTransformationConfig, ExploreCorrelationHelperData, GrafanaTheme2 } from '@data/index';
 import {
   Collapse,
   Alert,

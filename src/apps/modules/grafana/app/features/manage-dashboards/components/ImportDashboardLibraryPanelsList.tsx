@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { ReactElement } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { LibraryPanel } from '@grafana/schema';
+import { GrafanaTheme2 } from '@data/index';
+import { LibraryPanel } from '@schema/index';
 import { Field, useStyles2 } from '@grafana/ui';
 
 import { LibraryPanelCard } from '../../library-panels/components/LibraryPanelCard/LibraryPanelCard';

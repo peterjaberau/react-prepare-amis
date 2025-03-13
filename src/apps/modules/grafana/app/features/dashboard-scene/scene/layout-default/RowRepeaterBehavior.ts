@@ -12,7 +12,7 @@ import {
   SceneVariableSet,
   VariableDependencyConfig,
   VariableValueSingle,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import {
   containsCloneKey,

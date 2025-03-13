@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { DataQueryRequest, DataFrameView } from '@grafana/data';
+import { DataQueryRequest, DataFrameView } from '@data/index';
 import { getBackendSrv, config } from '@runtime/index';
 import { notifyApp } from 'app/core/actions';
 import { createErrorNotification, createSuccessNotification } from 'app/core/copy/appNotification';

@@ -1,7 +1,7 @@
 import { JSX, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 import { getBackendSrv, locationService } from '@runtime/index';
 import { Button, Field, Input, FieldSet } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

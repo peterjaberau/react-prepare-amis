@@ -1,4 +1,4 @@
-import { BusEventWithPayload, GrafanaTheme2 } from '@grafana/data';
+import { BusEventWithPayload, GrafanaTheme2 } from '@data/index';
 
 import { LogListModel } from './processing';
 

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { take, takeRight, uniqueId } from 'lodash';
 import { FC } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Stack, getTagColorsFromName, useStyles2 } from '@grafana/ui';
 import { ObjectMatcher } from 'app/plugins/datasource/alertmanager/types';
 

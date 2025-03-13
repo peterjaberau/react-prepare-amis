@@ -1,4 +1,4 @@
-import { SceneObjectState, VizPanel, SceneObjectBase } from '@grafana/scenes';
+import { SceneObjectState, VizPanel, SceneObjectBase } from '@scenes/index';
 import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { DashboardLayoutItem } from '../types/DashboardLayoutItem';

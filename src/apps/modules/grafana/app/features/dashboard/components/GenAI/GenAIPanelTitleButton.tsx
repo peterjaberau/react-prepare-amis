@@ -1,4 +1,4 @@
-import { Dashboard, Panel } from '@grafana/schema';
+import { Dashboard, Panel } from '@schema/index';
 
 import { GenAIButton } from './GenAIButton';
 import { EventTrackingSrc } from './tracking';

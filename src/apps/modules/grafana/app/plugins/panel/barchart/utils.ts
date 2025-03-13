@@ -12,7 +12,7 @@ import {
   getFieldColorModeForField,
   getFieldSeriesColor,
   outerJoinDataFrames,
-} from '@grafana/data';
+} from '@data/index';
 import { decoupleHideFromState } from '@grafana/data/src/field/fieldState';
 import {
   AxisColorMode,
@@ -24,7 +24,7 @@ import {
   TimeZone,
   TooltipDisplayMode,
   VizOrientation,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   FIXED_UNIT,
   ScaleDirection,

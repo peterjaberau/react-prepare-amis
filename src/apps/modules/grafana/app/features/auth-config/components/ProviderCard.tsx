@@ -1,4 +1,4 @@
-import { isIconName } from '@grafana/data';
+import { isIconName } from '@data/index';
 import { Badge, Card, Icon } from '@grafana/ui';
 
 import { UIMap } from '../constants';

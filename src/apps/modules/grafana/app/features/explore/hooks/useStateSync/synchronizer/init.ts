@@ -1,9 +1,9 @@
 import { identity, isEqual } from 'lodash';
 import { MutableRefObject } from 'react';
 
-import { EventBusSrv } from '@grafana/data';
+import { EventBusSrv } from '@data/index';
 import { LocationService } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { initializeExplore } from 'app/features/explore/state/explorePane';
 import { clearPanes, syncTimesAction } from 'app/features/explore/state/main';
 import { fromURLRange } from 'app/features/explore/state/utils';

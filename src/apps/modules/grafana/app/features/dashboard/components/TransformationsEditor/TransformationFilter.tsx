@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { DataFrame, DataTransformerConfig, GrafanaTheme2 } from '@grafana/data';
-import { DataTopic } from '@grafana/schema';
+import { DataFrame, DataTransformerConfig, GrafanaTheme2 } from '@data/index';
+import { DataTopic } from '@schema/index';
 import { Field, Select, useStyles2 } from '@grafana/ui';
 import { FrameMultiSelectionEditor } from 'app/plugins/panel/geomap/editor/FrameSelectionEditor';
 

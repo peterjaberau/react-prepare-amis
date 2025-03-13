@@ -1,8 +1,8 @@
 import { Subscription } from 'rxjs';
 
-import { AnnotationQuery, DashboardCursorSync, dateTimeFormat, DateTimeInput, EventBusSrv } from '@grafana/data';
+import { AnnotationQuery, DashboardCursorSync, dateTimeFormat, DateTimeInput, EventBusSrv } from '@data/index';
 import { TimeRangeUpdatedEvent } from '@runtime/index';
-import { behaviors, sceneGraph, SceneObject, VizPanel } from '@grafana/scenes';
+import { behaviors, sceneGraph, SceneObject, VizPanel } from '@scenes/index';
 
 import { DashboardDataLayerSet } from '../scene/DashboardDataLayerSet';
 import { DashboardScene } from '../scene/DashboardScene';

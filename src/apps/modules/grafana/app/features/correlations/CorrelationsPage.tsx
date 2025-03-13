@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { negate } from 'lodash';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import { DataSourceInstanceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { CorrelationData, isFetchError, reportInteraction } from '@runtime/index';
 import {
   Badge,

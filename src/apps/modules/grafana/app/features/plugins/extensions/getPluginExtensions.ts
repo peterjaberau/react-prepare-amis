@@ -5,7 +5,7 @@ import {
   type PluginExtension,
   type PluginExtensionLink,
   type PluginExtensionComponent,
-} from '@grafana/data';
+} from '@data/index';
 import { GetPluginExtensions } from '@runtime/index';
 
 import { log } from './logs/log';

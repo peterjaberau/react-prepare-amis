@@ -1,6 +1,6 @@
 import { from, map, Observable, Unsubscribable } from 'rxjs';
 
-import { AlertState, AlertStateInfo, DataTopic, LoadingState, toDataFrame } from '@grafana/data';
+import { AlertState, AlertStateInfo, DataTopic, LoadingState, toDataFrame } from '@data/index';
 import { config } from '@runtime/index';
 import {
   SceneDataLayerBase,
@@ -8,7 +8,7 @@ import {
   SceneDataLayerProviderState,
   sceneGraph,
   SceneTimeRangeLike,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { notifyApp } from 'app/core/actions';
 import { createErrorNotification } from 'app/core/copy/appNotification';
 import { contextSrv } from 'app/core/core';

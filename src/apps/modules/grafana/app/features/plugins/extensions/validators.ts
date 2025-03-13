@@ -6,7 +6,7 @@ import type {
   PluginExtensionAddedComponentConfig,
   PluginExtensionExposedComponentConfig,
   PluginExtensionAddedFunctionConfig,
-} from '@grafana/data';
+} from '@data/index';
 import { PluginAddedLinksConfigureFunc, PluginExtensionPoints } from '@grafana/data/src/types/pluginExtensions';
 import { config, isPluginExtensionLink } from '@runtime/index';
 

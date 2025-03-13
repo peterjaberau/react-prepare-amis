@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { PanelData, QueryResultMetaStat, TimeZone } from '@grafana/data';
+import { PanelData, QueryResultMetaStat, TimeZone } from '@data/index';
 import { t } from 'app/core/internationalization';
 
 import { InspectStatsTable } from './InspectStatsTable';

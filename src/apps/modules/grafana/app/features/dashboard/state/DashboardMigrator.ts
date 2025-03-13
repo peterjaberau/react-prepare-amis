@@ -26,11 +26,11 @@ import {
   ValueMap,
   ValueMapping,
   VariableHide,
-} from '@grafana/data';
+} from '@data/index';
 import { labelsToFieldsTransformer } from '@grafana/data/src/transformations/transformers/labelsToFields';
 import { mergeTransformer } from '@grafana/data/src/transformations/transformers/merge';
 import { getDataSourceSrv, setDataSourceSrv } from '@runtime/index';
-import { DataTransformerConfig } from '@grafana/schema';
+import { DataTransformerConfig } from '@schema/index';
 import { AxisPlacement, GraphFieldConfig } from '@grafana/ui';
 import { migrateTableDisplayModeToCellOptions } from '@grafana/ui/src/components/Table/utils';
 import { getAllOptionEditors, getAllStandardFieldConfigs } from 'app/core/components/OptionsUI/registry';

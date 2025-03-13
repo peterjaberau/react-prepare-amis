@@ -1,4 +1,4 @@
-import { selectors } from '@grafana/e2e-selectors';
+import { selectors } from '@selectors/index';
 
 import { GraphCtrl } from './module';
 

@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { StandardEditorProps, ThresholdsConfig, ThresholdsMode, ThresholdsFieldConfigSettings } from '@grafana/data';
+import { StandardEditorProps, ThresholdsConfig, ThresholdsMode, ThresholdsFieldConfigSettings } from '@data/index';
 
 import { ThresholdsEditor } from './ThresholdsEditor';
 

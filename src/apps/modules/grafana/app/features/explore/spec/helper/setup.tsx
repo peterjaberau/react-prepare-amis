@@ -17,7 +17,7 @@ import {
   QueryEditorProps,
   DataSourcePluginMeta,
   PluginType,
-} from '@grafana/data';
+} from '@data/index';
 import {
   setDataSourceSrv,
   setEchoSrv,
@@ -31,7 +31,7 @@ import {
   setLocationService,
   setPluginLinksHook,
 } from '@runtime/index';
-import { DataSourceRef } from '@grafana/schema';
+import { DataSourceRef } from '@schema/index';
 import { AppChrome } from 'app/core/components/AppChrome/AppChrome';
 import { GrafanaContext } from 'app/core/context/GrafanaContext';
 import { GrafanaRoute } from 'app/core/navigation/GrafanaRoute';

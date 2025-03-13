@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import * as React from 'react';
 import Highlighter from 'react-highlight-words';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Field, Label, useStyles2 } from '@grafana/ui';
 
 import { OptionsPaneCategoryDescriptor } from './OptionsPaneCategoryDescriptor';

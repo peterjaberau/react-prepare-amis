@@ -2,8 +2,8 @@ import { css, cx } from '@emotion/css';
 import { isEqual } from 'lodash';
 import { finalize, from, Subscription } from 'rxjs';
 
-import { GrafanaTheme2, ScopeDashboardBinding } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState } from '@grafana/scenes';
+import { GrafanaTheme2, ScopeDashboardBinding } from '@data/index';
+import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState } from '@scenes/index';
 import { Button, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

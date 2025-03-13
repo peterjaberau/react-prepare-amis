@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Button, CodeEditor, Drawer, Icon, Tab, TabsBar, Tooltip, useStyles2 } from '@grafana/ui';
 
 import { RulerRuleDTO } from '../../../../../types/unified-alerting-dto';

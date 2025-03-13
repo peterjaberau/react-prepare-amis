@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 import { ReactElement } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { FieldSet, InlineSwitch, Stack, Text, useStyles2 } from '@grafana/ui';
 
 export interface RuleEditorSectionProps {

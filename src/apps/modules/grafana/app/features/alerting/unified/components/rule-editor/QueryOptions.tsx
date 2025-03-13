@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2, RelativeTimeRange, dateTime, getDefaultRelativeTimeRange } from '@grafana/data';
+import { GrafanaTheme2, RelativeTimeRange, dateTime, getDefaultRelativeTimeRange } from '@data/index';
 import { relativeToTimeRange } from '@grafana/data/src/datetime/rangeutil';
 import { Icon, InlineField, RelativeTimeRangePicker, Toggletip, clearButtonStyles, useStyles2 } from '@grafana/ui';
 import { AlertQuery } from 'app/types/unified-alerting-dto';

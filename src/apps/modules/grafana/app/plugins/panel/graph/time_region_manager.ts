@@ -1,7 +1,7 @@
 import 'vendor/flot/jquery.flot';
 import { map } from 'lodash';
 
-import { dateTime, GrafanaTheme2, TimeRange } from '@grafana/data';
+import { dateTime, GrafanaTheme2, TimeRange } from '@data/index';
 import { config } from 'app/core/config';
 import { calculateTimesWithin, TimeRegionConfig } from 'app/core/utils/timeRegions';
 

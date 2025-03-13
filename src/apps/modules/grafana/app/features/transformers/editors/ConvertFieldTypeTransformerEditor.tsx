@@ -11,7 +11,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
   getTimeZones,
-} from '@grafana/data';
+} from '@data/index';
 import {
   ConvertFieldTypeOptions,
   ConvertFieldTypeTransformerOptions,

@@ -1,4 +1,4 @@
-import { PanelPluginMeta, PluginState, unEscapeStringFromRegex } from '@grafana/data';
+import { PanelPluginMeta, PluginState, unEscapeStringFromRegex } from '@data/index';
 import { config } from 'app/core/config';
 
 export function getAllPanelPluginMeta(): PanelPluginMeta[] {

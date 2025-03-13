@@ -1,4 +1,4 @@
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@data/index';
 
 export function getLabelValueFromDataFrame(frame: DataFrame) {
   const labels = frame.fields[1]?.labels;

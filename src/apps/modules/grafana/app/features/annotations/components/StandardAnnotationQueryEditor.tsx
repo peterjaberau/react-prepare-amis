@@ -9,7 +9,7 @@ import {
   DataSourceInstanceSettings,
   DataSourcePluginContextProvider,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 import { Alert, AlertVariant, Button, Space, Spinner } from '@grafana/ui';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';

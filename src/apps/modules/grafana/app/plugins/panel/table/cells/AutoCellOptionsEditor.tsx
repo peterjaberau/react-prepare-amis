@@ -1,4 +1,4 @@
-import { TableAutoCellOptions, TableColorTextCellOptions } from '@grafana/schema';
+import { TableAutoCellOptions, TableColorTextCellOptions } from '@schema/index';
 import { Field, Switch, Badge, Label } from '@grafana/ui';
 
 import { TableCellEditorProps } from '../TableCellOptionEditor';

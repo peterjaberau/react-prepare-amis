@@ -1,7 +1,7 @@
 import { reduce } from 'lodash';
 
-import { escapeRegex, ScopedVars } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
+import { escapeRegex, ScopedVars } from '@data/index';
+import { TemplateSrv } from '@runtime/index';
 
 import { DEFAULT_POLICY, InfluxQueryTag, MetadataQueryType } from './types';
 

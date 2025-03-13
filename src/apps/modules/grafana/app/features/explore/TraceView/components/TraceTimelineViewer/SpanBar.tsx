@@ -18,7 +18,7 @@ import { groupBy as _groupBy } from 'lodash';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Tooltip, useStyles2 } from '@grafana/ui';
 
 import { autoColor } from '../Theme';

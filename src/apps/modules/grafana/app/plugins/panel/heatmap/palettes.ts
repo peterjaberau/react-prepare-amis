@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 import * as d3ScaleChromatic from 'd3-scale-chromatic';
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { HeatmapColorOptions, defaultOptions, HeatmapColorMode, HeatmapColorScale } from './types';
 

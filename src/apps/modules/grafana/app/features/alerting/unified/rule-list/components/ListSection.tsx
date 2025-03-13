@@ -3,7 +3,7 @@ import { isEmpty } from 'lodash';
 import { PropsWithChildren, ReactNode } from 'react';
 import { useToggle } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconButton, Stack, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

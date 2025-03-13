@@ -1,8 +1,8 @@
 import { css, cx } from '@emotion/css';
 import { useMemo, useRef } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, sceneGraph } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, sceneGraph } from '@scenes/index';
 import { Button, Icon, useElementSelection, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

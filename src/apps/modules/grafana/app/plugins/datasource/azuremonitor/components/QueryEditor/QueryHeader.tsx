@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { EditorHeader, InlineSelect } from '@grafana/plugin-ui';
 
 import { selectors } from '../../e2e/selectors';

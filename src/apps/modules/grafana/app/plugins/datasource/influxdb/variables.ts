@@ -1,8 +1,8 @@
 import { from, Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { CustomVariableSupport, DataQueryRequest, DataQueryResponse } from '@grafana/data';
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { CustomVariableSupport, DataQueryRequest, DataQueryResponse } from '@data/index';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { InfluxVariableEditor } from './components/editor/variable/VariableQueryEditor';
 import InfluxDatasource from './datasource';

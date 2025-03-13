@@ -35,7 +35,7 @@ import {
   LinkModelSupplier,
   PanelEvents,
   toUtc,
-} from '@grafana/data';
+} from '@data/index';
 import { MenuItemProps, MenuItemsGroup } from '@grafana/ui';
 import { coreModule } from 'app/angular/core_module';
 import config from 'app/core/config';

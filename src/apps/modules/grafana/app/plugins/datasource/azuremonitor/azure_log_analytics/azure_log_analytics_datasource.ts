@@ -1,8 +1,8 @@
 import { map } from 'lodash';
 
 import { AzureCredentials } from '@grafana/azure-sdk';
-import { ScopedVars } from '@grafana/data';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { ScopedVars } from '@data/index';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import ResponseParser from '../azure_monitor/response_parser';
 import { getCredentials } from '../credentials';

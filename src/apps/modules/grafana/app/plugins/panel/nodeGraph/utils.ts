@@ -7,7 +7,7 @@ import {
   FieldType,
   MutableDataFrame,
   NodeGraphDataFrameFieldNames,
-} from '@grafana/data';
+} from '@data/index';
 
 import { nodeR } from './Node';
 import { EdgeDatum, GraphFrame, NodeDatum, NodeDatumFromEdge, NodeGraphOptions } from './types';

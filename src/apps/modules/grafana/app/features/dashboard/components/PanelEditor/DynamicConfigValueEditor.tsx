@@ -8,7 +8,7 @@ import {
   FieldConfigProperty,
   FieldOverrideContext,
   GrafanaTheme2,
-} from '@grafana/data';
+} from '@data/index';
 import { Counter, Field, HorizontalGroup, IconButton, Label, useStyles2 } from '@grafana/ui';
 
 import { OptionsPaneCategory } from './OptionsPaneCategory';

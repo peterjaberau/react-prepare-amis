@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import { GrafanaTheme2, NavModel } from '@grafana/data';
+import { GrafanaTheme2, NavModel } from '@data/index';
 import { LinkButton, useStyles2 } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 import { Trans } from 'app/core/internationalization';

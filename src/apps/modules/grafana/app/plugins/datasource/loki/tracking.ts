@@ -1,6 +1,6 @@
-import { CoreApp, DashboardLoadedEvent, DataQueryRequest, DataQueryResponse } from '@grafana/data';
+import { CoreApp, DashboardLoadedEvent, DataQueryRequest, DataQueryResponse } from '@data/index';
 import { QueryEditorMode } from '@grafana/plugin-ui';
-import { reportInteraction, config } from '@grafana/runtime';
+import { reportInteraction, config } from '@runtime/index';
 
 import {
   REF_ID_STARTER_ANNOTATION,

@@ -3,7 +3,7 @@ import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
 import { uniqueId } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import { GrafanaTheme2, MappingType, SelectableValue, SpecialValueMatch, ValueMapping } from '@grafana/data';
+import { GrafanaTheme2, MappingType, SelectableValue, SpecialValueMatch, ValueMapping } from '@data/index';
 import { useStyles2, Modal, ValuePicker, Button } from '@grafana/ui';
 
 import { ValueMappingEditRow, ValueMappingEditRowModel } from './ValueMappingEditRow';

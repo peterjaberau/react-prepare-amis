@@ -1,5 +1,5 @@
-import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@grafana/scenes';
-import { LibraryPanel } from '@grafana/schema';
+import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
+import { LibraryPanel } from '@schema/index';
 import { Drawer } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 import {

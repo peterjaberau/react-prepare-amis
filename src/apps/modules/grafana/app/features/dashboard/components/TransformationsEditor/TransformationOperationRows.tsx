@@ -1,4 +1,4 @@
-import { DataTransformerConfig, standardTransformersRegistry } from '@grafana/data';
+import { DataTransformerConfig, standardTransformersRegistry } from '@data/index';
 
 import { TransformationOperationRow } from './TransformationOperationRow';
 import { TransformationData } from './TransformationsEditor';

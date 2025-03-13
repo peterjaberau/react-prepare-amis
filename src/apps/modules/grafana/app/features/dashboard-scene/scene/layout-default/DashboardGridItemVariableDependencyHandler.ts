@@ -1,4 +1,4 @@
-import { SceneVariable, SceneVariableDependencyConfigLike } from '@grafana/scenes';
+import { SceneVariable, SceneVariableDependencyConfigLike } from '@scenes/index';
 
 import { DashboardGridItem } from './DashboardGridItem';
 

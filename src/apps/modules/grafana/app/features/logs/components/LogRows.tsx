@@ -11,9 +11,9 @@ import {
   CoreApp,
   DataFrame,
   LogRowContextOptions,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { ConfirmModal, Icon, PopoverContent, useTheme2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

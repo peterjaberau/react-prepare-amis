@@ -1,7 +1,7 @@
 import { ScalarParameter, TabularParameter, Function, EntityGroup } from '@kusto/monaco-kusto';
 
 import { AzureDataSourceSecureJsonData, AzureDataSourceJsonData } from '@grafana/azure-sdk';
-import { DataSourceInstanceSettings, DataSourceSettings, PanelData, SelectableValue, TimeRange } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceSettings, PanelData, SelectableValue, TimeRange } from '@data/index';
 
 import Datasource from '../datasource';
 

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { reportInteraction } from '@runtime/index';
-import { SceneVariable, SceneVariableState } from '@grafana/scenes';
+import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Button } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 import { NetworkGraphModal } from 'app/features/variables/inspect/NetworkGraphModal';

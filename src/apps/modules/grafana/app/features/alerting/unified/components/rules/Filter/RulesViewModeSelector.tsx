@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { RadioButtonGroup } from '@grafana/ui';
 

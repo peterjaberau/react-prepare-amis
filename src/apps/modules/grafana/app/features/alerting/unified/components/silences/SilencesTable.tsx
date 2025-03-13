@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { GrafanaTheme2, dateMath } from '@grafana/data';
+import { GrafanaTheme2, dateMath } from '@data/index';
 import {
   Alert,
   CollapsableSection,

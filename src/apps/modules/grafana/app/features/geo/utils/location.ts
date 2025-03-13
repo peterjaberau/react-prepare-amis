@@ -8,8 +8,8 @@ import {
   Field,
   getFieldDisplayName,
   FieldType,
-} from '@grafana/data';
-import { FrameGeometrySource, FrameGeometrySourceMode } from '@grafana/schema';
+} from '@data/index';
+import { FrameGeometrySource, FrameGeometrySourceMode } from '@schema/index';
 
 import { getGeoFieldFromGazetteer, pointFieldFromGeohash, pointFieldFromLonLat } from '../format/utils';
 import { getGazetteer, Gazetteer } from '../gazetteer/gazetteer';

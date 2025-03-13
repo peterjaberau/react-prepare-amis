@@ -3,8 +3,8 @@ import { sortBy } from 'lodash';
 import { useEffect, useMemo } from 'react';
 import { useEffectOnce, useToggle } from 'react-use';
 
-import { GrafanaTheme2, PanelProps } from '@grafana/data';
-import { TimeRangeUpdatedEvent } from '@grafana/runtime';
+import { GrafanaTheme2, PanelProps } from '@data/index';
+import { TimeRangeUpdatedEvent } from '@runtime/index';
 import {
   Alert,
   BigValue,

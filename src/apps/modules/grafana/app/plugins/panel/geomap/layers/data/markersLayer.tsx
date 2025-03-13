@@ -12,7 +12,7 @@ import {
   GrafanaTheme2,
   FrameGeometrySourceMode,
   EventBus,
-} from '@grafana/data';
+} from '@data/index';
 import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
 import { getLocationMatchers } from 'app/features/geo/utils/location';
 

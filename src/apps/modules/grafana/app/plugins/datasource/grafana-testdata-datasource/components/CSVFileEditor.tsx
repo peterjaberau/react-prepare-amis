@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineField, InlineFieldRow, Select } from '@grafana/ui';
 
 import { EditorProps } from '../QueryEditor';

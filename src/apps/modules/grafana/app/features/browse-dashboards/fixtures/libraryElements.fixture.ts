@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 
-import { LibraryPanel } from '@grafana/schema';
+import { LibraryPanel } from '@schema/index';
 
 import { LibraryElementsSearchResult } from '../../library-panels/types';
 

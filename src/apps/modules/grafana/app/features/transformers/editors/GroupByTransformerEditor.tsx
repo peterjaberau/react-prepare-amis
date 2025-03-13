@@ -10,7 +10,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
   GrafanaTheme2,
-} from '@grafana/data';
+} from '@data/index';
 import {
   GroupByFieldOptions,
   GroupByOperationID,

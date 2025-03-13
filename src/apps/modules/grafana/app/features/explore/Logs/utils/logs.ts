@@ -1,5 +1,5 @@
-import { shallowCompare } from '@grafana/data';
-import { DataQuery } from '@grafana/schema';
+import { shallowCompare } from '@data/index';
+import { DataQuery } from '@schema/index';
 
 export const SETTINGS_KEYS = {
   showLabels: 'grafana.explore.logs.showLabels',

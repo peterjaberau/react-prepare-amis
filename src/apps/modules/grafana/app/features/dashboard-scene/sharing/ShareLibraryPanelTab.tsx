@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { SceneComponentProps, SceneObjectBase, SceneObjectRef, VizPanel } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { LibraryPanel } from '@grafana/schema/dist/esm/index.gen';
 import { t } from 'app/core/internationalization';
 import { ShareLibraryPanel } from 'app/features/dashboard/components/ShareModal/ShareLibraryPanel';

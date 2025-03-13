@@ -15,7 +15,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
   FieldMatcherID,
-} from '@grafana/data';
+} from '@data/index';
 import {
   CalculateFieldMode,
   CalculateFieldTransformerOptions,

@@ -17,8 +17,8 @@ import {
   addRow,
   getDisplayProcessor,
   createTheme,
-} from '@grafana/data';
-import { getBackendSrv } from '@grafana/runtime';
+} from '@data/index';
+import { getBackendSrv } from '@runtime/index';
 
 import { getRandomLine } from './LogIpsum';
 import { TestDataDataQuery, StreamingQuery } from './dataquery';

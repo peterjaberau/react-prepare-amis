@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { Button, Stack, Text } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

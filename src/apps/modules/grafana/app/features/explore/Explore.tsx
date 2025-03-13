@@ -17,9 +17,9 @@ import {
   SplitOpenOptions,
   store,
   SupplementaryQueryType,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv, reportInteraction } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import {
   AdHocFilterItem,
   ErrorBoundaryAlert,

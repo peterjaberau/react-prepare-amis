@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Suspense, lazy, useCallback, useMemo, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Modal, useStyles2 } from '@grafana/ui';
 import { RulerGrafanaRuleDTO } from 'app/types/unified-alerting-dto';

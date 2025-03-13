@@ -1,5 +1,5 @@
-import { makeClassES5Compatible } from '@grafana/data';
-import { loadPluginCss } from '@grafana/runtime';
+import { makeClassES5Compatible } from '@data/index';
+import { loadPluginCss } from '@runtime/index';
 import { MetricsPanelCtrl as MetricsPanelCtrlES6 } from 'app/angular/panel/metrics_panel_ctrl';
 import { PanelCtrl as PanelCtrlES6 } from 'app/angular/panel/panel_ctrl';
 import { QueryCtrl as QueryCtrlES6 } from 'app/angular/panel/query_ctrl';

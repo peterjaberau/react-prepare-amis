@@ -1,8 +1,8 @@
 import { useAsyncFn } from 'react-use';
 
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import appEvents from 'app/core/app_events';
 import { useAppNotification } from 'app/core/copy/appNotification';
 import { updateDashboardName } from 'app/core/reducers/navBarTree';

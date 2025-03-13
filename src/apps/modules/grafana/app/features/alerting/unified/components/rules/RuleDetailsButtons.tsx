@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import { textUtil } from '@grafana/data';
+import { textUtil } from '@data/index';
 import { useReturnToPrevious } from '@runtime/index';
 import { Button, LinkButton, Stack } from '@grafana/ui';
 import { CombinedRule, RulesSource } from 'app/types/unified-alerting';

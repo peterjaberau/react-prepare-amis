@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { CompactSelection, GridCell, GridCellKind, GridSelection, Theme } from '@glideapps/glide-data-grid';
 
-import { DataFrame, Field, GrafanaTheme2, FieldType } from '@grafana/data';
+import { DataFrame, Field, GrafanaTheme2, FieldType } from '@data/index';
 
 import { isDatagridEnabled } from './featureFlagUtils';
 

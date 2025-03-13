@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { DataSourcePluginOptionsEditorProps, DataSourceSettings } from '@grafana/data';
+import { DataSourcePluginOptionsEditorProps, DataSourceSettings } from '@data/index';
 import {
   ConfigSection,
   DataSourceDescription,
@@ -9,7 +9,7 @@ import {
   convertLegacyAuthProps,
   AdvancedHttpSettings,
 } from '@grafana/plugin-ui';
-import { config, reportInteraction } from '@grafana/runtime';
+import { config, reportInteraction } from '@runtime/index';
 import { Divider, SecureSocksProxySettings, Stack } from '@grafana/ui';
 
 import { LokiOptions } from '../types';

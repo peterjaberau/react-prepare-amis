@@ -8,7 +8,7 @@ import {
   SelectableValue,
   VariableRefresh,
   VariableSort,
-} from '@grafana/data';
+} from '@data/index';
 import { QueryVariableEditorForm } from 'app/features/dashboard-scene/settings/variables/components/QueryVariableForm';
 
 import { StoreState } from '../../../types';

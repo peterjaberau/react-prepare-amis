@@ -1,5 +1,5 @@
-import { VariableValue, FormatVariable } from '@grafana/scenes';
-import { VariableModel, VariableType } from '@grafana/schema';
+import { VariableValue, FormatVariable } from '@scenes/index';
+import { VariableModel, VariableType } from '@schema/index';
 
 import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE } from '../variables/constants';
 

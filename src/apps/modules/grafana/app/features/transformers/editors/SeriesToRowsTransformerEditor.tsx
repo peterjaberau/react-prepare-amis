@@ -4,7 +4,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { SeriesToRowsTransformerOptions } from '@grafana/data/src/transformations/transformers/seriesToRows';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

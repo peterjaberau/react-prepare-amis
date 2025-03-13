@@ -1,7 +1,7 @@
 // Code was originally generated from cue
 // It must now be updated manually
 
-import * as common from '@grafana/schema';
+import * as common from '@schema/index';
 
 export enum TestDataQueryType {
   Annotations = 'annotations',

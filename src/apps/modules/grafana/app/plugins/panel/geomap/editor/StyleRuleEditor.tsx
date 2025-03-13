@@ -4,8 +4,8 @@ import { useCallback, useMemo } from 'react';
 import { useObservable } from 'react-use';
 import { Observable } from 'rxjs';
 
-import { GrafanaTheme2, SelectableValue, StandardEditorProps, StandardEditorsRegistryItem } from '@grafana/data';
-import { ComparisonOperation } from '@grafana/schema';
+import { GrafanaTheme2, SelectableValue, StandardEditorProps, StandardEditorsRegistryItem } from '@data/index';
+import { ComparisonOperation } from '@schema/index';
 import { Button, InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana/ui';
 import { comparisonOperationOptions } from '@grafana/ui/src/components/MatchersUI/FieldValueMatcher';
 import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';

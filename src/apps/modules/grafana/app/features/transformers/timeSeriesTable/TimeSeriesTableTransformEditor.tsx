@@ -10,7 +10,7 @@ import {
   Field,
   FieldType,
   isTimeSeriesField,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineFieldRow, InlineField, StatsPicker, Select, InlineLabel } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

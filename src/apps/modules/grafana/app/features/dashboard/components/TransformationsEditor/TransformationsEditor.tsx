@@ -10,7 +10,7 @@ import {
   SelectableValue,
   standardTransformersRegistry,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import {
   Button,

@@ -1,6 +1,6 @@
 import { chain } from 'lodash';
 
-import { DataSourceInstanceSettings, SelectableValue } from '@grafana/data';
+import { DataSourceInstanceSettings, SelectableValue } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import {
   ConstantVariable,
@@ -16,8 +16,8 @@ import {
   SceneObject,
   AdHocFiltersVariable,
   SceneVariableState,
-} from '@grafana/scenes';
-import { VariableHide, VariableType } from '@grafana/schema';
+} from '@scenes/index';
+import { VariableHide, VariableType } from '@schema/index';
 
 import { getIntervalsQueryFromNewIntervalModel } from '../../utils/utils';
 

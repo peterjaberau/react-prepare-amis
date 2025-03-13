@@ -1,4 +1,4 @@
-import { deprecationWarning } from '@grafana/data';
+import { deprecationWarning } from '@data/index';
 import { appEvents } from 'app/core/app_events';
 
 import { HideModalEvent, ShowModalEvent } from '../../types/events';

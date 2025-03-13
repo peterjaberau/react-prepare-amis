@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 
-import { DataQueryRequest, DataQueryResponse, DataQueryResponseData, TestDataSourceResponse } from '@grafana/data';
+import { DataQueryRequest, DataQueryResponse, DataQueryResponseData, TestDataSourceResponse } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import {
   PanelBuilders,
@@ -9,8 +9,8 @@ import {
   SceneQueryRunner,
   SceneTimeRange,
   sceneUtils,
-} from '@grafana/scenes';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+} from '@scenes/index';
+import { DataQuery, DataSourceRef } from '@schema/index';
 import { getTimeRange } from 'app/features/dashboard/utils/timeRange';
 
 import { PANEL_STYLES } from '../../home/Insights';

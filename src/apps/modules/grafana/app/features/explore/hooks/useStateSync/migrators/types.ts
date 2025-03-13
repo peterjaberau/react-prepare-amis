@@ -1,4 +1,4 @@
-import { UrlQueryMap } from '@grafana/data';
+import { UrlQueryMap } from '@data/index';
 
 export interface MigrationHandler<From extends BaseExploreURL | never, To> {
   /**

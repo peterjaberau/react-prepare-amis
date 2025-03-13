@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { SceneDataProvider, SceneDataTransformer, SceneQueryRunner } from '@grafana/scenes';
+import { SceneDataProvider, SceneDataTransformer, SceneQueryRunner } from '@scenes/index';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';
 
 import { DashboardDatasourceBehaviour } from '../scene/DashboardDatasourceBehaviour';

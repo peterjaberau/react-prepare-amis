@@ -1,4 +1,4 @@
-import { DefaultTimeZone, addDurationToDate, dateTime, intervalToAbbreviatedDurationString } from '@grafana/data';
+import { DefaultTimeZone, addDurationToDate, dateTime, intervalToAbbreviatedDurationString } from '@data/index';
 import { config } from '@runtime/index';
 import { SilenceFormFields } from 'app/features/alerting/unified/types/silence-form';
 import { matcherToMatcherField } from 'app/features/alerting/unified/utils/alertmanager';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 import {
   Button,
   FileDropzone,

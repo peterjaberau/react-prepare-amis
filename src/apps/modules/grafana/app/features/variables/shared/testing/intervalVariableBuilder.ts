@@ -1,4 +1,4 @@
-import { IntervalVariableModel, VariableRefresh } from '@grafana/data';
+import { IntervalVariableModel, VariableRefresh } from '@data/index';
 
 import { OptionsVariableBuilder } from './optionsVariableBuilder';
 

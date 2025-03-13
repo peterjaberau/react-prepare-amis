@@ -4,7 +4,7 @@ import {
   VisualizationSuggestionsBuilder,
   PanelModel,
   VisualizationSuggestionScore,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
 import { importPanelPlugin } from 'app/features/plugins/importPanelPlugin';
 

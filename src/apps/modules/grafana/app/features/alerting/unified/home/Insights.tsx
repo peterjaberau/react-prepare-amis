@@ -1,4 +1,4 @@
-import { DataSourceInstanceSettings, DataSourceJsonData } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceJsonData } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import {
   EmbeddedScene,
@@ -13,7 +13,7 @@ import {
   SceneTimeRange,
   SceneVariableSet,
   VariableValueSelectors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Icon, Text, Tooltip } from '@grafana/ui';
 
 import { getAPINamespace } from '../../../../api/utils';

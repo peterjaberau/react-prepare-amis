@@ -1,4 +1,4 @@
-import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@grafana/data';
+import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@data/index';
 import { SuggestionName } from 'app/types/suggestions';
 
 export class TracesSuggestionsSupplier {

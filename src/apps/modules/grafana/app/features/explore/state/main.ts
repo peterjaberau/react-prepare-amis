@@ -2,7 +2,7 @@ import { createAction } from '@reduxjs/toolkit';
 import { isEqual } from 'lodash';
 import { AnyAction } from 'redux';
 
-import { SplitOpenOptions, TimeRange, EventBusSrv } from '@grafana/data';
+import { SplitOpenOptions, TimeRange, EventBusSrv } from '@data/index';
 import { locationService } from '@runtime/index';
 import { generateExploreId, GetExploreUrlArguments } from 'app/core/utils/explore';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';

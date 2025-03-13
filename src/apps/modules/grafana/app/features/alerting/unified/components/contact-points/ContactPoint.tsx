@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { groupBy, size, upperFirst } from 'lodash';
 import { Fragment, ReactNode } from 'react';
 
-import { GrafanaTheme2, dateTime } from '@grafana/data';
+import { GrafanaTheme2, dateTime } from '@data/index';
 import { Icon, Stack, Text, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { PrimaryText } from 'app/features/alerting/unified/components/common/TextVariants';

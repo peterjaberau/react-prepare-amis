@@ -1,6 +1,6 @@
-import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil } from '@grafana/data';
+import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil } from '@data/index';
 import { config } from '@runtime/index';
-import { SceneObjectRef, VizPanel } from '@grafana/scenes';
+import { SceneObjectRef, VizPanel } from '@scenes/index';
 import { createShortLink } from 'app/core/utils/shortLinks';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
 

@@ -1,4 +1,4 @@
-import { FieldType, DataFrame, dateTime } from '@grafana/data';
+import { FieldType, DataFrame, dateTime } from '@data/index';
 
 import { Feed } from './types';
 

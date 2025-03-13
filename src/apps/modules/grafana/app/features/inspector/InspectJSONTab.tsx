@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { firstValueFrom } from 'rxjs';
 
-import { AppEvents, PanelData, SelectableValue, LoadingState } from '@grafana/data';
+import { AppEvents, PanelData, SelectableValue, LoadingState } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana/ui';
 import { appEvents } from 'app/core/core';

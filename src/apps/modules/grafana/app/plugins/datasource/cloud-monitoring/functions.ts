@@ -1,7 +1,7 @@
 import { chunk, initial, startCase, uniqBy } from 'lodash';
 
-import { rangeUtil } from '@grafana/data';
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { rangeUtil } from '@data/index';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { AGGREGATIONS, ALIGNMENTS, SYSTEM_LABELS } from './constants';
 import CloudMonitoringDatasource from './datasource';

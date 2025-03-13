@@ -1,7 +1,7 @@
 import { useCallback, ChangeEvent, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { TimeZone } from '@grafana/data';
+import { TimeZone } from '@data/index';
 import { config } from '@runtime/index';
 import {
   CollapsableSection,

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import moment, { Moment } from 'moment/moment';
 import { ChangeEvent, useState } from 'react';
 
-import { dateTimeAsMoment, getTimeZoneInfo, GrafanaTheme2, isDateTime, SelectableValue } from '@grafana/data';
+import { dateTimeAsMoment, getTimeZoneInfo, GrafanaTheme2, isDateTime, SelectableValue } from '@data/index';
 import {
   Button,
   Field,

@@ -2,7 +2,7 @@ import { Observable, throwError, timer } from 'rxjs';
 import { finalize, map, retryWhen, mergeMap } from 'rxjs/operators';
 import { webSocket } from 'rxjs/webSocket';
 
-import { DataFrame, FieldType, KeyValue, CircularDataFrame } from '@grafana/data';
+import { DataFrame, FieldType, KeyValue, CircularDataFrame } from '@data/index';
 
 import { appendResponseToBufferedData } from './liveStreamsResultTransformer';
 import { LokiTailResponse } from './types';

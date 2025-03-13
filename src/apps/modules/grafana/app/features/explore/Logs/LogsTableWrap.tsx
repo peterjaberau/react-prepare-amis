@@ -12,7 +12,7 @@ import {
   SelectableValue,
   SplitOpen,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction } from '@grafana/runtime/src';
 import { InlineField, Select, Themeable2 } from '@grafana/ui/';
 

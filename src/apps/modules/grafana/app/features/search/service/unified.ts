@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import { DataFrame, DataFrameView, getDisplayProcessor, SelectableValue, toDataFrame } from '@grafana/data';
+import { DataFrame, DataFrameView, getDisplayProcessor, SelectableValue, toDataFrame } from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
 import { TermCount } from 'app/core/components/TagFilter/TagFilter';
 import kbn from 'app/core/utils/kbn';

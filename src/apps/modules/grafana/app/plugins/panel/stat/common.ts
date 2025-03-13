@@ -7,8 +7,8 @@ import {
   PanelOptionsEditorBuilder,
   ReducerID,
   standardEditorsRegistry,
-} from '@grafana/data';
-import { SingleStatBaseOptions, VizOrientation } from '@grafana/schema';
+} from '@data/index';
+import { SingleStatBaseOptions, VizOrientation } from '@schema/index';
 
 export function addStandardDataReduceOptions<T extends SingleStatBaseOptions>(
   builder: PanelOptionsEditorBuilder<T>,

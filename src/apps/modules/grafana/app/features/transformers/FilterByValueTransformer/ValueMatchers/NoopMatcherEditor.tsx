@@ -1,4 +1,4 @@
-import { ValueMatcherID } from '@grafana/data';
+import { ValueMatcherID } from '@data/index';
 
 import { ValueMatcherUIRegistryItem } from './types';
 

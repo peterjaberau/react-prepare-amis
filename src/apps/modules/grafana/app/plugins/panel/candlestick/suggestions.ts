@@ -1,5 +1,5 @@
-import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@data/index';
+import { config } from '@runtime/index';
 import { SuggestionName } from 'app/types/suggestions';
 
 import { prepareCandlestickFields } from './fields';

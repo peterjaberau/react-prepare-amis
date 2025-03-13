@@ -2,8 +2,8 @@ import { css, cx } from '@emotion/css';
 import { Resizable } from 're-resizable';
 import { useEffect, useRef } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneObjectState, SceneObjectBase, SceneObject, sceneGraph, useSceneObjectState } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneObjectState, SceneObjectBase, SceneObject, sceneGraph, useSceneObjectState } from '@scenes/index';
 import {
   Badge,
   ElementSelectionContextItem,

@@ -1,4 +1,4 @@
-import { DataSourcePluginMeta, PluginType } from '@grafana/data';
+import { DataSourcePluginMeta, PluginType } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { DataSourcePluginCategory } from 'app/types';
 

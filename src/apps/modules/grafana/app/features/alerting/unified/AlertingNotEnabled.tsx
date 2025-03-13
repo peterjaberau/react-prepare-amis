@@ -1,4 +1,4 @@
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@data/index';
 import { Page } from 'app/core/components/Page/Page';
 
 import { withPageErrorBoundary } from './withPageErrorBoundary';

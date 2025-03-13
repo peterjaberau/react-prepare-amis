@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useCallback, useEffect, useState } from 'react';
 
-import { CoreApp, GrafanaTheme2 } from '@grafana/data';
+import { CoreApp, GrafanaTheme2 } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
-import { config, FetchError, getTemplateSrv, reportInteraction } from '@grafana/runtime';
+import { config, FetchError, getTemplateSrv, reportInteraction } from '@runtime/index';
 import { Alert, Button, HorizontalGroup, Select, useStyles2 } from '@grafana/ui';
 
 import { RawQuery } from '../_importedDependencies/datasources/prometheus/RawQuery';

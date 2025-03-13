@@ -1,6 +1,6 @@
 import { PropsWithChildren, useMemo } from 'react';
 
-import { VariableType, VariableHide } from '@grafana/data';
+import { VariableType, VariableHide } from '@data/index';
 import { Field, RadioButtonGroup } from '@grafana/ui';
 
 interface Props {

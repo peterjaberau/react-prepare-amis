@@ -12,8 +12,8 @@ import {
   PluginState,
   FieldType,
   Field,
-} from '@grafana/data';
-import { FrameGeometrySourceMode, MapLayerOptions } from '@grafana/schema';
+} from '@data/index';
+import { FrameGeometrySourceMode, MapLayerOptions } from '@schema/index';
 import { findField } from 'app/features/dimensions';
 import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
 import { getLocationMatchers } from 'app/features/geo/utils/location';

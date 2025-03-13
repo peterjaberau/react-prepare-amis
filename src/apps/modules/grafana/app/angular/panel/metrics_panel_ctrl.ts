@@ -12,7 +12,7 @@ import {
   TimeRange,
   toDataFrameDTO,
   toLegacyResponseData,
-} from '@grafana/data';
+} from '@data/index';
 import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
 import { ContextSrv } from 'app/core/services/context_srv';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { MouseEvent, useCallback } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 import { LoadingIndicator } from '@grafana/ui/src/components/PanelChrome/LoadingIndicator';
 import { t } from 'app/core/internationalization';

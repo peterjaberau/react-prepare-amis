@@ -9,7 +9,7 @@ import {
   HistoryItem,
   PanelData,
   getDataSourceRef,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv, reportInteraction } from '@runtime/index';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
 

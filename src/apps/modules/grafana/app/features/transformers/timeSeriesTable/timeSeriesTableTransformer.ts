@@ -13,7 +13,7 @@ import {
   reduceField,
   TransformationApplicabilityLevels,
   isTimeSeriesField,
-} from '@grafana/data';
+} from '@data/index';
 
 /**
  * Maps a refId to a Field which can contain

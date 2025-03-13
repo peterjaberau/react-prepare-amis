@@ -1,8 +1,8 @@
 import { isArray } from 'lodash';
 import { useState } from 'react';
 
-import { dataFrameToJSON, toDataFrame, toDataFrameDTO } from '@grafana/data';
-import { toDataQueryResponse } from '@grafana/runtime';
+import { dataFrameToJSON, toDataFrame, toDataFrameDTO } from '@data/index';
+import { toDataQueryResponse } from '@runtime/index';
 import { Alert, CodeEditor } from '@grafana/ui';
 
 import { EditorProps } from '../QueryEditor';

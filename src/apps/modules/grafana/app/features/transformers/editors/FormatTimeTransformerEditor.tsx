@@ -8,7 +8,7 @@ import {
   TransformerUIProps,
   getFieldDisplayName,
   PluginState,
-} from '@grafana/data';
+} from '@data/index';
 import { FormatTimeTransformerOptions } from '@grafana/data/src/transformations/transformers/formatTime';
 import { Select, InlineFieldRow, InlineField, Input } from '@grafana/ui';
 

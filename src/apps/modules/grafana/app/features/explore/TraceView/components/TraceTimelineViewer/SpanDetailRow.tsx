@@ -16,9 +16,9 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import { PureComponent } from 'react';
 
-import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@grafana/data';
+import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/index';
 import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
-import { TimeZone } from '@grafana/schema';
+import { TimeZone } from '@schema/index';
 import { Button, clearButtonStyles, stylesFactory, withTheme2 } from '@grafana/ui';
 
 import { autoColor } from '../Theme';

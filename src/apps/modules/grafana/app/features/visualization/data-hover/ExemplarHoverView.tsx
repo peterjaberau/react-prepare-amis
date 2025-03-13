@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, LinkModel } from '@grafana/data';
+import { GrafanaTheme2, LinkModel } from '@data/index';
 import { DataLinkButton, useStyles2 } from '@grafana/ui';
 import { VizTooltipRow } from '@grafana/ui/src/components/VizTooltip/VizTooltipRow';
 import { renderValue } from 'app/plugins/panel/geomap/utils/uiUtils';

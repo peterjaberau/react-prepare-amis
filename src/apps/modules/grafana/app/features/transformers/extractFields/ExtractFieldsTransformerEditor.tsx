@@ -8,7 +8,7 @@ import {
   SelectableValue,
   StandardEditorsRegistryItem,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineField, InlineFieldRow, Select, InlineSwitch, Input, Combobox, ComboboxOption } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 

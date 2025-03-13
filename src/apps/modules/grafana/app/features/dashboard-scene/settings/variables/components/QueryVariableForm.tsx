@@ -1,10 +1,10 @@
 import { FormEvent } from 'react';
 import { useAsync } from 'react-use';
 
-import { DataSourceInstanceSettings, SelectableValue, TimeRange } from '@grafana/data';
+import { DataSourceInstanceSettings, SelectableValue, TimeRange } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { QueryVariable } from '@grafana/scenes';
-import { DataSourceRef, VariableRefresh, VariableSort } from '@grafana/schema';
+import { QueryVariable } from '@scenes/index';
+import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';
 import { Field } from '@grafana/ui';
 import { QueryEditor } from 'app/features/dashboard-scene/settings/variables/components/QueryEditor';
 import { SelectionOptionsForm } from 'app/features/dashboard-scene/settings/variables/components/SelectionOptionsForm';

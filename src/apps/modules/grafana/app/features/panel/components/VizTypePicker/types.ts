@@ -1,4 +1,4 @@
-import { FieldConfigSource } from '@grafana/data';
+import { FieldConfigSource } from '@data/index';
 
 export interface VizTypeChangeDetails {
   pluginId: string;

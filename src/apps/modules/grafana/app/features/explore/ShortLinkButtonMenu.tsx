@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { IconName } from '@grafana/data';
+import { IconName } from '@data/index';
 import { reportInteraction, config } from '@runtime/index';
 import { ToolbarButton, Dropdown, Menu, MenuGroup, ButtonGroup } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

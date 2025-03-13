@@ -1,4 +1,4 @@
-import { DataSourceInstanceSettings, PanelPlugin } from '@grafana/data';
+import { DataSourceInstanceSettings, PanelPlugin } from '@data/index';
 import { Button, Stack } from '@grafana/ui';
 import { OldFolderPicker } from 'app/core/components/Select/OldFolderPicker';
 import { DataSourcePicker } from 'app/features/datasources/components/picker/DataSourcePicker';

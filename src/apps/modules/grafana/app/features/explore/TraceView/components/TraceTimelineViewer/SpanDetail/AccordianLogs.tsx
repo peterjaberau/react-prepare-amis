@@ -16,7 +16,7 @@ import { css } from '@emotion/css';
 import { sortBy as _sortBy } from 'lodash';
 import * as React from 'react';
 
-import { GrafanaTheme2, TraceKeyValuePair, TraceLog } from '@grafana/data';
+import { GrafanaTheme2, TraceKeyValuePair, TraceLog } from '@data/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 
 import { autoColor } from '../../Theme';

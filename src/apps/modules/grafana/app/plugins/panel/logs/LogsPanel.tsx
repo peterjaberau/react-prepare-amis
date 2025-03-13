@@ -29,9 +29,9 @@ import {
   urlUtil,
   LogSortOrderChangeEvent,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 import { convertRawToRange } from '@grafana/data/src/datetime/rangeutil';
-import { config, getAppEvents } from '@grafana/runtime';
+import { config, getAppEvents } from '@runtime/index';
 import { ScrollContainer, usePanelContext, useStyles2 } from '@grafana/ui';
 import { getFieldLinksForExplore } from 'app/features/explore/utils/links';
 import { InfiniteScroll } from 'app/features/logs/components/InfiniteScroll';

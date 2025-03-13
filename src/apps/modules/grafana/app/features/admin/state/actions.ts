@@ -1,6 +1,6 @@
 import { debounce } from 'lodash';
 
-import { dateTimeFormatTimeAgo } from '@grafana/data';
+import { dateTimeFormatTimeAgo } from '@data/index';
 import { featureEnabled, getBackendSrv, isFetchError, locationService } from '@runtime/index';
 import { FetchDataArgs } from '@grafana/ui';
 import config from 'app/core/config';

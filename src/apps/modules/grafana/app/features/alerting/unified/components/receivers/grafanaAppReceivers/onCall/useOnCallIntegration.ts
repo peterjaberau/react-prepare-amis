@@ -1,7 +1,7 @@
 import { produce } from 'immer';
 import { useCallback, useMemo } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { isFetchError } from '@runtime/index';
 import { getIrmIfPresentOrOnCallPluginId } from 'app/features/alerting/unified/utils/config';
 

@@ -1,4 +1,4 @@
-import { Scope, ScopeDashboardBinding } from '@grafana/data';
+import { Scope, ScopeDashboardBinding } from '@data/index';
 
 import { NodesMap, SelectedScope, SuggestedDashboardsFoldersMap, TreeScope } from './types';
 

@@ -10,8 +10,8 @@ import {
   MapLayerOptions,
   MapLayerRegistryItem,
   PanelData,
-} from '@grafana/data';
-import { ScaleDimensionConfig } from '@grafana/schema';
+} from '@data/index';
+import { ScaleDimensionConfig } from '@schema/index';
 import { getScaledDimension } from 'app/features/dimensions';
 import { ScaleDimensionEditor } from 'app/features/dimensions/editors';
 import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';

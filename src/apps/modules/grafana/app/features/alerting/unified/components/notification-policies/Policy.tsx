@@ -5,7 +5,7 @@ import * as React from 'react';
 import { FC, Fragment, ReactNode, useState } from 'react';
 import { useToggle } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import {
   Badge,

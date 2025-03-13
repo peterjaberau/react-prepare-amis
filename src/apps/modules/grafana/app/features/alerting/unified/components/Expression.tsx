@@ -3,7 +3,7 @@ import { languages as prismLanguages } from 'prismjs';
 import { FC, useMemo } from 'react';
 import { Editor } from 'slate-react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { promqlGrammar } from '@grafana/prometheus';
 import { SlatePrism, makeValue, useStyles2 } from '@grafana/ui';
 import LogqlSyntax from 'app/plugins/datasource/loki/syntax';

@@ -1,4 +1,4 @@
-import { reportInteraction } from '@grafana/runtime';
+import { reportInteraction } from '@runtime/index';
 
 /**
  * Loaded the first time a dashboard containing azure queries is loaded (not on every render)

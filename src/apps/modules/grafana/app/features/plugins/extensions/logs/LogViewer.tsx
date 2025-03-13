@@ -2,14 +2,14 @@ import { nanoid } from 'nanoid';
 import { ReactElement, useState } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { sceneUtils, VizConfigBuilders } from '@grafana/scenes';
+import { sceneUtils, VizConfigBuilders } from '@scenes/index';
 import {
   SceneContextProvider,
   useDataTransformer,
   useQueryRunner,
   VizGridLayout,
   VizPanel,
-} from '@grafana/scenes-react';
+} from '@scenes-react/index';
 import { Page } from 'app/core/components/Page/Page';
 
 import { LogFilter, LogViewFilters } from './LogViewFilters';

@@ -10,7 +10,7 @@ import {
   SceneComponentProps,
   SceneGridItemLike,
   useSceneObjectState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { GRID_COLUMN_COUNT } from 'app/core/constants';
 import { t } from 'app/core/internationalization';
 import DashboardEmpty from 'app/features/dashboard/dashgrid/DashboardEmpty';

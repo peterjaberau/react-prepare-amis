@@ -5,8 +5,8 @@ import {
   getFieldColorModeForField,
   GrafanaTheme2,
   getFieldConfigWithMinMax,
-} from '@grafana/data';
-import { ColorDimensionConfig } from '@grafana/schema';
+} from '@data/index';
+import { ColorDimensionConfig } from '@schema/index';
 
 import { DimensionSupplier } from './types';
 import { findField, getLastNotNullFieldValue } from './utils';

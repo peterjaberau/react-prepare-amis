@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 import { useToggle } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { EditorField, EditorRow } from '@grafana/plugin-ui';
 import { AutoSizeInput, RadioButtonGroup, useStyles2 } from '@grafana/ui';
 

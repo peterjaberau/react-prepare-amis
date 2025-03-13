@@ -1,6 +1,6 @@
 import { useCallback, useState, useEffect } from 'react';
 
-import { DataFrame, TraceLog } from '@grafana/data';
+import { DataFrame, TraceLog } from '@data/index';
 
 import { DetailState } from './components';
 import { TraceSpanReference } from './components/types/trace';

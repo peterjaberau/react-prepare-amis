@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@data/index';
 
 export interface PluginPageContextType {
   sectionNav: NavModel;

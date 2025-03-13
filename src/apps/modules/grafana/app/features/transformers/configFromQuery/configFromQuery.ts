@@ -9,7 +9,7 @@ import {
   getFieldMatcher,
   MatcherConfig,
   reduceField,
-} from '@grafana/data';
+} from '@data/index';
 
 import {
   evaluateFieldMappings,

@@ -26,7 +26,7 @@ import {
   VectorOp,
   BinOpExpr,
 } from '@grafana/lezer-logql';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 
 import { addDropToQuery, addLabelToQuery, getStreamSelectorPositions, NodePosition } from './modifyQuery';
 import { ErrorId } from './querybuilder/parsingUtils';

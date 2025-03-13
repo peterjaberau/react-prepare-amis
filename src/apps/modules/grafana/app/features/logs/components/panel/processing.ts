@@ -1,4 +1,4 @@
-import { dateTimeFormat, LogRowModel, LogsSortOrder } from '@grafana/data';
+import { dateTimeFormat, LogRowModel, LogsSortOrder } from '@data/index';
 
 import { escapeUnescapedString, sortLogRows } from '../../utils';
 

@@ -1,4 +1,4 @@
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 import { getPluginExtensions, isPluginExtensionLink } from '@runtime/index';
 import { Button, LinkButton, Stack, Text } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

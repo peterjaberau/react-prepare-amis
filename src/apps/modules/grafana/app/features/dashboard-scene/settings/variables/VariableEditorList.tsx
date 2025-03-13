@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { ReactElement } from 'react';
 
 import { reportInteraction } from '@runtime/index';
-import { SceneVariable, SceneVariableState } from '@grafana/scenes';
+import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { useStyles2, Stack, Button, EmptyState, TextLink } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

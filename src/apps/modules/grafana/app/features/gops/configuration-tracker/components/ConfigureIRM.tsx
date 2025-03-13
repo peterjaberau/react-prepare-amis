@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom-v5-compat';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconName, Text, useStyles2 } from '@grafana/ui';
 import { useURLSearchParams } from 'app/features/alerting/unified/hooks/useURLSearchParams';
 import { getFirstCompatibleDataSource } from 'app/features/alerting/unified/utils/datasource';

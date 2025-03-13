@@ -2,9 +2,9 @@ import { partial } from 'lodash';
 import { ReactElement, useEffect, useState } from 'react';
 import { Controller, DeepMap, FieldError, FieldErrors, useForm } from 'react-hook-form';
 
-import { SelectableValue, TimeRange } from '@grafana/data';
+import { SelectableValue, TimeRange } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Panel } from '@grafana/schema';
+import { Panel } from '@schema/index';
 import { Alert, Button, Field, Modal, RadioButtonGroup } from '@grafana/ui';
 import { DashboardPicker } from 'app/core/components/Select/DashboardPicker';
 import { contextSrv } from 'app/core/core';

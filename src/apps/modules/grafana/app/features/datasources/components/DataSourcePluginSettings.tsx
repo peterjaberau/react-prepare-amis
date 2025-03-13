@@ -1,7 +1,7 @@
 import { cloneDeep } from 'lodash';
 import { createElement, PureComponent } from 'react';
 
-import { DataSourcePluginMeta, DataSourceSettings } from '@grafana/data';
+import { DataSourcePluginMeta, DataSourceSettings } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
 
 import { GenericDataSourcePlugin } from '../types';

@@ -1,6 +1,6 @@
 import { ReactNode, useCallback } from 'react';
 
-import { DataFrameView, toDataFrame } from '@grafana/data';
+import { DataFrameView, toDataFrame } from '@data/index';
 import { Button, EmptyState } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 import { useKeyNavigationListener } from 'app/features/search/hooks/useSearchKeyboardSelection';

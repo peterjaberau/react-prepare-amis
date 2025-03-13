@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { isObject } from '@grafana/data';
+import { isObject } from '@data/index';
 import { getBackendSrv, isFetchError } from '@runtime/index';
 import {
   AlertManagerCortexConfig,

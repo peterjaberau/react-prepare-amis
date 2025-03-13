@@ -13,7 +13,7 @@ import {
   preProcessPanelData,
   rangeUtil,
   withLoadingIndicator,
-} from '@grafana/data';
+} from '@data/index';
 import { DataSourceWithBackend, FetchResponse, getDataSourceSrv, toDataQueryError } from '@runtime/index';
 import { t } from 'app/core/internationalization';
 import { BackendSrv, getBackendSrv } from 'app/core/services/backend_srv';

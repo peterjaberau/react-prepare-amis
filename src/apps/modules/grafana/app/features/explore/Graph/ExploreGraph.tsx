@@ -16,7 +16,7 @@ import {
   SplitOpen,
   ThresholdsConfig,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { PanelRenderer } from '@runtime/index';
 import {
   GraphDrawStyle,
@@ -26,7 +26,7 @@ import {
   TimeZone,
   TooltipDisplayMode,
   VizLegendOptions,
-} from '@grafana/schema';
+} from '@schema/index';
 import { PanelContext, PanelContextProvider, SeriesVisibilityChangeMode, useTheme2 } from '@grafana/ui';
 import { GraphFieldConfig } from 'app/plugins/panel/graph/types';
 import { defaultGraphConfig, getGraphFieldConfig } from 'app/plugins/panel/timeseries/config';

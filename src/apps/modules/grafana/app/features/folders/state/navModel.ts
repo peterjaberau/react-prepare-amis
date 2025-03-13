@@ -1,4 +1,4 @@
-import { NavModel, NavModelItem } from '@grafana/data';
+import { NavModel, NavModelItem } from '@data/index';
 import { config } from '@runtime/index';
 import { t } from 'app/core/internationalization';
 import { contextSrv } from 'app/core/services/context_srv';

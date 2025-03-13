@@ -12,7 +12,7 @@ import {
   intervalToAbbreviatedDurationString,
   isValidDate,
   parseDuration,
-} from '@grafana/data';
+} from '@data/index';
 import { config, isFetchError, locationService } from '@runtime/index';
 import {
   Alert,

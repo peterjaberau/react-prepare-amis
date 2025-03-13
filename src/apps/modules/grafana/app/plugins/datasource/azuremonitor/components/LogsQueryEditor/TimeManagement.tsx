@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineField, RadioButtonGroup, Select } from '@grafana/ui';
 
 import { AzureQueryEditorFieldProps } from '../../types';

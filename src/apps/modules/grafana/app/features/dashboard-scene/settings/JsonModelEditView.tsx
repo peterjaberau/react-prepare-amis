@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2, PageLayoutType } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase, sceneUtils } from '@grafana/scenes';
-import { Dashboard } from '@grafana/schema';
+import { GrafanaTheme2, PageLayoutType } from '@data/index';
+import { SceneComponentProps, SceneObjectBase, sceneUtils } from '@scenes/index';
+import { Dashboard } from '@schema/index';
 import { Alert, Box, Button, CodeEditor, Stack, useStyles2 } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 import { Trans } from 'app/core/internationalization';

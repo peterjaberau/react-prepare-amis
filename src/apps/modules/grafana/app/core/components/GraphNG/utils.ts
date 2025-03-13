@@ -2,7 +2,7 @@ import { DataFrame, Field, FieldType, outerJoinDataFrames, TimeRange } from '@da
 import { NULL_EXPAND, NULL_REMOVE, NULL_RETAIN } from '@data/index/src/transformations/transformers/joinDataFrames';
 import { applyNullInsertThreshold } from '@data/index/src/transformations/transformers/nulls/nullInsertThreshold';
 import { nullToUndefThreshold } from '@data/index/src/transformations/transformers/nulls/nullToUndefThreshold';
-import { GraphDrawStyle } from '@grafana/schema';
+import { GraphDrawStyle } from '@schema/index';
 
 import { XYFieldMatchers } from './types';
 

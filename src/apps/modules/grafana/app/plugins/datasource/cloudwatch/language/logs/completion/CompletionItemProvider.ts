@@ -1,4 +1,4 @@
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 import { Monaco, monacoTypes } from '@grafana/ui';
 
 import { type ResourcesAPI } from '../../../resources/ResourcesAPI';

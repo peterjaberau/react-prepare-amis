@@ -1,4 +1,4 @@
-import { AdHocVariableFilter } from '@grafana/data';
+import { AdHocVariableFilter } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 
 import { BreakdownLayoutType } from './Breakdown/types';

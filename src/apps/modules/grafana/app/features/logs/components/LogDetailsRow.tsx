@@ -13,7 +13,7 @@ import {
   LinkModel,
   LogLabelStatsModel,
   LogRowModel,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import {
   ClipboardButton,

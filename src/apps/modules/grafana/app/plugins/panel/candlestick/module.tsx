@@ -5,9 +5,9 @@ import {
   PanelOptionsEditorBuilder,
   PanelPlugin,
   SelectableValue,
-} from '@grafana/data';
-import { config } from '@grafana/runtime';
-import { GraphFieldConfig } from '@grafana/schema';
+} from '@data/index';
+import { config } from '@runtime/index';
+import { GraphFieldConfig } from '@schema/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 
 import { defaultGraphConfig, getGraphFieldConfig } from '../timeseries/config';

@@ -1,4 +1,4 @@
-import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneQueryRunner, VizPanel } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneQueryRunner, VizPanel } from '@scenes/index';
 
 import { PanelMenu } from '../../Menu/PanelMenu';
 import { getMetricDescription } from '../../helpers/MetricDatasourceHelper';

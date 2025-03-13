@@ -2,7 +2,7 @@ import { pick } from 'lodash';
 
 import { openai } from '@grafana/llm';
 import { config } from '@runtime/index';
-import { Panel } from '@grafana/schema';
+import { Panel } from '@schema/index';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { PanelModel } from '../../state/PanelModel';

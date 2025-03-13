@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconSize, useStyles2 } from '@grafana/ui';
 
 import { CollapseToggle } from '../../CollapseToggle';

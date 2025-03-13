@@ -11,9 +11,9 @@ import {
   MappingType,
   SpecialValueMatch,
   ThresholdsMode,
-} from '@grafana/data';
+} from '@data/index';
 import { alpha } from '@grafana/data/src/themes/colorManipulator';
-import { AxisPlacement, FieldColorModeId, ScaleDirection, ScaleOrientation, VisibilityMode } from '@grafana/schema';
+import { AxisPlacement, FieldColorModeId, ScaleDirection, ScaleOrientation, VisibilityMode } from '@schema/index';
 import { UPlotConfigBuilder } from '@grafana/ui';
 import { FacetedData, FacetSeries } from '@grafana/ui/src/components/uPlot/types';
 

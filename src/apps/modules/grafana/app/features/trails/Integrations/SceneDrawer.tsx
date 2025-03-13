@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase, SceneObject, SceneObjectState } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, SceneObjectBase, SceneObject, SceneObjectState } from '@scenes/index';
 import { Drawer, useStyles2 } from '@grafana/ui';
 import appEvents from 'app/core/app_events';
 import { ShowModalReactEvent } from 'app/types/events';

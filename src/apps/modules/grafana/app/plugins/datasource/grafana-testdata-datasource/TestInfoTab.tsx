@@ -1,7 +1,7 @@
 // Libraries
 import { PureComponent } from 'react';
 
-import { PluginConfigPageProps, DataSourcePluginMeta, DataSourceJsonData } from '@grafana/data';
+import { PluginConfigPageProps, DataSourcePluginMeta, DataSourceJsonData } from '@data/index';
 import { LinkButton } from '@grafana/ui';
 
 // Types

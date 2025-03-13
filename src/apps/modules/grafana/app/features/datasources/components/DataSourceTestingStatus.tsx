@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { HTMLAttributes } from 'react';
 
-import { DataSourceSettings as DataSourceSettingsType, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceSettings as DataSourceSettingsType, GrafanaTheme2 } from '@data/index';
 import { TestingStatus, config } from '@runtime/index';
 import { AlertVariant, Alert, useTheme2, Link, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

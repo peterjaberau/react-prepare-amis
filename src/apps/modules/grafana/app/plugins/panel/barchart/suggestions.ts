@@ -1,5 +1,5 @@
-import { VisualizationSuggestionsBuilder, VizOrientation } from '@grafana/data';
-import { LegendDisplayMode, StackingMode, VisibilityMode } from '@grafana/schema';
+import { VisualizationSuggestionsBuilder, VizOrientation } from '@data/index';
+import { LegendDisplayMode, StackingMode, VisibilityMode } from '@schema/index';
 import { SuggestionName } from 'app/types/suggestions';
 
 import { FieldConfig, Options } from './panelcfg.gen';

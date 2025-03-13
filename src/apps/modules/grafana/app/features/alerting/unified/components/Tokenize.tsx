@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Badge, useStyles2 } from '@grafana/ui';
 
 import { PopupCard } from './HoverCard';

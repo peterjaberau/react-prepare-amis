@@ -1,4 +1,4 @@
-import { TypedVariableModel } from '@grafana/data';
+import { TypedVariableModel } from '@data/index';
 import { config } from '@runtime/index';
 import {
   AnnotationQuery,
@@ -13,7 +13,7 @@ import {
   ThresholdsMode as ThresholdsModeV1,
   MappingType as MappingTypeV1,
   SpecialValueMatch as SpecialValueMatchV1,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   AnnotationQueryKind,
   DashboardV2Spec,

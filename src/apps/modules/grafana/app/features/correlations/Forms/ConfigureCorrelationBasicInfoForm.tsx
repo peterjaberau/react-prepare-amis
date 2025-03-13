@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { useFormContext } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Field, FieldSet, Input, TextArea, useStyles2 } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 

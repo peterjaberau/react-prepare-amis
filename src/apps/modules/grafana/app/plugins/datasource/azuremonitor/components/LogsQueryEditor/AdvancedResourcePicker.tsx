@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
 import { Icon, Input, Tooltip, Label, Button, useStyles2 } from '@grafana/ui';
 

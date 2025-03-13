@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import React from 'react';
 import { useMount } from 'react-use';
 
-import { GrafanaTheme2, SelectableValue, toOption } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
 import { Input, Select, Stack, useStyles2 } from '@grafana/ui';
 

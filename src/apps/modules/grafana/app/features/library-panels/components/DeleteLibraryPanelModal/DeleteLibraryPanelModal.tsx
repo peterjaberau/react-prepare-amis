@@ -1,6 +1,6 @@
 import { FC, useEffect, useMemo, useReducer } from 'react';
 
-import { LoadingState } from '@grafana/data';
+import { LoadingState } from '@data/index';
 import { Button, Modal, useStyles2 } from '@grafana/ui';
 
 import { getModalStyles } from '../../styles';

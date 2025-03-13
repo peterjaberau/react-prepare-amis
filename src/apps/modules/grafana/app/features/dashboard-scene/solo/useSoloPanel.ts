@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { VizPanel, UrlSyncManager } from '@grafana/scenes';
+import { VizPanel, UrlSyncManager } from '@scenes/index';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { DashboardRepeatsProcessedEvent } from '../scene/types/DashboardRepeatsProcessedEvent';

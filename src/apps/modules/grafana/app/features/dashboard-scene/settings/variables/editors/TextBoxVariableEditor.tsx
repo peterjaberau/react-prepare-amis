@@ -1,6 +1,6 @@
 import { FormEvent } from 'react';
 
-import { TextBoxVariable } from '@grafana/scenes';
+import { TextBoxVariable } from '@scenes/index';
 
 import { TextBoxVariableForm } from '../components/TextBoxVariableForm';
 

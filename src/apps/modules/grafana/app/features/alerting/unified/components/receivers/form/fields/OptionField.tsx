@@ -3,7 +3,7 @@ import { isEmpty } from 'lodash';
 import { FC, useEffect } from 'react';
 import { Controller, DeepMap, FieldError, useFormContext } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import {
   Checkbox,
   Field,

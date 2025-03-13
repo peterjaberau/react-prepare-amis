@@ -8,7 +8,7 @@ import {
   ScalarDimensionConfig,
   ScalarDimensionMode,
   TextDimensionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 import { DimensionSupplier } from 'app/features/dimensions';
 
 export enum GeometryTypeId {

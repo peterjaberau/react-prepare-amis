@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { isArray, isObject, isUndefined } from 'lodash';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, Icon } from '@grafana/ui';
 
 import { Diff } from './utils';

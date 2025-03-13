@@ -10,7 +10,7 @@ import {
   SynchronousDataTransformerInfo,
   fieldMatchers,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@data/index';
 
 export enum ModelType {
   linear = 'linear',

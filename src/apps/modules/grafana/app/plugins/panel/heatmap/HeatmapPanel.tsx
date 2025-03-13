@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useMemo, useRef, useState } from 'react';
 
-import { DashboardCursorSync, PanelProps, TimeRange } from '@grafana/data';
-import { PanelDataErrorView } from '@grafana/runtime';
-import { ScaleDistributionConfig } from '@grafana/schema';
+import { DashboardCursorSync, PanelProps, TimeRange } from '@data/index';
+import { PanelDataErrorView } from '@runtime/index';
+import { ScaleDistributionConfig } from '@schema/index';
 import {
   ScaleDistribution,
   TooltipPlugin2,

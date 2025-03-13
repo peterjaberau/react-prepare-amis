@@ -14,7 +14,7 @@ import {
 } from 'kbar';
 import { useEffect, useMemo, useRef } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { EmptyState, Icon, LoadingBar, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';

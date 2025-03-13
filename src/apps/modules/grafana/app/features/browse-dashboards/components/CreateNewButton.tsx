@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana/ui';
 import { useAppNotification } from 'app/core/copy/appNotification';

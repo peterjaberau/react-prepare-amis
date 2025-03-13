@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { createFieldConfigRegistry, SetFieldConfigOptionsArgs } from '@grafana/data';
-import { GraphFieldConfig, TableSparklineCellOptions } from '@grafana/schema';
+import { createFieldConfigRegistry, SetFieldConfigOptionsArgs } from '@data/index';
+import { GraphFieldConfig, TableSparklineCellOptions } from '@schema/index';
 import { VerticalGroup, Field, useStyles2 } from '@grafana/ui';
 import { defaultSparklineCellConfig } from '@grafana/ui/src/components/Table/SparklineCell';
 

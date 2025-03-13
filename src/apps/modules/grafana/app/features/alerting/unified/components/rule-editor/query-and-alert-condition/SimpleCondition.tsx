@@ -3,7 +3,7 @@ import { produce } from 'immer';
 import { Dispatch, FormEvent } from 'react';
 import { UnknownAction } from 'redux';
 
-import { GrafanaTheme2, PanelData, ReducerID, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, PanelData, ReducerID, SelectableValue } from '@data/index';
 import { InlineField, InlineFieldRow, Input, Select, Stack, Text, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { EvalFunction } from 'app/features/alerting/state/alertDef';

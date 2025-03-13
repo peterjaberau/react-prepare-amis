@@ -3,8 +3,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useUnmount } from 'react-use';
 import useMountedState from 'react-use/lib/useMountedState';
 
-import { Field } from '@grafana/data';
-import { config as grafanaConfig } from '@grafana/runtime';
+import { Field } from '@data/index';
+import { config as grafanaConfig } from '@runtime/index';
 
 import { createWorker, createMsaglWorker } from './createLayoutWorker';
 import { EdgeDatum, EdgeDatumLayout, NodeDatum } from './types';

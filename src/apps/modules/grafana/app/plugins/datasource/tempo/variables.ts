@@ -1,7 +1,7 @@
 import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { DataQueryRequest, CustomVariableSupport, MetricFindValue } from '@grafana/data';
+import { DataQueryRequest, CustomVariableSupport, MetricFindValue } from '@data/index';
 
 import { TempoVariableQuery, TempoVariableQueryEditor } from './VariableQueryEditor';
 import { TempoDatasource } from './datasource';

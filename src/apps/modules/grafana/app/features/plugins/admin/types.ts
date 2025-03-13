@@ -7,7 +7,7 @@ import {
   PluginDependencies,
   PluginErrorCode,
   WithAccessControlMetadata,
-} from '@grafana/data';
+} from '@data/index';
 import { IconName } from '@grafana/ui';
 import { StoreState, PluginsState } from 'app/types';
 

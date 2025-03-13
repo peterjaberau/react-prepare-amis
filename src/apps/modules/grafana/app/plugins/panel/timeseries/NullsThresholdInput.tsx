@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { rangeUtil } from '@grafana/data';
+import { rangeUtil } from '@data/index';
 import { Input } from '@grafana/ui';
 
 export enum InputPrefix {

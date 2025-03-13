@@ -1,6 +1,6 @@
-import { AppEvents, UrlQueryMap } from '@grafana/data';
+import { AppEvents, UrlQueryMap } from '@data/index';
 import { FetchError, getBackendSrv } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import appEvents from 'app/core/app_events';
 import { dashboardWatcher } from 'app/features/live/dashboard/dashboardWatcher';
 import { DeleteDashboardResponse } from 'app/features/manage-dashboards/types';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@grafana/data';
+import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
 import { Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { CombinedRule } from 'app/types/unified-alerting';

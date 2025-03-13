@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 
-import { AdHocVariableFilter, AdHocVariableModel, DataSourceRef } from '@grafana/data';
+import { AdHocVariableFilter, AdHocVariableModel, DataSourceRef } from '@data/index';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 import { StoreState, ThunkResult } from 'app/types';
 

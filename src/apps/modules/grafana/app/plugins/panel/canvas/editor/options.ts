@@ -1,6 +1,6 @@
 import { capitalize } from 'lodash';
 
-import { FieldType } from '@grafana/data';
+import { FieldType } from '@data/index';
 import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
 import { ConnectionDirection } from 'app/features/canvas/element';
 import { SVGElements } from 'app/features/canvas/runtime/element';

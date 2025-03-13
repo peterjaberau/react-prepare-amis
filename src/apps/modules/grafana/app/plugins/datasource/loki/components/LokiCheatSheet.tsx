@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { shuffle } from 'lodash';
 import { PureComponent } from 'react';
 
-import { GrafanaTheme2, QueryEditorHelpProps } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime';
+import { GrafanaTheme2, QueryEditorHelpProps } from '@data/index';
+import { reportInteraction } from '@runtime/index';
 import { Themeable2, withTheme2 } from '@grafana/ui';
 
 import LokiLanguageProvider from '../LanguageProvider';

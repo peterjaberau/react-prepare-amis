@@ -3,7 +3,7 @@ import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import Draggable, { DraggableEventHandler } from 'react-draggable';
 import { Resizable, ResizeCallbackData } from 'react-resizable';
 
-import { Dimensions2D, GrafanaTheme2 } from '@grafana/data';
+import { Dimensions2D, GrafanaTheme2 } from '@data/index';
 import { IconButton, Portal, useStyles2 } from '@grafana/ui';
 import store from 'app/core/store';
 import { Scene } from 'app/features/canvas/runtime/scene';

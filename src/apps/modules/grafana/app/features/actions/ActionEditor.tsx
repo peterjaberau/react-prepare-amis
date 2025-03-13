@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { memo } from 'react';
 
-import { Action, GrafanaTheme2, httpMethodOptions, HttpRequestMethod, VariableSuggestion } from '@grafana/data';
+import { Action, GrafanaTheme2, httpMethodOptions, HttpRequestMethod, VariableSuggestion } from '@data/index';
 import { Switch } from '@grafana/ui/';
 import { Field } from '@grafana/ui/src/components/Forms/Field';
 import { InlineField } from '@grafana/ui/src/components/Forms/InlineField';

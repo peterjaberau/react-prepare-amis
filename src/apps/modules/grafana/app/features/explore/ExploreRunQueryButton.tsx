@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ConnectedProps, connect } from 'react-redux';
 
 import { config, reportInteraction } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Button, Dropdown, Menu, ToolbarButton } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 import { useSelector } from 'app/types';

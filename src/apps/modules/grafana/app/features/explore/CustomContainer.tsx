@@ -1,4 +1,4 @@
-import { DataFrame, EventBus, LoadingState, SplitOpen, TimeRange } from '@grafana/data';
+import { DataFrame, EventBus, LoadingState, SplitOpen, TimeRange } from '@data/index';
 import { PanelRenderer } from '@runtime/index';
 import { PanelChrome, PanelContext, PanelContextProvider } from '@grafana/ui';
 

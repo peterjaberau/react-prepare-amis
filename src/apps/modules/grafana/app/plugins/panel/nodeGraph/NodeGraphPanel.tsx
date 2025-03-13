@@ -1,7 +1,7 @@
 import memoizeOne from 'memoize-one';
 import { useId } from 'react';
 
-import { PanelProps } from '@grafana/data';
+import { PanelProps } from '@data/index';
 
 import { useLinks } from '../../../features/explore/utils/links';
 

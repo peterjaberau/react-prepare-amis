@@ -1,11 +1,11 @@
-import { AdHocVariableFilter } from '@grafana/data';
+import { AdHocVariableFilter } from '@data/index';
 import {
   SceneComponentProps,
   SceneObjectBase,
   SceneObjectState,
   SceneTimeRange,
   SceneTimeRangeState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import { DataTrail } from '../DataTrail';
 

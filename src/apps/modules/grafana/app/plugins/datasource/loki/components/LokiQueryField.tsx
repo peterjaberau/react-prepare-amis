@@ -1,6 +1,6 @@
 import { PureComponent, ReactNode } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 
 import { LokiDatasource } from '../datasource';
 import { shouldRefreshLabels } from '../languageUtils';

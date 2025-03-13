@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import Skeleton from 'react-loading-skeleton';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Card, Stack, useStyles2, Tooltip, Icon } from '@grafana/ui';
 
 interface StatItem {

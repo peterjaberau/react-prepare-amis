@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';
 import {
   SceneComponentProps,
@@ -9,7 +9,7 @@ import {
   sceneGraph,
   VizPanel,
   SceneObjectRef,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Alert, Drawer, Tab, TabsBar } from '@grafana/ui';
 import { getDataSourceWithInspector } from 'app/features/dashboard/components/Inspector/hooks';
 import { supportsDataQuery } from 'app/features/dashboard/components/PanelEditor/utils';

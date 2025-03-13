@@ -9,8 +9,8 @@ import {
   BaseVariableModel,
   VariableHide,
   TypedVariableModel,
-} from '@grafana/data';
-export type { BaseVariableModel as VariableModel } from '@grafana/data';
+} from '@data/index';
+export type { BaseVariableModel as VariableModel } from '@data/index';
 import { TemplateSrv } from '@runtime/index';
 
 import { NEW_VARIABLE_ID } from './constants';

@@ -1,4 +1,4 @@
-import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
 
 import { ModalSceneObjectLike } from '../sharing/types';
 import { getDashboardSceneFor } from '../utils/utils';

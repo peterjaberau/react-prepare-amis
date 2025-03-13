@@ -1,15 +1,15 @@
 import { css } from '@emotion/css';
 import { Observable, map } from 'rxjs';
 
-import { DataFrame, Field, GrafanaTheme2 } from '@grafana/data';
+import { DataFrame, Field, GrafanaTheme2 } from '@data/index';
 import {
   CustomTransformOperator,
   PanelBuilders,
   SceneDataTransformer,
   SceneFlexItem,
   SceneQueryRunner,
-} from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+} from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 import { Link, useStyles2 } from '@grafana/ui';
 
 import { PANEL_STYLES } from '../../home/Insights';

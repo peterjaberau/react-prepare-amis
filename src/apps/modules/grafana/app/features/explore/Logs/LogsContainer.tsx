@@ -21,9 +21,9 @@ import {
   hasToggleableQueryFiltersSupport,
   DataSourceWithQueryModificationSupport,
   hasQueryModificationSupport,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Collapse } from '@grafana/ui';
 import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
 import { StoreState } from 'app/types';

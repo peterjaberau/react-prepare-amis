@@ -3,14 +3,14 @@ import { useMemo } from 'react';
 import { useObservable } from 'react-use';
 import { Observable, of } from 'rxjs';
 
-import { FieldConfigPropertyItem, StandardEditorProps, StandardEditorsRegistryItem, FrameMatcher } from '@grafana/data';
+import { FieldConfigPropertyItem, StandardEditorProps, StandardEditorsRegistryItem, FrameMatcher } from '@data/index';
 import {
   ScaleDimensionConfig,
   ResourceDimensionConfig,
   ColorDimensionConfig,
   TextDimensionConfig,
   ScalarDimensionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   ColorPicker,
   Field,

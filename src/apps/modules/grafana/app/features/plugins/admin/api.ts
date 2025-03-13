@@ -1,4 +1,4 @@
-import { PluginError, PluginMeta, renderMarkdown } from '@grafana/data';
+import { PluginError, PluginMeta, renderMarkdown } from '@data/index';
 import { getBackendSrv, isFetchError } from '@runtime/index';
 import { accessControlQueryParam } from 'app/core/utils/accessControl';
 

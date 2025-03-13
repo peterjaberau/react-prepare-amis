@@ -13,7 +13,7 @@ import {
   fieldMatchers,
   FieldConfigSource,
   DataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import { fieldMatchersUI, useStyles2, ValuePicker } from '@grafana/ui';
 import { getDataLinksVariableSuggestions } from 'app/features/panel/panellinks/link_srv';
 

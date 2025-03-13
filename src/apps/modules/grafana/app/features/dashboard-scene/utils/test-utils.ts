@@ -1,4 +1,4 @@
-import { VariableRefresh } from '@grafana/data';
+import { VariableRefresh } from '@data/index';
 import { FetchError } from '@runtime/index';
 import {
   DeepPartial,
@@ -11,7 +11,7 @@ import {
   SceneVariableSet,
   TestVariable,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DashboardLoaderSrv, setDashboardLoaderSrv } from 'app/features/dashboard/services/DashboardLoaderSrv';
 import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE } from 'app/features/variables/constants';
 import { DashboardDTO } from 'app/types';

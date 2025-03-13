@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import * as React from 'react';
 
-import { DataFrame, QueryResultMetaNotice } from '@grafana/data';
+import { DataFrame, QueryResultMetaNotice } from '@data/index';
 import { locationService } from '@runtime/index';
 
 import { PanelHeaderNotice } from './PanelHeaderNotice';

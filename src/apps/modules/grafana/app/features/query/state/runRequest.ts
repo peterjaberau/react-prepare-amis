@@ -17,7 +17,7 @@ import {
   LoadingState,
   PanelData,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { config, isMigrationHandler, migrateRequest, toDataQueryError } from '@runtime/index';
 import { isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
 import { backendSrv } from 'app/core/services/backend_srv';

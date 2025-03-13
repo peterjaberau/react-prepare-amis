@@ -12,7 +12,7 @@ import {
   ScopedVars,
   textUtil,
   ValueLinkConfig,
-} from '@grafana/data';
+} from '@data/index';
 import { BackendSrvRequest, getBackendSrv } from '@runtime/index';
 import { appEvents } from 'app/core/core';
 

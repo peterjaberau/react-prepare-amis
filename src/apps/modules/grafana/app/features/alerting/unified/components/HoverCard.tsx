@@ -3,7 +3,7 @@ import { Placement } from '@popperjs/core';
 import classnames from 'classnames';
 import { ReactElement, ReactNode, cloneElement, useRef } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Popover as GrafanaPopover, PopoverController, Stack, useStyles2 } from '@grafana/ui';
 
 export interface PopupCardProps {

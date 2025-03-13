@@ -1,4 +1,4 @@
-import { DataFrame, Field, FieldType } from '@grafana/data';
+import { DataFrame, Field, FieldType } from '@data/index';
 
 export enum SortDirection {
   Ascending,

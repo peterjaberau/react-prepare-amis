@@ -8,7 +8,7 @@ import {
   getDefaultRelativeTimeRange,
   getNextRefId,
   rangeUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { dataSource as expressionDatasource } from 'app/features/expressions/ExpressionDatasource';
 import { isExpressionQuery } from 'app/features/expressions/guards';

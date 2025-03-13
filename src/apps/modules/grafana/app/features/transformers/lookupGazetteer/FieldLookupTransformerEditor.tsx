@@ -9,7 +9,7 @@ import {
   TransformerUIProps,
   FieldType,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { InlineField, InlineFieldRow } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { GazetteerPathEditor, GazetteerPathEditorConfigSettings } from 'app/features/geo/editor/GazetteerPathEditor';

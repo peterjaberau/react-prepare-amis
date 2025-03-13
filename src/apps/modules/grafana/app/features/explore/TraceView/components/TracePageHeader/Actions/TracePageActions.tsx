@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2, CoreApp, DataFrame } from '@grafana/data';
+import { GrafanaTheme2, CoreApp, DataFrame } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Icon, useTheme2 } from '@grafana/ui';
 

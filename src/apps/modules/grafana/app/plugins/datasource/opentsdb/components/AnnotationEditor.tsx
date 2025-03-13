@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 import { InlineFormLabel, Input, InlineSwitch } from '@grafana/ui';
 
 import OpenTsDatasource from '../datasource';

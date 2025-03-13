@@ -1,4 +1,4 @@
-import { UrlQueryMap } from '@grafana/data';
+import { UrlQueryMap } from '@data/index';
 
 import { SECTION_STORAGE_KEY } from './constants';
 import { SearchState } from './types';

@@ -2,7 +2,7 @@ import { Map as OpenLayersMap } from 'ol';
 import { FeatureLike } from 'ol/Feature';
 import { Subject } from 'rxjs';
 
-import { getFrameMatchers, MapLayerHandler, MapLayerOptions, PanelData, textUtil } from '@grafana/data';
+import { getFrameMatchers, MapLayerHandler, MapLayerOptions, PanelData, textUtil } from '@data/index';
 import { config } from '@grafana/runtime/src';
 
 import { GeomapPanel } from '../GeomapPanel';

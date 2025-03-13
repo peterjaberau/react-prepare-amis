@@ -2,7 +2,7 @@ import { isEqual } from 'lodash';
 import { memo, useEffect, useMemo, useState } from 'react';
 import { usePrevious } from 'react-use';
 
-import { DataSourceApi, getDefaultTimeRange, LoadingState, PanelData, SelectableValue, TimeRange } from '@grafana/data';
+import { DataSourceApi, getDefaultTimeRange, LoadingState, PanelData, SelectableValue, TimeRange } from '@data/index';
 import {
   EditorRow,
   LabelFilters,
@@ -15,7 +15,7 @@ import {
   QueryBuilderLabelFilter,
   QueryBuilderOperation,
 } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 
 import { testIds } from '../../components/LokiQueryEditor';
 import { LokiDatasource } from '../../datasource';

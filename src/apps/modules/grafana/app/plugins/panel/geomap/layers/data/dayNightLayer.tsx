@@ -19,7 +19,7 @@ import {
   EventBus,
   DataHoverEvent,
   DataHoverClearEvent,
-} from '@grafana/data';
+} from '@data/index';
 
 export enum ShowTime {
   From = 'from',

@@ -20,9 +20,9 @@ import {
   ExploreUrlState,
   urlUtil,
   DataFrameType,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv, reportInteraction, VariableInterpolation } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { contextSrv } from 'app/core/services/context_srv';
 import { getTransformationVars } from 'app/features/correlations/transformations';
 import { parseDataplaneLogsFrame } from 'app/features/logs/logsFrame';

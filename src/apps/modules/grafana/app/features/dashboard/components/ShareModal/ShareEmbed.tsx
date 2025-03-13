@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useState } from 'react';
 
-import { RawTimeRange, TimeRange } from '@grafana/data';
+import { RawTimeRange, TimeRange } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, ClipboardButton, Field, Label, Modal, Stack, Switch, TextArea } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

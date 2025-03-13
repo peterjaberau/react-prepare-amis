@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Page } from 'app/core/components/Page/Page';
 import { t, Trans } from 'app/core/internationalization';

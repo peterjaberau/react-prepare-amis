@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import memoizeOne from 'memoize-one';
 
-import { CoreApp, GrafanaTheme2, LogRowModel } from '@grafana/data';
+import { CoreApp, GrafanaTheme2, LogRowModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { IconButton, Themeable2 } from '@grafana/ui';
 

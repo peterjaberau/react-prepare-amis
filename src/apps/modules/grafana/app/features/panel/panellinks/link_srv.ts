@@ -18,9 +18,9 @@ import {
   VariableOrigin,
   VariableSuggestion,
   VariableSuggestionsScope,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { DashboardLink, VariableFormatID } from '@grafana/schema';
+import { DashboardLink, VariableFormatID } from '@schema/index';
 import { getConfig } from 'app/core/config';
 
 const timeRangeVars = [

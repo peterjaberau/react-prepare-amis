@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { DataQuery, getDataSourceRef } from '@grafana/data';
+import { DataQuery, getDataSourceRef } from '@data/index';
 import { locationService } from '@runtime/index';
 import { storeLastUsedDataSourceInLocalStorage } from 'app/features/datasources/components/picker/utils';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';

@@ -1,5 +1,5 @@
-import { DataFrame, DataLink, DataQueryRequest, DataQueryResponse, ScopedVars, TimeRange } from '@grafana/data';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { DataFrame, DataLink, DataQueryRequest, DataQueryResponse, ScopedVars, TimeRange } from '@data/index';
+import { getDataSourceSrv } from '@runtime/index';
 
 import { AwsUrl, encodeUrl } from '../aws_url';
 import { CloudWatchLogsQuery, CloudWatchQuery } from '../types';

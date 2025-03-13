@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, FetchError } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import { Button, ConfirmModal, Modal, useStyles2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

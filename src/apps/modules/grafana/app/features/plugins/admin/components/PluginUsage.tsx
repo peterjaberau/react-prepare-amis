@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { of } from 'rxjs';
 
-import { GrafanaTheme2, PluginMeta, PluginType } from '@grafana/data';
+import { GrafanaTheme2, PluginMeta, PluginType } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, Spinner, useStyles2 } from '@grafana/ui';
 import EmptyListCTA from 'app/core/components/EmptyListCTA/EmptyListCTA';

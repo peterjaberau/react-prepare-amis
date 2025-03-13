@@ -10,7 +10,7 @@ import {
   restoreCustomOverrideRules,
   PluginType,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import {
   DeepPartial,
@@ -20,7 +20,7 @@ import {
   SceneObjectState,
   VizPanel,
   sceneGraph,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import {
   Button,
   Card,

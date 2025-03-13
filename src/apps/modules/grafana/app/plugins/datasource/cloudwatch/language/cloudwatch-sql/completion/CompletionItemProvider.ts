@@ -1,6 +1,6 @@
 import { uniq } from 'lodash';
 
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 import type { Monaco, monacoTypes } from '@grafana/ui';
 
 import { ResourcesAPI } from '../../../resources/ResourcesAPI';

@@ -1,9 +1,9 @@
 import { css, cx } from '@emotion/css';
 import React, { CSSProperties, useEffect } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, useChromeHeaderHeight } from '@runtime/index';
-import { useSceneObjectState } from '@grafana/scenes';
+import { useSceneObjectState } from '@scenes/index';
 import { Badge, ElementSelectionContext, useStyles2 } from '@grafana/ui';
 import NativeScrollbar, { DivScrollElement } from 'app/core/components/NativeScrollbar';
 

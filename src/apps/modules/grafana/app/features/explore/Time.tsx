@@ -1,4 +1,4 @@
-import { toDuration } from '@grafana/data';
+import { toDuration } from '@data/index';
 
 export interface TimeProps {
   timeInMs: number;

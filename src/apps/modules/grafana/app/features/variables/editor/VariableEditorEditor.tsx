@@ -3,7 +3,7 @@ import { FormEvent, PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { GrafanaTheme2, LoadingState, SelectableValue, VariableHide, VariableType } from '@grafana/data';
+import { GrafanaTheme2, LoadingState, SelectableValue, VariableHide, VariableType } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, HorizontalGroup, Icon, Themeable2, withTheme2 } from '@grafana/ui';
 

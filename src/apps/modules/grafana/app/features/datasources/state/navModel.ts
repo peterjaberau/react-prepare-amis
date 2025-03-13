@@ -1,4 +1,4 @@
-import { DataSourceSettings, PluginType, PluginInclude, NavModel, NavModelItem } from '@grafana/data';
+import { DataSourceSettings, PluginType, PluginInclude, NavModel, NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { ProBadge } from 'app/core/components/Upgrade/ProBadge';
 import config from 'app/core/config';

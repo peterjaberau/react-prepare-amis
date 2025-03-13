@@ -9,9 +9,9 @@ import {
   getFieldDisplayValues,
   NumericRange,
   PanelProps,
-} from '@grafana/data';
+} from '@data/index';
 import { findNumericFieldMinMax } from '@grafana/data/src/field/fieldOverrides';
-import { BigValueTextMode, BigValueGraphMode } from '@grafana/schema';
+import { BigValueTextMode, BigValueGraphMode } from '@schema/index';
 import { BigValue, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
 import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
 import { config } from 'app/core/config';

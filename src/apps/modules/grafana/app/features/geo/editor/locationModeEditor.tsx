@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { StandardEditorProps, DataFrame, GrafanaTheme2 } from '@grafana/data';
-import { FrameGeometrySource, FrameGeometrySourceMode } from '@grafana/schema';
+import { StandardEditorProps, DataFrame, GrafanaTheme2 } from '@data/index';
+import { FrameGeometrySource, FrameGeometrySourceMode } from '@schema/index';
 import { Alert, HorizontalGroup, Icon, Select, useStyles2 } from '@grafana/ui';
 
 import { FrameGeometryField, getGeometryField, getLocationMatchers } from '../utils/location';

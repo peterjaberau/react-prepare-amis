@@ -9,7 +9,7 @@ import {
   locationUtil,
   DataSourceGetTagKeysOptions,
   DataSourceGetTagValuesOptions,
-} from '@grafana/data';
+} from '@data/index';
 import { config, locationService, RefreshEvent } from '@runtime/index';
 import {
   sceneGraph,
@@ -22,8 +22,8 @@ import {
   SceneVariable,
   SceneVariableDependencyConfigLike,
   VizPanel,
-} from '@grafana/scenes';
-import { Dashboard, DashboardLink, LibraryPanel } from '@grafana/schema';
+} from '@scenes/index';
+import { Dashboard, DashboardLink, LibraryPanel } from '@schema/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 import appEvents from 'app/core/app_events';
 import { ScrollRefElement } from 'app/core/components/NativeScrollbar';

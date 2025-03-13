@@ -25,10 +25,10 @@ import {
   LinkModel,
   TraceKeyValuePair,
   TraceLog,
-} from '@grafana/data';
+} from '@data/index';
 import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
 import { config, locationService, reportInteraction } from '@runtime/index';
-import { TimeZone } from '@grafana/schema';
+import { TimeZone } from '@schema/index';
 import { DataLinkButton, Divider, Icon, TextArea, useStyles2 } from '@grafana/ui';
 import { RelatedProfilesTitle } from '@grafana-plugins/tempo/resultTransformer';
 

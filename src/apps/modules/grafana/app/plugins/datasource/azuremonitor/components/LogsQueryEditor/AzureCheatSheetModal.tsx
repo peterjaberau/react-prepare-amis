@@ -1,4 +1,4 @@
-import { CoreApp } from '@grafana/data';
+import { CoreApp } from '@data/index';
 import { Modal } from '@grafana/ui';
 
 import AzureLogAnalyticsDatasource from '../../azure_log_analytics/azure_log_analytics_datasource';

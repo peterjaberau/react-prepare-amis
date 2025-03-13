@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { cloneDeep, extend } from 'lodash';
 import { PureComponent } from 'react';
 
-import { PluginMeta, AppPlugin, deprecationWarning } from '@grafana/data';
+import { PluginMeta, AppPlugin, deprecationWarning } from '@data/index';
 import { AngularComponent, getAngularLoader, getBackendSrv } from '@runtime/index';
 import { Button } from '@grafana/ui';
 

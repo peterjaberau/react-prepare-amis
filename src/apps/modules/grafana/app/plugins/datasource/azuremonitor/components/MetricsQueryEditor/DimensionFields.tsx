@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { SelectableValue, DataFrame, PanelData, Labels } from '@grafana/data';
+import { SelectableValue, DataFrame, PanelData, Labels } from '@data/index';
 import { EditorList, AccessoryButton } from '@grafana/plugin-ui';
 import { Select, HorizontalGroup, MultiSelect } from '@grafana/ui';
 

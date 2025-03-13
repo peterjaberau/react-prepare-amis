@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { PluginErrorCode } from '@grafana/data';
+import { PluginErrorCode } from '@data/index';
 import { Alert } from '@grafana/ui';
 
 import { CatalogPlugin } from '../types';

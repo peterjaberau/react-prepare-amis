@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { isObject } from '@grafana/data';
+import { isObject } from '@data/index';
 import { FetchResponse, getBackendSrv } from '@runtime/index';
 import { RulerDataSourceConfig } from 'app/types/unified-alerting';
 import { RulerRuleGroupDTO, RulerRulesConfigDTO } from 'app/types/unified-alerting-dto';

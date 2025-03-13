@@ -1,4 +1,4 @@
-import { DataQuery, TraceKeyValuePair, TraceLog } from '@grafana/data';
+import { DataQuery, TraceKeyValuePair, TraceLog } from '@data/index';
 
 export type TraceLink = {
   url: string;

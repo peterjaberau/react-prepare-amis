@@ -15,7 +15,7 @@
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
-import { Field, GrafanaTheme2, LinkModel } from '@grafana/data';
+import { Field, GrafanaTheme2, LinkModel } from '@data/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 
 import { autoColor } from '../../Theme';

@@ -1,6 +1,6 @@
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { BackendSrvRequest } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import { appEvents } from 'app/core/app_events';
 import { t } from 'app/core/internationalization';
 import { getBackendSrv } from 'app/core/services/backend_srv';

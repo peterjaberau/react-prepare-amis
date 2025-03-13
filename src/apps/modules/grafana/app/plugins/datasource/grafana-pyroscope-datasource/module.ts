@@ -1,4 +1,4 @@
-import { DataSourcePlugin } from '@grafana/data';
+import { DataSourcePlugin } from '@data/index';
 
 import { ConfigEditor } from './ConfigEditor';
 import { QueryEditor } from './QueryEditor/QueryEditor';

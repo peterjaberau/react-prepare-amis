@@ -1,4 +1,4 @@
-import { StackingMode } from '@grafana/schema';
+import { StackingMode } from '@schema/index';
 
 import { FieldConfig } from './panelcfg.gen';
 

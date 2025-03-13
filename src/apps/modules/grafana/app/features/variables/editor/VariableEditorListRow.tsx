@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Draggable } from '@hello-pangea/dnd';
 import { ReactElement } from 'react';
 
-import { GrafanaTheme2, TypedVariableModel } from '@grafana/data';
+import { GrafanaTheme2, TypedVariableModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, Icon, IconButton, useStyles2, useTheme2 } from '@grafana/ui';
 

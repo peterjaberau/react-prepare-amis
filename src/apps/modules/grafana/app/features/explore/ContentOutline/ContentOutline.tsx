@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { useToggle, useScroll } from 'react-use';
 
-import { GrafanaTheme2, store } from '@grafana/data';
+import { GrafanaTheme2, store } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { useStyles2, PanelContainer, ScrollContainer } from '@grafana/ui';
 

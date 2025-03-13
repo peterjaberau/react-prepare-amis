@@ -2,8 +2,8 @@ import { isEqual } from 'lodash';
 import { memo, SyntheticEvent, useCallback, useEffect, useId, useState } from 'react';
 import { usePrevious } from 'react-use';
 
-import { CoreApp, LoadingState } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { CoreApp, LoadingState } from '@data/index';
+import { selectors } from '@selectors/index';
 import {
   EditorHeader,
   EditorRows,
@@ -12,7 +12,7 @@ import {
   QueryHeaderSwitch,
   QueryEditorMode,
 } from '@grafana/plugin-ui';
-import { config, reportInteraction } from '@grafana/runtime';
+import { config, reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Space, Stack } from '@grafana/ui';
 
 import { LabelBrowserModal } from '../querybuilder/components/LabelBrowserModal';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { PluginErrorCode } from '@grafana/data';
+import { PluginErrorCode } from '@data/index';
 import { Badge } from '@grafana/ui';
 
 type Props = { error?: PluginErrorCode };

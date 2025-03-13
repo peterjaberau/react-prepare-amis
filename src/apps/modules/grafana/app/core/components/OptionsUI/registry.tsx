@@ -30,7 +30,7 @@ import {
   DataLinksFieldConfigSettings,
 } from '@data/index';
 import { actionsOverrideProcessor } from '@data/index/src/field/overrides/processors';
-import { FieldConfig } from '@grafana/schema';
+import { FieldConfig } from '@schema/index';
 import { RadioButtonGroup, TimeZonePicker, Switch } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { ThresholdsValueEditor } from 'app/features/dimensions/editors/ThresholdsEditor/thresholds';

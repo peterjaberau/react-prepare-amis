@@ -6,9 +6,9 @@ import {
   DataSourcePluginMeta,
   PluginLoadingStrategy,
   PluginMeta,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 
 import { GenericDataSourcePlugin } from '../datasources/types';
 

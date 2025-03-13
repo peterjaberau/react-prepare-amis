@@ -1,8 +1,8 @@
 import { Component } from 'react';
 
-import { TimeRange, RawTimeRange, dateTimeForTimeZone, dateMath } from '@grafana/data';
+import { TimeRange, RawTimeRange, dateTimeForTimeZone, dateMath } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { TimeZone } from '@grafana/schema';
+import { TimeZone } from '@schema/index';
 import { TimePickerWithHistory } from 'app/core/components/TimePicker/TimePickerWithHistory';
 import { getShiftedTimeRange, getZoomedTimeRange } from 'app/core/utils/timePicker';
 

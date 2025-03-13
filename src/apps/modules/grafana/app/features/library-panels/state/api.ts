@@ -1,7 +1,7 @@
 import { lastValueFrom } from 'rxjs';
 
-import { VizPanel } from '@grafana/scenes';
-import { LibraryPanel, defaultDashboard } from '@grafana/schema';
+import { VizPanel } from '@scenes/index';
+import { LibraryPanel, defaultDashboard } from '@schema/index';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 import { DashboardGridItem } from 'app/features/dashboard-scene/scene/layout-default/DashboardGridItem';
 import { vizPanelToPanel } from 'app/features/dashboard-scene/serialization/transformSceneToSaveModel';

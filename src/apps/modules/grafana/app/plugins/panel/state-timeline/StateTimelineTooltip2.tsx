@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { FieldType, TimeRange } from '@grafana/data';
+import { FieldType, TimeRange } from '@data/index';
 import { SortOrder } from '@grafana/schema/dist/esm/common/common.gen';
 import { TooltipDisplayMode } from '@grafana/ui';
 import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';

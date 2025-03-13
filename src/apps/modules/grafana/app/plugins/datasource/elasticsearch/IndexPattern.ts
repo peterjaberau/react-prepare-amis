@@ -1,4 +1,4 @@
-import { toUtc, dateTime, DateTime, DurationUnit } from '@grafana/data';
+import { toUtc, dateTime, DateTime, DurationUnit } from '@data/index';
 
 import { Interval } from './types';
 

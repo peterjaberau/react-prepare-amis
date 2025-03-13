@@ -1,6 +1,6 @@
 import { from, map, of, switchMap } from 'rxjs';
 
-import { DataFrame, toLiveChannelId, StreamingDataFrame } from '@grafana/data';
+import { DataFrame, toLiveChannelId, StreamingDataFrame } from '@data/index';
 import { BackendSrv, GrafanaLiveSrv, toDataQueryResponse } from '@runtime/index';
 import {
   standardStreamOptionsProvider,

@@ -1,4 +1,4 @@
-import { NavLinkDTO } from '@grafana/data';
+import { NavLinkDTO } from '@data/index';
 
 export function isSoloRoute(path: string): boolean {
   return /(d-solo|dashboard-solo)/.test(path?.toLowerCase());

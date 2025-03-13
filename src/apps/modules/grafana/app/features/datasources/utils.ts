@@ -1,4 +1,4 @@
-import { DataSourceJsonData, DataSourceSettings, urlUtil, locationUtil } from '@grafana/data';
+import { DataSourceJsonData, DataSourceSettings, urlUtil, locationUtil } from '@data/index';
 
 export const constructDataSourceExploreUrl = (dataSource: DataSourceSettings<DataSourceJsonData, {}>) => {
   const exploreState = JSON.stringify({ datasource: dataSource.name, context: 'explore' });

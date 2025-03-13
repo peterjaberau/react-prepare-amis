@@ -9,7 +9,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { createOrderFieldsComparer } from '@grafana/data/src/transformations/transformers/order';
 import { OrganizeFieldsTransformerOptions } from '@grafana/data/src/transformations/transformers/organize';
 import {

@@ -7,7 +7,7 @@ import {
   getFieldMatcher,
   DataTransformContext,
   FieldMatcher,
-} from '@grafana/data';
+} from '@data/index';
 import { getMatcherConfig } from '@grafana/data/src/transformations/transformers/filterByName';
 import { noopTransformer } from '@grafana/data/src/transformations/transformers/noop';
 

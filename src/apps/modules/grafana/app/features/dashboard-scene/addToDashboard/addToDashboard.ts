@@ -1,6 +1,6 @@
-import { locationUtil, TimeRange } from '@grafana/data';
+import { locationUtil, TimeRange } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { Panel } from '@grafana/schema';
+import { Panel } from '@schema/index';
 import store from 'app/core/store';
 import { DASHBOARD_SCHEMA_VERSION } from 'app/features/dashboard/state/DashboardMigrator';
 import { DASHBOARD_FROM_LS_KEY, DashboardDTO } from 'app/types';

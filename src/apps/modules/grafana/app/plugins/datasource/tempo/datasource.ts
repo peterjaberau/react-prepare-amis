@@ -22,7 +22,7 @@ import {
   SelectableValue,
   TestDataSourceResponse,
   urlUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { NodeGraphOptions, SpanBarOptions, TraceToLogsOptions } from '@grafana/o11y-ds-frontend';
 import {
   BackendSrvRequest,
@@ -33,8 +33,8 @@ import {
   getTemplateSrv,
   reportInteraction,
   TemplateSrv,
-} from '@grafana/runtime';
-import { BarGaugeDisplayMode, TableCellDisplayMode, VariableFormatID } from '@grafana/schema';
+} from '@runtime/index';
+import { BarGaugeDisplayMode, TableCellDisplayMode, VariableFormatID } from '@schema/index';
 
 import { generateQueryFromAdHocFilters, getTagWithoutScope, interpolateFilters } from './SearchTraceQLEditor/utils';
 import { TempoVariableQuery, TempoVariableQueryType } from './VariableQueryEditor';

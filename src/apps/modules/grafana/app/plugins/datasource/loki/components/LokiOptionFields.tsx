@@ -4,8 +4,8 @@ import { memo } from 'react';
 import * as React from 'react';
 
 // Types
-import { SelectableValue } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { SelectableValue } from '@data/index';
+import { config } from '@runtime/index';
 import { InlineFormLabel, RadioButtonGroup, InlineField, Input, Select, Stack } from '@grafana/ui';
 
 import { getLokiQueryType } from '../queryUtils';

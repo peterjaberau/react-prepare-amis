@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { capitalize } from 'lodash';
 
-import { DataFrame, getFieldDisplayName, GrafanaTheme2, ReducerID, SelectableValue } from '@grafana/data';
+import { DataFrame, getFieldDisplayName, GrafanaTheme2, ReducerID, SelectableValue } from '@data/index';
 import { Select, StatsPicker, useStyles2 } from '@grafana/ui';
 
 import {

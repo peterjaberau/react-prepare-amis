@@ -1,8 +1,8 @@
 /* eslint-disable */
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneObjectRef } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneObjectRef } from '@scenes/index';
 import { Box, Button, CodeEditor, Drawer, useStyles2 } from '@grafana/ui';
 
 import { DashboardScene } from '../scene/DashboardScene';

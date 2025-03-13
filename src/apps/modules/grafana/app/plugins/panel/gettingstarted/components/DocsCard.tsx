@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime';
+import { GrafanaTheme2 } from '@data/index';
+import { reportInteraction } from '@runtime/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 
 import { Card } from '../types';

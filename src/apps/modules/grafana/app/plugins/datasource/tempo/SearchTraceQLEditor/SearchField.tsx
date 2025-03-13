@@ -3,9 +3,9 @@ import { uniq } from 'lodash';
 import { useState, useMemo } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
-import { FetchError, getTemplateSrv, isFetchError } from '@grafana/runtime';
+import { FetchError, getTemplateSrv, isFetchError } from '@runtime/index';
 import { Select, HorizontalGroup, useStyles2, InputActionMeta } from '@grafana/ui';
 
 import { TraceqlFilter, TraceqlSearchScope } from '../dataquery.gen';

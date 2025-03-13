@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PropsWithChildren, ReactNode } from 'react';
 import { useToggle } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconButton, Stack, Text, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

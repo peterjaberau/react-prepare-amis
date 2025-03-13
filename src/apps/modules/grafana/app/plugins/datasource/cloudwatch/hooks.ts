@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useAsyncFn, useDeepCompareEffect } from 'react-use';
 
-import { SelectableValue, toOption } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { SelectableValue, toOption } from '@data/index';
+import { config } from '@runtime/index';
 
 import { CloudWatchDatasource } from './datasource';
 import { ResourcesAPI } from './resources/ResourcesAPI';

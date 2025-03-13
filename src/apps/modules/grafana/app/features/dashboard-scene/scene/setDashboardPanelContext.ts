@@ -1,7 +1,7 @@
-import { AnnotationChangeEvent, AnnotationEventUIModel, CoreApp, DataFrame } from '@grafana/data';
+import { AnnotationChangeEvent, AnnotationEventUIModel, CoreApp, DataFrame } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { AdHocFiltersVariable, dataLayers, sceneGraph, sceneUtils, VizPanel } from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+import { AdHocFiltersVariable, dataLayers, sceneGraph, sceneUtils, VizPanel } from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 import { AdHocFilterItem, PanelContext } from '@grafana/ui';
 import { deleteAnnotation, saveAnnotation, updateAnnotation } from 'app/features/annotations/api';
 

@@ -4,7 +4,7 @@ import {
   FieldType,
   MutableDataFrame,
   NodeGraphDataFrameFieldNames as Fields,
-} from '@grafana/data';
+} from '@data/index';
 
 import { JaegerServiceDependency } from './types';
 

@@ -9,7 +9,7 @@ import {
   GrafanaTheme2,
   standardTransformersRegistry,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { Card, Drawer, FilterPill, IconButton, Input, Switch, useStyles2 } from '@grafana/ui';
 import config from 'app/core/config';
 import { PluginStateInfo } from 'app/features/plugins/components/PluginStateInfo';

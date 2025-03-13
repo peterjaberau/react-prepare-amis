@@ -1,7 +1,7 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import { HistoryItem } from '@grafana/data';
-import { DataQuery } from '@grafana/schema';
+import { HistoryItem } from '@data/index';
+import { DataQuery } from '@schema/index';
 import {
   addToRichHistory,
   deleteAllFromRichHistory,

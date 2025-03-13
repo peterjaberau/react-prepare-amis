@@ -1,4 +1,4 @@
-import { TypedVariableModel } from '@grafana/data';
+import { TypedVariableModel } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import {
   AdHocFiltersVariable,
@@ -11,7 +11,7 @@ import {
   SceneVariable,
   SceneVariableSet,
   TextBoxVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 
 import { SnapshotVariable } from '../serialization/custom-variables/SnapshotVariable';

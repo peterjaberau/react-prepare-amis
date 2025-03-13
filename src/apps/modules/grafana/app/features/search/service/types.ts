@@ -1,4 +1,4 @@
-import { DataFrameView, SelectableValue } from '@grafana/data';
+import { DataFrameView, SelectableValue } from '@data/index';
 import { TermCount } from 'app/core/components/TagFilter/TagFilter';
 import { PermissionLevelString } from 'app/types';
 

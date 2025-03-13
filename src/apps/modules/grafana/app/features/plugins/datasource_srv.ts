@@ -6,7 +6,7 @@ import {
   DataSourceSelectItem,
   ScopedVars,
   matchPluginId,
-} from '@grafana/data';
+} from '@data/index';
 import {
   DataSourceSrv as DataSourceService,
   getBackendSrv,

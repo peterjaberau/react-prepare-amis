@@ -1,6 +1,6 @@
 import { Observable, of } from 'rxjs';
 
-import { AnnotationEvent } from '@grafana/data';
+import { AnnotationEvent } from '@data/index';
 
 import { DashboardModel } from '../../../dashboard/state/DashboardModel';
 

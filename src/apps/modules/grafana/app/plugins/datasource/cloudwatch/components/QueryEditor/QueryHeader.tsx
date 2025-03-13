@@ -1,6 +1,6 @@
-import { CoreApp, LoadingState, QueryEditorProps, SelectableValue } from '@grafana/data';
+import { CoreApp, LoadingState, QueryEditorProps, SelectableValue } from '@data/index';
 import { EditorHeader, InlineSelect, FlexItem } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { Badge, Button } from '@grafana/ui';
 
 import { CloudWatchDatasource } from '../../datasource';

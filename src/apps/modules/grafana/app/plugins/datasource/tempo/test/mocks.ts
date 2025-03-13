@@ -1,5 +1,5 @@
-import { DataSourceInstanceSettings, PluginType, toUtc } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
+import { DataSourceInstanceSettings, PluginType, toUtc } from '@data/index';
+import { TemplateSrv } from '@runtime/index';
 
 import { TempoDatasource } from '../datasource';
 import { TempoJsonData } from '../types';

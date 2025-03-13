@@ -1,6 +1,6 @@
-import { ThresholdsMode } from '@grafana/data';
-import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+import { ThresholdsMode } from '@data/index';
+import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 
 import { PANEL_STYLES } from '../../../home/Insights';
 import { InsightsMenuButton } from '../../InsightsMenuButton';

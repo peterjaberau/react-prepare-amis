@@ -1,6 +1,6 @@
 import { Context, createContext, PropsWithChildren, useCallback, useContext, useEffect, useState } from 'react';
 
-import { TimeRange } from '@grafana/data';
+import { TimeRange } from '@data/index';
 
 import { ElasticDatasource } from '../../datasource';
 import { combineReducers, useStatelessReducer, DispatchContext } from '../../hooks/useStatelessReducer';

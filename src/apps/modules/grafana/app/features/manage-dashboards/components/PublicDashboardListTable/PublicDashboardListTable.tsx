@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 import { useMedia } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors as e2eSelectors } from '@grafana/e2e-selectors/src';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { config, reportInteraction } from '@runtime/index';
 import {
   Card,

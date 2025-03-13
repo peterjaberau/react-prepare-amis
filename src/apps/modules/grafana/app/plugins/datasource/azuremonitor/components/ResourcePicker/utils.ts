@@ -1,6 +1,6 @@
 import { produce } from 'immer';
 
-import { getTemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv } from '@runtime/index';
 
 import UrlBuilder from '../../azure_monitor/url_builder';
 import { ResourcePickerQueryType } from '../../resourcePicker/resourcePickerData';

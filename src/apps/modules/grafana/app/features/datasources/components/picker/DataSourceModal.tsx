@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { once } from 'lodash';
 import { useMemo, useState } from 'react';
 
-import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import {
   Modal,
   FileDropzone,

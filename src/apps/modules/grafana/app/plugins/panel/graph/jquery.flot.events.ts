@@ -3,8 +3,8 @@ import { partition, each } from 'lodash';
 //@ts-ignore
 import Drop from 'tether-drop';
 
-import { CreatePlotOverlay } from '@grafana/data';
-import { getLegacyAngularInjector } from '@grafana/runtime';
+import { CreatePlotOverlay } from '@data/index';
+import { getLegacyAngularInjector } from '@runtime/index';
 
 const createAnnotationToolip: CreatePlotOverlay = (element, event, plot) => {
   const injector = getLegacyAngularInjector();

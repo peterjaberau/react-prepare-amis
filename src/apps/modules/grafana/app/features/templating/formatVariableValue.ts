@@ -1,5 +1,5 @@
-import { formatRegistry } from '@grafana/scenes';
-import { VariableFormatID } from '@grafana/schema';
+import { formatRegistry } from '@scenes/index';
+import { VariableFormatID } from '@schema/index';
 
 import { isAdHoc } from '../variables/guard';
 

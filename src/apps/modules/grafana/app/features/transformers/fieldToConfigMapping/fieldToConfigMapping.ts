@@ -13,7 +13,7 @@ import {
   ValueMap,
   Field,
   FieldType,
-} from '@grafana/data';
+} from '@data/index';
 
 export interface ThresholdArguments {
   color: string;

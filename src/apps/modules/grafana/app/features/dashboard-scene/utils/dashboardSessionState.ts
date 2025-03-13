@@ -1,6 +1,6 @@
-import { UrlQueryMap, urlUtil } from '@grafana/data';
+import { UrlQueryMap, urlUtil } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { UrlSyncManager } from '@grafana/scenes';
+import { UrlSyncManager } from '@scenes/index';
 
 import { DashboardScene } from '../scene/DashboardScene';
 

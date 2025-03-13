@@ -1,7 +1,7 @@
 import { each, filter, keys } from 'lodash';
 import tinycolor from 'tinycolor2';
 
-import { AnnotationEvent } from '@grafana/data';
+import { AnnotationEvent } from '@data/index';
 import {
   ALERTING_COLOR,
   DEFAULT_ANNOTATION_COLOR,

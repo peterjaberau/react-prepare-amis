@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { AnnotationQuery } from '@grafana/data';
+import { AnnotationQuery } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Button, DeleteButton, EmptyState, IconButton, Stack, TextLink, useStyles2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

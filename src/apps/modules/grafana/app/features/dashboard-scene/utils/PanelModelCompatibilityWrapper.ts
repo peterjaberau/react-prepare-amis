@@ -1,6 +1,6 @@
-import { PanelModel } from '@grafana/data';
-import { SceneDataTransformer, VizPanel } from '@grafana/scenes';
-import { DataSourceRef, DataTransformerConfig } from '@grafana/schema';
+import { PanelModel } from '@data/index';
+import { SceneDataTransformer, VizPanel } from '@scenes/index';
+import { DataSourceRef, DataTransformerConfig } from '@schema/index';
 
 import { getPanelIdForVizPanel, getQueryRunnerFor } from './utils';
 

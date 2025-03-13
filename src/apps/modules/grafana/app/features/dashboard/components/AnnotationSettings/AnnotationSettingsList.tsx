@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { arrayUtils, AnnotationQuery } from '@grafana/data';
+import { arrayUtils, AnnotationQuery } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Button, DeleteButton, EmptyState, IconButton, Stack, TextLink, useStyles2 } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';

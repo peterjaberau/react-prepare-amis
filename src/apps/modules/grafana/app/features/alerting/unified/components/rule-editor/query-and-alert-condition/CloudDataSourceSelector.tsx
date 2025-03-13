@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { DataSourceInstanceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { Field, useStyles2 } from '@grafana/ui';
 
 import { RuleFormType, RuleFormValues } from '../../../types/rule-form';

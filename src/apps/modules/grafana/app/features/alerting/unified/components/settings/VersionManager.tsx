@@ -3,7 +3,7 @@ import { omit } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import {
   Alert,
   Badge,

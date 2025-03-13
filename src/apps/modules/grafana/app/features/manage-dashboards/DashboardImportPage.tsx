@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { AppEvents, GrafanaTheme2, LoadingState, NavModelItem } from '@grafana/data';
+import { AppEvents, GrafanaTheme2, LoadingState, NavModelItem } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import {
   Button,

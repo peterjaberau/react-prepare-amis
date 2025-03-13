@@ -1,4 +1,4 @@
-import { PluginState } from '@grafana/data';
+import { PluginState } from '@data/index';
 import { Badge, BadgeProps } from '@grafana/ui';
 
 interface Props {

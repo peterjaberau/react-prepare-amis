@@ -1,5 +1,5 @@
-import { IconName } from '@grafana/data';
-import { DashboardLink } from '@grafana/schema';
+import { IconName } from '@data/index';
+import { DashboardLink } from '@schema/index';
 
 export const NEW_LINK: DashboardLink = {
   icon: 'external link',

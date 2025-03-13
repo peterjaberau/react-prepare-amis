@@ -11,10 +11,10 @@ import {
   cacheFieldDisplayNames,
   FieldMatcherID,
   FieldConfigSource,
-} from '@grafana/data';
+} from '@data/index';
 import { decoupleHideFromState } from '@grafana/data/src/field/fieldState';
-import { config } from '@grafana/runtime';
-import { VisibilityMode } from '@grafana/schema';
+import { config } from '@runtime/index';
+import { VisibilityMode } from '@schema/index';
 
 import { XYShowMode, SeriesMapping, XYSeriesConfig } from './panelcfg.gen';
 import { XYSeries } from './types2';

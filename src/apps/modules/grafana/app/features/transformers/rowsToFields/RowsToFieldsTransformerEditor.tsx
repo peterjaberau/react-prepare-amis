@@ -1,4 +1,4 @@
-import { PluginState, TransformerRegistryItem, TransformerUIProps, TransformerCategory } from '@grafana/data';
+import { PluginState, TransformerRegistryItem, TransformerUIProps, TransformerCategory } from '@data/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { FieldToConfigMappingEditor } from '../fieldToConfigMapping/FieldToConfigMappingEditor';

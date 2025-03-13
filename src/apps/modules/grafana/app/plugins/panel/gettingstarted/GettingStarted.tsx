@@ -2,8 +2,8 @@
 import { css, cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { PanelProps } from '@grafana/data';
-import { config, reportInteraction } from '@grafana/runtime';
+import { PanelProps } from '@data/index';
+import { config, reportInteraction } from '@runtime/index';
 import { Button, Spinner, stylesFactory } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { backendSrv } from 'app/core/services/backend_srv';

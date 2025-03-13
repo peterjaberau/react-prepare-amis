@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { explicitlyControlledMigrationPanels } from 'app/features/dashboard/state/PanelModel';
 import { AngularDeprecationNotice } from 'app/features/plugins/angularDeprecation/AngularDeprecationNotice';
 

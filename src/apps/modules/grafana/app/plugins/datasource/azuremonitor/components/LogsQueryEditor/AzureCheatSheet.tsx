@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useEffect, useMemo, useState } from 'react';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { reportInteraction } from '@runtime/index';
 import {
   Button,
   Card,

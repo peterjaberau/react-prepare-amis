@@ -1,6 +1,6 @@
 import { createTwoFilesPatch } from 'diff';
 
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 
 import { DashboardModel } from '../../state/DashboardModel';
 

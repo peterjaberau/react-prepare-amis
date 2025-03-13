@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { cloneDeep } from 'lodash';
 import { CSSProperties } from 'react';
 
-import { GrafanaTheme2, PanelData, VisualizationSuggestion } from '@grafana/data';
+import { GrafanaTheme2, PanelData, VisualizationSuggestion } from '@data/index';
 import { Tooltip, useStyles2 } from '@grafana/ui';
 
 import { PanelRenderer } from '../PanelRenderer';

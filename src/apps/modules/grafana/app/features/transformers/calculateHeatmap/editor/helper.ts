@@ -1,5 +1,5 @@
-import { PanelOptionsEditorBuilder } from '@grafana/data';
-import { ScaleDistribution, HeatmapCalculationMode, HeatmapCalculationOptions } from '@grafana/schema';
+import { PanelOptionsEditorBuilder } from '@data/index';
+import { ScaleDistribution, HeatmapCalculationMode, HeatmapCalculationOptions } from '@schema/index';
 import { ScaleDistributionEditor } from '@grafana/ui/src/options/builder';
 
 import { AxisEditor } from './AxisEditor';

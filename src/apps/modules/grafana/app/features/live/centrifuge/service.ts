@@ -15,7 +15,7 @@ import {
   LiveChannelConnectionState,
   LiveChannelId,
   toLiveChannelId,
-} from '@grafana/data';
+} from '@data/index';
 import { FetchResponse } from '@runtime/index';
 import {
   GrafanaLiveSrv,

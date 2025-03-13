@@ -12,9 +12,9 @@ import {
   LoadingState,
   PanelData,
   PluginType,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv, locationService } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Button, HorizontalGroup, InlineFormLabel, Modal, ScrollContainer, stylesFactory } from '@grafana/ui';
 import { PluginHelp } from 'app/core/components/PluginHelp/PluginHelp';
 import config from 'app/core/config';

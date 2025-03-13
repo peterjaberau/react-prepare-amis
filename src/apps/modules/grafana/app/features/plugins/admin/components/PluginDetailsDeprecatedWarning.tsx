@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as React from 'react';
 
-import { renderMarkdown } from '@grafana/data';
+import { renderMarkdown } from '@data/index';
 import { Alert } from '@grafana/ui';
 
 import { CatalogPlugin } from '../types';

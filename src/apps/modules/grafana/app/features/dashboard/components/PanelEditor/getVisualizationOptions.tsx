@@ -7,14 +7,14 @@ import {
   PanelPlugin,
   StandardEditorContext,
   VariableSuggestionsScope,
-} from '@grafana/data';
+} from '@data/index';
 import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
 import {
   NestedValueAccess,
   PanelOptionsEditorBuilder,
   isNestedPanelOptions,
 } from '@grafana/data/src/utils/OptionsUIBuilders';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { Input } from '@grafana/ui';
 import { LibraryVizPanelInfo } from 'app/features/dashboard-scene/panel-edit/LibraryVizPanelInfo';
 import { LibraryPanelBehavior } from 'app/features/dashboard-scene/scene/LibraryPanelBehavior';

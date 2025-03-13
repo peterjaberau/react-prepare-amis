@@ -1,6 +1,6 @@
 import { ReactNode, useMemo } from 'react';
 
-import { sceneGraph, VizPanel } from '@grafana/scenes';
+import { sceneGraph, VizPanel } from '@scenes/index';
 import { Button } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';

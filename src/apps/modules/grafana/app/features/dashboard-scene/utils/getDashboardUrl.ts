@@ -1,4 +1,4 @@
-import { UrlQueryMap, urlUtil } from '@grafana/data';
+import { UrlQueryMap, urlUtil } from '@data/index';
 import { config, locationSearchToObject } from '@runtime/index';
 
 export interface DashboardUrlOptions {

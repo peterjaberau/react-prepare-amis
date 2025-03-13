@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
-import { LiveChannelAddress, isValidLiveChannelAddress } from '@grafana/data';
-import { getBackendSrv, getGrafanaLiveSrv } from '@grafana/runtime';
+import { LiveChannelAddress, isValidLiveChannelAddress } from '@data/index';
+import { getBackendSrv, getGrafanaLiveSrv } from '@runtime/index';
 import { CodeEditor, Button } from '@grafana/ui';
 
 import { MessagePublishMode } from './types';

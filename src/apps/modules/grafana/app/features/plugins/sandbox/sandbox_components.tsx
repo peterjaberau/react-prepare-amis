@@ -2,7 +2,7 @@ import { isFunction } from 'lodash';
 import { ComponentType, FC } from 'react';
 import * as React from 'react';
 
-import { GrafanaPlugin, PluginExtensionConfig, PluginType } from '@grafana/data';
+import { GrafanaPlugin, PluginExtensionConfig, PluginType } from '@data/index';
 
 import { SandboxPluginMeta, SandboxedPluginObject } from './types';
 import { isSandboxedPluginObject } from './utils';

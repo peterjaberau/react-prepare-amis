@@ -5,7 +5,7 @@ import {
   getProcessedDataFrames,
   LoadingState,
   PanelData,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from 'app/core/config';
 
 import { SnapshotWorker } from '../../query/state/DashboardQueryRunner/SnapshotWorker';

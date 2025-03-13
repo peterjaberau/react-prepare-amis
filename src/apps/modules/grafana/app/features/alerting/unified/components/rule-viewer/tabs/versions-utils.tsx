@@ -1,4 +1,4 @@
-import { IconName } from '@grafana/data';
+import { IconName } from '@data/index';
 import { BadgeColor } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 import {

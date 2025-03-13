@@ -1,4 +1,4 @@
-import { TransformerRegistryItem } from '@grafana/data';
+import { TransformerRegistryItem } from '@data/index';
 import { config } from '@runtime/index';
 
 import { filterByValueTransformRegistryItem } from './FilterByValueTransformer/FilterByValueTransformerEditor';

@@ -42,10 +42,10 @@ import {
   LogsSampleOptions,
   QueryVariableModel,
   CustomVariableModel,
-} from '@grafana/data';
+} from '@data/index';
 import { Duration } from '@grafana/lezer-logql';
-import { BackendSrvRequest, config, DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
-import { DataQuery } from '@grafana/schema';
+import { BackendSrvRequest, config, DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
+import { DataQuery } from '@schema/index';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 
 import LanguageProvider from './LanguageProvider';

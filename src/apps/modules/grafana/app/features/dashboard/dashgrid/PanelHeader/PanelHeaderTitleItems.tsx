@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 
-import { PanelData, GrafanaTheme2, PanelModel, LinkModel, AlertState, DataLink } from '@grafana/data';
+import { PanelData, GrafanaTheme2, PanelModel, LinkModel, AlertState, DataLink } from '@data/index';
 import { Icon, PanelChrome, Tooltip, useStyles2, TimePickerTooltip } from '@grafana/ui';
 
 import { PanelLinks } from '../PanelLinks';

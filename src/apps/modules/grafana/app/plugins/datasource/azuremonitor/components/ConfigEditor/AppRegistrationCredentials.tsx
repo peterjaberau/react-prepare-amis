@@ -1,7 +1,7 @@
 import { ChangeEvent } from 'react';
 
 import { AzureClientSecretCredentials, AzureCredentials } from '@grafana/azure-sdk';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Field, Select, Input, Button } from '@grafana/ui';
 
 import { selectors } from '../../e2e/selectors';

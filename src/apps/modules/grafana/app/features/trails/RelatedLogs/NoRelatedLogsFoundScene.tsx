@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneObjectBase, type SceneObjectState } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneObjectBase, type SceneObjectState } from '@scenes/index';
 import { Stack, Text, TextLink, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

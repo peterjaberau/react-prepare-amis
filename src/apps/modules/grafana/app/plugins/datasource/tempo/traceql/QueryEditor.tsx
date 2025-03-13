@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { defaults } from 'lodash';
 import { useState } from 'react';
 
-import { GrafanaTheme2, QueryEditorProps } from '@grafana/data';
-import { config, reportInteraction } from '@grafana/runtime';
+import { GrafanaTheme2, QueryEditorProps } from '@data/index';
+import { config, reportInteraction } from '@runtime/index';
 import { Button, InlineLabel, useStyles2 } from '@grafana/ui';
 
 import { TempoDatasource } from '../datasource';

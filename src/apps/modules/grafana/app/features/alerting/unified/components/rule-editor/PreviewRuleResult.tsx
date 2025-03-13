@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { FieldConfigSource, FieldMatcherID, GrafanaTheme2, LoadingState } from '@grafana/data';
+import { FieldConfigSource, FieldMatcherID, GrafanaTheme2, LoadingState } from '@data/index';
 import { PanelRenderer } from '@runtime/index';
 import { TableCellDisplayMode, useStyles2 } from '@grafana/ui';
 

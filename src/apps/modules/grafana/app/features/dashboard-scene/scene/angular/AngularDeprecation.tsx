@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { SceneComponentProps, SceneObjectBase, VizPanel } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, VizPanel } from '@scenes/index';
 import { Icon, PanelChrome, Tooltip, useStyles2 } from '@grafana/ui';
 import { explicitlyControlledMigrationPanels } from 'app/features/dashboard/state/PanelModel';
 import { isAngularDatasourcePluginAndNotHidden } from 'app/features/plugins/angularDeprecation/utils';

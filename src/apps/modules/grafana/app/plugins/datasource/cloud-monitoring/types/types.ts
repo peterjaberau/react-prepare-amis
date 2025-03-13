@@ -1,4 +1,4 @@
-import { DataQuery, SelectableValue, VariableWithMultiSupport } from '@grafana/data';
+import { DataQuery, SelectableValue, VariableWithMultiSupport } from '@data/index';
 import { DataSourceOptions, DataSourceSecureJsonData } from '@grafana/google-sdk';
 
 import { MetricKind } from './query';

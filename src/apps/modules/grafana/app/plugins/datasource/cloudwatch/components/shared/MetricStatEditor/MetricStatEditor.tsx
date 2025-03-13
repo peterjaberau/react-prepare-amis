@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import * as React from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { EditorField, EditorFieldGroup, EditorRow, EditorRows, EditorSwitch } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { Select } from '@grafana/ui';
 
 import { CloudWatchDatasource } from '../../../datasource';

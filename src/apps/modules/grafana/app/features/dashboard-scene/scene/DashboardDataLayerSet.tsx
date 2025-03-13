@@ -3,7 +3,7 @@ import {
   SceneDataLayerProvider,
   SceneDataLayerSetBase,
   SceneComponentProps,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import { AlertStatesDataLayer } from './AlertStatesDataLayer';
 

@@ -1,8 +1,8 @@
 import { FormEvent, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
-import { QueryEditorProps, SelectableValue } from '@grafana/data';
-import { selectors as editorSelectors } from '@grafana/e2e-selectors';
+import { QueryEditorProps, SelectableValue } from '@data/index';
+import { selectors as editorSelectors } from '@selectors/index';
 import { InlineField, InlineFieldRow, InlineSwitch, Input, Select, Icon, TextArea } from '@grafana/ui';
 
 import { RandomWalkEditor, StreamingClientEditor } from './components';

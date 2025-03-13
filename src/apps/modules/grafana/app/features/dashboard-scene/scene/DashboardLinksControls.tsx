@@ -1,6 +1,6 @@
 import { sanitizeUrl } from '@grafana/data/src/text/sanitize';
-import { sceneGraph } from '@grafana/scenes';
-import { DashboardLink } from '@grafana/schema';
+import { sceneGraph } from '@scenes/index';
+import { DashboardLink } from '@schema/index';
 import { Badge, Tooltip } from '@grafana/ui';
 import {
   DashboardLinkButton,

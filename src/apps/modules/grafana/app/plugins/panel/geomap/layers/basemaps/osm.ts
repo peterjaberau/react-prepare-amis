@@ -2,7 +2,7 @@ import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 
-import { MapLayerRegistryItem, MapLayerOptions, EventBus } from '@grafana/data';
+import { MapLayerRegistryItem, MapLayerOptions, EventBus } from '@data/index';
 
 export const standard: MapLayerRegistryItem = {
   id: 'osm-standard',

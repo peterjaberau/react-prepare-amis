@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { MultiSelect } from '@grafana/ui';
 
 import { selectors } from '../../e2e/selectors';

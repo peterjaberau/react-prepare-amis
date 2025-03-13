@@ -7,7 +7,7 @@ import {
   TransformerUIProps,
   stringToJsRegex,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { RenameByRegexTransformerOptions } from '@grafana/data/src/transformations/transformers/renameByRegex';
 import { InlineField, Input } from '@grafana/ui';
 

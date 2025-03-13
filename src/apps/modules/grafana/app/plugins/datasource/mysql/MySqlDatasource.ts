@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { DataSourceInstanceSettings, TimeRange } from '@grafana/data';
+import { DataSourceInstanceSettings, TimeRange } from '@data/index';
 import { CompletionItemKind, LanguageDefinition, TableIdentifier } from '@grafana/plugin-ui';
 import { COMMON_FNS, DB, FuncParameter, MACRO_FUNCTIONS, SQLQuery, SqlDatasource, formatSQL } from '@grafana/sql';
 

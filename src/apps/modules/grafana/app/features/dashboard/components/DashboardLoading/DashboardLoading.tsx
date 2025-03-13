@@ -1,6 +1,6 @@
 import { css, keyframes } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, HorizontalGroup, Spinner, useStyles2, VerticalGroup } from '@grafana/ui';
 import { DashboardInitPhase } from 'app/types';

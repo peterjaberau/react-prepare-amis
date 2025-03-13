@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 import { DataFrame, FALLBACK_COLOR, FieldType, TimeRange } from '@data/index';
-import { VisibilityMode, TimelineValueAlignment, TooltipDisplayMode, VizTooltipOptions } from '@grafana/schema';
+import { VisibilityMode, TimelineValueAlignment, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
 import { UPlotConfigBuilder, VizLayout, VizLegend, VizLegendItem } from '@grafana/ui';
 
 import { GraphNG, GraphNGProps } from '../GraphNG/GraphNG';

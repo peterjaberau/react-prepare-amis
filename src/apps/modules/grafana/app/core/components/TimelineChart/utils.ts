@@ -31,7 +31,7 @@ import {
   TimelineValueAlignment,
   HideableFieldConfig,
   MappingType,
-} from '@grafana/schema';
+} from '@schema/index';
 import { FIXED_UNIT, UPlotConfigBuilder, UPlotConfigPrepFn, VizLegendItem } from '@grafana/ui';
 import { preparePlotData2, getStackingGroups } from '@grafana/ui/src/components/uPlot/utils';
 

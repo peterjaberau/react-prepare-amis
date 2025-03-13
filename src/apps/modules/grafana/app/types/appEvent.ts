@@ -1,6 +1,6 @@
 import { IAngularEvent } from 'angular';
 
-import { AppEvent } from '@grafana/data';
+import { AppEvent } from '@data/index';
 
 export interface AppEventEmitter {
   /**

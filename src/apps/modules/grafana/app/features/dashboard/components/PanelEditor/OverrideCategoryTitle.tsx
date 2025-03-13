@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { FieldConfigOptionsRegistry, GrafanaTheme2, ConfigOverrideRule } from '@grafana/data';
+import { FieldConfigOptionsRegistry, GrafanaTheme2, ConfigOverrideRule } from '@data/index';
 import { Button, HorizontalGroup, Icon, useStyles2 } from '@grafana/ui';
 import { FieldMatcherUIRegistryItem } from '@grafana/ui/src/components/MatchersUI/types';
 

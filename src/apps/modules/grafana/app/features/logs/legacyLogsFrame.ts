@@ -1,4 +1,4 @@
-import { DataFrame, FieldCache, FieldType, Field, Labels, FieldWithIndex } from '@grafana/data';
+import { DataFrame, FieldCache, FieldType, Field, Labels, FieldWithIndex } from '@data/index';
 
 import { logFrameLabelsToLabels, LogsFrame } from './logsFrame';
 

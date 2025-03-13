@@ -8,7 +8,7 @@ import {
   dataFrameFromJSON,
   getDefaultTimeRange,
   withLoadingIndicator,
-} from '@grafana/data';
+} from '@data/index';
 import { getBackendSrv, toDataQueryError } from '@runtime/index';
 
 import {

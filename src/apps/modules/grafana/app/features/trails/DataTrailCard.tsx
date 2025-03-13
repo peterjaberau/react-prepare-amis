@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { dateTimeFormat, GrafanaTheme2 } from '@grafana/data';
-import { AdHocFiltersVariable, sceneGraph } from '@grafana/scenes';
+import { dateTimeFormat, GrafanaTheme2 } from '@data/index';
+import { AdHocFiltersVariable, sceneGraph } from '@scenes/index';
 import { Card, IconButton, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

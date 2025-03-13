@@ -17,8 +17,8 @@ import cx from 'classnames';
 import { memo, useEffect, useMemo } from 'react';
 import * as React from 'react';
 
-import { CoreApp, DataFrame, dateTimeFormat, GrafanaTheme2 } from '@grafana/data';
-import { TimeZone } from '@grafana/schema';
+import { CoreApp, DataFrame, dateTimeFormat, GrafanaTheme2 } from '@data/index';
+import { TimeZone } from '@schema/index';
 import { Badge, BadgeColor, Tooltip, useStyles2 } from '@grafana/ui';
 
 import { SearchProps } from '../../useSearch';

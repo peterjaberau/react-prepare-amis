@@ -1,4 +1,4 @@
-import { SceneObject } from '@grafana/scenes';
+import { SceneObject } from '@scenes/index';
 import { Icon, ModalsController } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom-v5-compat';
 import { usePrevious } from 'react-use';
 
-import { PageLayoutType } from '@grafana/data';
+import { PageLayoutType } from '@data/index';
 import { config } from '@runtime/index';
-import { UrlSyncContextProvider } from '@grafana/scenes';
+import { UrlSyncContextProvider } from '@scenes/index';
 import { Box } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 import PageLoader from 'app/core/components/PageLoader/PageLoader';

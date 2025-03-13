@@ -7,8 +7,8 @@ import {
   SelectableValue,
   updateDatasourcePluginJsonDataOption,
   updateDatasourcePluginOption,
-} from '@grafana/data';
-import { getBackendSrv, getDataSourceSrv } from '@grafana/runtime';
+} from '@data/index';
+import { getBackendSrv, getDataSourceSrv } from '@runtime/index';
 
 import { PostgresDatasource } from '../datasource';
 import { PostgresOptions, PostgresTLSModes, SecureJsonData } from '../types';

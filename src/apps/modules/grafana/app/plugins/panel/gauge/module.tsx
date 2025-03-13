@@ -1,5 +1,5 @@
-import { PanelPlugin } from '@grafana/data';
-import { BarGaugeSizing, VizOrientation } from '@grafana/schema';
+import { PanelPlugin } from '@data/index';
+import { BarGaugeSizing, VizOrientation } from '@schema/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 
 import { addOrientationOption, addStandardDataReduceOptions } from '../stat/common';

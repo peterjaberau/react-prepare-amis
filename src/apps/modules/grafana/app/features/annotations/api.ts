@@ -1,4 +1,4 @@
-import { AnnotationEvent } from '@grafana/data';
+import { AnnotationEvent } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 
 import { AnnotationTagsResponse } from './types';

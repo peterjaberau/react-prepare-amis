@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { getAppEvents, getBackendSrv, isFetchError, locationService, reportInteraction } from '@runtime/index';
 import {
   Box,

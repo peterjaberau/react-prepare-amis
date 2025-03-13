@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import { SceneObject } from '@grafana/scenes';
+import { SceneObject } from '@scenes/index';
 import { Button, Field, Modal, Input, Alert, TextLink } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { RepeatRowSelect2 } from 'app/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';

@@ -1,4 +1,4 @@
-import { InternalTimeZones } from '@grafana/data';
+import { InternalTimeZones } from '@data/index';
 
 import {
   isMetricAggregationWithField,

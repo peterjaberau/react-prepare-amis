@@ -18,8 +18,8 @@ import {
   UrlQueryMap,
   ExploreCorrelationHelperData,
   DataLinkTransformationConfig,
-} from '@grafana/data';
-import { CorrelationData } from '@grafana/runtime';
+} from '@data/index';
+import { CorrelationData } from '@runtime/index';
 import { RichHistorySearchFilters, RichHistorySettings } from 'app/core/utils/richHistoryTypes';
 
 export type ExploreQueryParams = UrlQueryMap;

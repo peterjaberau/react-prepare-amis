@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'react';
 
-import { PanelPluginMeta } from '@grafana/data';
+import { PanelPluginMeta } from '@data/index';
 
 import { PanelTypeCard } from './PanelTypeCard';
 

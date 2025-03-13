@@ -4,7 +4,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { MergeTransformerOptions } from '@grafana/data/src/transformations/transformers/merge';
 import { FieldValidationMessage } from '@grafana/ui';
 

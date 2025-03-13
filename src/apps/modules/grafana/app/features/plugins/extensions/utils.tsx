@@ -17,7 +17,7 @@ import {
   PluginExtensionAddedLinkConfig,
   urlUtil,
   PluginExtensionPoints,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction, config, AppPluginConfig } from '@runtime/index';
 import { Modal } from '@grafana/ui';
 import appEvents from 'app/core/app_events';

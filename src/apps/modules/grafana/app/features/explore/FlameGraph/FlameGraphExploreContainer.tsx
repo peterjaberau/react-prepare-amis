@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataFrame, GrafanaTheme2, CoreApp } from '@grafana/data';
+import { DataFrame, GrafanaTheme2, CoreApp } from '@data/index';
 import { FlameGraph } from '@grafana/flamegraph';
 import { reportInteraction, config } from '@runtime/index';
 import { useStyles2 } from '@grafana/ui';

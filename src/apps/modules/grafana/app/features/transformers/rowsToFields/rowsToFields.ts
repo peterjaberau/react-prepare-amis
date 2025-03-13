@@ -1,6 +1,6 @@
 import { map } from 'rxjs/operators';
 
-import { DataFrame, DataTransformerID, DataTransformerInfo, Field, getFieldDisplayName, Labels } from '@grafana/data';
+import { DataFrame, DataTransformerID, DataTransformerInfo, Field, getFieldDisplayName, Labels } from '@data/index';
 
 import {
   EvaluatedMappingResult,

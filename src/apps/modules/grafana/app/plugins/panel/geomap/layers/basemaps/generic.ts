@@ -2,7 +2,7 @@ import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
 
-import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, EventBus } from '@grafana/data';
+import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, EventBus } from '@data/index';
 
 export interface XYZConfig {
   url: string;

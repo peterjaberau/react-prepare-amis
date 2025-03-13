@@ -1,4 +1,4 @@
-import { DataFrame, FieldConfigSource, PanelData, PanelPlugin } from '@grafana/data';
+import { DataFrame, FieldConfigSource, PanelData, PanelPlugin } from '@data/index';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { PanelModel } from '../../state/PanelModel';

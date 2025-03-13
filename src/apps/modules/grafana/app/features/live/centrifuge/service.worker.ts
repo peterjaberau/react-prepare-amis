@@ -2,7 +2,7 @@ import './transferHandlers';
 
 import * as comlink from 'comlink';
 
-import { LiveChannelAddress } from '@grafana/data';
+import { LiveChannelAddress } from '@data/index';
 import { LiveDataStreamOptions, LiveQueryDataOptions } from '@runtime/index';
 
 import { remoteObservableAsObservable } from './remoteObservable';

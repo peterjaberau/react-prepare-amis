@@ -1,8 +1,8 @@
-import { DataSourceApi, PanelMenuItem } from '@grafana/data';
+import { DataSourceApi, PanelMenuItem } from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { getDataSourceSrv } from '@runtime/index';
-import { SceneTimeRangeState, VizPanel } from '@grafana/scenes';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+import { SceneTimeRangeState, VizPanel } from '@scenes/index';
+import { DataQuery, DataSourceRef } from '@schema/index';
 import { getQueryRunnerFor } from 'app/features/dashboard-scene/utils/utils';
 
 import { DashboardScene } from '../../dashboard-scene/scene/DashboardScene';

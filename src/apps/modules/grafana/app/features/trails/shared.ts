@@ -1,6 +1,6 @@
-import { BusEventBase, BusEventWithPayload } from '@grafana/data';
-import { ConstantVariable, SceneObject } from '@grafana/scenes';
-import { VariableHide } from '@grafana/schema';
+import { BusEventBase, BusEventWithPayload } from '@data/index';
+import { ConstantVariable, SceneObject } from '@scenes/index';
+import { VariableHide } from '@schema/index';
 
 export type ActionViewType = 'breakdown' | 'related_logs' | 'related';
 

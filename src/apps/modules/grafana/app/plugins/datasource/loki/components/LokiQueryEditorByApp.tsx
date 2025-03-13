@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { CoreApp } from '@grafana/data';
+import { CoreApp } from '@data/index';
 
 import { LokiQueryEditor } from './LokiQueryEditor';
 import { LokiQueryEditorForAlerting } from './LokiQueryEditorForAlerting';

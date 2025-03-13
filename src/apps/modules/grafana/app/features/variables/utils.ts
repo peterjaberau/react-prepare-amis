@@ -9,7 +9,7 @@ import {
   VariableRefresh,
   VariableWithOptions,
   QueryVariableModel,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv, locationService } from '@runtime/index';
 import { safeStringifyValue } from 'app/core/utils/explore';
 

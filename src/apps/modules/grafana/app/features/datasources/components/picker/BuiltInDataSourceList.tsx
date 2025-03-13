@@ -1,5 +1,5 @@
-import { DataSourceInstanceSettings } from '@grafana/data';
-import { DataSourceRef } from '@grafana/schema';
+import { DataSourceInstanceSettings } from '@data/index';
+import { DataSourceRef } from '@schema/index';
 import { t } from 'app/core/internationalization';
 
 import { useDatasources } from '../../hooks';

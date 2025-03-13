@@ -5,7 +5,7 @@ import { TableInstance, useTable } from 'react-table';
 import { VariableSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 
-import { GrafanaTheme2, isTruthy } from '@grafana/data';
+import { GrafanaTheme2, isTruthy } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { DashboardViewItem } from 'app/features/search/types';

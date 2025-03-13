@@ -9,7 +9,7 @@ import 'vendor/flot/jquery.flot.crosshair';
 import 'vendor/flot/jquery.flot.dashes';
 import 'vendor/flot/jquery.flot.gauge';
 
-import * as grafanaData from '@grafana/data';
+import * as grafanaData from '@data/index';
 import * as grafanaRuntime from '@runtime/index';
 import * as grafanaUIraw from '@grafana/ui';
 import TableModel from 'app/core/TableModel';
@@ -48,7 +48,7 @@ const jQueryFlotDeps = [
 export const sharedDependenciesMap = {
   '@emotion/css': () => import('@emotion/css'),
   '@emotion/react': () => import('@emotion/react'),
-  '@grafana/data': grafanaData,
+  '@data/index': grafanaData,
   '@runtime/index': grafanaRuntime,
   '@grafana/slate-react': () => import('slate-react'),
   '@grafana/ui': grafanaUI,

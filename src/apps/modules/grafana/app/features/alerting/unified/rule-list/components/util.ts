@@ -1,6 +1,6 @@
 import { addMilliseconds, formatDistanceToNowStrict, isBefore } from 'date-fns';
 
-import { dateTime, dateTimeFormat, isValidDate } from '@grafana/data';
+import { dateTime, dateTimeFormat, isValidDate } from '@data/index';
 
 import { isNullDate, parsePrometheusDuration } from '../../utils/time';
 

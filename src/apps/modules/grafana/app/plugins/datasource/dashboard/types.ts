@@ -1,4 +1,4 @@
-import { DataFrame, DataQuery, DataQueryError, DataTopic } from '@grafana/data';
+import { DataFrame, DataQuery, DataQueryError, DataTopic } from '@data/index';
 
 export interface DashboardQuery extends DataQuery {
   panelId?: number;

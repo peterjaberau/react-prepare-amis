@@ -29,9 +29,9 @@ import {
   LogRowModel,
   getDefaultTimeRange,
   rangeUtil,
-} from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
-import { type CustomFormatterVariable } from '@grafana/scenes';
+} from '@data/index';
+import { TemplateSrv } from '@runtime/index';
+import { type CustomFormatterVariable } from '@scenes/index';
 
 import {
   CloudWatchJsonData,

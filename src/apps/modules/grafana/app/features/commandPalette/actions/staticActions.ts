@@ -1,4 +1,4 @@
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 import { enrichHelpItem } from 'app/core/components/AppChrome/MegaMenu/utils';
 import { t } from 'app/core/internationalization';
 import { changeTheme } from 'app/core/services/theme';

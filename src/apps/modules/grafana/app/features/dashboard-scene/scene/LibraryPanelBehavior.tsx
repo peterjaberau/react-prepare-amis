@@ -1,7 +1,7 @@
-import { PanelPlugin, PanelProps } from '@grafana/data';
+import { PanelPlugin, PanelProps } from '@data/index';
 import { config } from '@runtime/index';
-import { SceneObject, SceneObjectBase, SceneObjectState, sceneUtils, VizPanel, VizPanelState } from '@grafana/scenes';
-import { LibraryPanel } from '@grafana/schema';
+import { SceneObject, SceneObjectBase, SceneObjectState, sceneUtils, VizPanel, VizPanelState } from '@scenes/index';
+import { LibraryPanel } from '@schema/index';
 import { Badge, Stack } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';

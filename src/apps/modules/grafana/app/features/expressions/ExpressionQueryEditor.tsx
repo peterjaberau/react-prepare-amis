@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-import { DataSourceApi, QueryEditorProps, SelectableValue } from '@grafana/data';
+import { DataSourceApi, QueryEditorProps, SelectableValue } from '@data/index';
 import { InlineField, Select } from '@grafana/ui';
 
 import { ClassicConditions } from './components/ClassicConditions';

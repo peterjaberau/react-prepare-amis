@@ -13,7 +13,7 @@ import {
   OrgRole,
   PluginType,
   PluginContextProvider,
-} from '@grafana/data';
+} from '@data/index';
 import { config, locationSearchToObject } from '@runtime/index';
 import { Alert } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

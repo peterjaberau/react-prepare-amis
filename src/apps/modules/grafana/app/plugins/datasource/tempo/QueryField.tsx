@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { QueryEditorProps, SelectableValue } from '@grafana/data';
-import { config, reportInteraction } from '@grafana/runtime';
+import { QueryEditorProps, SelectableValue } from '@data/index';
+import { config, reportInteraction } from '@runtime/index';
 import {
   Button,
   FileDropzone,

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { debounce } from 'lodash';
 import { useCallback, useMemo } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Button, SegmentAsync, useStyles2 } from '@grafana/ui';
 
 import { GraphiteTag } from '../graphite_query';

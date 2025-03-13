@@ -1,8 +1,8 @@
 import { Fill, RegularShape, Stroke, Circle, Style, Icon, Text } from 'ol/style';
 import tinycolor from 'tinycolor2';
 
-import { Registry, RegistryItem, textUtil } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { Registry, RegistryItem, textUtil } from '@data/index';
+import { config } from '@runtime/index';
 import { getPublicOrAbsoluteUrl } from 'app/features/dimensions';
 
 import { defaultStyleConfig, DEFAULT_SIZE, StyleConfigValues, StyleMaker } from './types';

@@ -1,5 +1,5 @@
-import { locationUtil } from '@grafana/data';
-import { Dashboard } from '@grafana/schema';
+import { locationUtil } from '@data/index';
+import { Dashboard } from '@schema/index';
 import { backendSrv } from 'app/core/services/backend_srv';
 import { getMessageFromError, getStatusFromError } from 'app/core/utils/errors';
 import kbn from 'app/core/utils/kbn';

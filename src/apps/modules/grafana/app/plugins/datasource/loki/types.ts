@@ -1,4 +1,4 @@
-import { DataQuery, DataQueryRequest, DataSourceJsonData, TimeRange } from '@grafana/data';
+import { DataQuery, DataQueryRequest, DataSourceJsonData, TimeRange } from '@data/index';
 
 import {
   LokiDataQuery as LokiQueryFromSchema,

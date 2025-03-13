@@ -1,4 +1,4 @@
-import { sceneGraph } from '@grafana/scenes';
+import { sceneGraph } from '@scenes/index';
 import { ScopesFacade } from 'app/features/scopes';
 
 export interface DashboardScopesFacadeState {

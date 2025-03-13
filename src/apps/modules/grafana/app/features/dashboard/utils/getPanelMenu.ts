@@ -1,4 +1,4 @@
-import { PanelMenuItem, urlUtil, PluginExtensionLink } from '@grafana/data';
+import { PanelMenuItem, urlUtil, PluginExtensionLink } from '@data/index';
 import { AngularComponent, locationService } from '@runtime/index';
 import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
 import config from 'app/core/config';

@@ -1,5 +1,5 @@
-import { CoreApp, DashboardLoadedEvent, DataQueryRequest, DataQueryResponse } from '@grafana/data';
-import { config, reportInteraction } from '@grafana/runtime';
+import { CoreApp, DashboardLoadedEvent, DataQueryRequest, DataQueryResponse } from '@data/index';
+import { config, reportInteraction } from '@runtime/index';
 
 import { REF_ID_STARTER_LOG_VOLUME } from './datasource';
 import pluginJson from './plugin.json';

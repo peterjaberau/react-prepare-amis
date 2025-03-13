@@ -1,6 +1,6 @@
 import { set } from 'lodash';
 
-import { RelativeTimeRange } from '@grafana/data';
+import { RelativeTimeRange } from '@data/index';
 import { t } from 'app/core/internationalization';
 import { Matcher } from 'app/plugins/datasource/alertmanager/types';
 import {

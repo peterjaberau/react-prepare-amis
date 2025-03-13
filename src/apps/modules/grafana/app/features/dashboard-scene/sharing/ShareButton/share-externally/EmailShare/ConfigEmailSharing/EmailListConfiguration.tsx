@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Dropdown, Field, Icon, Menu, Spinner, Stack, Text, useStyles2 } from '@grafana/ui';
 import { IconButton } from '@grafana/ui/';
 import { t } from 'app/core/internationalization';

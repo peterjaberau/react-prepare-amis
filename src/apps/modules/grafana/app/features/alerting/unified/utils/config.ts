@@ -1,4 +1,4 @@
-import { DataSourceInstanceSettings, DataSourceJsonData } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceJsonData } from '@data/index';
 import { config } from '@runtime/index';
 
 import { SupportedPlugin } from '../types/pluginBridges';

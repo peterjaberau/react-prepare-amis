@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { ReactNode } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { LoadingPlaceholder, useStyles2 } from '@grafana/ui';
 
 type Props = {

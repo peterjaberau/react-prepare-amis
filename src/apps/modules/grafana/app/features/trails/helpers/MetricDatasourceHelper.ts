@@ -3,7 +3,7 @@ import {
   DataSourceGetTagKeysOptions,
   DataSourceGetTagValuesOptions,
   MetricFindValue,
-} from '@grafana/data';
+} from '@data/index';
 import {
   PrometheusDatasource,
   PromMetricsMetadata,

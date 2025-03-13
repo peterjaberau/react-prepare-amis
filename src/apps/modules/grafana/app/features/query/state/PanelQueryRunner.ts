@@ -29,7 +29,7 @@ import {
   ApplyFieldOverrideOptions,
   StreamingDataFrame,
   DataTopic,
-} from '@grafana/data';
+} from '@data/index';
 import { toDataQueryError } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
 import { isStreamingDataFrame } from 'app/features/live/data/utils';

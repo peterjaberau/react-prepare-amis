@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 import { useBeforeUnload, useUnmount } from 'react-use';
 
-import { GrafanaTheme2, colorManipulator } from '@grafana/data';
+import { GrafanaTheme2, colorManipulator } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, Icon, Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { Prompt } from 'app/core/components/FormPrompt/Prompt';

@@ -2,7 +2,7 @@ import deepEqual from 'fast-deep-equal';
 import { debounce } from 'lodash';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { CoreApp, QueryEditorProps, TimeRange } from '@grafana/data';
+import { CoreApp, QueryEditorProps, TimeRange } from '@data/index';
 import { LoadingPlaceholder } from '@grafana/ui';
 
 import { normalizeQuery, PyroscopeDataSource } from '../datasource';

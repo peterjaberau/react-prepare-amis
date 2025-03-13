@@ -11,8 +11,8 @@ import {
   LogRowContextOptions,
   LogRowModel,
   ScopedVars,
-} from '@grafana/data';
-import { DataSourceWithBackend, TemplateSrv, getTemplateSrv } from '@grafana/runtime';
+} from '@data/index';
+import { DataSourceWithBackend, TemplateSrv, getTemplateSrv } from '@runtime/index';
 
 import { CloudWatchAnnotationSupport } from './annotationSupport';
 import { DEFAULT_METRICS_QUERY, getDefaultLogsQuery } from './defaultQueries';

@@ -1,6 +1,6 @@
 import { uniqueId } from 'lodash';
 
-import { DataFrameDTO, DataFrameJSON } from '@grafana/data';
+import { DataFrameDTO, DataFrameJSON } from '@data/index';
 import { config, logMeasurement, reportInteraction } from '@runtime/index';
 import {
   VizPanel,
@@ -21,7 +21,7 @@ import {
   UserActionEvent,
   SceneInteractionProfileEvent,
   SceneObjectState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { isWeekStart } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';

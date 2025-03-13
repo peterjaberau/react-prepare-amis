@@ -7,7 +7,7 @@
 
 import { compact, uniqBy } from 'lodash';
 
-import { parseFlags } from '@grafana/data';
+import { parseFlags } from '@data/index';
 import { Matcher, MatcherOperator, ObjectMatcher, Route } from 'app/plugins/datasource/alertmanager/types';
 
 import { Labels } from '../../../../types/unified-alerting-dto';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import Map from 'ol/Map';
 import { useMemo, useRef, useState } from 'react';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Button, IconButton, RadioButtonGroup, Select } from '@grafana/ui';
 import { config } from 'app/core/config';
 

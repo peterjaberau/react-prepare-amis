@@ -1,5 +1,5 @@
-import { PanelBuilders, SceneDataTransformer, SceneFlexItem, SceneQueryRunner } from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+import { PanelBuilders, SceneDataTransformer, SceneFlexItem, SceneQueryRunner } from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 
 import { PANEL_STYLES } from '../../home/Insights';
 

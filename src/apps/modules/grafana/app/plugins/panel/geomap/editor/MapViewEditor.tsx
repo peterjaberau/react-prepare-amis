@@ -1,7 +1,7 @@
 import { toLonLat } from 'ol/proj';
 import { useMemo, useCallback } from 'react';
 
-import { StandardEditorProps, SelectableValue } from '@grafana/data';
+import { StandardEditorProps, SelectableValue } from '@data/index';
 import { Button, InlineField, InlineFieldRow, Select, VerticalGroup } from '@grafana/ui';
 import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';
 

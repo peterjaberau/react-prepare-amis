@@ -1,7 +1,7 @@
 import { invert } from 'lodash';
 import { Token } from 'prismjs';
 
-import { AbstractLabelOperator, AbstractLabelMatcher, AbstractQuery } from '@grafana/data';
+import { AbstractLabelOperator, AbstractLabelMatcher, AbstractQuery } from '@data/index';
 
 export const SUGGESTIONS_LIMIT = 10000;
 

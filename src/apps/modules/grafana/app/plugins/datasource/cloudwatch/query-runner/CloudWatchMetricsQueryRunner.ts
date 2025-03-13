@@ -13,8 +13,8 @@ import {
   FieldType,
   rangeUtil,
   ScopedVars,
-} from '@grafana/data';
-import { TemplateSrv, getAppEvents } from '@grafana/runtime';
+} from '@data/index';
+import { TemplateSrv, getAppEvents } from '@runtime/index';
 
 import { ThrottlingErrorMessage } from '../components/Errors/ThrottlingErrorMessage';
 import memoizedDebounce from '../memoizedDebounce';

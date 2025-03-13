@@ -1,9 +1,9 @@
 import { FormEvent } from 'react';
 import * as React from 'react';
 
-import { SelectableValue, DataSourceInstanceSettings, getDataSourceRef } from '@grafana/data';
-import { QueryVariable, sceneGraph } from '@grafana/scenes';
-import { VariableRefresh, VariableSort } from '@grafana/schema';
+import { SelectableValue, DataSourceInstanceSettings, getDataSourceRef } from '@data/index';
+import { QueryVariable, sceneGraph } from '@scenes/index';
+import { VariableRefresh, VariableSort } from '@schema/index';
 
 import { QueryVariableEditorForm } from '../components/QueryVariableForm';
 

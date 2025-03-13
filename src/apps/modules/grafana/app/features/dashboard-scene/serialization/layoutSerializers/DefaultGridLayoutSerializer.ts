@@ -7,7 +7,7 @@ import {
   VizPanel,
   VizPanelMenu,
   VizPanelState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import {
   DashboardV2Spec,
   GridLayoutItemKind,

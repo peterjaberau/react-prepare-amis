@@ -1,6 +1,6 @@
 import { mergeMap, from } from 'rxjs';
 
-import { DataFrame, DataTransformerID, DataTransformerInfo, FieldType } from '@grafana/data';
+import { DataFrame, DataTransformerID, DataTransformerInfo, FieldType } from '@data/index';
 import { createGeometryCollection, createLineBetween } from 'app/features/geo/format/utils';
 import { getGeometryField, getLocationMatchers } from 'app/features/geo/utils/location';
 

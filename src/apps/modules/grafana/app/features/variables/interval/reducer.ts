@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { map } from 'lodash';
 
-import { IntervalVariableModel, VariableRefresh, VariableOption } from '@grafana/data';
+import { IntervalVariableModel, VariableRefresh, VariableOption } from '@data/index';
 
 import { getInstanceState } from '../state/selectors';
 import { initialVariablesState, VariablePayload, VariablesState } from '../state/types';

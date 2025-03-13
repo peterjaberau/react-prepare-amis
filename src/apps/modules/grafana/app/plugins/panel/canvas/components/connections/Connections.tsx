@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BehaviorSubject } from 'rxjs';
 
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { CanvasConnection, ConnectionCoordinates, ConnectionPath } from 'app/features/canvas/element';
 import { ElementState } from 'app/features/canvas/runtime/element';
 import { Scene } from 'app/features/canvas/runtime/scene';

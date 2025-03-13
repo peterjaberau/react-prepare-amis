@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { capitalize } from 'lodash';
 import * as React from 'react';
 
-import { GrafanaTheme2, PluginSignatureType } from '@grafana/data';
+import { GrafanaTheme2, PluginSignatureType } from '@data/index';
 import { useStyles2, Icon, Badge, IconName } from '@grafana/ui';
 
 const SIGNATURE_ICONS: Record<string, IconName> = {

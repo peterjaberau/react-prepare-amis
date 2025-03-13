@@ -27,7 +27,7 @@ import {
   AxisColorMode,
   GraphGradientMode,
   VizOrientation,
-} from '@grafana/schema';
+} from '@schema/index';
 
 // unit lookup needed to determine if we want power-of-2 or power-of-10 axis ticks
 // see categories.ts is @data/index

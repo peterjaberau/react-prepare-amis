@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import Skeleton from 'react-loading-skeleton';
 
-import { DataSourceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Card, LinkButton, Stack, Tag, useStyles2 } from '@grafana/ui';
 

@@ -13,7 +13,7 @@ import {
   CustomVariable,
   VizPanelState,
   VariableValueSingle,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { GRID_COLUMN_COUNT } from 'app/core/constants';
 import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 

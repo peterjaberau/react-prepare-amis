@@ -1,6 +1,6 @@
 import uPlot from 'uplot';
 
-import { colorManipulator } from '@grafana/data';
+import { colorManipulator } from '@data/index';
 
 import { VizDisplayMode, ColorStrategy, CandleStyle } from './types';
 

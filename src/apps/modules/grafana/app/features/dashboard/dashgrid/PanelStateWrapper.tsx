@@ -21,9 +21,9 @@ import {
   TimeRange,
   toDataFrameDTO,
   toUtc,
-} from '@grafana/data';
+} from '@data/index';
 import { RefreshEvent } from '@runtime/index';
-import { VizLegendOptions } from '@grafana/schema';
+import { VizLegendOptions } from '@schema/index';
 import {
   ErrorBoundary,
   PanelChrome,

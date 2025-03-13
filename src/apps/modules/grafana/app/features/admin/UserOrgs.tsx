@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { createRef, PureComponent, ReactElement } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import {
   Button,
   ConfirmButton,

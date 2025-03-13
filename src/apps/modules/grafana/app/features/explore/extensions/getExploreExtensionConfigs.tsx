@@ -1,4 +1,4 @@
-import { PluginExtensionAddedLinkConfig, PluginExtensionPoints } from '@grafana/data';
+import { PluginExtensionAddedLinkConfig, PluginExtensionPoints } from '@data/index';
 import { contextSrv } from 'app/core/core';
 import { dispatch } from 'app/store/store';
 import { AccessControlAction } from 'app/types';

@@ -1,5 +1,5 @@
-import { Field, FieldType } from '@grafana/data';
-import { TextDimensionConfig, TextDimensionMode } from '@grafana/schema';
+import { Field, FieldType } from '@data/index';
+import { TextDimensionConfig, TextDimensionMode } from '@schema/index';
 
 export interface DimensionSupplier<T = any> {
   /**

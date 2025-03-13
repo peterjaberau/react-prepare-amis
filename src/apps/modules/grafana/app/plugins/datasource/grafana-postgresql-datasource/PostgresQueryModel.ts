@@ -1,6 +1,6 @@
-import { ScopedVars } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
-import { VariableFormatID } from '@grafana/schema';
+import { ScopedVars } from '@data/index';
+import { TemplateSrv } from '@runtime/index';
+import { VariableFormatID } from '@schema/index';
 import { SQLQuery, SqlQueryModel, applyQueryDefaults } from '@grafana/sql';
 
 export class PostgresQueryModel implements SqlQueryModel {

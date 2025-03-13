@@ -14,14 +14,14 @@ import {
   formattedValueToString,
   TransformationApplicabilityLevels,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { isLikelyAscendingVector } from '@grafana/data/src/transformations/transformers/joinDataFrames';
 import {
   ScaleDistribution,
   HeatmapCellLayout,
   HeatmapCalculationMode,
   HeatmapCalculationOptions,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { convertDurationToMilliseconds, niceLinearIncrs, niceTimeIncrs } from './utils';
 

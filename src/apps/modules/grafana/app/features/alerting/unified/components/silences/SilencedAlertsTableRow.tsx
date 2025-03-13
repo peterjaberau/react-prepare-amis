@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { intervalToAbbreviatedDurationString } from '@grafana/data';
+import { intervalToAbbreviatedDurationString } from '@data/index';
 import { AlertmanagerAlert } from 'app/plugins/datasource/alertmanager/types';
 
 import { AlertLabels } from '../AlertLabels';

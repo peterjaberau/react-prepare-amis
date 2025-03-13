@@ -1,5 +1,5 @@
-import { FieldColorModeId, FieldConfigProperty, FieldMatcherID, PanelModel } from '@grafana/data';
-import { LegendDisplayMode } from '@grafana/schema';
+import { FieldColorModeId, FieldConfigProperty, FieldMatcherID, PanelModel } from '@data/index';
+import { LegendDisplayMode } from '@schema/index';
 
 import { Options, PieChartLabels, PieChartLegendValues, PieChartType } from './panelcfg.gen';
 

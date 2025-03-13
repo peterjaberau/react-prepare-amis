@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@data/index';
 import { IconName } from '@grafana/ui';
 
 import { DashboardModel } from '../../state/DashboardModel';

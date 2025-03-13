@@ -3,7 +3,7 @@ import { MouseEventHandler } from 'react';
 import * as React from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-import { GrafanaTheme2, isUnsignedPluginSignature, PanelPluginMeta, PluginState } from '@grafana/data';
+import { GrafanaTheme2, isUnsignedPluginSignature, PanelPluginMeta, PluginState } from '@data/index';
 import { IconButton, PluginSignatureBadge, useStyles2 } from '@grafana/ui';
 import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
 import { PluginStateInfo } from 'app/features/plugins/components/PluginStateInfo';

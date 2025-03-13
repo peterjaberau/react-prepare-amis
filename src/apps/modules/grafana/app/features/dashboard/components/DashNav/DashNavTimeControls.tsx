@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Unsubscribable } from 'rxjs';
 
-import { dateMath, TimeRange, TimeZone } from '@grafana/data';
+import { dateMath, TimeRange, TimeZone } from '@data/index';
 import { TimeRangeUpdatedEvent } from '@runtime/index';
 import { defaultIntervals, isWeekStart, RefreshPicker } from '@grafana/ui';
 import { TimePickerWithHistory } from 'app/core/components/TimePicker/TimePickerWithHistory';

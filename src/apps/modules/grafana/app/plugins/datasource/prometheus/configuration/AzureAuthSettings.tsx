@@ -3,7 +3,7 @@ import { FormEvent, useMemo, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
 import { AzureCredentials } from '@grafana/azure-sdk';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { InlineField, InlineFieldRow, InlineSwitch, Input } from '@grafana/ui';
 import { HttpSettingsBaseProps } from '@grafana/ui/src/components/DataSourceSettings/types';
 

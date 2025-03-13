@@ -1,4 +1,4 @@
-import { DateTime, TimeRange } from '@grafana/data';
+import { DateTime, TimeRange } from '@data/index';
 import { dateMath, dateTime, isDateTime } from '@grafana/data/src';
 import { TimeModel } from 'app/features/dashboard/state/TimeModel';
 

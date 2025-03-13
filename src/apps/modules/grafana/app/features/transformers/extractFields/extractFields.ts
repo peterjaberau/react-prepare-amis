@@ -9,7 +9,7 @@ import {
   getFieldTypeFromValue,
   getUniqueFieldName,
   SynchronousDataTransformerInfo,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
 import { findField } from 'app/features/dimensions';
 

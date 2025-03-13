@@ -1,4 +1,4 @@
-import { selectors as e2eSelectors } from '@grafana/e2e-selectors/src';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { Alert } from '@grafana/ui/src';
 import { Trans, t } from 'app/core/internationalization';
 

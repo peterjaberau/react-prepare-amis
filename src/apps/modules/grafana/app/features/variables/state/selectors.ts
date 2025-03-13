@@ -1,6 +1,6 @@
 import memoizeOne from 'memoize-one';
 
-import { TypedVariableModel } from '@grafana/data';
+import { TypedVariableModel } from '@data/index';
 
 import { getState } from '../../../store/store';
 import { StoreState } from '../../../types';

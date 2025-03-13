@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 
-import { GrafanaTheme2, TimeRange } from '@grafana/data';
+import { GrafanaTheme2, TimeRange } from '@data/index';
 import { Spinner, TimeRangeLabel, useStyles2 } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';
 

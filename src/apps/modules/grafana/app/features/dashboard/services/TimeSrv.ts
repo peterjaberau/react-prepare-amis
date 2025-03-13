@@ -12,9 +12,9 @@ import {
   IntervalValues,
   AppEvents,
   dateTimeForTimeZone,
-} from '@grafana/data';
+} from '@data/index';
 import { locationService } from '@runtime/index';
-import { sceneGraph } from '@grafana/scenes';
+import { sceneGraph } from '@scenes/index';
 import appEvents from 'app/core/app_events';
 import { config } from 'app/core/config';
 import { t } from 'app/core/internationalization';

@@ -25,7 +25,7 @@ import {
   TIME_SERIES_VALUE_FIELD_NAME,
   TimeSeries,
   toDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import {
   BackendDataSourceResponse,
   DataSourceWithBackend,
@@ -33,7 +33,7 @@ import {
   getBackendSrv,
   getTemplateSrv,
   TemplateSrv,
-} from '@grafana/runtime';
+} from '@runtime/index';
 import { QueryFormat, SQLQuery } from '@grafana/sql';
 import config from 'app/core/config';
 

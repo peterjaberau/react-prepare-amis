@@ -1,6 +1,6 @@
 import { isArray } from 'lodash';
 
-import { FieldConfigSource, MappingType, PanelModel, ValueMap } from '@grafana/data';
+import { FieldConfigSource, MappingType, PanelModel, ValueMap } from '@data/index';
 
 import { FieldConfig, Options } from './panelcfg.gen';
 

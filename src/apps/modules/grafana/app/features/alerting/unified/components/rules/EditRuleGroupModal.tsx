@@ -3,7 +3,7 @@ import { compact } from 'lodash';
 import { useMemo } from 'react';
 import { FieldValues, FormProvider, RegisterOptions, useForm, useFormContext } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import {
   Alert,
   Badge,

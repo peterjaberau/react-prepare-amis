@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useRef } from 'react';
 
-import { AdHocVariableFilter, GrafanaTheme2, RawTimeRange, urlUtil, VariableHide } from '@grafana/data';
+import { AdHocVariableFilter, GrafanaTheme2, RawTimeRange, urlUtil, VariableHide } from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { locationService, useChromeHeaderHeight } from '@runtime/index';
 import {
@@ -29,7 +29,7 @@ import {
   UrlSyncManager,
   VariableDependencyConfig,
   VariableValueSelectors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 import { getSelectedScopes } from 'app/features/scopes';
 

@@ -1,4 +1,4 @@
-import { PanelData } from '@grafana/data';
+import { PanelData } from '@data/index';
 import { useTheme2 } from '@grafana/ui';
 
 import { STAT, TIMESERIES } from '../utils/constants';

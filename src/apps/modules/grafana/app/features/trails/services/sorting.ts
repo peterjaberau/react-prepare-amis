@@ -1,7 +1,7 @@
 import { OutlierDetector, OutlierOutput } from '@bsull/augurs/outlier';
 import { memoize } from 'lodash';
 
-import { DataFrame, doStandardCalcs, fieldReducers, FieldType, outerJoinDataFrames, ReducerID } from '@grafana/data';
+import { DataFrame, doStandardCalcs, fieldReducers, FieldType, outerJoinDataFrames, ReducerID } from '@data/index';
 
 import { reportExploreMetrics } from '../interactions';
 

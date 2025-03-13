@@ -5,10 +5,10 @@ import {
   getDefaultTimeRange,
   PanelData,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { dataLayers } from '@grafana/scenes';
-import { AnnotationQuery } from '@grafana/schema';
+import { dataLayers } from '@scenes/index';
+import { AnnotationQuery } from '@schema/index';
 import { PublicAnnotationsDataSource } from 'app/features/query/state/DashboardQueryRunner/PublicAnnotationsDataSource';
 
 /**

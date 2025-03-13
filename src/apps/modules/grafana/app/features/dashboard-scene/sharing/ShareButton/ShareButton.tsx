@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { useCallback, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { VizPanel } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { VizPanel } from '@scenes/index';
 import { Button, ButtonGroup, Dropdown, useStyles2 } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

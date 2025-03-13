@@ -17,8 +17,8 @@ import {
   applyFieldOverrides,
   LiveChannelAddress,
   StreamingDataFrame,
-} from '@grafana/data';
-import { config, getGrafanaLiveSrv } from '@grafana/runtime';
+} from '@data/index';
+import { config, getGrafanaLiveSrv } from '@runtime/index';
 import { Alert, stylesFactory, JSONFormatter, CustomScrollbar } from '@grafana/ui';
 
 import { TablePanel } from '../table/TablePanel';

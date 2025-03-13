@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 
-import { QueryVariableModel, VariableRefresh } from '@grafana/data';
+import { QueryVariableModel, VariableRefresh } from '@data/index';
 
 import { dispatch } from '../../../store/store';
 import { VariableAdapter } from '../adapters';

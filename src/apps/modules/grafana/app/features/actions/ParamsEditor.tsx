@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { contentTypeOptions, GrafanaTheme2, VariableSuggestion } from '@grafana/data';
+import { contentTypeOptions, GrafanaTheme2, VariableSuggestion } from '@data/index';
 import { IconButton } from '@grafana/ui/src/components/IconButton/IconButton';
 import { Input } from '@grafana/ui/src/components/Input/Input';
 import { Stack } from '@grafana/ui/src/components/Layout/Stack/Stack';

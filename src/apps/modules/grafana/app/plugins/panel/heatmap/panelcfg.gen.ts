@@ -8,7 +8,7 @@
 //
 // Run 'make gen-cue' from repository root to regenerate.
 
-import * as ui from '@grafana/schema';
+import * as ui from '@schema/index';
 
 /**
  * Controls the color mode of the heatmap

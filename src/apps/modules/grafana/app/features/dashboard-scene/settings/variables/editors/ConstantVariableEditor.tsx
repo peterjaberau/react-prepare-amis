@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { ConstantVariable } from '@grafana/scenes';
+import { ConstantVariable } from '@scenes/index';
 
 import { ConstantVariableForm } from '../components/ConstantVariableForm';
 

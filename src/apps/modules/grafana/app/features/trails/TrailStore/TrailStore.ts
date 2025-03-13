@@ -1,7 +1,7 @@
 import { debounce, isEqual } from 'lodash';
 
-import { urlUtil } from '@grafana/data';
-import { SceneObject, SceneObjectRef, SceneObjectUrlValues, sceneUtils } from '@grafana/scenes';
+import { urlUtil } from '@data/index';
+import { SceneObject, SceneObjectRef, SceneObjectUrlValues, sceneUtils } from '@scenes/index';
 import { dispatch } from 'app/store/store';
 
 import { notifyApp } from '../../../core/reducers/appNotification';

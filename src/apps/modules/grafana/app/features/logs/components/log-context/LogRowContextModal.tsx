@@ -16,9 +16,9 @@ import {
   dateTime,
   TimeRange,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { DataQuery, TimeZone } from '@grafana/schema';
+import { DataQuery, TimeZone } from '@schema/index';
 import { Button, Modal, useTheme2 } from '@grafana/ui';
 import store from 'app/core/store';
 import { SETTINGS_KEYS } from 'app/features/explore/Logs/utils/logs';

@@ -10,9 +10,9 @@ import {
   LogRowContextOptions,
   LogRowModel,
   LogsSortOrder,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { DataQuery, TimeZone } from '@grafana/schema';
+import { DataQuery, TimeZone } from '@schema/index';
 import { Icon, PopoverContent, Tooltip, useTheme2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

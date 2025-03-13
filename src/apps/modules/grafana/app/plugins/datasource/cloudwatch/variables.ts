@@ -7,7 +7,7 @@ import {
   DataQueryResponse,
   MetricFindValue,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 
 import { VariableQueryEditor } from './components/VariableQueryEditor/VariableQueryEditor';
 import { ALL_ACCOUNTS_OPTION } from './components/shared/Account';

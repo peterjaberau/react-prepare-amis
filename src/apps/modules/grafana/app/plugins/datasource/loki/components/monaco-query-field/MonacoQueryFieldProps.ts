@@ -1,4 +1,4 @@
-import { HistoryItem, TimeRange } from '@grafana/data';
+import { HistoryItem, TimeRange } from '@data/index';
 
 import { LokiDatasource } from '../../datasource';
 import { LokiQuery } from '../../types';

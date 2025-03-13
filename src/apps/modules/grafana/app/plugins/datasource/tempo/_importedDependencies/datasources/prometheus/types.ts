@@ -6,8 +6,8 @@ import {
   DataSourceGetTagKeysOptions,
   DataSourceJsonData,
   MetricFindValue,
-} from '@grafana/data';
-import { DataQuery } from '@grafana/schema';
+} from '@data/index';
+import { DataQuery } from '@schema/index';
 
 import { Prometheus as GenPromQuery } from './dataquery.gen';
 

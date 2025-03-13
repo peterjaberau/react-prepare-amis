@@ -4,9 +4,9 @@ import { startCase, uniqBy } from 'lodash';
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, SelectableValue, TimeRange } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue, TimeRange } from '@data/index';
 import { EditorField, EditorFieldGroup, EditorRow } from '@grafana/plugin-ui';
-import { reportInteraction } from '@grafana/runtime';
+import { reportInteraction } from '@runtime/index';
 import { getSelectStyles, Select, AsyncSelect, useStyles2, useTheme2 } from '@grafana/ui';
 
 import CloudMonitoringDatasource from '../datasource';

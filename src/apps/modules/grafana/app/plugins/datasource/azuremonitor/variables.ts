@@ -6,8 +6,8 @@ import {
   DataQueryResponse,
   MetricFindValue,
   toDataFrame,
-} from '@grafana/data';
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+} from '@data/index';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import UrlBuilder from './azure_monitor/url_builder';
 import VariableEditor from './components/VariableEditor/VariableEditor';

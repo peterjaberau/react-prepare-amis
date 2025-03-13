@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 import { config } from 'app/core/config';
 import { ConnectionDirection } from 'app/features/canvas/element';

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { UseFormSetValue } from 'react-hook-form';
 
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { getAppEvents, getBackendSrv } from '@runtime/index';
 import { Button } from '@grafana/ui';
 

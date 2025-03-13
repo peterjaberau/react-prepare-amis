@@ -7,7 +7,7 @@ import {
   DataSourcePluginMeta,
   PluginType,
   ScopedVars,
-} from '@grafana/data';
+} from '@data/index';
 import { DataSourceWithBackend, getDataSourceSrv, getTemplateSrv } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
 

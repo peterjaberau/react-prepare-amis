@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 import { FieldErrors, FormProvider, SubmitErrorHandler, useForm } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { isFetchError } from '@runtime/index';
 import { Alert, Button, Field, Input, LinkButton, Stack, useStyles2 } from '@grafana/ui';
 import { useAppNotification } from 'app/core/copy/appNotification';

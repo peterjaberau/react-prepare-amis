@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { useRef, useCallback, useEffect, useMemo, useState } from 'react';
 import { useAsync } from 'react-use';
 
-import { dateTime, GrafanaTheme2, LogRowModel, renderMarkdown, SelectableValue } from '@grafana/data';
+import { dateTime, GrafanaTheme2, LogRowModel, renderMarkdown, SelectableValue } from '@data/index';
 import { RawQuery } from '@grafana/plugin-ui';
-import { reportInteraction } from '@grafana/runtime';
+import { reportInteraction } from '@runtime/index';
 import {
   Alert,
   Button,

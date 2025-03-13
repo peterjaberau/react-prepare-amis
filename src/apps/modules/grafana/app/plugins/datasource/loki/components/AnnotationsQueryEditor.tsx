@@ -1,7 +1,7 @@
 // Libraries
 import { memo } from 'react';
 
-import { AnnotationQuery } from '@grafana/data';
+import { AnnotationQuery } from '@data/index';
 import { EditorField, EditorRow } from '@grafana/plugin-ui';
 import { Input, Stack } from '@grafana/ui';
 

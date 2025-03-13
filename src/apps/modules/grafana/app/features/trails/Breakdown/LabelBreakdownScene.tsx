@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { isNumber, max, min, throttle } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import { DataFrame, FieldType, GrafanaTheme2, PanelData, SelectableValue } from '@grafana/data';
+import { DataFrame, FieldType, GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
 import { isValidLegacyName, utf8Support } from '@grafana/prometheus';
 import { config } from '@runtime/index';
 import {
@@ -25,8 +25,8 @@ import {
   SceneReactObject,
   VariableDependencyConfig,
   VizPanel,
-} from '@grafana/scenes';
-import { DataQuery, SortOrder, TooltipDisplayMode } from '@grafana/schema';
+} from '@scenes/index';
+import { DataQuery, SortOrder, TooltipDisplayMode } from '@schema/index';
 import { Alert, Button, Field, LoadingPlaceholder, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

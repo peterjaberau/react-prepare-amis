@@ -10,7 +10,7 @@ import {
   MappingType,
   ThresholdsMode,
   getDisplayProcessor,
-} from '@grafana/data';
+} from '@data/index';
 import { fieldIndexComparer } from '@grafana/data/src/field/fieldComparers';
 import { mapStateWithReasonToBaseState } from 'app/types/unified-alerting-dto';
 

@@ -3,8 +3,8 @@ import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import * as React from 'react';
 import { usePrevious } from 'react-use';
 
-import { DataSourceInstanceSettings, VariableSuggestion } from '@grafana/data';
-import { DataSourcePicker } from '@grafana/runtime';
+import { DataSourceInstanceSettings, VariableSuggestion } from '@data/index';
+import { DataSourcePicker } from '@runtime/index';
 import {
   Button,
   DataLinkInput,

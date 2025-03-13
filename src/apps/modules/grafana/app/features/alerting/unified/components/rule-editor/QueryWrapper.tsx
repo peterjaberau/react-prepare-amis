@@ -15,9 +15,9 @@ import {
   ThresholdsConfig,
   getDefaultRelativeTimeRange,
   rangeUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { GraphThresholdsStyleMode, Icon, InlineField, Input, Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { logInfo } from 'app/features/alerting/unified/Analytics';
 import { QueryEditorRow } from 'app/features/query/components/QueryEditorRow';

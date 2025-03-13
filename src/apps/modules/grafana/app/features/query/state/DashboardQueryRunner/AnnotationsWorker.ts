@@ -2,7 +2,7 @@ import { cloneDeep } from 'lodash';
 import { from, merge, Observable, of } from 'rxjs';
 import { catchError, filter, finalize, map, mergeAll, mergeMap, reduce, takeUntil } from 'rxjs/operators';
 
-import { AnnotationQuery, DataSourceApi } from '@grafana/data';
+import { AnnotationQuery, DataSourceApi } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { PublicAnnotationsDataSource } from 'app/features/query/state/DashboardQueryRunner/PublicAnnotationsDataSource';
 

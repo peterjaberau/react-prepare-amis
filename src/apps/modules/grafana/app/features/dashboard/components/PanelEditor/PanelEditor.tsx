@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { Subscription } from 'rxjs';
 
-import { FieldConfigSource, GrafanaTheme2, NavModel, NavModelItem, PageLayoutType } from '@grafana/data';
+import { FieldConfigSource, GrafanaTheme2, NavModel, NavModelItem, PageLayoutType } from '@data/index';
 import { locationService } from '@runtime/index';
 import {
   Button,

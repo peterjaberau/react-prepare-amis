@@ -1,4 +1,4 @@
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 
 import { WelcomeBanner } from './Welcome';
 

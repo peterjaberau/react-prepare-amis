@@ -12,7 +12,7 @@ import {
   SceneVariableSet,
   VizPanel,
   behaviors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { createWorker } from 'app/features/dashboard-scene/saving/createDetectChangesWorker';
 
 import { DashboardAnnotationsDataLayer } from '../scene/DashboardAnnotationsDataLayer';

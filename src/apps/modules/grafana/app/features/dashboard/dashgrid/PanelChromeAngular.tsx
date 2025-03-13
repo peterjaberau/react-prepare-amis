@@ -2,7 +2,7 @@ import { PureComponent } from 'react';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { Subscription } from 'rxjs';
 
-import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@grafana/data';
+import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
 import { PanelChrome } from '@grafana/ui';
 import config from 'app/core/config';

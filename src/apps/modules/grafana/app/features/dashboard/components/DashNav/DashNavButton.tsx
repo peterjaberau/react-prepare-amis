@@ -4,7 +4,7 @@ import { MouseEvent } from 'react';
 import * as React from 'react';
 
 // Components
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconName, IconType, IconSize, IconButton, useStyles2 } from '@grafana/ui';
 
 interface Props {

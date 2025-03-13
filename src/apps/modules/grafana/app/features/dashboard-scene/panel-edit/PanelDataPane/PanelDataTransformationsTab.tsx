@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { DragDropContext, DropResult, Droppable } from '@hello-pangea/dnd';
 import { useState } from 'react';
 
-import { DataTransformerConfig, GrafanaTheme2, PanelData } from '@grafana/data';
+import { DataTransformerConfig, GrafanaTheme2, PanelData } from '@data/index';
 import {
   SceneObjectBase,
   SceneComponentProps,
@@ -11,7 +11,7 @@ import {
   SceneObjectRef,
   VizPanel,
   SceneObjectState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Button, ButtonGroup, ConfirmModal, Tab, useStyles2 } from '@grafana/ui';
 import { TransformationOperationRows } from 'app/features/dashboard/components/TransformationsEditor/TransformationOperationRows';
 

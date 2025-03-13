@@ -1,6 +1,6 @@
-import { TimeRange, type AdHocVariableFilter } from '@grafana/data';
+import { TimeRange, type AdHocVariableFilter } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { sceneGraph } from '@grafana/scenes';
+import { sceneGraph } from '@scenes/index';
 
 import { findHealthyLokiDataSources, RelatedLogsScene } from '../../RelatedLogs/RelatedLogsScene';
 import { VAR_FILTERS } from '../../shared';

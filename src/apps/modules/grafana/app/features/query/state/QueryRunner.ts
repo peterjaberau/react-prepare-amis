@@ -14,7 +14,7 @@ import {
   LoadingState,
   DataSourceRef,
   preProcessPanelData,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 

@@ -1,5 +1,5 @@
 import { PromQuery } from '@grafana/prometheus';
-import { SceneCSSGridItem, SceneQueryRunner, SceneVariableSet } from '@grafana/scenes';
+import { SceneCSSGridItem, SceneQueryRunner, SceneVariableSet } from '@scenes/index';
 
 import { PanelMenu } from '../Menu/PanelMenu';
 import { getAutoQueriesForMetric } from '../autoQuery/getAutoQueriesForMetric';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, Icon, Stack } from '@grafana/ui';
 
 import { CatalogPlugin, PluginIconName } from '../types';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { noop } from 'lodash';
 import { PropsWithChildren } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { IconButton, InlineFieldRow, InlineLabel, InlineSegmentGroup, useStyles2 } from '@grafana/ui';
 
 interface Props {

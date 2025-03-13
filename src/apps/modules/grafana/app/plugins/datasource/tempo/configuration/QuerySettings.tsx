@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataSourcePluginOptionsEditorProps, GrafanaTheme2, updateDatasourcePluginJsonDataOption } from '@grafana/data';
+import { DataSourcePluginOptionsEditorProps, GrafanaTheme2, updateDatasourcePluginJsonDataOption } from '@data/index';
 import { IntervalInput, invalidTimeShiftError } from '@grafana/o11y-ds-frontend';
 import { InlineField, InlineSwitch, useStyles2 } from '@grafana/ui';
 

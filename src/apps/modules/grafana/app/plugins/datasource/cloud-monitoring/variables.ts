@@ -1,7 +1,7 @@
 import { from, Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-import { CustomVariableSupport, DataQueryRequest, DataQueryResponse } from '@grafana/data';
+import { CustomVariableSupport, DataQueryRequest, DataQueryResponse } from '@data/index';
 
 import CloudMonitoringMetricFindQuery from './CloudMonitoringMetricFindQuery';
 import { CloudMonitoringVariableQueryEditor } from './components/VariableQueryEditor';

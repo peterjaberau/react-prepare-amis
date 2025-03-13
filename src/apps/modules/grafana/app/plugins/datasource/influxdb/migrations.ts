@@ -1,4 +1,4 @@
-import { AnnotationQuery, AnnotationSupport } from '@grafana/data';
+import { AnnotationQuery, AnnotationSupport } from '@data/index';
 
 import { InfluxQuery, InfluxQueryTag } from './types';
 

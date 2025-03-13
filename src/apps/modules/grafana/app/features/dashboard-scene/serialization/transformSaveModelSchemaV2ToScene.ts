@@ -22,7 +22,7 @@ import {
   SceneVariableSet,
   TextBoxVariable,
   VariableValueSelectors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DataSourceRef } from '@grafana/schema/dist/esm/index.gen';
 import {
   AdhocVariableKind,

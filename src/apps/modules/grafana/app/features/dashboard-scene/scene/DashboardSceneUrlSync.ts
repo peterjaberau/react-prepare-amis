@@ -1,8 +1,8 @@
 import { Unsubscribable } from 'rxjs';
 
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { SceneObjectUrlSyncHandler, SceneObjectUrlValues, VizPanel } from '@grafana/scenes';
+import { SceneObjectUrlSyncHandler, SceneObjectUrlValues, VizPanel } from '@scenes/index';
 import appEvents from 'app/core/app_events';
 import { contextSrv } from 'app/core/core';
 import { KioskMode } from 'app/types';

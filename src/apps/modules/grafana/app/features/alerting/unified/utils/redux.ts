@@ -1,6 +1,6 @@
 import { AsyncThunk, Draft, PayloadAction, SerializedError, createSlice, isAsyncThunkAction } from '@reduxjs/toolkit';
 
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { FetchError, isFetchError } from '@runtime/index';
 import { appEvents } from 'app/core/core';
 

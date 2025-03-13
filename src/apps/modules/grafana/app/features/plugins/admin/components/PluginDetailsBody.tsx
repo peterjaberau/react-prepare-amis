@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { AppPlugin, GrafanaTheme2, PluginContextProvider, UrlQueryMap, PluginType } from '@grafana/data';
+import { AppPlugin, GrafanaTheme2, PluginContextProvider, UrlQueryMap, PluginType } from '@data/index';
 import { config } from '@runtime/index';
 import { PageInfoItem } from '@grafana/runtime/src/components/PluginPage';
 import { CellProps, Column, InteractiveTable, Stack, useStyles2 } from '@grafana/ui';

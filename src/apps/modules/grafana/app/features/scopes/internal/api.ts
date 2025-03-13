@@ -1,4 +1,4 @@
-import { Scope, ScopeDashboardBinding, ScopeNode, ScopeSpec } from '@grafana/data';
+import { Scope, ScopeDashboardBinding, ScopeNode, ScopeSpec } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { ScopedResourceClient } from 'app/features/apiserver/client';
 

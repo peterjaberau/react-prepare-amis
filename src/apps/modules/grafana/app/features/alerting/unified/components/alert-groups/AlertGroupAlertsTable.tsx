@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@grafana/data';
+import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 import { AlertmanagerAlert } from 'app/plugins/datasource/alertmanager/types';
 

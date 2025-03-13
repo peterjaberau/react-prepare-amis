@@ -5,7 +5,7 @@ import { ReactZoomPanPinchContentRef } from 'react-zoom-pan-pinch';
 import { BehaviorSubject, ReplaySubject, Subject, Subscription } from 'rxjs';
 import Selecto from 'selecto';
 
-import { AppEvents, PanelData } from '@grafana/data';
+import { AppEvents, PanelData } from '@data/index';
 import { locationService } from '@grafana/runtime/src';
 import {
   ColorDimensionConfig,
@@ -13,7 +13,7 @@ import {
   ScalarDimensionConfig,
   ScaleDimensionConfig,
   TextDimensionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 import { Portal } from '@grafana/ui';
 import { config } from 'app/core/config';
 import { DimensionContext } from 'app/features/dimensions';

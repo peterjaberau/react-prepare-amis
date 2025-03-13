@@ -1,4 +1,4 @@
-import { AdHocVariableFilter, RawTimeRange, Scope } from '@grafana/data';
+import { AdHocVariableFilter, RawTimeRange, Scope } from '@data/index';
 import { getPrometheusTime, PromQueryModeller, utf8Support } from '@grafana/prometheus';
 import { config, getBackendSrv } from '@runtime/index';
 

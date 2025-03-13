@@ -1,4 +1,4 @@
-import { DataSourceInstanceSettings, DataSourceJsonData, DataSourceSettings } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceJsonData, DataSourceSettings } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { contextSrv } from 'app/core/services/context_srv';
 import { PERMISSIONS_TIME_INTERVALS } from 'app/features/alerting/unified/components/mute-timings/permissions';

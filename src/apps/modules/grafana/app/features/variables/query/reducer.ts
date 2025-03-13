@@ -8,7 +8,7 @@ import {
   VariableOption,
   VariableRefresh,
   VariableSort,
-} from '@grafana/data';
+} from '@data/index';
 
 import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE, NONE_VARIABLE_TEXT, NONE_VARIABLE_VALUE } from '../constants';
 import { getInstanceState } from '../state/selectors';

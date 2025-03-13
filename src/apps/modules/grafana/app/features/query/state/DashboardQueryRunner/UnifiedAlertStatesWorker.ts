@@ -1,7 +1,7 @@
 import { Observable, from } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { AlertState, AlertStateInfo } from '@grafana/data';
+import { AlertState, AlertStateInfo } from '@data/index';
 import { config } from '@runtime/index';
 import { contextSrv } from 'app/core/services/context_srv';
 import { alertRuleApi } from 'app/features/alerting/unified/api/alertRuleApi';

@@ -4,7 +4,7 @@ import pluralize from 'pluralize';
 import { FC, ReactElement, useMemo, useState } from 'react';
 import { useLocalStorage } from 'react-use';
 
-import { DataSourceInstanceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { Alert, Button, Tooltip, useStyles2 } from '@grafana/ui';
 
 import { useUnifiedAlertingSelector } from '../../hooks/useUnifiedAlertingSelector';

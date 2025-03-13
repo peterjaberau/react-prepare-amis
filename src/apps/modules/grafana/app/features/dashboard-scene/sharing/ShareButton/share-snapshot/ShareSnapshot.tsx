@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useAsyncFn from 'react-use/lib/useAsyncFn';
 
-import { SceneComponentProps } from '@grafana/scenes';
+import { SceneComponentProps } from '@scenes/index';
 import { Alert, Button, ClipboardButton, Spinner, Stack, TextLink } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { contextSrv } from 'app/core/services/context_srv';

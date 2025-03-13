@@ -3,7 +3,7 @@ import { ComponentType, PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { LoadingState, VariableOption, VariableWithMultiSupport, VariableWithOptions } from '@grafana/data';
+import { LoadingState, VariableOption, VariableWithMultiSupport, VariableWithOptions } from '@data/index';
 import { ClickOutsideWrapper } from '@grafana/ui';
 import { StoreState, ThunkDispatch } from 'app/types';
 

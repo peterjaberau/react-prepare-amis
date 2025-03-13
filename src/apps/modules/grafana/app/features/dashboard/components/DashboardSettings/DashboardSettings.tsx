@@ -2,7 +2,7 @@ import * as H from 'history';
 import { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { locationUtil, NavModel, NavModelItem } from '@grafana/data';
+import { locationUtil, NavModel, NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, Stack, Text, ToolbarButtonRow } from '@grafana/ui';
 import { AppChromeUpdate } from 'app/core/components/AppChrome/AppChromeUpdate';

@@ -1,4 +1,4 @@
-import { AnnotationQuery } from '@grafana/data';
+import { AnnotationQuery } from '@data/index';
 
 import { AnnotationQueryEditor } from './components/AnnotationQueryEditor/AnnotationQueryEditor';
 import { DEFAULT_ANNOTATIONS_QUERY } from './defaultQueries';

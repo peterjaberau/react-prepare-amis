@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
-import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@grafana/data';
+import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@data/index';
 import { Alert } from '@grafana/ui';
 
 import TagsInput from '../SearchTraceQLEditor/TagsInput';

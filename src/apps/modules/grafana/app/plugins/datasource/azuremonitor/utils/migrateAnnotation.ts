@@ -1,4 +1,4 @@
-import { AnnotationQuery } from '@grafana/data';
+import { AnnotationQuery } from '@data/index';
 
 import { AzureMonitorQuery, AzureQueryType } from '../types';
 

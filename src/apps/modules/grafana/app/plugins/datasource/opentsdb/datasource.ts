@@ -25,8 +25,8 @@ import {
   DateTime,
   ScopedVars,
   toDataFrame,
-} from '@grafana/data';
-import { FetchResponse, getBackendSrv } from '@grafana/runtime';
+} from '@data/index';
+import { FetchResponse, getBackendSrv } from '@runtime/index';
 import { getTemplateSrv, TemplateSrv } from 'app/features/templating/template_srv';
 
 import { AnnotationEditor } from './components/AnnotationEditor';

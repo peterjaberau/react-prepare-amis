@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, dateTimeFormat } from '@grafana/data';
+import { GrafanaTheme2, dateTimeFormat } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { LibraryPanelBehavior } from '../scene/LibraryPanelBehavior';

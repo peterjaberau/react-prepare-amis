@@ -1,6 +1,6 @@
 import { defaults, isEqual } from 'lodash';
 
-import { isEmptyObject, ScopedVars, TimeRange } from '@grafana/data';
+import { isEmptyObject, ScopedVars, TimeRange } from '@data/index';
 import {
   behaviors,
   SceneGridItemLike,
@@ -9,7 +9,7 @@ import {
   SceneDataTransformer,
   SceneVariableSet,
   LocalValueVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import {
   AnnotationQuery,
   Dashboard,
@@ -24,7 +24,7 @@ import {
   TimePickerConfig,
   VariableModel,
   VariableRefresh,
-} from '@grafana/schema';
+} from '@schema/index';
 import { sortedDeepCloneWithoutNulls } from 'app/core/utils/object';
 import { getPanelDataFrames } from 'app/features/dashboard/components/HelpWizard/utils';
 import { DASHBOARD_SCHEMA_VERSION } from 'app/features/dashboard/state/DashboardMigrator';

@@ -1,6 +1,6 @@
 import { FormEvent, PureComponent } from 'react';
 
-import { ConstantVariableModel } from '@grafana/data';
+import { ConstantVariableModel } from '@data/index';
 import { ConstantVariableForm } from 'app/features/dashboard-scene/settings/variables/components/ConstantVariableForm';
 
 import { VariableEditorProps } from '../editor/types';

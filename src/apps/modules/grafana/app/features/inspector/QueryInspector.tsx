@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 import { Subscription } from 'rxjs';
 
-import { LoadingState, PanelData } from '@grafana/data';
+import { LoadingState, PanelData } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, ClipboardButton, JSONFormatter, LoadingPlaceholder, Stack } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

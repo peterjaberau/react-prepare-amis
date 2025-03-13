@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataQueryError, GrafanaTheme2 } from '@grafana/data';
+import { DataQueryError, GrafanaTheme2 } from '@data/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 
 export interface Props {

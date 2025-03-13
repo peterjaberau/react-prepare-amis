@@ -1,4 +1,4 @@
-import { SceneCSSGridLayout } from '@grafana/scenes';
+import { SceneCSSGridLayout } from '@scenes/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 
 import { ResponsiveGridItem } from '../../scene/layout-responsive-grid/ResponsiveGridItem';

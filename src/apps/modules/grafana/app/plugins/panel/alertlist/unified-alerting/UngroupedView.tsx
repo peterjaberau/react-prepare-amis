@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { useLocation } from 'react-use';
 
-import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@grafana/data';
+import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
 import { Icon, Stack, useStyles2 } from '@grafana/ui';
 import alertDef from 'app/features/alerting/state/alertDef';
 import { Spacer } from 'app/features/alerting/unified/components/Spacer';

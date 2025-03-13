@@ -1,4 +1,4 @@
-import { getDataSourceRef, IntervalVariableModel } from '@grafana/data';
+import { getDataSourceRef, IntervalVariableModel } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import {
   CancelActivationHandler,
@@ -10,7 +10,7 @@ import {
   SceneQueryRunner,
   VizPanel,
   VizPanelMenu,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { initialIntervalVariableModelState } from 'app/features/variables/interval/reducer';
 
 import { DashboardDatasourceBehaviour } from '../scene/DashboardDatasourceBehaviour';

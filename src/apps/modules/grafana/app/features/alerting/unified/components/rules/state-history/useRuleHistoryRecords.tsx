@@ -8,9 +8,9 @@ import {
   FieldType,
   GrafanaTheme2,
   getDisplayProcessor,
-} from '@grafana/data';
+} from '@data/index';
 import { fieldIndexComparer } from '@grafana/data/src/field/fieldComparers';
-import { MappingType, ThresholdsMode } from '@grafana/schema';
+import { MappingType, ThresholdsMode } from '@schema/index';
 import { useTheme2 } from '@grafana/ui';
 
 import { labelsMatchMatchers } from '../../../utils/alertmanager';

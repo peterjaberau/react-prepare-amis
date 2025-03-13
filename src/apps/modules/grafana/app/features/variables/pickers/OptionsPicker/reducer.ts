@@ -2,7 +2,7 @@ import uFuzzy from '@leeoniya/ufuzzy';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { cloneDeep, isString } from 'lodash';
 
-import { containsSearchFilter, VariableOption, VariableWithOptions } from '@grafana/data';
+import { containsSearchFilter, VariableOption, VariableWithOptions } from '@data/index';
 
 import { applyStateChanges } from '../../../../core/utils/applyStateChanges';
 import { ALL_VARIABLE_VALUE } from '../../constants';

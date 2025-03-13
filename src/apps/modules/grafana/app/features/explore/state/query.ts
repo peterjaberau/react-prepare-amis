@@ -20,10 +20,10 @@ import {
   ScopedVars,
   SupplementaryQueryType,
   toLegacyResponseData,
-} from '@grafana/data';
+} from '@data/index';
 import { combinePanelData } from '@grafana/o11y-ds-frontend';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import {
   buildQueryTransaction,
   ensureQueries,

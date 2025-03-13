@@ -10,8 +10,8 @@ import {
   FrameGeometrySourceMode,
   DataTransformerConfig,
   DataTransformerID,
-} from '@grafana/data';
-import { ResourceDimensionMode } from '@grafana/schema';
+} from '@data/index';
+import { ResourceDimensionMode } from '@schema/index';
 
 import { defaultMarkersConfig, MarkersConfig } from './layers/data/markersLayer';
 import { getMarkerAsPath } from './style/markers';

@@ -1,6 +1,6 @@
 import debounce from 'debounce-promise';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 import { Select, Input, InlineFormLabel, AsyncSelect, Stack, InlineLabel } from '@grafana/ui';
 
 import { OpenTsdbQuery } from '../types';

@@ -6,8 +6,8 @@ import {
   identityOverrideProcessor,
   PanelPlugin,
   VizOrientation,
-} from '@grafana/data';
-import { GraphTransform, GraphThresholdsStyleMode, StackingMode, VisibilityMode } from '@grafana/schema';
+} from '@data/index';
+import { GraphTransform, GraphThresholdsStyleMode, StackingMode, VisibilityMode } from '@schema/index';
 import { graphFieldOptions, commonOptionsBuilder } from '@grafana/ui';
 import { optsWithHideZeros } from '@grafana/ui/src/options/builder/tooltip';
 

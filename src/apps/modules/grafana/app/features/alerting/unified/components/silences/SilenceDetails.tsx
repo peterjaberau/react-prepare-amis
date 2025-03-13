@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, dateMath, intervalToAbbreviatedDurationString } from '@grafana/data';
+import { GrafanaTheme2, dateMath, intervalToAbbreviatedDurationString } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 import SilencedAlertsTable from './SilencedAlertsTable';

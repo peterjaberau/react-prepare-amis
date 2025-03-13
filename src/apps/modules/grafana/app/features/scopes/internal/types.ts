@@ -1,4 +1,4 @@
-import { Scope, ScopeDashboardBinding, ScopeNodeSpec } from '@grafana/data';
+import { Scope, ScopeDashboardBinding, ScopeNodeSpec } from '@data/index';
 
 export enum NodeReason {
   Persisted,

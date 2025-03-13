@@ -1,4 +1,4 @@
-import { Registry } from '@grafana/data';
+import { Registry } from '@data/index';
 
 import { DefaultGridLayoutManager } from '../layout-default/DefaultGridLayoutManager';
 import { ResponsiveGridLayoutManager } from '../layout-responsive-grid/ResponsiveGridLayoutManager';

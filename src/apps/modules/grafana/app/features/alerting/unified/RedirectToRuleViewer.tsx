@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { Navigate } from 'react-router-dom-v5-compat';
 import { useLocation } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, isFetchError } from '@runtime/index';
 import { Alert, Card, Icon, LoadingPlaceholder, useStyles2 } from '@grafana/ui';
 

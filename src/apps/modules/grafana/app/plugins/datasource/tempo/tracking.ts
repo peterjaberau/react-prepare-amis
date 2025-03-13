@@ -1,5 +1,5 @@
-import { DashboardLoadedEvent } from '@grafana/data';
-import { getTemplateSrv, reportInteraction } from '@grafana/runtime';
+import { DashboardLoadedEvent } from '@data/index';
+import { getTemplateSrv, reportInteraction } from '@runtime/index';
 
 import pluginJson from './plugin.json';
 import { TempoQuery } from './types';

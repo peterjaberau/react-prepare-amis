@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { FormEventHandler, KeyboardEventHandler, ReactNode } from 'react';
 
-import { DocsId, GrafanaTheme2, TransformerRegistryItem } from '@grafana/data';
+import { DocsId, GrafanaTheme2, TransformerRegistryItem } from '@data/index';
 import { Card, Container, VerticalGroup, Alert, Input, useStyles2 } from '@grafana/ui';
 import { LocalStorageValueProvider } from 'app/core/components/LocalStorageValueProvider';
 import { getDocsLink } from 'app/core/utils/docsLinks';

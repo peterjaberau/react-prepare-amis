@@ -3,8 +3,8 @@ import { debounce } from 'lodash';
 import { useCallback, useMemo, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { CoreApp, QueryEditorProps } from '@grafana/data';
-import { config, reportInteraction } from '@grafana/runtime';
+import { CoreApp, QueryEditorProps } from '@data/index';
+import { config, reportInteraction } from '@runtime/index';
 import { Alert, Button, CodeEditor, Space } from '@grafana/ui';
 
 import AzureMonitorDatasource from '../../datasource';

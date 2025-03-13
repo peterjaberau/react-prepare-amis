@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { PluginMeta } from '@grafana/data';
+import { PluginMeta } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';

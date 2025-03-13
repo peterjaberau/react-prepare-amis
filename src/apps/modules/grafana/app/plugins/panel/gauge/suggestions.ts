@@ -1,4 +1,4 @@
-import { ThresholdsMode, VisualizationSuggestionsBuilder } from '@grafana/data';
+import { ThresholdsMode, VisualizationSuggestionsBuilder } from '@data/index';
 import { SuggestionName } from 'app/types/suggestions';
 
 import { Options } from './panelcfg.gen';

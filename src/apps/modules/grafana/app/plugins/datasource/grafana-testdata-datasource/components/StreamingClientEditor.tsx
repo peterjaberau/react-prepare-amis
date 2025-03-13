@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
 
 import { EditorProps } from '../QueryEditor';

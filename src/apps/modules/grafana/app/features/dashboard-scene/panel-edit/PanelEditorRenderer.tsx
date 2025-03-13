@@ -1,8 +1,8 @@
 import { css, cx } from '@emotion/css';
 import { useEffect } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, VizPanel } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, VizPanel } from '@scenes/index';
 import { Button, Spinner, ToolbarButton, useStyles2 } from '@grafana/ui';
 
 import { useEditPaneCollapsed } from '../edit-pane/shared';

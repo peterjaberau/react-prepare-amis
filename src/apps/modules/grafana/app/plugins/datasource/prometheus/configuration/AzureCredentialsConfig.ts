@@ -8,9 +8,9 @@ import {
   getDefaultAzureCloud,
   updateDatasourceCredentials,
 } from '@grafana/azure-sdk';
-import { DataSourceSettings, SelectableValue } from '@grafana/data';
+import { DataSourceSettings, SelectableValue } from '@data/index';
 import { PromOptions } from '@grafana/prometheus';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 
 export function getAzureCloudOptions(): Array<SelectableValue<string>> {
   const cloudInfo = getAzureClouds();

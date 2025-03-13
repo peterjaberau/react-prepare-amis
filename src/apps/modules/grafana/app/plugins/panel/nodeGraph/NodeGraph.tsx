@@ -3,7 +3,7 @@ import cx from 'classnames';
 import { memo, MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import useMeasure from 'react-use/lib/useMeasure';
 
-import { DataFrame, GrafanaTheme2, LinkModel } from '@grafana/data';
+import { DataFrame, GrafanaTheme2, LinkModel } from '@data/index';
 import { Icon, Spinner, useStyles2 } from '@grafana/ui';
 
 import { Edge } from './Edge';

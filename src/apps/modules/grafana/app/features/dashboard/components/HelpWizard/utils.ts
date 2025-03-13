@@ -11,7 +11,7 @@ import {
   LoadingState,
   dataFrameToJSON,
   DataTopic,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';
 import { Randomize, randomizeData } from 'app/features/dashboard-scene/inspect/HelpWizard/randomizer';

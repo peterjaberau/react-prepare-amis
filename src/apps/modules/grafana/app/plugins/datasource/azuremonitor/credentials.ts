@@ -6,7 +6,7 @@ import {
   resolveLegacyCloudName,
   updateDatasourceCredentials,
 } from '@grafana/azure-sdk';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 
 import { AzureMonitorDataSourceInstanceSettings, AzureMonitorDataSourceSettings } from './types';
 

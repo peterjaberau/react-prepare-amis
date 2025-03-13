@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useForm } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Button, Checkbox, FieldSet, Spinner, Stack } from '@grafana/ui';
 import { useStyles2 } from '@grafana/ui/';
 import { contextSrv } from 'app/core/core';

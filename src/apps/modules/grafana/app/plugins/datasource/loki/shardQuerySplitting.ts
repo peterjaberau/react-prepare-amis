@@ -2,7 +2,7 @@ import { groupBy, partition } from 'lodash';
 import { Observable, Subscriber, Subscription } from 'rxjs';
 import { v4 as uuidv4 } from 'uuid';
 
-import { DataQueryRequest, LoadingState, DataQueryResponse, QueryResultMetaStat } from '@grafana/data';
+import { DataQueryRequest, LoadingState, DataQueryResponse, QueryResultMetaStat } from '@data/index';
 
 import { LokiDatasource } from './datasource';
 import { combineResponses, replaceResponses } from './mergeResponses';

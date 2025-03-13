@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { LinkModel, PanelData, PanelPlugin, renderMarkdown } from '@grafana/data';
+import { LinkModel, PanelData, PanelPlugin, renderMarkdown } from '@data/index';
 import { config, getTemplateSrv, locationService } from '@runtime/index';
 import { PanelPadding } from '@grafana/ui';
 import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';

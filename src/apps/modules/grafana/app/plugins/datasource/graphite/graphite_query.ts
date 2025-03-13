@@ -1,7 +1,7 @@
 import { compact, each, findIndex, flatten, get, join, keyBy, last, map, reduce, without } from 'lodash';
 
-import { ScopedVars } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
+import { ScopedVars } from '@data/index';
+import { TemplateSrv } from '@runtime/index';
 import { arrayMove } from 'app/core/utils/arrayMove';
 
 import { GraphiteDatasource } from './datasource';

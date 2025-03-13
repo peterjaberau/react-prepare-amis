@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import {
   SceneComponentProps,
   SceneObject,
@@ -7,7 +7,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   SceneObjectWithUrlSync,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { RadioButtonGroup } from '@grafana/ui';
 
 import { reportExploreMetrics } from '../interactions';

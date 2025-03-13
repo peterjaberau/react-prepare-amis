@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useCallback, useEffect, useState } from 'react';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
-import { getTemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv } from '@runtime/index';
 import { fuzzyMatch, InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
 
 import { JaegerDatasource } from '../datasource';

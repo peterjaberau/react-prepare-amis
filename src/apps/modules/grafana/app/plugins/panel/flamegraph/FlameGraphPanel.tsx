@@ -1,6 +1,6 @@
-import { CoreApp, PanelProps } from '@grafana/data';
+import { CoreApp, PanelProps } from '@data/index';
 import { FlameGraph, checkFields, getMessageCheckFieldsResult } from '@grafana/flamegraph';
-import { PanelDataErrorView, reportInteraction, config } from '@grafana/runtime';
+import { PanelDataErrorView, reportInteraction, config } from '@runtime/index';
 
 function interaction(name: string, context: Record<string, string | number> = {}) {
   reportInteraction(`grafana_flamegraph_${name}`, {

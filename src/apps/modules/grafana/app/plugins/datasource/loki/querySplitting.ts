@@ -13,7 +13,7 @@ import {
   rangeUtil,
   TimeRange,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 
 import { LokiDatasource } from './datasource';
 import { splitTimeRange as splitLogsTimeRange } from './logsTimeSplitting';

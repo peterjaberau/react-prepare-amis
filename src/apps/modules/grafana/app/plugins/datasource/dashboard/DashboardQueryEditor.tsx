@@ -4,7 +4,7 @@ import pluralize from 'pluralize';
 import { useCallback, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
-import { DataQuery, GrafanaTheme2, SelectableValue, DataTopic, QueryEditorProps } from '@grafana/data';
+import { DataQuery, GrafanaTheme2, SelectableValue, DataTopic, QueryEditorProps } from '@data/index';
 import { OperationsEditorRow } from '@grafana/plugin-ui';
 import { Field, Select, useStyles2, Spinner, RadioButtonGroup, Stack, InlineSwitch } from '@grafana/ui';
 import config from 'app/core/config';

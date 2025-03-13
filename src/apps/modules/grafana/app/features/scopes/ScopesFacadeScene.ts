@@ -6,7 +6,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   SceneObjectWithUrlSync,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import { scopesSelectorScene } from './instance';
 import { disableScopes, enableScopes, enterScopesReadOnly, exitScopesReadOnly, getSelectedScopes } from './utils';

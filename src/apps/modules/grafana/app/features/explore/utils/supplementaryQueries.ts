@@ -14,7 +14,7 @@ import {
   LogsVolumeCustomMetaData,
   LogsVolumeType,
   SupplementaryQueryType,
-} from '@grafana/data';
+} from '@data/index';
 import store from 'app/core/store';
 import { ExplorePanelData, SupplementaryQueries } from 'app/types';
 

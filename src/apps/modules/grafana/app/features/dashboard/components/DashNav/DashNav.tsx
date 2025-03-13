@@ -3,8 +3,8 @@ import { memo, ReactNode } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { textUtil } from '@grafana/data';
-import { selectors as e2eSelectors } from '@grafana/e2e-selectors/src';
+import { textUtil } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { locationService } from '@runtime/index';
 import {
   ButtonGroup,

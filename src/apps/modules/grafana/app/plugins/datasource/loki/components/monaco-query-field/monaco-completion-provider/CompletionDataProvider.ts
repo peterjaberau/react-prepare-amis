@@ -1,6 +1,6 @@
 import { chain } from 'lodash';
 
-import { HistoryItem, TimeRange } from '@grafana/data';
+import { HistoryItem, TimeRange } from '@data/index';
 
 import LanguageProvider from '../../../LanguageProvider';
 import { escapeLabelValueInExactSelector } from '../../../languageUtils';

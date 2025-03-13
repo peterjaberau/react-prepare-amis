@@ -1,4 +1,4 @@
-import { E2ESelectors } from '@grafana/e2e-selectors';
+import { E2ESelectors } from '@selectors/index';
 
 export const components = {
   configEditor: {

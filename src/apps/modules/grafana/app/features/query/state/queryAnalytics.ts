@@ -1,4 +1,4 @@
-import { PanelData, LoadingState, DataSourceApi, urlUtil, CoreApp } from '@grafana/data';
+import { PanelData, LoadingState, DataSourceApi, urlUtil, CoreApp } from '@data/index';
 import { reportMetaAnalytics, MetaAnalyticsEventName, DataRequestEventPayload } from '@runtime/index';
 
 import { getDashboardSrv } from '../../dashboard/services/DashboardSrv';

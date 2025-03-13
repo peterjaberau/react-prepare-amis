@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import { PanelProps } from '@grafana/data';
+import { PanelProps } from '@data/index';
 
 import { CursorView } from './CursorView';
 import { EventBusLoggerPanel } from './EventBusLogger';

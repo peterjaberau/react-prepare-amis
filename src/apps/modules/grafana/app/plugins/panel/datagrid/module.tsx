@@ -1,4 +1,4 @@
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 
 import { DataGridPanel } from './DataGridPanel';
 import { defaultOptions, Options } from './panelcfg.gen';

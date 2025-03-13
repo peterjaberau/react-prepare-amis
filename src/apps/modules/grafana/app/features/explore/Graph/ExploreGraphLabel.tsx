@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { RadioButtonGroup } from '@grafana/ui';
 import { EXPLORE_GRAPH_STYLES, ExploreGraphStyle } from 'app/types';
 

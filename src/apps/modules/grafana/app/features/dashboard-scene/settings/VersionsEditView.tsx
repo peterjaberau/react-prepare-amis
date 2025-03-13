@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { PageLayoutType, dateTimeFormat, dateTimeFormatTimeAgo } from '@grafana/data';
+import { PageLayoutType, dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
 import { config } from '@runtime/index';
-import { SceneComponentProps, SceneObjectBase, sceneGraph } from '@grafana/scenes';
+import { SceneComponentProps, SceneObjectBase, sceneGraph } from '@scenes/index';
 import { Spinner, Stack } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 

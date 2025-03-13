@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { AnnotationQuery, DataSourceApi } from '@grafana/data';
+import { AnnotationQuery, DataSourceApi } from '@data/index';
 import { AngularComponent, config, getAngularLoader } from '@runtime/index';
 
 export interface Props {

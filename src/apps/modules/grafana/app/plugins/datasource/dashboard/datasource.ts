@@ -11,8 +11,8 @@ import {
   PanelData,
   DataFrame,
   LoadingState,
-} from '@grafana/data';
-import { SceneDataProvider, SceneDataTransformer, SceneObject } from '@grafana/scenes';
+} from '@data/index';
+import { SceneDataProvider, SceneDataTransformer, SceneObject } from '@scenes/index';
 import {
   activateSceneObjectAndParentTree,
   findOriginalVizPanelByKey,

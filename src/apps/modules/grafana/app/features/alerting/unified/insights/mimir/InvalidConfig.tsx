@@ -1,5 +1,5 @@
-import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@grafana/scenes';
-import { BigValueGraphMode, DataSourceRef } from '@grafana/schema';
+import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@scenes/index';
+import { BigValueGraphMode, DataSourceRef } from '@schema/index';
 
 import { INSTANCE_ID, PANEL_STYLES } from '../../home/Insights';
 import { InsightsMenuButton } from '../InsightsMenuButton';

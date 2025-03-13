@@ -1,4 +1,4 @@
-import { DataFrame, FieldCache, FieldType, FieldWithIndex, DataFrameType, Labels } from '@grafana/data';
+import { DataFrame, FieldCache, FieldType, FieldWithIndex, DataFrameType, Labels } from '@data/index';
 
 import { parseLegacyLogsFrame } from './legacyLogsFrame';
 

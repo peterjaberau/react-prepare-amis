@@ -1,8 +1,8 @@
 // eslint-disable-next-line lodash/import-scope
 import _ from 'lodash';
 
-import { ScopedVars } from '@grafana/data';
-import { getTemplateSrv, DataSourceWithBackend } from '@grafana/runtime';
+import { ScopedVars } from '@data/index';
+import { getTemplateSrv, DataSourceWithBackend } from '@runtime/index';
 
 import { AzureMonitorQuery, AzureMonitorDataSourceJsonData, AzureQueryType } from '../types';
 import { interpolateVariable } from '../utils/common';

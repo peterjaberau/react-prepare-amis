@@ -8,7 +8,7 @@ import {
   SizedGridColumn,
 } from '@glideapps/glide-data-grid';
 
-import { DataFrame, Field, FieldType, getFieldDisplayName } from '@grafana/data';
+import { DataFrame, Field, FieldType, getFieldDisplayName } from '@data/index';
 
 import { isDatagridEnabled } from './featureFlagUtils';
 import {

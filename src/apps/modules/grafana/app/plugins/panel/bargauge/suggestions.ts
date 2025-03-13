@@ -1,4 +1,4 @@
-import { VisualizationSuggestionsBuilder, VizOrientation } from '@grafana/data';
+import { VisualizationSuggestionsBuilder, VizOrientation } from '@data/index';
 import { BarGaugeDisplayMode } from '@grafana/ui';
 import { SuggestionName } from 'app/types/suggestions';
 

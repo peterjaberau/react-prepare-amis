@@ -15,8 +15,8 @@ import {
   GrafanaTheme2,
   PluginState,
   EventBus,
-} from '@grafana/data';
-import { ComparisonOperation } from '@grafana/schema';
+} from '@data/index';
+import { ComparisonOperation } from '@schema/index';
 import { findField } from 'app/features/dimensions';
 
 import { StyleEditor } from '../../editor/StyleEditor';

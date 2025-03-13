@@ -1,5 +1,5 @@
-import { PageLayoutType } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase } from '@grafana/scenes';
+import { PageLayoutType } from '@data/index';
+import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { Permissions } from 'app/core/components/AccessControl';
 import { Page } from 'app/core/components/Page/Page';
 import { contextSrv } from 'app/core/core';

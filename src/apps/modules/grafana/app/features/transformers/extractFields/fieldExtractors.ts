@@ -1,4 +1,4 @@
-import { escapeStringForRegex, Registry, RegistryItem, stringStartsAsRegEx, stringToJsRegex } from '@grafana/data';
+import { escapeStringForRegex, Registry, RegistryItem, stringStartsAsRegEx, stringToJsRegex } from '@data/index';
 
 import { ExtractFieldsOptions, FieldExtractorID } from './types';
 

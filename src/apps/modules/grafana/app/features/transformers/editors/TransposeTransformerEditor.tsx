@@ -4,7 +4,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { TransposeTransformerOptions } from '@grafana/data/src/transformations/transformers/transpose';
 import { InlineField, InlineFieldRow, Input } from '@grafana/ui';
 

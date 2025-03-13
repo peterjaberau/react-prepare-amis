@@ -6,7 +6,7 @@ import {
   PluginExtensionPanelContext,
   PluginExtensionPoints,
   getTimeZone,
-} from '@grafana/data';
+} from '@data/index';
 import { usePluginLinks } from '@runtime/index';
 import { getPanelStateForModel } from 'app/features/panel/state/selectors';
 import { useSelector } from 'app/types';

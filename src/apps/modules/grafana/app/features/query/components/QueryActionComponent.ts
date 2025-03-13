@@ -1,4 +1,4 @@
-import { CoreApp, DataQuery, DataSourceInstanceSettings, TimeRange } from '@grafana/data';
+import { CoreApp, DataQuery, DataSourceInstanceSettings, TimeRange } from '@data/index';
 
 interface ActionComponentProps {
   query?: DataQuery;
@@ -19,7 +19,7 @@ type ScopedQueryActionComponent = {
 
 class QueryActionComponents {
   extraRenderActions: QueryActionComponent[] = [];
-  /* additional actions added in core grafana are likely to be needed in only one kind of app, 
+  /* additional actions added in core grafana are likely to be needed in only one kind of app,
     and the add function may be ran multiple times by the component so it is keyed to ensure uniqueness
   */
   keyedScopedExtraRenderActions: Map<string, ScopedQueryActionComponent> = new Map();

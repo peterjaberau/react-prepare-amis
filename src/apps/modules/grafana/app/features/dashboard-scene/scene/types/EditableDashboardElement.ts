@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { SceneObject } from '@grafana/scenes';
+import { SceneObject } from '@scenes/index';
 import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { MultiSelectedEditableDashboardElement } from './MultiSelectedEditableDashboardElement';

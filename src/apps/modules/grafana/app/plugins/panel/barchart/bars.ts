@@ -1,6 +1,6 @@
 import uPlot, { Axis, AlignedData, Scale } from 'uplot';
 
-import { DataFrame, dateTimeFormat, GrafanaTheme2, systemDateFormats, TimeZone } from '@grafana/data';
+import { DataFrame, dateTimeFormat, GrafanaTheme2, systemDateFormats, TimeZone } from '@data/index';
 import { alpha } from '@grafana/data/src/themes/colorManipulator';
 import {
   StackingMode,
@@ -9,7 +9,7 @@ import {
   ScaleOrientation,
   VizTextDisplayOptions,
   VizLegendOptions,
-} from '@grafana/schema';
+} from '@schema/index';
 import { measureText } from '@grafana/ui';
 import { timeUnitSize } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
 import { StackingGroup, preparePlotData2 } from '@grafana/ui/src/components/uPlot/utils';

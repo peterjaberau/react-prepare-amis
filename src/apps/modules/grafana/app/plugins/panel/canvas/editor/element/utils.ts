@@ -1,5 +1,5 @@
-import { AppEvents, textUtil } from '@grafana/data';
-import { BackendSrvRequest, getBackendSrv, getTemplateSrv } from '@grafana/runtime';
+import { AppEvents, textUtil } from '@data/index';
+import { BackendSrvRequest, getBackendSrv, getTemplateSrv } from '@runtime/index';
 import { appEvents } from 'app/core/core';
 import { createAbsoluteUrl, RelativeUrl } from 'app/features/alerting/unified/utils/url';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';

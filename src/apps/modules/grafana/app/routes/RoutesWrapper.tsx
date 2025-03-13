@@ -10,7 +10,7 @@ import {
   LocationServiceProvider,
   useChromeHeaderHeight,
   useSidecar_EXPERIMENTAL,
-} from '@grafana/runtime';
+} from '@runtime/index';
 import { GlobalStyles, IconButton, ModalRoot, Stack, useSplitter, useStyles2 } from '@grafana/ui';
 
 import { AngularRoot } from '../angular/AngularRoot';

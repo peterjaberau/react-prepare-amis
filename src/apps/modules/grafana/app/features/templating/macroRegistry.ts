@@ -1,6 +1,6 @@
 import moment from 'moment-timezone';
 
-import { DataLinkBuiltInVars, getTimeZone, ScopedVars, urlUtil } from '@grafana/data';
+import { DataLinkBuiltInVars, getTimeZone, ScopedVars, urlUtil } from '@data/index';
 
 import { getTimeSrv } from '../dashboard/services/TimeSrv';
 import { getVariablesUrlParams } from '../variables/getAllVariableValuesForUrl';

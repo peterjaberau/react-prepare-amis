@@ -10,9 +10,9 @@ import {
   RawTimeRange,
   ExploreCorrelationHelperData,
   EventBusExtended,
-} from '@grafana/data';
+} from '@data/index';
 import { CorrelationData } from '@runtime/index';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+import { DataQuery, DataSourceRef } from '@schema/index';
 import { getQueryKeys } from 'app/core/utils/explore';
 import { getCorrelationsBySourceUIDs } from 'app/features/correlations/utils';
 import { getTimeZone } from 'app/features/profile/state/selectors';

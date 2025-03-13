@@ -1,4 +1,4 @@
-import { Column } from '@grafana/data';
+import { Column } from '@data/index';
 import TableModel from 'app/core/TableModel';
 
 export interface TableTransform {

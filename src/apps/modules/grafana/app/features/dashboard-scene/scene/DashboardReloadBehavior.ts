@@ -1,7 +1,7 @@
 import { debounce, isEqual } from 'lodash';
 
-import { UrlQueryMap } from '@grafana/data';
-import { sceneGraph, SceneObjectBase, SceneObjectState, VariableDependencyConfig } from '@grafana/scenes';
+import { UrlQueryMap } from '@data/index';
+import { sceneGraph, SceneObjectBase, SceneObjectState, VariableDependencyConfig } from '@scenes/index';
 import { getClosestScopesFacade } from 'app/features/scopes';
 
 import { getDashboardScenePageStateManager } from '../pages/DashboardScenePageStateManager';

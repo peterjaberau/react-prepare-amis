@@ -8,9 +8,9 @@ import {
   PluginExtensionLink,
   PluginExtensionTypes,
   ReducerID,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { defaultDashboard } from '@grafana/schema';
+import { defaultDashboard } from '@schema/index';
 import { contextSrv } from 'app/core/services/context_srv';
 import { MOCK_GRAFANA_ALERT_RULE_TITLE } from 'app/features/alerting/unified/mocks/server/handlers/grafanaRuler';
 import { ExpressionQuery, ExpressionQueryType, ReducerMode } from 'app/features/expressions/types';

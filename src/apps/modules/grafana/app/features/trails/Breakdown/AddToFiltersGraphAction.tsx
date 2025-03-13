@@ -1,11 +1,11 @@
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@data/index';
 import {
   SceneObjectState,
   SceneObjectBase,
   SceneComponentProps,
   sceneGraph,
   AdHocFiltersVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Button } from '@grafana/ui';
 
 import { reportExploreMetrics } from '../interactions';

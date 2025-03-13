@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { MouseEvent, useCallback, useState } from 'react';
 import * as React from 'react';
 
-import { DataFrame, Field, GrafanaTheme2, LinkModel, LinkTarget } from '@grafana/data';
+import { DataFrame, Field, GrafanaTheme2, LinkModel, LinkTarget } from '@data/index';
 import { ContextMenu, MenuGroup, MenuItem, useStyles2 } from '@grafana/ui';
 
 import { Config } from './layout';

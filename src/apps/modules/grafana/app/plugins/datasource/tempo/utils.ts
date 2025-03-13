@@ -1,5 +1,5 @@
-import { DataSourceApi, parseDuration } from '@grafana/data';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { DataSourceApi, parseDuration } from '@data/index';
+import { getDataSourceSrv } from '@runtime/index';
 
 import { generateId } from './SearchTraceQLEditor/TagsInput';
 import { TraceqlFilter, TraceqlSearchScope } from './dataquery.gen';

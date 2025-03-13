@@ -9,7 +9,7 @@ import {
   GroupingToMatrixTransformerOptions,
   SpecialValue,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { InlineField, InlineFieldRow, Select } from '@grafana/ui';
 

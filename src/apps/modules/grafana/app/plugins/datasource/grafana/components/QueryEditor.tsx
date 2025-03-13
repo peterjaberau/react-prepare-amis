@@ -15,8 +15,8 @@ import {
   getValueFormat,
   formattedValueToString,
   Field,
-} from '@grafana/data';
-import { config, getDataSourceSrv, reportInteraction } from '@grafana/runtime';
+} from '@data/index';
+import { config, getDataSourceSrv, reportInteraction } from '@runtime/index';
 import {
   InlineField,
   Select,

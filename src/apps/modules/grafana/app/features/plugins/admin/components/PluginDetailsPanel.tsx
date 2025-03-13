@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { PageInfoItem } from '@grafana/runtime/src/components/PluginPage';
 import {

@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { merge } from 'lodash';
 import { useState } from 'react';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
-import { TableCellOptions } from '@grafana/schema';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { TableCellOptions } from '@schema/index';
 import { Field, Select, TableCellDisplayMode, useStyles2 } from '@grafana/ui';
 
 import { AutoCellOptionsEditor } from './cells/AutoCellOptionsEditor';

@@ -2,7 +2,7 @@ import { uniqueId } from 'lodash';
 import { useCallback, useRef } from 'react';
 import { GroupBase, OptionsOrGroups } from 'react-select';
 
-import { InternalTimeZones, SelectableValue } from '@grafana/data';
+import { InternalTimeZones, SelectableValue } from '@data/index';
 import { InlineField, Input, Select, TimeZonePicker } from '@grafana/ui';
 
 import { calendarIntervals } from '../../../../QueryBuilder';

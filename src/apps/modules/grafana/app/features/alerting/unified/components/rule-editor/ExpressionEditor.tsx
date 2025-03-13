@@ -3,7 +3,7 @@ import { noop } from 'lodash';
 import { useCallback, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
-import { CoreApp, DataQuery, DataSourcePluginContextProvider, GrafanaTheme2, LoadingState } from '@grafana/data';
+import { CoreApp, DataQuery, DataSourcePluginContextProvider, GrafanaTheme2, LoadingState } from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { getDataSourceSrv } from '@runtime/index';
 import { Alert, Button, useStyles2 } from '@grafana/ui';

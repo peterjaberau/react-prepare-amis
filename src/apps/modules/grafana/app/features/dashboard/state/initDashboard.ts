@@ -1,4 +1,4 @@
-import { DataQuery, locationUtil, setWeekStart, DashboardLoadedEvent } from '@grafana/data';
+import { DataQuery, locationUtil, setWeekStart, DashboardLoadedEvent } from '@data/index';
 import { config, isFetchError, locationService } from '@runtime/index';
 import { notifyApp } from 'app/core/actions';
 import appEvents from 'app/core/app_events';

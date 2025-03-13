@@ -1,6 +1,6 @@
 import { ReactElement, useMemo, useState } from 'react';
 
-import { PluginExtensionLink, PluginExtensionPoints } from '@grafana/data';
+import { PluginExtensionLink, PluginExtensionPoints } from '@data/index';
 import { usePluginLinks } from '@runtime/index';
 import { Dropdown, IconButton } from '@grafana/ui';
 import { ConfirmNavigationModal } from 'app/features/explore/extensions/ConfirmNavigationModal';

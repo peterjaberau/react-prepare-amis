@@ -39,7 +39,7 @@ import {
   DataSourceWithQueryModificationSupport,
   AdHocVariableModel,
   TypedVariableModel,
-} from '@grafana/data';
+} from '@data/index';
 import {
   DataSourceWithBackend,
   getDataSourceSrv,
@@ -47,7 +47,7 @@ import {
   TemplateSrv,
   getTemplateSrv,
   config,
-} from '@grafana/runtime';
+} from '@runtime/index';
 
 import { IndexPattern, intervalMap } from './IndexPattern';
 import LanguageProvider from './LanguageProvider';

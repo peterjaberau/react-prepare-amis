@@ -1,4 +1,4 @@
-import { PanelModel, OneClickMode } from '@grafana/data';
+import { PanelModel, OneClickMode } from '@data/index';
 
 import { Options } from './panelcfg.gen';
 

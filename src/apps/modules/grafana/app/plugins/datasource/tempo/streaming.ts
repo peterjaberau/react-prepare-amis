@@ -16,9 +16,9 @@ import {
   sortDataFrame,
   ThresholdsConfig,
   ThresholdsMode,
-} from '@grafana/data';
+} from '@data/index';
 import { cloneQueryResponse, combineResponses } from '@grafana/o11y-ds-frontend';
-import { getGrafanaLiveSrv } from '@grafana/runtime';
+import { getGrafanaLiveSrv } from '@runtime/index';
 
 import { SearchStreamingState } from './dataquery.gen';
 import { DEFAULT_SPSS, TempoDatasource } from './datasource';

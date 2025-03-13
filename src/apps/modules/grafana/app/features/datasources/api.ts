@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@data/index';
 import { getBackendSrv } from 'app/core/services/backend_srv';
 import { accessControlQueryParam } from 'app/core/utils/accessControl';
 

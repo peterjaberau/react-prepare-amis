@@ -12,8 +12,8 @@ import {
   DataSourceInstanceSettings,
   MetricFindValue,
   ScopedVars,
-} from '@grafana/data';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+} from '@data/index';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { VariableSupport } from './VariableSupport';
 import { defaultGrafanaPyroscopeDataQuery, defaultPyroscopeQueryType } from './dataquery.gen';

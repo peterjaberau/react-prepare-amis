@@ -1,7 +1,7 @@
 import { Observable, Subscription } from 'rxjs';
 
-import { DataFrame, DataFrameJSON, DataQueryError, DataQueryResponse } from '@grafana/data';
-import { FetchError } from '@grafana/runtime';
+import { DataFrame, DataFrameJSON, DataQueryError, DataQueryResponse } from '@data/index';
+import { FetchError } from '@runtime/index';
 
 import { StartQueryRequest } from '../types';
 

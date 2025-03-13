@@ -17,7 +17,7 @@ import cx from 'classnames';
 import { PropsWithChildren } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, TraceKeyValuePair } from '@grafana/data';
+import { GrafanaTheme2, TraceKeyValuePair } from '@data/index';
 import { Icon, useStyles2 } from '@grafana/ui';
 
 import { autoColor } from '../../Theme';

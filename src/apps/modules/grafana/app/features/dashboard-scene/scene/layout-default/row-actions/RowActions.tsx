@@ -1,4 +1,4 @@
-import { sceneGraph, SceneGridRow, SceneObjectBase, SceneObjectState } from '@grafana/scenes';
+import { sceneGraph, SceneGridRow, SceneObjectBase, SceneObjectState } from '@scenes/index';
 import appEvents from 'app/core/app_events';
 import { t } from 'app/core/internationalization';
 import { ShowConfirmModalEvent } from 'app/types/events';

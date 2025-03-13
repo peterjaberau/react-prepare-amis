@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { MetricFindValue, SelectableValue } from '@grafana/data';
+import { MetricFindValue, SelectableValue } from '@data/index';
 
 import { isBucketAggregationType } from '../components/QueryEditor/BucketAggregationsEditor/aggregations';
 import { useDatasource, useRange } from '../components/QueryEditor/ElasticsearchQueryContext';

@@ -9,7 +9,7 @@ import {
   TimeRange,
   FieldType,
   toDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 
 export const secondsMetric = 'traces_service_graph_request_server_seconds_sum';
 export const totalsMetric = 'traces_service_graph_request_total';

@@ -1,5 +1,5 @@
-import { PanelPlugin } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { PanelPlugin } from '@data/index';
+import { config } from '@runtime/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 
 import { GeomapPanel } from './GeomapPanel';

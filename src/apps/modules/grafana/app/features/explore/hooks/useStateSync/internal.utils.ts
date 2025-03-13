@@ -1,7 +1,7 @@
 import { isEqual } from 'lodash';
 
-import { CoreApp, DataSourceApi, ExploreUrlState, isTruthy } from '@grafana/data';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+import { CoreApp, DataSourceApi, ExploreUrlState, isTruthy } from '@data/index';
+import { DataQuery, DataSourceRef } from '@schema/index';
 import { getLastUsedDatasourceUID } from 'app/core/utils/explore';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';

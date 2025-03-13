@@ -1,4 +1,4 @@
-import { DataSourcePlugin } from '@grafana/data';
+import { DataSourcePlugin } from '@data/index';
 
 import { GraphiteQueryEditor } from './components/GraphiteQueryEditor';
 import { GraphiteVariableEditor } from './components/GraphiteVariableEditor';

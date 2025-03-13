@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, VariableOrigin, DataLinkBuiltInVars } from '@grafana/data';
+import { GrafanaTheme2, VariableOrigin, DataLinkBuiltInVars } from '@data/index';
 import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
 import { Button, useStyles2 } from '@grafana/ui';
 

@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { dateTimeFormat, GrafanaTheme2, TimeZone } from '@grafana/data';
+import { dateTimeFormat, GrafanaTheme2, TimeZone } from '@data/index';
 import { Button, DeleteButton, Icon, Stack, Tooltip, useTheme2 } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { AccessControlAction } from 'app/types';

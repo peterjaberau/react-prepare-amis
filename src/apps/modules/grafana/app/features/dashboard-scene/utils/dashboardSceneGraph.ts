@@ -1,4 +1,4 @@
-import { VizPanel, sceneGraph, behaviors, SceneObject, SceneGridRow } from '@grafana/scenes';
+import { VizPanel, sceneGraph, behaviors, SceneObject, SceneGridRow } from '@scenes/index';
 
 import { DashboardDataLayerSet } from '../scene/DashboardDataLayerSet';
 import { DashboardScene } from '../scene/DashboardScene';

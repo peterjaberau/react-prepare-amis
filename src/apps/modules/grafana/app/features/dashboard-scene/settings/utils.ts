@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { locationUtil, NavModelItem } from '@grafana/data';
-import { SceneObject, SceneObjectState } from '@grafana/scenes';
+import { locationUtil, NavModelItem } from '@data/index';
+import { SceneObject, SceneObjectState } from '@scenes/index';
 import { contextSrv } from 'app/core/core';
 import { t } from 'app/core/internationalization';
 import { getNavModel } from 'app/core/selectors/navModel';

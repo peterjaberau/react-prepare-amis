@@ -1,6 +1,6 @@
 import { ReactNode, useMemo } from 'react';
 
-import { DataFrame, formattedValueToString } from '@grafana/data';
+import { DataFrame, formattedValueToString } from '@data/index';
 import { SortOrder, TooltipDisplayMode } from '@grafana/schema/dist/esm/common/common.gen';
 import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
 import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';

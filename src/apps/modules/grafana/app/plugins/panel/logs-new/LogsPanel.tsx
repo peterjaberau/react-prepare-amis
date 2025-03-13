@@ -9,8 +9,8 @@ import {
   LoadingState,
   LogsSortOrder,
   PanelProps,
-} from '@grafana/data';
-import { config } from '@grafana/runtime';
+} from '@data/index';
+import { config } from '@runtime/index';
 import { usePanelContext, useStyles2 } from '@grafana/ui';
 import { LogList } from 'app/features/logs/components/panel/LogList';
 import { PanelDataErrorView } from 'app/features/panel/components/PanelDataErrorView';

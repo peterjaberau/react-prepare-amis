@@ -1,4 +1,4 @@
-import { SceneObjectUrlSyncHandler, SceneObjectUrlValues } from '@grafana/scenes';
+import { SceneObjectUrlSyncHandler, SceneObjectUrlValues } from '@scenes/index';
 
 import { AnnotationsEditView, AnnotationsEditViewState } from './AnnotationsEditView';
 import { DashboardLinksEditView, DashboardLinksEditViewState } from './DashboardLinksEditView';

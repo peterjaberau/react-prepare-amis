@@ -1,7 +1,7 @@
 import { FormEvent, useCallback } from 'react';
 
-import { DataSourceInstanceSettings, MetricFindValue, readCSV } from '@grafana/data';
-import { DataSourceRef } from '@grafana/schema';
+import { DataSourceInstanceSettings, MetricFindValue, readCSV } from '@data/index';
+import { DataSourceRef } from '@schema/index';
 import { Alert, CodeEditor, Field, Switch } from '@grafana/ui';
 import { DataSourcePicker } from 'app/features/datasources/components/picker/DataSourcePicker';
 

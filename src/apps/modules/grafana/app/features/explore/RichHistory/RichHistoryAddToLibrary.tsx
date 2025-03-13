@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Button } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

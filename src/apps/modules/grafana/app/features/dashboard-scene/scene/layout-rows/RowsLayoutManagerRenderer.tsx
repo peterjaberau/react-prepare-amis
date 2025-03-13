@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { RowsLayoutManager } from './RowsLayoutManager';

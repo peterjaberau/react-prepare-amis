@@ -1,5 +1,5 @@
-import { DashboardLoadedEvent, DataSourcePlugin } from '@grafana/data';
-import { getAppEvents } from '@grafana/runtime';
+import { DashboardLoadedEvent, DataSourcePlugin } from '@data/index';
+import { getAppEvents } from '@runtime/index';
 
 import LokiCheatSheet from './components/LokiCheatSheet';
 import LokiQueryEditorByApp from './components/LokiQueryEditorByApp';

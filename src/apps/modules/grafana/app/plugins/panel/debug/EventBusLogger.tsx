@@ -8,7 +8,7 @@ import {
   DataHoverClearEvent,
   DataSelectEvent,
   EventBus,
-} from '@grafana/data';
+} from '@data/index';
 import { CustomScrollbar } from '@grafana/ui';
 
 interface Props {

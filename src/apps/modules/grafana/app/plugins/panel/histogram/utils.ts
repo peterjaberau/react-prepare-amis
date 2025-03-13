@@ -1,4 +1,4 @@
-import { DataFrame, FieldType } from '@grafana/data';
+import { DataFrame, FieldType } from '@data/index';
 import {
   isHistogramFrameBucketMinFieldName,
   isHistogramFrameBucketMaxFieldName,

@@ -9,9 +9,9 @@ import {
   LoadingState,
   dataFrameToJSON,
   DataTopic,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { GrafanaQueryType } from 'app/plugins/datasource/grafana/types';
 
 import { DashboardGridItem } from '../../scene/layout-default/DashboardGridItem';

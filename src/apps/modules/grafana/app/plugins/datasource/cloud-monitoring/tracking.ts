@@ -1,4 +1,4 @@
-import { reportInteraction } from '@grafana/runtime';
+import { reportInteraction } from '@runtime/index';
 
 /**
  * Loaded the first time a dashboard containing Cloudmonitoring queries is loaded (not on every render)

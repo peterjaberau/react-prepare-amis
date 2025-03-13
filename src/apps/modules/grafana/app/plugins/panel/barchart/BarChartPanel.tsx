@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
-import { PanelProps, VizOrientation } from '@grafana/data';
-import { PanelDataErrorView } from '@grafana/runtime';
+import { PanelProps, VizOrientation } from '@data/index';
+import { PanelDataErrorView } from '@runtime/index';
 import {
   TooltipDisplayMode,
   TooltipPlugin2,

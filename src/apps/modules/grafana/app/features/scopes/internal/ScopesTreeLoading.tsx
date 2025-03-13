@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ReactNode } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 export interface ScopesTreeLoadingProps {

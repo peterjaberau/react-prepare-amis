@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { StandardEditorProps, StandardEditorsRegistryItem } from '@grafana/data';
+import { StandardEditorProps, StandardEditorsRegistryItem } from '@data/index';
 import { Button, useTheme2 } from '@grafana/ui';
 
 import { DEFAULT_STYLE_RULE } from '../layers/data/geojsonLayer';

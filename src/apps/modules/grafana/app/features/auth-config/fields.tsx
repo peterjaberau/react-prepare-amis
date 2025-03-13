@@ -1,6 +1,6 @@
 import { validate as uuidValidate } from 'uuid';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { TextLink } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';

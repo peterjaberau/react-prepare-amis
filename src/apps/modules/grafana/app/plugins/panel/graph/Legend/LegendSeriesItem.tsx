@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { PureComponent } from 'react';
 
-import { selectors } from '@grafana/e2e-selectors';
+import { selectors } from '@selectors/index';
 import { SeriesColorPicker, SeriesIcon } from '@grafana/ui';
 import { TimeSeries } from 'app/core/core';
 

@@ -1,4 +1,4 @@
-import { SceneDataProvider, SceneDataState, SceneObjectBase } from '@grafana/scenes';
+import { SceneDataProvider, SceneDataState, SceneObjectBase } from '@scenes/index';
 
 export class ShareDataProvider extends SceneObjectBase<SceneDataState> implements SceneDataProvider {
   public constructor(private _source: SceneDataProvider) {

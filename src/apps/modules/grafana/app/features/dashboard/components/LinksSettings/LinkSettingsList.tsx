@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { arrayUtils } from '@grafana/data';
-import { DashboardLink } from '@grafana/schema';
+import { arrayUtils } from '@data/index';
+import { DashboardLink } from '@schema/index';
 import { DashboardLinkList } from 'app/features/dashboard-scene/settings/links/DashboardLinkList';
 
 import { DashboardModel } from '../../state/DashboardModel';

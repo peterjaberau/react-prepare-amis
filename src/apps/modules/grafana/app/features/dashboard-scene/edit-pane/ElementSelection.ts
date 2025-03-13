@@ -1,4 +1,4 @@
-import { SceneObject, SceneObjectRef, VizPanel } from '@grafana/scenes';
+import { SceneObject, SceneObjectRef, VizPanel } from '@scenes/index';
 import { ElementSelectionContextItem } from '@grafana/ui';
 
 import { DashboardScene } from '../scene/DashboardScene';

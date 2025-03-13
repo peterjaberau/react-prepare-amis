@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 
-import { PanelProps, DataFrameType, DashboardCursorSync } from '@grafana/data';
-import { PanelDataErrorView } from '@grafana/runtime';
-import { TooltipDisplayMode, VizOrientation } from '@grafana/schema';
+import { PanelProps, DataFrameType, DashboardCursorSync } from '@data/index';
+import { PanelDataErrorView } from '@runtime/index';
+import { TooltipDisplayMode, VizOrientation } from '@schema/index';
 import { EventBusPlugin, KeyboardPlugin, TooltipPlugin2, usePanelContext } from '@grafana/ui';
 import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
 import { TimeSeries } from 'app/core/components/TimeSeries/TimeSeries';

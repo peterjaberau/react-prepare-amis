@@ -3,7 +3,7 @@ import pluralize from 'pluralize';
 import { useEffect, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { GrafanaTheme2, OrgRole } from '@grafana/data';
+import { GrafanaTheme2, OrgRole } from '@data/index';
 import {
   ConfirmModal,
   FilterInput,

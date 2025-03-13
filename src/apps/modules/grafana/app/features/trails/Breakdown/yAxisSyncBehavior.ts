@@ -1,4 +1,4 @@
-import { BusEventWithPayload } from '@grafana/data';
+import { BusEventWithPayload } from '@data/index';
 import {
   FieldConfigBuilders,
   SceneCSSGridItem,
@@ -6,7 +6,7 @@ import {
   sceneGraph,
   SceneStatelessBehavior,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import { LabelBreakdownScene } from './LabelBreakdownScene';
 import { findSceneObjectsByType } from './utils';

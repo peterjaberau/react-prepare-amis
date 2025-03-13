@@ -8,8 +8,8 @@ import {
   getFieldDisplayName,
   GrafanaTheme2,
   LinkModel,
-} from '@grafana/data';
-import { SortOrder, TooltipDisplayMode } from '@grafana/schema';
+} from '@data/index';
+import { SortOrder, TooltipDisplayMode } from '@schema/index';
 import { TextLink, useStyles2 } from '@grafana/ui';
 import { renderValue } from 'app/plugins/panel/geomap/utils/uiUtils';
 

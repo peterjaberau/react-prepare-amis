@@ -12,8 +12,8 @@ import { Component, ReactNode } from 'react';
 import * as React from 'react';
 import { Subscription } from 'rxjs';
 
-import { DataHoverEvent, PanelData, PanelProps } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { DataHoverEvent, PanelData, PanelProps } from '@data/index';
+import { config } from '@runtime/index';
 import { PanelContext, PanelContextRoot } from '@grafana/ui';
 import { PanelEditExitedEvent } from 'app/types/events';
 

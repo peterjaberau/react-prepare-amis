@@ -8,7 +8,7 @@ import {
   EventBus,
   SelectableValue,
   PluginState,
-} from '@grafana/data';
+} from '@data/index';
 import { config, hasAlphaPanels } from 'app/core/config';
 
 import { basemapLayers } from './basemaps';

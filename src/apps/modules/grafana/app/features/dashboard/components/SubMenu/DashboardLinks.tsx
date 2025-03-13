@@ -2,7 +2,7 @@ import { useEffectOnce } from 'react-use';
 
 import { sanitizeUrl } from '@grafana/data/src/text/sanitize';
 import { TimeRangeUpdatedEvent } from '@runtime/index';
-import { DashboardLink } from '@grafana/schema';
+import { DashboardLink } from '@schema/index';
 import { Tooltip, useForceUpdate } from '@grafana/ui';
 import { LINK_ICON_MAP } from 'app/features/dashboard-scene/settings/links/utils';
 

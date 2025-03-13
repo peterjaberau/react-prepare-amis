@@ -21,9 +21,9 @@ import {
   TimeRange,
   getDataSourceRef,
   toLegacyResponseData,
-} from '@grafana/data';
+} from '@data/index';
 import { AngularComponent, getAngularLoader, getDataSourceSrv, reportInteraction } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Badge, ErrorBoundaryAlert } from '@grafana/ui';
 import { OperationRowHelp } from 'app/core/components/QueryOperationRow/OperationRowHelp';
 import {

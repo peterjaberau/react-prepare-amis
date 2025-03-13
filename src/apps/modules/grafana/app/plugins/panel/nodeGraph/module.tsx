@@ -1,4 +1,4 @@
-import { FieldConfigProperty, PanelPlugin } from '@grafana/data';
+import { FieldConfigProperty, PanelPlugin } from '@data/index';
 
 import { NodeGraphPanel } from './NodeGraphPanel';
 import { ArcOptionsEditor } from './editor/ArcOptionsEditor';

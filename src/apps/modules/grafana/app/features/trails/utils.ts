@@ -9,7 +9,7 @@ import {
   scopeFilterOperatorMap,
   ScopeSpecFilter,
   urlUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { getPrometheusTime } from '@grafana/prometheus';
 import { config, FetchResponse, getBackendSrv, getDataSourceSrv } from '@runtime/index';
 import {
@@ -24,7 +24,7 @@ import {
   sceneUtils,
   SceneVariable,
   SceneVariableState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getClosestScopesFacade } from 'app/features/scopes';
 
 import { getDatasourceSrv } from '../plugins/datasource_srv';

@@ -1,4 +1,4 @@
-import { BinaryOperationID, binaryOperators, FieldMatcherID, FieldType, SelectableValue } from '@grafana/data';
+import { BinaryOperationID, binaryOperators, FieldMatcherID, FieldType, SelectableValue } from '@data/index';
 import {
   BinaryValue,
   BinaryOptions,

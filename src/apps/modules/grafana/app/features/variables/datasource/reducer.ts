@@ -6,7 +6,7 @@ import {
   matchPluginId,
   VariableOption,
   VariableRefresh,
-} from '@grafana/data';
+} from '@data/index';
 
 import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE } from '../constants';
 import { getInstanceState } from '../state/selectors';

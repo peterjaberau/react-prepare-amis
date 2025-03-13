@@ -1,4 +1,4 @@
-import { TemplateSrv } from '@grafana/runtime';
+import { TemplateSrv } from '@runtime/index';
 
 import { LogGroup } from '../dataquery.gen';
 import { ResourcesAPI } from '../resources/ResourcesAPI';

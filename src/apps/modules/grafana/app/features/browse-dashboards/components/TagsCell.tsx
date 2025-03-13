@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { CellProps } from 'react-table';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { TagList, useStyles2 } from '@grafana/ui';
 
 import { DashboardsTreeItem } from '../types';

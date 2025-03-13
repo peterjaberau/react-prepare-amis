@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import { useMountedState } from 'react-use';
 import { takeWhile } from 'rxjs/operators';
 
-import { GrafanaTheme2, LoadingState, dateTimeFormatISO } from '@grafana/data';
+import { GrafanaTheme2, LoadingState, dateTimeFormatISO } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Alert, Button, Stack, useStyles2 } from '@grafana/ui';
 

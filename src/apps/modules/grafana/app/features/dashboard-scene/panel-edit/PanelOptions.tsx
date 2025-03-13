@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import * as React from 'react';
 
-import { PanelData } from '@grafana/data';
-import { VizPanel } from '@grafana/scenes';
+import { PanelData } from '@data/index';
+import { VizPanel } from '@scenes/index';
 import { OptionFilter, renderSearchHits } from 'app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
 import { getFieldOverrideCategories } from 'app/features/dashboard/components/PanelEditor/getFieldOverrideElements';
 import {

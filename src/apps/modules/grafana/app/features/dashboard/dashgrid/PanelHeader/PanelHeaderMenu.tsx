@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { PanelMenuItem } from '@grafana/data';
+import { PanelMenuItem } from '@data/index';
 import { Menu } from '@grafana/ui';
 
 export interface Props {

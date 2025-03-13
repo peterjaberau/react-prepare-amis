@@ -1,6 +1,6 @@
-import { DataFrameJSON } from '@grafana/data';
-import { LiveDataFilter } from '@grafana/runtime';
-import { DataQuery } from '@grafana/schema';
+import { DataFrameJSON } from '@data/index';
+import { LiveDataFilter } from '@runtime/index';
+import { DataQuery } from '@schema/index';
 import { TimeRegionConfig } from 'app/core/utils/timeRegions';
 import { SearchQuery } from 'app/features/search/service/types';
 

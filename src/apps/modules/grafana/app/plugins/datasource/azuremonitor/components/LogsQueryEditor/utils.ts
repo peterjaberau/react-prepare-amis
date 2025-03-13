@@ -1,4 +1,4 @@
-import { getTemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv } from '@runtime/index';
 
 import { parseResourceURI } from '../ResourcePicker/utils';
 

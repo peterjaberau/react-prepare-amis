@@ -1,6 +1,6 @@
 import { FormEvent } from 'react';
 
-import { CustomVariable } from '@grafana/scenes';
+import { CustomVariable } from '@scenes/index';
 
 import { CustomVariableForm } from '../components/CustomVariableForm';
 

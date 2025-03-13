@@ -1,4 +1,4 @@
-import { toOption } from '@grafana/data';
+import { toOption } from '@data/index';
 import { InlineLabel, Select, Input, InlineFormLabel, InlineSwitch, Stack } from '@grafana/ui';
 
 import { OpenTsdbQuery } from '../types';

@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneGridRow, VizPanel, sceneGraph } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneGridRow, VizPanel, sceneGraph } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { Select } from '@grafana/ui';
 

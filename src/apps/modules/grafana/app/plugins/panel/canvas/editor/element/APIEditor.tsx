@@ -5,7 +5,7 @@ import {
   StandardEditorsRegistryItem,
   StringFieldConfigSettings,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { Button, Field, InlineField, InlineFieldRow, JSONFormatter, RadioButtonGroup, Select } from '@grafana/ui';
 import { StringValueEditor } from 'app/core/components/OptionsUI/string';
 import { defaultApiConfig } from 'app/features/canvas/elements/button';

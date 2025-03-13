@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 
 import { CloudWatchDatasource } from '../../datasource';
 import { isCloudWatchLogsQuery, isCloudWatchMetricsQuery } from '../../guards';

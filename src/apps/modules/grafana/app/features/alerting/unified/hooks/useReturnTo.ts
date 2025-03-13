@@ -1,4 +1,4 @@
-import { textUtil } from '@grafana/data';
+import { textUtil } from '@data/index';
 import { config } from '@runtime/index';
 
 import { logWarning } from '../Analytics';

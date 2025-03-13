@@ -2,7 +2,7 @@ import memoizeOne from 'memoize-one';
 
 import { AbsoluteTimeRange, LogRowModel, UrlQueryMap } from '@data/index';
 import { getBackendSrv, config, locationService } from '@runtime/index';
-import { sceneGraph, SceneTimeRangeLike, VizPanel } from '@grafana/scenes';
+import { sceneGraph, SceneTimeRangeLike, VizPanel } from '@scenes/index';
 import { notifyApp } from 'app/core/actions';
 import { createErrorNotification, createSuccessNotification } from 'app/core/copy/appNotification';
 import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';

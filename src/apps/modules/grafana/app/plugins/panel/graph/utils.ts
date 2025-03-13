@@ -7,7 +7,7 @@ import {
   ReducerID,
   dateTimeFormat,
   systemDateFormats,
-} from '@grafana/data';
+} from '@data/index';
 
 /**
  * Find the min and max time that covers all data

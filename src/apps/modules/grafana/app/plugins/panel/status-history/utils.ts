@@ -1,4 +1,4 @@
-import { ActionModel, Field, InterpolateFunction, LinkModel } from '@grafana/data';
+import { ActionModel, Field, InterpolateFunction, LinkModel } from '@data/index';
 import { DataFrame } from '@grafana/data/';
 import { getActions } from 'app/features/actions/utils';
 

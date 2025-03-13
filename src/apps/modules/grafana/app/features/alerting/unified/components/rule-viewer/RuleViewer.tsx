@@ -3,7 +3,7 @@ import { chain, isEmpty, truncate } from 'lodash';
 import { useState } from 'react';
 import { useMeasure } from 'react-use';
 
-import { NavModelItem, UrlQueryValue } from '@grafana/data';
+import { NavModelItem, UrlQueryValue } from '@data/index';
 import { Alert, LinkButton, LoadingBar, Stack, TabContent, Text, TextLink, useStyles2 } from '@grafana/ui';
 import { PageInfoItem } from 'app/core/components/Page/types';
 import { useQueryParams } from 'app/core/hooks/useQueryParams';

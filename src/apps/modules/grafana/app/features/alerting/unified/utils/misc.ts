@@ -1,9 +1,9 @@
 import { sortBy } from 'lodash';
 
-import { Labels, UrlQueryMap } from '@grafana/data';
+import { Labels, UrlQueryMap } from '@data/index';
 import { GrafanaEdition } from '@grafana/data/src/types/config';
 import { config, isFetchError } from '@runtime/index';
-import { DataSourceRef } from '@grafana/schema';
+import { DataSourceRef } from '@schema/index';
 import { contextSrv } from 'app/core/services/context_srv';
 import { escapePathSeparators } from 'app/features/alerting/unified/utils/rule-id';
 import {

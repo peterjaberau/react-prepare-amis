@@ -9,9 +9,9 @@ import {
   formattedValueToString,
   getFieldDisplayValues,
   PanelProps,
-} from '@grafana/data';
-import { PanelDataErrorView } from '@grafana/runtime';
-import { HideSeriesConfig, LegendDisplayMode } from '@grafana/schema';
+} from '@data/index';
+import { PanelDataErrorView } from '@runtime/index';
+import { HideSeriesConfig, LegendDisplayMode } from '@schema/index';
 import {
   SeriesVisibilityChangeBehavior,
   usePanelContext,

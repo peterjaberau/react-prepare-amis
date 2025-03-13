@@ -3,8 +3,8 @@ import { Global } from '@emotion/react';
 import Tree, { TreeNodeProps } from 'rc-tree';
 import { Key, useEffect, useMemo, useState } from 'react';
 
-import { GrafanaTheme2, StandardEditorProps } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { GrafanaTheme2, StandardEditorProps } from '@data/index';
+import { config } from '@runtime/index';
 import { Button, Icon, Stack, useStyles2, useTheme2 } from '@grafana/ui';
 import { AddLayerButton } from 'app/core/components/Layers/AddLayerButton';
 import { ElementState } from 'app/features/canvas/runtime/element';

@@ -1,11 +1,11 @@
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 import {
   BigValueColorMode,
   BigValueGraphMode,
   BigValueJustifyMode,
   BigValueTextMode,
   PercentChangeColorMode,
-} from '@grafana/schema';
+} from '@schema/index';
 import { commonOptionsBuilder, sharedSingleStatMigrationHandler } from '@grafana/ui';
 
 import { statPanelChangedHandler } from './StatMigrations';

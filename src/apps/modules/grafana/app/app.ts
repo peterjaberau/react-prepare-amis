@@ -17,7 +17,7 @@ import {
   standardEditorsRegistry,
   standardFieldConfigEditorRegistry,
   standardTransformersRegistry,
-} from '@grafana/data';
+} from '@data/index';
 import {
   locationService,
   registerEchoBackend,
@@ -41,11 +41,11 @@ import {
   setCorrelationsService,
   setPluginFunctionsHook,
 } from '@runtime/index';
-import { setPanelDataErrorView } from '@grafana/runtime/src/components/PanelDataErrorView';
-import { setPanelRenderer } from '@grafana/runtime/src/components/PanelRenderer';
-import { setPluginPage } from '@grafana/runtime/src/components/PluginPage';
-import config, { updateConfig } from 'app/core/config';
-import { getStandardTransformers } from 'app/features/transformers/standardTransformers';
+import { setPanelDataErrorView } from '@runtime/components/PanelDataErrorView';
+import { setPanelRenderer } from '@runtime/components/PanelRenderer';
+import { setPluginPage } from '@runtime/components/PluginPage';
+import config, { updateConfig } from './core/config';
+import { getStandardTransformers } from './features/transformers/standardTransformers';
 
 import getDefaultMonacoLanguages from '../lib/monaco-languages';
 
@@ -105,8 +105,9 @@ import { createTextBoxVariableAdapter } from './features/variables/textbox/adapt
 import { configureStore } from './store/configureStore';
 
 // import symlinked extensions
+// @ts-ignore
 const extensionsIndex = require.context('.', true, /extensions\/index.ts/);
-const extensionsExports = extensionsIndex.keys().map((key) => {
+const extensionsExports = extensionsIndex.keys().map((key: any) => {
 
   return extensionsIndex(key);
 });

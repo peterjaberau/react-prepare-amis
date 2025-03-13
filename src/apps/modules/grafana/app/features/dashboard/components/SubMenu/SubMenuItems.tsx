@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { GrafanaTheme2, TypedVariableModel, VariableHide } from '@grafana/data';
+import { GrafanaTheme2, TypedVariableModel, VariableHide } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { PickerRenderer } from '../../../variables/pickers/PickerRenderer';

@@ -1,7 +1,7 @@
 import { FormEvent, PureComponent } from 'react';
 import { MapDispatchToProps, MapStateToProps } from 'react-redux';
 
-import { CustomVariableModel, VariableWithMultiSupport } from '@grafana/data';
+import { CustomVariableModel, VariableWithMultiSupport } from '@data/index';
 import { connectWithStore } from 'app/core/utils/connectWithReduxStore';
 import { CustomVariableForm } from 'app/features/dashboard-scene/settings/variables/components/CustomVariableForm';
 import { StoreState } from 'app/types';

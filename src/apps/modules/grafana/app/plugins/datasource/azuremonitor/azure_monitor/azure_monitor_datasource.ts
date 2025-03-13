@@ -1,8 +1,8 @@
 import { find, startsWith } from 'lodash';
 
 import { AzureCredentials } from '@grafana/azure-sdk';
-import { ScopedVars } from '@grafana/data';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv, VariableInterpolation } from '@grafana/runtime';
+import { ScopedVars } from '@data/index';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv, VariableInterpolation } from '@runtime/index';
 
 import { getCredentials } from '../credentials';
 import TimegrainConverter from '../time_grain_converter';

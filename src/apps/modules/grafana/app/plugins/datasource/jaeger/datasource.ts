@@ -14,7 +14,7 @@ import {
   MutableDataFrame,
   ScopedVars,
   urlUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { NodeGraphOptions, SpanBarOptions } from '@grafana/o11y-ds-frontend';
 import {
   BackendSrvRequest,
@@ -23,7 +23,7 @@ import {
   getBackendSrv,
   getTemplateSrv,
   TemplateSrv,
-} from '@grafana/runtime';
+} from '@runtime/index';
 
 import { ALL_OPERATIONS_KEY } from './components/SearchForm';
 import { TraceIdTimeParamsOptions } from './configuration/TraceIdTimeParams';

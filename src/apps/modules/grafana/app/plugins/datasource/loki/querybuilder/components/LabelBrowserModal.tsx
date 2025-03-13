@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useState, useEffect } from 'react';
 
-import { CoreApp, GrafanaTheme2, LocalStorageValueProvider, TimeRange } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime';
+import { CoreApp, GrafanaTheme2, LocalStorageValueProvider, TimeRange } from '@data/index';
+import { reportInteraction } from '@runtime/index';
 import { LoadingPlaceholder, Modal, useStyles2 } from '@grafana/ui';
 
 import { LokiLabelBrowser } from '../../components/LokiLabelBrowser';

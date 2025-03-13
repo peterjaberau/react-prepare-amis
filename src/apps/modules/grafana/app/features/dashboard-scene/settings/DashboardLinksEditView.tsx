@@ -1,6 +1,6 @@
-import { NavModel, NavModelItem, PageLayoutType, arrayUtils } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase } from '@grafana/scenes';
-import { DashboardLink } from '@grafana/schema';
+import { NavModel, NavModelItem, PageLayoutType, arrayUtils } from '@data/index';
+import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
+import { DashboardLink } from '@schema/index';
 import { Page } from 'app/core/components/Page/Page';
 
 import { DashboardScene } from '../scene/DashboardScene';

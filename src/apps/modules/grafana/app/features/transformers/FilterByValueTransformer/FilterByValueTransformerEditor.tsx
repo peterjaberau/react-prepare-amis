@@ -13,7 +13,7 @@ import {
   ValueMatcherID,
   valueMatchers,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import {
   FilterByValueFilter,
   FilterByValueMatch,

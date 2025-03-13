@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Segment, SegmentInput, useStyles2 } from '@grafana/ui';
 
 export type EditableParam = {

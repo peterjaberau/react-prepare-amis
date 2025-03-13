@@ -1,4 +1,4 @@
-import { PageLayoutType } from '@grafana/data';
+import { PageLayoutType } from '@data/index';
 import { Alert, Box } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
 import { EntityNotFound } from 'app/core/components/PageNotFound/EntityNotFound';

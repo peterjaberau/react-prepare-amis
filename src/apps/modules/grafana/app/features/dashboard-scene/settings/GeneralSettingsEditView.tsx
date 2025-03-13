@@ -1,9 +1,9 @@
 import { ChangeEvent } from 'react';
 
-import { PageLayoutType } from '@grafana/data';
+import { PageLayoutType } from '@data/index';
 import { config } from '@runtime/index';
-import { SceneComponentProps, SceneObjectBase, behaviors, sceneGraph } from '@grafana/scenes';
-import { TimeZone } from '@grafana/schema';
+import { SceneComponentProps, SceneObjectBase, behaviors, sceneGraph } from '@scenes/index';
+import { TimeZone } from '@schema/index';
 import {
   Box,
   CollapsableSection,

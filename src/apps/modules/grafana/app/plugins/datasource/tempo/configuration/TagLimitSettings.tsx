@@ -5,7 +5,7 @@ import {
   DataSourcePluginOptionsEditorProps,
   GrafanaTheme2,
   updateDatasourcePluginJsonDataOption,
-} from '@grafana/data';
+} from '@data/index';
 import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
 import { InlineField, InlineFieldRow, Input, useStyles2 } from '@grafana/ui';
 

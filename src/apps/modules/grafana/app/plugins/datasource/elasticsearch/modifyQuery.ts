@@ -1,7 +1,7 @@
 import { isEqual } from 'lodash';
 import lucene, { AST, BinaryAST, LeftOnlyAST, NodeTerm } from 'lucene';
 
-import { AdHocVariableFilter } from '@grafana/data';
+import { AdHocVariableFilter } from '@data/index';
 
 type ModifierType = '' | '-';
 

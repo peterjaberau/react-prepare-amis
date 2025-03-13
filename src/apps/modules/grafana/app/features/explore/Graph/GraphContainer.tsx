@@ -10,7 +10,7 @@ import {
   LoadingState,
   ThresholdsConfig,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { GraphThresholdsStyleConfig, PanelChrome, PanelChromeProps } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 import { ExploreGraphStyle } from 'app/types';

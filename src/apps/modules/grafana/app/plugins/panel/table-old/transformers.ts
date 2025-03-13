@@ -1,6 +1,6 @@
 import { findIndex, isObject, map } from 'lodash';
 
-import { Column, TableData } from '@grafana/data';
+import { Column, TableData } from '@data/index';
 import TableModel, { mergeTablesIntoModel } from 'app/core/TableModel';
 import TimeSeries from 'app/core/time_series2';
 import flatten from 'app/core/utils/flatten';

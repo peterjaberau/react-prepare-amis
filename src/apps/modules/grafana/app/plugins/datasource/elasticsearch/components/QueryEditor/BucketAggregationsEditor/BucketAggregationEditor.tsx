@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineSegmentGroup, Segment, SegmentAsync } from '@grafana/ui';
 
 import { useFields } from '../../../hooks/useFields';

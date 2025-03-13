@@ -11,7 +11,7 @@ import {
   SelectableValue,
   TimeRange,
   getDefaultTimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import {
   DataSourceWithBackend,
   getBackendSrv,
@@ -19,7 +19,7 @@ import {
   BackendSrv,
   getTemplateSrv,
   TemplateSrv,
-} from '@grafana/runtime';
+} from '@runtime/index';
 
 import { CloudMonitoringAnnotationSupport } from './annotationSupport';
 import { SLO_BURN_RATE_SELECTOR_NAME } from './constants';

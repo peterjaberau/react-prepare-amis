@@ -7,7 +7,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { getDefaultOptions, getTransformerOptionPane } from '../spatial/optionsHelper';

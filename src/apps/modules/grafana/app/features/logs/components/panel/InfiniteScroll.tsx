@@ -2,7 +2,7 @@ import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { usePrevious } from 'react-use';
 import { ListChildComponentProps, ListOnItemsRenderedProps } from 'react-window';
 
-import { AbsoluteTimeRange, LogsSortOrder, TimeRange } from '@grafana/data';
+import { AbsoluteTimeRange, LogsSortOrder, TimeRange } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Spinner } from '@grafana/ui';
 import { t } from 'app/core/internationalization';

@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 
 import { fieldMap, sectionFields } from '../fields';
 import { FieldData, SSOProvider, SSOProviderDTO } from '../types';

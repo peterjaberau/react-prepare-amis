@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Input, useStyles2 } from '@grafana/ui';
 
 interface CustomAnnotationHeaderFieldProps {

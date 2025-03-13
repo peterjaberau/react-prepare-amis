@@ -8,15 +8,15 @@ import {
   AdHocVariableModel,
   TypedVariableModel,
   ScopedVar,
-} from '@grafana/data';
+} from '@data/index';
 import {
   getDataSourceSrv,
   setTemplateSrv,
   TemplateSrv as BaseTemplateSrv,
   VariableInterpolation,
 } from '@runtime/index';
-import { sceneGraph, VariableCustomFormatterFn, SceneObject } from '@grafana/scenes';
-import { VariableFormatID } from '@grafana/schema';
+import { sceneGraph, VariableCustomFormatterFn, SceneObject } from '@scenes/index';
+import { VariableFormatID } from '@schema/index';
 
 import { getVariablesCompatibility } from '../dashboard-scene/utils/getVariablesCompatibility';
 import { variableAdapters } from '../variables/adapters';

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useAsyncFn, useMount, useMountedState } from 'react-use';
 import { AsyncState } from 'react-use/lib/useAsyncFn';
 
-import { GrafanaTheme2, QueryEditorProps } from '@grafana/data';
+import { GrafanaTheme2, QueryEditorProps } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
 import {
   ButtonCascader,

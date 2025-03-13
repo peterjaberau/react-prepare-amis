@@ -14,7 +14,7 @@ import {
   TimeRange,
   TimeZone,
 } from '@data/index';
-import { DashboardCursorSync, VizLegendOptions } from '@grafana/schema';
+import { DashboardCursorSync, VizLegendOptions } from '@schema/index';
 import { Themeable2, VizLayout } from '@grafana/ui';
 import { UPlotChart } from '@grafana/ui/src/components/uPlot/Plot';
 import { AxisProps } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';

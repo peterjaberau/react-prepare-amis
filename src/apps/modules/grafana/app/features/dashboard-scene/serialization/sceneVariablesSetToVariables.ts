@@ -1,11 +1,11 @@
 import { config } from '@runtime/index';
-import { MultiValueVariable, SceneVariables, sceneUtils } from '@grafana/scenes';
+import { MultiValueVariable, SceneVariables, sceneUtils } from '@scenes/index';
 import {
   VariableModel,
   VariableRefresh as OldVariableRefresh,
   VariableHide as OldVariableHide,
   VariableSort as OldVariableSort,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   AdhocVariableKind,
   ConstantVariableKind,

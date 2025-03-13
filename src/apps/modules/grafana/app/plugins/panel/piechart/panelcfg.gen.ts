@@ -8,7 +8,7 @@
 //
 // Run 'make gen-cue' from repository root to regenerate.
 
-import * as common from '@grafana/schema';
+import * as common from '@schema/index';
 
 /**
  * Select the pie chart display style.

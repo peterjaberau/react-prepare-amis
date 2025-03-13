@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Select } from '@grafana/ui';
 
 import { selectors } from '../../e2e/selectors';

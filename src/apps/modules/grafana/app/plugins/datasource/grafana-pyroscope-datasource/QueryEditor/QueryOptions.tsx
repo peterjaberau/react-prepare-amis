@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { CoreApp, GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { CoreApp, GrafanaTheme2, SelectableValue } from '@data/index';
 import { useStyles2, RadioButtonGroup, MultiSelect, Input } from '@grafana/ui';
 
 import { Query } from '../types';

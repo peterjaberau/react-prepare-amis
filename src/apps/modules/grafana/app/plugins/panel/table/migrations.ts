@@ -9,7 +9,7 @@ import {
   FieldConfig,
   DataFrame,
   FieldType,
-} from '@grafana/data';
+} from '@data/index';
 import { ReduceTransformerOptions } from '@grafana/data/src/transformations/transformers/reduce';
 
 import { Options } from './panelcfg.gen';

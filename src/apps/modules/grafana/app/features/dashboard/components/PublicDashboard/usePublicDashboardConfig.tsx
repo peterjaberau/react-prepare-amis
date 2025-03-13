@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 
 const FOOTER_URL = 'https://grafana.com/?src=grafananet&cnt=public-dashboards';

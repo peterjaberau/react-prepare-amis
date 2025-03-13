@@ -8,8 +8,8 @@ import './event_editor';
 import { auto } from 'angular';
 import { defaults, find, without } from 'lodash';
 
-import { DataFrame, FieldConfigProperty, PanelEvents, PanelPlugin } from '@grafana/data';
-import { locationService } from '@grafana/runtime';
+import { DataFrame, FieldConfigProperty, PanelEvents, PanelPlugin } from '@data/index';
+import { locationService } from '@runtime/index';
 import { MetricsPanelCtrl } from 'app/angular/panel/metrics_panel_ctrl';
 import config from 'app/core/config';
 import TimeSeries from 'app/core/time_series2';

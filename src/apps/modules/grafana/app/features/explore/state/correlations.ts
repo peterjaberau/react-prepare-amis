@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 
-import { DataLinkTransformationConfig } from '@grafana/data';
+import { DataLinkTransformationConfig } from '@data/index';
 import { CorrelationData, getDataSourceSrv, reportInteraction } from '@runtime/index';
 import { notifyApp } from 'app/core/actions';
 import { createErrorNotification } from 'app/core/copy/appNotification';

@@ -1,6 +1,6 @@
 import memoizeOne from 'memoize-one';
 
-import { DataSourcePluginMeta, DataSourceSettings, UrlQueryValue } from '@grafana/data';
+import { DataSourcePluginMeta, DataSourceSettings, UrlQueryValue } from '@data/index';
 import { DataSourcesState } from 'app/types/datasources';
 
 export const getDataSources = memoizeOne((state: DataSourcesState) => {

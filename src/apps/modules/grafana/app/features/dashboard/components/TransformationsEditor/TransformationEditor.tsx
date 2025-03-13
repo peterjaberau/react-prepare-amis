@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { createElement, useMemo } from 'react';
 
-import { DataFrame, DataTransformerConfig, GrafanaTheme2, TransformerRegistryItem } from '@grafana/data';
+import { DataFrame, DataTransformerConfig, GrafanaTheme2, TransformerRegistryItem } from '@data/index';
 import { Icon, JSONFormatter, useStyles2, Drawer } from '@grafana/ui';
 
 import { TransformationsEditorTransformation } from './types';

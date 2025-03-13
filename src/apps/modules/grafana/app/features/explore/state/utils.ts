@@ -19,9 +19,9 @@ import {
   toUtc,
   URLRange,
   URLRangeValue,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { DataQuery, DataSourceJsonData, DataSourceRef, TimeZone } from '@grafana/schema';
+import { DataQuery, DataSourceJsonData, DataSourceRef, TimeZone } from '@schema/index';
 import { getLocalRichHistoryStorage } from 'app/core/history/richHistoryStorageProvider';
 import { SortOrder } from 'app/core/utils/richHistoryTypes';
 import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';

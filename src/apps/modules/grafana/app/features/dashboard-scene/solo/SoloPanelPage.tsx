@@ -3,8 +3,8 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { UrlSyncContextProvider } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { UrlSyncContextProvider } from '@scenes/index';
 import { Alert, Box, Spinner, useStyles2 } from '@grafana/ui';
 import PageLoader from 'app/core/components/PageLoader/PageLoader';
 import { EntityNotFound } from 'app/core/components/PageNotFound/EntityNotFound';

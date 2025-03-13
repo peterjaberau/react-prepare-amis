@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { isString } from 'lodash';
 import { CSSProperties } from 'react';
 
-import { LinkModel } from '@grafana/data';
-import { ColorDimensionConfig, ResourceDimensionConfig, ResourceDimensionMode } from '@grafana/schema';
+import { LinkModel } from '@data/index';
+import { ColorDimensionConfig, ResourceDimensionConfig, ResourceDimensionMode } from '@schema/index';
 import { SanitizedSVG } from 'app/core/components/SVG/SanitizedSVG';
 import { getPublicOrAbsoluteUrl } from 'app/features/dimensions';
 import { DimensionContext } from 'app/features/dimensions/context';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Field, LinkTarget } from '@grafana/data';
+import { Field, LinkTarget } from '@data/index';
 
 import { TraceSpan } from './trace';
 

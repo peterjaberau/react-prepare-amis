@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, PluginType } from '@grafana/data';
+import { GrafanaTheme2, PluginType } from '@data/index';
 import { config, featureEnabled } from '@runtime/index';
 import { HorizontalGroup, LinkButton, useStyles2, Alert } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';

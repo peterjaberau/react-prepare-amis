@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { memo, ReactNode, useMemo } from 'react';
 
-import { LogRowModel, Field, LinkModel, DataFrame } from '@grafana/data';
+import { LogRowModel, Field, LinkModel, DataFrame } from '@data/index';
 
 import { LOG_LINE_BODY_FIELD_NAME } from './LogDetailsBody';
 import { LogRowMenuCell } from './LogRowMenuCell';

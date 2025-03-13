@@ -1,6 +1,6 @@
 import { lastValueFrom } from 'rxjs';
 
-import { DataFrame, DataLinkConfigOrigin } from '@grafana/data';
+import { DataFrame, DataLinkConfigOrigin } from '@data/index';
 import {
   config,
   CorrelationData,

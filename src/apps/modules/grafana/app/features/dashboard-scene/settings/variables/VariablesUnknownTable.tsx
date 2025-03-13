@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { ReactElement, useEffect, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { SceneVariable, SceneVariableState } from '@grafana/scenes';
+import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
 import { CollapsableSection, Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

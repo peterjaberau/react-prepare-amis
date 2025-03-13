@@ -1,6 +1,6 @@
 import { cloneDeep, isNumber } from 'lodash';
 
-import { AnnotationEvent, dateTime } from '@grafana/data';
+import { AnnotationEvent, dateTime } from '@data/index';
 import { coreModule } from 'app/angular/core_module';
 import { MetricsPanelCtrl } from 'app/angular/panel/metrics_panel_ctrl';
 

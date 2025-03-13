@@ -1,7 +1,7 @@
 import { lastValueFrom, Observable, of } from 'rxjs';
 
-import { DataQuery, DataQueryResponse, DataSourceApi, DataSourceInstanceSettings } from '@grafana/data';
-import { BackendSrvRequest, getBackendSrv, isFetchError } from '@grafana/runtime';
+import { DataQuery, DataQueryResponse, DataSourceApi, DataSourceInstanceSettings } from '@data/index';
+import { BackendSrvRequest, getBackendSrv, isFetchError } from '@runtime/index';
 
 import { discoverAlertmanagerFeaturesByUrl } from '../../../features/alerting/unified/api/buildInfo';
 import { messageFromError } from '../../../features/alerting/unified/utils/redux';

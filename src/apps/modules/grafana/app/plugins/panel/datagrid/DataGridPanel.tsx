@@ -10,8 +10,8 @@ import DataEditor, {
 } from '@glideapps/glide-data-grid';
 import { useEffect, useReducer } from 'react';
 
-import { Field, PanelProps, FieldType, DataFrame } from '@grafana/data';
-import { PanelDataErrorView, reportInteraction } from '@grafana/runtime';
+import { Field, PanelProps, FieldType, DataFrame } from '@data/index';
+import { PanelDataErrorView, reportInteraction } from '@runtime/index';
 import { usePanelContext, useTheme2 } from '@grafana/ui';
 
 import '@glideapps/glide-data-grid/dist/index.css';

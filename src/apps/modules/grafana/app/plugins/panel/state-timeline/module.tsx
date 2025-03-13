@@ -4,8 +4,8 @@ import {
   FieldType,
   identityOverrideProcessor,
   PanelPlugin,
-} from '@grafana/data';
-import { AxisPlacement, VisibilityMode } from '@grafana/schema';
+} from '@data/index';
+import { AxisPlacement, VisibilityMode } from '@schema/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 
 import { InsertNullsEditor } from '../timeseries/InsertNullsEditor';

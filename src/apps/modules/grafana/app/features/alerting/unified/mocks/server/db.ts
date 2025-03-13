@@ -1,7 +1,7 @@
 import { Factory } from 'fishery';
 import { uniqueId } from 'lodash';
 
-import { DataSourceInstanceSettings, PluginType } from '@grafana/data';
+import { DataSourceInstanceSettings, PluginType } from '@data/index';
 import { config } from '@runtime/index';
 import { FolderDTO } from 'app/types';
 import {

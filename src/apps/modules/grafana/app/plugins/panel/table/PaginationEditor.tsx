@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StandardEditorProps } from '@grafana/data';
+import { StandardEditorProps } from '@data/index';
 import { Switch } from '@grafana/ui';
 
 export function PaginationEditor({ onChange, value, context }: StandardEditorProps<boolean>) {

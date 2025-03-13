@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { useEffectOnce } from 'react-use';
 
-import { GrafanaTheme2, getDefaultRelativeTimeRange } from '@grafana/data';
+import { GrafanaTheme2, getDefaultRelativeTimeRange } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import {
   Alert,

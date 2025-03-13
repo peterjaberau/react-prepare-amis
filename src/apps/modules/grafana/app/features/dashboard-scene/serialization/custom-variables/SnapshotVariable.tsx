@@ -10,7 +10,7 @@ import {
   renderSelectForVariable,
   sceneGraph,
   VariableGetOptionsArgs,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 export interface SnapshotVariableState extends MultiValueVariableState {
   query?: string;

@@ -6,7 +6,7 @@ import {
   DataSourceTestSucceeded,
   DataSourceTestFailed,
   DataSourceApi,
-} from '@grafana/data';
+} from '@data/index';
 import {
   config,
   DataSourceSrv,

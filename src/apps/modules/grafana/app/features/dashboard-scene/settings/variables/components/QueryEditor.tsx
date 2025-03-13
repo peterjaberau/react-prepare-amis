@@ -1,6 +1,6 @@
-import { DataSourceApi, LoadingState, TimeRange } from '@grafana/data';
+import { DataSourceApi, LoadingState, TimeRange } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { QueryVariable } from '@grafana/scenes';
+import { QueryVariable } from '@scenes/index';
 import { Text, Box } from '@grafana/ui';
 import { isLegacyQueryEditor, isQueryEditor } from 'app/features/variables/guard';
 import { VariableQueryEditorType } from 'app/features/variables/types';

@@ -2,7 +2,7 @@ import { isString } from 'lodash';
 import { nanoid } from 'nanoid';
 import { Observable, ReplaySubject } from 'rxjs';
 
-import { Labels, LogLevel } from '@grafana/data';
+import { Labels, LogLevel } from '@data/index';
 import { config } from '@runtime/index';
 
 export type ExtensionsLogItem = {

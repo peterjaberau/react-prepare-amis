@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import {
   SceneComponentProps,
   SceneObjectBase,
@@ -9,7 +9,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Container, ScrollContainer, TabContent, TabsBar, useStyles2 } from '@grafana/ui';
 import { getConfig } from 'app/core/config';
 import { contextSrv } from 'app/core/core';

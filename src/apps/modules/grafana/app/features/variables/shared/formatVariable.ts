@@ -1,4 +1,4 @@
-import { TypedVariableModel, VariableWithOptions } from '@grafana/data';
+import { TypedVariableModel, VariableWithOptions } from '@data/index';
 
 export const formatVariableLabel = (variable: VariableWithOptions | TypedVariableModel) => {
   if (!isVariableWithOptions(variable)) {

@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DashboardCursorSync, GrafanaTheme2 } from '@grafana/data';
+import { DashboardCursorSync, GrafanaTheme2 } from '@data/index';
 import { useChromeHeaderHeight } from '@runtime/index';
 import {
   behaviors,
@@ -10,7 +10,7 @@ import {
   SceneObject,
   SceneObjectBase,
   SceneObjectState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { MetricActionBar } from './MetricScene';

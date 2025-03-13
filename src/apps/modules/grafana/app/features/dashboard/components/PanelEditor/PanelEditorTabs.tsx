@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo, useCallback, useEffect } from 'react';
 import { Subscription } from 'rxjs';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Tab, TabContent, TabsBar, toIconName, useForceUpdate, useStyles2 } from '@grafana/ui';
 import { PanelAlertTab } from 'app/features/alerting/unified/PanelAlertTab';

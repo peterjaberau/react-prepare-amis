@@ -1,4 +1,4 @@
-import { DataFrameView, IconName } from '@grafana/data';
+import { DataFrameView, IconName } from '@data/index';
 import { isSharedWithMe } from 'app/features/browse-dashboards/components/utils';
 import { DashboardViewItemWithUIItems } from 'app/features/browse-dashboards/types';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';

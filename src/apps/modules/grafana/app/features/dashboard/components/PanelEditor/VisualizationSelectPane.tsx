@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback, useRef, useState } from 'react';
 import { useLocalStorage } from 'react-use';
 
-import { GrafanaTheme2, PanelData, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
 import { Button, FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { Field } from '@grafana/ui/src/components/Forms/Field';
 import { LS_VISUALIZATION_SELECT_TAB_KEY } from 'app/core/constants';

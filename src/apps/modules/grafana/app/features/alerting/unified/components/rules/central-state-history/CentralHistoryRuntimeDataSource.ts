@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from 'react';
 
-import { DataQuery, DataQueryRequest, DataQueryResponse, TestDataSourceResponse } from '@grafana/data';
+import { DataQuery, DataQueryRequest, DataQueryResponse, TestDataSourceResponse } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { RuntimeDataSource, sceneUtils } from '@grafana/scenes';
+import { RuntimeDataSource, sceneUtils } from '@scenes/index';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
 import { dispatch } from 'app/store/store';
 

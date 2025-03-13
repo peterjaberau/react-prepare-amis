@@ -9,12 +9,12 @@ import {
   getDefaultRelativeTimeRange,
   getNextRefId,
   rangeUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
-import { VizPanel, sceneGraph } from '@grafana/scenes';
-import { DataSourceJsonData } from '@grafana/schema';
+import { VizPanel, sceneGraph } from '@scenes/index';
+import { DataSourceJsonData } from '@schema/index';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';
 import {

@@ -8,7 +8,7 @@ import {
   AngularPanelMenuItem,
   EventBusExtended,
   EventBusSrv,
-} from '@grafana/data';
+} from '@data/index';
 import { AngularLocationWrapper } from 'app/angular/AngularLocationWrapper';
 import config from 'app/core/config';
 import { profiler } from 'app/core/core';

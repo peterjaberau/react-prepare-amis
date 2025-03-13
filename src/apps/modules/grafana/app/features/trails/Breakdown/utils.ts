@@ -1,5 +1,5 @@
-import { SelectableValue } from '@grafana/data';
-import { AdHocFiltersVariable, QueryVariable, sceneGraph, SceneObject } from '@grafana/scenes';
+import { SelectableValue } from '@data/index';
+import { AdHocFiltersVariable, QueryVariable, sceneGraph, SceneObject } from '@scenes/index';
 
 import { VAR_FILTERS } from '../shared';
 

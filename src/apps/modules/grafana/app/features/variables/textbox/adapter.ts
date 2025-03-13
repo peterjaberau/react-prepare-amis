@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 
-import { TextBoxVariableModel } from '@grafana/data';
+import { TextBoxVariableModel } from '@data/index';
 
 import { dispatch } from '../../../store/store';
 import { VariableAdapter } from '../adapters';

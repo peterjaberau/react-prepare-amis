@@ -11,9 +11,9 @@ import {
   DataSourceInstanceSettings,
   LoadingState,
   ScopedVars,
-} from '@grafana/data';
-import { getDataSourceSrv, getTemplateSrv, toDataQueryError } from '@grafana/runtime';
-import { CustomFormatterVariable } from '@grafana/scenes';
+} from '@data/index';
+import { getDataSourceSrv, getTemplateSrv, toDataQueryError } from '@runtime/index';
+import { CustomFormatterVariable } from '@scenes/index';
 
 import { SHARED_DASHBOARD_QUERY } from '../dashboard/constants';
 

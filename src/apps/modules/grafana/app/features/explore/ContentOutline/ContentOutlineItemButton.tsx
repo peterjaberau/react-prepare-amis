@@ -2,7 +2,7 @@ import { cx, css } from '@emotion/css';
 import { ButtonHTMLAttributes, useEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import { IconName, isIconName, GrafanaTheme2 } from '@grafana/data';
+import { IconName, isIconName, GrafanaTheme2 } from '@data/index';
 import { Button, Icon, Tooltip, useTheme2 } from '@grafana/ui';
 import { TooltipPlacement } from '@grafana/ui/src/components/Tooltip';
 

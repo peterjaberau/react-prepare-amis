@@ -3,7 +3,7 @@ import {
   VisualizationSuggestionsBuilder,
   VisualizationSuggestion,
   DataTransformerID,
-} from '@grafana/data';
+} from '@data/index';
 import {
   GraphDrawStyle,
   GraphFieldConfig,
@@ -11,7 +11,7 @@ import {
   LegendDisplayMode,
   LineInterpolation,
   StackingMode,
-} from '@grafana/schema';
+} from '@schema/index';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { SuggestionName } from 'app/types/suggestions';
 

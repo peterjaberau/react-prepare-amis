@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import * as React from 'react';
 import { Observable } from 'rxjs';
 
-import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

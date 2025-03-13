@@ -1,9 +1,9 @@
 import { css, cx } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { GrafanaTheme2, urlUtil } from '@grafana/data';
+import { GrafanaTheme2, urlUtil } from '@data/index';
 import { EmbeddedDashboardProps } from '@runtime/index';
-import { SceneObjectStateChangedEvent, sceneUtils } from '@grafana/scenes';
+import { SceneObjectStateChangedEvent, sceneUtils } from '@scenes/index';
 import { Spinner, Alert, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 import { getMessageFromError } from 'app/core/utils/errors';

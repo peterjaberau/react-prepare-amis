@@ -1,4 +1,4 @@
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 
 import { NewsPanel } from './NewsPanel';
 import { DEFAULT_FEED_URL } from './constants';

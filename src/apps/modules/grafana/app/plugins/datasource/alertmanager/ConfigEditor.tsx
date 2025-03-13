@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom-v5-compat';
 
 import { SIGV4ConnectionConfig } from '@grafana/aws-sdk';
-import { DataSourcePluginOptionsEditorProps, SelectableValue } from '@grafana/data';
+import { DataSourcePluginOptionsEditorProps, SelectableValue } from '@data/index';
 import { Box, DataSourceHttpSettings, InlineField, InlineSwitch, Select, Text } from '@grafana/ui';
 import { config } from 'app/core/config';
 

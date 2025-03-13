@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { CoreApp, GrafanaTheme2, LoadingState } from '@grafana/data';
+import { CoreApp, GrafanaTheme2, LoadingState } from '@data/index';
 import { reportInteraction } from '@grafana/runtime/src';
-import { defaultTimeZone, TimeZone } from '@grafana/schema';
+import { defaultTimeZone, TimeZone } from '@schema/index';
 import { TabbedContainer, TabConfig, useStyles2 } from '@grafana/ui';
 import { requestIdGenerator } from 'app/core/utils/explore';
 import { ExploreDrawer } from 'app/features/explore/ExploreDrawer';

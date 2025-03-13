@@ -1,7 +1,7 @@
 import { combineLatest, Observable, of } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
-import { arrayToDataFrame, DataFrame, DataTopic, PanelData } from '@grafana/data';
+import { arrayToDataFrame, DataFrame, DataTopic, PanelData } from '@data/index';
 
 import { DashboardQueryRunnerResult } from './DashboardQueryRunner/types';
 

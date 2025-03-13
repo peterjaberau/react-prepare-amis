@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { DataSourceVariable } from '@grafana/scenes';
+import { SelectableValue } from '@data/index';
+import { DataSourceVariable } from '@scenes/index';
 
 import { DataSourceVariableForm } from '../components/DataSourceVariableForm';
 import { getOptionDataSourceTypes } from '../utils';

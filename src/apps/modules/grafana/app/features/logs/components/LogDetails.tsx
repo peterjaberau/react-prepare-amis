@@ -1,7 +1,7 @@
 import { cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { CoreApp, DataFrame, DataFrameType, Field, LinkModel, LogRowModel } from '@grafana/data';
+import { CoreApp, DataFrame, DataFrameType, Field, LinkModel, LogRowModel } from '@data/index';
 import { PopoverContent, Themeable2, withTheme2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

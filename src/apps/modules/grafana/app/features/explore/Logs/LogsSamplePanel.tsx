@@ -9,9 +9,9 @@ import {
   LogsDedupStrategy,
   SplitOpen,
   SupplementaryQueryType,
-} from '@grafana/data';
+} from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { DataQuery, TimeZone } from '@grafana/schema';
+import { DataQuery, TimeZone } from '@schema/index';
 import { Button, Collapse, Icon, Tooltip, useStyles2 } from '@grafana/ui';
 import store from 'app/core/store';
 

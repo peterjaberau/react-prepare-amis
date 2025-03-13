@@ -10,7 +10,7 @@ import {
   getFieldDisplayName,
   isSystemOverrideWithRef,
   SystemConfigOverrideRule,
-} from '@grafana/data';
+} from '@data/index';
 import { SeriesVisibilityChangeMode } from '@grafana/ui';
 
 const displayOverrideRef = 'hideSeriesFrom';

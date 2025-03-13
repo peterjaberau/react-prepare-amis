@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 
-import { GrafanaTheme2, VariableHide } from '@grafana/data';
+import { GrafanaTheme2, VariableHide } from '@data/index';
 import {
   SceneObjectState,
   SceneObject,
@@ -14,7 +14,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   CancelActivationHandler,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Badge, Box, Stack, useStyles2 } from '@grafana/ui';
 
 import { PanelEditControls } from '../panel-edit/PanelEditControls';

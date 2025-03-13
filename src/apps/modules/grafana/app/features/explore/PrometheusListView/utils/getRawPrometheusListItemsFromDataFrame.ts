@@ -1,4 +1,4 @@
-import { DataFrame, formattedValueToString } from '@grafana/data';
+import { DataFrame, formattedValueToString } from '@data/index';
 
 import { instantQueryRawVirtualizedListData } from '../RawListContainer';
 

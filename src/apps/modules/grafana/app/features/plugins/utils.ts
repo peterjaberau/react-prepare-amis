@@ -1,4 +1,4 @@
-import { GrafanaPlugin, NavModel, NavModelItem, PanelPluginMeta, PluginType } from '@grafana/data';
+import { GrafanaPlugin, NavModel, NavModelItem, PanelPluginMeta, PluginType } from '@data/index';
 import { createMonitoringLogger } from '@runtime/index';
 
 import { importPanelPluginFromMeta } from './importPanelPlugin';

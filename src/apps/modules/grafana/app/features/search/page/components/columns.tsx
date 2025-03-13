@@ -9,7 +9,7 @@ import {
   formattedValueToString,
   getDisplayProcessor,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { Checkbox, Icon, IconName, TagList, Text, Tooltip } from '@grafana/ui';
 import appEvents from 'app/core/app_events';

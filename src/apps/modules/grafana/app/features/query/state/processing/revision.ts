@@ -1,4 +1,4 @@
-import { compareArrayValues, compareDataFrameStructures, PanelData } from '@grafana/data';
+import { compareArrayValues, compareDataFrameStructures, PanelData } from '@data/index';
 
 export const setStructureRevision = (result: PanelData, lastResult: PanelData | undefined) => {
   let structureRev = 1;

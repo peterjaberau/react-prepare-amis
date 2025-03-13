@@ -4,7 +4,7 @@ import { Resizable, ResizeCallback } from 're-resizable';
 import * as React from 'react';
 
 // Services & Utils
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { getDragStyles, useStyles2, useTheme2 } from '@grafana/ui';
 
 export interface Props {

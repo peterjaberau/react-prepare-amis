@@ -7,7 +7,7 @@ import {
   GrafanaTheme2,
   QueryResultMetaStat,
   TimeZone,
-} from '@grafana/data';
+} from '@data/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 
 interface InspectStatsTableProps {

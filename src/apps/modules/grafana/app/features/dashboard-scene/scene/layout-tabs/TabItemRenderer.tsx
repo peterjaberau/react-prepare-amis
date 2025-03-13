@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { useLocation } from 'react-router';
 
-import { locationUtil } from '@grafana/data';
-import { SceneComponentProps, sceneGraph } from '@grafana/scenes';
+import { locationUtil } from '@data/index';
+import { SceneComponentProps, sceneGraph } from '@scenes/index';
 import { Tab, useElementSelection } from '@grafana/ui';
 
 import { isClonedKey } from '../../utils/clone';

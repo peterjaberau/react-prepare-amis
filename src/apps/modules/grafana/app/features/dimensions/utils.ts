@@ -1,4 +1,4 @@
-import { DataFrame, PanelData, Field, getFieldDisplayName, ReducerID } from '@grafana/data';
+import { DataFrame, PanelData, Field, getFieldDisplayName, ReducerID } from '@data/index';
 import { config } from '@runtime/index';
 import {
   ResourceDimensionConfig,
@@ -6,7 +6,7 @@ import {
   TextDimensionConfig,
   ColorDimensionConfig,
   ScalarDimensionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   getColorDimension,
   getScaledDimension,

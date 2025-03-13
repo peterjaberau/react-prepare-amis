@@ -1,4 +1,4 @@
-import { VariableType, TypedVariableModel } from '@grafana/data';
+import { VariableType, TypedVariableModel } from '@data/index';
 
 import { VariableModel } from '../types';
 

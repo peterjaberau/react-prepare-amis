@@ -1,4 +1,4 @@
-import { FieldConfigSource, PanelModel, PanelTypeChangedHandler } from '@grafana/data';
+import { FieldConfigSource, PanelModel, PanelTypeChangedHandler } from '@data/index';
 import {
   AxisPlacement,
   ScaleDistribution,
@@ -6,7 +6,7 @@ import {
   HeatmapCellLayout,
   HeatmapCalculationMode,
   HeatmapCalculationOptions,
-} from '@grafana/schema';
+} from '@schema/index';
 import { TooltipDisplayMode } from '@grafana/ui';
 
 import { colorSchemes } from './palettes';

@@ -4,7 +4,7 @@ import {
   getDatasourceCredentials,
   getDefaultAzureCloud,
 } from '@grafana/azure-sdk';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 
 export const getDefaultCredentials = (): AzureCredentials => {
   if (config.azure.managedIdentityEnabled) {

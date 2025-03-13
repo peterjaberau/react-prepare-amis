@@ -11,7 +11,7 @@ import {
   TransformerCategory,
   GrafanaTheme2,
   PluginState,
-} from '@grafana/data';
+} from '@data/index';
 import {
   GroupByFieldOptions,
   GroupByOperationID,

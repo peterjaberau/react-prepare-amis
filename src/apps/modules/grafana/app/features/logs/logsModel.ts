@@ -38,10 +38,10 @@ import {
   textUtil,
   toDataFrame,
   toUtc,
-} from '@grafana/data';
+} from '@data/index';
 import { SIPrefix } from '@grafana/data/src/valueFormats/symbolFormatters';
 import { config } from '@runtime/index';
-import { BarAlignment, GraphDrawStyle, StackingMode } from '@grafana/schema';
+import { BarAlignment, GraphDrawStyle, StackingMode } from '@schema/index';
 import { colors } from '@grafana/ui';
 import { getThemeColor } from 'app/core/utils/colors';
 import { LokiQueryDirection } from 'app/plugins/datasource/loki/types';

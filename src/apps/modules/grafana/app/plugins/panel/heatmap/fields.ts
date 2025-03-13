@@ -12,14 +12,14 @@ import {
   outerJoinDataFrames,
   TimeRange,
   ValueFormatter,
-} from '@grafana/data';
+} from '@data/index';
 import { parseSampleValue, sortSeriesByLabel } from '@grafana/prometheus';
 import {
   HeatmapCalculationMode,
   HeatmapCalculationOptions,
   HeatmapCellLayout,
   ScaleDistribution,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   calculateHeatmapFromData,
   isHeatmapCellsDense,

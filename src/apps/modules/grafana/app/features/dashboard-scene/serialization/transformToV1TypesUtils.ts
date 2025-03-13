@@ -1,4 +1,4 @@
-import { FieldConfigSource as FieldConfigSourceV1, SpecialValueMatch as SpecialValueMatchV1 } from '@grafana/data';
+import { FieldConfigSource as FieldConfigSourceV1, SpecialValueMatch as SpecialValueMatchV1 } from '@data/index';
 import {
   VariableHide as VariableHideV1,
   VariableRefresh as VariableRefreshV1,
@@ -7,7 +7,7 @@ import {
   defaultDashboardCursorSync,
   MappingType as MappingTypeV1,
   ThresholdsMode as ThresholdsModeV1,
-} from '@grafana/schema';
+} from '@schema/index';
 import {
   DashboardCursorSync,
   VariableHide,

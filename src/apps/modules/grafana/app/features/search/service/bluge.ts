@@ -5,7 +5,7 @@ import {
   getDisplayProcessor,
   SelectableValue,
   toDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
 import { TermCount } from 'app/core/components/TagFilter/TagFilter';
 

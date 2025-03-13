@@ -11,7 +11,7 @@ import {
   FieldNamePickerBaseNameMode,
   FieldType,
   GrafanaTheme2,
-} from '@grafana/data';
+} from '@data/index';
 import { Button, Field, IconButton, Select, useStyles2 } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { LayerName } from 'app/core/components/Layers/LayerName';

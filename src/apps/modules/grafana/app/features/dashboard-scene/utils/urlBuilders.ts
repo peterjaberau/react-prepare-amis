@@ -1,6 +1,6 @@
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';
-import { sceneGraph, VizPanel } from '@grafana/scenes';
+import { sceneGraph, VizPanel } from '@scenes/index';
 import { contextSrv } from 'app/core/core';
 import { getExploreUrl } from 'app/core/utils/explore';
 import { InspectTab } from 'app/features/inspector/types';

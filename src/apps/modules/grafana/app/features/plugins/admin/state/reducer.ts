@@ -1,6 +1,6 @@
 import { createSlice, createEntityAdapter, Reducer, AnyAction, PayloadAction } from '@reduxjs/toolkit';
 
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 
 import { STATE_PREFIX } from '../constants';
 import { CatalogPlugin, ReducerState, RequestStatus } from '../types';

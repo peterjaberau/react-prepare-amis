@@ -12,7 +12,7 @@ import {
   SelectableValue,
   TimeZone,
   transformDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv, reportInteraction } from '@runtime/index';
 import { Button, Spinner, Table } from '@grafana/ui';
 import { config } from 'app/core/config';

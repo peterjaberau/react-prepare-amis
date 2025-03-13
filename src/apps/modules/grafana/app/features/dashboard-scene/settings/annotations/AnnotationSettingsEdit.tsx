@@ -9,9 +9,9 @@ import {
   getDataSourceRef,
   GrafanaTheme2,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { AnnotationPanelFilter } from '@grafana/schema/src/raw/dashboard/x/dashboard_types.gen';
 import { Button, Checkbox, Field, FieldSet, Input, MultiSelect, Select, useStyles2, Stack, Alert } from '@grafana/ui';
 import { ColorValueEditor } from 'app/core/components/OptionsUI/color';

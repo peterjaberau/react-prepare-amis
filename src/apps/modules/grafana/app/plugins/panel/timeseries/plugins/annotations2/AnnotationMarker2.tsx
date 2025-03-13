@@ -5,9 +5,9 @@ import { useState } from 'react';
 import * as React from 'react';
 import { createPortal } from 'react-dom';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
-import { TimeZone } from '@grafana/schema';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
+import { TimeZone } from '@schema/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { AnnotationEditor2 } from './AnnotationEditor2';

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { PluginType } from '@grafana/data';
+import { PluginType } from '@data/index';
 import { Page } from 'app/core/components/Page/Page';
 import UpdateAllButton from 'app/features/plugins/admin/components/UpdateAllButton';
 import UpdateAllModal from 'app/features/plugins/admin/components/UpdateAllModal';

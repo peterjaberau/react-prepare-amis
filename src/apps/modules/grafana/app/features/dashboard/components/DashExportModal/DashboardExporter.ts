@@ -1,6 +1,6 @@
 import { defaults, each, sortBy } from 'lodash';
 
-import { DataSourceRef, PanelPluginMeta, VariableOption, VariableRefresh } from '@grafana/data';
+import { DataSourceRef, PanelPluginMeta, VariableOption, VariableRefresh } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import config from 'app/core/config';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';

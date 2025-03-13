@@ -9,8 +9,8 @@ import {
   FieldType,
   LoadingState,
   TestDataSourceResponse,
-} from '@grafana/data';
-import { RuntimeDataSource, SceneDataQuery } from '@grafana/scenes';
+} from '@data/index';
+import { RuntimeDataSource, SceneDataQuery } from '@scenes/index';
 
 import { ExtensionsLog, ExtensionsLogItem } from './log';
 

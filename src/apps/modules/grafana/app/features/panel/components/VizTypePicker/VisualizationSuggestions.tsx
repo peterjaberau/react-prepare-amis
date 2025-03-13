@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { GrafanaTheme2, PanelData, PanelModel, VisualizationSuggestion } from '@grafana/data';
+import { GrafanaTheme2, PanelData, PanelModel, VisualizationSuggestion } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { getAllSuggestions } from '../../state/getAllSuggestions';

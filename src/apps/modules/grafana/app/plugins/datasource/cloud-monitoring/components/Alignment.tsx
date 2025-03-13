@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { EditorField, EditorFieldGroup } from '@grafana/plugin-ui';
 
 import { ALIGNMENT_PERIODS } from '../constants';

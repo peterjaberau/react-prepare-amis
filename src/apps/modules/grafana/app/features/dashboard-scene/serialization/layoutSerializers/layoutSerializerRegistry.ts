@@ -1,4 +1,4 @@
-import { Registry, RegistryItem } from '@grafana/data';
+import { Registry, RegistryItem } from '@data/index';
 
 import { LayoutManagerSerializer } from '../../scene/types/DashboardLayoutManager';
 

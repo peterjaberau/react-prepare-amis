@@ -1,4 +1,4 @@
-import { DataFrame, Field } from '@grafana/data';
+import { DataFrame, Field } from '@data/index';
 
 import { HeatmapData } from '../fields';
 

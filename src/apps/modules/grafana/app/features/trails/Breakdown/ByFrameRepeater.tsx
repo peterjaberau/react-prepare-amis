@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataFrame, LoadingState, PanelData } from '@grafana/data';
+import { DataFrame, LoadingState, PanelData } from '@data/index';
 import {
   SceneByFrameRepeater,
   SceneComponentProps,
@@ -12,7 +12,7 @@ import {
   SceneObjectBase,
   SceneObjectState,
   SceneReactObject,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Alert, Button } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

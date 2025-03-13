@@ -1,4 +1,4 @@
-import { AnnotationSupport, AnnotationQuery } from '@grafana/data';
+import { AnnotationSupport, AnnotationQuery } from '@data/index';
 
 import { AnnotationQueryEditor } from './components/AnnotationQueryEditor';
 import CloudMonitoringDatasource from './datasource';

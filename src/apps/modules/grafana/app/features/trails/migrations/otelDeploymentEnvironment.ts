@@ -1,5 +1,5 @@
-import { AdHocVariableFilter, UrlQueryValue, UrlQueryMap } from '@grafana/data';
-import { sceneGraph, AdHocFiltersVariable, CustomVariable } from '@grafana/scenes';
+import { AdHocVariableFilter, UrlQueryValue, UrlQueryMap } from '@data/index';
+import { sceneGraph, AdHocFiltersVariable, CustomVariable } from '@scenes/index';
 
 import { DataTrail } from '../DataTrail';
 import { reportExploreMetrics } from '../interactions';

@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { SelectableValue, StandardEditorContext } from '@grafana/data';
+import { SelectableValue, StandardEditorContext } from '@data/index';
 import { InlineFieldRow, InlineField, RadioButtonGroup, Select } from '@grafana/ui';
 import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';
 

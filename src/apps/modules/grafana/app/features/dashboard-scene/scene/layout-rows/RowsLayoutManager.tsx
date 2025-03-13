@@ -1,4 +1,4 @@
-import { SceneGridItemLike, SceneGridRow, SceneObjectBase, SceneObjectState, VizPanel } from '@grafana/scenes';
+import { SceneGridItemLike, SceneGridRow, SceneObjectBase, SceneObjectState, VizPanel } from '@scenes/index';
 import { t } from 'app/core/internationalization';
 
 import { isClonedKey } from '../../utils/clone';

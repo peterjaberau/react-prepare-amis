@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, InternalTimeZones, StandardEditorProps } from '@grafana/data';
-import { OptionsWithTimezones } from '@grafana/schema';
+import { GrafanaTheme2, InternalTimeZones, StandardEditorProps } from '@data/index';
+import { OptionsWithTimezones } from '@schema/index';
 import { IconButton, TimeZonePicker, useStyles2 } from '@grafana/ui';
 
 type Props = StandardEditorProps<string[], unknown, OptionsWithTimezones>;

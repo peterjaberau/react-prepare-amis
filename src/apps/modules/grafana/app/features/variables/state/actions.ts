@@ -19,7 +19,7 @@ import {
   VariableOption,
   VariableRefresh,
   VariableWithOptions,
-} from '@grafana/data';
+} from '@data/index';
 import { config, locationService, logWarning } from '@runtime/index';
 import { notifyApp } from 'app/core/actions';
 import { contextSrv } from 'app/core/services/context_srv';

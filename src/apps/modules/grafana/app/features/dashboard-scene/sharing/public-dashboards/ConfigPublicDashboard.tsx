@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, sceneGraph } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, sceneGraph } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { useDeletePublicDashboardMutation } from 'app/features/dashboard/api/publicDashboardApi';

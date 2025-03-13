@@ -1,7 +1,7 @@
 import { Geometry, GeometryCollection, LineString, Point } from 'ol/geom';
 import { fromLonLat } from 'ol/proj';
 
-import { Field, FieldConfig, FieldType } from '@grafana/data';
+import { Field, FieldConfig, FieldType } from '@data/index';
 import { getCenterPoint } from 'app/features/transformers/spatial/utils';
 
 import { Gazetteer } from '../gazetteer/gazetteer';

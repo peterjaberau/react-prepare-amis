@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { useMount } from 'react-use';
 
-import { PluginExtensionComponent, PluginExtensionPoints } from '@grafana/data';
+import { PluginExtensionComponent, PluginExtensionPoints } from '@data/index';
 import { usePluginComponentExtensions } from '@runtime/index';
 import { Tab, TabsBar, TabContent, Stack } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

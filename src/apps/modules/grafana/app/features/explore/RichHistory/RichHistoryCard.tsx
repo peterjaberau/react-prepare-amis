@@ -3,9 +3,9 @@ import { useCallback, useState } from 'react';
 import * as React from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { GrafanaTheme2, DataSourceApi } from '@grafana/data';
+import { GrafanaTheme2, DataSourceApi } from '@data/index';
 import { config, reportInteraction, getAppEvents } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { TextArea, Button, IconButton, useStyles2 } from '@grafana/ui';
 import { notifyApp } from 'app/core/actions';
 import { createSuccessNotification } from 'app/core/copy/appNotification';

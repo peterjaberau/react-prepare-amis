@@ -1,7 +1,7 @@
-import { AdHocVariableFilter, MetricFindValue, RawTimeRange, VariableHide } from '@grafana/data';
+import { AdHocVariableFilter, MetricFindValue, RawTimeRange, VariableHide } from '@data/index';
 import { isValidLegacyName } from '@grafana/prometheus';
 import { config } from '@runtime/index';
-import { AdHocFiltersVariable, ConstantVariable, sceneGraph, SceneObject } from '@grafana/scenes';
+import { AdHocFiltersVariable, ConstantVariable, sceneGraph, SceneObject } from '@scenes/index';
 
 import { DataTrail } from '../DataTrail';
 import { reportChangeInLabelFilters } from '../interactions';

@@ -1,9 +1,9 @@
 import { FormEvent } from 'react';
 import { useAsync } from 'react-use';
 
-import { DataSourceInstanceSettings, MetricFindValue, getDataSourceRef } from '@grafana/data';
+import { DataSourceInstanceSettings, MetricFindValue, getDataSourceRef } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { GroupByVariable } from '@grafana/scenes';
+import { GroupByVariable } from '@scenes/index';
 
 import { GroupByVariableForm } from '../components/GroupByVariableForm';
 

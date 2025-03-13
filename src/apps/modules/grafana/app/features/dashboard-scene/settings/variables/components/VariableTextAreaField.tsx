@@ -3,7 +3,7 @@ import { useId } from '@react-aria/utils';
 import { FormEvent, PropsWithChildren, ReactElement } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Field, TextArea, useStyles2 } from '@grafana/ui';
 
 interface VariableTextAreaFieldProps {

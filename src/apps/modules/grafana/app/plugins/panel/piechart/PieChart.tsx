@@ -16,9 +16,9 @@ import {
   GrafanaTheme2,
   DataHoverClearEvent,
   DataHoverEvent,
-} from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
-import { VizTooltipOptions } from '@grafana/schema';
+} from '@data/index';
+import { selectors } from '@selectors/index';
+import { VizTooltipOptions } from '@schema/index';
 import {
   useTheme2,
   useStyles2,

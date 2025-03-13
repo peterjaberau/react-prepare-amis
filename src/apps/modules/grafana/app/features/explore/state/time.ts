@@ -7,7 +7,7 @@ import {
   LoadingState,
   RawTimeRange,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { RefreshPicker } from '@grafana/ui';
 import appEvents from 'app/core/app_events';

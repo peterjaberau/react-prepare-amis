@@ -2,8 +2,8 @@
 import baron from 'baron';
 import { Subscription } from 'rxjs';
 
-import { PanelEvents } from '@grafana/data';
-import { RefreshEvent } from '@grafana/runtime';
+import { PanelEvents } from '@data/index';
+import { RefreshEvent } from '@runtime/index';
 import { coreModule } from 'app/angular/core_module';
 import { PanelDirectiveReadyEvent, RenderEvent } from 'app/types/events';
 

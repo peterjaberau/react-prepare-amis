@@ -1,8 +1,8 @@
 import { flatten } from 'lodash';
 import { LRUCache } from 'lru-cache';
 
-import { AbstractQuery, getDefaultTimeRange, KeyValue, LanguageProvider, ScopedVars, TimeRange } from '@grafana/data';
-import { BackendSrvRequest, config } from '@grafana/runtime';
+import { AbstractQuery, getDefaultTimeRange, KeyValue, LanguageProvider, ScopedVars, TimeRange } from '@data/index';
+import { BackendSrvRequest, config } from '@runtime/index';
 
 import { DEFAULT_MAX_LINES_SAMPLE, LokiDatasource } from './datasource';
 import { abstractQueryToExpr, mapAbstractOperatorsToOp, processLabels } from './languageUtils';

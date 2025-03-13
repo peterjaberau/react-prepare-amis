@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { IntervalVariable } from '@grafana/scenes';
+import { SelectableValue } from '@data/index';
+import { IntervalVariable } from '@scenes/index';
 import {
   getIntervalsFromQueryString,
   getIntervalsQueryFromNewIntervalModel,

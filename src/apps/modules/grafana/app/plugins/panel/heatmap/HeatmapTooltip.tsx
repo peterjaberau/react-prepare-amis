@@ -12,8 +12,8 @@ import {
   InterpolateFunction,
   LinkModel,
   PanelData,
-} from '@grafana/data';
-import { HeatmapCellLayout } from '@grafana/schema';
+} from '@data/index';
+import { HeatmapCellLayout } from '@schema/index';
 import { TooltipDisplayMode, useTheme2 } from '@grafana/ui';
 import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
 import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';

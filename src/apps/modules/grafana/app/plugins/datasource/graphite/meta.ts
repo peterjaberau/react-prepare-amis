@@ -1,4 +1,4 @@
-import { QueryResultMetaNotice } from '@grafana/data';
+import { QueryResultMetaNotice } from '@data/index';
 
 import { MetricTankSeriesMeta } from './types';
 

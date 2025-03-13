@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { LoadingState } from '@grafana/data';
+import { LoadingState } from '@data/index';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { PanelModel } from '../../state/PanelModel';

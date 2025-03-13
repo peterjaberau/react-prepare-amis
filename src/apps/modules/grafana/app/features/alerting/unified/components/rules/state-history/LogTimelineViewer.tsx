@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { DataFrame, InterpolateFunction, TimeRange } from '@grafana/data';
-import { VisibilityMode } from '@grafana/schema';
+import { DataFrame, InterpolateFunction, TimeRange } from '@data/index';
+import { VisibilityMode } from '@schema/index';
 import { LegendDisplayMode, useTheme2 } from '@grafana/ui';
 import { TimelineChart } from 'app/core/components/TimelineChart/TimelineChart';
 import { TimelineMode } from 'app/core/components/TimelineChart/utils';

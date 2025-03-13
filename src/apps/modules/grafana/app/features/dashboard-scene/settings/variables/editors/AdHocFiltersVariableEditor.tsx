@@ -1,9 +1,9 @@
 import { FormEvent } from 'react';
 import { useAsync } from 'react-use';
 
-import { DataSourceInstanceSettings, MetricFindValue, getDataSourceRef } from '@grafana/data';
+import { DataSourceInstanceSettings, MetricFindValue, getDataSourceRef } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { AdHocFiltersVariable } from '@grafana/scenes';
+import { AdHocFiltersVariable } from '@scenes/index';
 
 import { AdHocVariableForm } from '../components/AdHocVariableForm';
 

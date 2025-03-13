@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Controller, FormProvider, useForm } from 'react-hook-form';
 import { connect } from 'react-redux';
 
-import { AppEvents, GrafanaTheme2, NavModelItem } from '@grafana/data';
+import { AppEvents, GrafanaTheme2, NavModelItem } from '@data/index';
 import { getBackendSrv, getAppEvents, locationService, reportInteraction } from '@runtime/index';
 import {
   useStyles2,

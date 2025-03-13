@@ -2,7 +2,7 @@ import { isEmpty } from 'lodash';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { rangeUtil, TimeZone } from '@grafana/data';
+import { rangeUtil, TimeZone } from '@data/index';
 import { CollapsableSection, Field, Input, Switch, TimeZonePicker, WeekStart, WeekStartPicker } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

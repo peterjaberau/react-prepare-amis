@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { AnnotationQuery, EventBus, GrafanaTheme2 } from '@grafana/data';
+import { AnnotationQuery, EventBus, GrafanaTheme2 } from '@data/index';
 import { InlineField, InlineFieldRow, InlineSwitch, useStyles2 } from '@grafana/ui';
 import { LoadingIndicator } from '@grafana/ui/src/components/PanelChrome/LoadingIndicator';
 

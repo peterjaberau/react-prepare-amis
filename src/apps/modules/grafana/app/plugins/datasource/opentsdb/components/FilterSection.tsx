@@ -2,7 +2,7 @@ import debounce from 'debounce-promise';
 import { size } from 'lodash';
 import { useCallback, useState } from 'react';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 import {
   InlineLabel,
   Select,

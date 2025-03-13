@@ -15,7 +15,7 @@ import {
   SplitOpen,
   TimeRange,
   TimeZone,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
 import { Button, InlineField, Alert, useStyles2, SeriesVisibilityChangeMode } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

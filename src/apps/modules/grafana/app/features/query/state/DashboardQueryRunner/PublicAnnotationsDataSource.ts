@@ -10,7 +10,7 @@ import {
   DataSourceJsonData,
   DataSourcePluginMeta,
   toDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
 import { GRAFANA_DATASOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
 

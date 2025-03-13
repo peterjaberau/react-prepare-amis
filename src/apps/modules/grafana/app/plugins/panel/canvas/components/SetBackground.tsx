@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { ResourceDimensionMode } from '@grafana/schema';
+import { GrafanaTheme2 } from '@data/index';
+import { ResourceDimensionMode } from '@schema/index';
 import { Portal, useTheme2 } from '@grafana/ui';
 import { Scene } from 'app/features/canvas/runtime/scene';
 import { MediaType, ResourceFolderName } from 'app/features/dimensions';

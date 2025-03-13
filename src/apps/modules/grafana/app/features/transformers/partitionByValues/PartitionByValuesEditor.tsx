@@ -7,7 +7,7 @@ import {
   TransformerUIProps,
   SelectableValue,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import {
   InlineField,
   InlineFieldRow,

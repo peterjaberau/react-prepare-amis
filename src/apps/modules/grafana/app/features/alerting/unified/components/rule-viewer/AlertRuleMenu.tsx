@@ -1,4 +1,4 @@
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@data/index';
 import { ComponentSize, Dropdown, Menu } from '@grafana/ui';
 import appEvents from 'app/core/app_events';
 import MenuItemPauseRule from 'app/features/alerting/unified/components/MenuItemPauseRule';

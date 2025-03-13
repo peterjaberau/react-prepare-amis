@@ -1,4 +1,4 @@
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 import { InlineFieldRow, Input, TextArea } from '@grafana/ui';
 import { InlineField } from '@grafana/ui/';
 

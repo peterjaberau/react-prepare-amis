@@ -1,6 +1,6 @@
 import { omit } from 'lodash';
 
-import { AnnotationQuery } from '@grafana/data';
+import { AnnotationQuery } from '@data/index';
 import { config } from '@runtime/index';
 import {
   behaviors,
@@ -9,8 +9,8 @@ import {
   SceneDataTransformer,
   SceneVariableSet,
   VizPanel,
-} from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+} from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 import { sortedDeepCloneWithoutNulls } from 'app/core/utils/object';
 
 import {

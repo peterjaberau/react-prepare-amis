@@ -1,4 +1,4 @@
-import { PanelModel } from '@grafana/data';
+import { PanelModel } from '@data/index';
 
 import { TextMode, Options } from './panelcfg.gen';
 

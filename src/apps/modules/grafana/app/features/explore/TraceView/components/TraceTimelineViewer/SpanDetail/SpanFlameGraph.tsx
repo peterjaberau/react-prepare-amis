@@ -11,7 +11,7 @@ import {
   DataSourceJsonData,
   dateTime,
   TimeZone,
-} from '@grafana/data';
+} from '@data/index';
 import { FlameGraph } from '@grafana/flamegraph';
 import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
 import { config, DataSourceWithBackend, getTemplateSrv } from '@runtime/index';

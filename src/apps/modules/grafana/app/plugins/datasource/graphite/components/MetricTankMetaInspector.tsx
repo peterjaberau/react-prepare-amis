@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { MetadataInspectorProps, rangeUtil } from '@grafana/data';
+import { MetadataInspectorProps, rangeUtil } from '@data/index';
 import { stylesFactory } from '@grafana/ui';
 import { config } from 'app/core/config';
 

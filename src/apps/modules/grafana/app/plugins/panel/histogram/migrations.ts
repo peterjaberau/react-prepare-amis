@@ -1,6 +1,6 @@
 import { isNil, omitBy } from 'lodash';
 
-import { FieldConfigSource, PanelTypeChangedHandler } from '@grafana/data';
+import { FieldConfigSource, PanelTypeChangedHandler } from '@data/index';
 import {
   LegendDisplayMode,
   SortOrder,

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useCallback } from 'react';
 
-import { DataSourcePluginMeta, GrafanaTheme2 } from '@grafana/data';
+import { DataSourcePluginMeta, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { LinkButton, useStyles2 } from '@grafana/ui';
 import { DataSourcePluginCategory } from 'app/types';

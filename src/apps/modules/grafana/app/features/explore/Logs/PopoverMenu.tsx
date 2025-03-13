@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useCallback, useEffect, useRef } from 'react';
 
-import { GrafanaTheme2, LogRowModel } from '@grafana/data';
+import { GrafanaTheme2, LogRowModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Menu, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';

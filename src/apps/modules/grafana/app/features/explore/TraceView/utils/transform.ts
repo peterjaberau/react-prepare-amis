@@ -1,4 +1,4 @@
-import { DataFrame, DataFrameView, TraceSpanRow } from '@grafana/data';
+import { DataFrame, DataFrameView, TraceSpanRow } from '@data/index';
 
 import { Trace, TraceProcess, TraceResponse, transformTraceData } from '../components';
 

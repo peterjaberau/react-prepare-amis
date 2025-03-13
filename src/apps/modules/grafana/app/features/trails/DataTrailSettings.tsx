@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@grafana/scenes';
+import { GrafanaTheme2 } from '@data/index';
+import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@scenes/index';
 import { Dropdown, Switch, ToolbarButton, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

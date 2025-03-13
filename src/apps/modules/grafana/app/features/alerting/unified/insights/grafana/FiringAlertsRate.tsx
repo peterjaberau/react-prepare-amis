@@ -1,5 +1,5 @@
-import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@grafana/scenes';
-import { DataSourceRef, GraphDrawStyle } from '@grafana/schema';
+import { PanelBuilders, SceneFlexItem, SceneQueryRunner } from '@scenes/index';
+import { DataSourceRef, GraphDrawStyle } from '@schema/index';
 
 import { PANEL_STYLES } from '../../home/Insights';
 

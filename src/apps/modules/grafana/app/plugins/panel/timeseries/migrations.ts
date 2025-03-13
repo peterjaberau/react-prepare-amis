@@ -15,7 +15,7 @@ import {
   ReducerID,
   Threshold,
   ThresholdsMode,
-} from '@grafana/data';
+} from '@data/index';
 import {
   LegendDisplayMode,
   TooltipDisplayMode,
@@ -33,7 +33,7 @@ import {
   GraphTransform,
   AnnotationQuery,
   ComparisonOperation,
-} from '@grafana/schema';
+} from '@schema/index';
 import { TimeRegionConfig } from 'app/core/utils/timeRegions';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';

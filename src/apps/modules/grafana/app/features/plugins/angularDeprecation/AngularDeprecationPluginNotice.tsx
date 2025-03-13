@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as React from 'react';
 
-import { PluginType } from '@grafana/data';
+import { PluginType } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Alert } from '@grafana/ui';
 

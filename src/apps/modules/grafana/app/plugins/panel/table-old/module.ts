@@ -2,7 +2,7 @@ import { IScope, IAngularStatic } from 'angular';
 import $ from 'jquery';
 import { defaults } from 'lodash';
 
-import { isTableData, PanelEvents, PanelPlugin } from '@grafana/data';
+import { isTableData, PanelEvents, PanelPlugin } from '@data/index';
 import { AnnotationsSrv } from 'app/angular/services/annotations_srv';
 import config from 'app/core/config';
 import { applyFilterFromTable } from 'app/features/variables/adhoc/actions';

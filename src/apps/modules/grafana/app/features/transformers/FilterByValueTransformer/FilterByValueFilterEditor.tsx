@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { Field, SelectableValue, valueMatchers } from '@grafana/data';
+import { Field, SelectableValue, valueMatchers } from '@data/index';
 import { FilterByValueFilter } from '@grafana/data/src/transformations/transformers/filterByValue';
 import { Button, Select, InlineField, InlineFieldRow, Box } from '@grafana/ui';
 

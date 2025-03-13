@@ -1,6 +1,6 @@
 import { Action } from 'redux';
 
-import { WithAccessControlMetadata } from '@grafana/data';
+import { WithAccessControlMetadata } from '@data/index';
 
 import { QueryResponse } from './service/types';
 

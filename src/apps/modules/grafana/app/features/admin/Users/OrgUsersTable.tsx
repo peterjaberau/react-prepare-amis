@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { OrgRole } from '@grafana/data';
+import { OrgRole } from '@data/index';
 import { config } from '@runtime/index';
 import {
   Avatar,

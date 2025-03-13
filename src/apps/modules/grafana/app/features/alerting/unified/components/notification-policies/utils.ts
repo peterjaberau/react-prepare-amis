@@ -1,6 +1,6 @@
 import { ControllerRenderProps } from 'react-hook-form';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { ContactPointWithMetadata } from 'app/features/alerting/unified/components/contact-points/utils';
 
 export const handleContactPointSelect = (

@@ -8,8 +8,8 @@ import {
   LiveChannelScope,
   LoadingState,
   StreamingDataFrame,
-} from '@grafana/data';
-import { getGrafanaLiveSrv, config } from '@grafana/runtime';
+} from '@data/index';
+import { getGrafanaLiveSrv, config } from '@runtime/index';
 
 import { LokiDatasource } from './datasource';
 import { LokiQuery } from './types';

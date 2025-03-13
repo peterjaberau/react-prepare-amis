@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState, type Dispatch, type SetStateAction } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, useTheme2, Alert, Button } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';
 

@@ -1,6 +1,6 @@
 import { FormEvent, ReactElement, useCallback } from 'react';
 
-import { TextBoxVariableModel } from '@grafana/data';
+import { TextBoxVariableModel } from '@data/index';
 
 import { VariableLegend } from '../../dashboard-scene/settings/variables/components/VariableLegend';
 import { VariableTextField } from '../../dashboard-scene/settings/variables/components/VariableTextField';

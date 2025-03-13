@@ -8,7 +8,7 @@ import {
   StandardEditorProps,
   GrafanaTheme2,
   parseLiveChannelAddress,
-} from '@grafana/data';
+} from '@data/index';
 import { Select, Alert, Label, stylesFactory } from '@grafana/ui';
 import { config } from 'app/core/config';
 import { getManagedChannelInfo } from 'app/features/live/info';

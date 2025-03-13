@@ -10,7 +10,7 @@ import {
   PanelPlugin,
   LoadingState,
   DataQueryError,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { Drawer, Tab, TabsBar } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

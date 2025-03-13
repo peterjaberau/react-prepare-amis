@@ -1,4 +1,4 @@
-import { deprecationWarning } from '@grafana/data';
+import { deprecationWarning } from '@data/index';
 import {
   config,
   setAngularLoader,
@@ -6,7 +6,7 @@ import {
   getDataSourceSrv,
   getBackendSrv,
   getTemplateSrv,
-} from '@grafana/runtime';
+} from '@runtime/index';
 import { contextSrv } from 'app/core/core';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
@@ -38,7 +38,7 @@ export async function loadAndInitAngularIfEnabled() {
       get: (key: string) => {
         switch (key) {
           case 'backendSrv': {
-            deprecationWarning('getLegacyAngularInjector', 'backendSrv', 'use getBackendSrv() in @grafana/runtime');
+            deprecationWarning('getLegacyAngularInjector', 'backendSrv', 'use getBackendSrv() in @runtime/index');
             return getBackendSrv();
           }
 
@@ -57,7 +57,7 @@ export async function loadAndInitAngularIfEnabled() {
             deprecationWarning(
               'getLegacyAngularInjector',
               'datasourceSrv',
-              'use getDataSourceSrv() in @grafana/runtime'
+              'use getDataSourceSrv() in @runtime/index'
             );
             return getDataSourceSrv();
           }
@@ -81,7 +81,7 @@ export async function loadAndInitAngularIfEnabled() {
           }
 
           case 'templateSrv': {
-            deprecationWarning('getLegacyAngularInjector', 'templateSrv', 'use getTemplateSrv() in @grafana/runtime');
+            deprecationWarning('getLegacyAngularInjector', 'templateSrv', 'use getTemplateSrv() in @runtime/index');
             return getTemplateSrv();
           }
         }

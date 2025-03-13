@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, Modal, Stack } from '@grafana/ui';
 

@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@grafana/data';
+import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
 import {
   NodeGraphSection,
   SpanBarSection,
@@ -18,7 +18,7 @@ import {
   convertLegacyAuthProps,
   DataSourceDescription,
 } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { SecureSocksProxySettings, useStyles2, Divider, Stack } from '@grafana/ui';
 
 import { QuerySettings } from './QuerySettings';

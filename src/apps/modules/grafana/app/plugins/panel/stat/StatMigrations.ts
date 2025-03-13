@@ -1,5 +1,5 @@
-import { FieldColorModeId, FieldConfigSource, PanelModel } from '@grafana/data';
-import { BigValueTextMode, BigValueGraphMode, BigValueColorMode } from '@grafana/schema';
+import { FieldColorModeId, FieldConfigSource, PanelModel } from '@data/index';
+import { BigValueTextMode, BigValueGraphMode, BigValueColorMode } from '@schema/index';
 import { sharedSingleStatPanelChangedHandler } from '@grafana/ui';
 
 import { Options } from './panelcfg.gen';

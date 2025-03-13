@@ -1,14 +1,14 @@
 import { Observable, map } from 'rxjs';
 
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@data/index';
 import {
   CustomTransformOperator,
   PanelBuilders,
   SceneDataTransformer,
   SceneFlexItem,
   SceneQueryRunner,
-} from '@grafana/scenes';
-import { DataSourceRef, GraphDrawStyle, TooltipDisplayMode } from '@grafana/schema';
+} from '@scenes/index';
+import { DataSourceRef, GraphDrawStyle, TooltipDisplayMode } from '@schema/index';
 
 import { INSTANCE_ID, PANEL_STYLES } from '../../home/Insights';
 import { InsightsMenuButton } from '../InsightsMenuButton';

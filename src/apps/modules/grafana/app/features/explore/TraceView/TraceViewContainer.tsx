@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { DataFrame, SplitOpen } from '@grafana/data';
+import { DataFrame, SplitOpen } from '@data/index';
 import { PanelChrome } from '@grafana/ui';
 import { StoreState, useSelector } from 'app/types';
 

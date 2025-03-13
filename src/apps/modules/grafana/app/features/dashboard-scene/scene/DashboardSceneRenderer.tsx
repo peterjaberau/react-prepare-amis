@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from 'react';
 import { useLocation, useParams } from 'react-router-dom-v5-compat';
 
-import { PageLayoutType } from '@grafana/data';
-import { SceneComponentProps } from '@grafana/scenes';
+import { PageLayoutType } from '@data/index';
+import { SceneComponentProps } from '@scenes/index';
 import { Page } from 'app/core/components/Page/Page';
 import { getNavModel } from 'app/core/selectors/navModel';
 import { useSelector } from 'app/types';

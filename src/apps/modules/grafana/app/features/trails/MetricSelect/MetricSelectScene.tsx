@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { debounce, isEqual } from 'lodash';
 import { SyntheticEvent, useReducer } from 'react';
 
-import { AdHocVariableFilter, GrafanaTheme2, RawTimeRange, SelectableValue } from '@grafana/data';
+import { AdHocVariableFilter, GrafanaTheme2, RawTimeRange, SelectableValue } from '@data/index';
 import { config, isFetchError } from '@runtime/index';
 import {
   AdHocFiltersVariable,
@@ -24,7 +24,7 @@ import {
   SceneTimeRange,
   SceneVariableSet,
   VariableDependencyConfig,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Alert, Badge, Field, Icon, IconButton, InlineSwitch, Input, Select, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { getSelectedScopes } from 'app/features/scopes';

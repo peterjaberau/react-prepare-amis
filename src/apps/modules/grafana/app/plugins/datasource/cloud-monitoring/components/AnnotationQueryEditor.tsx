@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import * as React from 'react';
 import { useDebounce } from 'react-use';
 
-import { QueryEditorProps, getDefaultTimeRange, toOption } from '@grafana/data';
+import { QueryEditorProps, getDefaultTimeRange, toOption } from '@data/index';
 import { EditorField, EditorRows } from '@grafana/plugin-ui';
 import { Input } from '@grafana/ui';
 

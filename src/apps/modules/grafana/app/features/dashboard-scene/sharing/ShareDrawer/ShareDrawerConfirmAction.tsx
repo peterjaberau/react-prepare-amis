@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Spinner, Stack, Text } from '@grafana/ui';
 import { IconButton, useStyles2 } from '@grafana/ui/';
 import { ConfirmContent, ConfirmContentProps } from '@grafana/ui/src/components/ConfirmModal/ConfirmContent';

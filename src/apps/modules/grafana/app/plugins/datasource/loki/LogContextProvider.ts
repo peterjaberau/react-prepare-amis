@@ -15,7 +15,7 @@ import {
   LogRowContextOptions,
   dateTime,
   ScopedVars,
-} from '@grafana/data';
+} from '@data/index';
 import { LabelParser, LabelFilter, LineFilters, PipelineStage, Logfmt, Json } from '@grafana/lezer-logql';
 
 import { LokiContextUi } from './components/LokiContextUi';

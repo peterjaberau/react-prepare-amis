@@ -1,4 +1,4 @@
-import { SceneObject } from '@grafana/scenes';
+import { SceneObject } from '@scenes/index';
 
 import { DefaultGridLayoutManager } from '../layout-default/DefaultGridLayoutManager';
 import { RowsLayoutManager } from '../layout-rows/RowsLayoutManager';

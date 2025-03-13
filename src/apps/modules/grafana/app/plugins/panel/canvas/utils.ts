@@ -1,6 +1,6 @@
 import { isNumber, isString } from 'lodash';
 
-import { AppEvents, getFieldDisplayName, PluginState, SelectableValue } from '@grafana/data';
+import { AppEvents, getFieldDisplayName, PluginState, SelectableValue } from '@data/index';
 import { DataFrame, Field } from '@grafana/data/';
 import appEvents from 'app/core/app_events';
 import { hasAlphaPanels, config } from 'app/core/config';

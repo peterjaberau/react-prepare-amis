@@ -1,4 +1,4 @@
-import { SceneVariable, SceneVariableState } from '@grafana/scenes';
+import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
 import { safeStringifyValue } from 'app/core/utils/explore';
 import { GraphEdge, GraphNode, getPropsWithVariable } from 'app/features/variables/inspect/utils';

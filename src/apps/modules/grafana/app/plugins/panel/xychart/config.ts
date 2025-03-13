@@ -4,8 +4,8 @@ import {
   FieldType,
   identityOverrideProcessor,
   SetFieldConfigOptionsArgs,
-} from '@grafana/data';
-import { LineStyle } from '@grafana/schema';
+} from '@data/index';
+import { LineStyle } from '@schema/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 
 import { LineStyleEditor } from '../timeseries/LineStyleEditor';

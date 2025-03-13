@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DashboardLink } from '@grafana/schema';
+import { DashboardLink } from '@schema/index';
 import { DashboardLinkForm } from 'app/features/dashboard-scene/settings/links/DashboardLinkForm';
 import { NEW_LINK } from 'app/features/dashboard-scene/settings/links/utils';
 

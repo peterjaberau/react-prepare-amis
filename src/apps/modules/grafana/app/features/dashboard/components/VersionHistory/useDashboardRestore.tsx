@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useAsyncFn } from 'react-use';
 
-import { locationUtil } from '@grafana/data';
+import { locationUtil } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { useAppNotification } from 'app/core/copy/appNotification';
 import { historySrv } from 'app/features/dashboard-scene/settings/version-history';

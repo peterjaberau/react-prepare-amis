@@ -16,7 +16,7 @@ import {
   TimeRange,
   transformDataFrame,
   ValueLinkConfig,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from '@runtime/index';
 import { AdHocFilterItem, Table } from '@grafana/ui';
 import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR } from '@grafana/ui/src/components/Table/types';

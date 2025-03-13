@@ -2,9 +2,9 @@ import { css, cx } from '@emotion/css';
 import { forwardRef } from 'react';
 import { useAsync } from 'react-use';
 
-import { GrafanaTheme2, ScopedVars } from '@grafana/data';
+import { GrafanaTheme2, ScopedVars } from '@data/index';
 import { sanitize, sanitizeUrl } from '@grafana/data/src/text/sanitize';
-import { DashboardLink } from '@grafana/schema';
+import { DashboardLink } from '@schema/index';
 import { Dropdown, Icon, Button, Menu, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { ButtonLinkProps, LinkButton } from '@grafana/ui/src/components/Button';
 import { getBackendSrv } from 'app/core/services/backend_srv';

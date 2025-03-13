@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { AsyncMultiSelect, InlineField, SegmentAsync, Select } from '@grafana/ui';
 
 import { useFields } from '../../../../hooks/useFields';

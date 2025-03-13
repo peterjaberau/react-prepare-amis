@@ -1,4 +1,4 @@
-import { WithAccessControlMetadata } from '@grafana/data';
+import { WithAccessControlMetadata } from '@data/index';
 
 import { Role } from './accessControl';
 

@@ -12,7 +12,7 @@ import { produce } from 'immer';
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Badge, Button, Icon, Modal, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { dispatch } from 'app/store/store';

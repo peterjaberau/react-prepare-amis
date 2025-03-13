@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { flatten, uniqBy } from 'lodash';
 
-import { DataSourceRef } from '@grafana/schema';
+import { DataSourceRef } from '@schema/index';
 import { ExploreItemState, StoreState } from 'app/types';
 
 export const selectPanes = (state: Pick<StoreState, 'explore'>) => state.explore.panes;

@@ -1,4 +1,4 @@
-import { PanelData } from '@grafana/data';
+import { PanelData } from '@data/index';
 import { AlertQuery } from 'app/types/unified-alerting-dto';
 
 import { RuleFormType } from './rule-form';

@@ -1,4 +1,4 @@
-import { FieldDTO } from '@grafana/data';
+import { FieldDTO } from '@data/index';
 
 import { TraceResponse } from './types';
 

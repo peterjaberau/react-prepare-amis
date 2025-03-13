@@ -1,6 +1,6 @@
 import { isEmpty, isObject, mapValues, omitBy } from 'lodash';
 
-import { ExploreUrlState, toURLRange } from '@grafana/data';
+import { ExploreUrlState, toURLRange } from '@data/index';
 import { clearQueryKeys } from 'app/core/utils/explore';
 import { ExploreItemState } from 'app/types';
 

@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import { dateTime } from '@grafana/data';
+import { dateTime } from '@data/index';
 import { createMonitoringLogger, getBackendSrv } from '@runtime/index';
 import { config, reportInteraction } from '@grafana/runtime/src';
 import { contextSrv } from 'app/core/core';

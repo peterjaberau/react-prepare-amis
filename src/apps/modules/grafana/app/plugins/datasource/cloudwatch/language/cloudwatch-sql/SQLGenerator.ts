@@ -1,6 +1,6 @@
 import { toLower } from 'lodash';
 
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import {
   QueryEditorArrayExpression,

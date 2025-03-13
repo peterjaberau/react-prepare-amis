@@ -12,8 +12,8 @@ import {
   sidecarServiceSingleton_EXPERIMENTAL,
 } from '@runtime/index';
 import { ErrorBoundaryAlert, GlobalStyles, PortalContainer, TimeRangeProvider } from '@grafana/ui';
-import { getAppRoutes } from 'app/routes/routes';
-import { store } from 'app/store/store';
+import { getAppRoutes } from '@grafana-module/app/routes/routes';
+import { store } from '@grafana-module/app/store/store';
 
 import { loadAndInitAngularIfEnabled } from './angular/loadAndInitAngularIfEnabled';
 import { GrafanaApp } from './app';

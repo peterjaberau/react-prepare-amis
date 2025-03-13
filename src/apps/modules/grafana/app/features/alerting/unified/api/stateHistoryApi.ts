@@ -1,4 +1,4 @@
-import { DataFrameJSON } from '@grafana/data';
+import { DataFrameJSON } from '@data/index';
 
 import { alertingApi } from './alertingApi';
 

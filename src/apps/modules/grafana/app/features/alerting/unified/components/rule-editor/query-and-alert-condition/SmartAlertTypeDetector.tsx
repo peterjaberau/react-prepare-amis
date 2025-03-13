@@ -1,7 +1,7 @@
 import { useFormContext } from 'react-hook-form';
 
-import { DataSourceInstanceSettings } from '@grafana/data';
-import { DataSourceJsonData } from '@grafana/schema';
+import { DataSourceInstanceSettings } from '@data/index';
+import { DataSourceJsonData } from '@schema/index';
 import { RadioButtonGroup, Stack, Text } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { ExpressionDatasourceUID } from 'app/features/expressions/types';

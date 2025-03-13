@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 
 import { AzureMonitorQuery, AzureQueryType, AzureTracesFilter, ResultFormat } from '../../types';
 

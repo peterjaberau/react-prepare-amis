@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, InlineSwitch, useStyles2 } from '@grafana/ui';
 

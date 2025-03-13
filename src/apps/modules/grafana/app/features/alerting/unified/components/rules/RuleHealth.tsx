@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Icon, Tooltip, useStyles2 } from '@grafana/ui';
 import { Rule } from 'app/types/unified-alerting';
 

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { cloneDeep, defaults as lodashDefaults } from 'lodash';
 
-import { LoadingState, VariableType, TypedVariableModel, VariableOption } from '@grafana/data';
+import { LoadingState, VariableType, TypedVariableModel, VariableOption } from '@data/index';
 
 import { variableAdapters } from '../adapters';
 import { changeVariableNameSucceeded } from '../editor/reducer';

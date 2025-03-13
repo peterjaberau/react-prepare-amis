@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import Prism from 'prismjs';
 import { useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Collapse, useStyles2, Text } from '@grafana/ui';
 import { flattenTokens } from '@grafana/ui/src/slate-plugins/slate-prism';
 

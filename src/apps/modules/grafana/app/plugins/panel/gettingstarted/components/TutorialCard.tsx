@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { MouseEvent } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime';
+import { GrafanaTheme2 } from '@data/index';
+import { reportInteraction } from '@runtime/index';
 import { useStyles2 } from '@grafana/ui';
 import store from 'app/core/store';
 

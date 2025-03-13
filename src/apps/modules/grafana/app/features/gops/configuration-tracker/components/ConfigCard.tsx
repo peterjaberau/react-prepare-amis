@@ -1,7 +1,7 @@
 // ConfigCard.tsx
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Button, Icon, LoadingPlaceholder, Stack, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

@@ -1,7 +1,7 @@
 import { get } from 'lodash';
 
-import { DataSourcePlugin, DashboardLoadedEvent } from '@grafana/data';
-import { getAppEvents } from '@grafana/runtime';
+import { DataSourcePlugin, DashboardLoadedEvent } from '@data/index';
+import { getAppEvents } from '@runtime/index';
 
 import CloudMonitoringCheatSheet from './components/CloudMonitoringCheatSheet';
 import { ConfigEditor } from './components/ConfigEditor/ConfigEditor';

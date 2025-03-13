@@ -1,6 +1,6 @@
 import { BehaviorSubject } from 'rxjs';
 
-import { dateMath, dateTime, TimeRange } from '@grafana/data';
+import { dateMath, dateTime, TimeRange } from '@data/index';
 
 import { PanelStateWrapper } from './PanelStateWrapper';
 

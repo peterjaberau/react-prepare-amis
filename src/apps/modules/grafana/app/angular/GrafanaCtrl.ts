@@ -2,8 +2,8 @@ import { IRootScopeService, IAngularEvent, auto } from 'angular';
 import $ from 'jquery';
 import _ from 'lodash'; // eslint-disable-line lodash/import-scope
 
-import { AppEvent } from '@grafana/data';
-import { setLegacyAngularInjector, setAngularLoader } from '@grafana/runtime';
+import { AppEvent } from '@data/index';
+import { setLegacyAngularInjector, setAngularLoader } from '@runtime/index';
 import { colors } from '@grafana/ui';
 import coreModule from 'app/angular/core_module';
 import { AngularLoader } from 'app/angular/services/AngularLoader';

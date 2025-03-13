@@ -3,8 +3,8 @@ import { pick } from 'lodash';
 import { useMemo } from 'react';
 import { shallowEqual } from 'react-redux';
 
-import { DataSourceInstanceSettings, RawTimeRange, GrafanaTheme2 } from '@grafana/data';
-import { Components } from '@grafana/e2e-selectors';
+import { DataSourceInstanceSettings, RawTimeRange, GrafanaTheme2 } from '@data/index';
+import { Components } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
 import {
   defaultIntervals,

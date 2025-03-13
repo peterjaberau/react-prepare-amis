@@ -11,8 +11,8 @@ import {
   GrafanaTheme2,
   locationUtil,
   PanelProps,
-} from '@grafana/data';
-import { config, getBackendSrv, locationService } from '@grafana/runtime';
+} from '@data/index';
+import { config, getBackendSrv, locationService } from '@runtime/index';
 import { Button, ScrollContainer, stylesFactory, TagList } from '@grafana/ui';
 import { AbstractList } from '@grafana/ui/src/components/List/AbstractList';
 import appEvents from 'app/core/app_events';

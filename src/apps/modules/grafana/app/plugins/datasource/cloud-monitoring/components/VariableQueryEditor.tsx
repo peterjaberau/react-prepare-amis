@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
+import { QueryEditorProps } from '@data/index';
+import { getTemplateSrv } from '@runtime/index';
 
 import CloudMonitoringDatasource from '../datasource';
 import { extractServicesFromMetricDescriptors, getLabelKeys, getMetricTypes } from '../functions';

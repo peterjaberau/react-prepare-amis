@@ -1,4 +1,4 @@
-import { getBackendSrv, getDataSourceSrv } from '@grafana/runtime';
+import { getBackendSrv, getDataSourceSrv } from '@runtime/index';
 import { contextSrv } from 'app/core/core';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { validationSrv } from 'app/features/manage-dashboards/services/ValidationSrv';

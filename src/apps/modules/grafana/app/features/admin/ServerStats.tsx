@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, GrafanaBootConfig } from '@runtime/index';
 import { LinkButton, Stack, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

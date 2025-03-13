@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 import { ReactNode, useState } from 'react';
 
-import { DataQuery, DataSourceInstanceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataQuery, DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { FieldValidationMessage, Icon, Input, useStyles2 } from '@grafana/ui';
 import { DataSourcePicker } from 'app/features/datasources/components/picker/DataSourcePicker';
 

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@data/index';
 
 export type { Options } from './panelcfg.gen';
 

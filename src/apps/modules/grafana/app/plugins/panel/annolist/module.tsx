@@ -1,4 +1,4 @@
-import { PanelModel, PanelPlugin } from '@grafana/data';
+import { PanelModel, PanelPlugin } from '@data/index';
 import { TagsInput } from '@grafana/ui';
 
 import { AnnoListPanel } from './AnnoListPanel';

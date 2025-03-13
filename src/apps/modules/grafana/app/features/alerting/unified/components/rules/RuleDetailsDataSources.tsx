@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { useStyles2 } from '@grafana/ui';
 import { ExpressionDatasourceUID } from 'app/features/expressions/types';

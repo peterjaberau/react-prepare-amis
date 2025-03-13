@@ -9,7 +9,7 @@ import {
   SceneVariableSet,
   VariableDependencyConfig,
   VariableValueSingle,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 import { isClonedKeyOf, getCloneKey } from '../../utils/clone';
 import { getMultiVariableValues } from '../../utils/utils';

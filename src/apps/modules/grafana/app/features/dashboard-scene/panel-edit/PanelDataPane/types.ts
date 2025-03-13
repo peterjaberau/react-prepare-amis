@@ -1,4 +1,4 @@
-import { SceneObject } from '@grafana/scenes';
+import { SceneObject } from '@scenes/index';
 
 export enum TabId {
   Queries = 'queries',

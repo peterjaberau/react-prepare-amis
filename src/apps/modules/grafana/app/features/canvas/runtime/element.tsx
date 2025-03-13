@@ -10,7 +10,7 @@ import {
   ValueLinkConfig,
   OneClickMode,
   ActionModel,
-} from '@grafana/data';
+} from '@data/index';
 import { ConfirmModal } from '@grafana/ui';
 import { LayerElement } from 'app/core/components/Layers/types';
 import { t } from 'app/core/internationalization';

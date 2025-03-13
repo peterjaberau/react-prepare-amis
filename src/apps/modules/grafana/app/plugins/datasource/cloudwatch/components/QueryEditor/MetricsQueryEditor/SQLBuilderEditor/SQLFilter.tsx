@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 import { AccessoryButton, EditorList, InputGroup } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { Alert, Select, useStyles2 } from '@grafana/ui';
 
 import { CloudWatchDatasource } from '../../../../datasource';

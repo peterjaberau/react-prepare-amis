@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { PanelPlugin, PanelPluginMeta } from '@grafana/data';
+import { PanelPlugin, PanelPluginMeta } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
 import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
 import { changePanelPlugin } from 'app/features/panel/state/actions';

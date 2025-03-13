@@ -9,7 +9,7 @@ import {
   LiveChannelConnectionState,
   LiveChannelEvent,
   LiveChannelScope,
-} from '@grafana/data';
+} from '@data/index';
 import { getGrafanaLiveSrv, locationService } from '@runtime/index';
 import { appEvents, contextSrv } from 'app/core/core';
 

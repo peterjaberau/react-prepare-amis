@@ -1,8 +1,8 @@
 import { AnyAction } from '@reduxjs/toolkit';
 import { Action, Dispatch } from 'redux';
 
-import { DataQuery, TimeRange } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
+import { DataQuery, TimeRange } from '@data/index';
+import { getTemplateSrv } from '@runtime/index';
 
 import { TemplateSrv } from '../../../../features/templating/template_srv';
 import { GraphiteDatasource } from '../datasource';

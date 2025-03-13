@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { memo, forwardRef, useMemo } from 'react';
 
-import { GrafanaTheme2, Labels } from '@grafana/data';
+import { GrafanaTheme2, Labels } from '@data/index';
 import { Tooltip, useStyles2 } from '@grafana/ui';
 
 import { LOG_LINE_BODY_FIELD_NAME } from './LogDetailsBody';

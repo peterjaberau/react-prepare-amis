@@ -1,5 +1,5 @@
-import { config } from '@grafana/runtime';
-import { TextDimensionMode } from '@grafana/schema';
+import { config } from '@runtime/index';
+import { TextDimensionMode } from '@schema/index';
 
 import { getMarkerMaker } from './markers';
 import {

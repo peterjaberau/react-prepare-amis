@@ -1,5 +1,5 @@
-import { DataFrame, Field, FieldType, formattedValueToString } from '@grafana/data';
-import { TextDimensionConfig, TextDimensionMode } from '@grafana/schema';
+import { DataFrame, Field, FieldType, formattedValueToString } from '@data/index';
+import { TextDimensionConfig, TextDimensionMode } from '@schema/index';
 
 import { DimensionSupplier } from './types';
 import { findField, getLastNotNullFieldValue } from './utils';

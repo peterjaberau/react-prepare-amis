@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 
-import { IntervalVariableModel } from '@grafana/data';
+import { IntervalVariableModel } from '@data/index';
 
 import { dispatch } from '../../../store/store';
 import { VariableAdapter } from '../adapters';

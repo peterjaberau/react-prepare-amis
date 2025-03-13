@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { PanelMenuItem, GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { PanelMenuItem, GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { Icon, toIconName, useStyles2 } from '@grafana/ui';
 
 interface Props {

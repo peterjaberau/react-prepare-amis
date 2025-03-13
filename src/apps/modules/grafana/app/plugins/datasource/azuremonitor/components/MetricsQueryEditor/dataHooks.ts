@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { rangeUtil } from '@grafana/data';
+import { rangeUtil } from '@data/index';
 
 import Datasource from '../../datasource';
 import TimegrainConverter from '../../time_grain_converter';

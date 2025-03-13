@@ -1,4 +1,4 @@
-import { FieldDisplay } from '@grafana/data';
+import { FieldDisplay } from '@data/index';
 
 export function filterDisplayItems(item: FieldDisplay) {
   return !item.field.custom?.hideFrom?.viz && !isNaN(item.display.numeric);

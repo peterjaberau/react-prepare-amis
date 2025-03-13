@@ -7,7 +7,7 @@ import {
   FieldType,
   MutableDataFrame,
   PreferredVisualisationType,
-} from '@grafana/data';
+} from '@data/index';
 import { convertFieldType } from '@grafana/data/src/transformations/transformers/convertFieldType';
 import TableModel from 'app/core/TableModel';
 

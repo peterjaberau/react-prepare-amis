@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
-import { StandardEditorProps, SelectableValue } from '@grafana/data';
-import { LineStyle } from '@grafana/schema';
+import { StandardEditorProps, SelectableValue } from '@data/index';
+import { LineStyle } from '@schema/index';
 import { HorizontalGroup, IconButton, RadioButtonGroup, Select } from '@grafana/ui';
 
 type LineFill = 'solid' | 'dash' | 'dot';

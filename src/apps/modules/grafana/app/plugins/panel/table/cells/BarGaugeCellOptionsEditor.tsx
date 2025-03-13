@@ -1,5 +1,5 @@
-import { SelectableValue } from '@grafana/data';
-import { BarGaugeDisplayMode, BarGaugeValueMode, TableBarGaugeCellOptions } from '@grafana/schema';
+import { SelectableValue } from '@data/index';
+import { BarGaugeDisplayMode, BarGaugeValueMode, TableBarGaugeCellOptions } from '@schema/index';
 import { Field, RadioButtonGroup, Stack } from '@grafana/ui';
 
 import { TableCellEditorProps } from '../TableCellOptionEditor';

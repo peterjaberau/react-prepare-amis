@@ -1,6 +1,6 @@
 import { map } from 'lodash';
 
-import { SelectableValue, VariableWithMultiSupport } from '@grafana/data';
+import { SelectableValue, VariableWithMultiSupport } from '@data/index';
 
 import { AzureMonitorOption, VariableOptionGroup } from '../types';
 

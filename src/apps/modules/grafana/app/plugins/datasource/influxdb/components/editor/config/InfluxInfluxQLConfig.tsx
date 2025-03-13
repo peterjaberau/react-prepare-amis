@@ -10,7 +10,7 @@ import {
   onUpdateDatasourceSecureJsonDataOption,
   SelectableValue,
   updateDatasourcePluginResetOption,
-} from '@grafana/data';
+} from '@data/index';
 import { Alert, Field, InlineLabel, Input, SecretInput, Select, useStyles2 } from '@grafana/ui';
 
 import { InfluxOptions, InfluxSecureJsonData } from '../../../types';

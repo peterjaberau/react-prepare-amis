@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { SelectableValue, toIconName } from '@grafana/data';
+import { SelectableValue, toIconName } from '@data/index';
 import { Icon, Label, Select, Spinner, Stack, Text, useStyles2 } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { Trans } from 'app/core/internationalization';

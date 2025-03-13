@@ -1,4 +1,4 @@
-import { PluginType, patchArrayVectorProrotypeMethods } from '@grafana/data';
+import { PluginType, patchArrayVectorProrotypeMethods } from '@data/index';
 import { config } from '@runtime/index';
 
 import { transformPluginSourceForCDN } from '../cdn/utils';

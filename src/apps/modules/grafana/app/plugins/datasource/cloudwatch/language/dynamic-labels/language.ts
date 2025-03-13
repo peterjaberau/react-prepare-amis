@@ -1,6 +1,6 @@
 import type * as monacoType from 'monaco-editor/esm/vs/editor/editor.api';
 
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 
 // Dynamic labels: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph-dynamic-labels.html
 export const DYNAMIC_LABEL_PATTERNS = [

@@ -20,8 +20,8 @@ import {
   DataFrame,
   Field,
   PluginState,
-} from '@grafana/data';
-import { TextDimensionMode } from '@grafana/schema';
+} from '@data/index';
+import { TextDimensionMode } from '@schema/index';
 import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
 import { getGeometryField, getLocationMatchers } from 'app/features/geo/utils/location';
 import { GraphFrame } from 'app/plugins/panel/nodeGraph/types';

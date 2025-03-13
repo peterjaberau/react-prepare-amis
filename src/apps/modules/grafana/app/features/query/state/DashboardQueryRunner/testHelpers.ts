@@ -1,6 +1,6 @@
 import { asyncScheduler, Observable, of, scheduled } from 'rxjs';
 
-import { AnnotationEvent, getDefaultTimeRange, PanelModel } from '@grafana/data';
+import { AnnotationEvent, getDefaultTimeRange, PanelModel } from '@data/index';
 
 import { DashboardQueryRunnerOptions } from './types';
 

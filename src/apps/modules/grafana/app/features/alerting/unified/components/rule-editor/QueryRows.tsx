@@ -10,7 +10,7 @@ import {
   RelativeTimeRange,
   getDataSourceRef,
   rangeUtil,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Button, Card, Icon, Stack } from '@grafana/ui';
 import { QueryOperationRow } from 'app/core/components/QueryOperationRow/QueryOperationRow';

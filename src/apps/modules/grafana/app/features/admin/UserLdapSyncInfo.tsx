@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { dateTimeFormat } from '@grafana/data';
+import { dateTimeFormat } from '@data/index';
 import { Button, LinkButton } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { Trans } from 'app/core/internationalization';

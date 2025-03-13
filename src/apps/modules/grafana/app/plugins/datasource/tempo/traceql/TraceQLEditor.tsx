@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useEffect, useRef, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
-import { reportInteraction } from '@grafana/runtime';
+import { reportInteraction } from '@runtime/index';
 import { CodeEditor, Monaco, monacoTypes, useTheme2 } from '@grafana/ui';
 
 import { TempoDatasource } from '../datasource';

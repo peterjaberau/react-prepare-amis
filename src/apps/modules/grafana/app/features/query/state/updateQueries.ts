@@ -1,7 +1,7 @@
-import { CoreApp, DataSourceApi, getNextRefId, hasQueryExportSupport, hasQueryImportSupport } from '@grafana/data';
+import { CoreApp, DataSourceApi, getNextRefId, hasQueryExportSupport, hasQueryImportSupport } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 
 export async function updateQueries(
   nextDS: DataSourceApi,

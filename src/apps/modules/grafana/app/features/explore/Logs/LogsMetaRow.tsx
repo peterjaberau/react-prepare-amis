@@ -14,7 +14,7 @@ import {
   DataTransformerConfig,
   CustomTransformOperator,
   Labels,
-} from '@grafana/data';
+} from '@data/index';
 import { DataFrame } from '@grafana/data/';
 import { config, reportInteraction } from '@runtime/index';
 import { Button, Dropdown, Menu, ToolbarButton, Tooltip, useStyles2 } from '@grafana/ui';

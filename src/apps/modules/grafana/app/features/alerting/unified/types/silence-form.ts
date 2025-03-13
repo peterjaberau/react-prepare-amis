@@ -1,4 +1,4 @@
-import { TimeZone } from '@grafana/data';
+import { TimeZone } from '@data/index';
 import { MatcherOperator } from 'app/plugins/datasource/alertmanager/types';
 
 export type MatcherFieldValue = {

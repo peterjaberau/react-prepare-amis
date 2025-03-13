@@ -3,8 +3,8 @@ import { PureComponent } from 'react';
 import * as React from 'react';
 import tinycolor from 'tinycolor2';
 
-import { LogRowModel, dateTimeFormat, GrafanaTheme2, LogsSortOrder } from '@grafana/data';
-import { TimeZone } from '@grafana/schema';
+import { LogRowModel, dateTimeFormat, GrafanaTheme2, LogsSortOrder } from '@data/index';
+import { TimeZone } from '@schema/index';
 import { Button, Themeable2, withTheme2 } from '@grafana/ui';
 
 import { LogMessageAnsi } from '../../logs/components/LogMessageAnsi';

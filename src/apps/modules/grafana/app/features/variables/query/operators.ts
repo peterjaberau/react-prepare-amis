@@ -9,7 +9,7 @@ import {
   MetricFindValue,
   PanelData,
   QueryVariableModel,
-} from '@grafana/data';
+} from '@data/index';
 
 import { ThunkDispatch } from '../../../types';
 import { validateVariableSelectionState } from '../state/actions';

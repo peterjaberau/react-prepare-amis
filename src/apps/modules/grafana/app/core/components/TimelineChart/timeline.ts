@@ -2,7 +2,7 @@ import uPlot, { Series } from 'uplot';
 
 import { GrafanaTheme2, TimeRange } from '@data/index';
 import { alpha } from '@data/index/src/themes/colorManipulator';
-import { TimelineValueAlignment, VisibilityMode } from '@grafana/schema';
+import { TimelineValueAlignment, VisibilityMode } from '@schema/index';
 import { FIXED_UNIT } from '@grafana/ui';
 import { distribute, SPACE_BETWEEN } from 'app/plugins/panel/barchart/distribute';
 import { Quadtree, Rect } from 'app/plugins/panel/barchart/quadtree';

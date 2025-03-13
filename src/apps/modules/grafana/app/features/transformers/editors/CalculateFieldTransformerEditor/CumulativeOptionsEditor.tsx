@@ -1,4 +1,4 @@
-import { ReducerID, SelectableValue } from '@grafana/data';
+import { ReducerID, SelectableValue } from '@data/index';
 import {
   CalculateFieldMode,
   CalculateFieldTransformerOptions,

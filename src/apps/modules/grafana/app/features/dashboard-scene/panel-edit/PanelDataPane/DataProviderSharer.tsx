@@ -6,7 +6,7 @@ import {
   SceneDataState,
   SceneObjectBase,
   SceneObjectRef,
-} from '@grafana/scenes';
+} from '@scenes/index';
 
 export interface DataProviderSharerState extends SceneDataState {
   source: SceneObjectRef<SceneDataProvider>;

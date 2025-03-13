@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { dateMath, getDefaultTimeRange, GrafanaTheme2, rangeUtil, TimeRange } from '@grafana/data';
+import { dateMath, getDefaultTimeRange, GrafanaTheme2, rangeUtil, TimeRange } from '@data/index';
 import {
   SceneComponentProps,
   sceneGraph,
@@ -8,7 +8,7 @@ import {
   SceneTimeRangeState,
   SceneTimeRangeTransformerBase,
   VariableDependencyConfig,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Icon, PanelChrome, TimePickerTooltip, Tooltip, useStyles2 } from '@grafana/ui';
 import { TimeOverrideResult } from 'app/features/dashboard/utils/panel';
 

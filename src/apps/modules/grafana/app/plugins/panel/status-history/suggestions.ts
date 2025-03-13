@@ -1,4 +1,4 @@
-import { FieldColorModeId, VisualizationSuggestionsBuilder } from '@grafana/data';
+import { FieldColorModeId, VisualizationSuggestionsBuilder } from '@data/index';
 import { SuggestionName } from 'app/types/suggestions';
 
 import { Options, FieldConfig } from './panelcfg.gen';

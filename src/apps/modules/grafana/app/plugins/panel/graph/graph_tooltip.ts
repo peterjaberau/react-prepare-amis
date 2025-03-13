@@ -6,7 +6,7 @@ import {
   LegacyGraphHoverClearEvent,
   LegacyGraphHoverEvent,
   DataHoverClearEvent,
-} from '@grafana/data';
+} from '@data/index';
 import { appEvents } from 'app/core/core';
 import { CoreEvents } from 'app/types';
 

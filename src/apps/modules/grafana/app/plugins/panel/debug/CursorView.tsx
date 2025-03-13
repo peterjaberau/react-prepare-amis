@@ -8,7 +8,7 @@ import {
   DataHoverEvent,
   DataHoverClearEvent,
   BusEventBase,
-} from '@grafana/data';
+} from '@data/index';
 import { CustomScrollbar } from '@grafana/ui';
 import { DataHoverView } from 'app/features/visualization/data-hover/DataHoverView';
 

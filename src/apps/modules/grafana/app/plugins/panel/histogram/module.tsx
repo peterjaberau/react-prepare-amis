@@ -4,7 +4,7 @@ import {
   FieldType,
   identityOverrideProcessor,
   PanelPlugin,
-} from '@grafana/data';
+} from '@data/index';
 import { histogramFieldInfo } from '@grafana/data/src/transformations/transformers/histogram';
 import { commonOptionsBuilder, graphFieldOptions } from '@grafana/ui';
 import { StackingEditor } from '@grafana/ui/src/options/builder';

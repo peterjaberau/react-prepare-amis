@@ -6,8 +6,8 @@ import {
   getFieldDisplayValuesProxy,
   getFrameDisplayName,
   ScopedVars,
-} from '@grafana/data';
-import { VariableCustomFormatterFn } from '@grafana/scenes';
+} from '@data/index';
+import { VariableCustomFormatterFn } from '@scenes/index';
 
 import { getFieldAccessor } from './fieldAccessorCache';
 import { formatVariableValue } from './formatVariableValue';

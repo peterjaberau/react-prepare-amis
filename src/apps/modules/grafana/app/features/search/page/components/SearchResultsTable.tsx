@@ -6,8 +6,8 @@ import { FixedSizeList } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 import { Observable } from 'rxjs';
 
-import { Field, GrafanaTheme2 } from '@grafana/data';
-import { TableCellHeight } from '@grafana/schema';
+import { Field, GrafanaTheme2 } from '@data/index';
+import { TableCellHeight } from '@schema/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 import { TableCell } from '@grafana/ui/src/components/Table/TableCell';
 import { useTableStyles } from '@grafana/ui/src/components/Table/styles';

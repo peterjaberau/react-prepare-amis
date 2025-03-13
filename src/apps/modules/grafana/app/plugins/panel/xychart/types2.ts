@@ -1,5 +1,5 @@
-import { Field } from '@grafana/data';
-import * as common from '@grafana/schema';
+import { Field } from '@data/index';
+import * as common from '@schema/index';
 
 import { PointShape } from './panelcfg.gen';
 

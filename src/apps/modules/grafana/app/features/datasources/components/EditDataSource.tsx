@@ -10,7 +10,7 @@ import {
   PluginExtensionPoints,
   PluginExtensionDataSourceConfigContext,
   DataSourceUpdatedSuccessfully,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv, usePluginComponents, UsePluginComponentsResult } from '@runtime/index';
 import appEvents from 'app/core/app_events';
 import PageLoader from 'app/core/components/PageLoader/PageLoader';

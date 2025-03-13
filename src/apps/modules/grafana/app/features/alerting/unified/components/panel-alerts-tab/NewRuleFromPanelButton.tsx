@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
-import { urlUtil } from '@grafana/data';
+import { urlUtil } from '@data/index';
 import { Alert, Button, LinkButton } from '@grafana/ui';
 import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';

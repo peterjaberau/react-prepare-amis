@@ -8,7 +8,7 @@ import {
   VizPanel,
   VizPanelMenu,
   VizPanelState,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DataSourceRef } from '@grafana/schema/dist/esm/index.gen';
 import { DashboardV2Spec, PanelKind, PanelQueryKind } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';

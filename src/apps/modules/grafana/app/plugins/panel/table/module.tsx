@@ -7,8 +7,8 @@ import {
   standardEditorsRegistry,
   identityOverrideProcessor,
   FieldConfigProperty,
-} from '@grafana/data';
-import { TableCellOptions, TableCellDisplayMode, defaultTableFieldOptions, TableCellHeight } from '@grafana/schema';
+} from '@data/index';
+import { TableCellOptions, TableCellDisplayMode, defaultTableFieldOptions, TableCellHeight } from '@schema/index';
 
 import { PaginationEditor } from './PaginationEditor';
 import { TableCellOptionEditor } from './TableCellOptionEditor';

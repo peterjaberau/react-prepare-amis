@@ -2,7 +2,7 @@ import { cx } from '@emotion/css';
 import { useCallback } from 'react';
 import { satisfies, SemVer } from 'semver';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineSegmentGroup, SegmentAsync, useTheme2 } from '@grafana/ui';
 
 import { useFields } from '../../../hooks/useFields';

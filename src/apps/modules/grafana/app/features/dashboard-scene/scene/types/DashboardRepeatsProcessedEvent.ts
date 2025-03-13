@@ -1,5 +1,5 @@
-import { BusEventWithPayload } from '@grafana/data';
-import { SceneObject } from '@grafana/scenes';
+import { BusEventWithPayload } from '@data/index';
+import { SceneObject } from '@scenes/index';
 
 export interface DashboardRepeatsProcessedEventPayload {
   source: SceneObject;

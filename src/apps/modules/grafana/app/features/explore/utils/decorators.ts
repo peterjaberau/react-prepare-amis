@@ -13,9 +13,9 @@ import {
   DataLinkConfigOrigin,
   getRawDisplayProcessor,
   DataSourceApi,
-} from '@grafana/data';
+} from '@data/index';
 import { config, CorrelationData } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 
 import { refreshIntervalToSortOrder } from '../../../core/utils/explore';
 import { ExplorePanelData } from '../../../types';

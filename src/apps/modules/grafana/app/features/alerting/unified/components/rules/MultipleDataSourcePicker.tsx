@@ -6,7 +6,7 @@ import {
   SelectableValue,
   getDataSourceUID,
   isUnsignedPluginSignature,
-} from '@grafana/data';
+} from '@data/index';
 import { DataSourcePickerProps, DataSourcePickerState, getDataSourceSrv } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
 import { ActionMeta, MultiSelect, PluginSignatureBadge, Stack } from '@grafana/ui';

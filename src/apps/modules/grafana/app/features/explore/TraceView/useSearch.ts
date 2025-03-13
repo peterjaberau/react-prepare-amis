@@ -2,7 +2,7 @@ import { cloneDeep, merge } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { InterpolateFunction } from '@grafana/data';
+import { InterpolateFunction } from '@data/index';
 
 import { filterSpans, TraceSpan } from './components';
 

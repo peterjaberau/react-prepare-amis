@@ -1,4 +1,4 @@
-import { PanelPlugin, toOption } from '@grafana/data';
+import { PanelPlugin, toOption } from '@data/index';
 
 import { getTraceServiceNames, getTraceSpanNames } from '../../../features/explore/TraceView/utils/tags';
 import { transformDataFrames } from '../../../features/explore/TraceView/utils/transform';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo, useEffect } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { PanelPlugin, GrafanaTheme2 } from '@grafana/data';
+import { PanelPlugin, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import {
   Drawer,

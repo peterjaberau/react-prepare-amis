@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
-import { dateTimeFormatTimeAgo, GrafanaTheme2 } from '@grafana/data';
+import { dateTimeFormatTimeAgo, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { useStyles2 } from '@grafana/ui';
 

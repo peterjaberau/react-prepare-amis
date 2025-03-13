@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import { TimeRange } from '@grafana/data';
+import { TimeRange } from '@data/index';
 
 import { FuncInstance } from '../gfunc';
 import { GraphiteQuery, GraphiteQueryEditorDependencies, GraphiteSegment, GraphiteTag } from '../types';

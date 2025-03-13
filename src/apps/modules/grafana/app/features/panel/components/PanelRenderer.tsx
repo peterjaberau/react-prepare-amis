@@ -8,7 +8,7 @@ import {
   getPanelOptionsWithDefaults,
   OptionDefaults,
   useFieldOverrides,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv, PanelRendererProps } from '@runtime/index';
 import { ErrorBoundaryAlert, usePanelContext, useTheme2 } from '@grafana/ui';
 import { appEvents } from 'app/core/core';

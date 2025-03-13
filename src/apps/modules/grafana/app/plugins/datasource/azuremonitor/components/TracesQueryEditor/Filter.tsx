@@ -3,8 +3,8 @@ import { RefCallback, SyntheticEvent, useState } from 'react';
 import * as React from 'react';
 import { lastValueFrom } from 'rxjs';
 
-import { CoreApp, DataFrame, getDefaultTimeRange, SelectableValue, TimeRange } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { CoreApp, DataFrame, getDefaultTimeRange, SelectableValue, TimeRange } from '@data/index';
+import { selectors } from '@selectors/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
 import {
   HorizontalGroup,

@@ -1,4 +1,4 @@
-import { SceneObject, VizPanel } from '@grafana/scenes';
+import { SceneObject, VizPanel } from '@scenes/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 import { OptionsPaneItemDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 

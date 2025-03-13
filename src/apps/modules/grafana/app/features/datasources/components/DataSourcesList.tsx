@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { DataSourceSettings, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { EmptyState, LinkButton, TextLink, useStyles2 } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';

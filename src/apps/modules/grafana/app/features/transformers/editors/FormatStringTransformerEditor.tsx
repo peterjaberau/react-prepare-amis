@@ -11,7 +11,7 @@ import {
   StandardEditorsRegistryItem,
   FieldNamePickerConfigSettings,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import {
   FormatStringOutput,
   FormatStringTransformerOptions,

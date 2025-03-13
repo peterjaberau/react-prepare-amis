@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 import { AngularComponent } from '@runtime/index';
 
 export type RootPanelsState = Record<string, PanelState>;

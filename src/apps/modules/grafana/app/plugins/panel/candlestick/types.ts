@@ -1,4 +1,4 @@
-import { LegendDisplayMode, SortOrder, TooltipDisplayMode } from '@grafana/schema';
+import { LegendDisplayMode, SortOrder, TooltipDisplayMode } from '@schema/index';
 
 import {
   defaultOptions as defaultOptionsBase,

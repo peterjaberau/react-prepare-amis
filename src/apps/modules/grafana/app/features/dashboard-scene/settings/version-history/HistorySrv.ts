@@ -1,5 +1,5 @@
 import { getBackendSrv } from '@runtime/index';
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 
 export interface HistoryListOpts {
   limit: number;

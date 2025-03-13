@@ -1,4 +1,4 @@
-import { DataSourceApi } from '@grafana/data';
+import { DataSourceApi } from '@data/index';
 import {
   SceneComponentProps,
   sceneGraph,
@@ -6,7 +6,7 @@ import {
   SceneObjectState,
   SceneObjectRef,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { t } from 'app/core/internationalization';
 import { InspectTab } from 'app/features/inspector/types';
 

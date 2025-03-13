@@ -1,7 +1,7 @@
 import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { QueryEditorProps, SelectableValue } from '@grafana/data';
+import { QueryEditorProps, SelectableValue } from '@data/index';
 import { EditorField, EditorRow, InlineSelect } from '@grafana/plugin-ui';
 import { ConfirmModal, Input, RadioButtonGroup, Space } from '@grafana/ui';
 

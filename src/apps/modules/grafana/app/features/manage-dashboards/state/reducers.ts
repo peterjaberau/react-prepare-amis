@@ -1,6 +1,6 @@
 import { createSlice, Draft, PayloadAction } from '@reduxjs/toolkit';
 
-import { DataSourceInstanceSettings, LoadingState } from '@grafana/data';
+import { DataSourceInstanceSettings, LoadingState } from '@data/index';
 
 import { LibraryElementDTO } from '../../library-panels/types';
 

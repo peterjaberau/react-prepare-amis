@@ -1,5 +1,5 @@
 import { DataSourceWithBackend } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { supportedDatasources } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SupportedPubdashDatasources';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 

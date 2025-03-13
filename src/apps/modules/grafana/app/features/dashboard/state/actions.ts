@@ -1,4 +1,4 @@
-import { TimeZone } from '@grafana/data';
+import { TimeZone } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { WeekStart } from '@grafana/ui';
 import { notifyApp } from 'app/core/actions';

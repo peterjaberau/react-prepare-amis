@@ -1,4 +1,4 @@
-import { DataFrame, PanelMenuItem } from '@grafana/data';
+import { DataFrame, PanelMenuItem } from '@data/index';
 import { getPluginLinkExtensions } from '@runtime/index';
 import {
   SceneComponentProps,
@@ -8,7 +8,7 @@ import {
   SceneObjectState,
   VizPanel,
   VizPanelMenu,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getExploreUrl } from 'app/core/utils/explore';
 import { getQueryRunnerFor } from 'app/features/dashboard-scene/utils/utils';
 

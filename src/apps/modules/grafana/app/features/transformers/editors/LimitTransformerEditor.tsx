@@ -6,7 +6,7 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   TransformerCategory,
-} from '@grafana/data';
+} from '@data/index';
 import { LimitTransformerOptions } from '@grafana/data/src/transformations/transformers/limit';
 import { InlineFieldRow } from '@grafana/ui';
 

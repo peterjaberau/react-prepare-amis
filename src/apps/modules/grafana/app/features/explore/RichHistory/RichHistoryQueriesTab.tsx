@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 import { useAsync } from 'react-use';
 
-import { DataSourceApi, GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { DataSourceApi, GrafanaTheme2, SelectableValue } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { Button, FilterInput, MultiSelect, RangeSlider, Select, useStyles2 } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';

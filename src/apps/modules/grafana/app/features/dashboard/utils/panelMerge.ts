@@ -1,6 +1,6 @@
 import { isEqualWith } from 'lodash';
 
-import { PanelModel as IPanelModel } from '@grafana/data';
+import { PanelModel as IPanelModel } from '@data/index';
 
 import { PanelModel } from '../state/PanelModel';
 

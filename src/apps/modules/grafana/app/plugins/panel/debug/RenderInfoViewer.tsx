@@ -8,7 +8,7 @@ import {
   getFrameDisplayName,
   PanelProps,
   ReducerID,
-} from '@grafana/data';
+} from '@data/index';
 import { IconButton } from '@grafana/ui';
 
 import { Options, UpdateConfig } from './panelcfg.gen';

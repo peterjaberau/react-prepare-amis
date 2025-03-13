@@ -1,4 +1,4 @@
-import { PluginExtensionLink } from '@grafana/data';
+import { PluginExtensionLink } from '@data/index';
 
 export type ExtensionDropdownProps = {
   links: PluginExtensionLink[];

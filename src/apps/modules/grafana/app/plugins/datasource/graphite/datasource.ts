@@ -20,8 +20,8 @@ import {
   TimeZone,
   toDataFrame,
   getSearchFilterScopedVar,
-} from '@grafana/data';
-import { BackendSrvRequest, FetchResponse, getBackendSrv } from '@grafana/runtime';
+} from '@data/index';
+import { BackendSrvRequest, FetchResponse, getBackendSrv } from '@runtime/index';
 import { isVersionGtOrEq, SemVersion } from 'app/core/utils/version';
 import { getTemplateSrv, TemplateSrv } from 'app/features/templating/template_srv';
 import { getRollupNotice, getRuntimeConsolidationNotice } from 'app/plugins/datasource/graphite/meta';

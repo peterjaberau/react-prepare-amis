@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 
-import { DashboardCursorSync, PanelProps } from '@grafana/data';
+import { DashboardCursorSync, PanelProps } from '@data/index';
 import {
   AxisPlacement,
   EventBusPlugin,

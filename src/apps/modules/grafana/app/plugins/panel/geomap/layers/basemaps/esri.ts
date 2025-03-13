@@ -1,6 +1,6 @@
 import Map from 'ol/Map';
 
-import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, RegistryItem, Registry, EventBus } from '@grafana/data';
+import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, RegistryItem, Registry, EventBus } from '@data/index';
 
 import { xyzTiles, defaultXYZConfig, XYZConfig } from './generic';
 

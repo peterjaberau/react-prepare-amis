@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useMemo } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { GrafanaTheme2, StandardEditorProps } from '@grafana/data';
+import { GrafanaTheme2, StandardEditorProps } from '@data/index';
 import {
   CodeEditor,
   useStyles2,

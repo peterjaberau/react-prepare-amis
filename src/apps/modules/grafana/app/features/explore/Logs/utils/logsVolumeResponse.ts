@@ -1,4 +1,4 @@
-import { DataQueryError, DataQueryResponse } from '@grafana/data';
+import { DataQueryError, DataQueryResponse } from '@data/index';
 
 // Currently we can only infer if an error response is a timeout or not.
 export function isTimeoutErrorResponse(response: DataQueryResponse | undefined): boolean {

@@ -13,8 +13,8 @@ import {
   dateTimeFormatISO,
   dateTimeFormat,
   GrafanaTheme2,
-} from '@grafana/data';
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+} from '@data/index';
+import { getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { ColumnOptionsCtrl } from './column_options';
 import { ColumnRender, TableRenderModel, ColumnStyle } from './types';

@@ -8,7 +8,7 @@ import {
   getTimeZones,
   VariableOrigin,
   VariableSuggestion,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 
 export function useAllFieldNamesFromDataFrames(input: DataFrame[]): string[] {

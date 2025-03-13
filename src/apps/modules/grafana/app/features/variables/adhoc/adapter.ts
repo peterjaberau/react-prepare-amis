@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 
-import { AdHocVariableModel } from '@grafana/data';
+import { AdHocVariableModel } from '@data/index';
 
 import { dispatch } from '../../../store/store';
 import { VariableAdapter } from '../adapters';

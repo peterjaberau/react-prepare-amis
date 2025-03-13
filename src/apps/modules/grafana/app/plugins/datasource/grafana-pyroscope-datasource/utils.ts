@@ -1,7 +1,7 @@
 import { invert } from 'lodash';
 import Prism, { Grammar, Token } from 'prismjs';
 
-import { AbstractLabelMatcher, AbstractLabelOperator } from '@grafana/data';
+import { AbstractLabelMatcher, AbstractLabelOperator } from '@data/index';
 
 export function extractLabelMatchers(tokens: Array<string | Token>): AbstractLabelMatcher[] {
   const labelMatchers: AbstractLabelMatcher[] = [];

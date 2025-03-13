@@ -1,6 +1,6 @@
 import memoizeOne from 'memoize-one';
 
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@data/index';
 import { getConfig } from 'app/core/config';
 import { contextSrv } from 'app/core/services/context_srv';
 import { getRulesPermissions } from 'app/features/alerting/unified/utils/access-control';

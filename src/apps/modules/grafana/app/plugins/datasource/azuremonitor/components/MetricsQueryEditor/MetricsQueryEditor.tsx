@@ -1,4 +1,4 @@
-import { PanelData } from '@grafana/data';
+import { PanelData } from '@data/index';
 import { EditorRows, EditorRow, EditorFieldGroup } from '@grafana/plugin-ui';
 
 import { multiResourceCompatibleTypes } from '../../azureMetadata';

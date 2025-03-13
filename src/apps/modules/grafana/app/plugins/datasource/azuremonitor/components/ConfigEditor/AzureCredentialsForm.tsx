@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { AzureAuthType, AzureCredentials, getAzureClouds } from '@grafana/azure-sdk';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { ConfigSection } from '@grafana/plugin-ui';
 import { Select, Field } from '@grafana/ui';
 

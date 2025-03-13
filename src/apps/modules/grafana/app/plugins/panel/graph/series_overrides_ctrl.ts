@@ -1,6 +1,6 @@
 import { map, each, isUndefined } from 'lodash';
 
-import { textUtil } from '@grafana/data';
+import { textUtil } from '@data/index';
 import coreModule from 'app/angular/core_module';
 
 coreModule.controller('SeriesOverridesCtrl', ['$scope', '$element', 'popoverSrv', SeriesOverridesCtrl]);

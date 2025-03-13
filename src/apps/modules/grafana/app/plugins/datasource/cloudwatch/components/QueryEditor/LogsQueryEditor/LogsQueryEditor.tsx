@@ -1,7 +1,7 @@
 import { memo, useCallback, useEffect, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { QueryEditorProps, SelectableValue } from '@grafana/data';
+import { QueryEditorProps, SelectableValue } from '@data/index';
 import { InlineSelect } from '@grafana/plugin-ui';
 
 import { CloudWatchDatasource } from '../../../datasource';

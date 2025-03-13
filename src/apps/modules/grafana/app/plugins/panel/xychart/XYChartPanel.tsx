@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { FALLBACK_COLOR, PanelProps } from '@grafana/data';
+import { FALLBACK_COLOR, PanelProps } from '@data/index';
 import { alpha } from '@grafana/data/src/themes/colorManipulator';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import {
   TooltipDisplayMode,
   TooltipPlugin2,

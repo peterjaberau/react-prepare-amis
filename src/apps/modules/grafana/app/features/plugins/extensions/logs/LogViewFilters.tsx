@@ -1,8 +1,8 @@
 import { isEmpty } from 'lodash';
 import { ReactElement, useMemo } from 'react';
 
-import { DataFrame, MatcherConfig, SelectableValue } from '@grafana/data';
-import { SceneDataProvider } from '@grafana/scenes';
+import { DataFrame, MatcherConfig, SelectableValue } from '@data/index';
+import { SceneDataProvider } from '@scenes/index';
 import { InlineField, InlineFieldRow, MultiSelect } from '@grafana/ui';
 
 export type LogFilter = {

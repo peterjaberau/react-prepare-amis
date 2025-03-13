@@ -1,4 +1,4 @@
-import { Action, defaultActionConfig, VariableSuggestion } from '@grafana/data';
+import { Action, defaultActionConfig, VariableSuggestion } from '@data/index';
 import { DataLinksInlineEditorBase, DataLinksInlineEditorBaseProps } from '@grafana/ui';
 
 import { ActionEditorModalContent } from './ActionEditorModalContent';

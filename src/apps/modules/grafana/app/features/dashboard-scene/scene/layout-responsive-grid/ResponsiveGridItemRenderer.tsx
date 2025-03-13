@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 
-import { SceneComponentProps } from '@grafana/scenes';
+import { SceneComponentProps } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { ResponsiveGridItem } from './ResponsiveGridItem';

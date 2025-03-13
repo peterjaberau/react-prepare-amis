@@ -1,4 +1,4 @@
-import { DataSourceInstanceSettings, DataSourceJsonData } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceJsonData } from '@data/index';
 import { config, getBackendSrv, getDataSourceSrv } from '@runtime/index';
 import {
   CustomVariable,
@@ -15,7 +15,7 @@ import {
   type SceneComponentProps,
   type SceneObjectState,
   type SceneVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Stack, LinkButton } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 

@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
-import { SceneComponentProps, SceneObjectBase } from '@grafana/scenes';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { Button, ClipboardButton, Divider, Spinner, Stack, useStyles2 } from '@grafana/ui';
 import { contextSrv } from 'app/core/core';
 import { t, Trans } from 'app/core/internationalization';

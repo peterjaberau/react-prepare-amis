@@ -3,7 +3,7 @@ import { noop } from 'lodash';
 import pluralize from 'pluralize';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { GrafanaTheme2, PanelProps } from '@grafana/data';
+import { GrafanaTheme2, PanelProps } from '@data/index';
 import { Button, clearButtonStyles, Icon, useStyles2 } from '@grafana/ui';
 import { AlertInstancesTable } from 'app/features/alerting/unified/components/rules/AlertInstancesTable';
 import { INSTANCES_DISPLAY_LIMIT } from 'app/features/alerting/unified/components/rules/RuleDetails';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { QueryEditorHelpProps } from '@grafana/data';
+import { QueryEditorHelpProps } from '@data/index';
 
 import { CloudMonitoringQuery } from '../types/query';
 

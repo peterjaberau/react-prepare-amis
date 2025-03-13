@@ -2,8 +2,8 @@ import { get, isEqual } from 'lodash';
 import { useEffect, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { SelectableValue } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
+import { SelectableValue } from '@data/index';
+import { getTemplateSrv } from '@runtime/index';
 import { Alert, Field, Select, Space } from '@grafana/ui';
 
 import UrlBuilder from '../../azure_monitor/url_builder';

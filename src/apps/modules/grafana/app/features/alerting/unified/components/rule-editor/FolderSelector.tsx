@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useCallback, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Button, Field, Input, Label, Modal, Stack, Text, useStyles2 } from '@grafana/ui';
 import { NestedFolderPicker } from 'app/core/components/NestedFolderPicker/NestedFolderPicker';
 import { useAppNotification } from 'app/core/copy/appNotification';

@@ -1,4 +1,4 @@
-import { LiveChannelAddress } from '@grafana/data';
+import { LiveChannelAddress } from '@data/index';
 
 export enum MessageDisplayMode {
   Raw = 'raw', // Raw JSON string

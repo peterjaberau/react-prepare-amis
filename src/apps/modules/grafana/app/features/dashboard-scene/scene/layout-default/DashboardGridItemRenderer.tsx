@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
 import { config } from '@runtime/index';
-import { SceneComponentProps, VizPanel } from '@grafana/scenes';
+import { SceneComponentProps, VizPanel } from '@scenes/index';
 import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN } from 'app/core/constants';
 
 import { DashboardGridItem, RepeatDirection } from './DashboardGridItem';

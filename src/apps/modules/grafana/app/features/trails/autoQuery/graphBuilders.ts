@@ -1,4 +1,4 @@
-import { PanelBuilders } from '@grafana/scenes';
+import { PanelBuilders } from '@scenes/index';
 import { SortOrder, TooltipDisplayMode } from '@grafana/schema/dist/esm/index';
 
 import { HeatmapColorMode } from '../../../plugins/panel/heatmap/panelcfg.gen';

@@ -1,4 +1,4 @@
-import { PluginExtensionPoints } from '@grafana/data';
+import { PluginExtensionPoints } from '@data/index';
 import { usePluginComponents } from '@runtime/index';
 
 export function useAlertingHomePageExtensions() {

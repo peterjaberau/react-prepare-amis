@@ -1,5 +1,5 @@
-import { CoreApp, DataQueryRequest, DataSourceInstanceSettings, FieldType, PluginType, dateTime } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
+import { CoreApp, DataQueryRequest, DataSourceInstanceSettings, FieldType, PluginType, dateTime } from '@data/index';
+import { TemplateSrv } from '@runtime/index';
 
 import { ElasticDatasource } from './datasource';
 import { ElasticsearchOptions, ElasticsearchQuery } from './types';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 import { useAsync } from 'react-use';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { FetchError } from '@runtime/index';
 import { Alert, useStyles2 } from '@grafana/ui';
 import { backendSrv } from 'app/core/services/backend_srv';

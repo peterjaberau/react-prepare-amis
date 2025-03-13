@@ -2,7 +2,7 @@ import $ from 'jquery';
 import _, { isFunction } from 'lodash'; // eslint-disable-line lodash/import-scope
 import moment from 'moment'; // eslint-disable-line no-restricted-imports
 
-import { AppEvents, dateMath, UrlQueryMap, UrlQueryValue } from '@grafana/data';
+import { AppEvents, dateMath, UrlQueryMap, UrlQueryValue } from '@data/index';
 import { getBackendSrv, isFetchError, locationService } from '@runtime/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
 import { backendSrv } from 'app/core/services/backend_srv';

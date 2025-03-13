@@ -1,7 +1,7 @@
 import { uniqueId } from 'lodash';
 import { useRef } from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { InlineField, Select, Input } from '@grafana/ui';
 
 import { useDispatch } from '../../../../hooks/useStatelessReducer';

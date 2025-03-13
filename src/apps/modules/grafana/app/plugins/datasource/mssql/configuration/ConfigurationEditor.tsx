@@ -9,9 +9,9 @@ import {
   SelectableValue,
   updateDatasourcePluginJsonDataOption,
   updateDatasourcePluginResetOption,
-} from '@grafana/data';
+} from '@data/index';
 import { ConfigSection, ConfigSubSection, DataSourceDescription } from '@grafana/plugin-ui';
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import { ConnectionLimits, useMigrateDatabaseFields } from '@grafana/sql';
 import { NumberInput } from '@grafana/sql/src/components/configuration/NumberInput';
 import {

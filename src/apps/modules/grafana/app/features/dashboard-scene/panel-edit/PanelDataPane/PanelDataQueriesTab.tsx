@@ -1,4 +1,4 @@
-import { CoreApp, DataSourceApi, DataSourceInstanceSettings, getDataSourceRef } from '@grafana/data';
+import { CoreApp, DataSourceApi, DataSourceInstanceSettings, getDataSourceRef } from '@data/index';
 import { config, getDataSourceSrv, locationService } from '@runtime/index';
 import {
   SceneObjectBase,
@@ -9,8 +9,8 @@ import {
   VizPanel,
   SceneObjectState,
   SceneDataQuery,
-} from '@grafana/scenes';
-import { DataQuery } from '@grafana/schema';
+} from '@scenes/index';
+import { DataQuery } from '@schema/index';
 import { Button, Stack, Tab } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { addQuery } from 'app/core/utils/query';

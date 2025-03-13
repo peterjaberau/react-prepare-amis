@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { SelectableValue, GrafanaTheme2, PluginType } from '@grafana/data';
+import { SelectableValue, GrafanaTheme2, PluginType } from '@data/index';
 import { locationSearchToObject } from '@runtime/index';
 import { Select, RadioButtonGroup, useStyles2, Tooltip, Field } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';

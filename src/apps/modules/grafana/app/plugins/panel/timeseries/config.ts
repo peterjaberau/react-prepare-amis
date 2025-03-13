@@ -5,7 +5,7 @@ import {
   identityOverrideProcessor,
   SetFieldConfigOptionsArgs,
   Field,
-} from '@grafana/data';
+} from '@data/index';
 import {
   BarAlignment,
   GraphDrawStyle,
@@ -17,7 +17,7 @@ import {
   StackingMode,
   GraphThresholdsStyleMode,
   GraphTransform,
-} from '@grafana/schema';
+} from '@schema/index';
 import { graphFieldOptions, commonOptionsBuilder } from '@grafana/ui';
 
 import { InsertNullsEditor } from './InsertNullsEditor';

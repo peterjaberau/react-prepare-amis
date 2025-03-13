@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { DataSourceInstanceSettings, DataSourceJsonData, GrafanaTheme2 } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourceJsonData, GrafanaTheme2 } from '@data/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 
 export interface DataSourceLogoProps {

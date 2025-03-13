@@ -20,9 +20,9 @@ import {
   isStandardFieldProp,
   restoreCustomOverrideRules,
   getNextRefId,
-} from '@grafana/data';
+} from '@data/index';
 import { getTemplateSrv, RefreshEvent } from '@runtime/index';
-import { LibraryPanel, LibraryPanelRef } from '@grafana/schema';
+import { LibraryPanel, LibraryPanelRef } from '@schema/index';
 import config from 'app/core/config';
 import { safeStringifyValue } from 'app/core/utils/explore';
 import { QueryGroupOptions } from 'app/types';

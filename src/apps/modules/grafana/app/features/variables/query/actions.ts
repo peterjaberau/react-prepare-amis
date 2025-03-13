@@ -1,6 +1,6 @@
 import { Subscription } from 'rxjs';
 
-import { DataSourceRef } from '@grafana/data';
+import { DataSourceRef } from '@data/index';
 import { getDataSourceSrv, toDataQueryError } from '@runtime/index';
 
 import { ThunkResult } from '../../../types';

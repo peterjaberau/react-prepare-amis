@@ -16,7 +16,7 @@ import {
   toDataFrame,
   dataFrameFromJSON,
   LoadingState,
-} from '@grafana/data';
+} from '@data/index';
 import {
   DataSourceWithBackend,
   getBackendSrv,
@@ -24,8 +24,8 @@ import {
   getGrafanaLiveSrv,
   getTemplateSrv,
   StreamingFrameOptions,
-} from '@grafana/runtime';
-import { DataSourceRef } from '@grafana/schema';
+} from '@runtime/index';
+import { DataSourceRef } from '@schema/index';
 import { migrateDatasourceNameToRef } from 'app/features/dashboard/state/DashboardMigrator';
 
 import { getDashboardSrv } from '../../../features/dashboard/services/DashboardSrv';

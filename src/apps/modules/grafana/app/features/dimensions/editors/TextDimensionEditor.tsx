@@ -5,8 +5,8 @@ import {
   StandardEditorProps,
   StandardEditorsRegistryItem,
   StringFieldConfigSettings,
-} from '@grafana/data';
-import { TextDimensionConfig, TextDimensionMode } from '@grafana/schema';
+} from '@data/index';
+import { TextDimensionConfig, TextDimensionMode } from '@schema/index';
 import { Button, InlineField, InlineFieldRow, RadioButtonGroup } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { StringValueEditor } from 'app/core/components/OptionsUI/string';

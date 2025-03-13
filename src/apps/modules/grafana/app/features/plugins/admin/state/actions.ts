@@ -1,7 +1,7 @@
 import { createAction, createAsyncThunk, Update } from '@reduxjs/toolkit';
 import { from, forkJoin, timeout, lastValueFrom, catchError, of } from 'rxjs';
 
-import { PanelPlugin, PluginError } from '@grafana/data';
+import { PanelPlugin, PluginError } from '@data/index';
 import { config, getBackendSrv, isFetchError } from '@runtime/index';
 import { importPanelPlugin } from 'app/features/plugins/importPanelPlugin';
 import { StoreState, ThunkResult } from 'app/types';

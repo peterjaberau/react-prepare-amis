@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { SceneObjectStateChangedEvent } from '@grafana/scenes';
+import { SceneObjectStateChangedEvent } from '@scenes/index';
 
 import { DataTrail } from '../DataTrail';
 import { isDataTrailsHistoryState } from '../DataTrailsHistory';

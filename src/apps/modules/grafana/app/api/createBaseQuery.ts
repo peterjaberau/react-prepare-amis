@@ -1,7 +1,7 @@
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { lastValueFrom } from 'rxjs';
 
-import { BackendSrvRequest, getBackendSrv, isFetchError } from '@grafana/runtime';
+import { BackendSrvRequest, getBackendSrv, isFetchError } from '@runtime/index';
 
 interface RequestOptions extends BackendSrvRequest {
   manageError?: (err: unknown) => { error: unknown };

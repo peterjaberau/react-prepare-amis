@@ -1,4 +1,4 @@
-import { DataFrame, FieldType, MutableDataFrame, TraceKeyValuePair, TraceLog, TraceSpanRow } from '@grafana/data';
+import { DataFrame, FieldType, MutableDataFrame, TraceKeyValuePair, TraceLog, TraceSpanRow } from '@data/index';
 
 import { ZipkinAnnotation, ZipkinEndpoint, ZipkinSpan } from '../types';
 

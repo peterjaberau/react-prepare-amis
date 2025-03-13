@@ -1,5 +1,5 @@
-import { SelectableValue } from '@grafana/data';
-import { TableCellBackgroundDisplayMode, TableColoredBackgroundCellOptions } from '@grafana/schema';
+import { SelectableValue } from '@data/index';
+import { TableCellBackgroundDisplayMode, TableColoredBackgroundCellOptions } from '@schema/index';
 import { Field, RadioButtonGroup, Switch, Label, Badge } from '@grafana/ui';
 
 import { TableCellEditorProps } from '../TableCellOptionEditor';

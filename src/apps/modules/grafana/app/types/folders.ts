@@ -1,4 +1,4 @@
-import { WithAccessControlMetadata } from '@grafana/data';
+import { WithAccessControlMetadata } from '@data/index';
 
 export interface FolderListItemDTO {
   uid: string;

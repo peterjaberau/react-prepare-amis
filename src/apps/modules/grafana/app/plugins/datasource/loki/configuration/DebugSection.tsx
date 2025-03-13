@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 
-import { getTemplateSrv } from '@grafana/runtime';
+import { getTemplateSrv } from '@runtime/index';
 import { InlineField, TextArea } from '@grafana/ui';
 
 import { DerivedFieldConfig } from '../types';

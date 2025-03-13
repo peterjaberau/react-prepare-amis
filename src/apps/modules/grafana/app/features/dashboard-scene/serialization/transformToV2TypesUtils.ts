@@ -5,7 +5,7 @@ import {
   DashboardCursorSync as DashboardCursorSyncV1,
   FieldColorModeId as FieldColorModeIdV1,
   DataTopic,
-} from '@grafana/schema';
+} from '@schema/index';
 import { DataTransformerConfig } from '@grafana/schema/dist/esm/raw/dashboard/x/dashboard_types.gen';
 import {
   DashboardCursorSync,

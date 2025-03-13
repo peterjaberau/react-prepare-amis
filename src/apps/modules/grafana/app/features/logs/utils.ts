@@ -15,7 +15,7 @@ import {
   LogsVolumeType,
   NumericLogLevel,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@data/index';
 
 import { getDataframeFields } from './components/logParser';
 

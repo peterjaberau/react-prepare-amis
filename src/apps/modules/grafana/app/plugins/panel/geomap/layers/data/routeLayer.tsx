@@ -20,9 +20,9 @@ import {
   DataHoverClearEvent,
   DataFrame,
   FieldType,
-} from '@grafana/data';
+} from '@data/index';
 import { alpha } from '@grafana/data/src/themes/colorManipulator';
-import { MapLayerOptions, FrameGeometrySourceMode } from '@grafana/schema';
+import { MapLayerOptions, FrameGeometrySourceMode } from '@schema/index';
 import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
 import { getGeometryField, getLocationMatchers } from 'app/features/geo/utils/location';
 

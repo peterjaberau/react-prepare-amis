@@ -1,6 +1,6 @@
 import { ReactElement, useMemo } from 'react';
 
-import { PluginExtensionLink } from '@grafana/data';
+import { PluginExtensionLink } from '@data/index';
 import { Menu } from '@grafana/ui';
 import { truncateTitle } from 'app/features/plugins/extensions/utils';
 

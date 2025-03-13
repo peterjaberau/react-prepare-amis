@@ -10,9 +10,9 @@ import {
   createDataFrame,
   ScopedVars,
   toDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 import { createNodeGraphFrames, NodeGraphOptions, SpanBarOptions } from '@grafana/o11y-ds-frontend';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { ZipkinQuery, ZipkinSpan } from './types';
 import { createGraphFrames } from './utils/graphTransform';

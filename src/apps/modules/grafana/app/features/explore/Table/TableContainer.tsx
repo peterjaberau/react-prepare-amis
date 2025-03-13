@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { applyFieldOverrides, SplitOpen, DataFrame, LoadingState, FieldType } from '@grafana/data';
+import { applyFieldOverrides, SplitOpen, DataFrame, LoadingState, FieldType } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { TimeZone } from '@grafana/schema';
+import { TimeZone } from '@schema/index';
 import { Table, AdHocFilterItem, PanelChrome, withTheme2, Themeable2 } from '@grafana/ui';
 import { config } from 'app/core/config';
 import { t, Trans } from 'app/core/internationalization';

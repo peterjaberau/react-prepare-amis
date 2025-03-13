@@ -10,8 +10,8 @@ import {
   MouseEvent,
 } from 'react';
 
-import { LogRowContextOptions, LogRowModel, getDefaultTimeRange, locationUtil, urlUtil } from '@grafana/data';
-import { DataQuery } from '@grafana/schema';
+import { LogRowContextOptions, LogRowModel, getDefaultTimeRange, locationUtil, urlUtil } from '@data/index';
+import { DataQuery } from '@schema/index';
 import { ClipboardButton, IconButton, PopoverContent } from '@grafana/ui';
 import { getConfig } from 'app/core/config';
 

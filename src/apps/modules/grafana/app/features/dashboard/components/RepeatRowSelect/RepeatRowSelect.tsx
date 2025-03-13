@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { SceneObject, sceneGraph } from '@grafana/scenes';
+import { SelectableValue } from '@data/index';
+import { SceneObject, sceneGraph } from '@scenes/index';
 import { Select } from '@grafana/ui';
 import { useSelector } from 'app/types';
 

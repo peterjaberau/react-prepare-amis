@@ -1,6 +1,6 @@
 import { partition } from 'lodash';
 
-import { DataFrame, Field, FieldWithIndex, LinkModel, LogRowModel } from '@grafana/data';
+import { DataFrame, Field, FieldWithIndex, LinkModel, LogRowModel } from '@data/index';
 import { safeStringifyValue } from 'app/core/utils/explore';
 import { ExploreFieldLinkModel } from 'app/features/explore/utils/links';
 

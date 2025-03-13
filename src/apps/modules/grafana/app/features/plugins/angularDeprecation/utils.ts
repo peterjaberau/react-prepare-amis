@@ -1,6 +1,6 @@
-import { DataSourceInstanceSettings } from '@grafana/data';
+import { DataSourceInstanceSettings } from '@data/index';
 import { config } from '@runtime/index';
-import { DataSourceJsonData } from '@grafana/schema';
+import { DataSourceJsonData } from '@schema/index';
 
 function getDsInstanceSettingsByUid(dsUid: string): DataSourceInstanceSettings<DataSourceJsonData> | null {
   return Object.values(config.datasources).find((ds) => ds.uid === dsUid) ?? null;

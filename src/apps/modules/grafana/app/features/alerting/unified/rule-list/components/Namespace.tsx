@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { PropsWithChildren } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Icon, Stack, TextLink, useStyles2 } from '@grafana/ui';
 import { PromApplication, RulesSourceApplication } from 'app/types/unified-alerting-dto';
 

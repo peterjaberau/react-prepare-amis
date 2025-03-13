@@ -1,7 +1,7 @@
 import { Controller } from 'react-hook-form';
 import { useAsync } from 'react-use';
 
-import { CoreApp } from '@grafana/data';
+import { CoreApp } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Field, LoadingPlaceholder, Alert } from '@grafana/ui';
 import { Trans, t } from 'app/core/internationalization';

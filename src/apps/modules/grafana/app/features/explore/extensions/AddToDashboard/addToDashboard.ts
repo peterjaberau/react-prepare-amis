@@ -1,5 +1,5 @@
-import { DataFrame, ExplorePanelsState } from '@grafana/data';
-import { DataQuery, DataSourceRef, Panel } from '@grafana/schema';
+import { DataFrame, ExplorePanelsState } from '@data/index';
+import { DataQuery, DataSourceRef, Panel } from '@schema/index';
 import { DataTransformerConfig } from '@grafana/schema/dist/esm/raw/dashboard/x/dashboard_types.gen';
 import { ExplorePanelData } from 'app/types';
 

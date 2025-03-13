@@ -17,7 +17,7 @@ import { get, maxBy, values } from 'lodash';
 import { memo, Dispatch, SetStateAction, useEffect, useCallback } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Icon, PopoverContent, Tooltip, useTheme2 } from '@grafana/ui';
 import { getButtonStyles } from '@grafana/ui/src/components/Button';

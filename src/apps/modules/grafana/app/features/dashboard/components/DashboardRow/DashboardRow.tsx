@@ -3,7 +3,7 @@ import { indexOf } from 'lodash';
 import { Component } from 'react';
 import { Unsubscribable } from 'rxjs';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { getTemplateSrv, RefreshEvent } from '@runtime/index';
 import { Icon, TextLink, Themeable2, withTheme2 } from '@grafana/ui';
 import appEvents from 'app/core/app_events';

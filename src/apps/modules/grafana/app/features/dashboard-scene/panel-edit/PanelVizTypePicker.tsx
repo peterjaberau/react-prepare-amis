@@ -3,9 +3,9 @@ import { debounce } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 import { useLocalStorage } from 'react-use';
 
-import { GrafanaTheme2, PanelData, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { VizPanel } from '@grafana/scenes';
+import { VizPanel } from '@scenes/index';
 import { Button, Field, FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { LS_VISUALIZATION_SELECT_TAB_KEY } from 'app/core/constants';
 import { VisualizationSelectPaneTab } from 'app/features/dashboard/components/PanelEditor/types';

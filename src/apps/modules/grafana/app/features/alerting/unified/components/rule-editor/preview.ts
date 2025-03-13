@@ -1,4 +1,4 @@
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@data/index';
 
 import { GrafanaAlertState, Labels, isGrafanaAlertState } from '../../../../../types/unified-alerting-dto';
 

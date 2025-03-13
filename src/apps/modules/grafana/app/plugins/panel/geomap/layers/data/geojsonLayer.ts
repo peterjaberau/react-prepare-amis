@@ -8,8 +8,8 @@ import { Style } from 'ol/style';
 import { ReplaySubject } from 'rxjs';
 import { map as rxjsmap, first } from 'rxjs/operators';
 
-import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, EventBus } from '@grafana/data';
-import { ComparisonOperation } from '@grafana/schema';
+import { MapLayerRegistryItem, MapLayerOptions, GrafanaTheme2, EventBus } from '@data/index';
+import { ComparisonOperation } from '@schema/index';
 
 import { GeomapStyleRulesEditor } from '../../editor/GeomapStyleRulesEditor';
 import { StyleEditor } from '../../editor/StyleEditor';

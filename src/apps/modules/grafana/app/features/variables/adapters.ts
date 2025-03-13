@@ -1,7 +1,7 @@
 import { ComponentType } from 'react';
 import { Reducer } from 'redux';
 
-import { Registry, TypedVariableModel, UrlQueryValue, VariableOption, VariableType } from '@grafana/data';
+import { Registry, TypedVariableModel, UrlQueryValue, VariableOption, VariableType } from '@data/index';
 
 import { VariableEditorProps } from './editor/types';
 import { VariablePickerProps } from './pickers/types';

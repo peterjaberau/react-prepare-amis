@@ -1,7 +1,7 @@
 import { Observable, of } from 'rxjs';
 
-import { DataQueryRequest, DataQueryResponse, DataSourceInstanceSettings, ScopedVars } from '@grafana/data';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+import { DataQueryRequest, DataQueryResponse, DataSourceInstanceSettings, ScopedVars } from '@data/index';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { ParcaDataSourceOptions, Query, ProfileTypeMessage } from './types';
 

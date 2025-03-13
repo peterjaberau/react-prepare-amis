@@ -1,6 +1,6 @@
 import { HttpResponse, http } from 'msw';
 
-import { DataSourceInstanceSettings } from '@grafana/data';
+import { DataSourceInstanceSettings } from '@data/index';
 import { config } from '@runtime/index';
 import server from 'app/features/alerting/unified/mockApi';
 import { mockDataSource, mockFolder } from 'app/features/alerting/unified/mocks';

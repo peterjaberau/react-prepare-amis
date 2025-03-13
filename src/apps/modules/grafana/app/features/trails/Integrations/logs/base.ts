@@ -1,4 +1,4 @@
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@data/index';
 
 export type FoundLokiDataSource = Pick<DataSourceSettings, 'name' | 'uid'>;
 

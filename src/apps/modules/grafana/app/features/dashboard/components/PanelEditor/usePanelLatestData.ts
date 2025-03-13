@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Unsubscribable } from 'rxjs';
 
-import { LoadingState, PanelData } from '@grafana/data';
+import { LoadingState, PanelData } from '@data/index';
 
 import { GetDataOptions } from '../../../query/state/PanelQueryRunner';
 import { PanelModel } from '../../state/PanelModel';

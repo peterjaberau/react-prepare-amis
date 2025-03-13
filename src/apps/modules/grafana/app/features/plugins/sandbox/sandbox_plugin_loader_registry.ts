@@ -1,4 +1,4 @@
-import { PluginSignatureType } from '@grafana/data';
+import { PluginSignatureType } from '@data/index';
 import { config } from '@runtime/index';
 
 import { getPluginDetails } from '../admin/api';

@@ -9,7 +9,7 @@ import {
   formattedValueToString,
   AnnotationEventFieldSource,
   getValueFormat,
-} from '@grafana/data';
+} from '@data/index';
 import { Select, Tooltip, Icon } from '@grafana/ui';
 
 import { annotationEventNames, AnnotationFieldInfo } from '../standardAnnotationSupport';

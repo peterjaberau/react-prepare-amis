@@ -1,7 +1,7 @@
 // @ts-ignore
 
-import type { AdHocVariableModel, TypedVariableModel } from '@grafana/data';
-import { Dashboard, Panel, VariableOption } from '@grafana/schema';
+import type { AdHocVariableModel, TypedVariableModel } from '@data/index';
+import { Dashboard, Panel, VariableOption } from '@schema/index';
 import {
   AdHocFilterWithLabels,
   AdhocVariableSpec,

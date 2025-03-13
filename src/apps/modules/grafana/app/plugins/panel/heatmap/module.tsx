@@ -1,12 +1,12 @@
-import { FieldConfigProperty, FieldType, identityOverrideProcessor, PanelPlugin } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { FieldConfigProperty, FieldType, identityOverrideProcessor, PanelPlugin } from '@data/index';
+import { config } from '@runtime/index';
 import {
   AxisPlacement,
   GraphFieldConfig,
   ScaleDistribution,
   ScaleDistributionConfig,
   HeatmapCellLayout,
-} from '@grafana/schema';
+} from '@schema/index';
 import { TooltipDisplayMode } from '@grafana/ui';
 import { addHideFrom, ScaleDistributionEditor } from '@grafana/ui/src/options/builder';
 import { ColorScale } from 'app/core/components/ColorScale/ColorScale';

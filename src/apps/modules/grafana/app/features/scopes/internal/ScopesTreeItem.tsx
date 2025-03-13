@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { Dictionary } from 'lodash';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 import { Checkbox, Icon, RadioButtonDot, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 

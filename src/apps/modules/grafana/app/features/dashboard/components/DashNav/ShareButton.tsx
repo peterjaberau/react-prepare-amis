@@ -1,4 +1,4 @@
-import { selectors as e2eSelectors } from '@grafana/e2e-selectors/src';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { locationService } from '@runtime/index';
 import { Button } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';

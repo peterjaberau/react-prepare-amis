@@ -1,8 +1,8 @@
 import * as React from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
-import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@grafana/data';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@data/index';
+import { getDataSourceSrv } from '@runtime/index';
 import { InlineField, InlineFieldRow, InlineSwitch, useStyles2 } from '@grafana/ui';
 
 import { TempoDatasource } from '../datasource';

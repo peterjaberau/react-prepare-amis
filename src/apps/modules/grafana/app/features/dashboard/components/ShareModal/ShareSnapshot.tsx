@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { isEmptyObject, SelectableValue, VariableRefresh } from '@grafana/data';
+import { isEmptyObject, SelectableValue, VariableRefresh } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { Button, ClipboardButton, Field, Input, LinkButton, Modal, Select, Spinner, Stack } from '@grafana/ui';
 import { t, Trans } from 'app/core/internationalization';

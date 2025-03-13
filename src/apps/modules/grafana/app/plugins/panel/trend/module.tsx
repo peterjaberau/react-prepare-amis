@@ -1,4 +1,4 @@
-import { Field, FieldType, PanelPlugin } from '@grafana/data';
+import { Field, FieldType, PanelPlugin } from '@data/index';
 import { commonOptionsBuilder } from '@grafana/ui';
 import { optsWithHideZeros } from '@grafana/ui/src/options/builder/tooltip';
 

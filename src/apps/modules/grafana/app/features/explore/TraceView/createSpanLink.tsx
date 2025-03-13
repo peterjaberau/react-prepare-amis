@@ -11,7 +11,7 @@ import {
   ScopedVars,
   SplitOpen,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import {
   TraceToProfilesOptions,
   TraceToMetricsOptions,
@@ -20,7 +20,7 @@ import {
 } from '@grafana/o11y-ds-frontend';
 import { PromQuery } from '@grafana/prometheus';
 import { getTemplateSrv } from '@runtime/index';
-import { DataQuery } from '@grafana/schema';
+import { DataQuery } from '@schema/index';
 import { Icon } from '@grafana/ui';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 

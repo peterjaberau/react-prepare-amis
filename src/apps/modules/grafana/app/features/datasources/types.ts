@@ -1,4 +1,4 @@
-import { DataQuery, DataSourceApi, DataSourceJsonData, DataSourcePlugin } from '@grafana/data';
+import { DataQuery, DataSourceApi, DataSourceJsonData, DataSourcePlugin } from '@data/index';
 
 import { RelativeUrl } from '../alerting/unified/utils/url';
 

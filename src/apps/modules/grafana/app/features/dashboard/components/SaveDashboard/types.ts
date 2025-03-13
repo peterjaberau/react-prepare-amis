@@ -1,4 +1,4 @@
-import { Dashboard } from '@grafana/schema';
+import { Dashboard } from '@schema/index';
 import { ObjectMeta } from 'app/features/apiserver/types';
 import { CloneOptions, DashboardModel } from 'app/features/dashboard/state/DashboardModel';
 import { Diffs } from 'app/features/dashboard-scene/settings/version-history/utils';

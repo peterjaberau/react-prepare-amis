@@ -16,7 +16,7 @@ import {
   getFieldDisplayName,
   KeyValue,
   standardTransformers,
-} from '@grafana/data';
+} from '@data/index';
 import { config } from 'app/core/config';
 
 export const standardAnnotationSupport: AnnotationSupport = {

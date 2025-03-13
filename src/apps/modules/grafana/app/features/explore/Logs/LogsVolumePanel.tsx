@@ -11,8 +11,8 @@ import {
   GrafanaTheme2,
   DataFrame,
   TimeRange,
-} from '@grafana/data';
-import { TimeZone } from '@grafana/schema';
+} from '@data/index';
+import { TimeZone } from '@schema/index';
 import { Icon, SeriesVisibilityChangeMode, Tooltip, TooltipDisplayMode, useStyles2, useTheme2 } from '@grafana/ui';
 
 import { getLogsVolumeDataSourceInfo, isLogsVolumeLimited } from '../../logs/utils';

@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 
-import { QueryEditorProps } from '@grafana/data';
+import { QueryEditorProps } from '@data/index';
 import { EditorField, EditorHeader, EditorRow, EditorSwitch, InlineSelect } from '@grafana/plugin-ui';
 import { Alert, Input, Space } from '@grafana/ui';
 

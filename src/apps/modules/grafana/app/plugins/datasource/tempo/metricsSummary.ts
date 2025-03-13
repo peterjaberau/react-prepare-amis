@@ -5,7 +5,7 @@ import {
   FieldType,
   MutableDataFrame,
   sortDataFrame,
-} from '@grafana/data';
+} from '@data/index';
 
 export type MetricsSummary = {
   spanCount: string;

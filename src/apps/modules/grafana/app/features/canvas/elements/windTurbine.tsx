@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2, LinkModel } from '@grafana/data';
-import { ScalarDimensionConfig } from '@grafana/schema';
+import { GrafanaTheme2, LinkModel } from '@data/index';
+import { ScalarDimensionConfig } from '@schema/index';
 import { useStyles2 } from '@grafana/ui';
 import { DimensionContext } from 'app/features/dimensions';
 import { ScalarDimensionEditor } from 'app/features/dimensions/editors';

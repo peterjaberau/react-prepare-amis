@@ -1,4 +1,4 @@
-import { UrlQueryValue } from '@grafana/data';
+import { UrlQueryValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { contextSrv } from 'app/core/core';
 import { accessControlQueryParam } from 'app/core/utils/accessControl';

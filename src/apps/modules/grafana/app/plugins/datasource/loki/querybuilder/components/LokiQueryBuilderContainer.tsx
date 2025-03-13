@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { useEffect, useReducer } from 'react';
 
-import { TimeRange } from '@grafana/data';
+import { TimeRange } from '@data/index';
 
 import { testIds } from '../../components/LokiQueryEditor';
 import { LokiDatasource } from '../../datasource';

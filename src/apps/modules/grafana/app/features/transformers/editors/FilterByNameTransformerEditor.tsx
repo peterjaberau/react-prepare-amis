@@ -10,7 +10,7 @@ import {
   stringToJsRegex,
   TransformerCategory,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { FilterFieldsByNameTransformerOptions } from '@grafana/data/src/transformations/transformers/filterByName';
 import { getTemplateSrv } from '@grafana/runtime/src/services';
 import { Input, FilterPill, InlineFieldRow, InlineField, InlineSwitch, Select } from '@grafana/ui';

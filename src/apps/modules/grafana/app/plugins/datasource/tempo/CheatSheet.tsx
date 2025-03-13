@@ -1,4 +1,4 @@
-import { config, reportInteraction } from '@grafana/runtime';
+import { config, reportInteraction } from '@runtime/index';
 import { TextLink } from '@grafana/ui';
 
 export default function CheatSheet() {

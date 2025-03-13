@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2, QueryResultMetaNotice } from '@grafana/data';
+import { GrafanaTheme2, QueryResultMetaNotice } from '@data/index';
 import { Icon, ToolbarButton, Tooltip, useStyles2 } from '@grafana/ui';
 import { getFocusStyles, getMouseFocusStyles } from '@grafana/ui/src/themes/mixins';
 

@@ -1,4 +1,4 @@
-import { config } from '@grafana/runtime';
+import { config } from '@runtime/index';
 import coreModule from 'app/angular/core_module';
 import { provideTheme } from 'app/core/utils/ConfigProvider';
 

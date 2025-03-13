@@ -1,6 +1,6 @@
 import { find, get } from 'lodash';
 
-import { FetchResponse } from '@grafana/runtime';
+import { FetchResponse } from '@runtime/index';
 
 import TimeGrainConverter from '../time_grain_converter';
 import {

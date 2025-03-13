@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { GrafanaTheme2, UrlQueryMap } from '@grafana/data';
+import { GrafanaTheme2, UrlQueryMap } from '@data/index';
 import { Tab, TabContent, TabsBar, useStyles2 } from '@grafana/ui';
 import { useQueryParams } from 'app/core/hooks/useQueryParams';
 import { useMuteTimings } from 'app/features/alerting/unified/components/mute-timings/useMuteTimings';

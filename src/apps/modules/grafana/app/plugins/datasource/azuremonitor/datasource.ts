@@ -11,8 +11,8 @@ import {
   LoadingState,
   QueryFixAction,
   ScopedVars,
-} from '@grafana/data';
-import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+} from '@data/index';
+import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import AzureLogAnalyticsDatasource from './azure_log_analytics/azure_log_analytics_datasource';
 import AzureMonitorDatasource from './azure_monitor/azure_monitor_datasource';

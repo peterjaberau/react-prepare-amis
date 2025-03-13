@@ -1,7 +1,7 @@
 import { memoize } from 'lodash';
 
-import { DataSourceInstanceSettings, SelectableValue } from '@grafana/data';
-import { getBackendSrv, TemplateSrv } from '@grafana/runtime';
+import { DataSourceInstanceSettings, SelectableValue } from '@data/index';
+import { getBackendSrv, TemplateSrv } from '@runtime/index';
 
 import { CloudWatchRequest } from '../query-runner/CloudWatchRequest';
 import { CloudWatchJsonData, LogGroupField, MultiFilters } from '../types';

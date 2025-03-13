@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { FC, forwardRef } from 'react';
 import { GroupBase, OptionsOrGroups, createFilter } from 'react-select';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import { Field, Select, useStyles2 } from '@grafana/ui';
 
 export interface AlertLabelDropdownProps {

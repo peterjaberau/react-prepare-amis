@@ -8,7 +8,7 @@ import {
   NodeGraphDataFrameFieldNames,
   DataFrame,
   addRow,
-} from '@grafana/data';
+} from '@data/index';
 
 import * as serviceMapResponseSmall from './testData/serviceMapResponse';
 import * as serviceMapResponsMedium from './testData/serviceMapResponseMedium';

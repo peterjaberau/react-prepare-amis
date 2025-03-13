@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { VariableModel, defaultDashboard } from '@grafana/schema';
+import { VariableModel, defaultDashboard } from '@schema/index';
 import {
   AdhocVariableKind,
   DashboardV2Spec,

@@ -9,7 +9,7 @@ import {
   LoadingState,
   QueryResultMetaStat,
   shallowCompare,
-} from '@grafana/data';
+} from '@data/index';
 
 import { LOADING_FRAME_NAME } from './querySplitting';
 

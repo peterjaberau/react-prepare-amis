@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { memo } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-import { GrafanaTheme2, OrgRole } from '@grafana/data';
+import { GrafanaTheme2, OrgRole } from '@data/index';
 import { Button, Icon, IconButton, Stack, useStyles2 } from '@grafana/ui';
 import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
 import { UserRolePicker } from 'app/core/components/RolePicker/UserRolePicker';

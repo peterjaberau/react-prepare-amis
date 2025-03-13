@@ -1,8 +1,8 @@
 import { startCase, uniq } from 'lodash';
 
-import { AdHocVariableFilter, ScopedVars, SelectableValue } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
-import { VariableFormatID } from '@grafana/schema';
+import { AdHocVariableFilter, ScopedVars, SelectableValue } from '@data/index';
+import { getTemplateSrv } from '@runtime/index';
+import { VariableFormatID } from '@schema/index';
 
 import { TraceqlFilter, TraceqlSearchScope } from '../dataquery.gen';
 import { getEscapedSpanNames } from '../datasource';

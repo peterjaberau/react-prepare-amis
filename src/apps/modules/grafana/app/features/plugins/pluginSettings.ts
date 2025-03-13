@@ -1,4 +1,4 @@
-import { PluginMeta } from '@grafana/data';
+import { PluginMeta } from '@data/index';
 import { BackendSrvRequest, getBackendSrv } from '@runtime/index';
 
 type PluginCache = {

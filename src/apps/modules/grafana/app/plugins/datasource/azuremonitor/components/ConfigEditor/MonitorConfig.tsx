@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
 import { AzureCredentials } from '@grafana/azure-sdk';
-import { SelectableValue } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { SelectableValue } from '@data/index';
+import { config } from '@runtime/index';
 
 import { getCredentials, updateCredentials } from '../../credentials';
 import { AzureMonitorDataSourceSettings } from '../../types';

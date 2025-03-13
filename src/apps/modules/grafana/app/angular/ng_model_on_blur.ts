@@ -1,4 +1,4 @@
-import { rangeUtil } from '@grafana/data';
+import { rangeUtil } from '@data/index';
 
 import coreModule from './core_module';
 

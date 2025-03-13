@@ -19,7 +19,7 @@ import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/das
 import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
 import { AppCustomActorV1 } from "@/apps/modules/custom-actor-v1/AppCustomActor.tsx";
 import { plugin as PluginSceneAppDemo } from "@/apps/modules/scenes/stories/main.tsx";
-
+import GrafanaApp from "@/apps/modules/grafana/app/app";
 
 
 const defaultProps = {
@@ -180,6 +180,24 @@ export const contentItems = [
 ] as const;
 
 export const contentModuleItems = [
+  {
+    key: "grafana-app",
+    component: GrafanaApp,
+    title: "Graphana App",
+    props: {
+      ...defaultProps,
+      ...{
+        pageHeader: {
+          title: "Graphana App",
+          iconType: "globe",
+        },
+        page: {
+          panelled: true,
+          restrictWidth: true,
+        },
+      },
+    },
+  },
   {
     key: "scene-app",
     component: PluginSceneAppDemo,
@@ -407,7 +425,7 @@ export const contentAmisEditorItems = () => {
   }));
 };
 
-export const componentModuleMapping: Record<string, React.ComponentType> =
+export const componentModuleMapping: Record<string, React.ComponentType> | any=
   Object.fromEntries(
     contentModuleItems.map(({ key, component }) => [key, component]),
   );

@@ -1,6 +1,6 @@
 import { PropsWithChildren, ReactElement, useMemo } from 'react';
 
-import { TypedVariableModel, VariableHide } from '@grafana/data';
+import { TypedVariableModel, VariableHide } from '@data/index';
 import { Stack, Tooltip } from '@grafana/ui';
 
 import { variableAdapters } from '../adapters';

@@ -9,7 +9,7 @@ import {
   getDataSourceRef,
   GrafanaTheme2,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import { getDataSourceSrv, locationService } from '@runtime/index';
 import { AnnotationPanelFilter } from '@grafana/schema/src/raw/dashboard/x/dashboard_types.gen';
 import {

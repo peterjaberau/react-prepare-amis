@@ -3,7 +3,7 @@ import pluralize from 'pluralize';
 import { useMemo } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
-import { GrafanaTheme2, urlUtil } from '@grafana/data';
+import { GrafanaTheme2, urlUtil } from '@data/index';
 import { LinkButton, LoadingPlaceholder, Pagination, Spinner, Text, useStyles2 } from '@grafana/ui';
 import { Trans } from 'app/core/internationalization';
 import { CombinedRuleNamespace } from 'app/types/unified-alerting';

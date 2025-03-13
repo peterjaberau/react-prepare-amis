@@ -6,7 +6,7 @@ import {
   GrafanaTheme2,
   outerJoinDataFrames,
   TimeRange,
-} from '@grafana/data';
+} from '@data/index';
 import { maybeSortFrame } from '@grafana/data/src/transformations/transformers/joinDataFrames';
 import { findField } from 'app/features/dimensions';
 
