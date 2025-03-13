@@ -54,6 +54,7 @@ export default defineConfig({
       { find: "@scenes-react", replacement: path.resolve(__dirname, "src/packages/grafana/scenes-react") },
       { find: "@selectors", replacement: path.resolve(__dirname, "src/packages/grafana/selectors") },
       { find: "@grafana-ui", replacement: path.resolve(__dirname, "src/packages/grafana/grafana-ui") },
+      { find: "@plugin-configs", replacement: path.resolve(__dirname, "src/packages/grafana/plugin-configs") },
 
 
     ],

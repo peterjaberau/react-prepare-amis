@@ -10,26 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/serialize": "1.3.3",
-    "@monaco-editor/react": "4.6.0",
-    "calculate-size": "1.1.1",
-    "is-hotkey": "0.2.0",
-    "rc-cascader": "3.33.0",
-    "rc-drawer": "7.2.0",
-    "rc-picker": "4.9.2",
-    "rc-tooltip": "6.4.0",
-    "react-calendar": "^5.1.0",
-    "react-colorful": "5.6.1",
-    "react-custom-scrollbars-2": "4.5.0",
-
-
-
-
-
-
-
-
-
     "@ant-design/icons": "^5.5.1",
     "@ant-design/leva-panel": "^1.0.0",
     "@ant-design/pro-editor": "^1.3.0",
@@ -42,6 +22,7 @@
     "@dnd-kit/utilities": "^3.2.2",
     "@emotion/css": "11.13.5",
     "@emotion/react": "11.14.0",
+    "@emotion/serialize": "1.3.3",
     "@faker-js/faker": "^9.6.0",
     "@fingerprintjs/fingerprintjs": "^3.4.2",
     "@floating-ui/react": "^0.27.5",
@@ -76,6 +57,7 @@
     "@mantine/core": "^7.17.0",
     "@mantine/dates": "^7.17.0",
     "@mantine/hooks": "^7.17.0",
+    "@monaco-editor/react": "4.6.0",
     "@msagl/core": "^1.1.19",
     "@msagl/parser": "^1.1.19",
     "@nanostores/react": "^0.8.4",
@@ -133,6 +115,7 @@
     "bezier-js": "^6.1.4",
     "blueimp-canvastoblob": "2.1.0",
     "brace": "0.11.1",
+    "calculate-size": "1.1.1",
     "centrifuge": "5.3.2",
     "class-variance-authority": "^0.7.0",
     "classnames": "2.3.2",
@@ -186,6 +169,7 @@
     "immer": "10.1.1",
     "immutability-helper": "^3.1.1",
     "immutable": "5.0.3",
+    "is-hotkey": "0.2.0",
     "ix": "^7.0.0",
     "jquery": "3.7.1",
     "js-yaml": "^4.1.0",
@@ -239,15 +223,22 @@
     "qrcode.react": "^3.1.0",
     "qs": "6.9.7",
     "query-string": "^9.1.1",
+    "rc-cascader": "3.33.0",
+    "rc-drawer": "7.2.0",
     "rc-input-number": "^7.4.0",
     "rc-menu": "^9.12.2",
+    "rc-picker": "4.9.2",
     "rc-progress": "3.4.2",
     "rc-slider": "11.1.8",
+    "rc-tooltip": "6.4.0",
     "rc-tree": "5.13.0",
     "re-resizable": "6.10.3",
     "react": "^18.3.1",
+    "react-calendar": "^5.1.0",
     "react-color": "^2.19.3",
+    "react-colorful": "5.6.1",
     "react-cropper": "^2.1.8",
+    "react-custom-scrollbars-2": "4.5.0",
     "react-day-picker": "^8.10.1",
     "react-diff-viewer-continued": "^3.4.0",
     "react-dom": "^18.3.1",
@@ -272,6 +263,7 @@
     "react-resizable": "^3.0.5",
     "react-resizable-panels": "^2.1.4",
     "react-responsive-carousel": "^3.2.23",
+    "react-router": "^7.3.0",
     "react-router-dom": "^6.28.0",
     "react-router-dom-v5-compat": "^6.26.1",
     "react-select": "5.10.0",
@@ -332,31 +324,15 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@faker-js/faker": "^9.0.0",
-    "@grafana/tsconfig": "^2.0.0",
-    "@types/is-hotkey": "0.1.10",
-    "@types/mock-raf": "1.0.6",
-    "common-tags": "1.8.2",
-    "csstype": "3.1.3",
-    "fs-extra": "^11.2.0",
-    "mock-raf": "1.0.1",
-    "process": "^0.11.10",
-
-
-
-
-
-
-
-
-
     "@betterer/betterer": "5.4.0",
     "@betterer/cli": "5.4.0",
     "@elastic/datemath": "^5.0.3",
     "@elastic/eui": "^99.2.0",
     "@emotion/cache": "^11.14.0",
     "@eslint/js": "^9.11.1",
+    "@faker-js/faker": "^9.0.0",
     "@fortawesome/fontawesome-free": "^6.1.1",
+    "@grafana/tsconfig": "^2.0.0",
     "@happy-dom/global-registrator": "^14.2.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.15",
     "@react-types/button": "3.10.2",
@@ -393,6 +369,7 @@
     "@types/history": "^4.6.0",
     "@types/hoist-non-react-statics": "^3.3.1",
     "@types/ini": "^4",
+    "@types/is-hotkey": "0.1.10",
     "@types/jquery": "3.5.32",
     "@types/js-yaml": "^4.0.5",
     "@types/json-schema": "^7.0.11",
@@ -402,6 +379,7 @@
     "@types/lucene": "^2",
     "@types/markdown-it": "^12.2.1",
     "@types/mkdirp": "^1.0.1",
+    "@types/mock-raf": "1.0.6",
     "@types/node": "^20.12.12",
     "@types/node-forge": "^1",
     "@types/papaparse": "^5.2.2",
@@ -452,6 +430,7 @@
     "chrome-remote-interface": "0.33.2",
     "code-inspector-plugin": "^0.20.1",
     "codeowners": "^5.1.1",
+    "common-tags": "1.8.2",
     "concurrently": "^7.3.0",
     "copy-to-clipboard": "3.3.1",
     "copy-webpack-plugin": "12.0.2",
@@ -461,6 +440,7 @@
     "css": "3.0.0",
     "css-loader": "^6.2.0",
     "css-minimizer-webpack-plugin": "7.0.0",
+    "csstype": "3.1.3",
     "doctrine": "^3.0.0",
     "dotenv": "16.4.5",
     "esbuild": "0.17.0",
@@ -470,6 +450,7 @@
     "expose-loader": "5.0.0",
     "faker": "^5.5.3",
     "fishery": "^2.2.2",
+    "fs-extra": "^11.2.0",
     "fs-walk": "0.0.2",
     "glob": "^7.2.0",
     "globals": "^15.9.0",
@@ -488,6 +469,7 @@
     "marked": ">=4.0.12",
     "mini-css-extract-plugin": "^2.3.0",
     "mkdirp": "^1.0.4",
+    "mock-raf": "1.0.1",
     "moment-timezone": "^0.5.34",
     "monaco-editor": "^0.48.0",
     "msw": "2.7.0",
@@ -511,6 +493,7 @@
     "prettier": "^2.6.1",
     "pretty-quick": "^3.1.1",
     "prismjs": "^1.25.0",
+    "process": "^0.11.10",
     "pseudoizer": "^0.1.0",
     "puppeteer": "^22.8.0",
     "react-color": "^2.19.3",

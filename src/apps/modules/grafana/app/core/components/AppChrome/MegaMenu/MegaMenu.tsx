@@ -9,7 +9,7 @@ import { ScrollContainer, useStyles2, Stack } from '@grafana-ui/index';
 import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 import { t } from '@grafana-module/app/core/internationalization';
 import { setBookmark } from '@grafana-module/app/core/reducers/navBarTree';
-import { usePatchUserPreferencesMutation } from '@grafana-module/app/cp/features/preferences/api/index';
+import { usePatchUserPreferencesMutation } from "@grafana-module/app/features/preferences/api";
 import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { TOP_BAR_LEVEL_HEIGHT } from '../types';
