@@ -8,9 +8,9 @@ import {
   TimeRange,
   cacheFieldDisplayNames,
 } from '@data/index';
-import { convertFieldType } from '@grafana/data/src/transformations/transformers/convertFieldType';
-import { applyNullInsertThreshold } from '@grafana/data/src/transformations/transformers/nulls/nullInsertThreshold';
-import { nullToValue } from '@grafana/data/src/transformations/transformers/nulls/nullToValue';
+import { convertFieldType } from '@data/transformations/transformers/convertFieldType';
+import { applyNullInsertThreshold } from '@data/transformations/transformers/nulls/nullInsertThreshold';
+import { nullToValue } from '@data/transformations/transformers/nulls/nullToValue';
 import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
 import { buildScaleKey } from '@grafana/ui/src/components/uPlot/internal';
 

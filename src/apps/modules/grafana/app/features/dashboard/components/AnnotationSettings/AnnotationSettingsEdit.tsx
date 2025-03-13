@@ -11,7 +11,7 @@ import {
   SelectableValue,
 } from '@data/index';
 import { getDataSourceSrv, locationService } from '@runtime/index';
-import { AnnotationPanelFilter } from '@grafana/schema/src/raw/dashboard/x/dashboard_types.gen';
+import { AnnotationPanelFilter } from '@schema/raw/dashboard/dashboard_types';
 import {
   Button,
   Checkbox,

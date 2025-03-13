@@ -6,7 +6,7 @@ import { BehaviorSubject, ReplaySubject, Subject, Subscription } from 'rxjs';
 import Selecto from 'selecto';
 
 import { AppEvents, PanelData } from '@data/index';
-import { locationService } from '@grafana/runtime/src';
+import { locationService } from '@runtime/index';
 import {
   ColorDimensionConfig,
   ResourceDimensionConfig,

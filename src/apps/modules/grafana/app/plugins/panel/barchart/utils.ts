@@ -13,7 +13,7 @@ import {
   getFieldSeriesColor,
   outerJoinDataFrames,
 } from '@data/index';
-import { decoupleHideFromState } from '@grafana/data/src/field/fieldState';
+import { decoupleHideFromState } from '@data/field/fieldState';
 import {
   AxisColorMode,
   AxisPlacement,

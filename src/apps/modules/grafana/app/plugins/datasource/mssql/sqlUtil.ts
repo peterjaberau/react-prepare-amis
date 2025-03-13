@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import { RAQBFieldTypes, SQLExpression, SQLQuery, haveColumns } from '@grafana/sql';
+import { RAQBFieldTypes, SQLExpression, SQLQuery, haveColumns } from '@grafana-sql/index';
 
 export function getIcon(type: string): string | undefined {
   switch (type) {

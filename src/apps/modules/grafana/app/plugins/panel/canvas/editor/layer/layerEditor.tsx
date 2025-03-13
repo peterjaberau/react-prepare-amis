@@ -1,6 +1,6 @@
 import { get as lodashGet } from 'lodash';
 
-import { NestedPanelOptions, NestedValueAccess } from '@grafana/data/src/utils/OptionsUIBuilders';
+import { NestedPanelOptions, NestedValueAccess } from '@data/utils/OptionsUIBuilders';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
 import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
 import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';

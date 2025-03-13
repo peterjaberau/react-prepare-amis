@@ -6,7 +6,7 @@ import {
   FieldColorModeId as FieldColorModeIdV1,
   DataTopic,
 } from '@schema/index';
-import { DataTransformerConfig } from '@grafana/schema/dist/esm/raw/dashboard/x/dashboard_types.gen';
+import { DataTransformerConfig } from '@schema/raw/dashboard/dashboard_types';
 import {
   DashboardCursorSync,
   defaultDashboardV2Spec,
@@ -17,7 +17,7 @@ import {
   VariableRefresh,
   VariableSort,
   FieldColorModeId as FieldColorModeIdV2,
-} from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0';
 
 // used for QueryVariableKind's query prop - in schema V2 we've deprecated string type and support only DataQuery
 export const LEGACY_STRING_VALUE_KEY = '__legacyStringValue';

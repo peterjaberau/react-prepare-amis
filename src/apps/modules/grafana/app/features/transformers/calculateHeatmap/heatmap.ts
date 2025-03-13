@@ -15,7 +15,7 @@ import {
   TransformationApplicabilityLevels,
   TimeRange,
 } from '@data/index';
-import { isLikelyAscendingVector } from '@grafana/data/src/transformations/transformers/joinDataFrames';
+import { isLikelyAscendingVector } from '@data/transformations/transformers/joinDataFrames';
 import {
   ScaleDistribution,
   HeatmapCellLayout,

@@ -21,7 +21,7 @@ import {
   DataFrame,
   FieldType,
 } from '@data/index';
-import { alpha } from '@grafana/data/src/themes/colorManipulator';
+import { alpha } from '@data/themes/colorManipulator';
 import { MapLayerOptions, FrameGeometrySourceMode } from '@schema/index';
 import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
 import { getGeometryField, getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';

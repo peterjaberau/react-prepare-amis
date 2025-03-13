@@ -8,7 +8,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
 } from '@data/index';
-import { JoinByFieldOptions, JoinMode } from '@grafana/data/src/transformations/transformers/joinByField';
+import { JoinByFieldOptions, JoinMode } from '@data/transformations/transformers/joinByField';
 import { getTemplateSrv } from '@runtime/index';
 import { Select, InlineFieldRow, InlineField } from '@grafana/ui';
 import { useFieldDisplayNames, useSelectOptions } from '@grafana/ui/src/components/MatchersUI/utils';

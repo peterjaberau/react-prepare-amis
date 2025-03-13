@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { DataFrame, InterpolateFunction, LinkModel } from '@data/index';
-import { alpha } from '@grafana/data/src/themes/colorManipulator';
+import { alpha } from '@data/themes/colorManipulator';
 import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
 import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';
 import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';

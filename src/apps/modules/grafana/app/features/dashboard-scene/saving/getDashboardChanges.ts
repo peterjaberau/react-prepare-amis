@@ -7,7 +7,7 @@ import {
   AdhocVariableSpec,
   DashboardV2Spec,
   VariableKind,
-} from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0';
 
 import { jsonDiff } from '../settings/version-history/utils';
 

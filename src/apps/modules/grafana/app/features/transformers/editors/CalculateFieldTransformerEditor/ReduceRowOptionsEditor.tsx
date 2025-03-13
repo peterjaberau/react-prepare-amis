@@ -2,7 +2,7 @@ import { ReducerID } from '@data/index';
 import {
   CalculateFieldTransformerOptions,
   ReduceOptions,
-} from '@grafana/data/src/transformations/transformers/calculateField';
+} from '@data/transformations/transformers/calculateField';
 import { FilterPill, HorizontalGroup, InlineField, StatsPicker } from '@grafana/ui';
 
 import { LABEL_WIDTH } from './constants';

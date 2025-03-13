@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { getDataSourceSrv } from '@runtime/index';
-import { isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { isExpressionReference } from '@runtime/utils/DataSourceWithBackend';
 import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 export function useAlertQueriesStatus(queries: AlertQuery[]) {

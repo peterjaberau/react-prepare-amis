@@ -5,7 +5,7 @@ import { BackendSrv, GrafanaLiveSrv, toDataQueryResponse } from '@runtime/index'
 import {
   standardStreamOptionsProvider,
   toStreamingDataResponse,
-} from '@grafana/runtime/src/utils/DataSourceWithBackend';
+} from '@runtime/utils/DataSourceWithBackend';
 
 import { CentrifugeSrv, StreamingDataQueryResponse } from './centrifuge/service';
 import { isStreamingResponseData, StreamingResponseDataType } from './data/utils';

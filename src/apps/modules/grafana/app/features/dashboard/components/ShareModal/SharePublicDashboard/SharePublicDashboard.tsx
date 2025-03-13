@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data/src';
+import { GrafanaTheme2 } from '@data/index';
 import { Spinner, useStyles2 } from '@grafana/ui/src';
 import { useGetPublicDashboardQuery } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
 import { publicDashboardPersisted } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';

@@ -1,7 +1,7 @@
 import { capitalize } from 'lodash';
 
 import { FieldType } from '@data/index';
-import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
+import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';
 import { ConnectionDirection } from '@grafana-module/app/features/canvas/element';
 import { SVGElements } from '@grafana-module/app/features/canvas/runtime/element';
 import { ColorDimensionEditor, ResourceDimensionEditor, ScaleDimensionEditor } from '@grafana-module/app/features/dimensions/editors';

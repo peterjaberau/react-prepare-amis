@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data/src';
+import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, Modal, ModalsController, useStyles2 } from '@grafana/ui/src';
 import { Trans, t } from '@grafana-module/app/core/internationalization';

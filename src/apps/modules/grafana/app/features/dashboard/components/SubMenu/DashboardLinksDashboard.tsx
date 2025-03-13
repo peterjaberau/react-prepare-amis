@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 import { useAsync } from 'react-use';
 
 import { GrafanaTheme2, ScopedVars } from '@data/index';
-import { sanitize, sanitizeUrl } from '@grafana/data/src/text/sanitize';
+import { sanitize, sanitizeUrl } from '@data/text/sanitize';
 import { DashboardLink } from '@schema/index';
 import { Dropdown, Icon, Button, Menu, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { ButtonLinkProps, LinkButton } from '@grafana/ui/src/components/Button';

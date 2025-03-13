@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useAsync, useDebounce } from 'react-use';
 
 import { config, FetchError, isFetchError } from '@runtime/index';
-import { LibraryPanel } from '@grafana/schema/dist/esm/index.gen';
+import { LibraryPanel } from '@schema/index';
 import { Button, Field, Input, Modal, Stack } from '@grafana/ui';
 import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

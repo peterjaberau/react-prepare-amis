@@ -1,4 +1,4 @@
-import { LinkModel } from '@grafana/data/src';
+import { LinkModel } from '@data/index';
 import { ColorDimensionConfig, ResourceDimensionConfig, TextDimensionConfig } from '@schema/index';
 import { BackgroundImageSize } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { QueryEditorProps } from '@grafana/data/src';
+import { QueryEditorProps } from '@data/index';
 import { InlineFormLabel, Input, Stack } from '@grafana/ui/src';
 
 import InfluxDatasource from '../../../datasource';

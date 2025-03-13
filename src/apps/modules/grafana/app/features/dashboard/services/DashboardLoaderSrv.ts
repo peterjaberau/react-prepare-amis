@@ -4,7 +4,7 @@ import moment from 'moment'; // eslint-disable-line no-restricted-imports
 
 import { AppEvents, dateMath, UrlQueryMap, UrlQueryValue } from '@data/index';
 import { getBackendSrv, isFetchError, locationService } from '@runtime/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 import impressionSrv from '@grafana-module/app/core/services/impression_srv';
 import kbn from '@grafana-module/app/core/utils/kbn';

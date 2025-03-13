@@ -1,5 +1,5 @@
-import { VariableModel } from '@grafana/schema/dist/esm/index';
-import { VariableKind } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { VariableModel } from '@schema/index';
+import { VariableKind } from '@schema/schema/dashboard/v2alpha0';
 import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 

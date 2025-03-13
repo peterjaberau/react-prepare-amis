@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { Field, GrafanaTheme2 } from '@grafana/data/';
+import { Field, GrafanaTheme2 } from '@data/index';
 import { InstantQueryRefIdIndex } from '@grafana/prometheus';
 import { useStyles2 } from '@grafana/ui/';
 

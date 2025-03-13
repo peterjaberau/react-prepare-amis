@@ -15,7 +15,7 @@ import {
   GroupByFieldOptions,
   GroupByOperationID,
   GroupByTransformerOptions,
-} from '@grafana/data/src/transformations/transformers/groupBy';
+} from '@data/transformations/transformers/groupBy';
 import { useTheme2, Select, StatsPicker, InlineField, Stack, Alert } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

@@ -1,5 +1,5 @@
 import { RegistryItem } from '@data/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 
 import { DashboardLayoutManager } from './DashboardLayoutManager';
 

@@ -15,7 +15,7 @@ import {
 import {
   FormatStringOutput,
   FormatStringTransformerOptions,
-} from '@grafana/data/src/transformations/transformers/formatString';
+} from '@data/transformations/transformers/formatString';
 import { Select, InlineFieldRow, InlineField } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';

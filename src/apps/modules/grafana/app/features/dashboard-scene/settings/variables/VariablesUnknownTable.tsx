@@ -5,7 +5,7 @@ import { useAsyncFn } from 'react-use';
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable, SceneVariableState } from '@scenes/index';
-import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
+import { Dashboard } from '@schema/index';
 import { CollapsableSection, Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

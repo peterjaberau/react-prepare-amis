@@ -11,7 +11,7 @@ import {
 import {
   ConcatenateFrameNameMode,
   ConcatenateTransformerOptions,
-} from '@grafana/data/src/transformations/transformers/concat';
+} from '@data/transformations/transformers/concat';
 import { InlineField, Input, Select } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

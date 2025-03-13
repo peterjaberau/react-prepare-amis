@@ -3,7 +3,7 @@ import { createApi } from '@reduxjs/toolkit/query/react';
 import { AppEvents, isTruthy, locationUtil } from '@data/index';
 import { config, getBackendSrv, locationService } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import { createBaseQuery, handleRequestError } from '@grafana-module/app/api/createBaseQuery';
 import appEvents from '@grafana-module/app/core/app_events';
 import { contextSrv } from '@grafana-module/app/core/core';

@@ -11,7 +11,7 @@ import {
 import {
   LabelsToFieldsMode,
   LabelsToFieldsOptions,
-} from '@grafana/data/src/transformations/transformers/labelsToFields';
+} from '@data/transformations/transformers/labelsToFields';
 import { InlineField, InlineFieldRow, RadioButtonGroup, Select, FilterPill, Stack } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

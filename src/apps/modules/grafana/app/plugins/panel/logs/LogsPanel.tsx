@@ -30,7 +30,7 @@ import {
   LogSortOrderChangeEvent,
   LoadingState,
 } from '@data/index';
-import { convertRawToRange } from '@grafana/data/src/datetime/rangeutil';
+import { convertRawToRange } from '@data/datetime/rangeutil';
 import { config, getAppEvents } from '@runtime/index';
 import { ScrollContainer, usePanelContext, useStyles2 } from '@grafana/ui';
 import { getFieldLinksForExplore } from '@grafana-module/app/features/explore/utils/links';

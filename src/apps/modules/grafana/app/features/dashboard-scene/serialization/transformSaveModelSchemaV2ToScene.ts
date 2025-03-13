@@ -23,7 +23,7 @@ import {
   TextBoxVariable,
   VariableValueSelectors,
 } from '@scenes/index';
-import { DataSourceRef } from '@grafana/schema/dist/esm/index.gen';
+import { DataSourceRef } from '@schema/index';
 import {
   AdhocVariableKind,
   ConstantVariableKind,
@@ -45,7 +45,7 @@ import {
   PanelQueryKind,
   QueryVariableKind,
   TextVariableKind,
-} from '@grafana/schema/src/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0';
 import {
   AnnoKeyCreatedBy,
   AnnoKeyFolder,

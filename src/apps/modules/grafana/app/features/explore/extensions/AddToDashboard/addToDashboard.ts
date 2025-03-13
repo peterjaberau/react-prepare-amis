@@ -1,6 +1,6 @@
 import { DataFrame, ExplorePanelsState } from '@data/index';
 import { DataQuery, DataSourceRef, Panel } from '@schema/index';
-import { DataTransformerConfig } from '@grafana/schema/dist/esm/raw/dashboard/x/dashboard_types.gen';
+import { DataTransformerConfig } from '@schema/raw/dashboard/dashboard_types';
 import { ExplorePanelData } from '@grafana-module/app/types';
 
 interface ExploreToDashboardPanelOptions {

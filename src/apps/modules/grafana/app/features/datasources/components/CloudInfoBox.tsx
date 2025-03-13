@@ -1,5 +1,5 @@
 import { DataSourceSettings } from '@data/index';
-import { GrafanaEdition } from '@grafana/data/src/types/config';
+import { GrafanaEdition } from '@data/types/config';
 import { Alert } from '@grafana/ui';
 import { LocalStorageValueProvider } from '@grafana-module/app/core/components/LocalStorageValueProvider';
 import { config } from '@grafana-module/app/core/config';

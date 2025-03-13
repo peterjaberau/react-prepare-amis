@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { isEmpty } from 'lodash';
 
 import { locationService } from '@runtime/index';
-import { logMeasurement } from '@grafana/runtime/src/utils/logging';
+import { logMeasurement } from '@runtime/utils/logging';
 import {
   AlertManagerCortexConfig,
   AlertmanagerGroup,

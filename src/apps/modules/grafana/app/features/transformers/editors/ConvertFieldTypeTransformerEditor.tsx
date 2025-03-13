@@ -15,7 +15,7 @@ import {
 import {
   ConvertFieldTypeOptions,
   ConvertFieldTypeTransformerOptions,
-} from '@grafana/data/src/transformations/transformers/convertFieldType';
+} from '@data/transformations/transformers/convertFieldType';
 import { Button, InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { allFieldTypeIconOptions } from '@grafana/ui/src/components/MatchersUI/FieldTypeMatcherEditor';

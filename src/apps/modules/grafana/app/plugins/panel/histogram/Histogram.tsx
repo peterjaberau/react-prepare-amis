@@ -13,7 +13,7 @@ import {
 import {
   histogramBucketSizes,
   histogramFrameBucketMaxFieldName,
-} from '@grafana/data/src/transformations/transformers/histogram';
+} from '@data/transformations/transformers/histogram';
 import { VizLegendOptions, ScaleDistribution, AxisPlacement, ScaleDirection, ScaleOrientation } from '@schema/index';
 import {
   Themeable2,

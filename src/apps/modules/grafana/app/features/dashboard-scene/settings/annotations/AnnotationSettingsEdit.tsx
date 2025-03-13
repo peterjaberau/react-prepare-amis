@@ -12,7 +12,7 @@ import {
 } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { AnnotationPanelFilter } from '@grafana/schema/src/raw/dashboard/x/dashboard_types.gen';
+import { AnnotationPanelFilter } from '@schema/raw/dashboard/dashboard_types';
 import { Button, Checkbox, Field, FieldSet, Input, MultiSelect, Select, useStyles2, Stack, Alert } from '@grafana/ui';
 import { ColorValueEditor } from '@grafana-module/app/core/components/OptionsUI/color';
 import { Trans } from '@grafana-module/app/core/internationalization';

@@ -39,8 +39,8 @@ import {
   PanelKind,
   GridLayoutRowKind,
   GridLayoutItemKind,
-} from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { DashboardLink, DataTransformerConfig } from '@grafana/schema/src/raw/dashboard/x/dashboard_types.gen';
+} from '@schema/schema/dashboard/v2alpha0';
+import { DashboardLink, DataTransformerConfig } from '@schema/raw/dashboard/dashboard_types';
 import { isWeekStart, WeekStart } from '@grafana/ui';
 import {
   AnnoKeyCreatedBy,

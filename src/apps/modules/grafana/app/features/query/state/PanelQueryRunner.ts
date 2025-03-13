@@ -31,7 +31,7 @@ import {
   DataTopic,
 } from '@data/index';
 import { toDataQueryError } from '@runtime/index';
-import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { isStreamingDataFrame } from '@grafana-module/app/features/live/data/utils';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 import { getTemplateSrv } from '@grafana-module/app/features/templating/template_srv';

@@ -24,7 +24,7 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { Dashboard, DashboardLink, LibraryPanel } from '@schema/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import appEvents from '@grafana-module/app/core/app_events';
 import { ScrollRefElement } from '@grafana-module/app/core/components/NativeScrollbar';
 import { LS_PANEL_COPY_KEY } from '@grafana-module/app/core/constants';

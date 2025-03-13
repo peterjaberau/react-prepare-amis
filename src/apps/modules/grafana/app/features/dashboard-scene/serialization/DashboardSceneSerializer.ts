@@ -1,6 +1,6 @@
 import { config } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import { AnnoKeyDashboardSnapshotOriginalUrl } from '@grafana-module/app/features/apiserver/types';
 import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
 import { SaveDashboardAsOptions } from '@grafana-module/app/features/dashboard/components/SaveDashboard/types';

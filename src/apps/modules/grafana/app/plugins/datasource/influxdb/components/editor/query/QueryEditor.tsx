@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { QueryEditorProps } from '@grafana/data/src';
+import { QueryEditorProps } from '@data/index';
 
 import InfluxDatasource from '../../../datasource';
 import { buildRawQuery } from '../../../queryUtils';

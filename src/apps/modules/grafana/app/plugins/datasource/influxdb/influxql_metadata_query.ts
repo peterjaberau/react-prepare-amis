@@ -1,4 +1,4 @@
-import { ScopedVars } from '@grafana/data/src';
+import { ScopedVars } from '@data/index';
 import config from '@grafana-module/app/core/config';
 
 import InfluxDatasource from './datasource';

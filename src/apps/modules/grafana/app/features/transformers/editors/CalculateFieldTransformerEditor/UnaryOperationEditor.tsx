@@ -3,7 +3,7 @@ import {
   UnaryOptions,
   CalculateFieldMode,
   CalculateFieldTransformerOptions,
-} from '@grafana/data/src/transformations/transformers/calculateField';
+} from '@data/transformations/transformers/calculateField';
 import { InlineField, InlineFieldRow, InlineLabel, Select } from '@grafana/ui';
 
 import { LABEL_WIDTH } from './constants';

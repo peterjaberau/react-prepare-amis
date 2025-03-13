@@ -1,5 +1,5 @@
 import { QueryEditorProps } from '@data/index';
-import { SqlQueryEditorLazy, SQLOptions, SQLQuery, QueryHeaderProps } from '@grafana/sql';
+import { SqlQueryEditorLazy, SQLOptions, SQLQuery, QueryHeaderProps } from '@grafana-sql/index';
 
 import { PostgresDatasource } from './datasource';
 

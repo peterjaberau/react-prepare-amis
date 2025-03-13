@@ -8,7 +8,7 @@ import {
   MutableDataFrame,
   PreferredVisualisationType,
 } from '@data/index';
-import { convertFieldType } from '@grafana/data/src/transformations/transformers/convertFieldType';
+import { convertFieldType } from '@data/transformations/transformers/convertFieldType';
 import TableModel from '@grafana-module/app/core/TableModel';
 
 import { isMetricAggregationWithField } from './components/QueryEditor/MetricAggregationsEditor/aggregations';

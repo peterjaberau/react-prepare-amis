@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { NavModelItem } from '@data/index';
-import { LibraryPanel } from '@grafana/schema/dist/esm/index.gen';
+import { LibraryPanel } from '@schema/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 

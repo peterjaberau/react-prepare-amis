@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import { createSelectClause, haveColumns, RAQBFieldTypes, SQLQuery } from '@grafana/sql';
+import { createSelectClause, haveColumns, RAQBFieldTypes, SQLQuery } from '@grafana-sql/index';
 
 export function getFieldConfig(type: string): { raqbFieldType: RAQBFieldTypes; icon: string } {
   switch (type) {

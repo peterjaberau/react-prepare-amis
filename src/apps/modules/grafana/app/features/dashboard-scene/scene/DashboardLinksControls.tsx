@@ -1,4 +1,4 @@
-import { sanitizeUrl } from '@grafana/data/src/text/sanitize';
+import { sanitizeUrl } from '@data/text/sanitize';
 import { sceneGraph } from '@scenes/index';
 import { DashboardLink } from '@schema/index';
 import { Badge, Tooltip } from '@grafana/ui';

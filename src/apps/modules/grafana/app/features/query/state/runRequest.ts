@@ -19,7 +19,7 @@ import {
   TimeRange,
 } from '@data/index';
 import { config, isMigrationHandler, migrateRequest, toDataQueryError } from '@runtime/index';
-import { isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { isExpressionReference } from '@runtime/utils/DataSourceWithBackend';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 import { queryIsEmpty } from '@grafana-module/app/core/utils/query';
 import { dataSource as expressionDatasource } from '@grafana-module/app/features/expressions/ExpressionDatasource';

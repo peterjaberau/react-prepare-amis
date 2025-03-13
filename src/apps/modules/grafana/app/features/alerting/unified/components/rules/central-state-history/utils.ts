@@ -11,7 +11,7 @@ import {
   ThresholdsMode,
   getDisplayProcessor,
 } from '@data/index';
-import { fieldIndexComparer } from '@grafana/data/src/field/fieldComparers';
+import { fieldIndexComparer } from '@data/field/fieldComparers';
 import { mapStateWithReasonToBaseState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { labelsMatchMatchers } from '../../../utils/alertmanager';

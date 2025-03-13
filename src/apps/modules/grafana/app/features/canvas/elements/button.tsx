@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { PluginState } from '@grafana/data/src';
+import { PluginState } from '@data/index';
 import { TextDimensionMode } from '@schema/index';
 import { Button, Spinner, useStyles2 } from '@grafana/ui';
 import { DimensionContext } from '@grafana-module/app/features/dimensions/context';

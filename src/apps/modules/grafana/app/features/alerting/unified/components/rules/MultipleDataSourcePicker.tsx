@@ -8,7 +8,7 @@ import {
   isUnsignedPluginSignature,
 } from '@data/index';
 import { DataSourcePickerProps, DataSourcePickerState, getDataSourceSrv } from '@runtime/index';
-import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { ActionMeta, MultiSelect, PluginSignatureBadge, Stack } from '@grafana/ui';
 
 import { isDataSourceManagingAlerts } from '../../utils/datasource';

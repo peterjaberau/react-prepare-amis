@@ -6,7 +6,7 @@ import {
   SortOrder,
   StackingMode,
   TooltipDisplayMode,
-} from '@grafana/schema/dist/esm/common/common.gen';
+} from '@schema/common/common.gen';
 
 import { defaultHistogramConfig } from './config';
 import { FieldConfig as HistogramFieldConfig, Options } from './panelcfg.gen';

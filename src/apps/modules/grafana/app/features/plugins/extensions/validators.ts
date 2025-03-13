@@ -7,7 +7,7 @@ import type {
   PluginExtensionExposedComponentConfig,
   PluginExtensionAddedFunctionConfig,
 } from '@data/index';
-import { PluginAddedLinksConfigureFunc, PluginExtensionPoints } from '@grafana/data/src/types/pluginExtensions';
+import { PluginAddedLinksConfigureFunc, PluginExtensionPoints } from '@data/types/pluginExtensions';
 import { config, isPluginExtensionLink } from '@runtime/index';
 
 import * as errors from './errors';

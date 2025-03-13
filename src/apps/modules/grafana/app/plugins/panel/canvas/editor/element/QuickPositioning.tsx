@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data/src';
+import { GrafanaTheme2 } from '@data/index';
 import { IconButton, useStyles2 } from '@grafana/ui/src';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
 import { QuickPlacement } from '@grafana-module/app/features/canvas/types';

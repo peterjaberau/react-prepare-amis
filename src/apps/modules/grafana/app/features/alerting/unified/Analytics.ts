@@ -2,7 +2,7 @@ import { isEmpty } from 'lodash';
 
 import { dateTime } from '@data/index';
 import { createMonitoringLogger, getBackendSrv } from '@runtime/index';
-import { config, reportInteraction } from '@grafana/runtime/src';
+import { config, reportInteraction } from '@runtime/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 
 import { RuleNamespace } from '../../../types/unified-alerting';

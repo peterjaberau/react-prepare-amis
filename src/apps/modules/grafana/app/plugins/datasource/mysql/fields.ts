@@ -1,4 +1,4 @@
-import { RAQBFieldTypes, SQLSelectableValue } from '@grafana/sql';
+import { RAQBFieldTypes, SQLSelectableValue } from '@grafana-sql/index';
 
 export function mapFieldsToTypes(columns: SQLSelectableValue[]) {
   const fields: SQLSelectableValue[] = [];

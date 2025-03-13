@@ -12,7 +12,7 @@ import {
 } from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { VizPanel, sceneGraph } from '@scenes/index';
 import { DataSourceJsonData } from '@schema/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';

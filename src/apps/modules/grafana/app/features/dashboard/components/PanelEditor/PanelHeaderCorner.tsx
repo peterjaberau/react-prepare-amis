@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { Component } from 'react';
 
 import { renderMarkdown, LinkModelSupplier, ScopedVars, IconName } from '@data/index';
-import { GrafanaTheme2 } from '@grafana/data/';
+import { GrafanaTheme2 } from '@data/index';
 import { locationService, getTemplateSrv } from '@runtime/index';
 import { Tooltip, PopoverContent, Icon, Themeable2, withTheme2 } from '@grafana/ui';
 import { useStyles2 } from '@grafana/ui/';

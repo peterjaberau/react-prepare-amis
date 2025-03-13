@@ -2,7 +2,7 @@ import { AnyAction } from '@reduxjs/toolkit';
 import { Dispatch } from 'react';
 
 import { LibraryPanel } from '@schema/index';
-import { LibraryElementDTOMetaUser } from '@grafana/schema/src/raw/librarypanel/x/librarypanel_types.gen';
+import { LibraryElementDTOMetaUser } from '@schema/raw/librarypanel/librarypanel_types';
 
 import { PanelModel } from '../dashboard/state/PanelModel';
 

@@ -10,7 +10,7 @@ import {
   NumericRange,
   PanelProps,
 } from '@data/index';
-import { findNumericFieldMinMax } from '@grafana/data/src/field/fieldOverrides';
+import { findNumericFieldMinMax } from '@data/field/fieldOverrides';
 import { BigValueTextMode, BigValueGraphMode } from '@schema/index';
 import { BigValue, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
 import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';

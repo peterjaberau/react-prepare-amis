@@ -1,6 +1,6 @@
 import { config, locationService } from '@runtime/index';
-import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { Dashboard } from '@schema/index';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import { DashboardDataDTO, DashboardDTO } from '@grafana-module/app/types';
 
 import { SaveDashboardCommand } from '../components/SaveDashboard/types';

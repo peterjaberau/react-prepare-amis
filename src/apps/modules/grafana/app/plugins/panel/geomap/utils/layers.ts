@@ -3,7 +3,7 @@ import { FeatureLike } from 'ol/Feature';
 import { Subject } from 'rxjs';
 
 import { getFrameMatchers, MapLayerHandler, MapLayerOptions, PanelData, textUtil } from '@data/index';
-import { config } from '@grafana/runtime/src';
+import { config } from '@runtime/index';
 
 import { GeomapPanel } from '../GeomapPanel';
 import { MARKERS_LAYER_ID } from '../layers/data/markersLayer';

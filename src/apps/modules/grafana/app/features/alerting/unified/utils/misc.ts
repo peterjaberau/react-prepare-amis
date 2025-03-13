@@ -1,7 +1,7 @@
 import { sortBy } from 'lodash';
 
 import { Labels, UrlQueryMap } from '@data/index';
-import { GrafanaEdition } from '@grafana/data/src/types/config';
+import { GrafanaEdition } from '@data/types/config';
 import { config, isFetchError } from '@runtime/index';
 import { DataSourceRef } from '@schema/index';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

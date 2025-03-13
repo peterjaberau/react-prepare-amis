@@ -13,7 +13,7 @@ import {
   SplitOpen,
   TimeRange,
 } from '@data/index';
-import { reportInteraction } from '@grafana/runtime/src';
+import { reportInteraction } from '@runtime/index';
 import { InlineField, Select, Themeable2 } from '@grafana/ui/';
 
 import { parseLogsFrame } from '../../logs/logsFrame';

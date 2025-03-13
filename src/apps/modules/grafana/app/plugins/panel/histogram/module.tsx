@@ -5,7 +5,7 @@ import {
   identityOverrideProcessor,
   PanelPlugin,
 } from '@data/index';
-import { histogramFieldInfo } from '@grafana/data/src/transformations/transformers/histogram';
+import { histogramFieldInfo } from '@data/transformations/transformers/histogram';
 import { commonOptionsBuilder, graphFieldOptions } from '@grafana/ui';
 import { StackingEditor } from '@grafana/ui/src/options/builder';
 

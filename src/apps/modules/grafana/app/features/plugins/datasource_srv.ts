@@ -18,7 +18,7 @@ import {
   RuntimeDataSource,
   TemplateSrv,
 } from '@runtime/index';
-import { ExpressionDatasourceRef, isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
+import { ExpressionDatasourceRef, isExpressionReference } from '@runtime/utils/DataSourceWithBackend';
 import appEvents from '@grafana-module/app/core/app_events';
 import config from '@grafana-module/app/core/config';
 import {

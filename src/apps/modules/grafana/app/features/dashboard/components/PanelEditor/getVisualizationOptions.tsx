@@ -8,12 +8,12 @@ import {
   StandardEditorContext,
   VariableSuggestionsScope,
 } from '@data/index';
-import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
+import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';
 import {
   NestedValueAccess,
   PanelOptionsEditorBuilder,
   isNestedPanelOptions,
-} from '@grafana/data/src/utils/OptionsUIBuilders';
+} from '@data/utils/OptionsUIBuilders';
 import { VizPanel } from '@scenes/index';
 import { Input } from '@grafana/ui';
 import { LibraryVizPanelInfo } from '@grafana-module/app/features/dashboard-scene/panel-edit/LibraryVizPanelInfo';

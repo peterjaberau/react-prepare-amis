@@ -39,7 +39,7 @@ import {
   toDataFrame,
   toUtc,
 } from '@data/index';
-import { SIPrefix } from '@grafana/data/src/valueFormats/symbolFormatters';
+import { SIPrefix } from '@data/valueFormats/symbolFormatters';
 import { config } from '@runtime/index';
 import { BarAlignment, GraphDrawStyle, StackingMode } from '@schema/index';
 import { colors } from '@grafana/ui';

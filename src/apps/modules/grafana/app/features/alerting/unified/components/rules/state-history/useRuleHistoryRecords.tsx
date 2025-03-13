@@ -9,7 +9,7 @@ import {
   GrafanaTheme2,
   getDisplayProcessor,
 } from '@data/index';
-import { fieldIndexComparer } from '@grafana/data/src/field/fieldComparers';
+import { fieldIndexComparer } from '@data/field/fieldComparers';
 import { MappingType, ThresholdsMode } from '@schema/index';
 import { useTheme2 } from '@grafana/ui';
 

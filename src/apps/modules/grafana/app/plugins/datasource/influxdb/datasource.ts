@@ -34,7 +34,7 @@ import {
   getTemplateSrv,
   TemplateSrv,
 } from '@runtime/index';
-import { QueryFormat, SQLQuery } from '@grafana/sql';
+import { QueryFormat, SQLQuery } from '@grafana-sql/index';
 import config from '@grafana-module/app/core/config';
 
 import { AnnotationEditor } from './components/editor/annotation/AnnotationEditor';

@@ -1,6 +1,6 @@
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
-import { LibraryPanel } from '@grafana/schema/dist/esm/index.gen';
+import { LibraryPanel } from '@schema/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { ShareLibraryPanel } from '@grafana-module/app/features/dashboard/components/ShareModal/ShareLibraryPanel';
 import { shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';

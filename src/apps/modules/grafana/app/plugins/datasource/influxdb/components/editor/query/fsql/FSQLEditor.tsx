@@ -1,8 +1,8 @@
 import { css, cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data/src';
-import { SQLQuery, SqlQueryEditorLazy, applyQueryDefaults } from '@grafana/sql';
+import { GrafanaTheme2 } from '@data/index';
+import { SQLQuery, SqlQueryEditorLazy, applyQueryDefaults } from '@grafana-sql/index';
 import { InlineFormLabel, LinkButton, Themeable2, withTheme2 } from '@grafana/ui/src';
 
 import InfluxDatasource from '../../../../datasource';

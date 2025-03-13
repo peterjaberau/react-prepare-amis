@@ -1,5 +1,5 @@
 import { PanelBuilders } from '@scenes/index';
-import { SortOrder, TooltipDisplayMode } from '@grafana/schema/dist/esm/index';
+import { SortOrder, TooltipDisplayMode } from '@schema/index';
 
 import { HeatmapColorMode } from '../../../plugins/panel/heatmap/panelcfg.gen';
 

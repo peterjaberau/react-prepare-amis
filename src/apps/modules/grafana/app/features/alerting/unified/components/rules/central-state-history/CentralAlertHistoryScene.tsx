@@ -23,7 +23,7 @@ import {
   sceneGraph,
   useUrlSync,
 } from '@scenes/index';
-import { GraphDrawStyle, VisibilityMode } from '@grafana/schema/dist/esm/index';
+import { GraphDrawStyle, VisibilityMode } from '@schema/index';
 import {
   Button,
   GraphGradientMode,

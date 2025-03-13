@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { FeatureState, getBuiltInThemes, ThemeRegistryItem } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Preferences as UserPreferencesDTO } from '@grafana/schema/src/raw/preferences/x/preferences_types.gen';
+import { Preferences as UserPreferencesDTO } from '@schema/raw/preferences/preferences_types';
 import {
   Button,
   Field,

@@ -1,5 +1,5 @@
 import { DataSourcePlugin } from '@data/index';
-import { SQLQuery, SqlQueryEditorLazy } from '@grafana/sql';
+import { SQLQuery, SqlQueryEditorLazy } from '@grafana-sql/index';
 
 import { CheatSheet } from './CheatSheet';
 import { MySqlDatasource } from './MySqlDatasource';

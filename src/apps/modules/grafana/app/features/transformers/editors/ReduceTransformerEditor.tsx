@@ -9,7 +9,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
 } from '@data/index';
-import { ReduceTransformerMode, ReduceTransformerOptions } from '@grafana/data/src/transformations/transformers/reduce';
+import { ReduceTransformerMode, ReduceTransformerOptions } from '@data/transformations/transformers/reduce';
 import { InlineField, Select, StatsPicker, InlineSwitch } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

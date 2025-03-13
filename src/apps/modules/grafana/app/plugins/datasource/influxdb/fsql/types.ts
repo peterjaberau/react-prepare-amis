@@ -1,4 +1,4 @@
-import { SQLOptions, SQLQuery } from '@grafana/sql';
+import { SQLOptions, SQLQuery } from '@grafana-sql/index';
 
 export interface FlightSQLOptions extends SQLOptions {
   allowCleartextPasswords?: boolean;

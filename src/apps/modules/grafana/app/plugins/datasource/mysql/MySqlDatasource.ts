@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { DataSourceInstanceSettings, TimeRange } from '@data/index';
 import { CompletionItemKind, LanguageDefinition, TableIdentifier } from '@grafana/plugin-ui';
-import { COMMON_FNS, DB, FuncParameter, MACRO_FUNCTIONS, SQLQuery, SqlDatasource, formatSQL } from '@grafana/sql';
+import { COMMON_FNS, DB, FuncParameter, MACRO_FUNCTIONS, SQLQuery, SqlDatasource, formatSQL } from '@grafana-sql/index';
 
 import { mapFieldsToTypes } from './fields';
 import { buildColumnQuery, buildTableQuery, showDatabases } from './mySqlMetaQuery';

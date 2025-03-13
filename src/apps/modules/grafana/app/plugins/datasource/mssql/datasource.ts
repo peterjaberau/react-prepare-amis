@@ -12,7 +12,7 @@ import {
   SQLSelectableValue,
   SqlDatasource,
   formatSQL,
-} from '@grafana/sql';
+} from '@grafana-sql/index';
 
 import { getSchema, getSchemaAndName, showDatabases } from './MSSqlMetaQuery';
 import { MSSqlQueryModel } from './MSSqlQueryModel';

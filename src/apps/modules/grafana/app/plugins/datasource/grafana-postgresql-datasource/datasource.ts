@@ -12,7 +12,7 @@ import {
   SQLSelectableValue,
   SqlDatasource,
   formatSQL,
-} from '@grafana/sql';
+} from '@grafana-sql/index';
 
 import { PostgresQueryModel } from './PostgresQueryModel';
 import { getSchema, getTimescaleDBVersion, getVersion, showTables } from './postgresMetaQuery';

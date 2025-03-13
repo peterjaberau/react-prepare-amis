@@ -7,7 +7,7 @@ import {
   TableIdentifier,
   TokenType,
 } from '@grafana/plugin-ui';
-import { DB, SQLQuery } from '@grafana/sql';
+import { DB, SQLQuery } from '@grafana-sql/index';
 
 interface CompletionProviderGetterArgs {
   getColumns: React.MutableRefObject<(t: SQLQuery) => Promise<ColumnDefinition[]>>;

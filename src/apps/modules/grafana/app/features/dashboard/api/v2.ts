@@ -1,5 +1,5 @@
 import { locationUtil, UrlQueryMap } from '@data/index';
-import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 import { getMessageFromError, getStatusFromError } from '@grafana-module/app/core/utils/errors';
 import kbn from '@grafana-module/app/core/utils/kbn';

@@ -1,7 +1,7 @@
 import uPlot, { Axis, AlignedData, Scale } from 'uplot';
 
 import { DataFrame, dateTimeFormat, GrafanaTheme2, systemDateFormats, TimeZone } from '@data/index';
-import { alpha } from '@grafana/data/src/themes/colorManipulator';
+import { alpha } from '@data/themes/colorManipulator';
 import {
   StackingMode,
   VisibilityMode,

@@ -1,5 +1,5 @@
 import type { PluginExtensionAddedLinkConfig, PluginExtensionExposedComponentConfig } from '@data/index';
-import { PluginExtensionAddedComponentConfig } from '@grafana/data/src/types/pluginExtensions';
+import { PluginExtensionAddedComponentConfig } from '@data/types/pluginExtensions';
 import type { AppPluginConfig } from '@runtime/index';
 import { getPluginSettings } from '@grafana-module/app/features/plugins/pluginSettings';
 

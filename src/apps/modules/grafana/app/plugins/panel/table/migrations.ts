@@ -10,7 +10,7 @@ import {
   DataFrame,
   FieldType,
 } from '@data/index';
-import { ReduceTransformerOptions } from '@grafana/data/src/transformations/transformers/reduce';
+import { ReduceTransformerOptions } from '@data/transformations/transformers/reduce';
 
 import { Options } from './panelcfg.gen';
 

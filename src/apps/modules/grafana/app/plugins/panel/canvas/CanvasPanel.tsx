@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ReplaySubject, Subscription } from 'rxjs';
 
 import { PanelProps } from '@data/index';
-import { locationService } from '@grafana/runtime/src';
+import { locationService } from '@runtime/index';
 import { PanelContext, PanelContextRoot } from '@grafana/ui';
 import { CanvasFrameOptions } from '@grafana-module/app/features/canvas/frame';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';

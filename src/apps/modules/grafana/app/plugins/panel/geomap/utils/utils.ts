@@ -2,7 +2,7 @@ import { Map as OpenLayersMap } from 'ol';
 import { defaults as interactionDefaults } from 'ol/interaction';
 
 import { SelectableValue } from '@data/index';
-import { DataFrame, GrafanaTheme2 } from '@grafana/data/src';
+import { DataFrame, GrafanaTheme2 } from '@data/index';
 import { getColorDimension, getScalarDimension, getScaledDimension, getTextDimension } from '@grafana-module/app/features/dimensions';
 import { getGrafanaDatasource } from '@grafana-module/app/plugins/datasource/grafana/datasource';
 

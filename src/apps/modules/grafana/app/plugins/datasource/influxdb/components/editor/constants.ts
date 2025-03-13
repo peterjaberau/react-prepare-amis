@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data/src';
+import { SelectableValue } from '@data/index';
 
 import { ResultFormat } from '../../types';
 

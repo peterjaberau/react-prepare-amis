@@ -18,7 +18,7 @@ import {
   GridLayoutItemSpec,
   PanelKind,
   LibraryPanelKind,
-} from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0';
 import { contextSrv } from '@grafana-module/app/core/core';
 
 import { LibraryPanelBehavior } from '../../scene/LibraryPanelBehavior';

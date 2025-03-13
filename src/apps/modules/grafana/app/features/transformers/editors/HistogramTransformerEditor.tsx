@@ -10,7 +10,7 @@ import {
 import {
   histogramFieldInfo,
   HistogramTransformerInputs,
-} from '@grafana/data/src/transformations/transformers/histogram';
+} from '@data/transformations/transformers/histogram';
 import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana/ui';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
