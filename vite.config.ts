@@ -52,6 +52,7 @@ export default defineConfig({
       { find: "@prometheus", replacement: path.resolve(__dirname, "src/packages/grafana/prometheus") },
       { find: "@o11y-ds-frontend", replacement: path.resolve(__dirname, "src/packages/grafana/o11y-ds-frontend") },
       { find: "@scenes-react", replacement: path.resolve(__dirname, "src/packages/grafana/scenes-react") },
+      { find: "@selectors", replacement: path.resolve(__dirname, "src/packages/grafana/selectors") },
 
 
     ],
