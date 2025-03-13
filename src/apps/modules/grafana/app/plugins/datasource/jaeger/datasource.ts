@@ -15,7 +15,7 @@ import {
   ScopedVars,
   urlUtil,
 } from '@data/index';
-import { NodeGraphOptions, SpanBarOptions } from '@grafana/o11y-ds-frontend';
+import { NodeGraphOptions, SpanBarOptions } from '@o11y-ds-frontend/index';
 import {
   BackendSrvRequest,
   config,

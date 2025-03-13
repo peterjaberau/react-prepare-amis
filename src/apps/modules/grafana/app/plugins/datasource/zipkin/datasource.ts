@@ -11,7 +11,7 @@ import {
   ScopedVars,
   toDataFrame,
 } from '@data/index';
-import { createNodeGraphFrames, NodeGraphOptions, SpanBarOptions } from '@grafana/o11y-ds-frontend';
+import { createNodeGraphFrames, NodeGraphOptions, SpanBarOptions } from '@o11y-ds-frontend/index';
 import { DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 
 import { ZipkinQuery, ZipkinSpan } from './types';

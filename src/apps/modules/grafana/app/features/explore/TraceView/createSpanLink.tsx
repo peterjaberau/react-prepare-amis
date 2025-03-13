@@ -17,7 +17,7 @@ import {
   TraceToMetricsOptions,
   TraceToLogsOptionsV2,
   TraceToLogsTag,
-} from '@grafana/o11y-ds-frontend';
+} from '@o11y-ds-frontend/index';
 import { PromQuery } from '@prometheus/index';
 import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';

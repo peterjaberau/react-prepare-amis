@@ -16,7 +16,7 @@ import { css } from '@emotion/css';
 import { PureComponent, RefObject } from 'react';
 
 import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/index';
-import { SpanBarOptions, TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
+import { SpanBarOptions, TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
 import { stylesFactory, withTheme2 } from '@grafana-ui/index';

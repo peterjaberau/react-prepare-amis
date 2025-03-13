@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 
-import { useStyles2 } from '../../../../src/themes';
+import { useStyles2 } from '../../../themes';
 import { TimePickerButtonLabel, TimeRangePickerProps } from '../TimeRangePicker';
 import { isValidTimeRange } from '../utils';
 

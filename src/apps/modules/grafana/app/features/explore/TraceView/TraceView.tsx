@@ -14,7 +14,7 @@ import {
   mapInternalLinkToExplore,
   SplitOpen,
 } from '@data/index';
-import { getTraceToLogsOptions, TraceToMetricsData, TraceToProfilesData } from '@grafana/o11y-ds-frontend';
+import { getTraceToLogsOptions, TraceToMetricsData, TraceToProfilesData } from '@o11y-ds-frontend/index';
 import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { useStyles2 } from '@grafana-ui/index';

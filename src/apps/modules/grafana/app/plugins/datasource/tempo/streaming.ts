@@ -17,7 +17,7 @@ import {
   ThresholdsConfig,
   ThresholdsMode,
 } from '@data/index';
-import { cloneQueryResponse, combineResponses } from '@grafana/o11y-ds-frontend';
+import { cloneQueryResponse, combineResponses } from '@o11y-ds-frontend/index';
 import { getGrafanaLiveSrv } from '@runtime/index';
 
 import { SearchStreamingState } from './dataquery.gen';

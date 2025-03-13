@@ -1,7 +1,7 @@
 import { omit } from 'lodash';
 
 import { DataQuery, DataSourceApi, dateTimeFormat, ExploreUrlState, urlUtil } from '@data/index';
-import { serializeStateToUrlParam } from '@data/index/src/utils/url';
+import { serializeStateToUrlParam } from '@data/utils/url';
 import { getDataSourceSrv } from '@runtime/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { createErrorNotification, createWarningNotification } from '@grafana-module/app/core/copy/appNotification';

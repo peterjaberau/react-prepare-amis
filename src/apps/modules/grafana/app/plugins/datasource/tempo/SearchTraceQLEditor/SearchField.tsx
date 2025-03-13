@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
 import { SelectableValue } from '@data/index';
-import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
+import { TemporaryAlert } from '@o11y-ds-frontend/index';
 import { FetchError, getTemplateSrv, isFetchError } from '@runtime/index';
 import { Select, HorizontalGroup, useStyles2, InputActionMeta } from '@grafana-ui/index';
 

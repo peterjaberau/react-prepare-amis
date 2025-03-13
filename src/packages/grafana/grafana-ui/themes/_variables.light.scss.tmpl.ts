@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { renderGeneratedFileBanner } from '../utils/generatedFileBanner';
 
 export const lightThemeVarsTemplate = (theme: GrafanaTheme2) =>
-  `${renderGeneratedFileBanner('grafana-ui/src/themes/light.ts', 'grafana-ui/src/themes/_variable.light.scss.tmpl.ts')}
+  `${renderGeneratedFileBanner('grafana-ui/themes/light.ts', 'grafana-ui/src/themes/_variable.light.scss.tmpl.ts')}
 @use 'sass:color';
 // Global values
 // --------------------------------------------------

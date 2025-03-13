@@ -4,7 +4,7 @@ import $ from 'jquery';
 import { getTagColorsFromName } from '@grafana-ui/index';
 
 import coreModule from './core_module';
-import 'vendor/tagsinput/bootstrap-tagsinput.js';
+import '@grafana-module/vendor/tagsinput/bootstrap-tagsinput.js';
 
 function setColor(name: string, element: JQuery) {
   const { color, borderColor } = getTagColorsFromName(name);

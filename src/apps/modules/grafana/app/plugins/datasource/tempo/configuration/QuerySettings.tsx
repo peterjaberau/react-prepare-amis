@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2, updateDatasourcePluginJsonDataOption } from '@data/index';
-import { IntervalInput, invalidTimeShiftError } from '@grafana/o11y-ds-frontend';
+import { IntervalInput, invalidTimeShiftError } from '@o11y-ds-frontend/index';
 import { InlineField, InlineSwitch, useStyles2 } from '@grafana-ui/index';
 
 import { TempoJsonData } from '../types';

@@ -19,9 +19,9 @@ import {
   ValueMapping,
   ThresholdsConfig,
 } from '@data/index';
-import { maybeSortFrame, NULL_RETAIN } from '@data/index/src/transformations/transformers/joinDataFrames';
-import { applyNullInsertThreshold } from '@data/index/src/transformations/transformers/nulls/nullInsertThreshold';
-import { nullToValue } from '@data/index/src/transformations/transformers/nulls/nullToValue';
+import { maybeSortFrame, NULL_RETAIN } from '@data/transformations/transformers/joinDataFrames';
+import { applyNullInsertThreshold } from '@data/transformations/transformers/nulls/nullInsertThreshold';
+import { nullToValue } from '@data/transformations/transformers/nulls/nullToValue';
 import {
   VizLegendOptions,
   AxisPlacement,

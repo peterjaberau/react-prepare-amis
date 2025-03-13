@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useRef, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
+import { TemporaryAlert } from '@o11y-ds-frontend/index';
 import { reportInteraction } from '@runtime/index';
 import { CodeEditor, Monaco, monacoTypes, useTheme2 } from '@grafana-ui/index';
 

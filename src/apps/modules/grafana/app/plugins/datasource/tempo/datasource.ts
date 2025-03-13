@@ -23,7 +23,7 @@ import {
   TestDataSourceResponse,
   urlUtil,
 } from '@data/index';
-import { NodeGraphOptions, SpanBarOptions, TraceToLogsOptions } from '@grafana/o11y-ds-frontend';
+import { NodeGraphOptions, SpanBarOptions, TraceToLogsOptions } from '@o11y-ds-frontend/index';
 import {
   BackendSrvRequest,
   config,

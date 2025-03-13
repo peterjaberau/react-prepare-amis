@@ -22,7 +22,7 @@ import {
   TraceSpanReference,
   TraceSpanRow,
 } from '@data/index';
-import { createNodeGraphFrames, TraceToProfilesData } from '@grafana/o11y-ds-frontend';
+import { createNodeGraphFrames, TraceToProfilesData } from '@o11y-ds-frontend/index';
 import { getDataSourceSrv } from '@runtime/index';
 
 import { SearchTableType } from './dataquery.gen';

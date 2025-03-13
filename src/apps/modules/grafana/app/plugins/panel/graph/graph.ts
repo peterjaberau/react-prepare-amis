@@ -1,11 +1,11 @@
-import 'vendor/flot/jquery.flot';
-import 'vendor/flot/jquery.flot.selection';
-import 'vendor/flot/jquery.flot.time';
-import 'vendor/flot/jquery.flot.stack';
-import 'vendor/flot/jquery.flot.stackpercent';
-import 'vendor/flot/jquery.flot.fillbelow';
-import 'vendor/flot/jquery.flot.crosshair';
-import 'vendor/flot/jquery.flot.dashes';
+import '@grafana-module/vendor/flot/jquery.flot';
+import '@grafana-module/vendor/flot/jquery.flot.selection';
+import '@grafana-module/vendor/flot/jquery.flot.time';
+import '@grafana-module/vendor/flot/jquery.flot.stack';
+import '@grafana-module/vendor/flot/jquery.flot.stackpercent';
+import '@grafana-module/vendor/flot/jquery.flot.fillbelow';
+import '@grafana-module/vendor/flot/jquery.flot.crosshair';
+import '@grafana-module/vendor/flot/jquery.flot.dashes';
 import './jquery.flot.events';
 
 import $ from 'jquery';

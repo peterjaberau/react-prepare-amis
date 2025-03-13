@@ -10,6 +10,7 @@ import {
   GrafanaTheme2,
   SelectableValue,
 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { AnnotationPanelFilter } from '@schema/raw/dashboard/dashboard_types';

@@ -26,7 +26,7 @@ import {
   TraceKeyValuePair,
   TraceLog,
 } from '@data/index';
-import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
+import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
 import { DataLinkButton, Divider, Icon, TextArea, useStyles2 } from '@grafana-ui/index';

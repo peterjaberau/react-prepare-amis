@@ -7,7 +7,7 @@ import {
   TraceToLogsSection,
   TraceToMetricsSection,
   TraceToProfilesSection,
-} from '@grafana/o11y-ds-frontend';
+} from '@o11y-ds-frontend/index';
 import {
   AdvancedHttpSettings,
   Auth,

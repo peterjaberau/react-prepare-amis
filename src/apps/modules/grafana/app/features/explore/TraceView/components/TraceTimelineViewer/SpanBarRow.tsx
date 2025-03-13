@@ -17,7 +17,7 @@ import cx from 'classnames';
 import * as React from 'react';
 
 import { GrafanaTheme2, TraceKeyValuePair } from '@data/index';
-import { DURATION, NONE, TAG } from '@grafana/o11y-ds-frontend';
+import { DURATION, NONE, TAG } from '@o11y-ds-frontend/index';
 import { Icon, stylesFactory, withTheme2 } from '@grafana-ui/index';
 
 import { autoColor } from '../Theme';

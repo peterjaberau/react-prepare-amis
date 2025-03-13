@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 
-import { t } from '../../../src/utils/i18n';
+import { t } from '../../utils/i18n';
 import { useStyles2 } from '../../themes';
 import { Button, ButtonProps } from '../Button';
 import { Icon } from '../Icon/Icon';

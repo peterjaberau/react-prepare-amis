@@ -1,4 +1,4 @@
-import 'vendor/flot/jquery.flot';
+import '@grafana-module/vendor/flot/jquery.flot';
 import $ from 'jquery';
 import { isNumber } from 'lodash';
 

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
-import { NodeGraphSection, SpanBarSection, TraceToLogsSection, TraceToMetricsSection } from '@grafana/o11y-ds-frontend';
+import { NodeGraphSection, SpanBarSection, TraceToLogsSection, TraceToMetricsSection } from '@o11y-ds-frontend/index';
 import {
   AdvancedHttpSettings,
   Auth,

@@ -1,7 +1,7 @@
 import { DataFrame, Field, FieldType, outerJoinDataFrames, TimeRange } from '@data/index';
-import { NULL_EXPAND, NULL_REMOVE, NULL_RETAIN } from '@data/index/src/transformations/transformers/joinDataFrames';
-import { applyNullInsertThreshold } from '@data/index/src/transformations/transformers/nulls/nullInsertThreshold';
-import { nullToUndefThreshold } from '@data/index/src/transformations/transformers/nulls/nullToUndefThreshold';
+import { NULL_EXPAND, NULL_REMOVE, NULL_RETAIN } from '@data/transformations/transformers/joinDataFrames';
+import { applyNullInsertThreshold } from '@data/transformations/transformers/nulls/nullInsertThreshold';
+import { nullToUndefThreshold } from '@data/transformations/transformers/nulls/nullToUndefThreshold';
 import { GraphDrawStyle } from '@schema/index';
 
 import { XYFieldMatchers } from './types';

@@ -19,7 +19,7 @@ import * as React from 'react';
 import { RefObject } from 'react';
 
 import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/index';
-import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
+import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
 import { stylesFactory, withTheme2, ToolbarButton } from '@grafana-ui/index';

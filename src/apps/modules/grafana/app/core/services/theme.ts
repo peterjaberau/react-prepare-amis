@@ -1,4 +1,4 @@
-import { getThemeById } from '@data/index/src/themes/registry';
+import { getThemeById } from '@data/themes/registry';
 import { ThemeChangedEvent } from '@runtime/index';
 
 import appEvents from '../app_events';

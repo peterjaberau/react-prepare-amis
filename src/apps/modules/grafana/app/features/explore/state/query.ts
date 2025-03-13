@@ -21,7 +21,7 @@ import {
   SupplementaryQueryType,
   toLegacyResponseData,
 } from '@data/index';
-import { combinePanelData } from '@grafana/o11y-ds-frontend';
+import { combinePanelData } from '@o11y-ds-frontend/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import {

@@ -17,7 +17,7 @@ import classNames from 'classnames';
 import { PureComponent } from 'react';
 
 import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/index';
-import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
+import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { TimeZone } from '@schema/index';
 import { Button, clearButtonStyles, stylesFactory, withTheme2 } from '@grafana-ui/index';
 

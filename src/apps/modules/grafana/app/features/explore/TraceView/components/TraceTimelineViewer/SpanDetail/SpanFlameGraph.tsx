@@ -13,7 +13,7 @@ import {
   TimeZone,
 } from '@data/index';
 import { FlameGraph } from '@grafana/flamegraph';
-import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
+import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, DataSourceWithBackend, getTemplateSrv } from '@runtime/index';
 import { useStyles2 } from '@grafana-ui/index';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
