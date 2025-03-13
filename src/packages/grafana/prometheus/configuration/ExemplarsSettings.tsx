@@ -1,7 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/configuration/ExemplarsSettings.tsx
 import { css } from '@emotion/css';
 
-import { selectors } from '@grafana/e2e-selectors';
 import { ConfigSubSection } from '@grafana/plugin-ui';
 import { Button, useTheme2 } from '@grafana/ui';
 
@@ -17,7 +16,7 @@ type Props = {
 };
 
 export function ExemplarsSettings({ options, onChange, disabled }: Props) {
-  const theme = useTheme2();
+  const theme: any = useTheme2();
   const styles = overhaulStyles(theme);
   return (
     <div className={styles.sectionBottomPadding}>
@@ -46,7 +45,6 @@ export function ExemplarsSettings({ options, onChange, disabled }: Props) {
         {!disabled && (
           <Button
             variant="secondary"
-            data-testid={selectors.components.DataSource.Prometheus.configPage.exemplarsAddButton}
             className={css({
               marginBottom: '10px',
             })}

@@ -18,10 +18,10 @@ import {
   RuntimeDataSource,
   SceneVariableSet,
   QueryVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults } from './utils';
 import { Observable } from 'rxjs';
-import { LoadingState } from '@grafana/schema';
+import { LoadingState } from '@schema/index';
 
 export function getRuntimeDataSourceDemo(defaults: SceneAppPageState): SceneAppPage {
   sceneUtils.registerRuntimeDataSource({ dataSource: new MyCustomDS('my-custom-ds', 'my-custom-ds-uid') });

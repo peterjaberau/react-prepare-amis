@@ -9,7 +9,7 @@ import {
   SceneAppPageState,
   PanelBuilders,
   SceneReactObject,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import React from 'react';
 import { demoUrl } from '../utils/utils.routing';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';

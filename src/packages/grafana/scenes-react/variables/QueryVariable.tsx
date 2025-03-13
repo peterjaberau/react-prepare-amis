@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { QueryVariable as QueryVariableObject, SceneDataQuery } from '@grafana/scenes';
+import { QueryVariable as QueryVariableObject, SceneDataQuery } from '@scenes/index';
 import { useSceneContext } from '../hooks/hooks';
-import { DataSourceRef, VariableRefresh, VariableSort } from '@grafana/schema';
+import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';
 import { VariableProps } from './types';
 import { isEqual } from 'lodash';
 

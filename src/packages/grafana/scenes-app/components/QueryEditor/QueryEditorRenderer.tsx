@@ -5,7 +5,7 @@ import { CoreApp, GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
 
 import { getSceneQueryRunner, QueryEditor } from './QueryEditor';
-import { SceneComponentProps, sceneGraph } from '@grafana/scenes';
+import { SceneComponentProps, sceneGraph } from '@scenes/index';
 
 export function QueryEditorRenderer({ model }: SceneComponentProps<QueryEditor>) {
   const { datasource, datasourceLoadErrorMessage } = model.useState();

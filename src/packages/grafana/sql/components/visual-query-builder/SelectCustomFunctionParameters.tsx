@@ -2,7 +2,6 @@ import { css } from '@emotion/css';
 import { useCallback } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { Button, InlineLabel, Input, Stack, useStyles2 } from '@grafana/ui';
 
 import { QueryEditorExpressionType } from '../../expressions';
@@ -86,7 +85,6 @@ export function SelectCustomFunctionParameters({
             onChange={(e) => onParameterChange(index)(e.currentTarget.value)}
             value={param.name}
             aria-label={`Parameter ${index} for column ${columnIndex}`}
-            data-testid={selectors.components.SQLQueryEditor.selectInputParameter}
             addonAfter={
               <Button
                 title="Remove parameter"

@@ -19,7 +19,7 @@ export interface Props {
  * This is only exported so that core dashboards can use it.
  */
 export function SceneDebugger({ scene }: Props) {
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedObject, setSelectedObject] = useState<SceneObject>();
 

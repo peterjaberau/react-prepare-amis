@@ -15,7 +15,7 @@ import {
   SceneObjectBase,
   SceneObjectState,
   SceneObjectRef,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Button, Stack } from '@grafana/ui';
 import React from 'react';
 import { getEmbeddedSceneDefaults } from './utils';

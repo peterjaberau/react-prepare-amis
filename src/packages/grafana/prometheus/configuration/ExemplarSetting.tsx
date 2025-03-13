@@ -2,7 +2,6 @@
 import { useState } from 'react';
 
 import { DataSourceInstanceSettings } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { config, DataSourcePicker } from '@runtime/index';
 import { Button, InlineField, Input, Switch, useTheme2 } from '@grafana/ui';
 
@@ -20,7 +19,7 @@ type Props = {
 export function ExemplarSetting({ value, onChange, onDelete, disabled }: Props) {
   const [isInternalLink, setIsInternalLink] = useState(Boolean(value.datasourceUid));
 
-  const theme = useTheme2();
+  const theme: any = useTheme2();
   const styles = overhaulStyles(theme);
 
   return (
@@ -41,7 +40,6 @@ export function ExemplarSetting({ value, onChange, onDelete, disabled }: Props) 
         <>
           <Switch
             value={isInternalLink}
-            data-testid={selectors.components.DataSource.Prometheus.configPage.internalLinkSwitch}
             onChange={(ev) => setIsInternalLink(ev.currentTarget.checked)}
           />
         </>

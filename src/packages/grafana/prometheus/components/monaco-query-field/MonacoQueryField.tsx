@@ -7,7 +7,6 @@ import { useLatest } from 'react-use';
 import { v4 as uuidv4 } from 'uuid';
 
 import { GrafanaTheme2 } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { Monaco, monacoTypes, ReactMonacoEditor, useTheme2 } from '@grafana/ui';
 
 import { Props } from './MonacoQueryFieldProps';
@@ -114,7 +113,7 @@ const MonacoQueryField = (props: Props) => {
 
   const autocompleteDisposeFun = useRef<(() => void) | null>(null);
 
-  const theme = useTheme2();
+  const theme: any = useTheme2();
   const styles = getStyles(theme, placeholder);
 
   useEffect(() => {
@@ -126,7 +125,6 @@ const MonacoQueryField = (props: Props) => {
 
   return (
     <div
-      data-testid={selectors.components.QueryField.container}
       className={styles.container}
       // NOTE: we will be setting inline-style-width/height on this element
       ref={containerRef}

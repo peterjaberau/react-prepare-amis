@@ -1,9 +1,9 @@
-import { useQueryVariable } from '@grafana/scenes-react';
+import { useQueryVariable } from '@scenes-react/index';
 import { Button, Stack } from '@grafana/ui';
 import React from 'react';
 import { PageWrapper } from './PageWrapper';
 import { DemoVizLayout } from './utils';
-import { VariableValueOption } from '@grafana/scenes';
+import { VariableValueOption } from '@scenes/index';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 

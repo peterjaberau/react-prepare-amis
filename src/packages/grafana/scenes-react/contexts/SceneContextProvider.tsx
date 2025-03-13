@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { SceneTimeRangeState, SceneTimeRange, behaviors, UrlSyncContextProvider } from '@grafana/scenes';
+import { SceneTimeRangeState, SceneTimeRange, behaviors, UrlSyncContextProvider } from '@scenes/index';
 
 import { SceneContextObject, SceneContextObjectState } from './SceneContextObject';
 

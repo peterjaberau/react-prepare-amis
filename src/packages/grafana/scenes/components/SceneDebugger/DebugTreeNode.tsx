@@ -11,7 +11,7 @@ export interface Props {
 }
 
 export function DebugTreeNode({ node, selectedObject, onSelect }: Props) {
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
   const children: ReactNode[] = [];
   const isSelected = node === selectedObject;
 

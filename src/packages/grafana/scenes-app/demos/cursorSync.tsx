@@ -7,8 +7,8 @@ import {
   SceneFlexItem,
   SceneFlexLayout,
   VizPanel,
-} from '@grafana/scenes';
-import { DashboardCursorSync } from '@grafana/schema';
+} from '@scenes/index';
+import { DashboardCursorSync } from '@schema/index';
 import { demoUrl } from '../utils/utils.routing';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { SceneDataQuery, SceneQueryRunner } from '@grafana/scenes';
-import { DataSourceRef } from '@grafana/schema';
+import { SceneDataQuery, SceneQueryRunner } from '@scenes/index';
+import { DataSourceRef } from '@schema/index';
 import { isEqual } from 'lodash';
 import { CacheKey } from '../caching/SceneObjectCache';
 import { useSceneObject } from './useSceneObject';

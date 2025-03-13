@@ -6,7 +6,7 @@ import {
   SceneFlexItem,
   SceneFlexLayout,
   VizPanelMenu,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getPanelMenuTest(defaults: SceneAppPageState): SceneAppPage {

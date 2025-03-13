@@ -18,10 +18,10 @@ import {
   SceneTimeRange,
   SceneVariableSet,
   VariableValueSelectors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
 import { Button, Stack } from '@grafana/ui';
-import { NewSceneObjectAddedEvent } from '@grafana/scenes/src/services/UrlSyncManager';
+import { NewSceneObjectAddedEvent } from '@scenes/services/UrlSyncManager';
 
 export function getUrlSyncTest(defaults: SceneAppPageState) {
   return new SceneAppPage({

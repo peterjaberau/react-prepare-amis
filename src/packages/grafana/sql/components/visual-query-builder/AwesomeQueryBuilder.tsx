@@ -5,8 +5,6 @@ import {
   Operator,
   OperatorOptionsI,
   Settings,
-  SimpleField,
-  SqlFormatOperator,
   Utils,
   ValueSource,
   Widgets,
@@ -15,7 +13,6 @@ import { List } from 'immutable';
 import { isString } from 'lodash';
 
 import { dateTime, toOption } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { Button, DateTimePicker, Input, Select } from '@grafana/ui';
 
 const buttonLabels = {
@@ -37,7 +34,7 @@ export const widgets: Widgets = {
   ...BasicConfig.widgets,
   text: {
     ...BasicConfig.widgets.text,
-    factory: function TextInput(props) {
+    factory: function TextInput(props: any) {
       return (
         <Input
           value={props?.value || ''}
@@ -49,7 +46,7 @@ export const widgets: Widgets = {
   },
   number: {
     ...BasicConfig.widgets.number,
-    factory: function NumberInput(props) {
+    factory: function NumberInput(props: any) {
       return (
         <Input
           value={props?.value}
@@ -62,7 +59,7 @@ export const widgets: Widgets = {
   },
   datetime: {
     ...BasicConfig.widgets.datetime,
-    factory: function DateTimeInput(props) {
+    factory: function DateTimeInput(props: any) {
       if (props?.operator === Op.MACROS) {
         return (
           <Select
@@ -124,7 +121,6 @@ export const settings: Settings = {
       <Select
         id={conjProps?.id}
         aria-label="Conjunction"
-        data-testid={selectors.components.SQLQueryEditor.filterConjunction}
         menuShouldPortal
         options={conjProps?.conjunctionOptions ? Object.keys(conjProps?.conjunctionOptions).map(toOption) : undefined}
         value={conjProps?.selectedConjunction}
@@ -140,7 +136,6 @@ export const settings: Settings = {
         id={fieldProps?.id}
         width={25}
         aria-label="Field"
-        data-testid={selectors.components.SQLQueryEditor.filterField}
         menuShouldPortal
         options={fieldProps?.items.map((f) => {
           // @ts-ignore
@@ -177,7 +172,6 @@ export const settings: Settings = {
       <Select
         options={operatorProps?.items.map((op) => ({ label: op.label, value: op.key }))}
         aria-label="Operator"
-        data-testid={selectors.components.SQLQueryEditor.filterOperator}
         menuShouldPortal
         value={operatorProps?.selectedKey}
         onChange={(val) => {
@@ -232,13 +226,13 @@ export const raqbConfig: Config = {
   settings,
   operators: customOperators,
   types: customTypes,
-};
+} as any;
 
 export type { Config };
 
 const noop = () => '';
 
-const isSqlFormatOp = (func: unknown): func is SqlFormatOperator => {
+const isSqlFormatOp = (func: unknown): func is any => {
   return typeof func === 'function';
 };
 
@@ -246,7 +240,7 @@ function getCustomOperators(config: BasicConfig) {
   const { ...supportedOperators } = config.operators;
 
   // IN operator expects array, override IN formatter for multi-value variables
-  const sqlFormatInOpOrNoop = () => {
+  const sqlFormatInOpOrNoop: any = () => {
     const sqlFormatOp = supportedOperators[Op.IN].sqlFormatOp;
     if (isSqlFormatOp(sqlFormatOp)) {
       return sqlFormatOp;
@@ -262,7 +256,7 @@ function getCustomOperators(config: BasicConfig) {
     valueType: string,
     opDef: Operator,
     operatorOptions: OperatorOptionsI,
-    fieldDef: SimpleField
+    fieldDef: any
   ) => {
     return sqlFormatInOpOrNoop()(
       field,
@@ -274,9 +268,9 @@ function getCustomOperators(config: BasicConfig) {
       operatorOptions,
       fieldDef
     );
-  };
+  } ;
   // NOT IN operator expects array, override NOT IN formatter for multi-value variables
-  const sqlFormatNotInOpOrNoop = () => {
+  const sqlFormatNotInOpOrNoop: any = () => {
     const sqlFormatOp = supportedOperators[Op.NOT_IN].sqlFormatOp;
     if (isSqlFormatOp(sqlFormatOp)) {
       return sqlFormatOp;
@@ -292,7 +286,7 @@ function getCustomOperators(config: BasicConfig) {
     valueType: string,
     opDef: Operator,
     operatorOptions: OperatorOptionsI,
-    fieldDef: SimpleField
+    fieldDef: any
   ) => {
     return sqlFormatNotInOpOrNoop()(
       field,

@@ -1,4 +1,4 @@
-import { QueryVariable, SceneDataQuery, sceneGraph } from '@grafana/scenes';
+import { QueryVariable, SceneDataQuery, sceneGraph } from '@scenes/index';
 import { useSceneContext } from './hooks';
 import { useEffect } from 'react';
 import { isEqual } from 'lodash';

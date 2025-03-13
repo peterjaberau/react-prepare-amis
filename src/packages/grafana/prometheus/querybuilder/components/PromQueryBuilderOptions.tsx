@@ -3,7 +3,6 @@ import { SyntheticEvent } from 'react';
 import * as React from 'react';
 
 import { CoreApp, SelectableValue } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorField, EditorRow, EditorSwitch } from '@grafana/plugin-ui';
 import { AutoSizeInput, RadioButtonGroup, Select } from '@grafana/ui';
 
@@ -66,7 +65,7 @@ export const PromQueryBuilderOptions = React.memo<PromQueryBuilderOptionsProps>(
 
     return (
       <EditorRow>
-        <div data-testid={selectors.components.DataSource.Prometheus.queryEditor.options}>
+        <div>
           <QueryOptionGroup
             title="Options"
             collapsedInfo={getCollapsedInfo(query, formatOption.label!, queryTypeLabel, app)}
@@ -97,14 +96,13 @@ export const PromQueryBuilderOptions = React.memo<PromQueryBuilderOptionsProps>(
             </EditorField>
             <EditorField label="Format">
               <Select
-                data-testid={selectors.components.DataSource.Prometheus.queryEditor.format}
                 value={formatOption}
                 allowCustomValue
                 onChange={onChangeFormat}
                 options={FORMAT_OPTIONS}
               />
             </EditorField>
-            <EditorField label="Type" data-testid={selectors.components.DataSource.Prometheus.queryEditor.type}>
+            <EditorField label="Type">
               <RadioButtonGroup options={queryTypeOptions} value={queryTypeValue} onChange={onQueryTypeChange} />
             </EditorField>
             {shouldShowExemplarSwitch(query, app) && (

@@ -7,7 +7,7 @@ import {
   SceneObjectBase,
   SceneObjectState,
   sceneGraph,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { BusEventWithPayload } from '@data/index';
 import { Button, Stack, useTheme2 } from '@grafana/ui';
 

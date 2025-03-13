@@ -1,11 +1,11 @@
-import { useQueryRunner, VizPanel } from '@grafana/scenes-react';
+import { useQueryRunner, VizPanel } from '@scenes-react/index';
 import { RadioButtonGroup, Stack } from '@grafana/ui';
 import React, { useState } from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';
 import { SelectableValue } from '@data/index';
 import { graphWithGrapdientColor, plainGraph, timeSeriesBars } from './visualizations';
-import { VizConfig } from '@grafana/scenes';
+import { VizConfig } from '@scenes/index';
 import { DemoVizLayout } from './utils';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 

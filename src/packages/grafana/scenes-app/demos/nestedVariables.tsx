@@ -12,7 +12,7 @@ import {
   PanelBuilders,
   VariableValueSelectors,
   SceneTimePicker,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getNestedScenesAndVariablesDemo(defaults: SceneAppPageState) {

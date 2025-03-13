@@ -8,7 +8,7 @@ import {
   SceneDataTransformer,
   SceneFlexItem,
   SceneFlexLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getTransformationsTest(defaults: SceneAppPageState) {

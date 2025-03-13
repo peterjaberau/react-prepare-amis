@@ -218,7 +218,7 @@ export const OptionWithCheckbox = ({
   const { onMouseMove, onMouseOver, ...rest } = innerProps;
   const theme = useTheme2();
   const selectStyles = getSelectStyles(theme);
-  const optionStyles = useStyles2(getOptionStyles);
+  const optionStyles: any = useStyles2(getOptionStyles as any);
 
   return (
     <div

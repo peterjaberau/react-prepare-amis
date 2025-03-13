@@ -1,11 +1,11 @@
-import { SceneObjectBase, SceneQueryRunner, SceneObject, SceneObjectState } from '@grafana/scenes';
+import { SceneObjectBase, SceneQueryRunner, SceneObject, SceneObjectState } from '@scenes/index';
 
 import { QueryEditorRenderer } from './QueryEditorRenderer';
-import { DataQuery, DataSourceRef } from '@grafana/schema';
+import { DataQuery, DataSourceRef } from '@schema/index';
 
 import { DataSourceApi, ScopedVars } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { getClosest } from '@grafana/scenes/src/core/sceneGraph/utils';
+import { getClosest } from '@scenes/core/sceneGraph/utils';
 
 export interface QueryEditorState extends SceneObjectState {
   datasource?: DataSourceApi;

@@ -1,4 +1,4 @@
-import { EmbeddedScene, SceneAppPage, SceneAppPageState, SceneCSSGridLayout, VizPanel } from '@grafana/scenes';
+import { EmbeddedScene, SceneAppPage, SceneAppPageState, SceneCSSGridLayout, VizPanel } from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getSeriesLimitTest(defaults: SceneAppPageState) {

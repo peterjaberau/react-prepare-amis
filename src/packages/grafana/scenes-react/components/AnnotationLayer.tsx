@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSceneContext } from '../hooks/hooks';
 import { AnnotationQuery } from '@data/index';
-import { SceneDataLayerSet, dataLayers } from '@grafana/scenes';
+import { SceneDataLayerSet, dataLayers } from '@scenes/index';
 import { SceneContextObject } from '../contexts/SceneContextObject';
 import { writeSceneLog } from '../utils';
 

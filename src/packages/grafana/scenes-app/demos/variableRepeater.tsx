@@ -11,7 +11,7 @@ import {
   VariableValueSelectors,
   SceneByVariableRepeater,
   VariableValueOption,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getVariableRepeaterDemo(defaults: SceneAppPageState) {

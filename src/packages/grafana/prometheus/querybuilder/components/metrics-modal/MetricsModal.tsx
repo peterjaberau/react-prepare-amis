@@ -5,7 +5,6 @@ import debounce from 'debounce-promise';
 import { useCallback, useEffect, useMemo, useReducer } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import {
   Button,
   ButtonGroup,
@@ -60,7 +59,7 @@ export const MetricsModal = (props: MetricsModalProps) => {
 
   const [state, dispatch] = useReducer(stateSlice.reducer, initialState(query));
 
-  const theme = useTheme2();
+  const theme: any = useTheme2();
   const styles = getStyles(theme, state.disableTextWrap);
 
   /**
@@ -195,7 +194,6 @@ export const MetricsModal = (props: MetricsModalProps) => {
       <FeedbackLink feedbackUrl="https://forms.gle/DEMAJHoAMpe3e54CA" />
       <div
         className={styles.inputWrapper}
-        data-testid={selectors.components.DataSource.Prometheus.queryEditor.builder.metricsExplorer}
       >
         <div className={cx(styles.inputItem, styles.inputItemFirst)}>
           <Input

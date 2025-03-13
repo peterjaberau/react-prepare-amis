@@ -10,7 +10,7 @@ import {
   SceneTimePicker,
   SceneTimeRange,
   SceneTimeRangeCompare,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getTimeRangeComparisonTest(defaults: SceneAppPageState) {

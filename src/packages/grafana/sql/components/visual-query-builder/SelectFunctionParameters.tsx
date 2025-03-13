@@ -2,7 +2,6 @@ import { css } from '@emotion/css';
 import { useCallback, useEffect, useId, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorField } from '@grafana/plugin-ui';
 import { InlineLabel, Input, Select, Stack, useStyles2 } from '@grafana/ui';
 
@@ -99,7 +98,6 @@ export function SelectFunctionParameters({ query, onSqlChange, currentColumnInde
                 <Select
                   value={getColumnValue(macroOrFunction?.parameters![index])}
                   options={fieldsFromFunction?.[index]}
-                  data-testid={selectors.components.SQLQueryEditor.selectFunctionParameter(funcParam.name)}
                   inputId={selectInputId}
                   menuShouldPortal
                   allowCustomValue
@@ -110,7 +108,6 @@ export function SelectFunctionParameters({ query, onSqlChange, currentColumnInde
                 <Input
                   onChange={(e) => onParameterChange(index, true)(e.currentTarget.value)}
                   value={macroOrFunction?.parameters![index]?.name}
-                  data-testid={selectors.components.SQLQueryEditor.selectInputParameter}
                 />
               )}
             </>

@@ -10,7 +10,7 @@ import {
   SceneVariableSet,
   VariableValueSelectors,
   GroupByVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults } from './utils';
 
 export function getGroupByDatasource(defaults: SceneAppPageState) {

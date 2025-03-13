@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana/ui';
-import { selectors } from '@grafana/e2e-selectors';
 import { GrafanaTheme2, IconName } from '@data/index';
 import { css } from '@emotion/css';
 import { LoadingIndicator } from './LoadingIndicator';
@@ -19,7 +18,7 @@ interface ControlsLabelProps {
 }
 
 export function ControlsLabel(props: ControlsLabelProps) {
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
   const theme = useTheme2();
   const isVertical = props.layout === 'vertical';
 
@@ -66,7 +65,7 @@ export function ControlsLabel(props: ControlsLabelProps) {
         {props.label}
         {descriptionIndicator}
         {errorIndicator}
-        {props.icon && <Icon name={props.icon} className={styles.normalIcon} />}
+        {props.icon && <Icon name={props.icon as any} className={styles.normalIcon} />}
         {loadingIndicator}
         {props.onRemove && (
           <IconButton variant="secondary" size="xs" name="times" onClick={props.onRemove} tooltip={'Remove'} />
@@ -77,7 +76,7 @@ export function ControlsLabel(props: ControlsLabelProps) {
     labelElement = (
       <label className={styles.horizontalLabel} htmlFor={props.htmlFor}>
         {errorIndicator}
-        {props.icon && <Icon name={props.icon} className={styles.normalIcon} />}
+        {props.icon && <Icon name={props.icon as any} className={styles.normalIcon} />}
         {props.label}
         {descriptionIndicator}
         {loadingIndicator}

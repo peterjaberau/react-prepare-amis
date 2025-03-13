@@ -1,5 +1,5 @@
 import React from 'react';
-import { ControlsLayout, sceneGraph, VariableValueSelectWrapper } from '@grafana/scenes';
+import { ControlsLayout, sceneGraph, VariableValueSelectWrapper } from '@scenes/index';
 import { useSceneContext } from '../hooks/hooks';
 
 export interface Props {

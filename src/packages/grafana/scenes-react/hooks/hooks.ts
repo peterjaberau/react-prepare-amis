@@ -7,7 +7,7 @@ import {
   VariableValue,
   sceneGraph,
   SceneTimeRangeLike,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Subscription } from 'rxjs';
 
 export function useSceneContext() {

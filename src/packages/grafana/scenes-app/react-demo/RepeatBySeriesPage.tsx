@@ -4,7 +4,7 @@ import {
   useQueryRunner,
   useVariableInterpolator,
   VizPanel,
-} from '@grafana/scenes-react';
+} from '@scenes-react/index';
 import { Stack } from '@grafana/ui';
 import React from 'react';
 
@@ -12,7 +12,7 @@ import { PageWrapper } from './PageWrapper';
 import { getFrameDisplayName } from '@data/index';
 import { plainGraph } from './visualizations';
 import { DemoVizLayout } from './utils';
-import { SceneDataNode } from '@grafana/scenes';
+import { SceneDataNode } from '@scenes/index';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 
 export function RepeatBySeriesPage() {

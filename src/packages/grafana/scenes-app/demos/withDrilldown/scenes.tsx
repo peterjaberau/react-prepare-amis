@@ -1,5 +1,5 @@
 import { ReducerID } from '@data/index';
-import { EmbeddedScene, SceneFlexLayout, SceneQueryRunner, SceneFlexItem, PanelBuilders } from '@grafana/scenes';
+import { EmbeddedScene, SceneFlexLayout, SceneQueryRunner, SceneFlexItem, PanelBuilders } from '@scenes/index';
 import { DATASOURCE_REF } from '../../constants';
 import { getEmbeddedSceneDefaults } from '../utils';
 import { getRoomTemperatureStatPanel } from './panels';

@@ -9,11 +9,11 @@ import {
   SceneFlexItem,
   SceneQueryRunner,
   SplitLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery, getEmbeddedSceneDefaults } from './utils';
 import { demoUrl } from '../utils/utils.routing';
 import { DATASOURCE_REF } from '../constants';
-import { BarGaugeDisplayMode, FieldColorModeId, TableCellDisplayMode } from '@grafana/schema';
+import { BarGaugeDisplayMode, FieldColorModeId, TableCellDisplayMode } from '@schema/index';
 import { DataLinkClickEvent } from '@data/index';
 import { getRoomTemperatureQuery } from './withDrilldown/scenes';
 import { IconButton } from '@grafana/ui';

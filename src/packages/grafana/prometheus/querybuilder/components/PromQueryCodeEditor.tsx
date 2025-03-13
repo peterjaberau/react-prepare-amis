@@ -2,7 +2,6 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { useStyles2 } from '@grafana/ui';
 
 import { PromQueryField } from '../../components/PromQueryField';
@@ -16,11 +15,10 @@ type PromQueryCodeEditorProps = PromQueryEditorProps & {
 
 export function PromQueryCodeEditor(props: PromQueryCodeEditorProps) {
   const { query, datasource, range, onRunQuery, onChange, data, app, showExplain } = props;
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
 
   return (
     <div
-      data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.queryField}
       className={styles.wrapper}
     >
       <PromQueryField

@@ -10,7 +10,7 @@ import {
   sceneGraph,
   SceneObject,
   PanelBuilders,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import {
   getQueryRunnerWithRandomWalkQuery,
   getEmbeddedSceneDefaults,

@@ -9,8 +9,8 @@ import {
   SceneFlexItem,
   SceneFlexLayout,
   SceneToolbarInput,
-} from '@grafana/scenes';
-import { BigValueGraphMode } from '@grafana/schema';
+} from '@scenes/index';
+import { BigValueGraphMode } from '@schema/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getPanelRepeaterTest(defaults: SceneAppPageState) {

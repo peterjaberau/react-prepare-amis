@@ -6,7 +6,7 @@ import {
   SceneDataTransformer,
   SceneFlexItem,
   SceneFlexLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery, getEmbeddedSceneDefaults } from './utils';
 
 export function getQueryCancellationTest(defaults: SceneAppPageState) {

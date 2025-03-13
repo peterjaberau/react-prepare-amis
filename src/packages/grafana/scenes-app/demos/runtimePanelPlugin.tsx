@@ -7,7 +7,7 @@ import {
   SceneAppPageState,
   SceneAppPage,
   sceneUtils,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import React from 'react';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 

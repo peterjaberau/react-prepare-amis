@@ -1,4 +1,4 @@
-import { useQueryRunner, VizPanel } from '@grafana/scenes-react';
+import { useQueryRunner, VizPanel } from '@scenes-react/index';
 import React from 'react';
 import { plainGraph } from './visualizations';
 

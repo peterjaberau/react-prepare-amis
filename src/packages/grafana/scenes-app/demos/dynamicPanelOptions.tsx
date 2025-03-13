@@ -12,10 +12,10 @@ import {
   SceneObjectBase,
   SceneObjectState,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { RadioButtonGroup } from '@grafana/ui';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
-import { GraphDrawStyle, LegendDisplayMode, StackingMode, TooltipDisplayMode, VizOrientation } from '@grafana/schema';
+import { GraphDrawStyle, LegendDisplayMode, StackingMode, TooltipDisplayMode, VizOrientation } from '@schema/index';
 
 export function getDynamicVizOptionsTest(defaults: SceneAppPageState) {
   return new SceneAppPage({

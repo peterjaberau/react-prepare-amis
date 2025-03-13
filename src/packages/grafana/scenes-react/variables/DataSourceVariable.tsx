@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { DataSourceVariable as DataSourceVariableObject } from '@grafana/scenes';
+import { DataSourceVariable as DataSourceVariableObject } from '@scenes/index';
 import { useSceneContext } from '../hooks/hooks';
-import { VariableRefresh, VariableSort } from '@grafana/schema';
+import { VariableRefresh, VariableSort } from '@schema/index';
 import { VariableProps } from './types';
 
 export interface DataSourceVariableProps extends VariableProps {

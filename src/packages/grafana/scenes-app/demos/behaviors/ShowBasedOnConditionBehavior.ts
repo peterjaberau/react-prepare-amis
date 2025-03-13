@@ -1,4 +1,4 @@
-import { sceneGraph, SceneObject, SceneObjectState } from '@grafana/scenes';
+import { sceneGraph, SceneObject, SceneObjectState } from '@scenes/index';
 import { HiddenLayoutItemBehavior } from './HiddenLayoutItemBehavior';
 
 export interface ShowBasedOnConditionBehaviorState extends SceneObjectState {

@@ -1,10 +1,10 @@
-import { CustomVariable, DataSourceVariable, QueryVariable, VariableControl } from '@grafana/scenes-react';
+import { CustomVariable, DataSourceVariable, QueryVariable, VariableControl } from '@scenes-react/index';
 import { Button, Stack } from '@grafana/ui';
 import React from 'react';
 import { PageWrapper } from './PageWrapper';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { DemoVizLayout } from './utils';
-import { VariableHide, VariableRefresh, VariableSort } from '@grafana/schema';
+import { VariableHide, VariableRefresh, VariableSort } from '@schema/index';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 
 export function DynamicVariablesPage() {

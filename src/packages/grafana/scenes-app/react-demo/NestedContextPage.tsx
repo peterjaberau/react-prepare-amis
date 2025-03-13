@@ -2,7 +2,7 @@ import { Stack, useTheme2 } from '@grafana/ui';
 import React from 'react';
 import { PageWrapper } from './PageWrapper';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
-import { CustomVariable, TimeRangePicker, VariableControl, SceneContextProvider } from '@grafana/scenes-react';
+import { CustomVariable, TimeRangePicker, VariableControl, SceneContextProvider } from '@scenes-react/index';
 import { DemoVizLayout } from './utils';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 

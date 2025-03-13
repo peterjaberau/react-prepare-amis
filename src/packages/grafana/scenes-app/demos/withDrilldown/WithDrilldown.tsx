@@ -7,7 +7,7 @@ import {
   SceneFlexItem,
   SceneFlexLayout,
   SceneQueryRunner,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Counter } from '@grafana/ui';
 import { getHumidityOverviewScene, getRoomDrilldownScene } from './scenes';
 import { getRoomsTemperatureStats, getRoomsTemperatureTable } from './panels';

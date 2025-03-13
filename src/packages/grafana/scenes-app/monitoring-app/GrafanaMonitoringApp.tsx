@@ -1,7 +1,7 @@
 // Libraries
 import React, { useMemo } from 'react';
 
-import { SceneApp, SceneAppPage, SceneRouteMatch, SceneAppPageLike } from '@grafana/scenes';
+import { SceneApp, SceneAppPage, SceneRouteMatch, SceneAppPageLike } from '@scenes/index';
 
 import {
   getOverviewScene,

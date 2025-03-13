@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 
 import { UrlQueryMap, urlUtil } from '@data/index';
 import { locationSearchToObject } from '@runtime/index';
-import { QueryVariable, SceneVariableSet } from '@grafana/scenes';
+import { QueryVariable, SceneVariableSet } from '@scenes/index';
 
 export function useAppQueryParams() {
   const location = useLocation();

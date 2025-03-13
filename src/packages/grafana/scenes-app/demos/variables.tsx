@@ -21,7 +21,7 @@ import {
   QueryVariable,
   CustomVariable,
   AdHocFiltersVariable,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getVariablesDemo(defaults: SceneAppPageState) {

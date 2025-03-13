@@ -3,7 +3,6 @@ import { isEqual, map } from 'lodash';
 import { memo, SyntheticEvent, useCallback, useEffect, useState } from 'react';
 
 import { CoreApp, LoadingState, SelectableValue } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorHeader, EditorRows, FlexItem } from '@grafana/plugin-ui';
 import { reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Space } from '@grafana/ui';
@@ -125,14 +124,13 @@ export const PromQueryEditorSelector = memo<Props>((props) => {
       />
       <EditorHeader>
         <Button
-          data-testid={selectors.components.QueryBuilder.queryPatterns}
           variant="secondary"
           size="sm"
           onClick={handleOpenQueryPatternsModal}
         >
           Kick start your query
         </Button>
-        <div data-testid={selectors.components.DataSource.Prometheus.queryEditor.explain}>
+        <div>
           <QueryHeaderSwitch label="Explain" value={explain} onChange={onShowExplainChange} />
         </div>
         <FlexItem grow={1} />
@@ -148,7 +146,7 @@ export const PromQueryEditorSelector = memo<Props>((props) => {
           </Button>
         )}
         <PromQueryCodeEditorAutocompleteInfo datasourceUid={props.datasource.uid} editorMode={editorMode} />
-        <div data-testid={selectors.components.DataSource.Prometheus.queryEditor.editorToggle}>
+        <div>
           <QueryEditorModeToggle mode={editorMode} onChange={onEditorModeChange} />
         </div>
       </EditorHeader>

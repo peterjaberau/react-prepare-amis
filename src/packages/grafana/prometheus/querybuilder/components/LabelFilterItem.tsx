@@ -3,7 +3,6 @@ import debounce from 'debounce-promise';
 import { useState } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { AccessoryButton, InputGroup } from '@grafana/plugin-ui';
 import { AsyncSelect, Select } from '@grafana/ui';
 
@@ -94,7 +93,6 @@ export function LabelFilterItem({
         {/* Label name select, loads all values at once */}
         <AsyncSelect
           placeholder="Select label"
-          data-testid={selectors.components.QueryBuilder.labelSelect}
           inputId="prometheus-dimensions-filter-item-key"
           width="auto"
           value={item.label ? toOption(item.label) : null}
@@ -131,7 +129,6 @@ export function LabelFilterItem({
 
         {/* Operator select i.e.   = =~ != !~   */}
         <Select
-          data-testid={selectors.components.QueryBuilder.matchOperatorSelect}
           className="query-segment-operator"
           value={toOption(item.op ?? defaultOp)}
           options={operators}
@@ -151,7 +148,6 @@ export function LabelFilterItem({
         {/* Label value async select: autocomplete calls prometheus API */}
         <AsyncSelect
           placeholder="Select value"
-          data-testid={selectors.components.QueryBuilder.valueSelect}
           inputId="prometheus-dimensions-filter-item-value"
           width="auto"
           value={

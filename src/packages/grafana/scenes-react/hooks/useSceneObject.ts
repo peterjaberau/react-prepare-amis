@@ -1,5 +1,5 @@
 import { useEffect, useId } from 'react';
-import { SceneObject, sceneGraph } from '@grafana/scenes';
+import { SceneObject, sceneGraph } from '@scenes/index';
 import { useSceneContext } from './hooks';
 import { CacheKey, SceneObjectConstructor, getSceneObjectCache } from '../caching/SceneObjectCache';
 

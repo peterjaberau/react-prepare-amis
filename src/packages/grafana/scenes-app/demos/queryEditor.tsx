@@ -5,7 +5,7 @@ import {
   SceneAppPageState,
   SceneFlexItem,
   SceneFlexLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 import { QueryEditor } from '../components/QueryEditor/QueryEditor';
 

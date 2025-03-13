@@ -18,9 +18,9 @@ import {
   TestVariable,
   VariableValueSelectors,
   behaviors,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
-import { VariableRefresh } from '@grafana/schema';
+import { VariableRefresh } from '@schema/index';
 
 export function getQueryControllerDemo(defaults: SceneAppPageState) {
   const globalAnnotations = new dataLayers.AnnotationsDataLayer({

@@ -3,7 +3,6 @@ import debounce from 'debounce-promise';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
 
 import { QueryEditorProps, SelectableValue, toOption } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { AsyncSelect, InlineField, InlineFieldRow, Input, Select, TextArea } from '@grafana/ui';
 
 import { PrometheusDatasource } from '../datasource';
@@ -33,7 +32,7 @@ export const variableOptions = [
   { label: 'Classic query', value: QueryType.ClassicQuery },
 ];
 
-export type Props = QueryEditorProps<PrometheusDatasource, PromQuery, PromOptions, PromVariableQuery>;
+export type Props = QueryEditorProps<PrometheusDatasource, PromQuery | any, PromOptions, PromVariableQuery | any>;
 
 const refId = 'PrometheusVariableQueryEditor-VariableQuery';
 
@@ -264,7 +263,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
             value={qryType}
             options={variableOptions}
             width={25}
-            data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.queryType}
           />
         </InlineField>
       </InlineFieldRow>
@@ -292,7 +290,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 allowCustomValue
                 isClearable={true}
                 loadOptions={labelNamesSearch}
-                data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.labelValues.labelSelect}
               />
             </InlineField>
           </InlineFieldRow>
@@ -327,7 +324,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 setLabelNamesMatch(e.currentTarget.value);
               }}
               width={25}
-              data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.labelnames.metricRegex}
             />
           </InlineField>
         </InlineFieldRow>
@@ -354,7 +350,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 onMetricChange(e.currentTarget.value);
               }}
               width={25}
-              data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.metricNames.metricRegex}
             />
           </InlineField>
         </InlineFieldRow>
@@ -384,7 +379,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 }
               }}
               cols={100}
-              data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.varQueryResult}
             />
           </InlineField>
         </InlineFieldRow>
@@ -416,7 +410,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 }
               }}
               width={100}
-              data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.seriesQuery}
             />
           </InlineField>
         </InlineFieldRow>
@@ -446,7 +439,6 @@ export const PromVariableQueryEditor = ({ onChange, query, datasource, range }: 
                 }
               }}
               width={100}
-              data-testid={selectors.components.DataSource.Prometheus.variableQueryEditor.classicQuery}
             />
           </InlineField>
         </InlineFieldRow>

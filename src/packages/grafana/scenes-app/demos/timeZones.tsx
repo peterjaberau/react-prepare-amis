@@ -10,7 +10,7 @@ import {
   SceneTimePicker,
   SceneTimeRange,
   SceneTimeZoneOverride,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getTimeZoneTest(defaults: SceneAppPageState) {

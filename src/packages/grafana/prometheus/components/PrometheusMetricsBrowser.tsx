@@ -5,7 +5,6 @@ import * as React from 'react';
 import { FixedSizeList } from 'react-window';
 
 import { GrafanaTheme2, TimeRange } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import {
   BrowserLabel as PromLabel,
   Button,
@@ -525,7 +524,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
                   onChange={this.onChangeMetricSearch}
                   aria-label="Filter expression for metric"
                   value={metricSearchTerm}
-                  data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.selectMetric}
                 />
               </div>
               <Label description="Set to 'none' to remove limit and show all labels for a selected metric. Removing the limit may cause performance issues.">
@@ -536,13 +534,11 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
                   onChange={this.onChangeSeriesLimit}
                   aria-label="Limit results from series endpoint"
                   value={this.state.seriesLimit ?? DEFAULT_SERIES_LIMIT}
-                  data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.seriesLimit}
                 />
               </div>
               <div
                 role="list"
                 className={styles.valueListWrapper}
-                data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.metricList}
               >
                 <FixedSizeList
                   height={Math.min(450, metricCount * LIST_ITEM_SIZE)}
@@ -585,9 +581,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
                   onChange={this.onChangeLabelSearch}
                   aria-label="Filter expression for label"
                   value={labelSearchTerm}
-                  data-testid={
-                    selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.labelNamesFilter
-                  }
                 />
               </div>
               {/* Using fixed height here to prevent jumpy layout */}
@@ -615,9 +608,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
                   onChange={this.onChangeValueSearch}
                   aria-label="Filter expression for label values"
                   value={valueSearchTerm}
-                  data-testid={
-                    selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.labelValuesFilter
-                  }
                 />
               </div>
               <div className={styles.valueListArea} ref={this.valueListsRef}>
@@ -680,7 +670,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
           {validationStatus && <div className={styles.validationStatus}>{validationStatus}</div>}
           <Stack>
             <Button
-              data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.useQuery}
               aria-label="Use selector for query button"
               disabled={empty}
               onClick={this.onClickRunQuery}
@@ -688,7 +677,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
               Use query
             </Button>
             <Button
-              data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.useAsRateQuery}
               aria-label="Use selector as metrics button"
               variant="secondary"
               disabled={empty}
@@ -697,7 +685,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
               Use as rate query
             </Button>
             <Button
-              data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.validateSelector}
               aria-label="Validate submit button"
               variant="secondary"
               disabled={empty}
@@ -706,7 +693,6 @@ export class UnthemedPrometheusMetricsBrowser extends React.Component<BrowserPro
               Validate selector
             </Button>
             <Button
-              data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.clear}
               aria-label="Selector clear button"
               variant="secondary"
               onClick={this.onClickClear}

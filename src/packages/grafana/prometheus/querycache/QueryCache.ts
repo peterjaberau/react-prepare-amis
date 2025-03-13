@@ -38,7 +38,7 @@ interface TargetCache {
 }
 
 export interface CacheRequestInfo<T extends SupportedQueryTypes> {
-  requests: Array<DataQueryRequest<T>>;
+  requests: Array<DataQueryRequest<any>>;
   targetSignatures: Map<TargetIdent, TargetSignature>;
   shouldCache: boolean;
 }
@@ -58,13 +58,13 @@ export const getFieldIdentity = (field: Field) => `${field.type}|${field.name}|$
  */
 export class QueryCache<T extends SupportedQueryTypes> {
   private overlapWindowMs: number;
-  private getTargetSignature: (request: DataQueryRequest<T>, target: T) => string;
+  private getTargetSignature: (request: DataQueryRequest<any>, target: T) => string;
   private applyInterpolation = (str: string, scopedVars?: ScopedVars) => str;
 
   cache = new Map<TargetIdent, TargetCache>();
 
   constructor(options: {
-    getTargetSignature: (request: DataQueryRequest<T>, target: T) => string;
+    getTargetSignature: (request: DataQueryRequest<any>, target: T) => string;
     overlapString: string;
     applyInterpolation?: ApplyInterpolation;
   }) {
@@ -84,7 +84,7 @@ export class QueryCache<T extends SupportedQueryTypes> {
   }
 
   // can be used to change full range request to partial, split into multiple requests
-  requestInfo(request: DataQueryRequest<T>): CacheRequestInfo<T> {
+  requestInfo(request: DataQueryRequest<any>): CacheRequestInfo<any> {
     // TODO: align from/to to interval to increase probability of hitting backend cache
 
     const newFrom = request.range.from.valueOf();
@@ -156,8 +156,8 @@ export class QueryCache<T extends SupportedQueryTypes> {
 
   // should amend existing cache with new frames and return full response
   procFrames(
-    request: DataQueryRequest<T>,
-    requestInfo: CacheRequestInfo<T> | undefined,
+    request: DataQueryRequest<any>,
+    requestInfo: CacheRequestInfo<any> | undefined,
     respFrames: DataFrame[]
   ): DataFrame[] {
     if (requestInfo?.shouldCache) {
@@ -269,7 +269,7 @@ export class QueryCache<T extends SupportedQueryTypes> {
 }
 
 export function findDatapointStep(
-  request: DataQueryRequest<PromQuery>,
+  request: DataQueryRequest<PromQuery | any>,
   respFrames: DataFrame[],
   applyInterpolation: ApplyInterpolation
 ): number {

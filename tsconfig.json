@@ -41,7 +41,9 @@
       "@saga-icons/*": ["src/packages/grafana/saga-icons/*"],
       "@flamegraph/*": ["src/packages/grafana/flamegraph/*"],
       "@prometheus/*": ["src/packages/grafana/prometheus/*"],
-      "@o11y-ds-frontend/*": ["src/packages/grafana/o11y-ds-frontend/*"]
+      "@o11y-ds-frontend/*": ["src/packages/grafana/o11y-ds-frontend/*"],
+      "@scenes-react/*": ["src/packages/grafana/scenes-react/*"]
+
     },
     "allowSyntheticDefaultImports": true
   },

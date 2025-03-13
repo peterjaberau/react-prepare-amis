@@ -1,5 +1,5 @@
-import { VizConfigBuilders } from '@grafana/scenes';
-import { Breadcrumb, BreadcrumbProvider, VizPanel, useQueryRunner } from '@grafana/scenes-react';
+import { VizConfigBuilders } from '@scenes/index';
+import { Breadcrumb, BreadcrumbProvider, VizPanel, useQueryRunner } from '@scenes-react/index';
 import React from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';

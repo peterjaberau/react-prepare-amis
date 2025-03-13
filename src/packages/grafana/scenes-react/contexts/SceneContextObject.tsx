@@ -5,7 +5,7 @@ import {
   SceneVariable,
   SceneVariableSet,
   NewSceneObjectAddedEvent,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { writeSceneLog } from '../utils';
 
 export interface SceneContextObjectState extends SceneObjectState {

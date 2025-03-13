@@ -6,7 +6,7 @@ import {
   EmbeddedScene,
   SceneAppPageState,
   PanelBuilders,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DATASOURCE_REF } from '../constants';
 import { getEmbeddedSceneDefaults } from './utils';
 

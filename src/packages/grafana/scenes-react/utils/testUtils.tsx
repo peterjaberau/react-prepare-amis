@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { SceneContext } from '../contexts/SceneContextProvider';
 import { SceneContextObject } from '../contexts/SceneContextObject';
-import { SceneVariable, SceneVariableSet } from '@grafana/scenes';
+import { SceneVariable, SceneVariableSet } from '@scenes/index';
 import { DataQueryRequest, DataQueryResponse, DataSourceApi, LoadingState, PanelData } from '@data/index';
 import { Observable, map } from 'rxjs';
 

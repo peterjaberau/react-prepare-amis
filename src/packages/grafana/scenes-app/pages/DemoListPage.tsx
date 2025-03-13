@@ -11,7 +11,7 @@ import {
   SceneComponentProps,
   SceneCSSGridLayout,
   SceneObject,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import React from 'react';
 import { demoUrl, prefixRoute } from '../utils/utils.routing';
 import { DATASOURCE_REF, ROUTES } from '../constants';

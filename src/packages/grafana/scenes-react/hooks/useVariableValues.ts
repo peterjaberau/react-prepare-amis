@@ -1,4 +1,4 @@
-import { SceneVariables, VariableValueSingle, sceneGraph } from '@grafana/scenes';
+import { SceneVariables, VariableValueSingle, sceneGraph } from '@scenes/index';
 import { useSceneContext } from './hooks';
 
 export function useVariableValues<T = VariableValueSingle>(name: string): [T[] | undefined, boolean] {

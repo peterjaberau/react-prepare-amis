@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { PageWrapper } from './PageWrapper';
 import { DemoVizLayout } from './utils';
 import { DataTransformerID, ReducerID } from '@data/index';
-import { VizPanel, useDataTransformer, useQueryRunner } from '@grafana/scenes-react';
+import { VizPanel, useDataTransformer, useQueryRunner } from '@scenes-react/index';
 import { plainGraph } from './visualizations';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 

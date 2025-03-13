@@ -11,10 +11,10 @@ import {
   SceneObjectBase,
   SceneObjectState,
   SceneToolbarInput,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Select } from '@grafana/ui';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
-import { ControlsLabel } from '@grafana/scenes/src/utils/ControlsLabel';
+import { ControlsLabel } from '@scenes/utils/ControlsLabel';
 import { SelectableValue } from '@data/index';
 
 const columnTemplateOptions = ['repeat(auto-fit, minmax(400px, 1fr))', 'repeat(3, 1fr)', '2fr 1fr 1fr', 'auto'];

@@ -1,4 +1,4 @@
-import { EmbeddedScene, SceneAppPage, SceneAppPageState } from '@grafana/scenes';
+import { EmbeddedScene, SceneAppPage, SceneAppPageState } from '@scenes/index';
 import { demoUrl } from '../utils/utils.routing';
 import { getAdvancedActivationHandlers } from '../../../../docusaurus/docs/advanced-activation-handlers';
 import { getAdvancedCustomObjectScene } from '../../../../docusaurus/docs/advanced-custom-scene-objects';

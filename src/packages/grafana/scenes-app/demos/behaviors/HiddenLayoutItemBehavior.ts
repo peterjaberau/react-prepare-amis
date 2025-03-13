@@ -1,4 +1,4 @@
-import { SceneFlexItem, SceneFlexLayout, SceneObject, SceneObjectBase, SceneObjectState } from '@grafana/scenes';
+import { SceneFlexItem, SceneFlexLayout, SceneObject, SceneObjectBase, SceneObjectState } from '@scenes/index';
 
 /**
  * Just a proof of concept example of a behavior

@@ -70,7 +70,7 @@ export function useFlameRender(options: RenderOptions) {
     collapsedMap,
   } = options;
   const ctx = useSetupCanvas(canvasRef, wrapperWidth, depth);
-  const theme = useTheme2();
+  const theme: any = useTheme2();
 
   // There is a bit of dependency injections here that does not add readability, mainly to prevent recomputing some
   // common stuff for all the nodes in the graph when only once is enough. perf/readability tradeoff.

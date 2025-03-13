@@ -1,5 +1,5 @@
 import React from 'react';
-import { SceneDataLayerProvider, SceneDataLayerSet, sceneGraph } from '@grafana/scenes';
+import { SceneDataLayerProvider, SceneDataLayerSet, sceneGraph } from '@scenes/index';
 import { useSceneContext } from '../hooks/hooks';
 
 export interface Props {

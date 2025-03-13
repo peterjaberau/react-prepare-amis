@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 
-import { selectors } from '@grafana/e2e-selectors';
 import { config } from '@runtime/index';
 import { IconButton, Text, Stack } from '@grafana/ui';
 
@@ -54,7 +53,7 @@ export function PromQueryCodeEditorAutocompleteInfo(props: Readonly<Props>) {
   }
 
   return (
-    <div data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsCountInfo}>
+    <div>
       <Stack direction="row" gap={1}>
         <Text color="secondary" element="p" italic={true}>
           Autocomplete suggestions limited

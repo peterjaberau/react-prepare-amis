@@ -6,7 +6,6 @@ import * as React from 'react';
 import Highlighter from 'react-highlight-words';
 
 import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorField, EditorFieldGroup } from '@grafana/plugin-ui';
 import {
   AsyncSelect,
@@ -57,7 +56,7 @@ export function MetricSelect({
   onBlur,
   variableEditor,
 }: Readonly<MetricSelectProps>) {
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
   const [state, setState] = useState<{
     metrics?: SelectableValue[];
     isLoading?: boolean;
@@ -176,7 +175,6 @@ export function MetricSelect({
           {...props.innerProps}
           ref={props.innerRef}
           className={`${styles.customOptionWidth} metric-encyclopedia-open`}
-          data-testid={selectors.components.Select.option}
           onKeyDown={(e) => {
             // if there is no metric and the m.e. is enabled, open the modal
             if (e.code === 'Enter') {
@@ -248,7 +246,6 @@ export function MetricSelect({
   const asyncSelect = () => {
     return (
       <AsyncSelect
-        data-testid={selectors.components.DataSource.Prometheus.queryEditor.builder.metricSelect}
         isClearable={Boolean(variableEditor)}
         inputId="prometheus-metric-select"
         className={styles.select}

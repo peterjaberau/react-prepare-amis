@@ -13,8 +13,8 @@ import {
   SceneRefreshPicker,
   SceneControlsSpacer,
   AdHocFiltersVariable,
-} from '@grafana/scenes';
-import { VariableHide } from '@grafana/schema';
+} from '@scenes/index';
+import { VariableHide } from '@schema/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getVerticalControlsLayoutDemo(defaults: SceneAppPageState) {

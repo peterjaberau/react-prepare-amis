@@ -3,11 +3,11 @@ import {
   DataProviderProxy,
   SceneDataProvider,
   SceneDataTransformer,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { useSceneContext } from './hooks';
 import { useEffect, useId } from 'react';
 import { isEqual } from 'lodash';
-import { DataTransformerConfig } from '@grafana/schema';
+import { DataTransformerConfig } from '@schema/index';
 
 export interface UseDataTransformerOptions {
   transformations: Array<DataTransformerConfig | CustomTransformerDefinition>;

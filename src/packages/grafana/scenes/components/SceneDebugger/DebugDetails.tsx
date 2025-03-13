@@ -11,7 +11,7 @@ export interface Props {
 
 export function DebugDetails({ node }: Props) {
   const state = node.useState();
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles as any);
 
   return (
     <div className={styles.container}>
@@ -56,7 +56,7 @@ function renderValue(key: string, value: any, node: SceneObject) {
   }
 }
 
-function getStyles(theme: GrafanaTheme2) {
+function getStyles(theme: GrafanaTheme2): any {
   return {
     container: css({
       flexGrow: 1,

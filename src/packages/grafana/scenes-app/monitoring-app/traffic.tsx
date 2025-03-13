@@ -14,7 +14,7 @@ import {
   SceneObjectUrlSyncConfig,
   SceneObjectUrlValues,
   PanelBuilders,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { Button } from '@grafana/ui';
 
 import { getVariablesDefinitions } from './utils';

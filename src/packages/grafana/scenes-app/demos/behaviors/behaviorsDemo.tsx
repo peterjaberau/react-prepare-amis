@@ -10,7 +10,7 @@ import {
   SceneTimePicker,
   SceneTimeRange,
   SceneToolbarInput,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { SceneRadioToggle } from '../../components/SceneRadioToggle';
 import { DATASOURCE_REF } from '../../constants';
 import { getQueryRunnerWithRandomWalkQuery } from '../utils';

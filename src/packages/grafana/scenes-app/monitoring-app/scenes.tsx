@@ -16,8 +16,8 @@ import {
   SceneRefreshPicker,
   SceneFlexItem,
   PanelBuilders,
-} from '@grafana/scenes';
-import { BigValueGraphMode, BigValueTextMode, LogsDedupStrategy, LogsSortOrder } from '@grafana/schema';
+} from '@scenes/index';
+import { BigValueGraphMode, BigValueTextMode, LogsDedupStrategy, LogsSortOrder } from '@schema/index';
 import { LinkButton } from '@grafana/ui';
 
 import { SceneRadioToggle } from './SceneRadioToggle';

@@ -10,7 +10,6 @@ import {
   TimeRange,
   toLegacyResponseData,
 } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { reportInteraction } from '@runtime/index';
 import { clearButtonStyles, Icon, Themeable2, withTheme2 } from '@grafana/ui';
 
@@ -40,7 +39,7 @@ function getChooserText(metricsLookupDisabled: boolean, hasSyntax: boolean, hasM
   return 'Metrics browser';
 }
 
-interface PromQueryFieldProps extends QueryEditorProps<PrometheusDatasource, PromQuery, PromOptions>, Themeable2 {
+interface PromQueryFieldProps extends QueryEditorProps<PrometheusDatasource, PromQuery | any, PromOptions>, Themeable2 {
   ExtraFieldElement?: ReactNode;
   'data-testid'?: string;
 }
@@ -234,7 +233,6 @@ class PromQueryFieldClass extends PureComponent<PromQueryFieldProps, PromQueryFi
                   onClick={this.onClickChooserButton}
                   disabled={buttonDisabled}
                   type="button"
-                  data-testid={selectors.components.DataSource.Prometheus.queryEditor.code.metricsBrowser.openButton}
                 >
                   {chooserText}
                   <Icon name={labelBrowserVisible ? 'angle-down' : 'angle-right'} />

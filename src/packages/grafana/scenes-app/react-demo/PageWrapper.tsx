@@ -1,6 +1,6 @@
 import { NavModelItem } from '@data/index';
 import { PluginPage } from '@runtime/index';
-import { BreadcrumbContext, RefreshPicker, TimeRangePicker, VariableControl } from '@grafana/scenes-react';
+import { BreadcrumbContext, RefreshPicker, TimeRangePicker, VariableControl } from '@scenes-react/index';
 import React, { useContext } from 'react';
 
 export interface Props {

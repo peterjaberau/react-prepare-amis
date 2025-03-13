@@ -2,7 +2,7 @@
 import { capitalize } from 'lodash';
 import pluralize from 'pluralize';
 
-import { SelectableValue } from '@grafana/data/src';
+import { SelectableValue } from '@data/index';
 
 import { LabelParamEditor } from './components/LabelParamEditor';
 import {

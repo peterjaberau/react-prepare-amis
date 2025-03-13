@@ -6,14 +6,14 @@ import {
   SceneDataTransformer,
   SceneFlexItem,
   SceneFlexLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import {
   BarGaugeDisplayMode,
   BigValueGraphMode,
   BigValueTextMode,
   FieldColorModeId,
   TableCellDisplayMode,
-} from '@grafana/schema';
+} from '@schema/index';
 import { Icon } from '@grafana/ui';
 import React from 'react';
 import { demoUrl } from '../../utils/utils.routing';

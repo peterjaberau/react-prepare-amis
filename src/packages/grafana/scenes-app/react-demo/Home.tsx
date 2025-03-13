@@ -1,4 +1,4 @@
-import { SceneContextProvider, CustomVariable } from '@grafana/scenes-react';
+import { SceneContextProvider, CustomVariable } from '@scenes-react/index';
 import { Stack, TextLink } from '@grafana/ui';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';

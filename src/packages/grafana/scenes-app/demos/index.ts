@@ -1,4 +1,4 @@
-import { SceneAppPage, SceneAppPageState } from '@grafana/scenes';
+import { SceneAppPage, SceneAppPageState } from '@scenes/index';
 import { getRuntimePanelPluginDemo } from './runtimePanelPlugin';
 import { getBehaviorsDemo } from './behaviors/behaviorsDemo';
 import { getDynamicPageDemo } from './dynamicPage';

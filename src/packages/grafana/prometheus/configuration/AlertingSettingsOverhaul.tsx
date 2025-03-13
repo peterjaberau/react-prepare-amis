@@ -2,7 +2,6 @@
 import { cx } from '@emotion/css';
 
 import { DataSourceJsonData, DataSourcePluginOptionsEditorProps } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { ConfigSubSection } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
 import { InlineField, Switch, useTheme2 } from '@grafana/ui';
@@ -51,7 +50,6 @@ export function AlertingSettingsOverhaul<T extends AlertingConfig>({
                     jsonData: { ...options.jsonData, manageAlerts: event!.currentTarget.checked },
                   })
                 }
-                id={selectors.components.DataSource.Prometheus.configPage.manageAlerts}
               />
             </InlineField>
           </div>

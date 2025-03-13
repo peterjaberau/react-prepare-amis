@@ -13,7 +13,7 @@ import {
   SceneRefreshPicker,
   SceneTimePicker,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DATASOURCE_REF } from '../constants';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 

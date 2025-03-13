@@ -1,5 +1,5 @@
 import { rangeUtil } from '@data/index';
-import { sceneGraph, SceneObjectState, SceneTimeRangeState } from '@grafana/scenes';
+import { sceneGraph, SceneObjectState, SceneTimeRangeState } from '@scenes/index';
 import { HiddenLayoutItemBehavior } from './HiddenLayoutItemBehavior';
 
 export interface HiddenForTimeRangeBehaviorState extends SceneObjectState {

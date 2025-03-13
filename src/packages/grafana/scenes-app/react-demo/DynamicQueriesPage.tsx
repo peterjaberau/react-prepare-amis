@@ -1,10 +1,10 @@
-import { useQueryRunner, VizPanel } from '@grafana/scenes-react';
+import { useQueryRunner, VizPanel } from '@scenes-react/index';
 import { Field, Select, Stack } from '@grafana/ui';
 import React, { useMemo, useState } from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';
 import { toOption } from '@data/index';
-import { SceneDataQuery } from '@grafana/scenes';
+import { SceneDataQuery } from '@scenes/index';
 import { plainGraph } from './visualizations';
 import { DemoVizLayout } from './utils';
 import { DemoSubTitle } from '../pages/DemoSubTitle';

@@ -6,7 +6,7 @@ import {
   EmbeddedScene,
   SceneAppPageState,
   PanelBuilders,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getGridWithRowLayoutTest(defaults: SceneAppPageState): SceneAppPage {

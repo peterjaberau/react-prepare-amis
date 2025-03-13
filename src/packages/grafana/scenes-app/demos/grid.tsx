@@ -7,8 +7,8 @@ import {
   EmbeddedScene,
   SceneAppPageState,
   PanelBuilders,
-} from '@grafana/scenes';
-import { GRID_CELL_HEIGHT } from '@grafana/scenes/src/components/layout/grid/constants';
+} from '@scenes/index';
+import { GRID_CELL_HEIGHT } from '@scenes/components/layout/grid/constants';
 import { getQueryRunnerWithRandomWalkQuery, getEmbeddedSceneDefaults } from './utils';
 
 export function getGridLayoutTest(defaults: SceneAppPageState): SceneAppPage {

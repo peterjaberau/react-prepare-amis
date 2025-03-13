@@ -5,7 +5,7 @@ import {
   SceneAppPageState,
   SceneAppPage,
   PanelBuilders,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 
 export function getLazyLoadDemo(defaults: SceneAppPageState) {

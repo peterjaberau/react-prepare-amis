@@ -3,7 +3,6 @@ import { css } from '@emotion/css';
 import { memo, useState } from 'react';
 
 import { DataSourceApi, PanelData } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorRow } from '@grafana/plugin-ui';
 
 import { PrometheusDatasource } from '../../datasource';
@@ -73,13 +72,13 @@ export const PromQueryBuilder = memo<PromQueryBuilderProps>((props) => {
         <OperationList<PromVisualQuery>
           queryModeller={promQueryModeller}
           // eslint-ignore
-          datasource={datasource as DataSourceApi}
+          datasource={datasource as DataSourceApi | any}
           query={query}
           onChange={onChange}
           onRunQuery={onRunQuery}
           highlightedOp={highlightedOp}
         />
-        <div data-testid={selectors.components.DataSource.Prometheus.queryEditor.builder.hints}>
+        <div>
           <QueryBuilderHints<PromVisualQuery>
             datasource={datasource}
             query={query}

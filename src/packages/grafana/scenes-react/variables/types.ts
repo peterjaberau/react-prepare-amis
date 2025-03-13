@@ -1,5 +1,5 @@
-import { VariableValue } from '@grafana/scenes';
-import { VariableHide } from '@grafana/schema';
+import { VariableValue } from '@scenes/index';
+import { VariableHide } from '@schema/index';
 
 export interface VariableProps {
   name: string;

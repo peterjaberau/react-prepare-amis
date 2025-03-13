@@ -9,7 +9,7 @@ import {
   SceneTimeRange,
   VariableValueSelectors,
   SceneDataQuery,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { DATASOURCE_REF } from '../constants';
 
 export function getQueryRunnerWithRandomWalkQuery(

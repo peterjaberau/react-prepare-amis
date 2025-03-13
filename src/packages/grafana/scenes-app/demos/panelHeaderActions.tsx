@@ -6,7 +6,7 @@ import {
   SceneCSSGridItem,
   SceneCSSGridLayout,
   VizPanelExploreButton,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 import { Button, Select } from '@grafana/ui';
 import React from 'react';

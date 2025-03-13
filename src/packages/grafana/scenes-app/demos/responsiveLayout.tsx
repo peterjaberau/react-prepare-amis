@@ -6,7 +6,7 @@ import {
   SceneFlexItem,
   SceneFlexItemState,
   SceneFlexLayout,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery, getEmbeddedSceneDefaults, getRowWithText } from './utils';
 
 export function getResponsiveLayoutDemo(defaults: SceneAppPageState) {

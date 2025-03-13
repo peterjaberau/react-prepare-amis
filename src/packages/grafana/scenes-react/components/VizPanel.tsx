@@ -7,7 +7,7 @@ import {
   VizConfig,
   DataProviderProxy,
   SceneDataNode,
-} from '@grafana/scenes';
+} from "@scenes/index";
 import { usePrevious } from 'react-use';
 import { getPanelOptionsWithDefaults } from '@data/index';
 import { PanelContext } from '@grafana/ui';

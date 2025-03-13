@@ -1,5 +1,5 @@
 import React from 'react';
-import { EmbeddedScene, EmbeddedSceneState, SceneComponentProps } from '@grafana/scenes';
+import { EmbeddedScene, EmbeddedSceneState, SceneComponentProps } from '@scenes/index';
 import { SceneContext } from '../contexts/SceneContextProvider';
 import { SceneContextObject } from '../contexts/SceneContextObject';
 

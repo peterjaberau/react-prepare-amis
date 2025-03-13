@@ -1,6 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/components/AnnotationQueryEditor.tsx
 import { AnnotationQuery } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorField, EditorRow, EditorRows, EditorSwitch } from '@grafana/plugin-ui';
 import { AutoSizeInput, Input, Space } from '@grafana/ui';
 
@@ -10,8 +9,8 @@ import { PromQuery } from '../types';
 import { PromQueryEditorProps } from './types';
 
 type Props = PromQueryEditorProps & {
-  annotation?: AnnotationQuery<PromQuery>;
-  onAnnotationChange?: (annotation: AnnotationQuery<PromQuery>) => void;
+  annotation?: AnnotationQuery<PromQuery | any>;
+  onAnnotationChange?: (annotation: AnnotationQuery<PromQuery | any>) => void;
 };
 
 export function AnnotationQueryEditor(props: Props) {
@@ -56,7 +55,6 @@ export function AnnotationQueryEditor(props: Props) {
                 });
               }}
               defaultValue={query.interval}
-              id={selectors.components.DataSource.Prometheus.annotations.minStep}
             />
           </EditorField>
         </EditorRow>
@@ -79,7 +77,6 @@ export function AnnotationQueryEditor(props: Props) {
                 titleFormat: event.currentTarget.value,
               });
             }}
-            data-testid={selectors.components.DataSource.Prometheus.annotations.title}
           />
         </EditorField>
         <EditorField label="Tags">
@@ -93,7 +90,6 @@ export function AnnotationQueryEditor(props: Props) {
                 tagKeys: event.currentTarget.value,
               });
             }}
-            data-testid={selectors.components.DataSource.Prometheus.annotations.tags}
           />
         </EditorField>
         <EditorField
@@ -112,7 +108,6 @@ export function AnnotationQueryEditor(props: Props) {
                 textFormat: event.currentTarget.value,
               });
             }}
-            data-testid={selectors.components.DataSource.Prometheus.annotations.text}
           />
         </EditorField>
         <EditorField
@@ -129,7 +124,6 @@ export function AnnotationQueryEditor(props: Props) {
                 useValueForTime: event.currentTarget.value,
               });
             }}
-            data-testid={selectors.components.DataSource.Prometheus.annotations.seriesValueAsTimestamp}
           />
         </EditorField>
       </EditorRow>

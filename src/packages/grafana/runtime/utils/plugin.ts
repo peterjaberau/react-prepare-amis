@@ -23,7 +23,7 @@ export interface PluginCssOptions {
 export async function loadPluginCss(options: PluginCssOptions): Promise<System.Module | void> {
   try {
     const cssPath = config.bootData.user.theme === 'light' ? options.light : options.dark;
-    return window.System.import(cssPath);
+    return (window as any).System.import(cssPath);
   } catch (err) {
     console.error(err);
   }

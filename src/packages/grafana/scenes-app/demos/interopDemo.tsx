@@ -7,10 +7,10 @@ import {
   SceneObjectBase,
   SceneObjectState,
   VizPanel,
-} from '@grafana/scenes';
+} from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 import React from 'react';
-import { EmbeddedSceneWithContext, useTimeRange } from '@grafana/scenes-react';
+import { EmbeddedSceneWithContext, useTimeRange } from '@scenes-react/index';
 import { Stack } from '@grafana/ui';
 import { DemoVizLayout } from '../react-demo/utils';
 import { PlainGraphWithRandomWalk } from '../react-demo/PlainGraphWithRandomWalk';

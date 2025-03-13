@@ -27,7 +27,7 @@ interface State {
 
 export const OperationHeader = memo<Props>(
   ({ operation, def, index, onChange, onRemove, queryModeller, dragHandleProps }) => {
-    const styles = useStyles2(getStyles);
+    const styles: any = useStyles2(getStyles);
     const [state, setState] = useState<State>({});
 
     const onToggleSwitcher = () => {
@@ -104,7 +104,7 @@ export const OperationHeader = memo<Props>(
 
 OperationHeader.displayName = 'OperationHeader';
 
-const getStyles = (theme: GrafanaTheme2) => {
+const getStyles: any = (theme: GrafanaTheme2) => {
   return {
     header: css({
       borderBottom: `1px solid ${theme.colors.border.medium}`,

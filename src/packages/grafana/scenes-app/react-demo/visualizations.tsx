@@ -1,5 +1,5 @@
-import { VizConfigBuilders } from '@grafana/scenes';
-import { FieldColorModeId, GraphDrawStyle, GraphGradientMode } from '@grafana/schema';
+import { VizConfigBuilders } from '@scenes/index';
+import { FieldColorModeId, GraphDrawStyle, GraphGradientMode } from '@schema/index';
 
 export const plainGraph = VizConfigBuilders.timeseries().setCustomFieldConfig('fillOpacity', 6).build();
 

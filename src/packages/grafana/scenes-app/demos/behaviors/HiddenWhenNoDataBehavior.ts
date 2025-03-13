@@ -1,4 +1,4 @@
-import { SceneDataState, sceneGraph } from '@grafana/scenes';
+import { SceneDataState, sceneGraph } from '@scenes/index';
 import { HiddenLayoutItemBehavior } from './HiddenLayoutItemBehavior';
 
 export class HiddenWhenNoDataBehavior extends HiddenLayoutItemBehavior {

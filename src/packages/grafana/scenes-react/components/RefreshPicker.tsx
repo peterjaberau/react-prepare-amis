@@ -1,6 +1,6 @@
 import React, { useEffect, useId } from 'react';
 import { useSceneContext } from '../hooks/hooks';
-import { SceneRefreshPicker, SceneRefreshPickerState } from '@grafana/scenes';
+import { SceneRefreshPicker, SceneRefreshPickerState } from '@scenes/index';
 import { usePrevious } from 'react-use';
 
 export interface Props {

@@ -3,7 +3,6 @@ import { uniqueId } from 'lodash';
 import { useCallback } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { selectors } from '@grafana/e2e-selectors';
 import { EditorField } from '@grafana/plugin-ui';
 import { Button, Select, Stack, useStyles2 } from '@grafana/ui';
 
@@ -115,7 +114,6 @@ export function SelectRow({ query, onQueryChange, db, columns }: SelectRowProps)
               <Select
                 value={item.name ? toOption(item.name) : null}
                 inputId={`select-aggregation-${index}-${uniqueId()}`}
-                data-testid={selectors.components.SQLQueryEditor.selectAggregation}
                 isClearable
                 menuShouldPortal
                 allowCustomValue
@@ -136,7 +134,6 @@ export function SelectRow({ query, onQueryChange, db, columns }: SelectRowProps)
               <Select
                 value={item.alias ? toOption(item.alias) : null}
                 inputId={`select-alias-${index}-${uniqueId()}`}
-                data-testid={selectors.components.SQLQueryEditor.selectAlias}
                 options={timeSeriesAliasOpts}
                 onChange={onAliasChange(item, index)}
                 isClearable

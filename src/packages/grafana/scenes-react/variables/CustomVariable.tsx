@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CustomVariable as CustomVariableObject } from '@grafana/scenes';
+import { CustomVariable as CustomVariableObject } from '@scenes/index';
 import { useSceneContext } from '../hooks/hooks';
 import { VariableProps } from './types';
 
