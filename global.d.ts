@@ -63,4 +63,10 @@ declare module './src/views/eui/CoreApp/components/test/basic.js' {
     export const functionMapping: Record<string, any>;
 }
 
+declare module '@emotion/css' {
+    export type CSSObject = { [key: string]: any };
+    export function css(styles: CSSObject): string;
+    export function cx(...args: any[]): string;
+}
+
 declare module 'invariant';

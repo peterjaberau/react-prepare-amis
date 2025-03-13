@@ -41,6 +41,12 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: "@", replacement: path.resolve(__dirname, "src") },
+      { find: "@scenes", replacement: path.resolve(__dirname, "src/packages/grafana/scenes") },
+      { find: "@schema", replacement: path.resolve(__dirname, "src/packages/grafana/schema") },
+      { find: "@data", replacement: path.resolve(__dirname, "src/packages/grafana/data") },
+      { find: "@runtime", replacement: path.resolve(__dirname, "src/packages/grafana/runtime") },
+      { find: "@grafana-module", replacement: path.resolve(__dirname, "src/apps/modules/grafana") },
+
 
     ],
 

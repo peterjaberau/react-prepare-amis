@@ -31,7 +31,13 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@scenes/*": ["src/packages/grafana/scenes/*"],
+      "@schema/*": ["src/packages/grafana/schema/*"],
+      "@data/*": ["src/packages/grafana/data/*"],
+      "@runtime/*": ["src/packages/grafana/runtime/*"],
+      "@grafana-module/*": ["src/apps/modules/grafana/*"],
+
     },
     "allowSyntheticDefaultImports": true
   },

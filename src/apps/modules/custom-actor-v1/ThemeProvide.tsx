@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as React from 'react';
-import { createTheme, ThemeContext } from "@grafana/data";
+import { createTheme, ThemeContext } from "@data/index";
 
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
