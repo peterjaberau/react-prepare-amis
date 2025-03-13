@@ -7,7 +7,6 @@ import { ThemeChangedEvent, config } from '@runtime/index';
 
 import { appEvents } from '../core';
 
-import 'react-loading-skeleton/dist/skeleton.css';
 
 export const ThemeProvider = ({ children, value }: { children: React.ReactNode; value: GrafanaTheme2 }) => {
   const [theme, setTheme] = useState(value);

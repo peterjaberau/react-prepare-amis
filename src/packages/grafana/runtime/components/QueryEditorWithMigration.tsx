@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css'
 
 import { DataSourceApi, DataSourceOptionsType, DataSourceQueryType, QueryEditorProps } from '@data/index';
 import { DataQuery, DataSourceJsonData } from '@schema/index';

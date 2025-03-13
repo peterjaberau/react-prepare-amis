@@ -70,3 +70,20 @@ declare module '@emotion/css' {
 }
 
 declare module 'invariant';
+
+declare module 'react-loading-skeleton' {
+    import { FC } from 'react';
+
+    interface SkeletonProps {
+        count?: number;
+        duration?: number;
+        width?: string | number;
+        height?: string | number;
+        circle?: boolean;
+        className?: string;
+        style?: React.CSSProperties;
+    }
+
+    const Skeleton: FC<SkeletonProps>;
+    export default Skeleton;
+}
