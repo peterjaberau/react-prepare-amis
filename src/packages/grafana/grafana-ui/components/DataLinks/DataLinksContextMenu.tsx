@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { CSSProperties } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, LinkModel } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, LinkModel } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes';
 import { linkModelToContextMenuItems } from '../../utils/dataLinks';

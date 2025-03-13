@@ -1,7 +1,7 @@
 import { difference } from 'lodash';
 import { PureComponent } from 'react';
 
-import { fieldReducers, SelectableValue, FieldReducerInfo } from '@grafana/data';
+import { fieldReducers, SelectableValue, FieldReducerInfo } from '@data/index';
 
 import { Select } from '../Select/Select';
 

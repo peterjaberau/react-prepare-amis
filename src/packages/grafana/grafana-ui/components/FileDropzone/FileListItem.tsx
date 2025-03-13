@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { formattedValueToString, getValueFormat, GrafanaTheme2 } from '@grafana/data';
+import { formattedValueToString, getValueFormat, GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { trimFileName } from '../../utils/file';

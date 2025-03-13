@@ -17,8 +17,8 @@ import {
   dateTimeForTimeZone,
   getTimeZone,
   TimeZone,
-} from '@grafana/data';
-import { Components } from '@grafana/e2e-selectors';
+} from '@data/index';
+import { Components } from '@selectors/index';
 
 import { useStyles2, useTheme2 } from '../../../themes';
 import { t, Trans } from '../../../utils/i18n';

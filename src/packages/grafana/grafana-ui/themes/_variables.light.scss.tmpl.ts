@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { renderGeneratedFileBanner } from '../utils/generatedFileBanner';
 

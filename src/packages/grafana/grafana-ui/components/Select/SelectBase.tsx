@@ -12,7 +12,7 @@ import { default as ReactAsyncSelect } from 'react-select/async';
 import { default as AsyncCreatable } from 'react-select/async-creatable';
 import Creatable from 'react-select/creatable';
 
-import { SelectableValue, toOption } from '@grafana/data';
+import { SelectableValue, toOption } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { Trans } from '../../utils/i18n';

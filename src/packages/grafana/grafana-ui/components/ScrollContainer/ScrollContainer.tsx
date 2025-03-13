@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Property } from 'csstype';
 import { forwardRef, PropsWithChildren, UIEventHandler } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { Box, BoxProps } from '../Layout/Box/Box';

@@ -1,6 +1,6 @@
 import { css, keyframes } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 const slideUpIn = keyframes({
   '0%': {

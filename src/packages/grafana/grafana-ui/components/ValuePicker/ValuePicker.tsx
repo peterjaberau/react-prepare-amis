@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useTheme2 } from '../../themes';
 import { IconName } from '../../types';

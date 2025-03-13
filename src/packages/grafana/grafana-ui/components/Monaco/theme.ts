@@ -1,6 +1,6 @@
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { Monaco, monacoTypes } from './types';
 

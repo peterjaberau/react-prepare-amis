@@ -4,8 +4,8 @@ import { RefCallback, useLayoutEffect, useMemo, useRef } from 'react';
 import * as React from 'react';
 import { FixedSizeList as List } from 'react-window';
 
-import { SelectableValue, toIconName } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { SelectableValue, toIconName } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useTheme2 } from '../../themes/ThemeContext';
 import { Trans } from '../../utils/i18n';

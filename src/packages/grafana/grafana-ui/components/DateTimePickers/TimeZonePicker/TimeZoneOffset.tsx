@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { isString } from 'lodash';
 
-import { GrafanaTheme2, TimeZone, dateTimeFormat } from '@grafana/data';
+import { GrafanaTheme2, TimeZone, dateTimeFormat } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 

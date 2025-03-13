@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
-import { KeyValue } from '@grafana/data';
+import { KeyValue } from '@data/index';
 
 import { t, Trans } from '../../utils/i18n';
 import { FormField } from '../FormField/FormField';

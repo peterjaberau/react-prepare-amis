@@ -3,7 +3,7 @@ import { isString, uniqueId } from 'lodash';
 import { ReactNode, useCallback, useState } from 'react';
 import { Accept, DropEvent, DropzoneOptions, FileError, FileRejection, useDropzone, ErrorCode } from 'react-dropzone';
 
-import { formattedValueToString, getValueFormat, GrafanaTheme2 } from '@grafana/data';
+import { formattedValueToString, getValueFormat, GrafanaTheme2 } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { Trans } from '../../utils/i18n';

@@ -41,4 +41,4 @@ export {
   TooltipDisplayMode,
   type VizTooltipOptions,
   type OptionsWithTooltip,
-} from '@grafana/schema';
+} from '@schema/index';

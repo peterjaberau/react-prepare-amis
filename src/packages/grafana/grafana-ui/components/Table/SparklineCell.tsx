@@ -9,7 +9,7 @@ import {
   Field,
   isDataFrameWithValue,
   formattedValueToString,
-} from '@grafana/data';
+} from '@data/index';
 import {
   BarAlignment,
   GraphDrawStyle,
@@ -19,7 +19,7 @@ import {
   TableSparklineCellOptions,
   TableCellDisplayMode,
   VisibilityMode,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { useTheme2 } from '../../themes';
 import { measureText } from '../../utils';

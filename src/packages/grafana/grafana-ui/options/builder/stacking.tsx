@@ -4,8 +4,8 @@ import {
   FieldType,
   identityOverrideProcessor,
   SelectableValue,
-} from '@grafana/data';
-import { GraphFieldConfig, StackingConfig, StackingMode } from '@grafana/schema';
+} from '@data/index';
+import { GraphFieldConfig, StackingConfig, StackingMode } from '@schema/index';
 
 import { RadioButtonGroup } from '../../components/Forms/RadioButtonGroup/RadioButtonGroup';
 import { IconButton } from '../../components/IconButton/IconButton';

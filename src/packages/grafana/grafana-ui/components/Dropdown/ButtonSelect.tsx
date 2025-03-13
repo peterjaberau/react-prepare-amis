@@ -12,7 +12,7 @@ import {
 import { FocusScope } from '@react-aria/focus';
 import { memo, HTMLAttributes, useState } from 'react';
 
-import { GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue } from '@data/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { Menu } from '../Menu/Menu';

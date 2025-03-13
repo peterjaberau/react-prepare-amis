@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import * as React from 'react';
 
-import { DataHoverClearEvent, DataHoverEvent } from '@grafana/data';
-import { LegendDisplayMode } from '@grafana/schema';
+import { DataHoverClearEvent, DataHoverEvent } from '@data/index';
+import { LegendDisplayMode } from '@schema/index';
 
 import { SeriesVisibilityChangeMode, usePanelContext } from '../PanelChrome';
 

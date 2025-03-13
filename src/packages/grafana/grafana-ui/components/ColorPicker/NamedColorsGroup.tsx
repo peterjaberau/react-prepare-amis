@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Property } from 'csstype';
 import { upperFirst } from 'lodash';
 
-import { GrafanaTheme2, ThemeVizHue } from '@grafana/data';
+import { GrafanaTheme2, ThemeVizHue } from '@data/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { reverseMap } from '../../utils/reverseMap';

@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { uniqueId } from 'lodash';
 import { useCallback, useEffect, useRef } from 'react';
 
-import { GrafanaTheme2, SelectableValue, toIconName } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue, toIconName } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { Icon } from '../../Icon/Icon';

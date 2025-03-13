@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { forwardRef, HTMLProps, ReactNode, useContext } from 'react';
 import useMeasure from 'react-use/lib/useMeasure';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { stylesFactory, useTheme2 } from '../../themes';
 import { getFocusStyle, sharedInputStyle } from '../Forms/commonStyles';

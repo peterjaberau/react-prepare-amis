@@ -14,8 +14,8 @@ import {
   TimeRange,
   hasTimeField,
   InterpolateFunction,
-} from '@grafana/data';
-import { TableCellDisplayMode, TableCellHeight } from '@grafana/schema';
+} from '@data/index';
+import { TableCellDisplayMode, TableCellHeight } from '@schema/index';
 
 import { useTheme2 } from '../../themes';
 import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';

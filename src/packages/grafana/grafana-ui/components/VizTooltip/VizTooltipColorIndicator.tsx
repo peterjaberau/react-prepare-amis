@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
-import { FALLBACK_COLOR, GrafanaTheme2 } from '@grafana/data';
-import { LineStyle } from '@grafana/schema';
+import { FALLBACK_COLOR, GrafanaTheme2 } from '@data/index';
+import { LineStyle } from '@schema/index';
 
 import { useStyles2 } from '../../themes';
 import { SeriesIcon } from '../VizLegend/SeriesIcon';

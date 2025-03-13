@@ -1,4 +1,4 @@
-import { RelativeTimeRange, TimeOption } from '@grafana/data';
+import { RelativeTimeRange, TimeOption } from '@data/index';
 
 const regex = /^now$|^now(\-|\+)(\d{1,10})([wdhms])$/;
 

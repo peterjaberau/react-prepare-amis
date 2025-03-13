@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { Draggable } from '@hello-pangea/dnd';
 
-import { Action, DataFrame, DataLink, GrafanaTheme2 } from '@grafana/data';
+import { Action, DataFrame, DataLink, GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { t } from '../../../utils/i18n';

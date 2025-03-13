@@ -4,7 +4,7 @@ import RcPicker, { PickerProps } from 'rc-picker';
 import generateConfig from 'rc-picker/lib/generate/moment';
 import locale from 'rc-picker/lib/locale/en_US';
 
-import { dateTime, DateTime, dateTimeAsMoment, GrafanaTheme2, isDateTimeInput } from '@grafana/data';
+import { dateTime, DateTime, dateTimeAsMoment, GrafanaTheme2, isDateTimeInput } from '@data/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { getFocusStyles } from '../../themes/mixins';

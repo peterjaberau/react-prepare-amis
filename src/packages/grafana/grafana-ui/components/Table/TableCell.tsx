@@ -1,6 +1,6 @@
 import { Cell } from 'react-table';
 
-import { TimeRange, DataFrame, InterpolateFunction } from '@grafana/data';
+import { TimeRange, DataFrame, InterpolateFunction } from '@data/index';
 
 import { TableStyles } from './styles';
 import { GetActionsFunction, GrafanaTableColumn, TableFilterActionCallback, TableInspectCellCallback } from './types';

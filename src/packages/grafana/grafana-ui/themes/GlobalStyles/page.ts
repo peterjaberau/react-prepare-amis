@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 export function getPageStyles(theme: GrafanaTheme2) {
   const maxWidthBreakpoint =

@@ -4,8 +4,8 @@ import {
   identityOverrideProcessor,
   SelectableValue,
   StandardEditorProps,
-} from '@grafana/data';
-import { AxisColorMode, AxisConfig, AxisPlacement, ScaleDistribution, ScaleDistributionConfig } from '@grafana/schema';
+} from '@data/index';
+import { AxisColorMode, AxisConfig, AxisPlacement, ScaleDistribution, ScaleDistributionConfig } from '@schema/index';
 
 import { Field } from '../../components/Forms/Field';
 import { RadioButtonGroup } from '../../components/Forms/RadioButtonGroup/RadioButtonGroup';

@@ -12,8 +12,8 @@ import {
   GrafanaTheme2,
   reduceField,
   ReducerID,
-} from '@grafana/data';
-import { BarAlignment, GraphDrawStyle, GraphTransform, LineInterpolation, StackingMode } from '@grafana/schema';
+} from '@data/index';
+import { BarAlignment, GraphDrawStyle, GraphTransform, LineInterpolation, StackingMode } from '@schema/index';
 
 import { attachDebugger } from '../../utils';
 import { createLogger } from '../../utils/logger';

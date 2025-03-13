@@ -1,4 +1,4 @@
-import { DataLink, VariableSuggestion } from '@grafana/data';
+import { DataLink, VariableSuggestion } from '@data/index';
 
 import { DataLinkEditorModalContent } from './DataLinkEditorModalContent';
 import { DataLinksInlineEditorBase, DataLinksInlineEditorBaseProps } from './DataLinksInlineEditorBase';

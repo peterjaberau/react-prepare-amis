@@ -15,7 +15,7 @@ import {
 import { Placement } from '@popperjs/core';
 import { memo, cloneElement, isValidElement, useRef, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2, useTheme2 } from '../../themes/ThemeContext';
 import { buildTooltipTheme, getPlacement } from '../../utils/tooltipUtils';

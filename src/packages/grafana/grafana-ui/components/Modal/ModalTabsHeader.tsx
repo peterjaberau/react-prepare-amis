@@ -1,4 +1,4 @@
-import { NavModelItem } from '@grafana/data';
+import { NavModelItem } from '@data/index';
 
 import { IconName } from '../../types';
 import { Tab } from '../Tabs/Tab';

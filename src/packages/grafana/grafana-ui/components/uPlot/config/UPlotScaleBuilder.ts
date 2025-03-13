@@ -1,7 +1,7 @@
 import uPlot, { Scale, Range } from 'uplot';
 
-import { DecimalCount, incrRoundDn, incrRoundUp, isBooleanUnit } from '@grafana/data';
-import { ScaleOrientation, ScaleDirection, ScaleDistribution, StackingMode } from '@grafana/schema';
+import { DecimalCount, incrRoundDn, incrRoundUp, isBooleanUnit } from '@data/index';
+import { ScaleOrientation, ScaleDirection, ScaleDistribution, StackingMode } from '@schema/index';
 
 import { PlotConfigBuilder } from '../types';
 

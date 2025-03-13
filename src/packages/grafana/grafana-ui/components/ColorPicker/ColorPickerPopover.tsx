@@ -3,7 +3,7 @@ import { FocusScope } from '@react-aria/focus';
 import { Component } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, colorManipulator } from '@grafana/data';
+import { GrafanaTheme2, colorManipulator } from '@data/index';
 
 import { stylesFactory, withTheme2 } from '../../themes';
 import { Themeable2 } from '../../types/theme';

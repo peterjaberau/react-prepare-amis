@@ -8,7 +8,7 @@ import {
   TimeZone,
   FormattedValue,
   GrafanaTheme2,
-} from '@grafana/data';
+} from '@data/index';
 
 import { ContextMenu, ContextMenuProps } from '../../components/ContextMenu/ContextMenu';
 import { FormattedValueDisplay } from '../../components/FormattedValueDisplay/FormattedValueDisplay';

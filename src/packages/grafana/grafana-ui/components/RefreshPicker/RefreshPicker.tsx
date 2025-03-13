@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import { formatDuration } from 'date-fns';
 import { PureComponent } from 'react';
 
-import { SelectableValue, parseDuration } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { SelectableValue, parseDuration } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { t } from '../../utils/i18n';
 import { ButtonGroup } from '../Button';

@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2, GraphSeriesValue } from '@grafana/data';
+import { GrafanaTheme2, GraphSeriesValue } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { SeriesIcon } from '../VizLegend/SeriesIcon';

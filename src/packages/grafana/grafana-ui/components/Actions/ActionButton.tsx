@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ActionModel, Field } from '@grafana/data';
+import { ActionModel, Field } from '@data/index';
 
 import { t } from '../../utils/i18n';
 import { Button, ButtonProps } from '../Button';

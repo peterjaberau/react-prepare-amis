@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { CSSObjectWithLabel } from 'react-select';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 export default function resetSelectStyles(theme: GrafanaTheme2) {
   return {

@@ -1,4 +1,4 @@
-import { DataSourceJsonData, DataSourcePluginOptionsEditorProps } from '@grafana/data';
+import { DataSourceJsonData, DataSourcePluginOptionsEditorProps } from '@data/index';
 
 import { InlineSwitch } from '../../components/Switch/Switch';
 import { t, Trans } from '../../utils/i18n';

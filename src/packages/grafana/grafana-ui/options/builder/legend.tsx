@@ -1,5 +1,5 @@
-import { PanelOptionsEditorBuilder, standardEditorsRegistry, StatsPickerConfigSettings } from '@grafana/data';
-import { LegendDisplayMode, OptionsWithLegend } from '@grafana/schema';
+import { PanelOptionsEditorBuilder, standardEditorsRegistry, StatsPickerConfigSettings } from '@data/index';
+import { LegendDisplayMode, OptionsWithLegend } from '@schema/index';
 
 /**
  * @alpha

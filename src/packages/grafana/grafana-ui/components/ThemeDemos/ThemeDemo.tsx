@@ -3,7 +3,7 @@ import { css, cx } from '@emotion/css';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, ThemeRichColor } from '@grafana/data';
+import { GrafanaTheme2, ThemeRichColor } from '@data/index';
 
 import { useTheme2 } from '../../themes/ThemeContext';
 import { allButtonVariants, Button } from '../Button';

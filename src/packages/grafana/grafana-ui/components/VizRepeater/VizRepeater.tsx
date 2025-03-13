@@ -2,7 +2,7 @@ import { clamp } from 'lodash';
 import { PureComponent, CSSProperties } from 'react';
 import * as React from 'react';
 
-import { VizOrientation } from '@grafana/data';
+import { VizOrientation } from '@data/index';
 
 import { calculateGridDimensions } from '../../utils/squares';
 

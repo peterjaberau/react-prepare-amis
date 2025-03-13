@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { components, GroupBase, SingleValueProps } from 'react-select';
 
-import { GrafanaTheme2, SelectableValue, toIconName } from '@grafana/data';
+import { GrafanaTheme2, SelectableValue, toIconName } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { useDelayedSwitch } from '../../utils/useDelayedSwitch';

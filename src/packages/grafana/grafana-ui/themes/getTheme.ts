@@ -1,4 +1,4 @@
-import { createTheme, GrafanaTheme } from '@grafana/data';
+import { createTheme, GrafanaTheme } from '@data/index';
 
 let themeMock: ((name?: string) => GrafanaTheme) | null;
 

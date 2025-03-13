@@ -1,6 +1,6 @@
 import { components, NoticeProps, GroupBase } from 'react-select';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 
 import { Select } from '../../../Select/Select';
 

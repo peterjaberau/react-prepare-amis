@@ -13,7 +13,7 @@ import {
   getDisplayProcessor,
   FieldColorModeId,
   DecimalCount,
-} from '@grafana/data';
+} from '@data/index';
 import {
   AxisPlacement,
   GraphDrawStyle,
@@ -26,7 +26,7 @@ import {
   GraphTransform,
   AxisColorMode,
   GraphGradientMode,
-} from '@grafana/schema';
+} from '@schema/index';
 
 // unit lookup needed to determine if we want power-of-2 or power-of-10 axis ticks
 // see categories.ts is @grafana/data

@@ -1,4 +1,4 @@
-import { LinkModel } from '@grafana/data';
+import { LinkModel } from '@data/index';
 
 import { MenuItemProps } from '../components/Menu/MenuItem';
 

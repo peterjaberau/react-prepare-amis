@@ -1,5 +1,5 @@
-import { FieldConfig, FieldType } from '@grafana/data';
-import { AxisPlacement, GraphFieldConfig, ScaleDistribution, ScaleDistributionConfig } from '@grafana/schema';
+import { FieldConfig, FieldType } from '@data/index';
+import { AxisPlacement, GraphFieldConfig, ScaleDistribution, ScaleDistributionConfig } from '@schema/index';
 
 import { FIXED_UNIT } from './types';
 

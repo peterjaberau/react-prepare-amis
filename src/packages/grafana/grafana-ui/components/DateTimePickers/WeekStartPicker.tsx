@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
-import { BootData } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { BootData } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { Combobox } from '../Combobox/Combobox';
 import { ComboboxOption } from '../Combobox/types';

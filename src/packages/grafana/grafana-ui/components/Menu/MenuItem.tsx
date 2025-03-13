@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { ReactElement, useCallback, useState, useRef, useImperativeHandle, CSSProperties, AriaRole } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, LinkTarget } from '@grafana/data';
+import { GrafanaTheme2, LinkTarget } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { getFocusStyles } from '../../themes/mixins';

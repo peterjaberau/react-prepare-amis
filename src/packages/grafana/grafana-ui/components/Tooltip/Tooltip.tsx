@@ -13,8 +13,8 @@ import {
 } from '@floating-ui/react';
 import { forwardRef, cloneElement, isValidElement, useCallback, useId, useRef, useState } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { buildTooltipTheme, getPlacement } from '../../utils/tooltipUtils';

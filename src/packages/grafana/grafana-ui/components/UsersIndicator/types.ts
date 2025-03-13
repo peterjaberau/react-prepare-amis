@@ -1,4 +1,4 @@
-import { DateTimeInput } from '@grafana/data';
+import { DateTimeInput } from '@data/index';
 
 export interface UserView {
   user: {

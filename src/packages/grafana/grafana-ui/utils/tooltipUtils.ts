@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Placement } from '@floating-ui/react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { TooltipPlacement } from '../components/Tooltip';
 

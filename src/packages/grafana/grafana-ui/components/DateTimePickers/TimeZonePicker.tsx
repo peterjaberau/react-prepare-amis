@@ -9,7 +9,7 @@ import {
   GroupedTimeZones,
   TimeZone,
   InternalTimeZones,
-} from '@grafana/data';
+} from '@data/index';
 
 import { t } from '../../utils/i18n';
 import { Select } from '../Select/Select';

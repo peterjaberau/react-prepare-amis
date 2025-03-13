@@ -4,8 +4,8 @@ import * as React from 'react';
 import { createPortal } from 'react-dom';
 import uPlot from 'uplot';
 
-import { GrafanaTheme2, LinkModel } from '@grafana/data';
-import { DashboardCursorSync } from '@grafana/schema';
+import { GrafanaTheme2, LinkModel } from '@data/index';
+import { DashboardCursorSync } from '@schema/index';
 
 import { useStyles2 } from '../../../themes';
 import { RangeSelection1D, RangeSelection2D, OnSelectRangeCallback } from '../../PanelChrome';

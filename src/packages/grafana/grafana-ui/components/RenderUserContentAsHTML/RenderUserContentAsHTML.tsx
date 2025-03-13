@@ -1,7 +1,7 @@
 import { HTMLAttributes, PropsWithChildren } from 'react';
 import * as React from 'react';
 
-import { textUtil } from '@grafana/data';
+import { textUtil } from '@data/index';
 
 export interface RenderUserContentAsHTMLProps<T = HTMLSpanElement>
   extends Omit<HTMLAttributes<T>, 'dangerouslySetInnerHTML'> {

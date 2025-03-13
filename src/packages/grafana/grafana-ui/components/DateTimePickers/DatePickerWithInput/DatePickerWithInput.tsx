@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { autoUpdate, flip, shift, useClick, useDismiss, useFloating, useInteractions } from '@floating-ui/react';
 import { ChangeEvent, useState } from 'react';
 
-import { GrafanaTheme2, dateTime } from '@grafana/data';
+import { GrafanaTheme2, dateTime } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { Props as InputProps, Input } from '../../Input/Input';

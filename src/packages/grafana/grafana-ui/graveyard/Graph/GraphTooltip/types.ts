@@ -1,4 +1,4 @@
-import { Dimension, Dimensions, TimeZone } from '@grafana/data';
+import { Dimension, Dimensions, TimeZone } from '@data/index';
 
 import { ActiveDimensions } from '../../../components/VizTooltip';
 

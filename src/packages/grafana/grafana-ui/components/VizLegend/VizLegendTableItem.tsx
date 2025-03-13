@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useCallback } from 'react';
 import * as React from 'react';
 
-import { formattedValueToString, GrafanaTheme2 } from '@grafana/data';
+import { formattedValueToString, GrafanaTheme2 } from '@data/index';
 
 import { styleMixins } from '../../themes';
 import { useStyles2 } from '../../themes/ThemeContext';

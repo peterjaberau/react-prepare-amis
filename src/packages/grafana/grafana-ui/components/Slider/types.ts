@@ -1,4 +1,4 @@
-import { SliderMarks } from '@grafana/data';
+import { SliderMarks } from '@data/index';
 
 import { Orientation } from '../../types/orientation';
 

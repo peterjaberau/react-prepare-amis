@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
-import { IconName } from '@grafana/data';
+import { IconName } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { ButtonVariant } from '../Button';

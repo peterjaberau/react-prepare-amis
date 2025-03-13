@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
-import { DataFrame, getFieldDisplayName, getFieldSeriesColor } from '@grafana/data';
-import { VizLegendOptions, AxisPlacement } from '@grafana/schema';
+import { DataFrame, getFieldDisplayName, getFieldSeriesColor } from '@data/index';
+import { VizLegendOptions, AxisPlacement } from '@schema/index';
 
 import { useTheme2 } from '../../themes';
 import { VizLayout, VizLayoutLegendProps } from '../VizLayout/VizLayout';

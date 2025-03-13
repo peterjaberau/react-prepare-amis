@@ -1,4 +1,4 @@
-import { Field, LinkModel } from '@grafana/data';
+import { Field, LinkModel } from '@data/index';
 
 import { ButtonProps, Button } from '../Button';
 

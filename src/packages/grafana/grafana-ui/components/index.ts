@@ -299,7 +299,7 @@ export { LegacyForms, LegacyInputStatus };
 
 // WIP, need renames and exports cleanup
 export * from './uPlot/config';
-export { ScaleDistribution, BarGaugeDisplayMode } from '@grafana/schema';
+export { ScaleDistribution, BarGaugeDisplayMode } from '@schema/index';
 export { UPlotConfigBuilder } from './uPlot/config/UPlotConfigBuilder';
 export { UPLOT_AXIS_FONT_SIZE } from './uPlot/config/UPlotAxisBuilder';
 export { UPlotChart } from './uPlot/Plot';

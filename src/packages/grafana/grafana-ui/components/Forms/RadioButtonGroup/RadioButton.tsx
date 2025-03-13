@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { StringSelector, selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2 } from '@data/index';
+import { StringSelector, selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../../themes';
 import { getFocusStyles, getMouseFocusStyles } from '../../../themes/mixins';

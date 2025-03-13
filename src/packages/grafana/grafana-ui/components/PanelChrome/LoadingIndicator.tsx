@@ -1,7 +1,7 @@
 import { css, cx, keyframes } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes';
 import { Icon } from '../Icon/Icon';

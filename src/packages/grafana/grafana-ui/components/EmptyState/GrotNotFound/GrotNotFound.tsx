@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { SVGProps, useEffect, useRef } from 'react';
 import SVG from 'react-inlinesvg';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 

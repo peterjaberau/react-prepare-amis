@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme, GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme, GrafanaTheme2 } from '@data/index';
 
 export const getSegmentStyles = (theme: GrafanaTheme | GrafanaTheme2) => {
   const palette = 'v1' in theme ? theme.v1.palette : theme.palette;

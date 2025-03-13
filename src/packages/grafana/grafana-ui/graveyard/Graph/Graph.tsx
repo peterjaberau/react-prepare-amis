@@ -5,8 +5,8 @@ import { PureComponent } from 'react';
 import * as React from 'react';
 
 // Types
-import { TimeRange, GraphSeriesXY, TimeZone, createDimension } from '@grafana/data';
-import { TooltipDisplayMode } from '@grafana/schema';
+import { TimeRange, GraphSeriesXY, TimeZone, createDimension } from '@data/index';
+import { TooltipDisplayMode } from '@schema/index';
 
 import { VizTooltipProps, VizTooltipContentProps, ActiveDimensions, VizTooltip } from '../../components/VizTooltip';
 import { FlotPosition } from '../../components/VizTooltip/VizTooltip';

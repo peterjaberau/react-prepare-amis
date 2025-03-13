@@ -3,8 +3,8 @@
 import { css } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2, GraphSeriesValue } from '@grafana/data';
-import { LegendDisplayMode, LegendPlacement } from '@grafana/schema';
+import { GrafanaTheme2, GraphSeriesValue } from '@data/index';
+import { LegendDisplayMode, LegendPlacement } from '@schema/index';
 
 import { CustomScrollbar } from '../../components/CustomScrollbar/CustomScrollbar';
 import { VizLegend } from '../../components/VizLegend/VizLegend';

@@ -21,13 +21,13 @@ import {
   isTimeSeriesFrame,
   reduceField,
   SelectableValue,
-} from '@grafana/data';
+} from '@data/index';
 import {
   BarGaugeDisplayMode,
   TableAutoCellOptions,
   TableCellBackgroundDisplayMode,
   TableCellDisplayMode,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { getTextColorForAlphaBackground } from '../../utils';
 

@@ -11,8 +11,8 @@ import {
   FieldConfigSource,
   ActionModel,
   InterpolateFunction,
-} from '@grafana/data';
-import * as schema from '@grafana/schema';
+} from '@data/index';
+import * as schema from '@schema/index';
 
 import { TableCellInspectorMode } from './TableCellInspector';
 import { TableStyles } from './styles';
@@ -28,7 +28,7 @@ export {
   type TableColorTextCellOptions,
   type TableImageCellOptions,
   type TableJsonViewCellOptions,
-} from '@grafana/schema';
+} from '@schema/index';
 
 export interface TableRow {
   [x: string]: any;

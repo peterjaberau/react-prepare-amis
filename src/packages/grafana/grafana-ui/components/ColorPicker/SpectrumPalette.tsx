@@ -4,7 +4,7 @@ import { RgbaStringColorPicker } from 'react-colorful';
 import { useThrottleFn } from 'react-use';
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2, colorManipulator } from '@grafana/data';
+import { GrafanaTheme2, colorManipulator } from '@data/index';
 
 import { useStyles2, useTheme2 } from '../../themes';
 

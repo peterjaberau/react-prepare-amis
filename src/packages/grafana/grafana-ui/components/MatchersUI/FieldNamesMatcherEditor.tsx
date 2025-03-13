@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 
-import { FieldMatcherID, fieldMatchers, SelectableValue, ByNamesMatcherOptions } from '@grafana/data';
+import { FieldMatcherID, fieldMatchers, SelectableValue, ByNamesMatcherOptions } from '@data/index';
 
 import { Input } from '../Input/Input';
 import { MultiSelect } from '../Select/Select';

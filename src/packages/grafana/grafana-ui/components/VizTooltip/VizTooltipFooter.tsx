@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
-import { ActionModel, Field, GrafanaTheme2, LinkModel, ThemeSpacingTokens } from '@grafana/data';
+import { ActionModel, Field, GrafanaTheme2, LinkModel, ThemeSpacingTokens } from '@data/index';
 
 import { Button, DataLinkButton, Icon, Stack } from '..';
 import { useStyles2 } from '../../themes';

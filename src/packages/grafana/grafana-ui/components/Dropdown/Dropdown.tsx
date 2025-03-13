@@ -14,7 +14,7 @@ import { useCallback, useRef, useState } from 'react';
 import * as React from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { ReactUtils } from '../../utils';

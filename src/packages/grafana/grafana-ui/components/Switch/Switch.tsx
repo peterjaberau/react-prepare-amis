@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { uniqueId } from 'lodash';
 import { forwardRef, HTMLProps, useRef } from 'react';
 
-import { GrafanaTheme2, deprecationWarning } from '@grafana/data';
+import { GrafanaTheme2, deprecationWarning } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { getFocusStyles, getMouseFocusStyles } from '../../themes/mixins';

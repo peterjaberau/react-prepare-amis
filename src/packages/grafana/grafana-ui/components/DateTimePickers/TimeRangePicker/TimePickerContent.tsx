@@ -1,8 +1,8 @@
 import { css, cx } from '@emotion/css';
 import { memo, useMemo, useState } from 'react';
 
-import { GrafanaTheme2, isDateTime, rangeUtil, RawTimeRange, TimeOption, TimeRange, TimeZone } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, isDateTime, rangeUtil, RawTimeRange, TimeOption, TimeRange, TimeZone } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2, useTheme2 } from '../../../themes';
 import { getFocusStyles } from '../../../themes/mixins';

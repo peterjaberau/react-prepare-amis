@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 import Highlighter from 'react-highlight-words';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { CompletionItem, CompletionItemKind } from '../../types/completion';

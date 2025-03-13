@@ -13,7 +13,7 @@ import {
   useTable,
 } from 'react-table';
 
-import { GrafanaTheme2, IconName, isTruthy } from '@grafana/data';
+import { GrafanaTheme2, IconName, isTruthy } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { Icon } from '../Icon/Icon';

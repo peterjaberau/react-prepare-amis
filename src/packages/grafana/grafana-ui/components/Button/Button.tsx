@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, ThemeRichColor } from '@grafana/data';
+import { GrafanaTheme2, ThemeRichColor } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { getFocusStyles, getMouseFocusStyles } from '../../themes/mixins';

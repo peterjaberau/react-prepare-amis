@@ -1,7 +1,7 @@
 import { cx } from '@emotion/css';
 import { ReactElement, useCallback } from 'react';
 
-import { selectors } from '@grafana/e2e-selectors';
+import { selectors } from '@selectors/index';
 
 import { Dropdown } from '../Dropdown/Dropdown';
 import { ToolbarButton } from '../ToolbarButton';

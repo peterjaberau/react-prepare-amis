@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useMountedState } from 'react-use';
 import uPlot from 'uplot';
 
-import { DataFrame, DataFrameFieldIndex } from '@grafana/data';
+import { DataFrame, DataFrameFieldIndex } from '@data/index';
 
 import { UPlotConfigBuilder } from '../config/UPlotConfigBuilder';
 

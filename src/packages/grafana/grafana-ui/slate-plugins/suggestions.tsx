@@ -1,7 +1,7 @@
 import { debounce, sortBy } from 'lodash';
 import { Editor, Plugin as SlatePlugin } from 'slate-react';
 
-import { BootData } from '@grafana/data';
+import { BootData } from '@data/index';
 
 import { Typeahead } from '../components/Typeahead/Typeahead';
 import { CompletionItem, SuggestionsState, TypeaheadInput, TypeaheadOutput } from '../types';

@@ -4,8 +4,8 @@ import { FocusScope } from '@react-aria/focus';
 import { OverlayContainer, useOverlay } from '@react-aria/overlays';
 import { createRef, FormEvent, memo } from 'react';
 
-import { DateTime, GrafanaTheme2, TimeZone } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { DateTime, GrafanaTheme2, TimeZone } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2, useTheme2 } from '../../../themes';
 import { getModalStyles } from '../../Modal/getModalStyles';

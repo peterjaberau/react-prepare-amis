@@ -1,4 +1,4 @@
-import { dateMath, dateTimeParse, isDateTime, TimeRange, TimeZone } from '@grafana/data';
+import { dateMath, dateTimeParse, isDateTime, TimeRange, TimeZone } from '@data/index';
 
 export function isValid(value: string, roundUp?: boolean, timeZone?: TimeZone): boolean {
   if (isDateTime(value)) {

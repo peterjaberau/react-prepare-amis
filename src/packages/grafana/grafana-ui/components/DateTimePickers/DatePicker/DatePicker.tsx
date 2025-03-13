@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo } from 'react';
 import Calendar from 'react-calendar';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { ClickOutsideWrapper } from '../../ClickOutsideWrapper/ClickOutsideWrapper';

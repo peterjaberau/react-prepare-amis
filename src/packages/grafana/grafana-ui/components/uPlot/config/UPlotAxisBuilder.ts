@@ -9,8 +9,8 @@ import {
   roundDecimals,
   systemDateFormats,
   TimeZone,
-} from '@grafana/data';
-import { AxisPlacement, ScaleDistribution } from '@grafana/schema';
+} from '@data/index';
+import { AxisPlacement, ScaleDistribution } from '@schema/index';
 
 import { measureText } from '../../../utils/measureText';
 import { PlotConfigBuilder } from '../types';

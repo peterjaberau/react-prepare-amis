@@ -7,7 +7,7 @@ import {
   fieldMatchers,
   SelectableValue,
   toOption,
-} from '@grafana/data';
+} from '@data/index';
 
 import { MultiSelect, Select } from '../Select/Select';
 

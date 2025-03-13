@@ -1,4 +1,4 @@
-import { GrafanaTheme2, ThemeTypographyVariantTypes } from '@grafana/data';
+import { GrafanaTheme2, ThemeTypographyVariantTypes } from '@data/index';
 
 import { TextProps } from './Text';
 

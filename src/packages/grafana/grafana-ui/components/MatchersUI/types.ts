@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { DataFrame, RegistryItem, FieldMatcherInfo } from '@grafana/data';
+import { DataFrame, RegistryItem, FieldMatcherInfo } from '@data/index';
 
 export interface FieldMatcherUIRegistryItem<TOptions> extends RegistryItem {
   component: React.ComponentType<MatcherUIProps<TOptions>>;

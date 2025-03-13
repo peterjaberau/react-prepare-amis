@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import * as React from 'react';
 
-import { DataFrame, TimeRange } from '@grafana/data';
+import { DataFrame, TimeRange } from '@data/index';
 
 import { PanelContextRoot } from '../../components/PanelChrome/PanelContext';
 import { hasVisibleLegendSeries, PlotLegend } from '../../components/uPlot/PlotLegend';

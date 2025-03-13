@@ -1,4 +1,4 @@
-import { Registry } from '@grafana/data';
+import { Registry } from '@data/index';
 
 import { fieldNameByRegexMatcherItem } from './FieldNameByRegexMatcherEditor';
 import { fieldNameMatcherItem } from './FieldNameMatcherEditor';

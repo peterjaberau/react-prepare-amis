@@ -3,7 +3,7 @@ import {
   getColumnFromDimension,
   formattedValueToString,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@data/index';
 
 import { SeriesTable } from '../../../components/VizTooltip';
 

@@ -2,8 +2,8 @@ import { css, cx } from '@emotion/css';
 import { HTMLProps } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, NavModelItem } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, NavModelItem } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes';
 import { getFocusStyles } from '../../themes/mixins';

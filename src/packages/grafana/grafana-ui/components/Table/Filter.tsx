@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { useCallback, useMemo, useRef, useState } from 'react';
 
-import { Field, GrafanaTheme2, SelectableValue } from '@grafana/data';
+import { Field, GrafanaTheme2, SelectableValue } from '@data/index';
 
 import { Popover } from '..';
 import { useStyles2 } from '../../themes';

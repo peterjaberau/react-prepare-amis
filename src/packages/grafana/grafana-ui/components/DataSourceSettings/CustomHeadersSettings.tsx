@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { uniqueId } from 'lodash';
 import { PureComponent } from 'react';
 
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { t, Trans } from '../../utils/i18n';

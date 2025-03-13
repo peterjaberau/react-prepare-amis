@@ -15,8 +15,8 @@ import {
   LegacyGraphHoverEvent,
   TimeRange,
   TimeZone,
-} from '@grafana/data';
-import { VizLegendOptions } from '@grafana/schema';
+} from '@data/index';
+import { VizLegendOptions } from '@schema/index';
 
 import { PanelContext, PanelContextRoot } from '../../components/PanelChrome/PanelContext';
 import { VizLayout } from '../../components/VizLayout/VizLayout';

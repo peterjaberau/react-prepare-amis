@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2, useTheme2 } from '../../themes/ThemeContext';
 import { t } from '../../utils/i18n';

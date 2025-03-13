@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { DataFrameFieldIndex, DisplayValue } from '@grafana/data';
-import { LegendDisplayMode, LegendPlacement, LineStyle } from '@grafana/schema';
+import { DataFrameFieldIndex, DisplayValue } from '@data/index';
+import { LegendDisplayMode, LegendPlacement, LineStyle } from '@schema/index';
 
 export enum SeriesVisibilityChangeBehavior {
   Isolate,

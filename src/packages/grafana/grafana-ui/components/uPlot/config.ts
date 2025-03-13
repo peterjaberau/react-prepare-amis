@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 import {
   AxisPlacement,
   BarAlignment,
@@ -8,7 +8,7 @@ import {
   LineInterpolation,
   VisibilityMode,
   StackingMode,
-} from '@grafana/schema';
+} from '@schema/index';
 
 /**
  * @alpha

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { SelectableValue, GrafanaTheme2 } from '@grafana/data';
+import { SelectableValue, GrafanaTheme2 } from '@data/index';
 
 import { IconButton } from '../../components/IconButton/IconButton';
 import { TabsBar, Tab, TabContent } from '../../components/Tabs';

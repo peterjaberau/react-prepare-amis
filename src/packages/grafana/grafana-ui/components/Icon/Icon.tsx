@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 import SVG from 'react-inlinesvg';
 
-import { GrafanaTheme2, isIconName } from '@grafana/data';
+import { GrafanaTheme2, isIconName } from '@data/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { IconName, IconType, IconSize } from '../../types/icon';

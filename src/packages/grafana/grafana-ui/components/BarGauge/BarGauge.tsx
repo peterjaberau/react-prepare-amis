@@ -19,9 +19,9 @@ import {
   ThresholdsMode,
   TimeSeriesValue,
   VizOrientation,
-} from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
-import { BarGaugeDisplayMode, BarGaugeNamePlacement, BarGaugeValueMode, VizTextDisplayOptions } from '@grafana/schema';
+} from '@data/index';
+import { selectors } from '@selectors/index';
+import { BarGaugeDisplayMode, BarGaugeNamePlacement, BarGaugeValueMode, VizTextDisplayOptions } from '@schema/index';
 
 import { Themeable2 } from '../../types';
 import { calculateFontSize, measureText } from '../../utils/measureText';

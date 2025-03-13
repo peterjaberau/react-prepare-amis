@@ -1,4 +1,4 @@
-import { selectors } from '@grafana/e2e-selectors';
+import { selectors } from '@selectors/index';
 
 import { Trans, t } from '../../../utils/i18n';
 import { IconButton } from '../../IconButton/IconButton';

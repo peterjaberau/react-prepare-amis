@@ -2,8 +2,8 @@ import { cx } from '@emotion/css';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { DisplayValue, DisplayValueAlignmentFactors, FieldSparkline } from '@grafana/data';
-import { PercentChangeColorMode, VizTextDisplayOptions } from '@grafana/schema';
+import { DisplayValue, DisplayValueAlignmentFactors, FieldSparkline } from '@data/index';
+import { PercentChangeColorMode, VizTextDisplayOptions } from '@schema/index';
 
 import { Themeable2 } from '../../types';
 import { clearButtonStyles } from '../Button';

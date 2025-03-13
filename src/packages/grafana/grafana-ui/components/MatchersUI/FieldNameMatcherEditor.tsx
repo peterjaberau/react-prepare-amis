@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 
-import { FieldMatcherID, fieldMatchers, SelectableValue } from '@grafana/data';
+import { FieldMatcherID, fieldMatchers, SelectableValue } from '@data/index';
 
 import { Select } from '../Select/Select';
 

@@ -1,4 +1,4 @@
-import { ThemeSpacingTokens } from '@grafana/data';
+import { ThemeSpacingTokens } from '@data/index';
 
 import { Box } from './Box/Box';
 import { ResponsiveProp } from './utils/responsiveness';

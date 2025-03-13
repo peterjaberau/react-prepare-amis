@@ -1,5 +1,5 @@
 // @deprecated use ThemeContext from @grafana/data instead
-export { ThemeContext } from '@grafana/data';
+export { ThemeContext } from '@data/index';
 
 export { withTheme, withTheme2, useTheme, useTheme2, useStyles, useStyles2, mockThemeContext } from './ThemeContext';
 export { getTheme, mockTheme } from './getTheme';

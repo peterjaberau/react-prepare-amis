@@ -10,8 +10,8 @@ import {
   GAUGE_DEFAULT_MAXIMUM,
   GAUGE_DEFAULT_MINIMUM,
   GrafanaTheme2,
-} from '@grafana/data';
-import { VizTextDisplayOptions, VizOrientation } from '@grafana/schema';
+} from '@data/index';
+import { VizTextDisplayOptions, VizOrientation } from '@schema/index';
 
 import { calculateFontSize } from '../../utils/measureText';
 import { clearButtonStyles } from '../Button';

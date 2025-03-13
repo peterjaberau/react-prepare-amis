@@ -1,4 +1,4 @@
-import { GrafanaTheme, GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme, GrafanaTheme2 } from '@data/index';
 
 export interface Themeable {
   theme: GrafanaTheme;

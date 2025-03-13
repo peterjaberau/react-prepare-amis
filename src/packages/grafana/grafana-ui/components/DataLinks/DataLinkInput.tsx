@@ -8,7 +8,7 @@ import { Value } from 'slate';
 import Plain from 'slate-plain-serializer';
 import { Editor } from 'slate-react';
 
-import { DataLinkBuiltInVars, GrafanaTheme2, VariableOrigin, VariableSuggestion } from '@grafana/data';
+import { DataLinkBuiltInVars, GrafanaTheme2, VariableOrigin, VariableSuggestion } from '@data/index';
 
 import { SlatePrism } from '../../slate-plugins';
 import { useStyles2 } from '../../themes';

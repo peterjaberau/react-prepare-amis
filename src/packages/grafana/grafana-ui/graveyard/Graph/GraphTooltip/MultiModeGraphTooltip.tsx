@@ -1,4 +1,4 @@
-import { getValueFromDimension } from '@grafana/data';
+import { getValueFromDimension } from '@data/index';
 
 import { SeriesTable } from '../../../components/VizTooltip';
 import { FlotPosition } from '../../../components/VizTooltip/VizTooltip';

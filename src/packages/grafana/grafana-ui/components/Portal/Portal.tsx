@@ -3,8 +3,8 @@ import { PropsWithChildren, useLayoutEffect, useRef } from 'react';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2, useTheme2 } from '../../themes';
 

@@ -1,8 +1,8 @@
 import { css, cx } from '@emotion/css';
 import { useState, useCallback, useId } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useTheme2 } from '../../themes';
 import { t, Trans } from '../../utils/i18n';

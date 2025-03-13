@@ -16,8 +16,8 @@ import {
   getFieldDisplayName,
   GrafanaTheme2,
   TimeZone,
-} from '@grafana/data';
-import { TooltipDisplayMode, SortOrder } from '@grafana/schema';
+} from '@data/index';
+import { TooltipDisplayMode, SortOrder } from '@schema/index';
 
 import { Portal, SeriesTable, SeriesTableRowProps, UPlotConfigBuilder, VizTooltipContainer } from '../../../components';
 import { findMidPointYPosition } from '../../../components/uPlot/utils';

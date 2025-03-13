@@ -3,8 +3,8 @@ import { CSSProperties, PointerEvent, ReactElement, ReactNode, useId, useRef } f
 import * as React from 'react';
 import { useMeasure, useToggle } from 'react-use';
 
-import { GrafanaTheme2, LoadingState } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, LoadingState } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2, useTheme2 } from '../../themes';
 import { getFocusStyles } from '../../themes/mixins';

@@ -3,7 +3,7 @@ import { useState, forwardRef } from 'react';
 import { RgbaStringColorPicker } from 'react-colorful';
 import { useThrottleFn } from 'react-use';
 
-import { colorManipulator, GrafanaTheme2 } from '@grafana/data';
+import { colorManipulator, GrafanaTheme2 } from '@data/index';
 
 import { useStyles2, useTheme2 } from '../../themes';
 import { ClickOutsideWrapper } from '../ClickOutsideWrapper/ClickOutsideWrapper';

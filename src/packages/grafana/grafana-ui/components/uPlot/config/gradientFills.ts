@@ -8,8 +8,8 @@ import {
   GrafanaTheme2,
   ThresholdsConfig,
   ThresholdsMode,
-} from '@grafana/data';
-import { ScaleOrientation } from '@grafana/schema';
+} from '@data/index';
+import { ScaleOrientation } from '@schema/index';
 
 import { getCanvasContext } from '../../../utils/measureText';
 

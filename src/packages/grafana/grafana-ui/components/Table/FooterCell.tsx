@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { KeyValue } from '@grafana/data';
+import { KeyValue } from '@data/index';
 
 import { FooterItem } from './types';
 

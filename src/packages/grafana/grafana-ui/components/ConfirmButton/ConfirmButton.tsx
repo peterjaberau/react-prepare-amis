@@ -2,7 +2,7 @@ import { cx, css } from '@emotion/css';
 import { ReactElement, useEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { ComponentSize } from '../../types/size';

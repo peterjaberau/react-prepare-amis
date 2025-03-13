@@ -1,7 +1,7 @@
 import { cx, css } from '@emotion/css';
 import { cloneElement, ReactNode } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { getChildId } from '../../utils/reactUtils';

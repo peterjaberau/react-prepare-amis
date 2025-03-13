@@ -2,8 +2,8 @@ import { CSSProperties } from 'react';
 import * as React from 'react';
 import tinycolor from 'tinycolor2';
 
-import { formattedValueToString, DisplayValue, FieldConfig, FieldType, ThemeVisualizationColors } from '@grafana/data';
-import { GraphDrawStyle, GraphFieldConfig, PercentChangeColorMode } from '@grafana/schema';
+import { formattedValueToString, DisplayValue, FieldConfig, FieldType, ThemeVisualizationColors } from '@data/index';
+import { GraphDrawStyle, GraphFieldConfig, PercentChangeColorMode } from '@schema/index';
 
 import { getTextColorForAlphaBackground } from '../../utils';
 import { calculateFontSize } from '../../utils/measureText';

@@ -4,7 +4,7 @@ import { forwardRef, useState, useEffect, useMemo } from 'react';
 import * as React from 'react';
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { Input, Props as InputProps } from '../Input/Input';

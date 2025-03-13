@@ -1,5 +1,5 @@
-import { FALLBACK_COLOR, Field, FieldType, formattedValueToString, getFieldColorModeForField } from '@grafana/data';
-import { SortOrder, TooltipDisplayMode } from '@grafana/schema';
+import { FALLBACK_COLOR, Field, FieldType, formattedValueToString, getFieldColorModeForField } from '@data/index';
+import { SortOrder, TooltipDisplayMode } from '@schema/index';
 
 import { ColorIndicatorStyles } from './VizTooltipColorIndicator';
 import { ColorIndicator, ColorPlacement, VizTooltipItem } from './types';

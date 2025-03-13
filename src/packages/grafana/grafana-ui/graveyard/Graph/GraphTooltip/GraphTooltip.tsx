@@ -1,4 +1,4 @@
-import { TooltipDisplayMode } from '@grafana/schema';
+import { TooltipDisplayMode } from '@schema/index';
 
 import { VizTooltipContentProps } from '../../../components/VizTooltip';
 

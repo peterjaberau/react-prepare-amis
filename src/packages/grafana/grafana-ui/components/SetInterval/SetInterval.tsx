@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 import { interval, Subscription, Subject, of, NEVER } from 'rxjs';
 import { tap, switchMap } from 'rxjs/operators';
 
-import { stringToMs, SelectableValue } from '@grafana/data';
+import { stringToMs, SelectableValue } from '@data/index';
 
 import { RefreshPicker } from '../RefreshPicker/RefreshPicker';
 

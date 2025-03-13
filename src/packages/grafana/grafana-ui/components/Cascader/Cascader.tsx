@@ -4,7 +4,7 @@ import RCCascader from 'rc-cascader';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 
 import { withTheme2 } from '../../themes';
 import { Themeable2 } from '../../types';

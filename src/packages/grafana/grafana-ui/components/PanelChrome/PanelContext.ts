@@ -9,7 +9,7 @@ import {
   CoreApp,
   DataFrame,
   DataLinkPostProcessor,
-} from '@grafana/data';
+} from '@data/index';
 
 import { AdHocFilterItem } from '../Table/types';
 

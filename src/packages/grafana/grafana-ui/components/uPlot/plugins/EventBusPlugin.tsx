@@ -10,7 +10,7 @@ import {
   DataHoverPayload,
   EventBus,
   LegacyGraphHoverEvent,
-} from '@grafana/data';
+} from '@data/index';
 
 import { UPlotConfigBuilder } from '../config/UPlotConfigBuilder';
 

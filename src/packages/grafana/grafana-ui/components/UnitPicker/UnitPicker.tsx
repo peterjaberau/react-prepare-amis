@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { getValueFormats, SelectableValue } from '@grafana/data';
+import { getValueFormats, SelectableValue } from '@data/index';
 
 import { Cascader, CascaderOption } from '../Cascader/Cascader';
 

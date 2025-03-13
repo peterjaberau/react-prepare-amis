@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { css as cssCore } from '@emotion/react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import 'rc-slider/assets/index.css';
 

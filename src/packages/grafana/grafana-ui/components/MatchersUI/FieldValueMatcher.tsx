@@ -10,8 +10,8 @@ import {
   ReducerID,
   SelectableValue,
   GrafanaTheme2,
-} from '@grafana/data';
-import { ComparisonOperation } from '@grafana/schema';
+} from '@data/index';
+import { ComparisonOperation } from '@schema/index';
 
 import { useStyles2 } from '../../themes';
 import { Input } from '../Input/Input';

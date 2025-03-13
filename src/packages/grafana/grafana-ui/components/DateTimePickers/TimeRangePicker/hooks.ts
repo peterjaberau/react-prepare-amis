@@ -1,6 +1,6 @@
 import { RefObject, useEffect, useState } from 'react';
 
-import { TimeOption } from '@grafana/data';
+import { TimeOption } from '@data/index';
 
 const modulo = (a: number, n: number) => ((a % n) + n) % n;
 const CAUGHT_KEYS = ['ArrowUp', 'ArrowDown', 'Home', 'End', 'Enter', 'Tab'];

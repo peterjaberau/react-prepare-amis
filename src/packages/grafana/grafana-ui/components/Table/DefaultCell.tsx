@@ -2,8 +2,8 @@ import { cx } from '@emotion/css';
 import { ReactElement } from 'react';
 import * as React from 'react';
 
-import { DisplayValue, formattedValueToString } from '@grafana/data';
-import { TableCellDisplayMode } from '@grafana/schema';
+import { DisplayValue, formattedValueToString } from '@data/index';
+import { TableCellDisplayMode } from '@schema/index';
 
 import { useStyles2 } from '../../themes';
 import { getCellLinks } from '../../utils';

@@ -8,7 +8,7 @@ import {
   FieldColorModeId,
   GrafanaTheme2,
   ThresholdsConfig,
-} from '@grafana/data';
+} from '@data/index';
 import {
   BarAlignment,
   BarConfig,
@@ -19,7 +19,7 @@ import {
   LineInterpolation,
   PointsConfig,
   VisibilityMode,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { PlotConfigBuilder } from '../types';
 

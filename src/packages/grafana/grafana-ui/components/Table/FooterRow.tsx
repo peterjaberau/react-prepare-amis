@@ -1,7 +1,7 @@
 import { ColumnInstance, HeaderGroup } from 'react-table';
 
-import { fieldReducers, ReducerID } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { fieldReducers, ReducerID } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { EmptyCell, FooterCell } from './FooterCell';
 import { TableStyles } from './styles';

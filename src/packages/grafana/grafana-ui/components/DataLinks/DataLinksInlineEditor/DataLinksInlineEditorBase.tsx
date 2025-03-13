@@ -3,7 +3,7 @@ import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
 import { cloneDeep } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import { Action, DataFrame, DataLink, GrafanaTheme2 } from '@grafana/data';
+import { Action, DataFrame, DataLink, GrafanaTheme2 } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { t } from '../../../utils/i18n';

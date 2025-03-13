@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { AnchorHTMLAttributes, forwardRef } from 'react';
 
-import { GrafanaTheme2, locationUtil, textUtil, ThemeTypographyVariantTypes } from '@grafana/data';
+import { GrafanaTheme2, locationUtil, textUtil, ThemeTypographyVariantTypes } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { IconName, IconSize } from '../../types';

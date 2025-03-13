@@ -2,7 +2,7 @@ import { difference, isEqual } from 'lodash';
 import { Component } from 'react';
 import * as React from 'react';
 
-import { GraphSeriesXY } from '@grafana/data';
+import { GraphSeriesXY } from '@data/index';
 
 /** @deprecated */
 export interface GraphSeriesTogglerAPI {

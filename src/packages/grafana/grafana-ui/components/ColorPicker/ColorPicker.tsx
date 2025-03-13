@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Component, createRef } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { withTheme2, stylesFactory } from '../../themes';
 import { closePopover } from '../../utils/closePopover';

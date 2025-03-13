@@ -2,8 +2,8 @@ import { cx, css } from '@emotion/css';
 import { forwardRef, ButtonHTMLAttributes } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, IconName, isIconName } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, IconName, isIconName } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { styleMixins, useStyles2 } from '../../themes';
 import { getFocusStyles, getMouseFocusStyles } from '../../themes/mixins';

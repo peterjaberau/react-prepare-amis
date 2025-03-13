@@ -4,7 +4,7 @@ import { uniqueId } from 'lodash';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { withTheme2 } from '../../../../themes';
 import { Themeable2 } from '../../../../types';

@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 
-import { LineStyle } from '@grafana/schema';
+import { LineStyle } from '@schema/index';
 
 import { SeriesColorPicker } from '../ColorPicker/ColorPicker';
 import { usePanelContext } from '../PanelChrome';

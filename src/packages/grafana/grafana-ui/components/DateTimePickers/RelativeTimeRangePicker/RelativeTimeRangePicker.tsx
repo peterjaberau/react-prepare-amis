@@ -5,7 +5,7 @@ import { FocusScope } from '@react-aria/focus';
 import { useOverlay } from '@react-aria/overlays';
 import { FormEvent, useCallback, useRef, useState } from 'react';
 
-import { RelativeTimeRange, GrafanaTheme2, TimeOption } from '@grafana/data';
+import { RelativeTimeRange, GrafanaTheme2, TimeOption } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { Trans, t } from '../../../utils/i18n';

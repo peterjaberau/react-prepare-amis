@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { getFocusStyles } from '../../themes/mixins';
 import { ComponentSize } from '../../types/size';

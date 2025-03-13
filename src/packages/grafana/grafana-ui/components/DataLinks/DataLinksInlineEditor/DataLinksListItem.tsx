@@ -1,4 +1,4 @@
-import { DataLink } from '@grafana/data';
+import { DataLink } from '@data/index';
 
 import { DataLinksListItemBase, DataLinksListItemBaseProps } from './DataLinksListItemBase';
 

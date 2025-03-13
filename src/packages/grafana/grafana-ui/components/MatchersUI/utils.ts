@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { DataFrame, Field, getFieldDisplayName, SelectableValue, FieldNamePickerBaseNameMode } from '@grafana/data';
+import { DataFrame, Field, getFieldDisplayName, SelectableValue, FieldNamePickerBaseNameMode } from '@data/index';
 
 import { getFieldTypeIcon } from '../../types';
 

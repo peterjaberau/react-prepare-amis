@@ -1,11 +1,11 @@
-import { DataFrame, Field, FieldConfig, FieldType, outerJoinDataFrames, TimeRange } from '@grafana/data';
+import { DataFrame, Field, FieldConfig, FieldType, outerJoinDataFrames, TimeRange } from '@data/index';
 import {
   AxisPlacement,
   GraphDrawStyle,
   GraphFieldConfig,
   ScaleDistribution,
   ScaleDistributionConfig,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { FIXED_UNIT } from '../../components/uPlot/types';
 

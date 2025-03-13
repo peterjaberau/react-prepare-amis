@@ -1,6 +1,6 @@
 import { HTMLAttributes } from 'react';
 
-import { PluginSignatureStatus, PluginSignatureType } from '@grafana/data';
+import { PluginSignatureStatus, PluginSignatureType } from '@data/index';
 
 import { IconName } from '../../types';
 import { Badge, BadgeProps } from '../Badge/Badge';

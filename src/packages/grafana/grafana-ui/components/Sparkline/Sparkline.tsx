@@ -11,7 +11,7 @@ import {
   FieldType,
   getFieldColorModeForField,
   nullToValue,
-} from '@grafana/data';
+} from '@data/index';
 import {
   AxisPlacement,
   GraphDrawStyle,
@@ -19,7 +19,7 @@ import {
   VisibilityMode,
   ScaleDirection,
   ScaleOrientation,
-} from '@grafana/schema';
+} from '@schema/index';
 
 import { Themeable2 } from '../../types';
 import { UPlotChart } from '../uPlot/Plot';

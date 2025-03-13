@@ -3,8 +3,8 @@ import { isString } from 'lodash';
 import { PropsWithChildren, RefCallback } from 'react';
 import * as React from 'react';
 
-import { GrafanaTheme2, SelectableValue, getTimeZoneInfo } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2, SelectableValue, getTimeZoneInfo } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../../themes';
 import { Icon } from '../../Icon/Icon';

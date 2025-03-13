@@ -3,7 +3,7 @@ import { isObject } from 'lodash';
 import { HTMLProps } from 'react';
 import * as React from 'react';
 
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@data/index';
 
 import { useStyles2 } from '../../themes';
 import { InlineLabel } from '../Forms/InlineLabel';

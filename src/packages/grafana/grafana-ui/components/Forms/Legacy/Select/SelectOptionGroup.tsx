@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 import { GroupProps } from 'react-select';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { stylesFactory, withTheme2 } from '../../../../themes';
 import { Themeable2 } from '../../../../types';

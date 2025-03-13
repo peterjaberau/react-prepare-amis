@@ -3,8 +3,8 @@ import { FormEvent, useCallback, useState } from 'react';
 import * as React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { GrafanaTheme2 } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes';
 import { getFocusStyles } from '../../themes/mixins';

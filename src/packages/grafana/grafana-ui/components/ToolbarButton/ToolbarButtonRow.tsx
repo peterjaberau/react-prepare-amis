@@ -4,7 +4,7 @@ import { FocusScope } from '@react-aria/focus';
 import { useOverlay } from '@react-aria/overlays';
 import { Children, forwardRef, HTMLAttributes, useState, useRef, useLayoutEffect, createRef } from 'react';
 
-import { GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme2 } from '@data/index';
 
 import { useTheme2 } from '../../themes';
 import { getPortalContainer } from '../Portal/Portal';

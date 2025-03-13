@@ -11,8 +11,8 @@ import {
   Threshold,
   ThresholdsConfig,
   ThresholdsMode,
-} from '@grafana/data';
-import { VizOrientation } from '@grafana/schema';
+} from '@data/index';
+import { VizOrientation } from '@schema/index';
 
 interface GaugeAutoProps {
   titleFontSize: number;

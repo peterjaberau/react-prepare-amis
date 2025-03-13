@@ -13,8 +13,8 @@ import {
   TimeRange,
   TimeZone,
   dateMath,
-} from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+} from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { t, Trans } from '../../utils/i18n';

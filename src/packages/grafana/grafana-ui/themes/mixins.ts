@@ -1,6 +1,6 @@
 import tinycolor from 'tinycolor2';
 
-import { GrafanaTheme, GrafanaTheme2 } from '@grafana/data';
+import { GrafanaTheme, GrafanaTheme2 } from '@data/index';
 
 export function cardChrome(theme: GrafanaTheme2): string {
   return `

@@ -1,7 +1,7 @@
 import { HeaderGroup, Column } from 'react-table';
 
-import { Field } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import { Field } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { getFieldTypeIcon } from '../../types';
 import { Icon } from '../Icon/Icon';

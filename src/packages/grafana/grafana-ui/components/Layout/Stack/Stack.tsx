@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
-import { GrafanaTheme2, ThemeSpacingTokens } from '@grafana/data';
+import { GrafanaTheme2, ThemeSpacingTokens } from '@data/index';
 
 import { useStyles2 } from '../../../themes';
 import { AlignItems, Direction, FlexProps, JustifyContent, Wrap } from '../types';
