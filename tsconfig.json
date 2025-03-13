@@ -37,7 +37,11 @@
       "@data/*": ["src/packages/grafana/data/*"],
       "@runtime/*": ["src/packages/grafana/runtime/*"],
       "@grafana-module/*": ["src/apps/modules/grafana/*"],
-
+      "@grafana-sql/*": ["src/packages/grafana/sql/*"],
+      "@saga-icons/*": ["src/packages/grafana/saga-icons/*"],
+      "@flamegraph/*": ["src/packages/grafana/flamegraph/*"],
+      "@prometheus/*": ["src/packages/grafana/prometheus/*"],
+      "@o11y-ds-frontend/*": ["src/packages/grafana/o11y-ds-frontend/*"]
     },
     "allowSyntheticDefaultImports": true
   },

@@ -46,6 +46,11 @@ export default defineConfig({
       { find: "@data", replacement: path.resolve(__dirname, "src/packages/grafana/data") },
       { find: "@runtime", replacement: path.resolve(__dirname, "src/packages/grafana/runtime") },
       { find: "@grafana-module", replacement: path.resolve(__dirname, "src/apps/modules/grafana") },
+      { find: "@grafana-sql", replacement: path.resolve(__dirname, "src/packages/grafana/sql") },
+      { find: "@saga-icons", replacement: path.resolve(__dirname, "src/packages/grafana/saga-icons") },
+      { find: "@flamegraph", replacement: path.resolve(__dirname, "src/packages/grafana/flamegraph") },
+      { find: "@prometheus", replacement: path.resolve(__dirname, "src/packages/grafana/prometheus") },
+      { find: "@o11y-ds-frontend", replacement: path.resolve(__dirname, "src/packages/grafana/o11y-ds-frontend") },
 
 
     ],
