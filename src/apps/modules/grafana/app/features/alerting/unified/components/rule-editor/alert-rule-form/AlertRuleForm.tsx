@@ -6,11 +6,11 @@ import { useParams } from 'react-router-dom-v5-compat';
 import { GrafanaTheme2 } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { Button, ConfirmModal, Spinner, Stack, useStyles2 } from '@grafana/ui';
-import { AppChromeUpdate } from 'app/core/components/AppChrome/AppChromeUpdate';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import InfoPausedRule from 'app/features/alerting/unified/components/InfoPausedRule';
+import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import InfoPausedRule from '@grafana-module/app/features/alerting/unified/components/InfoPausedRule';
 import {
   getRuleGroupLocationFromFormValues,
   getRuleGroupLocationFromRuleWithLocation,
@@ -21,10 +21,10 @@ import {
   isGrafanaRulerRule,
   isGrafanaRulerRulePaused,
   isRecordingRuleByType,
-} from 'app/features/alerting/unified/utils/rules';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { RuleGroupIdentifier, RuleIdentifier, RuleWithLocation } from 'app/types/unified-alerting';
-import { PostableRuleGrafanaRuleDTO, RulerRuleDTO } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { RuleGroupIdentifier, RuleIdentifier, RuleWithLocation } from '@grafana-module/app/types/unified-alerting';
+import { PostableRuleGrafanaRuleDTO, RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import {
   LogMessages,

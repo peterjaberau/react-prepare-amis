@@ -12,17 +12,17 @@ import {
 } from '@scenes/index';
 import { DataQuery } from '@schema/index';
 import { Button, Stack, Tab } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { addQuery } from 'app/core/utils/query';
-import { getLastUsedDatasourceFromStorage } from 'app/features/dashboard/utils/dashboard';
-import { storeLastUsedDataSourceInLocalStorage } from 'app/features/datasources/components/picker/utils';
-import { dataSource as expressionDatasource } from 'app/features/expressions/ExpressionDatasource';
-import { GroupActionComponents } from 'app/features/query/components/QueryActionComponent';
-import { QueryEditorRows } from 'app/features/query/components/QueryEditorRows';
-import { QueryGroupTopSection } from 'app/features/query/components/QueryGroup';
-import { updateQueries } from 'app/features/query/state/updateQueries';
-import { isSharedDashboardQuery } from 'app/plugins/datasource/dashboard/runSharedRequest';
-import { QueryGroupOptions } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { addQuery } from '@grafana-module/app/core/utils/query';
+import { getLastUsedDatasourceFromStorage } from '@grafana-module/app/features/dashboard/utils/dashboard';
+import { storeLastUsedDataSourceInLocalStorage } from '@grafana-module/app/features/datasources/components/picker/utils';
+import { dataSource as expressionDatasource } from '@grafana-module/app/features/expressions/ExpressionDatasource';
+import { GroupActionComponents } from '@grafana-module/app/features/query/components/QueryActionComponent';
+import { QueryEditorRows } from '@grafana-module/app/features/query/components/QueryEditorRows';
+import { QueryGroupTopSection } from '@grafana-module/app/features/query/components/QueryGroup';
+import { updateQueries } from '@grafana-module/app/features/query/state/updateQueries';
+import { isSharedDashboardQuery } from '@grafana-module/app/plugins/datasource/dashboard/runSharedRequest';
+import { QueryGroupOptions } from '@grafana-module/app/types';
 
 import { MIXED_DATASOURCE_NAME } from '../../../../plugins/datasource/mixed/MixedDataSource';
 import { useQueryLibraryContext } from '../../../explore/QueryLibrary/QueryLibraryContext';

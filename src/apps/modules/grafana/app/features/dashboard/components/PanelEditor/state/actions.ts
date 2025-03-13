@@ -1,10 +1,10 @@
 import { pick } from 'lodash';
 
-import store from 'app/core/store';
-import { removePanel } from 'app/features/dashboard/utils/panel';
-import { cleanUpPanelState } from 'app/features/panel/state/actions';
-import { panelModelAndPluginReady } from 'app/features/panel/state/reducers';
-import { ThunkResult } from 'app/types';
+import store from '@grafana-module/app/core/store';
+import { removePanel } from '@grafana-module/app/features/dashboard/utils/panel';
+import { cleanUpPanelState } from '@grafana-module/app/features/panel/state/actions';
+import { panelModelAndPluginReady } from '@grafana-module/app/features/panel/state/reducers';
+import { ThunkResult } from '@grafana-module/app/types';
 
 import { DashboardModel } from '../../../state/DashboardModel';
 import { PanelModel } from '../../../state/PanelModel';

@@ -90,9 +90,9 @@ if (process.env.NODE_ENV === 'development') {
 // require.context doesn't work in jest, so we don't even attempt to load enterprise translations...
 if (process.env.NODE_ENV !== 'test') {
   const extensionRequireContext = require.context('../../', true, /app\/extensions\/locales\/localeExtensions/);
-  if (extensionRequireContext.keys().includes('app/extensions/locales/localeExtensions')) {
+  if (extensionRequireContext.keys().includes('@grafana-module/app/extensions/locales/localeExtensions')) {
     const { LOCALE_EXTENSIONS, ENTERPRISE_I18N_NAMESPACE } = extensionRequireContext(
-      'app/extensions/locales/localeExtensions'
+      '@grafana-module/app/extensions/locales/localeExtensions'
     );
 
     for (const language of LANGUAGES) {

@@ -3,10 +3,10 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 
 import { NewRuleFromPanelButton } from './components/panel-alerts-tab/NewRuleFromPanelButton';
 import { RulesTable } from './components/rules/RulesTable';

@@ -1,9 +1,9 @@
 import { locationUtil } from '@data/index';
 import { Dashboard } from '@schema/index';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { getMessageFromError, getStatusFromError } from 'app/core/utils/errors';
-import kbn from 'app/core/utils/kbn';
-import { ScopedResourceClient } from 'app/features/apiserver/client';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { getMessageFromError, getStatusFromError } from '@grafana-module/app/core/utils/errors';
+import kbn from '@grafana-module/app/core/utils/kbn';
+import { ScopedResourceClient } from '@grafana-module/app/features/apiserver/client';
 import {
   ResourceClient,
   ResourceForCreate,
@@ -11,10 +11,10 @@ import {
   AnnoKeyFolder,
   Resource,
   DeprecatedInternalId,
-} from 'app/features/apiserver/types';
-import { getDashboardUrl } from 'app/features/dashboard-scene/utils/getDashboardUrl';
-import { DeleteDashboardResponse } from 'app/features/manage-dashboards/types';
-import { DashboardDataDTO, DashboardDTO, SaveDashboardResponseDTO } from 'app/types';
+} from '@grafana-module/app/features/apiserver/types';
+import { getDashboardUrl } from '@grafana-module/app/features/dashboard-scene/utils/getDashboardUrl';
+import { DeleteDashboardResponse } from '@grafana-module/app/features/manage-dashboards/types';
+import { DashboardDataDTO, DashboardDTO, SaveDashboardResponseDTO } from '@grafana-module/app/types';
 
 import { SaveDashboardCommand } from '../components/SaveDashboard/types';
 

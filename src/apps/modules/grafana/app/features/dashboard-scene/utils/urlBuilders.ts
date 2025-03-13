@@ -1,9 +1,9 @@
 import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';
 import { sceneGraph, VizPanel } from '@scenes/index';
-import { contextSrv } from 'app/core/core';
-import { getExploreUrl } from 'app/core/utils/explore';
-import { InspectTab } from 'app/features/inspector/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { getExploreUrl } from '@grafana-module/app/core/utils/explore';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
 
 import { getQueryRunnerFor } from './utils';
 

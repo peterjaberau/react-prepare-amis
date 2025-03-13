@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { ToolbarButton, useTheme2 } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { useSelector } from 'app/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { useSelector } from '@grafana-module/app/types';
 
 import { createDatasourcesList } from '../../core/utils/richHistory';
 import { MIXED_DATASOURCE_NAME } from '../../plugins/datasource/mixed/MixedDataSource';

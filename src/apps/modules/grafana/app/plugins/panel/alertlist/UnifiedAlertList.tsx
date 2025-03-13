@@ -15,30 +15,30 @@ import {
   ScrollContainer,
   useStyles2,
 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import alertDef from 'app/features/alerting/state/alertDef';
-import { alertRuleApi } from 'app/features/alerting/unified/api/alertRuleApi';
-import { INSTANCES_DISPLAY_LIMIT } from 'app/features/alerting/unified/components/rules/RuleDetails';
-import { useCombinedRuleNamespaces } from 'app/features/alerting/unified/hooks/useCombinedRuleNamespaces';
-import { useUnifiedAlertingSelector } from 'app/features/alerting/unified/hooks/useUnifiedAlertingSelector';
+import { config } from '@grafana-module/app/core/config';
+import alertDef from '@grafana-module/app/features/alerting/state/alertDef';
+import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
+import { INSTANCES_DISPLAY_LIMIT } from '@grafana-module/app/features/alerting/unified/components/rules/RuleDetails';
+import { useCombinedRuleNamespaces } from '@grafana-module/app/features/alerting/unified/hooks/useCombinedRuleNamespaces';
+import { useUnifiedAlertingSelector } from '@grafana-module/app/features/alerting/unified/hooks/useUnifiedAlertingSelector';
 import {
   fetchAllPromAndRulerRulesAction,
   fetchPromAndRulerRulesAction,
-} from 'app/features/alerting/unified/state/actions';
-import { Annotation } from 'app/features/alerting/unified/utils/constants';
-import { GRAFANA_DATASOURCE_NAME, GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { parsePromQLStyleMatcherLooseSafe } from 'app/features/alerting/unified/utils/matchers';
+} from '@grafana-module/app/features/alerting/unified/state/actions';
+import { Annotation } from '@grafana-module/app/features/alerting/unified/utils/constants';
+import { GRAFANA_DATASOURCE_NAME, GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { parsePromQLStyleMatcherLooseSafe } from '@grafana-module/app/features/alerting/unified/utils/matchers';
 import {
   isAsyncRequestMapSlicePartiallyDispatched,
   isAsyncRequestMapSlicePartiallyFulfilled,
   isAsyncRequestMapSlicePending,
-} from 'app/features/alerting/unified/utils/redux';
-import { flattenCombinedRules, getFirstActiveAt } from 'app/features/alerting/unified/utils/rules';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { Matcher } from 'app/plugins/datasource/alertmanager/types';
-import { ThunkDispatch, useDispatch } from 'app/types';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/utils/redux';
+import { flattenCombinedRules, getFirstActiveAt } from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { Matcher } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { ThunkDispatch, useDispatch } from '@grafana-module/app/types';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { AlertingAction, useAlertingAbility } from '../../../features/alerting/unified/hooks/useAbilities';
 import { getAlertingRule } from '../../../features/alerting/unified/utils/rules';

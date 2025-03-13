@@ -3,7 +3,7 @@ import { capitalize } from 'lodash';
 
 import { GrafanaTheme2 } from '@grafana/data/src';
 import { Label, RadioButtonGroup, Tag, useStyles2 } from '@grafana/ui';
-import { GrafanaAlertState, PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { GrafanaAlertState, PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 export type InstanceStateFilter = GrafanaAlertState | PromAlertingRuleState.Pending | PromAlertingRuleState.Firing;
 

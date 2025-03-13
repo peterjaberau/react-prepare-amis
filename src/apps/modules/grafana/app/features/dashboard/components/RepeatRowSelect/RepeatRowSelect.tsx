@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 import { SelectableValue } from '@data/index';
 import { SceneObject, sceneGraph } from '@scenes/index';
 import { Select } from '@grafana/ui';
-import { useSelector } from 'app/types';
+import { useSelector } from '@grafana-module/app/types';
 
 import { getLastKey, getVariablesByKey } from '../../../variables/state/selectors';
 

@@ -3,17 +3,17 @@ import { useLocation } from 'react-use';
 
 import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
 import { Icon, Stack, useStyles2 } from '@grafana/ui';
-import alertDef from 'app/features/alerting/state/alertDef';
-import { Spacer } from 'app/features/alerting/unified/components/Spacer';
-import { fromCombinedRule, stringifyIdentifier } from 'app/features/alerting/unified/utils/rule-id';
+import alertDef from '@grafana-module/app/features/alerting/state/alertDef';
+import { Spacer } from '@grafana-module/app/features/alerting/unified/components/Spacer';
+import { fromCombinedRule, stringifyIdentifier } from '@grafana-module/app/features/alerting/unified/utils/rule-id';
 import {
   alertStateToReadable,
   alertStateToState,
   getFirstActiveAt,
   isAlertingRule,
-} from 'app/features/alerting/unified/utils/rules';
-import { createRelativeUrl } from 'app/features/alerting/unified/utils/url';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { createRelativeUrl } from '@grafana-module/app/features/alerting/unified/utils/url';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../../../../features/alerting/unified/utils/datasource';
 import { AlertInstanceTotalState, AlertingRule, CombinedRuleWithLocation } from '../../../../types/unified-alerting';

@@ -4,7 +4,7 @@ import { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { SelectableValue, urlUtil } from '@data/index';
 import { locationService } from '@runtime/index';
 import { AsyncSelect, Button, Modal } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardSearchItem } from '../../../search/types';
 import { getConnectedDashboards, getLibraryPanelConnectedDashboards } from '../../state/api';

@@ -1,8 +1,8 @@
 import { cloneDeep } from 'lodash';
 
 import { AnnotationEvent, deprecationWarning } from '@data/index';
-import { deleteAnnotation, saveAnnotation, updateAnnotation } from 'app/features/annotations/api';
-import { AnnotationQueryOptions } from 'app/features/annotations/types';
+import { deleteAnnotation, saveAnnotation, updateAnnotation } from '@grafana-module/app/features/annotations/api';
+import { AnnotationQueryOptions } from '@grafana-module/app/features/annotations/types';
 
 /**
  * @deprecated AnnotationsSrv is deprecated in favor of DashboardQueryRunner

@@ -1,10 +1,10 @@
 import { DefaultTimeZone, addDurationToDate, dateTime, intervalToAbbreviatedDurationString } from '@data/index';
 import { config } from '@runtime/index';
-import { SilenceFormFields } from 'app/features/alerting/unified/types/silence-form';
-import { matcherToMatcherField } from 'app/features/alerting/unified/utils/alertmanager';
-import { MATCHER_ALERT_RULE_UID } from 'app/features/alerting/unified/utils/constants';
-import { parseQueryParamMatchers } from 'app/features/alerting/unified/utils/matchers';
-import { MatcherOperator, Silence } from 'app/plugins/datasource/alertmanager/types';
+import { SilenceFormFields } from '@grafana-module/app/features/alerting/unified/types/silence-form';
+import { matcherToMatcherField } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';
+import { MATCHER_ALERT_RULE_UID } from '@grafana-module/app/features/alerting/unified/utils/constants';
+import { parseQueryParamMatchers } from '@grafana-module/app/features/alerting/unified/utils/matchers';
+import { MatcherOperator, Silence } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 /**
  * Parse query params and return default silence form values

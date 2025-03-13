@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
 import { Button, Field, LinkButton, Stack } from '@grafana/ui';
-import { Form } from 'app/core/components/Form/Form';
+import { Form } from '@grafana-module/app/core/components/Form/Form';
 import {
   ValidationLabels,
   strongPasswordValidations,
   strongPasswordValidationRegister,
-} from 'app/core/components/ValidationLabels/ValidationLabels';
-import config from 'app/core/config';
-import { t, Trans } from 'app/core/internationalization';
-import { UserDTO } from 'app/types';
+} from '@grafana-module/app/core/components/ValidationLabels/ValidationLabels';
+import config from '@grafana-module/app/core/config';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { UserDTO } from '@grafana-module/app/types';
 
 import { PasswordField } from '../../core/components/PasswordField/PasswordField';
 

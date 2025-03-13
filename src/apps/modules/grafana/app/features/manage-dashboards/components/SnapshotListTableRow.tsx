@@ -3,10 +3,10 @@ import Skeleton from 'react-loading-skeleton';
 
 import { Button, LinkButton, useStyles2 } from '@grafana/ui';
 import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
-import { t, Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { Snapshot } from 'app/features/dashboard/services/SnapshotSrv';
-import { AccessControlAction } from 'app/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { Snapshot } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 export interface Props {
   snapshot: Snapshot;

@@ -5,10 +5,10 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
 import { Button, ClipboardButton, CodeEditor, Label, Spinner, Stack, Switch, useStyles2 } from '@grafana/ui';
-import { notifyApp } from 'app/core/actions';
-import { createSuccessNotification } from 'app/core/copy/appNotification';
-import { t, Trans } from 'app/core/internationalization';
-import { dispatch } from 'app/store/store';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { DashboardInteractions } from '../../utils/interactions';
 import { ShareExportTab } from '../ShareExportTab';

@@ -2,12 +2,12 @@ import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { Alert, Button, Input, RadioButtonGroup, Switch, TextLink } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
-import { RepeatRowSelect2 } from 'app/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
-import { SHARED_DASHBOARD_QUERY } from 'app/plugins/datasource/dashboard/constants';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { RepeatRowSelect2 } from '@grafana-module/app/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
+import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
 
 import { getDashboardSceneFor, getQueryRunnerFor } from '../../utils/utils';
 import { DashboardScene } from '../DashboardScene';

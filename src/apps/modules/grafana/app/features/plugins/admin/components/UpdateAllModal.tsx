@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { config, reportInteraction } from '@runtime/index';
 import { ConfirmModal } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { useInstall, useInstallStatus } from '../state/hooks';
 import { CatalogPlugin } from '../types';

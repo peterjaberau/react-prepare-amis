@@ -1,14 +1,14 @@
 import { isEqual } from 'lodash';
 
 import { EventBusSrv } from '@data/index';
-import { changeDatasource } from 'app/features/explore/state/datasource';
-import { changePanelsStateAction, initializeExplore } from 'app/features/explore/state/explorePane';
-import { splitClose, syncTimesAction } from 'app/features/explore/state/main';
-import { cancelQueries, runQueries, setQueriesAction } from 'app/features/explore/state/query';
-import { updateTime } from 'app/features/explore/state/time';
-import { fromURLRange } from 'app/features/explore/state/utils';
-import { withUniqueRefIds } from 'app/features/explore/utils/queries';
-import { ExploreItemState, ThunkDispatch } from 'app/types';
+import { changeDatasource } from '@grafana-module/app/features/explore/state/datasource';
+import { changePanelsStateAction, initializeExplore } from '@grafana-module/app/features/explore/state/explorePane';
+import { splitClose, syncTimesAction } from '@grafana-module/app/features/explore/state/main';
+import { cancelQueries, runQueries, setQueriesAction } from '@grafana-module/app/features/explore/state/query';
+import { updateTime } from '@grafana-module/app/features/explore/state/time';
+import { fromURLRange } from '@grafana-module/app/features/explore/state/utils';
+import { withUniqueRefIds } from '@grafana-module/app/features/explore/utils/queries';
+import { ExploreItemState, ThunkDispatch } from '@grafana-module/app/types';
 
 import { getUrlStateFromPaneState } from '../index';
 import { urlDiff } from '../internal.utils';

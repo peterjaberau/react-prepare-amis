@@ -16,8 +16,8 @@ import {
   Text,
   useStyles2,
 } from '@grafana/ui';
-import { DiffViewer } from 'app/features/dashboard-scene/settings/version-history/DiffViewer';
-import { AlertManagerCortexConfig } from 'app/plugins/datasource/alertmanager/types';
+import { DiffViewer } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffViewer';
+import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';
 import { computeVersionDiff } from '../../utils/diff';

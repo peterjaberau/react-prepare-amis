@@ -1,7 +1,7 @@
 import { BaseQueryFn, EndpointDefinition } from '@reduxjs/toolkit/query';
 
-import { getLocalPlugins } from 'app/features/plugins/admin/api';
-import { LocalPlugin } from 'app/features/plugins/admin/types';
+import { getLocalPlugins } from '@grafana-module/app/features/plugins/admin/api';
+import { LocalPlugin } from '@grafana-module/app/features/plugins/admin/types';
 
 import { handleRequestError } from '../../../api/createBaseQuery';
 

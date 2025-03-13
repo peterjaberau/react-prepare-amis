@@ -5,11 +5,11 @@ import { Subscription } from 'rxjs';
 import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
 import { PanelChrome } from '@grafana/ui';
-import config from 'app/core/config';
-import { PANEL_BORDER } from 'app/core/constants';
-import { setPanelAngularComponent } from 'app/features/panel/state/reducers';
-import { getPanelStateForModel } from 'app/features/panel/state/selectors';
-import { StoreState } from 'app/types';
+import config from '@grafana-module/app/core/config';
+import { PANEL_BORDER } from '@grafana-module/app/core/constants';
+import { setPanelAngularComponent } from '@grafana-module/app/features/panel/state/reducers';
+import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
+import { StoreState } from '@grafana-module/app/types';
 
 import { getTimeSrv, TimeSrv } from '../services/TimeSrv';
 import { DashboardModel } from '../state/DashboardModel';

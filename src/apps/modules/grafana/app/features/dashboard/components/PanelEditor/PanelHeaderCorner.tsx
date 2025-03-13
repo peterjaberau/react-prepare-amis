@@ -6,9 +6,9 @@ import { GrafanaTheme2 } from '@grafana/data/';
 import { locationService, getTemplateSrv } from '@runtime/index';
 import { Tooltip, PopoverContent, Icon, Themeable2, withTheme2 } from '@grafana/ui';
 import { useStyles2 } from '@grafana/ui/';
-import { getTimeSrv, TimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { InspectTab } from 'app/features/inspector/types';
+import { getTimeSrv, TimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
 
 enum InfoMode {
   Error = 'Error',

@@ -3,7 +3,7 @@ import { ProxyTarget } from '@locker/near-membrane-shared';
 
 import { BootData } from '@data/index';
 import { config } from '@runtime/index';
-import { defaultTrustedTypesPolicy } from 'app/core/trustedTypePolicies';
+import { defaultTrustedTypesPolicy } from '@grafana-module/app/core/trustedTypePolicies';
 
 import { getPluginCode, getPluginLoadData, patchSandboxEnvironmentPrototype } from './code_loader';
 import { getGeneralSandboxDistortionMap, distortLiveApis } from './distortion_map';

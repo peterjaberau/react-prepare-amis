@@ -4,12 +4,12 @@ import { MutableRefObject } from 'react';
 
 import { UrlQueryMap } from '@data/index';
 import { LocationService } from '@runtime/index';
-import { changeDatasource } from 'app/features/explore/state/datasource';
-import { changePanelsStateAction } from 'app/features/explore/state/explorePane';
-import { splitClose, splitOpen } from 'app/features/explore/state/main';
-import { runQueries } from 'app/features/explore/state/query';
-import { changeRangeAction } from 'app/features/explore/state/time';
-import { ExploreState } from 'app/types';
+import { changeDatasource } from '@grafana-module/app/features/explore/state/datasource';
+import { changePanelsStateAction } from '@grafana-module/app/features/explore/state/explorePane';
+import { splitClose, splitOpen } from '@grafana-module/app/features/explore/state/main';
+import { runQueries } from '@grafana-module/app/features/explore/state/query';
+import { changeRangeAction } from '@grafana-module/app/features/explore/state/time';
+import { ExploreState } from '@grafana-module/app/types';
 
 import { getUrlStateFromPaneState } from '../index';
 import { InitState } from '../internal.utils';

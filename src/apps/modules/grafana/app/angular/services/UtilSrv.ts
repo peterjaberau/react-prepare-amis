@@ -1,5 +1,5 @@
 import { deprecationWarning } from '@data/index';
-import { appEvents } from 'app/core/app_events';
+import { appEvents } from '@grafana-module/app/core/app_events';
 
 import { HideModalEvent, ShowModalEvent } from '../../types/events';
 

@@ -1,5 +1,5 @@
 import { Box, Button, Stack, Text } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 interface EmptyTransformationsProps {
   onShowPicker: () => void;

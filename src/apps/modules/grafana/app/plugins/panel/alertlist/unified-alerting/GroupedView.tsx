@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 
 import { useStyles2 } from '@grafana/ui';
-import { AlertLabel } from 'app/features/alerting/unified/components/AlertLabel';
-import { getAlertingRule } from 'app/features/alerting/unified/utils/rules';
-import { Alert } from 'app/types/unified-alerting';
+import { AlertLabel } from '@grafana-module/app/features/alerting/unified/components/AlertLabel';
+import { getAlertingRule } from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { Alert } from '@grafana-module/app/types/unified-alerting';
 
 import { CombinedRuleWithLocation } from '../../../../types/unified-alerting';
 import { AlertInstances } from '../AlertInstances';

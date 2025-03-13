@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 
 import { AppEvents, GrafanaTheme2 } from '@data/index';
 import { useStyles2, Stack } from '@grafana/ui';
-import { notifyApp, hideAppNotification } from 'app/core/actions';
-import appEvents from 'app/core/app_events';
-import { selectVisible } from 'app/core/reducers/appNotification';
-import { useSelector, useDispatch } from 'app/types';
+import { notifyApp, hideAppNotification } from '@grafana-module/app/core/actions';
+import appEvents from '@grafana-module/app/core/app_events';
+import { selectVisible } from '@grafana-module/app/core/reducers/appNotification';
+import { useSelector, useDispatch } from '@grafana-module/app/types';
 
 import {
   createErrorNotification,

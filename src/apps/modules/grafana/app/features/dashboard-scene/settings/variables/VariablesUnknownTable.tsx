@@ -7,7 +7,7 @@ import { reportInteraction } from '@runtime/index';
 import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
 import { CollapsableSection, Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { VariableUsagesButton } from '../../variables/VariableUsagesButton';
 import { getUnknownsNetwork, UsagesToNetwork } from '../../variables/utils';

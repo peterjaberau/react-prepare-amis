@@ -4,9 +4,9 @@ import { connect, ConnectedProps } from 'react-redux';
 import { GrafanaEdition } from '@grafana/data/src/types/config';
 import { reportInteraction } from '@runtime/index';
 import { Grid, TextLink, ToolbarButton } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { config } from 'app/core/config';
-import { StoreState } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { config } from '@grafana-module/app/core/config';
+import { StoreState } from '@grafana-module/app/types';
 
 import AuthDrawer from './AuthDrawer';
 import ConfigureAuthCTA from './components/ConfigureAuthCTA';

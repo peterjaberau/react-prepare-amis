@@ -1,5 +1,5 @@
 import { EmptyState, LinkButton, Stack, TextLink } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { useRulesAccess } from '../../utils/accessControlHooks';
 

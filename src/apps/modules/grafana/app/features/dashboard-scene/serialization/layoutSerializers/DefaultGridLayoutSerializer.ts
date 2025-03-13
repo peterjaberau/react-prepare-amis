@@ -19,7 +19,7 @@ import {
   PanelKind,
   LibraryPanelKind,
 } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { contextSrv } from 'app/core/core';
+import { contextSrv } from '@grafana-module/app/core/core';
 
 import { LibraryPanelBehavior } from '../../scene/LibraryPanelBehavior';
 import { VizPanelLinks, VizPanelLinksMenu } from '../../scene/PanelLinks';

@@ -1,5 +1,5 @@
-import { SafeDynamicImport } from 'app/core/components/DynamicImports/SafeDynamicImport';
-import { RouteDescriptor } from 'app/core/navigation/types';
+import { SafeDynamicImport } from '@grafana-module/app/core/components/DynamicImports/SafeDynamicImport';
+import { RouteDescriptor } from '@grafana-module/app/core/navigation/types';
 
 import { ROUTE_BASE_ID } from './constants';
 
@@ -8,7 +8,7 @@ export function getRoutes(): RouteDescriptor[] {
     {
       path: `/${ROUTE_BASE_ID}/*`,
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "Connections"*/ 'app/features/connections/Connections')
+        () => import(/* webpackChunkName: "Connections"*/ '@grafana-module/app/features/connections/Connections')
       ),
     },
   ];

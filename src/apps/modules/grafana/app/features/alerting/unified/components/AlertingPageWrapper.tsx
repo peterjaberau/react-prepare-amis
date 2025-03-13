@@ -1,8 +1,8 @@
 import { PropsWithChildren } from 'react';
 import { useLocation } from 'react-use';
 
-import { Page } from 'app/core/components/Page/Page';
-import { PageProps } from 'app/core/components/Page/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { PageProps } from '@grafana-module/app/core/components/Page/types';
 
 import { AlertmanagerProvider, useAlertmanager } from '../state/AlertmanagerContext';
 

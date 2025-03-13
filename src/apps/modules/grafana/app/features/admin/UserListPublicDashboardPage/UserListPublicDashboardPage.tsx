@@ -1,7 +1,7 @@
 import { selectors as e2eSelectors } from '@selectors/index';
 import { Icon, Stack, Tag, Tooltip } from '@grafana/ui/src';
-import { Page } from 'app/core/components/Page/Page';
-import { Trans, t } from 'app/core/internationalization';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { useGetActiveUsersQuery } from '../../dashboard/api/publicDashboardApi';
 

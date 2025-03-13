@@ -1,6 +1,6 @@
 import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@data/index';
 import { config } from '@runtime/index';
-import { SuggestionName } from 'app/types/suggestions';
+import { SuggestionName } from '@grafana-module/app/types/suggestions';
 
 import { prepareCandlestickFields } from './fields';
 import { defaultOptions, Options } from './types';

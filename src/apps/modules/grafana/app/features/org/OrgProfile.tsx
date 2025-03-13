@@ -1,7 +1,7 @@
 import { Input, Field, FieldSet, Button } from '@grafana/ui';
-import { Form } from 'app/core/components/Form/Form';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { Form } from '@grafana-module/app/core/components/Form/Form';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 export interface Props {
   orgName: string;

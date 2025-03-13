@@ -4,8 +4,8 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Modal, Button, Stack, TextLink, Field, Input, Text, useStyles2 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { AlertWithTraceID } from 'app/features/migrate-to-cloud/shared/AlertWithTraceID';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { AlertWithTraceID } from '@grafana-module/app/features/migrate-to-cloud/shared/AlertWithTraceID';
 
 import { CreateSessionApiArg } from '../../../api';
 import { maybeAPIError } from '../../../api/errors';

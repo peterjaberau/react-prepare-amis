@@ -12,10 +12,10 @@ import {
   PanelData,
 } from '@data/index';
 import { ScaleDimensionConfig } from '@schema/index';
-import { getScaledDimension } from 'app/features/dimensions';
-import { ScaleDimensionEditor } from 'app/features/dimensions/editors';
-import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
-import { getLocationMatchers } from 'app/features/geo/utils/location';
+import { getScaledDimension } from '@grafana-module/app/features/dimensions';
+import { ScaleDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
+import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
+import { getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
 
 // Configuration options for Heatmap overlays
 export interface HeatmapConfig {

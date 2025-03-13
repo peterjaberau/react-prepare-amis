@@ -5,12 +5,12 @@ import _ from 'lodash'; // eslint-disable-line lodash/import-scope
 import { AppEvent } from '@data/index';
 import { setLegacyAngularInjector, setAngularLoader } from '@runtime/index';
 import { colors } from '@grafana/ui';
-import coreModule from 'app/angular/core_module';
-import { AngularLoader } from 'app/angular/services/AngularLoader';
-import appEvents from 'app/core/app_events';
-import config from 'app/core/config';
-import { ContextSrv } from 'app/core/services/context_srv';
-import { AppEventEmitter, AppEventConsumer } from 'app/types';
+import coreModule from '@grafana-module/app/angular/core_module';
+import { AngularLoader } from '@grafana-module/app/angular/services/AngularLoader';
+import appEvents from '@grafana-module/app/core/app_events';
+import config from '@grafana-module/app/core/config';
+import { ContextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AppEventEmitter, AppEventConsumer } from '@grafana-module/app/types';
 
 import { UtilSrv } from './services/UtilSrv';
 

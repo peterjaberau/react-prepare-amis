@@ -15,25 +15,25 @@ import {
   ConfirmModal,
   Badge,
 } from '@grafana/ui';
-import { updateNavIndex } from 'app/core/actions';
-import { AppChromeUpdate } from 'app/core/components/AppChrome/AppChromeUpdate';
-import { NavToolbarSeparator } from 'app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
-import config from 'app/core/config';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { appEvents } from 'app/core/core';
-import { useBusEvent } from 'app/core/hooks/useBusEvent';
-import { t, Trans } from 'app/core/internationalization';
-import { ID_PREFIX, setStarred } from 'app/core/reducers/navBarTree';
-import { removeNavIndex } from 'app/core/reducers/navModel';
-import AddPanelButton from 'app/features/dashboard/components/AddPanelButton/AddPanelButton';
-import { SaveDashboardDrawer } from 'app/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { playlistSrv } from 'app/features/playlist/PlaylistSrv';
-import { updateTimeZoneForSession } from 'app/features/profile/state/reducers';
-import { KioskMode, StoreState } from 'app/types';
-import { DashboardMetaChangedEvent, ShowModalReactEvent } from 'app/types/events';
+import { updateNavIndex } from '@grafana-module/app/core/actions';
+import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
+import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
+import config from '@grafana-module/app/core/config';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { appEvents } from '@grafana-module/app/core/core';
+import { useBusEvent } from '@grafana-module/app/core/hooks/useBusEvent';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { ID_PREFIX, setStarred } from '@grafana-module/app/core/reducers/navBarTree';
+import { removeNavIndex } from '@grafana-module/app/core/reducers/navModel';
+import AddPanelButton from '@grafana-module/app/features/dashboard/components/AddPanelButton/AddPanelButton';
+import { SaveDashboardDrawer } from '@grafana-module/app/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
+import { updateTimeZoneForSession } from '@grafana-module/app/features/profile/state/reducers';
+import { KioskMode, StoreState } from '@grafana-module/app/types';
+import { DashboardMetaChangedEvent, ShowModalReactEvent } from '@grafana-module/app/types/events';
 
 import {
   DynamicDashNavButtonModel,

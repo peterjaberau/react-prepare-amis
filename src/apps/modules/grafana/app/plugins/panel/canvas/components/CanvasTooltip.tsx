@@ -20,8 +20,8 @@ import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizToolt
 import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
 import { VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
 import { CloseButton } from '@grafana/ui/src/components/uPlot/plugins/CloseButton';
-import { getActions, getActionsDefaultField } from 'app/features/actions/utils';
-import { Scene } from 'app/features/canvas/runtime/scene';
+import { getActions, getActionsDefaultField } from '@grafana-module/app/features/actions/utils';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
 
 import { getDataLinks } from '../../status-history/utils';
 import { getElementFields, getRowIndex } from '../utils';

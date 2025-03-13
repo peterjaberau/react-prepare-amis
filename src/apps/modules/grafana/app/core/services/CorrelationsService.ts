@@ -1,7 +1,7 @@
 import { DataFrame, TimeRange } from '@data/index';
 import type { CorrelationData, CorrelationsService as CorrelationsServiceInterface } from '@runtime/index';
-import { attachCorrelationsToDataFrames, getCorrelationsBySourceUIDs } from 'app/features/correlations/utils';
-import { exploreDataLinkPostProcessorFactory } from 'app/features/explore/utils/links';
+import { attachCorrelationsToDataFrames, getCorrelationsBySourceUIDs } from '@grafana-module/app/features/correlations/utils';
+import { exploreDataLinkPostProcessorFactory } from '@grafana-module/app/features/explore/utils/links';
 
 export class CorrelationsService implements CorrelationsServiceInterface {
   attachCorrelationsToDataFrames(

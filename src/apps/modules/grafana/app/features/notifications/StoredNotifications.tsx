@@ -5,16 +5,16 @@ import { useEffectOnce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Alert, Button, Checkbox, EmptyState, useStyles2 } from '@grafana/ui';
-import { StoredNotificationItem } from 'app/core/components/AppNotifications/StoredNotificationItem';
-import { Trans, t } from 'app/core/internationalization';
+import { StoredNotificationItem } from '@grafana-module/app/core/components/AppNotifications/StoredNotificationItem';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {
   clearAllNotifications,
   clearNotification,
   readAllNotifications,
   selectWarningsAndErrors,
   selectLastReadTimestamp,
-} from 'app/core/reducers/appNotification';
-import { useDispatch, useSelector } from 'app/types';
+} from '@grafana-module/app/core/reducers/appNotification';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 export function StoredNotifications() {
   const dispatch = useDispatch();

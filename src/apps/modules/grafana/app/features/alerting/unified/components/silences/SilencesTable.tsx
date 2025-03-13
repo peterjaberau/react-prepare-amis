@@ -13,13 +13,13 @@ import {
   Stack,
   useStyles2,
 } from '@grafana/ui';
-import { useQueryParams } from 'app/core/hooks/useQueryParams';
-import { Trans } from 'app/core/internationalization';
-import { alertSilencesApi } from 'app/features/alerting/unified/api/alertSilencesApi';
-import { featureDiscoveryApi } from 'app/features/alerting/unified/api/featureDiscoveryApi';
-import { MATCHER_ALERT_RULE_UID, SILENCES_POLL_INTERVAL_MS } from 'app/features/alerting/unified/utils/constants';
-import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from 'app/features/alerting/unified/utils/datasource';
-import { AlertmanagerAlert, Silence, SilenceState } from 'app/plugins/datasource/alertmanager/types';
+import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { alertSilencesApi } from '@grafana-module/app/features/alerting/unified/api/alertSilencesApi';
+import { featureDiscoveryApi } from '@grafana-module/app/features/alerting/unified/api/featureDiscoveryApi';
+import { MATCHER_ALERT_RULE_UID, SILENCES_POLL_INTERVAL_MS } from '@grafana-module/app/features/alerting/unified/utils/constants';
+import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { AlertmanagerAlert, Silence, SilenceState } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';
 import { AlertmanagerAction, useAlertmanagerAbility } from '../../hooks/useAbilities';

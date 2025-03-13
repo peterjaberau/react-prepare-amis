@@ -5,7 +5,7 @@ import { Unsubscribable } from 'rxjs';
 import { GrafanaTheme2, OrgRole } from '@data/index';
 import { config, getGrafanaLiveSrv } from '@runtime/index';
 import { Alert, stylesFactory } from '@grafana/ui';
-import { contextSrv } from 'app/core/services/context_srv';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 
 export interface Props {}
 

@@ -23,10 +23,10 @@ import {
 } from '@data/index';
 import { getTemplateSrv, reportInteraction, VariableInterpolation } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { contextSrv } from 'app/core/services/context_srv';
-import { getTransformationVars } from 'app/features/correlations/transformations';
-import { parseDataplaneLogsFrame } from 'app/features/logs/logsFrame';
-import { ExploreItemState } from 'app/types/explore';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { getTransformationVars } from '@grafana-module/app/features/correlations/transformations';
+import { parseDataplaneLogsFrame } from '@grafana-module/app/features/logs/logsFrame';
+import { ExploreItemState } from '@grafana-module/app/types/explore';
 
 import { getLinkSrv } from '../../panel/panellinks/link_srv';
 import { getUrlStateFromPaneState } from '../hooks/useStateSync';

@@ -4,8 +4,8 @@ import { useAsync } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, Icon } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { Trans } from 'app/core/internationalization';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { getTogglesAPI } from './AdminFeatureTogglesAPI';
 import { AdminFeatureTogglesTable } from './AdminFeatureTogglesTable';

@@ -1,7 +1,7 @@
 import { dateTimeFormat } from '@data/index';
 import { InteractiveTable, Text } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { SyncInfo } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { SyncInfo } from '@grafana-module/app/types';
 
 interface Props {
   ldapSyncInfo: SyncInfo;

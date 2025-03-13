@@ -1,7 +1,7 @@
 import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Dashboard } from '@grafana/schema/dist/esm/index.gen';
-import { safeStringifyValue } from 'app/core/utils/explore';
-import { GraphEdge, GraphNode, getPropsWithVariable } from 'app/features/variables/inspect/utils';
+import { safeStringifyValue } from '@grafana-module/app/core/utils/explore';
+import { GraphEdge, GraphNode, getPropsWithVariable } from '@grafana-module/app/features/variables/inspect/utils';
 
 export const variableRegex = /\$(\w+)|\[\[(\w+?)(?::(\w+))?\]\]|\${(\w+)(?:\.([^:^\}]+))?(?::([^\}]+))?}/g;
 

@@ -4,11 +4,11 @@ import { Unsubscribable } from 'rxjs';
 import { dateMath, TimeRange, TimeZone } from '@data/index';
 import { TimeRangeUpdatedEvent } from '@runtime/index';
 import { defaultIntervals, isWeekStart, RefreshPicker } from '@grafana/ui';
-import { TimePickerWithHistory } from 'app/core/components/TimePicker/TimePickerWithHistory';
-import { appEvents } from 'app/core/core';
-import { t } from 'app/core/internationalization';
-import { AutoRefreshInterval } from 'app/core/services/context_srv';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
+import { TimePickerWithHistory } from '@grafana-module/app/core/components/TimePicker/TimePickerWithHistory';
+import { appEvents } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
+import { AutoRefreshInterval } from '@grafana-module/app/core/services/context_srv';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 
 import { ShiftTimeEvent, ShiftTimeEventDirection, ZoomOutEvent } from '../../../../types/events';
 import { DashboardModel } from '../../state/DashboardModel';

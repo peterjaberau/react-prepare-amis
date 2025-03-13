@@ -1,7 +1,7 @@
 import memoizeOne from 'memoize-one';
 
 import { DataSourcePluginMeta, DataSourceSettings, UrlQueryValue } from '@data/index';
-import { DataSourcesState } from 'app/types/datasources';
+import { DataSourcesState } from '@grafana-module/app/types/datasources';
 
 export const getDataSources = memoizeOne((state: DataSourcesState) => {
   const regex = new RegExp(state.searchQuery, 'i');

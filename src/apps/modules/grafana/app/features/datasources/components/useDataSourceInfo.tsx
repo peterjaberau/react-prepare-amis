@@ -1,5 +1,5 @@
 import { Badge } from '@grafana/ui';
-import { PageInfoItem } from 'app/core/components/Page/types';
+import { PageInfoItem } from '@grafana-module/app/core/components/Page/types';
 
 type DataSourceInfo = {
   dataSourcePluginName: string;

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import { Button, Checkbox, TextArea, Stack, Alert, Box, Field } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { SaveDashboardOptions } from 'app/features/dashboard/components/SaveDashboard/types';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { SaveDashboardOptions } from '@grafana-module/app/features/dashboard/components/SaveDashboard/types';
 
 import { DashboardScene } from '../scene/DashboardScene';
 

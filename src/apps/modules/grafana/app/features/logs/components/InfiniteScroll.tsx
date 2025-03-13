@@ -6,7 +6,7 @@ import { convertRawToRange, isRelativeTime, isRelativeTimeRange } from '@grafana
 import { config, reportInteraction } from '@runtime/index';
 import { LogsSortOrder, TimeZone } from '@schema/index';
 import { Button, Icon } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { LoadingIndicator } from './LoadingIndicator';
 

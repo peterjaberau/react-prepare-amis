@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { isFetchError } from '@runtime/index';
-import { getIrmIfPresentOrOnCallPluginId } from 'app/features/alerting/unified/utils/config';
+import { getIrmIfPresentOrOnCallPluginId } from '@grafana-module/app/features/alerting/unified/utils/config';
 
 import { useAppNotification } from '../../../../../../../core/copy/appNotification';
 import { Receiver } from '../../../../../../../plugins/datasource/alertmanager/types';

@@ -3,8 +3,8 @@ import { Component } from 'react';
 import { TimeRange, RawTimeRange, dateTimeForTimeZone, dateMath } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
-import { TimePickerWithHistory } from 'app/core/components/TimePicker/TimePickerWithHistory';
-import { getShiftedTimeRange, getZoomedTimeRange } from 'app/core/utils/timePicker';
+import { TimePickerWithHistory } from '@grafana-module/app/core/components/TimePicker/TimePickerWithHistory';
+import { getShiftedTimeRange, getZoomedTimeRange } from '@grafana-module/app/core/utils/timePicker';
 
 import { TimeSyncButton } from './TimeSyncButton';
 

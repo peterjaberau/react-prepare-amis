@@ -18,11 +18,11 @@ import {
   Pagination,
   Icon,
 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { useNavModel } from 'app/core/hooks/useNavModel';
-import { Trans, t } from 'app/core/internationalization';
-import { AccessControlAction } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { useNavModel } from '@grafana-module/app/core/hooks/useNavModel';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { AddCorrelationForm } from './Forms/AddCorrelationForm';
 import { EditCorrelationForm } from './Forms/EditCorrelationForm';

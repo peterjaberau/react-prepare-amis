@@ -1,9 +1,9 @@
 import { useCallback } from 'react';
 
 import { CallToActionCard, EmptyState, LinkButton, TextLink } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { DashboardViewItem } from 'app/features/search/types';
-import { useDispatch } from 'app/types';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { PAGE_SIZE } from '../api/services';
 import {

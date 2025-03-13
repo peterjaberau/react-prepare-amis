@@ -2,8 +2,8 @@ import 'vendor/flot/jquery.flot';
 import { map } from 'lodash';
 
 import { dateTime, GrafanaTheme2, TimeRange } from '@data/index';
-import { config } from 'app/core/config';
-import { calculateTimesWithin, TimeRegionConfig } from 'app/core/utils/timeRegions';
+import { config } from '@grafana-module/app/core/config';
+import { calculateTimesWithin, TimeRegionConfig } from '@grafana-module/app/core/utils/timeRegions';
 
 type TimeRegionColorDefinition = {
   fill: string | null;

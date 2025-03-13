@@ -3,8 +3,8 @@ import * as React from 'react';
 import { PluginMeta } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { updatePluginSettings } from '../../api';
 import { usePluginConfig } from '../../hooks/usePluginConfig';

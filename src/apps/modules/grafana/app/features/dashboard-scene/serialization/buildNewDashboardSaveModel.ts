@@ -9,10 +9,10 @@ import {
   defaultTimeSettingsSpec,
   GroupByVariableKind,
 } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { AnnoKeyFolder } from 'app/features/apiserver/types';
-import { DashboardWithAccessInfo } from 'app/features/dashboard/api/types';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { DashboardDTO } from 'app/types';
+import { AnnoKeyFolder } from '@grafana-module/app/features/apiserver/types';
+import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { DashboardDTO } from '@grafana-module/app/types';
 
 export async function buildNewDashboardSaveModel(urlFolderUid?: string): Promise<DashboardDTO> {
   let variablesList = defaultDashboard.templating?.list;

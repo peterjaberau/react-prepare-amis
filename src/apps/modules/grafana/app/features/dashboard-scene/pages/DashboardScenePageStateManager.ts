@@ -4,24 +4,24 @@ import { locationUtil, UrlQueryMap } from '@data/index';
 import { config, getBackendSrv, isFetchError, locationService } from '@runtime/index';
 import { sceneGraph } from '@scenes/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { StateManagerBase } from 'app/core/services/StateManagerBase';
-import { getMessageFromError, getMessageIdFromError, getStatusFromError } from 'app/core/utils/errors';
-import { startMeasure, stopMeasure } from 'app/core/utils/metrics';
-import { AnnoKeyFolder } from 'app/features/apiserver/types';
-import { ResponseTransformers } from 'app/features/dashboard/api/ResponseTransformers';
-import { DashboardWithAccessInfo } from 'app/features/dashboard/api/types';
-import { isDashboardV2Spec } from 'app/features/dashboard/api/utils';
-import { dashboardLoaderSrv, DashboardLoaderSrvV2 } from 'app/features/dashboard/services/DashboardLoaderSrv';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { emitDashboardViewEvent } from 'app/features/dashboard/state/analyticsProcessor';
-import { trackDashboardSceneLoaded } from 'app/features/dashboard/utils/tracking';
+import { StateManagerBase } from '@grafana-module/app/core/services/StateManagerBase';
+import { getMessageFromError, getMessageIdFromError, getStatusFromError } from '@grafana-module/app/core/utils/errors';
+import { startMeasure, stopMeasure } from '@grafana-module/app/core/utils/metrics';
+import { AnnoKeyFolder } from '@grafana-module/app/features/apiserver/types';
+import { ResponseTransformers } from '@grafana-module/app/features/dashboard/api/ResponseTransformers';
+import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
+import { isDashboardV2Spec } from '@grafana-module/app/features/dashboard/api/utils';
+import { dashboardLoaderSrv, DashboardLoaderSrvV2 } from '@grafana-module/app/features/dashboard/services/DashboardLoaderSrv';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { emitDashboardViewEvent } from '@grafana-module/app/features/dashboard/state/analyticsProcessor';
+import { trackDashboardSceneLoaded } from '@grafana-module/app/features/dashboard/utils/tracking';
 import {
   DashboardDataDTO,
   DashboardDTO,
   DashboardRoutes,
   HomeDashboardRedirectDTO,
   isRedirectResponse,
-} from 'app/types';
+} from '@grafana-module/app/types';
 
 import { PanelEditor } from '../panel-edit/PanelEditor';
 import { DashboardScene } from '../scene/DashboardScene';

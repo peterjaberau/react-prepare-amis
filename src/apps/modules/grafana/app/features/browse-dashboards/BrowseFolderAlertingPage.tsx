@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { Page } from 'app/core/components/Page/Page';
-import { buildNavModel, getAlertingTabID } from 'app/features/folders/state/navModel';
-import { useSelector } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { buildNavModel, getAlertingTabID } from '@grafana-module/app/features/folders/state/navModel';
+import { useSelector } from '@grafana-module/app/types';
 
 import { AlertsFolderView } from '../alerting/unified/AlertsFolderView';
 

@@ -12,8 +12,8 @@ import {
   ScopedVars,
 } from '@data/index';
 import { VizPanel } from '@scenes/index';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { dashboardSceneGraph } from 'app/features/dashboard-scene/utils/dashboardSceneGraph';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { dashboardSceneGraph } from '@grafana-module/app/features/dashboard-scene/utils/dashboardSceneGraph';
 
 import { getLinkSrv } from './link_srv';
 

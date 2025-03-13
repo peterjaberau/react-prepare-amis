@@ -2,7 +2,7 @@ import { each, flatten, groupBy, isArray } from 'lodash';
 
 import { AnnotationEvent, DataFrame, FieldType, QueryResultMeta } from '@data/index';
 import { BackendDataSourceResponse, FetchResponse, toDataQueryResponse } from '@runtime/index';
-import TableModel from 'app/core/TableModel';
+import TableModel from '@grafana-module/app/core/TableModel';
 
 import { InfluxQuery } from './types';
 

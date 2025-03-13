@@ -2,8 +2,8 @@ import { useCallback, useState } from 'react';
 import { useAsync, useDebounce } from 'react-use';
 
 import { Button, Icon, Input, Modal, useStyles2 } from '@grafana/ui';
-import { getConnectedDashboards } from 'app/features/library-panels/state/api';
-import { getModalStyles } from 'app/features/library-panels/styles';
+import { getConnectedDashboards } from '@grafana-module/app/features/library-panels/state/api';
+import { getModalStyles } from '@grafana-module/app/features/library-panels/styles';
 
 import { LibraryPanelBehavior } from '../scene/LibraryPanelBehavior';
 

@@ -6,15 +6,15 @@ import { usePrevious } from 'react-use';
 import { GrafanaTheme2, PageLayoutType, TimeZone } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { PageToolbar, useStyles2 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
 import {
   PublicDashboardPageRouteParams,
   PublicDashboardPageRouteSearchParams,
-} from 'app/features/dashboard/containers/types';
-import { updateTimeZoneForSession } from 'app/features/profile/state/reducers';
-import { useSelector, useDispatch, DashboardInitError } from 'app/types';
+} from '@grafana-module/app/features/dashboard/containers/types';
+import { updateTimeZoneForSession } from '@grafana-module/app/features/profile/state/reducers';
+import { useSelector, useDispatch, DashboardInitError } from '@grafana-module/app/types';
 
 import { DashNavTimeControls } from '../components/DashNav/DashNavTimeControls';
 import { DashboardFailed } from '../components/DashboardLoading/DashboardFailed';

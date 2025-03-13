@@ -6,8 +6,8 @@ import { DataSourceInstanceSettings } from '@data/index';
 import { config } from '@runtime/index';
 import { CellProps, Stack, Text, Icon, useStyles2 } from '@grafana/ui';
 import { getSvgSize } from '@grafana/ui/src/components/Icon/utils';
-import { Trans } from 'app/core/internationalization';
-import { useGetFolderQuery } from 'app/features/browse-dashboards/api/browseDashboardsAPI';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { useGetFolderQuery } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
 
 import { LocalPlugin } from '../../plugins/admin/types';
 import { useGetDashboardByUidQuery, useGetLibraryElementByUidQuery } from '../api';

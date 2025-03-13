@@ -16,8 +16,8 @@ import {
 } from 'react-redux';
 import { ThunkAction, ThunkDispatch as GenericThunkDispatch } from 'redux-thunk';
 
-import type { createRootReducer } from 'app/core/reducers/root';
-import { AppDispatch, RootState } from 'app/store/configureStore';
+import type { createRootReducer } from '@grafana-module/app/core/reducers/root';
+import { AppDispatch, RootState } from '@grafana-module/app/store/configureStore';
 
 export type StoreState = ReturnType<ReturnType<typeof createRootReducer>>;
 

@@ -1,14 +1,14 @@
 import { set } from 'lodash';
 
 import { RelativeTimeRange } from '@data/index';
-import { t } from 'app/core/internationalization';
-import { Matcher } from 'app/plugins/datasource/alertmanager/types';
+import { t } from '@grafana-module/app/core/internationalization';
+import { Matcher } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 import {
   GrafanaRuleGroupIdentifier,
   RuleIdentifier,
   RuleNamespace,
   RulerDataSourceConfig,
-} from 'app/types/unified-alerting';
+} from '@grafana-module/app/types/unified-alerting';
 import {
   AlertQuery,
   Annotations,
@@ -19,7 +19,7 @@ import {
   RulerGrafanaRuleDTO,
   RulerRuleGroupDTO,
   RulerRulesConfigDTO,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { ExportFormats } from '../components/export/providers';
 import { Folder } from '../types/rule-form';

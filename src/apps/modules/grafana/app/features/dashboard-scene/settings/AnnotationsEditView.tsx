@@ -1,7 +1,7 @@
 import { AnnotationQuery, getDataSourceRef, NavModel, NavModelItem, PageLayoutType } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, VizPanel, dataLayers } from '@scenes/index';
-import { Page } from 'app/core/components/Page/Page';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { DashboardAnnotationsDataLayer } from '../scene/DashboardAnnotationsDataLayer';
 import { DashboardScene } from '../scene/DashboardScene';

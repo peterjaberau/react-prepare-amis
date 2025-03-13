@@ -1,5 +1,5 @@
 import { Alert, LoadingPlaceholder } from '@grafana/ui';
-import { RuleIdentifier } from 'app/types/unified-alerting';
+import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import { AlertWarning } from '../AlertWarning';
 import { AlertRuleForm } from '../components/rule-editor/alert-rule-form/AlertRuleForm';

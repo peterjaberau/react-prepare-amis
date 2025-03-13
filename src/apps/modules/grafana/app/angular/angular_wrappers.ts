@@ -10,10 +10,10 @@ import {
   Spinner,
   UnitPicker,
 } from '@grafana/ui';
-import { react2AngularDirective } from 'app/angular/react2angular';
-import { OldFolderPicker } from 'app/core/components/Select/OldFolderPicker';
-import { TimePickerSettings } from 'app/features/dashboard/components/DashboardSettings/TimePickerSettings';
-import { QueryEditor as CloudMonitoringQueryEditor } from 'app/plugins/datasource/cloud-monitoring/components/QueryEditor';
+import { react2AngularDirective } from '@grafana-module/app/angular/react2angular';
+import { OldFolderPicker } from '@grafana-module/app/core/components/Select/OldFolderPicker';
+import { TimePickerSettings } from '@grafana-module/app/features/dashboard/components/DashboardSettings/TimePickerSettings';
+import { QueryEditor as CloudMonitoringQueryEditor } from '@grafana-module/app/plugins/datasource/cloud-monitoring/components/QueryEditor';
 
 import EmptyListCTA from '../core/components/EmptyListCTA/EmptyListCTA';
 import { Footer } from '../core/components/Footer/Footer';

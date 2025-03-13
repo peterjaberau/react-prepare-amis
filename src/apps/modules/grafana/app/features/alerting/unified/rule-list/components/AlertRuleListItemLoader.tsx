@@ -1,7 +1,7 @@
 import Skeleton from 'react-loading-skeleton';
 
-import { t } from 'app/core/internationalization';
-import { PromRuleDTO } from 'app/types/unified-alerting-dto';
+import { t } from '@grafana-module/app/core/internationalization';
+import { PromRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { ListItem } from './ListItem';
 import { RuleActionsSkeleton } from './RuleActionsSkeleton';

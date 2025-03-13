@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { debounce, find, indexOf, map, escape, unescape } from 'lodash';
 
-import { TemplateSrv } from 'app/features/templating/template_srv';
+import { TemplateSrv } from '@grafana-module/app/features/templating/template_srv';
 
 import coreModule from './core_module';
 

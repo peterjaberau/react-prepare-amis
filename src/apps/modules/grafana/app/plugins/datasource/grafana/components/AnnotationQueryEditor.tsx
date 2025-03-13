@@ -4,10 +4,10 @@ import * as React from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Field, FieldSet, Select, Switch, useStyles2 } from '@grafana/ui';
-import { TagFilter } from 'app/core/components/TagFilter/TagFilter';
-import { TimeRegionConfig } from 'app/core/utils/timeRegions';
-import { getAnnotationTags } from 'app/features/annotations/api';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
+import { TagFilter } from '@grafana-module/app/core/components/TagFilter/TagFilter';
+import { TimeRegionConfig } from '@grafana-module/app/core/utils/timeRegions';
+import { getAnnotationTags } from '@grafana-module/app/features/annotations/api';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 
 import { GrafanaAnnotationQuery, GrafanaAnnotationType, GrafanaQuery, GrafanaQueryType } from '../types';
 

@@ -2,7 +2,7 @@ import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { TypedLazyQueryTrigger } from '@reduxjs/toolkit/query/react';
 import { useCallback } from 'react';
 
-import { DataSourceRulesSourceIdentifier } from 'app/types/unified-alerting';
+import { DataSourceRulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import { BaseQueryFnArgs } from '../../api/alertingApi';
 import { PromRulesResponse, prometheusApi } from '../../api/prometheusApi';

@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 
 import { reportInteraction } from '@runtime/index';
 import { Box, Button, Text } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import {
   useCreateCloudMigrationTokenMutation,

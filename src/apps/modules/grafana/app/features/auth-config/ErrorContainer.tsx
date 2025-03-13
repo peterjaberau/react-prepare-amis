@@ -1,7 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 
 import { Alert } from '@grafana/ui';
-import { StoreState } from 'app/types';
+import { StoreState } from '@grafana-module/app/types';
 
 import { resetError, resetWarning } from './state/reducers';
 

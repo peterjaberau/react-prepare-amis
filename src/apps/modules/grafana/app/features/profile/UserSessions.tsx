@@ -2,10 +2,10 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 
 import { Button, Icon, LoadingPlaceholder, ScrollContainer } from '@grafana/ui';
-import { TagBadge } from 'app/core/components/TagFilter/TagBadge';
-import { t, Trans } from 'app/core/internationalization';
-import { formatDate } from 'app/core/internationalization/dates';
-import { UserSession } from 'app/types';
+import { TagBadge } from '@grafana-module/app/core/components/TagFilter/TagBadge';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { formatDate } from '@grafana-module/app/core/internationalization/dates';
+import { UserSession } from '@grafana-module/app/types';
 
 interface Props {
   sessions: UserSession[];

@@ -12,18 +12,18 @@ import {
   urlUtil,
 } from '@data/index';
 import { useStyles2, IconButton, ScrollContainer } from '@grafana/ui';
-import { updateNavIndex } from 'app/core/actions';
-import { getConfig } from 'app/core/config';
-import { appEvents } from 'app/core/core';
-import { useBusEvent } from 'app/core/hooks/useBusEvent';
-import { ID_PREFIX, setStarred } from 'app/core/reducers/navBarTree';
-import { removeNavIndex } from 'app/core/reducers/navModel';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import impressionSrv from 'app/core/services/impression_srv';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { DashboardSearchItem } from 'app/features/search/types';
-import { VariablesChanged } from 'app/features/variables/types';
-import { useDispatch, useSelector } from 'app/types';
+import { updateNavIndex } from '@grafana-module/app/core/actions';
+import { getConfig } from '@grafana-module/app/core/config';
+import { appEvents } from '@grafana-module/app/core/core';
+import { useBusEvent } from '@grafana-module/app/core/hooks/useBusEvent';
+import { ID_PREFIX, setStarred } from '@grafana-module/app/core/reducers/navBarTree';
+import { removeNavIndex } from '@grafana-module/app/core/reducers/navModel';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import impressionSrv from '@grafana-module/app/core/services/impression_srv';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { DashboardSearchItem } from '@grafana-module/app/features/search/types';
+import { VariablesChanged } from '@grafana-module/app/features/variables/types';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { Options } from './panelcfg.gen';
 import { getStyles } from './styles';

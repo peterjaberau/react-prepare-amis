@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { Select } from '@grafana/ui';
-import { Variable } from 'app/types/templates';
+import { Variable } from '@grafana-module/app/types/templates';
 
 export interface Props {
   onChange: (value: string | undefined) => void;

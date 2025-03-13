@@ -1,7 +1,7 @@
 import { UrlQueryMap } from '@data/index';
-import { Resource } from 'app/features/apiserver/types';
-import { DeleteDashboardResponse } from 'app/features/manage-dashboards/types';
-import { AnnotationsPermissions, SaveDashboardResponseDTO } from 'app/types';
+import { Resource } from '@grafana-module/app/features/apiserver/types';
+import { DeleteDashboardResponse } from '@grafana-module/app/features/manage-dashboards/types';
+import { AnnotationsPermissions, SaveDashboardResponseDTO } from '@grafana-module/app/types';
 
 import { SaveDashboardCommand } from '../components/SaveDashboard/types';
 

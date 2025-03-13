@@ -3,7 +3,7 @@ import { useAsync } from 'react-use';
 import { renderMarkdown } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { LoadingPlaceholder } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 interface Props {
   pluginId: string;

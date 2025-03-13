@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
-import PageLoader from 'app/core/components/PageLoader/PageLoader';
-import { importDashboard, removeDashboard } from 'app/features/dashboard/state/actions';
-import { loadPluginDashboards } from 'app/features/plugins/admin/state/actions';
-import { PluginDashboard, StoreState, useDispatch, useSelector } from 'app/types';
+import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
+import { importDashboard, removeDashboard } from '@grafana-module/app/features/dashboard/state/actions';
+import { loadPluginDashboards } from '@grafana-module/app/features/plugins/admin/state/actions';
+import { PluginDashboard, StoreState, useDispatch, useSelector } from '@grafana-module/app/types';
 
 import DashboardTable from '../components/DashboardsTable';
 import { useInitDataSourceSettings } from '../state';

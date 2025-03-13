@@ -1,5 +1,5 @@
 import { Box, Card, Icon } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardInteractions } from '../utils/interactions';
 import { getDashboardSceneFor } from '../utils/utils';

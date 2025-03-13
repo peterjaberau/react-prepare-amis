@@ -5,10 +5,10 @@ import { isLikelyAscendingVector } from '@grafana/data/src/transformations/trans
 import { config, PanelDataErrorView } from '@runtime/index';
 import { KeyboardPlugin, TooltipDisplayMode, usePanelContext, TooltipPlugin2 } from '@grafana/ui';
 import { TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
-import { XYFieldMatchers } from 'app/core/components/GraphNG/types';
-import { preparePlotFrame } from 'app/core/components/GraphNG/utils';
-import { TimeSeries } from 'app/core/components/TimeSeries/TimeSeries';
-import { findFieldIndex } from 'app/features/dimensions';
+import { XYFieldMatchers } from '@grafana-module/app/core/components/GraphNG/types';
+import { preparePlotFrame } from '@grafana-module/app/core/components/GraphNG/utils';
+import { TimeSeries } from '@grafana-module/app/core/components/TimeSeries/TimeSeries';
+import { findFieldIndex } from '@grafana-module/app/features/dimensions';
 
 import { TimeSeriesTooltip } from '../timeseries/TimeSeriesTooltip';
 import { prepareGraphableFields } from '../timeseries/utils';

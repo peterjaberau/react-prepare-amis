@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 
-import { RuleNamespace } from 'app/types/unified-alerting';
-import { RulerRulesConfigDTO } from 'app/types/unified-alerting-dto';
+import { RuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { RulerRulesConfigDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { featureDiscoveryApi } from '../../api/featureDiscoveryApi';

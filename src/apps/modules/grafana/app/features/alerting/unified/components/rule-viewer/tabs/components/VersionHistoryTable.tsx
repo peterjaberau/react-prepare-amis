@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
 import { config } from '@runtime/index';
 import { Badge, Button, Checkbox, Column, ConfirmModal, InteractiveTable, Stack, Text } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { computeVersionDiff } from 'app/features/alerting/unified/utils/diff';
-import { DiffGroup } from 'app/features/dashboard-scene/settings/version-history/DiffGroup';
-import { Diffs, jsonDiff } from 'app/features/dashboard-scene/settings/version-history/utils';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from 'app/types/unified-alerting-dto';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { computeVersionDiff } from '@grafana-module/app/features/alerting/unified/utils/diff';
+import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';
+import { Diffs, jsonDiff } from '@grafana-module/app/features/dashboard-scene/settings/version-history/utils';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { UpdatedByUser } from './UpdatedBy';
 

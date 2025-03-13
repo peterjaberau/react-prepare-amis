@@ -3,7 +3,7 @@ import { pickBy } from 'lodash';
 
 import { locationUtil, urlUtil, rangeUtil } from '@data/index';
 import { locationService } from '@runtime/index';
-import { StateManagerBase } from 'app/core/services/StateManagerBase';
+import { StateManagerBase } from '@grafana-module/app/core/services/StateManagerBase';
 
 import { getPlaylistAPI, loadDashboards } from './api';
 import { PlaylistAPI } from './types';

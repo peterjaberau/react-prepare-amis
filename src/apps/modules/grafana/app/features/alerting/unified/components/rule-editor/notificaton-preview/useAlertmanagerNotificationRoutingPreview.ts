@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { useAsync } from 'react-use';
 
-import { useContactPointsWithStatus } from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { useNotificationPolicyRoute } from 'app/features/alerting/unified/components/notification-policies/useNotificationPolicyRoute';
+import { useContactPointsWithStatus } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { useNotificationPolicyRoute } from '@grafana-module/app/features/alerting/unified/components/notification-policies/useNotificationPolicyRoute';
 
 import { Receiver } from '../../../../../../plugins/datasource/alertmanager/types';
 import { Labels } from '../../../../../../types/unified-alerting-dto';

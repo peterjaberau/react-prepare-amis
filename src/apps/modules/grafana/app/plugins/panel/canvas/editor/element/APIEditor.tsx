@@ -7,8 +7,8 @@ import {
   SelectableValue,
 } from '@data/index';
 import { Button, Field, InlineField, InlineFieldRow, JSONFormatter, RadioButtonGroup, Select } from '@grafana/ui';
-import { StringValueEditor } from 'app/core/components/OptionsUI/string';
-import { defaultApiConfig } from 'app/features/canvas/elements/button';
+import { StringValueEditor } from '@grafana-module/app/core/components/OptionsUI/string';
+import { defaultApiConfig } from '@grafana-module/app/features/canvas/elements/button';
 
 import { HttpRequestMethod } from '../../panelcfg.gen';
 

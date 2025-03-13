@@ -2,10 +2,10 @@ import { css } from '@emotion/css';
 import { v4 as uuidv4 } from 'uuid';
 
 import { GrafanaTheme2 } from '@data/index';
-import { config } from 'app/core/config';
-import { DimensionContext } from 'app/features/dimensions/context';
-import { ColorDimensionEditor } from 'app/features/dimensions/editors/ColorDimensionEditor';
-import { TextDimensionEditor } from 'app/features/dimensions/editors/TextDimensionEditor';
+import { config } from '@grafana-module/app/core/config';
+import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
+import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors/ColorDimensionEditor';
+import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/editors/TextDimensionEditor';
 
 import {
   CanvasElementItem,

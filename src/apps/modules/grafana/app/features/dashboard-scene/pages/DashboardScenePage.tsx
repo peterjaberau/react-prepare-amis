@@ -7,12 +7,12 @@ import { PageLayoutType } from '@data/index';
 import { config } from '@runtime/index';
 import { UrlSyncContextProvider } from '@scenes/index';
 import { Box } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import PageLoader from 'app/core/components/PageLoader/PageLoader';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
-import { DashboardPageError } from 'app/features/dashboard/containers/DashboardPageError';
-import { DashboardPageRouteParams, DashboardPageRouteSearchParams } from 'app/features/dashboard/containers/types';
-import { DashboardRoutes } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import { DashboardPageError } from '@grafana-module/app/features/dashboard/containers/DashboardPageError';
+import { DashboardPageRouteParams, DashboardPageRouteSearchParams } from '@grafana-module/app/features/dashboard/containers/types';
+import { DashboardRoutes } from '@grafana-module/app/types';
 
 import { DashboardPrompt } from '../saving/DashboardPrompt';
 

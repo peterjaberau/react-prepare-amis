@@ -2,11 +2,11 @@ import { useMemo } from 'react';
 
 import { config, reportInteraction } from '@runtime/index';
 import { Button, Stack, Tooltip } from '@grafana/ui';
-import appEvents from 'app/core/app_events';
-import { t, Trans } from 'app/core/internationalization';
-import { useSearchStateManager } from 'app/features/search/state/SearchStateManager';
-import { useDispatch } from 'app/types';
-import { ShowModalReactEvent } from 'app/types/events';
+import appEvents from '@grafana-module/app/core/app_events';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { useSearchStateManager } from '@grafana-module/app/features/search/state/SearchStateManager';
+import { useDispatch } from '@grafana-module/app/types';
+import { ShowModalReactEvent } from '@grafana-module/app/types/events';
 
 import { useDeleteItemsMutation, useMoveItemsMutation } from '../../api/browseDashboardsAPI';
 import { setAllSelection, useActionSelectionState } from '../../state';

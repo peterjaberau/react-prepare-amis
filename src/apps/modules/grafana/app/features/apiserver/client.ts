@@ -1,7 +1,7 @@
 import { Observable, from, retry, catchError, filter, map, mergeMap } from 'rxjs';
 
 import { BackendSrvRequest, config, getBackendSrv } from '@runtime/index';
-import { contextSrv } from 'app/core/core';
+import { contextSrv } from '@grafana-module/app/core/core';
 
 import { getAPINamespace } from '../../api/utils';
 

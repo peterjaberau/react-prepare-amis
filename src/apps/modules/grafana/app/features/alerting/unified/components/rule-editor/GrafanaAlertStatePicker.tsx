@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { SelectableValue } from '@data/index';
 import { Select } from '@grafana/ui';
 import { SelectBaseProps } from '@grafana/ui/src/components/Select/types';
-import { GrafanaAlertStateDecision } from 'app/types/unified-alerting-dto';
+import { GrafanaAlertStateDecision } from '@grafana-module/app/types/unified-alerting-dto';
 
 type Props = Omit<SelectBaseProps<GrafanaAlertStateDecision>, 'options'> & {
   includeNoData: boolean;

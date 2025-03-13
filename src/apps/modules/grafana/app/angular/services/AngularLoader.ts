@@ -2,8 +2,8 @@ import angular from 'angular';
 import { assign } from 'lodash';
 
 import { AngularComponent, AngularLoader as AngularLoaderInterface } from '@runtime/index';
-import { GrafanaRootScope } from 'app/angular/GrafanaCtrl';
-import coreModule from 'app/angular/core_module';
+import { GrafanaRootScope } from '@grafana-module/app/angular/GrafanaCtrl';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 export class AngularLoader implements AngularLoaderInterface {
   static $inject = ['$compile', '$rootScope'];

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 import { RefreshEvent } from '@runtime/index';
 import { PanelChrome } from '@grafana/ui';
-import { applyPanelTimeOverrides } from 'app/features/dashboard/utils/panel';
-import { PanelRenderer } from 'app/features/panel/components/PanelRenderer';
-import { Options } from 'app/plugins/panel/table/panelcfg.gen';
+import { applyPanelTimeOverrides } from '@grafana-module/app/features/dashboard/utils/panel';
+import { PanelRenderer } from '@grafana-module/app/features/panel/components/PanelRenderer';
+import { Options } from '@grafana-module/app/plugins/panel/table/panelcfg.gen';
 
 import { getTimeSrv } from '../../services/TimeSrv';
 import { DashboardModel } from '../../state/DashboardModel';

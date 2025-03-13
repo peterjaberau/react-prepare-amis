@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Team, TeamGroup, TeamMember, TeamsState, TeamState } from 'app/types';
+import { Team, TeamGroup, TeamMember, TeamsState, TeamState } from '@grafana-module/app/types';
 
 export const initialTeamsState: TeamsState = {
   teams: [],

@@ -1,7 +1,7 @@
 import { NavModelItem } from '@data/index';
-import { enrichHelpItem } from 'app/core/components/AppChrome/MegaMenu/utils';
-import { t } from 'app/core/internationalization';
-import { changeTheme } from 'app/core/services/theme';
+import { enrichHelpItem } from '@grafana-module/app/core/components/AppChrome/MegaMenu/utils';
+import { t } from '@grafana-module/app/core/internationalization';
+import { changeTheme } from '@grafana-module/app/core/services/theme';
 
 import { CommandPaletteAction } from '../types';
 import { ACTIONS_PRIORITY, DEFAULT_PRIORITY, PREFERENCES_PRIORITY } from '../values';

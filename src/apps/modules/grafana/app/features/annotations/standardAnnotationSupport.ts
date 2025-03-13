@@ -17,7 +17,7 @@ import {
   KeyValue,
   standardTransformers,
 } from '@data/index';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 export const standardAnnotationSupport: AnnotationSupport = {
   /**

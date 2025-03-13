@@ -13,10 +13,10 @@ import {
   toDataFrameDTO,
   toLegacyResponseData,
 } from '@data/index';
-import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
-import { ContextSrv } from 'app/core/services/context_srv';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { applyPanelTimeOverrides } from 'app/features/dashboard/utils/panel';
+import { PanelCtrl } from '@grafana-module/app/angular/panel/panel_ctrl';
+import { ContextSrv } from '@grafana-module/app/core/services/context_srv';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { applyPanelTimeOverrides } from '@grafana-module/app/features/dashboard/utils/panel';
 
 import { PanelQueryRunner } from '../../features/query/state/PanelQueryRunner';
 

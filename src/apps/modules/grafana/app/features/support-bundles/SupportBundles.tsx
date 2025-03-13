@@ -3,9 +3,9 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { dateTimeFormat } from '@data/index';
 import { LinkButton, Spinner, IconButton } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction, StoreState } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction, StoreState } from '@grafana-module/app/types';
 
 import { loadBundles, removeBundle, checkBundles } from './state/actions';
 

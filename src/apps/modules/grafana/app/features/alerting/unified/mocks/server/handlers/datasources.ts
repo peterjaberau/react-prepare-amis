@@ -1,6 +1,6 @@
 import { HttpResponse, http } from 'msw';
 
-import { buildInfoResponse } from 'app/features/alerting/unified/testSetup/featureDiscovery';
+import { buildInfoResponse } from '@grafana-module/app/features/alerting/unified/testSetup/featureDiscovery';
 
 /** UID of the alertmanager that is expected to be broken in tests */
 export const MOCK_DATASOURCE_UID_BROKEN_ALERTMANAGER = 'FwkfQfEmYlAthB';

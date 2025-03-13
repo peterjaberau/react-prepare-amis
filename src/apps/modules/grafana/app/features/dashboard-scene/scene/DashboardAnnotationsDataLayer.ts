@@ -9,7 +9,7 @@ import {
 import { config } from '@runtime/index';
 import { dataLayers } from '@scenes/index';
 import { AnnotationQuery } from '@schema/index';
-import { PublicAnnotationsDataSource } from 'app/features/query/state/DashboardQueryRunner/PublicAnnotationsDataSource';
+import { PublicAnnotationsDataSource } from '@grafana-module/app/features/query/state/DashboardQueryRunner/PublicAnnotationsDataSource';
 
 /**
  * This class is an extension to dataLayers.AnnotationsDataLayer to provide support for public dashboards.

@@ -26,8 +26,8 @@ import {
   VariableDependencyConfig,
 } from '@scenes/index';
 import { Alert, Badge, Field, Icon, IconButton, InlineSwitch, Input, Select, Tooltip, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { getSelectedScopes } from 'app/features/scopes';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { getSelectedScopes } from '@grafana-module/app/features/scopes';
 
 import { MetricScene } from '../MetricScene';
 import { StatusWrapper } from '../StatusWrapper';

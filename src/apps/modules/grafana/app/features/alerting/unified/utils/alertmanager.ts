@@ -9,8 +9,8 @@ import {
   Route,
   TimeInterval,
   TimeRange,
-} from 'app/plugins/datasource/alertmanager/types';
-import { Labels } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Labels } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { MatcherFieldValue } from '../types/silence-form';
 

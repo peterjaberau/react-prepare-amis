@@ -4,11 +4,11 @@ import { useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { AsyncMultiSelect, Icon, Button, useStyles2 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { Trans } from 'app/core/internationalization';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import { getGrafanaSearcher } from 'app/features/search/service/searcher';
-import { FolderInfo, PermissionLevelString } from 'app/types';
+import { config } from '@grafana-module/app/core/config';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
+import { FolderInfo, PermissionLevelString } from '@grafana-module/app/types';
 
 export interface FolderFilterProps {
   onChange: (folder: FolderInfo[]) => void;

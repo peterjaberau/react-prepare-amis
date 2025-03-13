@@ -1,9 +1,9 @@
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
-import { t } from 'app/core/internationalization';
-import { useGetPublicDashboardQuery } from 'app/features/dashboard/api/publicDashboardApi';
-import { Loader } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
-import { publicDashboardPersisted } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { shareDashboardType } from 'app/features/dashboard/components/ShareModal/utils';
+import { t } from '@grafana-module/app/core/internationalization';
+import { useGetPublicDashboardQuery } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { Loader } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
+import { publicDashboardPersisted } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 
 import { getDashboardSceneFor } from '../../utils/utils';
 import { SceneShareTabState } from '../types';

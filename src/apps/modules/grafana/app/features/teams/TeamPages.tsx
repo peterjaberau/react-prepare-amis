@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
 import { featureEnabled } from '@runtime/index';
-import { Page } from 'app/core/components/Page/Page';
-import { UpgradeBox } from 'app/core/components/Upgrade/UpgradeBox';
-import config from 'app/core/config';
-import { getNavModel } from 'app/core/selectors/navModel';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AccessControlAction, StoreState, useDispatch, useSelector } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { UpgradeBox } from '@grafana-module/app/core/components/Upgrade/UpgradeBox';
+import config from '@grafana-module/app/core/config';
+import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AccessControlAction, StoreState, useDispatch, useSelector } from '@grafana-module/app/types';
 
 import TeamGroupSync, { TeamSyncUpgradeContent } from './TeamGroupSync';
 import TeamPermissions from './TeamPermissions';

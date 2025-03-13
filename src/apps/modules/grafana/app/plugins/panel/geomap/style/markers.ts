@@ -3,7 +3,7 @@ import tinycolor from 'tinycolor2';
 
 import { Registry, RegistryItem, textUtil } from '@data/index';
 import { config } from '@runtime/index';
-import { getPublicOrAbsoluteUrl } from 'app/features/dimensions';
+import { getPublicOrAbsoluteUrl } from '@grafana-module/app/features/dimensions';
 
 import { defaultStyleConfig, DEFAULT_SIZE, StyleConfigValues, StyleMaker } from './types';
 import { getDisplacement } from './utils';

@@ -1,17 +1,17 @@
 import { PanelMenuItem, urlUtil, PluginExtensionLink } from '@data/index';
 import { AngularComponent, locationService } from '@runtime/index';
-import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
-import config from 'app/core/config';
-import { createErrorNotification } from 'app/core/copy/appNotification';
-import { t } from 'app/core/internationalization';
-import { notifyApp } from 'app/core/reducers/appNotification';
-import { contextSrv } from 'app/core/services/context_srv';
-import { getMessageFromError } from 'app/core/utils/errors';
-import { getExploreUrl } from 'app/core/utils/explore';
-import { RuleFormValues } from 'app/features/alerting/unified/types/rule-form';
-import { panelToRuleFormValues } from 'app/features/alerting/unified/utils/rule-form';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
+import { PanelCtrl } from '@grafana-module/app/angular/panel/panel_ctrl';
+import config from '@grafana-module/app/core/config';
+import { createErrorNotification } from '@grafana-module/app/core/copy/appNotification';
+import { t } from '@grafana-module/app/core/internationalization';
+import { notifyApp } from '@grafana-module/app/core/reducers/appNotification';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
+import { getExploreUrl } from '@grafana-module/app/core/utils/explore';
+import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
+import { panelToRuleFormValues } from '@grafana-module/app/features/alerting/unified/utils/rule-form';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 import {
   addLibraryPanel,
   copyPanel,
@@ -20,12 +20,12 @@ import {
   sharePanel,
   toggleLegend,
   unlinkLibraryPanel,
-} from 'app/features/dashboard/utils/panel';
-import { InspectTab } from 'app/features/inspector/types';
-import { isPanelModelLibraryPanel } from 'app/features/library-panels/guard';
-import { createExtensionSubMenu } from 'app/features/plugins/extensions/utils';
-import { SHARED_DASHBOARD_QUERY } from 'app/plugins/datasource/dashboard/constants';
-import { dispatch, store } from 'app/store/store';
+} from '@grafana-module/app/features/dashboard/utils/panel';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { isPanelModelLibraryPanel } from '@grafana-module/app/features/library-panels/guard';
+import { createExtensionSubMenu } from '@grafana-module/app/features/plugins/extensions/utils';
+import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
+import { dispatch, store } from '@grafana-module/app/store/store';
 
 import { getCreateAlertInMenuAvailability } from '../../alerting/unified/utils/access-control';
 import { navigateToExplore } from '../../explore/state/main';

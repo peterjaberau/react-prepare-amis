@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { rangeUtil, TimeZone } from '@data/index';
 import { CollapsableSection, Field, Input, Switch, TimeZonePicker, WeekStart, WeekStartPicker } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { AutoRefreshIntervals } from './AutoRefreshIntervals';
 

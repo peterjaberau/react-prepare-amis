@@ -3,9 +3,9 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { renderMarkdown } from '@data/index';
 import { Alert } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { OrgUser, OrgRole, StoreState } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { OrgUser, OrgRole, StoreState } from '@grafana-module/app/types';
 
 import { OrgUsersTable } from '../admin/Users/OrgUsersTable';
 import InviteesTable from '../invites/InviteesTable';

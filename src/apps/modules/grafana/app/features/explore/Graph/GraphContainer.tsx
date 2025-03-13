@@ -12,8 +12,8 @@ import {
   TimeRange,
 } from '@data/index';
 import { GraphThresholdsStyleConfig, PanelChrome, PanelChromeProps } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { ExploreGraphStyle } from 'app/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { ExploreGraphStyle } from '@grafana-module/app/types';
 
 import { LimitedDataDisclaimer } from '../LimitedDataDisclaimer';
 import { storeGraphStyle } from '../state/utils';

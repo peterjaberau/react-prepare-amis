@@ -7,12 +7,12 @@ import { useAsync } from 'react-use';
 import { DataQuery, GrafanaTheme2, SelectableValue, DataTopic, QueryEditorProps } from '@data/index';
 import { OperationsEditorRow } from '@grafana/plugin-ui';
 import { Field, Select, useStyles2, Spinner, RadioButtonGroup, Stack, InlineSwitch } from '@grafana/ui';
-import config from 'app/core/config';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { filterPanelDataToQuery } from 'app/features/query/components/QueryEditorRow';
+import config from '@grafana-module/app/core/config';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { filterPanelDataToQuery } from '@grafana-module/app/features/query/components/QueryEditorRow';
 
 import { MIXED_DATASOURCE_NAME } from '../mixed/MixedDataSource';
 

@@ -1,6 +1,6 @@
 import { Field, FieldType, PanelOptionsEditorBuilder, DataFrame } from '@data/index';
 import { FrameGeometrySource, FrameGeometrySourceMode } from '@schema/index';
-import { GazetteerPathEditor } from 'app/features/geo/editor/GazetteerPathEditor';
+import { GazetteerPathEditor } from '@grafana-module/app/features/geo/editor/GazetteerPathEditor';
 
 import { LocationModeEditor } from './locationModeEditor';
 

@@ -1,8 +1,8 @@
 import { ChangeEvent, FormEvent } from 'react';
 
 import { Stack } from '@grafana/ui';
-import { VariableCheckboxField } from 'app/features/dashboard-scene/settings/variables/components/VariableCheckboxField';
-import { VariableTextField } from 'app/features/dashboard-scene/settings/variables/components/VariableTextField';
+import { VariableCheckboxField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableCheckboxField';
+import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
 
 interface SelectionOptionsFormProps {
   multi: boolean;

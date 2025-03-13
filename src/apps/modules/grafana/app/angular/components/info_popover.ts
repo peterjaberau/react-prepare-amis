@@ -2,7 +2,7 @@ import { each } from 'lodash';
 // @ts-ignore
 import Drop from 'tether-drop';
 
-import coreModule from 'app/angular/core_module';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 export function infoPopover() {
   return {

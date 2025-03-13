@@ -1,7 +1,7 @@
 import { first } from 'rxjs/operators';
 
-import { Placement } from 'app/plugins/panel/canvas/panelcfg.gen';
-import { LayerActionID } from 'app/plugins/panel/canvas/types';
+import { Placement } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+import { LayerActionID } from '@grafana-module/app/plugins/panel/canvas/types';
 
 import { ElementState } from './element';
 import { FrameState } from './frame';

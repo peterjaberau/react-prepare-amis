@@ -1,8 +1,8 @@
 import { Unsubscribable } from 'rxjs';
 
 import { SceneDataTransformer, SceneObjectBase, SceneObjectState, SceneQueryRunner, VizPanel } from '@scenes/index';
-import { SHARED_DASHBOARD_QUERY } from 'app/plugins/datasource/dashboard/constants';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
+import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
 
 import {
   findOriginalVizPanelByKey,

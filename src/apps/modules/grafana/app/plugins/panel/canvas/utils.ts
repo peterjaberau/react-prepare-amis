@@ -2,19 +2,19 @@ import { isNumber, isString } from 'lodash';
 
 import { AppEvents, getFieldDisplayName, PluginState, SelectableValue } from '@data/index';
 import { DataFrame, Field } from '@grafana/data/';
-import appEvents from 'app/core/app_events';
-import { hasAlphaPanels, config } from 'app/core/config';
+import appEvents from '@grafana-module/app/core/app_events';
+import { hasAlphaPanels, config } from '@grafana-module/app/core/config';
 import {
   CanvasConnection,
   CanvasElementItem,
   CanvasElementOptions,
   ConnectionDirection,
-} from 'app/features/canvas/element';
-import { notFoundItem } from 'app/features/canvas/elements/notFound';
-import { advancedElementItems, canvasElementRegistry, defaultElementItems } from 'app/features/canvas/registry';
-import { ElementState } from 'app/features/canvas/runtime/element';
-import { FrameState } from 'app/features/canvas/runtime/frame';
-import { Scene, SelectionParams } from 'app/features/canvas/runtime/scene';
+} from '@grafana-module/app/features/canvas/element';
+import { notFoundItem } from '@grafana-module/app/features/canvas/elements/notFound';
+import { advancedElementItems, canvasElementRegistry, defaultElementItems } from '@grafana-module/app/features/canvas/registry';
+import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
+import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
+import { Scene, SelectionParams } from '@grafana-module/app/features/canvas/runtime/scene';
 
 import { AnchorPoint, ConnectionState, LineStyle, StrokeDasharray } from './types';
 

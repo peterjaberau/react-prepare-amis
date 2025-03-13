@@ -1,5 +1,5 @@
 import { JsonExplorer } from '@grafana/ui';
-import coreModule from 'app/angular/core_module';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 coreModule.directive('jsonTree', [
   function jsonTreeDirective() {

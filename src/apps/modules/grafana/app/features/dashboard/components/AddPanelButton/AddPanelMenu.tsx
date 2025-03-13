@@ -2,17 +2,17 @@ import { useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
 import { Menu } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
+import { t } from '@grafana-module/app/core/internationalization';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import {
   getCopiedPanelPlugin,
   onAddLibraryPanel,
   onCreateNewPanel,
   onCreateNewRow,
   onPasteCopiedPanel,
-} from 'app/features/dashboard/utils/dashboard';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { useDispatch, useSelector } from 'app/types';
+} from '@grafana-module/app/features/dashboard/utils/dashboard';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { setInitialDatasource } from '../../state/reducers';
 

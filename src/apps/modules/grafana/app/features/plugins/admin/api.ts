@@ -1,6 +1,6 @@
 import { PluginError, PluginMeta, renderMarkdown } from '@data/index';
 import { getBackendSrv, isFetchError } from '@runtime/index';
-import { accessControlQueryParam } from 'app/core/utils/accessControl';
+import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';
 
 import { API_ROOT, GCOM_API_ROOT, INSTANCE_API_ROOT } from './constants';
 import { isLocalPluginVisibleByConfig, isRemotePluginVisibleByConfig } from './helpers';

@@ -1,21 +1,21 @@
 import { useEffect } from 'react';
 
-import { alertmanagerApi } from 'app/features/alerting/unified/api/alertmanagerApi';
-import { timeIntervalsApi } from 'app/features/alerting/unified/api/timeIntervalsApi';
-import { mergeTimeIntervals } from 'app/features/alerting/unified/components/mute-timings/util';
+import { alertmanagerApi } from '@grafana-module/app/features/alerting/unified/api/alertmanagerApi';
+import { timeIntervalsApi } from '@grafana-module/app/features/alerting/unified/api/timeIntervalsApi';
+import { mergeTimeIntervals } from '@grafana-module/app/features/alerting/unified/components/mute-timings/util';
 import {
   ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1TimeInterval,
   IoK8SApimachineryPkgApisMetaV1ObjectMeta,
-} from 'app/features/alerting/unified/openapi/timeIntervalsApi.gen';
-import { BaseAlertmanagerArgs, Skippable } from 'app/features/alerting/unified/types/hooks';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { PROVENANCE_NONE } from 'app/features/alerting/unified/utils/k8s/constants';
+} from '@grafana-module/app/features/alerting/unified/openapi/timeIntervalsApi.gen';
+import { BaseAlertmanagerArgs, Skippable } from '@grafana-module/app/features/alerting/unified/types/hooks';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { PROVENANCE_NONE } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
 import {
   encodeFieldSelector,
   isK8sEntityProvisioned,
   shouldUseK8sApi,
-} from 'app/features/alerting/unified/utils/k8s/utils';
-import { MuteTimeInterval } from 'app/plugins/datasource/alertmanager/types';
+} from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
+import { MuteTimeInterval } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { getAPINamespace } from '../../../../../api/utils';
 import { useAsync } from '../../hooks/useAsync';

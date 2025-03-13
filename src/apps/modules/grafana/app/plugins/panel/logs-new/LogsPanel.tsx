@@ -12,8 +12,8 @@ import {
 } from '@data/index';
 import { config } from '@runtime/index';
 import { usePanelContext, useStyles2 } from '@grafana/ui';
-import { LogList } from 'app/features/logs/components/panel/LogList';
-import { PanelDataErrorView } from 'app/features/panel/components/PanelDataErrorView';
+import { LogList } from '@grafana-module/app/features/logs/components/panel/LogList';
+import { PanelDataErrorView } from '@grafana-module/app/features/panel/components/PanelDataErrorView';
 
 import { dataFrameToLogsModel, dedupLogRows } from '../../../features/logs/logsModel';
 import { requestMoreLogs } from '../logs/LogsPanel';

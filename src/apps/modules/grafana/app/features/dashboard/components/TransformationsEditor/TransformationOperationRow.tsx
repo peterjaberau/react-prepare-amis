@@ -16,10 +16,10 @@ import { ConfirmModal } from '@grafana/ui';
 import {
   QueryOperationAction,
   QueryOperationToggleAction,
-} from 'app/core/components/QueryOperationRow/QueryOperationAction';
-import { QueryOperationRow } from 'app/core/components/QueryOperationRow/QueryOperationRow';
-import config from 'app/core/config';
-import { PluginStateInfo } from 'app/features/plugins/components/PluginStateInfo';
+} from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationAction';
+import { QueryOperationRow } from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationRow';
+import config from '@grafana-module/app/core/config';
+import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';
 
 import { TransformationEditor } from './TransformationEditor';
 import { TransformationEditorHelpDisplay } from './TransformationEditorHelpDisplay';

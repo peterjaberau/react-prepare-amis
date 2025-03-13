@@ -17,9 +17,9 @@ import {
 } from '@grafana/ui';
 import { TimeZoneOffset } from '@grafana/ui/src/components/DateTimePickers/TimeZonePicker/TimeZoneOffset';
 import { TimeZoneTitle } from '@grafana/ui/src/components/DateTimePickers/TimeZonePicker/TimeZoneTitle';
-import { t } from 'app/core/internationalization';
-import { TimeRegionConfig, TimeRegionMode } from 'app/core/utils/timeRegions';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
+import { t } from '@grafana-module/app/core/internationalization';
+import { TimeRegionConfig, TimeRegionMode } from '@grafana-module/app/core/utils/timeRegions';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 
 interface Props {
   value: TimeRegionConfig;

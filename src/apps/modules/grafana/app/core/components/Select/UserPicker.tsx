@@ -5,7 +5,7 @@ import { Component } from 'react';
 import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { AsyncSelect } from '@grafana/ui';
-import { OrgUser } from 'app/types';
+import { OrgUser } from '@grafana-module/app/types';
 
 export interface Props {
   onSelected: (user: SelectableValue<OrgUser>) => void;

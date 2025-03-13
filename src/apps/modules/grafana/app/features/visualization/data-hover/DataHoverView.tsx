@@ -11,7 +11,7 @@ import {
 } from '@data/index';
 import { SortOrder, TooltipDisplayMode } from '@schema/index';
 import { TextLink, useStyles2 } from '@grafana/ui';
-import { renderValue } from 'app/plugins/panel/geomap/utils/uiUtils';
+import { renderValue } from '@grafana-module/app/plugins/panel/geomap/utils/uiUtils';
 
 import { ExemplarHoverView } from './ExemplarHoverView';
 

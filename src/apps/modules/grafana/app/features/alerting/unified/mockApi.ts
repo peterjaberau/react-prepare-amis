@@ -2,20 +2,20 @@ import { HttpResponse, http } from 'msw';
 import { SetupServer, setupServer } from 'msw/node';
 
 import { setBackendSrv } from '@runtime/index';
-import { AlertGroupUpdated } from 'app/features/alerting/unified/api/alertRuleApi';
-import allHandlers from 'app/features/alerting/unified/mocks/server/all-handlers';
+import { AlertGroupUpdated } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
+import allHandlers from '@grafana-module/app/features/alerting/unified/mocks/server/all-handlers';
 import {
   setupAlertmanagerConfigMapDefaultState,
   setupAlertmanagerStatusMapDefaultState,
-} from 'app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { resetRoutingTreeMap } from 'app/features/alerting/unified/mocks/server/entities/k8s/routingtrees';
-import { DashboardDTO, FolderDTO, OrgUser } from 'app/types';
+} from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
+import { resetRoutingTreeMap } from '@grafana-module/app/features/alerting/unified/mocks/server/entities/k8s/routingtrees';
+import { DashboardDTO, FolderDTO, OrgUser } from '@grafana-module/app/types';
 import {
   PromRulesResponse,
   RulerGrafanaRuleDTO,
   RulerRuleGroupDTO,
   RulerRulesConfigDTO,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { backendSrv } from '../../../core/services/backend_srv';
 import {

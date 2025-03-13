@@ -4,13 +4,13 @@ import { AppEvents, isTruthy, locationUtil } from '@data/index';
 import { config, getBackendSrv, locationService } from '@runtime/index';
 import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { createBaseQuery, handleRequestError } from 'app/api/createBaseQuery';
-import appEvents from 'app/core/app_events';
-import { contextSrv } from 'app/core/core';
-import { getDashboardAPI } from 'app/features/dashboard/api/dashboard_api';
-import { isV1DashboardCommand, isV2DashboardCommand } from 'app/features/dashboard/api/utils';
-import { SaveDashboardCommand } from 'app/features/dashboard/components/SaveDashboard/types';
-import { dashboardWatcher } from 'app/features/live/dashboard/dashboardWatcher';
+import { createBaseQuery, handleRequestError } from '@grafana-module/app/api/createBaseQuery';
+import appEvents from '@grafana-module/app/core/app_events';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
+import { isV1DashboardCommand, isV2DashboardCommand } from '@grafana-module/app/features/dashboard/api/utils';
+import { SaveDashboardCommand } from '@grafana-module/app/features/dashboard/components/SaveDashboard/types';
+import { dashboardWatcher } from '@grafana-module/app/features/live/dashboard/dashboardWatcher';
 import {
   DashboardDTO,
   DescendantCount,
@@ -20,7 +20,7 @@ import {
   ImportDashboardResponseDTO,
   PermissionLevelString,
   SaveDashboardResponseDTO,
-} from 'app/types';
+} from '@grafana-module/app/types';
 
 import { t } from '../../../core/internationalization';
 import { refetchChildren, refreshParents } from '../state';

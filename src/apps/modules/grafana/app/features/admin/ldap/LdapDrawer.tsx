@@ -22,8 +22,8 @@ import {
   RadioButtonGroup,
   SecretInput,
 } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { LdapPayload, MapKeyCertConfigured } from 'app/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { LdapPayload, MapKeyCertConfigured } from '@grafana-module/app/types';
 
 import { GroupMappingComponent } from './LdapGroupMapping';
 

@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 
-import { VariableLegend } from 'app/features/dashboard-scene/settings/variables/components/VariableLegend';
-import { VariableTextField } from 'app/features/dashboard-scene/settings/variables/components/VariableTextField';
+import { VariableLegend } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableLegend';
+import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
 
 interface TextBoxVariableFormProps {
   value?: string;

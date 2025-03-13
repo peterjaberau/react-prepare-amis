@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import { Button, ScrollContainer, Stack, TextLink, useStyles2, useTheme2 } from '@grafana/ui';
 import { getSelectStyles } from '@grafana/ui/src/components/Select/getSelectStyles';
-import { Trans } from 'app/core/internationalization';
-import { OrgRole, Role } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { OrgRole, Role } from '@grafana-module/app/types';
 
 import { BuiltinRoleSelector } from './BuiltinRoleSelector';
 import { RoleMenuGroupsSection } from './RoleMenuGroupsSection';

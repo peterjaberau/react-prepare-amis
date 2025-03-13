@@ -1,5 +1,5 @@
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
 
 import UserInviteForm from './UserInviteForm';
 

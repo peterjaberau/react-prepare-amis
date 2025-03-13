@@ -32,16 +32,16 @@ import {
   SeriesVisibilityChangeMode,
   AdHocFilterItem,
 } from '@grafana/ui';
-import appEvents from 'app/core/app_events';
-import config from 'app/core/config';
-import { profiler } from 'app/core/profiler';
-import { applyPanelTimeOverrides } from 'app/features/dashboard/utils/panel';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { applyFilterFromTable } from 'app/features/variables/adhoc/actions';
-import { onUpdatePanelSnapshotData } from 'app/plugins/datasource/grafana/utils';
-import { changeSeriesColorConfigFactory } from 'app/plugins/panel/timeseries/overrides/colorSeriesConfigFactory';
-import { dispatch } from 'app/store/store';
-import { RenderEvent } from 'app/types/events';
+import appEvents from '@grafana-module/app/core/app_events';
+import config from '@grafana-module/app/core/config';
+import { profiler } from '@grafana-module/app/core/profiler';
+import { applyPanelTimeOverrides } from '@grafana-module/app/features/dashboard/utils/panel';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { applyFilterFromTable } from '@grafana-module/app/features/variables/adhoc/actions';
+import { onUpdatePanelSnapshotData } from '@grafana-module/app/plugins/datasource/grafana/utils';
+import { changeSeriesColorConfigFactory } from '@grafana-module/app/plugins/panel/timeseries/overrides/colorSeriesConfigFactory';
+import { dispatch } from '@grafana-module/app/store/store';
+import { RenderEvent } from '@grafana-module/app/types/events';
 
 import { deleteAnnotation, saveAnnotation, updateAnnotation } from '../../annotations/api';
 import { getDashboardQueryRunner } from '../../query/state/DashboardQueryRunner/DashboardQueryRunner';

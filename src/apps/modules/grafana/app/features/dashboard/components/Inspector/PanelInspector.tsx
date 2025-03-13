@@ -4,11 +4,11 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { PanelPlugin } from '@data/index';
 import { locationService } from '@runtime/index';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { InspectTab } from 'app/features/inspector/types';
-import { getPanelStateForModel } from 'app/features/panel/state/selectors';
-import { StoreState } from 'app/types';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
+import { StoreState } from '@grafana-module/app/types';
 
 import { GetDataOptions } from '../../../query/state/PanelQueryRunner';
 import { HelpWizard } from '../HelpWizard/HelpWizard';

@@ -1,5 +1,5 @@
 import { Tooltip, Button, Stack } from '@grafana/ui';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 
 type VersionsButtonsType = {
   hasMore: boolean;

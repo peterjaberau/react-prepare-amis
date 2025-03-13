@@ -1,5 +1,5 @@
 import { sceneGraph } from '@scenes/index';
-import { ScopesFacade } from 'app/features/scopes';
+import { ScopesFacade } from '@grafana-module/app/features/scopes';
 
 export interface DashboardScopesFacadeState {
   reloadOnParamsChange?: boolean;

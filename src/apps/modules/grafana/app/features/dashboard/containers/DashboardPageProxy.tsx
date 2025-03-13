@@ -2,10 +2,10 @@ import { useLocation, useParams } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
 import { config } from '@runtime/index';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
-import DashboardScenePage from 'app/features/dashboard-scene/pages/DashboardScenePage';
-import { getDashboardScenePageStateManager } from 'app/features/dashboard-scene/pages/DashboardScenePageStateManager';
-import { DashboardRoutes } from 'app/types';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import DashboardScenePage from '@grafana-module/app/features/dashboard-scene/pages/DashboardScenePage';
+import { getDashboardScenePageStateManager } from '@grafana-module/app/features/dashboard-scene/pages/DashboardScenePageStateManager';
+import { DashboardRoutes } from '@grafana-module/app/types';
 
 import DashboardPage, { DashboardPageParams } from './DashboardPage';
 import { DashboardPageError } from './DashboardPageError';

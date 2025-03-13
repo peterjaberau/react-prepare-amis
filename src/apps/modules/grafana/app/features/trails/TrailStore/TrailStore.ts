@@ -2,7 +2,7 @@ import { debounce, isEqual } from 'lodash';
 
 import { urlUtil } from '@data/index';
 import { SceneObject, SceneObjectRef, SceneObjectUrlValues, sceneUtils } from '@scenes/index';
-import { dispatch } from 'app/store/store';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { notifyApp } from '../../../core/reducers/appNotification';
 import { DataTrail } from '../DataTrail';

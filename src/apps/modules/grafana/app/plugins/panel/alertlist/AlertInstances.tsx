@@ -5,10 +5,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, PanelProps } from '@data/index';
 import { Button, clearButtonStyles, Icon, useStyles2 } from '@grafana/ui';
-import { AlertInstancesTable } from 'app/features/alerting/unified/components/rules/AlertInstancesTable';
-import { INSTANCES_DISPLAY_LIMIT } from 'app/features/alerting/unified/components/rules/RuleDetails';
-import { sortAlerts } from 'app/features/alerting/unified/utils/misc';
-import { Alert, CombinedRule } from 'app/types/unified-alerting';
+import { AlertInstancesTable } from '@grafana-module/app/features/alerting/unified/components/rules/AlertInstancesTable';
+import { INSTANCES_DISPLAY_LIMIT } from '@grafana-module/app/features/alerting/unified/components/rules/RuleDetails';
+import { sortAlerts } from '@grafana-module/app/features/alerting/unified/utils/misc';
+import { Alert, CombinedRule } from '@grafana-module/app/types/unified-alerting';
 
 import { DEFAULT_PER_PAGE_PAGINATION } from '../../../core/constants';
 

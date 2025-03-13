@@ -1,11 +1,11 @@
 import { DataTransformerConfig, FieldConfigSource, getPanelOptionsWithDefaults } from '@data/index';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { getLibraryPanel } from 'app/features/library-panels/state/api';
-import { LibraryElementDTO } from 'app/features/library-panels/types';
-import { getPanelPluginNotFound } from 'app/features/panel/components/PanelPluginError';
-import { loadPanelPlugin } from 'app/features/plugins/admin/state/actions';
-import { ThunkResult } from 'app/types';
-import { DashboardPanelsChangedEvent, PanelOptionsChangedEvent, PanelQueriesChangedEvent } from 'app/types/events';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { getLibraryPanel } from '@grafana-module/app/features/library-panels/state/api';
+import { LibraryElementDTO } from '@grafana-module/app/features/library-panels/types';
+import { getPanelPluginNotFound } from '@grafana-module/app/features/panel/components/PanelPluginError';
+import { loadPanelPlugin } from '@grafana-module/app/features/plugins/admin/state/actions';
+import { ThunkResult } from '@grafana-module/app/types';
+import { DashboardPanelsChangedEvent, PanelOptionsChangedEvent, PanelQueriesChangedEvent } from '@grafana-module/app/types/events';
 
 import { changePanelKey, panelModelAndPluginReady, removePanel } from './reducers';
 

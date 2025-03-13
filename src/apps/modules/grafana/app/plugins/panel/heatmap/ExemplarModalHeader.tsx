@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
 import * as React from 'react';
 
-import { CloseButton } from 'app/core/components/CloseButton/CloseButton';
+import { CloseButton } from '@grafana-module/app/core/components/CloseButton/CloseButton';
 
 export function ExemplarModalHeader(props: { onClick: () => void; style?: React.CSSProperties }) {
   const defaultStyle: CSSProperties = {

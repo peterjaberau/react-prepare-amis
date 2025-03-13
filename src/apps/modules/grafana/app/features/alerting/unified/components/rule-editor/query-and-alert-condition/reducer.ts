@@ -10,11 +10,11 @@ import {
   rangeUtil,
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { dataSource as expressionDatasource } from 'app/features/expressions/ExpressionDatasource';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { ExpressionDatasourceUID, ExpressionQuery, ExpressionQueryType } from 'app/features/expressions/types';
-import { defaultCondition } from 'app/features/expressions/utils/expressionTypes';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { dataSource as expressionDatasource } from '@grafana-module/app/features/expressions/ExpressionDatasource';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { ExpressionDatasourceUID, ExpressionQuery, ExpressionQueryType } from '@grafana-module/app/features/expressions/types';
+import { defaultCondition } from '@grafana-module/app/features/expressions/utils/expressionTypes';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { logError } from '../../../Analytics';
 import { DataSourceType, getDefaultOrFirstCompatibleDataSource } from '../../../utils/datasource';

@@ -16,18 +16,18 @@ import {
   useStyles2,
   useTheme2,
 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { t, Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import {
   useListPublicDashboardsQuery,
   useUpdatePublicDashboardMutation,
-} from 'app/features/dashboard/api/publicDashboardApi';
+} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
 import {
   generatePublicDashboardConfigUrl,
   generatePublicDashboardUrl,
-} from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { AccessControlAction } from 'app/types';
+} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { PublicDashboardListResponse } from '../../types';
 

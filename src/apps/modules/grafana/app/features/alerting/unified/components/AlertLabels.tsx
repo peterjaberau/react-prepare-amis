@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, getTagColorsFromName, useStyles2 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { isPrivateLabel } from '../utils/labels';
 

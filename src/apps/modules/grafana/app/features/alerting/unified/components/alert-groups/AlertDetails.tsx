@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { LinkButton, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AlertState, AlertmanagerAlert } from 'app/plugins/datasource/alertmanager/types';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AlertState, AlertmanagerAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { AlertmanagerAction } from '../../hooks/useAbilities';
 import { isGrafanaRulesSource } from '../../utils/datasource';

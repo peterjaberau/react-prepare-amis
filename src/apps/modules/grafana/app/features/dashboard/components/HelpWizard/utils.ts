@@ -13,9 +13,9 @@ import {
   DataTopic,
 } from '@data/index';
 import { config } from '@runtime/index';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { Randomize, randomizeData } from 'app/features/dashboard-scene/inspect/HelpWizard/randomizer';
-import { GrafanaQueryType } from 'app/plugins/datasource/grafana/types';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { Randomize, randomizeData } from '@grafana-module/app/features/dashboard-scene/inspect/HelpWizard/randomizer';
+import { GrafanaQueryType } from '@grafana-module/app/plugins/datasource/grafana/types';
 
 export function getPanelDataFrames(data?: PanelData): DataFrameJSON[] {
   const frames: DataFrameJSON[] = [];

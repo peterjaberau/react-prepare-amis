@@ -2,7 +2,7 @@ import { Location } from 'history';
 import { isEqual } from 'lodash';
 
 import { getBackendSrv, getGrafanaLiveSrv, locationService, reportInteraction } from '@runtime/index';
-import { playlistSrv } from 'app/features/playlist/PlaylistSrv';
+import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
 
 export class NewFrontendAssetsChecker {
   private hasUpdates = false;

@@ -3,8 +3,8 @@ import { useMemo } from 'react';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable, SceneVariableState } from '@scenes/index';
 import { Button } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { NetworkGraphModal } from 'app/features/variables/inspect/NetworkGraphModal';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { NetworkGraphModal } from '@grafana-module/app/features/variables/inspect/NetworkGraphModal';
 
 import { createDependencyEdges, createDependencyNodes, filterNodesWithDependencies } from './utils';
 

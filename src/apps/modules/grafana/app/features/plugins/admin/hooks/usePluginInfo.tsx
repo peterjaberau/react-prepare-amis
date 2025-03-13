@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, PluginSignatureType } from '@data/index';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { PageInfoItem } from '../../../../core/components/Page/types';
 import { PluginDisabledBadge } from '../components/Badges';

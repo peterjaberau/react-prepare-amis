@@ -25,9 +25,9 @@ import {
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { RefreshPicker } from '@grafana/ui';
-import store from 'app/core/store';
-import { ExpressionDatasourceUID } from 'app/features/expressions/types';
-import { QueryOptions, QueryTransaction } from 'app/types/explore';
+import store from '@grafana-module/app/core/store';
+import { ExpressionDatasourceUID } from '@grafana-module/app/features/expressions/types';
+import { QueryOptions, QueryTransaction } from '@grafana-module/app/types/explore';
 
 export const DEFAULT_UI_STATE = {
   dedupStrategy: LogsDedupStrategy.none,

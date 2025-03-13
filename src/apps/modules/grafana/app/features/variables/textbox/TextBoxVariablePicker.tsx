@@ -2,8 +2,8 @@ import { ChangeEvent, FocusEvent, KeyboardEvent, ReactElement, useCallback, useE
 
 import { TextBoxVariableModel, isEmptyObject } from '@data/index';
 import { Input } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { useDispatch } from 'app/types';
+import { t } from '@grafana-module/app/core/internationalization';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { variableAdapters } from '../adapters';
 import { VARIABLE_PREFIX } from '../constants';

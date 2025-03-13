@@ -1,8 +1,8 @@
 import { NavModelItem } from '@data/index';
 import { getPluginExtensions, isPluginExtensionLink } from '@runtime/index';
 import { Button, LinkButton, Stack, Text } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { useAppNotification } from 'app/core/copy/appNotification';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 
 export const TestStuffPage = () => {
   const node: NavModelItem = {

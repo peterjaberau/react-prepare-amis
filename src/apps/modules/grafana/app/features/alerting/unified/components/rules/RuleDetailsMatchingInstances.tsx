@@ -5,16 +5,16 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { LinkButton, useStyles2 } from '@grafana/ui';
-import { MatcherFilter } from 'app/features/alerting/unified/components/alert-groups/MatcherFilter';
+import { MatcherFilter } from '@grafana-module/app/features/alerting/unified/components/alert-groups/MatcherFilter';
 import {
   AlertInstanceStateFilter,
   InstanceStateFilter,
-} from 'app/features/alerting/unified/components/rules/AlertInstanceStateFilter';
-import { labelsMatchMatchers } from 'app/features/alerting/unified/utils/alertmanager';
-import { createViewLink, sortAlerts } from 'app/features/alerting/unified/utils/misc';
-import { SortOrder } from 'app/plugins/panel/alertlist/types';
-import { Alert, CombinedRule, PaginationProps } from 'app/types/unified-alerting';
-import { mapStateWithReasonToBaseState } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/components/rules/AlertInstanceStateFilter';
+import { labelsMatchMatchers } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';
+import { createViewLink, sortAlerts } from '@grafana-module/app/features/alerting/unified/utils/misc';
+import { SortOrder } from '@grafana-module/app/plugins/panel/alertlist/types';
+import { Alert, CombinedRule, PaginationProps } from '@grafana-module/app/types/unified-alerting';
+import { mapStateWithReasonToBaseState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { GRAFANA_RULES_SOURCE_NAME, isGrafanaRulesSource } from '../../utils/datasource';
 import { parsePromQLStyleMatcherLooseSafe } from '../../utils/matchers';

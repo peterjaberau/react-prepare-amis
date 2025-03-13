@@ -1,9 +1,9 @@
 import { selectors as e2eSelectors } from '@selectors/index';
 import { locationService } from '@runtime/index';
 import { Button } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 
 import { shareDashboardType } from '../ShareModal/utils';
 

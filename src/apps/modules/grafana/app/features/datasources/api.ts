@@ -1,8 +1,8 @@
 import { lastValueFrom } from 'rxjs';
 
 import { DataSourceSettings } from '@data/index';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import { accessControlQueryParam } from 'app/core/utils/accessControl';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';
 
 export const getDataSources = async (): Promise<DataSourceSettings[]> => {
   return await getBackendSrv().get('/api/datasources');

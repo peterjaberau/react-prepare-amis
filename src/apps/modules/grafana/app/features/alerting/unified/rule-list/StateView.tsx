@@ -3,9 +3,9 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Counter, Pagination, Stack, useStyles2 } from '@grafana/ui';
-import { DEFAULT_PER_PAGE_PAGINATION } from 'app/core/constants';
-import { CombinedRule, CombinedRuleNamespace } from 'app/types/unified-alerting';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { DEFAULT_PER_PAGE_PAGINATION } from '@grafana-module/app/core/constants';
+import { CombinedRule, CombinedRuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { usePagination } from '..//hooks/usePagination';
 import { calculateTotalInstances } from '../components/rule-viewer/RuleViewer';

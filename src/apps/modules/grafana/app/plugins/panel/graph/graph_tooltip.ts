@@ -7,8 +7,8 @@ import {
   LegacyGraphHoverEvent,
   DataHoverClearEvent,
 } from '@data/index';
-import { appEvents } from 'app/core/core';
-import { CoreEvents } from 'app/types';
+import { appEvents } from '@grafana-module/app/core/core';
+import { CoreEvents } from '@grafana-module/app/types';
 
 export default function GraphTooltip(this: any, elem: any, dashboard: any, scope: any, getSeriesFn: any) {
   const self = this;

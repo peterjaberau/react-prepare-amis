@@ -1,4 +1,4 @@
-import { AlertQuery, GrafanaAlertStateDecision } from 'app/types/unified-alerting-dto';
+import { AlertQuery, GrafanaAlertStateDecision } from '@grafana-module/app/types/unified-alerting-dto';
 
 export enum RuleFormType {
   grafana = 'grafana-alerting',

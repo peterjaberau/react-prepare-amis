@@ -1,4 +1,4 @@
-﻿import { ApiKeysState } from 'app/types';
+﻿import { ApiKeysState } from '@grafana-module/app/types';
 
 export const getApiKeysCount = (state: ApiKeysState) =>
   state.includeExpired ? state.keysIncludingExpired.length : state.keys.length;

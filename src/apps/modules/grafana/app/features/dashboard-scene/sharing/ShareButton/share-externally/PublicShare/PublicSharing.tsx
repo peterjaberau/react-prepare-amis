@@ -1,4 +1,4 @@
-import { publicDashboardApi } from 'app/features/dashboard/api/publicDashboardApi';
+import { publicDashboardApi } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
 
 import { useShareDrawerContext } from '../../../ShareDrawer/ShareDrawerContext';
 import ShareConfiguration from '../ShareConfiguration';

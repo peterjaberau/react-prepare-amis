@@ -5,7 +5,7 @@ import { useAsyncFn } from 'react-use';
 import { GrafanaTheme2 } from '@data/index';
 import { VizPanel } from '@scenes/index';
 import { Button, ButtonGroup, Dropdown, useStyles2 } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 import { DashboardInteractions } from '../../utils/interactions';

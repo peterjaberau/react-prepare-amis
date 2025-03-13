@@ -20,10 +20,10 @@ import {
 } from '@data/index';
 import { config, isMigrationHandler, migrateRequest, toDataQueryError } from '@runtime/index';
 import { isExpressionReference } from '@grafana/runtime/src/utils/DataSourceWithBackend';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { queryIsEmpty } from 'app/core/utils/query';
-import { dataSource as expressionDatasource } from 'app/features/expressions/ExpressionDatasource';
-import { ExpressionQuery } from 'app/features/expressions/types';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { queryIsEmpty } from '@grafana-module/app/core/utils/query';
+import { dataSource as expressionDatasource } from '@grafana-module/app/features/expressions/ExpressionDatasource';
+import { ExpressionQuery } from '@grafana-module/app/features/expressions/types';
 
 import { queryLogger } from '../utils';
 

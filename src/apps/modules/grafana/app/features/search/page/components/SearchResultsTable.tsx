@@ -11,7 +11,7 @@ import { TableCellHeight } from '@schema/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 import { TableCell } from '@grafana/ui/src/components/Table/TableCell';
 import { useTableStyles } from '@grafana/ui/src/components/Table/styles';
-import { useCustomFlexLayout } from 'app/features/browse-dashboards/components/customFlexTableLayout';
+import { useCustomFlexLayout } from '@grafana-module/app/features/browse-dashboards/components/customFlexTableLayout';
 
 import { useSearchKeyboardNavigation } from '../../hooks/useSearchKeyboardSelection';
 import { QueryResponse } from '../../service/types';

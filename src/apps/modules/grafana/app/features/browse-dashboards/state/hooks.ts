@@ -1,8 +1,8 @@
 import { useCallback, useRef } from 'react';
 import { createSelector } from 'reselect';
 
-import { DashboardViewItem } from 'app/features/search/types';
-import { useSelector, StoreState, useDispatch } from 'app/types';
+import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { useSelector, StoreState, useDispatch } from '@grafana-module/app/types';
 
 import { PAGE_SIZE } from '../api/services';
 import { isSharedWithMe } from '../components/utils';

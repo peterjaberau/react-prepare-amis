@@ -5,11 +5,11 @@ import { Controller, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Field, Input, Label, Modal, Stack, Text, useStyles2 } from '@grafana/ui';
-import { NestedFolderPicker } from 'app/core/components/NestedFolderPicker/NestedFolderPicker';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { contextSrv } from 'app/core/services/context_srv';
-import { useNewFolderMutation } from 'app/features/browse-dashboards/api/browseDashboardsAPI';
-import { AccessControlAction } from 'app/types';
+import { NestedFolderPicker } from '@grafana-module/app/core/components/NestedFolderPicker/NestedFolderPicker';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { useNewFolderMutation } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { Trans } from '../../../../../core/internationalization/index';
 import { Folder, RuleFormValues } from '../../types/rule-form';

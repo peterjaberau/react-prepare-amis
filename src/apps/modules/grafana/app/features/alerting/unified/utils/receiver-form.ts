@@ -5,8 +5,8 @@ import {
   GrafanaManagedContactPoint,
   GrafanaManagedReceiverConfig,
   Receiver,
-} from 'app/plugins/datasource/alertmanager/types';
-import { CloudNotifierType, NotificationChannelOption, NotifierDTO, NotifierType } from 'app/types';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { CloudNotifierType, NotificationChannelOption, NotifierDTO, NotifierType } from '@grafana-module/app/types';
 
 import {
   CloudChannelConfig,

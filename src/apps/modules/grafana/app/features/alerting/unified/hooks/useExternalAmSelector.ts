@@ -2,7 +2,7 @@ import { DataSourceSettings } from '@data/index';
 import {
   AlertManagerDataSourceJsonData,
   ExternalAlertmanagersConnectionStatus,
-} from 'app/plugins/datasource/alertmanager/types';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../api/alertmanagerApi';
 import { dataSourcesApi } from '../api/dataSourcesApi';

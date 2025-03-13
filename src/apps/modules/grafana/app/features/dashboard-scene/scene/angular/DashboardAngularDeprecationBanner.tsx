@@ -1,7 +1,7 @@
 import { config } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { explicitlyControlledMigrationPanels } from 'app/features/dashboard/state/PanelModel';
-import { AngularDeprecationNotice } from 'app/features/plugins/angularDeprecation/AngularDeprecationNotice';
+import { explicitlyControlledMigrationPanels } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { AngularDeprecationNotice } from '@grafana-module/app/features/plugins/angularDeprecation/AngularDeprecationNotice';
 
 import { DashboardScene } from '../DashboardScene';
 

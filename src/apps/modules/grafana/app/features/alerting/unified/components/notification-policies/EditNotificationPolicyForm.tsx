@@ -16,11 +16,11 @@ import {
   Switch,
   useStyles2,
 } from '@grafana/ui';
-import MuteTimingsSelector from 'app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector';
-import { ContactPointSelector } from 'app/features/alerting/unified/components/notification-policies/ContactPointSelector';
-import { handleContactPointSelect } from 'app/features/alerting/unified/components/notification-policies/utils';
-import { AlertmanagerAction, useAlertmanagerAbility } from 'app/features/alerting/unified/hooks/useAbilities';
-import { MatcherOperator, RouteWithID } from 'app/plugins/datasource/alertmanager/types';
+import MuteTimingsSelector from '@grafana-module/app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector';
+import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
+import { handleContactPointSelect } from '@grafana-module/app/features/alerting/unified/components/notification-policies/utils';
+import { AlertmanagerAction, useAlertmanagerAbility } from '@grafana-module/app/features/alerting/unified/hooks/useAbilities';
+import { MatcherOperator, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { FormAmRoute } from '../../types/amroutes';

@@ -2,10 +2,10 @@ import { ReactNode, useMemo } from 'react';
 
 import { sceneGraph, VizPanel } from '@scenes/index';
 import { Button } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
-import { getVisualizationOptions2 } from 'app/features/dashboard/components/PanelEditor/getVisualizationOptions';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { getVisualizationOptions2 } from '@grafana-module/app/features/dashboard/components/PanelEditor/getVisualizationOptions';
 
 import {
   PanelBackgroundSwitch,

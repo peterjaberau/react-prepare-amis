@@ -3,10 +3,10 @@ import { useCallback, useState } from 'react';
 
 import { PanelPluginMeta } from '@data/index';
 import { Button, VerticalGroup } from '@grafana/ui';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { changeToLibraryPanel } from 'app/features/panel/state/actions';
-import { useDispatch } from 'app/types';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { changeToLibraryPanel } from '@grafana-module/app/features/panel/state/actions';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { PanelTypeFilter } from '../../../../core/components/PanelTypeFilter/PanelTypeFilter';
 import { LibraryElementDTO } from '../../types';

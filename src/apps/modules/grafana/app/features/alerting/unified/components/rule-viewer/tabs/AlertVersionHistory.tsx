@@ -2,9 +2,9 @@ import { useMemo, useState } from 'react';
 
 import { config } from '@runtime/index';
 import { Alert, Box, Button, Drawer, EmptyState, LoadingPlaceholder, Stack, Text, Tooltip } from '@grafana/ui';
-import { RevisionModel, VersionHistoryComparison } from 'app/core/components/VersionHistory/VersionHistoryComparison';
-import { Trans, t } from 'app/core/internationalization';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from 'app/types/unified-alerting-dto';
+import { RevisionModel, VersionHistoryComparison } from '@grafana-module/app/core/components/VersionHistory/VersionHistoryComparison';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { LogMessages, logInfo, trackRuleVersionsComparisonClick } from '../../../Analytics';
 import { alertRuleApi } from '../../../api/alertRuleApi';

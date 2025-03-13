@@ -1,5 +1,5 @@
 import { Action, DataLinksFieldConfigSettings, StandardEditorProps, VariableSuggestionsScope } from '@data/index';
-import { ActionsInlineEditor } from 'app/features/actions/ActionsInlineEditor';
+import { ActionsInlineEditor } from '@grafana-module/app/features/actions/ActionsInlineEditor';
 
 type Props = StandardEditorProps<Action[], DataLinksFieldConfigSettings>;
 

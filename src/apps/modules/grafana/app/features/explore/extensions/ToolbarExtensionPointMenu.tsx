@@ -2,7 +2,7 @@ import { ReactElement, useMemo } from 'react';
 
 import { PluginExtensionLink } from '@data/index';
 import { Menu } from '@grafana/ui';
-import { truncateTitle } from 'app/features/plugins/extensions/utils';
+import { truncateTitle } from '@grafana-module/app/features/plugins/extensions/utils';
 
 type Props = {
   extensions: PluginExtensionLink[];

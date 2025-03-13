@@ -7,7 +7,7 @@ import { CoreApp, DataQuery, DataSourcePluginContextProvider, GrafanaTheme2, Loa
 import { PromQuery } from '@grafana/prometheus';
 import { getDataSourceSrv } from '@runtime/index';
 import { Alert, Button, useStyles2 } from '@grafana/ui';
-import { LokiQuery } from 'app/plugins/datasource/loki/types';
+import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
 
 import { CloudAlertPreview } from './CloudAlertPreview';
 import { usePreview } from './PreviewRule';

@@ -2,7 +2,7 @@ import { dump } from 'js-yaml';
 import * as React from 'react';
 
 import { DataSourceInstanceSettings } from '@data/index';
-import { AlertDataQuery } from 'app/types/unified-alerting-dto';
+import { AlertDataQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { DataSourceType } from '../../../../utils/datasource';
 import { isPromOrLokiQuery } from '../../../../utils/rule-form';

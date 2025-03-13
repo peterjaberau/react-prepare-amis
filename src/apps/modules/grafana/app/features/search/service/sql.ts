@@ -1,8 +1,8 @@
 import { DataFrame, DataFrameView, FieldType, getDisplayProcessor, SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { TermCount } from 'app/core/components/TagFilter/TagFilter';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { PermissionLevelString } from 'app/types';
+import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { PermissionLevelString } from '@grafana-module/app/types';
 
 import { DEFAULT_MAX_VALUES, GENERAL_FOLDER_UID, TYPE_KIND_MAP } from '../constants';
 import { DashboardSearchHit, DashboardSearchItemType } from '../types';

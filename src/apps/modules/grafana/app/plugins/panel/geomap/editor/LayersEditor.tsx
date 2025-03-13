@@ -2,8 +2,8 @@ import { DropResult } from '@hello-pangea/dnd';
 
 import { StandardEditorProps } from '@data/index';
 import { Container } from '@grafana/ui';
-import { AddLayerButton } from 'app/core/components/Layers/AddLayerButton';
-import { LayerDragDropList } from 'app/core/components/Layers/LayerDragDropList';
+import { AddLayerButton } from '@grafana-module/app/core/components/Layers/AddLayerButton';
+import { LayerDragDropList } from '@grafana-module/app/core/components/Layers/LayerDragDropList';
 
 import { getLayersOptions } from '../layers/registry';
 import { Options, MapLayerState, GeomapInstanceState } from '../types';

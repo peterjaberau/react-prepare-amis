@@ -2,8 +2,8 @@ import { debounce } from 'lodash';
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import PageActionBar from 'app/core/components/PageActionBar/PageActionBar';
-import { StoreState, useSelector, useDispatch } from 'app/types';
+import PageActionBar from '@grafana-module/app/core/components/PageActionBar/PageActionBar';
+import { StoreState, useSelector, useDispatch } from '@grafana-module/app/types';
 
 import { getDataSourcesSearchQuery, getDataSourcesSort, setDataSourcesSearchQuery, setIsSortAscending } from '../state';
 import { trackDsSearched } from '../tracking';

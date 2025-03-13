@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2, LinkModel } from '@data/index';
 import { ColorDimensionConfig, ScalarDimensionConfig } from '@schema/index';
-import config from 'app/core/config';
-import { DimensionContext } from 'app/features/dimensions';
-import { ColorDimensionEditor, ScalarDimensionEditor } from 'app/features/dimensions/editors';
+import config from '@grafana-module/app/core/config';
+import { DimensionContext } from '@grafana-module/app/features/dimensions';
+import { ColorDimensionEditor, ScalarDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps } from '../../element';
 

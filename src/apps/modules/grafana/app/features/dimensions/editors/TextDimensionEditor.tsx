@@ -9,7 +9,7 @@ import {
 import { TextDimensionConfig, TextDimensionMode } from '@schema/index';
 import { Button, InlineField, InlineFieldRow, RadioButtonGroup } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
-import { StringValueEditor } from 'app/core/components/OptionsUI/string';
+import { StringValueEditor } from '@grafana-module/app/core/components/OptionsUI/string';
 
 import { TextDimensionOptions } from '../types';
 

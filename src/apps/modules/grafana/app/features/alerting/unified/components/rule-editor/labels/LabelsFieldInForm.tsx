@@ -1,7 +1,7 @@
 import { useFormContext } from 'react-hook-form';
 
 import { Button, Stack, Text } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { RuleFormValues } from '../../../types/rule-form';
 import { isRecordingRuleByType } from '../../../utils/rules';

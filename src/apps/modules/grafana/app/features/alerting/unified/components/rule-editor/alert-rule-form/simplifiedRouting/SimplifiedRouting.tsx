@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { useFormContext } from 'react-hook-form';
 
-import { AlertmanagerProvider } from 'app/features/alerting/unified/state/AlertmanagerContext';
-import { RuleFormValues } from 'app/features/alerting/unified/types/rule-form';
-import { getAlertManagerDataSourcesByPermission } from 'app/features/alerting/unified/utils/datasource';
+import { AlertmanagerProvider } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
+import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
+import { getAlertManagerDataSourcesByPermission } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 
 import { AlertManagerManualRouting } from './AlertManagerRouting';
 

@@ -1,8 +1,8 @@
 import { getBackendSrv, getDataSourceSrv } from '@runtime/index';
-import { contextSrv } from 'app/core/core';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { validationSrv } from 'app/features/manage-dashboards/services/ValidationSrv';
-import { getLinkSrv } from 'app/features/panel/panellinks/link_srv';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';
+import { getLinkSrv } from '@grafana-module/app/features/panel/panellinks/link_srv';
 
 import coreModule from './core_module';
 import { UtilSrv } from './services/UtilSrv';

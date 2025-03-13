@@ -1,7 +1,7 @@
 import { lastValueFrom } from 'rxjs';
 
 import { getBackendSrv } from '@runtime/index';
-import { ContactPointsState, ReceiverState, ReceiversStateDTO } from 'app/types';
+import { ContactPointsState, ReceiverState, ReceiversStateDTO } from '@grafana-module/app/types';
 
 import { getDatasourceAPIUid } from '../utils/datasource';
 

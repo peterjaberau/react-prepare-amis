@@ -1,5 +1,5 @@
 import { ScopedVars } from '@grafana/data/src';
-import config from 'app/core/config';
+import config from '@grafana-module/app/core/config';
 
 import InfluxDatasource from './datasource';
 import { buildMetadataQuery } from './influxql_query_builder';

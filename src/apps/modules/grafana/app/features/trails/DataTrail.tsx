@@ -31,7 +31,7 @@ import {
   VariableValueSelectors,
 } from '@scenes/index';
 import { useStyles2 } from '@grafana/ui';
-import { getSelectedScopes } from 'app/features/scopes';
+import { getSelectedScopes } from '@grafana-module/app/features/scopes';
 
 import { DataTrailSettings } from './DataTrailSettings';
 import { DataTrailHistory } from './DataTrailsHistory';

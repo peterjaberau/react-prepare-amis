@@ -9,8 +9,8 @@ import {
   VizPanel,
   VizPanelMenu,
 } from '@scenes/index';
-import { getExploreUrl } from 'app/core/utils/explore';
-import { getQueryRunnerFor } from 'app/features/dashboard-scene/utils/utils';
+import { getExploreUrl } from '@grafana-module/app/core/utils/explore';
+import { getQueryRunnerFor } from '@grafana-module/app/features/dashboard-scene/utils/utils';
 
 import { AddToExplorationButton, extensionPointId } from '../MetricSelect/AddToExplorationsButton';
 import { getDataSource, getTrailFor } from '../utils';

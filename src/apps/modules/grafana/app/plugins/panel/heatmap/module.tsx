@@ -9,9 +9,9 @@ import {
 } from '@schema/index';
 import { TooltipDisplayMode } from '@grafana/ui';
 import { addHideFrom, ScaleDistributionEditor } from '@grafana/ui/src/options/builder';
-import { ColorScale } from 'app/core/components/ColorScale/ColorScale';
-import { addHeatmapCalculationOptions } from 'app/features/transformers/calculateHeatmap/editor/helper';
-import { readHeatmapRowsCustomMeta } from 'app/features/transformers/calculateHeatmap/heatmap';
+import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
+import { addHeatmapCalculationOptions } from '@grafana-module/app/features/transformers/calculateHeatmap/editor/helper';
+import { readHeatmapRowsCustomMeta } from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';
 
 import { HeatmapPanel } from './HeatmapPanel';
 import { prepareHeatmapData } from './fields';

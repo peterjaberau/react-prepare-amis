@@ -1,5 +1,5 @@
 import { DataQuery, ReducerID, SelectableValue } from '@data/index';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 import { EvalFunction } from '../alerting/state/alertDef';
 

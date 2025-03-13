@@ -3,9 +3,9 @@ import { useAsyncFn } from 'react-use';
 
 import { locationUtil } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { historySrv } from 'app/features/dashboard-scene/settings/version-history';
-import { useSelector } from 'app/types';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { historySrv } from '@grafana-module/app/features/dashboard-scene/settings/version-history';
+import { useSelector } from '@grafana-module/app/types';
 
 import { dashboardWatcher } from '../../../live/dashboard/dashboardWatcher';
 import { DashboardModel } from '../../state/DashboardModel';

@@ -1,9 +1,9 @@
 import { omit } from 'lodash';
 
 import { config } from '@runtime/index';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { ExpressionQuery, ExpressionQueryType, ReducerMode } from 'app/features/expressions/types';
-import { AlertDataQuery, AlertQuery } from 'app/types/unified-alerting-dto';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { ExpressionQuery, ExpressionQueryType, ReducerMode } from '@grafana-module/app/features/expressions/types';
+import { AlertDataQuery, AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { SimpleConditionIdentifier } from '../components/rule-editor/query-and-alert-condition/SimpleCondition';
 import { KVObject, RuleFormValues } from '../types/rule-form';

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { endpoints } from 'app/features/browse-dashboards/api/browseDashboardsAPI';
-import { FolderDTO, FolderState } from 'app/types';
+import { endpoints } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
+import { FolderDTO, FolderState } from '@grafana-module/app/types';
 
 export const initialState: FolderState = {
   id: 0,

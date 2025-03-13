@@ -1,4 +1,4 @@
-import { RulesSource } from 'app/types/unified-alerting';
+import { RulesSource } from '@grafana-module/app/types/unified-alerting';
 
 import { featureDiscoveryApi } from '../api/featureDiscoveryApi';
 import { getRulesSourceName } from '../utils/datasource';

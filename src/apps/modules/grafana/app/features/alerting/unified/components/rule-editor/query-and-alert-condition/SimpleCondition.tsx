@@ -5,12 +5,12 @@ import { UnknownAction } from 'redux';
 
 import { GrafanaTheme2, PanelData, ReducerID, SelectableValue } from '@data/index';
 import { InlineField, InlineFieldRow, Input, Select, Stack, Text, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { EvalFunction } from 'app/features/alerting/state/alertDef';
-import { ThresholdSelect } from 'app/features/expressions/components/ThresholdSelect';
-import { ExpressionQuery, ExpressionQueryType, reducerTypes, thresholdFunctions } from 'app/features/expressions/types';
-import { getReducerType } from 'app/features/expressions/utils/expressionTypes';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
+import { ThresholdSelect } from '@grafana-module/app/features/expressions/components/ThresholdSelect';
+import { ExpressionQuery, ExpressionQueryType, reducerTypes, thresholdFunctions } from '@grafana-module/app/features/expressions/types';
+import { getReducerType } from '@grafana-module/app/features/expressions/utils/expressionTypes';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { ToLabel } from '../../../../../expressions/components/ToLabel';
 import { ExpressionResult } from '../../expressions/Expression';

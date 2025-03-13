@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import * as React from 'react';
 
 import { PluginExtensionPoints, dateTime, findCommonLabels } from '@data/index';
-import { Alert, CombinedRule, PaginationProps } from 'app/types/unified-alerting';
+import { Alert, CombinedRule, PaginationProps } from '@grafana-module/app/types/unified-alerting';
 
 import { alertInstanceKey } from '../../utils/rules';
 import { AlertLabels } from '../AlertLabels';

@@ -2,8 +2,8 @@ import { groupBy } from 'lodash';
 import { useEffect, useMemo, useRef } from 'react';
 
 import { Icon, Stack, Text } from '@grafana/ui';
-import { GrafanaRuleGroupIdentifier, GrafanaRulesSourceSymbol } from 'app/types/unified-alerting';
-import { GrafanaPromRuleGroupDTO } from 'app/types/unified-alerting-dto';
+import { GrafanaRuleGroupIdentifier, GrafanaRulesSourceSymbol } from '@grafana-module/app/types/unified-alerting';
+import { GrafanaPromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { GrafanaRuleLoader } from './GrafanaRuleLoader';
 import { DataSourceSection } from './components/DataSourceSection';

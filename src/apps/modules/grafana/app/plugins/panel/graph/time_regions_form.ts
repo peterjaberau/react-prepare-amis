@@ -1,4 +1,4 @@
-import coreModule from 'app/angular/core_module';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 import { getColorModes } from './time_region_manager';
 

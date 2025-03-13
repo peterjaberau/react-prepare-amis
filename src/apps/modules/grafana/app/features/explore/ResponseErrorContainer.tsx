@@ -1,5 +1,5 @@
 import { LoadingState } from '@data/index';
-import { useSelector } from 'app/types';
+import { useSelector } from '@grafana-module/app/types';
 
 import { ErrorContainer } from './ErrorContainer';
 

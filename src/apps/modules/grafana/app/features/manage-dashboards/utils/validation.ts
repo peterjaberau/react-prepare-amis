@@ -1,5 +1,5 @@
-import { t } from 'app/core/internationalization';
-import { getDashboardAPI } from 'app/features/dashboard/api/dashboard_api';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
 
 import { validationSrv } from '../services/ValidationSrv';
 

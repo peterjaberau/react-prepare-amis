@@ -18,8 +18,8 @@ import {
 import { AxisProps } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
 import { ScaleProps } from '@grafana/ui/src/components/uPlot/config/UPlotScaleBuilder';
 import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
-import { TimeSeries } from 'app/core/components/TimeSeries/TimeSeries';
-import { config } from 'app/core/config';
+import { TimeSeries } from '@grafana-module/app/core/components/TimeSeries/TimeSeries';
+import { config } from '@grafana-module/app/core/config';
 
 import { TimeSeriesTooltip } from '../timeseries/TimeSeriesTooltip';
 import { AnnotationsPlugin2 } from '../timeseries/plugins/AnnotationsPlugin2';

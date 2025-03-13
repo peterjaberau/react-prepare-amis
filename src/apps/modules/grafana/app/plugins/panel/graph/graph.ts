@@ -37,15 +37,15 @@ import {
   toUtc,
 } from '@data/index';
 import { MenuItemProps, MenuItemsGroup } from '@grafana/ui';
-import { coreModule } from 'app/angular/core_module';
-import config from 'app/core/config';
-import { updateLegendValues } from 'app/core/core';
-import { ContextSrv } from 'app/core/services/context_srv';
-import { provideTheme } from 'app/core/utils/ConfigProvider';
-import { tickStep } from 'app/core/utils/ticks';
-import { TimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { getFieldLinksSupplier } from 'app/features/panel/panellinks/linkSuppliers';
+import { coreModule } from '@grafana-module/app/angular/core_module';
+import config from '@grafana-module/app/core/config';
+import { updateLegendValues } from '@grafana-module/app/core/core';
+import { ContextSrv } from '@grafana-module/app/core/services/context_srv';
+import { provideTheme } from '@grafana-module/app/core/utils/ConfigProvider';
+import { tickStep } from '@grafana-module/app/core/utils/ticks';
+import { TimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { getFieldLinksSupplier } from '@grafana-module/app/features/panel/panellinks/linkSuppliers';
 
 import { GraphContextMenuCtrl } from './GraphContextMenuCtrl';
 import { GraphLegendProps, Legend } from './Legend/Legend';

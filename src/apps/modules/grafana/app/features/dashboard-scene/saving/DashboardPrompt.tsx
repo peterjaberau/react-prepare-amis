@@ -4,8 +4,8 @@ import { memo, useContext, useEffect, useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
 import { ModalsContext, Modal, Button, useStyles2 } from '@grafana/ui';
-import { Prompt } from 'app/core/components/FormPrompt/Prompt';
-import { contextSrv } from 'app/core/services/context_srv';
+import { Prompt } from '@grafana-module/app/core/components/FormPrompt/Prompt';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 
 import { SaveLibraryVizPanelModal } from '../panel-edit/SaveLibraryVizPanelModal';
 import { DashboardScene } from '../scene/DashboardScene';

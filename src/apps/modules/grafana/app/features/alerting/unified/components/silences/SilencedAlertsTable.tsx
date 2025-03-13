@@ -2,8 +2,8 @@ import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { AlertmanagerAlert } from 'app/plugins/datasource/alertmanager/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AlertmanagerAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { getAlertTableStyles } from '../../styles/table';
 

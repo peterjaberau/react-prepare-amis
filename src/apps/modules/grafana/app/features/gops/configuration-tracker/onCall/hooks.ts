@@ -1,6 +1,6 @@
-import { onCallApi } from 'app/features/alerting/unified/api/onCallApi';
-import { usePluginBridge } from 'app/features/alerting/unified/hooks/usePluginBridge';
-import { getIrmIfPresentOrOnCallPluginId } from 'app/features/alerting/unified/utils/config';
+import { onCallApi } from '@grafana-module/app/features/alerting/unified/api/onCallApi';
+import { usePluginBridge } from '@grafana-module/app/features/alerting/unified/hooks/usePluginBridge';
+import { getIrmIfPresentOrOnCallPluginId } from '@grafana-module/app/features/alerting/unified/utils/config';
 
 export function useGetOnCallIntegrations() {
   const { installed: onCallPluginInstalled } = usePluginBridge(getIrmIfPresentOrOnCallPluginId());

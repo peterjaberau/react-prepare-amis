@@ -4,12 +4,12 @@ import { memo } from 'react';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { Dropdown, Icon, Stack, ToolbarButton, useStyles2 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { contextSrv } from 'app/core/core';
-import { t } from 'app/core/internationalization';
-import { HOME_NAV_ID } from 'app/core/reducers/navModel';
-import { useSelector } from 'app/types';
+import { config } from '@grafana-module/app/core/config';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
+import { HOME_NAV_ID } from '@grafana-module/app/core/reducers/navModel';
+import { useSelector } from '@grafana-module/app/types';
 
 import { Branding } from '../../Branding/Branding';
 import { Breadcrumbs } from '../../Breadcrumbs/Breadcrumbs';

@@ -3,8 +3,8 @@ import { useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Alert, IconButton, Select, SelectCommonProps, Stack, Text, useStyles2 } from '@grafana/ui';
-import { ContactPointReceiverSummary } from 'app/features/alerting/unified/components/contact-points/ContactPoint';
-import { useAlertmanager } from 'app/features/alerting/unified/state/AlertmanagerContext';
+import { ContactPointReceiverSummary } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoint';
+import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
 
 import { useContactPointsWithStatus } from '../contact-points/useContactPoints';
 import { ContactPointWithMetadata } from '../contact-points/utils';

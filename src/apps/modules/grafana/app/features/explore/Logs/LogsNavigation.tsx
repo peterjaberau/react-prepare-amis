@@ -6,8 +6,8 @@ import { AbsoluteTimeRange, GrafanaTheme2, LogsSortOrder } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
 import { Button, Icon, Spinner, useTheme2 } from '@grafana/ui';
-import { TOP_BAR_LEVEL_HEIGHT } from 'app/core/components/AppChrome/types';
-import { t, Trans } from 'app/core/internationalization';
+import { TOP_BAR_LEVEL_HEIGHT } from '@grafana-module/app/core/components/AppChrome/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { LogsNavigationPages } from './LogsNavigationPages';
 

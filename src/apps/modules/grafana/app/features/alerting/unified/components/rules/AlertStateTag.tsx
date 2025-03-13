@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import { AlertState } from '@data/index';
 import { Icon, Tooltip } from '@grafana/ui';
-import { GrafanaAlertState, GrafanaAlertStateWithReason, PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { GrafanaAlertState, GrafanaAlertStateWithReason, PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertStateToReadable, alertStateToState } from '../../utils/rules';
 import { StateTag } from '../StateTag';

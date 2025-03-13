@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom-v5-compat';
 
 import { NavModelItem, getTimeZone } from '@data/index';
 import { Button, ConfirmModal, IconButton, Stack } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction, ApiKey, ServiceAccountDTO, StoreState } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction, ApiKey, ServiceAccountDTO, StoreState } from '@grafana-module/app/types';
 
 import { ServiceAccountPermissions } from './ServiceAccountPermissions';
 import { CreateTokenModal, ServiceAccountToken } from './components/CreateTokenModal';

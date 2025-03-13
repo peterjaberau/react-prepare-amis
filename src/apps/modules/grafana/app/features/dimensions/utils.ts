@@ -13,7 +13,7 @@ import {
   getTextDimension,
   getResourceDimension,
   DimensionSupplier,
-} from 'app/features/dimensions';
+} from '@grafana-module/app/features/dimensions';
 
 import { getScalarDimension } from './scalar';
 

@@ -6,7 +6,7 @@ import {
   PromRulesResponse,
   PromRuleType,
   RulerRulesConfigDTO,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 export function getRulerRulesResponse(folderName: string, folderUid: string, seed = 1): RulerRulesConfigDTO {
   const random = Chance(seed);

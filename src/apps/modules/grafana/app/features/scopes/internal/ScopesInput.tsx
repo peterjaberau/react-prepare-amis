@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, Input, Tooltip, useStyles2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { NodesMap, SelectedScope } from './types';
 

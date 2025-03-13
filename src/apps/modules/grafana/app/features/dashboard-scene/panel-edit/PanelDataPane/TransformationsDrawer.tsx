@@ -2,11 +2,11 @@ import { FormEvent, useMemo, useState } from 'react';
 
 import { DataFrame, SelectableValue, standardTransformersRegistry } from '@data/index';
 import { IconButton } from '@grafana/ui';
-import { TransformationPickerNg } from 'app/features/dashboard/components/TransformationsEditor/TransformationPickerNg';
+import { TransformationPickerNg } from '@grafana-module/app/features/dashboard/components/TransformationsEditor/TransformationPickerNg';
 import {
   FilterCategory,
   VIEW_ALL_VALUE,
-} from 'app/features/dashboard/components/TransformationsEditor/TransformationsEditor';
+} from '@grafana-module/app/features/dashboard/components/TransformationsEditor/TransformationsEditor';
 
 interface DrawerState {
   search: string;

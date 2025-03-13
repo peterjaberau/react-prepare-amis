@@ -2,11 +2,11 @@ import { useLocation, useParams } from 'react-router-dom-v5-compat';
 
 import { NavModel, NavModelItem } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { getNavModel } from 'app/core/selectors/navModel';
-import { useDataSource, useDataSourceMeta, useDataSourceSettings } from 'app/features/datasources/state/hooks';
-import { getDataSourceLoadingNav, buildNavModel, getDataSourceNav } from 'app/features/datasources/state/navModel';
-import { useGetSingle } from 'app/features/plugins/admin/state/hooks';
-import { useSelector } from 'app/types';
+import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
+import { useDataSource, useDataSourceMeta, useDataSourceSettings } from '@grafana-module/app/features/datasources/state/hooks';
+import { getDataSourceLoadingNav, buildNavModel, getDataSourceNav } from '@grafana-module/app/features/datasources/state/navModel';
+import { useGetSingle } from '@grafana-module/app/features/plugins/admin/state/hooks';
+import { useSelector } from '@grafana-module/app/types';
 
 export function useDataSourceSettingsNav(pageIdParam?: string) {
   const { uid = '' } = useParams<{ uid: string }>();

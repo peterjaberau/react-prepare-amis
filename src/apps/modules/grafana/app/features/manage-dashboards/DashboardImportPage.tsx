@@ -21,12 +21,12 @@ import {
   Label,
   Stack,
 } from '@grafana/ui';
-import appEvents from 'app/core/app_events';
-import { Form } from 'app/core/components/Form/Form';
-import { Page } from 'app/core/components/Page/Page';
-import { t, Trans } from 'app/core/internationalization';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
-import { StoreState } from 'app/types';
+import appEvents from '@grafana-module/app/core/app_events';
+import { Form } from '@grafana-module/app/core/components/Form/Form';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import { StoreState } from '@grafana-module/app/types';
 
 import { cleanUpAction } from '../../core/actions/cleanUp';
 

@@ -1,9 +1,9 @@
 import { compact, memoize, reject, uniq } from 'lodash';
 
-import { Edge, Graph, Node } from 'app/core/utils/dag';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { ExpressionQuery, ExpressionQueryType } from 'app/features/expressions/types';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { Edge, Graph, Node } from '@grafana-module/app/core/utils/dag';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { ExpressionQuery, ExpressionQueryType } from '@grafana-module/app/features/expressions/types';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 /**
  * Turn the array of alert queries (this means data queries and expressions)

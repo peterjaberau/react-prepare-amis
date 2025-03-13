@@ -19,9 +19,9 @@ import {
 import { config } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { GraphThresholdsStyleMode, Icon, InlineField, Input, Stack, Tooltip, useStyles2 } from '@grafana/ui';
-import { logInfo } from 'app/features/alerting/unified/Analytics';
-import { QueryEditorRow } from 'app/features/query/components/QueryEditorRow';
-import { AlertDataQuery, AlertQuery } from 'app/types/unified-alerting-dto';
+import { logInfo } from '@grafana-module/app/features/alerting/unified/Analytics';
+import { QueryEditorRow } from '@grafana-module/app/features/query/components/QueryEditorRow';
+import { AlertDataQuery, AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { RuleFormValues } from '../../types/rule-form';
 import { msToSingleUnitDuration } from '../../utils/time';

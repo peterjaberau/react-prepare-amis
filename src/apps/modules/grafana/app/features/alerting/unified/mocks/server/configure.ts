@@ -2,26 +2,26 @@ import { HttpResponse, http } from 'msw';
 
 import { DataSourceInstanceSettings } from '@data/index';
 import { config } from '@runtime/index';
-import server from 'app/features/alerting/unified/mockApi';
-import { mockDataSource, mockFolder } from 'app/features/alerting/unified/mocks';
+import server from '@grafana-module/app/features/alerting/unified/mockApi';
+import { mockDataSource, mockFolder } from '@grafana-module/app/features/alerting/unified/mocks';
 import {
   getAlertmanagerConfigHandler,
   grafanaAlertingConfigurationStatusHandler,
   updateAlertmanagerConfigHandler,
-} from 'app/features/alerting/unified/mocks/server/handlers/alertmanagers';
-import { getFolderHandler } from 'app/features/alerting/unified/mocks/server/handlers/folders';
-import { listNamespacedTimeIntervalHandler } from 'app/features/alerting/unified/mocks/server/handlers/k8s/timeIntervals.k8s';
+} from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/alertmanagers';
+import { getFolderHandler } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/folders';
+import { listNamespacedTimeIntervalHandler } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/k8s/timeIntervals.k8s';
 import {
   getDisabledPluginHandler,
   getPluginMissingHandler,
-} from 'app/features/alerting/unified/mocks/server/handlers/plugins';
-import { ALERTING_API_SERVER_BASE_URL, paginatedHandlerFor } from 'app/features/alerting/unified/mocks/server/utils';
-import { SupportedPlugin } from 'app/features/alerting/unified/types/pluginBridges';
-import { clearPluginSettingsCache } from 'app/features/plugins/pluginSettings';
-import { AlertmanagerChoice } from 'app/plugins/datasource/alertmanager/types';
-import { FolderDTO } from 'app/types';
-import { RulerDataSourceConfig } from 'app/types/unified-alerting';
-import { PromRuleGroupDTO } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/plugins';
+import { ALERTING_API_SERVER_BASE_URL, paginatedHandlerFor } from '@grafana-module/app/features/alerting/unified/mocks/server/utils';
+import { SupportedPlugin } from '@grafana-module/app/features/alerting/unified/types/pluginBridges';
+import { clearPluginSettingsCache } from '@grafana-module/app/features/plugins/pluginSettings';
+import { AlertmanagerChoice } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { FolderDTO } from '@grafana-module/app/types';
+import { RulerDataSourceConfig } from '@grafana-module/app/types/unified-alerting';
+import { PromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { setupDataSources } from '../../testSetup/datasources';
 import { DataSourceType } from '../../utils/datasource';

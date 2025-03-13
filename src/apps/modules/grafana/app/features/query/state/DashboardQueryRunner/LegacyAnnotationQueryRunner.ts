@@ -2,7 +2,7 @@ import { from, Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 import { AnnotationEvent, DataSourceApi } from '@data/index';
-import { shouldUseLegacyRunner } from 'app/features/annotations/standardAnnotationSupport';
+import { shouldUseLegacyRunner } from '@grafana-module/app/features/annotations/standardAnnotationSupport';
 
 import { AnnotationQueryRunner, AnnotationQueryRunnerOptions } from './types';
 import { handleAnnotationQueryRunnerError } from './utils';

@@ -1,12 +1,12 @@
 import { IconName } from '@data/index';
 import { BadgeColor } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 import {
   GrafanaAlertRuleDTOField,
   GrafanaRuleDefinition,
   RulerGrafanaRuleDTO,
   TopLevelGrafanaRuleDTOField,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { grafanaAlertPropertiesToIgnore } from './AlertVersionHistory';
 

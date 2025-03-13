@@ -4,7 +4,7 @@ import { Controller, FormProvider, useFieldArray, useForm, useFormContext } from
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Button, Field, InlineLabel, Input, LoadingPlaceholder, Space, Stack, Text, useStyles2 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { labelsApi } from '../../../api/labelsApi';
 import { usePluginBridge } from '../../../hooks/usePluginBridge';

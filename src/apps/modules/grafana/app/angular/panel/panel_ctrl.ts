@@ -9,9 +9,9 @@ import {
   EventBusExtended,
   EventBusSrv,
 } from '@data/index';
-import { AngularLocationWrapper } from 'app/angular/AngularLocationWrapper';
-import config from 'app/core/config';
-import { profiler } from 'app/core/core';
+import { AngularLocationWrapper } from '@grafana-module/app/angular/AngularLocationWrapper';
+import config from '@grafana-module/app/core/config';
+import { profiler } from '@grafana-module/app/core/core';
 
 import { DashboardModel } from '../../features/dashboard/state/DashboardModel';
 

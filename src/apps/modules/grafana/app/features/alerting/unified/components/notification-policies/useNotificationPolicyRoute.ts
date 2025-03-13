@@ -1,8 +1,8 @@
 import { pick } from 'lodash';
 import memoize from 'micro-memoize';
 
-import { BaseAlertmanagerArgs, Skippable } from 'app/features/alerting/unified/types/hooks';
-import { MatcherOperator, ROUTES_META_SYMBOL, Route } from 'app/plugins/datasource/alertmanager/types';
+import { BaseAlertmanagerArgs, Skippable } from '@grafana-module/app/features/alerting/unified/types/hooks';
+import { MatcherOperator, ROUTES_META_SYMBOL, Route } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { getAPINamespace } from '../../../../../api/utils';
 import { alertmanagerApi } from '../../api/alertmanagerApi';

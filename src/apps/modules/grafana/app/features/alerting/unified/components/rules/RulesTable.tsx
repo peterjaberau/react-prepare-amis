@@ -4,7 +4,7 @@ import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Pagination, Tooltip, useStyles2 } from '@grafana/ui';
-import { CombinedRule, RulesSource } from 'app/types/unified-alerting';
+import { CombinedRule, RulesSource } from '@grafana-module/app/types/unified-alerting';
 
 import { DEFAULT_PER_PAGE_PAGINATION } from '../../../../../core/constants';
 import { alertRuleApi } from '../../api/alertRuleApi';

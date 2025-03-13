@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Drawer, Stack } from '@grafana/ui';
-import { SilencesEditor } from 'app/features/alerting/unified/components/silences/SilencesEditor';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { RulerGrafanaRuleDTO } from 'app/types/unified-alerting-dto';
+import { SilencesEditor } from '@grafana-module/app/features/alerting/unified/components/silences/SilencesEditor';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { AlertmanagerProvider } from '../../state/AlertmanagerContext';
 

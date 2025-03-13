@@ -1,5 +1,5 @@
 import { SceneComponentProps, SceneObjectBase, VizPanel, sceneGraph } from '@scenes/index';
-import { PanelHeaderNotices } from 'app/features/dashboard/dashgrid/PanelHeader/PanelHeaderNotices';
+import { PanelHeaderNotices } from '@grafana-module/app/features/dashboard/dashgrid/PanelHeader/PanelHeaderNotices';
 
 import { getPanelIdForVizPanel } from '../utils/utils';
 

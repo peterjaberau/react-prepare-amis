@@ -20,10 +20,10 @@ import {
   useStyles2,
 } from '@grafana/ui';
 import { Text } from '@grafana/ui/src/components/Text/Text';
-import { Trans, t } from 'app/core/internationalization';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { ExpressionDatasourceUID, ExpressionQueryType, expressionTypes } from 'app/features/expressions/types';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { ExpressionDatasourceUID, ExpressionQueryType, expressionTypes } from '@grafana-module/app/features/expressions/types';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { useRulesSourcesWithRuler } from '../../../hooks/useRuleSourcesWithRuler';
 import {

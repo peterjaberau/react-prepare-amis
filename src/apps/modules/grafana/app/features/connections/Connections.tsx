@@ -1,6 +1,6 @@
 import { Navigate, Routes, Route, useLocation } from 'react-router-dom-v5-compat';
 
-import { StoreState, useSelector } from 'app/types';
+import { StoreState, useSelector } from '@grafana-module/app/types';
 
 import { ROUTES } from './constants';
 import {

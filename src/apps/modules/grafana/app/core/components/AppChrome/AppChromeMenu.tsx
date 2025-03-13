@@ -7,7 +7,7 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, useTheme2 } from '@grafana/ui';
-import { useGrafana } from 'app/core/context/GrafanaContext';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 
 import { MegaMenu, MENU_WIDTH } from './MegaMenu/MegaMenu';
 

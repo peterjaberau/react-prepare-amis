@@ -1,6 +1,6 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
 
-import { EvalFunction } from 'app/features/alerting/state/alertDef';
+import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
 
 import { ClassicCondition, ExpressionQueryType, ThresholdExpressionQuery } from '../types';
 

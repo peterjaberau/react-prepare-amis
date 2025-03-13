@@ -1,5 +1,5 @@
 import { AdHocVariableFilter, DataSourceRef, SelectableValue, getDefaultTimeRange } from '@data/index';
-// import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
+// import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { getDataSourceSrv } from '@runtime/index';
 import { SegmentAsync } from '@grafana/ui';
 

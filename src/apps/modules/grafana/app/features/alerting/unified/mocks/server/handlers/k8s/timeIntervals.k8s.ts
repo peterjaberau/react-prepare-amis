@@ -1,9 +1,9 @@
 import { HttpResponse, http } from 'msw';
 
-import { filterBySelector } from 'app/features/alerting/unified/mocks/server/handlers/k8s/utils';
-import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from 'app/features/alerting/unified/mocks/server/utils';
-import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1TimeInterval } from 'app/features/alerting/unified/openapi/timeIntervalsApi.gen';
-import { PROVENANCE_ANNOTATION, PROVENANCE_NONE } from 'app/features/alerting/unified/utils/k8s/constants';
+import { filterBySelector } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/k8s/utils';
+import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from '@grafana-module/app/features/alerting/unified/mocks/server/utils';
+import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1TimeInterval } from '@grafana-module/app/features/alerting/unified/openapi/timeIntervalsApi.gen';
+import { PROVENANCE_ANNOTATION, PROVENANCE_NONE } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
 
 /** UID of a time interval that we expect to follow all happy paths within tests/mocks */
 export const TIME_INTERVAL_UID_HAPPY_PATH = 'f4eae7a4895fa786';

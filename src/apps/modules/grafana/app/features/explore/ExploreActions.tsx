@@ -2,9 +2,9 @@ import { useRegisterActions, useKBar, Action, Priority } from 'kbar';
 import { useEffect, useState } from 'react';
 
 import { config } from '@runtime/index';
-import { contextSrv } from 'app/core/services/context_srv';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
-import { AccessControlAction, useDispatch, useSelector } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { AccessControlAction, useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { splitOpen, splitClose, changeCorrelationEditorDetails } from './state/main';
 import { runQueries } from './state/query';

@@ -8,7 +8,7 @@ import {
   VariableHide,
 } from '@data/index';
 import { VariableRefresh } from '@schema/index';
-import { dashboardReducer } from 'app/features/dashboard/state/reducers';
+import { dashboardReducer } from '@grafana-module/app/features/dashboard/state/reducers';
 
 import { DashboardState, StoreState } from '../../../types';
 import { VariableAdapter } from '../adapters';

@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
 
-import { GrafanaManagedReceiverConfig, Receiver } from 'app/plugins/datasource/alertmanager/types';
+import { GrafanaManagedReceiverConfig, Receiver } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 /**
  * This function will extract the integrations that have been defined for either grafana managed contact point

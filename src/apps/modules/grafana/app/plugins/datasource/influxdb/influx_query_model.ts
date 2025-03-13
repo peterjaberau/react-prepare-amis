@@ -2,7 +2,7 @@ import { filter, find, indexOf, map } from 'lodash';
 
 import { AdHocVariableFilter, escapeRegex, ScopedVars } from '@data/index';
 import { TemplateSrv } from '@runtime/index';
-import { QueryPart } from 'app/features/alerting/state/query_part';
+import { QueryPart } from '@grafana-module/app/features/alerting/state/query_part';
 
 import { removeRegexWrapper } from './queryUtils';
 import queryPart from './query_part';

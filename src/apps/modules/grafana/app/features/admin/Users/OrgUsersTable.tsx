@@ -18,13 +18,13 @@ import {
   Text,
   Tooltip,
 } from '@grafana/ui';
-import { UserRolePicker } from 'app/core/components/RolePicker/UserRolePicker';
-import { fetchRoleOptions, updateUserRoles } from 'app/core/components/RolePicker/api';
-import { RolePickerBadges } from 'app/core/components/RolePickerDrawer/RolePickerBadges';
-import { TagBadge } from 'app/core/components/TagFilter/TagBadge';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import { AccessControlAction, OrgUser, Role } from 'app/types';
+import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
+import { fetchRoleOptions, updateUserRoles } from '@grafana-module/app/core/components/RolePicker/api';
+import { RolePickerBadges } from '@grafana-module/app/core/components/RolePickerDrawer/RolePickerBadges';
+import { TagBadge } from '@grafana-module/app/core/components/TagFilter/TagBadge';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AccessControlAction, OrgUser, Role } from '@grafana-module/app/types';
 
 import { OrgRolePicker } from '../OrgRolePicker';
 

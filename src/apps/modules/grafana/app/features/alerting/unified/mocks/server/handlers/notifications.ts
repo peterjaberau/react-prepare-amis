@@ -1,7 +1,7 @@
 import { HttpResponse, http } from 'msw';
 
-import { getAlertmanagerConfig } from 'app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
+import { getAlertmanagerConfig } from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 
 const getNotificationReceiversHandler = () =>
   http.get('/api/v1/notifications/receivers', () => {

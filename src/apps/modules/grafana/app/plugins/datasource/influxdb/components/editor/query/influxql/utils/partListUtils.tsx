@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { QueryPartDef } from 'app/features/alerting/state/query_part';
+import { QueryPartDef } from '@grafana-module/app/features/alerting/state/query_part';
 
 import InfluxQueryModel from '../../../../../influx_query_model';
 import queryPart from '../../../../../query_part';

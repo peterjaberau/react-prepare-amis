@@ -3,10 +3,10 @@ import * as React from 'react';
 import { LinkModel, PanelData, PanelPlugin, renderMarkdown } from '@data/index';
 import { config, getTemplateSrv, locationService } from '@runtime/index';
 import { PanelPadding } from '@grafana/ui';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { InspectTab } from 'app/features/inspector/types';
-import { getPanelLinksSupplier } from 'app/features/panel/panellinks/linkSuppliers';
-import { isAngularDatasourcePluginAndNotHidden } from 'app/features/plugins/angularDeprecation/utils';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { getPanelLinksSupplier } from '@grafana-module/app/features/panel/panellinks/linkSuppliers';
+import { isAngularDatasourcePluginAndNotHidden } from '@grafana-module/app/features/plugins/angularDeprecation/utils';
 
 import { PanelHeaderTitleItems } from '../dashgrid/PanelHeader/PanelHeaderTitleItems';
 import { DashboardModel } from '../state/DashboardModel';

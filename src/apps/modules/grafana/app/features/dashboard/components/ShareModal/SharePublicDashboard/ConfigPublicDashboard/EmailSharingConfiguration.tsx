@@ -4,19 +4,19 @@ import { useWindowSize } from 'react-use';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { FieldSet, Button, ButtonGroup, Field, Input, RadioButtonGroup, Spinner, useStyles2 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import {
   useAddRecipientMutation,
   useDeleteRecipientMutation,
   useGetPublicDashboardQuery,
   useReshareAccessToRecipientMutation,
   useUpdatePublicDashboardAccessMutation,
-} from 'app/features/dashboard/api/publicDashboardApi';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction } from 'app/types';
+} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { PublicDashboard, PublicDashboardShareType, validEmailRegex } from '../SharePublicDashboardUtils';
 

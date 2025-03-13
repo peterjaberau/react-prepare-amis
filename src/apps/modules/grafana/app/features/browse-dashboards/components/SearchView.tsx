@@ -2,12 +2,12 @@ import { ReactNode, useCallback } from 'react';
 
 import { DataFrameView, toDataFrame } from '@data/index';
 import { Button, EmptyState } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import { useKeyNavigationListener } from 'app/features/search/hooks/useSearchKeyboardSelection';
-import { SearchResultsProps, SearchResultsTable } from 'app/features/search/page/components/SearchResultsTable';
-import { SearchStateManager } from 'app/features/search/state/SearchStateManager';
-import { DashboardViewItemKind, SearchState } from 'app/features/search/types';
-import { useDispatch, useSelector } from 'app/types';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { useKeyNavigationListener } from '@grafana-module/app/features/search/hooks/useSearchKeyboardSelection';
+import { SearchResultsProps, SearchResultsTable } from '@grafana-module/app/features/search/page/components/SearchResultsTable';
+import { SearchStateManager } from '@grafana-module/app/features/search/state/SearchStateManager';
+import { DashboardViewItemKind, SearchState } from '@grafana-module/app/features/search/types';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { setAllSelection, setItemSelectionState, useHasSelection } from '../state';
 

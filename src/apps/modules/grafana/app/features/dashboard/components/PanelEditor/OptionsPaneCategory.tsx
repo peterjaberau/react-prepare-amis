@@ -5,7 +5,7 @@ import { useLocalStorage } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Counter, useStyles2 } from '@grafana/ui';
-import { useQueryParams } from 'app/core/hooks/useQueryParams';
+import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 
 import { PANEL_EDITOR_UI_STATE_STORAGE_KEY } from './state/reducers';
 

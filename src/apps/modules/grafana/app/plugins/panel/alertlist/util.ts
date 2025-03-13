@@ -1,10 +1,10 @@
 import { isEmpty } from 'lodash';
 
 import { Labels } from '@data/index';
-import { labelsMatchMatchers } from 'app/features/alerting/unified/utils/alertmanager';
-import { parsePromQLStyleMatcherLooseSafe } from 'app/features/alerting/unified/utils/matchers';
-import { Alert, hasAlertState } from 'app/types/unified-alerting';
-import { GrafanaAlertState, PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { labelsMatchMatchers } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';
+import { parsePromQLStyleMatcherLooseSafe } from '@grafana-module/app/features/alerting/unified/utils/matchers';
+import { Alert, hasAlertState } from '@grafana-module/app/types/unified-alerting';
+import { GrafanaAlertState, PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { UnifiedAlertListOptions } from './types';
 

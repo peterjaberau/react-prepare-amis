@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneObjectBase, type SceneObjectState } from '@scenes/index';
 import { Stack, Text, TextLink, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 export class NoRelatedLogsScene extends SceneObjectBase<SceneObjectState> {
   static readonly Component = () => {

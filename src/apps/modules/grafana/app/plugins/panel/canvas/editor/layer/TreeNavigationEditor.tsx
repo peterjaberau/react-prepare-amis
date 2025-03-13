@@ -6,9 +6,9 @@ import { Key, useEffect, useMemo, useState } from 'react';
 import { GrafanaTheme2, StandardEditorProps } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, Icon, Stack, useStyles2, useTheme2 } from '@grafana/ui';
-import { AddLayerButton } from 'app/core/components/Layers/AddLayerButton';
-import { ElementState } from 'app/features/canvas/runtime/element';
-import { frameSelection, reorderElements } from 'app/features/canvas/runtime/sceneElementManagement';
+import { AddLayerButton } from '@grafana-module/app/core/components/Layers/AddLayerButton';
+import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
+import { frameSelection, reorderElements } from '@grafana-module/app/features/canvas/runtime/sceneElementManagement';
 
 import { getGlobalStyles } from '../../globalStyles';
 import { Options } from '../../panelcfg.gen';

@@ -19,17 +19,17 @@ import {
   withTheme2,
   Stack,
 } from '@grafana/ui';
-import { AppChromeUpdate } from 'app/core/components/AppChrome/AppChromeUpdate';
-import { Page } from 'app/core/components/Page/Page';
-import { SplitPaneWrapper } from 'app/core/components/SplitPaneWrapper/SplitPaneWrapper';
-import { appEvents } from 'app/core/core';
-import { SubMenuItems } from 'app/features/dashboard/components/SubMenu/SubMenuItems';
-import { SaveLibraryPanelModal } from 'app/features/library-panels/components/SaveLibraryPanelModal/SaveLibraryPanelModal';
-import { PanelModelWithLibraryPanel } from 'app/features/library-panels/types';
-import { getPanelStateForModel } from 'app/features/panel/state/selectors';
-import { updateTimeZoneForSession } from 'app/features/profile/state/reducers';
-import { StoreState } from 'app/types';
-import { PanelOptionsChangedEvent, ShowModalReactEvent } from 'app/types/events';
+import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { SplitPaneWrapper } from '@grafana-module/app/core/components/SplitPaneWrapper/SplitPaneWrapper';
+import { appEvents } from '@grafana-module/app/core/core';
+import { SubMenuItems } from '@grafana-module/app/features/dashboard/components/SubMenu/SubMenuItems';
+import { SaveLibraryPanelModal } from '@grafana-module/app/features/library-panels/components/SaveLibraryPanelModal/SaveLibraryPanelModal';
+import { PanelModelWithLibraryPanel } from '@grafana-module/app/features/library-panels/types';
+import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
+import { updateTimeZoneForSession } from '@grafana-module/app/features/profile/state/reducers';
+import { StoreState } from '@grafana-module/app/types';
+import { PanelOptionsChangedEvent, ShowModalReactEvent } from '@grafana-module/app/types/events';
 
 import { notifyApp } from '../../../../core/actions';
 import { UnlinkModal } from '../../../dashboard-scene/scene/UnlinkModal';

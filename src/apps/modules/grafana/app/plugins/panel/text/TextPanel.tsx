@@ -5,7 +5,7 @@ import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2, PanelProps, renderTextPanelMarkdown, textUtil, InterpolateFunction } from '@data/index';
 import { CodeEditor, ScrollContainer, useStyles2 } from '@grafana/ui';
-import config from 'app/core/config';
+import config from '@grafana-module/app/core/config';
 
 import { defaultCodeOptions, Options, TextMode } from './panelcfg.gen';
 

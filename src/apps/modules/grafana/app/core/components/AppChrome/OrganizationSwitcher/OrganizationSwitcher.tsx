@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Text, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/services/context_srv';
-import { getUserOrganizations, setUserOrganization } from 'app/features/org/state/actions';
-import { useDispatch, useSelector, UserOrg } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { getUserOrganizations, setUserOrganization } from '@grafana-module/app/features/org/state/actions';
+import { useDispatch, useSelector, UserOrg } from '@grafana-module/app/types';
 
 import { Branding } from '../../Branding/Branding';
 

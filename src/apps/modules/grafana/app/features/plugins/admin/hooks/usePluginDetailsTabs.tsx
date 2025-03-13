@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { GrafanaPlugin, NavModelItem, PluginIncludeType, PluginType } from '@data/index';
 import { config } from '@runtime/index';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { usePluginConfig } from '../hooks/usePluginConfig';
 import { CatalogPlugin, PluginTabIds, PluginTabLabels } from '../types';

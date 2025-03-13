@@ -1,9 +1,9 @@
 import { PageLayoutType } from '@data/index';
 import { Alert, Box } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { EntityNotFound } from 'app/core/components/PageNotFound/EntityNotFound';
-import { t } from 'app/core/internationalization';
-import { getMessageFromError, getStatusFromError } from 'app/core/utils/errors';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getMessageFromError, getStatusFromError } from '@grafana-module/app/core/utils/errors';
 
 export function DashboardPageError({ error, type }: { error: unknown; type?: string }) {
   const status = getStatusFromError(error);

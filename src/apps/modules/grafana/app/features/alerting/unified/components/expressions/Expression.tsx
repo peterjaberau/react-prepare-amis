@@ -13,19 +13,19 @@ import {
   isTimeSeriesFrames,
 } from '@data/index';
 import { Alert, AutoSizeInput, Button, IconButton, Stack, Text, clearButtonStyles, useStyles2 } from '@grafana/ui';
-import { ClassicConditions } from 'app/features/expressions/components/ClassicConditions';
-import { Math } from 'app/features/expressions/components/Math';
-import { Reduce } from 'app/features/expressions/components/Reduce';
-import { Resample } from 'app/features/expressions/components/Resample';
-import { SqlExpr } from 'app/features/expressions/components/SqlExpr';
-import { Threshold } from 'app/features/expressions/components/Threshold';
+import { ClassicConditions } from '@grafana-module/app/features/expressions/components/ClassicConditions';
+import { Math } from '@grafana-module/app/features/expressions/components/Math';
+import { Reduce } from '@grafana-module/app/features/expressions/components/Reduce';
+import { Resample } from '@grafana-module/app/features/expressions/components/Resample';
+import { SqlExpr } from '@grafana-module/app/features/expressions/components/SqlExpr';
+import { Threshold } from '@grafana-module/app/features/expressions/components/Threshold';
 import {
   ExpressionQuery,
   ExpressionQueryType,
   expressionTypes,
   getExpressionLabel,
-} from 'app/features/expressions/types';
-import { AlertQuery, PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/expressions/types';
+import { AlertQuery, PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { usePagination } from '../../hooks/usePagination';
 import { RuleFormValues } from '../../types/rule-form';

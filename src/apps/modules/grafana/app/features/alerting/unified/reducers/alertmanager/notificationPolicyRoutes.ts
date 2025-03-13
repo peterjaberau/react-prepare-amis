@@ -1,6 +1,6 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
 
-import { AlertManagerCortexConfig } from 'app/plugins/datasource/alertmanager/types';
+import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { FormAmRoute } from '../../types/amroutes';
 import { addUniqueIdentifierToRoute } from '../../utils/amroutes';

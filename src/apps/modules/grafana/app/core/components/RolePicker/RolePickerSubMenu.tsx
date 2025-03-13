@@ -2,8 +2,8 @@ import { cx } from '@emotion/css';
 
 import { Button, ScrollContainer, Stack, useStyles2, useTheme2 } from '@grafana/ui';
 import { getSelectStyles } from '@grafana/ui/src/components/Select/getSelectStyles';
-import { Trans } from 'app/core/internationalization';
-import { Role } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { Role } from '@grafana-module/app/types';
 
 import { RoleMenuOption } from './RoleMenuOption';
 import { MENU_MAX_HEIGHT } from './constants';

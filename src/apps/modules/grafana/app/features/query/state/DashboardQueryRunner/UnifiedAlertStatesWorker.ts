@@ -3,17 +3,17 @@ import { catchError, map } from 'rxjs/operators';
 
 import { AlertState, AlertStateInfo } from '@data/index';
 import { config } from '@runtime/index';
-import { contextSrv } from 'app/core/services/context_srv';
-import { alertRuleApi } from 'app/features/alerting/unified/api/alertRuleApi';
-import { ungroupRulesByFileName } from 'app/features/alerting/unified/api/prometheus';
-import { Annotation } from 'app/features/alerting/unified/utils/constants';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { isAlertingRule } from 'app/features/alerting/unified/utils/rules';
-import { promAlertStateToAlertState } from 'app/features/dashboard-scene/scene/AlertStatesDataLayer';
-import { dispatch } from 'app/store/store';
-import { AccessControlAction } from 'app/types';
-import { RuleNamespace } from 'app/types/unified-alerting';
-import { PromRuleGroupDTO } from 'app/types/unified-alerting-dto';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
+import { ungroupRulesByFileName } from '@grafana-module/app/features/alerting/unified/api/prometheus';
+import { Annotation } from '@grafana-module/app/features/alerting/unified/utils/constants';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { isAlertingRule } from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { promAlertStateToAlertState } from '@grafana-module/app/features/dashboard-scene/scene/AlertStatesDataLayer';
+import { dispatch } from '@grafana-module/app/store/store';
+import { AccessControlAction } from '@grafana-module/app/types';
+import { RuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { PromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { DashboardQueryRunnerOptions, DashboardQueryRunnerWorker, DashboardQueryRunnerWorkerResult } from './types';
 import { emptyResult, handleDashboardQueryRunnerWorkerError } from './utils';

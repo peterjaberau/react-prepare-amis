@@ -9,7 +9,7 @@ import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizToolt
 import { VizTooltipWrapper } from '@grafana/ui/src/components/VizTooltip/VizTooltipWrapper';
 import { VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
 import { getContentItems } from '@grafana/ui/src/components/VizTooltip/utils';
-import { findNextStateIndex, fmtDuration } from 'app/core/components/TimelineChart/utils';
+import { findNextStateIndex, fmtDuration } from '@grafana-module/app/core/components/TimelineChart/utils';
 
 import { getFieldActions } from '../status-history/utils';
 import { TimeSeriesTooltipProps } from '../timeseries/TimeSeriesTooltip';

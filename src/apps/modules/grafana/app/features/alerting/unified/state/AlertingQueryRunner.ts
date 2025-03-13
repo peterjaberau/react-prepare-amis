@@ -15,12 +15,12 @@ import {
   withLoadingIndicator,
 } from '@data/index';
 import { DataSourceWithBackend, FetchResponse, getDataSourceSrv, toDataQueryError } from '@runtime/index';
-import { t } from 'app/core/internationalization';
-import { BackendSrv, getBackendSrv } from 'app/core/services/backend_srv';
-import { isExpressionQuery } from 'app/features/expressions/guards';
-import { cancelNetworkRequestsOnUnsubscribe } from 'app/features/query/state/processing/canceler';
-import { setStructureRevision } from 'app/features/query/state/processing/revision';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { t } from '@grafana-module/app/core/internationalization';
+import { BackendSrv, getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
+import { cancelNetworkRequestsOnUnsubscribe } from '@grafana-module/app/features/query/state/processing/canceler';
+import { setStructureRevision } from '@grafana-module/app/features/query/state/processing/revision';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { LinkError, createDAGFromQueriesSafe, getDescendants } from '../components/rule-editor/dag';
 import { getTimeRangeForExpression } from '../utils/timeRange';

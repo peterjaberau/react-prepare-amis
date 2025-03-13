@@ -5,8 +5,8 @@ import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Icon, IconButton, Link, Spinner, useStyles2, Text } from '@grafana/ui';
 import { getSvgSize } from '@grafana/ui/src/components/Icon/utils';
-import { t } from 'app/core/internationalization';
-import { getIconForItem } from 'app/features/search/service/utils';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getIconForItem } from '@grafana-module/app/features/search/service/utils';
 
 import { Indent } from '../../../core/components/Indent/Indent';
 import { useChildrenByParentUIDState } from '../state';

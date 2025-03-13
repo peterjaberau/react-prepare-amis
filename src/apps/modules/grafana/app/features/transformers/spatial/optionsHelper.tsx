@@ -3,9 +3,9 @@ import { set, get as lodashGet } from 'lodash';
 import { StandardEditorContext, TransformerUIProps, PanelOptionsEditorBuilder } from '@data/index';
 import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
 import { NestedValueAccess } from '@grafana/data/src/utils/OptionsUIBuilders';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { fillOptionsPaneItems } from 'app/features/dashboard/components/PanelEditor/getVisualizationOptions';
-import { setOptionImmutably } from 'app/features/dashboard/components/PanelEditor/utils';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { fillOptionsPaneItems } from '@grafana-module/app/features/dashboard/components/PanelEditor/getVisualizationOptions';
+import { setOptionImmutably } from '@grafana-module/app/features/dashboard/components/PanelEditor/utils';
 
 export function getTransformerOptionPane<T = any>(
   props: TransformerUIProps<T>,

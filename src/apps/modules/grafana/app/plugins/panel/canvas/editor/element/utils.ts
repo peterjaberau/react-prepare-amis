@@ -1,8 +1,8 @@
 import { AppEvents, textUtil } from '@data/index';
 import { BackendSrvRequest, getBackendSrv, getTemplateSrv } from '@runtime/index';
-import { appEvents } from 'app/core/core';
-import { createAbsoluteUrl, RelativeUrl } from 'app/features/alerting/unified/utils/url';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
+import { appEvents } from '@grafana-module/app/core/core';
+import { createAbsoluteUrl, RelativeUrl } from '@grafana-module/app/features/alerting/unified/utils/url';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 
 import { HttpRequestMethod } from '../../panelcfg.gen';
 

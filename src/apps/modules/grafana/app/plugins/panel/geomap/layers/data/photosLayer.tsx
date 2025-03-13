@@ -14,9 +14,9 @@ import {
   Field,
 } from '@data/index';
 import { FrameGeometrySourceMode, MapLayerOptions } from '@schema/index';
-import { findField } from 'app/features/dimensions';
-import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
-import { getLocationMatchers } from 'app/features/geo/utils/location';
+import { findField } from '@grafana-module/app/features/dimensions';
+import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
+import { getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
 
 // Configuration options for Circle overlays
 export interface PhotoConfig {

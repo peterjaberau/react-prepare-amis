@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Action, DataFrame, VariableSuggestion } from '@data/index';
 import { Button } from '@grafana/ui/src/components/Button';
 import { Modal } from '@grafana/ui/src/components/Modal/Modal';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { ActionEditor } from './ActionEditor';
 

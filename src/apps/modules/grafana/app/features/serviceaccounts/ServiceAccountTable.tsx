@@ -13,9 +13,9 @@ import {
   IconButton,
   Icon,
 } from '@grafana/ui';
-import { UserRolePicker } from 'app/core/components/RolePicker/UserRolePicker';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction, OrgRole, Role, ServiceAccountDTO } from 'app/types';
+import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction, OrgRole, Role, ServiceAccountDTO } from '@grafana-module/app/types';
 
 import { OrgRolePicker } from '../admin/OrgRolePicker';
 

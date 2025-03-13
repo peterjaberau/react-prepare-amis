@@ -20,16 +20,16 @@ import {
   InlineLabel,
   RadioButtonGroup,
 } from '@grafana/ui';
-import { NumberValueEditor } from 'app/core/components/OptionsUI/number';
-import { SliderValueEditor } from 'app/core/components/OptionsUI/slider';
+import { NumberValueEditor } from '@grafana-module/app/core/components/OptionsUI/number';
+import { SliderValueEditor } from '@grafana-module/app/core/components/OptionsUI/slider';
 import {
   ColorDimensionEditor,
   ResourceDimensionEditor,
   ScaleDimensionEditor,
   ScalarDimensionEditor,
   TextDimensionEditor,
-} from 'app/features/dimensions/editors';
-import { ResourceFolderName, defaultTextConfig, MediaType } from 'app/features/dimensions/types';
+} from '@grafana-module/app/features/dimensions/editors';
+import { ResourceFolderName, defaultTextConfig, MediaType } from '@grafana-module/app/features/dimensions/types';
 
 import {
   HorizontalAlign,

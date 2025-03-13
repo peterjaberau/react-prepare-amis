@@ -7,11 +7,11 @@ import { of } from 'rxjs';
 import { DataFrame, formattedValueToString, getFieldColorModeForField, GrafanaTheme2 } from '@data/index';
 import { getMinMaxAndDelta } from '@grafana/data/src/field/scale';
 import { useStyles2, VizLegendItem } from '@grafana/ui';
-import { ColorScale } from 'app/core/components/ColorScale/ColorScale';
-import { SanitizedSVG } from 'app/core/components/SVG/SanitizedSVG';
-import { getThresholdItems } from 'app/core/components/TimelineChart/utils';
-import { config } from 'app/core/config';
-import { DimensionSupplier } from 'app/features/dimensions';
+import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
+import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
+import { getThresholdItems } from '@grafana-module/app/core/components/TimelineChart/utils';
+import { config } from '@grafana-module/app/core/config';
+import { DimensionSupplier } from '@grafana-module/app/features/dimensions';
 
 import { StyleConfigState } from '../style/types';
 import { MapLayerState } from '../types';

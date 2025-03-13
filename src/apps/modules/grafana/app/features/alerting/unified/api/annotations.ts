@@ -1,5 +1,5 @@
 import { getBackendSrv } from '@runtime/index';
-import { StateHistoryItem } from 'app/types/unified-alerting';
+import { StateHistoryItem } from '@grafana-module/app/types/unified-alerting';
 
 export function fetchAnnotations(alertUID: string): Promise<StateHistoryItem[]> {
   return getBackendSrv()

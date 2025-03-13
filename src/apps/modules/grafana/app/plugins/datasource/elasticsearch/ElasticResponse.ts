@@ -9,7 +9,7 @@ import {
   PreferredVisualisationType,
 } from '@data/index';
 import { convertFieldType } from '@grafana/data/src/transformations/transformers/convertFieldType';
-import TableModel from 'app/core/TableModel';
+import TableModel from '@grafana-module/app/core/TableModel';
 
 import { isMetricAggregationWithField } from './components/QueryEditor/MetricAggregationsEditor/aggregations';
 import { metricAggregationConfig } from './components/QueryEditor/MetricAggregationsEditor/utils';

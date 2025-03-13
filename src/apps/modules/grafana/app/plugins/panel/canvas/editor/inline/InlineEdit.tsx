@@ -5,8 +5,8 @@ import { Resizable, ResizeCallbackData } from 'react-resizable';
 
 import { Dimensions2D, GrafanaTheme2 } from '@data/index';
 import { IconButton, Portal, useStyles2 } from '@grafana/ui';
-import store from 'app/core/store';
-import { Scene } from 'app/features/canvas/runtime/scene';
+import store from '@grafana-module/app/core/store';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
 
 import { InlineEditBody } from './InlineEditBody';
 

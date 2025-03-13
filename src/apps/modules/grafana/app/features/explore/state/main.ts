@@ -4,10 +4,10 @@ import { AnyAction } from 'redux';
 
 import { SplitOpenOptions, TimeRange, EventBusSrv } from '@data/index';
 import { locationService } from '@runtime/index';
-import { generateExploreId, GetExploreUrlArguments } from 'app/core/utils/explore';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { getTemplateSrv } from 'app/features/templating/template_srv';
-import { CorrelationEditorDetailsUpdate, ExploreItemState, ExploreState } from 'app/types/explore';
+import { generateExploreId, GetExploreUrlArguments } from '@grafana-module/app/core/utils/explore';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { getTemplateSrv } from '@grafana-module/app/features/templating/template_srv';
+import { CorrelationEditorDetailsUpdate, ExploreItemState, ExploreState } from '@grafana-module/app/types/explore';
 
 import { RichHistoryResults } from '../../../core/history/RichHistoryStorage';
 import { RichHistorySearchFilters, RichHistorySettings } from '../../../core/utils/richHistoryTypes';

@@ -4,7 +4,7 @@ import { FieldDisplay, getDisplayProcessor, getFieldDisplayValues, PanelProps } 
 import { BarGaugeSizing, VizOrientation } from '@schema/index';
 import { DataLinksContextMenu, Gauge, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
 import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 import { clearNameForSingleSeries } from '../bargauge/BarGaugePanel';
 

@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
 import { Button, Stack, Text } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { TabItems } from './TabItems';
 

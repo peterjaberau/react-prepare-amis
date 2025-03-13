@@ -3,8 +3,8 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { useAsync } from 'react-use';
 
 import { Button, LinkButton, LoadingPlaceholder, Stack } from '@grafana/ui';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { Trans } from 'app/core/internationalization';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { AppChromeUpdate } from '../../../../../../core/components/AppChrome/AppChromeUpdate';
 import {

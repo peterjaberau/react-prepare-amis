@@ -15,10 +15,10 @@ import {
   Stack,
   WeekStart,
 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { FolderPicker } from 'app/core/components/Select/FolderPicker';
-import { t, Trans } from 'app/core/internationalization';
-import { updateTimeZoneDashboard, updateWeekStartDashboard } from 'app/features/dashboard/state/actions';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { updateTimeZoneDashboard, updateWeekStartDashboard } from '@grafana-module/app/features/dashboard/state/actions';
 
 import { DeleteDashboardButton } from '../DeleteDashboard/DeleteDashboardButton';
 import { GenAIDashDescriptionButton } from '../GenAI/GenAIDashDescriptionButton';

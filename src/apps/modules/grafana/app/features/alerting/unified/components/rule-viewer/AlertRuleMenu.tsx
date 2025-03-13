@@ -1,11 +1,11 @@
 import { AppEvents } from '@data/index';
 import { ComponentSize, Dropdown, Menu } from '@grafana/ui';
-import appEvents from 'app/core/app_events';
-import MenuItemPauseRule from 'app/features/alerting/unified/components/MenuItemPauseRule';
-import MoreButton from 'app/features/alerting/unified/components/MoreButton';
-import { useRulePluginLinkExtension } from 'app/features/alerting/unified/plugins/useRulePluginLinkExtensions';
-import { Rule, RuleGroupIdentifierV2, RuleIdentifier } from 'app/types/unified-alerting';
-import { PromAlertingRuleState, RulerRuleDTO } from 'app/types/unified-alerting-dto';
+import appEvents from '@grafana-module/app/core/app_events';
+import MenuItemPauseRule from '@grafana-module/app/features/alerting/unified/components/MenuItemPauseRule';
+import MoreButton from '@grafana-module/app/features/alerting/unified/components/MoreButton';
+import { useRulePluginLinkExtension } from '@grafana-module/app/features/alerting/unified/plugins/useRulePluginLinkExtensions';
+import { Rule, RuleGroupIdentifierV2, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { PromAlertingRuleState, RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { AlertRuleAction, useRulerRuleAbility } from '../../hooks/useAbilities';
 import { createShareLink, isLocalDevEnv, isOpenSourceEdition } from '../../utils/misc';

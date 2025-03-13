@@ -5,11 +5,11 @@ import { ReplaySubject, Subscription } from 'rxjs';
 import { PanelProps } from '@data/index';
 import { locationService } from '@grafana/runtime/src';
 import { PanelContext, PanelContextRoot } from '@grafana/ui';
-import { CanvasFrameOptions } from 'app/features/canvas/frame';
-import { ElementState } from 'app/features/canvas/runtime/element';
-import { Scene } from 'app/features/canvas/runtime/scene';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { PanelEditEnteredEvent, PanelEditExitedEvent } from 'app/types/events';
+import { CanvasFrameOptions } from '@grafana-module/app/features/canvas/frame';
+import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { PanelEditEnteredEvent, PanelEditExitedEvent } from '@grafana-module/app/types/events';
 
 import { SetBackground } from './components/SetBackground';
 import { InlineEdit } from './editor/inline/InlineEdit';

@@ -16,19 +16,19 @@ import {
   TextArea,
   useStyles2,
 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 import {
   trackEditInputWithTemplate,
   trackUseCustomInputInTemplate,
   trackUseSingleTemplateInInput,
-} from 'app/features/alerting/unified/Analytics';
-import { templatesApi } from 'app/features/alerting/unified/api/templateApi';
+} from '@grafana-module/app/features/alerting/unified/Analytics';
+import { templatesApi } from '@grafana-module/app/features/alerting/unified/api/templateApi';
 import {
   NotificationTemplate,
   useNotificationTemplates,
-} from 'app/features/alerting/unified/components/contact-points/useNotificationTemplates';
-import { useAlertmanager } from 'app/features/alerting/unified/state/AlertmanagerContext';
-import { NotificationChannelOption } from 'app/types';
+} from '@grafana-module/app/features/alerting/unified/components/contact-points/useNotificationTemplates';
+import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
+import { NotificationChannelOption } from '@grafana-module/app/types';
 
 import { defaultPayloadString } from '../../TemplateForm';
 

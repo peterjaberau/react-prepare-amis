@@ -1,8 +1,8 @@
 import { DeepMap, FieldError, useFormContext } from 'react-hook-form';
 
 import { Button, useStyles2 } from '@grafana/ui';
-import { useControlledFieldArray } from 'app/features/alerting/unified/hooks/useControlledFieldArray';
-import { NotificationChannelOption } from 'app/types';
+import { useControlledFieldArray } from '@grafana-module/app/features/alerting/unified/hooks/useControlledFieldArray';
+import { NotificationChannelOption } from '@grafana-module/app/types';
 
 import { ActionIcon } from '../../../rules/ActionIcon';
 import { CollapsibleSection } from '../CollapsibleSection';

@@ -11,7 +11,7 @@ import {
 } from '@scenes/index';
 import { DataSourceRef } from '@grafana/schema/dist/esm/index.gen';
 import { DashboardV2Spec, PanelKind, PanelQueryKind } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
 
 import { DashboardDatasourceBehaviour } from '../../scene/DashboardDatasourceBehaviour';
 import { VizPanelLinks, VizPanelLinksMenu } from '../../scene/PanelLinks';

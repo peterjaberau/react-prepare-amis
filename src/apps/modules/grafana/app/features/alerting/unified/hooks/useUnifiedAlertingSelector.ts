@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { StoreState, useSelector } from 'app/types';
+import { StoreState, useSelector } from '@grafana-module/app/types';
 
 import { UnifiedAlertingState } from '../state/reducers';
 

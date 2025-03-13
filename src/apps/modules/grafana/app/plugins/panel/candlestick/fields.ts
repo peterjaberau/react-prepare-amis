@@ -8,7 +8,7 @@ import {
   TimeRange,
 } from '@data/index';
 import { maybeSortFrame } from '@grafana/data/src/transformations/transformers/joinDataFrames';
-import { findField } from 'app/features/dimensions';
+import { findField } from '@grafana-module/app/features/dimensions';
 
 import { prepareGraphableFields } from '../timeseries/utils';
 

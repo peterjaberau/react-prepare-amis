@@ -13,7 +13,7 @@ import {
 import { VizLegendOptions, AxisPlacement } from '@schema/index';
 import { UPlotConfigBuilder, VizLayout, VizLayoutLegendProps, VizLegend, VizLegendItem, useTheme2 } from '@grafana/ui';
 import { getDisplayValuesForCalcs } from '@grafana/ui/src/components/uPlot/utils';
-import { getThresholdItems, getValueMappingItems } from 'app/core/components/TimelineChart/utils';
+import { getThresholdItems, getValueMappingItems } from '@grafana-module/app/core/components/TimelineChart/utils';
 interface BarChartLegend2Props extends VizLegendOptions, Omit<VizLayoutLegendProps, 'children'> {
   data: DataFrame[];
   colorField?: Field | null;

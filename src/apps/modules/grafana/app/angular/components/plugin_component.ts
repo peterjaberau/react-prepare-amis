@@ -2,8 +2,8 @@ import angular, { ILocationService } from 'angular';
 import { each } from 'lodash';
 
 import { DataSourceApi, PanelEvents } from '@data/index';
-import coreModule from 'app/angular/core_module';
-import config from 'app/core/config';
+import coreModule from '@grafana-module/app/angular/core_module';
+import config from '@grafana-module/app/core/config';
 
 import { importPanelPlugin } from '../../features/plugins/importPanelPlugin';
 import { importDataSourcePlugin, importAppPlugin } from '../../features/plugins/plugin_loader';

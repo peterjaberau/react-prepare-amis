@@ -1,6 +1,6 @@
 import { DataFrameView, SelectableValue } from '@data/index';
-import { TermCount } from 'app/core/components/TagFilter/TagFilter';
-import { PermissionLevelString } from 'app/types';
+import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
+import { PermissionLevelString } from '@grafana-module/app/types';
 
 export interface FacetField {
   field: string;

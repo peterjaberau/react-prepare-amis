@@ -1,6 +1,6 @@
 import { EmptyState } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { SearchState } from 'app/features/search/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { SearchState } from '@grafana-module/app/features/search/types';
 
 interface RecentlyDeletedEmptyStateProps {
   searchState: SearchState;

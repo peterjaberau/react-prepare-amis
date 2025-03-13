@@ -3,13 +3,13 @@ import { useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Spinner, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { useCreatePublicDashboardMutation } from 'app/features/dashboard/api/publicDashboardApi';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction, useSelector } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { useCreatePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { AccessControlAction, useSelector } from '@grafana-module/app/types';
 
 import { NoUpsertPermissionsAlert } from '../ModalAlerts/NoUpsertPermissionsAlert';
 import { UnsupportedDataSourcesAlert } from '../ModalAlerts/UnsupportedDataSourcesAlert';

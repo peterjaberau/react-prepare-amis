@@ -3,10 +3,10 @@ import { Observable, ReplaySubject } from 'rxjs';
 
 import { EventBusSrv, PanelData, PanelPlugin, PanelProps, FieldConfigSource } from '@data/index';
 import { AngularComponent, getAngularLoader, RefreshEvent } from '@runtime/index';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { DashboardModelCompatibilityWrapper } from 'app/features/dashboard-scene/utils/DashboardModelCompatibilityWrapper';
-import { GetDataOptions } from 'app/features/query/state/PanelQueryRunner';
-import { RenderEvent } from 'app/types/events';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { DashboardModelCompatibilityWrapper } from '@grafana-module/app/features/dashboard-scene/utils/DashboardModelCompatibilityWrapper';
+import { GetDataOptions } from '@grafana-module/app/features/query/state/PanelQueryRunner';
+import { RenderEvent } from '@grafana-module/app/types/events';
 
 interface AngularScopeProps {
   panel: PanelModelCompatibilityWrapper;

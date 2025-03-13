@@ -1,10 +1,10 @@
 import { get as lodashGet } from 'lodash';
 
 import { NestedPanelOptions, NestedValueAccess } from '@grafana/data/src/utils/OptionsUIBuilders';
-import { ElementState } from 'app/features/canvas/runtime/element';
-import { FrameState } from 'app/features/canvas/runtime/frame';
-import { Scene } from 'app/features/canvas/runtime/scene';
-import { setOptionImmutably } from 'app/features/dashboard/components/PanelEditor/utils';
+import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
+import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
+import { setOptionImmutably } from '@grafana-module/app/features/dashboard/components/PanelEditor/utils';
 
 import { InstanceState } from '../../CanvasPanel';
 import { PlacementEditor } from '../element/PlacementEditor';

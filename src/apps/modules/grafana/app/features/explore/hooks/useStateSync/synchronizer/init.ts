@@ -4,12 +4,12 @@ import { MutableRefObject } from 'react';
 import { EventBusSrv } from '@data/index';
 import { LocationService } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { initializeExplore } from 'app/features/explore/state/explorePane';
-import { clearPanes, syncTimesAction } from 'app/features/explore/state/main';
-import { fromURLRange } from 'app/features/explore/state/utils';
-import { withUniqueRefIds } from 'app/features/explore/utils/queries';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { ThunkDispatch } from 'app/types';
+import { initializeExplore } from '@grafana-module/app/features/explore/state/explorePane';
+import { clearPanes, syncTimesAction } from '@grafana-module/app/features/explore/state/main';
+import { fromURLRange } from '@grafana-module/app/features/explore/state/utils';
+import { withUniqueRefIds } from '@grafana-module/app/features/explore/utils/queries';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { ThunkDispatch } from '@grafana-module/app/types';
 
 import { getUrlStateFromPaneState } from '../index';
 import {

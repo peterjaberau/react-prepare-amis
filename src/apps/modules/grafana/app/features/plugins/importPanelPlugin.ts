@@ -1,7 +1,7 @@
 import { ComponentType } from 'react';
 
 import { PanelPlugin, PanelPluginMeta, PanelProps, PluginLoadingStrategy } from '@data/index';
-import config from 'app/core/config';
+import config from '@grafana-module/app/core/config';
 
 import { getPanelPluginLoadError } from '../panel/components/PanelPluginError';
 

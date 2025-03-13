@@ -12,7 +12,7 @@ import {
 } from '@data/index';
 import { config } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { GrafanaQueryType } from 'app/plugins/datasource/grafana/types';
+import { GrafanaQueryType } from '@grafana-module/app/plugins/datasource/grafana/types';
 
 import { DashboardGridItem } from '../../scene/layout-default/DashboardGridItem';
 import { gridItemToPanel, vizPanelToPanel } from '../../serialization/transformSceneToSaveModel';

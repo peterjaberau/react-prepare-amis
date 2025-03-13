@@ -4,7 +4,7 @@ import { components, MultiValueRemoveProps } from 'react-select';
 
 import { escapeStringForRegex, GrafanaTheme2, SelectableValue } from '@data/index';
 import { Icon, MultiSelect, useStyles2 } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { TagBadge, getStyles as getTagBadgeStyles } from './TagBadge';
 import { TagOption, TagSelectOption } from './TagOption';

@@ -6,7 +6,7 @@ import {
   PromApiFeatures,
   PromApplication,
   PromBuildInfoResponse,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { RULER_NOT_SUPPORTED_MSG } from '../utils/constants';
 import { GRAFANA_RULES_SOURCE_NAME, getDataSourceByName, getRulesDataSourceByUID } from '../utils/datasource';

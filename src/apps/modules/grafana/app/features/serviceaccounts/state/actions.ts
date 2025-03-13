@@ -1,9 +1,9 @@
 import { debounce } from 'lodash';
 
 import { getBackendSrv } from '@runtime/index';
-import { fetchRoleOptions } from 'app/core/components/RolePicker/api';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AccessControlAction, ServiceAccountDTO, ServiceAccountStateFilter, ThunkResult } from 'app/types';
+import { fetchRoleOptions } from '@grafana-module/app/core/components/RolePicker/api';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AccessControlAction, ServiceAccountDTO, ServiceAccountStateFilter, ThunkResult } from '@grafana-module/app/types';
 
 import { ServiceAccountToken } from '../components/CreateTokenModal';
 

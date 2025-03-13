@@ -11,7 +11,7 @@ import {
   VizPanel,
   VizPanelMenu,
 } from '@scenes/index';
-import { initialIntervalVariableModelState } from 'app/features/variables/interval/reducer';
+import { initialIntervalVariableModelState } from '@grafana-module/app/features/variables/interval/reducer';
 
 import { DashboardDatasourceBehaviour } from '../scene/DashboardDatasourceBehaviour';
 import { DashboardScene } from '../scene/DashboardScene';

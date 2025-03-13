@@ -1,10 +1,10 @@
 import { HttpResponse, http } from 'msw';
 
-import { getAlertmanagerConfig } from 'app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from 'app/features/alerting/unified/mocks/server/utils';
-import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1TemplateGroup } from 'app/features/alerting/unified/openapi/templatesApi.gen';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { PROVENANCE_ANNOTATION, PROVENANCE_NONE } from 'app/features/alerting/unified/utils/k8s/constants';
+import { getAlertmanagerConfig } from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
+import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from '@grafana-module/app/features/alerting/unified/mocks/server/utils';
+import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1TemplateGroup } from '@grafana-module/app/features/alerting/unified/openapi/templatesApi.gen';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { PROVENANCE_ANNOTATION, PROVENANCE_NONE } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
 
 const config = getAlertmanagerConfig(GRAFANA_RULES_SOURCE_NAME);
 

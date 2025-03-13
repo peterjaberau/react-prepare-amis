@@ -6,9 +6,9 @@ import { SelectableValue, TimeRange } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Panel } from '@schema/index';
 import { Alert, Button, Field, Modal, RadioButtonGroup } from '@grafana/ui';
-import { DashboardPicker } from 'app/core/components/Select/DashboardPicker';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { addToDashboard, SubmissionError } from './addToDashboard';
 

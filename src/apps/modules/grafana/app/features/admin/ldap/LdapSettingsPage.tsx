@@ -22,12 +22,12 @@ import {
   MultiSelect,
   SecretInput,
 } from '@grafana/ui';
-import { FormPrompt } from 'app/core/components/FormPrompt/FormPrompt';
-import { Page } from 'app/core/components/Page/Page';
-import config from 'app/core/config';
-import { t, Trans } from 'app/core/internationalization';
-import { Loader } from 'app/features/plugins/admin/components/Loader';
-import { LdapPayload, MapKeyCertConfigured, StoreState } from 'app/types';
+import { FormPrompt } from '@grafana-module/app/core/components/FormPrompt/FormPrompt';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import config from '@grafana-module/app/core/config';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { Loader } from '@grafana-module/app/features/plugins/admin/components/Loader';
+import { LdapPayload, MapKeyCertConfigured, StoreState } from '@grafana-module/app/types';
 
 import { LdapDrawerComponent } from './LdapDrawer';
 

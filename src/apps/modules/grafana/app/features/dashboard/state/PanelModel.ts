@@ -23,15 +23,15 @@ import {
 } from '@data/index';
 import { getTemplateSrv, RefreshEvent } from '@runtime/index';
 import { LibraryPanel, LibraryPanelRef } from '@schema/index';
-import config from 'app/core/config';
-import { safeStringifyValue } from 'app/core/utils/explore';
-import { QueryGroupOptions } from 'app/types';
+import config from '@grafana-module/app/core/config';
+import { safeStringifyValue } from '@grafana-module/app/core/utils/explore';
+import { QueryGroupOptions } from '@grafana-module/app/types';
 import {
   PanelOptionsChangedEvent,
   PanelQueriesChangedEvent,
   PanelTransformationsChangedEvent,
   RenderEvent,
-} from 'app/types/events';
+} from '@grafana-module/app/types/events';
 
 import { PanelQueryRunner } from '../../query/state/PanelQueryRunner';
 import { TimeOverrideResult } from '../utils/panel';

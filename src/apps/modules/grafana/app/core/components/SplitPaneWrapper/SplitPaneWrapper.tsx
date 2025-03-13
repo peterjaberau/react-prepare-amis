@@ -5,7 +5,7 @@ import SplitPane, { Split } from 'react-split-pane';
 
 import { GrafanaTheme2 } from '@data/index';
 import { getDragStyles } from '@grafana/ui';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 interface Props {
   splitOrientation?: Split;

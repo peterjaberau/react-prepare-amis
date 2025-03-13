@@ -6,11 +6,11 @@ import { useLocation } from 'react-router-dom-v5-compat';
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { ScrollContainer, useStyles2, Stack } from '@grafana/ui';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { t } from 'app/core/internationalization';
-import { setBookmark } from 'app/core/reducers/navBarTree';
-import { usePatchUserPreferencesMutation } from 'app/features/preferences/api/index';
-import { useDispatch, useSelector } from 'app/types';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { t } from '@grafana-module/app/core/internationalization';
+import { setBookmark } from '@grafana-module/app/core/reducers/navBarTree';
+import { usePatchUserPreferencesMutation } from '@grafana-module/app/cp/features/preferences/api/index';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { TOP_BAR_LEVEL_HEIGHT } from '../types';
 

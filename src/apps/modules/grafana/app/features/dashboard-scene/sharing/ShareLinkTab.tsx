@@ -3,10 +3,10 @@ import { config } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { TimeZone } from '@schema/index';
 import { Alert, ClipboardButton, Field, FieldSet, Icon, Input, Switch } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { createDashboardShareUrl, createShortLink, getShareUrlParams } from 'app/core/utils/shortLinks';
-import { ThemePicker } from 'app/features/dashboard/components/ShareModal/ThemePicker';
-import { getTrackingSource, shareDashboardType } from 'app/features/dashboard/components/ShareModal/utils';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { createDashboardShareUrl, createShortLink, getShareUrlParams } from '@grafana-module/app/core/utils/shortLinks';
+import { ThemePicker } from '@grafana-module/app/features/dashboard/components/ShareModal/ThemePicker';
+import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 
 import { getDashboardUrl } from '../utils/getDashboardUrl';
 import { DashboardInteractions } from '../utils/interactions';

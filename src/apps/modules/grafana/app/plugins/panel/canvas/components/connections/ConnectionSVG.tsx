@@ -3,9 +3,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { ConnectionDirection } from 'app/features/canvas/element';
-import { Scene } from 'app/features/canvas/runtime/scene';
+import { config } from '@grafana-module/app/core/config';
+import { ConnectionDirection } from '@grafana-module/app/features/canvas/element';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
 
 import { ConnectionCoordinates } from '../../panelcfg.gen';
 import { ConnectionState } from '../../types';

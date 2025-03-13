@@ -3,7 +3,7 @@ import { uniqueId } from 'lodash';
 
 import { DataSourceInstanceSettings, PluginType } from '@data/index';
 import { config } from '@runtime/index';
-import { FolderDTO } from 'app/types';
+import { FolderDTO } from '@grafana-module/app/types';
 import {
   PromAlertingRuleDTO,
   PromAlertingRuleState,
@@ -12,7 +12,7 @@ import {
   RulerAlertingRuleDTO,
   RulerRecordingRuleDTO,
   RulerRuleGroupDTO,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { setupDataSources } from '../../testSetup/datasources';
 import { DataSourceType } from '../../utils/datasource';

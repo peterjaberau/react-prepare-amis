@@ -11,7 +11,7 @@ import {
 } from '@data/index';
 import { InlineField, Select } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
-import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';
+import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

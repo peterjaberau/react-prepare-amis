@@ -1,8 +1,8 @@
 import { useMemo, ReactElement } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { getMessageFromError } from 'app/core/utils/errors';
-import { AppNotification, AppNotificationSeverity, useDispatch } from 'app/types';
+import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
+import { AppNotification, AppNotificationSeverity, useDispatch } from '@grafana-module/app/types';
 
 import { notifyApp } from '../actions';
 

@@ -46,7 +46,7 @@ import {
 import { Duration } from '@grafana/lezer-logql';
 import { BackendSrvRequest, config, DataSourceWithBackend, getTemplateSrv, TemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 
 import LanguageProvider from './LanguageProvider';
 import { LiveStreams, LokiLiveTarget } from './LiveStreams';

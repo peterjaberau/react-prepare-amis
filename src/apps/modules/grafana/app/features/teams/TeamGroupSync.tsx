@@ -3,11 +3,11 @@ import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { Input, Tooltip, Icon, Button, useTheme2, InlineField, InlineFieldRow } from '@grafana/ui';
-import { SlideDown } from 'app/core/components/Animations/SlideDown';
-import { CloseButton } from 'app/core/components/CloseButton/CloseButton';
-import EmptyListCTA from 'app/core/components/EmptyListCTA/EmptyListCTA';
-import { UpgradeBox, UpgradeContent, UpgradeContentProps } from 'app/core/components/Upgrade/UpgradeBox';
-import { highlightTrial } from 'app/features/admin/utils';
+import { SlideDown } from '@grafana-module/app/core/components/Animations/SlideDown';
+import { CloseButton } from '@grafana-module/app/core/components/CloseButton/CloseButton';
+import EmptyListCTA from '@grafana-module/app/core/components/EmptyListCTA/EmptyListCTA';
+import { UpgradeBox, UpgradeContent, UpgradeContentProps } from '@grafana-module/app/core/components/Upgrade/UpgradeBox';
+import { highlightTrial } from '@grafana-module/app/features/admin/utils';
 
 import { StoreState, TeamGroup } from '../../types';
 

@@ -3,8 +3,8 @@ import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { locationService } from '@runtime/index';
-import { Page } from 'app/core/components/Page/Page';
-import { SettingsPageProps } from 'app/features/dashboard/components/DashboardSettings/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { SettingsPageProps } from '@grafana-module/app/features/dashboard/components/DashboardSettings/types';
 
 import { StoreState, ThunkDispatch } from '../../../types';
 import { VariablesUnknownTable } from '../inspect/VariablesUnknownTable';

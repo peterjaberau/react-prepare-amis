@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DeepMap, FieldError, FieldErrors, useFormContext } from 'react-hook-form';
 
 import { Field, SecretInput } from '@grafana/ui';
-import { NotificationChannelOption, NotificationChannelSecureFields } from 'app/types';
+import { NotificationChannelOption, NotificationChannelSecureFields } from '@grafana-module/app/types';
 
 import { ChannelValues, ReceiverFormValues } from '../../../types/receiver-form';
 

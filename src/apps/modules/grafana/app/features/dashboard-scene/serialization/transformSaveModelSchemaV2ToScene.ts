@@ -53,10 +53,10 @@ import {
   AnnoKeyUpdatedTimestamp,
   AnnoKeyDashboardIsSnapshot,
   DeprecatedInternalId,
-} from 'app/features/apiserver/types';
-import { DashboardWithAccessInfo } from 'app/features/dashboard/api/types';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
-import { DashboardMeta } from 'app/types';
+} from '@grafana-module/app/features/apiserver/types';
+import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { DashboardMeta } from '@grafana-module/app/types';
 
 import { addPanelsOnLoadBehavior } from '../addToDashboard/addPanelsOnLoadBehavior';
 import { DashboardAnnotationsDataLayer } from '../scene/DashboardAnnotationsDataLayer';

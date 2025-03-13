@@ -2,8 +2,8 @@ import { useCallback } from 'react';
 
 import { locationService } from '@runtime/index';
 import { IconName, Menu } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { getTrackingSource, shareDashboardType } from 'app/features/dashboard/components/ShareModal/utils';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 import { DashboardInteractions } from '../../utils/interactions';

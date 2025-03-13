@@ -1,4 +1,4 @@
-import { CombinedRule } from 'app/types/unified-alerting';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 
 import { useCombinedRules } from './useCombinedRuleNamespaces';
 

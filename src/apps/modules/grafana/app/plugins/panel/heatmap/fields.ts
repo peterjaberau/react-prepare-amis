@@ -25,7 +25,7 @@ import {
   isHeatmapCellsDense,
   readHeatmapRowsCustomMeta,
   rowsToCellsHeatmap,
-} from 'app/features/transformers/calculateHeatmap/heatmap';
+} from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';
 
 import { CellValues, Options } from './types';
 import { boundedMinMax, valuesToFills } from './utils';

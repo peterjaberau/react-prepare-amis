@@ -17,7 +17,7 @@ import {
   TabsBar,
   useStyles2,
 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { PopupCard } from '../../HoverCard';
 import MoreButton from '../../MoreButton';

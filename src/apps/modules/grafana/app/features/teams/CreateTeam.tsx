@@ -4,12 +4,12 @@ import { useForm } from 'react-hook-form';
 import { NavModelItem } from '@data/index';
 import { getBackendSrv, locationService } from '@runtime/index';
 import { Button, Field, Input, FieldSet } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { TeamRolePicker } from 'app/core/components/RolePicker/TeamRolePicker';
-import { updateTeamRoles } from 'app/core/components/RolePicker/api';
-import { useRoleOptions } from 'app/core/components/RolePicker/hooks';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction, Role, TeamDTO } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { TeamRolePicker } from '@grafana-module/app/core/components/RolePicker/TeamRolePicker';
+import { updateTeamRoles } from '@grafana-module/app/core/components/RolePicker/api';
+import { useRoleOptions } from '@grafana-module/app/core/components/RolePicker/hooks';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction, Role, TeamDTO } from '@grafana-module/app/types';
 
 const pageNav: NavModelItem = {
   icon: 'users-alt',

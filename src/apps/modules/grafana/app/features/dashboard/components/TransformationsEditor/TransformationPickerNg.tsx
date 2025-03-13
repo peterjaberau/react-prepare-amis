@@ -11,9 +11,9 @@ import {
   SelectableValue,
 } from '@data/index';
 import { Card, Drawer, FilterPill, IconButton, Input, Switch, useStyles2 } from '@grafana/ui';
-import config from 'app/core/config';
-import { PluginStateInfo } from 'app/features/plugins/components/PluginStateInfo';
-import { categoriesLabels } from 'app/features/transformers/utils';
+import config from '@grafana-module/app/core/config';
+import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';
+import { categoriesLabels } from '@grafana-module/app/features/transformers/utils';
 
 import { FilterCategory } from './TransformationsEditor';
 

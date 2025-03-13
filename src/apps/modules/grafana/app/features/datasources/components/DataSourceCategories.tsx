@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { DataSourcePluginMeta, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { LinkButton, useStyles2 } from '@grafana/ui';
-import { DataSourcePluginCategory } from 'app/types';
+import { DataSourcePluginCategory } from '@grafana-module/app/types';
 
 import { ROUTES } from '../../connections/constants';
 

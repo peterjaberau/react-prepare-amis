@@ -1,5 +1,5 @@
-import config from 'app/core/config';
-import { listFolders } from 'app/features/browse-dashboards/api/services';
+import config from '@grafana-module/app/core/config';
+import { listFolders } from '@grafana-module/app/features/browse-dashboards/api/services';
 
 import { DashboardViewItem } from '../types';
 

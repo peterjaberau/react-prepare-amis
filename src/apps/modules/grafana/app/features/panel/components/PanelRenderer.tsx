@@ -11,7 +11,7 @@ import {
 } from '@data/index';
 import { getTemplateSrv, PanelRendererProps } from '@runtime/index';
 import { ErrorBoundaryAlert, usePanelContext, useTheme2 } from '@grafana/ui';
-import { appEvents } from 'app/core/core';
+import { appEvents } from '@grafana-module/app/core/core';
 
 import { importPanelPlugin, syncGetPanelPlugin } from '../../plugins/importPanelPlugin';
 

@@ -6,7 +6,7 @@ import { Controller, FieldErrors, FieldValues, useFormContext } from 'react-hook
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Alert, Button, Field, Select, Text, useStyles2 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { useUnifiedAlertingSelector } from '../../../hooks/useUnifiedAlertingSelector';
 import { ChannelValues, CommonSettingsComponentType } from '../../../types/receiver-form';

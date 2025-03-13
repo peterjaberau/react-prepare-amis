@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
 import { reportInteraction } from '@grafana/runtime/src';
-import { Trans } from 'app/core/internationalization';
-import { AddLibraryPanelContents } from 'app/features/library-panels/components/AddLibraryPanelModal/AddLibraryPanelModal';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AddLibraryPanelContents } from '@grafana-module/app/features/library-panels/components/AddLibraryPanelModal/AddLibraryPanelModal';
 
 import { ShareModalTabProps } from './types';
 import { getTrackingSource } from './utils';

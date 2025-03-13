@@ -10,8 +10,8 @@ import {
   RuleGroupIdentifierV2,
   RuleIdentifier,
   RuleWithLocation,
-} from 'app/types/unified-alerting';
-import { Annotations, Labels, PromRuleType, RulerCloudRuleDTO, RulerRuleDTO } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting';
+import { Annotations, Labels, PromRuleType, RulerCloudRuleDTO, RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { logError } from '../Analytics';
 import { shouldUsePrometheusRulesPrimary } from '../featureToggles';

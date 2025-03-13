@@ -1,5 +1,5 @@
 import { GrafanaLiveSrv, config, getBackendSrv, getGrafanaLiveSrv, setGrafanaLiveSrv } from '@runtime/index';
-import { liveTimer } from 'app/features/dashboard/dashgrid/liveTimer';
+import { liveTimer } from '@grafana-module/app/features/dashboard/dashgrid/liveTimer';
 
 import { contextSrv } from '../../core/services/context_srv';
 import { loadUrlToken } from '../../core/utils/urlToken';

@@ -6,7 +6,7 @@ import { produce } from 'immer';
 import { omit } from 'lodash';
 
 import { insertAfterImmutably, insertBeforeImmutably } from '@grafana/data/src/utils/arrayUtils';
-import { ROUTES_META_SYMBOL, Route, RouteWithID } from 'app/plugins/datasource/alertmanager/types';
+import { ROUTES_META_SYMBOL, Route, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import {
   ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Route,

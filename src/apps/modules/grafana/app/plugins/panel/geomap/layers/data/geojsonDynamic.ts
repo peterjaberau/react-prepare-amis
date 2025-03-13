@@ -17,7 +17,7 @@ import {
   EventBus,
 } from '@data/index';
 import { ComparisonOperation } from '@schema/index';
-import { findField } from 'app/features/dimensions';
+import { findField } from '@grafana-module/app/features/dimensions';
 
 import { StyleEditor } from '../../editor/StyleEditor';
 import { polyStyle } from '../../style/markers';

@@ -1,6 +1,6 @@
 import { CellProps, Column, HeaderProps } from 'react-table';
 
-import { DashboardViewItem, DashboardViewItemKind } from 'app/features/search/types';
+import { DashboardViewItem, DashboardViewItemKind } from '@grafana-module/app/features/search/types';
 
 export type DashboardTreeSelection = Record<DashboardViewItemKind, Record<string, boolean | undefined>> & {
   $all: boolean;

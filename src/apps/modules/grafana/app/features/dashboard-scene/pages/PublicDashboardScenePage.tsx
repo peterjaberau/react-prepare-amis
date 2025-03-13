@@ -5,17 +5,17 @@ import { useParams } from 'react-router-dom-v5-compat';
 import { GrafanaTheme2, PageLayoutType } from '@data/index';
 import { SceneComponentProps, UrlSyncContextProvider } from '@scenes/index';
 import { Alert, Box, Icon, Stack, useStyles2 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import PageLoader from 'app/core/components/PageLoader/PageLoader';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
-import { PublicDashboardFooter } from 'app/features/dashboard/components/PublicDashboard/PublicDashboardsFooter';
-import { PublicDashboardNotAvailable } from 'app/features/dashboard/components/PublicDashboardNotAvailable/PublicDashboardNotAvailable';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import { PublicDashboardFooter } from '@grafana-module/app/features/dashboard/components/PublicDashboard/PublicDashboardsFooter';
+import { PublicDashboardNotAvailable } from '@grafana-module/app/features/dashboard/components/PublicDashboardNotAvailable/PublicDashboardNotAvailable';
 import {
   PublicDashboardPageRouteParams,
   PublicDashboardPageRouteSearchParams,
-} from 'app/features/dashboard/containers/types';
-import { AppNotificationSeverity } from 'app/types';
-import { DashboardRoutes } from 'app/types/dashboard';
+} from '@grafana-module/app/features/dashboard/containers/types';
+import { AppNotificationSeverity } from '@grafana-module/app/types';
+import { DashboardRoutes } from '@grafana-module/app/types/dashboard';
 
 import { DashboardScene } from '../scene/DashboardScene';
 

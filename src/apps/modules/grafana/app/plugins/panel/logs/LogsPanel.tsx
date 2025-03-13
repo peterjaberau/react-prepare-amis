@@ -33,11 +33,11 @@ import {
 import { convertRawToRange } from '@grafana/data/src/datetime/rangeutil';
 import { config, getAppEvents } from '@runtime/index';
 import { ScrollContainer, usePanelContext, useStyles2 } from '@grafana/ui';
-import { getFieldLinksForExplore } from 'app/features/explore/utils/links';
-import { InfiniteScroll } from 'app/features/logs/components/InfiniteScroll';
-import { LogRowContextModal } from 'app/features/logs/components/log-context/LogRowContextModal';
-import { PanelDataErrorView } from 'app/features/panel/components/PanelDataErrorView';
-import { combineResponses } from 'app/plugins/datasource/loki/mergeResponses';
+import { getFieldLinksForExplore } from '@grafana-module/app/features/explore/utils/links';
+import { InfiniteScroll } from '@grafana-module/app/features/logs/components/InfiniteScroll';
+import { LogRowContextModal } from '@grafana-module/app/features/logs/components/log-context/LogRowContextModal';
+import { PanelDataErrorView } from '@grafana-module/app/features/panel/components/PanelDataErrorView';
+import { combineResponses } from '@grafana-module/app/plugins/datasource/loki/mergeResponses';
 
 import { createAndCopyShortLink, getLogsPermalinkRange } from '../../../core/utils/shortLinks';
 import { LogLabels } from '../../../features/logs/components/LogLabels';

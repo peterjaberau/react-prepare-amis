@@ -21,7 +21,7 @@ import {
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { DashboardLink, VariableFormatID } from '@schema/index';
-import { getConfig } from 'app/core/config';
+import { getConfig } from '@grafana-module/app/core/config';
 
 const timeRangeVars = [
   {

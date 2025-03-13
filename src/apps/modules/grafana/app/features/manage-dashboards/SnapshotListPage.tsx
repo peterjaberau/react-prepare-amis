@@ -1,4 +1,4 @@
-import { Page } from 'app/core/components/Page/Page';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { SnapshotListTable } from './components/SnapshotListTable';
 

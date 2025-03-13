@@ -4,8 +4,8 @@ import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { locationService, config, reportInteraction } from '@runtime/index';
 import { Modal, Button, Text, Space, TextLink } from '@grafana/ui';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { cleanUpDashboardAndVariables } from 'app/features/dashboard/state/actions';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { cleanUpDashboardAndVariables } from '@grafana-module/app/features/dashboard/state/actions';
 
 import { Trans, t } from '../../../../core/internationalization';
 import { useDeleteItemsMutation } from '../../../browse-dashboards/api/browseDashboardsAPI';

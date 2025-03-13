@@ -1,10 +1,10 @@
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { Alert, Button, LinkButton, Stack } from '@grafana/ui';
-import { useCleanup } from 'app/core/hooks/useCleanup';
-import { Trans } from 'app/core/internationalization';
-import { AlertManagerCortexConfig } from 'app/plugins/datasource/alertmanager/types';
-import { useDispatch } from 'app/types';
+import { useCleanup } from '@grafana-module/app/core/hooks/useCleanup';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { useUnifiedAlertingSelector } from '../../hooks/useUnifiedAlertingSelector';
 import { updateAlertManagerConfigAction } from '../../state/actions';

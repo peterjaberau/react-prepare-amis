@@ -17,7 +17,7 @@ import {
   activateSceneObjectAndParentTree,
   findOriginalVizPanelByKey,
   getVizPanelKeyForPanelId,
-} from 'app/features/dashboard-scene/utils/utils';
+} from '@grafana-module/app/features/dashboard-scene/utils/utils';
 
 import { MIXED_REQUEST_PREFIX } from '../mixed/MixedDataSource';
 

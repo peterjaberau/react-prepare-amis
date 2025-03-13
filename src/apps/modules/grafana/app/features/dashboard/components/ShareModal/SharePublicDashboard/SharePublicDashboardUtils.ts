@@ -1,7 +1,7 @@
 import { TypedVariableModel } from '@data/index';
 import { config, DataSourceWithBackend, featureEnabled } from '@runtime/index';
-import { getConfig } from 'app/core/config';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
+import { getConfig } from '@grafana-module/app/core/config';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 
 import { PanelModel } from '../../../state/PanelModel';
 import { shareDashboardType } from '../utils';

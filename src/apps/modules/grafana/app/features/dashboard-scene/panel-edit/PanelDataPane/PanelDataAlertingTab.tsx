@@ -4,12 +4,12 @@ import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
 import { Alert, LoadingPlaceholder, Tab, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import { RulesTable } from 'app/features/alerting/unified/components/rules/RulesTable';
-import { usePanelCombinedRules } from 'app/features/alerting/unified/hooks/usePanelCombinedRules';
-import { getRulesPermissions } from 'app/features/alerting/unified/utils/access-control';
-import { stringifyErrorLike } from 'app/features/alerting/unified/utils/misc';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { RulesTable } from '@grafana-module/app/features/alerting/unified/components/rules/RulesTable';
+import { usePanelCombinedRules } from '@grafana-module/app/features/alerting/unified/hooks/usePanelCombinedRules';
+import { getRulesPermissions } from '@grafana-module/app/features/alerting/unified/utils/access-control';
+import { stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
 
 import { getDashboardSceneFor, getPanelIdForVizPanel } from '../../utils/utils';
 

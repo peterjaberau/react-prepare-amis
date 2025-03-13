@@ -1,7 +1,7 @@
 import { get } from 'lodash';
 
 import { FetchError, isFetchError } from '@runtime/index';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 export type SupportedErrors = 'alerting.notifications.conflict' | string;
 

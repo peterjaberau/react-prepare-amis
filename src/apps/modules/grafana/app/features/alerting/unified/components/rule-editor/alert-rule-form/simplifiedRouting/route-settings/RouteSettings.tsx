@@ -6,13 +6,13 @@ import { Controller, useFormContext } from 'react-hook-form';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Field, FieldValidationMessage, InlineField, MultiSelect, Stack, Switch, Text, useStyles2 } from '@grafana/ui';
 import { MultiValueRemove, MultiValueRemoveProps } from '@grafana/ui/src/components/Select/MultiValue';
-import { RuleFormValues } from 'app/features/alerting/unified/types/rule-form';
+import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
 import {
   commonGroupByOptions,
   mapMultiSelectValueToStrings,
   stringToSelectableValue,
   stringsToSelectableValues,
-} from 'app/features/alerting/unified/utils/amroutes';
+} from '@grafana-module/app/features/alerting/unified/utils/amroutes';
 
 import { getFormStyles } from '../../../../notification-policies/formStyles';
 import { TIMING_OPTIONS_DEFAULTS } from '../../../../notification-policies/timingOptions';

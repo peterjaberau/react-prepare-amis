@@ -2,22 +2,22 @@ import { useEffect } from 'react';
 import { Navigate, useLocation, useParams } from 'react-router-dom-v5-compat';
 
 import { isTruthy } from '@data/index';
-import { NavLandingPage } from 'app/core/components/NavLandingPage/NavLandingPage';
-import { PageNotFound } from 'app/core/components/PageNotFound/PageNotFound';
-import config from 'app/core/config';
-import { contextSrv } from 'app/core/services/context_srv';
-import LdapPage from 'app/features/admin/ldap/LdapPage';
-import { getAlertingRoutes } from 'app/features/alerting/routes';
-import { isAdmin, isLocalDevEnv, isOpenSourceEdition } from 'app/features/alerting/unified/utils/misc';
-import { ConnectionsRedirectNotice } from 'app/features/connections/components/ConnectionsRedirectNotice';
-import { ROUTES as CONNECTIONS_ROUTES } from 'app/features/connections/constants';
-import { getRoutes as getDataConnectionsRoutes } from 'app/features/connections/routes';
-import { DATASOURCES_ROUTES } from 'app/features/datasources/constants';
-import { ConfigureIRM } from 'app/features/gops/configuration-tracker/components/ConfigureIRM';
-import { getRoutes as getPluginCatalogRoutes } from 'app/features/plugins/admin/routes';
-import { getAppPluginRoutes } from 'app/features/plugins/routes';
-import { getProfileRoutes } from 'app/features/profile/routes';
-import { AccessControlAction, DashboardRoutes } from 'app/types';
+import { NavLandingPage } from '@grafana-module/app/core/components/NavLandingPage/NavLandingPage';
+import { PageNotFound } from '@grafana-module/app/core/components/PageNotFound/PageNotFound';
+import config from '@grafana-module/app/core/config';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import LdapPage from '@grafana-module/app/features/admin/ldap/LdapPage';
+import { getAlertingRoutes } from '@grafana-module/app/features/alerting/routes';
+import { isAdmin, isLocalDevEnv, isOpenSourceEdition } from '@grafana-module/app/features/alerting/unified/utils/misc';
+import { ConnectionsRedirectNotice } from '@grafana-module/app/features/connections/components/ConnectionsRedirectNotice';
+import { ROUTES as CONNECTIONS_ROUTES } from '@grafana-module/app/features/connections/constants';
+import { getRoutes as getDataConnectionsRoutes } from '@grafana-module/app/features/connections/routes';
+import { DATASOURCES_ROUTES } from '@grafana-module/app/features/datasources/constants';
+import { ConfigureIRM } from '@grafana-module/app/features/gops/configuration-tracker/components/ConfigureIRM';
+import { getRoutes as getPluginCatalogRoutes } from '@grafana-module/app/features/plugins/admin/routes';
+import { getAppPluginRoutes } from '@grafana-module/app/features/plugins/routes';
+import { getProfileRoutes } from '@grafana-module/app/features/profile/routes';
+import { AccessControlAction, DashboardRoutes } from '@grafana-module/app/types';
 
 import { SafeDynamicImport } from '../core/components/DynamicImports/SafeDynamicImport';
 import { RouteDescriptor } from '../core/navigation/types';
@@ -77,7 +77,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       component: SafeDynamicImport(
         () =>
           import(
-            /* webpackChunkName: "DashboardPage"*/ 'app/features/dashboard-scene/embedding/EmbeddedDashboardTestPage'
+            /* webpackChunkName: "DashboardPage"*/ '@grafana-module/app/features/dashboard-scene/embedding/EmbeddedDashboardTestPage'
           )
       ),
     },
@@ -105,7 +105,7 @@ export function getAppRoutes(): RouteDescriptor[] {
     {
       path: '/dashboard/import',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "DashboardImport"*/ 'app/features/manage-dashboards/DashboardImportPage')
+        () => import(/* webpackChunkName: "DashboardImport"*/ '@grafana-module/app/features/manage-dashboards/DashboardImportPage')
       ),
     },
     {
@@ -128,28 +128,28 @@ export function getAppRoutes(): RouteDescriptor[] {
       path: '/datasources/correlations',
       component: SafeDynamicImport(() =>
         config.featureToggles.correlations
-          ? import(/* webpackChunkName: "CorrelationsPage" */ 'app/features/correlations/CorrelationsPage')
+          ? import(/* webpackChunkName: "CorrelationsPage" */ '@grafana-module/app/features/correlations/CorrelationsPage')
           : import(
-              /* webpackChunkName: "CorrelationsFeatureToggle" */ 'app/features/correlations/CorrelationsFeatureToggle'
+              /* webpackChunkName: "CorrelationsFeatureToggle" */ '@grafana-module/app/features/correlations/CorrelationsFeatureToggle'
             )
       ),
     },
     {
       path: '/dashboards',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "DashboardListPage"*/ 'app/features/browse-dashboards/BrowseDashboardsPage')
+        () => import(/* webpackChunkName: "DashboardListPage"*/ '@grafana-module/app/features/browse-dashboards/BrowseDashboardsPage')
       ),
     },
     {
       path: '/dashboards/f/:uid/:slug',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "DashboardListPage"*/ 'app/features/browse-dashboards/BrowseDashboardsPage')
+        () => import(/* webpackChunkName: "DashboardListPage"*/ '@grafana-module/app/features/browse-dashboards/BrowseDashboardsPage')
       ),
     },
     {
       path: '/dashboards/f/:uid',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "DashboardListPage"*/ 'app/features/browse-dashboards/BrowseDashboardsPage')
+        () => import(/* webpackChunkName: "DashboardListPage"*/ '@grafana-module/app/features/browse-dashboards/BrowseDashboardsPage')
       ),
     },
     {
@@ -158,8 +158,8 @@ export function getAppRoutes(): RouteDescriptor[] {
       roles: () => contextSrv.evaluatePermission([AccessControlAction.DataSourcesExplore]),
       component: SafeDynamicImport(() =>
         config.exploreEnabled
-          ? import(/* webpackChunkName: "explore" */ 'app/features/explore/ExplorePage')
-          : import(/* webpackChunkName: "explore-feature-toggle-page" */ 'app/features/explore/FeatureTogglePage')
+          ? import(/* webpackChunkName: "explore" */ '@grafana-module/app/features/explore/ExplorePage')
+          : import(/* webpackChunkName: "explore-feature-toggle-page" */ '@grafana-module/app/features/explore/FeatureTogglePage')
       ),
     },
     {
@@ -214,7 +214,7 @@ export function getAppRoutes(): RouteDescriptor[] {
         isDevEnv || config.featureToggles.enableExtensionsAdminPage
           ? SafeDynamicImport(
               () =>
-                import(/* webpackChunkName: "PluginExtensionsLog" */ 'app/features/plugins/extensions/logs/LogViewer')
+                import(/* webpackChunkName: "PluginExtensionsLog" */ '@grafana-module/app/features/plugins/extensions/logs/LogViewer')
             )
           : () => <Navigate replace to="/admin" />,
     },
@@ -230,7 +230,7 @@ export function getAppRoutes(): RouteDescriptor[] {
     },
     {
       path: '/org/new',
-      component: SafeDynamicImport(() => import(/* webpackChunkName: "NewOrgPage" */ 'app/features/org/NewOrgPage')),
+      component: SafeDynamicImport(() => import(/* webpackChunkName: "NewOrgPage" */ '@grafana-module/app/features/org/NewOrgPage')),
     },
     {
       path: '/org/users',
@@ -240,14 +240,14 @@ export function getAppRoutes(): RouteDescriptor[] {
     {
       path: '/org/users/invite',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "UserInvitePage" */ 'app/features/org/UserInvitePage')
+        () => import(/* webpackChunkName: "UserInvitePage" */ '@grafana-module/app/features/org/UserInvitePage')
       ),
     },
     {
       path: '/org/apikeys',
       roles: () => contextSrv.evaluatePermission([AccessControlAction.ActionAPIKeysRead]),
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "ApiKeysPage" */ 'app/features/api-keys/ApiKeysPage')
+        () => import(/* webpackChunkName: "ApiKeysPage" */ '@grafana-module/app/features/api-keys/ApiKeysPage')
       ),
     },
     {
@@ -259,7 +259,7 @@ export function getAppRoutes(): RouteDescriptor[] {
         ]),
       component: SafeDynamicImport(
         () =>
-          import(/* webpackChunkName: "ServiceAccountsPage" */ 'app/features/serviceaccounts/ServiceAccountsListPage')
+          import(/* webpackChunkName: "ServiceAccountsPage" */ '@grafana-module/app/features/serviceaccounts/ServiceAccountsListPage')
       ),
     },
     {
@@ -267,32 +267,32 @@ export function getAppRoutes(): RouteDescriptor[] {
       component: SafeDynamicImport(
         () =>
           import(
-            /* webpackChunkName: "ServiceAccountCreatePage" */ 'app/features/serviceaccounts/ServiceAccountCreatePage'
+            /* webpackChunkName: "ServiceAccountCreatePage" */ '@grafana-module/app/features/serviceaccounts/ServiceAccountCreatePage'
           )
       ),
     },
     {
       path: '/org/serviceaccounts/:id',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "ServiceAccountPage" */ 'app/features/serviceaccounts/ServiceAccountPage')
+        () => import(/* webpackChunkName: "ServiceAccountPage" */ '@grafana-module/app/features/serviceaccounts/ServiceAccountPage')
       ),
     },
     {
       path: '/org/teams',
       roles: () =>
         contextSrv.evaluatePermission([AccessControlAction.ActionTeamsRead, AccessControlAction.ActionTeamsCreate]),
-      component: SafeDynamicImport(() => import(/* webpackChunkName: "TeamList" */ 'app/features/teams/TeamList')),
+      component: SafeDynamicImport(() => import(/* webpackChunkName: "TeamList" */ '@grafana-module/app/features/teams/TeamList')),
     },
     {
       path: '/org/teams/new',
       roles: () => contextSrv.evaluatePermission([AccessControlAction.ActionTeamsCreate]),
-      component: SafeDynamicImport(() => import(/* webpackChunkName: "CreateTeam" */ 'app/features/teams/CreateTeam')),
+      component: SafeDynamicImport(() => import(/* webpackChunkName: "CreateTeam" */ '@grafana-module/app/features/teams/CreateTeam')),
     },
     {
       path: '/org/teams/edit/:uid/:page?',
       roles: () =>
         contextSrv.evaluatePermission([AccessControlAction.ActionTeamsRead, AccessControlAction.ActionTeamsCreate]),
-      component: SafeDynamicImport(() => import(/* webpackChunkName: "TeamPages" */ 'app/features/teams/TeamPages')),
+      component: SafeDynamicImport(() => import(/* webpackChunkName: "TeamPages" */ '@grafana-module/app/features/teams/TeamPages')),
     },
     // ADMIN
     {
@@ -314,7 +314,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       path: '/admin/authentication/ldap',
       component: config.featureToggles.ssoSettingsLDAP
         ? SafeDynamicImport(
-            () => import(/* webpackChunkName: "LdapSettingsPage" */ 'app/features/admin/ldap/LdapSettingsPage')
+            () => import(/* webpackChunkName: "LdapSettingsPage" */ '@grafana-module/app/features/admin/ldap/LdapSettingsPage')
           )
         : LdapPage,
     },
@@ -330,69 +330,69 @@ export function getAppRoutes(): RouteDescriptor[] {
     {
       path: '/admin/settings',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "AdminSettings" */ 'app/features/admin/AdminSettings')
+        () => import(/* webpackChunkName: "AdminSettings" */ '@grafana-module/app/features/admin/AdminSettings')
       ),
     },
     {
       path: '/admin/upgrading',
-      component: SafeDynamicImport(() => import('app/features/admin/UpgradePage')),
+      component: SafeDynamicImport(() => import('@grafana-module/app/features/admin/UpgradePage')),
     },
     {
       path: '/admin/users',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "UserListPage" */ 'app/features/admin/UserListPage')
+        () => import(/* webpackChunkName: "UserListPage" */ '@grafana-module/app/features/admin/UserListPage')
       ),
     },
     {
       path: '/admin/users/create',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "UserCreatePage" */ 'app/features/admin/UserCreatePage')
+        () => import(/* webpackChunkName: "UserCreatePage" */ '@grafana-module/app/features/admin/UserCreatePage')
       ),
     },
     {
       path: '/admin/users/edit/:id',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "UserAdminPage" */ 'app/features/admin/UserAdminPage')
+        () => import(/* webpackChunkName: "UserAdminPage" */ '@grafana-module/app/features/admin/UserAdminPage')
       ),
     },
     {
       path: '/admin/orgs',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "AdminListOrgsPage" */ 'app/features/admin/AdminListOrgsPage')
+        () => import(/* webpackChunkName: "AdminListOrgsPage" */ '@grafana-module/app/features/admin/AdminListOrgsPage')
       ),
     },
     {
       path: '/admin/orgs/edit/:id',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "AdminEditOrgPage" */ 'app/features/admin/AdminEditOrgPage')
+        () => import(/* webpackChunkName: "AdminEditOrgPage" */ '@grafana-module/app/features/admin/AdminEditOrgPage')
       ),
     },
     {
       path: '/admin/featuretoggles',
       component: config.featureToggles.featureToggleAdminPage
         ? SafeDynamicImport(
-            () => import(/* webpackChunkName: "AdminFeatureTogglesPage" */ 'app/features/admin/AdminFeatureTogglesPage')
+            () => import(/* webpackChunkName: "AdminFeatureTogglesPage" */ '@grafana-module/app/features/admin/AdminFeatureTogglesPage')
           )
         : () => <Navigate replace to="/admin" />,
     },
     {
       path: '/admin/stats',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "ServerStats" */ 'app/features/admin/ServerStats')
+        () => import(/* webpackChunkName: "ServerStats" */ '@grafana-module/app/features/admin/ServerStats')
       ),
     },
     config.featureToggles.onPremToCloudMigrations && {
       path: '/admin/migrate-to-cloud',
       roles: () => contextSrv.evaluatePermission([AccessControlAction.MigrationAssistantMigrate]),
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "MigrateToCloud" */ 'app/features/migrate-to-cloud/MigrateToCloud')
+        () => import(/* webpackChunkName: "MigrateToCloud" */ '@grafana-module/app/features/migrate-to-cloud/MigrateToCloud')
       ),
     },
     // LOGIN / SIGNUP
     {
       path: '/login',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "LoginPage" */ 'app/core/components/Login/LoginPage')
+        () => import(/* webpackChunkName: "LoginPage" */ '@grafana-module/app/core/components/Login/LoginPage')
       ),
       pageClass: 'login-page',
       chromeless: true,
@@ -400,7 +400,7 @@ export function getAppRoutes(): RouteDescriptor[] {
     {
       path: '/invite/:code',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "SignupInvited" */ 'app/features/invites/SignupInvited')
+        () => import(/* webpackChunkName: "SignupInvited" */ '@grafana-module/app/features/invites/SignupInvited')
       ),
       chromeless: true,
     },
@@ -409,7 +409,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       component: !config.verifyEmailEnabled
         ? () => <Navigate replace to="/signup" />
         : SafeDynamicImport(
-            () => import(/* webpackChunkName "VerifyEmailPage"*/ 'app/core/components/Signup/VerifyEmailPage')
+            () => import(/* webpackChunkName "VerifyEmailPage"*/ '@grafana-module/app/core/components/Signup/VerifyEmailPage')
           ),
       pageClass: 'login-page',
       chromeless: true,
@@ -418,7 +418,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       path: '/signup',
       component: config.disableUserSignUp
         ? () => <Navigate replace to="/login" />
-        : SafeDynamicImport(() => import(/* webpackChunkName "SignupPage"*/ 'app/core/components/Signup/SignupPage')),
+        : SafeDynamicImport(() => import(/* webpackChunkName "SignupPage"*/ '@grafana-module/app/core/components/Signup/SignupPage')),
       pageClass: 'login-page',
       chromeless: true,
     },
@@ -427,7 +427,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       chromeless: true,
       component: SafeDynamicImport(
         () =>
-          import(/* webpackChunkName: "SendResetMailPage" */ 'app/core/components/ForgottenPassword/SendResetMailPage')
+          import(/* webpackChunkName: "SendResetMailPage" */ '@grafana-module/app/core/components/ForgottenPassword/SendResetMailPage')
       ),
     },
     {
@@ -435,7 +435,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       component: SafeDynamicImport(
         () =>
           import(
-            /* webpackChunkName: "ChangePasswordPage" */ 'app/core/components/ForgottenPassword/ChangePasswordPage'
+            /* webpackChunkName: "ChangePasswordPage" */ '@grafana-module/app/core/components/ForgottenPassword/ChangePasswordPage'
           )
       ),
       pageClass: 'login-page',
@@ -445,50 +445,50 @@ export function getAppRoutes(): RouteDescriptor[] {
       path: '/dashboard/snapshots',
       roles: () => contextSrv.evaluatePermission([AccessControlAction.SnapshotsRead]),
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "SnapshotListPage" */ 'app/features/manage-dashboards/SnapshotListPage')
+        () => import(/* webpackChunkName: "SnapshotListPage" */ '@grafana-module/app/features/manage-dashboards/SnapshotListPage')
       ),
     },
     config.featureToggles.dashboardRestore && {
       path: '/dashboard/recently-deleted',
       roles: () => ['Admin', 'ServerAdmin'],
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "RecentlyDeletedPage" */ 'app/features/browse-dashboards/RecentlyDeletedPage')
+        () => import(/* webpackChunkName: "RecentlyDeletedPage" */ '@grafana-module/app/features/browse-dashboards/RecentlyDeletedPage')
       ),
     },
     {
       path: '/playlists',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "PlaylistPage"*/ 'app/features/playlist/PlaylistPage')
+        () => import(/* webpackChunkName: "PlaylistPage"*/ '@grafana-module/app/features/playlist/PlaylistPage')
       ),
     },
     {
       path: '/playlists/play/:uid',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "PlaylistStartPage"*/ 'app/features/playlist/PlaylistStartPage')
+        () => import(/* webpackChunkName: "PlaylistStartPage"*/ '@grafana-module/app/features/playlist/PlaylistStartPage')
       ),
     },
     {
       path: '/playlists/new',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "PlaylistNewPage"*/ 'app/features/playlist/PlaylistNewPage')
+        () => import(/* webpackChunkName: "PlaylistNewPage"*/ '@grafana-module/app/features/playlist/PlaylistNewPage')
       ),
     },
     {
       path: '/playlists/edit/:uid',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "PlaylistEditPage"*/ 'app/features/playlist/PlaylistEditPage')
+        () => import(/* webpackChunkName: "PlaylistEditPage"*/ '@grafana-module/app/features/playlist/PlaylistEditPage')
       ),
     },
     {
       path: '/sandbox/benchmarks',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "BenchmarksPage"*/ 'app/features/sandbox/BenchmarksPage')
+        () => import(/* webpackChunkName: "BenchmarksPage"*/ '@grafana-module/app/features/sandbox/BenchmarksPage')
       ),
     },
     {
       path: '/sandbox/test',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "TestStuffPage"*/ 'app/features/sandbox/TestStuffPage')
+        () => import(/* webpackChunkName: "TestStuffPage"*/ '@grafana-module/app/features/sandbox/TestStuffPage')
       ),
     },
     {
@@ -496,7 +496,7 @@ export function getAppRoutes(): RouteDescriptor[] {
       component: SafeDynamicImport(
         () =>
           import(
-            /* webpackChunkName: "FolderLibraryPanelsPage"*/ 'app/features/browse-dashboards/BrowseFolderLibraryPanelsPage'
+            /* webpackChunkName: "FolderLibraryPanelsPage"*/ '@grafana-module/app/features/browse-dashboards/BrowseFolderLibraryPanelsPage'
           )
       ),
     },
@@ -504,19 +504,19 @@ export function getAppRoutes(): RouteDescriptor[] {
       path: '/dashboards/f/:uid/:slug/alerting',
       roles: () => contextSrv.evaluatePermission([AccessControlAction.AlertingRuleRead]),
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "FolderAlerting"*/ 'app/features/browse-dashboards/BrowseFolderAlertingPage')
+        () => import(/* webpackChunkName: "FolderAlerting"*/ '@grafana-module/app/features/browse-dashboards/BrowseFolderAlertingPage')
       ),
     },
     {
       path: '/library-panels',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "LibraryPanelsPage"*/ 'app/features/library-panels/LibraryPanelsPage')
+        () => import(/* webpackChunkName: "LibraryPanelsPage"*/ '@grafana-module/app/features/library-panels/LibraryPanelsPage')
       ),
     },
     {
       path: '/notifications',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "NotificationsPage"*/ 'app/features/notifications/NotificationsPage')
+        () => import(/* webpackChunkName: "NotificationsPage"*/ '@grafana-module/app/features/notifications/NotificationsPage')
       ),
     },
     config.featureToggles.exploreMetrics && {
@@ -526,20 +526,20 @@ export function getAppRoutes(): RouteDescriptor[] {
         ? {
             component: SafeDynamicImport(
               () =>
-                import(/* webpackChunkName: "MetricsDrilldownRedirect"*/ 'app/features/trails/RedirectToDrilldownApp')
+                import(/* webpackChunkName: "MetricsDrilldownRedirect"*/ '@grafana-module/app/features/trails/RedirectToDrilldownApp')
             ),
           }
         : {
             chromeless: false,
             component: SafeDynamicImport(
-              () => import(/* webpackChunkName: "DataTrailsPage"*/ 'app/features/trails/DataTrailsPage')
+              () => import(/* webpackChunkName: "DataTrailsPage"*/ '@grafana-module/app/features/trails/DataTrailsPage')
             ),
           }),
     },
     {
       path: '/bookmarks',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "BookmarksPage"*/ 'app/features/bookmarks/BookmarksPage')
+        () => import(/* webpackChunkName: "BookmarksPage"*/ '@grafana-module/app/features/bookmarks/BookmarksPage')
       ),
     },
     ...getPluginCatalogRoutes(),
@@ -569,13 +569,13 @@ export function getSupportBundleRoutes(cfg = config): RouteDescriptor[] {
     {
       path: '/support-bundles',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "SupportBundles" */ 'app/features/support-bundles/SupportBundles')
+        () => import(/* webpackChunkName: "SupportBundles" */ '@grafana-module/app/features/support-bundles/SupportBundles')
       ),
     },
     {
       path: '/support-bundles/create',
       component: SafeDynamicImport(
-        () => import(/* webpackChunkName: "SupportBundlesCreate" */ 'app/features/support-bundles/SupportBundlesCreate')
+        () => import(/* webpackChunkName: "SupportBundlesCreate" */ '@grafana-module/app/features/support-bundles/SupportBundlesCreate')
       ),
     },
   ];

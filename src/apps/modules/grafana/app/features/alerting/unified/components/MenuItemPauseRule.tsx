@@ -1,7 +1,7 @@
 import { Menu } from '@grafana/ui';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { GrafanaRuleGroupIdentifier } from 'app/types/unified-alerting';
-import { RulerGrafanaRuleDTO } from 'app/types/unified-alerting-dto';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { GrafanaRuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { usePauseRuleInGroup } from '../hooks/ruleGroup/usePauseAlertRule';
 import { isLoading } from '../hooks/useAsync';

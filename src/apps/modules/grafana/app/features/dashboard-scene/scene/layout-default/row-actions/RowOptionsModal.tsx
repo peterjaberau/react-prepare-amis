@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { SceneObject } from '@scenes/index';
 import { Modal, useStyles2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { OnRowOptionsUpdate, RowOptionsForm } from './RowOptionsForm';
 

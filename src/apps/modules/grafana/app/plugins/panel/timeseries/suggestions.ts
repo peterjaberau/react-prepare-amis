@@ -12,8 +12,8 @@ import {
   LineInterpolation,
   StackingMode,
 } from '@schema/index';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { SuggestionName } from 'app/types/suggestions';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { SuggestionName } from '@grafana-module/app/types/suggestions';
 
 import { Options } from './panelcfg.gen';
 

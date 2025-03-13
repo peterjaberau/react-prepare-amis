@@ -5,10 +5,10 @@ import { first } from 'rxjs/operators';
 
 import { SelectableValue } from '@data/index';
 import { ContextMenu, MenuItem, MenuItemProps } from '@grafana/ui';
-import { ElementState } from 'app/features/canvas/runtime/element';
-import { FrameState } from 'app/features/canvas/runtime/frame';
-import { Scene } from 'app/features/canvas/runtime/scene';
-import { findElementByTarget } from 'app/features/canvas/runtime/sceneElementManagement';
+import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
+import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
+import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
+import { findElementByTarget } from '@grafana-module/app/features/canvas/runtime/sceneElementManagement';
 
 import { CanvasPanel } from '../CanvasPanel';
 import { AnchorPoint, LayerActionID } from '../types';

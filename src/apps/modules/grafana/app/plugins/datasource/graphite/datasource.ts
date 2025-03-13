@@ -22,9 +22,9 @@ import {
   getSearchFilterScopedVar,
 } from '@data/index';
 import { BackendSrvRequest, FetchResponse, getBackendSrv } from '@runtime/index';
-import { isVersionGtOrEq, SemVersion } from 'app/core/utils/version';
-import { getTemplateSrv, TemplateSrv } from 'app/features/templating/template_srv';
-import { getRollupNotice, getRuntimeConsolidationNotice } from 'app/plugins/datasource/graphite/meta';
+import { isVersionGtOrEq, SemVersion } from '@grafana-module/app/core/utils/version';
+import { getTemplateSrv, TemplateSrv } from '@grafana-module/app/features/templating/template_srv';
+import { getRollupNotice, getRuntimeConsolidationNotice } from '@grafana-module/app/plugins/datasource/graphite/meta';
 
 import { AnnotationEditor } from './components/AnnotationsEditor';
 import { convertToGraphiteQueryObject } from './components/helpers';

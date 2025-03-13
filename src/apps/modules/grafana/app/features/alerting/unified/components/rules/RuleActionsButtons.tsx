@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 import { LinkButton, Stack } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import AlertRuleMenu from 'app/features/alerting/unified/components/rule-viewer/AlertRuleMenu';
-import { useDeleteModal } from 'app/features/alerting/unified/components/rule-viewer/DeleteModal';
-import { INSTANCES_DISPLAY_LIMIT } from 'app/features/alerting/unified/components/rules/RuleDetails';
-import SilenceGrafanaRuleDrawer from 'app/features/alerting/unified/components/silences/SilenceGrafanaRuleDrawer';
-import { useRulesFilter } from 'app/features/alerting/unified/hooks/useFilteredRules';
-import { useDispatch } from 'app/types';
-import { CombinedRule, RuleIdentifier, RulesSource } from 'app/types/unified-alerting';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import AlertRuleMenu from '@grafana-module/app/features/alerting/unified/components/rule-viewer/AlertRuleMenu';
+import { useDeleteModal } from '@grafana-module/app/features/alerting/unified/components/rule-viewer/DeleteModal';
+import { INSTANCES_DISPLAY_LIMIT } from '@grafana-module/app/features/alerting/unified/components/rules/RuleDetails';
+import SilenceGrafanaRuleDrawer from '@grafana-module/app/features/alerting/unified/components/silences/SilenceGrafanaRuleDrawer';
+import { useRulesFilter } from '@grafana-module/app/features/alerting/unified/hooks/useFilteredRules';
+import { useDispatch } from '@grafana-module/app/types';
+import { CombinedRule, RuleIdentifier, RulesSource } from '@grafana-module/app/types/unified-alerting';
 
 import { AlertRuleAction, useAlertRuleAbility } from '../../hooks/useAbilities';
 import { fetchPromAndRulerRulesAction } from '../../state/actions';

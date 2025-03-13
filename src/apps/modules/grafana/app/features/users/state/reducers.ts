@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import config from 'app/core/config';
-import { OrgUser, UsersState } from 'app/types';
+import config from '@grafana-module/app/core/config';
+import { OrgUser, UsersState } from '@grafana-module/app/types';
 
 export const initialState: UsersState = {
   users: [],

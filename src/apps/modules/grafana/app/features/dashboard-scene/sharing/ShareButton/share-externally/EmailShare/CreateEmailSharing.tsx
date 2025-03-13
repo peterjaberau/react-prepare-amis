@@ -4,12 +4,12 @@ import { useForm } from 'react-hook-form';
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Checkbox, FieldSet, Spinner, Stack } from '@grafana/ui';
 import { useStyles2 } from '@grafana/ui/';
-import { contextSrv } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { useCreatePublicDashboardMutation } from 'app/features/dashboard/api/publicDashboardApi';
-import { PublicDashboardShareType } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { useCreatePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { PublicDashboardShareType } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { EmailSharingPricingAlert } from '../../../../../dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/EmailSharingPricingAlert';
 import { useShareDrawerContext } from '../../../ShareDrawer/ShareDrawerContext';

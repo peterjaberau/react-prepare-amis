@@ -2,7 +2,7 @@ import { compact, each, findIndex, flatten, get, join, keyBy, last, map, reduce,
 
 import { ScopedVars } from '@data/index';
 import { TemplateSrv } from '@runtime/index';
-import { arrayMove } from 'app/core/utils/arrayMove';
+import { arrayMove } from '@grafana-module/app/core/utils/arrayMove';
 
 import { GraphiteDatasource } from './datasource';
 import { FuncInstance } from './gfunc';

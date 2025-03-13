@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { MultiSelectedEditableDashboardElement } from '../types/MultiSelectedEditableDashboardElement';
 

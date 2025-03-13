@@ -6,9 +6,9 @@ import { GrafanaTheme2 } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { Icon, IconName, Menu, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { t } from 'app/core/internationalization';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { isPublicDashboardsEnabled } from '../../../dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
 import { getTrackingSource, shareDashboardType } from '../../../dashboard/components/ShareModal/utils';

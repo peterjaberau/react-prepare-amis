@@ -2,9 +2,9 @@ import { FormEvent, PureComponent } from 'react';
 import { MapDispatchToProps, MapStateToProps } from 'react-redux';
 
 import { CustomVariableModel, VariableWithMultiSupport } from '@data/index';
-import { connectWithStore } from 'app/core/utils/connectWithReduxStore';
-import { CustomVariableForm } from 'app/features/dashboard-scene/settings/variables/components/CustomVariableForm';
-import { StoreState } from 'app/types';
+import { connectWithStore } from '@grafana-module/app/core/utils/connectWithReduxStore';
+import { CustomVariableForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/CustomVariableForm';
+import { StoreState } from '@grafana-module/app/types';
 
 import { OnPropChangeArguments, VariableEditorProps } from '../editor/types';
 import { changeVariableMultiValue } from '../state/actions';

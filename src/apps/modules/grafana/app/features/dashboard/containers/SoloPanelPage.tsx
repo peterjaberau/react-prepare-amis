@@ -6,10 +6,10 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Alert, useStyles2 } from '@grafana/ui';
-import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { StoreState } from 'app/types';
+import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { StoreState } from '@grafana-module/app/types';
 
 import { useGrafana } from '../../../core/context/GrafanaContext';
 import { DashboardPanel } from '../dashgrid/DashboardPanel';

@@ -17,12 +17,12 @@ import {
   TextArea,
   WeekStart,
 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { FolderPicker } from 'app/core/components/Select/FolderPicker';
-import { t, Trans } from 'app/core/internationalization';
-import { TimePickerSettings } from 'app/features/dashboard/components/DashboardSettings/TimePickerSettings';
-import { GenAIDashDescriptionButton } from 'app/features/dashboard/components/GenAI/GenAIDashDescriptionButton';
-import { GenAIDashTitleButton } from 'app/features/dashboard/components/GenAI/GenAIDashTitleButton';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { TimePickerSettings } from '@grafana-module/app/features/dashboard/components/DashboardSettings/TimePickerSettings';
+import { GenAIDashDescriptionButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIDashDescriptionButton';
+import { GenAIDashTitleButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIDashTitleButton';
 
 import { updateNavModel } from '../pages/utils';
 import { DashboardScene } from '../scene/DashboardScene';

@@ -1,6 +1,6 @@
 import { Navigate, useLocation, useParams } from 'react-router-dom-v5-compat';
 
-import { getRouteForAppPlugin } from 'app/features/plugins/routes';
+import { getRouteForAppPlugin } from '@grafana-module/app/features/plugins/routes';
 
 /**
  * Navigate to the drilldown app with the remaining path parameters and search params

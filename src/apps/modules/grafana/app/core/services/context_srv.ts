@@ -10,9 +10,9 @@ import {
   userHasAnyPermission,
 } from '@data/index';
 import { featureEnabled, getBackendSrv } from '@runtime/index';
-import { getSessionExpiry } from 'app/core/utils/auth';
-import { AccessControlAction, UserPermission } from 'app/types';
-import { CurrentUserInternal } from 'app/types/config';
+import { getSessionExpiry } from '@grafana-module/app/core/utils/auth';
+import { AccessControlAction, UserPermission } from '@grafana-module/app/types';
+import { CurrentUserInternal } from '@grafana-module/app/types/config';
 
 import config from '../../core/config';
 

@@ -4,7 +4,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { Spinner, Stack, Text } from '@grafana/ui';
 import { IconButton, useStyles2 } from '@grafana/ui/';
 import { ConfirmContent, ConfirmContentProps } from '@grafana/ui/src/components/ConfirmModal/ConfirmContent';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 export function ShareDrawerConfirmAction({
   onConfirm,

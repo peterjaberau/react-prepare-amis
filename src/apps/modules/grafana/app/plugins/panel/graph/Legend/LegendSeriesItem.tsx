@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 
 import { selectors } from '@selectors/index';
 import { SeriesColorPicker, SeriesIcon } from '@grafana/ui';
-import { TimeSeries } from 'app/core/core';
+import { TimeSeries } from '@grafana-module/app/core/core';
 
 export const LEGEND_STATS = ['min', 'max', 'avg', 'current', 'total'] as const;
 export type LegendStat = (typeof LEGEND_STATS)[number];

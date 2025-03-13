@@ -1,8 +1,8 @@
 import { NavModelItem } from '@data/index';
-import { RouteDescriptor } from 'app/core/navigation/types';
-import { getRootSectionForNode } from 'app/core/selectors/navModel';
-import AppRootPage from 'app/features/plugins/components/AppRootPage';
-import { getState } from 'app/store/store';
+import { RouteDescriptor } from '@grafana-module/app/core/navigation/types';
+import { getRootSectionForNode } from '@grafana-module/app/core/selectors/navModel';
+import AppRootPage from '@grafana-module/app/features/plugins/components/AppRootPage';
+import { getState } from '@grafana-module/app/store/store';
 
 const isPluginNavModelItem = (model: NavModelItem): model is PluginNavModelItem => 'pluginId' in model && 'id' in model;
 const isStandalonePluginPage = (id: string) => id.startsWith('standalone-plugin-page-/');

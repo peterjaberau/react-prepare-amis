@@ -12,10 +12,10 @@ import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
 import { Button, Icon, Input, ModalsController, Portal, ScrollContainer, useStyles2 } from '@grafana/ui';
-import config from 'app/core/config';
-import { Trans } from 'app/core/internationalization';
-import { useKeyNavigationListener } from 'app/features/search/hooks/useSearchKeyboardSelection';
-import { defaultFileUploadQuery, GrafanaQuery } from 'app/plugins/datasource/grafana/types';
+import config from '@grafana-module/app/core/config';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { useKeyNavigationListener } from '@grafana-module/app/features/search/hooks/useSearchKeyboardSelection';
+import { defaultFileUploadQuery, GrafanaQuery } from '@grafana-module/app/plugins/datasource/grafana/types';
 
 import { useDatasource } from '../../hooks';
 

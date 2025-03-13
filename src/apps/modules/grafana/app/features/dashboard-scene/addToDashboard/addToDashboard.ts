@@ -1,9 +1,9 @@
 import { locationUtil, TimeRange } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { Panel } from '@schema/index';
-import store from 'app/core/store';
-import { DASHBOARD_SCHEMA_VERSION } from 'app/features/dashboard/state/DashboardMigrator';
-import { DASHBOARD_FROM_LS_KEY, DashboardDTO } from 'app/types';
+import store from '@grafana-module/app/core/store';
+import { DASHBOARD_SCHEMA_VERSION } from '@grafana-module/app/features/dashboard/state/DashboardMigrator';
+import { DASHBOARD_FROM_LS_KEY, DashboardDTO } from '@grafana-module/app/types';
 
 export enum GenericError {
   UNKNOWN = 'unknown-error',

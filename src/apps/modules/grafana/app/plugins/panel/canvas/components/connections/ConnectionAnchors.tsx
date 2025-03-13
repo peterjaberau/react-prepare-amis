@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { ConnectionCoordinates } from 'app/features/canvas/element';
+import { ConnectionCoordinates } from '@grafana-module/app/features/canvas/element';
 
 type Props = {
   setRef: (anchorElement: HTMLDivElement) => void;

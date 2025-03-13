@@ -2,7 +2,7 @@
 import baron from 'baron';
 import $ from 'jquery';
 
-import coreModule from 'app/angular/core_module';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 const scrollBarHTML = `
 <div class="baron__track">

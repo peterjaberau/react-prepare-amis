@@ -1,4 +1,4 @@
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { createRelativeUrl } from '../../utils/url';

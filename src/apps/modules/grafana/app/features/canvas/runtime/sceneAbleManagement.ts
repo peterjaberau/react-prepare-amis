@@ -1,13 +1,13 @@
 import Moveable from 'moveable';
 import Selecto from 'selecto';
 
-import { CONNECTION_ANCHOR_DIV_ID } from 'app/plugins/panel/canvas/components/connections/ConnectionAnchors';
+import { CONNECTION_ANCHOR_DIV_ID } from '@grafana-module/app/plugins/panel/canvas/components/connections/ConnectionAnchors';
 import {
   CONNECTION_VERTEX_ID,
   CONNECTION_VERTEX_ADD_ID,
-} from 'app/plugins/panel/canvas/components/connections/Connections';
-import { VerticalConstraint, HorizontalConstraint } from 'app/plugins/panel/canvas/panelcfg.gen';
-import { getParent } from 'app/plugins/panel/canvas/utils';
+} from '@grafana-module/app/plugins/panel/canvas/components/connections/Connections';
+import { VerticalConstraint, HorizontalConstraint } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+import { getParent } from '@grafana-module/app/plugins/panel/canvas/utils';
 
 import { dimensionViewable, constraintViewable, settingsViewable } from './ables';
 import { ElementState } from './element';
@@ -33,7 +33,7 @@ const enableCustomables = (moveable: Moveable) => {
   };
 };
 
-/* 
+/*
   Helper function that determines if the selected DOM target is currently selected in selecto state.
 
   For context canvas elements each have a different level of nesting.

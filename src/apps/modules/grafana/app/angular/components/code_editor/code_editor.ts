@@ -28,8 +28,8 @@
  * Ctrl-Enter (Command-Enter): run onChange() function
  */
 
-import coreModule from 'app/angular/core_module';
-import config from 'app/core/config';
+import coreModule from '@grafana-module/app/angular/core_module';
+import config from '@grafana-module/app/core/config';
 
 const DEFAULT_THEME_DARK = 'ace/theme/grafana-dark';
 const DEFAULT_THEME_LIGHT = 'ace/theme/textmate';

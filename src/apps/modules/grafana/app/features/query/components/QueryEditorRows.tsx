@@ -11,7 +11,7 @@ import {
   getDataSourceRef,
 } from '@data/index';
 import { getDataSourceSrv, reportInteraction } from '@runtime/index';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 
 import { QueryEditorRow } from './QueryEditorRow';
 

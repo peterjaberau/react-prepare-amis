@@ -33,13 +33,13 @@ import {
   getTimeRange,
   hasNonEmptyQuery,
   stopQueryState,
-} from 'app/core/utils/explore';
-import { getShiftedTimeRange } from 'app/core/utils/timePicker';
-import { getCorrelationsBySourceUIDs } from 'app/features/correlations/utils';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { getFiscalYearStartMonth, getTimeZone } from 'app/features/profile/state/selectors';
-import { SupportingQueryType } from 'app/plugins/datasource/loki/types';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
+} from '@grafana-module/app/core/utils/explore';
+import { getShiftedTimeRange } from '@grafana-module/app/core/utils/timePicker';
+import { getCorrelationsBySourceUIDs } from '@grafana-module/app/features/correlations/utils';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getFiscalYearStartMonth, getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
+import { SupportingQueryType } from '@grafana-module/app/plugins/datasource/loki/types';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
 import {
   createAsyncThunk,
   ExploreItemState,
@@ -48,8 +48,8 @@ import {
   StoreState,
   ThunkDispatch,
   ThunkResult,
-} from 'app/types';
-import { ExploreState, QueryOptions, SupplementaryQueries } from 'app/types/explore';
+} from '@grafana-module/app/types';
+import { ExploreState, QueryOptions, SupplementaryQueries } from '@grafana-module/app/types/explore';
 
 import { notifyApp } from '../../../core/actions';
 import { createErrorNotification } from '../../../core/copy/appNotification';

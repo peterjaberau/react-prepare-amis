@@ -1,6 +1,6 @@
 import { PropsWithChildren, useState, createContext, useContext, useEffect } from 'react';
 
-import { useSelector } from 'app/types';
+import { useSelector } from '@grafana-module/app/types';
 
 import { selectRichHistorySettings } from '../state/selectors';
 

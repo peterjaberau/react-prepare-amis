@@ -2,9 +2,9 @@ import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, ModalsController, CollapsableSection, useStyles2, Stack, Icon, Box } from '@grafana/ui';
-import { DiffGroup } from 'app/features/dashboard-scene/settings/version-history/DiffGroup';
-import { DiffViewer } from 'app/features/dashboard-scene/settings/version-history/DiffViewer';
-import { jsonDiff } from 'app/features/dashboard-scene/settings/version-history/utils';
+import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';
+import { DiffViewer } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffViewer';
+import { jsonDiff } from '@grafana-module/app/features/dashboard-scene/settings/version-history/utils';
 
 import { DecoratedRevisionModel } from '../DashboardSettings/VersionsSettings';
 

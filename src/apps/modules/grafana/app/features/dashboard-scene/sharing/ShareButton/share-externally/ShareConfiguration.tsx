@@ -5,12 +5,12 @@ import { GrafanaTheme2 } from '@data/index';
 import { sceneGraph } from '@scenes/index';
 import { FieldSet, Icon, Label, Spinner, Stack, Text, TimeRangeLabel, Tooltip, useStyles2 } from '@grafana/ui';
 import { Switch } from '@grafana/ui/src/components/Switch/Switch';
-import { contextSrv } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { publicDashboardApi, useUpdatePublicDashboardMutation } from 'app/features/dashboard/api/publicDashboardApi';
-import { ConfigPublicDashboardForm } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/ConfigPublicDashboard/ConfigPublicDashboard';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { publicDashboardApi, useUpdatePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { ConfigPublicDashboardForm } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ConfigPublicDashboard/ConfigPublicDashboard';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { useShareDrawerContext } from '../../ShareDrawer/ShareDrawerContext';
 

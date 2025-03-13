@@ -3,15 +3,15 @@ import { useEffect, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { Icon, MultiSelect } from '@grafana/ui';
-import { useUnifiedAlertingSelector } from 'app/features/alerting/unified/hooks/useUnifiedAlertingSelector';
-import { fetchAllPromRulesAction } from 'app/features/alerting/unified/state/actions';
+import { useUnifiedAlertingSelector } from '@grafana-module/app/features/alerting/unified/hooks/useUnifiedAlertingSelector';
+import { fetchAllPromRulesAction } from '@grafana-module/app/features/alerting/unified/state/actions';
 import {
   isAsyncRequestMapSlicePending,
   isAsyncRequestMapSliceSettled,
-} from 'app/features/alerting/unified/utils/redux';
-import { useDispatch } from 'app/types';
-import { AlertingRule } from 'app/types/unified-alerting';
-import { PromRuleType } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/features/alerting/unified/utils/redux';
+import { useDispatch } from '@grafana-module/app/types';
+import { AlertingRule } from '@grafana-module/app/types/unified-alerting';
+import { PromRuleType } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { fetchPromRulesAction } from '../../../features/alerting/unified/state/actions';
 import { isPrivateLabelKey } from '../../../features/alerting/unified/utils/labels';

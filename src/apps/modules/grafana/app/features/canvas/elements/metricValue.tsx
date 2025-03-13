@@ -8,9 +8,9 @@ import { TextDimensionMode } from '@schema/index';
 import { usePanelContext, useStyles2 } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
 import { frameHasName, getFrameFieldsDisplayNames } from '@grafana/ui/src/components/MatchersUI/utils';
-import { DimensionContext } from 'app/features/dimensions/context';
-import { ColorDimensionEditor } from 'app/features/dimensions/editors/ColorDimensionEditor';
-import { TextDimensionEditor } from 'app/features/dimensions/editors/TextDimensionEditor';
+import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
+import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors/ColorDimensionEditor';
+import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/editors/TextDimensionEditor';
 
 import {
   CanvasElementItem,

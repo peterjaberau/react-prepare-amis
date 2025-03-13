@@ -33,8 +33,8 @@ import { actionsOverrideProcessor } from '@data/index/src/field/overrides/proces
 import { FieldConfig } from '@schema/index';
 import { RadioButtonGroup, TimeZonePicker, Switch } from '@grafana/ui';
 import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
-import { ThresholdsValueEditor } from 'app/features/dimensions/editors/ThresholdsEditor/thresholds';
-import { ValueMappingsEditor } from 'app/features/dimensions/editors/ValueMappingsEditor/ValueMappingsEditor';
+import { ThresholdsValueEditor } from '@grafana-module/app/features/dimensions/editors/ThresholdsEditor/thresholds';
+import { ValueMappingsEditor } from '@grafana-module/app/features/dimensions/editors/ValueMappingsEditor/ValueMappingsEditor';
 
 import { DashboardPicker, DashboardPickerOptions } from './DashboardPicker';
 import { ActionsValueEditor } from './actions';

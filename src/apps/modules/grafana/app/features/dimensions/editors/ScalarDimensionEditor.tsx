@@ -5,7 +5,7 @@ import { FieldType, GrafanaTheme2, SelectableValue, StandardEditorProps } from '
 import { ScalarDimensionMode, ScalarDimensionConfig } from '@schema/index';
 import { InlineField, InlineFieldRow, RadioButtonGroup, Select, useStyles2 } from '@grafana/ui';
 import { useFieldDisplayNames, useSelectOptions } from '@grafana/ui/src/components/MatchersUI/utils';
-import { NumberInput } from 'app/core/components/OptionsUI/NumberInput';
+import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { ScalarDimensionOptions } from '../types';
 

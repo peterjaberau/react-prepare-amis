@@ -3,9 +3,9 @@ import { produce } from 'immer';
 import { DataSourceInstanceSettings } from '@data/index';
 import { PromQuery } from '@grafana/prometheus';
 import { DataQuery } from '@schema/index';
-import { LokiQuery } from 'app/plugins/datasource/loki/types';
-import { CombinedRule } from 'app/types/unified-alerting';
-import { AlertQuery } from 'app/types/unified-alerting-dto';
+import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { isCloudRulesSource } from './datasource';
 import { isGrafanaRulerRule } from './rules';

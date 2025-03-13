@@ -5,7 +5,7 @@ import {
   SceneObjectUrlValues,
   VizPanel,
 } from '@scenes/index';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardLayoutManager } from '../types/DashboardLayoutManager';
 import { LayoutRegistryItem } from '../types/LayoutRegistryItem';

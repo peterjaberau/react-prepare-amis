@@ -1,9 +1,9 @@
 import { locationUtil } from '@data/index';
 import { LinkButton, ButtonVariant } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import { ROUTES as CONNECTIONS_ROUTES } from 'app/features/connections/constants';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { ROUTES as CONNECTIONS_ROUTES } from '@grafana-module/app/features/connections/constants';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 interface AddNewDataSourceButtonProps {
   onClick?: () => void;

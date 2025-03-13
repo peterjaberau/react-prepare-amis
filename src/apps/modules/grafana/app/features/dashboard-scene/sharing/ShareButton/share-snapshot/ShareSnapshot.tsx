@@ -3,9 +3,9 @@ import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { SceneComponentProps } from '@scenes/index';
 import { Alert, Button, ClipboardButton, Spinner, Stack, TextLink } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AccessControlAction } from 'app/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { SnapshotSharingOptions } from '../../../../dashboard/services/SnapshotSrv';
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';

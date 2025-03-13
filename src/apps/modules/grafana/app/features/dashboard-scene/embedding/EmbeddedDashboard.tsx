@@ -5,9 +5,9 @@ import { GrafanaTheme2, urlUtil } from '@data/index';
 import { EmbeddedDashboardProps } from '@runtime/index';
 import { SceneObjectStateChangedEvent, sceneUtils } from '@scenes/index';
 import { Spinner, Alert, useStyles2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { getMessageFromError } from 'app/core/utils/errors';
-import { DashboardRoutes } from 'app/types';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
+import { DashboardRoutes } from '@grafana-module/app/types';
 
 import { getDashboardScenePageStateManager } from '../pages/DashboardScenePageStateManager';
 import { DashboardScene } from '../scene/DashboardScene';

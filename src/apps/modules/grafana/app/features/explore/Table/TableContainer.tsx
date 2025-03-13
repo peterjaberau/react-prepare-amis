@@ -6,14 +6,14 @@ import { applyFieldOverrides, SplitOpen, DataFrame, LoadingState, FieldType } fr
 import { getTemplateSrv } from '@runtime/index';
 import { TimeZone } from '@schema/index';
 import { Table, AdHocFilterItem, PanelChrome, withTheme2, Themeable2 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { t, Trans } from 'app/core/internationalization';
+import { config } from '@grafana-module/app/core/config';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 import {
   hasDeprecatedParentRowIndex,
   migrateFromParentRowIndexToNestedFrames,
-} from 'app/plugins/panel/table/migrations';
-import { StoreState } from 'app/types';
-import { ExploreItemState } from 'app/types/explore';
+} from '@grafana-module/app/plugins/panel/table/migrations';
+import { StoreState } from '@grafana-module/app/types';
+import { ExploreItemState } from '@grafana-module/app/types/explore';
 
 import { LimitedDataDisclaimer } from '../LimitedDataDisclaimer';
 import { MetaInfoText } from '../MetaInfoText';

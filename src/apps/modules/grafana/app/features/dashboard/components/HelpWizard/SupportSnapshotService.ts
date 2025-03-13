@@ -2,9 +2,9 @@ import saveAs from 'file-saver';
 
 import { dateTimeFormat, formattedValueToString, getValueFormat, SelectableValue } from '@data/index';
 import { SceneObject } from '@scenes/index';
-import { StateManagerBase } from 'app/core/services/StateManagerBase';
-import { Randomize } from 'app/features/dashboard-scene/inspect/HelpWizard/randomizer';
-import { createDashboardSceneFromDashboardModel } from 'app/features/dashboard-scene/serialization/transformSaveModelToScene';
+import { StateManagerBase } from '@grafana-module/app/core/services/StateManagerBase';
+import { Randomize } from '@grafana-module/app/features/dashboard-scene/inspect/HelpWizard/randomizer';
+import { createDashboardSceneFromDashboardModel } from '@grafana-module/app/features/dashboard-scene/serialization/transformSaveModelToScene';
 
 import { getTimeSrv } from '../../services/TimeSrv';
 import { DashboardModel } from '../../state/DashboardModel';

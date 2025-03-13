@@ -22,10 +22,10 @@ import {
   PluginState,
 } from '@data/index';
 import { TextDimensionMode } from '@schema/index';
-import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
-import { getGeometryField, getLocationMatchers } from 'app/features/geo/utils/location';
-import { GraphFrame } from 'app/plugins/panel/nodeGraph/types';
-import { getGraphFrame } from 'app/plugins/panel/nodeGraph/utils';
+import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
+import { getGeometryField, getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
+import { GraphFrame } from '@grafana-module/app/plugins/panel/nodeGraph/types';
+import { getGraphFrame } from '@grafana-module/app/plugins/panel/nodeGraph/utils';
 
 import { MarkersLegendProps, MarkersLegend } from '../../components/MarkersLegend';
 import { ObservablePropsWrapper } from '../../components/ObservablePropsWrapper';

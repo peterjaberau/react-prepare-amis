@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, Stack, ToolbarButton, useTheme2 } from '@grafana/ui';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { t } from 'app/core/internationalization';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { Branding } from '../../Branding/Branding';
 import { OrganizationSwitcher } from '../OrganizationSwitcher/OrganizationSwitcher';

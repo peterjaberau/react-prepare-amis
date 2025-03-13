@@ -1,6 +1,6 @@
 import { PanelPlugin } from '@data/index';
 import { TagsInput } from '@grafana/ui';
-import { FolderPicker } from 'app/core/components/Select/FolderPicker';
+import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 
 import { DashList } from './DashList';
 import { dashlistMigrationHandler } from './migrations';

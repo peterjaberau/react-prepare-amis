@@ -11,7 +11,7 @@ import {
   LiveChannelScope,
 } from '@data/index';
 import { getGrafanaLiveSrv, locationService } from '@runtime/index';
-import { appEvents, contextSrv } from 'app/core/core';
+import { appEvents, contextSrv } from '@grafana-module/app/core/core';
 
 import { ShowModalReactEvent } from '../../../types/events';
 import { getDashboardSrv } from '../../dashboard/services/DashboardSrv';

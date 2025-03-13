@@ -15,9 +15,9 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { Panel } from '@grafana/schema/dist/esm/index.gen';
-import { OptionFilter } from 'app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
-import { getLastUsedDatasourceFromStorage } from 'app/features/dashboard/utils/dashboard';
-import { saveLibPanel } from 'app/features/library-panels/state/api';
+import { OptionFilter } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
+import { getLastUsedDatasourceFromStorage } from '@grafana-module/app/features/dashboard/utils/dashboard';
+import { saveLibPanel } from '@grafana-module/app/features/library-panels/state/api';
 
 import { DashboardSceneChangeTracker } from '../saving/DashboardSceneChangeTracker';
 import { getPanelChanges } from '../saving/getDashboardChanges';

@@ -15,7 +15,7 @@ import {
   DataFrame,
 } from '@data/index';
 import { fieldMatchersUI, useStyles2, ValuePicker } from '@grafana/ui';
-import { getDataLinksVariableSuggestions } from 'app/features/panel/panellinks/link_srv';
+import { getDataLinksVariableSuggestions } from '@grafana-module/app/features/panel/panellinks/link_srv';
 
 import { DynamicConfigValueEditor } from './DynamicConfigValueEditor';
 import { OptionsPaneCategoryDescriptor } from './OptionsPaneCategoryDescriptor';

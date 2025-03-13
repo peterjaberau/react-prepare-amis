@@ -6,9 +6,9 @@ import {
   SceneObjectRef,
   VizPanel,
 } from '@scenes/index';
-import { t } from 'app/core/internationalization';
-import { QueryInspector } from 'app/features/inspector/QueryInspector';
-import { InspectTab } from 'app/features/inspector/types';
+import { t } from '@grafana-module/app/core/internationalization';
+import { QueryInspector } from '@grafana-module/app/features/inspector/QueryInspector';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
 
 import { getQueryRunnerFor } from '../utils/utils';
 

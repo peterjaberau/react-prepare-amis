@@ -13,8 +13,8 @@ import {
   FrameGeometrySourceMode,
   EventBus,
 } from '@data/index';
-import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
-import { getLocationMatchers } from 'app/features/geo/utils/location';
+import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
+import { getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
 
 import { MarkersLegend, MarkersLegendProps } from '../../components/MarkersLegend';
 import { ObservablePropsWrapper } from '../../components/ObservablePropsWrapper';

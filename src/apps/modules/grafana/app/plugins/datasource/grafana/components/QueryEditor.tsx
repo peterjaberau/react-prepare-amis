@@ -31,10 +31,10 @@ import {
   withTheme2,
   Stack,
 } from '@grafana/ui';
-import { hasAlphaPanels } from 'app/core/config';
-import * as DFImport from 'app/features/dataframe-import';
-import { getManagedChannelInfo } from 'app/features/live/info';
-import { SearchQuery } from 'app/features/search/service/types';
+import { hasAlphaPanels } from '@grafana-module/app/core/config';
+import * as DFImport from '@grafana-module/app/features/dataframe-import';
+import { getManagedChannelInfo } from '@grafana-module/app/features/live/info';
+import { SearchQuery } from '@grafana-module/app/features/search/service/types';
 
 import { GrafanaDatasource } from '../datasource';
 import { defaultQuery, GrafanaQuery, GrafanaQueryType } from '../types';

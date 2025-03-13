@@ -15,12 +15,12 @@ import {
 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { sceneGraph } from '@scenes/index';
-import appEvents from 'app/core/app_events';
-import { config } from 'app/core/config';
-import { t } from 'app/core/internationalization';
-import { AutoRefreshInterval, contextSrv, ContextSrv } from 'app/core/services/context_srv';
-import { getCopiedTimeRange, getShiftedTimeRange, getZoomedTimeRange } from 'app/core/utils/timePicker';
-import { getTimeRange } from 'app/features/dashboard/utils/timeRange';
+import appEvents from '@grafana-module/app/core/app_events';
+import { config } from '@grafana-module/app/core/config';
+import { t } from '@grafana-module/app/core/internationalization';
+import { AutoRefreshInterval, contextSrv, ContextSrv } from '@grafana-module/app/core/services/context_srv';
+import { getCopiedTimeRange, getShiftedTimeRange, getZoomedTimeRange } from '@grafana-module/app/core/utils/timePicker';
+import { getTimeRange } from '@grafana-module/app/features/dashboard/utils/timeRange';
 
 import {
   AbsoluteTimeEvent,

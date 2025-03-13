@@ -4,9 +4,9 @@ import { useAsync } from 'react-use';
 
 import { Field, LinkModel, PanelProps } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { TraceView } from 'app/features/explore/TraceView/TraceView';
-import { SpanLinkFunc } from 'app/features/explore/TraceView/components';
-import { transformDataFrames } from 'app/features/explore/TraceView/utils/transform';
+import { TraceView } from '@grafana-module/app/features/explore/TraceView/TraceView';
+import { SpanLinkFunc } from '@grafana-module/app/features/explore/TraceView/components';
+import { transformDataFrames } from '@grafana-module/app/features/explore/TraceView/utils/transform';
 
 import { replaceSearchVariables, SearchProps } from '../../../features/explore/TraceView/useSearch';
 

@@ -2,10 +2,10 @@ import debounce from 'debounce-promise';
 import { useEffect, useRef, useState } from 'react';
 
 import { config } from '@runtime/index';
-import { t } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import impressionSrv from 'app/core/services/impression_srv';
-import { getGrafanaSearcher } from 'app/features/search/service/searcher';
+import { t } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import impressionSrv from '@grafana-module/app/core/services/impression_srv';
+import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
 
 import { CommandPaletteAction } from '../types';
 import { RECENT_DASHBOARDS_PRIORITY, SEARCH_RESULTS_PRIORITY } from '../values';

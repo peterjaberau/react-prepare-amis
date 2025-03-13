@@ -12,9 +12,9 @@ import {
   DataSourceUpdatedSuccessfully,
 } from '@data/index';
 import { getDataSourceSrv, usePluginComponents, UsePluginComponentsResult } from '@runtime/index';
-import appEvents from 'app/core/app_events';
-import PageLoader from 'app/core/components/PageLoader/PageLoader';
-import { DataSourceSettingsState, useDispatch } from 'app/types';
+import appEvents from '@grafana-module/app/core/app_events';
+import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
+import { DataSourceSettingsState, useDispatch } from '@grafana-module/app/types';
 
 import {
   dataSourceLoaded,

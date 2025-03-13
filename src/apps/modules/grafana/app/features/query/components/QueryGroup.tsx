@@ -16,17 +16,17 @@ import {
 import { getDataSourceSrv, locationService } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { Button, HorizontalGroup, InlineFormLabel, Modal, ScrollContainer, stylesFactory } from '@grafana/ui';
-import { PluginHelp } from 'app/core/components/PluginHelp/PluginHelp';
-import config from 'app/core/config';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { addQuery, queryIsEmpty } from 'app/core/utils/query';
-import { DataSourceModal } from 'app/features/datasources/components/picker/DataSourceModal';
-import { DataSourcePicker } from 'app/features/datasources/components/picker/DataSourcePicker';
-import { dataSource as expressionDatasource } from 'app/features/expressions/ExpressionDatasource';
-import { AngularDeprecationPluginNotice } from 'app/features/plugins/angularDeprecation/AngularDeprecationPluginNotice';
-import { isSharedDashboardQuery } from 'app/plugins/datasource/dashboard/runSharedRequest';
-import { GrafanaQuery } from 'app/plugins/datasource/grafana/types';
-import { QueryGroupOptions } from 'app/types';
+import { PluginHelp } from '@grafana-module/app/core/components/PluginHelp/PluginHelp';
+import config from '@grafana-module/app/core/config';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { addQuery, queryIsEmpty } from '@grafana-module/app/core/utils/query';
+import { DataSourceModal } from '@grafana-module/app/features/datasources/components/picker/DataSourceModal';
+import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
+import { dataSource as expressionDatasource } from '@grafana-module/app/features/expressions/ExpressionDatasource';
+import { AngularDeprecationPluginNotice } from '@grafana-module/app/features/plugins/angularDeprecation/AngularDeprecationPluginNotice';
+import { isSharedDashboardQuery } from '@grafana-module/app/plugins/datasource/dashboard/runSharedRequest';
+import { GrafanaQuery } from '@grafana-module/app/plugins/datasource/grafana/types';
+import { QueryGroupOptions } from '@grafana-module/app/types';
 
 import { isAngularDatasourcePluginAndNotHidden } from '../../plugins/angularDeprecation/utils';
 import { PanelQueryRunner } from '../state/PanelQueryRunner';

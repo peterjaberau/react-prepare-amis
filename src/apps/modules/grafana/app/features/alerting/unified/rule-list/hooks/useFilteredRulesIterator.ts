@@ -3,18 +3,18 @@ import { merge } from 'ix/asynciterable/merge';
 import { filter, flatMap, map } from 'ix/asynciterable/operators';
 import { compact } from 'lodash';
 
-import { Matcher } from 'app/plugins/datasource/alertmanager/types';
+import { Matcher } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 import {
   DataSourceRuleGroupIdentifier,
   DataSourceRulesSourceIdentifier,
   GrafanaRuleGroupIdentifier,
-} from 'app/types/unified-alerting';
+} from '@grafana-module/app/types/unified-alerting';
 import {
   GrafanaPromRuleDTO,
   GrafanaPromRuleGroupDTO,
   PromRuleDTO,
   PromRuleGroupDTO,
-} from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/types/unified-alerting-dto';
 
 import { RulesFilter } from '../../search/rulesSearchParser';
 import { labelsMatchMatchers } from '../../utils/alertmanager';

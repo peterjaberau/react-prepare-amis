@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 import { Dropdown, Button, Icon } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 
 import AddPanelMenu from './AddPanelMenu';
 

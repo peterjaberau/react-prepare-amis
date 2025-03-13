@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { LinkButton, CallToActionCard, Icon, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 function getCardStyles(theme: GrafanaTheme2) {
   return css({

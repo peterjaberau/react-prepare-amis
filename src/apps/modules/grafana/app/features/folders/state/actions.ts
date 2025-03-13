@@ -1,6 +1,6 @@
-import { updateNavIndex } from 'app/core/actions';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { FolderDTO, ThunkResult } from 'app/types';
+import { updateNavIndex } from '@grafana-module/app/core/actions';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { FolderDTO, ThunkResult } from '@grafana-module/app/types';
 
 import { buildNavModel } from './navModel';
 import { loadFolder } from './reducers';

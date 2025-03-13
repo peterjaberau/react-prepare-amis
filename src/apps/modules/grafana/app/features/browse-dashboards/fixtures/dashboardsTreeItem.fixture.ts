@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 
-import { DashboardViewItem } from 'app/features/search/types';
+import { DashboardViewItem } from '@grafana-module/app/features/search/types';
 
 import { DashboardsTreeItem, UIDashboardViewItem } from '../types';
 

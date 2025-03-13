@@ -2,8 +2,8 @@ import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { AdHocVariableModel, DataSourceInstanceSettings, getDataSourceRef } from '@data/index';
-import { AdHocVariableForm } from 'app/features/dashboard-scene/settings/variables/components/AdHocVariableForm';
-import { StoreState } from 'app/types';
+import { AdHocVariableForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/AdHocVariableForm';
+import { StoreState } from '@grafana-module/app/types';
 
 import { initialVariableEditorState } from '../editor/reducer';
 import { getAdhocVariableEditorState } from '../editor/selectors';

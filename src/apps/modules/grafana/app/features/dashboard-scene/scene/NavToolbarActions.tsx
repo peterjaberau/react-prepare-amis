@@ -17,15 +17,15 @@ import {
   ToolbarButtonRow,
   useStyles2,
 } from '@grafana/ui';
-import { AppChromeUpdate } from 'app/core/components/AppChrome/AppChromeUpdate';
-import { NavToolbarSeparator } from 'app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
-import grafanaConfig from 'app/core/config';
-import { LS_PANEL_COPY_KEY } from 'app/core/constants';
-import { contextSrv } from 'app/core/core';
-import { Trans, t } from 'app/core/internationalization';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { playlistSrv } from 'app/features/playlist/PlaylistSrv';
-import { ScopesSelector } from 'app/features/scopes';
+import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
+import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
+import grafanaConfig from '@grafana-module/app/core/config';
+import { LS_PANEL_COPY_KEY } from '@grafana-module/app/core/constants';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
+import { ScopesSelector } from '@grafana-module/app/features/scopes';
 
 import { shareDashboardType } from '../../dashboard/components/ShareModal/utils';
 import { PanelEditor, buildPanelEditScene } from '../panel-edit/PanelEditor';

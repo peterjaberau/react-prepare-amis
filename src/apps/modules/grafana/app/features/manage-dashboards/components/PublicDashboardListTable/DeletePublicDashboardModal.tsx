@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@grafana/data/src';
 import { config } from '@runtime/index';
 import { ConfirmModal, useStyles2 } from '@grafana/ui/src';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 const Body = () => {
   const styles = useStyles2(getStyles);

@@ -4,10 +4,10 @@ import { GrafanaTheme2, TimeRange } from '@data/index';
 import { alpha } from '@data/index/src/themes/colorManipulator';
 import { TimelineValueAlignment, VisibilityMode } from '@schema/index';
 import { FIXED_UNIT } from '@grafana/ui';
-import { distribute, SPACE_BETWEEN } from 'app/plugins/panel/barchart/distribute';
-import { Quadtree, Rect } from 'app/plugins/panel/barchart/quadtree';
-import { FieldConfig as StateTimeLineFieldConfig } from 'app/plugins/panel/state-timeline/panelcfg.gen';
-import { FieldConfig as StatusHistoryFieldConfig } from 'app/plugins/panel/status-history/panelcfg.gen';
+import { distribute, SPACE_BETWEEN } from '@grafana-module/app/plugins/panel/barchart/distribute';
+import { Quadtree, Rect } from '@grafana-module/app/plugins/panel/barchart/quadtree';
+import { FieldConfig as StateTimeLineFieldConfig } from '@grafana-module/app/plugins/panel/state-timeline/panelcfg.gen';
+import { FieldConfig as StatusHistoryFieldConfig } from '@grafana-module/app/plugins/panel/status-history/panelcfg.gen';
 
 import { TimelineMode } from './utils';
 

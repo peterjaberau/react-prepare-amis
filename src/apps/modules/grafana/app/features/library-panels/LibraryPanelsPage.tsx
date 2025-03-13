@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Page } from 'app/core/components/Page/Page';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { LibraryPanelsSearch } from './components/LibraryPanelsSearch/LibraryPanelsSearch';
 import { OpenLibraryPanelModal } from './components/OpenLibraryPanelModal/OpenLibraryPanelModal';

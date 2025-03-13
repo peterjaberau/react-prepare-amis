@@ -2,12 +2,12 @@ import { useForm } from 'react-hook-form';
 
 import { Button, Divider, Field, FieldSet, Icon, Stack, Tooltip } from '@grafana/ui';
 import { Input } from '@grafana/ui/src/components/Input/Input';
-import { contextSrv } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { publicDashboardApi, useAddRecipientMutation } from 'app/features/dashboard/api/publicDashboardApi';
-import { validEmailRegex } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { publicDashboardApi, useAddRecipientMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { validEmailRegex } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { useShareDrawerContext } from '../../../../ShareDrawer/ShareDrawerContext';
 import ShareConfiguration from '../../ShareConfiguration';

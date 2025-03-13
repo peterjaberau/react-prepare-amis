@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 type Props = {
   status: PromAlertingRuleState | 'neutral';

@@ -7,12 +7,12 @@ import { DataFrame, GrafanaTheme2, PanelOptionsEditorBuilder, StandardEditorCont
 import { PanelOptionsSupplier } from '@grafana/data/src/panel/PanelPlugin';
 import { NestedValueAccess } from '@grafana/data/src/utils/OptionsUIBuilders';
 import { useStyles2 } from '@grafana/ui/src';
-import { AddLayerButton } from 'app/core/components/Layers/AddLayerButton';
-import { FrameState } from 'app/features/canvas/runtime/frame';
-import { OptionsPaneCategory } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategory';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { fillOptionsPaneItems } from 'app/features/dashboard/components/PanelEditor/getVisualizationOptions';
-import { setOptionImmutably } from 'app/features/dashboard/components/PanelEditor/utils';
+import { AddLayerButton } from '@grafana-module/app/core/components/Layers/AddLayerButton';
+import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
+import { OptionsPaneCategory } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategory';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { fillOptionsPaneItems } from '@grafana-module/app/features/dashboard/components/PanelEditor/getVisualizationOptions';
+import { setOptionImmutably } from '@grafana-module/app/features/dashboard/components/PanelEditor/utils';
 
 import { activePanelSubject, InstanceState } from '../../CanvasPanel';
 import { addStandardCanvasEditorOptions } from '../../module';

@@ -1,5 +1,5 @@
 import { Alert } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 const InfoPausedRule = () => {
   return (

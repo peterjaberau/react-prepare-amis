@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { debounce, each, indexOf, map, partial, escape, unescape } from 'lodash';
 
-import coreModule from 'app/angular/core_module';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 const template = `
 <div class="dropdown cascade-open">

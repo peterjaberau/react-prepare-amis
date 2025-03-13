@@ -26,11 +26,11 @@ import {
   TextArea,
   useStyles2,
 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { SilenceCreatedResponse, alertSilencesApi } from 'app/features/alerting/unified/api/alertSilencesApi';
-import { MATCHER_ALERT_RULE_UID } from 'app/features/alerting/unified/utils/constants';
-import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from 'app/features/alerting/unified/utils/datasource';
-import { MatcherOperator, SilenceCreatePayload } from 'app/plugins/datasource/alertmanager/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { SilenceCreatedResponse, alertSilencesApi } from '@grafana-module/app/features/alerting/unified/api/alertSilencesApi';
+import { MATCHER_ALERT_RULE_UID } from '@grafana-module/app/features/alerting/unified/utils/constants';
+import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { MatcherOperator, SilenceCreatePayload } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { AlertmanagerAction, useAlertmanagerAbility } from '../../hooks/useAbilities';
 import { useAlertmanager } from '../../state/AlertmanagerContext';

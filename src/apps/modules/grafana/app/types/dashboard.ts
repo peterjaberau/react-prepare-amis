@@ -1,7 +1,7 @@
 import { DataQuery } from '@data/index';
 import { Dashboard, DataSourceRef } from '@schema/index';
-import { ObjectMeta } from 'app/features/apiserver/types';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
+import { ObjectMeta } from '@grafana-module/app/features/apiserver/types';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 
 export interface HomeDashboardRedirectDTO {
   redirectUri: string;

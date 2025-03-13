@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { config } from '@runtime/index';
 import { Button, ModalsController, ButtonProps } from '@grafana/ui/src';
-import { t } from 'app/core/internationalization';
-import { useDeletePublicDashboardMutation } from 'app/features/dashboard/api/publicDashboardApi';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
+import { t } from '@grafana-module/app/core/internationalization';
+import { useDeletePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 
 import { DeletePublicDashboardModal } from './DeletePublicDashboardModal';
 

@@ -3,8 +3,8 @@ import { useEffect, useMemo } from 'react';
 import { DataQuery, DataQueryRequest, DataQueryResponse, TestDataSourceResponse } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { RuntimeDataSource, sceneUtils } from '@scenes/index';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { dispatch } from 'app/store/store';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { stateHistoryApi } from '../../../api/stateHistoryApi';
 import { DataSourceInformation } from '../../../home/Insights';

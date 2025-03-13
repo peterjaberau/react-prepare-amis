@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom-v5-compat';
 
 import { getDataSourceSrv, locationService } from '@runtime/index';
-import { Page } from 'app/core/components/Page/Page';
-import { useDispatch } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { setInitialDatasource } from '../state/reducers';
 

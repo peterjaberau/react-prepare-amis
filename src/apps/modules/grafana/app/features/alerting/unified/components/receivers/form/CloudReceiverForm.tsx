@@ -2,12 +2,12 @@ import { useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
 import { Alert } from '@grafana/ui';
-import { alertmanagerApi } from 'app/features/alerting/unified/api/alertmanagerApi';
+import { alertmanagerApi } from '@grafana-module/app/features/alerting/unified/api/alertmanagerApi';
 import {
   useCreateContactPoint,
   useUpdateContactPoint,
-} from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { Receiver } from 'app/plugins/datasource/alertmanager/types';
+} from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { Receiver } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { CloudChannelMap, CloudChannelValues, ReceiverFormValues } from '../../../types/receiver-form';
 import { cloudNotifierTypes } from '../../../utils/cloud-alertmanager-notifier-types';

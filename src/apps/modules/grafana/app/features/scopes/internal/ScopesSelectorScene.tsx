@@ -5,8 +5,8 @@ import { finalize, from, Subscription } from 'rxjs';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState } from '@scenes/index';
 import { Button, Drawer, IconButton, Spinner, useStyles2 } from '@grafana/ui';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { t, Trans } from 'app/core/internationalization';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { ScopesDashboardsScene } from './ScopesDashboardsScene';
 import { ScopesInput } from './ScopesInput';

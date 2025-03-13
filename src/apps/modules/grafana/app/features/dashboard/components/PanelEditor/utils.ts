@@ -1,7 +1,7 @@
 import { omit } from 'lodash';
 
 import { FieldConfigSource, PanelPlugin } from '@data/index';
-import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT } from 'app/core/constants';
+import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT } from '@grafana-module/app/core/constants';
 
 import { PanelModel } from '../../state/PanelModel';
 

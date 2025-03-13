@@ -4,8 +4,8 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Drawer, Text, TextLink, Switch, useStyles2 } from '@grafana/ui';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { StoreState } from 'app/types';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { StoreState } from '@grafana-module/app/types';
 
 import { loadSettings, saveSettings } from './state/actions';
 

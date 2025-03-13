@@ -11,9 +11,9 @@ import {
   Pagination,
   FetchDataFunc,
 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { EmptyArea } from 'app/features/alerting/unified/components/EmptyArea';
-import { UserAnonymousDeviceDTO } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { EmptyArea } from '@grafana-module/app/features/alerting/unified/components/EmptyArea';
+import { UserAnonymousDeviceDTO } from '@grafana-module/app/types';
 
 type Cell<T extends keyof UserAnonymousDeviceDTO = keyof UserAnonymousDeviceDTO> = CellProps<
   UserAnonymousDeviceDTO,

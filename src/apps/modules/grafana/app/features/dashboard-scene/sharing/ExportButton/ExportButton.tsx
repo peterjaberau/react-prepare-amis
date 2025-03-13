@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 import { Button, ButtonGroup, Dropdown, Icon } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 

@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 import { GrafanaTheme2, UrlQueryMap } from '@data/index';
 import { Tab, TabContent, TabsBar, useStyles2 } from '@grafana/ui';
-import { useQueryParams } from 'app/core/hooks/useQueryParams';
-import { useMuteTimings } from 'app/features/alerting/unified/components/mute-timings/useMuteTimings';
-import { NotificationPoliciesList } from 'app/features/alerting/unified/components/notification-policies/NotificationPoliciesList';
-import { AlertmanagerAction, useAlertmanagerAbility } from 'app/features/alerting/unified/hooks/useAbilities';
+import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
+import { useMuteTimings } from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
+import { NotificationPoliciesList } from '@grafana-module/app/features/alerting/unified/components/notification-policies/NotificationPoliciesList';
+import { AlertmanagerAction, useAlertmanagerAbility } from '@grafana-module/app/features/alerting/unified/hooks/useAbilities';
 
 import { AlertmanagerPageWrapper } from './components/AlertingPageWrapper';
 import { GrafanaAlertmanagerDeliveryWarning } from './components/GrafanaAlertmanagerDeliveryWarning';

@@ -7,8 +7,8 @@ import { sanitize, sanitizeUrl } from '@grafana/data/src/text/sanitize';
 import { DashboardLink } from '@schema/index';
 import { Dropdown, Icon, Button, Menu, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { ButtonLinkProps, LinkButton } from '@grafana/ui/src/components/Button';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import { DashboardSearchItem } from 'app/features/search/types';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { DashboardSearchItem } from '@grafana-module/app/features/search/types';
 
 import { getLinkSrv } from '../../../panel/panellinks/link_srv';
 

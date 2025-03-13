@@ -10,9 +10,9 @@ import {
   PanelData,
   DataTopic,
 } from '@data/index';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { QueryRunnerOptions } from 'app/features/query/state/PanelQueryRunner';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { QueryRunnerOptions } from '@grafana-module/app/features/query/state/PanelQueryRunner';
 
 import { SHARED_DASHBOARD_QUERY } from './constants';
 import { DashboardQuery } from './types';

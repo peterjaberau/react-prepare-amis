@@ -2,11 +2,11 @@ import { saveAs } from 'file-saver';
 import { PureComponent } from 'react';
 
 import { Button, Field, Modal, Switch } from '@grafana/ui';
-import { appEvents } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { DashboardExporter } from 'app/features/dashboard/components/DashExportModal';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { ShowModalReactEvent } from 'app/types/events';
+import { appEvents } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { DashboardExporter } from '@grafana-module/app/features/dashboard/components/DashExportModal';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { ShowModalReactEvent } from '@grafana-module/app/types/events';
 
 import { ViewJsonModal } from './ViewJsonModal';
 import { ShareModalTabProps } from './types';

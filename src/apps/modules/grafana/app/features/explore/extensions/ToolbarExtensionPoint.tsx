@@ -3,8 +3,8 @@ import { ReactElement, useMemo, useState } from 'react';
 import { type PluginExtensionLink, PluginExtensionPoints, RawTimeRange, getTimeZone } from '@data/index';
 import { config, reportInteraction, usePluginLinks } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AccessControlAction, ExplorePanelData, useSelector } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AccessControlAction, ExplorePanelData, useSelector } from '@grafana-module/app/types';
 
 import { getExploreItemSelector, isLeftPaneSelector, selectCorrelationDetails } from '../state/selectors';
 

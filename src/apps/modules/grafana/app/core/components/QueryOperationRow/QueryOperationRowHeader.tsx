@@ -5,7 +5,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, IconButton, useStyles2, Stack } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 export interface QueryOperationRowHeaderProps {
   actionsElement?: React.ReactNode;

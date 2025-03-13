@@ -1,6 +1,6 @@
 import { clone, map } from 'lodash';
 
-import { functionRenderer, QueryPart, QueryPartDef, suffixRenderer } from 'app/features/alerting/state/query_part';
+import { functionRenderer, QueryPart, QueryPartDef, suffixRenderer } from '@grafana-module/app/features/alerting/state/query_part';
 
 const index: any[] = [];
 const categories = {

@@ -16,15 +16,15 @@ import {
   isFetchError,
   locationService,
 } from '@runtime/index';
-import { updateNavIndex } from 'app/core/actions';
-import { appEvents, contextSrv } from 'app/core/core';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import { DatasourceAPIVersions } from 'app/features/apiserver/client';
-import { ROUTES as CONNECTIONS_ROUTES } from 'app/features/connections/constants';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { getPluginSettings } from 'app/features/plugins/pluginSettings';
-import { importDataSourcePlugin } from 'app/features/plugins/plugin_loader';
-import { AccessControlAction, DataSourcePluginCategory, ThunkDispatch, ThunkResult } from 'app/types';
+import { updateNavIndex } from '@grafana-module/app/core/actions';
+import { appEvents, contextSrv } from '@grafana-module/app/core/core';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { DatasourceAPIVersions } from '@grafana-module/app/features/apiserver/client';
+import { ROUTES as CONNECTIONS_ROUTES } from '@grafana-module/app/features/connections/constants';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getPluginSettings } from '@grafana-module/app/features/plugins/pluginSettings';
+import { importDataSourcePlugin } from '@grafana-module/app/features/plugins/plugin_loader';
+import { AccessControlAction, DataSourcePluginCategory, ThunkDispatch, ThunkResult } from '@grafana-module/app/types';
 
 import * as api from '../api';
 import { DATASOURCES_ROUTES } from '../constants';

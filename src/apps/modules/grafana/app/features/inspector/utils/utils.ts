@@ -1,5 +1,5 @@
 import { AppEvents } from '@data/index';
-import appEvents from 'app/core/app_events';
+import appEvents from '@grafana-module/app/core/app_events';
 
 export function getPrettyJSON(obj: unknown): string {
   let r = '';

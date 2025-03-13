@@ -1,7 +1,7 @@
 import { NavModel, NavModelItem, PageLayoutType, arrayUtils } from '@data/index';
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { DashboardLink } from '@schema/index';
-import { Page } from 'app/core/components/Page/Page';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { NavToolbarActions } from '../scene/NavToolbarActions';

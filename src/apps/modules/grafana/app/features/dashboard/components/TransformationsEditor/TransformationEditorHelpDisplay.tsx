@@ -1,6 +1,6 @@
 import { TransformerRegistryItem } from '@data/index';
 import { Drawer } from '@grafana/ui';
-import { OperationRowHelp } from 'app/core/components/QueryOperationRow/OperationRowHelp';
+import { OperationRowHelp } from '@grafana-module/app/core/components/QueryOperationRow/OperationRowHelp';
 
 import { getLinkToDocs } from '../../../transformers/docs/content';
 

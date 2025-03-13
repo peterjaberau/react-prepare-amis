@@ -3,9 +3,9 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
 import { Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { CombinedRule } from 'app/types/unified-alerting';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { getFirstActiveAt, isAlertingRule, isGrafanaRecordingRule, isRecordingRule } from '../../utils/rules';
 import { StateTag } from '../StateTag';

@@ -6,10 +6,10 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { LinkButton, FilterInput, useStyles2 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { getConfig } from 'app/core/config';
-import { Trans } from 'app/core/internationalization';
-import { useDispatch } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { getConfig } from '@grafana-module/app/core/config';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { contextSrv } from '../../core/services/context_srv';
 import { buildNavModel, getDashboardsTabID } from '../folders/state/navModel';

@@ -10,13 +10,13 @@ import { defaults, find, without } from 'lodash';
 
 import { DataFrame, FieldConfigProperty, PanelEvents, PanelPlugin } from '@data/index';
 import { locationService } from '@runtime/index';
-import { MetricsPanelCtrl } from 'app/angular/panel/metrics_panel_ctrl';
-import config from 'app/core/config';
-import TimeSeries from 'app/core/time_series2';
-import { ThresholdMapper } from 'app/features/alerting/state/ThresholdMapper';
-import { getPanelPluginToMigrateTo } from 'app/features/dashboard/state/getPanelPluginToMigrateTo';
-import { changePanelPlugin } from 'app/features/panel/state/actions';
-import { dispatch } from 'app/store/store';
+import { MetricsPanelCtrl } from '@grafana-module/app/angular/panel/metrics_panel_ctrl';
+import config from '@grafana-module/app/core/config';
+import TimeSeries from '@grafana-module/app/core/time_series2';
+import { ThresholdMapper } from '@grafana-module/app/features/alerting/state/ThresholdMapper';
+import { getPanelPluginToMigrateTo } from '@grafana-module/app/features/dashboard/state/getPanelPluginToMigrateTo';
+import { changePanelPlugin } from '@grafana-module/app/features/panel/state/actions';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { appEvents } from '../../../core/core';
 import { loadSnapshotData } from '../../../features/dashboard/utils/loadSnapshotData';

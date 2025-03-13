@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import { GrafanaRootScope } from 'app/angular/GrafanaCtrl';
+import { GrafanaRootScope } from '@grafana-module/app/angular/GrafanaCtrl';
 
 import coreModule from './core_module';
 

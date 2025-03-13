@@ -1,8 +1,8 @@
 import { PureComponent } from 'react';
 
 import { FetchError, getBackendSrv, isFetchError, locationService } from '@runtime/index';
-import config from 'app/core/config';
-import { t } from 'app/core/internationalization';
+import config from '@grafana-module/app/core/config';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { LoginDTO, AuthNRedirectDTO } from './types';
 

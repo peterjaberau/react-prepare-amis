@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import * as React from 'react';
 
 import { Input, defaultIntervals, Field } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { getTimeSrv } from '../../services/TimeSrv';
 

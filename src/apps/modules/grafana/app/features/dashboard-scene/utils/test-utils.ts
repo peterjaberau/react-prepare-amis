@@ -12,9 +12,9 @@ import {
   TestVariable,
   VizPanel,
 } from '@scenes/index';
-import { DashboardLoaderSrv, setDashboardLoaderSrv } from 'app/features/dashboard/services/DashboardLoaderSrv';
-import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE } from 'app/features/variables/constants';
-import { DashboardDTO } from 'app/types';
+import { DashboardLoaderSrv, setDashboardLoaderSrv } from '@grafana-module/app/features/dashboard/services/DashboardLoaderSrv';
+import { ALL_VARIABLE_TEXT, ALL_VARIABLE_VALUE } from '@grafana-module/app/features/variables/constants';
+import { DashboardDTO } from '@grafana-module/app/types';
 
 import { VizPanelLinks, VizPanelLinksMenu } from '../scene/PanelLinks';
 import { DashboardGridItem, RepeatDirection } from '../scene/layout-default/DashboardGridItem';

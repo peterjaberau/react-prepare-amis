@@ -1,7 +1,7 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
 import { remove, toArray, unset } from 'lodash';
 
-import { AlertManagerCortexConfig } from 'app/plugins/datasource/alertmanager/types';
+import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { TemplateFormValues } from '../../components/receivers/TemplateForm';
 import { ensureDefine } from '../../utils/templates';

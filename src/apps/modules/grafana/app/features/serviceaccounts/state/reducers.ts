@@ -7,7 +7,7 @@ import {
   ServiceAccountProfileState,
   ServiceAccountsState,
   ServiceAccountStateFilter,
-} from 'app/types';
+} from '@grafana-module/app/types';
 
 // serviceAccountsProfilePage
 export const initialStateProfile: ServiceAccountProfileState = {

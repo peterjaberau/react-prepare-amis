@@ -7,7 +7,7 @@ import {
   toDataFrame,
 } from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
-import { TermCount } from 'app/core/components/TagFilter/TagFilter';
+import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
 
 import { DashboardQueryResult, GrafanaSearcher, QueryResponse, SearchQuery, SearchResultMeta } from './types';
 import { replaceCurrentFolderQuery } from './utils';

@@ -1,7 +1,7 @@
 import { SelectableValue } from '@data/index';
 import { Select } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { OptionsPaneItemDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { t } from '@grafana-module/app/core/internationalization';
+import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 
 import { ResponsiveGridLayoutManager } from './ResponsiveGridLayoutManager';
 

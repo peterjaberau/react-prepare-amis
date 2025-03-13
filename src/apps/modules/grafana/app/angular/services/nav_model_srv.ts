@@ -1,7 +1,7 @@
 import { NavModelItem } from '@data/index';
-import coreModule from 'app/angular/core_module';
-import config from 'app/core/config';
-import { getNotFoundNav } from 'app/core/navigation/errorModels';
+import coreModule from '@grafana-module/app/angular/core_module';
+import config from '@grafana-module/app/core/config';
+import { getNotFoundNav } from '@grafana-module/app/core/navigation/errorModels';
 
 interface Nav {
   breadcrumbs: NavModelItem[];

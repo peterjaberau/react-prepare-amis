@@ -1,7 +1,7 @@
 import tinycolor from 'tinycolor2';
 
-import coreModule from 'app/angular/core_module';
-import config from 'app/core/config';
+import coreModule from '@grafana-module/app/angular/core_module';
+import config from '@grafana-module/app/core/config';
 export class ThresholdFormCtrl {
   panelCtrl: any;
   panel: any;

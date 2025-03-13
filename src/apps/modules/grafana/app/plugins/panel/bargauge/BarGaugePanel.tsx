@@ -15,7 +15,7 @@ import {
 import { BarGaugeSizing } from '@schema/index';
 import { BarGauge, DataLinksContextMenu, VizLayout, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
 import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 import { BarGaugeLegend } from './BarGaugeLegend';
 import { defaultOptions, Options } from './panelcfg.gen';

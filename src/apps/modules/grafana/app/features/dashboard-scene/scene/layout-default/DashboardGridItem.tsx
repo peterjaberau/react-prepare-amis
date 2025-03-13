@@ -14,8 +14,8 @@ import {
   VizPanelState,
   VariableValueSingle,
 } from '@scenes/index';
-import { GRID_COLUMN_COUNT } from 'app/core/constants';
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { GRID_COLUMN_COUNT } from '@grafana-module/app/core/constants';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { getCloneKey } from '../../utils/clone';
 import { getMultiVariableValues } from '../../utils/utils';

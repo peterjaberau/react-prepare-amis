@@ -8,16 +8,16 @@ import angular from 'angular'; // eslint-disable-line no-duplicate-imports
 import { extend } from 'lodash';
 
 import { getTemplateSrv } from '@runtime/index';
-import { coreModule, angularModules } from 'app/angular/core_module';
-import appEvents from 'app/core/app_events';
-import { config } from 'app/core/config';
-import { contextSrv } from 'app/core/services/context_srv';
-import { DashboardLoaderSrv } from 'app/features/dashboard/services/DashboardLoaderSrv';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { setAngularPanelReactWrapper } from 'app/features/plugins/importPanelPlugin';
-import { SystemJS } from 'app/features/plugins/loader/systemjs';
-import { buildImportMap } from 'app/features/plugins/loader/utils';
-import * as sdk from 'app/plugins/sdk';
+import { coreModule, angularModules } from '@grafana-module/app/angular/core_module';
+import appEvents from '@grafana-module/app/core/app_events';
+import { config } from '@grafana-module/app/core/config';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { DashboardLoaderSrv } from '@grafana-module/app/features/dashboard/services/DashboardLoaderSrv';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { setAngularPanelReactWrapper } from '@grafana-module/app/features/plugins/importPanelPlugin';
+import { SystemJS } from '@grafana-module/app/features/plugins/loader/systemjs';
+import { buildImportMap } from '@grafana-module/app/features/plugins/loader/utils';
+import * as sdk from '@grafana-module/app/plugins/sdk';
 
 import { registerAngularDirectives } from './angular_wrappers';
 import { initAngularRoutingBridge } from './bridgeReactAngularRouting';
@@ -32,17 +32,17 @@ const importMap = {
     ...angular,
     default: angular,
   },
-  'app/core/core_module': {
+  '@grafana-module/app/core/core_module': {
     default: coreModule,
     __useDefault: true,
   },
-  'app/core/core': {
+  '@grafana-module/app/core/core': {
     appEvents: appEvents,
     contextSrv: contextSrv,
     coreModule: coreModule,
   },
-  'app/plugins/sdk': sdk,
-  'app/core/utils/promiseToDigest': { promiseToDigest },
+  '@grafana-module/app/plugins/sdk': sdk,
+  '@grafana-module/app/core/utils/promiseToDigest': { promiseToDigest },
 } as Record<string, System.Module>;
 
 export class AngularApp {

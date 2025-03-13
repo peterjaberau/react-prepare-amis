@@ -1,5 +1,5 @@
-import { Page } from 'app/core/components/Page/Page';
-import { NewDataSource } from 'app/features/datasources/components/NewDataSource';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { NewDataSource } from '@grafana-module/app/features/datasources/components/NewDataSource';
 
 export function NewDataSourcePage() {
   return (

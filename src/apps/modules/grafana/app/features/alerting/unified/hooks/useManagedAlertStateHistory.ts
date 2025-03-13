@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-import { useDispatch } from 'app/types';
-import { StateHistoryItem } from 'app/types/unified-alerting';
+import { useDispatch } from '@grafana-module/app/types';
+import { StateHistoryItem } from '@grafana-module/app/types/unified-alerting';
 
 import { fetchGrafanaAnnotationsAction } from '../state/actions';
 import { AsyncRequestState } from '../utils/redux';

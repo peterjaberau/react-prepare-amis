@@ -4,12 +4,12 @@ import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { Button, ClipboardButton, Field, Input, Modal, RadioButtonGroup, Stack } from '@grafana/ui';
-import { notifyApp } from 'app/core/actions';
-import { createSuccessNotification } from 'app/core/copy/appNotification';
-import { t, Trans } from 'app/core/internationalization';
-import { getTrackingSource, shareDashboardType } from 'app/features/dashboard/components/ShareModal/utils';
-import { getDashboardSnapshotSrv, SnapshotSharingOptions } from 'app/features/dashboard/services/SnapshotSrv';
-import { dispatch } from 'app/store/store';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
+import { getDashboardSnapshotSrv, SnapshotSharingOptions } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { transformSceneToSaveModel, trimDashboardForSnapshot } from '../serialization/transformSceneToSaveModel';

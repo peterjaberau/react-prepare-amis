@@ -26,7 +26,7 @@ import {
   StreamingFrameOptions,
 } from '@runtime/index';
 import { DataSourceRef } from '@schema/index';
-import { migrateDatasourceNameToRef } from 'app/features/dashboard/state/DashboardMigrator';
+import { migrateDatasourceNameToRef } from '@grafana-module/app/features/dashboard/state/DashboardMigrator';
 
 import { getDashboardSrv } from '../../../features/dashboard/services/DashboardSrv';
 

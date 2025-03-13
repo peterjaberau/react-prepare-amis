@@ -1,9 +1,9 @@
 import { DataSourceInstanceSettings } from '@data/index';
 import { getBackendSrv, getDataSourceSrv, isFetchError } from '@runtime/index';
-import { notifyApp } from 'app/core/actions';
-import { createErrorNotification } from 'app/core/copy/appNotification';
-import { browseDashboardsAPI, ImportInputs } from 'app/features/browse-dashboards/api/browseDashboardsAPI';
-import { PermissionLevelString, SearchQueryType, ThunkResult } from 'app/types';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { createErrorNotification } from '@grafana-module/app/core/copy/appNotification';
+import { browseDashboardsAPI, ImportInputs } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
+import { PermissionLevelString, SearchQueryType, ThunkResult } from '@grafana-module/app/types';
 
 import {
   Input,

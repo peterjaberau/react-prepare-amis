@@ -1,7 +1,7 @@
 import { DataSourceWithBackend } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { supportedDatasources } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SupportedPubdashDatasources';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
+import { supportedDatasources } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SupportedPubdashDatasources';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 import { getQueryRunnerFor } from '../../utils/utils';

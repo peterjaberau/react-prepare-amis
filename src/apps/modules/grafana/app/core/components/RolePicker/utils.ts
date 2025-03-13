@@ -1,4 +1,4 @@
-import { Role } from 'app/types';
+import { Role } from '@grafana-module/app/types';
 
 export const isNotDelegatable = (role: Role) => {
   return role.delegatable !== undefined && !role.delegatable;

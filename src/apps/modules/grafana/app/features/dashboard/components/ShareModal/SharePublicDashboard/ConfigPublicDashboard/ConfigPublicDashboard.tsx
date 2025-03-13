@@ -15,17 +15,17 @@ import {
   useStyles2,
 } from '@grafana/ui/src';
 import { Layout } from '@grafana/ui/src/components/Layout/Layout';
-import { Trans, t } from 'app/core/internationalization';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {
   useDeletePublicDashboardMutation,
   usePauseOrResumePublicDashboardMutation,
   useUpdatePublicDashboardMutation,
-} from 'app/features/dashboard/api/publicDashboardApi';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { getTimeRange } from 'app/features/dashboard/utils/timeRange';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { DeletePublicDashboardModal } from 'app/features/manage-dashboards/components/PublicDashboardListTable/DeletePublicDashboardModal';
+} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { getTimeRange } from '@grafana-module/app/features/dashboard/utils/timeRange';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { DeletePublicDashboardModal } from '@grafana-module/app/features/manage-dashboards/components/PublicDashboardListTable/DeletePublicDashboardModal';
 
 import { contextSrv } from '../../../../../../core/services/context_srv';
 import { AccessControlAction, useSelector } from '../../../../../../types';

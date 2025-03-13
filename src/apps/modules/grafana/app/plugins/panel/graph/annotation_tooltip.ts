@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import { isString, escape } from 'lodash';
 
-import coreModule from 'app/angular/core_module';
-import alertDef from 'app/features/alerting/state/alertDef';
-import { DashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
+import coreModule from '@grafana-module/app/angular/core_module';
+import alertDef from '@grafana-module/app/features/alerting/state/alertDef';
+import { DashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 
 coreModule.directive('annotationTooltip', ['$sanitize', 'dashboardSrv', '$compile', annotationTooltipDirective]);
 

@@ -4,8 +4,8 @@ import { Subscription } from 'rxjs';
 
 import { PanelEvents } from '@data/index';
 import { RefreshEvent } from '@runtime/index';
-import { coreModule } from 'app/angular/core_module';
-import { PanelDirectiveReadyEvent, RenderEvent } from 'app/types/events';
+import { coreModule } from '@grafana-module/app/angular/core_module';
+import { PanelDirectiveReadyEvent, RenderEvent } from '@grafana-module/app/types/events';
 
 import { PanelModel } from '../../features/dashboard/state/PanelModel';
 

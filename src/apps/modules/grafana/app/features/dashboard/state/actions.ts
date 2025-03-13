@@ -1,13 +1,13 @@
 import { TimeZone } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { WeekStart } from '@grafana/ui';
-import { notifyApp } from 'app/core/actions';
-import { createSuccessNotification } from 'app/core/copy/appNotification';
-import { getDashboardAPI } from 'app/features/dashboard/api/dashboard_api';
-import { dashboardWatcher } from 'app/features/live/dashboard/dashboardWatcher';
-import { removeAllPanels } from 'app/features/panel/state/reducers';
-import { updateTimeZoneForSession, updateWeekStartForSession } from 'app/features/profile/state/reducers';
-import { ThunkResult } from 'app/types';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
+import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
+import { dashboardWatcher } from '@grafana-module/app/features/live/dashboard/dashboardWatcher';
+import { removeAllPanels } from '@grafana-module/app/features/panel/state/reducers';
+import { updateTimeZoneForSession, updateWeekStartForSession } from '@grafana-module/app/features/profile/state/reducers';
+import { ThunkResult } from '@grafana-module/app/types';
 
 import { loadPluginDashboards } from '../../plugins/admin/state/actions';
 import { cancelVariables } from '../../variables/state/actions';

@@ -1,9 +1,9 @@
 import { useEffect, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
-import { isGrafanaRulesSource } from 'app/features/alerting/unified/utils/datasource';
-import { CombinedRule, RuleIdentifier, RuleWithLocation, RulesSource } from 'app/types/unified-alerting';
-import { RulerRuleGroupDTO } from 'app/types/unified-alerting-dto';
+import { isGrafanaRulesSource } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { CombinedRule, RuleIdentifier, RuleWithLocation, RulesSource } from '@grafana-module/app/types/unified-alerting';
+import { RulerRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../api/alertRuleApi';
 import { featureDiscoveryApi } from '../api/featureDiscoveryApi';

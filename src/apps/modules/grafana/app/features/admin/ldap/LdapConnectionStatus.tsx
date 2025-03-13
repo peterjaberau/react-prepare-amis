@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
 import { Alert, CellProps, Column, Icon, InteractiveTable, Stack, Text, Tooltip } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { AppNotificationSeverity, LdapConnectionInfo, LdapServerInfo } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AppNotificationSeverity, LdapConnectionInfo, LdapServerInfo } from '@grafana-module/app/types';
 
 interface Props {
   ldapConnectionInfo: LdapConnectionInfo;

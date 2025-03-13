@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { CombinedRule } from 'app/types/unified-alerting';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertStateToReadable } from '../../utils/rules';
 import { CollapseToggle } from '../CollapseToggle';

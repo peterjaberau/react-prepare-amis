@@ -10,12 +10,12 @@ import {
   useTheme2,
 } from '@grafana/ui';
 import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
-import { TimelineChart } from 'app/core/components/TimelineChart/TimelineChart';
+import { TimelineChart } from '@grafana-module/app/core/components/TimelineChart/TimelineChart';
 import {
   prepareTimelineFields,
   prepareTimelineLegendItems,
   TimelineMode,
-} from 'app/core/components/TimelineChart/utils';
+} from '@grafana-module/app/core/components/TimelineChart/utils';
 
 import { AnnotationsPlugin2 } from '../timeseries/plugins/AnnotationsPlugin2';
 import { OutsideRangePlugin } from '../timeseries/plugins/OutsideRangePlugin';

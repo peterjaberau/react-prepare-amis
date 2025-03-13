@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, Stack, TextLink, useStyles2 } from '@grafana/ui';
-import { PromApplication, RulesSourceApplication } from 'app/types/unified-alerting-dto';
+import { PromApplication, RulesSourceApplication } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { WithReturnButton } from '../../components/WithReturnButton';
 

@@ -32,9 +32,9 @@ import {
 } from '@data/index';
 import { toDataQueryError } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@grafana/runtime/src/utils/DataSourceWithBackend';
-import { isStreamingDataFrame } from 'app/features/live/data/utils';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { getTemplateSrv } from 'app/features/templating/template_srv';
+import { isStreamingDataFrame } from '@grafana-module/app/features/live/data/utils';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getTemplateSrv } from '@grafana-module/app/features/templating/template_srv';
 
 import { isSharedDashboardQuery, runSharedRequest } from '../../../plugins/datasource/dashboard/runSharedRequest';
 import { PanelModel } from '../../dashboard/state/PanelModel';

@@ -1,5 +1,5 @@
-﻿import { getBackendSrv } from 'app/core/services/backend_srv';
-import { ThunkResult } from 'app/types';
+﻿import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { ThunkResult } from '@grafana-module/app/types';
 
 import { apiKeysLoaded, includeExpiredToggled, isFetching, setMigrationResult } from './reducers';
 

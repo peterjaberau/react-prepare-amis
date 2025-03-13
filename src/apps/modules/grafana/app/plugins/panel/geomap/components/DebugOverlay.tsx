@@ -7,7 +7,7 @@ import tinycolor from 'tinycolor2';
 
 import { GrafanaTheme2 } from '@data/index';
 import { selectors } from '@selectors/index';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 interface Props {
   map: Map;

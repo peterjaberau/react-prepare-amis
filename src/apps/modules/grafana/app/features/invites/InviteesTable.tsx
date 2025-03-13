@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { Invitee } from 'app/types';
+import { Invitee } from '@grafana-module/app/types';
 
 import InviteeRow from './InviteeRow';
 

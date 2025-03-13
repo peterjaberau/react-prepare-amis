@@ -12,16 +12,16 @@ import 'vendor/flot/jquery.flot.gauge';
 import * as grafanaData from '@data/index';
 import * as grafanaRuntime from '@runtime/index';
 import * as grafanaUIraw from '@grafana/ui';
-import TableModel from 'app/core/TableModel';
-import config from 'app/core/config';
-import { appEvents, contextSrv } from 'app/core/core';
-import { BackendSrv, getBackendSrv } from 'app/core/services/backend_srv';
-import impressionSrv from 'app/core/services/impression_srv';
-import TimeSeries from 'app/core/time_series2';
-import { arrayMove } from 'app/core/utils/arrayMove';
-import * as flatten from 'app/core/utils/flatten';
-import kbn from 'app/core/utils/kbn';
-import * as ticks from 'app/core/utils/ticks';
+import TableModel from '@grafana-module/app/core/TableModel';
+import config from '@grafana-module/app/core/config';
+import { appEvents, contextSrv } from '@grafana-module/app/core/core';
+import { BackendSrv, getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import impressionSrv from '@grafana-module/app/core/services/impression_srv';
+import TimeSeries from '@grafana-module/app/core/time_series2';
+import { arrayMove } from '@grafana-module/app/core/utils/arrayMove';
+import * as flatten from '@grafana-module/app/core/utils/flatten';
+import kbn from '@grafana-module/app/core/utils/kbn';
+import * as ticks from '@grafana-module/app/core/utils/ticks';
 
 // Help the 6.4 to 6.5 migration
 // The base classes were moved from @grafana/ui to @grafana/data
@@ -53,33 +53,33 @@ export const sharedDependenciesMap = {
   '@grafana/slate-react': () => import('slate-react'),
   '@grafana/ui': grafanaUI,
   '@kusto/monaco-kusto': () => import('@kusto/monaco-kusto'),
-  'app/core/app_events': {
+  '@grafana-module/app/core/app_events': {
     default: appEvents,
     __useDefault: true,
   },
-  'app/core/config': {
+  '@grafana-module/app/core/config': {
     default: config,
     __useDefault: true,
   },
-  'app/core/core': {
+  '@grafana-module/app/core/core': {
     appEvents: appEvents,
     contextSrv: contextSrv,
   },
-  'app/core/services/backend_srv': {
+  '@grafana-module/app/core/services/backend_srv': {
     BackendSrv,
     getBackendSrv,
   },
-  'app/core/table_model': { default: TableModel, __useDefault: true },
-  'app/core/time_series': { default: TimeSeries, __useDefault: true },
-  'app/core/time_series2': { default: TimeSeries, __useDefault: true },
-  'app/core/utils/datemath': grafanaData.dateMath,
-  'app/core/utils/flatten': flatten,
-  'app/core/utils/kbn': {
+  '@grafana-module/app/core/table_model': { default: TableModel, __useDefault: true },
+  '@grafana-module/app/core/time_series': { default: TimeSeries, __useDefault: true },
+  '@grafana-module/app/core/time_series2': { default: TimeSeries, __useDefault: true },
+  '@grafana-module/app/core/utils/datemath': grafanaData.dateMath,
+  '@grafana-module/app/core/utils/flatten': flatten,
+  '@grafana-module/app/core/utils/kbn': {
     default: kbn,
     __useDefault: true,
   },
-  'app/core/utils/ticks': ticks,
-  'app/features/dashboard/impression_store': {
+  '@grafana-module/app/core/utils/ticks': ticks,
+  '@grafana-module/app/features/dashboard/impression_store': {
     impressions: impressionSrv,
   },
   d3: () => import('d3'),

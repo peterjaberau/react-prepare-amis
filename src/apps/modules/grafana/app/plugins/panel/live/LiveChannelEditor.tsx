@@ -10,8 +10,8 @@ import {
   parseLiveChannelAddress,
 } from '@data/index';
 import { Select, Alert, Label, stylesFactory } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { getManagedChannelInfo } from 'app/features/live/info';
+import { config } from '@grafana-module/app/core/config';
+import { getManagedChannelInfo } from '@grafana-module/app/features/live/info';
 
 import { LivePanelOptions } from './types';
 

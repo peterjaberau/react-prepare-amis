@@ -1,8 +1,8 @@
 import { cloneDeep, isNumber } from 'lodash';
 
 import { AnnotationEvent, dateTime } from '@data/index';
-import { coreModule } from 'app/angular/core_module';
-import { MetricsPanelCtrl } from 'app/angular/panel/metrics_panel_ctrl';
+import { coreModule } from '@grafana-module/app/angular/core_module';
+import { MetricsPanelCtrl } from '@grafana-module/app/angular/panel/metrics_panel_ctrl';
 
 import { deleteAnnotation, saveAnnotation, updateAnnotation } from '../../../features/annotations/api';
 import { getDashboardQueryRunner } from '../../../features/query/state/DashboardQueryRunner/DashboardQueryRunner';

@@ -1,6 +1,6 @@
 import { ExploreUrlState } from '@data/index';
-import { ID_ALPHABET, generateExploreId } from 'app/core/utils/explore';
-import { DEFAULT_RANGE } from 'app/features/explore/state/constants';
+import { ID_ALPHABET, generateExploreId } from '@grafana-module/app/core/utils/explore';
+import { DEFAULT_RANGE } from '@grafana-module/app/features/explore/state/constants';
 
 import { hasKey } from '../../utils';
 

@@ -3,15 +3,15 @@ import { useEffect, useMemo, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 
 import { Alert, Button, Stack } from '@grafana/ui';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { Trans } from 'app/core/internationalization';
-import { useContactPointsWithStatus } from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { AlertmanagerAction, useAlertmanagerAbility } from 'app/features/alerting/unified/hooks/useAbilities';
-import { FormAmRoute } from 'app/features/alerting/unified/types/amroutes';
-import { addUniqueIdentifierToRoute } from 'app/features/alerting/unified/utils/amroutes';
-import { getErrorCode, stringifyErrorLike } from 'app/features/alerting/unified/utils/misc';
-import { computeInheritedTree } from 'app/features/alerting/unified/utils/notification-policies';
-import { ObjectMatcher, ROUTES_META_SYMBOL, RouteWithID } from 'app/plugins/datasource/alertmanager/types';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { useContactPointsWithStatus } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { AlertmanagerAction, useAlertmanagerAbility } from '@grafana-module/app/features/alerting/unified/hooks/useAbilities';
+import { FormAmRoute } from '@grafana-module/app/features/alerting/unified/types/amroutes';
+import { addUniqueIdentifierToRoute } from '@grafana-module/app/features/alerting/unified/utils/amroutes';
+import { getErrorCode, stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
+import { computeInheritedTree } from '@grafana-module/app/features/alerting/unified/utils/notification-policies';
+import { ObjectMatcher, ROUTES_META_SYMBOL, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { anyOfRequestState, isError } from '../../hooks/useAsync';
 import { useAlertmanager } from '../../state/AlertmanagerContext';

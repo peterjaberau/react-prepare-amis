@@ -1,11 +1,11 @@
 import { createRef, PureComponent } from 'react';
 
 import { ConfirmButton, ConfirmModal, Button, Stack } from '@grafana/ui';
-import { TagBadge } from 'app/core/components/TagFilter/TagBadge';
-import { contextSrv } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { formatDate } from 'app/core/internationalization/dates';
-import { AccessControlAction, UserSession } from 'app/types';
+import { TagBadge } from '@grafana-module/app/core/components/TagFilter/TagBadge';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { formatDate } from '@grafana-module/app/core/internationalization/dates';
+import { AccessControlAction, UserSession } from '@grafana-module/app/types';
 
 interface Props {
   sessions: UserSession[];

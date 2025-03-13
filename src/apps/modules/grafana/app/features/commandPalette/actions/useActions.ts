@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useSelector } from 'app/types';
+import { useSelector } from '@grafana-module/app/types';
 
 import { CommandPaletteAction } from '../types';
 

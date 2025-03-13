@@ -2,7 +2,7 @@ import { forwardRef, useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom-v5-compat';
 
 import { Button, ConfirmModal } from '@grafana/ui';
-import { RuleIdentifier } from 'app/types/unified-alerting';
+import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import * as ruleId from '../../utils/rule-id';
 

@@ -2,7 +2,7 @@ import { AnyAction, createAction } from '@reduxjs/toolkit';
 
 import { DataSourcePluginMeta, DataSourceSettings, LayoutMode, LayoutModes } from '@data/index';
 import { TestingStatus } from '@runtime/index';
-import { DataSourcesState, DataSourceSettingsState } from 'app/types';
+import { DataSourcesState, DataSourceSettingsState } from '@grafana-module/app/types';
 
 import { GenericDataSourcePlugin } from '../types';
 

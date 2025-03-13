@@ -4,9 +4,9 @@ import { FormEvent } from 'react';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, Checkbox, Stack, RadioButtonGroup, useStyles2 } from '@grafana/ui';
-import { SortPicker } from 'app/core/components/Select/SortPicker';
-import { TagFilter, TermCount } from 'app/core/components/TagFilter/TagFilter';
-import { t, Trans } from 'app/core/internationalization';
+import { SortPicker } from '@grafana-module/app/core/components/Select/SortPicker';
+import { TagFilter, TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { SearchLayout, SearchState } from '../../types';
 

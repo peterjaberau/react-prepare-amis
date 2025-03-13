@@ -9,10 +9,10 @@ import {
   Matcher,
   Receiver,
   TestReceiversAlert,
-} from 'app/plugins/datasource/alertmanager/types';
-import { ThunkResult } from 'app/types';
-import { RuleIdentifier, RuleNamespace, StateHistoryItem } from 'app/types/unified-alerting';
-import { RulerRuleDTO, RulerRulesConfigDTO } from 'app/types/unified-alerting-dto';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { ThunkResult } from '@grafana-module/app/types';
+import { RuleIdentifier, RuleNamespace, StateHistoryItem } from '@grafana-module/app/types/unified-alerting';
+import { RulerRuleDTO, RulerRulesConfigDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { withPromRulesMetadataLogging, withRulerRulesMetadataLogging } from '../Analytics';
 import {

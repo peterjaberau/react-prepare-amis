@@ -1,9 +1,9 @@
 import { produce } from 'immer';
 import { isEqual } from 'lodash';
 
-import { t } from 'app/core/internationalization';
-import { EditableRuleIdentifier, RuleGroupIdentifier } from 'app/types/unified-alerting';
-import { PostableRuleDTO } from 'app/types/unified-alerting-dto';
+import { t } from '@grafana-module/app/core/internationalization';
+import { EditableRuleIdentifier, RuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { PostableRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { addRuleAction, updateRuleAction } from '../../reducers/ruler/ruleGroups';

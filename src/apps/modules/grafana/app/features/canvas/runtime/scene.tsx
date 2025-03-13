@@ -15,20 +15,20 @@ import {
   TextDimensionConfig,
 } from '@schema/index';
 import { Portal } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { DimensionContext } from 'app/features/dimensions';
+import { config } from '@grafana-module/app/core/config';
+import { DimensionContext } from '@grafana-module/app/features/dimensions';
 import {
   getColorDimensionFromData,
   getResourceDimensionFromData,
   getScalarDimensionFromData,
   getScaleDimensionFromData,
   getTextDimensionFromData,
-} from 'app/features/dimensions/utils';
-import { CanvasContextMenu } from 'app/plugins/panel/canvas/components/CanvasContextMenu';
-import { CanvasTooltip } from 'app/plugins/panel/canvas/components/CanvasTooltip';
-import { Connections } from 'app/plugins/panel/canvas/components/connections/Connections';
-import { AnchorPoint, CanvasTooltipPayload } from 'app/plugins/panel/canvas/types';
-import { getTransformInstance } from 'app/plugins/panel/canvas/utils';
+} from '@grafana-module/app/features/dimensions/utils';
+import { CanvasContextMenu } from '@grafana-module/app/plugins/panel/canvas/components/CanvasContextMenu';
+import { CanvasTooltip } from '@grafana-module/app/plugins/panel/canvas/components/CanvasTooltip';
+import { Connections } from '@grafana-module/app/plugins/panel/canvas/components/connections/Connections';
+import { AnchorPoint, CanvasTooltipPayload } from '@grafana-module/app/plugins/panel/canvas/types';
+import { getTransformInstance } from '@grafana-module/app/plugins/panel/canvas/utils';
 
 import appEvents from '../../../core/app_events';
 import { CanvasPanel } from '../../../plugins/panel/canvas/CanvasPanel';

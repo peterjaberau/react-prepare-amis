@@ -2,7 +2,7 @@
 
 import { AlertState, DataSourceInstanceSettings } from '@data/index';
 import { PromOptions } from '@grafana/prometheus';
-import { LokiOptions } from 'app/plugins/datasource/loki/types';
+import { LokiOptions } from '@grafana-module/app/plugins/datasource/loki/types';
 
 import {
   Annotations,

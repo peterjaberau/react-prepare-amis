@@ -16,7 +16,7 @@ import {
   UserListAnonymousDevicesState,
   UserAnonymousDeviceDTO,
   AnonUserFilter,
-} from 'app/types';
+} from '@grafana-module/app/types';
 
 const initialLdapState: LdapState = {
   connectionInfo: [],

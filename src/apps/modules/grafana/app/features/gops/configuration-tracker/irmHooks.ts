@@ -1,15 +1,15 @@
 import { useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
-import { useGrafanaContactPoints } from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { useNotificationPolicyRoute } from 'app/features/alerting/unified/components/notification-policies/useNotificationPolicyRoute';
+import { useGrafanaContactPoints } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { useNotificationPolicyRoute } from '@grafana-module/app/features/alerting/unified/components/notification-policies/useNotificationPolicyRoute';
 import {
   getIrmIfPresentOrIncidentPluginId,
   getIrmIfPresentOrOnCallPluginId,
   getIsIrmPluginPresent,
-} from 'app/features/alerting/unified/utils/config';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { RelativeUrl, createRelativeUrl } from 'app/features/alerting/unified/utils/url';
+} from '@grafana-module/app/features/alerting/unified/utils/config';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { RelativeUrl, createRelativeUrl } from '@grafana-module/app/features/alerting/unified/utils/url';
 
 import { isOnCallContactPointReady, useIsCreateAlertRuleDone } from './alerting/hooks';
 import { isContactPointReady } from './alerting/utils';

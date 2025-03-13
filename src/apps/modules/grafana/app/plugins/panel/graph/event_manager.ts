@@ -10,7 +10,7 @@ import {
   PENDING_COLOR,
   REGION_FILL_ALPHA,
 } from '@grafana/ui';
-import { MetricsPanelCtrl } from 'app/angular/panel/metrics_panel_ctrl';
+import { MetricsPanelCtrl } from '@grafana-module/app/angular/panel/metrics_panel_ctrl';
 
 export class EventManager {
   event: AnnotationEvent | null = null;

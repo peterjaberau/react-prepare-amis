@@ -4,9 +4,9 @@ import Skeleton from 'react-loading-skeleton';
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Card, LinkButton, ModalsController, Stack, useStyles2 } from '@grafana/ui';
 import { attachSkeleton, SkeletonComponent } from '@grafana/ui/src/unstable';
-import { t, Trans } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { DashNavButton } from 'app/features/dashboard/components/DashNav/DashNavButton';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { DashNavButton } from '@grafana-module/app/features/dashboard/components/DashNav/DashNavButton';
 
 import { ShareModal } from './ShareModal';
 import { Playlist } from './types';

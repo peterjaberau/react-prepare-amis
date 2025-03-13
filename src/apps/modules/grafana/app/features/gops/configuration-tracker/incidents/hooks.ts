@@ -1,6 +1,6 @@
-import { incidentsApi } from 'app/features/alerting/unified/api/incidentsApi';
-import { usePluginBridge } from 'app/features/alerting/unified/hooks/usePluginBridge';
-import { getIrmIfPresentOrIncidentPluginId } from 'app/features/alerting/unified/utils/config';
+import { incidentsApi } from '@grafana-module/app/features/alerting/unified/api/incidentsApi';
+import { usePluginBridge } from '@grafana-module/app/features/alerting/unified/hooks/usePluginBridge';
+import { getIrmIfPresentOrIncidentPluginId } from '@grafana-module/app/features/alerting/unified/utils/config';
 
 interface IncidentsPluginConfig {
   isInstalled: boolean;

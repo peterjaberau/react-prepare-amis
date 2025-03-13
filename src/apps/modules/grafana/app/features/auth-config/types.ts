@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { Validate, UseFormSetValue } from 'react-hook-form';
 
 import { IconName, SelectableValue } from '@data/index';
-import { Settings } from 'app/types';
+import { Settings } from '@grafana-module/app/types';
 export interface AuthProviderInfo {
   id: string;
   type: string;

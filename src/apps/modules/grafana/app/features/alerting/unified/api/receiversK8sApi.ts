@@ -1,5 +1,5 @@
-import { AlertingApiExtraOptions } from 'app/features/alerting/unified/api/alertingApi';
-import { generatedReceiversApi } from 'app/features/alerting/unified/openapi/receiversApi.gen';
+import { AlertingApiExtraOptions } from '@grafana-module/app/features/alerting/unified/api/alertingApi';
+import { generatedReceiversApi } from '@grafana-module/app/features/alerting/unified/openapi/receiversApi.gen';
 
 export const receiversApi = generatedReceiversApi.enhanceEndpoints({
   endpoints: {

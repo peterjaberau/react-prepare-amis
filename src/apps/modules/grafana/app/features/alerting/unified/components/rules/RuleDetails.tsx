@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2, dateTime, dateTimeFormat } from '@data/index';
 import { Tooltip, useStyles2 } from '@grafana/ui';
-import { Time } from 'app/features/explore/Time';
-import { CombinedRule } from 'app/types/unified-alerting';
+import { Time } from '@grafana-module/app/features/explore/Time';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 
 import { usePendingPeriod } from '../../hooks/rules/usePendingPeriod';
 import { useCleanAnnotations } from '../../utils/annotations';

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Organization, OrganizationState, UserOrg } from 'app/types';
+import { Organization, OrganizationState, UserOrg } from '@grafana-module/app/types';
 
 export const initialState: OrganizationState = {
   organization: {} as Organization,

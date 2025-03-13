@@ -1,8 +1,8 @@
 import { useLayoutEffect } from 'react';
 
-import { Branding } from 'app/core/components/Branding/Branding';
-import { useGrafana } from 'app/core/context/GrafanaContext';
-import { CombinedRule } from 'app/types/unified-alerting';
+import { Branding } from '@grafana-module/app/core/components/Branding/Branding';
+import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 
 /**
  * We're definitely doing something odd here, and it all boils down to

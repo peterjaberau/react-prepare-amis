@@ -9,7 +9,7 @@ import {
   VariableRefresh,
   VariableSort,
 } from '@data/index';
-import { QueryVariableEditorForm } from 'app/features/dashboard-scene/settings/variables/components/QueryVariableForm';
+import { QueryVariableEditorForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/QueryVariableForm';
 
 import { StoreState } from '../../../types';
 import { getTimeSrv } from '../../dashboard/services/TimeSrv';

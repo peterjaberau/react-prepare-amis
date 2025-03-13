@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { NavModel, NavModelItem, PageLayoutType } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneVariable, SceneVariables, sceneGraph } from '@scenes/index';
-import { Page } from 'app/core/components/Page/Page';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { NavToolbarActions } from '../scene/NavToolbarActions';

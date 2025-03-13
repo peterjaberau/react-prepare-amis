@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { CloseButton } from 'app/core/components/CloseButton/CloseButton';
-import { GeomapLayerHover } from 'app/plugins/panel/geomap/event';
+import { CloseButton } from '@grafana-module/app/core/components/CloseButton/CloseButton';
+import { GeomapLayerHover } from '@grafana-module/app/plugins/panel/geomap/event';
 
 import { DataHoverRows } from './DataHoverRows';
 import { DataHoverTabs } from './DataHoverTabs';

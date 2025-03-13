@@ -4,8 +4,8 @@ import { FormEvent, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Field, Icon, Input, Label, Stack, Tooltip, useStyles2 } from '@grafana/ui';
-import { useQueryParams } from 'app/core/hooks/useQueryParams';
-import { Trans } from 'app/core/internationalization';
+import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { parsePromQLStyleMatcherLoose } from '../../utils/matchers';
 import { getSilenceFiltersFromUrlParams } from '../../utils/misc';

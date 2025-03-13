@@ -1,8 +1,8 @@
 import { Label } from '@grafana/ui';
-import { UserRolePicker } from 'app/core/components/RolePicker/UserRolePicker';
-import { contextSrv } from 'app/core/core';
-import { OrgRolePicker } from 'app/features/admin/OrgRolePicker';
-import { AccessControlAction, OrgRole, Role, ServiceAccountDTO } from 'app/types';
+import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { OrgRolePicker } from '@grafana-module/app/features/admin/OrgRolePicker';
+import { AccessControlAction, OrgRole, Role, ServiceAccountDTO } from '@grafana-module/app/types';
 
 interface Props {
   label: string;

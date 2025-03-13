@@ -5,16 +5,16 @@ import { Alert, LoadingPlaceholder } from '@grafana/ui';
 import {
   useCreateContactPoint,
   useUpdateContactPoint,
-} from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { showManageContactPointPermissions } from 'app/features/alerting/unified/components/contact-points/utils';
-import { GRAFANA_RULES_SOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { canEditEntity } from 'app/features/alerting/unified/utils/k8s/utils';
+} from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { showManageContactPointPermissions } from '@grafana-module/app/features/alerting/unified/components/contact-points/utils';
+import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { canEditEntity } from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
 import {
   GrafanaManagedContactPoint,
   GrafanaManagedReceiverConfig,
   TestReceiversAlert,
-} from 'app/plugins/datasource/alertmanager/types';
-import { useDispatch } from 'app/types';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { useDispatch } from '@grafana-module/app/types';
 
 import { alertmanagerApi } from '../../../api/alertmanagerApi';
 import { testReceiversAction } from '../../../state/actions';

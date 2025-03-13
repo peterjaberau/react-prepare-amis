@@ -1,4 +1,4 @@
-import { AlertRule, AlertRulesState, NotificationChannelState, StoreState } from 'app/types';
+import { AlertRule, AlertRulesState, NotificationChannelState, StoreState } from '@grafana-module/app/types';
 
 export const getSearchQuery = (state: AlertRulesState) => state.searchQuery;
 

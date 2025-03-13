@@ -14,7 +14,7 @@ import {
 import { reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
 import { Icon, PopoverContent, Tooltip, useTheme2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { checkLogsError, checkLogsSampled, escapeUnescapedString } from '../utils';
 

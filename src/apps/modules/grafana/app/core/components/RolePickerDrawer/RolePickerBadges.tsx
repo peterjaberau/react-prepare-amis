@@ -4,7 +4,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2, Badge, Stack } from '@grafana/ui';
-import { OrgUser } from 'app/types';
+import { OrgUser } from '@grafana-module/app/types';
 
 import { RolePickerDrawer } from './RolePickerDrawer';
 

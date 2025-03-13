@@ -5,11 +5,11 @@ import { useLocalStorage } from 'react-use';
 import { GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
 import { Button, FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana/ui';
 import { Field } from '@grafana/ui/src/components/Forms/Field';
-import { LS_VISUALIZATION_SELECT_TAB_KEY } from 'app/core/constants';
-import { PanelLibraryOptionsGroup } from 'app/features/library-panels/components/PanelLibraryOptionsGroup/PanelLibraryOptionsGroup';
-import { VisualizationSuggestions } from 'app/features/panel/components/VizTypePicker/VisualizationSuggestions';
-import { VizTypeChangeDetails } from 'app/features/panel/components/VizTypePicker/types';
-import { useDispatch, useSelector } from 'app/types';
+import { LS_VISUALIZATION_SELECT_TAB_KEY } from '@grafana-module/app/core/constants';
+import { PanelLibraryOptionsGroup } from '@grafana-module/app/features/library-panels/components/PanelLibraryOptionsGroup/PanelLibraryOptionsGroup';
+import { VisualizationSuggestions } from '@grafana-module/app/features/panel/components/VizTypePicker/VisualizationSuggestions';
+import { VizTypeChangeDetails } from '@grafana-module/app/features/panel/components/VizTypePicker/types';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { VizTypePicker } from '../../../panel/components/VizTypePicker/VizTypePicker';
 import { changePanelPlugin } from '../../../panel/state/actions';

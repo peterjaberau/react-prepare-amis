@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 import { Badge, Icon, Tooltip, useStyles2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { UpdatedBy } from 'app/types/unified-alerting-dto';
+import { t } from '@grafana-module/app/core/internationalization';
+import { UpdatedBy } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { getSpecialUidsDisplayMap } from '../versions-utils';
 

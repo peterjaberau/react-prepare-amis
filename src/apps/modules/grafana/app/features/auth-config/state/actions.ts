@@ -1,8 +1,8 @@
 import { lastValueFrom } from 'rxjs';
 
 import { config, getBackendSrv, isFetchError } from '@runtime/index';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction, Settings, ThunkResult, UpdateSettingsQuery } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction, Settings, ThunkResult, UpdateSettingsQuery } from '@grafana-module/app/types';
 
 import { getAuthProviderStatus, getRegisteredAuthProviders, SSOProvider } from '..';
 import { AuthProviderStatus, SettingsError } from '../types';

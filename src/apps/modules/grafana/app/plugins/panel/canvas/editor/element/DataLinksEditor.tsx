@@ -1,6 +1,6 @@
 import { StandardEditorProps, DataLink, VariableSuggestionsScope } from '@data/index';
 import { DataLinksInlineEditor } from '@grafana/ui';
-import { CanvasElementOptions } from 'app/features/canvas/element';
+import { CanvasElementOptions } from '@grafana-module/app/features/canvas/element';
 
 type Props = StandardEditorProps<DataLink[], CanvasElementOptions>;
 

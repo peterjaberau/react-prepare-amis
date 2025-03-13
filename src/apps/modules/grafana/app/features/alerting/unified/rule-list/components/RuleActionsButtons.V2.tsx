@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 import { LinkButton, Stack } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import AlertRuleMenu from 'app/features/alerting/unified/components/rule-viewer/AlertRuleMenu';
-import { useDeleteModal } from 'app/features/alerting/unified/components/rule-viewer/DeleteModal';
-import { RedirectToCloneRule } from 'app/features/alerting/unified/components/rules/CloneRule';
-import SilenceGrafanaRuleDrawer from 'app/features/alerting/unified/components/silences/SilenceGrafanaRuleDrawer';
-import { Rule, RuleGroupIdentifierV2, RuleIdentifier } from 'app/types/unified-alerting';
-import { RulerRuleDTO } from 'app/types/unified-alerting-dto';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import AlertRuleMenu from '@grafana-module/app/features/alerting/unified/components/rule-viewer/AlertRuleMenu';
+import { useDeleteModal } from '@grafana-module/app/features/alerting/unified/components/rule-viewer/DeleteModal';
+import { RedirectToCloneRule } from '@grafana-module/app/features/alerting/unified/components/rules/CloneRule';
+import SilenceGrafanaRuleDrawer from '@grafana-module/app/features/alerting/unified/components/silences/SilenceGrafanaRuleDrawer';
+import { Rule, RuleGroupIdentifierV2, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { AlertRuleAction, useRulerRuleAbility } from '../../hooks/useAbilities';
 import * as ruleId from '../../utils/rule-id';

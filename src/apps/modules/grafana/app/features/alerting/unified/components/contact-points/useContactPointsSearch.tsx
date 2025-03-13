@@ -2,8 +2,8 @@ import uFuzzy from '@leeoniya/ufuzzy';
 import { uniq } from 'lodash';
 import { useMemo } from 'react';
 
-import { RECEIVER_META_KEY } from 'app/features/alerting/unified/components/contact-points/constants';
-import { ContactPointWithMetadata } from 'app/features/alerting/unified/components/contact-points/utils';
+import { RECEIVER_META_KEY } from '@grafana-module/app/features/alerting/unified/components/contact-points/constants';
+import { ContactPointWithMetadata } from '@grafana-module/app/features/alerting/unified/components/contact-points/utils';
 
 const fuzzyFinder = new uFuzzy({
   intraMode: 1,

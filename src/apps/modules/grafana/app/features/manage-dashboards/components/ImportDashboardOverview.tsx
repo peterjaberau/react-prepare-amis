@@ -4,8 +4,8 @@ import { connect, ConnectedProps } from 'react-redux';
 import { dateTimeFormat } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
 import { Box, Legend } from '@grafana/ui';
-import { Form } from 'app/core/components/Form/Form';
-import { StoreState } from 'app/types';
+import { Form } from '@grafana-module/app/core/components/Form/Form';
+import { StoreState } from '@grafana-module/app/types';
 
 import { clearLoadedDashboard, importDashboard } from '../state/actions';
 import { DashboardSource, ImportDashboardDTO } from '../state/reducers';

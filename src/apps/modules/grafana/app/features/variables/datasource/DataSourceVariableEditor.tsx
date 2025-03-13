@@ -2,7 +2,7 @@ import { FormEvent, PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { DataSourceVariableModel, SelectableValue, VariableWithMultiSupport } from '@data/index';
-import { DataSourceVariableForm } from 'app/features/dashboard-scene/settings/variables/components/DataSourceVariableForm';
+import { DataSourceVariableForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/DataSourceVariableForm';
 
 import { StoreState } from '../../../types';
 import { initialVariableEditorState } from '../editor/reducer';

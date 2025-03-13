@@ -1,7 +1,7 @@
-import { Permissions } from 'app/core/components/AccessControl';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { AccessControlAction } from 'app/types';
+import { Permissions } from '@grafana-module/app/core/components/AccessControl';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { SettingsPageProps } from '../DashboardSettings/types';
 

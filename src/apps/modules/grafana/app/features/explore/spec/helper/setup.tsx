@@ -32,13 +32,13 @@ import {
   setPluginLinksHook,
 } from '@runtime/index';
 import { DataSourceRef } from '@schema/index';
-import { AppChrome } from 'app/core/components/AppChrome/AppChrome';
-import { GrafanaContext } from 'app/core/context/GrafanaContext';
-import { GrafanaRoute } from 'app/core/navigation/GrafanaRoute';
-import { Echo } from 'app/core/services/echo/Echo';
-import { setLastUsedDatasourceUID } from 'app/core/utils/explore';
-import { MIXED_DATASOURCE_NAME } from 'app/plugins/datasource/mixed/MixedDataSource';
-import { configureStore } from 'app/store/configureStore';
+import { AppChrome } from '@grafana-module/app/core/components/AppChrome/AppChrome';
+import { GrafanaContext } from '@grafana-module/app/core/context/GrafanaContext';
+import { GrafanaRoute } from '@grafana-module/app/core/navigation/GrafanaRoute';
+import { Echo } from '@grafana-module/app/core/services/echo/Echo';
+import { setLastUsedDatasourceUID } from '@grafana-module/app/core/utils/explore';
+import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { configureStore } from '@grafana-module/app/store/configureStore';
 
 import { RichHistoryRemoteStorageDTO } from '../../../../core/history/RichHistoryRemoteStorage';
 import { LokiDatasource } from '../../../../plugins/datasource/loki/datasource';

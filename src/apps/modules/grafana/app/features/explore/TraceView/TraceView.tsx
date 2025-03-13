@@ -19,9 +19,9 @@ import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { useStyles2 } from '@grafana/ui';
 import { TempoQuery } from '@grafana-plugins/tempo/types';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { getTimeZone } from 'app/features/profile/state/selectors';
-import { useDispatch, useSelector } from 'app/types';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { changePanelState } from '../state/explorePane';
 

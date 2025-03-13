@@ -2,7 +2,7 @@ import angular from 'angular';
 import { isArray, isNull, isObject, isUndefined } from 'lodash';
 
 import { dateTime } from '@data/index';
-import { getTemplateSrv, TemplateSrv } from 'app/features/templating/template_srv';
+import { getTemplateSrv, TemplateSrv } from '@grafana-module/app/features/templating/template_srv';
 
 import coreModule from '../core_module';
 

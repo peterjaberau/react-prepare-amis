@@ -5,7 +5,7 @@ import Highlighter from 'react-highlight-words';
 import { CoreApp, findHighlightChunksInText, GrafanaTheme2, LogRowContextOptions, LogRowModel } from '@data/index';
 import { DataQuery } from '@schema/index';
 import { PopoverContent, useTheme2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { LogMessageAnsi } from './LogMessageAnsi';
 import { LogRowMenuCell } from './LogRowMenuCell';

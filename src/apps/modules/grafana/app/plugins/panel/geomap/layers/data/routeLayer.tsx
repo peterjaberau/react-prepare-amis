@@ -23,8 +23,8 @@ import {
 } from '@data/index';
 import { alpha } from '@grafana/data/src/themes/colorManipulator';
 import { MapLayerOptions, FrameGeometrySourceMode } from '@schema/index';
-import { FrameVectorSource } from 'app/features/geo/utils/frameVectorSource';
-import { getGeometryField, getLocationMatchers } from 'app/features/geo/utils/location';
+import { FrameVectorSource } from '@grafana-module/app/features/geo/utils/frameVectorSource';
+import { getGeometryField, getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
 
 import { StyleEditor } from '../../editor/StyleEditor';
 import { routeStyle } from '../../style/markers';

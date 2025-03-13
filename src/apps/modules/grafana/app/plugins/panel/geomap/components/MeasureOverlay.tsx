@@ -4,7 +4,7 @@ import { useMemo, useRef, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Button, IconButton, RadioButtonGroup, Select } from '@grafana/ui';
-import { config } from 'app/core/config';
+import { config } from '@grafana-module/app/core/config';
 
 import { MapMeasure, MapMeasureOptions, measures } from '../utils/measure';
 

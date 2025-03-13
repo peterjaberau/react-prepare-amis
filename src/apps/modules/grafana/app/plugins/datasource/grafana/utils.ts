@@ -1,11 +1,11 @@
 import { DropEvent, FileRejection } from 'react-dropzone';
 
 import { DataFrame, DataFrameJSON, dataFrameToJSON } from '@data/index';
-import appEvents from 'app/core/app_events';
-import { GRAFANA_DATASOURCE_NAME } from 'app/features/alerting/unified/utils/datasource';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import * as DFImport from 'app/features/dataframe-import';
-import { ShowConfirmModalEvent } from 'app/types/events';
+import appEvents from '@grafana-module/app/core/app_events';
+import { GRAFANA_DATASOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import * as DFImport from '@grafana-module/app/features/dataframe-import';
+import { ShowConfirmModalEvent } from '@grafana-module/app/types/events';
 
 import { defaultFileUploadQuery, GrafanaQuery, GrafanaQueryType } from './types';
 

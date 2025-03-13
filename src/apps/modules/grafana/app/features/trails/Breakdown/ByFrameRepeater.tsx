@@ -14,7 +14,7 @@ import {
   SceneReactObject,
 } from '@scenes/index';
 import { Alert, Button } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { getLabelValueFromDataFrame } from '../services/levels';
 import { fuzzySearch } from '../services/search';

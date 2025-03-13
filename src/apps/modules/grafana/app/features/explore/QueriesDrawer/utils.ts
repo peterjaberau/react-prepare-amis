@@ -1,4 +1,4 @@
-import { t } from 'app//core/internationalization';
+import { t } from '@grafana-module/app//core/internationalization';
 
 export const i18n = {
   queryLibrary: t('explore.rich-history.query-library', 'Query library'),

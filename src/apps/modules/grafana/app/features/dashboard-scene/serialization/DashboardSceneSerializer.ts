@@ -1,16 +1,16 @@
 import { config } from '@runtime/index';
 import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { AnnoKeyDashboardSnapshotOriginalUrl } from 'app/features/apiserver/types';
-import { DashboardWithAccessInfo } from 'app/features/dashboard/api/types';
-import { SaveDashboardAsOptions } from 'app/features/dashboard/components/SaveDashboard/types';
-import { DASHBOARD_SCHEMA_VERSION } from 'app/features/dashboard/state/DashboardMigrator';
+import { AnnoKeyDashboardSnapshotOriginalUrl } from '@grafana-module/app/features/apiserver/types';
+import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
+import { SaveDashboardAsOptions } from '@grafana-module/app/features/dashboard/components/SaveDashboard/types';
+import { DASHBOARD_SCHEMA_VERSION } from '@grafana-module/app/features/dashboard/state/DashboardMigrator';
 import {
   getPanelPluginCounts,
   getV1SchemaVariables,
   getV2SchemaVariables,
-} from 'app/features/dashboard/utils/tracking';
-import { DashboardMeta, SaveDashboardResponseDTO } from 'app/types';
+} from '@grafana-module/app/features/dashboard/utils/tracking';
+import { DashboardMeta, SaveDashboardResponseDTO } from '@grafana-module/app/types';
 
 import { getRawDashboardChanges, getRawDashboardV2Changes } from '../saving/getDashboardChanges';
 import { DashboardChangeInfo } from '../saving/shared';

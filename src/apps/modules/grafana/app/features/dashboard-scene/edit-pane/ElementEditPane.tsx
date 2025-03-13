@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Stack, useStyles2 } from '@grafana/ui';
-import { OptionsPaneCategory } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategory';
+import { OptionsPaneCategory } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategory';
 
 import { EditableDashboardElement } from '../scene/types/EditableDashboardElement';
 import { MultiSelectedEditableDashboardElement } from '../scene/types/MultiSelectedEditableDashboardElement';

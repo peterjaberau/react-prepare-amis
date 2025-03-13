@@ -1,7 +1,7 @@
 import { assign, each, filter, forEach, get, includes, isString, last, map, toString, isFinite } from 'lodash';
 
 import { InterpolateFunction } from '@data/index';
-import { isVersionGtOrEq } from 'app/core/utils/version';
+import { isVersionGtOrEq } from '@grafana-module/app/core/utils/version';
 
 export type ParamDef = {
   name: string;

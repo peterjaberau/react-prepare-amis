@@ -5,9 +5,9 @@ import { DataSourceApi, HistoryItem } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataSourceRef } from '@schema/index';
 import { RefreshPicker } from '@grafana/ui';
-import { stopQueryState } from 'app/core/utils/explore';
-import { getCorrelationsBySourceUIDs } from 'app/features/correlations/utils';
-import { ExploreItemState, createAsyncThunk } from 'app/types';
+import { stopQueryState } from '@grafana-module/app/core/utils/explore';
+import { getCorrelationsBySourceUIDs } from '@grafana-module/app/features/correlations/utils';
+import { ExploreItemState, createAsyncThunk } from '@grafana-module/app/types';
 
 import { loadSupplementaryQueries } from '../utils/supplementaryQueries';
 

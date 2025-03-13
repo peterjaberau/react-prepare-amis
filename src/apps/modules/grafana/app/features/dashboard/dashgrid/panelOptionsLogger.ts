@@ -1,7 +1,7 @@
 import { FieldConfigSource } from '@data/index';
 import { faro } from '@grafana/faro-web-sdk';
-import { config } from 'app/core/config';
-import { FIELD_CONFIG_CUSTOM_KEY, FIELD_CONFIG_OVERRIDES_KEY, PanelLogEvents } from 'app/core/log_events';
+import { config } from '@grafana-module/app/core/config';
+import { FIELD_CONFIG_CUSTOM_KEY, FIELD_CONFIG_OVERRIDES_KEY, PanelLogEvents } from '@grafana-module/app/core/log_events';
 
 interface PanelLogInfo {
   panelId: string;

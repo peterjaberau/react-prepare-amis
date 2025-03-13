@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { Page } from 'app/core/components/Page/Page';
-import { DataSourceDashboards } from 'app/features/datasources/components/DataSourceDashboards';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { DataSourceDashboards } from '@grafana-module/app/features/datasources/components/DataSourceDashboards';
 
 import { useDataSourceSettingsNav } from '../hooks/useDataSourceSettingsNav';
 

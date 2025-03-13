@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { OptionsPaneCategoryDescriptor } from 'app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 export interface MultiSelectedEditableDashboardElement {
   /**

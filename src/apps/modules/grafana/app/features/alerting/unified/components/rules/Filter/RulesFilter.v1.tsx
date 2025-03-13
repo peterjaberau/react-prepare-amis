@@ -5,12 +5,12 @@ import { useForm } from 'react-hook-form';
 import { DataSourceInstanceSettings, GrafanaTheme2, SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, Field, Icon, Input, Label, RadioButtonGroup, Stack, Tooltip, useStyles2 } from '@grafana/ui';
-import { DashboardPicker } from 'app/core/components/Select/DashboardPicker';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import { ContactPointSelector } from 'app/features/alerting/unified/components/notification-policies/ContactPointSelector';
-import { AccessControlAction } from 'app/types';
-import { PromAlertingRuleState, PromRuleType } from 'app/types/unified-alerting-dto';
+import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
+import { AccessControlAction } from '@grafana-module/app/types';
+import { PromAlertingRuleState, PromRuleType } from '@grafana-module/app/types/unified-alerting-dto';
 
 import {
   LogMessages,

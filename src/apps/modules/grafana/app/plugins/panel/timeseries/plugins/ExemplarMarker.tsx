@@ -16,8 +16,8 @@ import { DataFrame, DataFrameFieldIndex, Field, formattedValueToString, GrafanaT
 import { selectors } from '@selectors/index';
 import { TimeZone } from '@schema/index';
 import { Portal, UPlotConfigBuilder, useStyles2 } from '@grafana/ui';
-import { DisplayValue } from 'app/features/visualization/data-hover/DataHoverView';
-import { ExemplarHoverView } from 'app/features/visualization/data-hover/ExemplarHoverView';
+import { DisplayValue } from '@grafana-module/app/features/visualization/data-hover/DataHoverView';
+import { ExemplarHoverView } from '@grafana-module/app/features/visualization/data-hover/ExemplarHoverView';
 
 import { ExemplarModalHeader } from '../../heatmap/ExemplarModalHeader';
 

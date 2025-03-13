@@ -1,5 +1,5 @@
-import { t } from 'app/core/internationalization';
-import { GrafanaRuleGroupIdentifier } from 'app/types/unified-alerting';
+import { t } from '@grafana-module/app/core/internationalization';
+import { GrafanaRuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { pauseRuleAction } from '../../reducers/ruler/ruleGroups';

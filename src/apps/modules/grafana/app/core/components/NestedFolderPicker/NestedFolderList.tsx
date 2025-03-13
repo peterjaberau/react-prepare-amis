@@ -8,12 +8,12 @@ import InfiniteLoader from 'react-window-infinite-loader';
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, useStyles2 } from '@grafana/ui';
 import { Text } from '@grafana/ui/src/components/Text/Text';
-import { Indent } from 'app/core/components/Indent/Indent';
-import { Trans } from 'app/core/internationalization';
-import { childrenByParentUIDSelector, rootItemsSelector } from 'app/features/browse-dashboards/state';
-import { DashboardsTreeItem } from 'app/features/browse-dashboards/types';
-import { DashboardViewItem } from 'app/features/search/types';
-import { useSelector } from 'app/types';
+import { Indent } from '@grafana-module/app/core/components/Indent/Indent';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { childrenByParentUIDSelector, rootItemsSelector } from '@grafana-module/app/features/browse-dashboards/state';
+import { DashboardsTreeItem } from '@grafana-module/app/features/browse-dashboards/types';
+import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { useSelector } from '@grafana-module/app/types';
 
 const ROW_HEIGHT = 40;
 const CHEVRON_SIZE = 'md';

@@ -3,17 +3,17 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, useStyles2, Text, Box, Stack, Badge } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import {
   onAddLibraryPanel as onAddLibraryPanelImpl,
   onCreateNewPanel,
   onImportDashboard,
-} from 'app/features/dashboard/utils/dashboard';
-import { buildPanelEditScene } from 'app/features/dashboard-scene/panel-edit/PanelEditor';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { useDispatch, useSelector } from 'app/types';
+} from '@grafana-module/app/features/dashboard/utils/dashboard';
+import { buildPanelEditScene } from '@grafana-module/app/features/dashboard-scene/panel-edit/PanelEditor';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { setInitialDatasource } from '../state/reducers';
 

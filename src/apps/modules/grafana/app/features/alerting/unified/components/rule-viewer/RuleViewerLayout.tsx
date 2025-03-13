@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { useStyles2 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { PageProps } from 'app/core/components/Page/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { PageProps } from '@grafana-module/app/core/components/Page/types';
 
 type Props = {
   children: React.ReactNode | React.ReactNode[];

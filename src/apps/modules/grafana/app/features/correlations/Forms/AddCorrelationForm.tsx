@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { PanelContainer, useStyles2 } from '@grafana/ui';
-import { CloseButton } from 'app/core/components/CloseButton/CloseButton';
+import { CloseButton } from '@grafana-module/app/core/components/CloseButton/CloseButton';
 
 import { Wizard } from '../components/Wizard';
 import { useCorrelations } from '../useCorrelations';

@@ -15,7 +15,7 @@ import { Subscription } from 'rxjs';
 import { DataHoverEvent, PanelData, PanelProps } from '@data/index';
 import { config } from '@runtime/index';
 import { PanelContext, PanelContextRoot } from '@grafana/ui';
-import { PanelEditExitedEvent } from 'app/types/events';
+import { PanelEditExitedEvent } from '@grafana-module/app/types/events';
 
 import { GeomapOverlay, OverlayProps } from './GeomapOverlay';
 import { GeomapTooltip } from './GeomapTooltip';

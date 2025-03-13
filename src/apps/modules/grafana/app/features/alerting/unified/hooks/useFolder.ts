@@ -1,7 +1,7 @@
 import { skipToken } from '@reduxjs/toolkit/query/react';
 
-import { useGetFolderQuery } from 'app/features/browse-dashboards/api/browseDashboardsAPI';
-import { FolderDTO } from 'app/types';
+import { useGetFolderQuery } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
+import { FolderDTO } from '@grafana-module/app/types';
 
 interface ReturnBag {
   folder?: FolderDTO;

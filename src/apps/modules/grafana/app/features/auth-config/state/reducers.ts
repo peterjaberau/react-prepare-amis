@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Settings } from 'app/types';
+import { Settings } from '@grafana-module/app/types';
 
 import { SettingsError, AuthProviderStatus, AuthConfigState, SSOProvider } from '../types';
 

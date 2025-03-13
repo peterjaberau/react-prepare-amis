@@ -2,8 +2,8 @@ import { extend } from 'lodash';
 // @ts-ignore
 import Drop from 'tether-drop';
 
-import { GrafanaRootScope } from 'app/angular/GrafanaCtrl';
-import coreModule from 'app/angular/core_module';
+import { GrafanaRootScope } from '@grafana-module/app/angular/GrafanaCtrl';
+import coreModule from '@grafana-module/app/angular/core_module';
 
 coreModule.service('popoverSrv', ['$compile', '$rootScope', '$timeout', popoverSrv]);
 

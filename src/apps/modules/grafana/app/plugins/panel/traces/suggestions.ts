@@ -1,5 +1,5 @@
 import { VisualizationSuggestionsBuilder, VisualizationSuggestionScore } from '@data/index';
-import { SuggestionName } from 'app/types/suggestions';
+import { SuggestionName } from '@grafana-module/app/types/suggestions';
 
 export class TracesSuggestionsSupplier {
   getListWithDefaults(builder: VisualizationSuggestionsBuilder) {

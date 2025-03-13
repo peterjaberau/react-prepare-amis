@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Input, Field, useStyles2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { PasswordField } from '../PasswordField/PasswordField';
 

@@ -2,7 +2,7 @@ import { useAsyncFn, useToggle } from 'react-use';
 
 import { config, reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Modal, Space, Text } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { useDeleteItemsMutation } from '../../browse-dashboards/api/browseDashboardsAPI';
 import { DashboardScene } from '../scene/DashboardScene';

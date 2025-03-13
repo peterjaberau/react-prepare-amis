@@ -21,11 +21,11 @@ import {
   VariableWithOptions,
 } from '@data/index';
 import { config, locationService, logWarning } from '@runtime/index';
-import { notifyApp } from 'app/core/actions';
-import { contextSrv } from 'app/core/services/context_srv';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { store } from 'app/store/store';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { store } from '@grafana-module/app/store/store';
 
 import { createErrorNotification } from '../../../core/copy/appNotification';
 import { appEvents } from '../../../core/core';

@@ -17,11 +17,11 @@ import {
   Stack,
   useStyles2,
 } from '@grafana/ui';
-import { useAppNotification } from 'app/core/copy/appNotification';
-import { Trans, t } from 'app/core/internationalization';
-import { dispatch } from 'app/store/store';
-import { RuleGroupIdentifier, RulerDataSourceConfig } from 'app/types/unified-alerting';
-import { RulerRuleDTO, RulerRuleGroupDTO } from 'app/types/unified-alerting-dto';
+import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { dispatch } from '@grafana-module/app/store/store';
+import { RuleGroupIdentifier, RulerDataSourceConfig } from '@grafana-module/app/types/unified-alerting';
+import { RulerRuleDTO, RulerRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import {

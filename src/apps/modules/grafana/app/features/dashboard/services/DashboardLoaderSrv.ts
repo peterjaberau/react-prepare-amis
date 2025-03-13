@@ -5,12 +5,12 @@ import moment from 'moment'; // eslint-disable-line no-restricted-imports
 import { AppEvents, dateMath, UrlQueryMap, UrlQueryValue } from '@data/index';
 import { getBackendSrv, isFetchError, locationService } from '@runtime/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { backendSrv } from 'app/core/services/backend_srv';
-import impressionSrv from 'app/core/services/impression_srv';
-import kbn from 'app/core/utils/kbn';
-import { getDashboardScenePageStateManager } from 'app/features/dashboard-scene/pages/DashboardScenePageStateManager';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { DashboardDTO } from 'app/types';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import impressionSrv from '@grafana-module/app/core/services/impression_srv';
+import kbn from '@grafana-module/app/core/utils/kbn';
+import { getDashboardScenePageStateManager } from '@grafana-module/app/features/dashboard-scene/pages/DashboardScenePageStateManager';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { DashboardDTO } from '@grafana-module/app/types';
 
 import { appEvents } from '../../../core/core';
 import { ResponseTransformers } from '../api/ResponseTransformers';

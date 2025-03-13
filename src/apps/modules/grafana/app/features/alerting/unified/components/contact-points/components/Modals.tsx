@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 
 import { Button, Modal, ModalProps } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { stringifyErrorLike } from '../../../utils/misc';
 

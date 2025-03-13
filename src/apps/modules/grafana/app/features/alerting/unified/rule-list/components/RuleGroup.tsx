@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { useMeasure, useToggle } from 'react-use';
 
 import { Alert, LoadingBar, Pagination } from '@grafana/ui';
-import { RulerDataSourceConfig } from 'app/types/unified-alerting';
-import { PromAlertingRuleState } from 'app/types/unified-alerting-dto';
+import { RulerDataSourceConfig } from '@grafana-module/app/types/unified-alerting';
+import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { usePagination } from '../../hooks/usePagination';

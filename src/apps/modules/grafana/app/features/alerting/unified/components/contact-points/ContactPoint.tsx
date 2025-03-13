@@ -4,14 +4,14 @@ import { Fragment, ReactNode } from 'react';
 
 import { GrafanaTheme2, dateTime } from '@data/index';
 import { Icon, Stack, Text, Tooltip, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { PrimaryText } from 'app/features/alerting/unified/components/common/TextVariants';
-import { ContactPointHeader } from 'app/features/alerting/unified/components/contact-points/ContactPointHeader';
-import { useDeleteContactPointModal } from 'app/features/alerting/unified/components/contact-points/components/Modals';
-import { useDeleteContactPoint } from 'app/features/alerting/unified/components/contact-points/useContactPoints';
-import { useAlertmanager } from 'app/features/alerting/unified/state/AlertmanagerContext';
-import { receiverTypeNames } from 'app/plugins/datasource/alertmanager/consts';
-import { GrafanaNotifierType, NotifierStatus } from 'app/types/alerting';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { PrimaryText } from '@grafana-module/app/features/alerting/unified/components/common/TextVariants';
+import { ContactPointHeader } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPointHeader';
+import { useDeleteContactPointModal } from '@grafana-module/app/features/alerting/unified/components/contact-points/components/Modals';
+import { useDeleteContactPoint } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
+import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
+import { receiverTypeNames } from '@grafana-module/app/plugins/datasource/alertmanager/consts';
+import { GrafanaNotifierType, NotifierStatus } from '@grafana-module/app/types/alerting';
 
 import { INTEGRATION_ICONS } from '../../types/contact-points';
 import { MetaText } from '../MetaText';

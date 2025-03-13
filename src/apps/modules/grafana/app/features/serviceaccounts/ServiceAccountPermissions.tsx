@@ -1,5 +1,5 @@
-import { Permissions } from 'app/core/components/AccessControl';
-import { contextSrv } from 'app/core/services/context_srv';
+import { Permissions } from '@grafana-module/app/core/components/AccessControl';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 
 import { AccessControlAction, ServiceAccountDTO } from '../../types';
 

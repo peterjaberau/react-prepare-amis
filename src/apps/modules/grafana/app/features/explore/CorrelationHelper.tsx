@@ -18,7 +18,7 @@ import {
   Icon,
   Stack,
 } from '@grafana/ui';
-import { useDispatch, useSelector } from 'app/types';
+import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { getTransformationVars } from '../correlations/transformations';
 import { generateDefaultLabel } from '../correlations/utils';

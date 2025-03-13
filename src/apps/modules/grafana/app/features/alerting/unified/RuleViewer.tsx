@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom-v5-compat';
 import { NavModelItem } from '@data/index';
 import { isFetchError } from '@runtime/index';
 import { Alert } from '@grafana/ui';
-import { EntityNotFound } from 'app/core/components/PageNotFound/EntityNotFound';
-import { t } from 'app/core/internationalization';
+import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { AlertingPageWrapper } from './components/AlertingPageWrapper';
 import { AlertRuleProvider } from './components/rule-viewer/RuleContext';

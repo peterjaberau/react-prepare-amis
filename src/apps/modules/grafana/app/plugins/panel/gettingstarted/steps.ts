@@ -1,6 +1,6 @@
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import store from 'app/core/store';
-import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import store from '@grafana-module/app/core/store';
+import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 
 import { SetupStep } from './types';
 

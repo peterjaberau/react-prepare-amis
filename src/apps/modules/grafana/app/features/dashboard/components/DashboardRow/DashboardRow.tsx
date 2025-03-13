@@ -6,8 +6,8 @@ import { Unsubscribable } from 'rxjs';
 import { GrafanaTheme2 } from '@data/index';
 import { getTemplateSrv, RefreshEvent } from '@runtime/index';
 import { Icon, TextLink, Themeable2, withTheme2 } from '@grafana/ui';
-import appEvents from 'app/core/app_events';
-import { SHARED_DASHBOARD_QUERY } from 'app/plugins/datasource/dashboard/constants';
+import appEvents from '@grafana-module/app/core/app_events';
+import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
 
 import { ShowConfirmModalEvent } from '../../../../types/events';
 import { DashboardModel } from '../../state/DashboardModel';

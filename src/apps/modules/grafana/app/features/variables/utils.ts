@@ -11,7 +11,7 @@ import {
   QueryVariableModel,
 } from '@data/index';
 import { getTemplateSrv, locationService } from '@runtime/index';
-import { safeStringifyValue } from 'app/core/utils/explore';
+import { safeStringifyValue } from '@grafana-module/app/core/utils/explore';
 
 import { getState } from '../../store/store';
 import { StoreState } from '../../types';

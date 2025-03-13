@@ -4,11 +4,11 @@ import { useCallback, useEffect, useState } from 'react';
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
 import { AsyncSelectProps, AsyncSelect } from '@grafana/ui';
-import { backendSrv } from 'app/core/services/backend_srv';
-import { AnnoKeyFolder, AnnoKeyFolderTitle } from 'app/features/apiserver/types';
-import { getDashboardAPI } from 'app/features/dashboard/api/dashboard_api';
-import { DashboardSearchItem } from 'app/features/search/types';
-import { DashboardDTO } from 'app/types';
+import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { AnnoKeyFolder, AnnoKeyFolderTitle } from '@grafana-module/app/features/apiserver/types';
+import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
+import { DashboardSearchItem } from '@grafana-module/app/features/search/types';
+import { DashboardDTO } from '@grafana-module/app/types';
 
 interface Props extends Omit<AsyncSelectProps<DashboardPickerDTO>, 'value' | 'onChange' | 'loadOptions' | ''> {
   value?: DashboardPickerDTO['uid'];

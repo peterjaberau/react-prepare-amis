@@ -1,6 +1,6 @@
 import { DataQueryError } from '@data/index';
 import { Alert } from '@grafana/ui';
-import { FadeIn } from 'app/core/components/Animations/FadeIn';
+import { FadeIn } from '@grafana-module/app/core/components/Animations/FadeIn';
 
 export interface ErrorContainerProps {
   queryError?: DataQueryError;

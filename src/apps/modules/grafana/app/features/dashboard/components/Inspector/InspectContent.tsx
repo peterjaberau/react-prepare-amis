@@ -13,14 +13,14 @@ import {
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { Drawer, Tab, TabsBar } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
-import { InspectDataTab } from 'app/features/inspector/InspectDataTab';
-import { InspectErrorTab } from 'app/features/inspector/InspectErrorTab';
-import { InspectJSONTab } from 'app/features/inspector/InspectJSONTab';
-import { InspectMetadataTab } from 'app/features/inspector/InspectMetadataTab';
-import { InspectStatsTab } from 'app/features/inspector/InspectStatsTab';
-import { QueryInspector } from 'app/features/inspector/QueryInspector';
-import { InspectTab } from 'app/features/inspector/types';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { InspectDataTab } from '@grafana-module/app/features/inspector/InspectDataTab';
+import { InspectErrorTab } from '@grafana-module/app/features/inspector/InspectErrorTab';
+import { InspectJSONTab } from '@grafana-module/app/features/inspector/InspectJSONTab';
+import { InspectMetadataTab } from '@grafana-module/app/features/inspector/InspectMetadataTab';
+import { InspectStatsTab } from '@grafana-module/app/features/inspector/InspectStatsTab';
+import { QueryInspector } from '@grafana-module/app/features/inspector/QueryInspector';
+import { InspectTab } from '@grafana-module/app/features/inspector/types';
 
 import { GetDataOptions } from '../../../query/state/PanelQueryRunner';
 import { DashboardModel } from '../../state/DashboardModel';

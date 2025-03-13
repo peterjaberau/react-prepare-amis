@@ -25,7 +25,7 @@ import {
   SceneVariable,
   SceneVariableState,
 } from '@scenes/index';
-import { getClosestScopesFacade } from 'app/features/scopes';
+import { getClosestScopesFacade } from '@grafana-module/app/features/scopes';
 
 import { getDatasourceSrv } from '../plugins/datasource_srv';
 

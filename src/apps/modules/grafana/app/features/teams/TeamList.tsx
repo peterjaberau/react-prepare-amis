@@ -19,11 +19,11 @@ import {
   TextLink,
   useStyles2,
 } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { fetchRoleOptions } from 'app/core/components/RolePicker/api';
-import { Trans, t } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
-import { AccessControlAction, Role, StoreState, TeamWithRoles } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { fetchRoleOptions } from '@grafana-module/app/core/components/RolePicker/api';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { AccessControlAction, Role, StoreState, TeamWithRoles } from '@grafana-module/app/types';
 
 import { TeamRolePicker } from '../../core/components/RolePicker/TeamRolePicker';
 

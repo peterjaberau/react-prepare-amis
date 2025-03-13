@@ -11,9 +11,9 @@ import {
   SceneGridItemLike,
   useSceneObjectState,
 } from '@scenes/index';
-import { GRID_COLUMN_COUNT } from 'app/core/constants';
-import { t } from 'app/core/internationalization';
-import DashboardEmpty from 'app/features/dashboard/dashgrid/DashboardEmpty';
+import { GRID_COLUMN_COUNT } from '@grafana-module/app/core/constants';
+import { t } from '@grafana-module/app/core/internationalization';
+import DashboardEmpty from '@grafana-module/app/features/dashboard/dashgrid/DashboardEmpty';
 
 import { isClonedKey, joinCloneKeys } from '../../utils/clone';
 import { dashboardSceneGraph } from '../../utils/dashboardSceneGraph';

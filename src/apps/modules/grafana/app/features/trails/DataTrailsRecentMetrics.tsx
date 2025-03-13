@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, useStyles2, useTheme2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
+import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { DataTrail } from './DataTrail';
 import { DataTrailCard } from './DataTrailCard';

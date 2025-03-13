@@ -2,7 +2,7 @@ import { AnyAction, createAction } from '@reduxjs/toolkit';
 import { cloneDeep } from 'lodash';
 
 import { NavIndex, NavModel, NavModelItem } from '@data/index';
-import config from 'app/core/config';
+import config from '@grafana-module/app/core/config';
 
 import { getNavSubTitle, getNavTitle } from '../utils/navBarItem-translations';
 

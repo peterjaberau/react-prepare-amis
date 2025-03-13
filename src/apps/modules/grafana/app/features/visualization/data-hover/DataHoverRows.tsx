@@ -6,8 +6,8 @@ import * as React from 'react';
 
 import { DataFrame, FieldType, getFieldDisplayName, GrafanaTheme2 } from '@data/index';
 import { Collapse, TabContent, useStyles2 } from '@grafana/ui';
-import { GeomapLayerHover } from 'app/plugins/panel/geomap/event';
-import { renderValue } from 'app/plugins/panel/geomap/utils/uiUtils';
+import { GeomapLayerHover } from '@grafana-module/app/plugins/panel/geomap/event';
+import { renderValue } from '@grafana-module/app/plugins/panel/geomap/utils/uiUtils';
 
 import { DataHoverRow } from './DataHoverRow';
 

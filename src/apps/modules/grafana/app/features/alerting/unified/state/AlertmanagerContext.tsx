@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { locationService } from '@runtime/index';
-import store from 'app/core/store';
-import { AlertManagerDataSourceJsonData, AlertManagerImplementation } from 'app/plugins/datasource/alertmanager/types';
+import store from '@grafana-module/app/core/store';
+import { AlertManagerDataSourceJsonData, AlertManagerImplementation } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { useAlertManagersByPermission } from '../hooks/useAlertManagerSources';
 import { ALERTMANAGER_NAME_LOCAL_STORAGE_KEY, ALERTMANAGER_NAME_QUERY_KEY } from '../utils/constants';

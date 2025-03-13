@@ -1,5 +1,5 @@
 import { ExploreUrlState } from '@data/index';
-import { DEFAULT_RANGE } from 'app/features/explore/state/constants';
+import { DEFAULT_RANGE } from '@grafana-module/app/features/explore/state/constants';
 
 import { BaseExploreURL, MigrationHandler } from './types';
 

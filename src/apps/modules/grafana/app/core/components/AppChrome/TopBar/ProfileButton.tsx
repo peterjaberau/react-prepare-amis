@@ -5,8 +5,8 @@ import { useToggle } from 'react-use';
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { config } from '@runtime/index';
 import { Dropdown, Menu, MenuItem, ToolbarButton, useStyles2 } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { t } from 'app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
 
 import { enrichWithInteractionTracking } from '../MegaMenu/utils';
 import { NewsContainer } from '../News/NewsDrawer';

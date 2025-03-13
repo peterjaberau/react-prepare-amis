@@ -5,8 +5,8 @@ import { Badge, Tooltip } from '@grafana/ui';
 import {
   DashboardLinkButton,
   DashboardLinksDashboard,
-} from 'app/features/dashboard/components/SubMenu/DashboardLinksDashboard';
-import { getLinkSrv } from 'app/features/panel/panellinks/link_srv';
+} from '@grafana-module/app/features/dashboard/components/SubMenu/DashboardLinksDashboard';
+import { getLinkSrv } from '@grafana-module/app/features/panel/panellinks/link_srv';
 
 import { LINK_ICON_MAP } from '../settings/links/utils';
 

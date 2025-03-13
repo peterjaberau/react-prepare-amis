@@ -3,12 +3,12 @@ import * as React from 'react';
 
 import { PanelData } from '@data/index';
 import { VizPanel } from '@scenes/index';
-import { OptionFilter, renderSearchHits } from 'app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
-import { getFieldOverrideCategories } from 'app/features/dashboard/components/PanelEditor/getFieldOverrideElements';
+import { OptionFilter, renderSearchHits } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
+import { getFieldOverrideCategories } from '@grafana-module/app/features/dashboard/components/PanelEditor/getFieldOverrideElements';
 import {
   getLibraryVizPanelOptionsCategory,
   getVisualizationOptions2,
-} from 'app/features/dashboard/components/PanelEditor/getVisualizationOptions';
+} from '@grafana-module/app/features/dashboard/components/PanelEditor/getVisualizationOptions';
 
 import { LibraryPanelBehavior } from '../scene/LibraryPanelBehavior';
 import { getLibraryPanelBehavior, isLibraryPanel } from '../utils/utils';

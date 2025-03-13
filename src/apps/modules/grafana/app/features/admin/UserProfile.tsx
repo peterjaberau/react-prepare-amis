@@ -3,9 +3,9 @@ import { PureComponent, useRef, useState } from 'react';
 import * as React from 'react';
 
 import { Button, ConfirmButton, ConfirmModal, Input, LegacyInputStatus, Stack } from '@grafana/ui';
-import { contextSrv } from 'app/core/core';
-import { t, Trans } from 'app/core/internationalization';
-import { AccessControlAction, UserDTO } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { AccessControlAction, UserDTO } from '@grafana-module/app/types';
 
 interface Props {
   user: UserDTO;

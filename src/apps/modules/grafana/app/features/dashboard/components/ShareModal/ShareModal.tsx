@@ -1,16 +1,16 @@
 import * as React from 'react';
 
 import { Modal, ModalTabsHeader, TabContent, Themeable2, withTheme2 } from '@grafana/ui';
-import { config } from 'app/core/config';
-import { contextSrv } from 'app/core/core';
-import { t } from 'app/core/internationalization';
-import { SharePublicDashboard } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
-import { isPublicDashboardsEnabled } from 'app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardModel } from 'app/features/dashboard/state/DashboardModel';
-import { PanelModel } from 'app/features/dashboard/state/PanelModel';
-import { DashboardInteractions } from 'app/features/dashboard-scene/utils/interactions';
-import { isPanelModelLibraryPanel } from 'app/features/library-panels/guard';
-import { AccessControlAction } from 'app/types';
+import { config } from '@grafana-module/app/core/config';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
+import { SharePublicDashboard } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
+import { isPublicDashboardsEnabled } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { isPanelModelLibraryPanel } from '@grafana-module/app/features/library-panels/guard';
+import { AccessControlAction } from '@grafana-module/app/types';
 
 import { ShareEmbed } from './ShareEmbed';
 import { ShareExport } from './ShareExport';

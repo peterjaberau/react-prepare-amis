@@ -1,4 +1,4 @@
-import { GrafanaManagedContactPoint, Receiver } from 'app/plugins/datasource/alertmanager/types';
+import { GrafanaManagedContactPoint, Receiver } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { AlertmanagerAction, useAlertmanagerAbility } from '../../hooks/useAbilities';
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';

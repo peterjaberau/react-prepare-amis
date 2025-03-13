@@ -3,8 +3,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { connect } from 'react-redux';
 
 import { EventBusSrv, getTimeZone } from '@data/index';
-import { stopQueryState } from 'app/core/utils/explore';
-import { StoreState, useSelector } from 'app/types';
+import { stopQueryState } from '@grafana-module/app/core/utils/explore';
+import { StoreState, useSelector } from '@grafana-module/app/types';
 
 import Explore from './Explore';
 import ExploreQueryInspector from './ExploreQueryInspector';

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { DataFrameJSON } from '@data/index';
-import { mapStateWithReasonToBaseState } from 'app/types/unified-alerting-dto';
+import { mapStateWithReasonToBaseState } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { labelsMatchMatchers } from '../../../utils/alertmanager';
 import { parsePromQLStyleMatcherLooseSafe } from '../../../utils/matchers';

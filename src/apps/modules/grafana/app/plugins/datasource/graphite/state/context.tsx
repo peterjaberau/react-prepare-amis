@@ -3,7 +3,7 @@ import { createContext, Dispatch, PropsWithChildren, useContext, useEffect, useM
 import { usePrevious } from 'react-use';
 
 import { QueryEditorProps } from '@data/index';
-import { getTemplateSrv } from 'app/features/templating/template_srv';
+import { getTemplateSrv } from '@grafana-module/app/features/templating/template_srv';
 
 import { GraphiteDatasource } from '../datasource';
 import { GraphiteOptions, GraphiteQuery } from '../types';

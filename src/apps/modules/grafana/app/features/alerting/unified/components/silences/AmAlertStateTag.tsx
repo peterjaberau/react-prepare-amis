@@ -1,4 +1,4 @@
-import { AlertState } from 'app/plugins/datasource/alertmanager/types';
+import { AlertState } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { State, StateTag } from '../StateTag';
 

@@ -5,7 +5,7 @@ import { finalize, from, Subscription } from 'rxjs';
 import { GrafanaTheme2, ScopeDashboardBinding } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState } from '@scenes/index';
 import { Button, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana/ui';
-import { t, Trans } from 'app/core/internationalization';
+import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { ScopesDashboardsTree } from './ScopesDashboardsTree';
 import { ScopesDashboardsTreeSearch } from './ScopesDashboardsTreeSearch';

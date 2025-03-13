@@ -3,8 +3,8 @@ import { useEffectOnce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Alert, useStyles2 } from '@grafana/ui';
-import { Trans } from 'app/core/internationalization';
-import { AppNotification, timeoutMap } from 'app/types';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { AppNotification, timeoutMap } from '@grafana-module/app/types';
 
 interface Props {
   appNotification: AppNotification;

@@ -3,11 +3,11 @@ import memoizeOne from 'memoize-one';
 import { AbsoluteTimeRange, LogRowModel, UrlQueryMap } from '@data/index';
 import { getBackendSrv, config, locationService } from '@runtime/index';
 import { sceneGraph, SceneTimeRangeLike, VizPanel } from '@scenes/index';
-import { notifyApp } from 'app/core/actions';
-import { createErrorNotification, createSuccessNotification } from 'app/core/copy/appNotification';
-import { DashboardScene } from 'app/features/dashboard-scene/scene/DashboardScene';
-import { getDashboardUrl } from 'app/features/dashboard-scene/utils/getDashboardUrl';
-import { dispatch } from 'app/store/store';
+import { notifyApp } from '@grafana-module/app/core/actions';
+import { createErrorNotification, createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
+import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { getDashboardUrl } from '@grafana-module/app/features/dashboard-scene/utils/getDashboardUrl';
+import { dispatch } from '@grafana-module/app/store/store';
 
 import { ShareLinkConfiguration } from '../../features/dashboard-scene/sharing/ShareButton/utils';
 import { t } from '../internationalization';

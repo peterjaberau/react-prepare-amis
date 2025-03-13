@@ -21,19 +21,19 @@ import {
   getTagColorsFromName,
   useStyles2,
 } from '@grafana/ui';
-import { Trans, t } from 'app/core/internationalization';
-import ConditionalWrap from 'app/features/alerting/unified/components/ConditionalWrap';
-import MoreButton from 'app/features/alerting/unified/components/MoreButton';
-import { PrimaryText } from 'app/features/alerting/unified/components/common/TextVariants';
-import { ContactPointReceiverSummary } from 'app/features/alerting/unified/components/contact-points/ContactPoint';
+import { Trans, t } from '@grafana-module/app/core/internationalization';
+import ConditionalWrap from '@grafana-module/app/features/alerting/unified/components/ConditionalWrap';
+import MoreButton from '@grafana-module/app/features/alerting/unified/components/MoreButton';
+import { PrimaryText } from '@grafana-module/app/features/alerting/unified/components/common/TextVariants';
+import { ContactPointReceiverSummary } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoint';
 import {
   AlertmanagerGroup,
   MatcherOperator,
   ObjectMatcher,
   Receiver,
   RouteWithID,
-} from 'app/plugins/datasource/alertmanager/types';
-import { ReceiversState } from 'app/types';
+} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { ReceiversState } from '@grafana-module/app/types';
 
 import { AlertmanagerAction, useAlertmanagerAbilities, useAlertmanagerAbility } from '../../hooks/useAbilities';
 import { getAmMatcherFormatter } from '../../utils/alertmanager';

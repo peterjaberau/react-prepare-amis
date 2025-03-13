@@ -3,10 +3,10 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { PanelPlugin, PanelPluginMeta } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
-import { PanelCtrl } from 'app/angular/panel/panel_ctrl';
-import { changePanelPlugin } from 'app/features/panel/state/actions';
-import { getPanelStateForModel } from 'app/features/panel/state/selectors';
-import { StoreState } from 'app/types';
+import { PanelCtrl } from '@grafana-module/app/angular/panel/panel_ctrl';
+import { changePanelPlugin } from '@grafana-module/app/features/panel/state/actions';
+import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
+import { StoreState } from '@grafana-module/app/types';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { PanelModel } from '../../state/PanelModel';

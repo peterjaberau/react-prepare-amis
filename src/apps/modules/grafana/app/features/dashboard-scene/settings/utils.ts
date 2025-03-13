@@ -2,10 +2,10 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { locationUtil, NavModelItem } from '@data/index';
 import { SceneObject, SceneObjectState } from '@scenes/index';
-import { contextSrv } from 'app/core/core';
-import { t } from 'app/core/internationalization';
-import { getNavModel } from 'app/core/selectors/navModel';
-import { AccessControlAction, useSelector } from 'app/types';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
+import { AccessControlAction, useSelector } from '@grafana-module/app/types';
 
 import { DashboardScene } from '../scene/DashboardScene';
 

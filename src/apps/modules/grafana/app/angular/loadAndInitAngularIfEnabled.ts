@@ -7,11 +7,11 @@ import {
   getBackendSrv,
   getTemplateSrv,
 } from '@runtime/index';
-import { contextSrv } from 'app/core/core';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { validationSrv } from 'app/features/manage-dashboards/services/ValidationSrv';
-import { getLinkSrv } from 'app/features/panel/panellinks/link_srv';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';
+import { getLinkSrv } from '@grafana-module/app/features/panel/panellinks/link_srv';
 
 export async function loadAndInitAngularIfEnabled() {
   if (config.angularSupportEnabled) {

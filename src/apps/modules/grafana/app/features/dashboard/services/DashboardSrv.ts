@@ -1,11 +1,11 @@
 import { AppEvents } from '@data/index';
 import { BackendSrvRequest } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { appEvents } from 'app/core/app_events';
-import { t } from 'app/core/internationalization';
-import { getBackendSrv } from 'app/core/services/backend_srv';
-import { getDashboardAPI } from 'app/features/dashboard/api/dashboard_api';
-import { DashboardMeta } from 'app/types';
+import { appEvents } from '@grafana-module/app/core/app_events';
+import { t } from '@grafana-module/app/core/internationalization';
+import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
+import { DashboardMeta } from '@grafana-module/app/types';
 
 import { RemovePanelEvent } from '../../../types/events';
 import { DashboardModel } from '../state/DashboardModel';

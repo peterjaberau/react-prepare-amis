@@ -1,4 +1,4 @@
-import { GrafanaRulesSourceSymbol, RulerDataSourceConfig, RulesSourceUid } from 'app/types/unified-alerting';
+import { GrafanaRulesSourceSymbol, RulerDataSourceConfig, RulesSourceUid } from '@grafana-module/app/types/unified-alerting';
 
 import {
   AlertmanagerApiFeatures,

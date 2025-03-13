@@ -16,8 +16,8 @@ import {
   Label,
   Stack,
 } from '@grafana/ui';
-import { getConfig } from 'app/core/config';
-import { OrgRole, useDispatch } from 'app/types';
+import { getConfig } from '@grafana-module/app/core/config';
+import { OrgRole, useDispatch } from '@grafana-module/app/types';
 
 import { Form } from '../../core/components/Form/Form';
 import { addInvitee } from '../invites/state/actions';

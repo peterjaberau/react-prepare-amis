@@ -4,8 +4,8 @@ import * as React from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Icon, IconButton, Link, useTheme2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
-import { contextSrv } from 'app/core/services/context_srv';
+import { t } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 
 export interface Props {
   children: React.ReactNode;

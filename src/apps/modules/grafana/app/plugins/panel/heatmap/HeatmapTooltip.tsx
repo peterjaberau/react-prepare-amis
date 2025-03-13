@@ -20,10 +20,10 @@ import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizToolt
 import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
 import { VizTooltipWrapper } from '@grafana/ui/src/components/VizTooltip/VizTooltipWrapper';
 import { ColorIndicator, ColorPlacement, VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
-import { ColorScale } from 'app/core/components/ColorScale/ColorScale';
-import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
-import { isHeatmapCellsDense, readHeatmapRowsCustomMeta } from 'app/features/transformers/calculateHeatmap/heatmap';
-import { DataHoverView } from 'app/features/visualization/data-hover/DataHoverView';
+import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
+import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { isHeatmapCellsDense, readHeatmapRowsCustomMeta } from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';
+import { DataHoverView } from '@grafana-module/app/features/visualization/data-hover/DataHoverView';
 
 import { getDataLinks, getFieldActions } from '../status-history/utils';
 import { isTooltipScrollable } from '../timeseries/utils';

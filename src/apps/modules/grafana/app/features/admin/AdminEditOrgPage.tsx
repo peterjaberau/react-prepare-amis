@@ -5,10 +5,10 @@ import { useAsyncFn } from 'react-use';
 
 import { NavModelItem } from '@data/index';
 import { Field, Input, Button, Legend, Alert } from '@grafana/ui';
-import { Page } from 'app/core/components/Page/Page';
-import { contextSrv } from 'app/core/core';
-import { Trans } from 'app/core/internationalization';
-import { OrgUser, AccessControlAction, OrgRole } from 'app/types';
+import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { contextSrv } from '@grafana-module/app/core/core';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import { OrgUser, AccessControlAction, OrgRole } from '@grafana-module/app/types';
 
 import { OrgUsersTable } from './Users/OrgUsersTable';
 import { getOrg, getOrgUsers, getUsersRoles, removeOrgUser, updateOrgName, updateOrgUserRole } from './api';

@@ -1,4 +1,4 @@
-import { RulerRuleGroupDTO } from 'app/types/unified-alerting-dto';
+import { RulerRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { mockRulerAlertingRule } from '../mocks';
 

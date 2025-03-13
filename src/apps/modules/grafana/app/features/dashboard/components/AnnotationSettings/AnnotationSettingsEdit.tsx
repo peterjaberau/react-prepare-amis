@@ -25,12 +25,12 @@ import {
   Stack,
   Alert,
 } from '@grafana/ui';
-import { ColorValueEditor } from 'app/core/components/OptionsUI/color';
-import config from 'app/core/config';
-import { Trans } from 'app/core/internationalization';
-import StandardAnnotationQueryEditor from 'app/features/annotations/components/StandardAnnotationQueryEditor';
-import { AngularEditorLoader } from 'app/features/dashboard-scene/settings/annotations/AngularEditorLoader';
-import { DataSourcePicker } from 'app/features/datasources/components/picker/DataSourcePicker';
+import { ColorValueEditor } from '@grafana-module/app/core/components/OptionsUI/color';
+import config from '@grafana-module/app/core/config';
+import { Trans } from '@grafana-module/app/core/internationalization';
+import StandardAnnotationQueryEditor from '@grafana-module/app/features/annotations/components/StandardAnnotationQueryEditor';
+import { AngularEditorLoader } from '@grafana-module/app/features/dashboard-scene/settings/annotations/AngularEditorLoader';
+import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
 
 import { DashboardModel } from '../../state/DashboardModel';
 

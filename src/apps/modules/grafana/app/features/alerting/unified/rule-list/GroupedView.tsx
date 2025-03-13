@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import { Stack } from '@grafana/ui';
-import { DataSourceRulesSourceIdentifier } from 'app/types/unified-alerting';
+import { DataSourceRulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import { featureDiscoveryApi } from '../api/featureDiscoveryApi';
 import { GrafanaRulesSource, getExternalRulesSources } from '../utils/datasource';

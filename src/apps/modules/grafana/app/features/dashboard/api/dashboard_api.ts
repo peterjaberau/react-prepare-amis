@@ -1,6 +1,6 @@
 import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@grafana/schema/dist/esm/schema/dashboard/v2alpha0';
-import { DashboardDTO } from 'app/types';
+import { DashboardDTO } from '@grafana-module/app/types';
 
 import { LegacyDashboardAPI } from './legacy';
 import { DashboardAPI, DashboardWithAccessInfo } from './types';
