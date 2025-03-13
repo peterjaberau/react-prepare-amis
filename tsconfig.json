@@ -43,9 +43,8 @@
       "@prometheus/*": ["src/packages/grafana/prometheus/*"],
       "@o11y-ds-frontend/*": ["src/packages/grafana/o11y-ds-frontend/*"],
       "@scenes-react/*": ["src/packages/grafana/scenes-react/*"],
-      "@selectors/*": ["src/packages/grafana/selectors/*"]
-
-
+      "@selectors/*": ["src/packages/grafana/selectors/*"],
+      "@grafana-ui/*": ["src/packages/grafana/grafana-ui/*"]
     },
     "allowSyntheticDefaultImports": true
   },

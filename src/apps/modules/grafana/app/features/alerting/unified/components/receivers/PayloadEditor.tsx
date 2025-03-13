@@ -4,7 +4,7 @@ import * as React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, CodeEditor, Dropdown, Menu, Stack, Toggletip, useStyles2 } from '@grafana/ui';
+import { Button, CodeEditor, Dropdown, Menu, Stack, Toggletip, useStyles2 } from '@grafana-ui/index';
 import { TestTemplateAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { EditorColumnHeader } from '../contact-points/templates/EditorColumnHeader';

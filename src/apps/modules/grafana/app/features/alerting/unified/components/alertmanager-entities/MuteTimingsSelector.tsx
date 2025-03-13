@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { MultiSelect, MultiSelectCommonProps } from '@grafana/ui';
+import { MultiSelect, MultiSelectCommonProps } from '@grafana-ui/index';
 import { useSelectableMuteTimings } from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
 import { BaseAlertmanagerArgs } from '@grafana-module/app/features/alerting/unified/types/hooks';
 import { timeIntervalToString } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';

@@ -8,7 +8,7 @@ import {
   VizPanelExploreButton,
 } from '@scenes/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
-import { Button, Select } from '@grafana/ui';
+import { Button, Select } from '@grafana-ui/index';
 import React from 'react';
 
 export function getPanelHeaderActions(defaults: SceneAppPageState) {

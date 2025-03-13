@@ -1,7 +1,7 @@
 import { uniq } from 'lodash';
 
 import { SelectableValue } from '@data/index';
-import { Icon, Label, MultiSelect, Tooltip } from '@grafana/ui';
+import { Icon, Label, MultiSelect, Tooltip } from '@grafana-ui/index';
 import { AlertmanagerGroup } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { isPrivateLabelKey } from '../../utils/labels';

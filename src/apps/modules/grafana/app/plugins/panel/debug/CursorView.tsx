@@ -9,7 +9,7 @@ import {
   DataHoverClearEvent,
   BusEventBase,
 } from '@data/index';
-import { CustomScrollbar } from '@grafana/ui';
+import { CustomScrollbar } from '@grafana-ui/index';
 import { DataHoverView } from '@grafana-module/app/features/visualization/data-hover/DataHoverView';
 
 interface Props {

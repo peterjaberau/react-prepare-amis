@@ -1,5 +1,5 @@
 import { SelectableValue, StandardEditorProps } from '@data/index';
-import { Checkbox, HorizontalGroup, RadioButtonGroup, Tooltip } from '@grafana/ui';
+import { Checkbox, HorizontalGroup, RadioButtonGroup, Tooltip } from '@grafana-ui/index';
 
 const GAPS_OPTIONS: Array<SelectableValue<number>> = [
   {

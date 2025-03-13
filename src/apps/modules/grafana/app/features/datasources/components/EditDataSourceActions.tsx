@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 
 import { useDataSource } from '../state';

@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 import { reportInteraction } from '@runtime/index';
-import { Box, Button, Text } from '@grafana/ui';
+import { Box, Button, Text } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import {

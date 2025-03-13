@@ -10,7 +10,7 @@ import {
   PromMetricsMetadataItem,
   PromQlLanguageProvider,
   PromQuery,
-} from '@grafana/prometheus';
+} from '@prometheus/index';
 import { getDataSourceSrv } from '@runtime/index';
 
 import { DataTrail } from '../DataTrail';

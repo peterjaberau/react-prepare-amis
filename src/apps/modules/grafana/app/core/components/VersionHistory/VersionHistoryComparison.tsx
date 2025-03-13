@@ -2,7 +2,7 @@ import { identity } from 'lodash';
 import { useState } from 'react';
 
 import { dateTimeFormatTimeAgo } from '@data/index';
-import { Box, Button, Divider, EmptyState, Icon, Stack, Text } from '@grafana/ui';
+import { Box, Button, Divider, EmptyState, Icon, Stack, Text } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';
 import { DiffViewer } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffViewer';

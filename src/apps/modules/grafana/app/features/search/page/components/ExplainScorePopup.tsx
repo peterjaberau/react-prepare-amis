@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { DataFrame } from '@data/index';
-import { CodeEditor, Modal, ModalTabsHeader, TabContent } from '@grafana/ui';
+import { CodeEditor, Modal, ModalTabsHeader, TabContent } from '@grafana-ui/index';
 import { DataHoverView } from '@grafana-module/app/features/visualization/data-hover/DataHoverView';
 
 export interface Props {

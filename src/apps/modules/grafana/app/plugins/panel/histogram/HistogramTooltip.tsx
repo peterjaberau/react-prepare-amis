@@ -2,12 +2,12 @@ import { ReactNode, useMemo } from 'react';
 
 import { DataFrame, formattedValueToString } from '@data/index';
 import { SortOrder, TooltipDisplayMode } from '@schema/common/common.gen';
-import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
-import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';
-import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
-import { VizTooltipWrapper } from '@grafana/ui/src/components/VizTooltip/VizTooltipWrapper';
-import { VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
-import { getContentItems } from '@grafana/ui/src/components/VizTooltip/utils';
+import { VizTooltipContent } from '@grafana-ui/components/VizTooltip/VizTooltipContent';
+import { VizTooltipFooter } from '@grafana-ui/components/VizTooltip/VizTooltipFooter';
+import { VizTooltipHeader } from '@grafana-ui/components/VizTooltip/VizTooltipHeader';
+import { VizTooltipWrapper } from '@grafana-ui/components/VizTooltip/VizTooltipWrapper';
+import { VizTooltipItem } from '@grafana-ui/components/VizTooltip/types';
+import { getContentItems } from '@grafana-ui/components/VizTooltip/utils';
 
 import { getDataLinks } from '../status-history/utils';
 import { isTooltipScrollable } from '../timeseries/utils';

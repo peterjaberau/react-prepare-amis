@@ -4,7 +4,7 @@ import { useDebounce } from 'react-use';
 
 import { QueryEditorProps, getDefaultTimeRange, toOption } from '@data/index';
 import { EditorField, EditorRows } from '@grafana/plugin-ui';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';
 import { TimeSeriesList, CloudMonitoringQuery, QueryType } from '../types/query';

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { PureComponent } from 'react';
 
 import { selectors } from '@selectors/index';
-import { SeriesColorPicker, SeriesIcon } from '@grafana/ui';
+import { SeriesColorPicker, SeriesIcon } from '@grafana-ui/index';
 import { TimeSeries } from '@grafana-module/app/core/core';
 
 export const LEGEND_STATS = ['min', 'max', 'avg', 'current', 'total'] as const;

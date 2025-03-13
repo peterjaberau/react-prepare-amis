@@ -13,7 +13,7 @@ import {
   QueryEditorMode,
 } from '@grafana/plugin-ui';
 import { config, reportInteraction } from '@runtime/index';
-import { Button, ConfirmModal, Space, Stack } from '@grafana/ui';
+import { Button, ConfirmModal, Space, Stack } from '@grafana-ui/index';
 
 import { LabelBrowserModal } from '../querybuilder/components/LabelBrowserModal';
 import { LokiQueryBuilderContainer } from '../querybuilder/components/LokiQueryBuilderContainer';

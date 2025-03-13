@@ -1,4 +1,4 @@
-import { Switch } from '@grafana/ui';
+import { Switch } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';

@@ -11,7 +11,7 @@ import {
   histogramFieldInfo,
   HistogramTransformerInputs,
 } from '@data/transformations/transformers/histogram';
-import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { SuggestionsInput } from '../suggestionsInput/SuggestionsInput';

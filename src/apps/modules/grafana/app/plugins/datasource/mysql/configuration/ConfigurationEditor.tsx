@@ -20,7 +20,7 @@ import {
   SecureSocksProxySettings,
   Switch,
   Tooltip,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { MySQLOptions } from '../types';
 

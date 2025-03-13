@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2, renderMarkdown } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 export interface Props extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;

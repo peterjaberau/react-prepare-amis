@@ -1,5 +1,5 @@
 import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@scenes/index';
-import { ConfirmModal as ConfirmModalComponent, ConfirmModalProps } from '@grafana/ui';
+import { ConfirmModal as ConfirmModalComponent, ConfirmModalProps } from '@grafana-ui/index';
 
 import { ModalSceneObjectLike } from '../types';
 

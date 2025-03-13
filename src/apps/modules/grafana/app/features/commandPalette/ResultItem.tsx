@@ -3,7 +3,7 @@ import { ActionId, ActionImpl } from 'kbar';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 export const ResultItem = React.forwardRef(
   (

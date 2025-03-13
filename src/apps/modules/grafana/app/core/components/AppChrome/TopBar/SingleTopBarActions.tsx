@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Components } from '@selectors/index';
-import { Stack, useStyles2 } from '@grafana/ui';
+import { Stack, useStyles2 } from '@grafana-ui/index';
 
 import { TOP_BAR_LEVEL_HEIGHT } from '../types';
 

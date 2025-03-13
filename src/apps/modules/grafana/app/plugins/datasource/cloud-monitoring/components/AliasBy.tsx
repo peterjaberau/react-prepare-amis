@@ -3,7 +3,7 @@ import { useState } from 'react';
 import * as React from 'react';
 
 import { EditorField } from '@grafana/plugin-ui';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 export interface Props {
   refId: string;

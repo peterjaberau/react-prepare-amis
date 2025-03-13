@@ -14,7 +14,7 @@ import { memo, useState } from 'react';
 
 import { GrafanaTheme2, renderMarkdown } from '@data/index';
 import { FlexItem } from '@grafana/plugin-ui';
-import { Button, Portal, useStyles2 } from '@grafana/ui';
+import { Button, Portal, useStyles2 } from '@grafana-ui/index';
 
 import { QueryBuilderOperation, QueryBuilderOperationDef } from './types';
 

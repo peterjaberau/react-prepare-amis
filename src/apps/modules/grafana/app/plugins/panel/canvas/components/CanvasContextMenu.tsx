@@ -4,7 +4,7 @@ import * as React from 'react';
 import { first } from 'rxjs/operators';
 
 import { SelectableValue } from '@data/index';
-import { ContextMenu, MenuItem, MenuItemProps } from '@grafana/ui';
+import { ContextMenu, MenuItem, MenuItemProps } from '@grafana-ui/index';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
 import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
 import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';

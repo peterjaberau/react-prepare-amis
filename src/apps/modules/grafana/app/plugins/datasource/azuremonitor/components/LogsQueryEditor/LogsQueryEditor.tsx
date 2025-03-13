@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { PanelData, TimeRange } from '@data/index';
 import { EditorFieldGroup, EditorRow, EditorRows } from '@grafana/plugin-ui';
 import { getTemplateSrv } from '@runtime/index';
-import { Alert, LinkButton, Text, TextLink } from '@grafana/ui';
+import { Alert, LinkButton, Text, TextLink } from '@grafana-ui/index';
 
 import Datasource from '../../datasource';
 import { selectors } from '../../e2e/selectors';

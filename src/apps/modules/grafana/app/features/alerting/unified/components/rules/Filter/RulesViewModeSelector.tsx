@@ -1,6 +1,6 @@
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { trackRulesListViewChange } from '../../../Analytics';
 import { useRulesFilter } from '../../../hooks/useFilteredRules';

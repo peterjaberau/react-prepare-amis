@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { LoadingState, VariableOption, VariableWithMultiSupport, VariableWithOptions } from '@data/index';
-import { ClickOutsideWrapper } from '@grafana/ui';
+import { ClickOutsideWrapper } from '@grafana-ui/index';
 import { StoreState, ThunkDispatch } from '@grafana-module/app/types';
 
 import { VARIABLE_PREFIX } from '../../constants';

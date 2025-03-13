@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Field, FieldSet, Icon, InlineSwitch, Input, Stack, useStyles2 } from '@grafana/ui';
+import { Button, Field, FieldSet, Icon, InlineSwitch, Input, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { MuteTimingFields } from '../../types/mute-timing-form';

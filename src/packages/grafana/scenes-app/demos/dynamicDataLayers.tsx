@@ -17,7 +17,7 @@ import {
   SceneTimePicker,
   VizPanel,
 } from '@scenes/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 import React from 'react';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 

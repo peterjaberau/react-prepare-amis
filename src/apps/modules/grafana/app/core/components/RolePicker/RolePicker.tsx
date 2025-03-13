@@ -1,6 +1,6 @@
 import { FormEvent, useCallback, useEffect, useState, useRef } from 'react';
 
-import { ClickOutsideWrapper, Portal, useTheme2 } from '@grafana/ui';
+import { ClickOutsideWrapper, Portal, useTheme2 } from '@grafana-ui/index';
 import { Role, OrgRole } from '@grafana-module/app/types';
 
 import { RolePickerInput } from './RolePickerInput';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Unsubscribable } from 'rxjs';
 import { rangeUtil } from '@data/index';
 import { config } from '@runtime/index';
-import { RefreshPicker } from '@grafana/ui';
+import { RefreshPicker } from '@grafana-ui/index';
 
 import { SceneObjectBase } from '../core/SceneObjectBase';
 import { sceneGraph } from '../core/sceneGraph';

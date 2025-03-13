@@ -13,7 +13,7 @@ import {
   SceneObjectState,
   SceneReactObject,
 } from '@scenes/index';
-import { Alert, Button } from '@grafana/ui';
+import { Alert, Button } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { getLabelValueFromDataFrame } from '../services/levels';

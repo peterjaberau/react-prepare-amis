@@ -13,7 +13,7 @@ import {
   RadioButtonGroup,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { JaegerDatasource } from '../datasource';
 import { JaegerQuery, JaegerQueryType } from '../types';

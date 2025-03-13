@@ -1,4 +1,4 @@
-import { Input, Field, FieldSet, Button } from '@grafana/ui';
+import { Input, Field, FieldSet, Button } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction } from '@grafana-module/app/types';

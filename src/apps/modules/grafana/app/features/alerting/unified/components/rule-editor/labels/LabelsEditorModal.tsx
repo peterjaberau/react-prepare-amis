@@ -1,4 +1,4 @@
-import { Modal } from '@grafana/ui';
+import { Modal } from '@grafana-ui/index';
 
 import { KBObjectArray } from '../../../types/rule-form';
 

@@ -6,8 +6,8 @@
 import { IDisposable, editor } from 'monaco-editor';
 import { useEffect, useRef } from 'react';
 
-import { CodeEditor } from '@grafana/ui';
-import { CodeEditorProps } from '@grafana/ui/src/components/Monaco/types';
+import { CodeEditor } from '@grafana-ui/index';
+import { CodeEditorProps } from '@grafana-ui/components/Monaco/types';
 
 import { registerGoTemplateAutocomplete } from './editor/autocomplete';
 import goTemplateLanguageDefinition, { GO_TEMPLATE_LANGUAGE_ID } from './editor/definition';

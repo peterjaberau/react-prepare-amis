@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 
 import { AppEvents, GrafanaTheme2 } from '@data/index';
-import { useStyles2, Stack } from '@grafana/ui';
+import { useStyles2, Stack } from '@grafana-ui/index';
 import { notifyApp, hideAppNotification } from '@grafana-module/app/core/actions';
 import appEvents from '@grafana-module/app/core/app_events';
 import { selectVisible } from '@grafana-module/app/core/reducers/appNotification';

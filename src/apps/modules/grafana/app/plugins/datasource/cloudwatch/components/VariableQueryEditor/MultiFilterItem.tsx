@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { AccessoryButton, InputGroup } from '@grafana/plugin-ui';
-import { Alert, Input, useStyles2 } from '@grafana/ui';
+import { Alert, Input, useStyles2 } from '@grafana-ui/index';
 
 import { type CloudWatchDatasource } from '../../datasource';
 import { useEnsureVariableHasSingleSelection } from '../../hooks';

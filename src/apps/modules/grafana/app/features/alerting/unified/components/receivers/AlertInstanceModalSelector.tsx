@@ -14,7 +14,7 @@ import {
   Tooltip,
   clearButtonStyles,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { AlertmanagerAlert, TestTemplateAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 

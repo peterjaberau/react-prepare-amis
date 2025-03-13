@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 

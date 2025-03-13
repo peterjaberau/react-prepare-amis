@@ -2,7 +2,7 @@ import { defaults } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 
-import { Alert, Button, Stack } from '@grafana/ui';
+import { Alert, Button, Stack } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { useContactPointsWithStatus } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';

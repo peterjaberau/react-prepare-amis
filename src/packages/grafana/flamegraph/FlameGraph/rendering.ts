@@ -2,7 +2,7 @@ import { RefObject, useCallback, useEffect, useMemo, useState } from 'react';
 import color from 'tinycolor2';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import {
   BAR_BORDER_WIDTH,

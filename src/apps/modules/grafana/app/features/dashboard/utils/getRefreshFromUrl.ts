@@ -1,4 +1,4 @@
-import { defaultIntervals } from '@grafana/ui';
+import { defaultIntervals } from '@grafana-ui/index';
 
 interface Args {
   urlRefresh: string | null;

@@ -1,4 +1,4 @@
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafana-ui/index';
 
 import { ResourceRow, ResourceRowType } from './types';
 

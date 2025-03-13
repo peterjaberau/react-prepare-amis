@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { CollapsableSection, HorizontalGroup, Icon, Spinner, Tooltip, useStyles2, VerticalGroup } from '@grafana/ui';
+import { CollapsableSection, HorizontalGroup, Icon, Spinner, Tooltip, useStyles2, VerticalGroup } from '@grafana-ui/index';
 
 import { DashboardModel } from '../../dashboard/state/DashboardModel';
 import { VariableModel } from '../types';

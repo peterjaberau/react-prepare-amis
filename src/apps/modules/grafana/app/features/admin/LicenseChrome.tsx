@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, useTheme2 } from '@grafana/ui';
+import { useStyles2, useTheme2 } from '@grafana-ui/index';
 
 const title = { fontWeight: 500, fontSize: '26px', lineHeight: '123%' };
 

@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
-import { Button, ClipboardButton, Divider, Spinner, Stack, useStyles2 } from '@grafana/ui';
+import { Button, ClipboardButton, Divider, Spinner, Stack, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import {

@@ -1,4 +1,4 @@
-import type { monacoTypes } from '@grafana/ui';
+import type { monacoTypes } from '@grafana-ui/index';
 
 import { LinkedToken } from './LinkedToken';
 import { LanguageDefinition } from './register';

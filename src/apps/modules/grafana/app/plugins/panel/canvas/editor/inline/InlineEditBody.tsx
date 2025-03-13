@@ -6,7 +6,7 @@ import { useObservable } from 'react-use';
 import { DataFrame, GrafanaTheme2, PanelOptionsEditorBuilder, StandardEditorContext } from '@data/index';
 import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';
 import { NestedValueAccess } from '@data/utils/OptionsUIBuilders';
-import { useStyles2 } from '@grafana/ui/src';
+import { useStyles2 } from '@grafana-ui/index';
 import { AddLayerButton } from '@grafana-module/app/core/components/Layers/AddLayerButton';
 import { FrameState } from '@grafana-module/app/features/canvas/runtime/frame';
 import { OptionsPaneCategory } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategory';

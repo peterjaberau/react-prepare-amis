@@ -18,7 +18,7 @@ import {
   Stack,
   TextLink,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { fetchRoleOptions } from '@grafana-module/app/core/components/RolePicker/api';
 import { Trans, t } from '@grafana-module/app/core/internationalization';

@@ -16,8 +16,8 @@ import {
   HorizontalGroup,
   FieldValidationMessage,
   RadioButtonGroup,
-} from '@grafana/ui';
-import { useFieldDisplayNames, useSelectOptions } from '@grafana/ui/src/components/MatchersUI/utils';
+} from '@grafana-ui/index';
+import { useFieldDisplayNames, useSelectOptions } from '@grafana-ui/components/MatchersUI/utils';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

@@ -16,9 +16,9 @@ import {
   ConvertFieldTypeOptions,
   ConvertFieldTypeTransformerOptions,
 } from '@data/transformations/transformers/convertFieldType';
-import { Button, InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
-import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
-import { allFieldTypeIconOptions } from '@grafana/ui/src/components/MatchersUI/FieldTypeMatcherEditor';
+import { Button, InlineField, InlineFieldRow, Input, Select } from '@grafana-ui/index';
+import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
+import { allFieldTypeIconOptions } from '@grafana-ui/components/MatchersUI/FieldTypeMatcherEditor';
 import { findField } from '@grafana-module/app/features/dimensions';
 
 import { getTransformationContent } from '../docs/getTransformationContent';

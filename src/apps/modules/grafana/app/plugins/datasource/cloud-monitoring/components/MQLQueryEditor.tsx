@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { TextArea } from '@grafana/ui';
+import { TextArea } from '@grafana-ui/index';
 
 import { selectors } from '../e2e/selectors';
 

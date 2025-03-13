@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 
-import { InlineField, InlineFieldRow, Input } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Input } from '@grafana-ui/index';
 
 import { EditorProps } from '../QueryEditor';
 import { PulseWaveQuery } from '../dataquery';

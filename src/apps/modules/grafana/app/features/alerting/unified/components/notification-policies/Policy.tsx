@@ -20,7 +20,7 @@ import {
   Tooltip,
   getTagColorsFromName,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import ConditionalWrap from '@grafana-module/app/features/alerting/unified/components/ConditionalWrap';
 import MoreButton from '@grafana-module/app/features/alerting/unified/components/MoreButton';

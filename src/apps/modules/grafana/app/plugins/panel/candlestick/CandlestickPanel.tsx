@@ -14,10 +14,10 @@ import {
   UPlotConfigBuilder,
   usePanelContext,
   useTheme2,
-} from '@grafana/ui';
-import { AxisProps } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
-import { ScaleProps } from '@grafana/ui/src/components/uPlot/config/UPlotScaleBuilder';
-import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
+} from '@grafana-ui/index';
+import { AxisProps } from '@grafana-ui/components/uPlot/config/UPlotAxisBuilder';
+import { ScaleProps } from '@grafana-ui/components/uPlot/config/UPlotScaleBuilder';
+import { TimeRange2, TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPlugin2';
 import { TimeSeries } from '@grafana-module/app/core/components/TimeSeries/TimeSeries';
 import { config } from '@grafana-module/app/core/config';
 

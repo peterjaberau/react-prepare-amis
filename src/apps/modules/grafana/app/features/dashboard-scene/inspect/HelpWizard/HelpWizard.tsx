@@ -21,7 +21,7 @@ import {
   ClipboardButton,
   Icon,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { AccessControlAction } from '@grafana-module/app/types';
 

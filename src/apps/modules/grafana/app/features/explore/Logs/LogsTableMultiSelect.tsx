@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2 } from '@grafana/ui/src';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { LogsTableActiveFields } from './LogsTableActiveFields';
 import { LogsTableAvailableFields } from './LogsTableAvailableFields';

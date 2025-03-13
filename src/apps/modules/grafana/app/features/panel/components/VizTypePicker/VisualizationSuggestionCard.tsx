@@ -3,7 +3,7 @@ import { cloneDeep } from 'lodash';
 import { CSSProperties } from 'react';
 
 import { GrafanaTheme2, PanelData, VisualizationSuggestion } from '@data/index';
-import { Tooltip, useStyles2 } from '@grafana/ui';
+import { Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { PanelRenderer } from '../PanelRenderer';
 

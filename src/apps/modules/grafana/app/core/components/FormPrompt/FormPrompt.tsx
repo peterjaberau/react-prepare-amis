@@ -3,7 +3,7 @@ import history from 'history';
 import { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom-v5-compat';
 
-import { Button, Modal } from '@grafana/ui';
+import { Button, Modal } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { Prompt } from './Prompt';

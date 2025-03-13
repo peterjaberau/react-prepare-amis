@@ -16,7 +16,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { withTheme2, stylesFactory } from '@grafana/ui';
+import { withTheme2, stylesFactory } from '@grafana-ui/index';
 
 import { autoColor } from '../../Theme';
 import { TNil } from '../../types';

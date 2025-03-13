@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
-import { Portal } from '@grafana/ui';
+import { Portal } from '@grafana-ui/index';
 
 import { RenameColumnInputData } from '../utils';
 

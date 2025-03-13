@@ -1,5 +1,5 @@
 import { PageLayoutType } from '@data/index';
-import { Alert, Box } from '@grafana/ui';
+import { Alert, Box } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
 import { t } from '@grafana-module/app/core/internationalization';

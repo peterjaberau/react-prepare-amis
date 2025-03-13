@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import Draggable, { DraggableBounds } from 'react-draggable';
 
 import { Threshold, GrafanaTheme2 } from '@data/index';
-import { useStyles2, useTheme2 } from '@grafana/ui';
+import { useStyles2, useTheme2 } from '@grafana-ui/index';
 
 type OutOfBounds = 'top' | 'bottom' | 'none';
 

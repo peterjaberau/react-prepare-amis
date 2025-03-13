@@ -3,7 +3,7 @@ import pluralize from 'pluralize';
 import * as React from 'react';
 import { Fragment, useDeferredValue, useMemo } from 'react';
 
-import { Badge, Stack } from '@grafana/ui';
+import { Badge, Stack } from '@grafana-ui/index';
 import {
   AlertGroupTotals,
   AlertInstanceTotalState,

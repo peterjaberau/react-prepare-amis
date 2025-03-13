@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { ReactNode } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Card, useStyles2 } from '@grafana/ui';
+import { Card, useStyles2 } from '@grafana-ui/index';
 
 import { RuleFormType } from '../../../types/rule-form';
 

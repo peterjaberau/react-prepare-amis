@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Dropdown, Button, Icon } from '@grafana/ui';
+import { Dropdown, Button, Icon } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 

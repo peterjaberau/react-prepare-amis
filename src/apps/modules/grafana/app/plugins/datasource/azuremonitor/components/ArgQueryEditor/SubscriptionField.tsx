@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { FieldValidationMessage, MultiSelect } from '@grafana/ui';
+import { FieldValidationMessage, MultiSelect } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 import { AzureMonitorQuery, AzureQueryEditorFieldProps, AzureMonitorOption } from '../../types';

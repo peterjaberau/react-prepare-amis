@@ -5,7 +5,7 @@ import { useAsync } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { Button, Field, Input, useStyles2 } from '@grafana/ui';
+import { Button, Field, Input, useStyles2 } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { getConfig } from '@grafana-module/app/core/config';

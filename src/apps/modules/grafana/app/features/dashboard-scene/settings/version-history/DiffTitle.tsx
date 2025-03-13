@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, Icon } from '@grafana/ui';
+import { useStyles2, Icon } from '@grafana-ui/index';
 
 import { DiffValues } from './DiffValues';
 import { Diff, getDiffText } from './utils';

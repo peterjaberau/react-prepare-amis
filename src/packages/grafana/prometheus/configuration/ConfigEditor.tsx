@@ -4,7 +4,7 @@ import { css } from '@emotion/css';
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
 import { ConfigSection, DataSourceDescription, AdvancedHttpSettings } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Alert, FieldValidationMessage, useTheme2 } from '@grafana/ui';
+import { Alert, FieldValidationMessage, useTheme2 } from '@grafana-ui/index';
 
 import { PromOptions } from '../types';
 

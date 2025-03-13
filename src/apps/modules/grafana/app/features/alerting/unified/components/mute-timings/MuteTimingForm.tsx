@@ -3,7 +3,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Alert, Button, Field, FieldSet, Input, LinkButton, LoadingPlaceholder, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Field, FieldSet, Input, LinkButton, LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import {
   MuteTiming,

@@ -26,9 +26,9 @@ import {
   DataLinksContextMenu,
   SeriesTable,
   usePanelContext,
-} from '@grafana/ui';
-import { getTooltipContainerStyles } from '@grafana/ui/src/themes/mixins';
-import { useComponentInstanceId } from '@grafana/ui/src/utils/useComponetInstanceId';
+} from '@grafana-ui/index';
+import { getTooltipContainerStyles } from '@grafana-ui/themes/mixins';
+import { useComponentInstanceId } from '@grafana-ui/utils/useComponetInstanceId';
 
 import { PieChartType, PieChartLabels } from './panelcfg.gen';
 import { filterDisplayItems, sumDisplayItemsReducer } from './utils';

@@ -4,7 +4,7 @@ import pluralize from 'pluralize';
 import { ReactNode } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, IconButton, useStyles2, Spinner, IconName } from '@grafana/ui';
+import { Icon, IconButton, useStyles2, Spinner, IconName } from '@grafana-ui/index';
 import { TagBadge } from '@grafana-module/app/core/components/TagFilter/TagBadge';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 const transitionDuration = 500;
 // We add a bit of delay to the transition as another perf optimisation. As at the start we need to render

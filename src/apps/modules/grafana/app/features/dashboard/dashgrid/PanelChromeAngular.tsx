@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@data/index';
 import { AngularComponent, getAngularLoader } from '@runtime/index';
-import { PanelChrome } from '@grafana/ui';
+import { PanelChrome } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { PANEL_BORDER } from '@grafana-module/app/core/constants';
 import { setPanelAngularComponent } from '@grafana-module/app/features/panel/state/reducers';

@@ -13,7 +13,7 @@ import {
   Modal,
   RadioButtonGroup,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 const EXPIRATION_OPTIONS = [
   { label: 'No expiration', value: false },

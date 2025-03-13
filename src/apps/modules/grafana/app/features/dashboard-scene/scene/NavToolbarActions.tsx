@@ -16,7 +16,7 @@ import {
   ToolbarButton,
   ToolbarButtonRow,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
 import grafanaConfig from '@grafana-module/app/core/config';

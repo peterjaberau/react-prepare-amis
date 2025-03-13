@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 export function TokenErrorAlert() {

@@ -1,4 +1,4 @@
-import { Button, Card, EmptyState } from '@grafana/ui';
+import { Button, Card, EmptyState } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 interface Props {

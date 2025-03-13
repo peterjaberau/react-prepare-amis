@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { FilterInput, useStyles2 } from '@grafana/ui';
+import { FilterInput, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 export interface ScopesDashboardsTreeSearchProps {

@@ -1,4 +1,4 @@
-import { InlineLabel, Input, InlineFormLabel, InlineSwitch, Stack } from '@grafana/ui';
+import { InlineLabel, Input, InlineFormLabel, InlineSwitch, Stack } from '@grafana-ui/index';
 
 import { OpenTsdbQuery } from '../types';
 

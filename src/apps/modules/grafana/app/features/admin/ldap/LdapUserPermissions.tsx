@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import * as React from 'react';
 
-import { Column, Icon, InteractiveTable } from '@grafana/ui';
+import { Column, Icon, InteractiveTable } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { LdapPermissions } from '@grafana-module/app/types';
 

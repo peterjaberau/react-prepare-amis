@@ -1,5 +1,5 @@
 import { AdHocVariableFilter, MetricFindValue, RawTimeRange, VariableHide } from '@data/index';
-import { isValidLegacyName } from '@grafana/prometheus';
+import { isValidLegacyName } from '@prometheus/index';
 import { config } from '@runtime/index';
 import { AdHocFiltersVariable, ConstantVariable, sceneGraph, SceneObject } from '@scenes/index';
 

@@ -1,6 +1,6 @@
 import { isFetchError } from '@runtime/index';
-import { Alert, Stack, Text } from '@grafana/ui';
-import { Props as AlertProps } from '@grafana/ui/src/components/Alert/Alert';
+import { Alert, Stack, Text } from '@grafana-ui/index';
+import { Props as AlertProps } from '@grafana-ui/components/Alert/Alert';
 
 interface AlertWithTraceIDProps extends AlertProps {
   error?: unknown;

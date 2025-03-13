@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Checkbox, Button, Tag, ModalsController, useStyles2 } from '@grafana/ui';
+import { Checkbox, Button, Tag, ModalsController, useStyles2 } from '@grafana-ui/index';
 
 import { DecoratedRevisionModel } from '../DashboardSettings/VersionsSettings';
 

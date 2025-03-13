@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, useStyles2 } from '@grafana/ui';
+import { Button, useStyles2 } from '@grafana-ui/index';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { AlertState, AlertmanagerGroup } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 

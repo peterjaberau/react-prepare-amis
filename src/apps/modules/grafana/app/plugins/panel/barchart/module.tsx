@@ -8,8 +8,8 @@ import {
   VizOrientation,
 } from '@data/index';
 import { GraphTransform, GraphThresholdsStyleMode, StackingMode, VisibilityMode } from '@schema/index';
-import { graphFieldOptions, commonOptionsBuilder } from '@grafana/ui';
-import { optsWithHideZeros } from '@grafana/ui/src/options/builder/tooltip';
+import { graphFieldOptions, commonOptionsBuilder } from '@grafana-ui/index';
+import { optsWithHideZeros } from '@grafana-ui/options/builder/tooltip';
 
 import { ThresholdsStyleEditor } from '../timeseries/ThresholdsStyleEditor';
 

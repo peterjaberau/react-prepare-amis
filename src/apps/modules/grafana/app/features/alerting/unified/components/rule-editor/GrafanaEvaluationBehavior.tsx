@@ -18,7 +18,7 @@ import {
   Text,
   Tooltip,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { RulerRuleGroupDTO, RulerRulesConfigDTO } from '@grafana-module/app/types/unified-alerting-dto';
 

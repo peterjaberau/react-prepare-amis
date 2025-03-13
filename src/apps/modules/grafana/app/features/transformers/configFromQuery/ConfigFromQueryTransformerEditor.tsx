@@ -9,7 +9,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
 } from '@data/index';
-import { fieldMatchersUI, InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana/ui';
+import { fieldMatchersUI, InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { FieldToConfigMappingEditor } from '../fieldToConfigMapping/FieldToConfigMappingEditor';

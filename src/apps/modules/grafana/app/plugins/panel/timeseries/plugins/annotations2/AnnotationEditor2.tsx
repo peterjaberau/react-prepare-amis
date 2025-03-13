@@ -4,7 +4,7 @@ import { Controller } from 'react-hook-form';
 import { useAsyncFn, useClickAway } from 'react-use';
 
 import { AnnotationEventUIModel, GrafanaTheme2, dateTimeFormat, systemDateFormats } from '@data/index';
-import { Button, Field, Stack, TextArea, usePanelContext, useStyles2 } from '@grafana/ui';
+import { Button, Field, Stack, TextArea, usePanelContext, useStyles2 } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { TagFilter } from '@grafana-module/app/core/components/TagFilter/TagFilter';
 import { getAnnotationTags } from '@grafana-module/app/features/annotations/api';

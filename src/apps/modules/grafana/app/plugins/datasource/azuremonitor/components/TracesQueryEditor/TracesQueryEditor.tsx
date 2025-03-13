@@ -4,7 +4,7 @@ import { usePrevious } from 'react-use';
 
 import { TimeRange } from '@data/index';
 import { EditorFieldGroup, EditorRow, EditorRows } from '@grafana/plugin-ui';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 import Datasource from '../../datasource';
 import { selectors } from '../../e2e/selectors';

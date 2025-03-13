@@ -16,7 +16,7 @@ import {
   Modal,
   Stack,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { dispatch } from '@grafana-module/app/store/store';

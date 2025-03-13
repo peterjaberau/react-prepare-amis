@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { LinkButton, Stack } from '@grafana/ui';
+import { LinkButton, Stack } from '@grafana-ui/index';
 import { getConfig } from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

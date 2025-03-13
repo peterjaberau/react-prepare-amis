@@ -36,7 +36,7 @@ import {
   Tooltip,
   TooltipDisplayMode,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { LogMessages, logInfo } from '../../../Analytics';

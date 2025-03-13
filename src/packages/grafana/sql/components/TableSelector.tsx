@@ -1,7 +1,7 @@
 import { useAsync } from 'react-use';
 
 import { SelectableValue, toOption } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { DB, ResourceSelectorProps } from '../types';
 

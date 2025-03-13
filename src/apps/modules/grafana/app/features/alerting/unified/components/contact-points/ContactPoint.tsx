@@ -3,7 +3,7 @@ import { groupBy, size, upperFirst } from 'lodash';
 import { Fragment, ReactNode } from 'react';
 
 import { GrafanaTheme2, dateTime } from '@data/index';
-import { Icon, Stack, Text, Tooltip, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, Text, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { PrimaryText } from '@grafana-module/app/features/alerting/unified/components/common/TextVariants';
 import { ContactPointHeader } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPointHeader';

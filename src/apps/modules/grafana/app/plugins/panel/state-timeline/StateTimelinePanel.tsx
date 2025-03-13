@@ -8,8 +8,8 @@ import {
   TooltipPlugin2,
   usePanelContext,
   useTheme2,
-} from '@grafana/ui';
-import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
+} from '@grafana-ui/index';
+import { TimeRange2, TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPlugin2';
 import { TimelineChart } from '@grafana-module/app/core/components/TimelineChart/TimelineChart';
 import {
   prepareTimelineFields,

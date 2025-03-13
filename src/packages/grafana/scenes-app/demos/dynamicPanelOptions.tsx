@@ -13,7 +13,7 @@ import {
   SceneObjectState,
   VizPanel,
 } from '@scenes/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 import { GraphDrawStyle, LegendDisplayMode, StackingMode, TooltipDisplayMode, VizOrientation } from '@schema/index';
 

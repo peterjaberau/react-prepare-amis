@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ComponentProps, useMemo } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { InlineField, Select, SelectMenuOptions, useStyles2 } from '@grafana/ui';
+import { InlineField, Select, SelectMenuOptions, useStyles2 } from '@grafana-ui/index';
 
 import { useAlertmanager } from '../state/AlertmanagerContext';
 import { AlertManagerDataSource, GRAFANA_RULES_SOURCE_NAME } from '../utils/datasource';

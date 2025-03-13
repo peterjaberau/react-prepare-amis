@@ -2,7 +2,7 @@ import { validate as uuidValidate } from 'uuid';
 
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { TextLink } from '@grafana/ui';
+import { TextLink } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 
 import { ServerDiscoveryField } from './components/ServerDiscoveryField';

@@ -5,7 +5,7 @@ import { useMeasure } from 'react-use';
 import { AlertState, GrafanaTheme2, PanelData, PluginContextProvider, SetPanelAttentionEvent } from '@data/index';
 
 import { getAppEvents } from '@runtime/index';
-import { PanelChrome, ErrorBoundaryAlert, PanelContextProvider, Tooltip, useStyles2, Icon } from '@grafana/ui';
+import { PanelChrome, ErrorBoundaryAlert, PanelContextProvider, Tooltip, useStyles2, Icon } from '@grafana-ui/index';
 
 import { sceneGraph } from '../../core/sceneGraph';
 import { isSceneObject, SceneComponentProps, SceneLayout, SceneObject } from '../../core/types';

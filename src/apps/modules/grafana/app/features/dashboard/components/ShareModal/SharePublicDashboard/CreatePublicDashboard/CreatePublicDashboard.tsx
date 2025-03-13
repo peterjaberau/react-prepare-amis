@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Spinner, useStyles2 } from '@grafana/ui';
+import { Button, Spinner, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { useCreatePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';

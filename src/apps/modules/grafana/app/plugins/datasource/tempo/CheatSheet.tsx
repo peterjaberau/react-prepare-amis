@@ -1,5 +1,5 @@
 import { config, reportInteraction } from '@runtime/index';
-import { TextLink } from '@grafana/ui';
+import { TextLink } from '@grafana-ui/index';
 
 export default function CheatSheet() {
   reportInteraction('grafana_traces_cheatsheet_clicked', {

@@ -13,7 +13,7 @@ import {
   Segment,
   Themeable2,
   withTheme2,
-} from '@grafana/ui/src';
+} from '@grafana-ui/index';
 
 import InfluxDatasource from '../../../../datasource';
 import { InfluxQuery } from '../../../../types';

@@ -1,4 +1,4 @@
-import { Alert, Button, Stack } from '@grafana/ui';
+import { Alert, Button, Stack } from '@grafana-ui/index';
 
 import { Trans } from '../../../../../../core/internationalization';
 

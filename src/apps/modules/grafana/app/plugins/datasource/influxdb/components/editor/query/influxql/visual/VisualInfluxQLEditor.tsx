@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useId, useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { InlineLabel, SegmentSection, useStyles2 } from '@grafana/ui';
+import { InlineLabel, SegmentSection, useStyles2 } from '@grafana-ui/index';
 
 import InfluxDatasource from '../../../../../datasource';
 import {

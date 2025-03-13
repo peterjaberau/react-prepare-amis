@@ -13,7 +13,7 @@ import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Badge, Button, Icon, Modal, Tooltip, useStyles2 } from '@grafana/ui';
+import { Badge, Button, Icon, Modal, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { dispatch } from '@grafana-module/app/store/store';
 import {

@@ -1,5 +1,5 @@
 import { RawTimeRange, Scope } from '@data/index';
-import { getPrometheusTime, isValidLegacyName } from '@grafana/prometheus';
+import { getPrometheusTime, isValidLegacyName } from '@prometheus/index';
 import { config, getBackendSrv } from '@runtime/index';
 
 import { callSuggestionsApi } from '../utils';

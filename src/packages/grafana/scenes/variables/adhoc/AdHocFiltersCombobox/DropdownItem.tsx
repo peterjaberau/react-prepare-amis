@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Checkbox, useStyles2 } from '@grafana/ui';
+import { Button, Checkbox, useStyles2 } from '@grafana-ui/index';
 import React, { forwardRef, useId } from 'react';
 
 interface DropdownItemProps {

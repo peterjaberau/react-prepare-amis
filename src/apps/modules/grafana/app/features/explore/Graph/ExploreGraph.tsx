@@ -27,7 +27,7 @@ import {
   TooltipDisplayMode,
   VizLegendOptions,
 } from '@schema/index';
-import { PanelContext, PanelContextProvider, SeriesVisibilityChangeMode, useTheme2 } from '@grafana/ui';
+import { PanelContext, PanelContextProvider, SeriesVisibilityChangeMode, useTheme2 } from '@grafana-ui/index';
 import { GraphFieldConfig } from '@grafana-module/app/plugins/panel/graph/types';
 import { defaultGraphConfig, getGraphFieldConfig } from '@grafana-module/app/plugins/panel/timeseries/config';
 import { Options as TimeSeriesOptions } from '@grafana-module/app/plugins/panel/timeseries/panelcfg.gen';

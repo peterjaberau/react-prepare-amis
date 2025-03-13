@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Collapse, useStyles2, Stack } from '@grafana/ui';
+import { Collapse, useStyles2, Stack } from '@grafana-ui/index';
 
 export interface Props {
   title: string;

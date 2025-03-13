@@ -1,6 +1,6 @@
 import { DataSourcePluginOptionsEditorProps } from '@data/index';
 import { config } from '@runtime/index';
-import { DataSourceHttpSettings } from '@grafana/ui';
+import { DataSourceHttpSettings } from '@grafana-ui/index';
 
 import { OpenTsdbOptions } from '../types';
 

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 
 import { NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { StoreState, UserDTO, UserOrg, UserSession, SyncInfo, UserAdminError, AccessControlAction } from '@grafana-module/app/types';

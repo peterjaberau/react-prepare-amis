@@ -1,4 +1,4 @@
-import { Badge } from '@grafana/ui';
+import { Badge } from '@grafana-ui/index';
 
 export const UnusedContactPointBadge = () => (
   <Badge

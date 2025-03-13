@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ReactNode, useState } from 'react';
 
 import { DataQuery, DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
-import { FieldValidationMessage, Icon, Input, useStyles2 } from '@grafana/ui';
+import { FieldValidationMessage, Icon, Input, useStyles2 } from '@grafana-ui/index';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
 
 export interface Props<TQuery extends DataQuery = DataQuery> {

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana/ui';
+import { FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana-ui/index';
 import { AngularDeprecationPluginNotice } from '@grafana-module/app/features/plugins/angularDeprecation/AngularDeprecationPluginNotice';
 
 import { isPanelModelLibraryPanel } from '../../../library-panels/guard';

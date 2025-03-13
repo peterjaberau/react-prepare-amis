@@ -5,7 +5,7 @@ import { DataSourceInstanceSettings, SelectableValue, TimeRange } from '@data/in
 import { getDataSourceSrv } from '@runtime/index';
 import { QueryVariable } from '@scenes/index';
 import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';
-import { Field } from '@grafana/ui';
+import { Field } from '@grafana-ui/index';
 import { QueryEditor } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/QueryEditor';
 import { SelectionOptionsForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/SelectionOptionsForm';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';

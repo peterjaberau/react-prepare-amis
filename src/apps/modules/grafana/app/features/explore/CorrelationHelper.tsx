@@ -17,7 +17,7 @@ import {
   Tooltip,
   Icon,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { useDispatch, useSelector } from '@grafana-module/app/types';
 
 import { getTransformationVars } from '../correlations/transformations';

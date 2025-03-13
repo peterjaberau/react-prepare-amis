@@ -9,8 +9,8 @@ import {
   StandardEditorsRegistryItem,
   TransformerCategory,
 } from '@data/index';
-import { InlineField, InlineFieldRow, Select, InlineSwitch, Input, Combobox, ComboboxOption } from '@grafana/ui';
-import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
+import { InlineField, InlineFieldRow, Select, InlineSwitch, Input, Combobox, ComboboxOption } from '@grafana-ui/index';
+import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

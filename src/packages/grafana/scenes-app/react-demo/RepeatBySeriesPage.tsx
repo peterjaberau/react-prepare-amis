@@ -5,7 +5,7 @@ import {
   useVariableInterpolator,
   VizPanel,
 } from '@scenes-react/index';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import React from 'react';
 
 import { PageWrapper } from './PageWrapper';

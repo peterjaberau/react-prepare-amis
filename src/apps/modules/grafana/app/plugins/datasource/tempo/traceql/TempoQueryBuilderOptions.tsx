@@ -4,7 +4,7 @@ import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { EditorField, EditorRow } from '@grafana/plugin-ui';
-import { AutoSizeInput, RadioButtonGroup, useStyles2 } from '@grafana/ui';
+import { AutoSizeInput, RadioButtonGroup, useStyles2 } from '@grafana-ui/index';
 
 import { QueryOptionGroup } from '../_importedDependencies/datasources/prometheus/QueryOptionGroup';
 import { SearchTableType, MetricsQueryType } from '../dataquery.gen';

@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { InlineFieldRow, InlineField, Select, MultiSelect, Input } from '@grafana/ui';
+import { InlineFieldRow, InlineField, Select, MultiSelect, Input } from '@grafana-ui/index';
 
 import { USAQuery } from '../dataquery';
 

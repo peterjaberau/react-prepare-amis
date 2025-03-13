@@ -3,7 +3,7 @@ import Skeleton from 'react-loading-skeleton';
 
 import { DataSourceSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Card, LinkButton, Stack, Tag, useStyles2 } from '@grafana/ui';
+import { Card, LinkButton, Stack, Tag, useStyles2 } from '@grafana-ui/index';
 
 import { ROUTES } from '../../connections/constants';
 import { trackCreateDashboardClicked, trackExploreClicked } from '../tracking';

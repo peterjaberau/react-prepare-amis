@@ -4,7 +4,7 @@ import { useToggle, useScroll } from 'react-use';
 
 import { GrafanaTheme2, store } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { useStyles2, PanelContainer, ScrollContainer } from '@grafana/ui';
+import { useStyles2, PanelContainer, ScrollContainer } from '@grafana-ui/index';
 
 import { ContentOutlineItemContextProps, useContentOutlineContext } from './ContentOutlineContext';
 import { ContentOutlineItemButton } from './ContentOutlineItemButton';

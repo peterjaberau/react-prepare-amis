@@ -32,8 +32,8 @@ import {
   HideableFieldConfig,
   MappingType,
 } from '@schema/index';
-import { FIXED_UNIT, UPlotConfigBuilder, UPlotConfigPrepFn, VizLegendItem } from '@grafana/ui';
-import { preparePlotData2, getStackingGroups } from '@grafana/ui/src/components/uPlot/utils';
+import { FIXED_UNIT, UPlotConfigBuilder, UPlotConfigPrepFn, VizLegendItem } from '@grafana-ui/index';
+import { preparePlotData2, getStackingGroups } from '@grafana-ui/components/uPlot/utils';
 
 import { getConfig, TimelineCoreOptions } from './timeline';
 

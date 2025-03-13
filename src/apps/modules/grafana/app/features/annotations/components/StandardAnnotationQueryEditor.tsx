@@ -10,7 +10,7 @@ import {
   DataSourcePluginContextProvider,
   LoadingState,
 } from '@data/index';
-import { Alert, AlertVariant, Button, Space, Spinner } from '@grafana/ui';
+import { Alert, AlertVariant, Button, Space, Spinner } from '@grafana-ui/index';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';

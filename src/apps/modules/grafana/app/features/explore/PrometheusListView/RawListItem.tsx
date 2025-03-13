@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { useCopyToClipboard } from 'react-use';
 
 import { Field, GrafanaTheme2 } from '@data/index';
-import { isValidLegacyName, utf8Support } from '@grafana/prometheus/src/utf8_support';
+import { isValidLegacyName, utf8Support } from '@prometheus//utf8_support';
 import { reportInteraction } from '@runtime/index';
-import { IconButton, useStyles2 } from '@grafana/ui/';
+import { IconButton, useStyles2 } from '@grafana-ui/index';
 
 import { ItemLabels } from './ItemLabels';
 import { ItemValues } from './ItemValues';

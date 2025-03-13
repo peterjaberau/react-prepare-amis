@@ -2,7 +2,7 @@ import { flatten } from 'lodash';
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 import { Variable } from '@grafana-module/app/types/templates';
 
 export interface Props {

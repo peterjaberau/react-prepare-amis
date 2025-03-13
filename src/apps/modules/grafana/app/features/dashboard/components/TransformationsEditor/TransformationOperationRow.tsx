@@ -12,7 +12,7 @@ import {
   DataFrame,
 } from '@data/index';
 import { getTemplateSrv, reportInteraction } from '@runtime/index';
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 import {
   QueryOperationAction,
   QueryOperationToggleAction,

@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
-import { Alert, Button, Field, Input, Stack } from '@grafana/ui';
+import { Alert, Button, Field, Input, Stack } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';

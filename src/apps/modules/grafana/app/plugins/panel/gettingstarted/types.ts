@@ -1,4 +1,4 @@
-import { IconName } from '@grafana/ui';
+import { IconName } from '@grafana-ui/index';
 
 export interface Card {
   title: string;

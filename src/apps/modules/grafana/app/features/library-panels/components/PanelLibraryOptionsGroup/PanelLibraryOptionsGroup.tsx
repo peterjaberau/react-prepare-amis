@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback, useState } from 'react';
 
 import { PanelPluginMeta } from '@data/index';
-import { Button, VerticalGroup } from '@grafana/ui';
+import { Button, VerticalGroup } from '@grafana-ui/index';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 import { changeToLibraryPanel } from '@grafana-module/app/features/panel/state/actions';

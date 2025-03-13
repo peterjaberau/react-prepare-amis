@@ -9,7 +9,7 @@ import {
   DataSelectEvent,
   EventBus,
 } from '@data/index';
-import { CustomScrollbar } from '@grafana/ui';
+import { CustomScrollbar } from '@grafana-ui/index';
 
 interface Props {
   eventBus: EventBus;

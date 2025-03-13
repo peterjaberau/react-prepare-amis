@@ -12,7 +12,7 @@ import {
   TabContent,
   TabsBar,
   Text,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { shouldUseK8sApi } from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';

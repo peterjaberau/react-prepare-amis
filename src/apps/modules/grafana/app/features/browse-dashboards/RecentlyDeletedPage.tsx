@@ -3,7 +3,7 @@ import { memo, useEffect } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
-import { FilterInput, useStyles2 } from '@grafana/ui';
+import { FilterInput, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { t } from '@grafana-module/app/core/internationalization';
 import { ActionRow } from '@grafana-module/app/features/search/page/components/ActionRow';

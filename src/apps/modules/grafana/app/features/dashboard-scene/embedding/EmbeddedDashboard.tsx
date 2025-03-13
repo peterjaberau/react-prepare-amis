@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { GrafanaTheme2, urlUtil } from '@data/index';
 import { EmbeddedDashboardProps } from '@runtime/index';
 import { SceneObjectStateChangedEvent, sceneUtils } from '@scenes/index';
-import { Spinner, Alert, useStyles2 } from '@grafana/ui';
+import { Spinner, Alert, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
 import { DashboardRoutes } from '@grafana-module/app/types';

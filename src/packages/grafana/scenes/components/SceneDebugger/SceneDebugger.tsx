@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
-import { CustomScrollbar, Drawer, ToolbarButton, useStyles2 } from '@grafana/ui';
+import { CustomScrollbar, Drawer, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 import React, { useState } from 'react';
 
 import { SceneObject } from '../../core/types';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Icon, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Icon, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 type Props = {
   toggleShowAllSeries: () => void;

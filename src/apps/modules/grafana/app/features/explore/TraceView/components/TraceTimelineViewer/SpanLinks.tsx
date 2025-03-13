@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { config, reportInteraction } from '@runtime/index';
-import { useStyles2, MenuItem, Icon, ContextMenu } from '@grafana/ui';
+import { useStyles2, MenuItem, Icon, ContextMenu } from '@grafana-ui/index';
 
 import { SpanLinkDef } from '../types/links';
 

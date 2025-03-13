@@ -2,8 +2,8 @@ import { useState, useLayoutEffect, useMemo, useRef } from 'react';
 import uPlot from 'uplot';
 
 import { FieldConfigSource, ThresholdsConfig, getValueFormat, FieldType } from '@data/index';
-import { UPlotConfigBuilder } from '@grafana/ui';
-import { buildScaleKey } from '@grafana/ui/src/components/uPlot/internal';
+import { UPlotConfigBuilder } from '@grafana-ui/index';
+import { buildScaleKey } from '@grafana-ui/components/uPlot/internal';
 
 import { ThresholdDragHandle } from './ThresholdDragHandle';
 

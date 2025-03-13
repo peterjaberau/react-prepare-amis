@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { Fragment } from 'react';
 
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { AlertmanagerConfig, MuteTimeInterval } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import {

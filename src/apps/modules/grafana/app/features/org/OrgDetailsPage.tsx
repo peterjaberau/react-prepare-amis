@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import { ConnectedProps, connect } from 'react-redux';
 
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import SharedPreferences from '@grafana-module/app/core/components/SharedPreferences/SharedPreferences';
 import { appEvents, contextSrv } from '@grafana-module/app/core/core';

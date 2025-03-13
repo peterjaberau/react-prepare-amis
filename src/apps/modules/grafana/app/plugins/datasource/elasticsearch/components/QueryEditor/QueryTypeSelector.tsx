@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { useDispatch } from '../../hooks/useStatelessReducer';
 import { MetricAggregation, QueryType } from '../../types';

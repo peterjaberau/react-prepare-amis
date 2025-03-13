@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Button, InlineLabel, Input, Stack, useStyles2 } from '@grafana/ui';
+import { Button, InlineLabel, Input, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { QueryEditorExpressionType } from '../../expressions';
 import { SQLExpression, SQLQuery } from '../../types';

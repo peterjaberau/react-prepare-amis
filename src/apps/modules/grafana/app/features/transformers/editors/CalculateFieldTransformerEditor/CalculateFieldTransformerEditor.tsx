@@ -23,7 +23,7 @@ import {
   defaultWindowOptions,
 } from '@data/transformations/transformers/calculateField';
 import { getTemplateSrv, config as cfg } from '@runtime/index';
-import { InlineField, InlineSwitch, Input, Select } from '@grafana/ui';
+import { InlineField, InlineSwitch, Input, Select } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../../docs/getTransformationContent';
 

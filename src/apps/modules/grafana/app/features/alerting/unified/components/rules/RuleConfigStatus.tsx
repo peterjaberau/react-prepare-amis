@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Icon, Tooltip, useStyles2 } from '@grafana/ui/src';
+import { Icon, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { CombinedRule } from '../../../../../types/unified-alerting';
 import { checkEvaluationIntervalGlobalLimit } from '../../utils/config';

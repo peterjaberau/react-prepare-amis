@@ -8,7 +8,7 @@ import { ValidateAndUpdateResult, VariableValueOption, VariableValueSingle } fro
 import { MultiValueVariable, MultiValueVariableState, VariableGetOptionsArgs } from '../variants/MultiValueVariable';
 import { from, lastValueFrom, map, mergeMap, Observable, of, take, tap } from 'rxjs';
 import { getDataSource } from '../../utils/getDataSource';
-import { InputActionMeta, MultiSelect, Select } from '@grafana/ui';
+import { InputActionMeta, MultiSelect, Select } from '@grafana-ui/index';
 import { isArray } from 'lodash';
 import { dataFromResponse, getQueriesForVariables, handleOptionGroups, responseHasError } from '../utils';
 import { OptionWithCheckbox } from '../components/VariableValueSelect';

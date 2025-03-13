@@ -10,7 +10,7 @@ import {
   SceneObjectUrlValues,
   VizPanel,
 } from '@scenes/index';
-import { Container, ScrollContainer, TabContent, TabsBar, useStyles2 } from '@grafana/ui';
+import { Container, ScrollContainer, TabContent, TabsBar, useStyles2 } from '@grafana-ui/index';
 import { getConfig } from '@grafana-module/app/core/config';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { getRulesPermissions } from '@grafana-module/app/features/alerting/unified/utils/access-control';

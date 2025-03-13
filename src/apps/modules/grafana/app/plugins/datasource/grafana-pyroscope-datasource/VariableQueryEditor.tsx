@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { QueryEditorProps, SelectableValue, TimeRange } from '@data/index';
-import { InlineField, InlineFieldRow, LoadingPlaceholder, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, LoadingPlaceholder, Select } from '@grafana-ui/index';
 
 import { ProfileTypesCascader, useProfileTypes } from './QueryEditor/ProfileTypesCascader';
 import { PyroscopeDataSource } from './datasource';

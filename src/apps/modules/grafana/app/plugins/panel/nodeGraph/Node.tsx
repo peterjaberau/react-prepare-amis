@@ -4,7 +4,7 @@ import { MouseEvent, memo } from 'react';
 import tinycolor from 'tinycolor2';
 
 import { Field, getFieldColorModeForField, GrafanaTheme2 } from '@data/index';
-import { Icon, useTheme2 } from '@grafana/ui';
+import { Icon, useTheme2 } from '@grafana-ui/index';
 
 import { HoverState } from './NodeGraph';
 import { NodeDatum } from './types';

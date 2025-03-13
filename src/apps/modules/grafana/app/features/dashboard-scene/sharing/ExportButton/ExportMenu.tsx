@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
 import { locationService } from '@runtime/index';
-import { IconName, Menu } from '@grafana/ui';
+import { IconName, Menu } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 

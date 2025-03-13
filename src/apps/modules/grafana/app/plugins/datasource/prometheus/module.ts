@@ -1,5 +1,5 @@
 import { DataSourcePlugin } from '@data/index';
-import { PrometheusDatasource, PromQueryEditorByApp, PromCheatSheet } from '@grafana/prometheus';
+import { PrometheusDatasource, PromQueryEditorByApp, PromCheatSheet } from '@prometheus/index';
 
 import { ConfigEditor } from './configuration/ConfigEditorPackage';
 

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { TextLink, Tooltip, useStyles2 } from '@grafana/ui';
+import { TextLink, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { Annotation, annotationLabels } from '../utils/constants';
 

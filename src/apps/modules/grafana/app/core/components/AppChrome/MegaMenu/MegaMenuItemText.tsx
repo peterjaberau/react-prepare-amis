@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Icon, IconButton, Link, useTheme2 } from '@grafana/ui';
+import { Icon, IconButton, Link, useTheme2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 

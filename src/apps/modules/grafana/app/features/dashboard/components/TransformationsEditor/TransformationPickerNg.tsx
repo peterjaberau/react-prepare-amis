@@ -10,7 +10,7 @@ import {
   standardTransformersRegistry,
   SelectableValue,
 } from '@data/index';
-import { Card, Drawer, FilterPill, IconButton, Input, Switch, useStyles2 } from '@grafana/ui';
+import { Card, Drawer, FilterPill, IconButton, Input, Switch, useStyles2 } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';
 import { categoriesLabels } from '@grafana-module/app/features/transformers/utils';

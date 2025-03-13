@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 interface HorizontalGroupProps {
   children: React.ReactNode;

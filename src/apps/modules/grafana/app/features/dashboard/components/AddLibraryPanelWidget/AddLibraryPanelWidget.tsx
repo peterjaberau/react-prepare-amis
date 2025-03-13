@@ -4,7 +4,7 @@ import tinycolor from 'tinycolor2';
 
 import { GrafanaTheme2 } from '@data/index';
 import { LibraryPanel } from '@schema/index';
-import { IconButton, useStyles2 } from '@grafana/ui';
+import { IconButton, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import {

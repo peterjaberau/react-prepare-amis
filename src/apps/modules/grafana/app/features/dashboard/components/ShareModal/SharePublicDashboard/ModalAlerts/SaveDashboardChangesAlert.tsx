@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui/src';
+import { Alert } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 export const SaveDashboardChangesAlert = () => (

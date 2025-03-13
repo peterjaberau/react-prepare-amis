@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 import { useGetContactPoint } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
 import { stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
 

@@ -15,7 +15,7 @@ import {
   SceneObjectUrlValues,
   PanelBuilders,
 } from '@scenes/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 import { getVariablesDefinitions } from './utils';
 import { getPromQueryInstant, getPromQueryTimeSeries } from '../demos/utils';

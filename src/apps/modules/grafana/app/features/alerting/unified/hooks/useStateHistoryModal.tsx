@@ -3,7 +3,7 @@ import { Suspense, lazy, useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Modal, useStyles2 } from '@grafana/ui';
+import { Modal, useStyles2 } from '@grafana-ui/index';
 import { RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 
 const AnnotationsStateHistory = lazy(() => import('../components/rules/state-history/StateHistory'));

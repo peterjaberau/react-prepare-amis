@@ -1,6 +1,6 @@
 import { ComponentProps, useState } from 'react';
 
-import { Button, Drawer } from '@grafana/ui';
+import { Button, Drawer } from '@grafana-ui/index';
 import { Permissions } from '@grafana-module/app/core/components/AccessControl';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 

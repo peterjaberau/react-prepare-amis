@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorList } from '@grafana/plugin-ui';
-import { Field } from '@grafana/ui';
+import { Field } from '@grafana-ui/index';
 
 import { AzureQueryEditorFieldProps, AzureTracesFilter } from '../../types';
 

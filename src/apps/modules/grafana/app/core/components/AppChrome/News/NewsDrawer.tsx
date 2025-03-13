@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, Drawer, useStyles2, Text } from '@grafana/ui';
+import { IconButton, Drawer, useStyles2, Text } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { DEFAULT_FEED_URL } from '@grafana-module/app/plugins/panel/news/constants';
 

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 import { useAsyncFn } from 'react-use';
 
 import { NavModelItem } from '@data/index';
-import { Field, Input, Button, Legend, Alert } from '@grafana/ui';
+import { Field, Input, Button, Legend, Alert } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';

@@ -1,5 +1,5 @@
 import { locationUtil } from '@data/index';
-import { LinkButton, ButtonVariant } from '@grafana/ui';
+import { LinkButton, ButtonVariant } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { ROUTES as CONNECTIONS_ROUTES } from '@grafana-module/app/features/connections/constants';

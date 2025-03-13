@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useController, useFormContext } from 'react-hook-form';
 
 import { dateTime } from '@data/index';
-import { Field, TimeRangeInput } from '@grafana/ui';
+import { Field, TimeRangeInput } from '@grafana-ui/index';
 
 import { SilenceFormFields } from '../../types/silence-form';
 

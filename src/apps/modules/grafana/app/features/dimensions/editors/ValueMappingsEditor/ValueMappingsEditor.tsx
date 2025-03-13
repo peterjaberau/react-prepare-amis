@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo, useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, MappingType, StandardEditorProps, ValueMapping } from '@data/index';
-import { useStyles2, VerticalGroup, Icon, ColorPicker, Button, Modal } from '@grafana/ui';
+import { useStyles2, VerticalGroup, Icon, ColorPicker, Button, Modal } from '@grafana-ui/index';
 
 import { MediaType, ResourceFolderName, ResourcePickerSize } from '../../types';
 import { ResourcePicker } from '../ResourcePicker';

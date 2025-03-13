@@ -1,6 +1,6 @@
 import { Ref, forwardRef } from 'react';
 
-import { Button, ButtonProps, Icon, Stack } from '@grafana/ui';
+import { Button, ButtonProps, Icon, Stack } from '@grafana-ui/index';
 
 const MoreButton = forwardRef(function MoreButton(props: ButtonProps, ref: Ref<HTMLButtonElement>) {
   return (

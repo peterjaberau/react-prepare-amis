@@ -1,6 +1,6 @@
 import { PanelPlugin } from '@data/index';
-import { commonOptionsBuilder } from '@grafana/ui';
-import { optsWithHideZeros } from '@grafana/ui/src/options/builder/tooltip';
+import { commonOptionsBuilder } from '@grafana-ui/index';
+import { optsWithHideZeros } from '@grafana-ui/options/builder/tooltip';
 
 import { TimeSeriesPanel } from './TimeSeriesPanel';
 import { TimezonesEditor } from './TimezonesEditor';

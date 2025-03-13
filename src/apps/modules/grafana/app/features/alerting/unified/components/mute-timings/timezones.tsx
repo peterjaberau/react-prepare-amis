@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { Select, SelectCommonProps } from '@grafana/ui';
+import { Select, SelectCommonProps } from '@grafana-ui/index';
 
 const TIMEZONES = [
   'Africa/Abidjan',

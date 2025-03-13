@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { AppEvents } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
-import { Button, ConfirmModal, Stack } from '@grafana/ui';
+import { Button, ConfirmModal, Stack } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { removePluginFromNavTree } from '@grafana-module/app/core/reducers/navBarTree';

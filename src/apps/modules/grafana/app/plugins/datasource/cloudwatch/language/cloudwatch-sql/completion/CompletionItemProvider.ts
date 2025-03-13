@@ -1,7 +1,7 @@
 import { uniq } from 'lodash';
 
 import { getTemplateSrv, TemplateSrv } from '@runtime/index';
-import type { Monaco, monacoTypes } from '@grafana/ui';
+import type { Monaco, monacoTypes } from '@grafana-ui/index';
 
 import { ResourcesAPI } from '../../../resources/ResourcesAPI';
 import { CompletionItemProvider } from '../../monarch/CompletionItemProvider';

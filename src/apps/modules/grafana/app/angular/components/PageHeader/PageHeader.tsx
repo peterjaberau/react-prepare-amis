@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
 import { NavModelItem, GrafanaTheme2 } from '@data/index';
-import { Tab, TabsBar, Icon, useStyles2, toIconName } from '@grafana/ui';
+import { Tab, TabsBar, Icon, useStyles2, toIconName } from '@grafana-ui/index';
 
 import { PageInfoItem } from '../../../core/components/Page/types';
 import { PageInfo } from '../../../core/components/PageInfo/PageInfo';

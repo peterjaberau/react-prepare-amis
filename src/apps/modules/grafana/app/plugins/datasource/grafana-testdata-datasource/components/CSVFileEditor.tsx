@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { InlineField, InlineFieldRow, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Select } from '@grafana-ui/index';
 
 import { EditorProps } from '../QueryEditor';
 

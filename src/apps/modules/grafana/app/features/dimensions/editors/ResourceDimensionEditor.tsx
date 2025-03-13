@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import { FieldNamePickerConfigSettings, StandardEditorProps, StandardEditorsRegistryItem } from '@data/index';
 import { ResourceDimensionConfig, ResourceDimensionMode } from '@schema/index';
-import { InlineField, InlineFieldRow, RadioButtonGroup } from '@grafana/ui';
-import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
+import { InlineField, InlineFieldRow, RadioButtonGroup } from '@grafana-ui/index';
+import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
 
 import { getPublicOrAbsoluteUrl, ResourceFolderName } from '..';
 import { MediaType, ResourceDimensionOptions, ResourcePickerSize } from '../types';

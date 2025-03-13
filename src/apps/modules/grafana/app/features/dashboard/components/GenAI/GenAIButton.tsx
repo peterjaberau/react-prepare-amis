@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Spinner, useStyles2, Tooltip, Toggletip, Text } from '@grafana/ui';
+import { Button, Spinner, useStyles2, Tooltip, Toggletip, Text } from '@grafana-ui/index';
 
 import { GenAIHistory } from './GenAIHistory';
 import { StreamStatus, useOpenAIStream } from './hooks';

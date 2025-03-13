@@ -1,5 +1,5 @@
 import { dateTimeFormat } from '@data/index';
-import { InteractiveTable, Text } from '@grafana/ui';
+import { InteractiveTable, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { SyncInfo } from '@grafana-module/app/types';
 

@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import { GrafanaTheme2 } from '@data/index';
 import { selectors } from '@selectors/index';
 import { TimeZone } from '@schema/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { AnnotationEditor2 } from './AnnotationEditor2';
 import { AnnotationTooltip2 } from './AnnotationTooltip2';

@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { NavModel, NavModelItem, TimeRange, PageLayoutType, locationUtil, GrafanaTheme2 } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { Themeable2, withTheme2 } from '@grafana/ui';
+import { Themeable2, withTheme2 } from '@grafana-ui/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { ScrollRefElement } from '@grafana-module/app/core/components/NativeScrollbar';
 import { Page } from '@grafana-module/app/core/components/Page/Page';

@@ -17,7 +17,7 @@ import {
   getPromQueryInstant,
   getPromQueryTimeSeries,
 } from './utils';
-import { InteractiveTable } from '@grafana/ui';
+import { InteractiveTable } from '@grafana-ui/index';
 import React, { useMemo, useEffect } from 'react';
 import { DataFrameView } from '@data/index';
 

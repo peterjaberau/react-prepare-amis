@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { featureEnabled } from '@runtime/index';
-import { Card, Grid, useStyles2, Stack, Badge } from '@grafana/ui';
+import { Card, Grid, useStyles2, Stack, Badge } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import {
   PluginAngularBadge,

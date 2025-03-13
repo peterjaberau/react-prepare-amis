@@ -15,7 +15,7 @@ import {
   sceneUtils,
   SceneVariableValueChangedEvent,
 } from '@scenes/index';
-import { Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { appEvents } from '@grafana-module/app/core/app_events';
 import { RecordHistoryEntryEvent } from '@grafana-module/app/types/events';
 

@@ -7,7 +7,7 @@ import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable } from '@scenes/index';
 import { VariableHide, defaultVariableModel } from '@schema/index';
-import { Button, LoadingPlaceholder, ConfirmModal, ModalsController, Stack, useStyles2 } from '@grafana/ui';
+import { Button, LoadingPlaceholder, ConfirmModal, ModalsController, Stack, useStyles2 } from '@grafana-ui/index';
 import { VariableHideSelect } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableHideSelect';
 import { VariableLegend } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableLegend';
 import { VariableTextAreaField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextAreaField';

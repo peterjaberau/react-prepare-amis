@@ -1,4 +1,4 @@
-import { Tooltip, ToolbarButton } from '@grafana/ui';
+import { Tooltip, ToolbarButton } from '@grafana-ui/index';
 
 interface TimeSyncButtonProps {
   isSynced: boolean;

@@ -9,7 +9,7 @@ import {
 } from '@data/index';
 import { ConfigSubSection } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { InlineField, Input, Select, Switch, useTheme2 } from '@grafana/ui';
+import { InlineField, Input, Select, Switch, useTheme2 } from '@grafana-ui/index';
 
 import { SUGGESTIONS_LIMIT } from '../language_provider';
 import { QueryEditorMode } from '../querybuilder/shared/types';

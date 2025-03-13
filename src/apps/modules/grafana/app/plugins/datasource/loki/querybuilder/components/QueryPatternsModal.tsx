@@ -5,7 +5,7 @@ import { useMemo, useState } from 'react';
 import { CoreApp, GrafanaTheme2, getNextRefId } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { Button, Collapse, Modal, useStyles2 } from '@grafana/ui';
+import { Button, Collapse, Modal, useStyles2 } from '@grafana-ui/index';
 
 import { LokiQuery } from '../../types';
 import { lokiQueryModeller } from '../LokiQueryModeller';

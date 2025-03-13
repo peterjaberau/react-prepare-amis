@@ -3,7 +3,7 @@ import { Draggable } from '@hello-pangea/dnd';
 import { FormEvent, useState, KeyboardEvent, useRef, useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, Input, IconButton, HorizontalGroup, FieldValidationMessage, useStyles2 } from '@grafana/ui';
+import { Icon, Input, IconButton, HorizontalGroup, FieldValidationMessage, useStyles2 } from '@grafana-ui/index';
 
 type EnumMappingRowProps = {
   transformIndex: number;

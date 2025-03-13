@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { locationUtil, NavModel, NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, Stack, Text, ToolbarButtonRow } from '@grafana/ui';
+import { Button, Stack, Text, ToolbarButtonRow } from '@grafana-ui/index';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { t } from '@grafana-module/app/core/internationalization';

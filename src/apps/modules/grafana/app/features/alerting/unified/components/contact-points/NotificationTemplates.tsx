@@ -1,4 +1,4 @@
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { stringifyErrorLike } from '../../utils/misc';

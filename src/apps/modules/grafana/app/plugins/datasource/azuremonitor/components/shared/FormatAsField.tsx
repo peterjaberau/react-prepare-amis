@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import { useEffectOnce } from 'react-use';
 
 import { SelectableValue } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 import { FormatAsFieldProps, ResultFormat } from '../../types';

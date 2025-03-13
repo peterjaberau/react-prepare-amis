@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Input, useStyles2 } from '@grafana/ui';
+import { Input, useStyles2 } from '@grafana-ui/index';
 
 interface CustomAnnotationHeaderFieldProps {
   field: { onChange: () => void; onBlur: () => void; value: string; name: string };

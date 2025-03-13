@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
 import { AccessoryButton, EditorList, InputGroup } from '@grafana/plugin-ui';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { QueryEditorGroupByExpression } from '../../expressions';
 import { SQLExpression } from '../../types';

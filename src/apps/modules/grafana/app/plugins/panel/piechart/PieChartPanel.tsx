@@ -19,7 +19,7 @@ import {
   VizLayout,
   VizLegend,
   VizLegendItem,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { PieChart } from './PieChart';
 import { PieChartLegendOptions, PieChartLegendValues, Options } from './panelcfg.gen';

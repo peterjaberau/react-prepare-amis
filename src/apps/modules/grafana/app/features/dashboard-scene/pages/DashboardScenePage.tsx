@@ -6,7 +6,7 @@ import { usePrevious } from 'react-use';
 import { PageLayoutType } from '@data/index';
 import { config } from '@runtime/index';
 import { UrlSyncContextProvider } from '@scenes/index';
-import { Box } from '@grafana/ui';
+import { Box } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
 import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';

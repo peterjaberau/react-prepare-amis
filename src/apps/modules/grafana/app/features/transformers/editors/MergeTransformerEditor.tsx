@@ -6,7 +6,7 @@ import {
   TransformerCategory,
 } from '@data/index';
 import { MergeTransformerOptions } from '@data/transformations/transformers/merge';
-import { FieldValidationMessage } from '@grafana/ui';
+import { FieldValidationMessage } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

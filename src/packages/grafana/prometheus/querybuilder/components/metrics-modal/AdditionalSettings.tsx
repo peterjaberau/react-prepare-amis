@@ -2,7 +2,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, Switch, Tooltip, useTheme2 } from '@grafana/ui';
+import { Icon, Switch, Tooltip, useTheme2 } from '@grafana-ui/index';
 
 import { metricsModaltestIds } from './MetricsModal';
 import { placeholders } from './state/helpers';

@@ -4,7 +4,7 @@ import { Navigate, useLocation } from 'react-router-dom-v5-compat';
 import Drop from 'tether-drop';
 
 import { locationSearchToObject, navigationLogger, reportPageview } from '@runtime/index';
-import { ErrorBoundary } from '@grafana/ui';
+import { ErrorBoundary } from '@grafana-ui/index';
 
 import { useGrafana } from '../context/GrafanaContext';
 import { contextSrv } from '../services/context_srv';

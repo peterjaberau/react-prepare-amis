@@ -3,8 +3,8 @@ import { useCallback, useMemo } from 'react';
 
 import { GrafanaTheme2, SelectableValue, StandardEditorProps } from '@data/index';
 import { ScaleDimensionConfig } from '@schema/index';
-import { InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana/ui';
-import { useFieldDisplayNames, useSelectOptions } from '@grafana/ui/src/components/MatchersUI/utils';
+import { InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana-ui/index';
+import { useFieldDisplayNames, useSelectOptions } from '@grafana-ui/components/MatchersUI/utils';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { validateScaleOptions, validateScaleConfig } from '../scale';

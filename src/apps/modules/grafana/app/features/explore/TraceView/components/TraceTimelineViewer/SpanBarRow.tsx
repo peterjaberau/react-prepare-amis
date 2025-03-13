@@ -18,7 +18,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2, TraceKeyValuePair } from '@data/index';
 import { DURATION, NONE, TAG } from '@grafana/o11y-ds-frontend';
-import { Icon, stylesFactory, withTheme2 } from '@grafana/ui';
+import { Icon, stylesFactory, withTheme2 } from '@grafana-ui/index';
 
 import { autoColor } from '../Theme';
 import { SpanBarOptions, SpanLinkFunc, TraceSpan, TNil, CriticalPathSection } from '../types';

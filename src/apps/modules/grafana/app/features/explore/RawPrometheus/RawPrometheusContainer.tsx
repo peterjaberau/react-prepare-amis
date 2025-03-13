@@ -5,7 +5,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { applyFieldOverrides, DataFrame, SelectableValue, SplitOpen } from '@data/index';
 import { getTemplateSrv, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
-import { RadioButtonGroup, Table, AdHocFilterItem, PanelChrome } from '@grafana/ui';
+import { RadioButtonGroup, Table, AdHocFilterItem, PanelChrome } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { PANEL_BORDER } from '@grafana-module/app/core/constants';
 import { StoreState, TABLE_RESULTS_STYLE } from '@grafana-module/app/types';

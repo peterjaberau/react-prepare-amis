@@ -3,8 +3,8 @@ import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
-import { Badge, Icon, Stack, useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { Badge, Icon, Stack, useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 
 import { CatalogPlugin, PluginIconName } from '../types';
 

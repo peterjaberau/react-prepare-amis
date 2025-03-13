@@ -5,7 +5,7 @@ import { useEffectOnce } from 'react-use';
 
 import { CoreApp, QueryEditorProps } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Alert, Button, CodeEditor, Space } from '@grafana/ui';
+import { Alert, Button, CodeEditor, Space } from '@grafana-ui/index';
 
 import AzureMonitorDatasource from '../../datasource';
 import { selectors } from '../../e2e/selectors';

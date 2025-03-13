@@ -14,7 +14,7 @@ import {
   ScaleDimensionConfig,
   TextDimensionConfig,
 } from '@schema/index';
-import { Portal } from '@grafana/ui';
+import { Portal } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { DimensionContext } from '@grafana-module/app/features/dimensions';
 import {

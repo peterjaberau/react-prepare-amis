@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { ScalarDimensionConfig } from '@schema/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { DimensionContext } from '@grafana-module/app/features/dimensions';
 import { ScalarDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
 

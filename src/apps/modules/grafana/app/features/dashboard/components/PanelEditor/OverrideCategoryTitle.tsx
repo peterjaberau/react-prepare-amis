@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 import { FieldConfigOptionsRegistry, GrafanaTheme2, ConfigOverrideRule } from '@data/index';
-import { Button, HorizontalGroup, Icon, useStyles2 } from '@grafana/ui';
-import { FieldMatcherUIRegistryItem } from '@grafana/ui/src/components/MatchersUI/types';
+import { Button, HorizontalGroup, Icon, useStyles2 } from '@grafana-ui/index';
+import { FieldMatcherUIRegistryItem } from '@grafana-ui/components/MatchersUI/types';
 
 interface Props {
   isExpanded: boolean;

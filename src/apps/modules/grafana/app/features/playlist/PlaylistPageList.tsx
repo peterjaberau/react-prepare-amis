@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 
 import { PlaylistCard } from './PlaylistCard';
 import { Playlist } from './types';

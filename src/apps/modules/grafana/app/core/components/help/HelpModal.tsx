@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Grid, Modal, useStyles2, Text } from '@grafana/ui';
+import { Grid, Modal, useStyles2, Text } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { getModKey } from '@grafana-module/app/core/utils/browser';
 

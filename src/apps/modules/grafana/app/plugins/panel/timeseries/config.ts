@@ -18,7 +18,7 @@ import {
   GraphThresholdsStyleMode,
   GraphTransform,
 } from '@schema/index';
-import { graphFieldOptions, commonOptionsBuilder } from '@grafana/ui';
+import { graphFieldOptions, commonOptionsBuilder } from '@grafana-ui/index';
 
 import { InsertNullsEditor } from './InsertNullsEditor';
 import { LineStyleEditor } from './LineStyleEditor';

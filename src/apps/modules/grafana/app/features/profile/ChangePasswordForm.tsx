@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Button, Field, LinkButton, Stack } from '@grafana/ui';
+import { Button, Field, LinkButton, Stack } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import {
   ValidationLabels,

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useEffectOnce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, Button, Checkbox, EmptyState, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Checkbox, EmptyState, useStyles2 } from '@grafana-ui/index';
 import { StoredNotificationItem } from '@grafana-module/app/core/components/AppNotifications/StoredNotificationItem';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { dateTimeFormatTimeAgo, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { getLatestCompatibleVersion } from '../helpers';
 import { Version } from '../types';

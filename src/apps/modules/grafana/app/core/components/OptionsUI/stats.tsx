@@ -1,5 +1,5 @@
 import { StandardEditorProps, StatsPickerConfigSettings } from '@data/index';
-import { StatsPicker } from '@grafana/ui';
+import { StatsPicker } from '@grafana-ui/index';
 
 export const StatsPickerEditor = ({
   value,

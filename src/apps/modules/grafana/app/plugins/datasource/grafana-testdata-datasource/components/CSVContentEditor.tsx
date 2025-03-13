@@ -1,4 +1,4 @@
-import { CodeEditor } from '@grafana/ui';
+import { CodeEditor } from '@grafana-ui/index';
 
 import { EditorProps } from '../QueryEditor';
 

@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { arrayUtils, AnnotationQuery } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { Button, DeleteButton, EmptyState, IconButton, Stack, TextLink, useStyles2 } from '@grafana/ui';
+import { Button, DeleteButton, EmptyState, IconButton, Stack, TextLink, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardModel } from '../../state/DashboardModel';

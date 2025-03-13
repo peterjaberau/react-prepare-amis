@@ -5,7 +5,7 @@ import { AbsoluteTimeRange, CoreApp, LogRowModel, TimeRange } from '@data/index'
 import { convertRawToRange, isRelativeTime, isRelativeTimeRange } from '@data/datetime/rangeutil';
 import { config, reportInteraction } from '@runtime/index';
 import { LogsSortOrder, TimeZone } from '@schema/index';
-import { Button, Icon } from '@grafana/ui';
+import { Button, Icon } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { LoadingIndicator } from './LoadingIndicator';

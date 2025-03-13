@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, Button, LinkButton, LoadingPlaceholder, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, Button, LinkButton, LoadingPlaceholder, Stack, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { MuteTimingActionsButtons } from '@grafana-module/app/features/alerting/unified/components/mute-timings/MuteTimingActionsButtons';
 import {

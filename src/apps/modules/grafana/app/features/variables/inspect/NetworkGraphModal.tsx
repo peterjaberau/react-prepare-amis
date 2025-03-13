@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import { Modal } from '@grafana/ui';
+import { Modal } from '@grafana-ui/index';
 
 import { NetworkGraph, Props as NetWorkGraphProps } from './NetworkGraph';
 import { GraphEdge, GraphNode } from './utils';

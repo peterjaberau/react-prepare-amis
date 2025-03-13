@@ -1,5 +1,5 @@
 import { reportInteraction } from '@runtime/index';
-import { ConfirmModal, Text } from '@grafana/ui';
+import { ConfirmModal, Text } from '@grafana-ui/index';
 
 import { Trans, t } from '../../../core/internationalization';
 

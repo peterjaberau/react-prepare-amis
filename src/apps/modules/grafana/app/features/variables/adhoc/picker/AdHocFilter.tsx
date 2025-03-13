@@ -1,7 +1,7 @@
 import { Fragment, PureComponent, ReactNode } from 'react';
 
 import { AdHocVariableFilter, DataSourceRef, SelectableValue } from '@data/index';
-import { Segment } from '@grafana/ui';
+import { Segment } from '@grafana-ui/index';
 
 import { AdHocFilterBuilder } from './AdHocFilterBuilder';
 import { REMOVE_FILTER_KEY } from './AdHocFilterKey';

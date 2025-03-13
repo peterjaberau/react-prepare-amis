@@ -24,7 +24,7 @@ import {
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { Collapse } from '@grafana/ui';
+import { Collapse } from '@grafana-ui/index';
 import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
 import { StoreState } from '@grafana-module/app/types';
 import { ExploreItemState } from '@grafana-module/app/types/explore';

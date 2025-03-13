@@ -15,7 +15,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { autoColor } from '../../Theme';
 import Ticks from '../Ticks';

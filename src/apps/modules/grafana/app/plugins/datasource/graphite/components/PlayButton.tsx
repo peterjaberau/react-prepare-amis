@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 import { actions } from '../state/actions';
 import { useDispatch } from '../state/context';

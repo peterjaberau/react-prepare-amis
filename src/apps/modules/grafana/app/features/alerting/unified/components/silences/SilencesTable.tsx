@@ -12,7 +12,7 @@ import {
   LoadingPlaceholder,
   Stack,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { alertSilencesApi } from '@grafana-module/app/features/alerting/unified/api/alertSilencesApi';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { FormEventHandler, KeyboardEventHandler, ReactNode } from 'react';
 
 import { DocsId, GrafanaTheme2, TransformerRegistryItem } from '@data/index';
-import { Card, Container, VerticalGroup, Alert, Input, useStyles2 } from '@grafana/ui';
+import { Card, Container, VerticalGroup, Alert, Input, useStyles2 } from '@grafana-ui/index';
 import { LocalStorageValueProvider } from '@grafana-module/app/core/components/LocalStorageValueProvider';
 import { getDocsLink } from '@grafana-module/app/core/utils/docsLinks';
 import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';

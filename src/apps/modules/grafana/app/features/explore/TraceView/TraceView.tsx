@@ -17,7 +17,7 @@ import {
 import { getTraceToLogsOptions, TraceToMetricsData, TraceToProfilesData } from '@grafana/o11y-ds-frontend';
 import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { TempoQuery } from '@grafana-plugins/tempo/types';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 import { getTimeZone } from '@grafana-module/app/features/profile/state/selectors';

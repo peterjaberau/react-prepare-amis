@@ -1,5 +1,5 @@
 import { FieldMatcherID, PanelTypeChangedHandler, ReducerID } from '@data/index';
-import { AxisPlacement } from '@grafana/ui';
+import { AxisPlacement } from '@grafana-ui/index';
 
 /*
  * This is called when the panel changes from another panel

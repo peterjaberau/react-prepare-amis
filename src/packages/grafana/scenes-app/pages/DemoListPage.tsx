@@ -16,7 +16,7 @@ import React from 'react';
 import { demoUrl, prefixRoute } from '../utils/utils.routing';
 import { DATASOURCE_REF, ROUTES } from '../constants';
 import { getDemos } from '../demos';
-import { Alert, Card, Input, useStyles2 } from '@grafana/ui';
+import { Alert, Card, Input, useStyles2 } from '@grafana-ui/index';
 import { config } from '@runtime/index';
 import { GrafanaTheme2 } from '@data/index';
 import { css } from '@emotion/css';

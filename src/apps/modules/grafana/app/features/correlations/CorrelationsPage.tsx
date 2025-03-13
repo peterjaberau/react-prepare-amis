@@ -17,7 +17,7 @@ import {
   type SortByFn,
   Pagination,
   Icon,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { useNavModel } from '@grafana-module/app/core/hooks/useNavModel';

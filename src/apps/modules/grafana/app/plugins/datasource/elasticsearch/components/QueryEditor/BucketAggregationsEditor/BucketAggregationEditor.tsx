@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { InlineSegmentGroup, Segment, SegmentAsync } from '@grafana/ui';
+import { InlineSegmentGroup, Segment, SegmentAsync } from '@grafana-ui/index';
 
 import { useFields } from '../../../hooks/useFields';
 import { useDispatch } from '../../../hooks/useStatelessReducer';

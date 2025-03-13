@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
-import { Card, Field, FieldSet, Input, useStyles2 } from '@grafana/ui';
+import { Card, Field, FieldSet, Input, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';

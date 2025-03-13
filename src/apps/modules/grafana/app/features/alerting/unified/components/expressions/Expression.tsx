@@ -12,7 +12,7 @@ import {
   dateTimeFormat,
   isTimeSeriesFrames,
 } from '@data/index';
-import { Alert, AutoSizeInput, Button, IconButton, Stack, Text, clearButtonStyles, useStyles2 } from '@grafana/ui';
+import { Alert, AutoSizeInput, Button, IconButton, Stack, Text, clearButtonStyles, useStyles2 } from '@grafana-ui/index';
 import { ClassicConditions } from '@grafana-module/app/features/expressions/components/ClassicConditions';
 import { Math } from '@grafana-module/app/features/expressions/components/Math';
 import { Reduce } from '@grafana-module/app/features/expressions/components/Reduce';

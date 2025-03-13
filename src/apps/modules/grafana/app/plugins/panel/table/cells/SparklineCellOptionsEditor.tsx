@@ -3,8 +3,8 @@ import { useMemo } from 'react';
 
 import { createFieldConfigRegistry, SetFieldConfigOptionsArgs } from '@data/index';
 import { GraphFieldConfig, TableSparklineCellOptions } from '@schema/index';
-import { VerticalGroup, Field, useStyles2 } from '@grafana/ui';
-import { defaultSparklineCellConfig } from '@grafana/ui/src/components/Table/SparklineCell';
+import { VerticalGroup, Field, useStyles2 } from '@grafana-ui/index';
+import { defaultSparklineCellConfig } from '@grafana-ui/components/Table/SparklineCell';
 
 import { getGraphFieldConfig } from '../../timeseries/config';
 import { TableCellEditorProps } from '../TableCellOptionEditor';

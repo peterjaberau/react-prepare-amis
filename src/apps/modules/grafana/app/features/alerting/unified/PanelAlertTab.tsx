@@ -1,4 +1,4 @@
-import { Tab, TabProps } from '@grafana/ui';
+import { Tab, TabProps } from '@grafana-ui/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 

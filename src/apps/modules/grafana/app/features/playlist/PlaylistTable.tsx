@@ -1,6 +1,6 @@
 import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
 
-import { FieldSet } from '@grafana/ui';
+import { FieldSet } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { PlaylistTableRows } from './PlaylistTableRows';

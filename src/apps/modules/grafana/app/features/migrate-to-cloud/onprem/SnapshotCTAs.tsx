@@ -1,4 +1,4 @@
-import { Button, Icon, Spinner, Text } from '@grafana/ui';
+import { Button, Icon, Spinner, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { CTAInfo } from './CTAInfo';

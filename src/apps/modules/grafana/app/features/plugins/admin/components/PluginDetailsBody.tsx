@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { AppPlugin, GrafanaTheme2, PluginContextProvider, UrlQueryMap, PluginType } from '@data/index';
 import { config } from '@runtime/index';
 import { PageInfoItem } from '@runtime/components/PluginPage';
-import { CellProps, Column, InteractiveTable, Stack, useStyles2 } from '@grafana/ui';
+import { CellProps, Column, InteractiveTable, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { Changelog } from '../components/Changelog';
 import { PluginDetailsPanel } from '../components/PluginDetailsPanel';

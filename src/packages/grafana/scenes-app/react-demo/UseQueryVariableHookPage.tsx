@@ -1,5 +1,5 @@
 import { useQueryVariable } from '@scenes-react/index';
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 import React from 'react';
 import { PageWrapper } from './PageWrapper';
 import { DemoVizLayout } from './utils';

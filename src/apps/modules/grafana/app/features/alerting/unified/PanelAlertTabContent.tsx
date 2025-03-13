@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Alert, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana/ui';
+import { Alert, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';

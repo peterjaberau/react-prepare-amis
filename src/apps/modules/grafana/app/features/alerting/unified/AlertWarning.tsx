@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, LinkButton, useStyles2 } from '@grafana/ui';
+import { Alert, LinkButton, useStyles2 } from '@grafana-ui/index';
 
 interface AlertWarningProps {
   title: string;

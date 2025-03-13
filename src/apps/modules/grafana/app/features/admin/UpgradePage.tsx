@@ -3,7 +3,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import { GrafanaTheme2, NavModel } from '@data/index';
-import { LinkButton, useStyles2 } from '@grafana/ui';
+import { LinkButton, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

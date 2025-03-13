@@ -11,7 +11,7 @@ import {
 } from '@data/index';
 import { fieldIndexComparer } from '@data/field/fieldComparers';
 import { MappingType, ThresholdsMode } from '@schema/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { labelsMatchMatchers } from '../../../utils/alertmanager';
 import { parsePromQLStyleMatcherLooseSafe } from '../../../utils/matchers';

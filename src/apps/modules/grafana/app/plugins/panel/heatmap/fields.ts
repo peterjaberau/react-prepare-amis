@@ -13,7 +13,7 @@ import {
   TimeRange,
   ValueFormatter,
 } from '@data/index';
-import { parseSampleValue, sortSeriesByLabel } from '@grafana/prometheus';
+import { parseSampleValue, sortSeriesByLabel } from '@prometheus/index';
 import {
   HeatmapCalculationMode,
   HeatmapCalculationOptions,

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { UseFormReturn, Controller } from 'react-hook-form';
 
 import { SelectableValue } from '@data/index';
-import { Checkbox, Field, Input, SecretInput, Select, Switch, useTheme2 } from '@grafana/ui';
+import { Checkbox, Field, Input, SecretInput, Select, Switch, useTheme2 } from '@grafana-ui/index';
 
 import { fieldMap } from './fields';
 import { SSOProviderDTO, SSOSettingsField } from './types';

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { GrafanaTheme2, PageLayoutType } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, sceneUtils } from '@scenes/index';
 import { Dashboard } from '@schema/index';
-import { Alert, Box, Button, CodeEditor, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, Box, Button, CodeEditor, Stack, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { getPrettyJSON } from '@grafana-module/app/features/inspector/utils/utils';

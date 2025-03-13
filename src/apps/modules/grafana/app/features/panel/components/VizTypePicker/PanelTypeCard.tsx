@@ -4,8 +4,8 @@ import * as React from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2, isUnsignedPluginSignature, PanelPluginMeta, PluginState } from '@data/index';
-import { IconButton, PluginSignatureBadge, useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { IconButton, PluginSignatureBadge, useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';
 
 interface Props {

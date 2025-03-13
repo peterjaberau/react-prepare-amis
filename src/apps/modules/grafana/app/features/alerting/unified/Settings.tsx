@@ -1,4 +1,4 @@
-import { LinkButton, Stack, Text } from '@grafana/ui';
+import { LinkButton, Stack, Text } from '@grafana-ui/index';
 
 import { AlertingPageWrapper } from './components/AlertingPageWrapper';
 import { WithReturnButton } from './components/WithReturnButton';

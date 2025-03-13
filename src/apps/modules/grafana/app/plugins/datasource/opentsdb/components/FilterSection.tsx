@@ -13,7 +13,7 @@ import {
   useStyles2,
   AsyncSelect,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { OpenTsdbFilter, OpenTsdbQuery } from '../types';
 

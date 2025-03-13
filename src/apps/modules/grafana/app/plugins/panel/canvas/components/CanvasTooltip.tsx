@@ -14,12 +14,12 @@ import {
   ValueLinkConfig,
 } from '@data/index';
 import { ActionModel } from '@data/types/action';
-import { Portal, useStyles2, VizTooltipContainer } from '@grafana/ui';
-import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
-import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';
-import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
-import { VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
-import { CloseButton } from '@grafana/ui/src/components/uPlot/plugins/CloseButton';
+import { Portal, useStyles2, VizTooltipContainer } from '@grafana-ui/index';
+import { VizTooltipContent } from '@grafana-ui/components/VizTooltip/VizTooltipContent';
+import { VizTooltipFooter } from '@grafana-ui/components/VizTooltip/VizTooltipFooter';
+import { VizTooltipHeader } from '@grafana-ui/components/VizTooltip/VizTooltipHeader';
+import { VizTooltipItem } from '@grafana-ui/components/VizTooltip/types';
+import { CloseButton } from '@grafana-ui/components/uPlot/plugins/CloseButton';
 import { getActions, getActionsDefaultField } from '@grafana-module/app/features/actions/utils';
 import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';
 

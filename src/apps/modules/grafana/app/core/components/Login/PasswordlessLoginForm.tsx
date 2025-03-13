@@ -3,7 +3,7 @@ import { useId } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Input, Field, useStyles2 } from '@grafana/ui';
+import { Button, Input, Field, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { PasswordlessFormModel } from './LoginCtrl';

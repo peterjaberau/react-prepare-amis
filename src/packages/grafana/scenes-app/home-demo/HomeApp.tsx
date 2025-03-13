@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, useStyles2 } from '@grafana/ui';
+import { Card, useStyles2 } from '@grafana-ui/index';
 import { prefixRoute } from '../utils/utils.routing';
 import { ROUTES } from '../constants';
 import { GrafanaTheme2, PageLayoutType } from '@data/index';

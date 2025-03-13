@@ -1,6 +1,6 @@
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { Field } from '@grafana/ui';
+import { Field } from '@grafana-ui/index';
 import MuteTimingsSelector from '@grafana-module/app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector';
 import { BaseAlertmanagerArgs } from '@grafana-module/app/features/alerting/unified/types/hooks';
 import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';

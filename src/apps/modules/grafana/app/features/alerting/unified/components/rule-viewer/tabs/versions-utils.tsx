@@ -1,5 +1,5 @@
 import { IconName } from '@data/index';
-import { BadgeColor } from '@grafana/ui';
+import { BadgeColor } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import {
   GrafanaAlertRuleDTOField,

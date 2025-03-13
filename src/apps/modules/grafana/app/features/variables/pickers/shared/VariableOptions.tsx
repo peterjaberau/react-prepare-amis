@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2, VariableOption } from '@data/index';
-import { Tooltip, Themeable2, withTheme2, clearButtonStyles, stylesFactory } from '@grafana/ui';
+import { Tooltip, Themeable2, withTheme2, clearButtonStyles, stylesFactory } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { ALL_VARIABLE_VALUE } from '../../constants';

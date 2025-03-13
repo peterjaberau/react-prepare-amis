@@ -2,7 +2,7 @@ import { debounce } from 'lodash';
 import { useState, useEffect } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { TabbedContainer, TabConfig } from '@grafana/ui';
+import { TabbedContainer, TabConfig } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import {
   SortOrder,

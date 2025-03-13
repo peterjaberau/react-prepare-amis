@@ -4,7 +4,7 @@ import * as React from 'react';
 import SplitPane, { Split } from 'react-split-pane';
 
 import { GrafanaTheme2 } from '@data/index';
-import { getDragStyles } from '@grafana/ui';
+import { getDragStyles } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 
 interface Props {

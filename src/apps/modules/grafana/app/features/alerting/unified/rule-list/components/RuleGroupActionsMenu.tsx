@@ -1,4 +1,4 @@
-import { Dropdown, IconButton, Menu } from '@grafana/ui';
+import { Dropdown, IconButton, Menu } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 export function RuleGroupActionsMenu() {

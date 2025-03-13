@@ -4,7 +4,7 @@ import { FormEvent, PropsWithChildren, ReactElement } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Field, TextArea, useStyles2 } from '@grafana/ui';
+import { Field, TextArea, useStyles2 } from '@grafana-ui/index';
 
 interface VariableTextAreaFieldProps {
   name: string;

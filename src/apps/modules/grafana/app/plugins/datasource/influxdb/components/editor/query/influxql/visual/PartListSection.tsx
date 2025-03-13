@@ -3,7 +3,7 @@ import { Fragment, useMemo } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { toSelectableValue } from '../utils/toSelectableValue';
 import { unwrap } from '../utils/unwrap';

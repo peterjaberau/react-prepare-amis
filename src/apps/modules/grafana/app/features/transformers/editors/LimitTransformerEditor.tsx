@@ -8,7 +8,7 @@ import {
   TransformerCategory,
 } from '@data/index';
 import { LimitTransformerOptions } from '@data/transformations/transformers/limit';
-import { InlineFieldRow } from '@grafana/ui';
+import { InlineFieldRow } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { SuggestionsInput } from '../suggestionsInput/SuggestionsInput';

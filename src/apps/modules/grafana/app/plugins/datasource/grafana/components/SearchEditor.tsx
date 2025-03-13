@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { InlineField, Input, InlineFieldRow, CodeEditor } from '@grafana/ui';
+import { InlineField, Input, InlineFieldRow, CodeEditor } from '@grafana-ui/index';
 import { SearchQuery } from '@grafana-module/app/features/search/service/types';
 
 interface Props {

@@ -7,7 +7,7 @@ import { takeWhile } from 'rxjs/operators';
 
 import { GrafanaTheme2, LoadingState, dateTimeFormatISO } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { Alert, Button, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { previewAlertRule } from '../../api/preview';
 import { useAlertQueriesStatus } from '../../hooks/useAlertQueriesStatus';

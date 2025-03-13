@@ -4,7 +4,7 @@ import * as React from 'react';
 import { SelectableValue } from '@data/index';
 import { EditorField, EditorFieldGroup, EditorRow, EditorRows, EditorSwitch } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import { useAccountOptions, useMetrics, useNamespaces } from '../../../hooks';

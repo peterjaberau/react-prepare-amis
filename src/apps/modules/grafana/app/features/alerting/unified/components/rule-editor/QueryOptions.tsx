@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2, RelativeTimeRange, dateTime, getDefaultRelativeTimeRange } from '@data/index';
 import { relativeToTimeRange } from '@data/datetime/rangeutil';
-import { Icon, InlineField, RelativeTimeRangePicker, Toggletip, clearButtonStyles, useStyles2 } from '@grafana/ui';
+import { Icon, InlineField, RelativeTimeRangePicker, Toggletip, clearButtonStyles, useStyles2 } from '@grafana-ui/index';
 import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { AlertQueryOptions, MaxDataPointsOption, MinIntervalOption } from './QueryWrapper';

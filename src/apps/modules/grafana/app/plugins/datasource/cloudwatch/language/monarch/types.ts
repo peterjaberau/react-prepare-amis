@@ -1,4 +1,4 @@
-import { monacoTypes } from '@grafana/ui';
+import { monacoTypes } from '@grafana-ui/index';
 
 import { LanguageDefinition } from './register';
 

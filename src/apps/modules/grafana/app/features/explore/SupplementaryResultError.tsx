@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ReactNode, useCallback, useState } from 'react';
 
 import { DataQueryError, GrafanaTheme2 } from '@data/index';
-import { Alert, AlertVariant, Button, useTheme2 } from '@grafana/ui';
+import { Alert, AlertVariant, Button, useTheme2 } from '@grafana-ui/index';
 
 type Props = {
   error?: DataQueryError;

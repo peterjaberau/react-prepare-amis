@@ -11,7 +11,7 @@ import {
   sceneGraph,
 } from '@scenes/index';
 import { DataQuery } from '@schema/index';
-import { Button, Dropdown, Icon, IconButton, Menu, Modal, useStyles2 } from '@grafana/ui';
+import { Button, Dropdown, Icon, IconButton, Menu, Modal, useStyles2 } from '@grafana-ui/index';
 
 import { trackInsightsFeedback } from '../Analytics';
 

@@ -3,7 +3,7 @@ import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
-import { Button, ClipboardButton, CodeEditor, Field, Modal, Stack, Switch } from '@grafana/ui';
+import { Button, ClipboardButton, CodeEditor, Field, Modal, Stack, Switch } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardExporter } from '@grafana-module/app/features/dashboard/components/DashExportModal';
 import { shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';

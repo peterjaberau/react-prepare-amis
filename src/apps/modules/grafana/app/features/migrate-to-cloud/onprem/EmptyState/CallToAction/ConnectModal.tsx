@@ -3,7 +3,7 @@ import { useId } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Modal, Button, Stack, TextLink, Field, Input, Text, useStyles2 } from '@grafana/ui';
+import { Modal, Button, Stack, TextLink, Field, Input, Text, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { AlertWithTraceID } from '@grafana-module/app/features/migrate-to-cloud/shared/AlertWithTraceID';
 

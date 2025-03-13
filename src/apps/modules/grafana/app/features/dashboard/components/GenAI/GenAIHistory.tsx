@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState, useCallback } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, Button, Icon, Input, Stack, Text, TextLink, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Icon, Input, Stack, Text, TextLink, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { STOP_GENERATION_TEXT } from './GenAIButton';

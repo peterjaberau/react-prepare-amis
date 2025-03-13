@@ -1,5 +1,5 @@
 import { OrgRole } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 interface Props {
   value: OrgRole;

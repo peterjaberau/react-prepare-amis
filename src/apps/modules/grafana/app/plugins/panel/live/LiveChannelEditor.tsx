@@ -9,7 +9,7 @@ import {
   GrafanaTheme2,
   parseLiveChannelAddress,
 } from '@data/index';
-import { Select, Alert, Label, stylesFactory } from '@grafana/ui';
+import { Select, Alert, Label, stylesFactory } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { getManagedChannelInfo } from '@grafana-module/app/features/live/info';
 

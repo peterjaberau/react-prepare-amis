@@ -6,7 +6,7 @@ import {
   CalculateFieldTransformerOptions,
   checkBinaryValueType,
 } from '@data/transformations/transformers/calculateField';
-import { getFieldTypeIconName, InlineField, InlineFieldRow, Select } from '@grafana/ui';
+import { getFieldTypeIconName, InlineField, InlineFieldRow, Select } from '@grafana-ui/index';
 
 import { LABEL_WIDTH } from './constants';
 

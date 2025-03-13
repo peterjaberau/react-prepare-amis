@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form';
 
-import { Field, useStyles2 } from '@grafana/ui';
+import { Field, useStyles2 } from '@grafana-ui/index';
 import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
 import { promDurationValidator, repeatIntervalValidator } from '@grafana-module/app/features/alerting/unified/utils/amroutes';
 

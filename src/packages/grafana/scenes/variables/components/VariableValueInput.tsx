@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { AutoSizeInput } from '@grafana/ui';
+import { AutoSizeInput } from '@grafana-ui/index';
 
 import { SceneComponentProps } from '../../core/types';
 import { TextBoxVariable } from '../variants/TextBoxVariable';

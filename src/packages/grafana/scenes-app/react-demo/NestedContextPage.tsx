@@ -1,4 +1,4 @@
-import { Stack, useTheme2 } from '@grafana/ui';
+import { Stack, useTheme2 } from '@grafana-ui/index';
 import React from 'react';
 import { PageWrapper } from './PageWrapper';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';

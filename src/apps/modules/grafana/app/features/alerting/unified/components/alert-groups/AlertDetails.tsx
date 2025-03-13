@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { LinkButton, useStyles2 } from '@grafana/ui';
+import { LinkButton, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { AlertState, AlertmanagerAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 import { AccessControlAction } from '@grafana-module/app/types';

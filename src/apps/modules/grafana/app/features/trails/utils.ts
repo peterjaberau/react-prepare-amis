@@ -10,7 +10,7 @@ import {
   ScopeSpecFilter,
   urlUtil,
 } from '@data/index';
-import { getPrometheusTime } from '@grafana/prometheus';
+import { getPrometheusTime } from '@prometheus/index';
 import { config, FetchResponse, getBackendSrv, getDataSourceSrv } from '@runtime/index';
 import {
   AdHocFiltersVariable,

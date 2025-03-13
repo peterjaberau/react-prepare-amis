@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 
-import { Button, Input, Field, Modal } from '@grafana/ui';
+import { Button, Input, Field, Modal } from '@grafana-ui/index';
 
 import { Trans } from '../../../core/internationalization';
 import { ServerDiscoveryFormData } from '../types';

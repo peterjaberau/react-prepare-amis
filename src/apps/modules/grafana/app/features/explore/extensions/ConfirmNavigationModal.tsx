@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 
 import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, Modal, Stack } from '@grafana/ui';
+import { Button, Modal, Stack } from '@grafana-ui/index';
 
 type Props = {
   onDismiss: () => void;

@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { SelectableValue } from '@data/index';
-import { Segment } from '@grafana/ui';
+import { Segment } from '@grafana-ui/index';
 
 import { MetricAggregation } from '../types';
 import { describeMetric } from '../utils';

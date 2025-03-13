@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
 import { EditorField, InputGroup } from '@grafana/plugin-ui';
-import { Input, RadioButtonGroup, Select, Space } from '@grafana/ui';
+import { Input, RadioButtonGroup, Select, Space } from '@grafana-ui/index';
 
 import { SQLExpression } from '../../types';
 import { setPropertyField } from '../../utils/sql.utils';

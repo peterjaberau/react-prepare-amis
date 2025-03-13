@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 
 import { DataSourcePlugin, DashboardLoadedEvent, type QueryEditorProps } from '@data/index';
 import { getAppEvents } from '@runtime/index';
-import { LoadingPlaceholder } from '@grafana/ui';
+import { LoadingPlaceholder } from '@grafana-ui/index';
 
 import type { ConfigEditorProps } from './configuration/ConfigEditor';
 import { TempoDatasource } from './datasource';

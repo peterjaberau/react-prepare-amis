@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Text } from '@grafana/ui';
+import { Box, Button, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 interface EmptyTransformationsProps {

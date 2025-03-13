@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { Field, SelectableValue, valueMatchers } from '@data/index';
 import { FilterByValueFilter } from '@data/transformations/transformers/filterByValue';
-import { Button, Select, InlineField, InlineFieldRow, Box } from '@grafana/ui';
+import { Button, Select, InlineField, InlineFieldRow, Box } from '@grafana-ui/index';
 
 import { valueMatchersUI } from './ValueMatchers/valueMatchersUI';
 

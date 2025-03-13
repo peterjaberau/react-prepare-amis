@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
 import { AccessoryButton, InputGroup } from '@grafana/plugin-ui';
-import { AsyncSelect, Select } from '@grafana/ui';
+import { AsyncSelect, Select } from '@grafana-ui/index';
 
 import { truncateResult } from '../../language_utils';
 import { QueryBuilderLabelFilter } from '../shared/types';

@@ -5,7 +5,7 @@ import { Controller, DeepMap, FieldError, FieldErrors, useForm } from 'react-hoo
 import { SelectableValue, TimeRange } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Panel } from '@schema/index';
-import { Alert, Button, Field, Modal, RadioButtonGroup } from '@grafana/ui';
+import { Alert, Button, Field, Modal, RadioButtonGroup } from '@grafana-ui/index';
 import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction } from '@grafana-module/app/types';

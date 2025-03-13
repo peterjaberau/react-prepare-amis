@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { AlertmanagerAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 

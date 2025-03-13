@@ -9,7 +9,7 @@ import {
   TransformerCategory,
 } from '@data/index';
 import { RenameByRegexTransformerOptions } from '@data/transformations/transformers/renameByRegex';
-import { InlineField, Input } from '@grafana/ui';
+import { InlineField, Input } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

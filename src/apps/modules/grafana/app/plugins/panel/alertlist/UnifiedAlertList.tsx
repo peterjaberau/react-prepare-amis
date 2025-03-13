@@ -14,7 +14,7 @@ import {
   LoadingPlaceholder,
   ScrollContainer,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import alertDef from '@grafana-module/app/features/alerting/state/alertDef';
 import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';

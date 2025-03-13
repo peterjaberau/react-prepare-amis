@@ -3,7 +3,7 @@ import useAsyncFn from 'react-use/lib/useAsyncFn';
 import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
-import { Button, ClipboardButton, Field, Input, Modal, RadioButtonGroup, Stack } from '@grafana/ui';
+import { Button, ClipboardButton, Field, Input, Modal, RadioButtonGroup, Stack } from '@grafana-ui/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

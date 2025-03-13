@@ -2,7 +2,7 @@
 import { PureComponent } from 'react';
 
 import { PluginConfigPageProps, DataSourcePluginMeta, DataSourceJsonData } from '@data/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 
 // Types
 

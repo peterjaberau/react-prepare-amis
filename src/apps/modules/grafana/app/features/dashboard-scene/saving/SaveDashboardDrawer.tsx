@@ -1,5 +1,5 @@
 import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneObjectRef } from '@scenes/index';
-import { Drawer, Tab, TabsBar } from '@grafana/ui';
+import { Drawer, Tab, TabsBar } from '@grafana-ui/index';
 import { SaveDashboardDiff } from '@grafana-module/app/features/dashboard/components/SaveDashboard/SaveDashboardDiff';
 
 import { DashboardScene } from '../scene/DashboardScene';

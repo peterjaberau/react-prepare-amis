@@ -3,7 +3,7 @@ import { useAsync } from 'react-use';
 
 import { QueryEditorProps } from '@data/index';
 import { EditorMode } from '@grafana/plugin-ui';
-import { Space } from '@grafana/ui';
+import { Space } from '@grafana-ui/index';
 
 import { SqlDatasource } from '../datasource/SqlDatasource';
 import { applyQueryDefaults } from '../defaults';

@@ -1,6 +1,6 @@
 import { QueryEditorProps } from '@data/index';
-import { InlineFieldRow, Input, TextArea } from '@grafana/ui';
-import { InlineField } from '@grafana/ui/';
+import { InlineFieldRow, Input, TextArea } from '@grafana-ui/index';
+import { InlineField } from '@grafana-ui/index';
 
 import InfluxDatasource from '../../../datasource';
 import { InfluxOptions, InfluxQuery, InfluxVariableQuery, InfluxVersion } from '../../../types';

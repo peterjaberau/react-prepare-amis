@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { Alert, ClipboardButton, Field, FieldSet, Input, Switch, TextLink } from '@grafana/ui';
+import { Alert, ClipboardButton, Field, FieldSet, Input, Switch, TextLink } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';

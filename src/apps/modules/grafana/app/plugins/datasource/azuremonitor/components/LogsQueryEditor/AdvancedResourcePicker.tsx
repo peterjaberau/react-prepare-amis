@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
-import { Icon, Input, Tooltip, Label, Button, useStyles2 } from '@grafana/ui';
+import { Icon, Input, Tooltip, Label, Button, useStyles2 } from '@grafana-ui/index';
 
 export interface ResourcePickerProps<T> {
   resources: T[];

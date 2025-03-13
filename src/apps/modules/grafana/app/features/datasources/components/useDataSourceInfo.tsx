@@ -1,4 +1,4 @@
-import { Badge } from '@grafana/ui';
+import { Badge } from '@grafana-ui/index';
 import { PageInfoItem } from '@grafana-module/app/core/components/Page/types';
 
 type DataSourceInfo = {

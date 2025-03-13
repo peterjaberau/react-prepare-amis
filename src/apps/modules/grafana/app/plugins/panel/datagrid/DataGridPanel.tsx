@@ -12,7 +12,7 @@ import { useEffect, useReducer } from 'react';
 
 import { Field, PanelProps, FieldType, DataFrame } from '@data/index';
 import { PanelDataErrorView, reportInteraction } from '@runtime/index';
-import { usePanelContext, useTheme2 } from '@grafana/ui';
+import { usePanelContext, useTheme2 } from '@grafana-ui/index';
 
 import '@glideapps/glide-data-grid/dist/index.css';
 

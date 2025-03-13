@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Alert, CellProps, Column, Icon, InteractiveTable, Stack, Text, Tooltip } from '@grafana/ui';
+import { Alert, CellProps, Column, Icon, InteractiveTable, Stack, Text, Tooltip } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { AppNotificationSeverity, LdapConnectionInfo, LdapServerInfo } from '@grafana-module/app/types';
 

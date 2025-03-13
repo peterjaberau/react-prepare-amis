@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2, QueryEditorProps } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Button, InlineLabel, useStyles2 } from '@grafana/ui';
+import { Button, InlineLabel, useStyles2 } from '@grafana-ui/index';
 
 import { TempoDatasource } from '../datasource';
 import { defaultQuery, MyDataSourceOptions, TempoQuery } from '../types';

@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import { AdHocVariableFilter, DataSourceRef, SelectableValue } from '@data/index';
-import { Icon, SegmentAsync } from '@grafana/ui';
+import { Icon, SegmentAsync } from '@grafana-ui/index';
 
 import { getDatasourceSrv } from '../../../plugins/datasource_srv';
 

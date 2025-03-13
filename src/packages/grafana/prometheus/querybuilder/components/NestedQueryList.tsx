@@ -1,5 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/components/NestedQueryList.tsx
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../../datasource';
 import { PromVisualQuery, PromVisualQueryBinary } from '../types';

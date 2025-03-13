@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import { urlUtil } from '@data/index';
 import { locationService, logInfo } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { Alert, Button } from '@grafana/ui';
+import { Alert, Button } from '@grafana-ui/index';
 import { LogMessages } from '@grafana-module/app/features/alerting/unified/Analytics';
 import { scenesPanelToRuleFormValues } from '@grafana-module/app/features/alerting/unified/utils/rule-form';
 

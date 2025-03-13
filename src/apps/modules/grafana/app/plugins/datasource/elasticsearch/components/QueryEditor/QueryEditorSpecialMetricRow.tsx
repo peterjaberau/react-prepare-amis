@@ -1,4 +1,4 @@
-import { InlineFieldRow, InlineLabel, InlineSegmentGroup } from '@grafana/ui';
+import { InlineFieldRow, InlineLabel, InlineSegmentGroup } from '@grafana-ui/index';
 
 import { MetricAggregation } from '../../types';
 

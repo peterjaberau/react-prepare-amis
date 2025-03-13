@@ -4,8 +4,8 @@ import * as React from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { Field, FieldValidationMessage, InlineField, MultiSelect, Stack, Switch, Text, useStyles2 } from '@grafana/ui';
-import { MultiValueRemove, MultiValueRemoveProps } from '@grafana/ui/src/components/Select/MultiValue';
+import { Field, FieldValidationMessage, InlineField, MultiSelect, Stack, Switch, Text, useStyles2 } from '@grafana-ui/index';
+import { MultiValueRemove, MultiValueRemoveProps } from '@grafana-ui/components/Select/MultiValue';
 import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
 import {
   commonGroupByOptions,

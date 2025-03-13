@@ -16,7 +16,7 @@ import {
   BrowserLabel as LokiLabel,
   fuzzyMatch,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import LokiLanguageProvider from '../LanguageProvider';
 import { escapeLabelValueInExactSelector, escapeLabelValueInRegexSelector } from '../languageUtils';

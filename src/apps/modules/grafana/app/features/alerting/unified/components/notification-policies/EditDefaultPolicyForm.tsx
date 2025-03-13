@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 
-import { Collapse, Field, Link, MultiSelect, useStyles2 } from '@grafana/ui';
+import { Collapse, Field, Link, MultiSelect, useStyles2 } from '@grafana-ui/index';
 import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
 import { handleContactPointSelect } from '@grafana-module/app/features/alerting/unified/components/notification-policies/utils';
 import { RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';

@@ -1,7 +1,7 @@
 import { PropsWithChildren, useMemo, useState } from 'react';
 
 import { VariableRefresh } from '@data/index';
-import { Field, RadioButtonGroup, useTheme2 } from '@grafana/ui';
+import { Field, RadioButtonGroup, useTheme2 } from '@grafana-ui/index';
 import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
 
 interface Props {

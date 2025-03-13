@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Icon, ModalsController } from '@grafana/ui';
+import { Icon, ModalsController } from '@grafana-ui/index';
 
 import { OnRowOptionsUpdate } from './RowOptionsForm';
 import { RowOptionsModal } from './RowOptionsModal';

@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 
-import { Icon, Tooltip } from '@grafana/ui';
+import { Icon, Tooltip } from '@grafana-ui/index';
 
 import { FuncInstance } from '../gfunc';
 

@@ -1,7 +1,7 @@
 import { Action } from 'redux';
 
 import { DataSourcePluginMeta, PluginType } from '@data/index';
-import { LinkButton, FilterInput } from '@grafana/ui';
+import { LinkButton, FilterInput } from '@grafana-ui/index';
 import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
 import { PluginsErrorsInfo } from '@grafana-module/app/features/plugins/components/PluginsErrorsInfo';
 import { DataSourcePluginCategory, StoreState, useDispatch, useSelector } from '@grafana-module/app/types';

@@ -1,4 +1,4 @@
-import { PluginSignatureBadge, Stack } from '@grafana/ui';
+import { PluginSignatureBadge, Stack } from '@grafana-ui/index';
 
 import { isPluginUpdatable } from '../helpers';
 import { CatalogPlugin } from '../types';

@@ -2,7 +2,7 @@ import { useId } from '@react-aria/utils';
 import { useCallback, useState } from 'react';
 import * as React from 'react';
 
-import { TextArea, useStyles2 } from '@grafana/ui';
+import { TextArea, useStyles2 } from '@grafana-ui/index';
 
 import { getStyles } from '../../dashboard-scene/settings/variables/components/VariableTextAreaField';
 import { VariableQueryEditorProps } from '../types';

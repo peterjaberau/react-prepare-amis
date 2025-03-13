@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import { VizPanel } from '@scenes/index';
-import { Button, Stack, Text } from '@grafana/ui';
+import { Button, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { MultiSelectedEditableDashboardElement } from '../scene/types/MultiSelectedEditableDashboardElement';

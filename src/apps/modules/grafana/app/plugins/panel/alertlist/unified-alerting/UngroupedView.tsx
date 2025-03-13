@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useLocation } from 'react-use';
 
 import { GrafanaTheme2, intervalToAbbreviatedDurationString } from '@data/index';
-import { Icon, Stack, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, useStyles2 } from '@grafana-ui/index';
 import alertDef from '@grafana-module/app/features/alerting/state/alertDef';
 import { Spacer } from '@grafana-module/app/features/alerting/unified/components/Spacer';
 import { fromCombinedRule, stringifyIdentifier } from '@grafana-module/app/features/alerting/unified/utils/rule-id';

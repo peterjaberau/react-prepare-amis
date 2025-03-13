@@ -5,8 +5,8 @@ import { useAsync } from 'react-use';
 import { GrafanaTheme2, ScopedVars } from '@data/index';
 import { sanitize, sanitizeUrl } from '@data/text/sanitize';
 import { DashboardLink } from '@schema/index';
-import { Dropdown, Icon, Button, Menu, ScrollContainer, useStyles2 } from '@grafana/ui';
-import { ButtonLinkProps, LinkButton } from '@grafana/ui/src/components/Button';
+import { Dropdown, Icon, Button, Menu, ScrollContainer, useStyles2 } from '@grafana-ui/index';
+import { ButtonLinkProps, LinkButton } from '@grafana-ui/components/Button';
 import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
 import { DashboardSearchItem } from '@grafana-module/app/features/search/types';
 

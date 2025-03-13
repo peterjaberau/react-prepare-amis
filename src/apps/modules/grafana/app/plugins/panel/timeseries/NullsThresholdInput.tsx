@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { rangeUtil } from '@data/index';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 export enum InputPrefix {
   LessThan = 'lessthan',

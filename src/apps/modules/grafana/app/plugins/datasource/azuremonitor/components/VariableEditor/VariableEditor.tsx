@@ -4,7 +4,7 @@ import { useEffectOnce } from 'react-use';
 
 import { SelectableValue } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { Alert, Field, Select, Space } from '@grafana/ui';
+import { Alert, Field, Select, Space } from '@grafana-ui/index';
 
 import UrlBuilder from '../../azure_monitor/url_builder';
 import DataSource from '../../datasource';

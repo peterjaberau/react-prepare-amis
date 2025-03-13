@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, InlineField, InlineFieldRow, useStyles2 } from '@grafana/ui';
+import { Alert, InlineField, InlineFieldRow, useStyles2 } from '@grafana-ui/index';
 
 import { AdHocFilter } from './_importedDependencies/components/AdHocFilter/AdHocFilter';
 import { AdHocVariableFilter } from './_importedDependencies/components/AdHocFilter/types';

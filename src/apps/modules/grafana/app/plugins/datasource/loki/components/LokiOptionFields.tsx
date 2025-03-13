@@ -6,7 +6,7 @@ import * as React from 'react';
 // Types
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { InlineFormLabel, RadioButtonGroup, InlineField, Input, Select, Stack } from '@grafana/ui';
+import { InlineFormLabel, RadioButtonGroup, InlineField, Input, Select, Stack } from '@grafana-ui/index';
 
 import { getLokiQueryType } from '../queryUtils';
 import { LokiQuery, LokiQueryDirection, LokiQueryType } from '../types';

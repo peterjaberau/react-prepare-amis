@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ReactElement } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { FieldSet, InlineSwitch, Stack, Text, useStyles2 } from '@grafana/ui';
+import { FieldSet, InlineSwitch, Stack, Text, useStyles2 } from '@grafana-ui/index';
 
 export interface RuleEditorSectionProps {
   title: string;

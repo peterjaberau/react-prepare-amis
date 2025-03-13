@@ -3,7 +3,7 @@ import { useLocalStorage } from 'react-use';
 import { uniqBy } from 'lodash';
 
 import { TimeOption, TimeRange, isDateTime, rangeUtil, toUtc } from '@data/index';
-import { TimeRangePicker } from '@grafana/ui';
+import { TimeRangePicker } from '@grafana-ui/index';
 
 import { SceneObjectBase } from '../core/SceneObjectBase';
 import { sceneGraph } from '../core/sceneGraph';

@@ -2,7 +2,7 @@ import { sortBy as _sortBy } from 'lodash';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { CustomScrollbar, Icon } from '@grafana/ui';
+import { CustomScrollbar, Icon } from '@grafana-ui/index';
 import { TimeSeries } from '@grafana-module/app/core/core';
 
 import { LegendStat, LegendItem, LEGEND_STATS } from './LegendSeriesItem';

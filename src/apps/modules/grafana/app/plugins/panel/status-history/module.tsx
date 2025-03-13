@@ -1,6 +1,6 @@
 import { FieldColorModeId, FieldConfigProperty, PanelPlugin } from '@data/index';
 import { AxisPlacement, VisibilityMode } from '@schema/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { StatusHistoryPanel } from './StatusHistoryPanel';
 import { Options, FieldConfig, defaultFieldConfig } from './panelcfg.gen';

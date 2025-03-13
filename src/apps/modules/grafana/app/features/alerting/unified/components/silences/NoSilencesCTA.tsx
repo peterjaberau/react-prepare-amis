@@ -1,4 +1,4 @@
-import { CallToActionCard, EmptyState, LinkButton } from '@grafana/ui';
+import { CallToActionCard, EmptyState, LinkButton } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 

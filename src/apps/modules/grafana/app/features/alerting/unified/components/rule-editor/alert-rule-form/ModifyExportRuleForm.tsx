@@ -2,7 +2,7 @@ import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useAsync } from 'react-use';
 
-import { Button, LinkButton, LoadingPlaceholder, Stack } from '@grafana/ui';
+import { Button, LinkButton, LoadingPlaceholder, Stack } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

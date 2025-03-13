@@ -18,8 +18,8 @@ import {
   ValueLinkConfig,
 } from '@data/index';
 import { config } from '@runtime/index';
-import { AdHocFilterItem, Table } from '@grafana/ui';
-import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR } from '@grafana/ui/src/components/Table/types';
+import { AdHocFilterItem, Table } from '@grafana-ui/index';
+import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR } from '@grafana-ui/components/Table/types';
 import { LogsFrame } from '@grafana-module/app/features/logs/logsFrame';
 
 import { getFieldLinksForExplore } from '../utils/links';

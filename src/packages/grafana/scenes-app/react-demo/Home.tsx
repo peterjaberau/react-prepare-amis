@@ -1,5 +1,5 @@
 import { SceneContextProvider, CustomVariable } from '@scenes-react/index';
-import { Stack, TextLink } from '@grafana/ui';
+import { Stack, TextLink } from '@grafana-ui/index';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';

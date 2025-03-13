@@ -20,7 +20,7 @@ import {
   VariableValueSelectors,
 } from '@scenes/index';
 import { getQueryRunnerWithRandomWalkQuery } from './utils';
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 import { NewSceneObjectAddedEvent } from '@scenes/services/UrlSyncManager';
 
 export function getUrlSyncTest(defaults: SceneAppPageState) {

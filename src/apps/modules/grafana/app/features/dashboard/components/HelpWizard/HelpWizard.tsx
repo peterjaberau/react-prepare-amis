@@ -19,7 +19,7 @@ import {
   ClipboardButton,
   Icon,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';

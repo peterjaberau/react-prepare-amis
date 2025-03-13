@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Badge } from '@grafana/ui';
+import { Badge } from '@grafana-ui/index';
 
 export function PluginDeprecatedBadge(): React.ReactElement {
   return (

@@ -6,7 +6,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Alert, Icon, Input, LoadingBar, useStyles2 } from '@grafana/ui';
+import { Alert, Icon, Input, LoadingBar, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { skipToken, useGetFolderQuery } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
 import { DashboardViewItemWithUIItems, DashboardsTreeItem } from '@grafana-module/app/features/browse-dashboards/types';

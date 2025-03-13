@@ -1,5 +1,5 @@
 import { DataFrame } from '@data/index';
-import { MenuItem, MenuGroup, ContextMenu, IconName } from '@grafana/ui';
+import { MenuItem, MenuGroup, ContextMenu, IconName } from '@grafana-ui/index';
 
 import { ClickedItemData, SelectedView } from '../types';
 

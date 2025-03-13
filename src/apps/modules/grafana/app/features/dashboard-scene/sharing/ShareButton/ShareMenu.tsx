@@ -5,7 +5,7 @@ import * as React from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
-import { Icon, IconName, Menu, useStyles2 } from '@grafana/ui';
+import { Icon, IconName, Menu, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';
 import { AccessControlAction } from '@grafana-module/app/types';

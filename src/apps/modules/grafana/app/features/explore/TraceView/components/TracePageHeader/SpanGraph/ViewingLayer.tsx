@@ -17,7 +17,7 @@ import cx from 'classnames';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { withTheme2, stylesFactory, Button } from '@grafana/ui';
+import { withTheme2, stylesFactory, Button } from '@grafana-ui/index';
 
 import { autoColor } from '../../Theme';
 import { TUpdateViewRangeTimeFunction, ViewRange, ViewRangeTimeUpdate, TNil } from '../../index';

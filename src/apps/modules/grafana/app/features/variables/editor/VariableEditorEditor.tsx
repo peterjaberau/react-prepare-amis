@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import { GrafanaTheme2, LoadingState, SelectableValue, VariableHide, VariableType } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, HorizontalGroup, Icon, Themeable2, withTheme2 } from '@grafana/ui';
+import { Button, HorizontalGroup, Icon, Themeable2, withTheme2 } from '@grafana-ui/index';
 
 import { StoreState, ThunkDispatch } from '../../../types';
 import { VariableHideSelect } from '../../dashboard-scene/settings/variables/components/VariableHideSelect';

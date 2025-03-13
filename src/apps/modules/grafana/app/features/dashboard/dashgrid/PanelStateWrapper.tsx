@@ -31,7 +31,7 @@ import {
   PanelContextProvider,
   SeriesVisibilityChangeMode,
   AdHocFilterItem,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import config from '@grafana-module/app/core/config';
 import { profiler } from '@grafana-module/app/core/profiler';

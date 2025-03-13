@@ -4,7 +4,7 @@ import { PureComponent } from 'react';
 
 import { GrafanaTheme2, QueryEditorHelpProps } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Themeable2, withTheme2 } from '@grafana/ui';
+import { Themeable2, withTheme2 } from '@grafana-ui/index';
 
 import LokiLanguageProvider from '../LanguageProvider';
 import { escapeLabelValueInExactSelector } from '../languageUtils';

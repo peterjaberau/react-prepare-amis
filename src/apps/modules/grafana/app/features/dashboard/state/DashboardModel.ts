@@ -17,10 +17,10 @@ import {
   TypedVariableModel,
   UrlQueryValue,
 } from '@data/index';
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { RefreshEvent, TimeRangeUpdatedEvent, config } from '@runtime/index';
 import { Dashboard, DashboardLink, VariableModel } from '@schema/index';
-import { DEFAULT_ANNOTATION_COLOR } from '@grafana/ui';
+import { DEFAULT_ANNOTATION_COLOR } from '@grafana-ui/index';
 import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT, REPEAT_DIR_VERTICAL } from '@grafana-module/app/core/constants';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { sortedDeepCloneWithoutNulls } from '@grafana-module/app/core/utils/object';

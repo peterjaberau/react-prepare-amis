@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { EmptyState, Stack, TextLink, useStyles2 } from '@grafana/ui';
+import { EmptyState, Stack, TextLink, useStyles2 } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { ViewProps } from '@grafana-module/app/features/datasources/components/DataSourcesList';

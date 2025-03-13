@@ -1,7 +1,7 @@
 import { debounce } from 'lodash';
 
 import { getBackendSrv } from '@runtime/index';
-import { FetchDataArgs } from '@grafana/ui';
+import { FetchDataArgs } from '@grafana-ui/index';
 import { updateNavIndex } from '@grafana-module/app/core/actions';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';

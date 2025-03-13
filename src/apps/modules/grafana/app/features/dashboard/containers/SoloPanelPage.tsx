@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, useStyles2 } from '@grafana/ui';
+import { Alert, useStyles2 } from '@grafana-ui/index';
 import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';

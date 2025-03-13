@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Tooltip, Icon, InteractiveTable, type CellProps, Column } from '@grafana/ui';
+import { Tooltip, Icon, InteractiveTable, type CellProps, Column } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { LdapRole } from '@grafana-module/app/types';
 

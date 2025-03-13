@@ -2,7 +2,7 @@ import { cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
 import { CoreApp, DataFrame, DataFrameType, Field, LinkModel, LogRowModel } from '@data/index';
-import { PopoverContent, Themeable2, withTheme2 } from '@grafana/ui';
+import { PopoverContent, Themeable2, withTheme2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { calculateLogsLabelStats, calculateStats } from '../utils';

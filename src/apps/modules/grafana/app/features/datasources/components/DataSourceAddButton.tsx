@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
 import { config } from '@runtime/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { ROUTES } from '@grafana-module/app/features/connections/constants';

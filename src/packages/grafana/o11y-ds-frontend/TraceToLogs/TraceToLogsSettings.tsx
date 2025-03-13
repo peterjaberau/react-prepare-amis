@@ -5,7 +5,7 @@ import * as React from 'react';
 import { DataSourceJsonData, DataSourceInstanceSettings, DataSourcePluginOptionsEditorProps } from '@data/index';
 import { ConfigDescriptionLink, ConfigSection } from '@grafana/plugin-ui';
 import { DataSourcePicker } from '@runtime/index';
-import { InlineField, InlineFieldRow, Input, InlineSwitch } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Input, InlineSwitch } from '@grafana-ui/index';
 
 import { IntervalInput } from '../IntervalInput/IntervalInput';
 

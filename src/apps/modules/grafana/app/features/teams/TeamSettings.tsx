@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { ConnectedProps, connect } from 'react-redux';
 
-import { Button, Field, FieldSet, Input, Stack } from '@grafana/ui';
+import { Button, Field, FieldSet, Input, Stack } from '@grafana-ui/index';
 import { TeamRolePicker } from '@grafana-module/app/core/components/RolePicker/TeamRolePicker';
 import { useRoleOptions } from '@grafana-module/app/core/components/RolePicker/hooks';
 import { SharedPreferences } from '@grafana-module/app/core/components/SharedPreferences/SharedPreferences';

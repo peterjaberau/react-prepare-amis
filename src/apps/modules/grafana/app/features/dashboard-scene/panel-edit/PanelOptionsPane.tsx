@@ -30,7 +30,7 @@ import {
   Stack,
   ToolbarButton,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { OptionFilter } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
 import { getPanelPluginNotFound } from '@grafana-module/app/features/panel/components/PanelPluginError';

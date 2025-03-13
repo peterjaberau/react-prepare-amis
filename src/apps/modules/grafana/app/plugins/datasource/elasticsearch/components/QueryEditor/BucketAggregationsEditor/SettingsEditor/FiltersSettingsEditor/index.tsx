@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { uniqueId } from 'lodash';
 import { useEffect, useRef } from 'react';
 
-import { InlineField, Input, QueryField } from '@grafana/ui';
+import { InlineField, Input, QueryField } from '@grafana-ui/index';
 
 import { useDispatch, useStatelessReducer } from '../../../../../hooks/useStatelessReducer';
 import { Filters } from '../../../../../types';

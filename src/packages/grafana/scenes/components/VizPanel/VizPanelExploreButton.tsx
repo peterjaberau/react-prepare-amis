@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 import { DataQuery } from '@schema/index';
 import { useAsync } from 'react-use';
 import { SceneComponentProps, SceneObjectState } from '../../core/types';

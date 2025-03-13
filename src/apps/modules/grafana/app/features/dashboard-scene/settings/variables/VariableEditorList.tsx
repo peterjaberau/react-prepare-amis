@@ -5,7 +5,7 @@ import { ReactElement } from 'react';
 
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable, SceneVariableState } from '@scenes/index';
-import { useStyles2, Stack, Button, EmptyState, TextLink } from '@grafana/ui';
+import { useStyles2, Stack, Button, EmptyState, TextLink } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { VariablesDependenciesButton } from '../../variables/VariablesDependenciesButton';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import React from 'react';
 
 import { CoreApp, GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { getSceneQueryRunner, QueryEditor } from './QueryEditor';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';

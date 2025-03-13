@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { Field, Select } from '@grafana/ui';
+import { Field, Select } from '@grafana-ui/index';
 
 interface VariableQueryFieldProps {
   onChange: (value: string) => void;

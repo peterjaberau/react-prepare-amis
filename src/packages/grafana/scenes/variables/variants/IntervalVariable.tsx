@@ -1,6 +1,6 @@
 import { rangeUtil, SelectableValue } from '@data/index';
 import { VariableRefresh } from '@schema/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 import React from 'react';
 import { Observable, of } from 'rxjs';
 import { sceneGraph } from '../../core/sceneGraph';

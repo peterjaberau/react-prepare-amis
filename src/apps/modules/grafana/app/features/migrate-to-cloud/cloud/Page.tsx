@@ -1,4 +1,4 @@
-import { Box, Stack } from '@grafana/ui';
+import { Box, Stack } from '@grafana-ui/index';
 
 import { InfoPane } from './EmptyState/InfoPane';
 import { MigrationStepsPane } from './EmptyState/MigrationStepsPane';

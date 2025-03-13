@@ -15,7 +15,7 @@ import {
 } from '@data/index';
 import { getDataSourceSrv, locationService } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { Button, HorizontalGroup, InlineFormLabel, Modal, ScrollContainer, stylesFactory } from '@grafana/ui';
+import { Button, HorizontalGroup, InlineFormLabel, Modal, ScrollContainer, stylesFactory } from '@grafana-ui/index';
 import { PluginHelp } from '@grafana-module/app/core/components/PluginHelp/PluginHelp';
 import config from '@grafana-module/app/core/config';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';

@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { QueryEditorProps, SelectableValue } from '@data/index';
 import { EditorField, EditorRow, InlineSelect } from '@grafana/plugin-ui';
-import { ConfirmModal, Input, RadioButtonGroup, Space } from '@grafana/ui';
+import { ConfirmModal, Input, RadioButtonGroup, Space } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import { DEFAULT_METRICS_QUERY } from '../../../defaultQueries';

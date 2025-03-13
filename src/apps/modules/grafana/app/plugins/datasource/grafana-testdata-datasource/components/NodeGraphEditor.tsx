@@ -1,4 +1,4 @@
-import { Input, InlineFieldRow, InlineField, Select } from '@grafana/ui';
+import { Input, InlineFieldRow, InlineField, Select } from '@grafana-ui/index';
 
 import { NodesQuery, TestDataDataQuery } from '../dataquery';
 

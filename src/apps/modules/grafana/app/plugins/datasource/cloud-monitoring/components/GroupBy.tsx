@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField, EditorFieldGroup } from '@grafana/plugin-ui';
-import { MultiSelect } from '@grafana/ui';
+import { MultiSelect } from '@grafana-ui/index';
 
 import { SYSTEM_LABELS } from '../constants';
 import { labelsToGroupedOptions } from '../functions';

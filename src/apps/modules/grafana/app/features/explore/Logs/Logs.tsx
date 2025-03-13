@@ -47,8 +47,8 @@ import {
   SeriesVisibilityChangeMode,
   Themeable2,
   withTheme2,
-} from '@grafana/ui';
-import { mapMouseEventToMode } from '@grafana/ui/src/components/VizLegend/utils';
+} from '@grafana-ui/index';
+import { mapMouseEventToMode } from '@grafana-ui/components/VizLegend/utils';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import store from '@grafana-module/app/core/store';
 import { createAndCopyShortLink, getLogsPermalinkRange } from '@grafana-module/app/core/utils/shortLinks';

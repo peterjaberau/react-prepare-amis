@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import uPlot, { TypedArray, Scale } from 'uplot';
 
 import { AbsoluteTimeRange } from '@data/index';
-import { UPlotConfigBuilder, Button } from '@grafana/ui';
+import { UPlotConfigBuilder, Button } from '@grafana-ui/index';
 
 interface ThresholdControlsPluginProps {
   config: UPlotConfigBuilder;

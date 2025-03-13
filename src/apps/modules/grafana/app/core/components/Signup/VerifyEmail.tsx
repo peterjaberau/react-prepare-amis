@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { getBackendSrv } from '@runtime/index';
-import { Field, Input, Button, Legend, Container, LinkButton, Stack } from '@grafana/ui';
+import { Field, Input, Button, Legend, Container, LinkButton, Stack } from '@grafana-ui/index';
 import { getConfig } from '@grafana-module/app/core/config';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { Trans } from '@grafana-module/app/core/internationalization';

@@ -2,7 +2,7 @@ import { IMarkdownString, languages } from 'monaco-editor';
 
 import { SelectableValue } from '@data/index';
 import { isFetchError } from '@runtime/index';
-import type { Monaco, monacoTypes } from '@grafana/ui';
+import type { Monaco, monacoTypes } from '@grafana-ui/index';
 
 import TempoLanguageProvider from '../language_provider';
 

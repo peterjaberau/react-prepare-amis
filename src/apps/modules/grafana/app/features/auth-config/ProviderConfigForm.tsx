@@ -15,7 +15,7 @@ import {
   Menu,
   Stack,
   Switch,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { FormPrompt } from '../../core/components/FormPrompt/FormPrompt';
 import { Page } from '../../core/components/Page/Page';

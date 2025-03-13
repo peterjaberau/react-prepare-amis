@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { getAlignmentPickerData } from '../functions';
 import { PreprocessorType, TimeSeriesList, MetricKind, ValueTypes } from '../types/query';

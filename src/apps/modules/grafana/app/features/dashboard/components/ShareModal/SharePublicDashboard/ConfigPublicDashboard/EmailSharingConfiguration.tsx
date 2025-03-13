@@ -3,7 +3,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { useWindowSize } from 'react-use';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { FieldSet, Button, ButtonGroup, Field, Input, RadioButtonGroup, Spinner, useStyles2 } from '@grafana/ui';
+import { FieldSet, Button, ButtonGroup, Field, Input, RadioButtonGroup, Spinner, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import {

@@ -15,7 +15,7 @@ import {
   TextLink,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

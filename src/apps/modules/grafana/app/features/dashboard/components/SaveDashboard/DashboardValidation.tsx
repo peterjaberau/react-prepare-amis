@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { FetchError } from '@runtime/index';
-import { Alert, useStyles2 } from '@grafana/ui';
+import { Alert, useStyles2 } from '@grafana-ui/index';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 
 import { DashboardModel } from '../../state/DashboardModel';

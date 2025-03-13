@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, PanelPluginMeta, SelectableValue } from '@data/index';
-import { Icon, Button, MultiSelect, useStyles2 } from '@grafana/ui';
+import { Icon, Button, MultiSelect, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { getAllPanelPluginMeta } from '@grafana-module/app/features/panel/state/util';
 

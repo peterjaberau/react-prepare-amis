@@ -4,8 +4,8 @@ import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Icon, Link, useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { Icon, Link, useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 import { getPanelPluginNotFound } from '@grafana-module/app/features/panel/components/PanelPluginError';
 import { PanelTypeCard } from '@grafana-module/app/features/panel/components/VizTypePicker/PanelTypeCard';
 

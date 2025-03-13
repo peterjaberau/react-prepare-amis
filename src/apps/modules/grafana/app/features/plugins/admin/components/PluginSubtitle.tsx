@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Alert, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { InstallControlsWarning } from '../components/InstallControls';
 import { getLatestCompatibleVersion, hasInstallControlWarning } from '../helpers';

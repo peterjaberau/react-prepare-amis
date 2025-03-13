@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2, store } from '@data/index';
-import { Drawer, ToolbarButton, useStyles2 } from '@grafana/ui';
+import { Drawer, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 import { appEvents } from '@grafana-module/app/core/app_events';
 import { t } from '@grafana-module/app/core/internationalization';
 import { RecordHistoryEntryEvent } from '@grafana-module/app/types/events';

@@ -2,14 +2,14 @@ import { css } from '@emotion/css';
 import { memo } from 'react';
 
 import { Action, GrafanaTheme2, httpMethodOptions, HttpRequestMethod, VariableSuggestion } from '@data/index';
-import { Switch } from '@grafana/ui/';
-import { Field } from '@grafana/ui/src/components/Forms/Field';
-import { InlineField } from '@grafana/ui/src/components/Forms/InlineField';
-import { InlineFieldRow } from '@grafana/ui/src/components/Forms/InlineFieldRow';
-import { RadioButtonGroup } from '@grafana/ui/src/components/Forms/RadioButtonGroup/RadioButtonGroup';
-import { JSONFormatter } from '@grafana/ui/src/components/JSONFormatter/JSONFormatter';
-import { useStyles2 } from '@grafana/ui/src/themes';
-import { t } from '@grafana/ui/src/utils/i18n';
+import { Switch } from '@grafana-ui/index';
+import { Field } from '@grafana-ui/components/Forms/Field';
+import { InlineField } from '@grafana-ui/components/Forms/InlineField';
+import { InlineFieldRow } from '@grafana-ui/components/Forms/InlineFieldRow';
+import { RadioButtonGroup } from '@grafana-ui/components/Forms/RadioButtonGroup/RadioButtonGroup';
+import { JSONFormatter } from '@grafana-ui/components/JSONFormatter/JSONFormatter';
+import { useStyles2 } from '@grafana-ui/themes';
+import { t } from '@grafana-ui/utils/i18n';
 
 import { HTMLElementType, SuggestionsInput } from '../transformers/suggestionsInput/SuggestionsInput';
 

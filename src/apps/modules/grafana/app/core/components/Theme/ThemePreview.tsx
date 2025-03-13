@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2, ThemeContext } from '@data/index';
-import { Box, Divider, Icon, Stack, useStyles2 } from '@grafana/ui';
+import { Box, Divider, Icon, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { Trans } from '../../internationalization';
 import { Branding } from '../Branding/Branding';

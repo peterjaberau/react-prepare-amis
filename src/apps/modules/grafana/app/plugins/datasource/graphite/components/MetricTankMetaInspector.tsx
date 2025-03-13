@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { PureComponent } from 'react';
 
 import { MetadataInspectorProps, rangeUtil } from '@data/index';
-import { stylesFactory } from '@grafana/ui';
+import { stylesFactory } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 
 import { GraphiteDatasource } from '../datasource';

@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 import { useAsync } from 'react-use';
 
 import { urlUtil } from '@data/index';
-import { Alert, Button, LinkButton } from '@grafana/ui';
+import { Alert, Button, LinkButton } from '@grafana-ui/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 import { useSelector } from '@grafana-module/app/types';

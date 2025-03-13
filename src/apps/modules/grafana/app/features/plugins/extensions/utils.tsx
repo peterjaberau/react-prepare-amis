@@ -19,7 +19,7 @@ import {
   PluginExtensionPoints,
 } from '@data/index';
 import { reportInteraction, config, AppPluginConfig } from '@runtime/index';
-import { Modal } from '@grafana/ui';
+import { Modal } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { getPluginSettings } from '@grafana-module/app/features/plugins/pluginSettings';
 import { ShowModalReactEvent } from '@grafana-module/app/types/events';

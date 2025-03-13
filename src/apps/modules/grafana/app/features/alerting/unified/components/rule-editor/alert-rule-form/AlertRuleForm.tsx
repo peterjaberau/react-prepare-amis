@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { Button, ConfirmModal, Spinner, Stack, useStyles2 } from '@grafana/ui';
+import { Button, ConfirmModal, Spinner, Stack, useStyles2 } from '@grafana-ui/index';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { contextSrv } from '@grafana-module/app/core/core';

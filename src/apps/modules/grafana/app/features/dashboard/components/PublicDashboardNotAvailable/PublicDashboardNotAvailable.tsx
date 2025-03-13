@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
-import { useStyles2 } from '@grafana/ui/src';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { Branding } from '../../../../core/components/Branding/Branding';
 import { getLoginStyles } from '../../../../core/components/Login/LoginLayout';

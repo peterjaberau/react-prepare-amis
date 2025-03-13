@@ -12,7 +12,7 @@ import { DashboardEditPaneSplitter } from '../edit-pane/DashboardEditPaneSplitte
 import { DashboardScene } from './DashboardScene';
 import { PanelSearchLayout } from './PanelSearchLayout';
 import { DashboardAngularDeprecationBanner } from './angular/DashboardAngularDeprecationBanner';
-import { Badge } from '@grafana/ui';
+import { Badge } from '@grafana-ui/index';
 
 export function DashboardSceneRenderer({ model }: SceneComponentProps<DashboardScene>) {
   const { controls, overlay, editview, editPanel, viewPanelScene, panelSearch, panelsPerRow, isEditing } =

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
 import { t } from '@grafana-module/app/core/internationalization';
 

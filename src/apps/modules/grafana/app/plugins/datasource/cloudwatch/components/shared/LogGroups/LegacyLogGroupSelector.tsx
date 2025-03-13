@@ -4,8 +4,8 @@ import * as React from 'react';
 
 import { AppEvents, SelectableValue, toOption } from '@data/index';
 import { getAppEvents } from '@runtime/index';
-import { MultiSelect } from '@grafana/ui';
-import { InputActionMeta } from '@grafana/ui/src/components/Select/types';
+import { MultiSelect } from '@grafana-ui/index';
+import { InputActionMeta } from '@grafana-ui/components/Select/types';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import { appendTemplateVariables } from '../../../utils/utils';

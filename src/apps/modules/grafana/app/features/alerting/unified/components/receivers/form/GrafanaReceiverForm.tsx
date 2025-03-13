@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 
 import { locationService } from '@runtime/index';
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 import {
   useCreateContactPoint,
   useUpdateContactPoint,

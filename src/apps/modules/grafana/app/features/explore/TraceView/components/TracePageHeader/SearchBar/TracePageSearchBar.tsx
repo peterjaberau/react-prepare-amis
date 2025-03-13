@@ -16,8 +16,8 @@ import { css } from '@emotion/css';
 import { memo, Dispatch, SetStateAction, useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Switch, useStyles2 } from '@grafana/ui';
-import { getButtonStyles } from '@grafana/ui/src/components/Button';
+import { Button, Switch, useStyles2 } from '@grafana-ui/index';
+import { getButtonStyles } from '@grafana-ui/components/Button';
 
 import { SearchProps } from '../../../useSearch';
 import { Trace } from '../../types';

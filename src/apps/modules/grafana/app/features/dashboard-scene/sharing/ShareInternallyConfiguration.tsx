@@ -1,4 +1,4 @@
-import { Label, Spinner, Stack, Switch } from '@grafana/ui';
+import { Label, Spinner, Stack, Switch } from '@grafana-ui/index';
 
 import { t, Trans } from '../../../core/internationalization';
 import { ThemePicker } from '../../dashboard/components/ShareModal/ThemePicker';

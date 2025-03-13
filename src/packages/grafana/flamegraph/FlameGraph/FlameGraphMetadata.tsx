@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo, ReactNode } from 'react';
 
 import { getValueFormat, GrafanaTheme2 } from '@data/index';
-import { Icon, IconButton, Tooltip, useStyles2 } from '@grafana/ui';
+import { Icon, IconButton, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { ClickedItemData } from '../types';
 

@@ -13,8 +13,8 @@ import {
   PopoverController,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
-import { closePopover } from '@grafana/ui/src/utils/closePopover';
+} from '@grafana-ui/index';
+import { closePopover } from '@grafana-ui/utils/closePopover';
 import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
 
 import { getPublicOrAbsoluteUrl } from '../resource';

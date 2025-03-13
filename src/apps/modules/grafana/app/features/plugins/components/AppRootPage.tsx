@@ -15,7 +15,7 @@ import {
   PluginContextProvider,
 } from '@data/index';
 import { config, locationSearchToObject } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
 import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';

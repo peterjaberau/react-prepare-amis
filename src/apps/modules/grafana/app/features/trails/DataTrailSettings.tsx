@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@scenes/index';
-import { Dropdown, Switch, ToolbarButton, useStyles2 } from '@grafana/ui';
+import { Dropdown, Switch, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { MetricScene } from './MetricScene';

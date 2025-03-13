@@ -3,7 +3,7 @@ import { PropsWithChildren, ReactNode } from 'react';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, LinkButton, Stack, Text, useStyles2 } from '@grafana/ui';
+import { IconButton, LinkButton, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { GrafanaRulesSourceSymbol, RulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
 import { RulesSourceApplication } from '@grafana-module/app/types/unified-alerting-dto';

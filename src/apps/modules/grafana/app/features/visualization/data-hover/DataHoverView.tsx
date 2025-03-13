@@ -10,7 +10,7 @@ import {
   LinkModel,
 } from '@data/index';
 import { SortOrder, TooltipDisplayMode } from '@schema/index';
-import { TextLink, useStyles2 } from '@grafana/ui';
+import { TextLink, useStyles2 } from '@grafana-ui/index';
 import { renderValue } from '@grafana-module/app/plugins/panel/geomap/utils/uiUtils';
 
 import { ExemplarHoverView } from './ExemplarHoverView';

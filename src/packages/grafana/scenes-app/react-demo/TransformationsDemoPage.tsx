@@ -1,4 +1,4 @@
-import { Select, Stack } from '@grafana/ui';
+import { Select, Stack } from '@grafana-ui/index';
 import React, { useState } from 'react';
 import { PageWrapper } from './PageWrapper';
 import { DemoVizLayout } from './utils';

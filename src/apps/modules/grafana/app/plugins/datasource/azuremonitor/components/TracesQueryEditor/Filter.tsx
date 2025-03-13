@@ -14,7 +14,7 @@ import {
   getSelectStyles,
   useTheme2,
   Checkbox,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { AzureMonitorQuery, AzureQueryType, AzureTracesFilter } from '../../dataquery.gen';
 import Datasource from '../../datasource';

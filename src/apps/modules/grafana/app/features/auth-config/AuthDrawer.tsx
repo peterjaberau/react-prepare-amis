@@ -3,7 +3,7 @@ import { JSX } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Drawer, Text, TextLink, Switch, useStyles2 } from '@grafana/ui';
+import { Button, Drawer, Text, TextLink, Switch, useStyles2 } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { StoreState } from '@grafana-module/app/types';
 

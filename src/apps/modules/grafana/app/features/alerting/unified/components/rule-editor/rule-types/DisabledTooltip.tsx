@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Tooltip } from '@grafana/ui';
+import { Tooltip } from '@grafana-ui/index';
 
 type Props = {
   visible: boolean;

@@ -19,7 +19,7 @@ import {
   Stack,
   regexValidation,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { PyroscopeDataSourceOptions } from './types';
 

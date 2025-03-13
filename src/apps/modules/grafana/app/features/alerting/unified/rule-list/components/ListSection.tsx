@@ -4,7 +4,7 @@ import { PropsWithChildren, ReactNode } from 'react';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, Stack, useStyles2 } from '@grafana/ui';
+import { IconButton, Stack, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { Spacer } from '../../components/Spacer';

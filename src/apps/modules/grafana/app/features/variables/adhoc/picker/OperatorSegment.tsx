@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { Segment } from '@grafana/ui';
+import { Segment } from '@grafana-ui/index';
 
 interface Props {
   value: string;

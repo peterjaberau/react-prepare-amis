@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 import { config } from '@runtime/index';
-import { IconButton, Text, Stack } from '@grafana/ui';
+import { IconButton, Text, Stack } from '@grafana-ui/index';
 
 import {
   CODE_MODE_SUGGESTIONS_INCOMPLETE_EVENT,

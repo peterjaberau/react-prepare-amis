@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue, StandardEditorContext } from '@data/index';
-import { InlineFieldRow, InlineField, RadioButtonGroup, Select } from '@grafana/ui';
+import { InlineFieldRow, InlineField, RadioButtonGroup, Select } from '@grafana-ui/index';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { GeomapInstanceState, Options, MapViewConfig } from '../types';

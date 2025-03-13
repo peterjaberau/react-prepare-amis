@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana/ui';
+import { Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana-ui/index';
 import { GrafanaTheme2, IconName } from '@data/index';
 import { css } from '@emotion/css';
 import { LoadingIndicator } from './LoadingIndicator';

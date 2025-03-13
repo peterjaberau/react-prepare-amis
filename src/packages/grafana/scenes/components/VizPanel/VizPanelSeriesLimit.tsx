@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { GrafanaTheme2, PanelData } from '@data/index';
-import { Button, Icon, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Icon, Tooltip, useStyles2 } from '@grafana-ui/index';
 import React from 'react';
 
 export interface Props {

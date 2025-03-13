@@ -3,7 +3,7 @@ import { ConnectedProps, connect } from 'react-redux';
 
 import { config, reportInteraction } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { Button, Dropdown, Menu, ToolbarButton } from '@grafana/ui';
+import { Button, Dropdown, Menu, ToolbarButton } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { useSelector } from '@grafana-module/app/types';
 

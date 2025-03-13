@@ -4,7 +4,7 @@ import * as React from 'react';
 import Highlighter from 'react-highlight-words';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Field, Label, useStyles2 } from '@grafana/ui';
+import { Field, Label, useStyles2 } from '@grafana-ui/index';
 
 import { OptionsPaneCategoryDescriptor } from './OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemOverrides } from './OptionsPaneItemOverrides';

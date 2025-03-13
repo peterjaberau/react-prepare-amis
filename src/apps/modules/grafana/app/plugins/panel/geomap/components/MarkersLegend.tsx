@@ -6,7 +6,7 @@ import { of } from 'rxjs';
 
 import { DataFrame, formattedValueToString, getFieldColorModeForField, GrafanaTheme2 } from '@data/index';
 import { getMinMaxAndDelta } from '@data/field/scale';
-import { useStyles2, VizLegendItem } from '@grafana/ui';
+import { useStyles2, VizLegendItem } from '@grafana-ui/index';
 import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
 import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
 import { getThresholdItems } from '@grafana-module/app/core/components/TimelineChart/utils';

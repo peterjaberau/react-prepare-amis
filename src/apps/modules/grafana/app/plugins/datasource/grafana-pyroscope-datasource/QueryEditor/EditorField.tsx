@@ -3,7 +3,7 @@ import { ComponentProps } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Field, Icon, PopoverContent, ReactUtils, Tooltip, useStyles2 } from '@grafana/ui';
+import { Field, Icon, PopoverContent, ReactUtils, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 interface EditorFieldProps extends ComponentProps<typeof Field> {
   label: string;

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';
 import { SLOQuery } from '../types/query';

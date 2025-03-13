@@ -1,7 +1,7 @@
 import { forwardRef, useState } from 'react';
 
-import { Input, IconButton } from '@grafana/ui';
-import { Props as InputProps } from '@grafana/ui/src/components/Input/Input';
+import { Input, IconButton } from '@grafana-ui/index';
+import { Props as InputProps } from '@grafana-ui/components/Input/Input';
 
 interface Props extends Omit<InputProps, 'type'> {}
 

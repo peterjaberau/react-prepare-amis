@@ -23,7 +23,7 @@ import {
   Text,
   useSplitter,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { ActiveTab as ContactPointsActiveTabs } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoints';

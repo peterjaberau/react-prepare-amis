@@ -17,7 +17,7 @@ import {
   Tag,
   Text,
   Tooltip,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
 import { fetchRoleOptions, updateUserRoles } from '@grafana-module/app/core/components/RolePicker/api';
 import { RolePickerBadges } from '@grafana-module/app/core/components/RolePickerDrawer/RolePickerBadges';

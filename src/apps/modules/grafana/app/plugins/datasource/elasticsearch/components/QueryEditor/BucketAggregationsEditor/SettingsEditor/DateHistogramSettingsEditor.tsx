@@ -3,7 +3,7 @@ import { useCallback, useRef } from 'react';
 import { GroupBase, OptionsOrGroups } from 'react-select';
 
 import { InternalTimeZones, SelectableValue } from '@data/index';
-import { InlineField, Input, Select, TimeZonePicker } from '@grafana/ui';
+import { InlineField, Input, Select, TimeZonePicker } from '@grafana-ui/index';
 
 import { calendarIntervals } from '../../../../QueryBuilder';
 import { useDispatch } from '../../../../hooks/useStatelessReducer';

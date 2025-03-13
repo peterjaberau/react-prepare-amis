@@ -1,4 +1,4 @@
-import type { Monaco } from '@grafana/ui';
+import type { Monaco } from '@grafana-ui/index';
 
 import {
   alertDetailsSnippet,

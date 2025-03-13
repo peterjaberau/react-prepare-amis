@@ -11,7 +11,7 @@ import {
   isSystemOverrideWithRef,
   SystemConfigOverrideRule,
 } from '@data/index';
-import { SeriesVisibilityChangeMode } from '@grafana/ui';
+import { SeriesVisibilityChangeMode } from '@grafana-ui/index';
 
 const displayOverrideRef = 'hideSeriesFrom';
 const isHideSeriesOverride = isSystemOverrideWithRef(displayOverrideRef);

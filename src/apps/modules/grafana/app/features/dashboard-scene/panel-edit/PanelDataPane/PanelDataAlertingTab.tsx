@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
-import { Alert, LoadingPlaceholder, Tab, useStyles2 } from '@grafana/ui';
+import { Alert, LoadingPlaceholder, Tab, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { RulesTable } from '@grafana-module/app/features/alerting/unified/components/rules/RulesTable';

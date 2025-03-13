@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { config } from '@runtime/index';
-import { Box, Stack, Tab, TabContent, TabsBar } from '@grafana/ui';
+import { Box, Stack, Tab, TabContent, TabsBar } from '@grafana-ui/index';
 
 import { AlertingPageWrapper } from '../components/AlertingPageWrapper';
 import { isLocalDevEnv } from '../utils/misc';

@@ -1,6 +1,6 @@
 import { DataSourcePluginOptionsEditorProps } from '@data/index';
 import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
-import { InlineField, InlineSwitch } from '@grafana/ui';
+import { InlineField, InlineSwitch } from '@grafana-ui/index';
 
 export function AlertingSettings({
   options,

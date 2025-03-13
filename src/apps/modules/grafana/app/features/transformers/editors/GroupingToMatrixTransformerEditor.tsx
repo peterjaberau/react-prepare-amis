@@ -11,7 +11,7 @@ import {
   TransformerCategory,
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { InlineField, InlineFieldRow, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Select } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { useAllFieldNamesFromDataFrames } from '../utils';

@@ -32,9 +32,9 @@ import {
   StackingMode,
   UPlotConfigBuilder,
   measureText,
-} from '@grafana/ui';
-import { AxisProps, UPLOT_AXIS_FONT_SIZE } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
-import { getStackingGroups } from '@grafana/ui/src/components/uPlot/utils';
+} from '@grafana-ui/index';
+import { AxisProps, UPLOT_AXIS_FONT_SIZE } from '@grafana-ui/components/uPlot/config/UPlotAxisBuilder';
+import { getStackingGroups } from '@grafana-ui/components/uPlot/utils';
 
 import { setClassicPaletteIdxs } from '../timeseries/utils';
 

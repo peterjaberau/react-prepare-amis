@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
 import { config } from '@runtime/index';
-import { Badge, Button, Checkbox, Column, ConfirmModal, InteractiveTable, Stack, Text } from '@grafana/ui';
+import { Badge, Button, Checkbox, Column, ConfirmModal, InteractiveTable, Stack, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { computeVersionDiff } from '@grafana-module/app/features/alerting/unified/utils/diff';
 import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';

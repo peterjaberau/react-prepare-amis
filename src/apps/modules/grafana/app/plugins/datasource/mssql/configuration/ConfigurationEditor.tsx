@@ -26,7 +26,7 @@ import {
   Divider,
   Field,
   Switch,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { AzureAuthSettings } from '../azureauth/AzureAuthSettings';
 import {

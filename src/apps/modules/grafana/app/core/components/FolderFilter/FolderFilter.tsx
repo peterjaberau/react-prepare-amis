@@ -3,7 +3,7 @@ import debounce from 'debounce-promise';
 import { useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { AsyncMultiSelect, Icon, Button, useStyles2 } from '@grafana/ui';
+import { AsyncMultiSelect, Icon, Button, useStyles2 } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';

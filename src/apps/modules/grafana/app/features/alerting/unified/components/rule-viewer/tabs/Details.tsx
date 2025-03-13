@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { formatDistanceToNowStrict } from 'date-fns';
 
 import { GrafanaTheme2, dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
-import { Icon, Stack, Text, TextLink, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, Text, TextLink, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 

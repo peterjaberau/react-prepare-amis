@@ -1,7 +1,7 @@
 import { useAsync } from 'react-use';
 
 import { getBackendSrv } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

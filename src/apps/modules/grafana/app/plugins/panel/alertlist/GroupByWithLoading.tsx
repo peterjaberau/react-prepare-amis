@@ -2,7 +2,7 @@ import { isEmpty, uniq } from 'lodash';
 import { useEffect, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Icon, MultiSelect } from '@grafana/ui';
+import { Icon, MultiSelect } from '@grafana-ui/index';
 import { useUnifiedAlertingSelector } from '@grafana-module/app/features/alerting/unified/hooks/useUnifiedAlertingSelector';
 import { fetchAllPromRulesAction } from '@grafana-module/app/features/alerting/unified/state/actions';
 import {

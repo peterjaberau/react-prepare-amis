@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { TableCellOptions } from '@schema/index';
-import { Field, Select, TableCellDisplayMode, useStyles2 } from '@grafana/ui';
+import { Field, Select, TableCellDisplayMode, useStyles2 } from '@grafana-ui/index';
 
 import { AutoCellOptionsEditor } from './cells/AutoCellOptionsEditor';
 import { BarGaugeCellOptionsEditor } from './cells/BarGaugeCellOptionsEditor';

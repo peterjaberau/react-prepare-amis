@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import { SelectableValue } from '@data/index';
-import { ActionMeta, Field, FieldValidationMessage, Stack, TextLink } from '@grafana/ui';
+import { ActionMeta, Field, FieldValidationMessage, Stack, TextLink } from '@grafana-ui/index';
 import { ContactPointSelector as ContactPointSelectorDropdown } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
 import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
 import { createRelativeUrl } from '@grafana-module/app/features/alerting/unified/utils/url';

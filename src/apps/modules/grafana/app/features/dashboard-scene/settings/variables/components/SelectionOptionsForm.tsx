@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent } from 'react';
 
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { VariableCheckboxField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableCheckboxField';
 import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
 

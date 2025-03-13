@@ -4,7 +4,7 @@ import { useEffectOnce } from 'react-use';
 import { AzureCredentials, AzureCloud, updateDatasourceCredentials } from '@grafana/azure-sdk';
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { HttpSettingsBaseProps } from '@grafana/ui/src/components/DataSourceSettings/types';
+import { HttpSettingsBaseProps } from '@grafana-ui/components/DataSourceSettings/types';
 
 import { getCredentials } from './AzureCredentialsConfig';
 import { AzureCredentialsForm } from './AzureCredentialsForm';

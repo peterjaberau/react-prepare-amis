@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { last } from 'lodash';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { DiffTitle } from './DiffTitle';
 import { DiffValues } from './DiffValues';

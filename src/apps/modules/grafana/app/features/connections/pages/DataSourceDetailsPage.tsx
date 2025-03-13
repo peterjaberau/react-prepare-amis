@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom-v5-compat';
 
-import { Alert, Badge } from '@grafana/ui';
+import { Alert, Badge } from '@grafana-ui/index';
 import { PluginDetailsPage } from '@grafana-module/app/features/plugins/admin/components/PluginDetailsPage';
 import { StoreState, useSelector, AppNotificationSeverity } from '@grafana-module/app/types';
 

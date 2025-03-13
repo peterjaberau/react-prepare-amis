@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { config } from '@runtime/index';
-import { AsyncSelectProps, AsyncSelect } from '@grafana/ui';
+import { AsyncSelectProps, AsyncSelect } from '@grafana-ui/index';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 import { AnnoKeyFolder, AnnoKeyFolderTitle } from '@grafana-module/app/features/apiserver/types';
 import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';

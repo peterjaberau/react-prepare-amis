@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2, QueryEditorProps, textUtil } from '@data/index';
-import { useStyles2, Stack } from '@grafana/ui';
+import { useStyles2, Stack } from '@grafana-ui/index';
 
 import OpenTsDatasource from '../datasource';
 import { OpenTsdbOptions, OpenTsdbQuery } from '../types';

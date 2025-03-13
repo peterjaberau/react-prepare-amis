@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
-import { Card, TagList, useTheme2 } from '@grafana/ui';
+import { Card, TagList, useTheme2 } from '@grafana-ui/index';
 
 interface DataSourceCardProps {
   ds: DataSourceInstanceSettings;

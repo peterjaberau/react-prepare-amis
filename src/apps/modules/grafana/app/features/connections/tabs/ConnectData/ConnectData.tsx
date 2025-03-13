@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { PluginType, GrafanaTheme2, SelectableValue } from '@data/index';
 import { locationSearchToObject, reportInteraction } from '@runtime/index';
-import { LoadingPlaceholder, EmptyState, Field, RadioButtonGroup, Tooltip, Combobox, useStyles2 } from '@grafana/ui';
+import { LoadingPlaceholder, EmptyState, Field, RadioButtonGroup, Tooltip, Combobox, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

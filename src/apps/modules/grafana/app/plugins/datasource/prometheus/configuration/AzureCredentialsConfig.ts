@@ -9,7 +9,7 @@ import {
   updateDatasourceCredentials,
 } from '@grafana/azure-sdk';
 import { DataSourceSettings, SelectableValue } from '@data/index';
-import { PromOptions } from '@grafana/prometheus';
+import { PromOptions } from '@prometheus/index';
 import { config } from '@runtime/index';
 
 export function getAzureCloudOptions(): Array<SelectableValue<string>> {

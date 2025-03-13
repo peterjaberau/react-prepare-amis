@@ -10,7 +10,7 @@ import {
   AnnotationEventFieldSource,
   getValueFormat,
 } from '@data/index';
-import { Select, Tooltip, Icon } from '@grafana/ui';
+import { Select, Tooltip, Icon } from '@grafana-ui/index';
 
 import { annotationEventNames, AnnotationFieldInfo } from '../standardAnnotationSupport';
 import { AnnotationQueryResponse } from '../types';

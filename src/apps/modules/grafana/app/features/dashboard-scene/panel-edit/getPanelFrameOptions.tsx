@@ -1,6 +1,6 @@
 import { config } from '@runtime/index';
 import { SceneTimeRangeLike, VizPanel } from '@scenes/index';
-import { DataLinksInlineEditor, Input, TextArea, Switch } from '@grafana/ui';
+import { DataLinksInlineEditor, Input, TextArea, Switch } from '@grafana-ui/index';
 import { GenAIPanelDescriptionButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIPanelDescriptionButton';
 import { GenAIPanelTitleButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIPanelTitleButton';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';

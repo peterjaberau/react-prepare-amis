@@ -11,7 +11,7 @@ import {
 import { getEmbeddedSceneDefaults, getQueryRunnerWithRandomWalkQuery } from './utils';
 import React from 'react';
 import { EmbeddedSceneWithContext, useTimeRange } from '@scenes-react/index';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { DemoVizLayout } from '../react-demo/utils';
 import { PlainGraphWithRandomWalk } from '../react-demo/PlainGraphWithRandomWalk';
 

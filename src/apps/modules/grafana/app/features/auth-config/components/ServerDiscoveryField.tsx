@@ -3,7 +3,7 @@ import { UseFormSetValue } from 'react-hook-form';
 
 import { AppEvents } from '@data/index';
 import { getAppEvents, getBackendSrv } from '@runtime/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 import { Trans } from '../../../core/internationalization';
 import { ServerDiscoveryFormData, SSOProviderDTO } from '../types';

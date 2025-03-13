@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { LinkButton, Stack } from '@grafana/ui';
+import { LinkButton, Stack } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import AlertRuleMenu from '@grafana-module/app/features/alerting/unified/components/rule-viewer/AlertRuleMenu';
 import { useDeleteModal } from '@grafana-module/app/features/alerting/unified/components/rule-viewer/DeleteModal';

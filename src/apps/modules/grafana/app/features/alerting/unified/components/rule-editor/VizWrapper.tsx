@@ -3,7 +3,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2, PanelData, ThresholdsConfig, isTimeSeriesFrames } from '@data/index';
 import { GraphThresholdsStyleMode } from '@schema/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { GraphContainer } from '@grafana-module/app/features/explore/Graph/GraphContainer';
 

@@ -7,7 +7,7 @@ import { useLatest } from 'react-use';
 import { v4 as uuidv4 } from 'uuid';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Monaco, monacoTypes, ReactMonacoEditor, useTheme2 } from '@grafana/ui';
+import { Monaco, monacoTypes, ReactMonacoEditor, useTheme2 } from '@grafana-ui/index';
 
 import { Props } from './MonacoQueryFieldProps';
 import { getOverrideServices } from './getOverrideServices';

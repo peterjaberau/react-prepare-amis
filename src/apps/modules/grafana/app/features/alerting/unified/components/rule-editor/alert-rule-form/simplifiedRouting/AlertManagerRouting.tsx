@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { CollapsableSection, Stack, useStyles2 } from '@grafana/ui';
+import { CollapsableSection, Stack, useStyles2 } from '@grafana-ui/index';
 import { RuleFormValues } from '@grafana-module/app/features/alerting/unified/types/rule-form';
 import { AlertManagerDataSource } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 

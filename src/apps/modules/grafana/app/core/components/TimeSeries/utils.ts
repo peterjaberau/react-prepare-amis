@@ -59,10 +59,10 @@ for (let i = 0; i < BIN_INCRS.length; i++) {
   BIN_INCRS[i] = 2 ** i;
 }
 
-import { UPlotConfigBuilder, UPlotConfigPrepFn } from '@grafana/ui/src/components/uPlot/config/UPlotConfigBuilder';
-import { getScaleGradientFn } from '@grafana/ui/src/components/uPlot/config/gradientFills';
-import { buildScaleKey } from '@grafana/ui/src/components/uPlot/internal';
-import { getStackingGroups, preparePlotData2 } from '@grafana/ui/src/components/uPlot/utils';
+import { UPlotConfigBuilder, UPlotConfigPrepFn } from '@grafana-ui/components/uPlot/config/UPlotConfigBuilder';
+import { getScaleGradientFn } from '@grafana-ui/components/uPlot/config/gradientFills';
+import { buildScaleKey } from '@grafana-ui/components/uPlot/internal';
+import { getStackingGroups, preparePlotData2 } from '@grafana-ui/components/uPlot/utils';
 
 const defaultFormatter = (v: any, decimals: DecimalCount = 1) => (v == null ? '-' : v.toFixed(decimals));
 

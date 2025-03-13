@@ -12,7 +12,7 @@ import {
   rangeUtil,
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { Button, Card, Icon, Stack } from '@grafana/ui';
+import { Button, Card, Icon, Stack } from '@grafana-ui/index';
 import { QueryOperationRow } from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationRow';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
 import { AlertDataQuery, AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';

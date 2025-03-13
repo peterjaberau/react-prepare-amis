@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 type Props = {
   onDismiss: () => void;

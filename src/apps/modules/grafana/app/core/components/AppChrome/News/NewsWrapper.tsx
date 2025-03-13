@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useMeasure } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { News } from '@grafana-module/app/plugins/panel/news/component/News';
 import { useNewsFeed } from '@grafana-module/app/plugins/panel/news/useNewsFeed';
 

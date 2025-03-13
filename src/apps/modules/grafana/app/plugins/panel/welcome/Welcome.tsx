@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 const helpOptions = [
   { value: 0, label: 'Documentation', href: 'https://grafana.com/docs/grafana/latest' },

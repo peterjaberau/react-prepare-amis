@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 
 import { AdHocFiltersVariable, AdHocFilterWithLabels, isMultiValueOperator } from './AdHocFiltersVariable';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { Button, Field, InputActionMeta, Select, useStyles2 } from '@grafana/ui';
+import { Button, Field, InputActionMeta, Select, useStyles2 } from '@grafana-ui/index';
 import { css, cx } from '@emotion/css';
 import { ControlsLabel } from '../../utils/ControlsLabel';
 import { getAdhocOptionSearcher } from './getAdhocOptionSearcher';

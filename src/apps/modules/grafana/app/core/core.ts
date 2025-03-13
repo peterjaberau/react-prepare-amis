@@ -1,4 +1,4 @@
-import { colors, JsonExplorer } from '@grafana/ui/';
+import { colors, JsonExplorer } from '@grafana-ui/index';
 
 import appEvents from './app_events';
 import { profiler } from './profiler';

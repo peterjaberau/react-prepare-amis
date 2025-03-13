@@ -4,7 +4,7 @@ import pluralize from 'pluralize';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, getTagColorsFromName, useStyles2 } from '@grafana/ui';
+import { Button, getTagColorsFromName, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { isPrivateLabel } from '../utils/labels';

@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 import Skeleton from 'react-loading-skeleton';
 
-import { Button, LinkButton, useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { Button, LinkButton, useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 import { Snapshot } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { AutoSizeInput, Select } from '@grafana/ui';
+import { AutoSizeInput, Select } from '@grafana-ui/index';
 
 import { LegendFormatMode } from '../../types';
 

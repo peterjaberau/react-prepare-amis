@@ -17,7 +17,7 @@ import {
   TimeZone,
 } from '@data/index';
 import { config } from '@runtime/index';
-import { Button, InlineField, Alert, useStyles2, SeriesVisibilityChangeMode } from '@grafana/ui';
+import { Button, InlineField, Alert, useStyles2, SeriesVisibilityChangeMode } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { mergeLogsVolumeDataFrames, isLogsVolumeLimited, getLogsVolumeMaximumRange } from '../../logs/utils';

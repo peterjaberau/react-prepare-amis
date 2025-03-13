@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react';
 
 import { GrafanaTheme2, VariableOrigin, DataLinkBuiltInVars } from '@data/index';
 import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
-import { Button, useTheme2 } from '@grafana/ui';
+import { Button, useTheme2 } from '@grafana-ui/index';
 
 import { DerivedFieldConfig } from '../types';
 

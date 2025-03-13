@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 interface Props {
   index: number;

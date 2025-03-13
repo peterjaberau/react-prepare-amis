@@ -1,5 +1,5 @@
 import { useQueryRunner, VizPanel } from '@scenes-react/index';
-import { Field, Select, Stack } from '@grafana/ui';
+import { Field, Select, Stack } from '@grafana-ui/index';
 import React, { useMemo, useState } from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';

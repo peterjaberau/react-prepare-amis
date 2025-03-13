@@ -2,7 +2,7 @@ import { useId } from '@react-aria/utils';
 import { FormEvent, PropsWithChildren } from 'react';
 import * as React from 'react';
 
-import { Field, Input } from '@grafana/ui';
+import { Field, Input } from '@grafana-ui/index';
 
 interface VariableTextFieldProps {
   value?: string;

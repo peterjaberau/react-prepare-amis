@@ -6,7 +6,7 @@ import * as React from 'react';
 import { usePrevious } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { InlineFormLabel, RadioButtonGroup, useStyles2 } from '@grafana/ui';
+import { InlineFormLabel, RadioButtonGroup, useStyles2 } from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../datasource';
 import { PromQuery } from '../types';

@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { clamp, throttle } from 'lodash';
 import React, { useCallback, useLayoutEffect, useRef } from 'react';
 import { useUniqueId } from '../LazyLoader';

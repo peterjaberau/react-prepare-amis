@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as React from 'react';
 
-import { IconButton, Input, Stack } from '@grafana/ui';
+import { IconButton, Input, Stack } from '@grafana-ui/index';
 
 interface Props {
   onChange: (v: Array<[string, string]>) => void;

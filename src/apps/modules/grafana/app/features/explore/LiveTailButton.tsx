@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-import { Tooltip, ButtonGroup, ToolbarButton } from '@grafana/ui';
+import { Tooltip, ButtonGroup, ToolbarButton } from '@grafana-ui/index';
 
 type LiveTailButtonProps = {
   splitted: boolean;

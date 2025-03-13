@@ -1,6 +1,6 @@
 import { HTMLAttributes } from 'react';
 
-import { Button, IconSize } from '@grafana/ui';
+import { Button, IconSize } from '@grafana-ui/index';
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   isCollapsed: boolean;

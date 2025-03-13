@@ -11,7 +11,7 @@ import {
   toLegacyResponseData,
 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { clearButtonStyles, Icon, Themeable2, withTheme2 } from '@grafana/ui';
+import { clearButtonStyles, Icon, Themeable2, withTheme2 } from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../datasource';
 import { roundMsToMin } from '../language_utils';

@@ -1,6 +1,6 @@
 import { useLocalStorage } from 'react-use';
 
-import { Alert, LinkButton, Stack } from '@grafana/ui';
+import { Alert, LinkButton, Stack } from '@grafana-ui/index';
 
 import { t, Trans } from '../../core/internationalization';
 

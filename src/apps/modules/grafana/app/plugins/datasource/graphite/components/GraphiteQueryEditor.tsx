@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, useStyles2 } from '@grafana/ui';
+import { Button, useStyles2 } from '@grafana-ui/index';
 
 import { actions } from '../state/actions';
 import { GraphiteQueryEditorContext, GraphiteQueryEditorProps, useDispatch, useGraphiteState } from '../state/context';

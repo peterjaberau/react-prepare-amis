@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { SelectableValue, StandardEditorProps, VariableOrigin } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { HeatmapCalculationBucketConfig, HeatmapCalculationMode } from '@schema/index';
-import { HorizontalGroup, RadioButtonGroup, ScaleDistribution } from '@grafana/ui';
+import { HorizontalGroup, RadioButtonGroup, ScaleDistribution } from '@grafana-ui/index';
 
 import { SuggestionsInput } from '../../suggestionsInput/SuggestionsInput';
 import { numberOrVariableValidator } from '../../utils';

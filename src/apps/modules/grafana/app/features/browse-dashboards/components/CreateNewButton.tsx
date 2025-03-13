@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { locationUtil } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
-import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana/ui';
+import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import {
   getImportPhrase,

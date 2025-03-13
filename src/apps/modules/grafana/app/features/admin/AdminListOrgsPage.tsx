@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { getBackendSrv, isFetchError } from '@runtime/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

@@ -1,5 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/shared/QueryEditorModeToggle.tsx
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { QueryEditorMode } from './types';
 

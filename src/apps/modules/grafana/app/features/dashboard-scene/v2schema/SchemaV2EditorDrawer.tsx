@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectState, SceneObjectRef } from '@scenes/index';
-import { Box, Button, CodeEditor, Drawer, useStyles2 } from '@grafana/ui';
+import { Box, Button, CodeEditor, Drawer, useStyles2 } from '@grafana-ui/index';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { transformSceneToSaveModelSchemaV2 } from '../serialization/transformSceneToSaveModelSchemaV2';

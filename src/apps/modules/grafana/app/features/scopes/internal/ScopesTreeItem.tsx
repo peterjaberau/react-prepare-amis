@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { Dictionary } from 'lodash';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Checkbox, Icon, RadioButtonDot, ScrollContainer, useStyles2 } from '@grafana/ui';
+import { Checkbox, Icon, RadioButtonDot, ScrollContainer, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { ScopesTree } from './ScopesTree';

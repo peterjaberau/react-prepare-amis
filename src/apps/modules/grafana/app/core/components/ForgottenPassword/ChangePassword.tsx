@@ -2,7 +2,7 @@ import { SyntheticEvent, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { config } from '@runtime/index';
-import { Tooltip, Field, Button, Alert, useStyles2, Stack } from '@grafana/ui';
+import { Tooltip, Field, Button, Alert, useStyles2, Stack } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { getStyles } from '../Login/LoginForm';

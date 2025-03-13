@@ -4,7 +4,7 @@ import { useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Icon, RadioButtonGroup, Stack, Text, useStyles2 } from '@grafana/ui';
+import { Icon, RadioButtonGroup, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { AlertmanagerChoice } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';

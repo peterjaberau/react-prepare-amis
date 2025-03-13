@@ -12,7 +12,7 @@ import {
   AsyncSelect,
   Stack,
   InlineLabel,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { OpenTsdbQuery } from '../types';
 

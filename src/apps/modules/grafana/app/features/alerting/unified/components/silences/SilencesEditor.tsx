@@ -25,7 +25,7 @@ import {
   Stack,
   TextArea,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { SilenceCreatedResponse, alertSilencesApi } from '@grafana-module/app/features/alerting/unified/api/alertSilencesApi';
 import { MATCHER_ALERT_RULE_UID } from '@grafana-module/app/features/alerting/unified/utils/constants';

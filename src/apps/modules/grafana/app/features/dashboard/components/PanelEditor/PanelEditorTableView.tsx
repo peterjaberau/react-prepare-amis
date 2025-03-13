@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { RefreshEvent } from '@runtime/index';
-import { PanelChrome } from '@grafana/ui';
+import { PanelChrome } from '@grafana-ui/index';
 import { applyPanelTimeOverrides } from '@grafana-module/app/features/dashboard/utils/panel';
 import { PanelRenderer } from '@grafana-module/app/features/panel/components/PanelRenderer';
 import { Options } from '@grafana-module/app/plugins/panel/table/panelcfg.gen';

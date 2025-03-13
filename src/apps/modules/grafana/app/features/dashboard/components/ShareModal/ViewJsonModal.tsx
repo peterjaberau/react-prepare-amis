@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { ClipboardButton, CodeEditor, Modal } from '@grafana/ui';
+import { ClipboardButton, CodeEditor, Modal } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 

@@ -1,5 +1,5 @@
 import { isIconName } from '@data/index';
-import { Badge, Card, Icon } from '@grafana/ui';
+import { Badge, Card, Icon } from '@grafana-ui/index';
 
 import { UIMap } from '../constants';
 import { getProviderUrl } from '../utils/url';

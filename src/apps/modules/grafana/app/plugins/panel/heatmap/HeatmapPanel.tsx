@@ -14,8 +14,8 @@ import {
   useTheme2,
   VizLayout,
   EventBusPlugin,
-} from '@grafana/ui';
-import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
+} from '@grafana-ui/index';
+import { TimeRange2, TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPlugin2';
 import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
 import { readHeatmapRowsCustomMeta } from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';
 

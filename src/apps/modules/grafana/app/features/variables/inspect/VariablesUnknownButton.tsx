@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { IconButton } from '@grafana/ui';
+import { IconButton } from '@grafana-ui/index';
 
 import { NetworkGraphModal } from './NetworkGraphModal';
 import { UsagesToNetwork } from './utils';

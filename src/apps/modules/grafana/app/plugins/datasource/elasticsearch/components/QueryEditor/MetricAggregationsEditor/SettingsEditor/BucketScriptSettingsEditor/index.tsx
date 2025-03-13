@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { uniqueId } from 'lodash';
 import { Fragment, useEffect } from 'react';
 
-import { Input, InlineLabel } from '@grafana/ui';
+import { Input, InlineLabel } from '@grafana-ui/index';
 
 import { useStatelessReducer, useDispatch } from '../../../../../hooks/useStatelessReducer';
 import { BucketScript, MetricAggregation } from '../../../../../types';

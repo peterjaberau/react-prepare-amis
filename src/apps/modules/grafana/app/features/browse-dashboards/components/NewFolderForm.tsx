@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 
-import { Button, Input, Field, Stack } from '@grafana/ui';
+import { Button, Input, Field, Stack } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { validationSrv } from '../../manage-dashboards/services/ValidationSrv';

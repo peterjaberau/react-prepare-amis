@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 export const AnnotationsHelp = () => {
   return (

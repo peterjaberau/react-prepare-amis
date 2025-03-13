@@ -1,4 +1,4 @@
-import { CellProps, Text, Stack, Button } from '@grafana/ui';
+import { CellProps, Text, Stack, Button } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { ResourceTableItem } from './types';

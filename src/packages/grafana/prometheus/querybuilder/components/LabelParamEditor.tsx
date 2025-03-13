@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 import { DataSourceApi, SelectableValue, toOption } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { promQueryModeller } from '../PromQueryModeller';
 import { getOperationParamId } from '../operationUtils';

@@ -1,7 +1,7 @@
 import { ComponentType } from 'react';
 
 import { NavModel } from '@data/index';
-import { IconName } from '@grafana/ui';
+import { IconName } from '@grafana-ui/index';
 
 import { DashboardModel } from '../../state/DashboardModel';
 

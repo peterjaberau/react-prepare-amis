@@ -5,8 +5,8 @@ import * as React from 'react';
 import { DataFrame, FieldType } from '@data/index';
 import { convertFieldType } from '@data/transformations/transformers/convertFieldType';
 import { reportInteraction } from '@runtime/index';
-import { ContextMenu, MenuGroup, MenuItem } from '@grafana/ui';
-import { MenuDivider } from '@grafana/ui/src/components/Menu/MenuDivider';
+import { ContextMenu, MenuGroup, MenuItem } from '@grafana-ui/index';
+import { MenuDivider } from '@grafana-ui/components/Menu/MenuDivider';
 
 import { DatagridAction, DatagridActionType } from '../state';
 import {

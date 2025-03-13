@@ -2,7 +2,7 @@ import { debounce } from 'lodash';
 import { PureComponent } from 'react';
 import * as React from 'react';
 
-import { Field, Input } from '@grafana/ui';
+import { Field, Input } from '@grafana-ui/index';
 
 interface Props {
   value?: number;

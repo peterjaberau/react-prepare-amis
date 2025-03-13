@@ -14,7 +14,7 @@ import {
   LoadingPlaceholder,
   stylesFactory,
   withTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import PromQlLanguageProvider from '../language_provider';
 import { escapeLabelValueInExactSelector, escapeLabelValueInRegexSelector } from '../language_utils';

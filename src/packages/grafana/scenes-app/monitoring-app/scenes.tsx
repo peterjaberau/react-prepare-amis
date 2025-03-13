@@ -18,7 +18,7 @@ import {
   PanelBuilders,
 } from '@scenes/index';
 import { BigValueGraphMode, BigValueTextMode, LogsDedupStrategy, LogsSortOrder } from '@schema/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 
 import { SceneRadioToggle } from './SceneRadioToggle';
 import { SceneSearchBox } from './SceneSearchBox';

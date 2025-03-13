@@ -31,8 +31,8 @@ import { labelsToFieldsTransformer } from '@data/transformations/transformers/la
 import { mergeTransformer } from '@data/transformations/transformers/merge';
 import { getDataSourceSrv, setDataSourceSrv } from '@runtime/index';
 import { DataTransformerConfig } from '@schema/index';
-import { AxisPlacement, GraphFieldConfig } from '@grafana/ui';
-import { migrateTableDisplayModeToCellOptions } from '@grafana/ui/src/components/Table/utils';
+import { AxisPlacement, GraphFieldConfig } from '@grafana-ui/index';
+import { migrateTableDisplayModeToCellOptions } from '@grafana-ui/components/Table/utils';
 import { getAllOptionEditors, getAllStandardFieldConfigs } from '@grafana-module/app/core/components/OptionsUI/registry';
 import { config } from '@grafana-module/app/core/config';
 import {

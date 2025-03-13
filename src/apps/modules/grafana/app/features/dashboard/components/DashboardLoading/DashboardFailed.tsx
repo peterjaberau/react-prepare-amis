@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
 import { DashboardInitError, AppNotificationSeverity } from '@grafana-module/app/types';
 

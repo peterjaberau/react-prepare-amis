@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useState } from 'react';
 import * as React from 'react';
 
-import { Button, InlineField, InlineFieldRow, IconButton, Input } from '@grafana/ui';
+import { Button, InlineField, InlineFieldRow, IconButton, Input } from '@grafana-ui/index';
 
 import { JSONPath } from '../types';
 

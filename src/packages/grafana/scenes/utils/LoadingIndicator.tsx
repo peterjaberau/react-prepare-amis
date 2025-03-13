@@ -1,4 +1,4 @@
-import { Icon, Tooltip } from '@grafana/ui';
+import { Icon, Tooltip } from '@grafana-ui/index';
 import React, { useCallback } from 'react';
 import { LoadingIndicatorProps as SelectLoadingIndicatorProps } from 'react-select';
 

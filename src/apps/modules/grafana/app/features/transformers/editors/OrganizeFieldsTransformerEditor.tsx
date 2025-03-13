@@ -22,7 +22,7 @@ import {
   InlineLabel,
   Text,
   Box,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { useAllFieldNamesFromDataFrames } from '../utils';

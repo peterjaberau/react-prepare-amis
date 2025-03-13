@@ -3,7 +3,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { locationService, config, reportInteraction } from '@runtime/index';
-import { Modal, Button, Text, Space, TextLink } from '@grafana/ui';
+import { Modal, Button, Text, Space, TextLink } from '@grafana-ui/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { cleanUpDashboardAndVariables } from '@grafana-module/app/features/dashboard/state/actions';
 

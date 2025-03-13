@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { QueryField } from '@grafana/ui';
+import { QueryField } from '@grafana-ui/index';
 
 import { actions } from '../state/actions';
 import { useDispatch } from '../state/context';

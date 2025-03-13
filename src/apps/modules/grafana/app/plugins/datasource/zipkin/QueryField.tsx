@@ -19,7 +19,7 @@ import {
   Modal,
   HorizontalGroup,
   Button,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { ZipkinDatasource } from './datasource';
 import { ZipkinQuery, ZipkinQueryType, ZipkinSpan } from './types';

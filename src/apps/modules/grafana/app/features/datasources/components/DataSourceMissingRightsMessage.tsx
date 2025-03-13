@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 export const missingRightsMessage =
   'You are not allowed to modify this data source. Please contact your server admin to update this data source.';

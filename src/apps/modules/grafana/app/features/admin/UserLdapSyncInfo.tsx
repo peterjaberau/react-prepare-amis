@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 
 import { dateTimeFormat } from '@data/index';
-import { Button, LinkButton } from '@grafana/ui';
+import { Button, LinkButton } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { AccessControlAction, SyncInfo, UserDTO } from '@grafana-module/app/types';

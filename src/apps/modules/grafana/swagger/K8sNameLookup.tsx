@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { NamespaceContext, ResourceContext } from './plugins';
 

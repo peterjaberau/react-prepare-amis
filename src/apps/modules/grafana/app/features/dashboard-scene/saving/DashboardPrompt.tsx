@@ -3,7 +3,7 @@ import * as H from 'history';
 import { memo, useContext, useEffect, useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
-import { ModalsContext, Modal, Button, useStyles2 } from '@grafana/ui';
+import { ModalsContext, Modal, Button, useStyles2 } from '@grafana-ui/index';
 import { Prompt } from '@grafana-module/app/core/components/FormPrompt/Prompt';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';
 

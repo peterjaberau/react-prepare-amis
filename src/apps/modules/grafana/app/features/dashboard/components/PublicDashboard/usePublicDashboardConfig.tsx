@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, useTheme2 } from '@grafana/ui';
+import { useStyles2, useTheme2 } from '@grafana-ui/index';
 
 const FOOTER_URL = 'https://grafana.com/?src=grafananet&cnt=public-dashboards';
 const GRAFANA_LOGO_LIGHT_URL = 'public/img/grafana_text_logo_light.svg';

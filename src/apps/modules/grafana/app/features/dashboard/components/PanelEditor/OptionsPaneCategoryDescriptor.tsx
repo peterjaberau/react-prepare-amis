@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Box } from '@grafana/ui';
+import { Box } from '@grafana-ui/index';
 
 import { OptionsPaneCategory } from './OptionsPaneCategory';
 import { OptionsPaneItemDescriptor } from './OptionsPaneItemDescriptor';

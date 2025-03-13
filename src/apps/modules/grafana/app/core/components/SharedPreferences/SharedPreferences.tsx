@@ -19,7 +19,7 @@ import {
   TextLink,
   WeekStart,
   isWeekStart,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { LANGUAGES, PSEUDO_LOCALE } from '@grafana-module/app/core/internationalization/constants';

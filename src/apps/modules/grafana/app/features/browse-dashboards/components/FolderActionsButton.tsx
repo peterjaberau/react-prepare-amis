@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { config, locationService, reportInteraction } from '@runtime/index';
-import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana/ui';
+import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana-ui/index';
 import { Permissions } from '@grafana-module/app/core/components/AccessControl';
 import { appEvents } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

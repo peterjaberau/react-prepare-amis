@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { SelectableValue, TimeRange } from '@data/index';
 import { EditorRows } from '@grafana/plugin-ui';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';
 import { AlignmentTypes, CloudMonitoringQuery, QueryType, TimeSeriesList, TimeSeriesQuery } from '../types/query';

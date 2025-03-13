@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { DataSourcePluginMeta, GrafanaTheme2 } from '@data/index';
-import { Card, LinkButton, PluginSignatureBadge, useStyles2 } from '@grafana/ui';
+import { Card, LinkButton, PluginSignatureBadge, useStyles2 } from '@grafana-ui/index';
 
 export type Props = {
   dataSourcePlugin: DataSourcePluginMeta;

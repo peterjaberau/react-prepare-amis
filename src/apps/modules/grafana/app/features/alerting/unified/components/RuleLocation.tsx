@@ -1,4 +1,4 @@
-import { Icon, Text } from '@grafana/ui';
+import { Icon, Text } from '@grafana-ui/index';
 
 interface Props {
   namespace: string;

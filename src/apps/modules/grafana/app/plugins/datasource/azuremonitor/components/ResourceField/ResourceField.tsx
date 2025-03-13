@@ -2,7 +2,7 @@ import { cx } from '@emotion/css';
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { Button, Icon, Modal, useStyles2, IconName } from '@grafana/ui';
+import { Button, Icon, Modal, useStyles2, IconName } from '@grafana-ui/index';
 
 import Datasource from '../../datasource';
 import { selectors } from '../../e2e/selectors';

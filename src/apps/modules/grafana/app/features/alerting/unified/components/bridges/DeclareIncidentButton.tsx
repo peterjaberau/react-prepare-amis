@@ -1,4 +1,4 @@
-import { Button, LinkButton, Menu, Tooltip } from '@grafana/ui';
+import { Button, LinkButton, Menu, Tooltip } from '@grafana-ui/index';
 
 import { usePluginBridge } from '../../hooks/usePluginBridge';
 import { getIrmIfPresentOrIncidentPluginId } from '../../utils/config';

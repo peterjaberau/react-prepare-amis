@@ -2,8 +2,8 @@ import { css, cx } from '@emotion/css';
 import Skeleton from 'react-loading-skeleton';
 
 import { DataFrameView, GrafanaTheme2, textUtil, dateTimeFormat } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
-import { attachSkeleton, SkeletonComponent } from '@grafana/ui/src/unstable';
+import { useStyles2 } from '@grafana-ui/index';
+import { attachSkeleton, SkeletonComponent } from '@grafana-ui/unstable';
 
 import { NewsItem } from '../types';
 

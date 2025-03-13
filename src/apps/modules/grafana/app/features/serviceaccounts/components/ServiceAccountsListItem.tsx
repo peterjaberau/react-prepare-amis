@@ -3,8 +3,8 @@ import { memo } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2, OrgRole } from '@data/index';
-import { Button, Icon, IconButton, Stack, useStyles2 } from '@grafana/ui';
-import { SkeletonComponent, attachSkeleton } from '@grafana/ui/src/unstable';
+import { Button, Icon, IconButton, Stack, useStyles2 } from '@grafana-ui/index';
+import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { OrgRolePicker } from '@grafana-module/app/features/admin/OrgRolePicker';

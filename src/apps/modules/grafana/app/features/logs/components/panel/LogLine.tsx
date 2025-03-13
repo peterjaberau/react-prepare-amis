@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { CSSProperties, useEffect, useRef } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { LogListModel } from './processing';
 import { hasUnderOrOverflow } from './virtualization';

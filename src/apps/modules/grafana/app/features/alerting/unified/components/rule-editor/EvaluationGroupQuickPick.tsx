@@ -1,7 +1,7 @@
 import { last, times } from 'lodash';
 
 import { config } from '@runtime/index';
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 
 import { formatPrometheusDuration, parsePrometheusDuration, safeParsePrometheusDuration } from '../../utils/time';
 

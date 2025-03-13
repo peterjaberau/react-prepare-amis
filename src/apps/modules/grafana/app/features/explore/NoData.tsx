@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, PanelContainer } from '@grafana/ui';
+import { useStyles2, PanelContainer } from '@grafana-ui/index';
 
 export const NoData = () => {
   const css = useStyles2(getStyles);

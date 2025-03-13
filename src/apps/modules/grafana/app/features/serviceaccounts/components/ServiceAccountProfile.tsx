@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2, OrgRole, TimeZone, dateTimeFormat } from '@data/index';
-import { Label, TextLink, useStyles2 } from '@grafana/ui';
+import { Label, TextLink, useStyles2 } from '@grafana-ui/index';
 import { fetchRoleOptions } from '@grafana-module/app/core/components/RolePicker/api';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction, Role, ServiceAccountDTO } from '@grafana-module/app/types';

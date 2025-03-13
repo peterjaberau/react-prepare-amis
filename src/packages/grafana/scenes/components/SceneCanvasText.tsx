@@ -4,7 +4,7 @@ import { SceneObjectBase } from '../core/SceneObjectBase';
 import { sceneGraph } from '../core/sceneGraph';
 import { SceneComponentProps, SceneObjectState } from '../core/types';
 import { VariableDependencyConfig } from '../variables/VariableDependencyConfig';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 import { css } from '@emotion/css';
 
 export interface SceneCanvasTextState extends SceneObjectState {

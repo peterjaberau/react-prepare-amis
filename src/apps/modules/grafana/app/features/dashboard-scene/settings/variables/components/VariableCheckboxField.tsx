@@ -2,7 +2,7 @@ import { useId } from '@react-aria/utils';
 import { ChangeEvent, PropsWithChildren, ReactElement } from 'react';
 import * as React from 'react';
 
-import { Checkbox } from '@grafana/ui';
+import { Checkbox } from '@grafana-ui/index';
 
 interface VariableCheckboxFieldProps extends React.HTMLAttributes<HTMLInputElement> {
   value: boolean;

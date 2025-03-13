@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Controller, useFieldArray, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Divider, Field, IconButton, Input, Select, useStyles2 } from '@grafana/ui';
+import { Button, Divider, Field, IconButton, Input, Select, useStyles2 } from '@grafana-ui/index';
 import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
 import { MatcherOperator } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 

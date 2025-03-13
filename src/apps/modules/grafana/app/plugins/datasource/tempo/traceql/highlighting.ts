@@ -25,7 +25,7 @@ import {
   SpansetFilter,
   SpansetPipelineExpression,
 } from '@grafana/lezer-traceql';
-import { monacoTypes } from '@grafana/ui';
+import { monacoTypes } from '@grafana-ui/index';
 
 /**
  * Given an error node, generate an error message to be displayed to the user.

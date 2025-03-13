@@ -1,7 +1,7 @@
 import { debounce } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 
-import { Icon, Input } from '@grafana/ui';
+import { Icon, Input } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 

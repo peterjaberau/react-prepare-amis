@@ -1,7 +1,7 @@
 import { take, tap, withAbort } from 'ix/asynciterable/operators';
 import { useEffect, useRef, useState, useTransition } from 'react';
 
-import { Card, EmptyState, Stack, Text } from '@grafana/ui';
+import { Card, EmptyState, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { isLoading, useAsync } from '../hooks/useAsync';

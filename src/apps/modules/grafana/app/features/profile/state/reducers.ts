@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { isEmpty, isString, set } from 'lodash';
 
 import { dateTimeFormatTimeAgo, setWeekStart, TimeZone } from '@data/index';
-import { getWeekStart, WeekStart } from '@grafana/ui';
+import { getWeekStart, WeekStart } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Team, ThunkResult, UserDTO, UserOrg, UserSession } from '@grafana-module/app/types';

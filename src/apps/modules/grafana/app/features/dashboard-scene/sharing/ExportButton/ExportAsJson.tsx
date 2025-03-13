@@ -4,7 +4,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
-import { Button, ClipboardButton, CodeEditor, Label, Spinner, Stack, Switch, useStyles2 } from '@grafana/ui';
+import { Button, ClipboardButton, CodeEditor, Label, Spinner, Stack, Switch, useStyles2 } from '@grafana-ui/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

@@ -4,7 +4,7 @@ import { useMount } from 'react-use';
 
 import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
 import { AccessoryButton } from '@grafana/plugin-ui';
-import { Input, Select, Stack, useStyles2 } from '@grafana/ui';
+import { Input, Select, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { randomId, SearchProps, Tag } from '../../../useSearch';
 import { getTraceTagKeys, getTraceTagValues } from '../../../utils/tags';

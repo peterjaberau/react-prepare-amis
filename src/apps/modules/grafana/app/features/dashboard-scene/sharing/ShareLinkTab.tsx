@@ -2,7 +2,7 @@ import { dateTime, UrlQueryMap } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { TimeZone } from '@schema/index';
-import { Alert, ClipboardButton, Field, FieldSet, Icon, Input, Switch } from '@grafana/ui';
+import { Alert, ClipboardButton, Field, FieldSet, Icon, Input, Switch } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { createDashboardShareUrl, createShortLink, getShareUrlParams } from '@grafana-module/app/core/utils/shortLinks';
 import { ThemePicker } from '@grafana-module/app/features/dashboard/components/ShareModal/ThemePicker';

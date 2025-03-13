@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 export interface Props {
   canSave: boolean;

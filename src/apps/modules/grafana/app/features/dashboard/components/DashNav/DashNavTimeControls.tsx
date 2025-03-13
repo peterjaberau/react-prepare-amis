@@ -3,7 +3,7 @@ import { Unsubscribable } from 'rxjs';
 
 import { dateMath, TimeRange, TimeZone } from '@data/index';
 import { TimeRangeUpdatedEvent } from '@runtime/index';
-import { defaultIntervals, isWeekStart, RefreshPicker } from '@grafana/ui';
+import { defaultIntervals, isWeekStart, RefreshPicker } from '@grafana-ui/index';
 import { TimePickerWithHistory } from '@grafana-module/app/core/components/TimePicker/TimePickerWithHistory';
 import { appEvents } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';

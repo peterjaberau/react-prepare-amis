@@ -16,8 +16,8 @@ import {
   FormatStringOutput,
   FormatStringTransformerOptions,
 } from '@data/transformations/transformers/formatString';
-import { Select, InlineFieldRow, InlineField } from '@grafana/ui';
-import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
+import { Select, InlineFieldRow, InlineField } from '@grafana-ui/index';
+import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 const fieldNamePickerSettings: StandardEditorsRegistryItem<string, FieldNamePickerConfigSettings> = {

@@ -6,7 +6,7 @@ import { firstValueFrom } from 'rxjs';
 
 import { AppEvents, PanelData, SelectableValue, LoadingState } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana/ui';
+import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana-ui/index';
 import { appEvents } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';

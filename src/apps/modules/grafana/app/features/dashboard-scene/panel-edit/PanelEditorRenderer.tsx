@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, VizPanel } from '@scenes/index';
-import { Button, Spinner, ToolbarButton, useStyles2 } from '@grafana/ui';
+import { Button, Spinner, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 
 import { useEditPaneCollapsed } from '../edit-pane/shared';
 import { NavToolbarActions } from '../scene/NavToolbarActions';

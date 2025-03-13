@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { isFetchError } from '@runtime/index';
-import { Field, IconButton, Input, useStyles2, Text } from '@grafana/ui';
+import { Field, IconButton, Input, useStyles2, Text } from '@grafana-ui/index';
 
 export interface Props {
   value: string;

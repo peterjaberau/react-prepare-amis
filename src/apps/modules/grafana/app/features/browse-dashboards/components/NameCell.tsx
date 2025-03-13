@@ -3,8 +3,8 @@ import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Icon, IconButton, Link, Spinner, useStyles2, Text } from '@grafana/ui';
-import { getSvgSize } from '@grafana/ui/src/components/Icon/utils';
+import { Icon, IconButton, Link, Spinner, useStyles2, Text } from '@grafana-ui/index';
+import { getSvgSize } from '@grafana-ui/components/Icon/utils';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getIconForItem } from '@grafana-module/app/features/search/service/utils';
 

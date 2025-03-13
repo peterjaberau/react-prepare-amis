@@ -5,7 +5,7 @@ import {
   onUpdateDatasourceSecureJsonDataOption,
   updateDatasourcePluginResetOption,
 } from '@data/index';
-import { Field, Icon, Label, SecretTextArea, Tooltip, Stack } from '@grafana/ui';
+import { Field, Icon, Label, SecretTextArea, Tooltip, Stack } from '@grafana-ui/index';
 
 export interface Props<T extends DataSourceJsonData, S> {
   editorProps: DataSourcePluginOptionsEditorProps<T, S>;

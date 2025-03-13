@@ -2,7 +2,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Icon, LoadingPlaceholder, Stack, useStyles2 } from '@grafana/ui';
+import { Button, Icon, LoadingPlaceholder, Stack, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { IrmCardConfiguration } from './ConfigureIRM';

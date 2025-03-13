@@ -11,7 +11,7 @@ import {
   SceneDataQuery,
 } from '@scenes/index';
 import { DataQuery } from '@schema/index';
-import { Button, Stack, Tab } from '@grafana/ui';
+import { Button, Stack, Tab } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { addQuery } from '@grafana-module/app/core/utils/query';
 import { getLastUsedDatasourceFromStorage } from '@grafana-module/app/features/dashboard/utils/dashboard';

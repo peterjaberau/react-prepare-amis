@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom-v5-compat';
 
 import { NavModelItem } from '@data/index';
-import { Badge, Stack, Text } from '@grafana/ui';
+import { Badge, Stack, Text } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { PageNotFound } from '@grafana-module/app/core/components/PageNotFound/PageNotFound';
 import { useDispatch, useSelector } from '@grafana-module/app/types';

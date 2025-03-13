@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { DataLinksInlineEditor, Input, RadioButtonGroup, Select, Switch, TextArea } from '@grafana/ui';
+import { DataLinksInlineEditor, Input, RadioButtonGroup, Select, Switch, TextArea } from '@grafana-ui/index';
 import { getPanelLinksVariableSuggestions } from '@grafana-module/app/features/panel/panellinks/link_srv';
 
 import { GenAIPanelDescriptionButton } from '../GenAI/GenAIPanelDescriptionButton';

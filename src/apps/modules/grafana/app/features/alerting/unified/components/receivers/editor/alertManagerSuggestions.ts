@@ -1,4 +1,4 @@
-import type { Monaco } from '@grafana/ui';
+import type { Monaco } from '@grafana-ui/index';
 
 import { AlertmanagerTemplateFunction } from './language';
 import { SuggestionDefinition } from './suggestionDefinition';

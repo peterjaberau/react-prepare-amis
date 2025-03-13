@@ -11,7 +11,7 @@ import {
   SceneObjectBase,
   SceneObjectState,
 } from '@scenes/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { MetricActionBar } from './MetricScene';
 import { AutoVizPanel } from './autoQuery/components/AutoVizPanel';

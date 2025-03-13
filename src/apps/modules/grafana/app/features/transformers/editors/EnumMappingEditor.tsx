@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { DataFrame, EnumFieldConfig, GrafanaTheme2 } from '@data/index';
 import { ConvertFieldTypeTransformerOptions } from '@data/transformations/transformers/convertFieldType';
-import { Button, HorizontalGroup, InlineFieldRow, useStyles2, VerticalGroup } from '@grafana/ui';
+import { Button, HorizontalGroup, InlineFieldRow, useStyles2, VerticalGroup } from '@grafana-ui/index';
 
 import EnumMappingRow from './EnumMappingRow';
 

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 
 import { DataSourceApi, QueryEditorProps, SelectableValue } from '@data/index';
-import { InlineField, Select } from '@grafana/ui';
+import { InlineField, Select } from '@grafana-ui/index';
 
 import { ClassicConditions } from './components/ClassicConditions';
 import { Math } from './components/Math';

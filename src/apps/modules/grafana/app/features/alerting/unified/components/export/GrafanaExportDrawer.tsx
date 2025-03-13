@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Drawer } from '@grafana/ui';
+import { Drawer } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { RuleInspectorTabs } from '../rule-editor/RuleInspector';

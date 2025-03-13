@@ -14,7 +14,7 @@ import {
   ToolbarButton,
   ButtonGroup,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { PanelMenuItem } from '@data/index';
-import { Menu } from '@grafana/ui';
+import { Menu } from '@grafana-ui/index';
 import { SceneObjectBase } from '../../core/SceneObjectBase';
 import { SceneComponentProps, SceneObjectState } from '../../core/types';
 

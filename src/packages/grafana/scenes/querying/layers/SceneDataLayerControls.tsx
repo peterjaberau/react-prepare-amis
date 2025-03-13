@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { LoadingState } from '@schema/index';
-import { InlineSwitch } from '@grafana/ui';
+import { InlineSwitch } from '@grafana-ui/index';
 import React from 'react';
 import { sceneGraph } from '../../core/sceneGraph';
 import { SceneObjectBase } from '../../core/SceneObjectBase';

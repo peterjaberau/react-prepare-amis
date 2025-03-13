@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
-import { Button, Icon, Input, ModalsController, Portal, ScrollContainer, useStyles2 } from '@grafana/ui';
+import { Button, Icon, Input, ModalsController, Portal, ScrollContainer, useStyles2 } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { useKeyNavigationListener } from '@grafana-module/app/features/search/hooks/useSearchKeyboardSelection';

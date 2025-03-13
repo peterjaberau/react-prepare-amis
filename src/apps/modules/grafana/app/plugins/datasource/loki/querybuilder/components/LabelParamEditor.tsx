@@ -8,7 +8,7 @@ import {
   VisualQuery,
   VisualQueryModeller,
 } from '@grafana/plugin-ui';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { getOperationParamId } from '../operationUtils';
 

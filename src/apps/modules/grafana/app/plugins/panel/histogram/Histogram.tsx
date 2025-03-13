@@ -23,8 +23,8 @@ import {
   PlotLegend,
   measureText,
   UPLOT_AXIS_FONT_SIZE,
-} from '@grafana/ui';
-import { getStackingGroups, preparePlotData2 } from '@grafana/ui/src/components/uPlot/utils';
+} from '@grafana-ui/index';
+import { getStackingGroups, preparePlotData2 } from '@grafana-ui/components/uPlot/utils';
 
 import { defaultFieldConfig, FieldConfig, Options } from './panelcfg.gen';
 

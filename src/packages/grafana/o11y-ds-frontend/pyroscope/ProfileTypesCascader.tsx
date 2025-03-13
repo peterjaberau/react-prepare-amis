@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { Cascader, CascaderOption } from '@grafana/ui';
+import { Cascader, CascaderOption } from '@grafana-ui/index';
 
 import { PyroscopeDataSource } from './datasource';
 import { ProfileTypeMessage } from './types';

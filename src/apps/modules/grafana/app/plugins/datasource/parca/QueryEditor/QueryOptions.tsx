@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useToggle } from 'react-use';
 
 import { CoreApp, GrafanaTheme2 } from '@data/index';
-import { Icon, useStyles2, RadioButtonGroup, Field, clearButtonStyles, Button } from '@grafana/ui';
+import { Icon, useStyles2, RadioButtonGroup, Field, clearButtonStyles, Button } from '@grafana-ui/index';
 
 import { Query } from '../types';
 

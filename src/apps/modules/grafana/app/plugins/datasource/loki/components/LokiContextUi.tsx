@@ -19,7 +19,7 @@ import {
   Spinner,
   Tooltip,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import {
   LogContextProvider,

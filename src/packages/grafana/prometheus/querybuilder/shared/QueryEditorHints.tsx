@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2, QueryHint } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Button, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { PromQueryEditorProps } from '../../components/types';
 

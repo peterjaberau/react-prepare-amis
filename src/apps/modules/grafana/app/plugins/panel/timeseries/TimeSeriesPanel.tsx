@@ -3,8 +3,8 @@ import { useMemo, useState } from 'react';
 import { PanelProps, DataFrameType, DashboardCursorSync } from '@data/index';
 import { PanelDataErrorView } from '@runtime/index';
 import { TooltipDisplayMode, VizOrientation } from '@schema/index';
-import { EventBusPlugin, KeyboardPlugin, TooltipPlugin2, usePanelContext } from '@grafana/ui';
-import { TimeRange2, TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
+import { EventBusPlugin, KeyboardPlugin, TooltipPlugin2, usePanelContext } from '@grafana-ui/index';
+import { TimeRange2, TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPlugin2';
 import { TimeSeries } from '@grafana-module/app/core/components/TimeSeries/TimeSeries';
 import { config } from '@grafana-module/app/core/config';
 

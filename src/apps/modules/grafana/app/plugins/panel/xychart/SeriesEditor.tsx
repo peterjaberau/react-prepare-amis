@@ -12,8 +12,8 @@ import {
   FieldType,
   GrafanaTheme2,
 } from '@data/index';
-import { Button, Field, IconButton, Select, useStyles2 } from '@grafana/ui';
-import { FieldNamePicker } from '@grafana/ui/src/components/MatchersUI/FieldNamePicker';
+import { Button, Field, IconButton, Select, useStyles2 } from '@grafana-ui/index';
+import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
 import { LayerName } from '@grafana-module/app/core/components/Layers/LayerName';
 
 import { Options, SeriesMapping, XYSeriesConfig } from './panelcfg.gen';

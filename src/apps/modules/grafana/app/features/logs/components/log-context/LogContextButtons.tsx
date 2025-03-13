@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Button, InlineSwitch, useStyles2 } from '@grafana/ui';
+import { Button, InlineSwitch, useStyles2 } from '@grafana-ui/index';
 
 export type Props = {
   wrapLines?: boolean;

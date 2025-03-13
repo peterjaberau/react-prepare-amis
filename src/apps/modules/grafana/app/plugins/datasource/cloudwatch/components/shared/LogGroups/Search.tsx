@@ -1,7 +1,7 @@
 import { debounce } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 
-import { Icon, Input } from '@grafana/ui';
+import { Icon, Input } from '@grafana-ui/index';
 
 // TODO: consider moving search into grafana/ui, this is mostly the same as that in azure monitor
 const Search = ({ searchFn, searchPhrase }: { searchPhrase: string; searchFn: (searchPhrase: string) => void }) => {

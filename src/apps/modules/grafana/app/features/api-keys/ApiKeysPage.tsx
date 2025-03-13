@@ -3,7 +3,7 @@ import * as React from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 // Utils
-import { InlineField, InlineSwitch, Modal, Button, EmptyState } from '@grafana/ui';
+import { InlineField, InlineSwitch, Modal, Button, EmptyState } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';

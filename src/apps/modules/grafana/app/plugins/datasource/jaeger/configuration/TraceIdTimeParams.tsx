@@ -6,7 +6,7 @@ import {
   DataSourcePluginOptionsEditorProps,
   updateDatasourcePluginJsonDataOption,
 } from '@data/index';
-import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InlineSwitch } from '@grafana-ui/index';
 
 export interface TraceIdTimeParamsOptions {
   enabled?: boolean;

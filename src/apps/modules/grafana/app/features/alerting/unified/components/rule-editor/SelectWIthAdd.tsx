@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import * as React from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Input, Select } from '@grafana/ui';
+import { Input, Select } from '@grafana-ui/index';
 
 interface Props {
   onChange: (value: string) => void;

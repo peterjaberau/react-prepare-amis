@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from '@grafana/ui';
+import { Box, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { LdapUser } from '@grafana-module/app/types';
 

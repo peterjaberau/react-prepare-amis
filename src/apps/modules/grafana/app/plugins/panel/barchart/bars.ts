@@ -10,9 +10,9 @@ import {
   VizTextDisplayOptions,
   VizLegendOptions,
 } from '@schema/index';
-import { measureText } from '@grafana/ui';
-import { timeUnitSize } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
-import { StackingGroup, preparePlotData2 } from '@grafana/ui/src/components/uPlot/utils';
+import { measureText } from '@grafana-ui/index';
+import { timeUnitSize } from '@grafana-ui/components/uPlot/config/UPlotAxisBuilder';
+import { StackingGroup, preparePlotData2 } from '@grafana-ui/components/uPlot/utils';
 
 const intervals = systemDateFormats.interval;
 

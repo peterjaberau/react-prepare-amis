@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Modal, Button, Text } from '@grafana/ui';
+import { Modal, Button, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 interface Props {

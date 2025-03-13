@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, VizPanel } from '@scenes/index';
-import { Icon, PanelChrome, Tooltip, useStyles2 } from '@grafana/ui';
+import { Icon, PanelChrome, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { explicitlyControlledMigrationPanels } from '@grafana-module/app/features/dashboard/state/PanelModel';
 import { isAngularDatasourcePluginAndNotHidden } from '@grafana-module/app/features/plugins/angularDeprecation/utils';
 

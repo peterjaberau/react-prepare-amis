@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { config, getBackendSrv, locationService } from '@runtime/index';
-import { Button, Input, Field, FieldSet } from '@grafana/ui';
+import { Button, Input, Field, FieldSet } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';

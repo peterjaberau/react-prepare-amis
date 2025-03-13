@@ -15,7 +15,7 @@ import {
   Stack,
   Switch,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import MuteTimingsSelector from '@grafana-module/app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector';
 import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
 import { handleContactPointSelect } from '@grafana-module/app/features/alerting/unified/components/notification-policies/utils';

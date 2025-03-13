@@ -22,7 +22,7 @@ import {
   Switch,
   SecureSocksProxySettings,
   Collapse,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { PostgresOptions, PostgresTLSMethods, PostgresTLSModes, SecureJsonData } from '../types';
 

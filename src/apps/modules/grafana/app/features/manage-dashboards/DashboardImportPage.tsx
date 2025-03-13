@@ -20,7 +20,7 @@ import {
   TextLink,
   Label,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { Page } from '@grafana-module/app/core/components/Page/Page';

@@ -4,7 +4,7 @@ import { useAsyncFn } from 'react-use';
 import useDebounce from 'react-use/lib/useDebounce';
 
 import { formattedValueToString, getValueFormat, TimeRange } from '@data/index';
-import { Icon, Spinner, useTheme2 } from '@grafana/ui';
+import { Icon, Spinner, useTheme2 } from '@grafana-ui/index';
 
 import { DB, SQLQuery, ValidationResults } from '../../types';
 

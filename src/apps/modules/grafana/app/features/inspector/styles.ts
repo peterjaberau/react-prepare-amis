@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { stylesFactory } from '@grafana/ui';
+import { stylesFactory } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 
 /** @deprecated */

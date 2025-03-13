@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, IconName } from '@data/index';
-import { Icon, useStyles2 } from '@grafana/ui';
+import { Icon, useStyles2 } from '@grafana-ui/index';
 
 const getStyles = (theme: GrafanaTheme2) => ({
   categoryHeader: css({

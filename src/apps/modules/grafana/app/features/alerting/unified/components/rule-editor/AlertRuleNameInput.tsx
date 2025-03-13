@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form';
 
-import { Field, Input, Stack, Text } from '@grafana/ui';
+import { Field, Input, Stack, Text } from '@grafana-ui/index';
 
 import { RuleFormType, RuleFormValues } from '../../types/rule-form';
 import { isCloudRecordingRuleByType, isGrafanaRecordingRuleByType, isRecordingRuleByType } from '../../utils/rules';

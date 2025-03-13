@@ -1,5 +1,5 @@
 import { DataFrameFieldIndex, FieldMatcher } from '@data/index';
-import { SeriesVisibilityChangeMode } from '@grafana/ui';
+import { SeriesVisibilityChangeMode } from '@grafana-ui/index';
 
 /**
  * Event being triggered when the user interact with the Graph legend.

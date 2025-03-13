@@ -13,7 +13,7 @@ import {
   ScrollContainer,
   Select,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import AzureLogAnalyticsDatasource from '../../azure_log_analytics/azure_log_analytics_datasource';
 import {

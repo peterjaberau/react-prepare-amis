@@ -6,7 +6,7 @@ import useAsync from 'react-use/lib/useAsync';
 import { SelectableValue } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
 import { FetchError, getTemplateSrv, isFetchError } from '@runtime/index';
-import { Select, HorizontalGroup, useStyles2, InputActionMeta } from '@grafana/ui';
+import { Select, HorizontalGroup, useStyles2, InputActionMeta } from '@grafana-ui/index';
 
 import { TraceqlFilter, TraceqlSearchScope } from '../dataquery.gen';
 import { TempoDatasource } from '../datasource';

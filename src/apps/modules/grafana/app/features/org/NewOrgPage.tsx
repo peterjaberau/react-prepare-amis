@@ -1,7 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 
 import { NavModelItem } from '@data/index';
-import { Button, Input, Field, FieldSet } from '@grafana/ui';
+import { Button, Input, Field, FieldSet } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { getConfig } from '@grafana-module/app/core/config';

@@ -36,7 +36,7 @@ import {
   PanelEvents,
   toUtc,
 } from '@data/index';
-import { MenuItemProps, MenuItemsGroup } from '@grafana/ui';
+import { MenuItemProps, MenuItemsGroup } from '@grafana-ui/index';
 import { coreModule } from '@grafana-module/app/angular/core_module';
 import config from '@grafana-module/app/core/config';
 import { updateLegendValues } from '@grafana-module/app/core/core';

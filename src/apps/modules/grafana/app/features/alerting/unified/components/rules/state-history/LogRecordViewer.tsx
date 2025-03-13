@@ -4,7 +4,7 @@ import { groupBy, uniqueId } from 'lodash';
 import { Fragment, memo, useEffect } from 'react';
 
 import { GrafanaTheme2, dateTimeFormat } from '@data/index';
-import { Icon, Stack, TagList, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, TagList, useStyles2 } from '@grafana-ui/index';
 
 import { Label } from '../../Label';
 import { AlertStateTag } from '../AlertStateTag';

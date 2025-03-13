@@ -7,7 +7,7 @@ import uPlot from 'uplot';
 
 import { arrayToDataFrame, colorManipulator, DataFrame, DataTopic } from '@data/index';
 import { TimeZone } from '@schema/index';
-import { DEFAULT_ANNOTATION_COLOR, getPortalContainer, UPlotConfigBuilder, useStyles2, useTheme2 } from '@grafana/ui';
+import { DEFAULT_ANNOTATION_COLOR, getPortalContainer, UPlotConfigBuilder, useStyles2, useTheme2 } from '@grafana-ui/index';
 
 import { AnnotationMarker2 } from './annotations2/AnnotationMarker2';
 

@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { DataSourcePluginMeta } from '@data/index';
 import { config } from '@runtime/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 import { ROUTES } from '@grafana-module/app/features/connections/constants';
 import { addDataSource } from '@grafana-module/app/features/datasources/state';
 import { useDispatch } from '@grafana-module/app/types';

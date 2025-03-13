@@ -1,4 +1,4 @@
-import { Box, Button, Space, Stack, Text } from '@grafana/ui';
+import { Box, Button, Space, Stack, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { formatDate } from '@grafana-module/app/core/internationalization/dates';
 

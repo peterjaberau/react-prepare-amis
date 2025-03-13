@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { IconName } from '@grafana/ui';
+import { IconName } from '@grafana-ui/index';
 
 export interface AlertRuleDTO {
   id: number;

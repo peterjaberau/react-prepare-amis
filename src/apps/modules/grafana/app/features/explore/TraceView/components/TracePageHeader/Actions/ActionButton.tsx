@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, IconName } from '@data/index';
-import { Button, useStyles2 } from '@grafana/ui';
+import { Button, useStyles2 } from '@grafana-ui/index';
 
 export const getStyles = (theme: GrafanaTheme2) => ({
   ActionButton: css({

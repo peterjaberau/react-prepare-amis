@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { PanelMenuItem, GrafanaTheme2 } from '@data/index';
 import { selectors } from '@selectors/index';
-import { Icon, toIconName, useStyles2 } from '@grafana/ui';
+import { Icon, toIconName, useStyles2 } from '@grafana-ui/index';
 
 interface Props {
   children?: React.ReactNode;

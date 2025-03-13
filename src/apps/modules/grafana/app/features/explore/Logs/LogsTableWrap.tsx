@@ -14,7 +14,7 @@ import {
   TimeRange,
 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { InlineField, Select, Themeable2 } from '@grafana/ui/';
+import { InlineField, Select, Themeable2 } from '@grafana-ui/index';
 
 import { parseLogsFrame } from '../../logs/logsFrame';
 

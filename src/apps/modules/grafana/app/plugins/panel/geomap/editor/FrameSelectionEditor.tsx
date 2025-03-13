@@ -5,7 +5,7 @@ import {
   RefIDMultiPicker,
   RefIDPicker,
   stringsToRegexp,
-} from '@grafana/ui/src/components/MatchersUI/FieldsByFrameRefIdMatcher';
+} from '@grafana-ui/components/MatchersUI/FieldsByFrameRefIdMatcher';
 
 type Props = StandardEditorProps<MatcherConfig>;
 

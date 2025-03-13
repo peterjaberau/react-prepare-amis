@@ -3,7 +3,7 @@ import { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { SelectableValue, urlUtil } from '@data/index';
 import { locationService } from '@runtime/index';
-import { AsyncSelect, Button, Modal } from '@grafana/ui';
+import { AsyncSelect, Button, Modal } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardSearchItem } from '../../../search/types';

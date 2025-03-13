@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { ValueMatcherID, RangeValueMatcherOptions } from '@data/index';
-import { InlineLabel } from '@grafana/ui';
+import { InlineLabel } from '@grafana-ui/index';
 
 import { SuggestionsInput } from '../../suggestionsInput/SuggestionsInput';
 import { getVariableSuggestions, numberOrVariableValidator } from '../../utils';

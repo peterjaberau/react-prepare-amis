@@ -19,7 +19,7 @@ import {
   DataSourceDescription,
 } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { SecureSocksProxySettings, useStyles2, Divider, Stack } from '@grafana/ui';
+import { SecureSocksProxySettings, useStyles2, Divider, Stack } from '@grafana-ui/index';
 
 import { QuerySettings } from './QuerySettings';
 import { ServiceGraphSettings } from './ServiceGraphSettings';

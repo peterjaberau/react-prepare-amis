@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2, PanelData, PanelModel, VisualizationSuggestion } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { getAllSuggestions } from '../../state/getAllSuggestions';
 

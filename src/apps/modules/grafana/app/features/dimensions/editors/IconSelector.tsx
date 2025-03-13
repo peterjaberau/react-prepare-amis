@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 interface Props {
   value: string;

@@ -15,7 +15,7 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { LibraryPanel } from '@grafana/schema/';
-import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana/ui';
+import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getPanelDataFrames } from '@grafana-module/app/features/dashboard/components/HelpWizard/utils';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';

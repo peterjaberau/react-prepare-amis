@@ -1,4 +1,4 @@
-import { Alert, ErrorBoundary, ErrorWithStack, Text } from '@grafana/ui';
+import { Alert, ErrorBoundary, ErrorWithStack, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { RulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
 

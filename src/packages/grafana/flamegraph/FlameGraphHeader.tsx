@@ -5,7 +5,7 @@ import useDebounce from 'react-use/lib/useDebounce';
 import usePrevious from 'react-use/lib/usePrevious';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { Button, ButtonGroup, Dropdown, Input, Menu, RadioButtonGroup, useStyles2 } from '@grafana/ui';
+import { Button, ButtonGroup, Dropdown, Input, Menu, RadioButtonGroup, useStyles2 } from '@grafana-ui/index';
 
 import { byPackageGradient, byValueGradient, diffColorBlindGradient, diffDefaultGradient } from './FlameGraph/colors';
 import { CollapsedMap } from './FlameGraph/dataTransform';

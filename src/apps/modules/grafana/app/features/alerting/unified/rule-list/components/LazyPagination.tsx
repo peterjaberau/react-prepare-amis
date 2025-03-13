@@ -1,4 +1,4 @@
-import { Button, Icon, Stack } from '@grafana/ui';
+import { Button, Icon, Stack } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 interface LazyPaginationProps {

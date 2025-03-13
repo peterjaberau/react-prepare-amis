@@ -1,4 +1,4 @@
-import { Button, Field, FieldSet, Icon, Input, Tooltip } from '@grafana/ui';
+import { Button, Field, FieldSet, Icon, Input, Tooltip } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import config from '@grafana-module/app/core/config';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

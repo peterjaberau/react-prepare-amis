@@ -4,9 +4,9 @@ import { useCallback, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
 import { CoreApp, DataQuery, DataSourcePluginContextProvider, GrafanaTheme2, LoadingState } from '@data/index';
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { Alert, Button, useStyles2 } from '@grafana/ui';
+import { Alert, Button, useStyles2 } from '@grafana-ui/index';
 import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
 
 import { CloudAlertPreview } from './CloudAlertPreview';

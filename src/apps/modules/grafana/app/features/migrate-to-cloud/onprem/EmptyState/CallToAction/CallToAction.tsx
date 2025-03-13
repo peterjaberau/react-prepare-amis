@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Box, Button, Text } from '@grafana/ui';
+import { Box, Button, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { useCreateSessionMutation } from '../../../api';

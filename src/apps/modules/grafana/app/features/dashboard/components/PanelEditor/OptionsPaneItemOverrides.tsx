@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Tooltip, useStyles2 } from '@grafana/ui';
+import { Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { OptionPaneItemOverrideInfo } from './types';
 

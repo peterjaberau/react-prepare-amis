@@ -3,7 +3,7 @@ import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Button, LinkButton, LoadingPlaceholder, Pagination, Spinner, Stack, Text, useStyles2 } from '@grafana/ui';
+import { Button, LinkButton, LoadingPlaceholder, Pagination, Spinner, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { CombinedRuleNamespace } from '@grafana-module/app/types/unified-alerting';

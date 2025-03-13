@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { Spinner } from '@grafana/ui';
+import { Spinner } from '@grafana-ui/index';
 
 // ideally we'd use `@grafana/ui/LoadingPlaceholder`, but that
 // one has a large margin-bottom.

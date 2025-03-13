@@ -1,7 +1,7 @@
 import { SyntheticEvent, useId } from 'react';
 
 import { DataSourceSettings, SelectableValue } from '@data/index';
-import { Select, Input, Field, FieldSet } from '@grafana/ui';
+import { Select, Input, Field, FieldSet } from '@grafana-ui/index';
 
 import { OpenTsdbOptions } from '../types';
 

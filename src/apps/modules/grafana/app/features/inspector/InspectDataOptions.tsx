@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { DataFrame, DataTransformerID, getFrameDisplayName, SelectableValue } from '@data/index';
-import { Field, HorizontalGroup, Select, Switch, VerticalGroup, useStyles2 } from '@grafana/ui';
+import { Field, HorizontalGroup, Select, Switch, VerticalGroup, useStyles2 } from '@grafana-ui/index';
 import { QueryOperationRow } from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationRow';
 import { t } from '@grafana-module/app/core/internationalization';
 import { DetailText } from '@grafana-module/app/features/inspector/DetailText';

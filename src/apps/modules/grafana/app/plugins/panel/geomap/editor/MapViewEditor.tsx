@@ -2,7 +2,7 @@ import { toLonLat } from 'ol/proj';
 import { useMemo, useCallback } from 'react';
 
 import { StandardEditorProps, SelectableValue } from '@data/index';
-import { Button, InlineField, InlineFieldRow, Select, VerticalGroup } from '@grafana/ui';
+import { Button, InlineField, InlineFieldRow, Select, VerticalGroup } from '@grafana-ui/index';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { Options, MapViewConfig, GeomapInstanceState } from '../types';

@@ -2,7 +2,7 @@ import { uniqueId } from 'lodash';
 import { useRef } from 'react';
 import * as React from 'react';
 
-import { Input, InlineField, Select, InlineSwitch } from '@grafana/ui';
+import { Input, InlineField, Select, InlineSwitch } from '@grafana-ui/index';
 
 import { useDispatch } from '../../../../hooks/useStatelessReducer';
 import { movingAvgModelOptions } from '../../../../queryDef';

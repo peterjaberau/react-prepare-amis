@@ -4,7 +4,7 @@ import { ReactElement } from 'react';
 
 import { GrafanaTheme2, TypedVariableModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Button, Icon, IconButton, useStyles2, useTheme2 } from '@grafana/ui';
+import { Button, Icon, IconButton, useStyles2, useTheme2 } from '@grafana-ui/index';
 
 import { hasOptions } from '../guard';
 import { VariableUsagesButton } from '../inspect/VariableUsagesButton';

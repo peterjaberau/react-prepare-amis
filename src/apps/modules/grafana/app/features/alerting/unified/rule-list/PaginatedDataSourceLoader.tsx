@@ -1,7 +1,7 @@
 import { groupBy } from 'lodash';
 import { useEffect, useMemo, useRef } from 'react';
 
-import { Icon, Stack, Text } from '@grafana/ui';
+import { Icon, Stack, Text } from '@grafana-ui/index';
 import { DataSourceRuleGroupIdentifier, DataSourceRulesSourceIdentifier, RuleGroup } from '@grafana-module/app/types/unified-alerting';
 
 import { hashRule } from '../utils/rule-id';

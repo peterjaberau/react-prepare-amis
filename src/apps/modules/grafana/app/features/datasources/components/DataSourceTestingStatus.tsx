@@ -3,7 +3,7 @@ import { HTMLAttributes } from 'react';
 
 import { DataSourceSettings as DataSourceSettingsType, GrafanaTheme2 } from '@data/index';
 import { TestingStatus, config } from '@runtime/index';
-import { AlertVariant, Alert, useTheme2, Link, useStyles2 } from '@grafana/ui';
+import { AlertVariant, Alert, useTheme2, Link, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { contextSrv } from '../../../core/core';

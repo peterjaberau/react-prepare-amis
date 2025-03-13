@@ -2,7 +2,7 @@ import { useFormContext } from 'react-hook-form';
 
 import { DataSourceInstanceSettings } from '@data/index';
 import { DataSourceJsonData } from '@schema/index';
-import { RadioButtonGroup, Stack, Text } from '@grafana/ui';
+import { RadioButtonGroup, Stack, Text } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { ExpressionDatasourceUID } from '@grafana-module/app/features/expressions/types';
 import { AccessControlAction } from '@grafana-module/app/types';

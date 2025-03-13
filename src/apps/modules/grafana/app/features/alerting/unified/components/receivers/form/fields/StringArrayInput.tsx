@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Input, useStyles2 } from '@grafana/ui';
+import { Button, Input, useStyles2 } from '@grafana-ui/index';
 
 import { ActionIcon } from '../../../rules/ActionIcon';
 

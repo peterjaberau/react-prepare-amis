@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { reportInteraction } from '@runtime/index';
-import { ConfirmModal, Space, Text } from '@grafana/ui';
+import { ConfirmModal, Space, Text } from '@grafana-ui/index';
 
 import { FolderPicker } from '../../../core/components/Select/FolderPicker';
 import { Trans, t } from '../../../core/internationalization';

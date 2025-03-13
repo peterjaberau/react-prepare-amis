@@ -1,6 +1,6 @@
 import { forwardRef, useCallback, useState } from 'react';
 
-import { useStyles2, getSelectStyles, useTheme2 } from '@grafana/ui';
+import { useStyles2, getSelectStyles, useTheme2 } from '@grafana-ui/index';
 import { Role } from '@grafana-module/app/types';
 
 import { RoleMenuGroupOption } from './RoleMenuGroupOption';

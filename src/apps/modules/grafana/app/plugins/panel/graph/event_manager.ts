@@ -9,7 +9,7 @@ import {
   OK_COLOR,
   PENDING_COLOR,
   REGION_FILL_ALPHA,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { MetricsPanelCtrl } from '@grafana-module/app/angular/panel/metrics_panel_ctrl';
 
 export class EventManager {

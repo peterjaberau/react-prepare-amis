@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { Button, Checkbox, TextArea, useStyles2, Stack } from '@grafana/ui';
+import { Button, Checkbox, TextArea, useStyles2, Stack } from '@grafana-ui/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { SaveDashboardResponseDTO } from '@grafana-module/app/types';
 

@@ -5,7 +5,7 @@ import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT } from './consta
 import { LazyLoader } from '../LazyLoader';
 import { SceneGridLayout } from './SceneGridLayout';
 import { SceneGridItemLike } from './types';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { useMeasure } from 'react-use';

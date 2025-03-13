@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 
-import { InteractiveTable, Pagination, Stack } from '@grafana/ui';
+import { InteractiveTable, Pagination, Stack } from '@grafana-ui/index';
 
 import { LocalPlugin } from '../../plugins/admin/types';
 import { MigrateDataResponseItemDto } from '../api';

@@ -5,7 +5,7 @@ import * as React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, Button, ClipboardButton, CodeEditor, TextLink, useStyles2 } from '@grafana/ui';
+import { Alert, Button, ClipboardButton, CodeEditor, TextLink, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { ExportFormats, ExportProvider, ProvisioningType, allGrafanaExportProviders } from './providers';

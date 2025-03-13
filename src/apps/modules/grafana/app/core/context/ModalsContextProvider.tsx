@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import { textUtil } from '@data/index';
 import { locationService } from '@runtime/index';
-import { ConfirmModal, ConfirmModalProps, ModalsContext } from '@grafana/ui';
-import { ModalsContextState } from '@grafana/ui/src/components/Modal/ModalsContext';
+import { ConfirmModal, ConfirmModalProps, ModalsContext } from '@grafana-ui/index';
+import { ModalsContextState } from '@grafana-ui/components/Modal/ModalsContext';
 import { ShowConfirmModalEvent, ShowModalReactEvent } from '@grafana-module/app/types/events';
 
 import appEvents from '../app_events';

@@ -4,7 +4,7 @@ import { ReplaySubject, Subscription } from 'rxjs';
 
 import { PanelProps } from '@data/index';
 import { locationService } from '@runtime/index';
-import { PanelContext, PanelContextRoot } from '@grafana/ui';
+import { PanelContext, PanelContextRoot } from '@grafana-ui/index';
 import { CanvasFrameOptions } from '@grafana-module/app/features/canvas/frame';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
 import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';

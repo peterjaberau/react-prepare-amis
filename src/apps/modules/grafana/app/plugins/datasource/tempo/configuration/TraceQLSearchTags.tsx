@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 
 import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@data/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 import TagsInput from '../SearchTraceQLEditor/TagsInput';
 import { replaceAt } from '../SearchTraceQLEditor/utils';

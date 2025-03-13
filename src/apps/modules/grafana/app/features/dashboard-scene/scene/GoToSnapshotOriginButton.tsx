@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { textUtil } from '@data/index';
 import { config, locationService } from '@runtime/index';
-import { ConfirmModal, ToolbarButton } from '@grafana/ui';
+import { ConfirmModal, ToolbarButton } from '@grafana-ui/index';
 
 import appEvents from '../../../core/app_events';
 import { t } from '../../../core/internationalization';

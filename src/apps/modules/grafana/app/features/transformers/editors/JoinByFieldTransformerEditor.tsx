@@ -10,8 +10,8 @@ import {
 } from '@data/index';
 import { JoinByFieldOptions, JoinMode } from '@data/transformations/transformers/joinByField';
 import { getTemplateSrv } from '@runtime/index';
-import { Select, InlineFieldRow, InlineField } from '@grafana/ui';
-import { useFieldDisplayNames, useSelectOptions } from '@grafana/ui/src/components/MatchersUI/utils';
+import { Select, InlineFieldRow, InlineField } from '@grafana-ui/index';
+import { useFieldDisplayNames, useSelectOptions } from '@grafana-ui/components/MatchersUI/utils';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

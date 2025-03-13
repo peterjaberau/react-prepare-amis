@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { alertmanagerApi } from '@grafana-module/app/features/alerting/unified/api/alertmanagerApi';
 import {
   useCreateContactPoint,

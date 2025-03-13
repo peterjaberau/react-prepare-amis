@@ -1,4 +1,4 @@
-import { LoadingPlaceholder } from '@grafana/ui';
+import { LoadingPlaceholder } from '@grafana-ui/index';
 
 import { RulesTable } from '../components/rules/RulesTable';
 import { useCombinedRules } from '../hooks/useCombinedRuleNamespaces';

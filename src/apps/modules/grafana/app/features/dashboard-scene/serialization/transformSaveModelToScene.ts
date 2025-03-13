@@ -22,7 +22,7 @@ import {
   SceneInteractionProfileEvent,
   SceneObjectState,
 } from '@scenes/index';
-import { isWeekStart } from '@grafana/ui';
+import { isWeekStart } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';

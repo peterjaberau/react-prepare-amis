@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, Box, Button, useStyles2 } from '@grafana/ui';
+import { Alert, Box, Button, useStyles2 } from '@grafana-ui/index';
 
 import { TemplatePreviewErrors, TemplatePreviewResponse, TemplatePreviewResult } from '../../api/templateApi';
 import { stringifyErrorLike } from '../../utils/misc';

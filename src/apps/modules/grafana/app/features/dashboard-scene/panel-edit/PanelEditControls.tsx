@@ -1,4 +1,4 @@
-import { InlineSwitch } from '@grafana/ui';
+import { InlineSwitch } from '@grafana-ui/index';
 
 import { PanelEditor } from './PanelEditor';
 

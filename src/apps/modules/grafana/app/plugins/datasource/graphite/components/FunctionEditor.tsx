@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, Tooltip, useStyles2, type PopoverContent } from '@grafana/ui';
+import { Icon, Tooltip, useStyles2, type PopoverContent } from '@grafana-ui/index';
 
 import { FuncInstance } from '../gfunc';
 

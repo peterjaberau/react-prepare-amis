@@ -4,7 +4,7 @@ import { cx } from '@emotion/css';
 import { DataSourceJsonData, DataSourcePluginOptionsEditorProps } from '@data/index';
 import { ConfigSubSection } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { InlineField, Switch, useTheme2 } from '@grafana/ui';
+import { InlineField, Switch, useTheme2 } from '@grafana-ui/index';
 
 import { docsTip, overhaulStyles } from './ConfigEditor';
 

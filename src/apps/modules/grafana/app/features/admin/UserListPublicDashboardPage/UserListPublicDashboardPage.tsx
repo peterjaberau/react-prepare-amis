@@ -1,5 +1,5 @@
 import { selectors as e2eSelectors } from '@selectors/index';
-import { Icon, Stack, Tag, Tooltip } from '@grafana/ui/src';
+import { Icon, Stack, Tag, Tooltip } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 

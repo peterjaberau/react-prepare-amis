@@ -3,7 +3,7 @@ import { MouseEvent } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import store from '@grafana-module/app/core/store';
 
 import { TutorialCardType } from '../types';

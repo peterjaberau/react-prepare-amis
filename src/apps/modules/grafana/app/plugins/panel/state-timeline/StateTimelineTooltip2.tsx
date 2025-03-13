@@ -2,13 +2,13 @@ import { ReactNode } from 'react';
 
 import { FieldType, TimeRange } from '@data/index';
 import { SortOrder } from '@schema/common/common.gen';
-import { TooltipDisplayMode } from '@grafana/ui';
-import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
-import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';
-import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
-import { VizTooltipWrapper } from '@grafana/ui/src/components/VizTooltip/VizTooltipWrapper';
-import { VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
-import { getContentItems } from '@grafana/ui/src/components/VizTooltip/utils';
+import { TooltipDisplayMode } from '@grafana-ui/index';
+import { VizTooltipContent } from '@grafana-ui/components/VizTooltip/VizTooltipContent';
+import { VizTooltipFooter } from '@grafana-ui/components/VizTooltip/VizTooltipFooter';
+import { VizTooltipHeader } from '@grafana-ui/components/VizTooltip/VizTooltipHeader';
+import { VizTooltipWrapper } from '@grafana-ui/components/VizTooltip/VizTooltipWrapper';
+import { VizTooltipItem } from '@grafana-ui/components/VizTooltip/types';
+import { getContentItems } from '@grafana-ui/components/VizTooltip/utils';
 import { findNextStateIndex, fmtDuration } from '@grafana-module/app/core/components/TimelineChart/utils';
 
 import { getFieldActions } from '../status-history/utils';

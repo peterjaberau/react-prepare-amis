@@ -1,7 +1,7 @@
 import { cloneDeep } from 'lodash';
 
 import { locationService } from '@runtime/index';
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 import { RuleIdentifier, RuleWithLocation } from '@grafana-module/app/types/unified-alerting';
 import { RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
 

@@ -17,7 +17,7 @@ import {
 } from '@data/index';
 import { DataFrame } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Button, Dropdown, Menu, ToolbarButton, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Dropdown, Menu, ToolbarButton, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { downloadDataFrameAsCsv, downloadLogsModelAsTxt } from '../../inspector/utils/download';
 import { LogLabels, LogLabelsList } from '../../logs/components/LogLabels';

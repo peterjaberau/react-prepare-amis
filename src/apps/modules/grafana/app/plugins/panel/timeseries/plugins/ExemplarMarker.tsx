@@ -15,7 +15,7 @@ import * as React from 'react';
 import { DataFrame, DataFrameFieldIndex, Field, formattedValueToString, GrafanaTheme2, LinkModel } from '@data/index';
 import { selectors } from '@selectors/index';
 import { TimeZone } from '@schema/index';
-import { Portal, UPlotConfigBuilder, useStyles2 } from '@grafana/ui';
+import { Portal, UPlotConfigBuilder, useStyles2 } from '@grafana-ui/index';
 import { DisplayValue } from '@grafana-module/app/features/visualization/data-hover/DataHoverView';
 import { ExemplarHoverView } from '@grafana-module/app/features/visualization/data-hover/ExemplarHoverView';
 

@@ -4,7 +4,7 @@ import { FormEvent, useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { AlertState, GrafanaTheme2, dateTimeFormat } from '@data/index';
-import { Alert, Field, Icon, Input, Label, LoadingPlaceholder, Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { Alert, Field, Icon, Input, Label, LoadingPlaceholder, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { StateHistoryItem, StateHistoryItemData } from '@grafana-module/app/types/unified-alerting';
 import { GrafanaAlertStateWithReason, PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 

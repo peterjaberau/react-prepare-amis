@@ -4,7 +4,7 @@ import { gt } from 'semver';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Badge, Button, ConfirmModal, Icon, Spinner, useStyles2 } from '@grafana/ui';
+import { Badge, Button, ConfirmModal, Icon, Spinner, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { isPreinstalledPlugin } from '../helpers';

@@ -4,7 +4,7 @@ import { css } from '@emotion/css';
 // Components
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { Alert, LinkButton, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, LinkButton, Stack, useStyles2 } from '@grafana-ui/index';
 import { Branding } from '@grafana-module/app/core/components/Branding/Branding';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 

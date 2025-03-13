@@ -4,7 +4,7 @@ import { memo, useContext, useEffect, useState } from 'react';
 
 import { locationService } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { ModalsContext } from '@grafana/ui';
+import { ModalsContext } from '@grafana-ui/index';
 import { appEvents } from '@grafana-module/app/core/app_events';
 import { Prompt } from '@grafana-module/app/core/components/FormPrompt/Prompt';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

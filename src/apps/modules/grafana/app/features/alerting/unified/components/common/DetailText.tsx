@@ -1,4 +1,4 @@
-import { Box, ClipboardButton, Stack, Text, Tooltip } from '@grafana/ui';
+import { Box, ClipboardButton, Stack, Text, Tooltip } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import ConditionalWrap from '../ConditionalWrap';

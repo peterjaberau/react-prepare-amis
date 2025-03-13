@@ -1,5 +1,5 @@
 import { getTemplateSrv, TemplateSrv } from '@runtime/index';
-import type { Monaco, monacoTypes } from '@grafana/ui';
+import type { Monaco, monacoTypes } from '@grafana-ui/index';
 
 import { ResourcesAPI } from '../../resources/ResourcesAPI';
 import { CLOUDWATCH_PPL_LANGUAGE_DEFINITION_ID } from '../cloudwatch-ppl/language';

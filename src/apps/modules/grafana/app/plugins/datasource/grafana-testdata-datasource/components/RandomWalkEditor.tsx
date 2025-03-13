@@ -1,5 +1,5 @@
 import { selectors } from '@selectors/index';
-import { InlineField, InlineFieldRow, Input } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Input } from '@grafana-ui/index';
 
 import { EditorProps } from '../QueryEditor';
 import { TestDataDataQuery } from '../dataquery';

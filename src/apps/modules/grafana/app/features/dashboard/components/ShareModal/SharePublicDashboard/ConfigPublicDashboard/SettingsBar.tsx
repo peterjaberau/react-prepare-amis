@@ -3,7 +3,7 @@ import { useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { SettingsBarHeader, Props as SettingsBarHeaderProps } from './SettingsBarHeader';
 

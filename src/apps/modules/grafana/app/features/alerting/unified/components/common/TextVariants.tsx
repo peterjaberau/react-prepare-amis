@@ -3,7 +3,7 @@
 // These help when we need to interpolate variables inside translated strings,
 // where we need to style them differently
 
-import { Text } from '@grafana/ui';
+import { Text } from '@grafana-ui/index';
 
 export const PrimaryText = ({ content }: { content: string }) => <Text color="primary">{content}</Text>;
 export const CodeText = ({ content }: { content: string }) => <Text variant="code">{content}</Text>;

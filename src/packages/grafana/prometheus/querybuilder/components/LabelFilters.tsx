@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField, EditorFieldGroup, EditorList } from '@grafana/plugin-ui';
-import { InlineFieldRow, InlineLabel } from '@grafana/ui';
+import { InlineFieldRow, InlineLabel } from '@grafana-ui/index';
 
 import { QueryBuilderLabelFilter } from '../shared/types';
 

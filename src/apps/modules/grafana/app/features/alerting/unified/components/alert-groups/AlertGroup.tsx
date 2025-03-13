@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Stack, TextLink, useStyles2 } from '@grafana/ui';
+import { Stack, TextLink, useStyles2 } from '@grafana-ui/index';
 import { AlertmanagerGroup } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 
 import { createContactPointSearchLink } from '../../utils/misc';

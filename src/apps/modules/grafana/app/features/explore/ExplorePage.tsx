@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { ErrorBoundaryAlert, useStyles2, useTheme2 } from '@grafana/ui';
+import { ErrorBoundaryAlert, useStyles2, useTheme2 } from '@grafana-ui/index';
 import { SplitPaneWrapper } from '@grafana-module/app/core/components/SplitPaneWrapper/SplitPaneWrapper';
 import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 import { useNavModel } from '@grafana-module/app/core/hooks/useNavModel';

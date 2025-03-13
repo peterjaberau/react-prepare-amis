@@ -4,7 +4,7 @@ import { AadCurrentUserCredentials, AzureCredentials, instanceOfAzureCredential 
 import { SelectableValue } from '@data/index';
 import { ConfigSection } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Select, Field, RadioButtonGroup, Alert, Stack } from '@grafana/ui';
+import { Select, Field, RadioButtonGroup, Alert, Stack } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { PluginState } from '@data/index';
 import { TextDimensionMode } from '@schema/index';
-import { Button, Spinner, useStyles2 } from '@grafana/ui';
+import { Button, Spinner, useStyles2 } from '@grafana-ui/index';
 import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
 import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
 import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/editors/TextDimensionEditor';

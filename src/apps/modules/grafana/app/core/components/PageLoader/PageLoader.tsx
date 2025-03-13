@@ -1,4 +1,4 @@
-import { Box, LoadingPlaceholder } from '@grafana/ui';
+import { Box, LoadingPlaceholder } from '@grafana-ui/index';
 
 interface Props {
   pageName?: string;

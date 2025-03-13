@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Box, Icon, Text, useStyles2 } from '@grafana/ui';
+import { Box, Icon, Text, useStyles2 } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { t } from '@grafana-module/app/core/internationalization';
 

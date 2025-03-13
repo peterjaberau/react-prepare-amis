@@ -3,7 +3,7 @@ import * as React from 'react';
 import { config, isFetchError } from '@runtime/index';
 import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
-import { Alert, Box, Button, Stack } from '@grafana/ui';
+import { Alert, Box, Button, Stack } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { Diffs } from '../settings/version-history/utils';

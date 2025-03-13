@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Box, Button, Icon, Select, Tooltip, useStyles2 } from '@grafana/ui';
+import { Box, Button, Icon, Select, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { ResourcePermission } from './types';

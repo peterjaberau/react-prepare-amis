@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { ConfirmModal, useStyles2 } from '@grafana/ui/src';
+import { ConfirmModal, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 const Body = () => {

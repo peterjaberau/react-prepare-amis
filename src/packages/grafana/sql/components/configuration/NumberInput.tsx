@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 type NumberInputProps = {
   value: number;

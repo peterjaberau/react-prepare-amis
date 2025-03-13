@@ -1,7 +1,7 @@
 import { ChangeEvent } from 'react';
 
 import { config } from '@runtime/index';
-import { Button, Input, Switch, Form, Field, InputControl, Label, TextArea, Stack } from '@grafana/ui';
+import { Button, Input, Switch, Form, Field, InputControl, Label, TextArea, Stack } from '@grafana-ui/index';
 import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';

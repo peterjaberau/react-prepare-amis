@@ -1,4 +1,4 @@
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { InfoItem } from '../../shared/InfoItem';

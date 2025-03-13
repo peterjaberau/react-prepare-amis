@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 import { NavModelItem } from '@data/index';
 import { getBackendSrv, locationService } from '@runtime/index';
-import { Button, Field, Input, FieldSet } from '@grafana/ui';
+import { Button, Field, Input, FieldSet } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { TeamRolePicker } from '@grafana-module/app/core/components/RolePicker/TeamRolePicker';
 import { updateTeamRoles } from '@grafana-module/app/core/components/RolePicker/api';

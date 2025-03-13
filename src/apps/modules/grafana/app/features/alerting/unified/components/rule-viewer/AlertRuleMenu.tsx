@@ -1,5 +1,5 @@
 import { AppEvents } from '@data/index';
-import { ComponentSize, Dropdown, Menu } from '@grafana/ui';
+import { ComponentSize, Dropdown, Menu } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import MenuItemPauseRule from '@grafana-module/app/features/alerting/unified/components/MenuItemPauseRule';
 import MoreButton from '@grafana-module/app/features/alerting/unified/components/MoreButton';

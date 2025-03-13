@@ -13,7 +13,7 @@ import {
 } from '@data/index';
 import { FilterFieldsByNameTransformerOptions } from '@data/transformations/transformers/filterByName';
 import { getTemplateSrv } from '@runtime/services';
-import { Input, FilterPill, InlineFieldRow, InlineField, InlineSwitch, Select } from '@grafana/ui';
+import { Input, FilterPill, InlineFieldRow, InlineField, InlineSwitch, Select } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

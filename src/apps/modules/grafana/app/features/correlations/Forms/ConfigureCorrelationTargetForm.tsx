@@ -3,7 +3,7 @@ import { Controller, FieldError, useFormContext, useWatch } from 'react-hook-for
 
 import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { CorrelationExternal } from '@runtime/index';
-import { Field, FieldSet, Input, Select, useStyles2 } from '@grafana/ui';
+import { Field, FieldSet, Input, Select, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
 

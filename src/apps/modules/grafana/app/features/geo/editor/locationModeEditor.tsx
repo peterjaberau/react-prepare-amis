@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { StandardEditorProps, DataFrame, GrafanaTheme2 } from '@data/index';
 import { FrameGeometrySource, FrameGeometrySourceMode } from '@schema/index';
-import { Alert, HorizontalGroup, Icon, Select, useStyles2 } from '@grafana/ui';
+import { Alert, HorizontalGroup, Icon, Select, useStyles2 } from '@grafana-ui/index';
 
 import { FrameGeometryField, getGeometryField, getLocationMatchers } from '../utils/location';
 

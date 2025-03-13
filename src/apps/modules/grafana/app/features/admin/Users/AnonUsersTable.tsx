@@ -10,7 +10,7 @@ import {
   Tooltip,
   Pagination,
   FetchDataFunc,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { EmptyArea } from '@grafana-module/app/features/alerting/unified/components/EmptyArea';
 import { UserAnonymousDeviceDTO } from '@grafana-module/app/types';

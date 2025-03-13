@@ -13,7 +13,7 @@ import {
 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
-import { Icon, PopoverContent, Tooltip, useTheme2 } from '@grafana/ui';
+import { Icon, PopoverContent, Tooltip, useTheme2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { checkLogsError, checkLogsSampled, escapeUnescapedString } from '../utils';

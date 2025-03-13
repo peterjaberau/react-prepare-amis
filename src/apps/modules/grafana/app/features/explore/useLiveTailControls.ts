@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import * as React from 'react';
 
-import { RefreshPicker } from '@grafana/ui';
+import { RefreshPicker } from '@grafana-ui/index';
 import { useDispatch } from '@grafana-module/app/types';
 
 import { setPausedStateAction, runQueries, clearLogs } from './state/query';

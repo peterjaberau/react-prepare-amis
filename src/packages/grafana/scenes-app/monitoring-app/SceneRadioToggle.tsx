@@ -2,7 +2,7 @@ import React from 'react';
 
 import { SelectableValue } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@scenes/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 export interface SceneRadioToggleState extends SceneObjectState {
   options: Array<SelectableValue<string>>;

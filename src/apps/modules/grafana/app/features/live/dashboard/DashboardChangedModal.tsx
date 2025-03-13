@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, Modal, useStyles2 } from '@grafana/ui';
+import { Button, Modal, useStyles2 } from '@grafana-ui/index';
 
 import { dashboardWatcher } from './dashboardWatcher';
 import { DashboardEvent, DashboardEventAction } from './types';

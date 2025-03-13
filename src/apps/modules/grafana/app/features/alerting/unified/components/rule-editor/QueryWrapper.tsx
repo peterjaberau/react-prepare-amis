@@ -18,7 +18,7 @@ import {
 } from '@data/index';
 import { config } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { GraphThresholdsStyleMode, Icon, InlineField, Input, Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { GraphThresholdsStyleMode, Icon, InlineField, Input, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { logInfo } from '@grafana-module/app/features/alerting/unified/Analytics';
 import { QueryEditorRow } from '@grafana-module/app/features/query/components/QueryEditorRow';
 import { AlertDataQuery, AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';

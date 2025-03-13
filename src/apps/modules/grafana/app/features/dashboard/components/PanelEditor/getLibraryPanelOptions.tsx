@@ -1,4 +1,4 @@
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 import { LibraryPanelInformation } from '@grafana-module/app/features/library-panels/components/LibraryPanelInfo/LibraryPanelInfo';
 
 import { isPanelModelLibraryPanel } from '../../../library-panels/guard';

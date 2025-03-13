@@ -2,10 +2,10 @@ import { ReactElement, useState } from 'react';
 import * as React from 'react';
 
 import { Auth, ConnectionSettings, convertLegacyAuthProps, AuthMethod } from '@grafana/plugin-ui';
-import { docsTip, overhaulStyles } from '@grafana/prometheus';
-import { Alert, SecureSocksProxySettings, useTheme2 } from '@grafana/ui';
+import { docsTip, overhaulStyles } from '@prometheus/index';
+import { Alert, SecureSocksProxySettings, useTheme2 } from '@grafana-ui/index';
 // NEED TO EXPORT THIS FROM GRAFANA/UI FOR EXTERNAL DS
-import { AzureAuthSettings } from '@grafana/ui/src/components/DataSourceSettings/types';
+import { AzureAuthSettings } from '@grafana-ui/components/DataSourceSettings/types';
 
 import { AzurePromDataSourceSettings } from './AzureCredentialsConfig';
 

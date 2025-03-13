@@ -15,7 +15,7 @@ import {
   Tooltip,
   Label,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { getConfig } from '@grafana-module/app/core/config';
 import { OrgRole, useDispatch } from '@grafana-module/app/types';
 

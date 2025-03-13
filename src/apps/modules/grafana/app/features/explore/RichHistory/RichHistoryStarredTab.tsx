@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 
 import { DataSourceApi, GrafanaTheme2, SelectableValue } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { useStyles2, Select, MultiSelect, FilterInput, Button } from '@grafana/ui';
+import { useStyles2, Select, MultiSelect, FilterInput, Button } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {
   createDatasourcesList,

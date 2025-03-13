@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2 } from '@data/index';
 import { UrlSyncContextProvider } from '@scenes/index';
-import { Alert, Box, Spinner, useStyles2 } from '@grafana/ui';
+import { Alert, Box, Spinner, useStyles2 } from '@grafana-ui/index';
 import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
 import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
 import { t } from '@grafana-module/app/core/internationalization';

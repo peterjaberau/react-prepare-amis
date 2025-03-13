@@ -16,7 +16,7 @@ import { DATASOURCE_REF } from '../constants';
 import { BarGaugeDisplayMode, FieldColorModeId, TableCellDisplayMode } from '@schema/index';
 import { DataLinkClickEvent } from '@data/index';
 import { getRoomTemperatureQuery } from './withDrilldown/scenes';
-import { IconButton } from '@grafana/ui';
+import { IconButton } from '@grafana-ui/index';
 
 const basicDemo = () =>
   new SceneAppPage({

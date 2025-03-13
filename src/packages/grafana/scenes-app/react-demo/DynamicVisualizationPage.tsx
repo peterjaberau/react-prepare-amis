@@ -1,5 +1,5 @@
 import { useQueryRunner, VizPanel } from '@scenes-react/index';
-import { RadioButtonGroup, Stack } from '@grafana/ui';
+import { RadioButtonGroup, Stack } from '@grafana-ui/index';
 import React, { useState } from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';

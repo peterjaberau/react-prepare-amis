@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Label, Modal, RadioButtonGroup, useStyles2 } from '@grafana/ui';
+import { Button, Label, Modal, RadioButtonGroup, useStyles2 } from '@grafana-ui/index';
 import { TestReceiversAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 import { Annotations, Labels } from '@grafana-module/app/types/unified-alerting-dto';
 

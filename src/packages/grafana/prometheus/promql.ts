@@ -1,7 +1,7 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/promql.ts
 import { Grammar } from 'prismjs';
 
-import { CompletionItem } from '@grafana/ui';
+import { CompletionItem } from '@grafana-ui/index';
 
 // When changing RATE_RANGES, check if Loki/LogQL ranges should be changed too
 // @see public/app/plugins/datasource/loki/LanguageProvider.ts

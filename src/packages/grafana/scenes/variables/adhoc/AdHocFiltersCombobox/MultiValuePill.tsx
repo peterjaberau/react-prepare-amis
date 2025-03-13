@@ -1,6 +1,6 @@
 import { cx, css } from '@emotion/css';
 import { SelectableValue, GrafanaTheme2 } from '@data/index';
-import { useStyles2, Button, Icon } from '@grafana/ui';
+import { useStyles2, Button, Icon } from '@grafana-ui/index';
 import React, { useCallback } from 'react';
 
 interface MultiValuePillProps {

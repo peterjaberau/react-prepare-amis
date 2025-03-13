@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { PanelMenuItem } from '@data/index';
-import { Menu } from '@grafana/ui';
+import { Menu } from '@grafana-ui/index';
 
 export interface Props {
   items: PanelMenuItem[];

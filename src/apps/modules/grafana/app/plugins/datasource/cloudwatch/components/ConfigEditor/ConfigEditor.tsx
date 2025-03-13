@@ -14,7 +14,7 @@ import {
 } from '@data/index';
 import { ConfigSection } from '@grafana/plugin-ui';
 import { getAppEvents, usePluginInteractionReporter, getDataSourceSrv, config } from '@runtime/index';
-import { Alert, Input, FieldProps, Field, Divider, useStyles2 } from '@grafana/ui';
+import { Alert, Input, FieldProps, Field, Divider, useStyles2 } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../datasource';
 import { SelectableResourceValue } from '../../resources/types';

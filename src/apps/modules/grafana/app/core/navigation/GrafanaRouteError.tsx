@@ -3,7 +3,7 @@ import { ErrorInfo, useEffect } from 'react';
 import { useLocation } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2, locationUtil, PageLayoutType } from '@data/index';
-import { Button, ErrorWithStack, useStyles2 } from '@grafana/ui';
+import { Button, ErrorWithStack, useStyles2 } from '@grafana-ui/index';
 
 import { Page } from '../components/Page/Page';
 import { Trans } from '../internationalization';

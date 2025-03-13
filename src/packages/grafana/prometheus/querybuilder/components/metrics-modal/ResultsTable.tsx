@@ -4,7 +4,7 @@ import { ReactElement } from 'react';
 import Highlighter from 'react-highlight-words';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Icon, Tooltip, useTheme2 } from '@grafana/ui';
+import { Button, Icon, Tooltip, useTheme2 } from '@grafana-ui/index';
 
 import { docsTip } from '../../../configuration/ConfigEditor';
 import { PromVisualQuery } from '../../types';

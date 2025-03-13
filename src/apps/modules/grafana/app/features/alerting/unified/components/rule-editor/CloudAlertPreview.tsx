@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { DataFrame, GrafanaTheme2 } from '@data/index';
-import { Icon, TagList, Tooltip, useStyles2 } from '@grafana/ui/src';
+import { Icon, TagList, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { labelsToTags } from '../../utils/labels';
 import { AlertStateTag } from '../rules/AlertStateTag';

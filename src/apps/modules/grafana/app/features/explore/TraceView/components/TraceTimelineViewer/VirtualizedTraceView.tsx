@@ -22,7 +22,7 @@ import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/ind
 import { TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
 import { config, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
-import { stylesFactory, withTheme2, ToolbarButton } from '@grafana/ui';
+import { stylesFactory, withTheme2, ToolbarButton } from '@grafana-ui/index';
 
 import { PEER_SERVICE } from '../constants/tag-keys';
 import { CriticalPathSection, SpanBarOptions, SpanLinkFunc, TNil } from '../types';

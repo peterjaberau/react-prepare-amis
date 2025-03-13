@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { getAppEvents } from '@runtime/index';
-import { useStyles2, Select, Button, Field, InlineField, InlineSwitch, Alert } from '@grafana/ui';
+import { useStyles2, Select, Button, Field, InlineField, InlineSwitch, Alert } from '@grafana-ui/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
 import { MAX_HISTORY_ITEMS } from '@grafana-module/app/core/history/RichHistoryLocalStorage';

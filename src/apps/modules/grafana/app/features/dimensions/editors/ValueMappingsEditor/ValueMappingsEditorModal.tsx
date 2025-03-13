@@ -4,7 +4,7 @@ import { uniqueId } from 'lodash';
 import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2, MappingType, SelectableValue, SpecialValueMatch, ValueMapping } from '@data/index';
-import { useStyles2, Modal, ValuePicker, Button } from '@grafana/ui';
+import { useStyles2, Modal, ValuePicker, Button } from '@grafana-ui/index';
 
 import { ValueMappingEditRow, ValueMappingEditRowModel } from './ValueMappingEditRow';
 

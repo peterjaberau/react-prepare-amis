@@ -11,7 +11,7 @@ import {
 } from '@data/index';
 import { ConfigDescriptionLink, ConfigSection } from '@grafana/plugin-ui';
 import { DataSourcePicker, DataSourceWithBackend, getDataSourceSrv } from '@runtime/index';
-import { InlineField, InlineFieldRow, Input, InlineSwitch } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Input, InlineSwitch } from '@grafana-ui/index';
 
 import { TagMappingInput } from '../TraceToLogs/TagMappingInput';
 import { ProfileTypesCascader } from '../pyroscope/ProfileTypesCascader';

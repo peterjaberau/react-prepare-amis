@@ -15,7 +15,7 @@ import {
   Stack,
   Text,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { DiffViewer } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffViewer';
 import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
 

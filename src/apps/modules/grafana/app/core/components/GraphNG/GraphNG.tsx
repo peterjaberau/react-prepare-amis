@@ -15,12 +15,12 @@ import {
   TimeZone,
 } from '@data/index';
 import { DashboardCursorSync, VizLegendOptions } from '@schema/index';
-import { Themeable2, VizLayout } from '@grafana/ui';
-import { UPlotChart } from '@grafana/ui/src/components/uPlot/Plot';
-import { AxisProps } from '@grafana/ui/src/components/uPlot/config/UPlotAxisBuilder';
-import { Renderers, UPlotConfigBuilder } from '@grafana/ui/src/components/uPlot/config/UPlotConfigBuilder';
-import { ScaleProps } from '@grafana/ui/src/components/uPlot/config/UPlotScaleBuilder';
-import { pluginLog } from '@grafana/ui/src/components/uPlot/utils';
+import { Themeable2, VizLayout } from '@grafana-ui/index';
+import { UPlotChart } from '@grafana-ui/components/uPlot/Plot';
+import { AxisProps } from '@grafana-ui/components/uPlot/config/UPlotAxisBuilder';
+import { Renderers, UPlotConfigBuilder } from '@grafana-ui/components/uPlot/config/UPlotConfigBuilder';
+import { ScaleProps } from '@grafana-ui/components/uPlot/config/UPlotScaleBuilder';
+import { pluginLog } from '@grafana-ui/components/uPlot/utils';
 
 import { GraphNGLegendEvent, XYFieldMatchers } from './types';
 import { preparePlotFrame as defaultPreparePlotFrame } from './utils';

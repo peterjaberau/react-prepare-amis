@@ -2,7 +2,7 @@ import { ComponentProps } from 'react';
 
 import { config, locationService } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
-import { Modal, ModalTabsHeader, TabContent } from '@grafana/ui';
+import { Modal, ModalTabsHeader, TabContent } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';
 import { isPublicDashboardsEnabled } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';

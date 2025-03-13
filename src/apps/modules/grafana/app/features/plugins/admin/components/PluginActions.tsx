@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, Stack, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { GetStartedWithPlugin } from '../components/GetStartedWithPlugin';
 import { InstallControlsButton } from '../components/InstallControls';

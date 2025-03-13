@@ -1,7 +1,7 @@
 import { debounce } from 'lodash';
 import { useCallback, useMemo } from 'react';
 
-import { Segment, SegmentAsync } from '@grafana/ui';
+import { Segment, SegmentAsync } from '@grafana-ui/index';
 
 import { actions } from '../state/actions';
 import { useDispatch } from '../state/context';

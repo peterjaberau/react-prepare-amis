@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { ConnectionDirection } from '@grafana-module/app/features/canvas/element';
 import { Scene } from '@grafana-module/app/features/canvas/runtime/scene';

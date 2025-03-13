@@ -3,7 +3,7 @@ import {
   CalculateFieldTransformerOptions,
   ReduceOptions,
 } from '@data/transformations/transformers/calculateField';
-import { FilterPill, HorizontalGroup, InlineField, StatsPicker } from '@grafana/ui';
+import { FilterPill, HorizontalGroup, InlineField, StatsPicker } from '@grafana-ui/index';
 
 import { LABEL_WIDTH } from './constants';
 

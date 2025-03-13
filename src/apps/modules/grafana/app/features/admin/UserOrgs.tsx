@@ -14,7 +14,7 @@ import {
   useStyles2,
   withTheme2,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
 import { fetchRoleOptions, updateUserRoles } from '@grafana-module/app/core/components/RolePicker/api';
 import { OrgPicker, OrgSelectItem } from '@grafana-module/app/core/components/Select/OrgPicker';

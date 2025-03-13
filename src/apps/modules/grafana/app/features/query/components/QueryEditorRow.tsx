@@ -24,7 +24,7 @@ import {
 } from '@data/index';
 import { AngularComponent, getAngularLoader, getDataSourceSrv, reportInteraction } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { Badge, ErrorBoundaryAlert } from '@grafana/ui';
+import { Badge, ErrorBoundaryAlert } from '@grafana-ui/index';
 import { OperationRowHelp } from '@grafana-module/app/core/components/QueryOperationRow/OperationRowHelp';
 import {
   QueryOperationAction,

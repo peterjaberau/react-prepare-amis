@@ -13,9 +13,9 @@ import {
   VizLegendItem,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
-import { TooltipHoverMode } from '@grafana/ui/src/components/uPlot/plugins/TooltipPlugin2';
-import { getDisplayValuesForCalcs } from '@grafana/ui/src/components/uPlot/utils';
+} from '@grafana-ui/index';
+import { TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPlugin2';
+import { getDisplayValuesForCalcs } from '@grafana-ui/components/uPlot/utils';
 
 import { getDataLinks } from '../status-history/utils';
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { SelectableValue } from '@data/index';
 import { DashboardLink } from '@schema/index';
-import { CollapsableSection, TagsInput, Select, Field, Input, Checkbox, Button } from '@grafana/ui';
+import { CollapsableSection, TagsInput, Select, Field, Input, Checkbox, Button } from '@grafana-ui/index';
 
 import { LINK_ICON_MAP, NEW_LINK } from './utils';
 

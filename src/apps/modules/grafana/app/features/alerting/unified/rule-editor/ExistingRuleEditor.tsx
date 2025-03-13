@@ -1,4 +1,4 @@
-import { Alert, LoadingPlaceholder } from '@grafana/ui';
+import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
 import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
 
 import { AlertWarning } from '../AlertWarning';

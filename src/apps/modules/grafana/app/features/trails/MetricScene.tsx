@@ -12,7 +12,7 @@ import {
   SceneObjectUrlValues,
   SceneVariableSet,
 } from '@scenes/index';
-import { Box, Icon, LinkButton, Stack, Tab, TabsBar, ToolbarButton, Tooltip, useStyles2 } from '@grafana/ui';
+import { Box, Icon, LinkButton, Stack, Tab, TabsBar, ToolbarButton, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { getExploreUrl } from '../../core/utils/explore';
 

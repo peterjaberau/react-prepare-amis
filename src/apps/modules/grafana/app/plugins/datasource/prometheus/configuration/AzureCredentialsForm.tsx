@@ -3,7 +3,7 @@ import { ChangeEvent, useMemo } from 'react';
 
 import { AzureAuthType, AzureCredentials } from '@grafana/azure-sdk';
 import { SelectableValue } from '@data/index';
-import { InlineFormLabel, Button, Select, Input } from '@grafana/ui';
+import { InlineFormLabel, Button, Select, Input } from '@grafana-ui/index';
 
 export interface Props {
   managedIdentityEnabled: boolean;

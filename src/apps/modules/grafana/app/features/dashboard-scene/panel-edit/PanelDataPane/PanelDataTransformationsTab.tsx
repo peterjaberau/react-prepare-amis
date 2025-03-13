@@ -12,7 +12,7 @@ import {
   VizPanel,
   SceneObjectState,
 } from '@scenes/index';
-import { Button, ButtonGroup, ConfirmModal, Tab, useStyles2 } from '@grafana/ui';
+import { Button, ButtonGroup, ConfirmModal, Tab, useStyles2 } from '@grafana-ui/index';
 import { TransformationOperationRows } from '@grafana-module/app/features/dashboard/components/TransformationsEditor/TransformationOperationRows';
 
 import { getQueryRunnerFor } from '../../utils/utils';

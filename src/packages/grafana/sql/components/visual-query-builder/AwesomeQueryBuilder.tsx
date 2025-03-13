@@ -13,7 +13,7 @@ import { List } from 'immutable';
 import { isString } from 'lodash';
 
 import { dateTime, toOption } from '@data/index';
-import { Button, DateTimePicker, Input, Select } from '@grafana/ui';
+import { Button, DateTimePicker, Input, Select } from '@grafana-ui/index';
 
 const buttonLabels = {
   add: 'Add',

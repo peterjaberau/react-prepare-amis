@@ -24,7 +24,7 @@ import {
   useStyles2,
   Stack,
   Alert,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { ColorValueEditor } from '@grafana-module/app/core/components/OptionsUI/color';
 import config from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';

@@ -2,7 +2,7 @@ import { ProxyTarget } from '@locker/near-membrane-shared';
 import { cloneDeep, isFunction } from 'lodash';
 
 import { config } from '@runtime/index';
-import { Monaco } from '@grafana/ui';
+import { Monaco } from '@grafana-ui/index';
 
 import { loadScriptIntoSandbox } from './code_loader';
 import { forbiddenElements } from './constants';

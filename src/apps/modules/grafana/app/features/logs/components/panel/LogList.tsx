@@ -3,7 +3,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { VariableSizeList } from 'react-window';
 
 import { AbsoluteTimeRange, CoreApp, EventBus, LogRowModel, LogsSortOrder, TimeRange } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { InfiniteScroll } from './InfiniteScroll';
 import { preProcessLogs, LogListModel } from './processing';

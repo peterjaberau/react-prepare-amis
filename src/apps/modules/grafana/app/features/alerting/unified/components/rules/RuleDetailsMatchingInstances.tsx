@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { LinkButton, useStyles2 } from '@grafana/ui';
+import { LinkButton, useStyles2 } from '@grafana-ui/index';
 import { MatcherFilter } from '@grafana-module/app/features/alerting/unified/components/alert-groups/MatcherFilter';
 import {
   AlertInstanceStateFilter,

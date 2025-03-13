@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { getAggregationOptionsByMetric } from '../functions';
 import { ValueTypes } from '../types/query';

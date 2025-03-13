@@ -1,6 +1,6 @@
 import { PanelPlugin, VizOrientation } from '@data/index';
 import { BarGaugeDisplayMode, BarGaugeNamePlacement, BarGaugeSizing, BarGaugeValueMode } from '@schema/index';
-import { commonOptionsBuilder, sharedSingleStatPanelChangedHandler } from '@grafana/ui';
+import { commonOptionsBuilder, sharedSingleStatPanelChangedHandler } from '@grafana-ui/index';
 
 import { addOrientationOption, addStandardDataReduceOptions } from '../stat/common';
 

@@ -5,7 +5,7 @@ import { useFieldArray, useFormContext } from 'react-hook-form';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Field, Input, Stack, Text, TextArea, useStyles2 } from '@grafana/ui';
+import { Button, Field, Input, Stack, Text, TextArea, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardModel } from '../../../../dashboard/state/DashboardModel';

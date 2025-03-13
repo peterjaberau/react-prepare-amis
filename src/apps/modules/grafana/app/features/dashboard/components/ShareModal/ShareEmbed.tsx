@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from 'react';
 
 import { RawTimeRange, TimeRange } from '@data/index';
 import { config } from '@runtime/index';
-import { Button, ClipboardButton, Field, Label, Modal, Stack, Switch, TextArea } from '@grafana/ui';
+import { Button, ClipboardButton, Field, Label, Modal, Stack, Switch, TextArea } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 

@@ -15,7 +15,7 @@ import {
   SceneQueryRunner,
   VizPanel,
 } from '@scenes/index';
-import { InlineSwitch, Input } from '@grafana/ui';
+import { InlineSwitch, Input } from '@grafana-ui/index';
 import { getEmbeddedSceneDefaults } from './utils';
 import { ControlsLabel } from '@scenes/utils/ControlsLabel';
 import { DataTransformerConfig, MatcherConfig } from '@schema/index';

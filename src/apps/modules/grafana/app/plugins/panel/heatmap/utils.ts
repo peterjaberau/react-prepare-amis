@@ -12,7 +12,7 @@ import {
   FieldType,
 } from '@data/index';
 import { AxisPlacement, ScaleDirection, ScaleDistribution, ScaleOrientation, HeatmapCellLayout } from '@schema/index';
-import { UPlotConfigBuilder } from '@grafana/ui';
+import { UPlotConfigBuilder } from '@grafana-ui/index';
 import { isHeatmapCellsDense, readHeatmapRowsCustomMeta } from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';
 
 import { pointWithin, Quadtree, Rect } from '../barchart/quadtree';

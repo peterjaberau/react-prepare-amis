@@ -4,7 +4,7 @@ import {
   CalculateFieldTransformerOptions,
   CumulativeOptions,
 } from '@data/transformations/transformers/calculateField';
-import { InlineField, Select, StatsPicker } from '@grafana/ui';
+import { InlineField, Select, StatsPicker } from '@grafana-ui/index';
 
 import { LABEL_WIDTH } from './constants';
 

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo, useState, useEffect } from 'react';
 
 import { StandardEditorProps, SelectableValue, GrafanaTheme2 } from '@data/index';
-import { Alert, Select, useStyles2 } from '@grafana/ui';
+import { Alert, Select, useStyles2 } from '@grafana-ui/index';
 
 import { COUNTRIES_GAZETTEER_PATH, Gazetteer, getGazetteer } from '../gazetteer/gazetteer';
 

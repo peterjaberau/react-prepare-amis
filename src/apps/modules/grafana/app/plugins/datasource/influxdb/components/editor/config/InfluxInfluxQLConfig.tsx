@@ -11,7 +11,7 @@ import {
   SelectableValue,
   updateDatasourcePluginResetOption,
 } from '@data/index';
-import { Alert, Field, InlineLabel, Input, SecretInput, Select, useStyles2 } from '@grafana/ui';
+import { Alert, Field, InlineLabel, Input, SecretInput, Select, useStyles2 } from '@grafana-ui/index';
 
 import { InfluxOptions, InfluxSecureJsonData } from '../../../types';
 

@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 import { useAlertmanagerConfig } from '../../../hooks/useAlertmanagerConfig';
 import { useAlertmanager } from '../../../state/AlertmanagerContext';

@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { Button, Select, Stack, useStyles2 } from '@grafana/ui';
+import { Button, Select, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { QueryEditorExpressionType, QueryEditorFunctionExpression } from '../../expressions';
 import { DB, QueryFormat, SQLExpression, SQLQuery } from '../../types';

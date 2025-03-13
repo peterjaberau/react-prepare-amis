@@ -12,7 +12,7 @@ import {
   ConcatenateFrameNameMode,
   ConcatenateTransformerOptions,
 } from '@data/transformations/transformers/concat';
-import { InlineField, Input, Select } from '@grafana/ui';
+import { InlineField, Input, Select } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

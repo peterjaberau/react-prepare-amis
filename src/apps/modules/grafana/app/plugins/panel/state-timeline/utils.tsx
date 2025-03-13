@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 import { useMeasure } from 'react-use';
 
 import { DataFrame } from '@data/index';
-import { Pagination } from '@grafana/ui';
+import { Pagination } from '@grafana-ui/index';
 import { makeFramePerSeries } from '@grafana-module/app/core/components/TimelineChart/utils';
 
 import { defaultOptions } from './panelcfg.gen';

@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 const EvaluationIntervalLimitExceeded = () => (
   <Alert severity="warning" title="Global evaluation interval limit exceeded">

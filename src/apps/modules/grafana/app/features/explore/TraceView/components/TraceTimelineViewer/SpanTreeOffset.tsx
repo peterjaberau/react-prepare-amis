@@ -18,7 +18,7 @@ import { get as _get } from 'lodash';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, stylesFactory, withTheme2 } from '@grafana/ui';
+import { Icon, stylesFactory, withTheme2 } from '@grafana-ui/index';
 
 import { autoColor } from '../Theme';
 import { TraceSpan } from '../types';

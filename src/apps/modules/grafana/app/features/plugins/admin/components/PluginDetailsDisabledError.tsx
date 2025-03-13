@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import { PluginErrorCode } from '@data/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 import { CatalogPlugin } from '../types';
 

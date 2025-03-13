@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
 import { EditorField, EditorRow, EditorRows } from '@grafana/plugin-ui';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../../datasource';
 import SQLGenerator from '../../../../language/cloudwatch-sql/SQLGenerator';

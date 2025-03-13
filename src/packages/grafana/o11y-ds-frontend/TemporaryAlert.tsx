@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, AlertVariant, useTheme2 } from '@grafana/ui';
+import { Alert, AlertVariant, useTheme2 } from '@grafana-ui/index';
 
 enum AlertTimeout {
   Error = 7000,

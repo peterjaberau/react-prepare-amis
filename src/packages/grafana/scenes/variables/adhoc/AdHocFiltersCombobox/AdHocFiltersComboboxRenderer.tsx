@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, useStyles2 } from '@grafana/ui';
+import { Icon, useStyles2 } from '@grafana-ui/index';
 import React, { memo, useRef } from 'react';
 import { AdHocFiltersVariable } from '../AdHocFiltersVariable';
 import { AdHocFilterPill } from './AdHocFilterPill';

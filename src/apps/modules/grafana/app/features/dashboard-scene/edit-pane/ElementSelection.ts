@@ -1,5 +1,5 @@
 import { SceneObject, SceneObjectRef, VizPanel } from '@scenes/index';
-import { ElementSelectionContextItem } from '@grafana/ui';
+import { ElementSelectionContextItem } from '@grafana-ui/index';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { isBulkActionElement } from '../scene/types/BulkActionElement';

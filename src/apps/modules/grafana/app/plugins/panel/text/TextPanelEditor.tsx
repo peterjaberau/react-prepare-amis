@@ -8,7 +8,7 @@ import {
   useStyles2,
   CodeEditorSuggestionItem,
   variableSuggestionToCodeEditorSuggestion,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { Options, TextMode } from './panelcfg.gen';
 

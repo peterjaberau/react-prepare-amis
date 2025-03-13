@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 
 import { LogLabelStatsModel, GrafanaTheme2 } from '@data/index';
-import { stylesFactory, withTheme2, Themeable2 } from '@grafana/ui';
+import { stylesFactory, withTheme2, Themeable2 } from '@grafana-ui/index';
 
 //Components
 import { LogLabelStatsRow } from './LogLabelStatsRow';

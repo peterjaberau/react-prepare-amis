@@ -16,7 +16,7 @@ import {
   Spinner,
   Toggletip,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../../../datasource';
 import { PromVisualQuery } from '../../types';

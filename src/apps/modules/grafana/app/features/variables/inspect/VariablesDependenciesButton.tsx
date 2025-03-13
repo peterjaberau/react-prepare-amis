@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { TypedVariableModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 import { NetworkGraphModal } from './NetworkGraphModal';
 import { createDependencyEdges, createDependencyNodes, filterNodesWithDependencies } from './utils';

@@ -4,7 +4,7 @@ import { PropsWithChildren, useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { locationSearchToObject, locationService } from '@runtime/index';
-import { useStyles2, LinkButton, useTheme2 } from '@grafana/ui';
+import { useStyles2, LinkButton, useTheme2 } from '@grafana-ui/index';
 import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
 import { Trans } from '@grafana-module/app/core/internationalization';

@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { Button, Icon, InlineField, InlineFieldRow } from '@grafana/ui';
+import { Button, Icon, InlineField, InlineFieldRow } from '@grafana-ui/index';
 
 import { ClassicCondition, ExpressionQuery } from '../types';
 import { defaultCondition } from '../utils/expressionTypes';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, dateTime, dateTimeFormat } from '@data/index';
-import { Tooltip, useStyles2 } from '@grafana/ui';
+import { Tooltip, useStyles2 } from '@grafana-ui/index';
 import { Time } from '@grafana-module/app/features/explore/Time';
 import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 

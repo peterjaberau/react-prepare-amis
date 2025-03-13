@@ -1,4 +1,4 @@
-import type { Monaco, monacoTypes } from '@grafana/ui';
+import type { Monaco, monacoTypes } from '@grafana-ui/index';
 
 import { CompletionDataProvider } from './CompletionDataProvider';
 import { NeverCaseError } from './NeverCaseError';

@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { LinkButton, FilterInput, InlineField } from '@grafana/ui';
+import { LinkButton, FilterInput, InlineField } from '@grafana-ui/index';
 
 import { SortPicker } from '../Select/SortPicker';
 

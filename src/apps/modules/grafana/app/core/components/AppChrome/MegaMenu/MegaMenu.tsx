@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { ScrollContainer, useStyles2, Stack } from '@grafana/ui';
+import { ScrollContainer, useStyles2, Stack } from '@grafana-ui/index';
 import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 import { t } from '@grafana-module/app/core/internationalization';
 import { setBookmark } from '@grafana-module/app/core/reducers/navBarTree';

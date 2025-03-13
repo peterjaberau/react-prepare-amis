@@ -11,7 +11,7 @@ import 'vendor/flot/jquery.flot.gauge';
 
 import * as grafanaData from '@data/index';
 import * as grafanaRuntime from '@runtime/index';
-import * as grafanaUIraw from '@grafana/ui';
+import * as grafanaUIraw from '@grafana-ui/index';
 import TableModel from '@grafana-module/app/core/TableModel';
 import config from '@grafana-module/app/core/config';
 import { appEvents, contextSrv } from '@grafana-module/app/core/core';
@@ -51,7 +51,7 @@ export const sharedDependenciesMap = {
   '@data/index': grafanaData,
   '@runtime/index': grafanaRuntime,
   '@grafana/slate-react': () => import('slate-react'),
-  '@grafana/ui': grafanaUI,
+  '@grafana-ui/index': grafanaUI,
   '@kusto/monaco-kusto': () => import('@kusto/monaco-kusto'),
   '@grafana-module/app/core/app_events': {
     default: appEvents,

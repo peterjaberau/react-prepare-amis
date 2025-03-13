@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { PluginType } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 type Props = {
   className?: string;

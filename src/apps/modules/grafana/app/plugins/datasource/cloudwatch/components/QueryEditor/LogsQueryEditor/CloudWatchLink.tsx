@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { usePrevious } from 'react-use';
 
 import { PanelData } from '@data/index';
-import { LinkButton } from '@grafana/ui';
+import { LinkButton } from '@grafana-ui/index';
 
 import { AwsUrl, encodeUrl } from '../../../aws_url';
 import { CloudWatchDatasource } from '../../../datasource';

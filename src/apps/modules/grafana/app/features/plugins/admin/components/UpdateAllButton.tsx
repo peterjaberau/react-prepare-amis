@@ -1,4 +1,4 @@
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 interface UpdateAllButtonProps {

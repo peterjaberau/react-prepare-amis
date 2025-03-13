@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 
 import { PanelOptionsEditorProps, PanelProps } from '@data/index';
-import { Field, Input, usePanelContext } from '@grafana/ui';
+import { Field, Input, usePanelContext } from '@grafana-ui/index';
 
 import { Options } from './panelcfg.gen';
 

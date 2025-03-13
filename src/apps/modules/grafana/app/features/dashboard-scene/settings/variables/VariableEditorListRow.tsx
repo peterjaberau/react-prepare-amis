@@ -5,7 +5,7 @@ import { ReactElement, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable } from '@scenes/index';
-import { Button, ConfirmModal, Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana/ui';
+import { Button, ConfirmModal, Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana-ui/index';
 
 import { VariableUsagesButton } from '../../variables/VariableUsagesButton';
 import { UsagesToNetwork, VariableUsageTree, getVariableUsages } from '../../variables/utils';

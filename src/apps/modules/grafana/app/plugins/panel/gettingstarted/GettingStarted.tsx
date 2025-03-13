@@ -4,7 +4,7 @@ import { PureComponent } from 'react';
 
 import { PanelProps } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { Button, Spinner, stylesFactory } from '@grafana/ui';
+import { Button, Spinner, stylesFactory } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AdHocFilterRenderer } from './AdHocFilterRenderer';
 import { AdHocFiltersVariable } from './AdHocFiltersVariable';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 interface Props {
   model: AdHocFiltersVariable;

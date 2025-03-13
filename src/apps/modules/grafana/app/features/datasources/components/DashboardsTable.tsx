@@ -1,4 +1,4 @@
-import { Button, Icon } from '@grafana/ui';
+import { Button, Icon } from '@grafana-ui/index';
 import { PluginDashboard } from '@grafana-module/app/types';
 
 export interface Props {

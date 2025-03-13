@@ -3,7 +3,7 @@ import { noop } from 'lodash';
 import { PropsWithChildren } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, InlineFieldRow, InlineLabel, InlineSegmentGroup, useStyles2 } from '@grafana/ui';
+import { IconButton, InlineFieldRow, InlineLabel, InlineSegmentGroup, useStyles2 } from '@grafana-ui/index';
 
 interface Props {
   label: string;

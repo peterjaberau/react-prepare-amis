@@ -1,6 +1,6 @@
 import { AzureCredentials } from '@grafana/azure-sdk';
 import { SQLOptions } from '@grafana-sql/index';
-import { HttpSettingsBaseProps } from '@grafana/ui/src/components/DataSourceSettings/types';
+import { HttpSettingsBaseProps } from '@grafana-ui/components/DataSourceSettings/types';
 
 export enum MSSQLAuthenticationType {
   sqlAuth = 'SQL Server Authentication',

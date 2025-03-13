@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ReactNode, useCallback } from 'react';
 
 import { GrafanaTheme2, QueryEditorProps } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import { CloudWatchJsonData, CloudWatchLogsQuery, CloudWatchQuery, LogsQueryLanguage } from '../../../types';

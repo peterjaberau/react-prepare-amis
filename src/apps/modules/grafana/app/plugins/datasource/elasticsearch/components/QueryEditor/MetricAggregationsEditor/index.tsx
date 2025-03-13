@@ -1,4 +1,4 @@
-import { Alert, Button } from '@grafana/ui';
+import { Alert, Button } from '@grafana-ui/index';
 
 import { useDispatch } from '../../../hooks/useStatelessReducer';
 import { useQuery } from '../ElasticsearchQueryContext';

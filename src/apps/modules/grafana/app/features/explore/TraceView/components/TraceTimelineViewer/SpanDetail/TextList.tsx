@@ -15,7 +15,7 @@
 import { css } from '@emotion/css';
 import cx from 'classnames';
 
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 const getStyles = () => ({
   TextList: css({

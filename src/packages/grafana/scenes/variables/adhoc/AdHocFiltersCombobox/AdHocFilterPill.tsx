@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, IconButton, Tooltip } from '@grafana/ui';
+import { useStyles2, IconButton, Tooltip } from '@grafana-ui/index';
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { AdHocCombobox } from './AdHocFiltersCombobox';
 import { AdHocFilterWithLabels, AdHocFiltersVariable } from '../AdHocFiltersVariable';

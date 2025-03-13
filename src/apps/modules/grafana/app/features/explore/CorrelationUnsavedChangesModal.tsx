@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 
-import { Button, Modal } from '@grafana/ui';
+import { Button, Modal } from '@grafana-ui/index';
 
 interface UnsavedChangesModalProps {
   message: string;

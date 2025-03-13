@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 
 import { TableImageCellOptions } from '@schema/index';
-import { Field, Input } from '@grafana/ui';
+import { Field, Input } from '@grafana-ui/index';
 
 import { TableCellEditorProps } from '../TableCellOptionEditor';
 

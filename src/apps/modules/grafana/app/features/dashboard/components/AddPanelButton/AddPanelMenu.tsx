@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { locationService } from '@runtime/index';
-import { Menu } from '@grafana/ui';
+import { Menu } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import {

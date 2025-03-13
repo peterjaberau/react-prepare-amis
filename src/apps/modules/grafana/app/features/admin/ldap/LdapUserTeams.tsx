@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Column, InteractiveTable, CellProps } from '@grafana/ui';
+import { Column, InteractiveTable, CellProps } from '@grafana-ui/index';
 import { LdapTeam } from '@grafana-module/app/types';
 
 interface Props {

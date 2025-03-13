@@ -1,5 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/components/monaco-query-field/getOverrideServices.ts
-import { monacoTypes } from '@grafana/ui';
+import { monacoTypes } from '@grafana-ui/index';
 
 // this thing here is a workaround in a way.
 // what we want to achieve, is that when the autocomplete-window

@@ -6,8 +6,8 @@ import {
   PanelPlugin,
 } from '@data/index';
 import { histogramFieldInfo } from '@data/transformations/transformers/histogram';
-import { commonOptionsBuilder, graphFieldOptions } from '@grafana/ui';
-import { StackingEditor } from '@grafana/ui/src/options/builder';
+import { commonOptionsBuilder, graphFieldOptions } from '@grafana-ui/index';
+import { StackingEditor } from '@grafana-ui/options/builder';
 
 import { HistogramPanel } from './HistogramPanel';
 import { defaultHistogramConfig } from './config';

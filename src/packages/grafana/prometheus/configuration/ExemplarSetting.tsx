@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { DataSourceInstanceSettings } from '@data/index';
 import { config, DataSourcePicker } from '@runtime/index';
-import { Button, InlineField, Input, Switch, useTheme2 } from '@grafana/ui';
+import { Button, InlineField, Input, Switch, useTheme2 } from '@grafana-ui/index';
 
 import { ExemplarTraceIdDestination } from '../types';
 

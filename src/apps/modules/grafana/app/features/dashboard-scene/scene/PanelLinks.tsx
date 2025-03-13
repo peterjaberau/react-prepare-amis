@@ -7,7 +7,7 @@ import {
   VariableDependencyConfig,
   VizPanel,
 } from '@scenes/index';
-import { Dropdown, Icon, Menu, PanelChrome, ToolbarButton } from '@grafana/ui';
+import { Dropdown, Icon, Menu, PanelChrome, ToolbarButton } from '@grafana-ui/index';
 
 import { getPanelLinks } from './PanelMenuBehavior';
 

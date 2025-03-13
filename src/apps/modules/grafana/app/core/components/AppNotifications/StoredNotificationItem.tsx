@@ -3,7 +3,7 @@ import { formatDistanceToNow } from 'date-fns';
 import { ReactNode } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Card, Checkbox, useTheme2 } from '@grafana/ui';
+import { Card, Checkbox, useTheme2 } from '@grafana-ui/index';
 
 export type AlertVariant = 'success' | 'warning' | 'error' | 'info';
 

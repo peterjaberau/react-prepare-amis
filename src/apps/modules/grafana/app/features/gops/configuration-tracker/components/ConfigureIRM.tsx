@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconName, Text, useStyles2 } from '@grafana/ui';
+import { IconName, Text, useStyles2 } from '@grafana-ui/index';
 import { useURLSearchParams } from '@grafana-module/app/features/alerting/unified/hooks/useURLSearchParams';
 import { getFirstCompatibleDataSource } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 import { DATASOURCES_ROUTES } from '@grafana-module/app/features/datasources/constants';

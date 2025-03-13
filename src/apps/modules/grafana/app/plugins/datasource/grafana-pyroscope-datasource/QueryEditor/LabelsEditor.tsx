@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useAsync, useLatest } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { CodeEditor, Monaco, useStyles2, monacoTypes } from '@grafana/ui';
+import { CodeEditor, Monaco, useStyles2, monacoTypes } from '@grafana-ui/index';
 
 import { languageDefinition } from '../pyroscopeql';
 

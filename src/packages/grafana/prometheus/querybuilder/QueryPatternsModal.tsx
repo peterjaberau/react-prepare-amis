@@ -5,7 +5,7 @@ import { useMemo, useState } from 'react';
 
 import { CoreApp, DataQuery, getNextRefId, GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Button, Collapse, Modal, useStyles2 } from '@grafana/ui';
+import { Button, Collapse, Modal, useStyles2 } from '@grafana-ui/index';
 
 import { PromQuery } from '../types';
 

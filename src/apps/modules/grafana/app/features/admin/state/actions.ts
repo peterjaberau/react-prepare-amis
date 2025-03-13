@@ -2,7 +2,7 @@ import { debounce } from 'lodash';
 
 import { dateTimeFormatTimeAgo } from '@data/index';
 import { featureEnabled, getBackendSrv, isFetchError, locationService } from '@runtime/index';
-import { FetchDataArgs } from '@grafana/ui';
+import { FetchDataArgs } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';

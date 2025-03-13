@@ -8,7 +8,7 @@ import {
   SceneObjectUrlValues,
   SceneObjectWithUrlSync,
 } from '@scenes/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { reportExploreMetrics } from '../interactions';
 import { getVewByPreference, setVewByPreference } from '../services/store';

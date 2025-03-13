@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 
 import { GrafanaTheme2, SelectableValue, StandardEditorProps, StandardEditorsRegistryItem } from '@data/index';
 import { ComparisonOperation } from '@schema/index';
-import { Button, InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana/ui';
-import { comparisonOperationOptions } from '@grafana/ui/src/components/MatchersUI/FieldValueMatcher';
+import { Button, InlineField, InlineFieldRow, Select, useStyles2 } from '@grafana-ui/index';
+import { comparisonOperationOptions } from '@grafana-ui/components/MatchersUI/FieldValueMatcher';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { DEFAULT_STYLE_RULE } from '../layers/data/geojsonLayer';

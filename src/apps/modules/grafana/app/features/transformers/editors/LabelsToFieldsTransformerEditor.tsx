@@ -12,7 +12,7 @@ import {
   LabelsToFieldsMode,
   LabelsToFieldsOptions,
 } from '@data/transformations/transformers/labelsToFields';
-import { InlineField, InlineFieldRow, RadioButtonGroup, Select, FilterPill, Stack } from '@grafana/ui';
+import { InlineField, InlineFieldRow, RadioButtonGroup, Select, FilterPill, Stack } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

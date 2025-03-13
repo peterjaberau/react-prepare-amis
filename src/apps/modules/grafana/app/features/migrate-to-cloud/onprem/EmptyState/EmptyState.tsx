@@ -1,4 +1,4 @@
-import { Box, Grid, Stack } from '@grafana/ui';
+import { Box, Grid, Stack } from '@grafana-ui/index';
 
 import { CallToAction } from './CallToAction/CallToAction';
 import { InfoPaneLeft } from './InfoPaneLeft';

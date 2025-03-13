@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 

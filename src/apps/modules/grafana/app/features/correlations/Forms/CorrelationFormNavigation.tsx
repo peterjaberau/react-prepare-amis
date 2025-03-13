@@ -1,4 +1,4 @@
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { useWizardContext } from '../components/Wizard/wizardContext';

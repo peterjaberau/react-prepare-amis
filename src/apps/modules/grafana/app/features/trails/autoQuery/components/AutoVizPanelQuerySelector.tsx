@@ -1,5 +1,5 @@
 import { SceneObjectState, SceneObjectBase, SceneComponentProps } from '@scenes/index';
-import { RadioButtonGroup } from '@grafana/ui';
+import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { getMetricSceneFor } from '../../utils';
 import { AutoQueryDef } from '../types';

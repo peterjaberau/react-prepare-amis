@@ -2,7 +2,7 @@ import debounce from 'debounce-promise';
 import { ChangeEvent, useState } from 'react';
 import { UseFormSetValue, useForm } from 'react-hook-form';
 
-import { Button, Input, Switch, Field, Label, TextArea, Stack, Alert, Box } from '@grafana/ui';
+import { Button, Input, Switch, Field, Label, TextArea, Stack, Alert, Box } from '@grafana-ui/index';
 import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';
 

@@ -1,7 +1,7 @@
 import { useFormContext } from 'react-hook-form';
 
 import { SelectableValue } from '@data/index';
-import { Box, Button, Field, Input, RadioButtonGroup, Switch } from '@grafana/ui';
+import { Box, Button, Field, Input, RadioButtonGroup, Switch } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { LdapPayload, OrgRole } from '@grafana-module/app/types';

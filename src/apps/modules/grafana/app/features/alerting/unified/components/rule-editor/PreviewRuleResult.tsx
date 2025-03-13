@@ -4,7 +4,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { FieldConfigSource, FieldMatcherID, GrafanaTheme2, LoadingState } from '@data/index';
 import { PanelRenderer } from '@runtime/index';
-import { TableCellDisplayMode, useStyles2 } from '@grafana/ui';
+import { TableCellDisplayMode, useStyles2 } from '@grafana-ui/index';
 
 import { PreviewRuleResponse } from '../../types/preview';
 import { RuleFormType } from '../../types/rule-form';

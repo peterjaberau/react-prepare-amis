@@ -1,5 +1,5 @@
 import { isFetchError } from '@runtime/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
 import { t } from '@grafana-module/app/core/internationalization';
 

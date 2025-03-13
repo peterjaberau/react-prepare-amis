@@ -1,6 +1,6 @@
 import { cloneElement, ReactElement, useRef } from 'react';
 
-import { Popover as GrafanaPopover, PopoverController } from '@grafana/ui';
+import { Popover as GrafanaPopover, PopoverController } from '@grafana-ui/index';
 
 export type PopoverProps = {
   children: ReactElement;

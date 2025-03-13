@@ -1,5 +1,5 @@
 import { FlotDataPoint } from '@data/index';
-import { MenuItemProps } from '@grafana/ui';
+import { MenuItemProps } from '@grafana-ui/index';
 
 export class GraphContextMenuCtrl {
   private source?: FlotDataPoint | null;

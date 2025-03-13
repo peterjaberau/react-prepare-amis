@@ -3,7 +3,7 @@ import { css, cx } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { Components } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
-import { Icon, useStyles2 } from '@grafana/ui';
+import { Icon, useStyles2 } from '@grafana-ui/index';
 
 import { Breadcrumb } from './types';
 

@@ -5,7 +5,7 @@ import { useAsync } from 'react-use';
 import { CoreApp, GrafanaTheme2, LoadingState, PanelData } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { DataSourceType } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { QueryErrorAlert } from '@grafana-module/app/features/query/components/QueryErrorAlert';

@@ -12,7 +12,7 @@ import {
 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
-import { Button, Collapse, Icon, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Collapse, Icon, Tooltip, useStyles2 } from '@grafana-ui/index';
 import store from '@grafana-module/app/core/store';
 
 import { LogRows } from '../../logs/components/LogRows';

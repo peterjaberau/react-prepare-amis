@@ -1,5 +1,5 @@
 import { DataSourceApi, PanelMenuItem } from '@data/index';
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { SceneTimeRangeState, VizPanel } from '@scenes/index';
 import { DataQuery, DataSourceRef } from '@schema/index';

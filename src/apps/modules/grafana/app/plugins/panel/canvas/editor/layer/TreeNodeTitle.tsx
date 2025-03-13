@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, useStyles2 } from '@grafana/ui';
+import { IconButton, useStyles2 } from '@grafana-ui/index';
 import { LayerName } from '@grafana-module/app/core/components/Layers/LayerName';
 import { ElementState } from '@grafana-module/app/features/canvas/runtime/element';
 

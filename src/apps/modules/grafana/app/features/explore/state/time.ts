@@ -9,7 +9,7 @@ import {
   TimeRange,
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { RefreshPicker } from '@grafana/ui';
+import { RefreshPicker } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getTimeRange, refreshIntervalToSortOrder, stopQueryState } from '@grafana-module/app/core/utils/explore';

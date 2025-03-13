@@ -1,4 +1,4 @@
-import { Alert, ConfirmModal } from '@grafana/ui';
+import { Alert, ConfirmModal } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 interface DeleteTokenConfirmationModalProps {

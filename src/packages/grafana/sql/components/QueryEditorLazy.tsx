@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { lazy, Suspense } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { LoadingPlaceholder, useStyles2 } from '@grafana/ui';
+import { LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
 
 import type { SqlQueryEditorProps } from './QueryEditor';
 const QueryEditor = lazy(() => import(/* webpackChunkName: "sql-query-editor" */ './QueryEditor'));

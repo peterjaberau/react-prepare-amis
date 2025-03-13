@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { Alert, Button, LoadingPlaceholder, Modal, useStyles2, Space } from '@grafana/ui';
+import { Alert, Button, LoadingPlaceholder, Modal, useStyles2, Space } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 import ResourcePickerData, { ResourcePickerQueryType } from '../../resourcePicker/resourcePickerData';

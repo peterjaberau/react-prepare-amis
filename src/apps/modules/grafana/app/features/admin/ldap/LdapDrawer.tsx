@@ -21,7 +21,7 @@ import {
   Tooltip,
   RadioButtonGroup,
   SecretInput,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { LdapPayload, MapKeyCertConfigured } from '@grafana-module/app/types';
 

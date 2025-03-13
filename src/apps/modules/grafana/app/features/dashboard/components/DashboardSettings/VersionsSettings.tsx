@@ -2,7 +2,7 @@ import { PureComponent } from 'react';
 import * as React from 'react';
 
 import { config } from '@runtime/index';
-import { Spinner, HorizontalGroup } from '@grafana/ui';
+import { Spinner, HorizontalGroup } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import {
   historySrv,

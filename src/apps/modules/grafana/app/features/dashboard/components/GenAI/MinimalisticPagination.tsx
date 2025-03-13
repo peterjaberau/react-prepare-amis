@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, useStyles2 } from '@grafana/ui';
+import { IconButton, useStyles2 } from '@grafana-ui/index';
 
 export interface MinimalisticPaginationProps {
   currentPage: number;

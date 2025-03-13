@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import { ReactElement, ReactNode, cloneElement, useRef } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Popover as GrafanaPopover, PopoverController, Stack, useStyles2 } from '@grafana/ui';
+import { Popover as GrafanaPopover, PopoverController, Stack, useStyles2 } from '@grafana-ui/index';
 
 export interface PopupCardProps {
   children: ReactElement;

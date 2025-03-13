@@ -1,7 +1,7 @@
 import { compact } from 'lodash';
 import { Suspense, lazy } from 'react';
 
-import { Button, LoadingPlaceholder, Stack, Text } from '@grafana/ui';
+import { Button, LoadingPlaceholder, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
 import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';

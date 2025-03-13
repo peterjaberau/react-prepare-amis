@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 
-import { Button, LoadingPlaceholder, ScrollContainer } from '@grafana/ui';
+import { Button, LoadingPlaceholder, ScrollContainer } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { UserDTO, UserOrg } from '@grafana-module/app/types';
 

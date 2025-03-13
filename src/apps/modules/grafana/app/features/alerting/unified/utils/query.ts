@@ -1,7 +1,7 @@
 import { produce } from 'immer';
 
 import { DataSourceInstanceSettings } from '@data/index';
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { DataQuery } from '@schema/index';
 import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
 import { CombinedRule } from '@grafana-module/app/types/unified-alerting';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DemoVizLayout } from './utils';
 import { PageWrapper } from './PageWrapper';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import { AnnotationLayer, DataLayerControl, SceneContextProvider } from '@scenes-react/index';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { DemoSubTitle } from '../pages/DemoSubTitle';

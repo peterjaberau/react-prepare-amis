@@ -1,6 +1,6 @@
 import { cx } from '@emotion/css';
 
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { ResultFormat } from '../../../../../types';
 import { RESULT_FORMATS } from '../../../constants';

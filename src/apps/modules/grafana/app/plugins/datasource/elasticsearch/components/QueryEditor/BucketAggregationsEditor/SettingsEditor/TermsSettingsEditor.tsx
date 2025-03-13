@@ -2,7 +2,7 @@ import { uniqueId } from 'lodash';
 import { useRef } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { InlineField, Select, Input } from '@grafana/ui';
+import { InlineField, Select, Input } from '@grafana-ui/index';
 
 import { useDispatch } from '../../../../hooks/useStatelessReducer';
 import { MetricAggregation, Percentiles, ExtendedStatMetaType, ExtendedStats, Terms } from '../../../../types';

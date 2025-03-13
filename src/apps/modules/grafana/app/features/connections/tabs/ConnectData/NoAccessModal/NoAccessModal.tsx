@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2, Modal, Icon, Button } from '@grafana/ui';
+import { useStyles2, Modal, Icon, Button } from '@grafana-ui/index';
 
 import { type CardGridItem } from '../CardGrid';
 

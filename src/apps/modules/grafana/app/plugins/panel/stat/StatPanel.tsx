@@ -12,8 +12,8 @@ import {
 } from '@data/index';
 import { findNumericFieldMinMax } from '@data/field/fieldOverrides';
 import { BigValueTextMode, BigValueGraphMode } from '@schema/index';
-import { BigValue, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
-import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
+import { BigValue, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafana-ui/index';
+import { DataLinksContextMenuApi } from '@grafana-ui/components/DataLinks/DataLinksContextMenu';
 import { config } from '@grafana-module/app/core/config';
 
 import { Options } from './panelcfg.gen';

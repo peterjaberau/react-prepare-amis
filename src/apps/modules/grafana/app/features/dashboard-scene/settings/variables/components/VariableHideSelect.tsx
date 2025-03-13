@@ -1,7 +1,7 @@
 import { PropsWithChildren, useMemo } from 'react';
 
 import { VariableType, VariableHide } from '@data/index';
-import { Field, RadioButtonGroup } from '@grafana/ui';
+import { Field, RadioButtonGroup } from '@grafana-ui/index';
 
 interface Props {
   onChange: (option: VariableHide) => void;

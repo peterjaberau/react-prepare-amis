@@ -6,7 +6,7 @@ import {
   sceneGraph,
   AdHocFiltersVariable,
 } from '@scenes/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 import { reportExploreMetrics } from '../interactions';
 import { VAR_OTEL_AND_METRIC_FILTERS, VAR_OTEL_GROUP_LEFT, VAR_OTEL_RESOURCES } from '../shared';

@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import SwaggerUI from 'swagger-ui-react';
 
 import { createTheme, monacoLanguageRegistry, SelectableValue } from '@data/index';
-import { Stack, Select, UserIcon, UserView, Button } from '@grafana/ui';
+import { Stack, Select, UserIcon, UserView, Button } from '@grafana-ui/index';
 import { setMonacoEnv } from '@grafana-module/app/core/monacoEnv';
 import { ThemeProvider } from '@grafana-module/app/core/utils/ConfigProvider';
 

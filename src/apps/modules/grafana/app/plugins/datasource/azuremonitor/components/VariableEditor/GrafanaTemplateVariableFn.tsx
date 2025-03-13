@@ -1,6 +1,6 @@
 import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 
-import { InlineField, Input } from '@grafana/ui';
+import { InlineField, Input } from '@grafana-ui/index';
 
 import DataSource from '../../datasource';
 import { migrateStringQueriesToObjectQueries } from '../../grafanaTemplateVariableFns';

@@ -13,7 +13,7 @@ import {
   RadioButtonGroup,
   Themeable2,
   withTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import TraceQLSearch from './SearchTraceQLEditor/TraceQLSearch';
 import { ServiceGraphSection } from './ServiceGraphSection';

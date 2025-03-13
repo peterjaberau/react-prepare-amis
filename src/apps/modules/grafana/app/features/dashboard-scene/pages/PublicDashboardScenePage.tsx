@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2, PageLayoutType } from '@data/index';
 import { SceneComponentProps, UrlSyncContextProvider } from '@scenes/index';
-import { Alert, Box, Icon, Stack, useStyles2 } from '@grafana/ui';
+import { Alert, Box, Icon, Stack, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
 import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';

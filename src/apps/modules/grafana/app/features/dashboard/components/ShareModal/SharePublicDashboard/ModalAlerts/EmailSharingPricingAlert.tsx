@@ -1,4 +1,4 @@
-import { Alert, Button, Stack } from '@grafana/ui';
+import { Alert, Button, Stack } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 const EMAIL_SHARING_URL =

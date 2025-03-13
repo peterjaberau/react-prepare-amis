@@ -17,7 +17,7 @@ import {
   renderMarkdown,
   PanelPluginDataSupport,
 } from '@data/index';
-import { PanelContext, SeriesVisibilityChangeMode, VizLegendOptions } from '@grafana/ui';
+import { PanelContext, SeriesVisibilityChangeMode, VizLegendOptions } from '@grafana-ui/index';
 import { config, getAppEvents, getPluginImportUtils } from '@runtime/index';
 import { SceneObjectBase } from '../../core/SceneObjectBase';
 import { sceneGraph } from '../../core/sceneGraph';

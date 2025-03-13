@@ -1,5 +1,5 @@
 import { DataSourceInstanceSettings, PanelPlugin } from '@data/index';
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 import { OldFolderPicker } from '@grafana-module/app/core/components/Select/OldFolderPicker';
 import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
 import { PermissionLevelString } from '@grafana-module/app/types';

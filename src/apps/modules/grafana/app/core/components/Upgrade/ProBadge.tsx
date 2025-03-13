@@ -3,7 +3,7 @@ import { HTMLAttributes, useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportExperimentView } from '@runtime/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 export interface Props extends HTMLAttributes<HTMLSpanElement> {
   text?: string;

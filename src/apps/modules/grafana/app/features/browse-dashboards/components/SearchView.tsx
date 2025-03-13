@@ -1,7 +1,7 @@
 import { ReactNode, useCallback } from 'react';
 
 import { DataFrameView, toDataFrame } from '@data/index';
-import { Button, EmptyState } from '@grafana/ui';
+import { Button, EmptyState } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { useKeyNavigationListener } from '@grafana-module/app/features/search/hooks/useSearchKeyboardSelection';
 import { SearchResultsProps, SearchResultsTable } from '@grafana-module/app/features/search/page/components/SearchResultsTable';

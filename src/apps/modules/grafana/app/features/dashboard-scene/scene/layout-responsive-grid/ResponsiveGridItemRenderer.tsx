@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { SceneComponentProps } from '@scenes/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 import { ResponsiveGridItem } from './ResponsiveGridItem';
 

@@ -5,7 +5,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { CoreApp, GrafanaTheme2, LoadingState } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { defaultTimeZone, TimeZone } from '@schema/index';
-import { TabbedContainer, TabConfig, useStyles2 } from '@grafana/ui';
+import { TabbedContainer, TabConfig, useStyles2 } from '@grafana-ui/index';
 import { requestIdGenerator } from '@grafana-module/app/core/utils/explore';
 import { ExploreDrawer } from '@grafana-module/app/features/explore/ExploreDrawer';
 import { InspectDataTab } from '@grafana-module/app/features/inspector/InspectDataTab';

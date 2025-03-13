@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { dateTimeFormat } from '@data/index';
-import { LinkButton, Spinner, IconButton } from '@grafana/ui';
+import { LinkButton, Spinner, IconButton } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction, StoreState } from '@grafana-module/app/types';

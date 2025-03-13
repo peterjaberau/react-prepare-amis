@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import type { RequireAtLeastOne } from 'type-fest';
 
-import { Icon, type IconName, Text, Tooltip } from '@grafana/ui';
-import type { TextProps } from '@grafana/ui/src/components/Text/Text';
+import { Icon, type IconName, Text, Tooltip } from '@grafana-ui/index';
+import type { TextProps } from '@grafana-ui/components/Text/Text';
 import type { RuleHealth } from '@grafana-module/app/types/unified-alerting';
 import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 

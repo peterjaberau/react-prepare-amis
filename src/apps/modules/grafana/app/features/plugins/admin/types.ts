@@ -8,7 +8,7 @@ import {
   PluginErrorCode,
   WithAccessControlMetadata,
 } from '@data/index';
-import { IconName } from '@grafana/ui';
+import { IconName } from '@grafana-ui/index';
 import { StoreState, PluginsState } from '@grafana-module/app/types';
 
 export type PluginTypeCode = 'app' | 'panel' | 'datasource';

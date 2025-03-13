@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { InlineField, Input, Select } from '@grafana/ui';
+import { InlineField, Input, Select } from '@grafana-ui/index';
 
 import { GraphiteQuery, GraphiteQueryType } from '../types';
 

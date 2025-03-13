@@ -7,7 +7,7 @@ import {
   HeatmapCalculationMode,
   HeatmapCalculationOptions,
 } from '@schema/index';
-import { TooltipDisplayMode } from '@grafana/ui';
+import { TooltipDisplayMode } from '@grafana-ui/index';
 
 import { colorSchemes } from './palettes';
 import { Options, defaultOptions, HeatmapColorMode } from './types';

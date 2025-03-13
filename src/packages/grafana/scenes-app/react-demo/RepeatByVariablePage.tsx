@@ -1,5 +1,5 @@
 import { useVariableValues, CustomVariable, VariableControl } from '@scenes-react/index';
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 import React from 'react';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { PageWrapper } from './PageWrapper';

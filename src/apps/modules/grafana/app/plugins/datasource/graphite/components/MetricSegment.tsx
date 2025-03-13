@@ -2,7 +2,7 @@ import { debounce } from 'lodash';
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { SegmentAsync } from '@grafana/ui';
+import { SegmentAsync } from '@grafana-ui/index';
 
 import { actions } from '../state/actions';
 import { useDispatch } from '../state/context';

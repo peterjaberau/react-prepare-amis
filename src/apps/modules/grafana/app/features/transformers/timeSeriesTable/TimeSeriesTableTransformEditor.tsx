@@ -11,7 +11,7 @@ import {
   FieldType,
   isTimeSeriesField,
 } from '@data/index';
-import { InlineFieldRow, InlineField, StatsPicker, Select, InlineLabel } from '@grafana/ui';
+import { InlineFieldRow, InlineField, StatsPicker, Select, InlineLabel } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

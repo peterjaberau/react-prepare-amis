@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 
-import { Drawer, Tab, TabsBar } from '@grafana/ui';
+import { Drawer, Tab, TabsBar } from '@grafana-ui/index';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';
 

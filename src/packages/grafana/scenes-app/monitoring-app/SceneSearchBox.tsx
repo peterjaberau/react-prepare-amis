@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SceneComponentProps, SceneObjectState, SceneObjectBase } from '@scenes/index';
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 export interface SceneSearchBoxState extends SceneObjectState {
   value: string;

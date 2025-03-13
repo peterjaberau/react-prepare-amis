@@ -1,4 +1,4 @@
-import { Menu } from '@grafana/ui';
+import { Menu } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { GrafanaRuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
 import { RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';

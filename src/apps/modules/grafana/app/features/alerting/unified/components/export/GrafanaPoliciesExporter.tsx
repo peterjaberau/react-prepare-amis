@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { LoadingPlaceholder } from '@grafana/ui';
+import { LoadingPlaceholder } from '@grafana-ui/index';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 

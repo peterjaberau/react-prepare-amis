@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useAsync } from 'react-use';
 
-import { ConfirmModal, EmptyState, LinkButton, TextLink } from '@grafana/ui';
+import { ConfirmModal, EmptyState, LinkButton, TextLink } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import PageActionBar from '@grafana-module/app/core/components/PageActionBar/PageActionBar';
 import { Trans, t } from '@grafana-module/app/core/internationalization';

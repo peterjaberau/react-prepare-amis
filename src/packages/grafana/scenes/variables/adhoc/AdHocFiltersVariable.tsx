@@ -6,7 +6,7 @@ import { ControlsLayout, SceneComponentProps } from '../../core/types';
 import { DataSourceRef } from '@schema/index';
 import { dataFromResponse, getQueriesForVariables, renderPrometheusLabelFilters, responseHasError } from '../utils';
 import { patchGetAdhocFilters } from './patchGetAdhocFilters';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { sceneGraph } from '../../core/sceneGraph';
 import { AdHocFilterBuilder } from './AdHocFilterBuilder';
 import { AdHocFilterRenderer } from './AdHocFilterRenderer';

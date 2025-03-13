@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import { Modal, Button, Input, Stack, ClipboardButton, Field } from '@grafana/ui';
+import { Modal, Button, Input, Stack, ClipboardButton, Field } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { TokenErrorAlert } from '../TokenErrorAlert';

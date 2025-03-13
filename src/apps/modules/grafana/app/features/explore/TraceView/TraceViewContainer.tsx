@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { DataFrame, SplitOpen } from '@data/index';
-import { PanelChrome } from '@grafana/ui';
+import { PanelChrome } from '@grafana-ui/index';
 import { StoreState, useSelector } from '@grafana-module/app/types';
 
 import { TraceView } from './TraceView';

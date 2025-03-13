@@ -2,7 +2,7 @@ import { skipToken } from '@reduxjs/toolkit/query/react';
 import { useCallback, useEffect, useState } from 'react';
 
 import { config } from '@runtime/index';
-import { AlertVariant, Box, Stack, Text } from '@grafana/ui';
+import { AlertVariant, Box, Stack, Text } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import {

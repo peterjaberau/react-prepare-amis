@@ -14,7 +14,7 @@ import {
   Box,
   Stack,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import config from '@grafana-module/app/core/config';
 import { contextSrv } from '@grafana-module/app/core/core';

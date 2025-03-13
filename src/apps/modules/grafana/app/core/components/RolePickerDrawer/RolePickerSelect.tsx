@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import { toOption } from '@data/index';
-import { MultiSelect } from '@grafana/ui';
+import { MultiSelect } from '@grafana-ui/index';
 
 import { RolePickerDrawer } from './RolePickerDrawer';
 

@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { MultiSelect } from '@grafana/ui';
+import { MultiSelect } from '@grafana-ui/index';
 
 import { selectors } from '../../e2e/selectors';
 import { AzureQueryEditorFieldProps, AzureMonitorOption } from '../../types';

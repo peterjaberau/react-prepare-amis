@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { LoadingState, PanelData } from '@data/index';
 import { config } from '@runtime/index';
-import { Button, ClipboardButton, JSONFormatter, LoadingPlaceholder, Stack } from '@grafana/ui';
+import { Button, ClipboardButton, JSONFormatter, LoadingPlaceholder, Stack } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
 

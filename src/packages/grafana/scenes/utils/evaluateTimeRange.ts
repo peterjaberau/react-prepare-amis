@@ -1,6 +1,6 @@
 import { dateMath, DateTime, DateTimeInput, setWeekStart, TimeRange } from '@data/index';
 import { TimeZone } from '@schema/index';
-import { WeekStart } from '@grafana/ui';
+import { WeekStart } from '@grafana-ui/index';
 
 export function evaluateTimeRange(
   from: string | DateTime,

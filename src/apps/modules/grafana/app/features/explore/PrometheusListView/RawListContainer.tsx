@@ -6,7 +6,7 @@ import { VariableSizeList as List } from 'react-window';
 
 import { DataFrame, Field as DataFrameField } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Field, Switch } from '@grafana/ui/';
+import { Field, Switch } from '@grafana-ui/index';
 
 import { ItemLabels } from './ItemLabels';
 import RawListItem from './RawListItem';

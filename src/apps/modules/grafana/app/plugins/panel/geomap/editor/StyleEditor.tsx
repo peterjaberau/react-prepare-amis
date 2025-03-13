@@ -19,7 +19,7 @@ import {
   InlineFieldRow,
   InlineLabel,
   RadioButtonGroup,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { NumberValueEditor } from '@grafana-module/app/core/components/OptionsUI/number';
 import { SliderValueEditor } from '@grafana-module/app/core/components/OptionsUI/slider';
 import {

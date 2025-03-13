@@ -9,7 +9,7 @@ import {
   isUnsignedPluginSignature,
   SelectableValue,
 } from '@data/index';
-import { ActionMeta, PluginSignatureBadge, Select, Stack } from '@grafana/ui';
+import { ActionMeta, PluginSignatureBadge, Select, Stack } from '@grafana-ui/index';
 
 import { getDataSourceSrv } from '../services/dataSourceSrv';
 

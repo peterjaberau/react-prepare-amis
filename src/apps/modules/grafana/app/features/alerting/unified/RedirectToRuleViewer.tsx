@@ -5,7 +5,7 @@ import { useLocation } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config, isFetchError } from '@runtime/index';
-import { Alert, Card, Icon, LoadingPlaceholder, useStyles2 } from '@grafana/ui';
+import { Alert, Card, Icon, LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
 
 import { AlertLabels } from './components/AlertLabels';
 import { RuleViewerLayout } from './components/rule-viewer/RuleViewerLayout';

@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { satisfies, SemVer } from 'semver';
 
 import { SelectableValue } from '@data/index';
-import { InlineSegmentGroup, SegmentAsync, useTheme2 } from '@grafana/ui';
+import { InlineSegmentGroup, SegmentAsync, useTheme2 } from '@grafana-ui/index';
 
 import { useFields } from '../../../hooks/useFields';
 import { useDispatch } from '../../../hooks/useStatelessReducer';

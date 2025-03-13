@@ -5,7 +5,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { LinkButton, FilterInput, useStyles2 } from '@grafana/ui';
+import { LinkButton, FilterInput, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { getConfig } from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';

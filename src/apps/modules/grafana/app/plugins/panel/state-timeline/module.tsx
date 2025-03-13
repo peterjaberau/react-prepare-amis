@@ -6,7 +6,7 @@ import {
   PanelPlugin,
 } from '@data/index';
 import { AxisPlacement, VisibilityMode } from '@schema/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { InsertNullsEditor } from '../timeseries/InsertNullsEditor';
 import { SpanNullsEditor } from '../timeseries/SpanNullsEditor';

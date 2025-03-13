@@ -14,7 +14,7 @@ import {
   ToolbarButtonRow,
   ConfirmModal,
   Badge,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { updateNavIndex } from '@grafana-module/app/core/actions';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';

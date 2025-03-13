@@ -5,7 +5,7 @@ import { useToggle, useWindowSize } from 'react-use';
 
 import { applyFieldOverrides, DataFrame, GrafanaTheme2, SplitOpen } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { useStyles2, useTheme2, PanelChrome } from '@grafana/ui';
+import { useStyles2, useTheme2, PanelChrome } from '@grafana-ui/index';
 
 import { NodeGraph } from '../../../plugins/panel/nodeGraph';
 import { useCategorizeFrames } from '../../../plugins/panel/nodeGraph/useCategorizeFrames';

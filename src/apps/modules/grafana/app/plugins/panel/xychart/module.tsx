@@ -1,5 +1,5 @@
 import { PanelPlugin } from '@data/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { SeriesEditor } from './SeriesEditor';
 import { XYChartPanel2 } from './XYChartPanel';

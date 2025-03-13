@@ -4,8 +4,8 @@ import { FC, useMemo } from 'react';
 import { Editor } from 'slate-react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { promqlGrammar } from '@grafana/prometheus';
-import { SlatePrism, makeValue, useStyles2 } from '@grafana/ui';
+import { promqlGrammar } from '@prometheus/index';
+import { SlatePrism, makeValue, useStyles2 } from '@grafana-ui/index';
 import LogqlSyntax from '@grafana-module/app/plugins/datasource/loki/syntax';
 import { RulesSource } from '@grafana-module/app/types/unified-alerting';
 

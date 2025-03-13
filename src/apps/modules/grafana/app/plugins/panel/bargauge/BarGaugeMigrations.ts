@@ -1,5 +1,5 @@
 import { PanelModel } from '@data/index';
-import { sharedSingleStatMigrationHandler } from '@grafana/ui';
+import { sharedSingleStatMigrationHandler } from '@grafana-ui/index';
 
 import { Options } from './panelcfg.gen';
 

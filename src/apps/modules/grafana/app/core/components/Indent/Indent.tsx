@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2, ThemeSpacingTokens } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
-import { getResponsiveStyle, ResponsiveProp } from '@grafana/ui/src/components/Layout/utils/responsiveness';
+import { useStyles2 } from '@grafana-ui/index';
+import { getResponsiveStyle, ResponsiveProp } from '@grafana-ui/components/Layout/utils/responsiveness';
 
 interface IndentProps {
   children?: React.ReactNode;

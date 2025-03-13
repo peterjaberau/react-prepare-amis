@@ -1,7 +1,7 @@
 import { AdHocVariableFilter, DataSourceRef, SelectableValue, getDefaultTimeRange } from '@data/index';
 // import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { getDataSourceSrv } from '@runtime/index';
-import { SegmentAsync } from '@grafana/ui';
+import { SegmentAsync } from '@grafana-ui/index';
 
 interface Props {
   datasource: DataSourceRef;

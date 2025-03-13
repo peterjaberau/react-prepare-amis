@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 
 import { reportInteraction } from '@runtime/index';
-import { HorizontalGroup, Icon, IconButton, Tooltip, useTheme2 } from '@grafana/ui';
+import { HorizontalGroup, Icon, IconButton, Tooltip, useTheme2 } from '@grafana-ui/index';
 
 import { QueryValidator, QueryValidatorProps } from './QueryValidator';
 

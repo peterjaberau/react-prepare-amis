@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { Select, useStyles2 } from '@grafana/ui';
+import { Select, useStyles2 } from '@grafana-ui/index';
 
 type Props = {
   options: Array<SelectableValue<string>>;

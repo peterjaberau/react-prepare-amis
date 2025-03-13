@@ -1,4 +1,4 @@
-import { Alert, LinkButton } from '@grafana/ui';
+import { Alert, LinkButton } from '@grafana-ui/index';
 
 import { AlertmanagerAction } from '../../../hooks/useAbilities';
 import { isVanillaPrometheusAlertManagerDataSource } from '../../../utils/datasource';

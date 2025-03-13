@@ -1,4 +1,4 @@
-import { Button, ClipboardButton, CodeEditor, Modal, useStyles2 } from '@grafana/ui';
+import { Button, ClipboardButton, CodeEditor, Modal, useStyles2 } from '@grafana-ui/index';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { css } from '@emotion/css';

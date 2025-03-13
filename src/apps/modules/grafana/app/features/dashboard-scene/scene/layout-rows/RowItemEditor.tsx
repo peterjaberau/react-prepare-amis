@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Alert, Button, Input, RadioButtonGroup, Switch, TextLink } from '@grafana/ui';
+import { Alert, Button, Input, RadioButtonGroup, Switch, TextLink } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';

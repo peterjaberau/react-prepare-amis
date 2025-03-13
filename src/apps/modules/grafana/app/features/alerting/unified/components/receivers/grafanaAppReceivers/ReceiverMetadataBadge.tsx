@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, LinkButton, Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { Icon, LinkButton, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { ReceiverPluginMetadata } from './useReceiversMetadata';
 

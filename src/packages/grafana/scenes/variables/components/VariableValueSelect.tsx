@@ -9,7 +9,7 @@ import {
   getSelectStyles,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { SceneComponentProps } from '../../core/types';
 import { MultiValueVariable } from '../variants/MultiValueVariable';

@@ -13,8 +13,8 @@ import {
   VizOrientation,
 } from '@data/index';
 import { BarGaugeSizing } from '@schema/index';
-import { BarGauge, DataLinksContextMenu, VizLayout, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
-import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
+import { BarGauge, DataLinksContextMenu, VizLayout, VizRepeater, VizRepeaterRenderValueProps } from '@grafana-ui/index';
+import { DataLinksContextMenuApi } from '@grafana-ui/components/DataLinks/DataLinksContextMenu';
 import { config } from '@grafana-module/app/core/config';
 
 import { BarGaugeLegend } from './BarGaugeLegend';

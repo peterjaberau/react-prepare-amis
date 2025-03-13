@@ -3,7 +3,7 @@ import { ReactElement, useMemo } from 'react';
 
 import { DataFrame, MatcherConfig, SelectableValue } from '@data/index';
 import { SceneDataProvider } from '@scenes/index';
-import { InlineField, InlineFieldRow, MultiSelect } from '@grafana/ui';
+import { InlineField, InlineFieldRow, MultiSelect } from '@grafana-ui/index';
 
 export type LogFilter = {
   pluginIds?: Set<string>;

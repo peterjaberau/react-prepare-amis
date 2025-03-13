@@ -20,7 +20,7 @@ import {
   TableSortByFieldState,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { diffColorBlindColors, diffDefaultColors } from '../FlameGraph/colors';
 import { FlameGraphDataContainer } from '../FlameGraph/dataTransform';

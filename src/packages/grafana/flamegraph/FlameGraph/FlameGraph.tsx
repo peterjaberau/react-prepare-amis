@@ -20,7 +20,7 @@ import { css, cx } from '@emotion/css';
 import { useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafana-ui/index';
 
 import { PIXELS_PER_LEVEL } from '../constants';
 import { ClickedItemData, ColorScheme, ColorSchemeDiff, SelectedView, TextAlign } from '../types';

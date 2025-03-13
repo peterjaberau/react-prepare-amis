@@ -5,7 +5,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Modal, useStyles2, useTheme2 } from '@grafana/ui';
+import { Modal, useStyles2, useTheme2 } from '@grafana-ui/index';
 
 import { SQLQuery, QueryEditorProps } from '../../types';
 

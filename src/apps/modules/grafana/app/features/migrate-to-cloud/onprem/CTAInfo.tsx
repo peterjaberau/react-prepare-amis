@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Stack, Box, Text } from '@grafana/ui';
+import { Stack, Box, Text } from '@grafana-ui/index';
 
 interface CTAInfoProps {
   title: NonNullable<ReactNode>;

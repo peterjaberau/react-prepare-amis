@@ -3,7 +3,7 @@ import memoizeOne from 'memoize-one';
 import tinycolor from 'tinycolor2';
 
 import { colorManipulator, GrafanaTheme2, LogLevel } from '@data/index';
-import { styleMixins } from '@grafana/ui';
+import { styleMixins } from '@grafana-ui/index';
 
 export const getLogLevelStyles = (theme: GrafanaTheme2, logLevel?: LogLevel) => {
   let logColor = theme.isLight ? theme.v1.palette.gray5 : theme.v1.palette.gray2;

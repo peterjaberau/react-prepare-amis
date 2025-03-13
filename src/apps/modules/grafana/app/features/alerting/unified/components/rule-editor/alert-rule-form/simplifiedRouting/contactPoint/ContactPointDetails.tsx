@@ -1,4 +1,4 @@
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 
 import { ContactPointReceiverTitleRow } from '../../../../contact-points/ContactPoint';
 import { RECEIVER_META_KEY, RECEIVER_PLUGIN_META_KEY } from '../../../../contact-points/constants';

@@ -3,7 +3,7 @@ import useAsync from 'react-use/lib/useAsync';
 
 import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { InlineField, InlineFieldRow, InlineSwitch, useStyles2 } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InlineSwitch, useStyles2 } from '@grafana-ui/index';
 
 import { TempoDatasource } from '../datasource';
 import { TempoJsonData } from '../types';

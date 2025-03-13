@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Card, useStyles2 } from '@grafana/ui';
+import { Card, useStyles2 } from '@grafana-ui/index';
 
 interface Props {
   description?: string;

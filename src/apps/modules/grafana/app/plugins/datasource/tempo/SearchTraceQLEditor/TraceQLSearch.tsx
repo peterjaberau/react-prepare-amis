@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { CoreApp, GrafanaTheme2 } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
 import { config, FetchError, getTemplateSrv, reportInteraction } from '@runtime/index';
-import { Alert, Button, HorizontalGroup, Select, useStyles2 } from '@grafana/ui';
+import { Alert, Button, HorizontalGroup, Select, useStyles2 } from '@grafana-ui/index';
 
 import { RawQuery } from '../_importedDependencies/datasources/prometheus/RawQuery';
 import { TraceqlFilter, TraceqlSearchScope } from '../dataquery.gen';

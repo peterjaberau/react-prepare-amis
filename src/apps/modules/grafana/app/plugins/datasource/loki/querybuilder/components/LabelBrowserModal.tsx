@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import { CoreApp, GrafanaTheme2, LocalStorageValueProvider, TimeRange } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { LoadingPlaceholder, Modal, useStyles2 } from '@grafana/ui';
+import { LoadingPlaceholder, Modal, useStyles2 } from '@grafana-ui/index';
 
 import { LokiLabelBrowser } from '../../components/LokiLabelBrowser';
 import { LokiDatasource } from '../../datasource';

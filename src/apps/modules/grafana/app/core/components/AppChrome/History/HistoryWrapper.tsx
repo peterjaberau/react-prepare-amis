@@ -3,7 +3,7 @@ import moment from 'moment';
 import { useState } from 'react';
 
 import { FieldType, GrafanaTheme2, store } from '@data/index';
-import { Button, Card, IconButton, Space, Stack, Text, useStyles2, Box, Sparkline, useTheme2, Icon } from '@grafana/ui';
+import { Button, Card, IconButton, Space, Stack, Text, useStyles2, Box, Sparkline, useTheme2, Icon } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { formatDate } from '@grafana-module/app/core/internationalization/dates';
 

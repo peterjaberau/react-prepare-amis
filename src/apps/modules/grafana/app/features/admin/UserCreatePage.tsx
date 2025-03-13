@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom-v5-compat';
 
 import { NavModelItem } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { Button, Input, Field } from '@grafana/ui';
+import { Button, Input, Field } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

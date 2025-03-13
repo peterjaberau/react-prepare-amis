@@ -19,7 +19,7 @@ import { GrafanaTheme2, LinkModel, TraceKeyValuePair, TraceLog } from '@data/ind
 import { SpanBarOptions, TraceToProfilesOptions } from '@grafana/o11y-ds-frontend';
 import { config, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
-import { stylesFactory, withTheme2 } from '@grafana/ui';
+import { stylesFactory, withTheme2 } from '@grafana-ui/index';
 
 import { autoColor } from '../Theme';
 import { merge as mergeShortcuts } from '../keyboard-shortcuts';

@@ -1,6 +1,6 @@
 import { SelectableValue } from '@data/index';
 import { BarGaugeDisplayMode, BarGaugeValueMode, TableBarGaugeCellOptions } from '@schema/index';
-import { Field, RadioButtonGroup, Stack } from '@grafana/ui';
+import { Field, RadioButtonGroup, Stack } from '@grafana-ui/index';
 
 import { TableCellEditorProps } from '../TableCellOptionEditor';
 

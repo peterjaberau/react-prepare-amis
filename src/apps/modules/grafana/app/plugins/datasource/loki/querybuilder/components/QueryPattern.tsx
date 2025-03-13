@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { RawQuery } from '@grafana/plugin-ui';
-import { Button, Card, useStyles2 } from '@grafana/ui';
+import { Button, Card, useStyles2 } from '@grafana-ui/index';
 
 import logqlGrammar from '../../syntax';
 import { lokiQueryModeller } from '../LokiQueryModeller';

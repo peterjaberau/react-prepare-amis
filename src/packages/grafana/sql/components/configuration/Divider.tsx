@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 // this custom component is necessary because the Grafana UI <Divider /> component is not backwards compatible with Grafana < 10.1.0
 export const Divider = () => {

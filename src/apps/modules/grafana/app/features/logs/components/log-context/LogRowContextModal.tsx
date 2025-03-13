@@ -19,7 +19,7 @@ import {
 } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
-import { Button, Modal, useTheme2 } from '@grafana/ui';
+import { Button, Modal, useTheme2 } from '@grafana-ui/index';
 import store from '@grafana-module/app/core/store';
 import { SETTINGS_KEYS } from '@grafana-module/app/features/explore/Logs/utils/logs';
 import { splitOpen } from '@grafana-module/app/features/explore/state/main';

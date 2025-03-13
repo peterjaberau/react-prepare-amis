@@ -1,4 +1,4 @@
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { SceneCSSGridItem, SceneQueryRunner, SceneVariableSet } from '@scenes/index';
 
 import { PanelMenu } from '../Menu/PanelMenu';

@@ -3,7 +3,7 @@ import { useAsync } from 'react-use';
 
 import { QueryEditorProps, SelectableValue } from '@data/index';
 import { selectors as editorSelectors } from '@selectors/index';
-import { InlineField, InlineFieldRow, InlineSwitch, Input, Select, Icon, TextArea } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InlineSwitch, Input, Select, Icon, TextArea } from '@grafana-ui/index';
 
 import { RandomWalkEditor, StreamingClientEditor } from './components';
 import { CSVContentEditor } from './components/CSVContentEditor';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { SelectableValue } from '@data/index';
-import { AsyncMultiSelect, InlineField, SegmentAsync, Select } from '@grafana/ui';
+import { AsyncMultiSelect, InlineField, SegmentAsync, Select } from '@grafana-ui/index';
 
 import { useFields } from '../../../../hooks/useFields';
 import { useDispatch } from '../../../../hooks/useStatelessReducer';

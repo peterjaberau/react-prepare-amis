@@ -14,8 +14,8 @@ import {
 } from '@data/index';
 import { alpha } from '@data/themes/colorManipulator';
 import { AxisPlacement, FieldColorModeId, ScaleDirection, ScaleOrientation, VisibilityMode } from '@schema/index';
-import { UPlotConfigBuilder } from '@grafana/ui';
-import { FacetedData, FacetSeries } from '@grafana/ui/src/components/uPlot/types';
+import { UPlotConfigBuilder } from '@grafana-ui/index';
+import { FacetedData, FacetSeries } from '@grafana-ui/components/uPlot/types';
 
 import { pointWithin, Quadtree, Rect } from '../barchart/quadtree';
 import { valuesToFills } from '../heatmap/utils';

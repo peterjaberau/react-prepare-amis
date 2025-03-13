@@ -4,7 +4,7 @@ import { isNumber, max, min, throttle } from 'lodash';
 import { useEffect, useState } from 'react';
 
 import { DataFrame, FieldType, GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
-import { isValidLegacyName, utf8Support } from '@grafana/prometheus';
+import { isValidLegacyName, utf8Support } from '@prometheus/index';
 import { config } from '@runtime/index';
 import {
   ConstantVariable,
@@ -27,7 +27,7 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { DataQuery, SortOrder, TooltipDisplayMode } from '@schema/index';
-import { Alert, Button, Field, LoadingPlaceholder, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Field, LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { BreakdownLabelSelector } from '../BreakdownLabelSelector';

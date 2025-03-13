@@ -12,7 +12,7 @@ import { convertFieldType } from '@data/transformations/transformers/convertFiel
 import { applyNullInsertThreshold } from '@data/transformations/transformers/nulls/nullInsertThreshold';
 import { nullToValue } from '@data/transformations/transformers/nulls/nullToValue';
 import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
-import { buildScaleKey } from '@grafana/ui/src/components/uPlot/internal';
+import { buildScaleKey } from '@grafana-ui/components/uPlot/internal';
 
 import { HeatmapTooltip } from '../heatmap/panelcfg.gen';
 

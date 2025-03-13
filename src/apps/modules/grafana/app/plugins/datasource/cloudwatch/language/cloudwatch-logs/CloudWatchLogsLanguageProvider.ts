@@ -3,7 +3,7 @@ import { lastValueFrom } from 'rxjs';
 
 import { AbsoluteTimeRange, HistoryItem, LanguageProvider } from '@data/index';
 import { BackendDataSourceResponse, FetchResponse, TemplateSrv, getTemplateSrv } from '@runtime/index';
-import { CompletionItemGroup, SearchFunctionType, Token, TypeaheadInput, TypeaheadOutput } from '@grafana/ui';
+import { CompletionItemGroup, SearchFunctionType, Token, TypeaheadInput, TypeaheadOutput } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../datasource';
 import { CloudWatchQuery, LogGroup } from '../../types';

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Text, useStyles2 } from '@grafana/ui';
+import { Text, useStyles2 } from '@grafana-ui/index';
 
 import { MinimalisticPagination } from './MinimalisticPagination';
 

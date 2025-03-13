@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffectOnce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, useStyles2 } from '@grafana/ui';
+import { Alert, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { AppNotification, timeoutMap } from '@grafana-module/app/types';
 

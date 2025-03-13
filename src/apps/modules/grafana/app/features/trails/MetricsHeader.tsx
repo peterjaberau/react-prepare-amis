@@ -1,4 +1,4 @@
-import { Stack, Text } from '@grafana/ui';
+import { Stack, Text } from '@grafana-ui/index';
 
 export const MetricsHeader = () => (
   <Stack direction="column" gap={1}>

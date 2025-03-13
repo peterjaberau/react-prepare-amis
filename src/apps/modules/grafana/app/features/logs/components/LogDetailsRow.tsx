@@ -23,7 +23,7 @@ import {
   Themeable2,
   Tooltip,
   withTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { logRowToSingleRowDataFrame } from '../logsModel';
 import { getLabelTypeFromRow } from '../utils';

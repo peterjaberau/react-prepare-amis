@@ -1,6 +1,6 @@
 import { locationService } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
-import { Drawer } from '@grafana/ui';
+import { Drawer } from '@grafana-ui/index';
 
 import { shareDashboardType } from '../../../dashboard/components/ShareModal/utils';
 import { DashboardScene } from '../../scene/DashboardScene';

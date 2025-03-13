@@ -13,7 +13,7 @@ import {
 } from '@data/index';
 import { EditorField, EditorRow, QueryOptionGroup } from '@grafana/plugin-ui';
 import { config, getAppEvents, reportInteraction } from '@runtime/index';
-import { Alert, AutoSizeInput, RadioButtonGroup, Select } from '@grafana/ui';
+import { Alert, AutoSizeInput, RadioButtonGroup, Select } from '@grafana-ui/index';
 
 import {
   getQueryDirectionLabel,

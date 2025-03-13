@@ -21,7 +21,7 @@ import {
   Dropdown,
   MultiSelect,
   SecretInput,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { FormPrompt } from '@grafana-module/app/core/components/FormPrompt/FormPrompt';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import config from '@grafana-module/app/core/config';

@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
 import { SelectableValue, StandardEditorProps } from '@data/index';
-import { Field, RadioButtonGroup, Switch } from '@grafana/ui/src';
+import { Field, RadioButtonGroup, Switch } from '@grafana-ui/index';
 
 import { LineStyle } from '../types';
 

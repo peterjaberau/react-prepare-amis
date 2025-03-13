@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useState } from 'react';
 
-import { Button, HorizontalGroup, useStyles2, VerticalGroup } from '@grafana/ui';
+import { Button, HorizontalGroup, useStyles2, VerticalGroup } from '@grafana-ui/index';
 
 function getStyles() {
   return {

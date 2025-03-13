@@ -3,7 +3,7 @@ import { memo, useCallback, useState } from 'react';
 import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2, PanelPluginMeta, SelectableValue } from '@data/index';
-import { useStyles2, VerticalGroup, FilterInput } from '@grafana/ui';
+import { useStyles2, VerticalGroup, FilterInput } from '@grafana-ui/index';
 import { FolderInfo } from '@grafana-module/app/types';
 
 import { FolderFilter } from '../../../../core/components/FolderFilter/FolderFilter';

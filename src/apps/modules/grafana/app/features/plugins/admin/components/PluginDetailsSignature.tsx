@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { PluginErrorCode, PluginSignatureStatus } from '@data/index';
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 import { CatalogPlugin } from '../types';
 

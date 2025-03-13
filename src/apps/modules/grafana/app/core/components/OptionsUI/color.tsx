@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2, useStyles2, ColorPicker, IconButton } from '@grafana/ui';
-import { ColorSwatch } from '@grafana/ui/src/components/ColorPicker/ColorSwatch';
+import { useTheme2, useStyles2, ColorPicker, IconButton } from '@grafana-ui/index';
+import { ColorSwatch } from '@grafana-ui/components/ColorPicker/ColorSwatch';
 
 export interface ColorValueEditorSettings {
   placeholder?: string;

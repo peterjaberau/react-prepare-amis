@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Label, Stack, useStyles2 } from '@grafana/ui';
+import { Label, Stack, useStyles2 } from '@grafana-ui/index';
 
 type Props = { label: string; actions?: React.ReactNode; id?: string };
 

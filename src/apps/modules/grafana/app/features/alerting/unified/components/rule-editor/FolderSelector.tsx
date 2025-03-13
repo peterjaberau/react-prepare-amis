@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, Field, Input, Label, Modal, Stack, Text, useStyles2 } from '@grafana/ui';
+import { Button, Field, Input, Label, Modal, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { NestedFolderPicker } from '@grafana-module/app/core/components/NestedFolderPicker/NestedFolderPicker';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

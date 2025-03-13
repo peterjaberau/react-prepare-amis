@@ -1,4 +1,4 @@
-import { Alert } from '@grafana/ui';
+import { Alert } from '@grafana-ui/index';
 
 export const readOnlyMessage =
   'This data source was added by config and cannot be modified using the UI. Please contact your server admin to update this data source.';

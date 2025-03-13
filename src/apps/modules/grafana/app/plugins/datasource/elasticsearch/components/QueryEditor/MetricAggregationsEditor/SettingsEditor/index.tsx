@@ -2,7 +2,7 @@ import { uniqueId } from 'lodash';
 import { ComponentProps, useId, useRef, useState } from 'react';
 import * as React from 'react';
 
-import { InlineField, Input, InlineSwitch, Select } from '@grafana/ui';
+import { InlineField, Input, InlineSwitch, Select } from '@grafana-ui/index';
 
 import { useDispatch } from '../../../../hooks/useStatelessReducer';
 import { extendedStats } from '../../../../queryDef';

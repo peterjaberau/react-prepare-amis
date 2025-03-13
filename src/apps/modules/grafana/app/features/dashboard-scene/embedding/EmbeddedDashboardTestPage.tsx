@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { PageLayoutType } from '@data/index';
-import { Box } from '@grafana/ui';
+import { Box } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 
 import { EmbeddedDashboard } from './EmbeddedDashboard';

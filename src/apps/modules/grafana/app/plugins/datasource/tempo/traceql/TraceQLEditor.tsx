@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { TemporaryAlert } from '@grafana/o11y-ds-frontend';
 import { reportInteraction } from '@runtime/index';
-import { CodeEditor, Monaco, monacoTypes, useTheme2 } from '@grafana/ui';
+import { CodeEditor, Monaco, monacoTypes, useTheme2 } from '@grafana-ui/index';
 
 import { TempoDatasource } from '../datasource';
 import { TempoQuery } from '../types';

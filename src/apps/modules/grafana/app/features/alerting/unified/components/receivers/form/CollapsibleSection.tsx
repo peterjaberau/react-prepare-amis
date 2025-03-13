@@ -3,7 +3,7 @@ import { useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconSize, useStyles2 } from '@grafana/ui';
+import { IconSize, useStyles2 } from '@grafana-ui/index';
 
 import { CollapseToggle } from '../../CollapseToggle';
 

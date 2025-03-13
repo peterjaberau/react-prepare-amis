@@ -1,4 +1,4 @@
-import { TimeRangePicker as TimeRangePickerUI } from '@grafana/ui';
+import { TimeRangePicker as TimeRangePickerUI } from '@grafana-ui/index';
 import React from 'react';
 import { useTimeRange } from '../hooks/hooks';
 

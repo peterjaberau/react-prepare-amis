@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObject, SceneObjectState } from '@scenes/index';
-import { Drawer, useStyles2 } from '@grafana/ui';
+import { Drawer, useStyles2 } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { ShowModalReactEvent } from '@grafana-module/app/types/events';
 

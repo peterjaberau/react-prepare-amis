@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 
 import { locationUtil } from '@data/index';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';
-import { Tab, useElementSelection } from '@grafana/ui';
+import { Tab, useElementSelection } from '@grafana-ui/index';
 
 import { isClonedKey } from '../../utils/clone';
 import { getDashboardSceneFor } from '../../utils/utils';

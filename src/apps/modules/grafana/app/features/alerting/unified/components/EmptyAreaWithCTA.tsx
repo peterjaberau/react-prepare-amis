@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { ButtonHTMLAttributes } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Button, ButtonVariant, IconName, LinkButton, useStyles2 } from '@grafana/ui';
+import { Button, ButtonVariant, IconName, LinkButton, useStyles2 } from '@grafana-ui/index';
 
 import { EmptyArea } from './EmptyArea';
 

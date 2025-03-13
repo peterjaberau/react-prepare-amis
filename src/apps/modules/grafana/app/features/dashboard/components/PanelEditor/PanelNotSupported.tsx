@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 
 import { locationService } from '@runtime/index';
-import { Button, VerticalGroup } from '@grafana/ui';
-import { Layout } from '@grafana/ui/src/components/Layout/Layout';
+import { Button, VerticalGroup } from '@grafana-ui/index';
+import { Layout } from '@grafana-ui/components/Layout/Layout';
 
 import { PanelEditorTabId } from './types';
 

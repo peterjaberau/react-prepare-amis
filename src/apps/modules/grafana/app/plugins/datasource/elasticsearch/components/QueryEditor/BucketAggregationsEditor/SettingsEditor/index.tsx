@@ -1,7 +1,7 @@
 import { uniqueId } from 'lodash';
 import { ComponentProps, useRef } from 'react';
 
-import { InlineField, Input } from '@grafana/ui';
+import { InlineField, Input } from '@grafana-ui/index';
 
 import { useDispatch } from '../../../../hooks/useStatelessReducer';
 import { BucketAggregation } from '../../../../types';

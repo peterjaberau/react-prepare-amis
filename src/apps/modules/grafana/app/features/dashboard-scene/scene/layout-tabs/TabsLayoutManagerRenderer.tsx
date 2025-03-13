@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
-import { TabContent, TabsBar, useStyles2 } from '@grafana/ui';
+import { TabContent, TabsBar, useStyles2 } from '@grafana-ui/index';
 
 import { TabsLayoutManager } from './TabsLayoutManager';
 

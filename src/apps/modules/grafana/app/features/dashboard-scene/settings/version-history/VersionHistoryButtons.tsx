@@ -1,4 +1,4 @@
-import { Tooltip, Button, Stack } from '@grafana/ui';
+import { Tooltip, Button, Stack } from '@grafana-ui/index';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 
 type VersionsButtonsType = {

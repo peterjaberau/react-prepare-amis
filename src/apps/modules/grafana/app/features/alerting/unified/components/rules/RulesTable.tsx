@@ -3,7 +3,7 @@ import { useEffect, useMemo } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Pagination, Tooltip, useStyles2 } from '@grafana/ui';
+import { Pagination, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { CombinedRule, RulesSource } from '@grafana-module/app/types/unified-alerting';
 
 import { DEFAULT_PER_PAGE_PAGINATION } from '../../../../../core/constants';

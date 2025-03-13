@@ -1,5 +1,5 @@
 import { StandardEditorProps, SelectableValue } from '@data/index';
-import { HorizontalGroup, RadioButtonGroup } from '@grafana/ui';
+import { HorizontalGroup, RadioButtonGroup } from '@grafana-ui/index';
 
 import { InputPrefix, NullsThresholdInput } from './NullsThresholdInput';
 

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2, MappingType, SpecialValueMatch, SelectableValue, ValueMappingResult } from '@data/index';
-import { useStyles2, Icon, Select, HorizontalGroup, ColorPicker, IconButton, Input, Button } from '@grafana/ui';
+import { useStyles2, Icon, Select, HorizontalGroup, ColorPicker, IconButton, Input, Button } from '@grafana-ui/index';
 
 import { ResourcePickerSize, ResourceFolderName, MediaType } from '../../types';
 import { ResourcePicker } from '../ResourcePicker';

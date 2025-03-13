@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { usePrevious } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { IconButton, InlineLabel, Tooltip, useStyles2 } from '@grafana/ui';
+import { IconButton, InlineLabel, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../datasource';
 import { PromQuery } from '../types';

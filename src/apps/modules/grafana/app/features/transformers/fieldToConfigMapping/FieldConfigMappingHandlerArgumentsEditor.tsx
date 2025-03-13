@@ -1,4 +1,4 @@
-import { ColorPicker, Input } from '@grafana/ui';
+import { ColorPicker, Input } from '@grafana-ui/index';
 
 import { HandlerArguments } from './fieldToConfigMapping';
 

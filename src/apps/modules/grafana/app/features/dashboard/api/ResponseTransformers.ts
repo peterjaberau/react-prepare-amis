@@ -41,7 +41,7 @@ import {
   GridLayoutItemKind,
 } from '@schema/schema/dashboard/v2alpha0';
 import { DashboardLink, DataTransformerConfig } from '@schema/raw/dashboard/dashboard_types';
-import { isWeekStart, WeekStart } from '@grafana/ui';
+import { isWeekStart, WeekStart } from '@grafana-ui/index';
 import {
   AnnoKeyCreatedBy,
   AnnoKeyDashboardGnetId,

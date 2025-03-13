@@ -3,8 +3,8 @@ import { memo } from 'react';
 import { cacheFieldDisplayNames, DataFrame, FieldType, getFieldSeriesColor } from '@data/index';
 import { Field } from '@data/index';
 import { AxisPlacement, VizLegendOptions } from '@schema/index';
-import { useTheme2, VizLayout, VizLayoutLegendProps, VizLegend, VizLegendItem } from '@grafana/ui';
-import { getDisplayValuesForCalcs } from '@grafana/ui/src/components/uPlot/utils';
+import { useTheme2, VizLayout, VizLayoutLegendProps, VizLegend, VizLegendItem } from '@grafana-ui/index';
+import { getDisplayValuesForCalcs } from '@grafana-ui/components/uPlot/utils';
 
 interface BarGaugeLegendProps extends VizLegendOptions, Omit<VizLayoutLegendProps, 'children'> {
   data: DataFrame[];

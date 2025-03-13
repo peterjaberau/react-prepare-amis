@@ -21,7 +21,7 @@ import {
   IconButton,
   ButtonGroup,
   ScrollContainer,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { EmptyTransformationsMessage } from '@grafana-module/app/features/dashboard-scene/panel-edit/PanelDataPane/EmptyTransformationsMessage';
 

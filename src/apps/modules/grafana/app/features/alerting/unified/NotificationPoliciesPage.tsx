@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useState } from 'react';
 
 import { GrafanaTheme2, UrlQueryMap } from '@data/index';
-import { Tab, TabContent, TabsBar, useStyles2 } from '@grafana/ui';
+import { Tab, TabContent, TabsBar, useStyles2 } from '@grafana-ui/index';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { useMuteTimings } from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
 import { NotificationPoliciesList } from '@grafana-module/app/features/alerting/unified/components/notification-policies/NotificationPoliciesList';

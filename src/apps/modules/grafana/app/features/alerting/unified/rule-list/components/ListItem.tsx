@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Stack, Text, useStyles2 } from '@grafana/ui';
+import { Stack, Text, useStyles2 } from '@grafana-ui/index';
 
 interface ListItemProps {
   icon?: ReactNode;

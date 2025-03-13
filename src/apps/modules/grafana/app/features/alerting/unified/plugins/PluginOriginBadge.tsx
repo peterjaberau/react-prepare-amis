@@ -1,7 +1,7 @@
 import { useAsync } from 'react-use';
 
-import { Badge, IconSize, Tooltip } from '@grafana/ui';
-import { getSvgSize } from '@grafana/ui/src/components/Icon/utils';
+import { Badge, IconSize, Tooltip } from '@grafana-ui/index';
+import { getSvgSize } from '@grafana-ui/components/Icon/utils';
 
 import { getPluginSettings } from '../../../plugins/pluginSettings';
 

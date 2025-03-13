@@ -2,7 +2,7 @@ import { useDialog } from '@react-aria/dialog';
 import { useOverlay } from '@react-aria/overlays';
 import { createRef } from 'react';
 
-import { Portal, VizTooltipContainer } from '@grafana/ui';
+import { Portal, VizTooltipContainer } from '@grafana-ui/index';
 import { ComplexDataHoverView } from '@grafana-module/app/features/visualization/data-hover/ComplexDataHoverView';
 
 import { GeomapHoverPayload } from './event';

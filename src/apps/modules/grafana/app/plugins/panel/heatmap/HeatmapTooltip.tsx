@@ -14,12 +14,12 @@ import {
   PanelData,
 } from '@data/index';
 import { HeatmapCellLayout } from '@schema/index';
-import { TooltipDisplayMode, useTheme2 } from '@grafana/ui';
-import { VizTooltipContent } from '@grafana/ui/src/components/VizTooltip/VizTooltipContent';
-import { VizTooltipFooter } from '@grafana/ui/src/components/VizTooltip/VizTooltipFooter';
-import { VizTooltipHeader } from '@grafana/ui/src/components/VizTooltip/VizTooltipHeader';
-import { VizTooltipWrapper } from '@grafana/ui/src/components/VizTooltip/VizTooltipWrapper';
-import { ColorIndicator, ColorPlacement, VizTooltipItem } from '@grafana/ui/src/components/VizTooltip/types';
+import { TooltipDisplayMode, useTheme2 } from '@grafana-ui/index';
+import { VizTooltipContent } from '@grafana-ui/components/VizTooltip/VizTooltipContent';
+import { VizTooltipFooter } from '@grafana-ui/components/VizTooltip/VizTooltipFooter';
+import { VizTooltipHeader } from '@grafana-ui/components/VizTooltip/VizTooltipHeader';
+import { VizTooltipWrapper } from '@grafana-ui/components/VizTooltip/VizTooltipWrapper';
+import { ColorIndicator, ColorPlacement, VizTooltipItem } from '@grafana-ui/components/VizTooltip/types';
 import { ColorScale } from '@grafana-module/app/core/components/ColorScale/ColorScale';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 import { isHeatmapCellsDense, readHeatmapRowsCustomMeta } from '@grafana-module/app/features/transformers/calculateHeatmap/heatmap';

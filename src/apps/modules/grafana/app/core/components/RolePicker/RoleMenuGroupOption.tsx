@@ -2,8 +2,8 @@ import { cx } from '@emotion/css';
 import { FormEvent, memo } from 'react';
 import * as React from 'react';
 
-import { Checkbox, Portal, useStyles2, useTheme2 } from '@grafana/ui';
-import { getSelectStyles } from '@grafana/ui/src/components/Select/getSelectStyles';
+import { Checkbox, Portal, useStyles2, useTheme2 } from '@grafana-ui/index';
+import { getSelectStyles } from '@grafana-ui/components/Select/getSelectStyles';
 
 import { getStyles } from './styles';
 

@@ -3,8 +3,8 @@ import { useKBar, VisualState } from 'kbar';
 import { useMemo, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { getInputStyles, Icon, Text, ToolbarButton, useStyles2, useTheme2 } from '@grafana/ui';
-import { getFocusStyles } from '@grafana/ui/src/themes/mixins';
+import { getInputStyles, Icon, Text, ToolbarButton, useStyles2, useTheme2 } from '@grafana-ui/index';
+import { getFocusStyles } from '@grafana-ui/index';
 import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
 import { t } from '@grafana-module/app/core/internationalization';
 import { getModKey } from '@grafana-module/app/core/utils/browser';

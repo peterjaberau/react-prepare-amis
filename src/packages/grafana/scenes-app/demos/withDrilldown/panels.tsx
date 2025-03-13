@@ -14,7 +14,7 @@ import {
   FieldColorModeId,
   TableCellDisplayMode,
 } from '@schema/index';
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafana-ui/index';
 import React from 'react';
 import { demoUrl } from '../../utils/utils.routing';
 

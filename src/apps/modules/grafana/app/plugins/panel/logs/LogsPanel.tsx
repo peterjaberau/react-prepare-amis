@@ -32,7 +32,7 @@ import {
 } from '@data/index';
 import { convertRawToRange } from '@data/datetime/rangeutil';
 import { config, getAppEvents } from '@runtime/index';
-import { ScrollContainer, usePanelContext, useStyles2 } from '@grafana/ui';
+import { ScrollContainer, usePanelContext, useStyles2 } from '@grafana-ui/index';
 import { getFieldLinksForExplore } from '@grafana-module/app/features/explore/utils/links';
 import { InfiniteScroll } from '@grafana-module/app/features/logs/components/InfiniteScroll';
 import { LogRowContextModal } from '@grafana-module/app/features/logs/components/log-context/LogRowContextModal';

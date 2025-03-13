@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Stack, Text, Button } from '@grafana/ui';
+import { Stack, Text, Button } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { BulkActionElement } from '../scene/types/BulkActionElement';

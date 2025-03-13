@@ -5,7 +5,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { applyFieldOverrides, SplitOpen, DataFrame, LoadingState, FieldType } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { TimeZone } from '@schema/index';
-import { Table, AdHocFilterItem, PanelChrome, withTheme2, Themeable2 } from '@grafana/ui';
+import { Table, AdHocFilterItem, PanelChrome, withTheme2, Themeable2 } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import {

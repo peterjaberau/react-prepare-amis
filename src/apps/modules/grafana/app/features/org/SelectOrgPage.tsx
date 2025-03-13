@@ -2,7 +2,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { useEffectOnce } from 'react-use';
 
 import { config } from '@runtime/index';
-import { Button, Stack } from '@grafana/ui';
+import { Button, Stack } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { StoreState, UserOrg } from '@grafana-module/app/types';
 

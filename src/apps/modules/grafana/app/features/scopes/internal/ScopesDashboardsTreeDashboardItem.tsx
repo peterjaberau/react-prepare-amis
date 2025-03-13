@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Link } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2, urlUtil } from '@data/index';
-import { Icon, useStyles2 } from '@grafana/ui';
+import { Icon, useStyles2 } from '@grafana-ui/index';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 
 import { SuggestedDashboard } from './types';

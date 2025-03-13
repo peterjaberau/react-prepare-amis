@@ -3,7 +3,7 @@ import { useMemo, useRef } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';
-import { Button, Icon, useElementSelection, useStyles2 } from '@grafana/ui';
+import { Button, Icon, useElementSelection, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { isClonedKey } from '../../utils/clone';

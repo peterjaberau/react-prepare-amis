@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 
-import { Button, Divider, Field, FieldSet, Icon, Stack, Tooltip } from '@grafana/ui';
-import { Input } from '@grafana/ui/src/components/Input/Input';
+import { Button, Divider, Field, FieldSet, Icon, Stack, Tooltip } from '@grafana-ui/index';
+import { Input } from '@grafana-ui/components/Input/Input';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { publicDashboardApi, useAddRecipientMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';

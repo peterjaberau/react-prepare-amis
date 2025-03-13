@@ -1,5 +1,5 @@
 import { HistoryItem } from '@data/index';
-import type { Monaco } from '@grafana/ui'; // used in TSDoc `@link` below
+import type { Monaco } from '@grafana-ui/index'; // used in TSDoc `@link` below
 
 import PromQlLanguageProvider from '../../../language_provider';
 import { PromQuery } from '../../../types';

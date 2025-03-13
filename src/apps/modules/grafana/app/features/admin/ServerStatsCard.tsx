@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Card, Stack, useStyles2, Tooltip, Icon } from '@grafana/ui';
+import { Card, Stack, useStyles2, Tooltip, Icon } from '@grafana-ui/index';
 
 interface StatItem {
   name: string;

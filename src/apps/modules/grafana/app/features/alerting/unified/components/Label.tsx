@@ -3,7 +3,7 @@ import { CSSProperties, ReactNode, useMemo } from 'react';
 import tinycolor2 from 'tinycolor2';
 
 import { GrafanaTheme2, IconName } from '@data/index';
-import { Icon, Stack, useStyles2 } from '@grafana/ui';
+import { Icon, Stack, useStyles2 } from '@grafana-ui/index';
 
 export type LabelSize = 'md' | 'sm' | 'xs';
 

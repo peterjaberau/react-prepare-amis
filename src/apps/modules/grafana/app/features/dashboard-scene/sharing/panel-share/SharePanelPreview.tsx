@@ -7,7 +7,7 @@ import { lastValueFrom } from 'rxjs';
 
 import { GrafanaTheme2, UrlQueryMap } from '@data/index';
 import { config, getBackendSrv, isFetchError } from '@runtime/index';
-import { Alert, Button, Field, FieldSet, Icon, Input, LoadingBar, Stack, Text, Tooltip, useStyles2 } from '@grafana/ui';
+import { Alert, Button, Field, FieldSet, Icon, Input, LoadingBar, Stack, Text, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardInteractions } from '../../utils/interactions';

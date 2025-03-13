@@ -3,7 +3,7 @@ import debounce from 'debounce-promise';
 import { FormEvent, useCallback, useEffect, useState } from 'react';
 
 import { QueryEditorProps, SelectableValue, toOption } from '@data/index';
-import { AsyncSelect, InlineField, InlineFieldRow, Input, Select, TextArea } from '@grafana/ui';
+import { AsyncSelect, InlineField, InlineFieldRow, Input, Select, TextArea } from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../datasource';
 import { truncateResult } from '../language_utils';

@@ -1,4 +1,4 @@
-import { SegmentSection } from '@grafana/ui';
+import { SegmentSection } from '@grafana-ui/index';
 
 import { FuncDefs, FuncInstance } from '../gfunc';
 

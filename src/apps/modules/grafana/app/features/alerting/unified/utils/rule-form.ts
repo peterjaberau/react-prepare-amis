@@ -10,7 +10,7 @@ import {
   getNextRefId,
   rangeUtil,
 } from '@data/index';
-import { PromQuery } from '@grafana/prometheus';
+import { PromQuery } from '@prometheus/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { VizPanel, sceneGraph } from '@scenes/index';

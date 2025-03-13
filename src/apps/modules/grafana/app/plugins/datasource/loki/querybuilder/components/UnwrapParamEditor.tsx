@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { SelectableValue, getDefaultTimeRange, toOption } from '@data/index';
 import { QueryBuilderOperationParamEditorProps, VisualQueryModeller } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { placeHolderScopedVars } from '../../components/monaco-query-field/monaco-completion-provider/validation';
 import { LokiDatasource } from '../../datasource';

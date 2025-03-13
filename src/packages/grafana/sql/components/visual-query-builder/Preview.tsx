@@ -3,7 +3,7 @@ import { useCopyToClipboard } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { CodeEditor, Field, IconButton, useStyles2 } from '@grafana/ui';
+import { CodeEditor, Field, IconButton, useStyles2 } from '@grafana-ui/index';
 
 import { formatSQL } from '../../utils/formatSQL';
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Badge, InlineField, InlineFieldRow, Input } from '@grafana/ui';
+import { Badge, InlineField, InlineFieldRow, Input } from '@grafana-ui/index';
 
 type Props = {
   maxLines: string;

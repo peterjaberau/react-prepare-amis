@@ -16,7 +16,7 @@ import {
   type SceneObjectState,
   type SceneVariable,
 } from '@scenes/index';
-import { Stack, LinkButton } from '@grafana/ui';
+import { Stack, LinkButton } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { MetricsLogsConnector } from '../Integrations/logs/base';

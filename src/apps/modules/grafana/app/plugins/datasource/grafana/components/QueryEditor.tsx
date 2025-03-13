@@ -30,7 +30,7 @@ import {
   Themeable2,
   withTheme2,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { hasAlphaPanels } from '@grafana-module/app/core/config';
 import * as DFImport from '@grafana-module/app/features/dataframe-import';
 import { getManagedChannelInfo } from '@grafana-module/app/features/live/info';

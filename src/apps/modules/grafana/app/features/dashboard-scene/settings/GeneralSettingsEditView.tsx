@@ -16,7 +16,7 @@ import {
   TagsInput,
   TextArea,
   WeekStart,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

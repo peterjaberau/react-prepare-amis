@@ -19,7 +19,7 @@ import {
   StreamingDataFrame,
 } from '@data/index';
 import { config, getGrafanaLiveSrv } from '@runtime/index';
-import { Alert, stylesFactory, JSONFormatter, CustomScrollbar } from '@grafana/ui';
+import { Alert, stylesFactory, JSONFormatter, CustomScrollbar } from '@grafana-ui/index';
 
 import { TablePanel } from '../table/TablePanel';
 

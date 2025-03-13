@@ -4,7 +4,7 @@ import _ from 'lodash'; // eslint-disable-line lodash/import-scope
 
 import { AppEvent } from '@data/index';
 import { setLegacyAngularInjector, setAngularLoader } from '@runtime/index';
-import { colors } from '@grafana/ui';
+import { colors } from '@grafana-ui/index';
 import coreModule from '@grafana-module/app/angular/core_module';
 import { AngularLoader } from '@grafana-module/app/angular/services/AngularLoader';
 import appEvents from '@grafana-module/app/core/app_events';

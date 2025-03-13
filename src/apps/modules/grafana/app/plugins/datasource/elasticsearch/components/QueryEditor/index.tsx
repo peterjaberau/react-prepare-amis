@@ -3,7 +3,7 @@ import { useEffect, useId, useState } from 'react';
 import { SemVer } from 'semver';
 
 import { getDefaultTimeRange, GrafanaTheme2, QueryEditorProps } from '@data/index';
-import { Alert, InlineField, InlineLabel, Input, QueryField, useStyles2 } from '@grafana/ui';
+import { Alert, InlineField, InlineLabel, Input, QueryField, useStyles2 } from '@grafana-ui/index';
 
 import { ElasticDatasource } from '../../datasource';
 import { useNextId } from '../../hooks/useNextId';

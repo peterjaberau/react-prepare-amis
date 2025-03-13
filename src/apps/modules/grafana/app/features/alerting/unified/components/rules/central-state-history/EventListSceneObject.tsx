@@ -13,7 +13,7 @@ import {
   VariableValue,
   sceneGraph,
 } from '@scenes/index';
-import { Alert, Icon, LoadingBar, Pagination, Stack, Text, Tooltip, useStyles2, withErrorBoundary } from '@grafana/ui';
+import { Alert, Icon, LoadingBar, Pagination, Stack, Text, Tooltip, useStyles2, withErrorBoundary } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {
   GrafanaAlertStateWithReason,

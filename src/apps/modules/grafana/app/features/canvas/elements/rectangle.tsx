@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { PureComponent } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { stylesFactory } from '@grafana/ui';
+import { stylesFactory } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
 import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors/ColorDimensionEditor';

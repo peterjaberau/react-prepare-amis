@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { pickBy } from 'lodash';
 
 import { GrafanaTheme2, DEFAULT_SAML_NAME } from '@data/index';
-import { Icon, IconName, LinkButton, Stack, useStyles2, useTheme2 } from '@grafana/ui';
+import { Icon, IconName, LinkButton, Stack, useStyles2, useTheme2 } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

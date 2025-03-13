@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import { Stack, InlineField, Input, Select, TextArea } from '@grafana/ui';
+import { Stack, InlineField, Input, Select, TextArea } from '@grafana-ui/index';
 
 import { InfluxQuery } from '../../../../../types';
 import { DEFAULT_RESULT_FORMAT, RESULT_FORMATS } from '../../../constants';

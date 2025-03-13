@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { GrafanaTheme2, CoreApp, DataFrame } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Icon, useTheme2 } from '@grafana/ui';
+import { Icon, useTheme2 } from '@grafana-ui/index';
 
 import { config } from '../../../../../../core/config';
 import { downloadTraceAsJson } from '../../../../../inspector/utils/download';

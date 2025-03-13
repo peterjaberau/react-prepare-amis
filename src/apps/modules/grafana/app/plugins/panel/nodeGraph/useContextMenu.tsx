@@ -3,7 +3,7 @@ import { MouseEvent, useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { DataFrame, Field, GrafanaTheme2, LinkModel, LinkTarget } from '@data/index';
-import { ContextMenu, MenuGroup, MenuItem, useStyles2 } from '@grafana/ui';
+import { ContextMenu, MenuGroup, MenuItem, useStyles2 } from '@grafana-ui/index';
 
 import { Config } from './layout';
 import { EdgeDatumLayout, NodeDatum } from './types';

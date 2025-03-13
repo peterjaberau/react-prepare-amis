@@ -3,7 +3,7 @@ import { FC, forwardRef } from 'react';
 import { GroupBase, OptionsOrGroups, createFilter } from 'react-select';
 
 import { SelectableValue } from '@data/index';
-import { Field, Select, useStyles2 } from '@grafana/ui';
+import { Field, Select, useStyles2 } from '@grafana-ui/index';
 
 export interface AlertLabelDropdownProps {
   onChange: (newValue: SelectableValue<string>) => void;

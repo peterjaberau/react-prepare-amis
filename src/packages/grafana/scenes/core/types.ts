@@ -18,7 +18,7 @@ import { DataQuery, DataTopic, TimeZone } from '@schema/index';
 import { SceneVariableDependencyConfigLike, SceneVariables } from '../variables/types';
 import { SceneObjectRef } from './SceneObjectRef';
 import { VizPanel } from '../components/VizPanel/VizPanel';
-import { WeekStart } from '@grafana/ui';
+import { WeekStart } from '@grafana-ui/index';
 
 export interface SceneObjectState {
   key?: string;

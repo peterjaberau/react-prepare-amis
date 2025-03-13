@@ -14,7 +14,7 @@ import {
   InlineLabel,
   Input,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { DataLinkConfig } from '../types';
 

@@ -4,9 +4,9 @@ import { SIGV4ConnectionConfig } from '@grafana/aws-sdk';
 import { hasCredentials } from '@grafana/azure-sdk';
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
 import { AdvancedHttpSettings, ConfigSection, DataSourceDescription } from '@grafana/plugin-ui';
-import { AlertingSettingsOverhaul, PromOptions, PromSettings } from '@grafana/prometheus';
+import { AlertingSettingsOverhaul, PromOptions, PromSettings } from '@prometheus/index';
 import { config } from '@runtime/index';
-import { Alert, FieldValidationMessage, useTheme2 } from '@grafana/ui';
+import { Alert, FieldValidationMessage, useTheme2 } from '@grafana-ui/index';
 
 import { AzureAuthSettings } from './AzureAuthSettings';
 import { AzurePromDataSourceSettings, setDefaultCredentials, resetCredentials } from './AzureCredentialsConfig';

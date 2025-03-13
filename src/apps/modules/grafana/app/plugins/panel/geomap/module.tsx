@@ -1,6 +1,6 @@
 import { PanelPlugin } from '@data/index';
 import { config } from '@runtime/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { GeomapPanel } from './GeomapPanel';
 import { LayersEditor } from './editor/LayersEditor';

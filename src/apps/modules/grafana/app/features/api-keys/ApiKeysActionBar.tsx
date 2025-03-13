@@ -1,4 +1,4 @@
-import { FilterInput, InlineField } from '@grafana/ui';
+import { FilterInput, InlineField } from '@grafana-ui/index';
 
 interface Props {
   searchQuery: string;

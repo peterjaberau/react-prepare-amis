@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Modal, ModalTabsHeader, TabContent, Themeable2, withTheme2 } from '@grafana/ui';
+import { Modal, ModalTabsHeader, TabContent, Themeable2, withTheme2 } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';

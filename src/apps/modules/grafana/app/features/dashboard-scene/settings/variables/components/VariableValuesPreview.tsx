@@ -3,7 +3,7 @@ import { MouseEvent, useCallback, useEffect, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { VariableValueOption } from '@scenes/index';
-import { Button, InlineFieldRow, InlineLabel, useStyles2 } from '@grafana/ui';
+import { Button, InlineFieldRow, InlineLabel, useStyles2 } from '@grafana-ui/index';
 
 export interface VariableValuesPreviewProps {
   options: VariableValueOption[];

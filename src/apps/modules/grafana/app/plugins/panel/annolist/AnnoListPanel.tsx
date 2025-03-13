@@ -13,8 +13,8 @@ import {
   PanelProps,
 } from '@data/index';
 import { config, getBackendSrv, locationService } from '@runtime/index';
-import { Button, ScrollContainer, stylesFactory, TagList } from '@grafana/ui';
-import { AbstractList } from '@grafana/ui/src/components/List/AbstractList';
+import { Button, ScrollContainer, stylesFactory, TagList } from '@grafana-ui/index';
+import { AbstractList } from '@grafana-ui/components/List/AbstractList';
 import appEvents from '@grafana-module/app/core/app_events';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 

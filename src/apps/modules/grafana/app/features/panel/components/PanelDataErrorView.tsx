@@ -8,7 +8,7 @@ import {
   VisualizationSuggestion,
 } from '@data/index';
 import { PanelDataErrorViewProps, locationService } from '@runtime/index';
-import { usePanelContext, useStyles2 } from '@grafana/ui';
+import { usePanelContext, useStyles2 } from '@grafana-ui/index';
 import { CardButton } from '@grafana-module/app/core/components/CardButton';
 import { LS_VISUALIZATION_SELECT_TAB_KEY } from '@grafana-module/app/core/constants';
 import store from '@grafana-module/app/core/store';

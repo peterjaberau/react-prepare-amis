@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Button, Stack, Text } from '@grafana/ui';
+import { Button, Stack, Text } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 

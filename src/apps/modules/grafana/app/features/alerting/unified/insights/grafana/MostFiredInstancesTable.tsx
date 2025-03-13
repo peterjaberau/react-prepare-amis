@@ -10,7 +10,7 @@ import {
   SceneQueryRunner,
 } from '@scenes/index';
 import { DataSourceRef } from '@schema/index';
-import { Link, useStyles2 } from '@grafana/ui';
+import { Link, useStyles2 } from '@grafana-ui/index';
 
 import { PANEL_STYLES } from '../../home/Insights';
 import { createRelativeUrl } from '../../utils/url';

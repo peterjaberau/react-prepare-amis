@@ -5,7 +5,7 @@ import { memo, SyntheticEvent, useCallback, useEffect, useState } from 'react';
 import { CoreApp, LoadingState, SelectableValue } from '@data/index';
 import { EditorHeader, EditorRows, FlexItem } from '@grafana/plugin-ui';
 import { reportInteraction } from '@runtime/index';
-import { Button, ConfirmModal, Space } from '@grafana/ui';
+import { Button, ConfirmModal, Space } from '@grafana-ui/index';
 
 import { PromQueryEditorProps } from '../../components/types';
 import { PromQueryFormat } from '../../dataquery';

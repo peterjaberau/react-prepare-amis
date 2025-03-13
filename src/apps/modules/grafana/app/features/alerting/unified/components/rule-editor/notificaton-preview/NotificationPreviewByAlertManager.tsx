@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Alert, LoadingPlaceholder, useStyles2, withErrorBoundary } from '@grafana/ui';
+import { Alert, LoadingPlaceholder, useStyles2, withErrorBoundary } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
 

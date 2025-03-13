@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 
 import { DataFrame, DataTransformerConfig, GrafanaTheme2 } from '@data/index';
 import { DataTopic } from '@schema/index';
-import { Field, Select, useStyles2 } from '@grafana/ui';
+import { Field, Select, useStyles2 } from '@grafana-ui/index';
 import { FrameMultiSelectionEditor } from '@grafana-module/app/plugins/panel/geomap/editor/FrameSelectionEditor';
 
 interface TransformationFilterProps {

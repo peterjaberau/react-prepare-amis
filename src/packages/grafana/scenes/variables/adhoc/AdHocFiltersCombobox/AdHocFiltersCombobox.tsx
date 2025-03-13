@@ -10,7 +10,7 @@ import React, {
   useState,
 } from 'react';
 import { FloatingFocusManager, FloatingPortal, UseFloatingOptions } from '@floating-ui/react';
-import { Spinner, Text, useStyles2 } from '@grafana/ui';
+import { Spinner, Text, useStyles2 } from '@grafana-ui/index';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { css, cx } from '@emotion/css';
 import { AdHocFilterWithLabels, AdHocFiltersVariable, isMultiValueOperator } from '../AdHocFiltersVariable';

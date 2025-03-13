@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 import { deprecationWarning, UrlQueryMap, urlUtil } from '@data/index';
-import { attachDebugger, createLogger } from '@grafana/ui';
+import { attachDebugger, createLogger } from '@grafana-ui/index';
 
 import { config } from '../config';
 

@@ -11,7 +11,7 @@ import {
   convertLegacyAuthProps,
 } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { useStyles2, Divider, Stack, SecureSocksProxySettings } from '@grafana/ui';
+import { useStyles2, Divider, Stack, SecureSocksProxySettings } from '@grafana-ui/index';
 
 import { TraceIdTimeParams } from './TraceIdTimeParams';
 

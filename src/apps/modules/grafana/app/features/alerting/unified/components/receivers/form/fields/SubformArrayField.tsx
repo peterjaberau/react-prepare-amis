@@ -1,6 +1,6 @@
 import { DeepMap, FieldError, useFormContext } from 'react-hook-form';
 
-import { Button, useStyles2 } from '@grafana/ui';
+import { Button, useStyles2 } from '@grafana-ui/index';
 import { useControlledFieldArray } from '@grafana-module/app/features/alerting/unified/hooks/useControlledFieldArray';
 import { NotificationChannelOption } from '@grafana-module/app/types';
 

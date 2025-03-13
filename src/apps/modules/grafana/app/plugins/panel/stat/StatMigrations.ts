@@ -1,6 +1,6 @@
 import { FieldColorModeId, FieldConfigSource, PanelModel } from '@data/index';
 import { BigValueTextMode, BigValueGraphMode, BigValueColorMode } from '@schema/index';
-import { sharedSingleStatPanelChangedHandler } from '@grafana/ui';
+import { sharedSingleStatPanelChangedHandler } from '@grafana-ui/index';
 
 import { Options } from './panelcfg.gen';
 

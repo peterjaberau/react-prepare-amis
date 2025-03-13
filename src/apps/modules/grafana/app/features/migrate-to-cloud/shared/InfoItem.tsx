@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Stack, Text, TextLink } from '@grafana/ui';
+import { Stack, Text, TextLink } from '@grafana-ui/index';
 
 interface Props {
   children: NonNullable<ReactNode>;

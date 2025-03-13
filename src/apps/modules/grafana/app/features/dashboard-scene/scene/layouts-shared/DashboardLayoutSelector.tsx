@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 

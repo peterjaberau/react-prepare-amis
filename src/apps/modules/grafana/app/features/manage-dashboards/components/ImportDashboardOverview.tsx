@@ -3,7 +3,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { dateTimeFormat } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
-import { Box, Legend } from '@grafana/ui';
+import { Box, Legend } from '@grafana-ui/index';
 import { Form } from '@grafana-module/app/core/components/Form/Form';
 import { StoreState } from '@grafana-module/app/types';
 

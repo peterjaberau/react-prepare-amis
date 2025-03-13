@@ -1,4 +1,4 @@
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
 import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
 

@@ -6,7 +6,7 @@ import { useAsync } from 'react-use';
 
 import { AppEvents, GrafanaTheme2, SelectableValue } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { ActionMeta, AsyncVirtualizedSelect, Input, InputActionMeta, useStyles2 } from '@grafana/ui';
+import { ActionMeta, AsyncVirtualizedSelect, Input, InputActionMeta, useStyles2 } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { contextSrv } from '@grafana-module/app/core/services/context_srv';

@@ -1,6 +1,6 @@
 import { TimeZone } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { WeekStart } from '@grafana/ui';
+import { WeekStart } from '@grafana-ui/index';
 import { notifyApp } from '@grafana-module/app/core/actions';
 import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
 import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';

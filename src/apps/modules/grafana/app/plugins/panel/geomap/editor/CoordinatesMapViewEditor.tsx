@@ -1,4 +1,4 @@
-import { InlineFieldRow, InlineField } from '@grafana/ui';
+import { InlineFieldRow, InlineField } from '@grafana-ui/index';
 import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
 
 import { MapViewConfig } from '../types';

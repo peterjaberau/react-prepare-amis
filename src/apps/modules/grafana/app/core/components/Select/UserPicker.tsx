@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { AsyncSelect } from '@grafana/ui';
+import { AsyncSelect } from '@grafana-ui/index';
 import { OrgUser } from '@grafana-module/app/types';
 
 export interface Props {

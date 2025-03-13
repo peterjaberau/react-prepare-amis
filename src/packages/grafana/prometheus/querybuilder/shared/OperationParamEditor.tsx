@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { ComponentType } from 'react';
 
 import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
-import { AutoSizeInput, Button, Checkbox, Select, useStyles2, Stack } from '@grafana/ui';
+import { AutoSizeInput, Button, Checkbox, Select, useStyles2, Stack } from '@grafana-ui/index';
 
 import { getOperationParamId } from '../operationUtils';
 

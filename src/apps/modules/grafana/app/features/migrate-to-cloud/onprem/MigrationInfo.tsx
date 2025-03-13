@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Box, Text } from '@grafana/ui';
+import { Box, Text } from '@grafana-ui/index';
 
 interface MigrationInfoProps {
   title: NonNullable<ReactNode>;

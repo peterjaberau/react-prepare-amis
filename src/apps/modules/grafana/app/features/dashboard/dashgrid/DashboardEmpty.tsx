@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Button, useStyles2, Text, Box, Stack, Badge } from '@grafana/ui';
+import { Button, useStyles2, Text, Box, Stack, Badge } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import {

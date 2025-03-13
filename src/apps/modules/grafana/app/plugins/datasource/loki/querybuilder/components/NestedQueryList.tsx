@@ -1,4 +1,4 @@
-import { Stack } from '@grafana/ui';
+import { Stack } from '@grafana-ui/index';
 
 import { LokiDatasource } from '../../datasource';
 import { LokiVisualQuery, LokiVisualQueryBinary } from '../types';

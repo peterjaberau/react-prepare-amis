@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { StandardEditorProps, StringFieldConfigSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { stylesFactory, Button, Icon, Input } from '@grafana/ui';
+import { stylesFactory, Button, Icon, Input } from '@grafana-ui/index';
 
 type Props = StandardEditorProps<string[], StringFieldConfigSettings>;
 interface State {

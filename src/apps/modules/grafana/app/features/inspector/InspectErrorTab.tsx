@@ -1,5 +1,5 @@
 import { DataQueryError } from '@data/index';
-import { Alert, JSONFormatter } from '@grafana/ui';
+import { Alert, JSONFormatter } from '@grafana-ui/index';
 
 interface InspectErrorTabProps {
   errors?: DataQueryError[];

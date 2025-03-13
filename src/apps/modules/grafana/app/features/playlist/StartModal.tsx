@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { SelectableValue, UrlQueryMap, urlUtil } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
-import { Box, Button, Checkbox, Field, FieldSet, Modal, RadioButtonGroup, Stack } from '@grafana/ui';
+import { Box, Button, Checkbox, Field, FieldSet, Modal, RadioButtonGroup, Stack } from '@grafana-ui/index';
 
 import { Playlist, PlaylistMode } from './types';
 

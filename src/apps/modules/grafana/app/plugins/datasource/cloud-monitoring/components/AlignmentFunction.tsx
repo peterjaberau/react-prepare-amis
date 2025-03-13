@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafana-ui/index';
 
 import { getAlignmentPickerData } from '../functions';
 import { PreprocessorType, SLOQuery, TimeSeriesList } from '../types/query';

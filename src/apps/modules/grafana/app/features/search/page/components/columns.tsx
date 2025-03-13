@@ -11,7 +11,7 @@ import {
   getFieldDisplayName,
 } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
-import { Checkbox, Icon, IconName, TagList, Text, Tooltip } from '@grafana/ui';
+import { Checkbox, Icon, IconName, TagList, Text, Tooltip } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { t } from '@grafana-module/app/core/internationalization';
 import { formatDate, formatDuration } from '@grafana-module/app/core/internationalization/dates';

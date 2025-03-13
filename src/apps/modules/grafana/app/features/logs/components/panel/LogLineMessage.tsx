@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from 'react';
 
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 import { getStyles } from './LogLine';
 

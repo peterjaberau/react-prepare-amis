@@ -5,7 +5,7 @@ import { useEffect, useId, useState } from 'react';
 import * as React from 'react';
 
 import { DataSourceApi, GrafanaTheme2, TimeRange } from '@data/index';
-import { Button, Icon, Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, Icon, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 import { getOperationParamId } from '../operationUtils';
 

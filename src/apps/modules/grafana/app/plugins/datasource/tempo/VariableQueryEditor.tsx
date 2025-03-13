@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { DataQuery, SelectableValue } from '@data/index';
-import { InlineField, InlineFieldRow, InputActionMeta, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InputActionMeta, Select } from '@grafana-ui/index';
 
 import { TempoDatasource } from './datasource';
 import { OPTIONS_LIMIT } from './language_provider';

@@ -1,6 +1,6 @@
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
 import { LibraryPanel } from '@schema/index';
-import { Drawer } from '@grafana/ui';
+import { Drawer } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import {
   LibraryPanelsSearch,

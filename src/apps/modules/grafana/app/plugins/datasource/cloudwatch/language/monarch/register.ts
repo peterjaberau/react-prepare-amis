@@ -1,6 +1,6 @@
 import type * as monacoType from 'monaco-editor/esm/vs/editor/editor.api';
 
-import { Monaco } from '@grafana/ui';
+import { Monaco } from '@grafana-ui/index';
 
 import { Completeable } from './types';
 

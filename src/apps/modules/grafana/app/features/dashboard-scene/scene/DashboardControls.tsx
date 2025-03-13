@@ -15,7 +15,7 @@ import {
   SceneObjectUrlValues,
   CancelActivationHandler,
 } from '@scenes/index';
-import { Badge, Box, Stack, useStyles2 } from '@grafana/ui';
+import { Badge, Box, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { PanelEditControls } from '../panel-edit/PanelEditControls';
 import { getDashboardSceneFor } from '../utils/utils';

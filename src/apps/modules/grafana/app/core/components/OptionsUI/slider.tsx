@@ -4,8 +4,8 @@ import Slider from 'rc-slider';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { StandardEditorProps, GrafanaTheme2, SliderFieldConfigSettings } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
-import { getStyles } from '@grafana/ui/src/components/Slider/styles';
+import { useTheme2 } from '@grafana-ui/index';
+import { getStyles } from '@grafana-ui/components/Slider/styles';
 
 import { NumberInput } from './NumberInput';
 

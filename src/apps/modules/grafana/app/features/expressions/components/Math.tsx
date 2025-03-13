@@ -3,7 +3,7 @@ import { ChangeEvent } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Icon, InlineField, InlineLabel, TextArea, Toggletip, useStyles2, Stack } from '@grafana/ui';
+import { Icon, InlineField, InlineLabel, TextArea, Toggletip, useStyles2, Stack } from '@grafana-ui/index';
 
 import { ExpressionQuery } from '../types';
 

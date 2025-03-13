@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { useDeletePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
 import { ConfigPublicDashboardBase } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ConfigPublicDashboard/ConfigPublicDashboard';

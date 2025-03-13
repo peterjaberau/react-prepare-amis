@@ -1,4 +1,4 @@
-import { Label } from '@grafana/ui';
+import { Label } from '@grafana-ui/index';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { OrgRolePicker } from '@grafana-module/app/features/admin/OrgRolePicker';

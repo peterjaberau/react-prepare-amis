@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { LinkButton, CallToActionCard, Icon, useStyles2 } from '@grafana/ui';
+import { LinkButton, CallToActionCard, Icon, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction } from '@grafana-module/app/types';
 

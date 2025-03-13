@@ -5,7 +5,7 @@ import { PureComponent } from 'react';
 
 import { PluginMeta, AppPlugin, deprecationWarning } from '@data/index';
 import { AngularComponent, getAngularLoader, getBackendSrv } from '@runtime/index';
-import { Button } from '@grafana/ui';
+import { Button } from '@grafana-ui/index';
 
 interface Props {
   app: AppPlugin;

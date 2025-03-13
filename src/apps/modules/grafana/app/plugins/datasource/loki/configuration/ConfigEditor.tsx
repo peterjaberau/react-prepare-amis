@@ -10,7 +10,7 @@ import {
   AdvancedHttpSettings,
 } from '@grafana/plugin-ui';
 import { config, reportInteraction } from '@runtime/index';
-import { Divider, SecureSocksProxySettings, Stack } from '@grafana/ui';
+import { Divider, SecureSocksProxySettings, Stack } from '@grafana-ui/index';
 
 import { LokiOptions } from '../types';
 

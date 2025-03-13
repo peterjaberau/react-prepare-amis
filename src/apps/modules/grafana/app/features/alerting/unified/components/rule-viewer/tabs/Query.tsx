@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 
 import { config } from '@runtime/index';
-import { Alert, Stack } from '@grafana/ui';
+import { Alert, Stack } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
 

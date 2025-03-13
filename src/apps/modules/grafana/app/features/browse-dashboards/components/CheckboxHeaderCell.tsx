@@ -1,4 +1,4 @@
-import { Checkbox } from '@grafana/ui';
+import { Checkbox } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardTreeHeaderProps, SelectionState } from '../types';

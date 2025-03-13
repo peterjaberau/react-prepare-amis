@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { cloneDeep } from 'lodash';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
-import { Menu, MenuItem, useStyles2 } from '@grafana/ui';
+import { Menu, MenuItem, useStyles2 } from '@grafana-ui/index';
 
 import { enrichWithInteractionTracking } from '../MegaMenu/utils';
 

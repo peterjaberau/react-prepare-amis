@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { InlineFieldRow, InlineField } from '@grafana/ui';
+import { InlineFieldRow, InlineField } from '@grafana-ui/index';
 
 interface Props {
   label: string;

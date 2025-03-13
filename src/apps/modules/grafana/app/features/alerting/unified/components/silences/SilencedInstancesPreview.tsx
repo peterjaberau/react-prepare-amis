@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useDebounce, useDeepCompareEffect } from 'react-use';
 
 import { GrafanaTheme2, dateTime } from '@data/index';
-import { Alert, Badge, Icon, LoadingPlaceholder, Tooltip, useStyles2 } from '@grafana/ui';
+import { Alert, Badge, Icon, LoadingPlaceholder, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { MatcherFieldValue } from '@grafana-module/app/features/alerting/unified/types/silence-form';
 import { matcherFieldToMatcher } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';

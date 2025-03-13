@@ -18,7 +18,7 @@ import {
   ToolbarButtonRow,
   withTheme2,
   Stack,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
 import { SplitPaneWrapper } from '@grafana-module/app/core/components/SplitPaneWrapper/SplitPaneWrapper';

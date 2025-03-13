@@ -5,7 +5,7 @@ import { Unsubscribable } from 'rxjs';
 
 import { GrafanaTheme2 } from '@data/index';
 import { getTemplateSrv, RefreshEvent } from '@runtime/index';
-import { Icon, TextLink, Themeable2, withTheme2 } from '@grafana/ui';
+import { Icon, TextLink, Themeable2, withTheme2 } from '@grafana-ui/index';
 import appEvents from '@grafana-module/app/core/app_events';
 import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
 

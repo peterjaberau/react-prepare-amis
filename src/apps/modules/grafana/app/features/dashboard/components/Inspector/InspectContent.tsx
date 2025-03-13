@@ -12,7 +12,7 @@ import {
   DataQueryError,
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { Drawer, Tab, TabsBar } from '@grafana/ui';
+import { Drawer, Tab, TabsBar } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { InspectDataTab } from '@grafana-module/app/features/inspector/InspectDataTab';
 import { InspectErrorTab } from '@grafana-module/app/features/inspector/InspectErrorTab';

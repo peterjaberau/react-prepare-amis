@@ -10,7 +10,7 @@ import {
   VizPanel,
   SceneObjectRef,
 } from '@scenes/index';
-import { Alert, Drawer, Tab, TabsBar } from '@grafana/ui';
+import { Alert, Drawer, Tab, TabsBar } from '@grafana-ui/index';
 import { getDataSourceWithInspector } from '@grafana-module/app/features/dashboard/components/Inspector/hooks';
 import { supportsDataQuery } from '@grafana-module/app/features/dashboard/components/PanelEditor/utils';
 import { InspectTab } from '@grafana-module/app/features/inspector/types';

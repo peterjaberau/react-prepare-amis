@@ -2,7 +2,7 @@ import type * as monacoType from 'monaco-editor/esm/vs/editor/editor.api';
 import { useCallback, useRef } from 'react';
 import * as React from 'react';
 
-import { CodeEditor, Monaco } from '@grafana/ui';
+import { CodeEditor, Monaco } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import language from '../../../language/metric-math/definition';

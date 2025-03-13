@@ -6,7 +6,7 @@ import {
   SetFieldConfigOptionsArgs,
 } from '@data/index';
 import { LineStyle } from '@schema/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { LineStyleEditor } from '../timeseries/LineStyleEditor';
 

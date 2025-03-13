@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import * as React from 'react';
 
-import { Input } from '@grafana/ui';
+import { Input } from '@grafana-ui/index';
 
 import { AzureQueryEditorFieldProps } from '../../types';
 import { Field } from '../shared/Field';

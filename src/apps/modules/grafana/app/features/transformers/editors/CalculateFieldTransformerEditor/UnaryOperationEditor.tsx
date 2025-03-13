@@ -4,7 +4,7 @@ import {
   CalculateFieldMode,
   CalculateFieldTransformerOptions,
 } from '@data/transformations/transformers/calculateField';
-import { InlineField, InlineFieldRow, InlineLabel, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, InlineLabel, Select } from '@grafana-ui/index';
 
 import { LABEL_WIDTH } from './constants';
 

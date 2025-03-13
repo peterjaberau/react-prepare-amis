@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Checkbox, useStyles2 } from '@grafana/ui';
+import { Checkbox, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { DashboardsTreeCellProps, SelectionState } from '../types';

@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { FC } from 'react';
 
 import { colorManipulator } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 export interface BrandComponentProps {
   className?: string;

@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 
 import { locationService } from '@runtime/index';
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 import { dispatch } from '@grafana-module/app/store/store';
 import { EditableRuleIdentifier, RuleGroupIdentifierV2 } from '@grafana-module/app/types/unified-alerting';
 

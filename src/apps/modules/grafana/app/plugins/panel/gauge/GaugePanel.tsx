@@ -2,8 +2,8 @@ import { PureComponent } from 'react';
 
 import { FieldDisplay, getDisplayProcessor, getFieldDisplayValues, PanelProps } from '@data/index';
 import { BarGaugeSizing, VizOrientation } from '@schema/index';
-import { DataLinksContextMenu, Gauge, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
-import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
+import { DataLinksContextMenu, Gauge, VizRepeater, VizRepeaterRenderValueProps } from '@grafana-ui/index';
+import { DataLinksContextMenuApi } from '@grafana-ui/components/DataLinks/DataLinksContextMenu';
 import { config } from '@grafana-module/app/core/config';
 
 import { clearNameForSingleSeries } from '../bargauge/BarGaugePanel';

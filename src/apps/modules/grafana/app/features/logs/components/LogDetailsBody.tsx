@@ -3,7 +3,7 @@ import memoizeOne from 'memoize-one';
 
 import { CoreApp, GrafanaTheme2, LogRowModel } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { IconButton, Themeable2 } from '@grafana/ui';
+import { IconButton, Themeable2 } from '@grafana-ui/index';
 
 import { getLogRowStyles } from './getLogRowStyles';
 

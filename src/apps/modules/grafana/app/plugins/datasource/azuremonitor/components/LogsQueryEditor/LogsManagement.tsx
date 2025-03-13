@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ConfirmModal, InlineField, RadioButtonGroup } from '@grafana/ui';
+import { ConfirmModal, InlineField, RadioButtonGroup } from '@grafana-ui/index';
 
 import { AzureQueryEditorFieldProps } from '../../types';
 

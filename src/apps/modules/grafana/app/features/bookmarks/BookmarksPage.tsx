@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
-import { EmptyState, useStyles2 } from '@grafana/ui';
+import { EmptyState, useStyles2 } from '@grafana-ui/index';
 import { usePinnedItems } from '@grafana-module/app/core/components/AppChrome/MegaMenu/hooks';
 import { findByUrl } from '@grafana-module/app/core/components/AppChrome/MegaMenu/utils';
 import { NavLandingPageCard } from '@grafana-module/app/core/components/NavLandingPage/NavLandingPageCard';

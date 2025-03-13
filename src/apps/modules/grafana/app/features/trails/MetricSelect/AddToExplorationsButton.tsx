@@ -2,7 +2,7 @@ import { DataFrame, TimeRange } from '@data/index';
 import { usePluginLinks } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectState, SceneQueryRunner } from '@scenes/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
-import { IconButton } from '@grafana/ui';
+import { IconButton } from '@grafana-ui/index';
 
 import MimirLogo from '../../../plugins/datasource/prometheus/img/mimir_logo.svg';
 import { VAR_DATASOURCE_EXPR } from '../shared';

@@ -5,7 +5,7 @@ import tinycolor from 'tinycolor2';
 
 import { LogRowModel, dateTimeFormat, GrafanaTheme2, LogsSortOrder } from '@data/index';
 import { TimeZone } from '@schema/index';
-import { Button, Themeable2, withTheme2 } from '@grafana/ui';
+import { Button, Themeable2, withTheme2 } from '@grafana-ui/index';
 
 import { LogMessageAnsi } from '../../logs/components/LogMessageAnsi';
 import { getLogRowStyles } from '../../logs/components/getLogRowStyles';

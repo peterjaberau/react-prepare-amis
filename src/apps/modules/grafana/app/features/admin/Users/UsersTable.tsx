@@ -14,7 +14,7 @@ import {
   Text,
   TextLink,
   Tooltip,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { TagBadge } from '@grafana-module/app/core/components/TagFilter/TagBadge';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { UserDTO } from '@grafana-module/app/types';

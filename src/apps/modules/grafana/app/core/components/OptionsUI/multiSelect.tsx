@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 
 import { StandardEditorProps, SelectFieldConfigSettings, SelectableValue } from '@data/index';
-import { MultiSelect } from '@grafana/ui';
+import { MultiSelect } from '@grafana-ui/index';
 
 interface State<T> {
   isLoading: boolean;

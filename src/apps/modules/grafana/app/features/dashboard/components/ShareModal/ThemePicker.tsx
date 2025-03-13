@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { RadioButtonGroup, Field } from '@grafana/ui';
+import { RadioButtonGroup, Field } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 interface Props {

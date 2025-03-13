@@ -9,7 +9,7 @@ import {
   SeriesColorPickerPopoverWithTheme,
   Spinner,
   UnitPicker,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { react2AngularDirective } from '@grafana-module/app/angular/react2angular';
 import { OldFolderPicker } from '@grafana-module/app/core/components/Select/OldFolderPicker';
 import { TimePickerSettings } from '@grafana-module/app/features/dashboard/components/DashboardSettings/TimePickerSettings';

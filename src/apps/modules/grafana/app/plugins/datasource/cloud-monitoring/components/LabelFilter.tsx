@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
 import { AccessoryButton, EditorField, EditorList, EditorRow } from '@grafana/plugin-ui';
-import { HorizontalGroup, Select } from '@grafana/ui';
+import { HorizontalGroup, Select } from '@grafana-ui/index';
 
 import { labelsToGroupedOptions, stringArrayToFilters } from '../functions';
 

@@ -6,7 +6,7 @@ import {
   BigValueTextMode,
   PercentChangeColorMode,
 } from '@schema/index';
-import { commonOptionsBuilder, sharedSingleStatMigrationHandler } from '@grafana/ui';
+import { commonOptionsBuilder, sharedSingleStatMigrationHandler } from '@grafana-ui/index';
 
 import { statPanelChangedHandler } from './StatMigrations';
 import { StatPanel } from './StatPanel';

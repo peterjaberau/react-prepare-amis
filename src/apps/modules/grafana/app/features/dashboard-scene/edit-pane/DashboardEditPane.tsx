@@ -12,7 +12,7 @@ import {
   TabsBar,
   ToolbarButton,
   useStyles2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { isInCloneChain } from '../utils/clone';

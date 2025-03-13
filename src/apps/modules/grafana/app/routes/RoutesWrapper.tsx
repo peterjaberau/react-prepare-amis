@@ -11,7 +11,7 @@ import {
   useChromeHeaderHeight,
   useSidecar_EXPERIMENTAL,
 } from '@runtime/index';
-import { GlobalStyles, IconButton, ModalRoot, Stack, useSplitter, useStyles2 } from '@grafana/ui';
+import { GlobalStyles, IconButton, ModalRoot, Stack, useSplitter, useStyles2 } from '@grafana-ui/index';
 
 import { AngularRoot } from '../angular/AngularRoot';
 import { AppChrome } from '../core/components/AppChrome/AppChrome';

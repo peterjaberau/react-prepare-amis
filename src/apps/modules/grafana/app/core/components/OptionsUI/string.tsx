@@ -2,7 +2,7 @@ import { ReactNode, useCallback } from 'react';
 import * as React from 'react';
 
 import { StandardEditorProps, StringFieldConfigSettings } from '@data/index';
-import { Input, TextArea } from '@grafana/ui';
+import { Input, TextArea } from '@grafana-ui/index';
 
 interface Props extends StandardEditorProps<string, StringFieldConfigSettings> {
   suffix?: ReactNode;

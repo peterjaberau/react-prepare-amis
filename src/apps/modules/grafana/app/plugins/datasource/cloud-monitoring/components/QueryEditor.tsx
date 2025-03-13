@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { QueryEditorProps, getDefaultTimeRange, toOption } from '@data/index';
 import { EditorRows } from '@grafana/plugin-ui';
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';
 import { selectors } from '../e2e/selectors';

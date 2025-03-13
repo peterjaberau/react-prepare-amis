@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 import { DataFrame, FALLBACK_COLOR, FieldType, TimeRange } from '@data/index';
 import { VisibilityMode, TimelineValueAlignment, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
-import { UPlotConfigBuilder, VizLayout, VizLegend, VizLegendItem } from '@grafana/ui';
+import { UPlotConfigBuilder, VizLayout, VizLegend, VizLegendItem } from '@grafana-ui/index';
 
 import { GraphNG, GraphNGProps } from '../GraphNG/GraphNG';
 

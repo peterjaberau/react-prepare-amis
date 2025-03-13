@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 
-import { ComponentSize, DragHandlePosition, useSplitter } from '@grafana/ui';
+import { ComponentSize, DragHandlePosition, useSplitter } from '@grafana-ui/index';
 
 export interface UseSnappingSplitterOptions {
   /**

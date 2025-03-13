@@ -1,4 +1,4 @@
-import { LinkButton, Stack } from '@grafana/ui';
+import { LinkButton, Stack } from '@grafana-ui/index';
 
 import { createSuccessNotification } from '../../../core/copy/appNotification';
 import { HOME_ROUTE } from '../shared';

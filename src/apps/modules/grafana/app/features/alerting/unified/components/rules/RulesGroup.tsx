@@ -3,7 +3,7 @@ import pluralize from 'pluralize';
 import React, { useEffect, useMemo, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Badge, ConfirmModal, Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana/ui';
+import { Badge, ConfirmModal, Icon, Spinner, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { CombinedRuleGroup, CombinedRuleNamespace, RuleGroupIdentifier, RulesSource } from '@grafana-module/app/types/unified-alerting';
 
 import { LogMessages, logInfo } from '../../Analytics';

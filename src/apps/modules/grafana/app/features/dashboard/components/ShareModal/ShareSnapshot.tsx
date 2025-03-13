@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { isEmptyObject, SelectableValue, VariableRefresh } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { Button, ClipboardButton, Field, Input, LinkButton, Modal, Select, Spinner, Stack } from '@grafana/ui';
+import { Button, ClipboardButton, Field, Input, LinkButton, Modal, Select, Spinner, Stack } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';

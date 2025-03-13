@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useTheme2 } from '@grafana/ui';
+import { useTheme2 } from '@grafana-ui/index';
 
 type Props = {
   colorPalette: string[];

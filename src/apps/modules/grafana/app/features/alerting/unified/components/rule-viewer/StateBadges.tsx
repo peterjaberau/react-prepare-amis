@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Stack, Text } from '@grafana/ui';
+import { Stack, Text } from '@grafana-ui/index';
 import { RuleHealth } from '@grafana-module/app/types/unified-alerting';
 import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
 

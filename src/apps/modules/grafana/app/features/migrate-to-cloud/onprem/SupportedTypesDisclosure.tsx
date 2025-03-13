@@ -1,4 +1,4 @@
-import { Text, TextLink } from '@grafana/ui';
+import { Text, TextLink } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 export function SupportedTypesDisclosure() {

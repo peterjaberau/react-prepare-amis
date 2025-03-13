@@ -1,5 +1,5 @@
 import { SceneObject } from '@scenes/index';
-import { Icon, ModalsController } from '@grafana/ui';
+import { Icon, ModalsController } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 
 import { OnRowOptionsUpdate } from './RowOptionsForm';

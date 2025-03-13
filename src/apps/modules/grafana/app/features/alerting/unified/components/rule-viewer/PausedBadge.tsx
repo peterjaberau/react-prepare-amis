@@ -1,4 +1,4 @@
-import { Icon, Stack, Text } from '@grafana/ui';
+import { Icon, Stack, Text } from '@grafana-ui/index';
 
 export default function PausedBadge() {
   return (

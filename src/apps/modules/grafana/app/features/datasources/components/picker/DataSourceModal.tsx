@@ -13,7 +13,7 @@ import {
   Input,
   Icon,
   ScrollContainer,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import * as DFImport from '@grafana-module/app/features/dataframe-import';
 import { GrafanaQuery } from '@grafana-module/app/plugins/datasource/grafana/types';

@@ -1,7 +1,7 @@
 import { DropResult } from '@hello-pangea/dnd';
 
 import { StandardEditorProps } from '@data/index';
-import { Container } from '@grafana/ui';
+import { Container } from '@grafana-ui/index';
 import { AddLayerButton } from '@grafana-module/app/core/components/Layers/AddLayerButton';
 import { LayerDragDropList } from '@grafana-module/app/core/components/Layers/LayerDragDropList';
 

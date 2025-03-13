@@ -19,7 +19,7 @@ import {
   SelectMenuOptions,
   useStyles2,
   useTheme2,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 
 import { PrometheusDatasource } from '../../datasource';
 import { truncateResult } from '../../language_utils';

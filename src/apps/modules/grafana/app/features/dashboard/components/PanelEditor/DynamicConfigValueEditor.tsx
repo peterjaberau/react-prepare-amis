@@ -9,7 +9,7 @@ import {
   FieldOverrideContext,
   GrafanaTheme2,
 } from '@data/index';
-import { Counter, Field, HorizontalGroup, IconButton, Label, useStyles2 } from '@grafana/ui';
+import { Counter, Field, HorizontalGroup, IconButton, Label, useStyles2 } from '@grafana-ui/index';
 
 import { OptionsPaneCategory } from './OptionsPaneCategory';
 

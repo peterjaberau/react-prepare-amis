@@ -1,7 +1,7 @@
 /* Prometheus internal models */
 
 import { AlertState, DataSourceInstanceSettings } from '@data/index';
-import { PromOptions } from '@grafana/prometheus';
+import { PromOptions } from '@prometheus/index';
 import { LokiOptions } from '@grafana-module/app/plugins/datasource/loki/types';
 
 import {

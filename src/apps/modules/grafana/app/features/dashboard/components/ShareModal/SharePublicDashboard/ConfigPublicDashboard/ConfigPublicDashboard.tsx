@@ -13,8 +13,8 @@ import {
   ModalsController,
   Switch,
   useStyles2,
-} from '@grafana/ui/src';
-import { Layout } from '@grafana/ui/src/components/Layout/Layout';
+} from '@grafana-ui/index';
+import { Layout } from '@grafana-ui/components/Layout/Layout';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import {
   useDeletePublicDashboardMutation,

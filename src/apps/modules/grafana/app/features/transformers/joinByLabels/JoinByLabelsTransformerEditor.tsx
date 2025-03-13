@@ -8,7 +8,7 @@ import {
   TransformerUIProps,
   TransformerCategory,
 } from '@data/index';
-import { Alert, HorizontalGroup, InlineField, InlineFieldRow, Select, ValuePicker } from '@grafana/ui';
+import { Alert, HorizontalGroup, InlineField, InlineFieldRow, Select, ValuePicker } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { getDistinctLabels } from '../utils';

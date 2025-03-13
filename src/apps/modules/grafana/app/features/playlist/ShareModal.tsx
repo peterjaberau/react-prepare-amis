@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { SelectableValue, UrlQueryMap, urlUtil } from '@data/index';
 import { reportInteraction } from '@runtime/index';
-import { Checkbox, ClipboardButton, Field, FieldSet, Input, Modal, RadioButtonGroup } from '@grafana/ui';
+import { Checkbox, ClipboardButton, Field, FieldSet, Input, Modal, RadioButtonGroup } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { buildBaseUrl } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 

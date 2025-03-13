@@ -11,7 +11,7 @@ import {
   UrlQueryValue,
   urlUtil,
 } from '@data/index';
-import { useStyles2, IconButton, ScrollContainer } from '@grafana/ui';
+import { useStyles2, IconButton, ScrollContainer } from '@grafana-ui/index';
 import { updateNavIndex } from '@grafana-module/app/core/actions';
 import { getConfig } from '@grafana-module/app/core/config';
 import { appEvents } from '@grafana-module/app/core/core';

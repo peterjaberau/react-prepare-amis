@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Field, FieldSet, Input, TextArea, useStyles2 } from '@grafana/ui';
+import { Field, FieldSet, Input, TextArea, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 
 import { useCorrelationsFormContext } from './correlationsFormContext';

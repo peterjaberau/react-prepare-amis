@@ -12,8 +12,8 @@ import {
   Field,
 } from '@data/index';
 import { config, PanelDataErrorView } from '@runtime/index';
-import { Select, Table, usePanelContext, useTheme2 } from '@grafana/ui';
-import { TableSortByFieldState } from '@grafana/ui/src/components/Table/types';
+import { Select, Table, usePanelContext, useTheme2 } from '@grafana-ui/index';
+import { TableSortByFieldState } from '@grafana-ui/components/Table/types';
 
 import { getActions } from '../../../features/actions/utils';
 

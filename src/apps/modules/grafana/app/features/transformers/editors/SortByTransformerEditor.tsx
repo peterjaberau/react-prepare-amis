@@ -9,7 +9,7 @@ import {
 } from '@data/index';
 import { SortByField, SortByTransformerOptions } from '@data/transformations/transformers/sortBy';
 import { getTemplateSrv } from '@runtime/index';
-import { InlineField, InlineSwitch, InlineFieldRow, Select } from '@grafana/ui';
+import { InlineField, InlineSwitch, InlineFieldRow, Select } from '@grafana-ui/index';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { useAllFieldNamesFromDataFrames } from '../utils';

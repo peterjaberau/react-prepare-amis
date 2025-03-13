@@ -24,7 +24,7 @@ import {
   urlUtil,
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { RefreshPicker } from '@grafana/ui';
+import { RefreshPicker } from '@grafana-ui/index';
 import store from '@grafana-module/app/core/store';
 import { ExpressionDatasourceUID } from '@grafana-module/app/features/expressions/types';
 import { QueryOptions, QueryTransaction } from '@grafana-module/app/types/explore';

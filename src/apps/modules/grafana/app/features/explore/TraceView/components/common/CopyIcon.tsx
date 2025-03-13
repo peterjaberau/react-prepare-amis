@@ -16,7 +16,7 @@ import { css } from '@emotion/css';
 import cx from 'classnames';
 import { useState } from 'react';
 
-import { Button, IconName, Tooltip, useStyles2 } from '@grafana/ui';
+import { Button, IconName, Tooltip, useStyles2 } from '@grafana-ui/index';
 
 const getStyles = () => ({
   CopyIcon: css({

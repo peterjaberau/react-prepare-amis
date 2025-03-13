@@ -3,7 +3,7 @@ import { useCallback, useEffect, useId, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { EditorField } from '@grafana/plugin-ui';
-import { InlineLabel, Input, Select, Stack, useStyles2 } from '@grafana/ui';
+import { InlineLabel, Input, Select, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { QueryEditorExpressionType } from '../../expressions';
 import { DB, SQLExpression, SQLQuery } from '../../types';

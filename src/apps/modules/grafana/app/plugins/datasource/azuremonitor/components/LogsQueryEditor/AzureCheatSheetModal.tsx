@@ -1,5 +1,5 @@
 import { CoreApp } from '@data/index';
-import { Modal } from '@grafana/ui';
+import { Modal } from '@grafana-ui/index';
 
 import AzureLogAnalyticsDatasource from '../../azure_log_analytics/azure_log_analytics_datasource';
 import { AzureMonitorQuery } from '../../dataquery.gen';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { useStyles2 } from '@grafana/ui';
+import { useStyles2 } from '@grafana-ui/index';
 
 export const EmptyArea = ({ children }: React.PropsWithChildren<{}>) => {
   const styles = useStyles2(getStyles);

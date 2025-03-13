@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { config } from '@runtime/index';
-import { ToolbarButton } from '@grafana/ui';
+import { ToolbarButton } from '@grafana-ui/index';
 
 import { DataTrail } from './DataTrail';
 import { reportExploreMetrics } from './interactions';

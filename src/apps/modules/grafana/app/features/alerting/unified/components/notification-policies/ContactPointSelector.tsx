@@ -2,7 +2,7 @@ import { css, cx, keyframes } from '@emotion/css';
 import { useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
-import { Alert, IconButton, Select, SelectCommonProps, Stack, Text, useStyles2 } from '@grafana/ui';
+import { Alert, IconButton, Select, SelectCommonProps, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { ContactPointReceiverSummary } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoint';
 import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
 

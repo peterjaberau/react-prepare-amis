@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useMeasure } from 'react-use';
 
 import { NavModelItem, UrlQueryValue } from '@data/index';
-import { Alert, LinkButton, LoadingBar, Stack, TabContent, Text, TextLink, useStyles2 } from '@grafana/ui';
+import { Alert, LinkButton, LoadingBar, Stack, TabContent, Text, TextLink, useStyles2 } from '@grafana-ui/index';
 import { PageInfoItem } from '@grafana-module/app/core/components/Page/types';
 import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
 import { Trans, t } from '@grafana-module/app/core/internationalization';

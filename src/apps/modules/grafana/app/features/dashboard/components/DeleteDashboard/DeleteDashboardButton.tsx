@@ -1,4 +1,4 @@
-import { Button, ModalsController } from '@grafana/ui';
+import { Button, ModalsController } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 
 import { getDashboardSrv } from '../../services/DashboardSrv';

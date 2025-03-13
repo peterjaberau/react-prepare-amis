@@ -1,5 +1,5 @@
 import { PanelModel, PanelPlugin } from '@data/index';
-import { TagsInput } from '@grafana/ui';
+import { TagsInput } from '@grafana-ui/index';
 
 import { AnnoListPanel } from './AnnoListPanel';
 import { defaultOptions, Options } from './panelcfg.gen';

@@ -8,7 +8,7 @@ import {
 } from '@data/index';
 import { config } from '@runtime/index';
 import { GraphFieldConfig } from '@schema/index';
-import { commonOptionsBuilder } from '@grafana/ui';
+import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { defaultGraphConfig, getGraphFieldConfig } from '../timeseries/config';
 

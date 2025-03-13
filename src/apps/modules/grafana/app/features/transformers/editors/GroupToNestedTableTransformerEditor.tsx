@@ -21,7 +21,7 @@ import {
   GroupToNestedTableTransformerOptions,
   SHOW_NESTED_HEADERS_DEFAULT,
 } from '@data/transformations/transformers/groupToNestedTable';
-import { useTheme2, Select, StatsPicker, InlineField, Field, Switch, Alert, Stack } from '@grafana/ui';
+import { useTheme2, Select, StatsPicker, InlineField, Field, Switch, Alert, Stack } from '@grafana-ui/index';
 
 import { useAllFieldNamesFromDataFrames } from '../utils';
 

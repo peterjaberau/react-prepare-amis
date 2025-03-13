@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css';
 import { Fragment, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Stack, InlineLabel, useStyles2 } from '@grafana/ui';
+import { Stack, InlineLabel, useStyles2 } from '@grafana-ui/index';
 
 import { FuncInstance } from '../gfunc';
 import { actions } from '../state/actions';

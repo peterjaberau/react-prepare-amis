@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Text, Box, Button, useStyles2, Space } from '@grafana/ui';
+import { Text, Box, Button, useStyles2, Space } from '@grafana-ui/index';
 import { SlideDown } from '@grafana-module/app/core/components/Animations/SlideDown';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';

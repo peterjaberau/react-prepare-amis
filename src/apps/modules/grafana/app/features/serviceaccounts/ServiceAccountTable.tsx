@@ -12,7 +12,7 @@ import {
   Button,
   IconButton,
   Icon,
-} from '@grafana/ui';
+} from '@grafana-ui/index';
 import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { AccessControlAction, OrgRole, Role, ServiceAccountDTO } from '@grafana-module/app/types';

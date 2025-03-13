@@ -1,4 +1,4 @@
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 
 interface Props {
   isOpen: boolean;

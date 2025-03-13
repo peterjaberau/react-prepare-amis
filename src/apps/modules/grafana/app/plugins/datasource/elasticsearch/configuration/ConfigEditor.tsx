@@ -12,7 +12,7 @@ import {
   DataSourceDescription,
 } from '@grafana/plugin-ui';
 import { config } from '@runtime/index';
-import { Alert, SecureSocksProxySettings, Divider, Stack } from '@grafana/ui';
+import { Alert, SecureSocksProxySettings, Divider, Stack } from '@grafana-ui/index';
 
 import { ElasticsearchOptions } from '../types';
 

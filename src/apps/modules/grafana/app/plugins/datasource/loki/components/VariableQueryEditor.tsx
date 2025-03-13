@@ -2,7 +2,7 @@ import { FormEvent, useState, useEffect } from 'react';
 import { usePrevious } from 'react-use';
 
 import { QueryEditorProps, SelectableValue } from '@data/index';
-import { InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
+import { InlineField, InlineFieldRow, Input, Select } from '@grafana-ui/index';
 
 import { LokiDatasource } from '../datasource';
 import { migrateVariableQuery } from '../migrations/variableQueryMigrations';

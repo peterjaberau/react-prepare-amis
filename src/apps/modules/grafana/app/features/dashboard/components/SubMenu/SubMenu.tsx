@@ -5,7 +5,7 @@ import { connect, MapStateToProps } from 'react-redux';
 
 import { AnnotationQuery, DataQuery, TypedVariableModel, GrafanaTheme2 } from '@data/index';
 import { DashboardLink } from '@schema/index';
-import { stylesFactory, Themeable2, withTheme2 } from '@grafana/ui';
+import { stylesFactory, Themeable2, withTheme2 } from '@grafana-ui/index';
 
 import { StoreState } from '../../../../types';
 import { getSubMenuVariables, getVariablesState } from '../../../variables/state/selectors';

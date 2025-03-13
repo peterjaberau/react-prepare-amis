@@ -3,7 +3,7 @@ import { cloneDeep } from 'lodash';
 import { memo } from 'react';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
-import { Dropdown, Icon, Stack, ToolbarButton, useStyles2 } from '@grafana/ui';
+import { Dropdown, Icon, Stack, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 import { config } from '@grafana-module/app/core/config';
 import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
 import { contextSrv } from '@grafana-module/app/core/core';

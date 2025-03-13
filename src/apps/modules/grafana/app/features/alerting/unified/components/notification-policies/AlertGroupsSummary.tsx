@@ -2,7 +2,7 @@ import pluralize from 'pluralize';
 import { Fragment } from 'react';
 import * as React from 'react';
 
-import { Badge, Stack } from '@grafana/ui';
+import { Badge, Stack } from '@grafana-ui/index';
 
 interface Props {
   active?: number;

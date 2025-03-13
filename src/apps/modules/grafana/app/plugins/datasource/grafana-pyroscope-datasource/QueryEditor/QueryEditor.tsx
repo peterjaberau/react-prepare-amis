@@ -3,7 +3,7 @@ import { debounce } from 'lodash';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { CoreApp, QueryEditorProps, TimeRange } from '@data/index';
-import { LoadingPlaceholder } from '@grafana/ui';
+import { LoadingPlaceholder } from '@grafana-ui/index';
 
 import { normalizeQuery, PyroscopeDataSource } from '../datasource';
 import { ProfileTypeMessage, PyroscopeDataSourceOptions, Query } from '../types';

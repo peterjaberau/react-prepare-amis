@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom-v5-compat';
 
 import { DataSourceSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
-import { EmptyState, LinkButton, TextLink, useStyles2 } from '@grafana/ui';
+import { EmptyState, LinkButton, TextLink, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { StoreState, AccessControlAction, useSelector } from '@grafana-module/app/types';

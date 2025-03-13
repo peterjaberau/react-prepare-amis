@@ -1,4 +1,4 @@
-import { ConfirmModal } from '@grafana/ui';
+import { ConfirmModal } from '@grafana-ui/index';
 
 import { PanelModel } from '../../../dashboard/state/PanelModel';
 import { isPanelModelLibraryPanel } from '../../guard';

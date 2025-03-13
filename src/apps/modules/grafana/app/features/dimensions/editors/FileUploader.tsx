@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { Dispatch, SetStateAction, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { FileDropzone, useStyles2, Button, DropzoneFile, Field } from '@grafana/ui';
+import { FileDropzone, useStyles2, Button, DropzoneFile, Field } from '@grafana-ui/index';
 import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
 
 import { MediaType } from '../types';

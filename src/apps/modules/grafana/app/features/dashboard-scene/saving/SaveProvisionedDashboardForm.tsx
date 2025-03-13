@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver';
 import { useCallback, useMemo } from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { Button, ClipboardButton, Stack, CodeEditor, Box } from '@grafana/ui';
+import { Button, ClipboardButton, Stack, CodeEditor, Box } from '@grafana-ui/index';
 
 import { DashboardScene } from '../scene/DashboardScene';
 
