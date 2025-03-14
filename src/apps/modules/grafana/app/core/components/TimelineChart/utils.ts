@@ -383,6 +383,7 @@ export function prepareTimelineFields(
 
     const fields: Field[] = [];
     for (let field of frame.fields) {
+
       switch (field.type) {
         case FieldType.time:
           isTimeseries = true;
@@ -390,6 +391,7 @@ export function prepareTimelineFields(
           fields.push(field);
           break;
         case FieldType.enum:
+        // @ts-ignore
         case FieldType.number:
           if (mergeValues && field.config.color?.mode === FieldColorModeId.Thresholds) {
             const f = mergeThresholdValues(field, theme);

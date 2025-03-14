@@ -27,9 +27,9 @@ import teamsReducers from '@grafana-module/app/features/teams/state/reducers';
 import usersReducers from '@grafana-module/app/features/users/state/reducers';
 import templatingReducers from '@grafana-module/app/features/variables/state/keyedVariablesReducer';
 
-import { alertingApi } from '../../features/alerting/unified/api/alertingApi';
-import { iamApi } from '../../features/iam/api/api';
-import { userPreferencesAPI } from '../../features/preferences/api';
+import { alertingApi } from '@grafana-module/app/features/alerting/unified/api/alertingApi';
+import { iamApi } from '@grafana-module/app/features/iam/api/api';
+import { userPreferencesAPI } from '@grafana-module/app/features/preferences/api';
 import { cleanUpAction } from '../actions/cleanUp';
 
 const rootReducers = {

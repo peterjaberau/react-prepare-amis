@@ -1,14 +1,19 @@
-import { useEffect, useState } from 'react';
-import * as React from 'react';
-import { SkeletonTheme } from 'react-loading-skeleton';
+import { useEffect, useState } from "react";
+import * as React from "react";
+import { SkeletonTheme } from "react-loading-skeleton";
 
-import { GrafanaTheme2, ThemeContext } from '@data/index';
-import { ThemeChangedEvent, config } from '@runtime/index';
+import { GrafanaTheme2, ThemeContext } from "@data/index";
+import { ThemeChangedEvent, config } from "@runtime/index";
 
-import { appEvents } from '../core';
+import { appEvents } from "../core";
 
-
-export const ThemeProvider = ({ children, value }: { children: React.ReactNode; value: GrafanaTheme2 }) => {
+export const ThemeProvider = ({
+  children,
+  value,
+}: {
+  children: React.ReactNode;
+  value: GrafanaTheme2;
+}) => {
   const [theme, setTheme] = useState(value);
 
   useEffect(() => {
@@ -24,7 +29,10 @@ export const ThemeProvider = ({ children, value }: { children: React.ReactNode; 
     <ThemeContext.Provider value={theme}>
       <SkeletonTheme
         baseColor={theme.colors.emphasize(theme.colors.background.secondary)}
-        highlightColor={theme.colors.emphasize(theme.colors.background.secondary, 0.1)}
+        highlightColor={theme.colors.emphasize(
+          theme.colors.background.secondary,
+          0.1,
+        )}
         borderRadius={theme.shape.radius.default}
       >
         {children}
@@ -33,8 +41,15 @@ export const ThemeProvider = ({ children, value }: { children: React.ReactNode; 
   );
 };
 
-export const provideTheme = <P extends {}>(component: React.ComponentType<P>, theme: GrafanaTheme2) => {
+export const provideTheme = <P extends {}>(
+  component: React.ComponentType<P>,
+  theme: GrafanaTheme2,
+) => {
   return function ThemeProviderWrapper(props: P) {
-    return <ThemeProvider value={theme}>{React.createElement(component, { ...props })}</ThemeProvider>;
+    return (
+      <ThemeProvider value={theme}>
+        {React.createElement(component, { ...props })}
+      </ThemeProvider>
+    );
   };
 };

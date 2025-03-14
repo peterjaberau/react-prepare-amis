@@ -29,7 +29,7 @@ export class NewFrontendAssetsChecker {
     }
 
     // Subscribe to location changes
-    locationService.getHistory().listen(this.locationUpdated.bind(this));
+    locationService.getHistory().listen((this as any).locationUpdated.bind(this));
     this.prevLocationPath = locationService.getLocation().pathname;
   }
 

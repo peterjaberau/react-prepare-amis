@@ -74,7 +74,7 @@ declare module '@emotion/css' {
 declare module 'invariant';
 
 declare module 'react-loading-skeleton' {
-    import { FC } from 'react';
+    import { FC, ReactNode } from 'react';
 
     interface SkeletonProps {
         count?: number;
@@ -88,4 +88,14 @@ declare module 'react-loading-skeleton' {
 
     const Skeleton: FC<SkeletonProps>;
     export default Skeleton;
+
+    interface SkeletonThemeProps {
+        baseColor?: string;
+        highlightColor?: string;
+        borderRadius?: string | number;
+        duration?: number;
+        children?: ReactNode;
+    }
+
+    export const SkeletonTheme: FC<SkeletonThemeProps>;
 }

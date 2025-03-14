@@ -90,7 +90,10 @@ export class SplitPaneWrapper extends PureComponent<React.PropsWithChildren<Prop
       <React.Fragment key="rightPane">{childrenArr[1] || undefined}</React.Fragment>,
     ];
 
+    // @ts-ignore
     return (
+      <>
+      { /*@ts-ignore*/ }
       <SplitPane
         split={splitOrientation}
         minSize={minSize}
@@ -109,6 +112,7 @@ export class SplitPaneWrapper extends PureComponent<React.PropsWithChildren<Prop
       >
         {childrenFragments}
       </SplitPane>
+      </>
     );
   }
 }

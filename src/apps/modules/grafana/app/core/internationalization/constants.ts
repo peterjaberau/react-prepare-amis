@@ -79,7 +79,7 @@ if (process.env.NODE_ENV === 'development') {
     code: PSEUDO_LOCALE,
     name: 'Pseudo-locale',
     loader: {
-      grafana: () => import('../../../locales/pseudo-LOCALE/grafana.json'),
+      grafana: () => import('src/apps/modules/grafana/locales/pseudo-LOCALE/grafana.json'),
     },
   });
 }
@@ -89,7 +89,7 @@ if (process.env.NODE_ENV === 'development') {
 //
 // require.context doesn't work in jest, so we don't even attempt to load enterprise translations...
 if (process.env.NODE_ENV !== 'test') {
-  const extensionRequireContext = require.context('../../', true, /app\/extensions\/locales\/localeExtensions/);
+  const extensionRequireContext = (require as any).context('../../', true, /app\/extensions\/locales\/localeExtensions/);
   if (extensionRequireContext.keys().includes('@grafana-module/app/extensions/locales/localeExtensions')) {
     const { LOCALE_EXTENSIONS, ENTERPRISE_I18N_NAMESPACE } = extensionRequireContext(
       '@grafana-module/app/extensions/locales/localeExtensions'
