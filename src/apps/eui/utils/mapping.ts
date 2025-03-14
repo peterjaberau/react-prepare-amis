@@ -18,7 +18,7 @@ import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refac
 import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/dashboard/Dashboard";
 import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
 import { AppCustomActorV1 } from "@/apps/modules/custom-actor-v1/AppCustomActor.tsx";
-import { plugin as PluginSceneAppDemo } from "@/apps/modules/scenes/stories/main.tsx";
+// import { SimplePanel as SimplePanelPlugin } from "@/apps/modules/scenes/stories/components/SimplePanel";
 // import GrafanaApp from "@/apps/modules/grafana/app/app";
 
 
@@ -180,24 +180,24 @@ export const contentItems = [
 ] as const;
 
 export const contentModuleItems = [
-  {
-    key: "scene-app",
-    component: PluginSceneAppDemo,
-    title: "PluginSceneAppDemo",
-    props: {
-      ...defaultProps,
-      ...{
-        pageHeader: {
-          title: "PluginSceneAppDemo",
-          iconType: "globe",
-        },
-        page: {
-          panelled: true,
-          restrictWidth: true,
-        },
-      },
-    },
-  },
+  // {
+  //   key: "scene-simple-panel",
+  //   component: SimplePanelPlugin,
+  //   title: "SimplePanelPlugin",
+  //   props: {
+  //     ...defaultProps,
+  //     ...{
+  //       pageHeader: {
+  //         title: "SimplePanelPlugin",
+  //         iconType: "globe",
+  //       },
+  //       page: {
+  //         panelled: true,
+  //         restrictWidth: true,
+  //       },
+  //     },
+  //   },
+  // },
 
   {
     key: "grid-stack",
