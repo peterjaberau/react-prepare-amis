@@ -63,7 +63,7 @@ export const PanelAlertTabContent = ({ dashboard, panel }: Props) => {
   const isNew = !Boolean(dashboard.uid);
 
   return (
-    <div data-testid={selectors.components.PanelAlertTabContent.content} className={styles.noRulesWrapper}>
+    <div className={styles.noRulesWrapper}>
       {alert}
       {!isNew && (
         <>

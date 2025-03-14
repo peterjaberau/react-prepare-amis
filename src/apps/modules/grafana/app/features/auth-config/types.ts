@@ -3,6 +3,7 @@ import { Validate, UseFormSetValue } from 'react-hook-form';
 
 import { IconName, SelectableValue } from '@data/index';
 import { Settings } from '@grafana-module/app/types';
+
 export interface AuthProviderInfo {
   id: string;
   type: string;
@@ -120,7 +121,7 @@ export type FieldData = {
   validation?: {
     required?: boolean;
     message?: string;
-    validate?: Validate<SSOProviderDTO[keyof SSOProviderDTO], SSOProviderDTO>;
+    validate?: Validate<SSOProviderDTO[keyof SSOProviderDTO]>;
   };
   multi?: boolean;
   allowCustomValue?: boolean;

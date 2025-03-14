@@ -79,7 +79,8 @@ export interface LinkError {
 
 /** DAGError subclass, this is just a regular error but with LinkError[] as the cause */
 export class DAGError extends Error {
-  constructor(message: string, options: { cause: LinkError[] }) {
+  constructor(message: string, options: { cause: LinkError[] } | any) {
+    // @ts-ignore
     super(message, options);
     this.cause = options?.cause ?? [];
   }

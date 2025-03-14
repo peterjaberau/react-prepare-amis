@@ -48,7 +48,6 @@ export const AlertRuleNameAndMetric = () => {
       <Stack direction="column">
         <Field label="Name" error={errors?.name?.message} invalid={!!errors.name?.message}>
           <Input
-            data-testid={selectors.components.AlertRules.ruleNameField}
             id="name"
             width={38}
             {...register('name', {

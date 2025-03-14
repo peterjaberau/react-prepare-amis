@@ -314,7 +314,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       description: 'The authorization endpoint of your OAuth2 provider.',
       validation: {
         required: true,
-        validate: (value) => {
+        validate: (value: any) => {
           return isUrlValid(value);
         },
         message: 'This field is required and must be a valid URL.',
@@ -338,7 +338,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       description: 'The token endpoint of your OAuth2 provider.',
       validation: {
         required: true,
-        validate: (value) => {
+        validate: (value: any) => {
           return isUrlValid(value);
         },
         message: 'This field is required and must be a valid URL.',
@@ -368,7 +368,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       validation:
         provider === 'azuread'
           ? {
-              validate: (value) => {
+              validate: (value: any) => {
                 if (typeof value === 'string') {
                   return uuidValidate(value);
                 }
@@ -396,7 +396,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       ),
       validation: {
         required: false,
-        validate: (value) => {
+        validate: (value: any) => {
           if (typeof value !== 'string') {
             return false;
           }
@@ -577,7 +577,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       ),
       type: 'text',
       validation: {
-        validate: (value, formValues) => {
+        validate: (value: any, formValues: any) => {
           let result = true;
           if (formValues.teamIds.length) {
             result = !!value;
@@ -597,7 +597,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
         'The JMESPath expression to use for Grafana Team Id lookup within the results returned by the teams_url endpoint.',
       type: 'text',
       validation: {
-        validate: (value, formValues) => {
+        validate: (value: any, formValues: any) => {
           if (formValues.teamIds.length) {
             return !!value;
           }
@@ -624,7 +624,7 @@ export function fieldMap(provider: string): Record<string, FieldData> {
       validation:
         provider === 'github'
           ? {
-              validate: (value) => {
+              validate: (value: any) => {
                 if (typeof value === 'string') {
                   return isNumeric(value);
                 }

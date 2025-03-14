@@ -7,7 +7,7 @@ import { CoreApp, DataQuery, DataSourcePluginContextProvider, GrafanaTheme2, Loa
 import { PromQuery } from '@prometheus/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Alert, Button, useStyles2 } from '@grafana-ui/index';
-import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
+// import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
 
 import { CloudAlertPreview } from './CloudAlertPreview';
 import { usePreview } from './PreviewRule';
@@ -127,7 +127,7 @@ export function useQueryMappers(dataSourceName: string): QueryMappers {
       case 'loki':
       case 'prometheus':
         return {
-          mapToValue: (query: DataQuery) => (query as PromQuery | LokiQuery).expr,
+          mapToValue: (query: DataQuery) => (query as PromQuery | any).expr,
           mapToQuery: (existing: DataQuery, value: string | undefined) => ({ ...existing, expr: value }),
         };
       default:

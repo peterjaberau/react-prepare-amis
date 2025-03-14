@@ -127,7 +127,6 @@ export const DynamicTable = <T extends object>({
                 <div className={cx(styles.cell(), styles.expandCell)}>
                   <IconButton
                     tooltip={`${isItemExpanded ? 'Collapse' : 'Expand'} row`}
-                    data-testid={selectors.components.AlertRules.toggle}
                     name={isItemExpanded ? 'angle-down' : 'angle-right'}
                     onClick={() => toggleExpanded(item)}
                   />
@@ -145,7 +144,6 @@ export const DynamicTable = <T extends object>({
               {isItemExpanded && renderExpandedContent && (
                 <div
                   className={styles.expandedContentRow}
-                  data-testid={selectors.components.AlertRules.expandedContent}
                 >
                   {renderExpandedContent(item, index, items)}
                 </div>

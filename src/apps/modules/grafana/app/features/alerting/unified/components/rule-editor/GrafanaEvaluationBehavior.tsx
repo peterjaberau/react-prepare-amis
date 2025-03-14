@@ -263,7 +263,6 @@ export function GrafanaEvaluationBehaviorStep({
               fill="outline"
               variant="secondary"
               disabled={!folder?.uid}
-              data-testid={selectors.components.AlertRules.newEvaluationGroupButton}
             >
               <Trans i18nKey="alerting.rule-form.evaluation.new-group">New evaluation group</Trans>
             </Button>
@@ -450,7 +449,6 @@ function EvaluationGroupCreationModal({
             invalid={Boolean(formState.errors.group)}
           >
             <Input
-              data-testid={selectors.components.AlertRules.newEvaluationGroupName}
               className={styles.formInput}
               autoFocus={true}
               id={evaluationGroupNameId}
@@ -469,7 +467,6 @@ function EvaluationGroupCreationModal({
             invalid={Boolean(formState.errors.evaluateEvery)}
           >
             <Input
-              data-testid={selectors.components.AlertRules.newEvaluationGroupInterval}
               className={styles.formInput}
               id={evaluateEveryId}
               placeholder={DEFAULT_GROUP_EVALUATION_INTERVAL}
@@ -489,7 +486,6 @@ function EvaluationGroupCreationModal({
             <Button
               type="submit"
               disabled={!formState.isValid}
-              data-testid={selectors.components.AlertRules.newEvaluationGroupCreate}
             >
               <Trans i18nKey="alerting.rule-form.evaluation.group.create">Create</Trans>
             </Button>

@@ -1,23 +1,24 @@
-import { HttpResponse, http } from 'msw';
-import { SetupServer, setupServer } from 'msw/node';
 
-import { setBackendSrv } from '@runtime/index';
-import { AlertGroupUpdated } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
-import allHandlers from '@grafana-module/app/features/alerting/unified/mocks/server/all-handlers';
+import { HttpResponse, http } from "msw";
+import { SetupServer, setupServer } from "msw/node";
+
+import { setBackendSrv } from "@runtime/index";
+import { AlertGroupUpdated } from "@grafana-module/app/features/alerting/unified/api/alertRuleApi";
+import allHandlers from "@grafana-module/app/features/alerting/unified/mocks/server/all-handlers";
 import {
   setupAlertmanagerConfigMapDefaultState,
   setupAlertmanagerStatusMapDefaultState,
-} from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { resetRoutingTreeMap } from '@grafana-module/app/features/alerting/unified/mocks/server/entities/k8s/routingtrees';
-import { DashboardDTO, FolderDTO, OrgUser } from '@grafana-module/app/types';
+} from "@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers";
+import { resetRoutingTreeMap } from "@grafana-module/app/features/alerting/unified/mocks/server/entities/k8s/routingtrees";
+import { DashboardDTO, FolderDTO, OrgUser } from "@grafana-module/app/types";
 import {
   PromRulesResponse,
   RulerGrafanaRuleDTO,
   RulerRuleGroupDTO,
   RulerRulesConfigDTO,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from "@grafana-module/app/types/unified-alerting-dto";
 
-import { backendSrv } from '../../../core/services/backend_srv';
+import { backendSrv } from "../../../core/services/backend_srv";
 import {
   AlertManagerCortexConfig,
   AlertmanagerConfig,
@@ -26,22 +27,26 @@ import {
   GrafanaManagedReceiverConfig,
   MatcherOperator,
   Route,
-} from '../../../plugins/datasource/alertmanager/types';
-import { DashboardSearchItem } from '../../search/types';
+} from "../../../plugins/datasource/alertmanager/types";
+import { DashboardSearchItem } from "../../search/types";
 
 type Configurator<T> = (builder: T) => T;
 
 export class AlertmanagerConfigBuilder {
   private alertmanagerConfig: AlertmanagerConfig = { receivers: [] };
 
-  addReceivers(configure: (builder: AlertmanagerReceiverBuilder) => void): AlertmanagerConfigBuilder {
+  addReceivers(
+    configure: (builder: AlertmanagerReceiverBuilder) => void,
+  ): AlertmanagerConfigBuilder {
     const receiverBuilder = new AlertmanagerReceiverBuilder();
     configure(receiverBuilder);
     this.alertmanagerConfig.receivers?.push(receiverBuilder.build());
     return this;
   }
 
-  withRoute(configure: (routeBuilder: AlertmanagerRouteBuilder) => void): AlertmanagerConfigBuilder {
+  withRoute(
+    configure: (routeBuilder: AlertmanagerRouteBuilder) => void,
+  ): AlertmanagerConfigBuilder {
     const routeBuilder = new AlertmanagerRouteBuilder();
     configure(routeBuilder);
 
@@ -68,18 +73,24 @@ class AlertmanagerRouteBuilder {
   }
 
   withEmptyReceiver(): AlertmanagerRouteBuilder {
-    this.route.receiver = '';
+    this.route.receiver = "";
     return this;
   }
 
-  addRoute(configure: (builder: AlertmanagerRouteBuilder) => void): AlertmanagerRouteBuilder {
+  addRoute(
+    configure: (builder: AlertmanagerRouteBuilder) => void,
+  ): AlertmanagerRouteBuilder {
     const routeBuilder = new AlertmanagerRouteBuilder();
     configure(routeBuilder);
     this.route.routes?.push(routeBuilder.build());
     return this;
   }
 
-  addMatcher(key: string, operator: MatcherOperator, value: string): AlertmanagerRouteBuilder {
+  addMatcher(
+    key: string,
+    operator: MatcherOperator,
+    value: string,
+  ): AlertmanagerRouteBuilder {
     this.route.object_matchers?.push([key, operator, value]);
     return this;
   }
@@ -90,7 +101,7 @@ class AlertmanagerRouteBuilder {
 }
 
 class EmailConfigBuilder {
-  private emailConfig: EmailConfig = { to: '' };
+  private emailConfig: EmailConfig = { to: "" };
 
   withTo(to: string): EmailConfigBuilder {
     this.emailConfig.to = to;
@@ -104,8 +115,8 @@ class EmailConfigBuilder {
 
 class GrafanaReceiverConfigBuilder {
   private grafanaReceiverConfig: GrafanaManagedReceiverConfig = {
-    name: '',
-    type: '',
+    name: "",
+    type: "",
     settings: {},
     disableResolveMessage: false,
   };
@@ -133,19 +144,29 @@ class GrafanaReceiverConfigBuilder {
 }
 
 export class AlertmanagerReceiverBuilder {
-  private receiver: AlertmanagerReceiver = { name: '', email_configs: [], grafana_managed_receiver_configs: [] };
+  private receiver: AlertmanagerReceiver = {
+    name: "",
+    email_configs: [],
+    grafana_managed_receiver_configs: [],
+  };
 
   withName(name: string): AlertmanagerReceiverBuilder {
     this.receiver.name = name;
     return this;
   }
 
-  addGrafanaReceiverConfig(configure: Configurator<GrafanaReceiverConfigBuilder>): AlertmanagerReceiverBuilder {
-    this.receiver.grafana_managed_receiver_configs?.push(configure(new GrafanaReceiverConfigBuilder()).build());
+  addGrafanaReceiverConfig(
+    configure: Configurator<GrafanaReceiverConfigBuilder>,
+  ): AlertmanagerReceiverBuilder {
+    this.receiver.grafana_managed_receiver_configs?.push(
+      configure(new GrafanaReceiverConfigBuilder()).build(),
+    );
     return this;
   }
 
-  addEmailConfig(configure: (builder: EmailConfigBuilder) => void): AlertmanagerReceiverBuilder {
+  addEmailConfig(
+    configure: (builder: EmailConfigBuilder) => void,
+  ): AlertmanagerReceiverBuilder {
     const builder = new EmailConfigBuilder();
     configure(builder);
     this.receiver.email_configs?.push(builder.build());
@@ -157,7 +178,9 @@ export class AlertmanagerReceiverBuilder {
   }
 }
 
-export const getMockConfig = (configure: (builder: AlertmanagerConfigBuilder) => void): AlertManagerCortexConfig => {
+export const getMockConfig = (
+  configure: (builder: AlertmanagerConfigBuilder) => void,
+): AlertManagerCortexConfig => {
   const builder = new AlertmanagerConfigBuilder();
   configure(builder);
   return { alertmanager_config: builder.build(), template_files: {} };
@@ -167,25 +190,54 @@ export function mockAlertRuleApi(server: SetupServer) {
   return {
     prometheusRuleNamespaces: (dsName: string, response: PromRulesResponse) => {
       server.use(
-        http.get(`api/prometheus/${dsName}/api/v1/rules`, () => HttpResponse.json<PromRulesResponse>(response))
+        http.get(`api/prometheus/${dsName}/api/v1/rules`, () =>
+          HttpResponse.json<PromRulesResponse>(response),
+        ),
       );
     },
     rulerRules: (dsName: string, response: RulerRulesConfigDTO) => {
-      server.use(http.get(`/api/ruler/${dsName}/api/v1/rules`, () => HttpResponse.json(response)));
+      server.use(
+        http.get(`/api/ruler/${dsName}/api/v1/rules`, () =>
+          HttpResponse.json(response),
+        ),
+      );
     },
     updateRule: (dsName: string, response: AlertGroupUpdated) => {
-      server.use(http.post(`/api/ruler/${dsName}/api/v1/rules/:namespaceUid`, () => HttpResponse.json(response)));
-    },
-    rulerRuleGroup: (dsName: string, namespace: string, group: string, response: RulerRuleGroupDTO) => {
       server.use(
-        http.get(`/api/ruler/${dsName}/api/v1/rules/${namespace}/${group}`, () => HttpResponse.json(response))
+        http.post(`/api/ruler/${dsName}/api/v1/rules/:namespaceUid`, () =>
+          HttpResponse.json(response),
+        ),
+      );
+    },
+    rulerRuleGroup: (
+      dsName: string,
+      namespace: string,
+      group: string,
+      response: RulerRuleGroupDTO,
+    ) => {
+      server.use(
+        http.get(
+          `/api/ruler/${dsName}/api/v1/rules/${namespace}/${group}`,
+          () => HttpResponse.json(response),
+        ),
       );
     },
     getAlertRule: (uid: string, response: RulerGrafanaRuleDTO) => {
-      server.use(http.get(`/api/ruler/grafana/api/v1/rule/${uid}`, () => HttpResponse.json(response)));
+      server.use(
+        http.get(`/api/ruler/grafana/api/v1/rule/${uid}`, () =>
+          HttpResponse.json(response),
+        ),
+      );
     },
-    getAlertRuleVersionHistory: (uid: string, response: RulerGrafanaRuleDTO[]) => {
-      server.use(http.get(`/api/ruler/grafana/api/v1/rule/${uid}/versions`, () => HttpResponse.json(response)));
+    getAlertRuleVersionHistory: (
+      uid: string,
+      response: RulerGrafanaRuleDTO[],
+    ) => {
+      server.use(
+        http.get(`/api/ruler/grafana/api/v1/rule/${uid}/versions`, () =>
+          HttpResponse.json(response),
+        ),
+      );
     },
   };
 }
@@ -194,26 +246,39 @@ export function mockExportApi(server: SetupServer) {
   // exportRule, exportRulesGroup, exportRulesFolder use the same API endpoint but with different parameters
   return {
     // exportRulesGroup requires folderUid and group parameters and doesn't allow ruleUid parameter
-    exportRulesGroup: (folderUid: string, group: string, response: Record<string, string>) => {
+    exportRulesGroup: (
+      folderUid: string,
+      group: string,
+      response: Record<string, string>,
+    ) => {
       server.use(
-        http.get('/api/ruler/grafana/api/v1/export/rules', ({ request }) => {
+        http.get("/api/ruler/grafana/api/v1/export/rules", ({ request }) => {
           const url = new URL(request.url);
-          if (url.searchParams.get('folderUid') === folderUid && url.searchParams.get('group') === group) {
-            const format = url.searchParams.get('format') ?? 'yaml';
+          if (
+            url.searchParams.get("folderUid") === folderUid &&
+            url.searchParams.get("group") === group
+          ) {
+            const format = url.searchParams.get("format") ?? "yaml";
             return HttpResponse.text(response[format]);
           }
 
-          return HttpResponse.text('', { status: 500 });
-        })
+          return HttpResponse.text("", { status: 500 });
+        }),
       );
     },
-    modifiedExport: (namespaceUID: string, response: Record<string, string>) => {
+    modifiedExport: (
+      namespaceUID: string,
+      response: Record<string, string>,
+    ) => {
       server.use(
-        http.post(`/api/ruler/grafana/api/v1/rules/${namespaceUID}/export`, ({ request }) => {
-          const url = new URL(request.url);
-          const format = url.searchParams.get('format') ?? 'yaml';
-          return HttpResponse.text(response[format]);
-        })
+        http.post(
+          `/api/ruler/grafana/api/v1/rules/${namespaceUID}/export`,
+          ({ request }) => {
+            const url = new URL(request.url);
+            const format = url.searchParams.get("format") ?? "yaml";
+            return HttpResponse.text(response[format]);
+          },
+        ),
       );
     },
   };
@@ -222,7 +287,11 @@ export function mockExportApi(server: SetupServer) {
 export function mockFolderApi(server: SetupServer) {
   return {
     folder: (folderUid: string, response: FolderDTO) => {
-      server.use(http.get(`/api/folders/${folderUid}`, () => HttpResponse.json(response)));
+      server.use(
+        http.get(`/api/folders/${folderUid}`, () =>
+          HttpResponse.json(response),
+        ),
+      );
     },
   };
 }
@@ -249,7 +318,11 @@ export function mockDashboardApi(server: SetupServer) {
       server.use(http.get(`/api/search`, () => HttpResponse.json(results)));
     },
     dashboard: (response: DashboardDTO) => {
-      server.use(http.get(`/api/dashboards/uid/${response.dashboard.uid}`, () => HttpResponse.json(response)));
+      server.use(
+        http.get(`/api/dashboards/uid/${response.dashboard.uid}`, () =>
+          HttpResponse.json(response),
+        ),
+      );
     },
   };
 }
@@ -259,10 +332,10 @@ const server = setupServer(...allHandlers);
 /**
  * Sets up beforeAll, afterAll and beforeEach handlers for mock server
  */
-export function setupMswServer() {
+export function setupMswServer(): any {
   beforeAll(() => {
     setBackendSrv(backendSrv);
-    server.listen({ onUnhandledRequest: 'error' });
+    server.listen({ onUnhandledRequest: "error" });
   });
 
   afterEach(() => {

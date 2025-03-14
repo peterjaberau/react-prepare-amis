@@ -13,17 +13,17 @@ const PrometheusQueryPreview = React.lazy(() => import('./PrometheusQueryPreview
 const LokiQueryPreview = React.lazy(() => import('./LokiQueryPreview'));
 
 interface DatasourceModelPreviewProps {
-  model: AlertDataQuery;
+  model: AlertDataQuery | any;
   dataSource: DataSourceInstanceSettings;
 }
 
-function DatasourceModelPreview({ model, dataSource: datasource }: DatasourceModelPreviewProps): React.ReactNode {
+function DatasourceModelPreview({ model, dataSource: datasource }: DatasourceModelPreviewProps | any): React.ReactNode {
   if (datasource.type === DataSourceType.Prometheus && isPromOrLokiQuery(model)) {
-    return <PrometheusQueryPreview query={model.expr} />;
+    return <PrometheusQueryPreview query={(model as any).expr} />;
   }
 
   if (datasource.type === DataSourceType.Loki && isPromOrLokiQuery(model)) {
-    return <LokiQueryPreview query={model.expr ?? ''} />;
+    return <LokiQueryPreview query={(model as any).expr ?? ''} />;
   }
 
   if (isSQLLikeQuery(model)) {

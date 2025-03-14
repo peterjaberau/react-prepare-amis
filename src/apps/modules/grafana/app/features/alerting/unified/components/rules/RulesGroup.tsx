@@ -237,7 +237,6 @@ export const RulesGroup = React.memo(({ group, namespace, expandAll, viewMode }:
           className={styles.collapseToggle}
           isCollapsed={isCollapsed}
           onToggle={setIsCollapsed}
-          data-testid={selectors.components.AlertRules.groupToggle}
         />
         <FolderIcon isCollapsed={isCollapsed} />
         <CloudSourceLogo rulesSource={rulesSource} />

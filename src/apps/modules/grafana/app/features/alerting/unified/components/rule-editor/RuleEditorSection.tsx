@@ -25,9 +25,8 @@ export const RuleEditorSection = ({
   switchMode,
 }: React.PropsWithChildren<RuleEditorSectionProps>) => {
   const styles = useStyles2(getStyles);
-  const AlertRuleSelectors = selectors.components.AlertRules;
   return (
-    <div className={styles.parent} data-testid={AlertRuleSelectors.step(stepNo.toString())}>
+    <div className={styles.parent} >
       <FieldSet
         className={cx(fullWidth && styles.fullWidth)}
         label={
@@ -38,7 +37,6 @@ export const RuleEditorSection = ({
             {switchMode && (
               <Text variant="bodySmall">
                 <InlineSwitch
-                  data-testid={AlertRuleSelectors.stepAdvancedModeSwitch(stepNo.toString())}
                   value={switchMode.isAdvancedMode}
                   onChange={(event) => {
                     switchMode.setAdvancedMode(event.currentTarget.checked);

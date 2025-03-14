@@ -9,7 +9,7 @@ import { useStyles2 } from '@grafana-ui/index';
 import { DataSourceType } from '@grafana-module/app/features/alerting/unified/utils/datasource';
 import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
 import { QueryErrorAlert } from '@grafana-module/app/features/query/components/QueryErrorAlert';
-import { LokiQueryType } from '@grafana-module/app/plugins/datasource/loki/dataquery.gen';
+import { LokiQueryType } from '@grafana-module/app/plugins/datasource/loki/dataquery';
 import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
 
 import { isPromOrLokiQuery } from '../../utils/rule-form';
@@ -51,16 +51,16 @@ export const RecordingRuleEditor: FC<RecordingRuleEditorProps> = ({
     return getDataSourceSrv().get(dataSourceName);
   }, [dataSourceName]);
 
-  const handleChangedQuery = useCallback(
-    (changedQuery: DataQuery) => {
-      if (!isPromOrLokiQuery(changedQuery) || !dataSource) {
+  const handleChangedQuery: any = useCallback(
+    (changedQuery: DataQuery | any) => {
+      if (!isPromOrLokiQuery(changedQuery as any) || !dataSource) {
         return;
       }
 
       const [query] = queries;
       const { uid: dataSourceId, type } = dataSource;
       const isLoki = type === DataSourceType.Loki;
-      const expr = changedQuery.expr;
+      const expr: any = changedQuery.expr;
 
       const merged = {
         ...query,

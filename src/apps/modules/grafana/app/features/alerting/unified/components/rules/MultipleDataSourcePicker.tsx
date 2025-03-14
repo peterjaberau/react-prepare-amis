@@ -144,11 +144,10 @@ export const MultipleDataSourcePicker = (props: MultipleDataSourcePickerProps) =
   const isClearable = typeof onClear === 'function';
 
   return (
-    <div data-testid={selectors.components.DataSourcePicker.container}>
+    <div >
       <MultiSelect
         isLoading={isLoading}
         disabled={disabled}
-        data-testid={selectors.components.DataSourcePicker.inputV2}
         inputId={inputId || 'data-source-picker'}
         className="ds-picker select-container"
         isClearable={isClearable}

@@ -42,7 +42,7 @@ export const AmRootRouteForm = ({ actionButtons, alertManagerSourceName, onSubmi
     formState: { errors },
     setValue,
     getValues,
-  } = useForm<FormAmRoute>({
+  }: any = useForm<FormAmRoute>({
     defaultValues: {
       ...defaultValues,
       overrideTimings: true,
@@ -90,9 +90,9 @@ export const AmRootRouteForm = ({ actionButtons, alertManagerSourceName, onSubmi
               {...field}
               allowCustomValue
               className={styles.input}
-              onCreateOption={(opt: string) => {
+              onCreateOption={(opt) => {
                 setGroupByOptions((opts) => [...opts, stringToSelectableValue(opt)]);
-                setValue('groupBy', [...(field.value || []), opt]);
+                setValue('groupBy', [...(field.value as string[] || []), opt]);
               }}
               onChange={(value) => onChange(mapMultiSelectValueToStrings(value))}
               options={[...commonGroupByOptions, ...groupByOptions]}

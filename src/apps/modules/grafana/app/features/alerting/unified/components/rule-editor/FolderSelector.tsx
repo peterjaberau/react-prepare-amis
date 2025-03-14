@@ -87,7 +87,6 @@ export function FolderSelector() {
                     fill="outline"
                     variant="secondary"
                     disabled={!contextSrv.hasPermission(AccessControlAction.FoldersCreate)}
-                    data-testid={selectors.components.AlertRules.newFolderButton}
                   >
                     <Trans i18nKey="alerting.rule-form.folder.new-folder">New folder</Trans>
                   </Button>
@@ -151,7 +150,6 @@ function FolderCreationModal({
             }
           >
             <Input
-              data-testid={selectors.components.AlertRules.newFolderNameField}
               autoFocus={true}
               id="folderName"
               placeholder="Enter a name"
@@ -167,7 +165,6 @@ function FolderCreationModal({
             <Button
               type="submit"
               disabled={!title}
-              data-testid={selectors.components.AlertRules.newFolderNameCreateButton}
             >
               <Trans i18nKey="alerting.rule-form.folder.create">Create</Trans>
             </Button>

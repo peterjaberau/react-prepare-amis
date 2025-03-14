@@ -1,8 +1,8 @@
-import { css } from '@emotion/css';
-import { ReactNode, useState } from 'react';
-import { Controller, useFieldArray, useForm } from 'react-hook-form';
+import { css } from "@emotion/css";
+import { ReactNode, useState } from "react";
+import { Controller, useFieldArray, useForm } from "react-hook-form";
 
-import { GrafanaTheme2 } from '@data/index';
+import { GrafanaTheme2 } from "@data/index";
 import {
   Badge,
   Button,
@@ -15,16 +15,22 @@ import {
   Stack,
   Switch,
   useStyles2,
-} from '@grafana-ui/index';
-import MuteTimingsSelector from '@grafana-module/app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector';
-import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
-import { handleContactPointSelect } from '@grafana-module/app/features/alerting/unified/components/notification-policies/utils';
-import { AlertmanagerAction, useAlertmanagerAbility } from '@grafana-module/app/features/alerting/unified/hooks/useAbilities';
-import { MatcherOperator, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+} from "@grafana-ui/index";
+import MuteTimingsSelector from "@grafana-module/app/features/alerting/unified/components/alertmanager-entities/MuteTimingsSelector";
+import { ContactPointSelector } from "@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector";
+import { handleContactPointSelect } from "@grafana-module/app/features/alerting/unified/components/notification-policies/utils";
+import {
+  AlertmanagerAction,
+  useAlertmanagerAbility,
+} from "@grafana-module/app/features/alerting/unified/hooks/useAbilities";
+import {
+  MatcherOperator,
+  RouteWithID,
+} from "@grafana-module/app/plugins/datasource/alertmanager/types";
 
-import { useAlertmanager } from '../../state/AlertmanagerContext';
-import { FormAmRoute } from '../../types/amroutes';
-import { matcherFieldOptions } from '../../utils/alertmanager';
+import { useAlertmanager } from "../../state/AlertmanagerContext";
+import { FormAmRoute } from "../../types/amroutes";
+import { matcherFieldOptions } from "../../utils/alertmanager";
 import {
   amRouteToFormAmRoute,
   commonGroupByOptions,
@@ -34,11 +40,11 @@ import {
   repeatIntervalValidator,
   stringToSelectableValue,
   stringsToSelectableValues,
-} from '../../utils/amroutes';
+} from "../../utils/amroutes";
 
-import { PromDurationInput } from './PromDurationInput';
-import { getFormStyles } from './formStyles';
-import { routeTimingsFields } from './routeTimingsFields';
+import { PromDurationInput } from "./PromDurationInput";
+import { getFormStyles } from "./formStyles";
+import { routeTimingsFields } from "./routeTimingsFields";
 
 export interface AmRoutesExpandedFormProps {
   route?: RouteWithID;
@@ -47,20 +53,31 @@ export interface AmRoutesExpandedFormProps {
   defaults?: Partial<FormAmRoute>;
 }
 
-export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults }: AmRoutesExpandedFormProps) => {
+export const AmRoutesExpandedForm = ({
+  actionButtons,
+  route,
+  onSubmit,
+  defaults,
+}: AmRoutesExpandedFormProps) => {
   const styles = useStyles2(getStyles);
   const formStyles = useStyles2(getFormStyles);
   const { selectedAlertmanager } = useAlertmanager();
-  const [, canSeeMuteTimings] = useAlertmanagerAbility(AlertmanagerAction.ViewMuteTiming);
-  const [groupByOptions, setGroupByOptions] = useState(stringsToSelectableValues(route?.group_by));
-  const emptyMatcher = [{ name: '', operator: MatcherOperator.equal, value: '' }];
+  const [, canSeeMuteTimings] = useAlertmanagerAbility(
+    AlertmanagerAction.ViewMuteTiming,
+  );
+  const [groupByOptions, setGroupByOptions] = useState(
+    stringsToSelectableValues(route?.group_by),
+  );
+  const emptyMatcher = [
+    { name: "", operator: MatcherOperator.equal, value: "" },
+  ];
 
   const formAmRoute = {
     ...amRouteToFormAmRoute(route),
     ...defaults,
   };
 
-  const defaultValues: Omit<FormAmRoute, 'routes'> = {
+  const defaultValues: Omit<FormAmRoute, "routes"> = {
     ...formAmRoute,
     // if we're adding a new route, show at least one empty matcher
     object_matchers: route ? formAmRoute.object_matchers : emptyMatcher,
@@ -74,17 +91,17 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
     setValue,
     watch,
     getValues,
-  } = useForm<FormAmRoute>({
+  }: any = useForm<FormAmRoute>({
     defaultValues,
   });
-  const { fields, append, remove } = useFieldArray({
+  const { fields, append, remove } : any= useFieldArray({
     control,
-    name: 'object_matchers',
-  });
+    name: "object_matchers",
+  } as any);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="hidden" {...register('id')} />
+      <input type="hidden" {...register("id")} />
       <Stack direction="column" alignItems="flex-start">
         <div>Matching labels</div>
         {fields.length === 0 && (
@@ -97,7 +114,7 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
         )}
         {fields.length > 0 && (
           <div className={styles.matchersContainer}>
-            {fields.map((field, index) => {
+            {fields.map((field: any, index: any) => {
               return (
                 <Stack direction="row" key={field.id} alignItems="center">
                   <Field
@@ -106,13 +123,15 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
                     error={errors.object_matchers?.[index]?.name?.message}
                   >
                     <Input
-                      {...register(`object_matchers.${index}.name`, { required: 'Field is required' })}
+                      {...register(`object_matchers.${index}.name`, {
+                        required: "Field is required",
+                      })}
                       defaultValue={field.name}
                       placeholder="label"
                       autoFocus
                     />
                   </Field>
-                  <Field label={'Operator'}>
+                  <Field label={"Operator"}>
                     <Controller
                       render={({ field: { onChange, ref, ...field } }) => (
                         <Select
@@ -126,7 +145,9 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
                       defaultValue={field.operator}
                       control={control}
                       name={`object_matchers.${index}.operator`}
-                      rules={{ required: { value: true, message: 'Required.' } }}
+                      rules={{
+                        required: { value: true, message: "Required." },
+                      }}
                     />
                   </Field>
                   <Field
@@ -140,7 +161,11 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
                       placeholder="value"
                     />
                   </Field>
-                  <IconButton tooltip="Remove matcher" name={'trash-alt'} onClick={() => remove(index)}>
+                  <IconButton
+                    tooltip="Remove matcher"
+                    name={"trash-alt"}
+                    onClick={() => remove(index)}
+                  >
                     Remove
                   </IconButton>
                 </Stack>
@@ -177,10 +202,13 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
         />
       </Field>
       <Field label="Continue matching subsequent sibling nodes">
-        <Switch id="continue-toggle" {...register('continue')} />
+        <Switch id="continue-toggle" {...register("continue")} />
       </Field>
       <Field label="Override grouping">
-        <Switch id="override-grouping-toggle" {...register('overrideGrouping')} />
+        <Switch
+          id="override-grouping-toggle"
+          {...register("overrideGrouping")}
+        />
       </Field>
       {watch().overrideGrouping && (
         <Field
@@ -191,12 +219,15 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
             rules={{
               validate: (value) => {
                 if (!value || value.length === 0) {
-                  return 'At least one group by option is required.';
+                  return "At least one group by option is required.";
                 }
                 return true;
               },
             }}
-            render={({ field: { onChange, ref, ...field }, fieldState: { error } }) => (
+            render={({
+              field: { onChange, ref, ...field },
+              fieldState: { error },
+            }) => (
               <>
                 <MultiSelect
                   aria-label="Group by"
@@ -205,13 +236,22 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
                   allowCustomValue
                   className={formStyles.input}
                   onCreateOption={(opt: string) => {
-                    setGroupByOptions((opts) => [...opts, stringToSelectableValue(opt)]);
-                    setValue('groupBy', [...(field.value || []), opt]);
+                    setGroupByOptions((opts) => [
+                      ...opts,
+                      stringToSelectableValue(opt),
+                    ]);
+                    setValue("groupBy", [...(field.value || []), opt]);
                   }}
-                  onChange={(value) => onChange(mapMultiSelectValueToStrings(value))}
+                  onChange={(value) =>
+                    onChange(mapMultiSelectValueToStrings(value))
+                  }
                   options={[...commonGroupByOptions, ...groupByOptions]}
                 />
-                {error && <FieldValidationMessage>{error.message}</FieldValidationMessage>}
+                {error && (
+                  <FieldValidationMessage>
+                    {error.message}
+                  </FieldValidationMessage>
+                )}
               </>
             )}
             control={control}
@@ -220,7 +260,7 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
         </Field>
       )}
       <Field label="Override general timings">
-        <Switch id="override-timings-toggle" {...register('overrideTimings')} />
+        <Switch id="override-timings-toggle" {...register("overrideTimings")} />
       </Field>
       {watch().overrideTimings && (
         <>
@@ -231,7 +271,9 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
             error={errors.groupWaitValue?.message}
           >
             <PromDurationInput
-              {...register('groupWaitValue', { validate: promDurationValidator })}
+              {...register("groupWaitValue", {
+                validate: promDurationValidator,
+              })}
               aria-label={routeTimingsFields.groupWait.ariaLabel}
               className={formStyles.promDurationInput}
             />
@@ -243,7 +285,9 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
             error={errors.groupIntervalValue?.message}
           >
             <PromDurationInput
-              {...register('groupIntervalValue', { validate: promDurationValidator })}
+              {...register("groupIntervalValue", {
+                validate: promDurationValidator,
+              })}
               aria-label={routeTimingsFields.groupInterval.ariaLabel}
               className={formStyles.promDurationInput}
             />
@@ -255,9 +299,9 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
             error={errors.repeatIntervalValue?.message}
           >
             <PromDurationInput
-              {...register('repeatIntervalValue', {
-                validate: (value = '') => {
-                  const groupInterval = getValues('groupIntervalValue');
+              {...register("repeatIntervalValue", {
+                validate: (value = "") => {
+                  const groupInterval = getValues("groupIntervalValue");
                   return repeatIntervalValidator(value, groupInterval);
                 },
               })}
@@ -280,7 +324,8 @@ export const AmRoutesExpandedForm = ({ actionButtons, route, onSubmit, defaults 
               selectProps={{
                 ...field,
                 disabled: !canSeeMuteTimings,
-                onChange: (value) => onChange(mapMultiSelectValueToStrings(value)),
+                onChange: (value) =>
+                  onChange(mapMultiSelectValueToStrings(value)),
               }}
             />
           )}
@@ -304,10 +349,10 @@ const getStyles = (theme: GrafanaTheme2) => {
       backgroundColor: theme.colors.background.secondary,
       padding: `${theme.spacing(1.5)} ${theme.spacing(2)}`,
       paddingBottom: 0,
-      width: 'fit-content',
+      width: "fit-content",
     }),
     matchersOperator: css({
-      minWidth: '120px',
+      minWidth: "120px",
     }),
     noMatchersWarning: css({
       padding: `${theme.spacing(1)} ${theme.spacing(2)}`,

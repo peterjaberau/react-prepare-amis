@@ -99,3 +99,7 @@ declare module 'react-loading-skeleton' {
 
     export const SkeletonTheme: FC<SkeletonThemeProps>;
 }
+
+declare var beforeAll: (fn: () => void | Promise<void>, timeout?: number) => void;
+declare var afterEach: (fn: () => void | Promise<void>, timeout?: number) => void;
+declare var afterAll: (fn: () => void | Promise<void>, timeout?: number) => void;

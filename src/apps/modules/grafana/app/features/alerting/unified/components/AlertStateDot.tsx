@@ -26,6 +26,7 @@ const getDotStyles = (theme: GrafanaTheme2, props: DotStylesProps) => {
   const successStyle = props.color === 'success';
   const warningStyle = props.color === 'warning';
 
+
   return {
     dot: css(
       {
@@ -39,6 +40,7 @@ const getDotStyles = (theme: GrafanaTheme2, props: DotStylesProps) => {
         outline: `solid ${outlineSize} ${theme.colors.secondary.transparent}`,
         margin: outlineSize,
       },
+      // @ts-ignore
       successStyle &&
         css({
           backgroundColor: theme.colors.success.main,

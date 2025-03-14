@@ -495,7 +495,9 @@ const getExpressionViewerStyles = (theme: GrafanaTheme2) => {
       display: 'flex',
       gap: theme.spacing(0.5),
     }),
+    // @ts-ignore
     blue: css(blue, { margin: 'auto 0' }),
+    // @ts-ignore
     bold: css(bold, { margin: 'auto 0' }),
   };
 };

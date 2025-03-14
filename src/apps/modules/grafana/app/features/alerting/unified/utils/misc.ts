@@ -259,7 +259,7 @@ export function isErrorLike(error: unknown): error is Error {
   return Boolean(error && typeof error === 'object' && 'message' in error);
 }
 
-export function getErrorCode(error: Error): unknown {
+export function getErrorCode(error: Error | any): unknown {
   if (isApiMachineryError(error) && error.data.details) {
     return error.data.details.uid;
   }
@@ -275,7 +275,7 @@ export function isErrorMatchingCode(error: Error | undefined, code: SupportedErr
   return getErrorCode(error) === code;
 }
 
-export function stringifyErrorLike(error: unknown): string {
+export function stringifyErrorLike(error: unknown | any): string {
   const fetchError = isFetchError(error);
   if (fetchError) {
     if (isApiMachineryError(error) && error.data.details) {
@@ -311,8 +311,8 @@ export function stringifyErrorLike(error: unknown): string {
     }
   }
 
-  if (error.cause) {
-    return `${error.message}, cause: ${stringifyErrorLike(error.cause)}`;
+  if ((error as any).cause) {
+    return `${error.message}, cause: ${stringifyErrorLike((error as any).cause)}`;
   }
 
   return error.message;

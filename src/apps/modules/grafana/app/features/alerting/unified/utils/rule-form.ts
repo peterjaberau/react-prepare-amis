@@ -787,7 +787,7 @@ export function getIntervals(range: TimeRange, lowLimit?: string, resolution?: n
 }
 
 export function fixBothInstantAndRangeQuery(query: AlertQuery) {
-  const model = query.model;
+  const model: any = query.model;
 
   if (!isPromQuery(model)) {
     return query;
@@ -801,11 +801,11 @@ export function fixBothInstantAndRangeQuery(query: AlertQuery) {
   return query;
 }
 
-function isPromQuery(model: AlertDataQuery): model is PromQuery {
+function isPromQuery(model: AlertDataQuery): model is PromQuery | any {
   return 'expr' in model && 'instant' in model && 'range' in model;
 }
 
-export function isPromOrLokiQuery(model: AlertDataQuery): model is PromOrLokiQuery {
+export function isPromOrLokiQuery(model: AlertDataQuery): model is PromOrLokiQuery | any {
   return 'expr' in model;
 }
 

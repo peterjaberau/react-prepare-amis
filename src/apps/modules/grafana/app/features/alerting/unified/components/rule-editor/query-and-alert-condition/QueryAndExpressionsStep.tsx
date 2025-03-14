@@ -264,7 +264,7 @@ export const QueryAndExpressionsStep = ({ editingExistingRule, onDataChange }: P
 
   const onChangeRecordingRulesQueries = useCallback(
     (updatedQueries: AlertQuery[]) => {
-      const query = updatedQueries[0];
+      const query: any = updatedQueries[0];
 
       if (!isPromOrLokiQuery(query.model)) {
         return;
@@ -357,7 +357,7 @@ export const QueryAndExpressionsStep = ({ editingExistingRule, onDataChange }: P
   // otherwise the value is not updated for Grafana managed alerts
 
   const onChangeExpression = (value: string) => {
-    const newQueries = cloneDeep(queries);
+    const newQueries: any = cloneDeep(queries);
 
     if (newQueries[0].model) {
       if (isPromOrLokiQuery(newQueries[0].model)) {
@@ -545,7 +545,6 @@ export const QueryAndExpressionsStep = ({ editingExistingRule, onDataChange }: P
                     dispatch(addNewDataQuery());
                   }}
                   variant="secondary"
-                  data-testid={selectors.components.QueryTab.addQuery}
                   disabled={noCompatibleDataSources}
                   className={styles.addQueryButton}
                 >
@@ -611,7 +610,6 @@ export const QueryAndExpressionsStep = ({ editingExistingRule, onDataChange }: P
                 )}
                 {!isPreviewLoading && (
                   <Button
-                    data-testid={selectors.components.AlertRules.previewButton}
                     icon="sync"
                     type="button"
                     onClick={() => runQueriesPreview()}
@@ -715,7 +713,7 @@ const useSetExpressionAndDataSource = () => {
 
   return (updatedQueries: AlertQuery[]) => {
     // update data source name and expression if it's been changed in the queries from the reducer when prom or loki query
-    const query = updatedQueries[0];
+    const query: any = updatedQueries[0];
     if (!query) {
       return;
     }

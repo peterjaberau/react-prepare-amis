@@ -312,10 +312,11 @@ function RuleStateCell({ rule }: { rule: CombinedRule }) {
 }
 
 function RuleActionsCell({ rule, isLoadingRuler }: { rule: CombinedRule; isLoadingRuler: boolean }) {
-  const styles = useStyles2(getStyles);
+  const styles: any = useStyles2(getStyles);
   const { isDeleting, isCreating } = useRuleStatus(rule);
 
   if (isLoadingRuler) {
+    // @ts-ignore
     return <Skeleton containerClassName={styles.skeletonWrapper} />;
   }
 
