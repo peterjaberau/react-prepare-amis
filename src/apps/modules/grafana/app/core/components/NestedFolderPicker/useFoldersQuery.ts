@@ -144,7 +144,7 @@ export function useFoldersQuery(
       const flatList = pages.flatMap((page) => {
         const pageItems = page.data ?? [];
 
-        return pageItems.flatMap((item) => {
+        return pageItems.flatMap((item: any) => {
           const folderIsOpen = openFolders[item.uid];
 
           const flatItem: DashboardsTreeItem<DashboardViewItemWithUIItems> = {

@@ -188,7 +188,7 @@ function Row({ index, style: virtualStyles, data }: RowProps) {
       aria-labelledby={labelId}
       aria-level={level + 1} // aria-level is 1-indexed
       role="treeitem"
-      aria-owns={children.length > 0 ? children.map((child) => getDOMId(idPrefix, child.uid)).join(' ') : undefined}
+      aria-owns={children.length > 0 ? children.map((child: any) => getDOMId(idPrefix, child.uid)).join(' ') : undefined}
       aria-setsize={children.length}
       aria-posinset={siblings.findIndex((i) => i.uid === item.uid) + 1}
       id={getDOMId(idPrefix, item.uid)}
