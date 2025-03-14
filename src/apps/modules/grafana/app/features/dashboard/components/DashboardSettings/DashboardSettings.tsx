@@ -1,6 +1,6 @@
 import * as H from 'history';
 import { useEffect, useMemo, useState } from 'react';
-import { useLocation } from 'react-router-dom-v5-compat';
+import { useLocation } from 'react-router-dom';
 
 import { locationUtil, NavModel, NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';

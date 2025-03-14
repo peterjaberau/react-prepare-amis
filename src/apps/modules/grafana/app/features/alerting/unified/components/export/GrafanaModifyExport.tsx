@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useParams } from 'react-router-dom-v5-compat';
+import { useParams } from 'react-router-dom';
 
 import { locationService } from '@runtime/index';
 import { Alert, LoadingPlaceholder } from '@grafana-ui/index';

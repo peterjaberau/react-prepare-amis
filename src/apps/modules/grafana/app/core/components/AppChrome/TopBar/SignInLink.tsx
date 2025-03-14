@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { useLocation } from 'react-router-dom-v5-compat';
+import { useLocation } from 'react-router-dom';
 
 import { GrafanaTheme2, locationUtil, textUtil } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';

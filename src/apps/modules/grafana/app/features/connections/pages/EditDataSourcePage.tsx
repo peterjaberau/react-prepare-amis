@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router-dom-v5-compat';
+import { useLocation, useParams } from 'react-router-dom';
 
 import DataSourceTabPage from '@grafana-module/app/features/datasources/components/DataSourceTabPage';
 

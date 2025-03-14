@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom-v5-compat';
+import { useLocation } from 'react-router-dom';
 
 import { locationUtil } from '@data/index';
 import { locationService } from '@runtime/index';

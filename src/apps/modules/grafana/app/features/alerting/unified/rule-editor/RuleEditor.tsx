@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useParams } from 'react-router-dom-v5-compat';
+import { useParams } from 'react-router-dom';
 
 import { NavModelItem } from '@data/index';
 import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';

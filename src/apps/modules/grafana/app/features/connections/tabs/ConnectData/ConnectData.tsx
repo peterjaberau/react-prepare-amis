@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { useMemo, useState, MouseEvent } from 'react';
-import { useLocation } from 'react-router-dom-v5-compat';
+import { useLocation } from 'react-router-dom';
 
 import { PluginType, GrafanaTheme2, SelectableValue } from '@data/index';
 import { locationSearchToObject, reportInteraction } from '@runtime/index';

@@ -59,7 +59,7 @@ import { LogList } from '@grafana-module/app/features/logs/components/panel/LogL
 import { ScrollToLogsEvent } from '@grafana-module/app/features/logs/components/panel/virtualization';
 import { LogLevelColor, dedupLogRows, filterLogLevels } from '@grafana-module/app/features/logs/logsModel';
 import { getLogLevel, getLogLevelFromKey, getLogLevelInfo } from '@grafana-module/app/features/logs/utils';
-import { LokiQueryDirection } from '@grafana-module/app/plugins/datasource/loki/dataquery.gen';
+import { LokiQueryDirection } from '@grafana-module/app/plugins/datasource/loki/dataquery';
 import { isLokiQuery } from '@grafana-module/app/plugins/datasource/loki/queryUtils';
 import { getState } from '@grafana-module/app/store/store';
 import { ExploreItemState, useDispatch } from '@grafana-module/app/types';
@@ -474,7 +474,7 @@ const UnthemedLogs: React.FunctionComponent<Props> = (props: Props) => {
       store.set(SETTINGS_KEYS.logsSortOrder, newSortOrder);
       if (logsQueries) {
         let hasLokiQueries = false;
-        const newQueries = logsQueries.map((query) => {
+        const newQueries: any = logsQueries.map((query: any) => {
           if (query.datasource?.type !== 'loki' || !isLokiQuery(query)) {
             return query;
           }

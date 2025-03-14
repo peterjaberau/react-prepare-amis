@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom-v5-compat';
+import { Navigate } from 'react-router-dom';
 
 import { useGetMuteTiming } from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
 import { useURLSearchParams } from '@grafana-module/app/features/alerting/unified/hooks/useURLSearchParams';

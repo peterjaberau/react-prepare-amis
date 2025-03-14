@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom-v5-compat';
+import { useParams } from 'react-router-dom';
 
 import { NavModelItem } from '@data/index';
 import { Badge, Stack, Text } from '@grafana-ui/index';

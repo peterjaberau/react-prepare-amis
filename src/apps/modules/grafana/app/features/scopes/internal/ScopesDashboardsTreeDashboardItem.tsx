@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { Link } from 'react-router-dom-v5-compat';
+import { Link } from 'react-router-dom';
 
 import { GrafanaTheme2, urlUtil } from '@data/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
