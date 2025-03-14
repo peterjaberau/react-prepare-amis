@@ -536,7 +536,7 @@ export class DataTrail extends SceneObjectBase<DataTrailState> implements SceneO
 
   public getQueries(): PromQuery[] {
     // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
-    const sqrs = sceneGraph.findAllObjects(this, (b) => b instanceof SceneQueryRunner) as SceneQueryRunner[];
+    const sqrs = sceneGraph.findAllObjects(this, (b: any) => b instanceof SceneQueryRunner) as SceneQueryRunner[];
 
     return sqrs.reduce<PromQuery[]>((acc, sqr) => {
       acc.push(
