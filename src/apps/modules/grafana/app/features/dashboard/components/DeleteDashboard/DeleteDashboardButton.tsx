@@ -18,7 +18,6 @@ export const DeleteDashboardButton = () => {
               hideModal,
             });
           }}
-          data-testid={selectors.pages.Dashboard.Settings.General.deleteDashBoard}
         >
           <Trans i18nKey="dashboard-settings.dashboard-delete-button">Delete dashboard</Trans>
         </Button>

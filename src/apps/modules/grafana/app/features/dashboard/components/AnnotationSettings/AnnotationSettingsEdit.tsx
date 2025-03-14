@@ -179,7 +179,6 @@ export const AnnotationSettingsEdit = ({ editIdx, dashboard }: Props) => {
       <FieldSet className={styles.settingsForm}>
         <Field label="Name">
           <Input
-            data-testid={selectors.pages.Dashboard.Settings.Annotations.Settings.name}
             name="name"
             id="name"
             autoFocus={isNewAnnotation}
@@ -211,13 +210,12 @@ export const AnnotationSettingsEdit = ({ editIdx, dashboard }: Props) => {
             <ColorValueEditor value={annotation?.iconColor} onChange={onColorChange} />
           </HorizontalGroup>
         </Field>
-        <Field label="Show in" data-testid={selectors.pages.Dashboard.Settings.Annotations.NewAnnotation.showInLabel}>
+        <Field label="Show in" >
           <>
             <Select
               options={panelFilters}
               value={panelFilter}
               onChange={onFilterTypeChange}
-              data-testid={selectors.components.Annotations.annotationsTypeInput}
             />
             {panelFilter !== PanelFilterType.AllPanels && (
               <MultiSelect
@@ -229,7 +227,6 @@ export const AnnotationSettingsEdit = ({ editIdx, dashboard }: Props) => {
                 width={100}
                 closeMenuOnSelect={false}
                 className={styles.select}
-                data-testid={selectors.components.Annotations.annotationsChoosePanelInput}
               />
             )}
           </>
@@ -256,7 +253,6 @@ export const AnnotationSettingsEdit = ({ editIdx, dashboard }: Props) => {
         <Button
           variant="secondary"
           onClick={onPreview}
-          data-testid={selectors.pages.Dashboard.Settings.Annotations.NewAnnotation.previewInDashboard}
         >
           Preview in dashboard
         </Button>

@@ -2,6 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useDialog } from '@react-aria/dialog';
 import { FocusScope } from '@react-aria/focus';
 import { useOverlay } from '@react-aria/overlays';
+import { selectors } from '@selectors/index';
 import {
   KBarAnimator,
   KBarPortal,

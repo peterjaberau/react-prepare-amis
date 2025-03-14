@@ -11,7 +11,7 @@ import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/edi
 import { APIEditor, APIEditorConfig } from '@grafana-module/app/plugins/panel/canvas/editor/element/APIEditor';
 import { ButtonStyleConfig, ButtonStyleEditor } from '@grafana-module/app/plugins/panel/canvas/editor/element/ButtonStyleEditor';
 import { callApi } from '@grafana-module/app/plugins/panel/canvas/editor/element/utils';
-import { HttpRequestMethod } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+import { HttpRequestMethod } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps, defaultLightTextColor } from '../element';
 import { Align, TextConfig, TextData } from '../types';
@@ -20,6 +20,7 @@ interface ButtonData extends Omit<TextData, 'valign'> {
   api?: APIEditorConfig;
   style?: ButtonStyleConfig;
 }
+
 
 interface ButtonConfig extends Omit<TextConfig, 'valign'> {
   api?: APIEditorConfig;

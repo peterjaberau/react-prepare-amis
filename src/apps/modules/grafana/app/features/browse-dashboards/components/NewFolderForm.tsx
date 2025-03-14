@@ -46,7 +46,6 @@ export function NewFolderForm({ onCancel, onConfirm }: Props) {
     <form
       name="addFolder"
       onSubmit={handleSubmit((form) => onConfirm(form.folderName))}
-      data-testid={selectors.pages.BrowseDashboards.NewFolderForm.form}
     >
       <Field
         label={fieldNameLabel}
@@ -54,7 +53,6 @@ export function NewFolderForm({ onCancel, onConfirm }: Props) {
         error={errors.folderName && errors.folderName.message}
       >
         <Input
-          data-testid={selectors.pages.BrowseDashboards.NewFolderForm.nameInput}
           id="folder-name-input"
           defaultValue={initialFormModel.folderName}
           {...register('folderName', {

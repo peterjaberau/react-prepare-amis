@@ -7,7 +7,7 @@ import { Dashboard } from '@schema/index';
 import { Button, Checkbox, TextArea, useStyles2, Stack } from '@grafana-ui/index';
 import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
 import { SaveDashboardResponseDTO } from '@grafana-module/app/types';
-
+import { selectors } from '@selectors/index';
 import { GenAIDashboardChangesButton } from '../../GenAI/GenAIDashboardChangesButton';
 import { SaveDashboardData, SaveDashboardOptions } from '../types';
 

@@ -266,7 +266,6 @@ export class PanelEditorUnconnected extends PureComponent<Props> {
         {panelPane}
         <div
           className={styles.tabsWrapper}
-          data-testid={selectors.components.PanelEditor.DataPane.content}
           key="panel-editor-tabs"
         >
           <PanelEditorTabs
@@ -309,7 +308,6 @@ export class PanelEditorUnconnected extends PureComponent<Props> {
               id="table-view"
               value={tableViewEnabled}
               onClick={this.onToggleTableView}
-              data-testid={selectors.components.PanelEditor.toggleTableView}
             />
             <RadioButtonGroup value={uiState.mode} options={displayModes} onChange={this.onDisplayModeChange} />
             <DashNavTimeControls dashboard={dashboard} onChangeTimeZone={updateTimeZoneForSession} isOnCanvas={true} />
@@ -359,7 +357,6 @@ export class PanelEditorUnconnected extends PureComponent<Props> {
         onClick={this.onBack}
         variant="primary"
         title="Apply changes and go back to dashboard"
-        data-testid={selectors.components.PanelEditor.applyButton}
         key="apply"
         size={size}
       >
@@ -442,7 +439,6 @@ export class PanelEditorUnconnected extends PureComponent<Props> {
       <Page
         navModel={sectionNav}
         pageNav={pageNav}
-        data-testid={selectors.components.PanelEditor.General.content}
         layout={PageLayoutType.Custom}
         className={className}
       >

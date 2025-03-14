@@ -112,7 +112,6 @@ export const AnnotationSettingsList = ({ dashboard, onNew, onEdit }: Props) => {
             variant="call-to-action"
             button={
               <Button
-                data-testid={selectors.components.CallToActionCard.buttonV2('Add annotation query')}
                 icon="comment-alt"
                 onClick={onNew}
                 size="lg"
@@ -142,7 +141,6 @@ export const AnnotationSettingsList = ({ dashboard, onNew, onEdit }: Props) => {
       )}
       {!showEmptyListCTA && (
         <ListNewButton
-          data-testid={selectors.pages.Dashboard.Settings.Annotations.List.addAnnotationCTAV2}
           onClick={onNew}
         >
           New query

@@ -112,7 +112,6 @@ export const OptionsPaneCategory = React.memo(
       <div
         className={boxStyles}
         data-plugin-sandbox={sandboxId}
-        data-testid={selectors.components.OptionsGroup.group(id)}
         ref={ref}
       >
         {/* disabling a11y rules here because there's a Button that handles keyboard interaction */}
@@ -123,7 +122,6 @@ export const OptionsPaneCategory = React.memo(
             {renderTitle(isExpanded)}
           </h6>
           <Button
-            data-testid={selectors.components.OptionsGroup.toggle(id)}
             type="button"
             fill="text"
             size="md"

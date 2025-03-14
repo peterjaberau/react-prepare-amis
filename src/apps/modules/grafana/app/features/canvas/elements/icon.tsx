@@ -8,7 +8,7 @@ import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedS
 import { getPublicOrAbsoluteUrl } from '@grafana-module/app/features/dimensions';
 import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
 import { ColorDimensionEditor, ResourceDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
-import { LineConfig } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+import { LineConfig } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps, defaultBgColor } from '../element';
 

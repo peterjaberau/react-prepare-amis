@@ -24,7 +24,7 @@ export const OptionsPane = ({
   const { data } = usePanelLatestData(panel, { withTransforms: true, withFieldConfig: false }, true);
 
   return (
-    <div className={styles.wrapper} data-testid={selectors.components.PanelEditor.OptionsPane.content}>
+    <div className={styles.wrapper}>
       {!isVizPickerOpen && (
         <>
           <div className={styles.vizButtonWrapper}>

@@ -4,7 +4,7 @@ import { DataLink, RegistryItem, Action } from '@data/index';
 import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';
 import { ColorDimensionConfig, ScaleDimensionConfig } from '@schema/index';
 import { config } from '@grafana-module/app/core/config';
-import { BackgroundConfig, Constraint, LineConfig, Placement } from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+import { BackgroundConfig, Constraint, LineConfig, Placement } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
 
 import { LineStyleConfig } from '../../plugins/panel/canvas/editor/LineStyleEditor';
 import { DimensionContext } from '../dimensions';

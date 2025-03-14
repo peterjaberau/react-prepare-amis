@@ -70,7 +70,6 @@ export class TimePickerSettings extends PureComponent<Props, State> {
       <CollapsableSection label={t('dashboard-settings.time-picker.time-options-label', 'Time options')} isOpen={true}>
         <Field
           label={t('dashboard-settings.time-picker.time-zone-label', 'Time zone')}
-          data-testid={selectors.components.TimeZonePicker.containerV2}
         >
           <TimeZonePicker
             inputId="time-options-input"
@@ -82,7 +81,6 @@ export class TimePickerSettings extends PureComponent<Props, State> {
         </Field>
         <Field
           label={t('dashboard-settings.time-picker.week-start-label', 'Week start')}
-          data-testid={selectors.components.WeekStartPicker.containerV2}
         >
           <WeekStartPicker
             inputId="week-start-input"

@@ -31,7 +31,6 @@ const AddPanelButton = ({ dashboard, onToolbarAddMenuOpen }: Props) => {
         variant="secondary"
         size="sm"
         fill="outline"
-        data-testid={selectors.components.PageToolbar.itemButton('Add button')}
       >
         <Trans i18nKey="dashboard.toolbar.add">Add</Trans>
         <Icon name={isMenuOpen ? 'angle-up' : 'angle-down'} size="lg" />

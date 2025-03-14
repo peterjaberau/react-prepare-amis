@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useForm, Controller } from 'react-hook-form';
 import { useWindowSize } from 'react-use';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { FieldSet, Button, ButtonGroup, Field, Input, RadioButtonGroup, Spinner, useStyles2 } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';

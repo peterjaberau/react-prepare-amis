@@ -22,7 +22,7 @@ import {
   HorizontalConstraint,
   Placement,
   VerticalConstraint,
-} from '@grafana-module/app/plugins/panel/canvas/panelcfg.gen';
+} from '@grafana-module/app/plugins/panel/canvas/panelcfg';
 import { getConnectionsByTarget, getRowIndex, isConnectionTarget } from '@grafana-module/app/plugins/panel/canvas/utils';
 
 import { getActions, getActionsDefaultField } from '../../actions/utils';

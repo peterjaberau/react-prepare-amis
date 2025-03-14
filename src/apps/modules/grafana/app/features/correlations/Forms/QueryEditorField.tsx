@@ -52,15 +52,15 @@ export const QueryEditorField = ({ dsUid, invalid, error, name }: Props) => {
         name={name}
         rules={{
           validate: {
-            hasQueryEditor: (_, formVals) => {
+            hasQueryEditor: (_: any, formVals: any) => {
               return formVals.type === 'query' && QueryEditor === undefined
                 ? t(
                     'correlations.query-editor.control-rules',
                     'The selected target data source must export a query editor.'
                   )
                 : true;
-            },
-          },
+            } ,
+          } as any,
         }}
         render={({ field: { value, onChange } }) => {
           if (dsLoading) {

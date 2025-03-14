@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { Component } from 'react';
-
+import { selectors } from '@selectors/index';
 import { renderMarkdown, LinkModelSupplier, ScopedVars, IconName } from '@data/index';
 import { GrafanaTheme2 } from '@data/index';
 import { locationService, getTemplateSrv } from '@runtime/index';

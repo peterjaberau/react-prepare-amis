@@ -163,7 +163,7 @@ export function DashboardsTree({
         );
       })}
 
-      <div {...getTableBodyProps()} data-testid={selectors.pages.BrowseDashboards.table.body}>
+      <div {...getTableBodyProps()}>
         <InfiniteLoader
           ref={infiniteLoaderRef}
           itemCount={items.length}
@@ -230,9 +230,6 @@ function VirtualListRow({ index, style, data }: VirtualListRowProps) {
       {...rowProps}
       className={cx(styles.row, styles.bodyRow)}
       aria-labelledby={makeRowID(treeID, dashboardItem)}
-      data-testid={selectors.pages.BrowseDashboards.table.row(
-        'title' in dashboardItem ? dashboardItem.title : dashboardItem.uid
-      )}
     >
       {row.cells.map((cell) => {
         const { key, ...cellProps } = cell.getCellProps();
