@@ -67,6 +67,8 @@ declare module '@emotion/css' {
     export type CSSObject = { [key: string]: any };
     export function css(styles: CSSObject): string;
     export function cx(...args: any[]): string;
+    export const keyframes: any;
+
 }
 
 declare module 'invariant';
