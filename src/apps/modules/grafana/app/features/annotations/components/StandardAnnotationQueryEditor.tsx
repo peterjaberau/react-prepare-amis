@@ -172,7 +172,6 @@ export default class StandardAnnotationQueryEditor extends PureComponent<Props, 
             <Spinner />
           ) : (
             <Button
-              data-testid={selectors.components.Annotations.editor.testButton}
               variant="secondary"
               size="xs"
               onClick={this.onRunQuery}
@@ -183,7 +182,6 @@ export default class StandardAnnotationQueryEditor extends PureComponent<Props, 
         </div>
         <Space v={2} layout="block" />
         <Alert
-          data-testid={selectors.components.Annotations.editor.resultContainer}
           severity={this.getStatusSeverity(response)}
           title="Query result"
         >

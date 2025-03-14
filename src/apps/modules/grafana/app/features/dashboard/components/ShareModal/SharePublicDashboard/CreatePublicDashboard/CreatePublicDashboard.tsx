@@ -16,7 +16,7 @@ import { UnsupportedDataSourcesAlert } from '../ModalAlerts/UnsupportedDataSourc
 import { UnsupportedTemplateVariablesAlert } from '../ModalAlerts/UnsupportedTemplateVariablesAlert';
 import { dashboardHasTemplateVariables } from '../SharePublicDashboardUtils';
 import { useGetUnsupportedDataSources } from '../useGetUnsupportedDataSources';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { AcknowledgeCheckboxes } from './AcknowledgeCheckboxes';
 
 const selectors = e2eSelectors.pages.ShareDashboardModal.PublicDashboard;

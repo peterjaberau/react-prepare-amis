@@ -62,8 +62,8 @@ export const yAxisSyncBehavior: SceneStatelessBehavior = (sceneObject: SceneCSSG
     }
 
     const fieldConfig = FieldConfigBuilders.timeseries()
-      .setCustomFieldConfig('axisSoftMin', event.payload.min)
-      .setCustomFieldConfig('axisSoftMax', event.payload.max)
+      .setCustomFieldConfig('axisSoftMin' as any, event.payload.min as any)
+      .setCustomFieldConfig('axisSoftMax' as any, event.payload.max as any)
       .build();
 
     findSceneObjectsByType(sceneObject, VizPanel).forEach((vizPanel) => {

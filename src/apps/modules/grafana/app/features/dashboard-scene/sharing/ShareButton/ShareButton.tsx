@@ -9,7 +9,7 @@ import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 import { DashboardInteractions } from '../../utils/interactions';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import ShareMenu from './ShareMenu';
 import { buildShareUrl } from './utils';
 

@@ -2,6 +2,7 @@ import { Label, Spinner, Stack, Switch } from '@grafana-ui/index';
 
 import { t, Trans } from '../../../core/internationalization';
 import { ThemePicker } from '../../dashboard/components/ShareModal/ThemePicker';
+import { selectors as e2eSelectors } from '@selectors/index';
 
 interface Props {
   useLockedTime: boolean;

@@ -50,7 +50,7 @@ export async function addDataTrailPanelAction(dashboard: DashboardScene, panel: 
     .interpolateVariablesInQueries(queries, { __sceneObject: { value: panel } }, data?.request?.filters)
     .filter(isPromQuery);
 
-  const queryMetrics = getQueryMetrics(interpolated.map((q) => q.expr));
+  const queryMetrics = getQueryMetrics(interpolated.map((q: any) => q.expr));
 
   const subMenu: PanelMenuItem[] = queryMetrics.map((item) => {
     return {
@@ -127,6 +127,6 @@ function createClickHandler(item: QueryMetric, dashboard: DashboardScene, ds: Da
   };
 }
 
-export function isPromQuery(model: DataQuery): model is PromQuery {
+export function isPromQuery(model: DataQuery): model is PromQuery | any {
   return 'expr' in model;
 }

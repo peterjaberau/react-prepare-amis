@@ -77,20 +77,20 @@ export function dataQueryToAlertQuery(dataQuery: DataQuery, dataSourceUid: strin
 }
 
 function cloudAlertRuleToModel(dsSettings: DataSourceInstanceSettings, rule: CombinedRule): DataQuery {
-  const refId = 'A';
+  const refId: any = 'A';
 
   switch (dsSettings.type) {
     case 'prometheus': {
-      const query: PromQuery = {
+      const query: PromQuery | any = {
         refId,
         expr: rule.query,
-      };
+      } ;
 
       return query;
     }
 
     case 'loki': {
-      const query: LokiQuery = {
+      const query: LokiQuery | any = {
         refId,
         expr: rule.query,
       };

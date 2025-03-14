@@ -155,7 +155,6 @@ export function RichHistory(props: RichHistoryProps) {
       onClose={onClose}
       defaultTab={firstTab}
       closeIconTooltip={t('explore.rich-history.close-tooltip', 'Close query history')}
-      testId={selectors.pages.Explore.QueryHistory.container}
     />
   );
 }

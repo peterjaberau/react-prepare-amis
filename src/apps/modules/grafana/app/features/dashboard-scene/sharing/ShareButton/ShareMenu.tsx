@@ -9,7 +9,7 @@ import { Icon, IconName, Menu, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t } from '@grafana-module/app/core/internationalization';
 import { AccessControlAction } from '@grafana-module/app/types';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { isPublicDashboardsEnabled } from '../../../dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
 import { getTrackingSource, shareDashboardType } from '../../../dashboard/components/ShareModal/utils';
 import { getExternalUserMngLinkUrl } from '../../../users/utils';

@@ -1,6 +1,5 @@
-import { Accept } from 'react-dropzone';
 
-export const acceptedFiles: Accept = {
+export const acceptedFiles: any = {
   'text/plain': ['.csv', '.txt'],
   'application/json': ['.json'],
 };

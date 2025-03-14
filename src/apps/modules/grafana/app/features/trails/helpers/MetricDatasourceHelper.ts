@@ -158,7 +158,7 @@ export class MetricDatasourceHelper {
    * @param options
    * @returns
    */
-  public async getTagKeys(options: DataSourceGetTagKeysOptions<PromQuery>): Promise<MetricFindValue[]> {
+  public async getTagKeys(options: DataSourceGetTagKeysOptions<PromQuery | any>): Promise<MetricFindValue[]> {
     const ds = await this.getDatasource();
 
     if (ds instanceof PrometheusDatasource) {
@@ -174,7 +174,7 @@ export class MetricDatasourceHelper {
    * @param options
    * @returns
    */
-  public async getTagValues(options: DataSourceGetTagValuesOptions<PromQuery>) {
+  public async getTagValues(options: DataSourceGetTagValuesOptions<PromQuery | any>) {
     const ds = await this.getDatasource();
 
     if (ds instanceof PrometheusDatasource) {

@@ -29,7 +29,6 @@ const AddPanelMenu = ({ dashboard }: Props) => {
     <Menu>
       <Menu.Item
         key="add-visualisation"
-        testId={selectors.pages.AddDashboard.itemButton('Add new visualization menu item')}
         label={t('dashboard.add-menu.visualization', 'Visualization')}
         onClick={() => {
           const id = onCreateNewPanel(dashboard, initialDatasource);
@@ -40,7 +39,6 @@ const AddPanelMenu = ({ dashboard }: Props) => {
       />
       <Menu.Item
         key="add-row"
-        testId={selectors.pages.AddDashboard.itemButton('Add new row menu item')}
         label={t('dashboard.add-menu.row', 'Row')}
         onClick={() => {
           DashboardInteractions.toolbarAddButtonClicked({ item: 'add_row' });
@@ -49,7 +47,6 @@ const AddPanelMenu = ({ dashboard }: Props) => {
       />
       <Menu.Item
         key="add-panel-lib"
-        testId={selectors.pages.AddDashboard.itemButton('Add new panel from panel library menu item')}
         label={t('dashboard.add-menu.import', 'Import from library')}
         onClick={() => {
           DashboardInteractions.toolbarAddButtonClicked({ item: 'import_from_library' });
@@ -58,7 +55,6 @@ const AddPanelMenu = ({ dashboard }: Props) => {
       />
       <Menu.Item
         key="add-panel-clipboard"
-        testId={selectors.pages.AddDashboard.itemButton('Add new panel from clipboard menu item')}
         label={t('dashboard.add-menu.paste-panel', 'Paste panel')}
         onClick={() => {
           DashboardInteractions.toolbarAddButtonClicked({ item: 'paste_panel' });

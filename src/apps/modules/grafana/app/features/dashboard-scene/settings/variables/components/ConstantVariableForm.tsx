@@ -18,7 +18,6 @@ export function ConstantVariableForm({ onChange, constantValue }: ConstantVariab
         name="Value"
         placeholder="your metric prefix"
         onBlur={onChange}
-        testId={selectors.pages.Dashboard.Settings.Variables.Edit.ConstantVariable.constantOptionsQueryInputV2}
         width={30}
       />
     </>

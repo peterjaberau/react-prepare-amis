@@ -8,8 +8,6 @@ import { getTrackingSource, shareDashboardType } from '@grafana-module/app/featu
 import { DashboardScene } from '../../scene/DashboardScene';
 import { DashboardInteractions } from '../../utils/interactions';
 
-const newExportButtonSelector = e2eSelectors.pages.Dashboard.DashNav.NewExportButton.Menu;
-
 export interface ExportDrawerMenuItem {
   shareId: string;
   testId: string;
@@ -38,12 +36,11 @@ export default function ExportMenu({ dashboard }: { dashboard: DashboardScene })
 
     menuItems.push({
       shareId: shareDashboardType.export,
-      testId: newExportButtonSelector.exportAsJson,
       icon: 'arrow',
       label: t('share-dashboard.menu.export-json-title', 'Export as JSON'),
       renderCondition: true,
       onClick: () => onMenuItemClick(shareDashboardType.export),
-    });
+    } as any);
 
     return menuItems.filter((item) => item.renderCondition);
   }, []);
@@ -58,7 +55,7 @@ export default function ExportMenu({ dashboard }: { dashboard: DashboardScene })
   };
 
   return (
-    <Menu data-testid={newExportButtonSelector.container}>
+    <Menu >
       {buildMenuItems().map((item) => (
         <Menu.Item
           key={item.label}

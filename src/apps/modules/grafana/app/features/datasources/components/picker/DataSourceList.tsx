@@ -76,7 +76,6 @@ export function DataSourceList(props: DataSourceListProps) {
     <div
       ref={containerRef}
       className={cx(className, styles.container)}
-      data-testid={selectors.components.DataSourcePicker.dataSourceList}
     >
       {filteredDataSources.length === 0 && (
         <EmptyState className={styles.emptyState} onClickCTA={onClickEmptyStateCTA} />

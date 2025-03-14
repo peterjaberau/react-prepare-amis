@@ -37,7 +37,6 @@ export const RowOptionsForm = ({ repeat, title, warning, onUpdate, onCancel }: P
           </Field>
           {warning && (
             <Alert
-              data-testid={selectors.pages.Dashboard.Rows.Repeated.ConfigSection.warningMessage}
               severity="warning"
               title=""
               topSpacing={3}

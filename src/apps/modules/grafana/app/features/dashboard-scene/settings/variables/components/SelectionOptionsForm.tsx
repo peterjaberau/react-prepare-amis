@@ -32,7 +32,6 @@ export function SelectionOptionsForm({
         name="Multi-value"
         description="Enables multiple values to be selected at the same time"
         onChange={onMultiChange}
-        testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsMultiSwitch}
       />
       {onAllowCustomValueChange && ( // backwards compat with old arch, remove on cleanup
         <VariableCheckboxField
@@ -40,7 +39,6 @@ export function SelectionOptionsForm({
           name="Allow custom values"
           description="Enables users to add custom values to the list"
           onChange={onAllowCustomValueChange}
-          testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsAllowCustomValueSwitch}
         />
       )}
       <VariableCheckboxField
@@ -48,7 +46,6 @@ export function SelectionOptionsForm({
         name="Include All option"
         description="Enables an option to include all variables"
         onChange={onIncludeAllChange}
-        testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsIncludeAllSwitch}
       />
       {includeAll && (
         <VariableTextField
@@ -56,7 +53,6 @@ export function SelectionOptionsForm({
           onBlur={onAllValueChange}
           name="Custom all value"
           placeholder="blank = auto"
-          testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsCustomAllInput}
         />
       )}
     </Stack>

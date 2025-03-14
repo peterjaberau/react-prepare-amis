@@ -22,7 +22,6 @@ export function TextBoxVariableForm({ defaultValue, value, onChange, onBlur }: T
         onChange={onChange}
         onBlur={onBlur}
         width={30}
-        testId={selectors.pages.Dashboard.Settings.Variables.Edit.TextBoxVariable.textBoxOptionsQueryInputV2}
       />
     </>
   );

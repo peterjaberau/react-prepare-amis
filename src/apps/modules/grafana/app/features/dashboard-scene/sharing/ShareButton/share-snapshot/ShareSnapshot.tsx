@@ -11,7 +11,7 @@ import { SnapshotSharingOptions } from '../../../../dashboard/services/SnapshotS
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';
 import { ShareSnapshotTab } from '../../ShareSnapshotTab';
 import { ShareView } from '../../types';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { UpsertSnapshot } from './UpsertSnapshot';
 
 const selectors = e2eSelectors.pages.ShareDashboardDrawer.ShareSnapshot;

@@ -136,10 +136,11 @@ export default memo(function TracePageSearchBar(props: TracePageSearchBarProps) 
 });
 
 export const getStyles = (theme: GrafanaTheme2) => {
-  const buttonStyles = getButtonStyles({ theme, variant: 'secondary', size: 'md', iconOnly: false, fill: 'outline' });
+  const buttonStyles: any = getButtonStyles({ theme, variant: 'secondary', size: 'md', iconOnly: false, fill: 'outline' });
 
   return {
     button: css(buttonStyles.button),
+    // @ts-ignore
     buttonDisabled: css(buttonStyles.disabled, { pointerEvents: 'none', cursor: 'not-allowed' }),
     container: css({
       display: 'inline',
