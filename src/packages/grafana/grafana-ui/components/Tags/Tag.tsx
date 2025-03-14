@@ -1,6 +1,7 @@
 import { cx, css } from '@emotion/css';
 import { forwardRef, HTMLAttributes } from 'react';
 import * as React from 'react';
+// @ts-ignore
 import Skeleton from 'react-loading-skeleton';
 
 import { GrafanaTheme2 } from '@data/index';

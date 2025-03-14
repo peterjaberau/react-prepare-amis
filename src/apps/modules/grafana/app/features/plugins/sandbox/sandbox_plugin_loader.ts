@@ -24,6 +24,17 @@ import { logError, logInfo } from './utils';
 if (process.env.NODE_ENV !== 'production') {
   require('@locker/near-membrane-dom/custom-devtools-formatter');
 }
+// if (process.env.NODE_ENV !== 'production') {
+//   import('@locker/near-membrane-dom/custom-devtools-formatter')
+//     .then((module) => {
+//       // Module loaded successfully
+//     })
+//     .catch((error) => {
+//       console.error('Failed to load custom-devtools-formatter:', error);
+//     });
+// }
+
+
 
 const pluginImportCache = new Map<string, Promise<System.Module>>();
 const pluginLogCache: Record<string, boolean> = {};

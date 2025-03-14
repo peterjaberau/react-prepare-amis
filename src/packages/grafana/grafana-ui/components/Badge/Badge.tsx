@@ -1,6 +1,7 @@
 import { css, cx } from '@emotion/css';
 import { HTMLAttributes } from 'react';
 import * as React from 'react';
+// @ts-ignore
 import Skeleton from 'react-loading-skeleton';
 import tinycolor from 'tinycolor2';
 
