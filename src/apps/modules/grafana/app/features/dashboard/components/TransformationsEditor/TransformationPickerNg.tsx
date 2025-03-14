@@ -74,7 +74,6 @@ export function TransformationPickerNg(props: TransformationPickerNgProps) {
     >
       <div className={styles.searchWrapper}>
         <Input
-          data-testid={selectors.components.Transforms.searchInput}
           className={styles.searchInput}
           value={search ?? ''}
           placeholder="Search for transformation"
@@ -196,7 +195,6 @@ function TransformationsGrid({ showIllustrations, transformations, onClick, data
         return (
           <Card
             className={cardClasses}
-            data-testid={selectors.components.TransformTab.newTransform(transform.name)}
             onClick={() => onClick(transform.id)}
             key={transform.id}
           >

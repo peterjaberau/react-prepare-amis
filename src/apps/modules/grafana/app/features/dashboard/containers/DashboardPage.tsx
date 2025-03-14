@@ -427,7 +427,7 @@ export class UnthemedDashboardPage extends PureComponent<Props, State> {
           onSetScrollRef={this.setScrollRef}
         >
           {showToolbar && (
-            <header data-testid={selectors.pages.Dashboard.DashNav.navV2}>
+            <header >
               <DashNav
                 dashboard={dashboard}
                 title={dashboard.title}
@@ -441,7 +441,7 @@ export class UnthemedDashboardPage extends PureComponent<Props, State> {
           <DashboardPrompt dashboard={dashboard} />
           {initError && <DashboardPageError error={initError.error} type={params.type} />}
           {showSubMenu && (
-            <section aria-label={selectors.pages.Dashboard.SubMenu.submenu}>
+            <section >
               <SubMenu dashboard={dashboard} annotations={dashboard.annotations.list} links={dashboard.links} />
             </section>
           )}

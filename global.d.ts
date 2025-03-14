@@ -103,3 +103,50 @@ declare module 'react-loading-skeleton' {
 declare var beforeAll: (fn: () => void | Promise<void>, timeout?: number) => void;
 declare var afterEach: (fn: () => void | Promise<void>, timeout?: number) => void;
 declare var afterAll: (fn: () => void | Promise<void>, timeout?: number) => void;
+
+
+declare module 'ol-ext/layer/DayNight' {
+    import { Layer } from 'ol/layer';
+    import { Source } from 'ol/source';
+
+    export default class DayNight extends Layer<Source> {
+        constructor(options?: any);
+        setTime(date: Date): void;
+        getSunPosition(date: Date): number[];
+        getCoordinates(date: Date, type: string): any[];
+    }
+}
+
+declare module 'ol-ext/style/FlowLine' {
+    import { Style } from 'ol/style';
+    import { LineString } from 'ol/geom';
+
+    export default class FlowLine extends Style {
+        constructor(options?: any);
+        setArrow(type: number): void;
+        setArrowColor(color: string): void;
+        setArrowSize(size: number): void;
+        setGeometry(geometry: LineString): void;
+    }
+}
+
+
+declare module 'ol-ext/style/Photo' {
+    import { ImageStyle, ImageStyleOptions } from 'ol/style/Image';
+
+    export interface PhotoOptions extends ImageStyleOptions {
+        src: string;
+        radius: number;
+        crop?: boolean;
+        kind?: 'square' | 'circle' | 'anchored' | 'folio';
+        shadow?: boolean;
+        stroke?: Stroke;
+        onload?: () => void;
+    }
+
+    export default class Photo extends ImageStyle {
+        constructor(options: PhotoOptions);
+        setImage(image: HTMLImageElement): void;
+        getImage(): HTMLImageElement;
+    }
+}

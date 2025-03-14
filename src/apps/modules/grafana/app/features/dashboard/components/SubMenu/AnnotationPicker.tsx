@@ -47,14 +47,12 @@ export const AnnotationPicker = ({ annotation, events, onEnabledChanged }: Annot
         <InlineField
           label={annotation.name}
           disabled={loading}
-          data-testid={selectors.pages.Dashboard.SubMenu.Annotations.annotationLabel(annotation.name)}
         >
           <InlineSwitch
             label={annotation.name}
             value={annotation.enable}
             onChange={() => onEnabledChanged(annotation)}
             disabled={loading}
-            data-testid={selectors.pages.Dashboard.SubMenu.Annotations.annotationToggle(annotation.name)}
           />
         </InlineField>
         <div className={styles.indicator}>

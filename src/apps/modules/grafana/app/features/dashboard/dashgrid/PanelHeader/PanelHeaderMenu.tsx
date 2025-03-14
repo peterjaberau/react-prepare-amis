@@ -32,7 +32,6 @@ export function PanelHeaderMenu({ items }: Props) {
               url={item.href}
               onClick={item.onClick}
               shortcut={item.shortcut}
-              testId={selectors.components.Panels.Panel.menuItems(item.text)}
             />
           );
       }

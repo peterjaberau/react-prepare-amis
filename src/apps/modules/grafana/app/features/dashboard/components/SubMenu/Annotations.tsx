@@ -21,7 +21,7 @@ export const Annotations = ({ annotations, onAnnotationChanged, events }: Props)
   }
 
   return (
-    <div data-testid={selectors.pages.Dashboard.SubMenu.Annotations.annotationsWrapper}>
+    <div>
       {visibleAnnotations.map((annotation) => (
         <AnnotationPicker
           events={events}

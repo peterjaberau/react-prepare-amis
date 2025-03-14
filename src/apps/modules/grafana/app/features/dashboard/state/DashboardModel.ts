@@ -1193,7 +1193,7 @@ export class DashboardModel implements TimeModel {
           continue;
         }
 
-        const promTarget = target as PromQuery;
+        const promTarget = target as PromQuery | any;
         promTarget.exemplar = !promTarget.exemplar;
       }
     }

@@ -1,0 +1,12 @@
+export * from './panelcfg';
+
+import { AxisPlacement, HeatmapCellLayout } from '@schema/index';
+
+import { defaultOptions as defaultOptionsGen, HeatmapColorMode, HeatmapColorScale, Options } from './panelcfg';
+
+export const defaultOptions = {
+  ...defaultOptionsGen,
+  color: { ...defaultOptionsGen.color, mode: HeatmapColorMode.Scheme, scale: HeatmapColorScale.Exponential },
+  yAxis: { ...defaultOptionsGen.yAxis, axisPlacement: AxisPlacement.Left },
+  rowsFrame: { ...defaultOptionsGen.rowsFrame, layout: HeatmapCellLayout.auto },
+} as Options;

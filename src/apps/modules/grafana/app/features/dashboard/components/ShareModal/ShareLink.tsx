@@ -1,5 +1,5 @@
 import { PureComponent } from 'react';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { Alert, ClipboardButton, Field, FieldSet, Input, Switch, TextLink } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

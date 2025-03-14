@@ -424,7 +424,6 @@ class UnThemedTransformationsEditor extends React.PureComponent<TransformationsE
           onClick={() => {
             this.setState({ showPicker: true });
           }}
-          data-testid={selectors.components.Transforms.addTransformationButton}
         >
           Add another transformation
         </Button>
@@ -466,7 +465,7 @@ class UnThemedTransformationsEditor extends React.PureComponent<TransformationsE
     return (
       <ScrollContainer ref={this.ref} minHeight="100%">
         <Container padding="lg">
-          <div data-testid={selectors.components.TransformTab.content}>
+          <div>
             {!hasTransforms && config.featureToggles.transformationsRedesign && this.renderEmptyMessage()}
             {hasTransforms && this.renderTransformationEditors()}
             {this.renderTransformsPicker()}

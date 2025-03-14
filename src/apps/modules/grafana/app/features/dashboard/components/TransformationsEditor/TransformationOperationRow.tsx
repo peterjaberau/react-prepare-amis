@@ -175,7 +175,6 @@ export const TransformationOperationRow = ({
           icon={disabled ? 'eye-slash' : 'eye'}
           onClick={instrumentToggleCallback(() => onDisableToggle(index), 'disabled', disabled)}
           active={disabled}
-          dataTestId={selectors.components.Transforms.disableTransformationButton}
         />
         <QueryOperationAction
           title="Remove"

@@ -62,7 +62,6 @@ export function TransformationPicker(props: TransformationPickerProps) {
         </Container>
       )}
       <Input
-        data-testid={selectors.components.Transforms.searchInput}
         value={search ?? ''}
         autoFocus={!noTransforms}
         placeholder="Search for transformation"
@@ -95,7 +94,6 @@ function TransformationCard({ transform, onClick }: TransformationCardProps) {
   return (
     <Card
       className={styles.card}
-      data-testid={selectors.components.TransformTab.newTransform(transform.name)}
       onClick={onClick}
     >
       <Card.Heading>{transform.name}</Card.Heading>

@@ -29,7 +29,6 @@ export const SubMenuItems = ({ variables, readOnly }: Props) => {
         <div
           key={variable.id}
           className={styles.submenuItem}
-          data-testid={selectors.pages.Dashboard.SubMenu.submenuItem}
         >
           <PickerRenderer variable={variable} readOnly={readOnly} />
         </div>

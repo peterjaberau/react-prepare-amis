@@ -75,7 +75,6 @@ const DashboardEmpty = ({ dashboard, canCreate }: Props) => {
               <Button
                 size="lg"
                 icon="plus"
-                data-testid={selectors.pages.AddDashboard.itemButton('Create new panel button')}
                 onClick={onAddVisualization}
                 disabled={!canCreate}
               >
@@ -99,7 +98,6 @@ const DashboardEmpty = ({ dashboard, canCreate }: Props) => {
                 <Button
                   icon="plus"
                   fill="outline"
-                  data-testid={selectors.pages.AddDashboard.itemButton('Add a panel from the panel library button')}
                   onClick={onAddLibraryPanel}
                   disabled={!canCreate}
                 >
@@ -122,7 +120,6 @@ const DashboardEmpty = ({ dashboard, canCreate }: Props) => {
                 <Button
                   icon="upload"
                   fill="outline"
-                  data-testid={selectors.pages.AddDashboard.itemButton('Import dashboard button')}
                   onClick={() => {
                     DashboardInteractions.emptyDashboardButtonClicked({ item: 'import_dashboard' });
                     onImportDashboard();
