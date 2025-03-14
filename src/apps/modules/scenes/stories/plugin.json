@@ -1,48 +1,25 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
-  "type": "app",
-  "name": "App With Backend",
-  "id": "myorg-withbackend-app",
-  "backend": true,
-  "executable": "gpx_app-myorg-withbackend-app",
+  "type": "panel",
+  "name": "Panels-Plugins",
+  "id": "peter-panelsplugins-panel",
   "info": {
-    "keywords": [
-      "bi",
-      "app",
-      "query jobs"
-    ],
-    "description": "Example Grafana app with backend service handling HTTP requests",
+    "keywords": ["panel"],
+    "description": "",
     "author": {
-      "name": "Grafana Labs"
+      "name": "Peter"
     },
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
+    "links": [],
     "screenshots": [],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
-  "includes": [
-    {
-      "type": "page",
-      "name": "Page One",
-      "path": "/a/%PLUGIN_ID%/one",
-      "role": "Admin",
-      "addToNav": true,
-      "defaultNav": true
-    },
-    {
-      "type": "page",
-      "icon": "cog",
-      "name": "Configuration",
-      "path": "/plugins/%PLUGIN_ID%",
-      "role": "Admin",
-      "addToNav": false
-    }
-  ],
   "dependencies": {
-    "grafanaDependency": ">=10.3.3",
+    "grafanaDependency": ">=10.4.0",
     "plugins": []
   }
 }
