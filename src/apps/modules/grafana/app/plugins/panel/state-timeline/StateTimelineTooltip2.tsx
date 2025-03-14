@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { FieldType, TimeRange } from '@data/index';
-import { SortOrder } from '@schema/common/common.gen';
+import { SortOrder } from '@schema/index';
 import { TooltipDisplayMode } from '@grafana-ui/index';
 import { VizTooltipContent } from '@grafana-ui/components/VizTooltip/VizTooltipContent';
 import { VizTooltipFooter } from '@grafana-ui/components/VizTooltip/VizTooltipFooter';

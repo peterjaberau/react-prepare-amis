@@ -79,31 +79,11 @@ if (process.env.NODE_ENV === 'development') {
     code: PSEUDO_LOCALE,
     name: 'Pseudo-locale',
     loader: {
-      grafana: () => import('src/apps/modules/grafana/locales/pseudo-LOCALE/grafana.json'),
+      grafana: () => import('../../../locales/pseudo-LOCALE/grafana.json'),
     },
   });
 }
 
-// Optionally load enterprise locale extensions, if they are present.
-// It is important that this happens before NAMESPACES is defined so it has the correct value
-//
-// require.context doesn't work in jest, so we don't even attempt to load enterprise translations...
-if (process.env.NODE_ENV !== 'test') {
-  const extensionRequireContext = (require as any).context('../../', true, /app\/extensions\/locales\/localeExtensions/);
-  if (extensionRequireContext.keys().includes('@grafana-module/app/extensions/locales/localeExtensions')) {
-    const { LOCALE_EXTENSIONS, ENTERPRISE_I18N_NAMESPACE } = extensionRequireContext(
-      '@grafana-module/app/extensions/locales/localeExtensions'
-    );
-
-    for (const language of LANGUAGES) {
-      const localeLoader = LOCALE_EXTENSIONS[language.code];
-
-      if (localeLoader) {
-        language.loader[ENTERPRISE_I18N_NAMESPACE] = localeLoader;
-      }
-    }
-  }
-}
 
 export const VALID_LANGUAGES = LANGUAGES.map((v) => v.code);
 

@@ -3,7 +3,7 @@ import { AxisPlacement, VisibilityMode } from '@schema/index';
 import { commonOptionsBuilder } from '@grafana-ui/index';
 
 import { StatusHistoryPanel } from './StatusHistoryPanel';
-import { Options, FieldConfig, defaultFieldConfig } from './panelcfg.gen';
+import { Options, FieldConfig, defaultFieldConfig } from './panelcfg';
 import { StatusHistorySuggestionsSupplier } from './suggestions';
 
 export const plugin = new PanelPlugin<Options, FieldConfig>(StatusHistoryPanel)

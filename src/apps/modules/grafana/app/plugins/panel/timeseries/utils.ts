@@ -14,7 +14,7 @@ import { nullToValue } from '@data/transformations/transformers/nulls/nullToValu
 import { GraphFieldConfig, LineInterpolation, TooltipDisplayMode, VizTooltipOptions } from '@schema/index';
 import { buildScaleKey } from '@grafana-ui/components/uPlot/internal';
 
-import { HeatmapTooltip } from '../heatmap/panelcfg.gen';
+import { HeatmapTooltip } from '../heatmap/panelcfg';
 
 type ScaleKey = string;
 

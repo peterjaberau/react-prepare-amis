@@ -9,7 +9,7 @@ import { TimeSeries } from '@grafana-module/app/core/components/TimeSeries/TimeS
 import { config } from '@grafana-module/app/core/config';
 
 import { TimeSeriesTooltip } from './TimeSeriesTooltip';
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 import { AnnotationsPlugin2 } from './plugins/AnnotationsPlugin2';
 import { ExemplarsPlugin, getVisibleLabels } from './plugins/ExemplarsPlugin';
 import { OutsideRangePlugin } from './plugins/OutsideRangePlugin';

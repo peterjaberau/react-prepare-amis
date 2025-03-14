@@ -6,7 +6,7 @@ import { DataFrame } from '@data/index';
 import { Pagination } from '@grafana-ui/index';
 import { makeFramePerSeries } from '@grafana-module/app/core/components/TimelineChart/utils';
 
-import { defaultOptions } from './panelcfg.gen';
+import { defaultOptions } from './panelcfg';
 
 export const containerStyles = {
   container: css({

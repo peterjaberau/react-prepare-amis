@@ -10,10 +10,10 @@ import {
   reportInteraction,
   SidecarContext_EXPERIMENTAL,
   sidecarServiceSingleton_EXPERIMENTAL,
-} from '@grafana/runtime';
-import { ErrorBoundaryAlert, GlobalStyles, PortalContainer, TimeRangeProvider } from '@grafana/ui';
-import { getAppRoutes } from 'app/routes/routes';
-import { store } from 'app/store/store';
+} from '@runtime/index';
+import { ErrorBoundaryAlert, GlobalStyles, PortalContainer, TimeRangeProvider } from '@grafana-ui/index';
+import { getAppRoutes } from '@grafana-module/app/routes/routes';
+import { store } from '@grafana-module/app/store/store';
 
 import { loadAndInitAngularIfEnabled } from './angular/loadAndInitAngularIfEnabled';
 import { GrafanaApp } from './app';
@@ -24,7 +24,7 @@ import { ThemeProvider } from './core/utils/ConfigProvider';
 import { LiveConnectionWarning } from './features/live/LiveConnectionWarning';
 import { ExtensionRegistriesProvider } from './features/plugins/extensions/ExtensionRegistriesContext';
 import { pluginExtensionRegistries } from './features/plugins/extensions/registry/setup';
-import { ScopesContextProvider } from './features/scopes/ScopesContextProvider';
+import { ScopesContextProvider } from '@grafana-module/app/features/scopes/ScopesContextProvider';
 import { ExperimentalSplitPaneRouterWrapper, RouterWrapper } from './routes/RoutesWrapper';
 
 interface AppWrapperProps {

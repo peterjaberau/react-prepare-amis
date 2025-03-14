@@ -16,7 +16,7 @@ import {
   findDescendents,
 } from './sceneGraph';
 
-export const sceneGraph = {
+export const sceneGraph: any = {
   getVariables,
   getData,
   getTimeRange,

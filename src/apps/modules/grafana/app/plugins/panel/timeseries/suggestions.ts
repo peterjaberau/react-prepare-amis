@@ -15,7 +15,7 @@ import {
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
 import { SuggestionName } from '@grafana-module/app/types/suggestions';
 
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 
 export class TimeSeriesSuggestionsSupplier {
   getSuggestionsForData(builder: VisualizationSuggestionsBuilder) {

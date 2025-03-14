@@ -5,7 +5,7 @@ import {
   LokiQueryType,
   SupportingQueryType,
   LokiQueryDirection,
-} from './dataquery.gen';
+} from './dataquery';
 
 export { LokiQueryDirection, LokiQueryType, SupportingQueryType };
 

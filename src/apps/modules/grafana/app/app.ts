@@ -17,7 +17,7 @@ import {
   standardEditorsRegistry,
   standardFieldConfigEditorRegistry,
   standardTransformersRegistry,
-} from '@grafana/data';
+} from '@data/index';
 import {
   locationService,
   registerEchoBackend,
@@ -41,13 +41,13 @@ import {
   setFolderPicker,
   setCorrelationsService,
   setPluginFunctionsHook,
-} from '@grafana/runtime';
-import { setPanelDataErrorView } from '@grafana/runtime/src/components/PanelDataErrorView';
-import { setPanelRenderer } from '@grafana/runtime/src/components/PanelRenderer';
-import { setPluginPage } from '@grafana/runtime/src/components/PluginPage';
-import { setUseTranslateHook } from '@grafana/runtime/src/unstable';
-import config, { updateConfig } from 'app/core/config';
-import { getStandardTransformers } from 'app/features/transformers/standardTransformers';
+} from '@runtime/index';
+import { setPanelDataErrorView } from '@runtime/components/PanelDataErrorView';
+import { setPanelRenderer } from '@runtime/components/PanelRenderer';
+import { setPluginPage } from '@runtime/components/PluginPage';
+import { setUseTranslateHook } from '@runtime/unstable';
+import config, { updateConfig } from '@grafana-module/app/core/config';
+import { getStandardTransformers } from '@grafana-module/app/features/transformers/standardTransformers';
 
 import getDefaultMonacoLanguages from '../lib/monaco-languages';
 
@@ -107,10 +107,13 @@ import { createTextBoxVariableAdapter } from './features/variables/textbox/adapt
 import { configureStore } from './store/configureStore';
 
 // import symlinked extensions
-const extensionsIndex = require.context('.', true, /extensions\/index.ts/);
-const extensionsExports = extensionsIndex.keys().map((key) => {
-  return extensionsIndex(key);
-});
+const extensionsIndex = import.meta.glob('./extensions/index.ts', { eager: true });
+const extensionsExports: any = Object.values(extensionsIndex);
+
+// const extensionsIndex = require.context('.', true, /extensions\/index.ts/);
+// const extensionsExports = extensionsIndex.keys().map((key) => {
+//   return extensionsIndex(key);
+// });
 
 if (process.env.NODE_ENV === 'development') {
   initDevFeatures();
@@ -174,7 +177,7 @@ export class GrafanaApp {
         createSystemVariableAdapter(),
       ]);
 
-      monacoLanguageRegistry.setInit(getDefaultMonacoLanguages);
+      monacoLanguageRegistry.setInit(getDefaultMonacoLanguages as any);
       setMonacoEnv();
 
       setQueryRunnerFactory(() => new QueryRunner());

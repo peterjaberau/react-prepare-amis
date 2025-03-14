@@ -1,7 +1,7 @@
 import { ThresholdsMode, VisualizationSuggestionsBuilder } from '@data/index';
 import { SuggestionName } from '@grafana-module/app/types/suggestions';
 
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 
 export class GaugeSuggestionsSupplier {
   getSuggestionsForData(builder: VisualizationSuggestionsBuilder) {

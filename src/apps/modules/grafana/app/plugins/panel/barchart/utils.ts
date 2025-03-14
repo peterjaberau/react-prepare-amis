@@ -39,7 +39,7 @@ import { getStackingGroups } from '@grafana-ui/components/uPlot/utils';
 import { setClassicPaletteIdxs } from '../timeseries/utils';
 
 import { BarsOptions, getConfig } from './bars';
-import { FieldConfig, Options, defaultFieldConfig } from './panelcfg.gen';
+import { FieldConfig, Options, defaultFieldConfig } from './panelcfg';
 // import { isLegendOrdered } from './utils';
 
 interface BarSeries {

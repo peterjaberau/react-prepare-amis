@@ -2,7 +2,7 @@ import { isArray } from 'lodash';
 
 import { FieldConfigSource, MappingType, PanelModel, ValueMap } from '@data/index';
 
-import { FieldConfig, Options } from './panelcfg.gen';
+import { FieldConfig, Options } from './panelcfg';
 
 // This is called when the panel changes from another panel
 export const timelinePanelChangedHandler = (

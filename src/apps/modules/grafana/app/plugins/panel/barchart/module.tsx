@@ -16,7 +16,7 @@ import { ThresholdsStyleEditor } from '../timeseries/ThresholdsStyleEditor';
 import { BarChartPanel } from './BarChartPanel';
 import { TickSpacingEditor } from './TickSpacingEditor';
 import { changeToBarChartPanelMigrationHandler } from './migrations';
-import { FieldConfig, Options, defaultFieldConfig, defaultOptions } from './panelcfg.gen';
+import { FieldConfig, Options, defaultFieldConfig, defaultOptions } from './panelcfg';
 import { BarChartSuggestionsSupplier } from './suggestions';
 
 export const plugin = new PanelPlugin<Options, FieldConfig>(BarChartPanel)

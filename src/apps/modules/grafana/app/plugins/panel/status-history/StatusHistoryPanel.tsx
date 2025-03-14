@@ -23,7 +23,7 @@ import { AnnotationsPlugin2 } from '../timeseries/plugins/AnnotationsPlugin2';
 import { OutsideRangePlugin } from '../timeseries/plugins/OutsideRangePlugin';
 import { getTimezones } from '../timeseries/utils';
 
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 
 interface TimelinePanelProps extends PanelProps<Options> {}
 

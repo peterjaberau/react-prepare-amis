@@ -18,6 +18,7 @@ import ReactGridLayoutRefactoredApp from "@/apps/modules/react-grid-layout-refac
 import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/dashboard/Dashboard";
 import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
 import { AppCustomActorV1 } from "@/apps/modules/custom-actor-v1/AppCustomActor.tsx";
+import { AppWrapper as GrafanaAppWrapper } from "@grafana-module/app/AppWrapper.tsx";
 // import { SimplePanel as SimplePanelPlugin } from "@/apps/modules/scenes/stories/components/SimplePanel";
 // import GrafanaApp from "@/apps/modules/grafana/app/app";
 
@@ -180,24 +181,24 @@ export const contentItems = [
 ] as const;
 
 export const contentModuleItems = [
-  // {
-  //   key: "scene-simple-panel",
-  //   component: SimplePanelPlugin,
-  //   title: "SimplePanelPlugin",
-  //   props: {
-  //     ...defaultProps,
-  //     ...{
-  //       pageHeader: {
-  //         title: "SimplePanelPlugin",
-  //         iconType: "globe",
-  //       },
-  //       page: {
-  //         panelled: true,
-  //         restrictWidth: true,
-  //       },
-  //     },
-  //   },
-  // },
+  {
+    key: "grafana-app-wrapper",
+    component: GrafanaAppWrapper,
+    title: "GrafanaAppWrapper",
+    props: {
+      ...defaultProps,
+      ...{
+        pageHeader: {
+          title: "GrafanaAppWrapper",
+          iconType: "globe",
+        },
+        page: {
+          panelled: true,
+          restrictWidth: true,
+        },
+      },
+    },
+  },
 
   {
     key: "grid-stack",

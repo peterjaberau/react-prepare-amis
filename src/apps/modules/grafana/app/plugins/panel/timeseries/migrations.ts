@@ -43,7 +43,7 @@ import { dashboardSceneGraph } from '@grafana-module/app/features/dashboard-scen
 import { GrafanaQuery, GrafanaQueryType } from '@grafana-module/app/plugins/datasource/grafana/types';
 
 import { defaultGraphConfig } from './config';
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 
 let dashboardRefreshDebouncer: ReturnType<typeof setTimeout> | null = null;
 

@@ -17,7 +17,7 @@ import { TooltipHoverMode } from '@grafana-ui/components/uPlot/plugins/TooltipPl
 import { TimeSeriesTooltip } from '../timeseries/TimeSeriesTooltip';
 
 import { BarChartLegend, hasVisibleLegendSeries } from './BarChartLegend';
-import { Options } from './panelcfg.gen';
+import { Options } from './panelcfg';
 import { prepConfig, prepSeries } from './utils';
 
 const charWidth = measureText('M', UPLOT_AXIS_FONT_SIZE).width;
