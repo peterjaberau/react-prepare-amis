@@ -11,7 +11,7 @@ import { Node, NodeReason, OnNodeSelectToggle, OnNodeUpdate, TreeScope } from '.
 export interface ScopesTreeItemProps {
   anyChildExpanded: boolean;
   groupedNodes: Dictionary<Node[]>;
-  lastExpandedNode: boolean;
+  isLastExpandedNode: boolean;
   loadingNodeName: string | undefined;
   node: Node;
   nodePath: string[];
@@ -26,7 +26,7 @@ export interface ScopesTreeItemProps {
 export function ScopesTreeItem({
   anyChildExpanded,
   groupedNodes,
-  lastExpandedNode,
+  isLastExpandedNode,
   loadingNodeName,
   node,
   nodePath,
@@ -48,9 +48,9 @@ export function ScopesTreeItem({
   const children = (
     <div role="tree" className={anyChildExpanded ? styles.expandedContainer : undefined}>
       {nodes.map((childNode) => {
-        const selected = childNode.selectable && scopeNames.includes(childNode.linkId!);
+        const isSelected = childNode.isSelectable && scopeNames.includes(childNode.linkId!);
 
-        if (anyChildExpanded && !childNode.expanded) {
+        if (anyChildExpanded && !childNode.isExpanded) {
           return null;
         }
 
@@ -62,16 +62,16 @@ export function ScopesTreeItem({
           <div
             key={childNode.name}
             role="treeitem"
-            aria-selected={childNode.expanded}
+            aria-selected={childNode.isExpanded}
             className={anyChildExpanded ? styles.expandedContainer : undefined}
           >
-            <div className={cx(styles.title, childNode.selectable && !childNode.expanded && styles.titlePadding)}>
-              {childNode.selectable && !childNode.expanded ? (
+            <div className={cx(styles.title, childNode.isSelectable && !childNode.isExpanded && styles.titlePadding)}>
+              {childNode.isSelectable && !childNode.isExpanded ? (
                 node.disableMultiSelect ? (
                   <RadioButtonDot
                     id={radioName}
                     name={radioName}
-                    checked={selected}
+                    checked={isSelected}
                     label=""
                     data-testid={`scopes-tree-${type}-${childNode.name}-radio`}
                     onClick={() => {
@@ -80,7 +80,7 @@ export function ScopesTreeItem({
                   />
                 ) : (
                   <Checkbox
-                    checked={selected}
+                    checked={isSelected}
                     data-testid={`scopes-tree-${type}-${childNode.name}-checkbox`}
                     onChange={() => {
                       onNodeSelectToggle(childNodePath);
@@ -89,18 +89,18 @@ export function ScopesTreeItem({
                 )
               ) : null}
 
-              {childNode.expandable ? (
+              {childNode.isExpandable ? (
                 <button
                   className={styles.expand}
                   data-testid={`scopes-tree-${type}-${childNode.name}-expand`}
                   aria-label={
-                    childNode.expanded ? t('scopes.tree.collapse', 'Collapse') : t('scopes.tree.expand', 'Expand')
+                    childNode.isExpanded ? t('scopes.tree.collapse', 'Collapse') : t('scopes.tree.expand', 'Expand')
                   }
                   onClick={() => {
-                    onNodeUpdate(childNodePath, !childNode.expanded, childNode.query);
+                    onNodeUpdate(childNodePath, !childNode.isExpanded, childNode.query);
                   }}
                 >
-                  <Icon name={!childNode.expanded ? 'angle-right' : 'angle-down'} />
+                  <Icon name={!childNode.isExpanded ? 'angle-right' : 'angle-down'} />
 
                   {childNode.title}
                 </button>
@@ -110,7 +110,7 @@ export function ScopesTreeItem({
             </div>
 
             <div className={styles.children}>
-              {childNode.expanded && (
+              {childNode.isExpanded && (
                 <ScopesTree
                   nodes={node.nodes}
                   nodePath={childNodePath}
@@ -127,7 +127,7 @@ export function ScopesTreeItem({
     </div>
   );
 
-  if (lastExpandedNode) {
+  if (isLastExpandedNode) {
     return (
       <ScrollContainer
         minHeight={`${Math.min(5, nodes.length) * 30}px`}

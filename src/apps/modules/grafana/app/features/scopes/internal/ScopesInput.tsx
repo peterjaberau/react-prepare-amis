@@ -10,19 +10,26 @@ import { NodesMap, SelectedScope } from './types';
 export interface ScopesInputProps {
   nodes: NodesMap;
   scopes: SelectedScope[];
-  disabled: boolean;
-  loading: boolean;
+  isDisabled: boolean;
+  isLoading: boolean;
   onInputClick: () => void;
   onRemoveAllClick: () => void;
 }
 
-export function ScopesInput({ nodes, scopes, disabled, loading, onInputClick, onRemoveAllClick }: ScopesInputProps) {
+export function ScopesInput({
+  nodes,
+  scopes,
+  isDisabled,
+  isLoading,
+  onInputClick,
+  onRemoveAllClick,
+}: ScopesInputProps) {
   const styles = useStyles2(getStyles);
 
-  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
   useEffect(() => {
-    setTooltipVisible(false);
+    setIsTooltipVisible(false);
   }, [scopes]);
 
   const scopesPaths = useMemo(() => {
@@ -75,13 +82,13 @@ export function ScopesInput({ nodes, scopes, disabled, loading, onInputClick, on
       <Input
         readOnly
         placeholder={t('scopes.selector.input.placeholder', 'Select scopes...')}
-        disabled={disabled}
-        loading={loading}
+        disabled={isDisabled}
+        loading={isLoading}
         value={scopesTitles}
         aria-label={t('scopes.selector.input.placeholder', 'Select scopes...')}
         data-testid="scopes-selector-input"
         suffix={
-          scopes.length > 0 && !disabled ? (
+          scopes.length > 0 && !isDisabled ? (
             <IconButton
               aria-label={t('scopes.selector.input.removeAll', 'Remove all scopes')}
               name="times"
@@ -89,20 +96,20 @@ export function ScopesInput({ nodes, scopes, disabled, loading, onInputClick, on
             />
           ) : undefined
         }
-        onMouseOver={() => setTooltipVisible(true)}
-        onMouseOut={() => setTooltipVisible(false)}
+        onMouseOver={() => setIsTooltipVisible(true)}
+        onMouseOut={() => setIsTooltipVisible(false)}
         onClick={() => {
-          if (!disabled) {
+          if (!isDisabled) {
             onInputClick();
           }
         }}
       />
     ),
-    [disabled, loading, onInputClick, onRemoveAllClick, scopes, scopesTitles]
+    [isDisabled, isLoading, onInputClick, onRemoveAllClick, scopes, scopesTitles]
   );
 
   return (
-    <Tooltip content={scopesPaths} show={scopes.length === 0 ? false : tooltipVisible}>
+    <Tooltip content={scopesPaths} show={scopes.length === 0 ? false : isTooltipVisible}>
       {input}
     </Tooltip>
   );
