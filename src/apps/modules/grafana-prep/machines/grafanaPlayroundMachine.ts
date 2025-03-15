@@ -12,7 +12,18 @@ import {
 import { Ok } from "ts-results";
 import invariant from "tiny-invariant";
 
-export const initialPanels: any[] = [
+type PanelProps = {
+  id: string;
+  title: string;
+  collapsible?: boolean;
+  isCollapsed?: boolean;
+  content: string;
+  menu?: { label: string; onClick: any; }[];
+  actions?: { label: string; onClick: any; }[];
+};
+
+
+export const initialPanels: PanelProps[] | any[] = [
   {
     id: "panel-1",
     title: "title 1",
@@ -21,17 +32,19 @@ export const initialPanels: any[] = [
     content: "content 1",
     menu: [
       {
+        id: "menuItem-1",
         label: "Menu Log",
         send: { name: "log", params: { key1: "value1 from menu" } },
       },
       {
+        id: "menuItem-2",
         label: "Menu Log Context",
         send: { name: "logContext", params: { info: "logContext from menu" } },
       },
     ],
     actions: [
-      { label: "Log", send: { name: "log", params: { key1: "value1" } } },
-      { label: "Log Context", send: { name: "logContext" } },
+      { id: "action1", label: "Log", send: { name: "log", params: { key1: "value1" } } },
+      { id: "action2", label: "Log Context", send: { name: "logContext" } },
     ],
   },
   {
@@ -42,20 +55,25 @@ export const initialPanels: any[] = [
     content: "content 2",
     menu: [
       {
+        id: "menuItem-11",
         label: "Menu Log",
         send: { name: "log", params: { key2: "value2  from menu" } },
       },
       {
+        id: "menuItem-22",
         label: "Menu Log Context",
         send: { name: "logContext", params: { info: "logContext from menu2" } },
       },
     ],
     actions: [
       {
+        id: "action11",
         label: "Log",
         send: { name: "log", params: { key2: "value2 from action" } },
       },
-      { label: "Log Context", send: { name: "logContext" } },
+      {
+        id: "action22",
+        label: "Log Context", send: { name: "logContext" } },
     ],
   },
   {
@@ -81,6 +99,7 @@ export const initialPanels: any[] = [
 export function getPlayPanelActorId(id: string) {
   return `panel-${id}`;
 }
+
 
 export const grafanaPlayPanelMachine = setup({
   types: {
@@ -194,7 +213,7 @@ export const grafanaPlayMachine = setup({
               panels: event.output.val.panels.map((panel: any) =>
                 spawn("grafanaPlayPanelMachine", {
                   id: getPlayPanelActorId(panel.id),
-                  input: panels,
+                  input: panel,
                   systemId: getPlayPanelActorId(panel.id),
                 }),
               ),

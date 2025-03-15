@@ -8,12 +8,14 @@ import {
   EuiFlyoutHeader,
   EuiFlyoutResizable,
   EuiTitle,
-  EuiPortal,
+  EuiPortal, EuiFlexGrid
 } from "@elastic/eui";
 import { useState } from "react";
 import { ThemeProvider as GrafanaThemeProvider } from "./ThemeProvide";
-import { css, cx } from "@emotion/css";
 import { FunctionsPrep } from "./stories/FunctionsPrep";
+import { grafanaPlayMachine } from "./machines/grafanaPlayroundMachine.ts";
+import { useActor } from "@xstate/react";
+import { PlaygroundPanel } from "./stories/components/PlaygroundPanel.tsx";
 
 const flyoutHeadingId = "flyout-grafana-prep";
 export const GrafanaPrep = () => {
@@ -22,10 +24,26 @@ export const GrafanaPrep = () => {
   const closeFlyout = () => setIsFlyoutVisible(false);
   const toggleFlyout = () => setIsFlyoutVisible(!isFlyoutVisible);
 
+  const [snapshot, , parentCardActorRef] = useActor(grafanaPlayMachine, {
+    systemId: "grafanaPlayMachine",
+  });
+
+
+
   return (
     <>
       <GrafanaThemeProvider>
       <EuiButton onClick={toggleFlyout}>Show flyout</EuiButton>
+        <EuiFlexGrid direction="row" columns={1}>
+          <EuiFlexItem>
+            <EuiFlexGrid direction="row" columns={2}>
+              {snapshot.context.panels.map((panel: any) => (
+                <PlaygroundPanel key={panel.id} actorRef={panel} />
+              ))}
+            </EuiFlexGrid>
+          </EuiFlexItem>
+        </EuiFlexGrid>
+
       {isFlyoutVisible && (
         <EuiPortal>
           <EuiFlyoutResizable
