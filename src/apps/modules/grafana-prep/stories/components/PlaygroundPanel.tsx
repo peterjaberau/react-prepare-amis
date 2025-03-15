@@ -47,6 +47,7 @@ export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
 
   return (
     <>
+        {/** @ts-ignore */}
         <PanelChrome
           hoverHeader={false}
           title={
