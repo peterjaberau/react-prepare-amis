@@ -1,9 +1,12 @@
 import { ActorRefFrom } from "xstate";
 import { useSelector } from "@xstate/react";
-import { grafanaPlayPanelMachine } from "../../machines/grafanaPlayroundMachine";
-import { EuiCode } from "@elastic/eui";
+import {
+  grafanaPlayPanelMachine,
+  eventTypeMapping,
+} from "../../machines/grafanaPlayroundMachine";
+import { EuiCode, EuiCodeBlock, EuiFlexGroup, EuiFlexItem } from "@elastic/eui";
 import { PanelChrome, Button, Menu, MenuItem } from "@grafana-ui/index";
-
+import { EuiBadge } from "@elastic/eui";
 
 interface PlaygroundPanelProps {
   actorRef: ActorRefFrom<typeof grafanaPlayPanelMachine>;
@@ -11,30 +14,59 @@ interface PlaygroundPanelProps {
   [key: string]: any;
 }
 
+type ActionHandlerRequestType = {
+  type: "client" | "server" | "async" | "callback";
+  name: string;
+  data: any;
+};
+
 export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
   const snapshot: any = useSelector(actorRef, (state) => state);
 
-  const onClickMenuItem = (menuItem: any) => {
-    actorRef.send(menuItem.send);
-  };
+  const onAction = ({ e, request  }: { e: Event | any, request: ActionHandlerRequestType | any}) => {
+    e.preventDefault();
+    console.log(actorRef);
+    console.log("onAction", {
+      request: request,
+    });
+    e.preventDefault();
+    if (!request?.type || !eventTypeMapping[request.type]) {
+      return;
+    }
 
-  const onClickAction = (action: any) => {
-    actorRef.send(action.send);
+    if (!request?.name) {
+      return;
+    }
+
+    actorRef.send({
+      type: eventTypeMapping[request.type],
+      name: request?.name,
+      data: request?.data,
+    });
   };
 
   return (
     <>
-      {snapshot.matches("Idle") === true && (
         <PanelChrome
           hoverHeader={false}
-          title={snapshot.context.title}
-          collapsible={(snapshot.context.collapsible as any) || true}
-          collapsed={(snapshot.context.isCollapsed as any) || false}
+          title={
+          <>
+            {`${snapshot.context.title}`}
+          </>
+          }
+          collapsible={true}
+          collapsed={snapshot.context.isCollapsed as any}
+          onToggleCollapse={() => { actorRef.send({ type: "TOGGLE_COLLAPSE" }) }}
           menu={
             <Menu>
-              {snapshot.context.menu && snapshot.context.menu.map((menuItem: any) => (
-                <MenuItem key={menuItem.id} label={menuItem.label} onClick={onClickMenuItem} />
-              ))}
+              {snapshot.context.menu &&
+                snapshot.context.menu.map((menuItem: any) => (
+                  <MenuItem
+                    key={menuItem.id}
+                    label={menuItem.label}
+                    onClick={(e) => onAction({ e: e, request: menuItem?.onClick})}
+                  />
+                ))}
             </Menu>
           }
           actions={
@@ -45,7 +77,7 @@ export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
                 style={{ height: "22px" }}
                 size="xs"
                 variant="secondary"
-                onClick={onClickAction}
+                onClick={(e) => onAction({ e: e, request: action?.onClick})}
               >
                 {action.label}
               </Button>
@@ -53,11 +85,23 @@ export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
           }
         >
           <>
-            <EuiCode>{snapshot.context.content}</EuiCode>
-            {children}
+            <EuiFlexGroup justifyContent="flexStart" direction="column" gutterSize="s">
+              <EuiFlexItem grow={false}>
+                <EuiFlexGroup justifyContent="flexStart" direction="row" gutterSize="s">
+                  <EuiBadge color="hollow">{`ContextId: ${snapshot.context.id}`}</EuiBadge>
+                  <EuiBadge color="hollow">{`actorId: ${actorRef.id}`}</EuiBadge>
+                  <EuiBadge color="hollow">{`value: ${snapshot.value}`}</EuiBadge>
+                </EuiFlexGroup>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                <EuiCodeBlock>{snapshot.context.content}</EuiCodeBlock>
+              </EuiFlexItem>
+              <EuiFlexItem grow={false}>
+                {children}
+              </EuiFlexItem>
+            </EuiFlexGroup>
           </>
         </PanelChrome>
-      )}
     </>
   );
 }

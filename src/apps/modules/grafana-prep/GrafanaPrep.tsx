@@ -13,8 +13,8 @@ import {
 import { useState } from "react";
 import { ThemeProvider as GrafanaThemeProvider } from "./ThemeProvide";
 import { FunctionsPrep } from "./stories/FunctionsPrep";
-import { grafanaPlayMachine } from "./machines/grafanaPlayroundMachine.ts";
 import { useActor } from "@xstate/react";
+import { grafanaPlayMachine } from "./machines/grafanaPlayroundMachine.ts";
 import { PlaygroundPanel } from "./stories/components/PlaygroundPanel.tsx";
 
 const flyoutHeadingId = "flyout-grafana-prep";
@@ -24,8 +24,8 @@ export const GrafanaPrep = () => {
   const closeFlyout = () => setIsFlyoutVisible(false);
   const toggleFlyout = () => setIsFlyoutVisible(!isFlyoutVisible);
 
-  const [snapshot, , parentCardActorRef] = useActor(grafanaPlayMachine, {
-    systemId: "grafanaPlayMachine",
+  const [snapshot, , panelsActorRef] = useActor(grafanaPlayMachine, {
+    systemId: "Panels",
   });
 
 

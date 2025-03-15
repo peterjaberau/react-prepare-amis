@@ -1,16 +1,14 @@
-import { getCardActorId } from "@/apps/modules/custom-actor-v1/machine/helpers.ts";
 import {
   assign,
   createMachine,
   setup,
   fromPromise,
-  sendParent,
-  ActorRefFrom,
-  stopChild,
+  stopChild, sendParent, ActorRefFrom
 } from "xstate";
 
 import { Ok } from "ts-results";
 import invariant from "tiny-invariant";
+import { getCardActorId } from "@/apps/modules/custom-actor-v1/machine/helpers.ts";
 
 type PanelProps = {
   id: string;
@@ -18,10 +16,15 @@ type PanelProps = {
   collapsible?: boolean;
   isCollapsed?: boolean;
   content: string;
-  menu?: { label: string; onClick: any; }[];
-  actions?: { label: string; onClick: any; }[];
+  menu?: { label: string; onClick: any }[];
+  actions?: { label: string; onClick: any }[];
 };
 
+export const eventTypeMapping: any = {
+  cancel: "playing.cancel",
+  client: "playing.request",
+  server: "playing.asyncRequest",
+};
 
 export const initialPanels: PanelProps[] | any[] = [
   {
@@ -34,17 +37,33 @@ export const initialPanels: PanelProps[] | any[] = [
       {
         id: "menuItem-1",
         label: "Menu Log",
-        send: { name: "log", params: { key1: "value1 from menu" } },
+        onClick: {
+          type: "client",
+          name: "log",
+          data: { key1: "value1 from menu" },
+        },
       },
       {
         id: "menuItem-2",
         label: "Menu Log Context",
-        send: { name: "logContext", params: { info: "logContext from menu" } },
+        onClick: {
+          type: "client",
+          name: "logContext",
+          data: { info: "logContext from menu" },
+        },
       },
     ],
     actions: [
-      { id: "action1", label: "Log", send: { name: "log", params: { key1: "value1" } } },
-      { id: "action2", label: "Log Context", send: { name: "logContext" } },
+      {
+        id: "action1",
+        label: "Log",
+        onClick: { type: "client", name: "log", data: { key1: "value1" } },
+      },
+      {
+        id: "action2",
+        label: "Log Context",
+        onClick: { type: "client", name: "logContext" },
+      },
     ],
   },
   {
@@ -57,23 +76,29 @@ export const initialPanels: PanelProps[] | any[] = [
       {
         id: "menuItem-11",
         label: "Menu Log",
-        send: { name: "log", params: { key2: "value2  from menu" } },
+        onClick: { type: "client", name: "log", data: "value2  from menu" },
       },
       {
         id: "menuItem-22",
         label: "Menu Log Context",
-        send: { name: "logContext", params: { info: "logContext from menu2" } },
+        onClick: {
+          type: "client",
+          name: "logContext",
+          data: "logContext from menu2",
+        },
       },
     ],
     actions: [
       {
         id: "action11",
         label: "Log",
-        send: { name: "log", params: { key2: "value2 from action" } },
+        onClick: { type: "client", name: "log", data: "value2 from action" },
       },
       {
         id: "action22",
-        label: "Log Context", send: { name: "logContext" } },
+        label: "Log Context",
+        onClick: { type: "client", name: "logContext" },
+      },
     ],
   },
   {
@@ -100,7 +125,6 @@ export function getPlayPanelActorId(id: string) {
   return `panel-${id}`;
 }
 
-
 export const grafanaPlayPanelMachine = setup({
   types: {
     input: {} as any,
@@ -108,6 +132,13 @@ export const grafanaPlayPanelMachine = setup({
     events: {} as any,
   },
   actions: {
+    toggleCollapse: assign(({ context }) => {
+      return {
+        ...context,
+        isCollapsed: !context.isCollapsed,
+      };
+    }),
+
     playRequestAction: assign(({ context, event }) => {
       console.log("action.playRequestAction----", {
         context: context,
@@ -125,9 +156,12 @@ export const grafanaPlayPanelMachine = setup({
     playAsyncExecution: fromPromise(async () => {
       await new Promise((res) => setTimeout(res, 1_00));
     }),
+    revokePanel: fromPromise(async () => {
+      await new Promise((res) => setTimeout(res, 1_00));
+    }),
   },
 }).createMachine({
-  id: "grafanaPlayPanelMachine",
+  id: "Panel",
   context: ({ input }: any) => input,
   initial: "Idle",
   states: {
@@ -136,6 +170,14 @@ export const grafanaPlayPanelMachine = setup({
         "playing.start": {
           target: "Playing",
         },
+        revoke: {
+          target: "Revoking",
+        },
+
+
+        "TOGGLE_COLLAPSE": {
+          actions: "toggleCollapse",
+        }
       },
     },
     Playing: {
@@ -160,8 +202,21 @@ export const grafanaPlayPanelMachine = setup({
         input: ({ context }: any) => ({ panelId: context.id }),
         onDone: {
           target: "Done",
+          actions: sendParent(({ context }: any) => ({
+            type: "panel.playing.done",
+            panelId: context.id,
+          })),
+        },
+      },
+    },
+    Revoking: {
+      invoke: {
+        src: "revokePanel",
+        input: ({ context }) => ({ panelId: context.id }),
+        onDone: {
+          target: "Done",
           actions: sendParent(({ context }) => ({
-            type: "panel.play.done",
+            type: "panel.revoke.confirmed",
             panelId: context.id,
           })),
         },
@@ -189,17 +244,16 @@ export const grafanaPlayMachine = setup({
         panels: initialPanels,
       });
     }),
-
     addNewPanel: fromPromise(async () => {
       await new Promise((res) => setTimeout(res, 1_00));
     }),
   },
 }).createMachine({
-  id: "grafanaPlayMachine",
-  initial: "Initializing",
+  id: "Panels",
   context: {
     panels: [],
   },
+  initial: "Initializing",
   states: {
     Initializing: {
       invoke: {
@@ -225,7 +279,7 @@ export const grafanaPlayMachine = setup({
     Ready: {
       type: "parallel",
       states: {
-        Cards: {
+        Panels: {
           initial: "Idle",
           states: {
             Idle: {
@@ -314,6 +368,19 @@ export const grafanaPlayMachine = setup({
               },
             },
           },
+        },
+      },
+      on: {
+        "panel.revoke.confirmed": {
+          actions: [
+            stopChild(({ event }) => getPlayPanelActorId(event.panelId)),
+            assign({
+              panels: ({ context, event }) =>
+                context.cards.filter(
+                  (panel: any) => panel.id !== getPlayPanelActorId(event.panelId),
+                ),
+            }),
+          ],
         },
       },
     },

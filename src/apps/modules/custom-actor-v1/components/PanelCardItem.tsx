@@ -41,12 +41,11 @@ export function PanelCardItem({
                 }}
               >
                 Edit
-              </Button>
+              </Button>,
             ]}
           >
             {snapshot.context.content}
           </PanelChrome>
-
         </>
       ) : (
         <PanelCardItemEditor actorRef={actorRef} snapshot={snapshot} />
