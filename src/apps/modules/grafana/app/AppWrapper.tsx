@@ -25,6 +25,7 @@ import { ExtensionRegistriesProvider } from './features/plugins/extensions/Exten
 import { LiveConnectionWarning } from './features/live/LiveConnectionWarning';
 import { pluginExtensionRegistries } from './features/plugins/extensions/registry/setup';
 import { ExperimentalSplitPaneRouterWrapper, RouterWrapper } from './routes/RoutesWrapper';
+import app from './app';
 
 interface AppWrapperProps {
   app: GrafanaApp;
@@ -33,6 +34,7 @@ interface AppWrapperProps {
 interface AppWrapperState {
   ready?: boolean;
 }
+
 
 /** Used by enterprise */
 let bodyRenderHooks: ComponentType[] = [];
@@ -54,6 +56,7 @@ export function addPageBanner(fn: ComponentType) {
 export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
   private iconCacheID = `grafana-icon-cache-${config.buildInfo.commit}`;
 
+
   constructor(props: AppWrapperProps) {
     super(props);
     this.state = {};
@@ -71,6 +74,8 @@ export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
         window.caches.delete(key);
       }
     }
+
+
   }
 
   renderRoute = (route: RouteDescriptor) => {

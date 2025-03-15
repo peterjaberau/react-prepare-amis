@@ -8,7 +8,7 @@ import VectorImage from 'ol/layer/VectorImage';
 import { fromLonLat } from 'ol/proj';
 import VectorSource from 'ol/source/Vector';
 import { Fill, Stroke, Style, Circle } from 'ol/style';
-import DayNight from 'ol-ext/layer/DayNight';
+import DayNight from 'ol-ext/source/DayNight';
 import { Subscription } from 'rxjs';
 
 import {

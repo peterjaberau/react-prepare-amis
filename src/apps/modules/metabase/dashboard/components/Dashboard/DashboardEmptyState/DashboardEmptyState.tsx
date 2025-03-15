@@ -7,7 +7,7 @@ import {
   EuiText,
   EuiTitle,
 } from "@elastic/eui";
-import { Stack } from "@grafana/ui";
+import { Stack } from "@grafana-ui/index";
 
 interface DashboardEmptyStateProps {
   addQuestion?: () => void;

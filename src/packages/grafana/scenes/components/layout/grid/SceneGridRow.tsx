@@ -2,9 +2,9 @@ import { css, cx } from "@emotion/css";
 import React from "react";
 
 import { GrafanaTheme2 } from "@data/index";
-import { Icon, useStyles2 } from "@grafana/ui";
+import { Icon, useStyles2 } from "@grafana-ui/index";
 
-import { SceneObjectBase } from "../../../core/SceneObjectBase";
+import { SceneObjectBase } from "@scenes/core/SceneObjectBase";
 import {
   SceneComponentProps,
   SceneObject,
@@ -14,8 +14,8 @@ import {
 import { SceneGridLayout } from "./SceneGridLayout";
 import { GRID_COLUMN_COUNT } from "./constants";
 import { SceneGridItemLike, SceneGridItemStateLike } from "./types";
-import { sceneGraph } from "../../../core/sceneGraph";
-import { VariableDependencyConfig } from "../../../variables/VariableDependencyConfig";
+import { sceneGraph } from "@scenes/core/sceneGraph";
+import { VariableDependencyConfig } from "@scenes/variables/VariableDependencyConfig";
 
 export interface SceneGridRowState extends SceneGridItemStateLike {
   title: string;

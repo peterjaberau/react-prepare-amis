@@ -3,9 +3,9 @@ import { useSelector } from "@xstate/react";
 import { cardMachine } from "../machine/cardMachine";
 import { PanelCardItemEditor } from "./PanelCardItemEditor";
 import { EuiButton, EuiFlexGroup, EuiFlexItem, EuiPanel } from "@elastic/eui";
-import { Button, Card } from "@grafana/ui";
-import { PanelChrome } from "@grafana/ui";
-import { Menu, MenuItem } from "@grafana/ui";
+import { Button, Card } from "@grafana-ui/index";
+import { PanelChrome } from "@grafana-ui/index";
+import { Menu, MenuItem } from "@grafana-ui/index";
 
 export function PanelCardItem({
   actorRef,

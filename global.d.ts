@@ -105,17 +105,17 @@ declare var afterEach: (fn: () => void | Promise<void>, timeout?: number) => voi
 declare var afterAll: (fn: () => void | Promise<void>, timeout?: number) => void;
 
 
-declare module 'ol-ext/layer/DayNight' {
-    import { Layer } from 'ol/layer';
-    import { Source } from 'ol/source';
-
-    export default class DayNight extends Layer<Source> {
-        constructor(options?: any);
-        setTime(date: Date): void;
-        getSunPosition(date: Date): number[];
-        getCoordinates(date: Date, type: string): any[];
-    }
-}
+// declare module 'ol-ext/layer/DayNight' {
+//     import { Layer } from 'ol/layer';
+//     import { Source } from 'ol/source';
+//
+//     export default class DayNight extends Layer<Source> {
+//         constructor(options?: any);
+//         setTime(date: Date): void;
+//         getSunPosition(date: Date): number[];
+//         getCoordinates(date: Date, type: string): any[];
+//     }
+// }
 
 declare module 'ol-ext/style/FlowLine' {
     import { Style } from 'ol/style';
@@ -149,4 +149,23 @@ declare module 'ol-ext/style/Photo' {
         setImage(image: HTMLImageElement): void;
         getImage(): HTMLImageElement;
     }
+}
+
+
+interface JQueryPlot {
+    (element: HTMLElement | JQuery, data: any, options: any): void;
+    plugins: any[];
+}
+
+interface JQueryStatic {
+    plot: JQueryPlot;
+}
+
+interface JQuery {
+    place_tt: any;
+    modal: any;
+    tagsinput: any;
+    typeahead: any;
+    accessKey: any;
+    tooltip: any;
 }

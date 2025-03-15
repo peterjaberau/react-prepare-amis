@@ -392,7 +392,6 @@ export class Explore extends PureComponent<Props, ExploreState> {
     return (
       <ContentOutlineItem panelId="Table" title="Table" icon="table">
         <TableContainer
-          ariaLabel={selectors.pages.Explore.General.table}
           width={width}
           exploreId={exploreId}
           onCellFilterAdded={this.onCellFilterAdded}
@@ -409,7 +408,6 @@ export class Explore extends PureComponent<Props, ExploreState> {
       <ContentOutlineItem panelId="Raw Prometheus" title="Raw Prometheus" icon="gf-prometheus">
         <RawPrometheusContainer
           showRawPrometheus={true}
-          ariaLabel={selectors.pages.Explore.General.table}
           width={width}
           exploreId={exploreId}
           onCellFilterAdded={datasourceInstance?.modifyQuery ? this.onCellFilterAdded : undefined}
@@ -585,7 +583,6 @@ export class Explore extends PureComponent<Props, ExploreState> {
               <ContentOutline scroller={this.scrollElement} panelId={`content-outline-container-${exploreId}`} />
             )}
             <ScrollContainer
-              data-testid={selectors.pages.Explore.General.scrollView}
               ref={(scrollElement) => (this.scrollElement = scrollElement || undefined)}
             >
               <div className={styles.exploreContainer}>

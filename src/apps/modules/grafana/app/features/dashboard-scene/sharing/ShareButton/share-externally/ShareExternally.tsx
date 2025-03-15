@@ -25,7 +25,7 @@ import { AccessControlAction } from '@grafana-module/app/types';
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';
 import { useShareDrawerContext } from '../../ShareDrawer/ShareDrawerContext';
 import { SceneShareTabState, ShareView } from '../../types';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { EmailSharing } from './EmailShare/EmailSharing';
 import { PublicSharing } from './PublicShare/PublicSharing';
 import ShareAlerts from './ShareAlerts';

@@ -46,6 +46,7 @@
       "@selectors/*": ["src/packages/grafana/selectors/*"],
       "@grafana-ui/*": ["src/packages/grafana/grafana-ui/*"],
       "@plugin-configs/*": ["src/packages/grafana/plugin-configs/*"],
+      "@utils/*": ["src/utils/*"],
 
 //      plugin-configs
     },

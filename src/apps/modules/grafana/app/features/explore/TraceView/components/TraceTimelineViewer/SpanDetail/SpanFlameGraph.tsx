@@ -12,7 +12,7 @@ import {
   dateTime,
   TimeZone,
 } from '@data/index';
-import { FlameGraph } from '@grafana/flamegraph';
+import { FlameGraph } from '@flamegraph/index';
 import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, DataSourceWithBackend, getTemplateSrv } from '@runtime/index';
 import { useStyles2 } from '@grafana-ui/index';

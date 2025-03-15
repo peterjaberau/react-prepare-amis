@@ -1,12 +1,12 @@
-import '@grafana-module/vendor/flot/jquery.flot';
-import '@grafana-module/vendor/flot/jquery.flot.selection';
-import '@grafana-module/vendor/flot/jquery.flot.time';
-import '@grafana-module/vendor/flot/jquery.flot.stack';
-import '@grafana-module/vendor/flot/jquery.flot.stackpercent';
-import '@grafana-module/vendor/flot/jquery.flot.fillbelow';
-import '@grafana-module/vendor/flot/jquery.flot.crosshair';
-import '@grafana-module/vendor/flot/jquery.flot.dashes';
-import './jquery.flot.events';
+import '@grafana-module/vendor/flot/jquery.flot.js';
+import '@grafana-module/vendor/flot/jquery.flot.selection.js';
+import '@grafana-module/vendor/flot/jquery.flot.time.js';
+import '@grafana-module/vendor/flot/jquery.flot.stack.js';
+import '@grafana-module/vendor/flot/jquery.flot.stackpercent.js';
+import '@grafana-module/vendor/flot/jquery.flot.fillbelow.js';
+import '@grafana-module/vendor/flot/jquery.flot.crosshair.js';
+import '@grafana-module/vendor/flot/jquery.flot.dashes.js';
+import './jquery.flot.events.js';
 
 import $ from 'jquery';
 import { clone, find, flatten, isUndefined, map, max as _max, min as _min, sortBy as _sortBy, toNumber } from 'lodash';

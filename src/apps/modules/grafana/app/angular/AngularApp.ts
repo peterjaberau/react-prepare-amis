@@ -2,7 +2,7 @@ import 'angular';
 import 'angular-route';
 import 'angular-sanitize';
 import 'angular-bindonce';
-import '@grafana-module/vendor/bootstrap/bootstrap';
+import '@grafana-module/vendor/bootstrap/bootstrap.js';
 
 import angular from 'angular'; // eslint-disable-line no-duplicate-imports
 import { extend } from 'lodash';

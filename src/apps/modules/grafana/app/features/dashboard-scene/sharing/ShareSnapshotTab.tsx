@@ -10,7 +10,7 @@ import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 import { getDashboardSnapshotSrv, SnapshotSharingOptions } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';
 import { dispatch } from '@grafana-module/app/store/store';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { DashboardScene } from '../scene/DashboardScene';
 import { transformSceneToSaveModel, trimDashboardForSnapshot } from '../serialization/transformSceneToSaveModel';
 import { DashboardInteractions } from '../utils/interactions';

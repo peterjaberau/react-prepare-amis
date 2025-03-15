@@ -1,4 +1,4 @@
-import '@grafana-module/vendor/flot/jquery.flot';
+import '@grafana-module/vendor/flot/jquery.flot.js';
 import { map } from 'lodash';
 
 import { dateTime, GrafanaTheme2, TimeRange } from '@data/index';

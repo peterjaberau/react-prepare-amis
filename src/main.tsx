@@ -1,11 +1,16 @@
 import { createRoot } from "react-dom/client";
+import 'react18-json-view/src/style.css'
 import App from "./App";
 import { RootMachineProvider } from "@/machines/RootMachineContext";
 import { ReactGridLayoutProvider } from "@/apps/modules/react-grid-layout/machines/ReactGridLayoutMachineContext";
 import { MachineProviderRGL } from "@/apps/modules/react-grid-layout-refactor/stories/machines/machineContextRGL.tsx";
 // import { MachineProviderGridstack } from "@/apps/modules/gridstack/machines/machineContextGridstack.tsx";
 
-
+import $ from 'jquery';
+// Expose jQuery globally
+// @ts-ignore
+window.$ = window.jQuery = $;
+window.__grafana_public_path__ = 'src/apps/modules/grafana/';
 
 const agent = navigator.userAgent.toLowerCase();
 

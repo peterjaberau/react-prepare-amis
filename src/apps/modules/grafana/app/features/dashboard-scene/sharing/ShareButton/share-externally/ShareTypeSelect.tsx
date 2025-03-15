@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-
+import { selectors as e2eSelectors } from '@selectors/index';
 import { SelectableValue, toIconName } from '@data/index';
 import { Icon, Label, Select, Spinner, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';

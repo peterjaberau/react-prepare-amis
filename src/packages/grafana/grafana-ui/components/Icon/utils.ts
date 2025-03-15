@@ -52,6 +52,7 @@ export function getIconRoot(): string {
   }
 
   const grafanaPublicPath = typeof window !== 'undefined' && window.__grafana_public_path__;
+  console.log('grafanaPublicPath', grafanaPublicPath);
   if (grafanaPublicPath) {
     iconRoot = grafanaPublicPath + 'img/icons/';
   } else {
