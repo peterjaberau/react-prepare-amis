@@ -92,7 +92,8 @@ export const parentCardMachine = setup({
       await new Promise((res) => setTimeout(res, 1_00));
     }),
   },
-}).createMachine({
+})
+  .createMachine({
   id: "ParentCard",
   context: {
     cards: [],

@@ -1,7 +1,9 @@
+import JsonView from "react18-json-view";
 import { Collapse } from '@grafana-ui/index';
 import { useState } from "react";
+import { SearchWithResults } from "./components/SearchWithResults";
+
 import { getEnvConfig } from "@utils/env-util.ts";
-import JsonView from "react18-json-view";
 
 export const FunctionsPrep = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -24,6 +26,7 @@ export const FunctionsPrep = () => {
           )
         }
       </Collapse>
+      <SearchWithResults />
     </>
   );
 }
