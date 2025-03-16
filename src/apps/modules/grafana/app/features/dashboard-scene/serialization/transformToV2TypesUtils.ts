@@ -17,7 +17,7 @@ import {
   VariableRefresh,
   VariableSort,
   FieldColorModeId as FieldColorModeIdV2,
-} from '@schema/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0/types';
 
 // used for QueryVariableKind's query prop - in schema V2 we've deprecated string type and support only DataQuery
 export const LEGACY_STRING_VALUE_KEY = '__legacyStringValue';

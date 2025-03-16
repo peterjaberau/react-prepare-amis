@@ -16,7 +16,7 @@ import {
   FieldConfigSource,
   SpecialValueMatch,
   ThresholdsMode,
-} from '@schema/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0/types';
 
 export function transformVariableRefreshToEnumV1(refresh?: VariableRefresh): VariableRefreshV1 {
   switch (refresh) {

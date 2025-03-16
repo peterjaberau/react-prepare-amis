@@ -1,10 +1,9 @@
 // Libraries
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom-v5-compat';
 import { usePrevious } from 'react-use';
 
 import { PageLayoutType } from '@data/index';
-import { config } from '@runtime/index';
 import { UrlSyncContextProvider } from '@scenes/index';
 import { Box } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';
@@ -25,9 +24,7 @@ export function DashboardScenePage({ route, queryParams, location }: Props) {
   const params = useParams();
   const { type, slug, uid } = params;
   const prevMatch = usePrevious({ params });
-  const stateManager = config.featureToggles.useV2DashboardsAPI
-    ? getDashboardScenePageStateManager('v2')
-    : getDashboardScenePageStateManager();
+  const stateManager = getDashboardScenePageStateManager();
   const { dashboard, isLoading, loadError } = stateManager.useState();
   // After scene migration is complete and we get rid of old dashboard we should refactor dashboardWatcher so this route reload is not need
   const routeReloadCounter = (location.state as any)?.routeReloadCounter;

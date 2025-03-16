@@ -1,5 +1,5 @@
-import { getBackendSrv } from '@runtime/index';
-import { Dashboard } from '@schema/index';
+import { getBackendSrv } from "@runtime/index";
+import { Dashboard } from "@schema/index";
 
 export interface HistoryListOpts {
   limit: number;
@@ -21,23 +21,28 @@ export interface RevisionsModel {
 
 export class HistorySrv {
   getHistoryList(dashboardUID: string, options: HistoryListOpts) {
-    if (typeof dashboardUID !== 'string') {
+    if (typeof dashboardUID !== "string") {
       return Promise.resolve([]);
     }
 
-    return getBackendSrv().get(`api/dashboards/uid/${dashboardUID}/versions`, options);
+    return getBackendSrv().get(
+      `api/dashboards/uid/${dashboardUID}/versions`,
+      options,
+    );
   }
 
   getDashboardVersion(dashboardUID: string, version: number) {
-    if (typeof dashboardUID !== 'string') {
+    if (typeof dashboardUID !== "string") {
       return Promise.resolve({});
     }
 
-    return getBackendSrv().get(`api/dashboards/uid/${dashboardUID}/versions/${version}`);
+    return getBackendSrv().get(
+      `api/dashboards/uid/${dashboardUID}/versions/${version}`,
+    );
   }
 
   restoreDashboard(dashboardUID: string, version: number) {
-    if (typeof dashboardUID !== 'string') {
+    if (typeof dashboardUID !== "string") {
       return Promise.resolve({});
     }
 

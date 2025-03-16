@@ -2,6 +2,7 @@ import { css } from '@emotion/css';
 import { ChangeEvent, FormEvent } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 import { useStyles2 } from '@grafana-ui/index';
 
 import { VariableCheckboxField } from './VariableCheckboxField';

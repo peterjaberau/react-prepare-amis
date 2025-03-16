@@ -1,16 +1,18 @@
 import { debounce, isEqual } from 'lodash';
 
 import { UrlQueryMap } from '@data/index';
-import {   sceneGraph,
+import {
+  sceneGraph,
   SceneObjectBase,
   SceneObjectState,
   SceneScopesBridge,
   SceneTimeRangeLike,
-  VariableDependencyConfig
+  VariableDependencyConfig,
 } from '@scenes/index';
-import { getDashboardScenePageStateManager } from '../pages/DashboardScenePageStateManager';
-import { DashboardScene } from './DashboardScene';
 
+import { getDashboardScenePageStateManager } from '../pages/DashboardScenePageStateManager';
+
+import { DashboardScene } from './DashboardScene';
 
 export interface DashboardReloadBehaviorState extends SceneObjectState {
   reloadOnParamsChange?: boolean;

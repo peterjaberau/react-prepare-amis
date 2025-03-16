@@ -3,8 +3,7 @@ import { PropsWithChildren } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { SceneObjectRef, VizPanel } from '@scenes/index';
-import { Alert, Button, Divider, Field, RadioButtonGroup, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { Input } from '@grafana-ui/components/Input/Input';
+import { Alert, Button, Divider, Field, Input, RadioButtonGroup, Stack, Text, useStyles2 } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
 import { getExpireOptions } from '../../ShareSnapshotTab';

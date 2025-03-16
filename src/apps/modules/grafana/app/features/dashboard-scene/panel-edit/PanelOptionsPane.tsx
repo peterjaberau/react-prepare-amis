@@ -11,6 +11,7 @@ import {
   PluginType,
   SelectableValue,
 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import {
   DeepPartial,

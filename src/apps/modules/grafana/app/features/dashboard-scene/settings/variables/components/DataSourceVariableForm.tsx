@@ -1,6 +1,7 @@
 import { FormEvent } from 'react';
 
 import { SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 
 import { SelectionOptionsForm } from './SelectionOptionsForm';
 import { VariableLegend } from './VariableLegend';

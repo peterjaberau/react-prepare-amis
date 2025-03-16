@@ -1,5 +1,6 @@
 import { FormEvent } from 'react';
 
+import { selectors } from '@selectors/index';
 import { VariableLegend } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableLegend';
 import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
 
@@ -22,6 +23,7 @@ export function TextBoxVariableForm({ defaultValue, value, onChange, onBlur }: T
         onChange={onChange}
         onBlur={onBlur}
         width={30}
+        testId={selectors.pages.Dashboard.Settings.Variables.Edit.TextBoxVariable.textBoxOptionsQueryInputV2}
       />
     </>
   );

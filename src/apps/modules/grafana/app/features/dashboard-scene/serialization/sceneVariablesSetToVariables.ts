@@ -18,7 +18,7 @@ import {
   GroupByVariableKind,
   defaultVariableHide,
   VariableOption,
-} from '@schema/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0/types';
 
 import { getIntervalsQueryFromNewIntervalModel } from '../utils/utils';
 

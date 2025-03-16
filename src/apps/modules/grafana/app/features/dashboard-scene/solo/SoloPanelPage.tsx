@@ -1,7 +1,7 @@
 // Libraries
 import { css } from '@emotion/css';
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2 } from '@data/index';
 import { UrlSyncContextProvider } from '@scenes/index';

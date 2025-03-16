@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useLocalStorage } from 'react-use';
 
 import { GrafanaTheme2, PanelData, SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { Button, Field, FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana-ui/index';

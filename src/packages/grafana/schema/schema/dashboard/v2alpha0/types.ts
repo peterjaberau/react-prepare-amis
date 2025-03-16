@@ -1,6 +1,6 @@
 // Code generated - EDITING IS FUTILE. DO NOT EDIT.
 
-import * as common from '../../..';
+import * as common from '@schema/index';
 
 
 export interface DashboardV2Spec {
@@ -362,10 +362,10 @@ export interface RangeMap {
 export const defaultRangeMap = (): RangeMap => ({
 	type: "range",
 	options: {
-	from: 0,
-	to: 0,
-	result: defaultValueMappingResult(),
-},
+		from: 0,
+		to: 0,
+		result: defaultValueMappingResult(),
+	},
 });
 
 // Maps regular expressions to replacement text and a color.
@@ -384,9 +384,9 @@ export interface RegexMap {
 export const defaultRegexMap = (): RegexMap => ({
 	type: "regex",
 	options: {
-	pattern: "",
-	result: defaultValueMappingResult(),
-},
+		pattern: "",
+		result: defaultValueMappingResult(),
+	},
 });
 
 // Maps special values like Null, NaN (not a number), and boolean values like true and false to a display text and color.
@@ -405,9 +405,9 @@ export interface SpecialValueMap {
 export const defaultSpecialValueMap = (): SpecialValueMap => ({
 	type: "special",
 	options: {
-	match: "true",
-	result: defaultValueMappingResult(),
-},
+		match: "true",
+		result: defaultValueMappingResult(),
+	},
 });
 
 // Special value types supported by the `SpecialValueMap`
@@ -671,17 +671,17 @@ export const defaultTimeSettingsSpec = (): TimeSettingsSpec => ({
 	to: "now",
 	autoRefresh: "",
 	autoRefreshIntervals: [
-"5s",
-"10s",
-"30s",
-"1m",
-"5m",
-"15m",
-"30m",
-"1h",
-"2h",
-"1d",
-],
+		"5s",
+		"10s",
+		"30s",
+		"1m",
+		"5m",
+		"15m",
+		"30m",
+		"1h",
+		"2h",
+		"1d",
+	],
 	hideTimepicker: false,
 	fiscalYearStartMonth: 0,
 });
@@ -825,6 +825,7 @@ export interface RowsLayoutRowSpec {
 	title?: string;
 	collapsed: boolean;
 	repeat?: RowRepeatOptions;
+	conditionalRendering?: ConditionalRenderingGroupKind;
 	layout: GridLayoutKind | ResponsiveGridLayoutKind | TabsLayoutKind;
 }
 
@@ -867,6 +868,8 @@ export const defaultResponsiveGridLayoutItemKind = (): ResponsiveGridLayoutItemK
 
 export interface ResponsiveGridLayoutItemSpec {
 	element: ElementReference;
+	repeat?: ResponsiveGridRepeatOptions;
+	conditionalRendering?: ConditionalRenderingGroupKind;
 }
 
 export const defaultResponsiveGridLayoutItemSpec = (): ResponsiveGridLayoutItemSpec => ({
@@ -998,11 +1001,11 @@ export interface VariableCustomFormatterFn {
 export const defaultVariableCustomFormatterFn = (): VariableCustomFormatterFn => ({
 	value: {},
 	legacyVariableModel: {
-	name: "",
-	type: "query",
-	multi: false,
-	includeAll: false,
-},
+		name: "",
+		type: "query",
+		multi: false,
+		includeAll: false,
+	},
 });
 
 // Dashboard variable type
@@ -1398,5 +1401,83 @@ export interface AdhocVariableKind {
 export const defaultAdhocVariableKind = (): AdhocVariableKind => ({
 	kind: "AdhocVariable",
 	spec: defaultAdhocVariableSpec(),
+});
+
+export interface ConditionalRenderingGroupKind {
+	kind: "ConditionalRenderingGroup";
+	spec: ConditionalRenderingGroupSpec;
+}
+
+export const defaultConditionalRenderingGroupKind = (): ConditionalRenderingGroupKind => ({
+	kind: "ConditionalRenderingGroup",
+	spec: defaultConditionalRenderingGroupSpec(),
+});
+
+export interface ConditionalRenderingGroupSpec {
+	condition: "and" | "or";
+	items: (ConditionalRenderingVariableKind | ConditionalRenderingDataKind | ConditionalRenderingTimeIntervalKind)[];
+}
+
+export const defaultConditionalRenderingGroupSpec = (): ConditionalRenderingGroupSpec => ({
+	condition: "and",
+	items: [],
+});
+
+export interface ConditionalRenderingVariableKind {
+	kind: "ConditionalRenderingVariable";
+	spec: ConditionalRenderingVariableSpec;
+}
+
+export const defaultConditionalRenderingVariableKind = (): ConditionalRenderingVariableKind => ({
+	kind: "ConditionalRenderingVariable",
+	spec: defaultConditionalRenderingVariableSpec(),
+});
+
+export interface ConditionalRenderingVariableSpec {
+	variable: string;
+	operator: "equals" | "notEquals";
+	value: string;
+}
+
+export const defaultConditionalRenderingVariableSpec = (): ConditionalRenderingVariableSpec => ({
+	variable: "",
+	operator: "equals",
+	value: "",
+});
+
+export interface ConditionalRenderingDataKind {
+	kind: "ConditionalRenderingData";
+	spec: ConditionalRenderingDataSpec;
+}
+
+export const defaultConditionalRenderingDataKind = (): ConditionalRenderingDataKind => ({
+	kind: "ConditionalRenderingData",
+	spec: defaultConditionalRenderingDataSpec(),
+});
+
+export interface ConditionalRenderingDataSpec {
+	value: boolean;
+}
+
+export const defaultConditionalRenderingDataSpec = (): ConditionalRenderingDataSpec => ({
+	value: false,
+});
+
+export interface ConditionalRenderingTimeIntervalKind {
+	kind: "ConditionalRenderingTimeInterval";
+	spec: ConditionalRenderingTimeIntervalSpec;
+}
+
+export const defaultConditionalRenderingTimeIntervalKind = (): ConditionalRenderingTimeIntervalKind => ({
+	kind: "ConditionalRenderingTimeInterval",
+	spec: defaultConditionalRenderingTimeIntervalSpec(),
+});
+
+export interface ConditionalRenderingTimeIntervalSpec {
+	value: string;
+}
+
+export const defaultConditionalRenderingTimeIntervalSpec = (): ConditionalRenderingTimeIntervalSpec => ({
+	value: "",
 });
 

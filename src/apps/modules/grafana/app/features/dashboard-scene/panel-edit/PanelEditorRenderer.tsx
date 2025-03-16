@@ -2,6 +2,7 @@ import { css, cx } from '@emotion/css';
 import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { SceneComponentProps, VizPanel } from '@scenes/index';
 import { Button, Spinner, ToolbarButton, useStyles2 } from '@grafana-ui/index';
 

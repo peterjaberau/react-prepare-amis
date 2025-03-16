@@ -1,9 +1,8 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
-import { Spinner, Stack, Text } from '@grafana-ui/index';
-import { IconButton, useStyles2 } from '@grafana-ui/index';
-import { ConfirmContent, ConfirmContentProps } from '@grafana-ui/components/ConfirmModal/ConfirmContent';
+import { IconButton, useStyles2, Spinner, Stack, Text } from '@grafana-ui/index';
+import { ConfirmContent, ConfirmContentProps } from '@grafana-ui/internal';
 import { t } from '@grafana-module/app/core/internationalization';
 
 export function ShareDrawerConfirmAction({

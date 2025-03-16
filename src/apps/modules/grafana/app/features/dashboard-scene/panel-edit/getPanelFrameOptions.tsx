@@ -1,3 +1,5 @@
+import { CoreApp } from '@data/index';
+import { selectors } from '@selectors/index';
 import { config } from '@runtime/index';
 import { SceneTimeRangeLike, VizPanel } from '@scenes/index';
 import { DataLinksInlineEditor, Input, TextArea, Switch } from '@grafana-ui/index';
@@ -9,6 +11,7 @@ import { getPanelLinksVariableSuggestions } from '@grafana-module/app/features/p
 
 import { VizPanelLinks } from '../scene/PanelLinks';
 import { PanelTimeRange } from '../scene/PanelTimeRange';
+import { useEditPaneInputAutoFocus } from '../scene/layouts-shared/utils';
 import { isDashboardLayoutItem } from '../scene/types/DashboardLayoutItem';
 import { vizPanelToPanel, transformSceneToSaveModel } from '../serialization/transformSceneToSaveModel';
 import { dashboardSceneGraph } from '../utils/dashboardSceneGraph';
@@ -107,9 +110,11 @@ function ScenePanelLinksEditor({ panelLinks }: ScenePanelLinksEditorProps) {
 
 export function PanelFrameTitleInput({ panel }: { panel: VizPanel }) {
   const { title } = panel.useState();
+  let ref = useEditPaneInputAutoFocus({ noAutoFocus: panel.getPanelContext().app === CoreApp.PanelEditor });
 
   return (
     <Input
+      ref={ref}
       data-testid={selectors.components.PanelEditor.OptionsPane.fieldInput('Title')}
       value={title}
       onChange={(e) => setPanelTitle(panel, e.currentTarget.value)}

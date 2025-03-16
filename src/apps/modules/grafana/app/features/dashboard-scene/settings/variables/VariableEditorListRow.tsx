@@ -3,6 +3,7 @@ import { Draggable } from '@hello-pangea/dnd';
 import { ReactElement, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable } from '@scenes/index';
 import { Button, ConfirmModal, Icon, IconButton, Tooltip, useStyles2, useTheme2 } from '@grafana-ui/index';

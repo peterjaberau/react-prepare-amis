@@ -1,8 +1,9 @@
 import * as React from 'react';
 
+import { selectors } from '@selectors/index';
 import { config, isFetchError } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0/types';
 import { Alert, Box, Button, Stack } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 
@@ -19,6 +20,7 @@ export interface DashboardChangeInfo {
   hasRefreshChange: boolean;
   isNew?: boolean;
   hasFolderChanges?: boolean;
+  hasMigratedToV2?: boolean;
 }
 
 export function isVersionMismatchError(error?: Error) {

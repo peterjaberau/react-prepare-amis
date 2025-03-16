@@ -1,7 +1,8 @@
 import { css } from '@emotion/css';
 import { useForm } from 'react-hook-form';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { GrafanaTheme2 } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { Button, Checkbox, FieldSet, Spinner, Stack, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

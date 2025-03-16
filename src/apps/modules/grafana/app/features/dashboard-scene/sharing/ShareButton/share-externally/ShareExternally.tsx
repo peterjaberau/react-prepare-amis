@@ -2,6 +2,7 @@ import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { Button, ClipboardButton, Divider, Spinner, Stack, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
@@ -25,7 +26,7 @@ import { AccessControlAction } from '@grafana-module/app/types';
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';
 import { useShareDrawerContext } from '../../ShareDrawer/ShareDrawerContext';
 import { SceneShareTabState, ShareView } from '../../types';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { EmailSharing } from './EmailShare/EmailSharing';
 import { PublicSharing } from './PublicShare/PublicSharing';
 import ShareAlerts from './ShareAlerts';

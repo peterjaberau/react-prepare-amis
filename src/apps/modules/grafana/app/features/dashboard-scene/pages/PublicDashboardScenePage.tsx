@@ -1,8 +1,9 @@
 import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom-v5-compat';
 
 import { GrafanaTheme2, PageLayoutType } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps, UrlSyncContextProvider } from '@scenes/index';
 import { Alert, Box, Icon, Stack, useStyles2 } from '@grafana-ui/index';
 import { Page } from '@grafana-module/app/core/components/Page/Page';

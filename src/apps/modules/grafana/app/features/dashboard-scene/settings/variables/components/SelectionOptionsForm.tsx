@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent } from 'react';
 
+import { selectors } from '@selectors/index';
 import { Stack } from '@grafana-ui/index';
 import { VariableCheckboxField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableCheckboxField';
 import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
@@ -32,6 +33,7 @@ export function SelectionOptionsForm({
         name="Multi-value"
         description="Enables multiple values to be selected at the same time"
         onChange={onMultiChange}
+        testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsMultiSwitch}
       />
       {onAllowCustomValueChange && ( // backwards compat with old arch, remove on cleanup
         <VariableCheckboxField
@@ -39,6 +41,7 @@ export function SelectionOptionsForm({
           name="Allow custom values"
           description="Enables users to add custom values to the list"
           onChange={onAllowCustomValueChange}
+          testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsAllowCustomValueSwitch}
         />
       )}
       <VariableCheckboxField
@@ -46,6 +49,7 @@ export function SelectionOptionsForm({
         name="Include All option"
         description="Enables an option to include all variables"
         onChange={onIncludeAllChange}
+        testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsIncludeAllSwitch}
       />
       {includeAll && (
         <VariableTextField
@@ -53,6 +57,7 @@ export function SelectionOptionsForm({
           onBlur={onAllValueChange}
           name="Custom all value"
           placeholder="blank = auto"
+          testId={selectors.pages.Dashboard.Settings.Variables.Edit.General.selectionOptionsCustomAllInput}
         />
       )}
     </Stack>

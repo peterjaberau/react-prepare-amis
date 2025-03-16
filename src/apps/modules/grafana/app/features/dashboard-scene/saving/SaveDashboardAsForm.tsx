@@ -2,6 +2,7 @@ import debounce from 'debounce-promise';
 import { ChangeEvent, useState } from 'react';
 import { UseFormSetValue, useForm } from 'react-hook-form';
 
+import { selectors } from '@selectors/index';
 import { Button, Input, Switch, Field, Label, TextArea, Stack, Alert, Box } from '@grafana-ui/index';
 import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
 import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';
@@ -53,6 +54,7 @@ export function SaveDashboardAsForm({ dashboard, changeInfo }: Props) {
     const result = await onSaveDashboard(dashboard, {
       overwrite,
       folderUid: data.folder.uid,
+      rawDashboardJSON: changedSaveModel,
 
       // save as config
       saveAsCopy: true,

@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom-v5-compat';
 
 import { locationUtil, NavModelItem } from '@data/index';
 import { SceneObject, SceneObjectState } from '@scenes/index';

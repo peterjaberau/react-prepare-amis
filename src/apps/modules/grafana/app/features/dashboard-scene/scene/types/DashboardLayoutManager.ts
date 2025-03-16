@@ -1,5 +1,5 @@
 import { SceneObject, VizPanel } from '@scenes/index';
-import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0/types';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 
 import { LayoutRegistryItem } from './LayoutRegistryItem';
@@ -38,11 +38,6 @@ export interface DashboardLayoutManager<S = {}> extends SceneObject {
    * Gets all the viz panels in the layout
    */
   getVizPanels(): VizPanel[];
-
-  /**
-   * Check if the layout has viz panels
-   */
-  hasVizPanels(): boolean;
 
   /**
    * Notify the layout manager that the edit mode has changed

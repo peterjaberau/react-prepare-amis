@@ -2,6 +2,7 @@ import { FormEvent } from 'react';
 import { useAsync } from 'react-use';
 
 import { DataSourceInstanceSettings, SelectableValue, TimeRange } from '@data/index';
+import { selectors } from '@selectors/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { QueryVariable } from '@scenes/index';
 import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';

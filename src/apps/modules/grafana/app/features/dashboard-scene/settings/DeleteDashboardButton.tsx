@@ -1,5 +1,6 @@
 import { useAsyncFn, useToggle } from 'react-use';
 
+import { selectors } from '@selectors/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Modal, Space, Text } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

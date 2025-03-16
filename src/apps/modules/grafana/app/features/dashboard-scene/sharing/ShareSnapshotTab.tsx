@@ -1,6 +1,7 @@
 import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { SelectableValue } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { getBackendSrv } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { Button, ClipboardButton, Field, Input, Modal, RadioButtonGroup, Stack } from '@grafana-ui/index';
@@ -10,7 +11,7 @@ import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
 import { getDashboardSnapshotSrv, SnapshotSharingOptions } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';
 import { dispatch } from '@grafana-module/app/store/store';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { DashboardScene } from '../scene/DashboardScene';
 import { transformSceneToSaveModel, trimDashboardForSnapshot } from '../serialization/transformSceneToSaveModel';
 import { DashboardInteractions } from '../utils/interactions';

@@ -2,7 +2,7 @@ import { PanelPlugin, PanelProps } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneObject, SceneObjectBase, SceneObjectState, sceneUtils, VizPanel, VizPanelState } from '@scenes/index';
 import { LibraryPanel } from '@schema/index';
-import { Badge, Stack } from '@grafana-ui/index';
+import { Stack } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
 import { getLibraryPanel } from '@grafana-module/app/features/library-panels/state/api';
@@ -135,7 +135,6 @@ const LoadingVizPanelPlugin = new PanelPlugin(LoadingVizPanel);
 function LoadingVizPanel(props: PanelProps) {
   return (
     <Stack direction={'column'} justifyContent={'space-between'}>
-      <Badge text={"LibraryPanelBehavior"} color={"darkgrey"} style={{ position: 'absolute', top: 0, left: 0, zIndex:1000}}  />
       <Trans i18nKey="library-panels.loading-panel-text">Loading library panel</Trans>
     </Stack>
   );

@@ -3,6 +3,7 @@ import { DragDropContext, DropResult, Droppable } from '@hello-pangea/dnd';
 import { useState } from 'react';
 
 import { DataTransformerConfig, GrafanaTheme2, PanelData } from '@data/index';
+import { selectors } from '@selectors/index';
 import {
   SceneObjectBase,
   SceneComponentProps,

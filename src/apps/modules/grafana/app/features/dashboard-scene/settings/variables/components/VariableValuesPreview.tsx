@@ -2,6 +2,7 @@ import { css } from '@emotion/css';
 import { MouseEvent, useCallback, useEffect, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
+import { selectors } from '@selectors/index';
 import { VariableValueOption } from '@scenes/index';
 import { Button, InlineFieldRow, InlineLabel, useStyles2 } from '@grafana-ui/index';
 
@@ -32,7 +33,7 @@ export const VariableValuesPreview = ({ options }: VariableValuesPreviewProps) =
       <InlineFieldRow>
         {previewOptions.map((o, index) => (
           <InlineFieldRow key={`${o.value}-${index}`} className={styles.optionContainer}>
-            <InlineLabel>
+            <InlineLabel data-testid={selectors.pages.Dashboard.Settings.Variables.Edit.General.previewOfValuesOption}>
               <div className={styles.label}>{o.label}</div>
             </InlineLabel>
           </InlineFieldRow>

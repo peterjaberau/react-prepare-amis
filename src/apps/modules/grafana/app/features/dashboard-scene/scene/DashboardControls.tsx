@@ -1,6 +1,7 @@
 import { css, cx } from '@emotion/css';
 
 import { GrafanaTheme2, VariableHide } from '@data/index';
+import { selectors } from '@selectors/index';
 import {
   SceneObjectState,
   SceneObject,
@@ -15,7 +16,7 @@ import {
   SceneObjectUrlValues,
   CancelActivationHandler,
 } from '@scenes/index';
-import { Badge, Box, Stack, useStyles2 } from '@grafana-ui/index';
+import { Box, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { PanelEditControls } from '../panel-edit/PanelEditControls';
 import { getDashboardSceneFor } from '../utils/utils';
@@ -130,24 +131,16 @@ function DashboardControlsRenderer({ model }: SceneComponentProps<DashboardContr
     return <Box padding={1} />;
   }
 
-  console.log('----DashboardControls----', {
-    dashboard:dashboard,
-    model:model,
-  })
-
   return (
     <div
       data-testid={selectors.pages.Dashboard.Controls}
       className={cx(styles.controls, editPanel && styles.controlsPanelEdit)}
-
     >
-      <Badge text={"DashboardControls"} color={"darkgrey"} style={{ position: 'absolute', top: 0, left: 200, zIndex:1000}}  />
       <Stack grow={1} wrap={'wrap'}>
         {!hideVariableControls && variableControls.map((c) => <c.Component model={c} key={c.state.key} />)}
         <Box grow={1} />
         {!hideLinksControls && !editPanel && <DashboardLinksControls links={links} dashboard={dashboard} />}
         {editPanel && <PanelEditControls panelEditor={editPanel} />}
-
       </Stack>
       {!hideTimeControls && (
         <Stack justifyContent={'flex-end'}>

@@ -17,7 +17,7 @@ import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/
 import { ungroupRulesByFileName } from '@grafana-module/app/features/alerting/unified/api/prometheus';
 import { Annotation } from '@grafana-module/app/features/alerting/unified/utils/constants';
 import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { isAlertingRule } from '@grafana-module/app/features/alerting/unified/utils/rules';
+import { prometheusRuleType } from '@grafana-module/app/features/alerting/unified/utils/rules';
 import { dispatch } from '@grafana-module/app/store/store';
 import { AccessControlAction } from '@grafana-module/app/types';
 import { RuleNamespace } from '@grafana-module/app/types/unified-alerting';
@@ -96,7 +96,7 @@ export class AlertStatesDataLayer
         const panelIdToAlertState: Record<number, AlertStateInfo> = {};
         groups.forEach((group) =>
           group.rules.forEach((rule) => {
-            if (isAlertingRule(rule) && rule.annotations && rule.annotations[Annotation.panelID]) {
+            if (prometheusRuleType.alertingRule(rule) && rule.annotations?.[Annotation.panelID]) {
               this.hasAlertRules = true;
               const panelId = Number(rule.annotations[Annotation.panelID]);
               const state = promAlertStateToAlertState(rule.state);

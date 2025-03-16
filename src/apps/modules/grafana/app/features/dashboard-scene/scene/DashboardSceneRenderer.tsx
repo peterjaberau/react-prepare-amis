@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom-v5-compat';
 
 import { PageLayoutType } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
@@ -12,10 +12,9 @@ import { DashboardEditPaneSplitter } from '../edit-pane/DashboardEditPaneSplitte
 import { DashboardScene } from './DashboardScene';
 import { PanelSearchLayout } from './PanelSearchLayout';
 import { DashboardAngularDeprecationBanner } from './angular/DashboardAngularDeprecationBanner';
-import { Badge } from '@grafana-ui/index';
 
 export function DashboardSceneRenderer({ model }: SceneComponentProps<DashboardScene>) {
-  const { controls, overlay, editview, editPanel, viewPanelScene, panelSearch, panelsPerRow, isEditing } =
+  const { controls, overlay, editview, editPanel, viewPanelScene, panelSearch, panelsPerRow, isEditing, scopesBridge } =
     model.useState();
   const { type } = useParams();
   const location = useLocation();
@@ -42,6 +41,7 @@ export function DashboardSceneRenderer({ model }: SceneComponentProps<DashboardS
   if (editview) {
     return (
       <>
+        {scopesBridge && <scopesBridge.Component model={scopesBridge} />}
         <editview.Component model={editview} />
         {overlay && <overlay.Component model={overlay} />}
       </>
@@ -62,8 +62,8 @@ export function DashboardSceneRenderer({ model }: SceneComponentProps<DashboardS
   }
 
   return (
-    <Page navModel={navModel} pageNav={pageNav} layout={PageLayoutType.Custom} >
-      <Badge text={"DashboardSceneRenderer"} color={"darkgrey"} style={{ position: 'absolute', top: 0, left: 0, zIndex:1000}}  />
+    <Page navModel={navModel} pageNav={pageNav} layout={PageLayoutType.Custom}>
+      {scopesBridge && <scopesBridge.Component model={scopesBridge} />}
       {editPanel && <editPanel.Component model={editPanel} />}
       {!editPanel && (
         <DashboardEditPaneSplitter

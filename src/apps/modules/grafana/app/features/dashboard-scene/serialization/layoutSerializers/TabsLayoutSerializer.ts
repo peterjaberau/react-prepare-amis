@@ -1,4 +1,4 @@
-import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0';
+import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0/types';
 
 import { TabItem } from '../../scene/layout-tabs/TabItem';
 import { TabsLayoutManager } from '../../scene/layout-tabs/TabsLayoutManager';

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import useAsyncFn from 'react-use/lib/useAsyncFn';
 
+import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps } from '@scenes/index';
 import { Alert, Button, ClipboardButton, Spinner, Stack, TextLink } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
@@ -11,7 +12,7 @@ import { SnapshotSharingOptions } from '../../../../dashboard/services/SnapshotS
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';
 import { ShareSnapshotTab } from '../../ShareSnapshotTab';
 import { ShareView } from '../../types';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { UpsertSnapshot } from './UpsertSnapshot';
 
 const selectors = e2eSelectors.pages.ShareDashboardDrawer.ShareSnapshot;

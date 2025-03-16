@@ -1,4 +1,5 @@
 import { CoreApp, DataSourceApi, DataSourceInstanceSettings, getDataSourceRef } from '@data/index';
+import { selectors } from '@selectors/index';
 import { config, getDataSourceSrv, locationService } from '@runtime/index';
 import {
   SceneObjectBase,

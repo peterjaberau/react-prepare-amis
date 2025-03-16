@@ -1,3 +1,4 @@
+import { selectors } from '@selectors/index';
 import { Box, Button, Stack, Text } from '@grafana-ui/index';
 import { Trans } from '@grafana-module/app/core/internationalization';
 

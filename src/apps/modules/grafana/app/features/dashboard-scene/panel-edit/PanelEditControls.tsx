@@ -1,3 +1,4 @@
+import { selectors } from '@selectors/index';
 import { InlineSwitch } from '@grafana-ui/index';
 
 import { PanelEditor } from './PanelEditor';
@@ -19,6 +20,7 @@ export function PanelEditControls({ panelEditor }: Props) {
           value={tableView ? true : false}
           onClick={panelEditor.onToggleTableView}
           aria-label="toggle-table-view"
+          data-testid={selectors.components.PanelEditor.toggleTableView}
         />
       )}
     </>

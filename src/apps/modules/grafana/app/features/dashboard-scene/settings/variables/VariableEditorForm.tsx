@@ -4,6 +4,7 @@ import { useAsyncFn } from 'react-use';
 import { lastValueFrom } from 'rxjs';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
+import { selectors } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
 import { SceneVariable } from '@scenes/index';
 import { VariableHide, defaultVariableModel } from '@schema/index';

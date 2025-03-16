@@ -8,7 +8,7 @@ import {
   defaultGroupByVariableSpec,
   defaultTimeSettingsSpec,
   GroupByVariableKind,
-} from '@schema/schema/dashboard/v2alpha0';
+} from '@schema/schema/dashboard/v2alpha0/types';
 import { AnnoKeyFolder } from '@grafana-module/app/features/apiserver/types';
 import { DashboardWithAccessInfo } from '@grafana-module/app/features/dashboard/api/types';
 import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';

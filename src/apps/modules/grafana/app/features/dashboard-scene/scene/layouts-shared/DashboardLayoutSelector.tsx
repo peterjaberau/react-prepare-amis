@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
 import { Select } from '@grafana-ui/index';
+import { t } from '@grafana-module/app/core/internationalization';
 import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 
@@ -55,10 +56,8 @@ export function useLayoutCategory(layoutManager: DashboardLayoutManager) {
 
     layoutCategory.addItem(
       new OptionsPaneItemDescriptor({
-        title: 'Type',
-        render: function renderTitle() {
-          return <DashboardLayoutSelector layoutManager={layoutManager} />;
-        },
+        title: t('dashboard.layout.common.layout', 'Layout'),
+        render: () => <DashboardLayoutSelector layoutManager={layoutManager} />,
       })
     );
 

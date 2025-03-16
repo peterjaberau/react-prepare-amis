@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
+import { selectors } from '@selectors/index';
 import { SceneObject } from '@scenes/index';
 import { Button, Field, Modal, Input, Alert, TextLink } from '@grafana-ui/index';
 import { t, Trans } from '@grafana-module/app/core/internationalization';

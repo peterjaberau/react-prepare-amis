@@ -1,7 +1,8 @@
 import { sanitizeUrl } from '@data/text/sanitize';
+import { selectors } from '@selectors/index';
 import { sceneGraph } from '@scenes/index';
 import { DashboardLink } from '@schema/index';
-import { Badge, Tooltip } from '@grafana-ui/index';
+import { Tooltip } from '@grafana-ui/index';
 import {
   DashboardLinkButton,
   DashboardLinksDashboard,
@@ -50,10 +51,8 @@ export function DashboardLinksControls({ links, dashboard }: Props) {
         );
 
         return (
-        <div key={key} data-testid={selectors.components.DashboardLinks.container}>
-          <Badge text={"DashboardLinksControls"} color={"darkgrey"} style={{ position: 'absolute', top: 0, left: 0, zIndex:1000}}  />
-
-          {link.tooltip ? <Tooltip content={linkInfo.tooltip}>{linkElement}</Tooltip> : linkElement}
+          <div key={key} data-testid={selectors.components.DashboardLinks.container}>
+            {link.tooltip ? <Tooltip content={linkInfo.tooltip}>{linkElement}</Tooltip> : linkElement}
           </div>
         );
       })}

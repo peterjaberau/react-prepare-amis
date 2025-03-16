@@ -4,7 +4,7 @@ import React, { CSSProperties, useEffect } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { config, useChromeHeaderHeight } from '@runtime/index';
 import { useSceneObjectState } from '@scenes/index';
-import { Badge, ElementSelectionContext, useStyles2 } from '@grafana-ui/index';
+import { ElementSelectionContext, useStyles2 } from '@grafana-ui/index';
 import NativeScrollbar, { DivScrollElement } from '@grafana-module/app/core/components/NativeScrollbar';
 
 import { useSnappingSplitter } from '../panel-edit/splitter/useSnappingSplitter';
@@ -67,45 +67,48 @@ export function DashboardEditPaneSplitter({ dashboard, isEditing, body, controls
     containerStyle.overflow = 'unset';
   }
 
-  const onBodyRef = (ref: HTMLDivElement) => {
-    dashboard.onSetScrollRef(new DivScrollElement(ref));
+  const onBodyRef = (ref: HTMLDivElement | null) => {
+    if (ref) {
+      dashboard.onSetScrollRef(new DivScrollElement(ref));
+    }
   };
 
   return (
     <div {...containerProps} style={containerStyle}>
-      <Badge text={"DashboardEditPaneSplitter"} color={"darkgrey"} style={{ position: 'absolute', top: 0, left: 0, zIndex:1000}}  />
-      <div
-        {...primaryProps}
-        className={cx(primaryProps.className, styles.canvasWithSplitter)}
-        onPointerDown={(evt) => {
-          if (evt.shiftKey) {
-            return;
-          }
+      <ElementSelectionContext.Provider value={selectionContext}>
+        <div
+          {...primaryProps}
+          className={cx(primaryProps.className, styles.canvasWithSplitter)}
+          onPointerDown={(evt) => {
+            if (evt.shiftKey) {
+              return;
+            }
 
-          editPane.clearSelection();
-        }}
-      >
-        <NavToolbarActions dashboard={dashboard} />
-        <div className={cx(!isEditing && styles.controlsWrapperSticky)}>{controls}</div>
-        <div className={styles.bodyWrapper}>
-          <div className={cx(styles.body, isEditing && styles.bodyEditing)} ref={onBodyRef}>
-            <ElementSelectionContext.Provider value={selectionContext}>{body}</ElementSelectionContext.Provider>
+            editPane.clearSelection();
+          }}
+        >
+          <NavToolbarActions dashboard={dashboard} />
+          <div className={cx(!isEditing && styles.controlsWrapperSticky)}>{controls}</div>
+          <div className={styles.bodyWrapper}>
+            <div className={cx(styles.body, isEditing && styles.bodyEditing)} ref={onBodyRef}>
+              {body}
+            </div>
           </div>
         </div>
-      </div>
-      {isEditing && (
-        <>
-          <div {...splitterProps} data-edit-pane-splitter={true} />
-          <div {...secondaryProps} className={cx(secondaryProps.className, styles.editPane)}>
-            <DashboardEditPaneRenderer
-              editPane={editPane}
-              isCollapsed={splitterState.collapsed}
-              onToggleCollapse={onToggleCollapse}
-              openOverlay={selectionContext.selected.length > 0}
-            />
-          </div>
-        </>
-      )}
+        {isEditing && (
+          <>
+            <div {...splitterProps} data-edit-pane-splitter={true} />
+            <div {...secondaryProps} className={cx(secondaryProps.className, styles.editPane)}>
+              <DashboardEditPaneRenderer
+                editPane={editPane}
+                isCollapsed={splitterState.collapsed}
+                onToggleCollapse={onToggleCollapse}
+                openOverlay={selectionContext.selected.length > 0}
+              />
+            </div>
+          </>
+        )}
+      </ElementSelectionContext.Provider>
     </div>
   );
 }

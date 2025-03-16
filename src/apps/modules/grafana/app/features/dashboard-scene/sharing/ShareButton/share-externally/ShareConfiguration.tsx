@@ -1,10 +1,10 @@
 import { css, cx } from '@emotion/css';
 import { Controller, useForm } from 'react-hook-form';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { GrafanaTheme2 } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { sceneGraph } from '@scenes/index';
-import { FieldSet, Icon, Label, Spinner, Stack, Text, TimeRangeLabel, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Switch } from '@grafana-ui/components/Switch/Switch';
+import { FieldSet, Icon, Label, Spinner, Stack, Switch, Text, TimeRangeLabel, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { publicDashboardApi, useUpdatePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';

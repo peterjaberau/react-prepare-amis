@@ -1,19 +1,36 @@
-import { SceneVariable, SceneVariableState } from '@scenes/index';
-import { Dashboard } from '@schema/index';
-import { safeStringifyValue } from '@grafana-module/app/core/utils/explore';
-import { GraphEdge, GraphNode, getPropsWithVariable } from '@grafana-module/app/features/variables/inspect/utils';
+import { SceneVariable, SceneVariableState } from "@scenes/index";
+import { Dashboard } from "@schema/index";
+import { safeStringifyValue } from "@grafana-module/app/core/utils/explore";
+import {
+  GraphEdge,
+  GraphNode,
+  getPropsWithVariable,
+} from "@grafana-module/app/features/variables/inspect/utils";
 
-export const variableRegex = /\$(\w+)|\[\[(\w+?)(?::(\w+))?\]\]|\${(\w+)(?:\.([^:^\}]+))?(?::([^\}]+))?}/g;
+export const variableRegex =
+  /\$(\w+)|\[\[(\w+?)(?::(\w+))?\]\]|\${(\w+)(?:\.([^:^\}]+))?(?::([^\}]+))?}/g;
 
-export function createDependencyNodes(variables: Array<SceneVariable<SceneVariableState>>): GraphNode[] {
-  return variables.map((variable) => ({ id: variable.state.name, label: `${variable.state.name}` }));
+export function createDependencyNodes(
+  variables: Array<SceneVariable<SceneVariableState>>,
+): GraphNode[] {
+  return variables.map((variable) => ({
+    id: variable.state.name,
+    label: `${variable.state.name}`,
+  }));
 }
 
-export function filterNodesWithDependencies(nodes: GraphNode[], edges: GraphEdge[]): GraphNode[] {
-  return nodes.filter((node) => edges.some((edge) => edge.from === node.id || edge.to === node.id));
+export function filterNodesWithDependencies(
+  nodes: GraphNode[],
+  edges: GraphEdge[],
+): GraphNode[] {
+  return nodes.filter((node) =>
+    edges.some((edge) => edge.from === node.id || edge.to === node.id),
+  );
 }
 
-export const createDependencyEdges = (variables: Array<SceneVariable<SceneVariableState>>): GraphEdge[] => {
+export const createDependencyEdges = (
+  variables: Array<SceneVariable<SceneVariableState>>,
+): GraphEdge[] => {
   const edges: GraphEdge[] = [];
   for (const variable of variables) {
     for (const other of variables) {
@@ -21,7 +38,9 @@ export const createDependencyEdges = (variables: Array<SceneVariable<SceneVariab
         continue;
       }
 
-      const dependsOn = variable.variableDependency?.hasDependencyOn(other.state.name);
+      const dependsOn = variable.variableDependency?.hasDependencyOn(
+        other.state.name,
+      );
       if (dependsOn) {
         edges.push({ from: variable.state.name, to: other.state.name });
       }
@@ -44,7 +63,10 @@ export interface UsagesToNetwork {
   showGraph: boolean;
 }
 
-export function createUsagesNetwork(variables: Array<SceneVariable<SceneVariableState>>, dashboard: Dashboard) {
+export function createUsagesNetwork(
+  variables: Array<SceneVariable<SceneVariableState>>,
+  dashboard: Dashboard,
+) {
   if (!dashboard) {
     return [];
   }
@@ -53,7 +75,11 @@ export function createUsagesNetwork(variables: Array<SceneVariable<SceneVariable
 
   for (const variable of variables) {
     const variableId = variable.state.name;
-    const props = getPropsWithVariable(variableId, { key: 'model', value: dashboard }, {});
+    const props = getPropsWithVariable(
+      variableId,
+      { key: "model", value: dashboard },
+      {},
+    );
 
     if (Object.keys(props).length) {
       usages.push({ variable, tree: props });
@@ -64,7 +90,7 @@ export function createUsagesNetwork(variables: Array<SceneVariable<SceneVariable
 }
 
 export function transformUsagesToNetwork(
-  usages: Array<VariableUsageTree | UnknownVariableUsageTree>
+  usages: Array<VariableUsageTree | UnknownVariableUsageTree>,
 ): UsagesToNetwork[] {
   const results: UsagesToNetwork[] = [];
 
@@ -72,21 +98,24 @@ export function transformUsagesToNetwork(
     const { variable, tree } = usage;
     const result: UsagesToNetwork = {
       variable,
-      nodes: [{ id: 'dashboard', label: 'dashboard' }],
+      nodes: [{ id: "dashboard", label: "dashboard" }],
       edges: [],
       showGraph: false,
     };
-    results.push(traverseTree(result, { id: 'dashboard', value: tree }));
+    results.push(traverseTree(result, { id: "dashboard", value: tree }));
   }
 
   return results;
 }
 
-export const traverseTree = (usage: UsagesToNetwork, parent: { id: string; value: unknown }): UsagesToNetwork => {
+export const traverseTree = (
+  usage: UsagesToNetwork,
+  parent: { id: string; value: unknown },
+): UsagesToNetwork => {
   const { id, value } = parent;
   const { nodes, edges } = usage;
 
-  if (value && typeof value === 'string') {
+  if (value && typeof value === "string") {
     const leafId = `${parent.id}-${value}`;
     nodes.push({ id: leafId, label: value });
     edges.push({ from: leafId, to: id });
@@ -109,8 +138,13 @@ export const traverseTree = (usage: UsagesToNetwork, parent: { id: string; value
   return usage;
 };
 
-export const getVariableUsages = (variableId: string, usages: VariableUsageTree[]): number => {
-  const usage = usages.find((usage) => usage.variable.state.name === variableId);
+export const getVariableUsages = (
+  variableId: string,
+  usages: VariableUsageTree[],
+): number => {
+  const usage = usages.find(
+    (usage) => usage.variable.state.name === variableId,
+  );
   if (!usage) {
     return 0;
   }
@@ -124,7 +158,7 @@ export const getVariableUsages = (variableId: string, usages: VariableUsageTree[
 
 const countLeaves = (object: object): number => {
   const total = Object.values(object).reduce<number>((count, value) => {
-    if (typeof value === 'object') {
+    if (typeof value === "object") {
       return count + countLeaves(value);
     }
 
@@ -136,7 +170,7 @@ const countLeaves = (object: object): number => {
 
 export async function getUnknownsNetwork(
   variables: Array<SceneVariable<SceneVariableState>>,
-  dashboard: Dashboard | null
+  dashboard: Dashboard | null,
 ): Promise<UsagesToNetwork[]> {
   return new Promise((resolve, reject) => {
     // can be an expensive call so we avoid blocking the main thread
@@ -158,7 +192,7 @@ type UnknownVariableUsageTree = {
 
 function createUnknownsNetwork(
   variables: Array<SceneVariable<SceneVariableState>>,
-  dashboard: Dashboard | null
+  dashboard: Dashboard | null,
 ): UnknownVariableUsageTree[] {
   if (!dashboard) {
     return [];
@@ -167,7 +201,11 @@ function createUnknownsNetwork(
   let unknown: UnknownVariableUsageTree[] = [];
   const unknownVariables = getUnknownVariableStrings(variables, dashboard);
   for (const unknownVariable of unknownVariables) {
-    const props = getPropsWithVariable(unknownVariable, { key: 'model', value: dashboard }, {});
+    const props = getPropsWithVariable(
+      unknownVariable,
+      { key: "model", value: dashboard },
+      {},
+    );
     if (Object.keys(props).length) {
       unknown.push({ variable: unknownVariable, tree: props });
     }
@@ -176,7 +214,10 @@ function createUnknownsNetwork(
   return unknown;
 }
 
-export const getUnknownVariableStrings = (variables: Array<SceneVariable<SceneVariableState>>, model: Dashboard) => {
+export const getUnknownVariableStrings = (
+  variables: Array<SceneVariable<SceneVariableState>>,
+  model: Dashboard,
+) => {
   variableRegex.lastIndex = 0;
   const unknownVariableNames: string[] = [];
   const modelAsString = safeStringifyValue(model, 2);
@@ -191,17 +232,17 @@ export const getUnknownVariableStrings = (variables: Array<SceneVariable<SceneVa
       continue;
     }
 
-    if (match.indexOf('$__') !== -1) {
+    if (match.indexOf("$__") !== -1) {
       // ignore builtin variables
       continue;
     }
 
-    if (match.indexOf('${__') !== -1) {
+    if (match.indexOf("${__") !== -1) {
       // ignore builtin variables
       continue;
     }
 
-    if (match.indexOf('$hashKey') !== -1) {
+    if (match.indexOf("$hashKey") !== -1) {
       // ignore Angular props
       continue;
     }
@@ -247,5 +288,5 @@ export const variableRegexExec = (variableString: string) => {
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null && !Array.isArray(value);
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }

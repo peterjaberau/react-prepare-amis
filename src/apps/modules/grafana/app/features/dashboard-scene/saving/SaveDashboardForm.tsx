@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { selectors } from '@selectors/index';
 import { Button, Checkbox, TextArea, Stack, Alert, Box, Field } from '@grafana-ui/index';
 import { Trans, t } from '@grafana-module/app/core/internationalization';
 import { SaveDashboardOptions } from '@grafana-module/app/features/dashboard/components/SaveDashboard/types';
@@ -24,7 +25,7 @@ export interface Props {
 }
 
 export function SaveDashboardForm({ dashboard, drawer, changeInfo }: Props) {
-  const { hasChanges } = changeInfo;
+  const { hasChanges, hasMigratedToV2, changedSaveModel } = changeInfo;
 
   const { state, onSaveDashboard } = useSaveDashboard(false);
   const [options, setOptions] = useState<SaveDashboardOptions>({
@@ -37,7 +38,7 @@ export function SaveDashboardForm({ dashboard, drawer, changeInfo }: Props) {
   });
 
   const onSave = async (overwrite: boolean) => {
-    const result = await onSaveDashboard(dashboard, { ...options, overwrite });
+    const result = await onSaveDashboard(dashboard, { ...options, rawDashboardJSON: changedSaveModel, overwrite });
     if (result.status === 'success') {
       dashboard.closeModal();
       drawer.state.onSaveSuccess?.();
@@ -127,6 +128,15 @@ export function SaveDashboardForm({ dashboard, drawer, changeInfo }: Props) {
   return (
     <Stack gap={2} direction="column">
       <SaveDashboardFormCommonOptions drawer={drawer} changeInfo={changeInfo} />
+      {hasMigratedToV2 && (
+        <Alert title="Dashboard drastically changed" severity="warning">
+          <p>
+            Because you're using new dashboards features only supported on new Grafana dashboard schema format, the
+            dashboard will be saved in the new format. Please make sure you want to perform this action or you prefer to
+            save the dashboard as a new copy.
+          </p>
+        </Alert>
+      )}
       <Field label="Message">
         <TextArea
           aria-label="message"

@@ -1,4 +1,5 @@
 import { dateTime, UrlQueryMap } from '@data/index';
+import { selectors as e2eSelectors } from '@selectors/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { TimeZone } from '@schema/index';
@@ -7,7 +8,7 @@ import { t, Trans } from '@grafana-module/app/core/internationalization';
 import { createDashboardShareUrl, createShortLink, getShareUrlParams } from '@grafana-module/app/core/utils/shortLinks';
 import { ThemePicker } from '@grafana-module/app/features/dashboard/components/ShareModal/ThemePicker';
 import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
-import { selectors as e2eSelectors } from '@selectors/index';
+
 import { getDashboardUrl } from '../utils/getDashboardUrl';
 import { DashboardInteractions } from '../utils/interactions';
 import { getDashboardSceneFor } from '../utils/utils';
