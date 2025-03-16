@@ -13,6 +13,8 @@ export default defineConfig({
   define: {
     jQuery: 'window.jQuery',
     $: 'window.$',
+    __webpack_public_path__: '""', // Define as an empty string
+
   },
   plugins: [
     // codeInspectorPlugin({

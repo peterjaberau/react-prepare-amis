@@ -1,12 +1,19 @@
-import createVirtualEnvironment from '@locker/near-membrane-dom';
-import { ProxyTarget } from '@locker/near-membrane-shared';
+import createVirtualEnvironment from "@locker/near-membrane-dom";
+import { ProxyTarget } from "@locker/near-membrane-shared";
 
-import { BootData } from '@data/index';
-import { config } from '@runtime/index';
-import { defaultTrustedTypesPolicy } from '@grafana-module/app/core/trustedTypePolicies';
+import { BootData } from "@data/index";
+import { config } from "@runtime/index";
+import { defaultTrustedTypesPolicy } from "@grafana-module/app/core/trustedTypePolicies";
 
-import { getPluginCode, getPluginLoadData, patchSandboxEnvironmentPrototype } from './code_loader';
-import { getGeneralSandboxDistortionMap, distortLiveApis } from './distortion_map';
+import {
+  getPluginCode,
+  getPluginLoadData,
+  patchSandboxEnvironmentPrototype,
+} from "./code_loader";
+import {
+  getGeneralSandboxDistortionMap,
+  distortLiveApis,
+} from "./distortion_map";
 import {
   getSafeSandboxDomElement,
   isDomElement,
@@ -14,41 +21,47 @@ import {
   markDomElementStyleAsALiveTarget,
   patchObjectAsLiveTarget,
   patchWebAPIs,
-} from './document_sandbox';
-import { sandboxPluginDependencies } from './plugin_dependencies';
-import { sandboxPluginComponents } from './sandbox_components';
-import { CompartmentDependencyModule, PluginFactoryFunction, SandboxEnvironment, SandboxPluginMeta } from './types';
-import { logError, logInfo } from './utils';
+} from "./document_sandbox";
+import { sandboxPluginDependencies } from "./plugin_dependencies";
+import { sandboxPluginComponents } from "./sandbox_components";
+import {
+  CompartmentDependencyModule,
+  PluginFactoryFunction,
+  SandboxEnvironment,
+  SandboxPluginMeta,
+} from "./types";
+import { logError, logInfo } from "./utils";
 
 // Loads near membrane custom formatter for near membrane proxy objects.
-if (process.env.NODE_ENV !== 'production') {
-  require('@locker/near-membrane-dom/custom-devtools-formatter');
-}
 // if (process.env.NODE_ENV !== 'production') {
-//   import('@locker/near-membrane-dom/custom-devtools-formatter')
-//     .then((module) => {
-//       // Module loaded successfully
-//     })
-//     .catch((error) => {
-//       console.error('Failed to load custom-devtools-formatter:', error);
-//     });
+//   require('@locker/near-membrane-dom/custom-devtools-formatter.cjs.js');
 // }
-
-
+// if (process.env.NODE_ENV !== "production") {
+//   import NearMembrane from "@locker/near-membrane-dom/dist/index.mjs.js";
+// }
 
 const pluginImportCache = new Map<string, Promise<System.Module>>();
 const pluginLogCache: Record<string, boolean> = {};
 
-export async function importPluginModuleInSandbox({ pluginId }: { pluginId: string }): Promise<System.Module> {
+export async function importPluginModuleInSandbox({
+  pluginId,
+}: {
+  pluginId: string;
+}): Promise<System.Module> {
   patchWebAPIs();
   try {
     const pluginMeta = getPluginLoadData(pluginId);
     if (!pluginImportCache.has(pluginId)) {
-      pluginImportCache.set(pluginId, doImportPluginModuleInSandbox(pluginMeta));
+      pluginImportCache.set(
+        pluginId,
+        doImportPluginModuleInSandbox(pluginMeta),
+      );
     }
     return pluginImportCache.get(pluginId)!;
   } catch (e) {
-    const error = new Error(`Could not import plugin ${pluginId} inside sandbox: ` + e);
+    const error = new Error(
+      `Could not import plugin ${pluginId} inside sandbox: ` + e,
+    );
     logError(error, {
       pluginId,
       error: String(e),
@@ -57,8 +70,10 @@ export async function importPluginModuleInSandbox({ pluginId }: { pluginId: stri
   }
 }
 
-async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<System.Module> {
-  logInfo('Loading with sandbox', {
+async function doImportPluginModuleInSandbox(
+  meta: SandboxPluginMeta,
+): Promise<System.Module> {
+  logInfo("Loading with sandbox", {
     pluginId: meta.id,
   });
   return new Promise(async (resolve, reject) => {
@@ -81,7 +96,11 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
       // static distortions are faster distortions with direct object descriptors checks
       const staticDistortion = generalDistortionMap.get(originalValue);
       if (staticDistortion) {
-        return staticDistortion(originalValue, meta, sandboxEnvironment) as ProxyTarget;
+        return staticDistortion(
+          originalValue,
+          meta,
+          sandboxEnvironment,
+        ) as ProxyTarget;
       }
 
       // live distortions are slower and have to do runtime checks
@@ -112,41 +131,41 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
         get monaco() {
           // `window.monaco` may be undefined when invoked. However, plugins have long
           // accessed it directly, aware of this possibility.
-          return Reflect.get(window, 'monaco');
+          return Reflect.get(window, "monaco");
         },
         get Prism() {
           // Similar to `window.monaco`, `window.Prism` may be undefined when invoked.
-          return Reflect.get(window, 'Prism');
+          return Reflect.get(window, "Prism");
         },
         get jQuery() {
-          return Reflect.get(window, 'jQuery');
+          return Reflect.get(window, "jQuery");
         },
         get $() {
-          return Reflect.get(window, 'jQuery');
+          return Reflect.get(window, "jQuery");
         },
         get grafanaBootData(): BootData {
-          if (!pluginLogCache[meta.id + '-grafanaBootData']) {
-            pluginLogCache[meta.id + '-grafanaBootData'] = true;
-            logInfo('Plugin using window.grafanaBootData', {
-              sandbox: 'true',
+          if (!pluginLogCache[meta.id + "-grafanaBootData"]) {
+            pluginLogCache[meta.id + "-grafanaBootData"] = true;
+            logInfo("Plugin using window.grafanaBootData", {
+              sandbox: "true",
               pluginId: meta.id,
               guessedPluginName: meta.id,
-              parent: 'window',
-              packageName: 'window',
-              key: 'grafanaBootData',
+              parent: "window",
+              packageName: "window",
+              key: "grafanaBootData",
             });
           }
 
           // We don't want to encourage plugins to use `window.grafanaBootData`. They should
           // use `@grafana/runtime.config` instead.
           // if we are in dev mode we fail this access
-          if (config.buildInfo.env === 'development') {
+          if (config.buildInfo.env === "development") {
             throw new Error(
-              `Error in ${meta.id}: Plugins should not use window.grafanaBootData. Use "config" from "@grafana/runtime" instead.`
+              `Error in ${meta.id}: Plugins should not use window.grafanaBootData. Use "config" from "@grafana/runtime" instead.`,
             );
           } else {
             console.error(
-              `${meta.id.toUpperCase()}: Plugins should not use window.grafanaBootData. Use "config" from "@grafana/runtime" instead.`
+              `${meta.id.toUpperCase()}: Plugins should not use window.grafanaBootData. Use "config" from "@grafana/runtime" instead.`,
             );
           }
           return config.bootData;
@@ -160,7 +179,7 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
         async define(
           idOrDependencies: string | string[],
           maybeDependencies: string[] | PluginFactoryFunction,
-          maybeFactory?: PluginFactoryFunction
+          maybeFactory?: PluginFactoryFunction,
         ): Promise<void> {
           let dependencies: string[];
           let factory: PluginFactoryFunction;
@@ -173,16 +192,24 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
           }
 
           try {
-            const resolvedDeps = await resolvePluginDependencies(dependencies, meta);
+            const resolvedDeps = await resolvePluginDependencies(
+              dependencies,
+              meta,
+            );
             // execute the plugin's code
             const pluginExportsRaw = factory.apply(null, resolvedDeps);
             // only after the plugin has been executed
             // we can return the plugin exports.
             // This is what grafana effectively gets.
-            const pluginExports = await sandboxPluginComponents(pluginExportsRaw, meta);
+            const pluginExports = await sandboxPluginComponents(
+              pluginExportsRaw,
+              meta,
+            );
             resolve(pluginExports);
           } catch (e) {
-            const error = new Error(`Could not execute plugin's define ${meta.id}: ` + e);
+            const error = new Error(
+              `Could not execute plugin's define ${meta.id}: ` + e,
+            );
             logError(error, {
               pluginId: meta.id,
               error: String(e),
@@ -196,7 +223,7 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
     patchSandboxEnvironmentPrototype(sandboxEnvironment);
 
     // fetch plugin's code
-    let pluginCode = '';
+    let pluginCode = "";
     try {
       pluginCode = await getPluginCode(meta);
     } catch (e) {
@@ -214,7 +241,9 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
       // of endowments.
       sandboxEnvironment.evaluate(pluginCode);
     } catch (e) {
-      const error = new Error(`Could not run plugin ${meta.id} inside sandbox: ` + e);
+      const error = new Error(
+        `Could not run plugin ${meta.id} inside sandbox: ` + e,
+      );
       logError(error, {
         pluginId: meta.id,
         error: String(e),
@@ -231,7 +260,10 @@ async function doImportPluginModuleInSandbox(meta: SandboxPluginMeta): Promise<S
  * https://github.com/requirejs/requirejs/wiki/Differences-between-the-simplified-CommonJS-wrapper-and-standard-AMD-define#magic
  *
  */
-async function resolvePluginDependencies(deps: string[], pluginMeta: SandboxPluginMeta) {
+async function resolvePluginDependencies(
+  deps: string[],
+  pluginMeta: SandboxPluginMeta,
+) {
   const pluginExports = {};
   const pluginModuleDep: ModuleMeta = {
     id: pluginMeta.id,
@@ -244,18 +276,18 @@ async function resolvePluginDependencies(deps: string[], pluginMeta: SandboxPlug
   for (const dep of deps) {
     let resolvedDep = sandboxPluginDependencies.get(dep);
 
-    if (typeof resolvedDep === 'function') {
+    if (typeof resolvedDep === "function") {
       resolvedDep = await resolvedDep();
     }
     if (resolvedDep?.__useDefault) {
       resolvedDep = resolvedDep.default;
     }
 
-    if (dep === 'module') {
+    if (dep === "module") {
       resolvedDep = pluginModuleDep;
     }
 
-    if (dep === 'exports') {
+    if (dep === "exports") {
       resolvedDep = pluginExports;
     }
 

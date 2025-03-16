@@ -22,6 +22,14 @@ import { ReactGridLayoutProvider } from "@/apps/modules/react-grid-layout/machin
 import { MachineProviderRGL } from "@/apps/modules/react-grid-layout-refactor/stories/machines/machineContextRGL.tsx";
 // import { MachineProviderGridstack } from "@/apps/modules/gridstack/machines/machineContextGridstack.tsx";
 
+
+window.__grafana_public_path__ = 'src/apps/modules/grafana/';
+
+
+import "@grafana-module/app/index";
+
+
+
 // import * as $ from 'jquery';
 
 // Expose jQuery globally

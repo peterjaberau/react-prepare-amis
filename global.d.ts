@@ -180,3 +180,4 @@ declare module 'ol-ext/style/Photo' {
     }
 }
 
+declare module '@locker/near-membrane-dom/custom-devtools-formatter';
