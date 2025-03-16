@@ -21,11 +21,11 @@ import { GrafanaContext } from './core/context/GrafanaContext';
 import { GrafanaRouteWrapper } from './core/navigation/GrafanaRoute';
 import { RouteDescriptor } from './core/navigation/types';
 import { ThemeProvider } from './core/utils/ConfigProvider';
-import { ExtensionRegistriesProvider } from './features/plugins/extensions/ExtensionRegistriesContext';
 import { LiveConnectionWarning } from './features/live/LiveConnectionWarning';
+import { ExtensionRegistriesProvider } from './features/plugins/extensions/ExtensionRegistriesContext';
 import { pluginExtensionRegistries } from './features/plugins/extensions/registry/setup';
+import { ScopesContextProvider } from './features/scopes/ScopesContextProvider';
 import { ExperimentalSplitPaneRouterWrapper, RouterWrapper } from './routes/RoutesWrapper';
-import app from './app';
 
 interface AppWrapperProps {
   app: GrafanaApp;
@@ -74,8 +74,6 @@ export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
         window.caches.delete(key);
       }
     }
-
-
   }
 
   renderRoute = (route: RouteDescriptor) => {
@@ -116,17 +114,6 @@ export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
     const MaybeTimeRangeProvider = config.featureToggles.timeRangeProvider ? TimeRangeProvider : Fragment;
 
 
-    console.log(
-      {
-        'public.app.AppWrapper': {
-          store: store,
-          app: app,
-          config: config,
-          routerWrapperProps: routerWrapperProps,
-        }
-      }
-    )
-
     return (
       <Provider store={store}>
         <ErrorBoundaryAlert style="page">
@@ -140,17 +127,19 @@ export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
                   <GlobalStyles />
                   <MaybeTimeRangeProvider>
                     <SidecarContext_EXPERIMENTAL.Provider value={sidecarServiceSingleton_EXPERIMENTAL}>
-                      <ExtensionRegistriesProvider registries={pluginExtensionRegistries}>
-                        <div className="grafana-app">
-                          {config.featureToggles.appSidecar ? (
-                            <ExperimentalSplitPaneRouterWrapper {...routerWrapperProps} />
-                          ) : (
-                            <RouterWrapper {...routerWrapperProps} />
-                          )}
-                          <LiveConnectionWarning />
-                          <PortalContainer />
-                        </div>
-                      </ExtensionRegistriesProvider>
+                      <ScopesContextProvider>
+                        <ExtensionRegistriesProvider registries={pluginExtensionRegistries}>
+                          <div className="grafana-app">
+                            {config.featureToggles.appSidecar ? (
+                              <ExperimentalSplitPaneRouterWrapper {...routerWrapperProps} />
+                            ) : (
+                              <RouterWrapper {...routerWrapperProps} />
+                            )}
+                            <LiveConnectionWarning />
+                            <PortalContainer />
+                          </div>
+                        </ExtensionRegistriesProvider>
+                      </ScopesContextProvider>
                     </SidecarContext_EXPERIMENTAL.Provider>
                   </MaybeTimeRangeProvider>
                 </KBarProvider>

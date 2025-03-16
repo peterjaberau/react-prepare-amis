@@ -74,5 +74,5 @@ class PanelContextEventBus implements EventBus {
 }
 
 export function getCursorSyncScope(sceneObject: SceneObject): CursorSync | null {
-  return sceneGraph.findObject(sceneObject, (o) => o instanceof CursorSync) as CursorSync;
+  return sceneGraph.findObject(sceneObject, (o: any) => o instanceof CursorSync) as CursorSync;
 }

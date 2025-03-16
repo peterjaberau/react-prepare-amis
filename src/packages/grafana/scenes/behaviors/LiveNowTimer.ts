@@ -31,7 +31,7 @@ export class LiveNowTimer extends SceneObjectBase<LiveNowTimerState> {
     window.clearInterval(this.timerId);
     this.timerId = undefined;
     this.timerId = window.setInterval(() => {
-      const panels = sceneGraph.findAllObjects(this.getRoot(), (obj) => obj instanceof VizPanel) as VizPanel[];
+      const panels = sceneGraph.findAllObjects(this.getRoot(), (obj: any) => obj instanceof VizPanel) as VizPanel[];
       for (const panel of panels) {
         panel.forceRender();
       }

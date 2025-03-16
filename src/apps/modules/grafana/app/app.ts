@@ -6,7 +6,7 @@ import 'file-saver';
 import 'jquery';
 
 import { createElement } from 'react';
-import { createRoot } from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
 
 import {
   locationUtil,
@@ -263,12 +263,19 @@ export class GrafanaApp {
         initializeCrashDetection();
       }
 
-      const root = createRoot(document.getElementById('reactRoot')!);
-      root.render(
-        createElement(AppWrapper, {
-          app: this,
-        })
-      );
+      // const root = createRoot(document.getElementById('root')!);
+      // const root = createRoot(document.getElementById('reactRoot')!);
+      // root.render(
+      //   createElement(AppWrapper, {
+      //     app: this,
+      //   })
+      // );
+
+
+      return createElement(AppWrapper, {
+        app: this,
+      });
+
     } catch (error) {
       console.error('Failed to start Grafana', error);
       window.__grafana_load_failed();
