@@ -3,7 +3,7 @@ import React from 'react';
 import { useMount } from 'react-use';
 
 import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
-import { AccessoryButton } from '@grafana/plugin-ui';
+import { AccessoryButton } from '@plugin-ui/index';
 import { Input, Select, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { randomId, SearchProps, Tag } from '../../../useSearch';

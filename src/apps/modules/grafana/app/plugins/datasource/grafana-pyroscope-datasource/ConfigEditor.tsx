@@ -9,7 +9,7 @@ import {
   ConnectionSettings,
   DataSourceDescription,
   convertLegacyAuthProps,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import {
   Divider,

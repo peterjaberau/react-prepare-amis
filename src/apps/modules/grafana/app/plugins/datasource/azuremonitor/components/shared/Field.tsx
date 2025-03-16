@@ -1,4 +1,4 @@
-import { EditorField } from '@grafana/plugin-ui';
+import { EditorField } from '@plugin-ui/index';
 import { InlineField } from '@grafana-ui/index';
 import { Props as InlineFieldProps } from '@grafana-ui/components/Forms/InlineField';
 

@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react';
 import * as React from 'react';
 
 import { SelectableValue, TimeRange } from '@data/index';
-import { EditorRows } from '@grafana/plugin-ui';
+import { EditorRows } from '@plugin-ui/index';
 import { Stack } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';

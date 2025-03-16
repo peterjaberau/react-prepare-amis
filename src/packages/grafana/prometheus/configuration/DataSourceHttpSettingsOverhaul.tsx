@@ -1,6 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/configuration/DataSourceHttpSettingsOverhaul.tsx
 import { DataSourceSettings } from '@data/index';
-import { Auth, AuthMethod, ConnectionSettings, convertLegacyAuthProps } from '@grafana/plugin-ui';
+import { Auth, AuthMethod, ConnectionSettings, convertLegacyAuthProps } from '@plugin-ui/index';
 import { SecureSocksProxySettings, useTheme2 } from '@grafana-ui/index';
 
 import { PromOptions } from '../types';

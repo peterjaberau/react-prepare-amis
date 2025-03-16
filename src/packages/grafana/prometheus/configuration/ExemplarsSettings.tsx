@@ -1,7 +1,7 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/configuration/ExemplarsSettings.tsx
 import { css } from '@emotion/css';
 
-import { ConfigSubSection } from '@grafana/plugin-ui';
+import { ConfigSubSection } from '@plugin-ui/index';
 import { Button, useTheme2 } from '@grafana-ui/index';
 
 import { ExemplarTraceIdDestination } from '../types';

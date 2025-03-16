@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
-import { EditorField, EditorRow, EditorRows } from '@grafana/plugin-ui';
+import { EditorField, EditorRow, EditorRows } from '@plugin-ui/index';
 import { Input } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../../datasource';

@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { SIGV4ConnectionConfig } from '@grafana/aws-sdk';
 import { hasCredentials } from '@grafana/azure-sdk';
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
-import { AdvancedHttpSettings, ConfigSection, DataSourceDescription } from '@grafana/plugin-ui';
+import { AdvancedHttpSettings, ConfigSection, DataSourceDescription } from '@plugin-ui/index';
 import { AlertingSettingsOverhaul, PromOptions, PromSettings } from '@prometheus/index';
 import { config } from '@runtime/index';
 import { Alert, FieldValidationMessage, useTheme2 } from '@grafana-ui/index';

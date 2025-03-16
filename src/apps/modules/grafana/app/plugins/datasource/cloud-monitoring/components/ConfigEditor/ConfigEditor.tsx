@@ -2,7 +2,7 @@ import { PureComponent } from 'react';
 
 import { DataSourcePluginOptionsEditorProps } from '@data/index';
 import { ConnectionConfig } from '@grafana/google-sdk';
-import { ConfigSection, DataSourceDescription } from '@grafana/plugin-ui';
+import { ConfigSection, DataSourceDescription } from '@plugin-ui/index';
 import { reportInteraction, config } from '@runtime/index';
 import { Divider, SecureSocksProxySettings } from '@grafana-ui/index';
 

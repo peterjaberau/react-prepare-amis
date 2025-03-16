@@ -8,118 +8,11 @@ import {
 
 import { Ok } from "ts-results";
 import invariant from "tiny-invariant";
-import { getCardActorId } from "@/apps/modules/custom-actor-v1/machine/helpers.ts";
+import { initialPanels, actionMapping } from "./config";
 
-type PanelProps = {
-  id: string;
-  title: string;
-  collapsible?: boolean;
-  isCollapsed?: boolean;
-  content: string;
-  menu?: { label: string; onClick: any }[];
-  actions?: { label: string; onClick: any }[];
-};
 
-export const eventTypeMapping: any = {
-  cancel: "playing.cancel",
-  client: "playing.request",
-  server: "playing.asyncRequest",
-};
 
-export const initialPanels: PanelProps[] | any[] = [
-  {
-    id: "panel-1",
-    title: "title 1",
-    collapsible: true,
-    isCollapsed: false,
-    content: "content 1",
-    menu: [
-      {
-        id: "menuItem-1",
-        label: "Menu Log",
-        onClick: {
-          type: "client",
-          name: "log",
-          data: { key1: "value1 from menu" },
-        },
-      },
-      {
-        id: "menuItem-2",
-        label: "Menu Log Context",
-        onClick: {
-          type: "client",
-          name: "logContext",
-          data: { info: "logContext from menu" },
-        },
-      },
-    ],
-    actions: [
-      {
-        id: "action1",
-        label: "Log",
-        onClick: { type: "client", name: "log", data: { key1: "value1" } },
-      },
-      {
-        id: "action2",
-        label: "Log Context",
-        onClick: { type: "client", name: "logContext" },
-      },
-    ],
-  },
-  {
-    id: "panel-2",
-    title: "title 2",
-    collapsible: true,
-    isCollapsed: false,
-    content: "content 2",
-    menu: [
-      {
-        id: "menuItem-11",
-        label: "Menu Log",
-        onClick: { type: "client", name: "log", data: "value2  from menu" },
-      },
-      {
-        id: "menuItem-22",
-        label: "Menu Log Context",
-        onClick: {
-          type: "client",
-          name: "logContext",
-          data: "logContext from menu2",
-        },
-      },
-    ],
-    actions: [
-      {
-        id: "action11",
-        label: "Log",
-        onClick: { type: "client", name: "log", data: "value2 from action" },
-      },
-      {
-        id: "action22",
-        label: "Log Context",
-        onClick: { type: "client", name: "logContext" },
-      },
-    ],
-  },
-  {
-    id: "panel-3",
-    title: "Actor Model in XState 3",
-    content:
-      "The actor model is a mathematical model of concurrent computation that treats actors as the universal primitives of computation. In XState, actors are isolated units of state and behavior.",
-  },
-  {
-    id: "panel-4",
-    title: "Actor Model in XState 4",
-    content:
-      "The actor model is a mathematical model of concurrent computation that treats actors as the universal primitives of computation. In XState, actors are isolated units of state and behavior.",
-  },
-  {
-    id: "panel-5",
-    title: "Actor Model in XState 5",
-    content:
-      "The actor model is a mathematical model of concurrent computation that treats actors as the universal primitives of computation. In XState, actors are isolated units of state and behavior.",
-  },
-];
+
 
 export function getPlayPanelActorId(id: string) {
   return `panel-${id}`;
@@ -140,10 +33,40 @@ export const grafanaPlayPanelMachine = setup({
     }),
 
     playRequestAction: assign(({ context, event }) => {
+
+      const response = actionMapping[event.name]()
+
+      if (!response) {
+        return;
+      }
+
       console.log("action.playRequestAction----", {
         context: context,
         event: event,
+        response: response,
       });
+
+
+      const content = event?.content;
+
+      console.log({
+        action: event.name,
+        request: event?.data,
+        event: event,
+        context: context,
+        log: response.log,
+        content: content,
+      })
+
+      if (content) {
+        context.content = content;
+      }
+
+      // return {
+      //   ...context,
+      //   content: response.content,
+      // }
+
     }),
     playCancelAction: assign(({ context, event }) => {
       console.log("action.playCancelAction----", {
@@ -173,6 +96,14 @@ export const grafanaPlayPanelMachine = setup({
         revoke: {
           target: "Revoking",
         },
+
+
+
+        "playing.request": {
+          actions: "playRequestAction",
+        },
+
+
 
 
         "TOGGLE_COLLAPSE": {

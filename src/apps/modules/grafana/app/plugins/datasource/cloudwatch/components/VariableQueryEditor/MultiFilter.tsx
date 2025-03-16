@@ -1,7 +1,7 @@
 import { isEqual } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import { EditorList } from '@grafana/plugin-ui';
+import { EditorList } from '@plugin-ui/index';
 
 import { type CloudWatchDatasource } from '../../datasource';
 import { MultiFilters } from '../../types';

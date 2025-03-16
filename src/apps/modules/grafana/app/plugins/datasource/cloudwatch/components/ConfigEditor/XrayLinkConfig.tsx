@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { GrafanaTheme2, DataSourceInstanceSettings } from '@data/index';
-import { ConfigSection } from '@grafana/plugin-ui';
+import { ConfigSection } from '@plugin-ui/index';
 import { DataSourcePicker, getDataSourceSrv } from '@runtime/index';
 import { Alert, Field, InlineField, useStyles2 } from '@grafana-ui/index';
 

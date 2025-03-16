@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { OperationExplainedBox, OperationListExplained, RawQuery } from '@grafana/plugin-ui';
+import { OperationExplainedBox, OperationListExplained, RawQuery } from '@plugin-ui/index';
 import { Stack } from '@grafana-ui/index';
 
 import { lokiGrammar } from '../../syntax';

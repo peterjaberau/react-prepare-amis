@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { SQLEditor } from '@grafana/plugin-ui';
+import { SQLEditor } from '@plugin-ui/index';
 
 import { ExpressionQuery } from '../types';
 

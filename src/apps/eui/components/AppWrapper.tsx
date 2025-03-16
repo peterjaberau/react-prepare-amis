@@ -41,9 +41,9 @@ const AppWrapper: React.FC<AppWrapperProps> = ({ ...restProps }) => {
     }
     getProps = items.find((s: any) => s.key === renderKey)?.props
 
-  console.log('renderType', renderType)
-  console.log('renderType', renderType)
-  console.log('getProps', getProps)
+  // console.log('renderType', renderType)
+  // console.log('renderType', renderType)
+  // console.log('getProps', getProps)
 
 
   return (

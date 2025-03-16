@@ -2,7 +2,7 @@
 import { css } from '@emotion/css';
 
 import { DataSourcePluginOptionsEditorProps, GrafanaTheme2 } from '@data/index';
-import { ConfigSection, DataSourceDescription, AdvancedHttpSettings } from '@grafana/plugin-ui';
+import { ConfigSection, DataSourceDescription, AdvancedHttpSettings } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Alert, FieldValidationMessage, useTheme2 } from '@grafana-ui/index';
 

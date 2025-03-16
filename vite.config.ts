@@ -75,6 +75,7 @@ export default defineConfig({
       { find: "@grafana/schema", replacement: path.resolve(__dirname, "src/packages/grafana/schema") },
       { find: "@grafana/runtime", replacement: path.resolve(__dirname, "src/packages/grafana/runtime") },
       { find: "prismjs", replacement: path.resolve(__dirname, "node_modules/prismjs") },
+      { find: "plugin-ui", replacement: path.resolve(__dirname, "src/packages/grafana/plugin-ui") },
 
     ],
 

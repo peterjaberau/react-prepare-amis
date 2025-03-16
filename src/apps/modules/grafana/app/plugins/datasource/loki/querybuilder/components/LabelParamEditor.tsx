@@ -7,7 +7,7 @@ import {
   QueryBuilderOperationParamValue,
   VisualQuery,
   VisualQueryModeller,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 import { Select } from '@grafana-ui/index';
 
 import { getOperationParamId } from '../operationUtils';

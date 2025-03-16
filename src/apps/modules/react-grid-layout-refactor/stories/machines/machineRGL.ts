@@ -30,7 +30,7 @@ export const machineRGL = setup({
 
     //ReactGridLayoutApp
     setterNewSessionAction: assign(({ context, event }) => {
-      console.log('action.setterNewSessionAction----', { context: context, event: event });
+      // console.log('action.setterNewSessionAction----', { context: context, event: event });
     }),
     setterLoadExampleAction: assign(({ context, event }) => {
       console.log('action.setterLoadExampleAction----', { context: context, event: event });

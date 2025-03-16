@@ -1,5 +1,5 @@
 import { CoreApp, LoadingState, QueryEditorProps, SelectableValue } from '@data/index';
-import { EditorHeader, InlineSelect, FlexItem } from '@grafana/plugin-ui';
+import { EditorHeader, InlineSelect, FlexItem } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Badge, Button } from '@grafana-ui/index';
 

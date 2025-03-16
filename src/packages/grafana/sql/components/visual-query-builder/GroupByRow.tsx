@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { AccessoryButton, EditorList, InputGroup } from '@grafana/plugin-ui';
+import { AccessoryButton, EditorList, InputGroup } from '@plugin-ui/index';
 import { Select } from '@grafana-ui/index';
 
 import { QueryEditorGroupByExpression } from '../../expressions';

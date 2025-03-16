@@ -3,7 +3,7 @@ import debounce from 'debounce-promise';
 import { useState } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { AccessoryButton, InputGroup } from '@grafana/plugin-ui';
+import { AccessoryButton, InputGroup } from '@plugin-ui/index';
 import { AsyncSelect, Select } from '@grafana-ui/index';
 
 import { truncateResult } from '../../language_utils';

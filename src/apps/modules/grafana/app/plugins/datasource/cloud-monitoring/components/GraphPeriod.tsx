@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { EditorField, EditorRow } from '@grafana/plugin-ui';
+import { EditorField, EditorRow } from '@plugin-ui/index';
 import { HorizontalGroup, Switch } from '@grafana-ui/index';
 
 import { GRAPH_PERIODS } from '../constants';

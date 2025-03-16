@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react';
 import * as React from 'react';
 
-import { Auth, ConnectionSettings, convertLegacyAuthProps, AuthMethod } from '@grafana/plugin-ui';
+import { Auth, ConnectionSettings, convertLegacyAuthProps, AuthMethod } from '@plugin-ui/index';
 import { docsTip, overhaulStyles } from '@prometheus/index';
 import { Alert, SecureSocksProxySettings, useTheme2 } from '@grafana-ui/index';
 // NEED TO EXPORT THIS FROM GRAFANA/UI FOR EXTERNAL DS

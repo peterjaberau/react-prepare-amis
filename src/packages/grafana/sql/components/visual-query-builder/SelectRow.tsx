@@ -3,7 +3,7 @@ import { uniqueId } from 'lodash';
 import { useCallback } from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { EditorField } from '@grafana/plugin-ui';
+import { EditorField } from '@plugin-ui/index';
 import { Button, Select, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { QueryEditorExpressionType, QueryEditorFunctionExpression } from '../../expressions';

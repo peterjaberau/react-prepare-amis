@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { SelectableValue, getDefaultTimeRange, toOption } from '@data/index';
-import { QueryBuilderOperationParamEditorProps, VisualQueryModeller } from '@grafana/plugin-ui';
+import { QueryBuilderOperationParamEditorProps, VisualQueryModeller } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Select } from '@grafana-ui/index';
 

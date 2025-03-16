@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 import * as React from 'react';
 
 import { DataSourceJsonData, DataSourceInstanceSettings, DataSourcePluginOptionsEditorProps } from '@data/index';
-import { ConfigDescriptionLink, ConfigSection } from '@grafana/plugin-ui';
+import { ConfigDescriptionLink, ConfigSection } from '@plugin-ui/index';
 import { DataSourcePicker } from '@runtime/index';
 import { InlineField, InlineFieldRow, Input, InlineSwitch } from '@grafana-ui/index';
 

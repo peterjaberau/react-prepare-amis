@@ -6,7 +6,7 @@ import { createActorContext } from "@xstate/react"
 
 export const RootMachineContext = createActorContext(rootMachine, {
   inspect: (inpectionEvent: any) => {
-    console.log(inpectionEvent)
+    // console.log(inpectionEvent)
   },
 })
 

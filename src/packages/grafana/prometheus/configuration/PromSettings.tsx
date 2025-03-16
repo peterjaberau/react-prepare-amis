@@ -7,7 +7,7 @@ import {
   SelectableValue,
   updateDatasourcePluginJsonDataOption,
 } from '@data/index';
-import { ConfigSubSection } from '@grafana/plugin-ui';
+import { ConfigSubSection } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { InlineField, Input, Select, Switch, useTheme2 } from '@grafana-ui/index';
 

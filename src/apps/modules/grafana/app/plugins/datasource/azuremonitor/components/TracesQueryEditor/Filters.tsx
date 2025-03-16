@@ -2,7 +2,7 @@ import { uniq } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { EditorList } from '@grafana/plugin-ui';
+import { EditorList } from '@plugin-ui/index';
 import { Field } from '@grafana-ui/index';
 
 import { AzureQueryEditorFieldProps, AzureTracesFilter } from '../../types';

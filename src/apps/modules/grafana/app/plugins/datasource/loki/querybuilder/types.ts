@@ -3,7 +3,7 @@ import {
   QueryBuilderLabelFilter,
   QueryBuilderOperation,
   BINARY_OPERATIONS_KEY,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 
 /**
  * Visual query model

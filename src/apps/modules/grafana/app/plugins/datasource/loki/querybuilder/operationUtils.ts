@@ -8,7 +8,7 @@ import {
   QueryBuilderOperationParamValue,
   VisualQuery,
   VisualQueryModeller,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 
 import { escapeLabelValueInExactSelector } from '../languageUtils';
 import { FUNCTIONS } from '../syntax';

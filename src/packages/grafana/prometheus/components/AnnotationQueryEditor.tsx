@@ -1,6 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/components/AnnotationQueryEditor.tsx
 import { AnnotationQuery } from '@data/index';
-import { EditorField, EditorRow, EditorRows, EditorSwitch } from '@grafana/plugin-ui';
+import { EditorField, EditorRow, EditorRows, EditorSwitch } from '@plugin-ui/index';
 import { AutoSizeInput, Input, Space } from '@grafana-ui/index';
 
 import { PromQueryCodeEditor } from '../querybuilder/components/PromQueryCodeEditor';

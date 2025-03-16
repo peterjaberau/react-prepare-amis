@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 import { DataSourceInstanceSettings, ScopedVars } from '@data/index';
-import { LanguageDefinition } from '@grafana/plugin-ui';
+import { LanguageDefinition } from '@plugin-ui/index';
 import { TemplateSrv } from '@runtime/index';
 import {
   COMMON_FNS,

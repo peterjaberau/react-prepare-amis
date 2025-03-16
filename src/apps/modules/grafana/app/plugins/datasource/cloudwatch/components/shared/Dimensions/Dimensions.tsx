@@ -1,7 +1,7 @@
 import { isEqual } from 'lodash';
 import { useMemo, useState } from 'react';
 
-import { EditorList } from '@grafana/plugin-ui';
+import { EditorList } from '@plugin-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';
 import { Dimensions as DimensionsType, MetricStat } from '../../../types';

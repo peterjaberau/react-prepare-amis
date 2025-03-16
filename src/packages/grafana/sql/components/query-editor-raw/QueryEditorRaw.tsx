@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 import * as React from 'react';
 
-import { LanguageDefinition, SQLEditor } from '@grafana/plugin-ui';
+import { LanguageDefinition, SQLEditor } from '@plugin-ui/index';
 
 import { SQLQuery } from '../../types';
 

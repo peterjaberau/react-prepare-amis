@@ -6,7 +6,7 @@ import * as React from 'react';
 import Highlighter from 'react-highlight-words';
 
 import { GrafanaTheme2, SelectableValue, toOption } from '@data/index';
-import { EditorField, EditorFieldGroup } from '@grafana/plugin-ui';
+import { EditorField, EditorFieldGroup } from '@plugin-ui/index';
 import {
   AsyncSelect,
   Button,

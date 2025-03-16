@@ -7,7 +7,7 @@ import {
   GrafanaTheme2,
   updateDatasourcePluginJsonDataOption,
 } from '@data/index';
-import { ConfigSection } from '@grafana/plugin-ui';
+import { ConfigSection } from '@plugin-ui/index';
 import { InlineFieldRow, InlineField, InlineSwitch, Alert, Stack, useStyles2 } from '@grafana-ui/index';
 
 import { FeatureName, featuresToTempoVersion } from '../datasource';

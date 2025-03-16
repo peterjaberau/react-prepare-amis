@@ -4,7 +4,7 @@ import { createActorContext } from "@xstate/react";
 export const MachineContextRGL = createActorContext(machineRGL, {
   // inspect
   inspect: (inpectionEvent) => {
-    console.log(inpectionEvent);
+    // console.log(inpectionEvent);
   },
 });
 

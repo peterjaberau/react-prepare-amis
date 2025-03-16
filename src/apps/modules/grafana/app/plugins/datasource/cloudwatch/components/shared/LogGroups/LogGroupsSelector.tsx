@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { EditorField } from '@grafana/plugin-ui';
+import { EditorField } from '@plugin-ui/index';
 import { Button, Checkbox, Icon, Label, LoadingPlaceholder, Modal, Select, Space, useStyles2 } from '@grafana-ui/index';
 
 import { DescribeLogGroupsRequest, ResourceResponse, LogGroupResponse } from '../../../resources/types';

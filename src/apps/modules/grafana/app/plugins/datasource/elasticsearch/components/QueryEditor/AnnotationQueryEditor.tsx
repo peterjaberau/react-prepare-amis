@@ -1,5 +1,5 @@
 import { AnnotationQuery } from '@data/index';
-import { EditorField, EditorRow } from '@grafana/plugin-ui';
+import { EditorField, EditorRow } from '@plugin-ui/index';
 import { Input, Stack } from '@grafana-ui/index';
 
 import { ElasticsearchQuery } from '../../types';

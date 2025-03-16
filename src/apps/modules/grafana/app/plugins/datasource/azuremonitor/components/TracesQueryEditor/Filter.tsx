@@ -5,7 +5,7 @@ import { lastValueFrom } from 'rxjs';
 
 import { CoreApp, DataFrame, getDefaultTimeRange, SelectableValue, TimeRange } from '@data/index';
 import { selectors } from '@selectors/index';
-import { AccessoryButton } from '@grafana/plugin-ui';
+import { AccessoryButton } from '@plugin-ui/index';
 import {
   HorizontalGroup,
   Select,

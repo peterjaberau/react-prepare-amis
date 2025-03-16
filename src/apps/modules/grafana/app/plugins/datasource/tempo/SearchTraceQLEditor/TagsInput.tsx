@@ -3,7 +3,7 @@ import { useCallback, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import { GrafanaTheme2 } from '@data/index';
-import { AccessoryButton } from '@grafana/plugin-ui';
+import { AccessoryButton } from '@plugin-ui/index';
 import { FetchError } from '@runtime/index';
 import { useStyles2 } from '@grafana-ui/index';
 

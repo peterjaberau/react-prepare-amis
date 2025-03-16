@@ -2,7 +2,7 @@ import { useCallback, useId, useState } from 'react';
 import { useCopyToClipboard } from 'react-use';
 
 import { SelectableValue } from '@data/index';
-import { EditorField, EditorHeader, EditorMode, EditorRow, FlexItem, InlineSelect } from '@grafana/plugin-ui';
+import { EditorField, EditorHeader, EditorMode, EditorRow, FlexItem, InlineSelect } from '@plugin-ui/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, InlineSwitch, RadioButtonGroup, Tooltip, Space } from '@grafana-ui/index';
 

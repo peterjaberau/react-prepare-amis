@@ -11,7 +11,7 @@ import {
   SelectableValue,
   store,
 } from '@data/index';
-import { EditorField, EditorRow, QueryOptionGroup } from '@grafana/plugin-ui';
+import { EditorField, EditorRow, QueryOptionGroup } from '@plugin-ui/index';
 import { config, getAppEvents, reportInteraction } from '@runtime/index';
 import { Alert, AutoSizeInput, RadioButtonGroup, Select } from '@grafana-ui/index';
 

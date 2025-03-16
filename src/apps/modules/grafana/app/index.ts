@@ -28,7 +28,8 @@ import app from "./app";
 const prepareInit = async () => {
   console.log("getEnvConfig", getEnvConfig());
 
-  if (getEnvConfig().frontend_dev_mock_api) {
+  // if (getEnvConfig().frontend_dev_mock_api) {
+  if (getEnvConfig().mock_api) {
     return import("@grafana-module/test/mock-api/worker").then(
       (workerModule) => {
         workerModule.default.start({ onUnhandledRequest: "bypass" });

@@ -7,7 +7,7 @@ import {
   GrafanaTheme2,
   updateDatasourcePluginJsonDataOption,
 } from '@data/index';
-import { ConfigDescriptionLink, ConfigSection } from '@grafana/plugin-ui';
+import { ConfigDescriptionLink, ConfigSection } from '@plugin-ui/index';
 import { DataSourcePicker } from '@runtime/index';
 import { Button, InlineField, InlineFieldRow, Input, useStyles2 } from '@grafana-ui/index';
 

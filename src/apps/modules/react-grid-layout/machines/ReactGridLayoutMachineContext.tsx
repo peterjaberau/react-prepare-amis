@@ -21,7 +21,7 @@ export const ReactGridLayoutMachineContext = createActorContext(
   {
     // inspect
     inspect: (inpectionEvent) => {
-      console.log(inpectionEvent);
+      // console.log(inpectionEvent);
     },
 
   },

@@ -1,4 +1,4 @@
-import { EditorMode } from '@grafana/plugin-ui';
+import { EditorMode } from '@plugin-ui/index';
 
 import { QueryFormat, SQLQuery } from './types';
 import { createFunctionField, setGroupByField } from './utils/sql.utils';

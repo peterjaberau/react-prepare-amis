@@ -1,7 +1,7 @@
 import { intersection } from 'lodash';
 import { useState, useMemo } from 'react';
 
-import { EditorFieldGroup, EditorRow, EditorRows } from '@grafana/plugin-ui';
+import { EditorFieldGroup, EditorRow, EditorRows } from '@plugin-ui/index';
 
 import Datasource from '../../datasource';
 import { selectors } from '../../e2e/selectors';

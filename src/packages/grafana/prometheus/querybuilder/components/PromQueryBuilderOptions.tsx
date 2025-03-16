@@ -3,7 +3,7 @@ import { SyntheticEvent } from 'react';
 import * as React from 'react';
 
 import { CoreApp, SelectableValue } from '@data/index';
-import { EditorField, EditorRow, EditorSwitch } from '@grafana/plugin-ui';
+import { EditorField, EditorRow, EditorSwitch } from '@plugin-ui/index';
 import { AutoSizeInput, RadioButtonGroup, Select } from '@grafana-ui/index';
 
 import { getQueryTypeChangeHandler, getQueryTypeOptions } from '../../components/PromExploreExtraField';

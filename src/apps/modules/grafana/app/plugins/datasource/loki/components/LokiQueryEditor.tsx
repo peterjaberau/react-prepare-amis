@@ -11,7 +11,7 @@ import {
   QueryEditorModeToggle,
   QueryHeaderSwitch,
   QueryEditorMode,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Space, Stack } from '@grafana-ui/index';
 

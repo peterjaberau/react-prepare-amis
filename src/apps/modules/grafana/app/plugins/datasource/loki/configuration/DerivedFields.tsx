@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useCallback, useState } from 'react';
 
 import { GrafanaTheme2, VariableOrigin, DataLinkBuiltInVars } from '@data/index';
-import { ConfigDescriptionLink, ConfigSubSection } from '@grafana/plugin-ui';
+import { ConfigDescriptionLink, ConfigSubSection } from '@plugin-ui/index';
 import { Button, useTheme2 } from '@grafana-ui/index';
 
 import { DerivedFieldConfig } from '../types';

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
-import { AccessoryButton } from '@grafana/plugin-ui';
+import { AccessoryButton } from '@plugin-ui/index';
 import { Icon, Input, Tooltip, Label, Button, useStyles2 } from '@grafana-ui/index';
 
 export interface ResourcePickerProps<T> {

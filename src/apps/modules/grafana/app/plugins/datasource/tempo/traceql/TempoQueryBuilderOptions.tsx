@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
-import { EditorField, EditorRow } from '@grafana/plugin-ui';
+import { EditorField, EditorRow } from '@plugin-ui/index';
 import { AutoSizeInput, RadioButtonGroup, useStyles2 } from '@grafana-ui/index';
 
 import { QueryOptionGroup } from '../_importedDependencies/datasources/prometheus/QueryOptionGroup';

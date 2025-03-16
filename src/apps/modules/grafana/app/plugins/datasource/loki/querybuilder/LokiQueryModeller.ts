@@ -4,7 +4,7 @@ import {
   VisualQuery,
   QueryBuilderOperation,
   VisualQueryBinary,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 
 import { operationDefinitions } from './operations';
 import { LokiOperationId, LokiQueryPattern, LokiQueryPatternType, LokiVisualQueryOperationCategory } from './types';

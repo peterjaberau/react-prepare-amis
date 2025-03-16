@@ -7,7 +7,7 @@ import {
   updateDatasourcePluginJsonDataOption,
   updateDatasourcePluginResetOption,
 } from '@data/index';
-import { ConfigSection, ConfigSubSection, DataSourceDescription, EditorStack } from '@grafana/plugin-ui';
+import { ConfigSection, ConfigSubSection, DataSourceDescription, EditorStack } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { ConnectionLimits, Divider, TLSSecretsConfig, useMigrateDatabaseFields } from '@grafana-sql/index';
 import {

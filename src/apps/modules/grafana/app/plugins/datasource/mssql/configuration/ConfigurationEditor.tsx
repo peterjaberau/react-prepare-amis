@@ -10,7 +10,7 @@ import {
   updateDatasourcePluginJsonDataOption,
   updateDatasourcePluginResetOption,
 } from '@data/index';
-import { ConfigSection, ConfigSubSection, DataSourceDescription } from '@grafana/plugin-ui';
+import { ConfigSection, ConfigSubSection, DataSourceDescription } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { ConnectionLimits, useMigrateDatabaseFields } from '@grafana-sql/index';
 import { NumberInput } from '@grafana-sql/components/configuration/NumberInput';

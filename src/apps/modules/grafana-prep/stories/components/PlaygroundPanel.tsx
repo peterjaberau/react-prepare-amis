@@ -1,9 +1,9 @@
 import { ActorRefFrom } from "xstate";
 import { useSelector } from "@xstate/react";
 import {
-  grafanaPlayPanelMachine,
-  eventTypeMapping,
+  grafanaPlayPanelMachine
 } from "../../machines/grafanaPlayroundMachine";
+import { eventTypeMapping } from "../../machines/config";
 import { EuiCode, EuiCodeBlock, EuiFlexGroup, EuiFlexItem } from "@elastic/eui";
 import { PanelChrome, Button, Menu, MenuItem } from "@grafana-ui/index";
 import { EuiBadge } from "@elastic/eui";
@@ -25,11 +25,7 @@ export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
 
   const onAction = ({ e, request  }: { e: Event | any, request: ActionHandlerRequestType | any}) => {
     e.preventDefault();
-    console.log(actorRef);
-    console.log("onAction", {
-      request: request,
-    });
-    e.preventDefault();
+
     if (!request?.type || !eventTypeMapping[request.type]) {
       return;
     }
@@ -37,6 +33,7 @@ export function PlaygroundPanel({ actorRef, children }: PlaygroundPanelProps) {
     if (!request?.name) {
       return;
     }
+    console.log(actorRef);
 
     actorRef.send({
       type: eventTypeMapping[request.type],

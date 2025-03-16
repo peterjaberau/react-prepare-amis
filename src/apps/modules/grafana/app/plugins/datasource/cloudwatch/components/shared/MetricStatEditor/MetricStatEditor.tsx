@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import * as React from 'react';
 
 import { SelectableValue } from '@data/index';
-import { EditorField, EditorFieldGroup, EditorRow, EditorRows, EditorSwitch } from '@grafana/plugin-ui';
+import { EditorField, EditorFieldGroup, EditorRow, EditorRows, EditorSwitch } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Select } from '@grafana-ui/index';
 

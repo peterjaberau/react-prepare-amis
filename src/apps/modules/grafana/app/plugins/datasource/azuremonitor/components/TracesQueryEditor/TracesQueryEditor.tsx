@@ -3,7 +3,7 @@ import * as React from 'react';
 import { usePrevious } from 'react-use';
 
 import { TimeRange } from '@data/index';
-import { EditorFieldGroup, EditorRow, EditorRows } from '@grafana/plugin-ui';
+import { EditorFieldGroup, EditorRow, EditorRows } from '@plugin-ui/index';
 import { Input } from '@grafana-ui/index';
 
 import Datasource from '../../datasource';

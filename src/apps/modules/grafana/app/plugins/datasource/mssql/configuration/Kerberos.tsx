@@ -1,7 +1,7 @@
 import { SyntheticEvent } from 'react';
 
 import { DataSourcePluginOptionsEditorProps, updateDatasourcePluginJsonDataOption } from '@data/index';
-import { ConfigSubSection } from '@grafana/plugin-ui';
+import { ConfigSubSection } from '@plugin-ui/index';
 import { FieldSet, Input, Field } from '@grafana-ui/index';
 
 import { MSSQLAuthenticationType, MssqlOptions } from '../types';

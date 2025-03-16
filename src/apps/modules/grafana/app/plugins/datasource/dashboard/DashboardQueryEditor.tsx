@@ -5,7 +5,7 @@ import { useCallback, useMemo } from 'react';
 import { useAsync } from 'react-use';
 
 import { DataQuery, GrafanaTheme2, SelectableValue, DataTopic, QueryEditorProps } from '@data/index';
-import { OperationsEditorRow } from '@grafana/plugin-ui';
+import { OperationsEditorRow } from '@plugin-ui/index';
 import { Field, Select, useStyles2, Spinner, RadioButtonGroup, Stack, InlineSwitch } from '@grafana-ui/index';
 import config from '@grafana-module/app/core/config';
 import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';

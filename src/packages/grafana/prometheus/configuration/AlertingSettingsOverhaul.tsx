@@ -2,7 +2,7 @@
 import { cx } from '@emotion/css';
 
 import { DataSourceJsonData, DataSourcePluginOptionsEditorProps } from '@data/index';
-import { ConfigSubSection } from '@grafana/plugin-ui';
+import { ConfigSubSection } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { InlineField, Switch, useTheme2 } from '@grafana-ui/index';
 

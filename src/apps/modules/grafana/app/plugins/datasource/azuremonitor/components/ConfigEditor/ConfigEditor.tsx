@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 
 import { DataSourcePluginOptionsEditorProps, SelectableValue, updateDatasourcePluginOption } from '@data/index';
-import { ConfigSection, DataSourceDescription } from '@grafana/plugin-ui';
+import { ConfigSection, DataSourceDescription } from '@plugin-ui/index';
 import { getBackendSrv, getTemplateSrv, isFetchError, TemplateSrv, config } from '@runtime/index';
 import { Alert, Divider, SecureSocksProxySettings } from '@grafana-ui/index';
 

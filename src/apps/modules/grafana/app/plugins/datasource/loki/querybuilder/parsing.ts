@@ -53,7 +53,7 @@ import {
   OnOrIgnoringModifier,
   OrFilter,
 } from '@grafana/lezer-logql';
-import { QueryBuilderLabelFilter, QueryBuilderOperation, QueryBuilderOperationParamValue } from '@grafana/plugin-ui';
+import { QueryBuilderLabelFilter, QueryBuilderOperation, QueryBuilderOperationParamValue } from '@plugin-ui/index';
 
 import { binaryScalarDefs } from './binaryScalarOperations';
 import { checkParamsAreValid, getDefinitionById } from './operations';

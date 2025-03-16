@@ -2,7 +2,7 @@ import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
 import { QueryEditorProps, SelectableValue } from '@data/index';
-import { EditorField, EditorRow, InlineSelect } from '@grafana/plugin-ui';
+import { EditorField, EditorRow, InlineSelect } from '@plugin-ui/index';
 import { ConfirmModal, Input, RadioButtonGroup, Space } from '@grafana-ui/index';
 
 import { CloudWatchDatasource } from '../../../datasource';

@@ -4,7 +4,7 @@ import { isEqual } from 'lodash';
 import { useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { EditorField, EditorFieldGroup, EditorList } from '@grafana/plugin-ui';
+import { EditorField, EditorFieldGroup, EditorList } from '@plugin-ui/index';
 import { InlineFieldRow, InlineLabel } from '@grafana-ui/index';
 
 import { QueryBuilderLabelFilter } from '../shared/types';

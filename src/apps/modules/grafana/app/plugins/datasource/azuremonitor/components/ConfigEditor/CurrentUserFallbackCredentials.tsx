@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { AadCurrentUserCredentials, AzureCredentials, instanceOfAzureCredential } from '@grafana/azure-sdk';
 import { SelectableValue } from '@data/index';
-import { ConfigSection } from '@grafana/plugin-ui';
+import { ConfigSection } from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Select, Field, RadioButtonGroup, Alert, Stack } from '@grafana-ui/index';
 

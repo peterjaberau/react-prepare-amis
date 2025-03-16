@@ -14,7 +14,7 @@ import {
   RawQuery,
   QueryBuilderLabelFilter,
   QueryBuilderOperation,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 import { config } from '@runtime/index';
 
 import { testIds } from '../../components/LokiQueryEditor';

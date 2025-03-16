@@ -22,7 +22,7 @@ import {
   Expr,
   LabelFormatExpr,
 } from '@grafana/lezer-logql';
-import { QueryBuilderLabelFilter } from '@grafana/plugin-ui';
+import { QueryBuilderLabelFilter } from '@plugin-ui/index';
 
 import { unescapeLabelValue } from './languageUtils';
 import { getNodePositionsFromQuery } from './queryUtils';

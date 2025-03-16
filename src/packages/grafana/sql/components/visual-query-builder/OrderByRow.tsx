@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import * as React from 'react';
 
 import { SelectableValue, toOption } from '@data/index';
-import { EditorField, InputGroup } from '@grafana/plugin-ui';
+import { EditorField, InputGroup } from '@plugin-ui/index';
 import { Input, RadioButtonGroup, Select, Space } from '@grafana-ui/index';
 
 import { SQLExpression } from '../../types';

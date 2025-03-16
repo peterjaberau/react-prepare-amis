@@ -47,7 +47,7 @@ export const reactGridLayoutMachine = setup({
 
     //ReactGridLayoutApp
     setterNewSessionAction: assign(({ context, event }) => {
-      console.log({ context: context, event: event });
+      // console.log({ context: context, event: event });
 
       const newCanvas = event.output.val;
       const updatedContext = {

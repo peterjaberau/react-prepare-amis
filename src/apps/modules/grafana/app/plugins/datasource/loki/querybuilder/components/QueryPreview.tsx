@@ -1,4 +1,4 @@
-import { EditorRow, EditorFieldGroup, RawQuery } from '@grafana/plugin-ui';
+import { EditorRow, EditorFieldGroup, RawQuery } from '@plugin-ui/index';
 
 import { lokiGrammar } from '../../syntax';
 

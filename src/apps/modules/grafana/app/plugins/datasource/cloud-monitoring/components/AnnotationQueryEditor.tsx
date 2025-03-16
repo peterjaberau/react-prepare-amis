@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useDebounce } from 'react-use';
 
 import { QueryEditorProps, getDefaultTimeRange, toOption } from '@data/index';
-import { EditorField, EditorRows } from '@grafana/plugin-ui';
+import { EditorField, EditorRows } from '@plugin-ui/index';
 import { Input } from '@grafana-ui/index';
 
 import CloudMonitoringDatasource from '../datasource';

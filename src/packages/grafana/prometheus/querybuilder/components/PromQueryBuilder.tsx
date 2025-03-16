@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { memo, useState } from 'react';
 
 import { DataSourceApi, PanelData } from '@data/index';
-import { EditorRow } from '@grafana/plugin-ui';
+import { EditorRow } from '@plugin-ui/index';
 
 import { PrometheusDatasource } from '../../datasource';
 import promqlGrammar from '../../promql';

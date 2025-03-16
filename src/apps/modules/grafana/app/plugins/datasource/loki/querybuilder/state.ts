@@ -1,4 +1,4 @@
-import { QueryEditorMode } from '@grafana/plugin-ui';
+import { QueryEditorMode } from '@plugin-ui/index';
 
 import { LokiQuery, LokiQueryType } from '../types';
 

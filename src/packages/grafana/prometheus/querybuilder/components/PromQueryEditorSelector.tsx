@@ -3,7 +3,7 @@ import { isEqual, map } from 'lodash';
 import { memo, SyntheticEvent, useCallback, useEffect, useState } from 'react';
 
 import { CoreApp, LoadingState, SelectableValue } from '@data/index';
-import { EditorHeader, EditorRows, FlexItem } from '@grafana/plugin-ui';
+import { EditorHeader, EditorRows, FlexItem } from '@plugin-ui/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Space } from '@grafana-ui/index';
 

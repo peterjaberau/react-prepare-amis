@@ -10,7 +10,7 @@ import {
   ConnectionSettings,
   convertLegacyAuthProps,
   DataSourceDescription,
-} from '@grafana/plugin-ui';
+} from '@plugin-ui/index';
 import { config } from '@runtime/index';
 import { Alert, SecureSocksProxySettings, Divider, Stack } from '@grafana-ui/index';
 

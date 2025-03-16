@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';
-import { EditorField } from '@grafana/plugin-ui';
+import { EditorField } from '@plugin-ui/index';
 import { RadioButtonGroup } from '@grafana-ui/index';
 
 import { getAlignmentPickerData } from '../functions';
