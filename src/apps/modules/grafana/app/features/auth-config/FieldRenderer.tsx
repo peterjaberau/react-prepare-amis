@@ -21,17 +21,17 @@ interface FieldRendererProps
 }
 
 export const FieldRenderer = ({
-  field,
-  register,
-  errors,
-  watch,
-  setValue,
-  getValues,
-  control,
-  unregister,
-  secretConfigured,
-  provider,
-}: FieldRendererProps) => {
+                                field,
+                                register,
+                                errors,
+                                watch,
+                                setValue,
+                                getValues,
+                                control,
+                                unregister,
+                                secretConfigured,
+                                provider,
+                              }: FieldRendererProps) => {
   const [isSecretConfigured, setIsSecretConfigured] = useState(secretConfigured);
   const isDependantField = typeof field !== 'string';
   const name = isDependantField ? field.name : field;

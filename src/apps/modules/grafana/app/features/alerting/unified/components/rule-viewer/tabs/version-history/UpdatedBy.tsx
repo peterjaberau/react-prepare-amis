@@ -4,7 +4,7 @@ import { Badge, Icon, Tooltip, useStyles2 } from '@grafana-ui/index';
 import { t } from '@grafana-module/app/core/internationalization';
 import { UpdatedBy } from '@grafana-module/app/types/unified-alerting-dto';
 
-import { getSpecialUidsDisplayMap } from '../versions-utils';
+import { getSpecialUidsDisplayMap } from './versions-utils';
 
 export const UpdatedByUser = ({ user }: { user: UpdatedBy | null | undefined }) => {
   const unknown = t('alerting.alertVersionHistory.unknown', 'Unknown');

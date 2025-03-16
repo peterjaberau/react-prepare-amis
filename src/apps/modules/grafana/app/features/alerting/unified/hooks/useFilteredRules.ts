@@ -15,11 +15,7 @@ import { Annotation } from '../utils/constants';
 import { isCloudRulesSource } from '../utils/datasource';
 import { parseMatcher, parsePromQLStyleMatcherLoose } from '../utils/matchers';
 import {
-  getRuleHealth,
-  isAlertingRule,
-  isGrafanaRulerRule,
-  isPluginProvidedRule,
-  isPromRuleType,
+  getRuleHealth, isPluginProvidedRule, isPromRuleType, prometheusRuleType, rulerRuleType
 } from '../utils/rules';
 
 import { calculateGroupTotals, calculateRuleFilteredTotals, calculateRuleTotals } from './useCombinedRuleNamespaces';
@@ -106,7 +102,7 @@ export const useFilteredRules = (namespaces: CombinedRuleNamespace[], filterStat
     filteredRules.forEach((namespace) => {
       namespace.groups.forEach((group) => {
         group.rules.forEach((rule) => {
-          if (isAlertingRule(rule.promRule)) {
+          if (prometheusRuleType.alertingRule(rule.promRule)) {
             rule.instanceTotals = calculateRuleTotals(rule.promRule);
             rule.filteredInstanceTotals = calculateRuleFilteredTotals(rule.promRule);
           }
@@ -150,7 +146,6 @@ export const filterRules = (
       filteredRuleNamespaces.push(match);
     });
   } catch (error) {
-    // @ts-ignore
     logError(new Error('Failed to filter rules', { cause: error }), {
       search: JSON.stringify(filterState),
     });
@@ -226,7 +221,7 @@ const reduceGroups = (filterState: RulesFilter) => {
       if ('contactPoint' in matchesFilterFor) {
         const contactPoint = filterState.contactPoint;
         const hasContactPoint =
-          isGrafanaRulerRule(rule.rulerRule) &&
+          rulerRuleType.grafana.rule(rule.rulerRule) &&
           rule.rulerRule.grafana_alert.notification_settings?.receiver === contactPoint;
 
         if (hasContactPoint) {
@@ -235,7 +230,7 @@ const reduceGroups = (filterState: RulesFilter) => {
       }
 
       if ('dataSourceNames' in matchesFilterFor) {
-        if (isGrafanaRulerRule(rule.rulerRule)) {
+        if (rulerRuleType.grafana.rule(rule.rulerRule)) {
           const doesNotQueryDs = isQueryingDataSource(rule.rulerRule, filterState);
 
           if (doesNotQueryDs) {
@@ -275,7 +270,7 @@ const reduceGroups = (filterState: RulesFilter) => {
 
       if ('ruleState' in matchesFilterFor) {
         const promRule = rule.promRule;
-        const hasPromRuleDefinition = promRule && isAlertingRule(promRule);
+        const hasPromRuleDefinition = promRule && prometheusRuleType.alertingRule(promRule);
 
         const ruleStateMatches = hasPromRuleDefinition && promRule.state === filterState.ruleState;
 

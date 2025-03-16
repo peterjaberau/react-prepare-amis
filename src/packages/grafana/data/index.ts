@@ -570,6 +570,8 @@ export {
   type ScopeNodeLinkType,
   type ScopeNodeSpec,
   type ScopeNode,
+  reverseScopeFilterOperatorMap,
+  isEqualityOrMultiOperator,
   scopeFilterOperatorMap,
 } from './types/scopes';
 export {

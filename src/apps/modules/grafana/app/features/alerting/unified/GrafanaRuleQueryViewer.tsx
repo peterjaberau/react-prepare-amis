@@ -97,14 +97,14 @@ interface QueryPreviewProps extends Pick<AlertQuery, 'refId' | 'relativeTimeRang
 }
 
 export function QueryPreview({
-  refId,
-  rule,
-  thresholds,
-  model,
-  dataSource,
-  queryData,
-  relativeTimeRange,
-}: QueryPreviewProps) {
+                               refId,
+                               rule,
+                               thresholds,
+                               model,
+                               dataSource,
+                               queryData,
+                               relativeTimeRange,
+                             }: QueryPreviewProps) {
   const styles = useStyles2(getQueryPreviewStyles);
   const isExpression = isExpressionQuery(model);
   const [exploreSupported, exploreAllowed] = useAlertRuleAbility(rule, AlertRuleAction.Explore);
@@ -495,9 +495,7 @@ const getExpressionViewerStyles = (theme: GrafanaTheme2) => {
       display: 'flex',
       gap: theme.spacing(0.5),
     }),
-    // @ts-ignore
     blue: css(blue, { margin: 'auto 0' }),
-    // @ts-ignore
     bold: css(bold, { margin: 'auto 0' }),
   };
 };
