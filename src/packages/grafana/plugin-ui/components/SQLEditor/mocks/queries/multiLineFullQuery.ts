@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const multiLineFullQuery: TestQueryModel = {
+export const multiLineFullQuery: any = {
   query: `SELECT column1,
   FROM table1
 

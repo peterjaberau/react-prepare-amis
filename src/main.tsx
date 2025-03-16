@@ -6,7 +6,9 @@ import { ReactGridLayoutProvider } from "@/apps/modules/react-grid-layout/machin
 import { MachineProviderRGL } from "@/apps/modules/react-grid-layout-refactor/stories/machines/machineContextRGL.tsx";
 // import { MachineProviderGridstack } from "@/apps/modules/gridstack/machines/machineContextGridstack.tsx";
 
-import $ from 'jquery';
+import * as $ from 'jquery';
+import 'flot';
+
 // Expose jQuery globally
 // @ts-ignore
 window.$ = window.jQuery = $;

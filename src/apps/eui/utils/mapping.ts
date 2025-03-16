@@ -19,6 +19,7 @@ import { Dashboard } from "@/apps/modules/react-grid-layout-refactor/stories/das
 import { GridstackApp } from "@/apps/modules/gridstack/stories/GridstackApp.tsx";
 import { AppCustomActorV1 } from "@/apps/modules/custom-actor-v1/AppCustomActor.tsx";
 import { GrafanaPrep } from "@/apps/modules/grafana-prep/GrafanaPrep.tsx";
+import { GravanaResolvers } from "@/apps/modules/grafana-resolvers/GravanaResolvers.tsx";
 // import { Preload as GrafanaPreload } from "@grafana-module/app/Preload";
 // import { AppWrapper as GrafanaAppWrapper } from "@grafana-module/app/AppWrapper";
 
@@ -184,24 +185,24 @@ export const contentItems = [
 ] as const;
 
 export const contentModuleItems = [
-  // {
-  //   key: "grafana-app-wrapper",
-  //   component: GrafanaAppWrapper,
-  //   title: "GrafanaAppWrapper",
-  //   props: {
-  //     ...defaultProps,
-  //     ...{
-  //       pageHeader: {
-  //         title: "GrafanaAppWrapper",
-  //         iconType: "globe",
-  //       },
-  //       page: {
-  //         panelled: true,
-  //         restrictWidth: true,
-  //       },
-  //     },
-  //   },
-  // },
+  {
+    key: "grafana-resolvers",
+    component: GravanaResolvers,
+    title: "GravanaResolvers",
+    props: {
+      ...defaultProps,
+      ...{
+        pageHeader: {
+          title: "GravanaResolvers",
+          iconType: "globe",
+        },
+        page: {
+          panelled: true,
+          restrictWidth: true,
+        },
+      },
+    },
+  },
 
   // {
   //   key: "grafana-preload",

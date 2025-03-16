@@ -1,7 +1,6 @@
 import { type monacoTypes } from '@grafana-ui/index';
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const singleLineFullQuery: TestQueryModel = {
+export const singleLineFullQuery: any = {
   query: `SELECT column1, FROM table1 WHERE column1 = "value1" GROUP BY column1 ORDER BY column1 DESC LIMIT 10`,
   tokens: [
     [

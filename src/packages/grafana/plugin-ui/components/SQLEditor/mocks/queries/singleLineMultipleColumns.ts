@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const singleLineMultipleColumns: TestQueryModel = {
+export const singleLineMultipleColumns: any = {
   query:
     'SELECT count(column1), column2 FROM table1 WHERE column1 = "value1" GROUP BY column1 ORDER BY column1, avg(column2) DESC LIMIT 10;',
   tokens: [

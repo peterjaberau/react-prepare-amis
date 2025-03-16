@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const singleLineTwoQueriesWithAggregation: TestQueryModel = {
+export const singleLineTwoQueriesWithAggregation: any = {
   query:
     'SELECT count(column1), FROM table1 WHERE column1 = "value1" GROUP BY column1 ORDER BY column1 DESC LIMIT 10; SELECT count(column2), FROM table2 WHERE column2 = "value2" GROUP BY column1 ORDER BY column2 DESC LIMIT 10;',
   tokens: [

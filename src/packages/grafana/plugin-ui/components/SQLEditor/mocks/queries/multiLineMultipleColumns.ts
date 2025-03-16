@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const multiLineMultipleColumns: TestQueryModel = {
+export const multiLineMultipleColumns: any = {
   query: `SELECT count(column1), column2
   FROM table1
 

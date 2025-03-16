@@ -76,6 +76,7 @@ export class BackendSrv implements BackendService {
   };
 
   constructor(deps?: BackendSrvDependencies) {
+
     if (deps) {
       this.dependencies = {
         ...this.dependencies,
@@ -623,6 +624,8 @@ export class BackendSrv implements BackendService {
 
 // Used for testing and things that really need BackendSrv
 export const backendSrv = new BackendSrv();
+console.log('backendSrv', backendSrv);
+
 export const getBackendSrv = (): BackendSrv => backendSrv;
 
 interface ValidateDashboardResponse {

@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const multiLineFullQueryWithAggregation: TestQueryModel = {
+export const multiLineFullQueryWithAggregation: any = {
   query: `SELECT count(column1),
   FROM table1
 

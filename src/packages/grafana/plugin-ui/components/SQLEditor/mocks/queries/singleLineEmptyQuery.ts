@@ -1,6 +1,5 @@
-import { type TestQueryModel } from '../../test-utils/types';
 
-export const singleLineEmptyQuery: TestQueryModel = {
+export const singleLineEmptyQuery: any = {
   query: '',
   tokens: [],
 };

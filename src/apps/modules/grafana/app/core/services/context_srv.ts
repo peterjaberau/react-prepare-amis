@@ -103,6 +103,8 @@ export class ContextSrv {
     this.hasEditPermissionInFolders = this.user.hasEditPermissionInFolders;
     this.minRefreshInterval = config.minRefreshInterval;
 
+
+
     this.scheduleTokenRotationJob();
   }
 
