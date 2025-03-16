@@ -6,7 +6,6 @@ import {
 } from "@elastic/eui";
 import { initI18nPromiseResolver } from "./helpers/initI18nPromiseResolver";
 import { useState } from "react";
-import { backendSrvResolver } from "./helpers/backendSrvResolver";
 
 const activeIds = ["initI18nPromise", "backendSrv"];
 
@@ -25,15 +24,7 @@ export const GravanaResolvers = () => {
     });
   }
 
-  const handleBackendSrv = () => {
-    setActiveId("backendSrv");
-    setLoading(true);
-    backendSrvResolver();
-    setLoading(false);
-    // backendSrvResolver().finally(() => {
-    //   setLoading(false);
-    // });
-  }
+
 
 
   return (
@@ -55,7 +46,6 @@ export const GravanaResolvers = () => {
           size={"s"}
           fill
           color={(activeId === "backendSrv") ? "primary" : "accent"}
-          onClick={handleBackendSrv}
           isLoading={loading}
           isDisabled={loading}
         >
