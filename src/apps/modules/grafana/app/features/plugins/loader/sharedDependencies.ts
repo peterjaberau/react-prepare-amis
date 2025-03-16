@@ -1,14 +1,3 @@
-import jquery from 'jquery';
-import '@grafana-module/vendor/flot/jquery.flot.js';
-import '@grafana-module/vendor/flot/jquery.flot.selection.js';
-import '@grafana-module/vendor/flot/jquery.flot.time.js';
-import '@grafana-module/vendor/flot/jquery.flot.stack.js';
-import '@grafana-module/vendor/flot/jquery.flot.stackpercent.js';
-import '@grafana-module/vendor/flot/jquery.flot.fillbelow.js';
-import '@grafana-module/vendor/flot/jquery.flot.crosshair.js';
-import '@grafana-module/vendor/flot/jquery.flot.dashes.js';
-import '@grafana-module/vendor/flot/jquery.flot.gauge.js';
-
 import * as grafanaData from '@data/index';
 import * as grafanaRuntime from '@runtime/index';
 import * as grafanaUIraw from '@grafana-ui/index';
@@ -32,18 +21,18 @@ grafanaUI.DataSourcePlugin = grafanaData.DataSourcePlugin;
 grafanaUI.AppPlugin = grafanaData.AppPlugin;
 grafanaUI.DataSourceApi = grafanaData.DataSourceApi;
 
-const jQueryFlotDeps = [
-  'jquery.flot.crosshair',
-  'jquery.flot.events',
-  'jquery.flot.fillbelow',
-  'jquery.flot.gauge',
-  'jquery.flot.pie',
-  'jquery.flot.selection',
-  'jquery.flot.stack',
-  'jquery.flot.stackpercent',
-  'jquery.flot.time',
-  'jquery.flot',
-].reduce((acc, flotDep) => ({ ...acc, [flotDep]: { fakeDep: 1 } }), {});
+// const jQueryFlotDeps = [
+//   'jquery.flot.crosshair',
+//   'jquery.flot.events',
+//   'jquery.flot.fillbelow',
+//   'jquery.flot.gauge',
+//   'jquery.flot.pie',
+//   'jquery.flot.selection',
+//   'jquery.flot.stack',
+//   'jquery.flot.stackpercent',
+//   'jquery.flot.time',
+//   'jquery.flot',
+// ].reduce((acc, flotDep) => ({ ...acc, [flotDep]: { fakeDep: 1 } }), {});
 
 export const sharedDependenciesMap = {
   '@emotion/css': () => import('@emotion/css'),
@@ -86,11 +75,11 @@ export const sharedDependenciesMap = {
   emotion: () => import('@emotion/css'),
   // bundling grafana-ui in plugins requires sharing i18next state
   i18next: () => import('i18next'),
-  jquery: {
-    default: jquery,
-    __useDefault: true,
-  },
-  ...jQueryFlotDeps,
+  // jquery: {
+  //   default: jquery,
+  //   __useDefault: true,
+  // },
+  // ...jQueryFlotDeps,
   // add move to lodash for backward compatabilty with plugins
   lodash: () => import('lodash').then((module) => ({ ...module, move: arrayMove, __useDefault: true })),
   moment: () => import('moment').then((module) => ({ ...module, __useDefault: true })),

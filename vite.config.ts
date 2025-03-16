@@ -2,7 +2,7 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import path from "path"
 import svgr from "vite-plugin-svgr"
-import { codeInspectorPlugin } from 'code-inspector-plugin';
+// import { codeInspectorPlugin } from 'code-inspector-plugin';
 import progress from 'vite-plugin-progress'
 
 import monacoEditorPlugin, { type IMonacoEditorOpts } from "vite-plugin-monaco-editor"
@@ -15,16 +15,16 @@ export default defineConfig({
     $: 'window.$',
   },
   plugins: [
-    codeInspectorPlugin({
-      bundler: 'vite',
-      editor: 'idea',
-      port: 3061,
-      behavior: {
-        locate: true,
-        copy: true,
-      },
-      showSwitch: true,
-    }),
+    // codeInspectorPlugin({
+    //   bundler: 'vite',
+    //   editor: 'idea',
+    //   port: 3061,
+    //   behavior: {
+    //     locate: true,
+    //     copy: true,
+    //   },
+    //   showSwitch: true,
+    // }),
     react({
       babel: {
         parserOpts: {
@@ -81,10 +81,17 @@ export default defineConfig({
 
   },
   optimizeDeps: {
-    include: ["react-loading-skeleton", "jquery"],
+    include: ["react-loading-skeleton"],
+    exclude: ["jquery"], // Prevents duplicate inclusion
   },
   worker: {
     format: 'es',
+  },
+
+  build: {
+    rollupOptions: {
+      external: ["jquery"], // Ensures jQuery isn't bundled separately
+    },
   },
 
   server: {

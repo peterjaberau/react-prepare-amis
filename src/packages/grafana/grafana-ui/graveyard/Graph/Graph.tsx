@@ -1,5 +1,4 @@
 // Libraries
-import $ from 'jquery';
 import { uniqBy } from 'lodash';
 import { PureComponent } from 'react';
 import * as React from 'react';
@@ -16,6 +15,8 @@ import { GraphTooltip } from './GraphTooltip/GraphTooltip';
 import { GraphDimensions } from './GraphTooltip/types';
 import { FlotItem } from './types';
 import { graphTimeFormat, graphTickFormatter } from './utils';
+
+const $ = window.jQuery || require("jquery");
 
 /** @deprecated */
 export interface GraphProps {

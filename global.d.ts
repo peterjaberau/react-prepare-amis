@@ -1,8 +1,37 @@
 /// <reference types="node" />
+/// <reference types="jquery" />
+import type jQuery from "jquery"; // Ensure TypeScript understands jQuery's types
+
 
 declare module "*.css";
 declare module "vite/client";
 declare module "query-string";
+
+declare global {
+    interface JQueryPlot {
+        (element: HTMLElement | JQuery, data: any, options: any): void;
+        plugins: any[];
+    }
+
+    interface JQuery {
+        place_tt?: any;
+        modal?: any;
+        tagsinput?: any;
+        typeahead?: any;
+        accessKey?: any;
+        tooltip?: any;
+    }
+
+    // @ts-ignore
+    interface JQueryStatic extends jQuery {
+        plot: JQueryPlot;
+    };
+
+    interface Window {
+        $: JQueryStatic;
+        jQuery: JQueryStatic;
+    }
+}
 
 
 declare module '*.png' {
@@ -151,21 +180,3 @@ declare module 'ol-ext/style/Photo' {
     }
 }
 
-
-interface JQueryPlot {
-    (element: HTMLElement | JQuery, data: any, options: any): void;
-    plugins: any[];
-}
-
-interface JQueryStatic {
-    plot: JQueryPlot;
-}
-
-interface JQuery {
-    place_tt: any;
-    modal: any;
-    tagsinput: any;
-    typeahead: any;
-    accessKey: any;
-    tooltip: any;
-}

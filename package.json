@@ -80,7 +80,6 @@
     "@tanstack/react-virtual": "^3.13.3",
     "@testing-library/react": "^16.2.0",
     "@types/d3-interpolate": "^3.0.0",
-    "@types/flot": "^0.0.36",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/react-grid-layout": "^1.3.5",

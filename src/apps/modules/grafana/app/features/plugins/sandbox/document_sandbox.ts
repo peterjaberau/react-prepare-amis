@@ -82,6 +82,7 @@ export function isDomElement(obj: unknown): obj is Element {
  */
 export function markDomElementStyleAsALiveTarget(el: Element) {
   const style = Reflect.get(el, 'style');
+  // @ts-ignore
   if (!Object.hasOwn(style, SANDBOX_LIVE_VALUE)) {
     Reflect.defineProperty(style, SANDBOX_LIVE_VALUE, {});
   }
@@ -105,6 +106,7 @@ function unconditionallyPatchObjectAsLiveTarget(obj: unknown) {
     return;
   }
   // do not patch it twice
+  // @ts-ignore
   if (Object.hasOwn(obj, SANDBOX_LIVE_VALUE)) {
     return obj;
   }
@@ -127,6 +129,7 @@ export function patchObjectAsLiveTarget(obj: unknown) {
   }
 
   // do not patch it twice
+  // @ts-ignore
   if (Object.hasOwn(obj, SANDBOX_LIVE_VALUE)) {
     return;
   }
@@ -153,7 +156,9 @@ export function patchObjectAsLiveTarget(obj: unknown) {
   }
 }
 
-export function isLiveTarget(el: ProxyTarget) {
+export function isLiveTarget(el: ProxyTarget)
+{
+  // @ts-ignore
   return Object.hasOwn(el, SANDBOX_LIVE_VALUE);
 }
 
