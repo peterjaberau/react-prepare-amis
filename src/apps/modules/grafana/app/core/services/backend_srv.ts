@@ -624,9 +624,9 @@ export class BackendSrv implements BackendService {
 
 // Used for testing and things that really need BackendSrv
 export const backendSrv = new BackendSrv();
-console.log('backendSrv', backendSrv);
 
 export const getBackendSrv = (): BackendSrv => backendSrv;
+console.log('backendSrv', backendSrv);
 
 interface ValidateDashboardResponse {
   isValid: boolean;

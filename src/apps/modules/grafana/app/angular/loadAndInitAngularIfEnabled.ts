@@ -19,6 +19,8 @@ export async function loadAndInitAngularIfEnabled() {
     const app = new AngularApp();
     app.init();
     app.bootstrap();
+
+    console.log('--app--', app);
   } else {
     // Register a dummy loader that does nothing
     setAngularLoader({

@@ -37,6 +37,8 @@ interface PluginImportUtils {
 let pluginImportUtils: PluginImportUtils | undefined;
 
 export function setPluginImportUtils(utils: PluginImportUtils) {
+
+
   if (pluginImportUtils) {
     throw new Error('pluginImportUtils should only be set once, when Grafana is starting.');
   }

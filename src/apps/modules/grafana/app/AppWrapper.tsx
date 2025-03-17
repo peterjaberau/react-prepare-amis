@@ -65,6 +65,9 @@ export class AppWrapper extends Component<AppWrapperProps, AppWrapperState> {
   async componentDidMount() {
     await loadAndInitAngularIfEnabled();
     this.setState({ ready: true });
+
+
+
     $('.preloader').remove();
 
     // clear any old icon caches

@@ -181,3 +181,13 @@ declare module 'ol-ext/style/Photo' {
 }
 
 declare module '@locker/near-membrane-dom/custom-devtools-formatter';
+
+declare global {
+    interface Window {
+        __grafana_app_component__?: React.ReactNode;
+        __webpack_public_path__?: string;
+        __webpack_nonce__?: string;
+        __grafana_app_bundle_loaded?: string;
+        __grafanaBootData__?: any;
+    }
+}

@@ -74,6 +74,7 @@
     "@react-awesome-query-builder/ui": "6.6.4",
     "@react-hookz/web": "^25.0.1",
     "@reduxjs/toolkit": "2.5.1",
+    "@rollup/plugin-inject": "^5.0.5",
     "@statelyai/agent": "1.1.6",
     "@statelyai/inspect": "^0.4.0",
     "@tabler/icons-react": "^3.31.0",
