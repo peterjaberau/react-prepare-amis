@@ -1,3 +1,8 @@
+/**
+ * A library containing most of the core functionality and data types used in Grafana.
+ *
+ * @packageDocumentation
+ */
 
 export { amendTable, trimTable, type Table } from './table/amendTimeSeries';
 
@@ -295,7 +300,7 @@ export {
 } from './transformations/transformers/joinDataFrames';
 export * from './transformations/transformers/histogram';
 export { ensureTimeField } from './transformations/transformers/convertFieldType';
-// Required for Sparklines util to work in @data/index, but ideally kept internal
+// Required for Sparklines util to work in @grafana/data, but ideally kept internal
 export { applyNullInsertThreshold } from './transformations/transformers/nulls/nullInsertThreshold';
 export { nullToValue } from './transformations/transformers/nulls/nullToValue';
 
@@ -545,6 +550,7 @@ export {
   type PluginExtensionLink,
   type PluginExtensionComponent,
   type PluginExtensionComponentMeta,
+  type ComponentTypeWithExtensionMeta,
   type PluginExtensionConfig,
   type PluginExtensionFunction,
   type PluginExtensionLinkConfig,
@@ -570,9 +576,9 @@ export {
   type ScopeNodeLinkType,
   type ScopeNodeSpec,
   type ScopeNode,
+  scopeFilterOperatorMap,
   reverseScopeFilterOperatorMap,
   isEqualityOrMultiOperator,
-  scopeFilterOperatorMap,
 } from './types/scopes';
 export {
   PluginState,

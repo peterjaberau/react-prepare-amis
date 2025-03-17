@@ -1,20 +1,36 @@
-import { css } from '@emotion/css';
-import { formatDistanceToNowStrict } from 'date-fns';
+import { css } from "@emotion/css";
+import { formatDistanceToNowStrict } from "date-fns";
 
-import { GrafanaTheme2, dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
-import { config } from '@runtime/index';
-import { Icon, Link, Stack, Text, TextLink, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { useDatasource } from '@grafana-module/app/features/datasources/hooks';
-import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import {
+  GrafanaTheme2,
+  dateTimeFormat,
+  dateTimeFormatTimeAgo,
+} from "@data/index";
+import { config } from "@runtime/index";
+import {
+  Icon,
+  Link,
+  Stack,
+  Text,
+  TextLink,
+  useStyles2,
+} from "@grafana-ui/index";
+import { Trans, t } from "@grafana-module/app/core/internationalization";
+import { useDatasource } from "@grafana-module/app/features/datasources/hooks";
+import { CombinedRule } from "@grafana-module/app/types/unified-alerting";
 
-import { usePendingPeriod } from '../../../hooks/rules/usePendingPeriod';
-import { getAnnotations, isPausedRule, prometheusRuleType, rulerRuleType } from '../../../utils/rules';
-import { isNullDate } from '../../../utils/time';
-import { Tokenize } from '../../Tokenize';
-import { DetailText } from '../../common/DetailText';
+import { usePendingPeriod } from "../../../hooks/rules/usePendingPeriod";
+import {
+  getAnnotations,
+  isPausedRule,
+  prometheusRuleType,
+  rulerRuleType,
+} from "../../../utils/rules";
+import { isNullDate } from "../../../utils/time";
+import { Tokenize } from "../../Tokenize";
+import { DetailText } from "../../common/DetailText";
 
-import { UpdatedByUser } from './version-history/UpdatedBy';
+import { UpdatedByUser } from "./version-history/UpdatedBy";
 
 enum RuleType {
   GrafanaManagedAlertRule = 'Grafana-managed alert rule',

@@ -146,6 +146,7 @@ export const filterRules = (
       filteredRuleNamespaces.push(match);
     });
   } catch (error) {
+    // @ts-ignore
     logError(new Error('Failed to filter rules', { cause: error }), {
       search: JSON.stringify(filterState),
     });

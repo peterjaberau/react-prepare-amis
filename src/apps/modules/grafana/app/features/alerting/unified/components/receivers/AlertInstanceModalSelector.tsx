@@ -315,6 +315,7 @@ const getStyles = (theme: GrafanaTheme2) => {
       height: '22px',
       fontWeight: theme.typography.fontWeightBold,
     }),
+    // @ts-ignore
     rowButton: css(clearButton, {
       padding: theme.spacing(0.5),
       overflow: 'hidden',

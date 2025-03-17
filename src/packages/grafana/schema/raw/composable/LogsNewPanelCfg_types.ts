@@ -1,5 +1,5 @@
 
-import * as common from '@schema';
+import * as common from '@schema/common';
 
 export const pluginVersion = "11.6.0-pre";
 

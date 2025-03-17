@@ -5,19 +5,19 @@ import {
 } from '@schema/index';
 
 /**
- * @deprecated use the type from @schema/index
+ * @deprecated use the type from @grafana/schema
  */
 export interface DataQuery extends SchemaDataQuery {}
 
 /**
- * @deprecated use the type from @schema/index
+ * @deprecated use the type from @grafana/schema
  */
 export interface DataSourceRef extends SchemaDataSourceRef {}
 
 /**
  * Attached to query results (not persisted)
  *
- * @deprecated use the type from @schema/index
+ * @deprecated use the type from @grafana/schema
  */
 export { SchemaDataTopic as DataTopic };
 

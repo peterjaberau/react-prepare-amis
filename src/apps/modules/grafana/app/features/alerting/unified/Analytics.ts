@@ -1,18 +1,17 @@
 import { isEmpty } from 'lodash';
 
-import { dateTime } from '@data/index';
-import { createMonitoringLogger, getBackendSrv } from '@runtime/index';
+import { createMonitoringLogger } from '@runtime/index';
 import { config, reportInteraction } from '@runtime/index';
 import { contextSrv } from '@grafana-module/app/core/core';
 
 import { RuleNamespace } from '../../../types/unified-alerting';
 import { RulerRulesConfigDTO } from '../../../types/unified-alerting-dto';
 
+import { Origin } from './components/rule-viewer/tabs/version-history/ConfirmVersionRestoreModal';
 import { FilterType } from './components/rules/central-state-history/EventListSceneObject';
 import { RulesFilter, getSearchFilterFromQuery } from './search/rulesSearchParser';
 import { RuleFormType } from './types/rule-form';
 
-export const USER_CREATION_MIN_DAYS = 7;
 
 export const LogMessages = {
   filterByLabel: 'filtering alert instances by label',
@@ -151,21 +150,6 @@ function getRulerRulesMetadata(rulerRules: RulerRulesConfigDTO) {
   };
 }
 
-export async function isNewUser() {
-  try {
-    const { createdAt } = await getBackendSrv().get(`/api/user`);
-
-    const limitDateForNewUser = dateTime().subtract(USER_CREATION_MIN_DAYS, 'days');
-    const userCreationDate = dateTime(createdAt);
-
-    const isNew = limitDateForNewUser.isBefore(userCreationDate);
-
-    return isNew;
-  } catch {
-    return true; //if no date is returned, we assume the user is new to prevent tracking actions
-  }
-}
-
 export const trackRuleListNavigation = async (
   props: AlertRuleTrackingProps = {
     grafana_version: config.buildInfo.version,
@@ -173,10 +157,6 @@ export const trackRuleListNavigation = async (
     user_id: contextSrv.user.id,
   }
 ) => {
-  const isNew = await isNewUser();
-  if (isNew) {
-    return;
-  }
   reportInteraction('grafana_alerting_navigation', props);
 };
 
@@ -227,6 +207,16 @@ interface RuleVersionComparisonProps {
 
 export const trackRuleVersionsComparisonClick = async (payload: RuleVersionComparisonProps) => {
   reportInteraction('grafana_alerting_rule_versions_comparison_click', { ...payload });
+};
+
+export const trackRuleVersionsRestoreSuccess = async (payload: RuleVersionComparisonProps & { origin: Origin }) => {
+  reportInteraction('grafana_alerting_rule_versions_restore_success', { ...payload });
+};
+
+export const trackRuleVersionsRestoreFail = async (
+  payload: RuleVersionComparisonProps & { origin: Origin; error: Error }
+) => {
+  reportInteraction('grafana_alerting_rule_versions_restore_error', { ...payload });
 };
 
 interface RulesSearchInteractionPayload {

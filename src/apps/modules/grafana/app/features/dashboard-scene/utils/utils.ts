@@ -66,7 +66,7 @@ function findVizPanelInternal(scene: SceneObject, key: string | undefined): VizP
     return null;
   }
 
-  const panel = sceneGraph.findObject(scene, (obj) => {
+  const panel = sceneGraph.findObject(scene, (obj: any) => {
     const objKey = obj.state.key!;
 
     if (objKey === key) {
@@ -125,7 +125,7 @@ function findOriginalVizPanelInternal(scene: SceneObject, key: string | undefine
     return null;
   }
 
-  const panel = sceneGraph.findObject(scene, (obj) => {
+  const panel = sceneGraph.findObject(scene, (obj: any) => {
     const objKey = obj.state.key!;
 
     // Compare the original keys
@@ -172,7 +172,7 @@ export function findEditPanel(scene: SceneObject, key: string | undefined): VizP
     const originalPanelKey = getOriginalKey(panelKey);
     // Start the search from the parent to avoid unnecessary checks
     // The parent usually is the grid item where the referenced panel is also located
-    panel = sceneGraph.findObject(panel.parent ?? scene, (sceneObject) => {
+    panel = sceneGraph.findObject(panel.parent ?? scene, (sceneObject: any) => {
       if (!sceneObject.state.key || isInCloneChain(sceneObject.state.key)) {
         return false;
       }

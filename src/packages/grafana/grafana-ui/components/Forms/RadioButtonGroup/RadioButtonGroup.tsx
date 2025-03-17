@@ -7,8 +7,7 @@ import { GrafanaTheme2, SelectableValue, toIconName } from '@data/index';
 import { useStyles2 } from '../../../themes';
 import { Icon } from '../../Icon/Icon';
 
-import { RadioButtonSize, RadioButton } from './RadioButton';
-
+import { RadioButtonSize, RadioButton, RADIO_GROUP_PADDING } from './RadioButton';
 export interface RadioButtonGroupProps<T> {
   value?: T;
   id?: string;
@@ -26,20 +25,20 @@ export interface RadioButtonGroupProps<T> {
 }
 
 export function RadioButtonGroup<T>({
-  options,
-  value,
-  onChange,
-  onClick,
-  disabled,
-  disabledOptions,
-  size = 'md',
-  id,
-  className,
-  fullWidth = false,
-  autoFocus = false,
-  'aria-label': ariaLabel,
-  invalid = false,
-}: RadioButtonGroupProps<T>) {
+                                      options,
+                                      value,
+                                      onChange,
+                                      onClick,
+                                      disabled,
+                                      disabledOptions,
+                                      size = 'md',
+                                      id,
+                                      className,
+                                      fullWidth = false,
+                                      autoFocus = false,
+                                      'aria-label': ariaLabel,
+                                      invalid = false,
+                                    }: RadioButtonGroupProps<T>) {
   const handleOnChange = useCallback(
     (option: SelectableValue) => {
       return () => {
@@ -119,7 +118,7 @@ const getStyles = (theme: GrafanaTheme2) => {
       flexWrap: 'nowrap',
       border: `1px solid ${theme.components.input.borderColor}`,
       borderRadius: theme.shape.radius.default,
-      padding: '2px',
+      padding: RADIO_GROUP_PADDING,
       '&:hover': {
         borderColor: theme.components.input.borderHover,
       },
