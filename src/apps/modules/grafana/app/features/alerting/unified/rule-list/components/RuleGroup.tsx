@@ -7,7 +7,8 @@ import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alertin
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { usePagination } from '../../hooks/usePagination';
-import { isAlertingRule } from '../../utils/rules';
+import { Annotation } from '../../utils/constants';
+import { prometheusRuleType } from '../../utils/rules';
 
 import { AlertRuleListItem } from './AlertRuleListItem';
 import { EvaluationGroup } from './EvaluationGroup';
@@ -24,12 +25,12 @@ interface EvaluationGroupLoaderProps {
 const ALERT_RULE_PAGE_SIZE = 15;
 
 export const EvaluationGroupLoader = ({
-  name,
-  provenance,
-  interval,
-  namespace,
-  rulerConfig,
-}: EvaluationGroupLoaderProps) => {
+                                        name,
+                                        provenance,
+                                        interval,
+                                        namespace,
+                                        rulerConfig,
+                                      }: EvaluationGroupLoaderProps) => {
   const [isOpen, toggle] = useToggle(false);
 
   // TODO use Prometheus endpoint here?
@@ -65,7 +66,7 @@ export const EvaluationGroupLoader = ({
                 state={PromAlertingRuleState.Inactive}
                 name={rule.name}
                 href={'/'}
-                summary={isAlertingRule(rule) ? rule.annotations?.summary : undefined}
+                summary={prometheusRuleType.alertingRule(rule) ? rule.annotations?.[Annotation.summary] : undefined}
               />;
 
               return null;
