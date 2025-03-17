@@ -49,7 +49,6 @@ import { GRAFANA_ORIGIN_LABEL } from './labels';
 import { AsyncRequestState } from './redux';
 import { formatPrometheusDuration, safeParsePrometheusDuration } from './time';
 
-
 /* Grafana managed rules */
 
 function isGrafanaRulerRule(rule?: RulerRuleDTO | PostableRuleDTO): rule is RulerGrafanaRuleDTO {

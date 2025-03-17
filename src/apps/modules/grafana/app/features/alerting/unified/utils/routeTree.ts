@@ -122,9 +122,7 @@ export const addRouteToReferenceRoute = (
       throw new Error(
         `could not find reference route "${referenceRouteIdentifier}" in tree`,
         // @ts-ignore
-        {
-          cause: ERROR_NEWER_CONFIGURATION,
-        },
+        { cause: ERROR_NEWER_CONFIGURATION, },
       );
     }
 

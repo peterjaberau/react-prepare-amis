@@ -267,7 +267,7 @@ export function getErrorCode(error: Error | any): unknown {
 }
 
 /* this function will check if the error passed as the first argument contains an error code */
-export function isErrorMatchingCode(error: Error | undefined, code: SupportedErrors): boolean {
+export function isErrorMatchingCode(error: Error | any | undefined, code: SupportedErrors | any): boolean {
   if (!error) {
     return false;
   }
@@ -275,8 +275,8 @@ export function isErrorMatchingCode(error: Error | undefined, code: SupportedErr
   return getErrorCode(error) === code;
 }
 
-export function stringifyErrorLike(error: unknown | any): string {
-  const fetchError = isFetchError(error);
+export function stringifyErrorLike(error: unknown  | any): string {
+  const fetchError: any = isFetchError(error);
   if (fetchError) {
     if (isApiMachineryError(error) && error.data.details) {
       const message = getErrorMessageFromCode(error.data.details.uid);
@@ -303,7 +303,7 @@ export function stringifyErrorLike(error: unknown | any): string {
   }
 
   // if the error is one we know how to translate via an error code:
-  const code = getErrorCode(error);
+  const code: any = getErrorCode(error);
   if (typeof code === 'string') {
     const message = getErrorMessageFromCode(code);
     if (message) {
