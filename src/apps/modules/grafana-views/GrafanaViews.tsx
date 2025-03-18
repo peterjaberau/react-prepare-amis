@@ -21,7 +21,92 @@ import {
 } from "@elastic/eui";
 import { CustomResizeLogic } from "./views/CustomResizeLogic";
 import { useRootMachine } from "@/machines/rootMachineStore.ts";
-
+import { LogsPanel } from "@grafana-module/app/plugins/panel/logs/LogsPanel.tsx";
+import { LogsSamplePanel } from "@grafana-module/app/features/explore/Logs/LogsSamplePanel.tsx";
+import { LogsSortOrder } from "@/packages/grafana/schema";
+import { LogsDedupStrategy } from "@schema/common.ts";
+import { getDefaultTimeRange } from "@data/types/time.ts";
+import {
+  createDataFrame,
+  DataFrameType,
+  EventBusSrv,
+  FieldType,
+  LoadingState,
+} from "@/packages/grafana/data";
+import { LogList } from "@grafana-module/app/features/logs/components/panel/LogList.tsx";
+const defaultProps = {
+  data: {
+    error: undefined,
+    request: {
+      panelId: 4,
+      app: "dashboard",
+      requestId: "A",
+      timezone: "browser",
+      interval: "30s",
+      intervalMs: 30000,
+      maxDataPoints: 823,
+      targets: [],
+      range: getDefaultTimeRange(),
+      scopedVars: {},
+      startTime: 1,
+    },
+    series: [
+      createDataFrame({
+        refId: "A",
+        fields: [
+          {
+            name: "timestamp",
+            type: FieldType.time,
+            values: ["2019-04-26T09:28:11.352440161Z"],
+          },
+          {
+            name: "body",
+            type: FieldType.string,
+            values: ["logline text"],
+          },
+          {
+            name: "labels",
+            type: FieldType.other,
+            values: [
+              {
+                app: "common_app",
+              },
+            ],
+          },
+        ],
+        meta: {
+          type: DataFrameType.LogLines,
+        },
+      }),
+    ],
+    state: LoadingState.Done,
+    timeRange: getDefaultTimeRange(),
+  },
+  timeZone: "utc",
+  timeRange: getDefaultTimeRange(),
+  options: {
+    showLabels: false,
+    showTime: false,
+    wrapLogMessage: false,
+    showCommonLabels: false,
+    prettifyLogMessage: false,
+    sortOrder: LogsSortOrder.Descending,
+    dedupStrategy: LogsDedupStrategy.none,
+    enableLogDetails: false,
+    showLogContextToggle: false,
+  },
+  title: "Logs panel",
+  id: 1,
+  transparent: false,
+  width: 400,
+  height: 100,
+  renderCounter: 0,
+  fieldConfig: {
+    defaults: {},
+    overrides: [],
+  },
+  // eventBus: new EventBusSrv(),
+};
 const flyoutHeadingId = "flyout-grafana-view";
 export const GrafanaViews = () => {
   const { layout: rootLayout, actor: rootActor } = useRootMachine();
@@ -109,15 +194,16 @@ export const GrafanaViews = () => {
                     scrollable={false}
                   >
                     <EuiPanel>
-                      <EuiText size="s">
-                        <p>
-                          This <strong>EuiResizablePanel</strong> also changes
-                          the background color but adds an internal{" "}
-                          <strong>EuiPanel</strong> that will not stretch and
-                          will scroll within the{" "}
-                          <strong>EuiResizablePanel</strong>.
-                        </p>
-                      </EuiText>
+                      <LogList
+                        app={"dashboard"}
+                        logs={[]}
+                        // containerElement={}
+                        // eventBus={}
+                        showTime={false}
+                        timeRange={getDefaultTimeRange()}
+                        timeZone={"utc"}
+                        wrapLogMessage={false}
+                      />
                     </EuiPanel>
                   </EuiResizablePanel>
                 </>

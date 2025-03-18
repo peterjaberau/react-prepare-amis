@@ -1,0 +1,3655 @@
+{
+  "navBarTree": [
+    {
+      "id": "home",
+      "text": "Home",
+      "icon": "home-alt",
+      "url": "/",
+      "sortWeight": -2000
+    },
+    {
+      "id": "bookmarks",
+      "text": "Bookmarks",
+      "icon": "bookmark",
+      "url": "/bookmarks",
+      "sortWeight": -1900,
+      "emptyMessageId": "bookmarks-empty",
+      "emptyMessage": "Bookmark pages for them to appear here"
+    },
+    {
+      "id": "starred",
+      "text": "Starred",
+      "icon": "star",
+      "url": "/dashboards?starred",
+      "sortWeight": -1800,
+      "children": [
+        {
+          "id": "starred/j6T00KRZz",
+          "text": "Grafana Dev Overview & Home",
+          "url": "/d/j6T00KRZz/grafana-dev-overview-and-home"
+        },
+        {
+          "id": "starred/Pu8lwQAVz",
+          "text": "Panel Tests - Canvas Connection Examples",
+          "url": "/d/Pu8lwQAVz/panel-tests-canvas-connection-examples"
+        },
+        {
+          "id": "starred/adf95uwu7w1s0e",
+          "text": "Panel Tests - Canvas Datalinks",
+          "url": "/d/adf95uwu7w1s0e/panel-tests-canvas-datalinks"
+        },
+        {
+          "id": "starred/7p7JkqWVz",
+          "text": "Panel Tests - Canvas Examples",
+          "url": "/d/7p7JkqWVz/panel-tests-canvas-examples"
+        },
+        {
+          "id": "starred/a6801696-cc53-4196-b1f9-2403e3909185",
+          "text": "Panel Tests - DashList",
+          "url": "/d/a6801696-cc53-4196-b1f9-2403e3909185/panel-tests-dashlist"
+        },
+        {
+          "id": "starred/16f11TZWk",
+          "text": "Panel Tests - Flame Graph",
+          "url": "/d/16f11TZWk/panel-tests-flame-graph"
+        },
+        {
+          "id": "starred/U_bZIMRMk",
+          "text": "Panel Tests - React Table",
+          "url": "/d/U_bZIMRMk/panel-tests-react-table"
+        },
+        {
+          "id": "starred/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8",
+          "text": "Panel Tests - Relative time zone support",
+          "url": "/d/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8/panel-tests-relative-time-zone-support"
+        },
+        {
+          "id": "starred/n1jR8vnnz",
+          "text": "Panel tests - All panels",
+          "url": "/d/n1jR8vnnz/panel-tests-all-panels"
+        },
+        {
+          "id": "starred/xtY_uCAiz",
+          "text": "Panel tests - Slow Queries & Annotations",
+          "url": "/d/xtY_uCAiz/panel-tests-slow-queries-and-annotations"
+        },
+        {
+          "id": "starred/TXSTREZ",
+          "text": "Simple Streaming Example",
+          "url": "/d/TXSTREZ/simple-streaming-example"
+        },
+        {
+          "id": "starred/1YGJxPUnz",
+          "text": "Table panel - Pagination",
+          "url": "/d/1YGJxPUnz/table-panel-pagination"
+        },
+        {
+          "id": "starred/HYaGDGIMk",
+          "text": "Templating - Global variables and interpolation",
+          "url": "/d/HYaGDGIMk/templating-global-variables-and-interpolation"
+        },
+        {
+          "id": "starred/1KxMUdE7k",
+          "text": "TimeSeries & BarChart Stacking",
+          "url": "/d/1KxMUdE7k/timeseries-and-barchart-stacking"
+        }
+      ],
+      "emptyMessageId": "starred-empty",
+      "emptyMessage": "Your starred dashboards will appear here"
+    },
+    {
+      "id": "dashboards/browse",
+      "text": "Dashboards",
+      "subTitle": "Create and manage dashboards to visualize your data",
+      "icon": "apps",
+      "url": "/dashboards",
+      "sortWeight": -1700,
+      "children": [
+        {
+          "id": "dashboards/playlists",
+          "text": "Playlists",
+          "subTitle": "Groups of dashboards that are displayed in a sequence",
+          "icon": "presentation-play",
+          "url": "/playlists"
+        },
+        {
+          "id": "dashboards/snapshots",
+          "text": "Snapshots",
+          "subTitle": "Interactive, publically available, point-in-time representations of dashboards and panels",
+          "icon": "camera",
+          "url": "/dashboard/snapshots"
+        },
+        {
+          "id": "dashboards/library-panels",
+          "text": "Library panels",
+          "subTitle": "Reusable panels that can be added to multiple dashboards",
+          "icon": "library-panel",
+          "url": "/library-panels"
+        },
+        {
+          "id": "dashboards/public",
+          "text": "Shared dashboards",
+          "icon": "library-panel",
+          "url": "/dashboard/public",
+          "subTitle": "Manage your organization's externally shared dashboards"
+        },
+        {
+          "id": "dashboards/new",
+          "text": "New dashboard",
+          "icon": "plus",
+          "url": "/dashboard/new",
+          "hideFromTabs": true,
+          "isCreateAction": true
+        },
+        {
+          "id": "dashboards/import",
+          "text": "Import dashboard",
+          "subTitle": "Import dashboard from file or Grafana.com",
+          "icon": "plus",
+          "url": "/dashboard/import",
+          "hideFromTabs": true,
+          "isCreateAction": true
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "text": "Explore",
+      "subTitle": "Explore your data",
+      "icon": "compass",
+      "url": "/explore",
+      "sortWeight": -1600
+    },
+    {
+      "id": "drilldown",
+      "text": "Drilldown",
+      "subTitle": "Drill down into your data using Grafana's powerful queryless apps",
+      "icon": "drilldown",
+      "url": "/drilldown",
+      "sortWeight": -1500,
+      "children": [
+        {
+          "id": "explore/metrics",
+          "text": "Metrics",
+          "subTitle": "Queryless exploration of your metrics",
+          "icon": "code-branch",
+          "url": "/explore/metrics"
+        },
+        {
+          "id": "plugin-page-grafana-lokiexplore-app",
+          "text": "Logs",
+          "subTitle": "Query-less exploration of log data stored in Loki",
+          "img": "public/plugins/grafana-lokiexplore-app/img/logo.svg",
+          "url": "/a/grafana-lokiexplore-app/explore",
+          "sortWeight": 2,
+          "isSection": true,
+          "pluginId": "grafana-lokiexplore-app"
+        },
+        {
+          "id": "plugin-page-grafana-pyroscope-app",
+          "text": "Profiles",
+          "subTitle": "Continuous profiling service powered by Grafana Pyroscope",
+          "img": "public/plugins/grafana-pyroscope-app/img/logo.svg",
+          "url": "/a/grafana-pyroscope-app/explore",
+          "sortWeight": 4,
+          "isSection": true,
+          "pluginId": "grafana-pyroscope-app"
+        }
+      ],
+      "isNew": true
+    },
+    {
+      "id": "alerts-and-incidents",
+      "text": "Alerts & IRM",
+      "subTitle": "Alerting and incident management apps",
+      "icon": "bell",
+      "url": "/alerts-and-incidents",
+      "sortWeight": -1300,
+      "children": [
+        {
+          "id": "alerting",
+          "text": "Alerting",
+          "subTitle": "Learn about problems in your systems moments after they occur",
+          "icon": "bell",
+          "url": "/alerting",
+          "sortWeight": -1400,
+          "children": [
+            {
+              "id": "alert-list",
+              "text": "Alert rules",
+              "subTitle": "Rules that determine whether an alert will fire",
+              "icon": "list-ul",
+              "url": "/alerting/list"
+            },
+            {
+              "id": "receivers",
+              "text": "Contact points",
+              "subTitle": "Choose how to notify your contact points when an alert instance fires",
+              "icon": "comment-alt-share",
+              "url": "/alerting/notifications"
+            },
+            {
+              "id": "am-routes",
+              "text": "Notification policies",
+              "subTitle": "Determine how alerts are routed to contact points",
+              "icon": "sitemap",
+              "url": "/alerting/routes"
+            },
+            {
+              "id": "silences",
+              "text": "Silences",
+              "subTitle": "Stop notifications from one or more alerting rules",
+              "icon": "bell-slash",
+              "url": "/alerting/silences"
+            },
+            {
+              "id": "groups",
+              "text": "Active notifications",
+              "subTitle": "See grouped alerts with active notifications",
+              "icon": "layer-group",
+              "url": "/alerting/groups"
+            },
+            {
+              "id": "alerting-admin",
+              "text": "Settings",
+              "icon": "cog",
+              "url": "/alerting/admin",
+              "subTitle": "Manage Alertmanager configurations and enable receiving Grafana-managed alerts"
+            },
+            {
+              "id": "alert",
+              "text": "New alert rule",
+              "subTitle": "Create an alert rule",
+              "icon": "plus",
+              "url": "/alerting/new",
+              "hideFromTabs": true,
+              "isCreateAction": true
+            }
+          ]
+        },
+        {
+          "id": "plugin-page-grafana-oncall-app",
+          "text": "OnCall",
+          "subTitle": "Collect and analyze alerts, escalate based on schedules and deliver them to Slack, Phone Calls, SMS and others",
+          "img": "public/plugins/grafana-oncall-app/assets/img/logo.svg",
+          "url": "/a/grafana-oncall-app",
+          "sortWeight": 2,
+          "isSection": true,
+          "children": [
+            {
+              "text": "Alert groups",
+              "url": "/a/grafana-oncall-app/alert-groups",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Users",
+              "url": "/a/grafana-oncall-app/users",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Integrations",
+              "url": "/a/grafana-oncall-app/integrations?tab=monitoring-systems",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Escalation chains",
+              "url": "/a/grafana-oncall-app/escalations",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Schedules",
+              "url": "/a/grafana-oncall-app/schedules",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Outgoing webhooks",
+              "url": "/a/grafana-oncall-app/outgoing_webhooks",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Insights",
+              "url": "/a/grafana-oncall-app/insights",
+              "pluginId": "grafana-oncall-app"
+            },
+            {
+              "text": "Settings",
+              "url": "/a/grafana-oncall-app/settings",
+              "pluginId": "grafana-oncall-app"
+            }
+          ],
+          "pluginId": "grafana-oncall-app"
+        }
+      ]
+    },
+    {
+      "id": "connections",
+      "text": "Connections",
+      "icon": "adjust-circle",
+      "url": "/connections",
+      "sortWeight": -500,
+      "children": [
+        {
+          "id": "connections-add-new-connection",
+          "text": "Add new connection",
+          "subTitle": "Browse and create new connections",
+          "url": "/connections/add-new-connection",
+          "keywords": [
+            "csv",
+            "graphite",
+            "json",
+            "loki",
+            "prometheus",
+            "sql",
+            "tempo"
+          ]
+        },
+        {
+          "id": "connections-datasources",
+          "text": "Data sources",
+          "subTitle": "View and manage your connected data source connections",
+          "url": "/connections/datasources"
+        }
+      ]
+    },
+    {
+      "id": "cfg",
+      "text": "Administration",
+      "subTitle": "Organization: Main Org.",
+      "icon": "cog",
+      "url": "/admin",
+      "sortWeight": -200,
+      "children": [
+        {
+          "id": "cfg/general",
+          "text": "General",
+          "subTitle": "Manage default preferences and settings across Grafana",
+          "icon": "shield",
+          "url": "/admin/general",
+          "children": [
+            {
+              "id": "upgrading",
+              "text": "Stats and license",
+              "icon": "unlock",
+              "url": "/admin/upgrading",
+              "sortWeight": -1
+            },
+            {
+              "id": "org-settings",
+              "text": "Default preferences",
+              "subTitle": "Manage preferences across an organization",
+              "icon": "sliders-v-alt",
+              "url": "/org"
+            },
+            {
+              "id": "server-settings",
+              "text": "Settings",
+              "subTitle": "View the settings defined in your Grafana config",
+              "icon": "sliders-v-alt",
+              "url": "/admin/settings"
+            },
+            {
+              "id": "global-orgs",
+              "text": "Organizations",
+              "subTitle": "Isolated instances of Grafana running on the same server",
+              "icon": "building",
+              "url": "/admin/orgs"
+            },
+            {
+              "id": "migrate-to-cloud",
+              "text": "Migrate to Grafana Cloud",
+              "subTitle": "Copy configuration from your self-managed installation to a cloud stack",
+              "url": "/admin/migrate-to-cloud"
+            }
+          ]
+        },
+        {
+          "id": "cfg/plugins",
+          "text": "Plugins and data",
+          "subTitle": "Install plugins and define the relationships between data",
+          "icon": "shield",
+          "url": "/admin/plugins",
+          "children": [
+            {
+              "id": "plugins",
+              "text": "Plugins",
+              "subTitle": "Extend the Grafana experience with plugins",
+              "icon": "plug",
+              "url": "/plugins"
+            },
+            {
+              "id": "correlations",
+              "text": "Correlations",
+              "subTitle": "Add and configure correlations",
+              "icon": "gf-glue",
+              "url": "/datasources/correlations"
+            },
+            {
+              "id": "extensions",
+              "text": "Extensions",
+              "subTitle": "Extend the UI of plugins and Grafana",
+              "icon": "plug",
+              "url": "/admin/extensions"
+            }
+          ]
+        },
+        {
+          "id": "cfg/access",
+          "text": "Users and access",
+          "subTitle": "Configure access for individual users, teams, and service accounts",
+          "icon": "shield",
+          "url": "/admin/access",
+          "children": [
+            {
+              "id": "global-users",
+              "text": "Users",
+              "subTitle": "Manage users in Grafana",
+              "icon": "user",
+              "url": "/admin/users"
+            },
+            {
+              "id": "teams",
+              "text": "Teams",
+              "subTitle": "Groups of users that have common dashboard and permission needs",
+              "icon": "users-alt",
+              "url": "/org/teams"
+            },
+            {
+              "id": "serviceaccounts",
+              "text": "Service accounts",
+              "subTitle": "Use service accounts to run automated workloads in Grafana",
+              "icon": "gf-service-account",
+              "url": "/org/serviceaccounts"
+            }
+          ]
+        },
+        {
+          "id": "authentication",
+          "text": "Authentication",
+          "subTitle": "Manage your auth settings and configure single sign-on",
+          "icon": "signin",
+          "url": "/admin/authentication",
+          "isSection": true
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "text": "admin",
+      "img": "/avatar/46d229b033af06a191ff2267bca9ae56",
+      "url": "/profile",
+      "sortWeight": -100,
+      "roundIcon": true,
+      "children": [
+        {
+          "id": "profile/settings",
+          "text": "Profile",
+          "icon": "sliders-v-alt",
+          "url": "/profile"
+        },
+        {
+          "id": "profile/notifications",
+          "text": "Notification history",
+          "icon": "bell",
+          "url": "/profile/notifications"
+        },
+        {
+          "id": "profile/password",
+          "text": "Change password",
+          "icon": "lock",
+          "url": "/profile/password"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "text": "Help",
+      "subTitle": "Grafana v11.6.0-pre (6019b21cc5)",
+      "icon": "question-circle",
+      "url": "#",
+      "children": [
+        {
+          "id": "support-bundles",
+          "text": "Support bundles",
+          "icon": "wrench",
+          "url": "/support-bundles",
+          "subTitle": "Download support bundles"
+        }
+      ]
+    }
+  ],
+  "navIndex": {
+    "home": {
+      "id": "home",
+      "text": "Home",
+      "icon": "home-alt",
+      "url": "/",
+      "sortWeight": -2000,
+      "children": [
+        {
+          "id": "bookmarks",
+          "text": "Bookmarks",
+          "icon": "bookmark",
+          "url": "/bookmarks",
+          "sortWeight": -1900,
+          "emptyMessageId": "bookmarks-empty",
+          "emptyMessage": "Bookmark pages for them to appear here",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred",
+          "text": "Starred",
+          "icon": "star",
+          "url": "/dashboards?starred",
+          "sortWeight": -1800,
+          "children": [
+            {
+              "id": "starred/j6T00KRZz",
+              "text": "Grafana Dev Overview & Home",
+              "url": "/d/j6T00KRZz/grafana-dev-overview-and-home",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/Pu8lwQAVz",
+              "text": "Panel Tests - Canvas Connection Examples",
+              "url": "/d/Pu8lwQAVz/panel-tests-canvas-connection-examples",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/adf95uwu7w1s0e",
+              "text": "Panel Tests - Canvas Datalinks",
+              "url": "/d/adf95uwu7w1s0e/panel-tests-canvas-datalinks",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/7p7JkqWVz",
+              "text": "Panel Tests - Canvas Examples",
+              "url": "/d/7p7JkqWVz/panel-tests-canvas-examples",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/a6801696-cc53-4196-b1f9-2403e3909185",
+              "text": "Panel Tests - DashList",
+              "url": "/d/a6801696-cc53-4196-b1f9-2403e3909185/panel-tests-dashlist",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/16f11TZWk",
+              "text": "Panel Tests - Flame Graph",
+              "url": "/d/16f11TZWk/panel-tests-flame-graph",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/U_bZIMRMk",
+              "text": "Panel Tests - React Table",
+              "url": "/d/U_bZIMRMk/panel-tests-react-table",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8",
+              "text": "Panel Tests - Relative time zone support",
+              "url": "/d/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8/panel-tests-relative-time-zone-support",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/n1jR8vnnz",
+              "text": "Panel tests - All panels",
+              "url": "/d/n1jR8vnnz/panel-tests-all-panels",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/xtY_uCAiz",
+              "text": "Panel tests - Slow Queries & Annotations",
+              "url": "/d/xtY_uCAiz/panel-tests-slow-queries-and-annotations",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/TXSTREZ",
+              "text": "Simple Streaming Example",
+              "url": "/d/TXSTREZ/simple-streaming-example",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/1YGJxPUnz",
+              "text": "Table panel - Pagination",
+              "url": "/d/1YGJxPUnz/table-panel-pagination",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/HYaGDGIMk",
+              "text": "Templating - Global variables and interpolation",
+              "url": "/d/HYaGDGIMk/templating-global-variables-and-interpolation",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "starred/1KxMUdE7k",
+              "text": "TimeSeries & BarChart Stacking",
+              "url": "/d/1KxMUdE7k/timeseries-and-barchart-stacking",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "emptyMessageId": "starred-empty",
+          "emptyMessage": "Your starred dashboards will appear here",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/browse",
+          "text": "Dashboards",
+          "subTitle": "Create and manage dashboards to visualize your data",
+          "icon": "apps",
+          "url": "/dashboards",
+          "sortWeight": -1700,
+          "children": [
+            {
+              "id": "dashboards/playlists",
+              "text": "Playlists",
+              "subTitle": "Groups of dashboards that are displayed in a sequence",
+              "icon": "presentation-play",
+              "url": "/playlists",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "dashboards/snapshots",
+              "text": "Snapshots",
+              "subTitle": "Interactive, publically available, point-in-time representations of dashboards and panels",
+              "icon": "camera",
+              "url": "/dashboard/snapshots",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "dashboards/library-panels",
+              "text": "Library panels",
+              "subTitle": "Reusable panels that can be added to multiple dashboards",
+              "icon": "library-panel",
+              "url": "/library-panels",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "dashboards/public",
+              "text": "Shared dashboards",
+              "icon": "library-panel",
+              "url": "/dashboard/public",
+              "subTitle": "Manage your organization's externally shared dashboards",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "dashboards/new",
+              "text": "New dashboard",
+              "icon": "plus",
+              "url": "/dashboard/new",
+              "hideFromTabs": true,
+              "isCreateAction": true,
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "dashboards/import",
+              "text": "Import dashboard",
+              "subTitle": "Import dashboard from file or Grafana.com",
+              "icon": "plus",
+              "url": "/dashboard/import",
+              "hideFromTabs": true,
+              "isCreateAction": true,
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "explore",
+          "text": "Explore",
+          "subTitle": "Explore your data",
+          "icon": "compass",
+          "url": "/explore",
+          "sortWeight": -1600,
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "drilldown",
+          "text": "Drilldown",
+          "subTitle": "Drill down into your data using Grafana's powerful queryless apps",
+          "icon": "drilldown",
+          "url": "/drilldown",
+          "sortWeight": -1500,
+          "children": [
+            {
+              "id": "explore/metrics",
+              "text": "Metrics",
+              "subTitle": "Queryless exploration of your metrics",
+              "icon": "code-branch",
+              "url": "/explore/metrics",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "plugin-page-grafana-lokiexplore-app",
+              "text": "Logs",
+              "subTitle": "Query-less exploration of log data stored in Loki",
+              "img": "public/plugins/grafana-lokiexplore-app/img/logo.svg",
+              "url": "/a/grafana-lokiexplore-app/explore",
+              "sortWeight": 2,
+              "isSection": true,
+              "pluginId": "grafana-lokiexplore-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "plugin-page-grafana-pyroscope-app",
+              "text": "Profiles",
+              "subTitle": "Continuous profiling service powered by Grafana Pyroscope",
+              "img": "public/plugins/grafana-pyroscope-app/img/logo.svg",
+              "url": "/a/grafana-pyroscope-app/explore",
+              "sortWeight": 4,
+              "isSection": true,
+              "pluginId": "grafana-pyroscope-app",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "isNew": true,
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "alerts-and-incidents",
+          "text": "Alerts & IRM",
+          "subTitle": "Alerting and incident management apps",
+          "icon": "bell",
+          "url": "/alerts-and-incidents",
+          "sortWeight": -1300,
+          "children": [
+            {
+              "id": "alerting",
+              "text": "Alerting",
+              "subTitle": "Learn about problems in your systems moments after they occur",
+              "icon": "bell",
+              "url": "/alerting",
+              "sortWeight": -1400,
+              "children": [
+                {
+                  "id": "alert-list",
+                  "text": "Alert rules",
+                  "subTitle": "Rules that determine whether an alert will fire",
+                  "icon": "list-ul",
+                  "url": "/alerting/list",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "receivers",
+                  "text": "Contact points",
+                  "subTitle": "Choose how to notify your contact points when an alert instance fires",
+                  "icon": "comment-alt-share",
+                  "url": "/alerting/notifications",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "am-routes",
+                  "text": "Notification policies",
+                  "subTitle": "Determine how alerts are routed to contact points",
+                  "icon": "sitemap",
+                  "url": "/alerting/routes",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "silences",
+                  "text": "Silences",
+                  "subTitle": "Stop notifications from one or more alerting rules",
+                  "icon": "bell-slash",
+                  "url": "/alerting/silences",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "groups",
+                  "text": "Active notifications",
+                  "subTitle": "See grouped alerts with active notifications",
+                  "icon": "layer-group",
+                  "url": "/alerting/groups",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "alerting-admin",
+                  "text": "Settings",
+                  "icon": "cog",
+                  "url": "/alerting/admin",
+                  "subTitle": "Manage Alertmanager configurations and enable receiving Grafana-managed alerts",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "alert",
+                  "text": "New alert rule",
+                  "subTitle": "Create an alert rule",
+                  "icon": "plus",
+                  "url": "/alerting/new",
+                  "hideFromTabs": true,
+                  "isCreateAction": true,
+                  "parentItem": "[CIRCULAR]"
+                }
+              ],
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "plugin-page-grafana-oncall-app",
+              "text": "OnCall",
+              "subTitle": "Collect and analyze alerts, escalate based on schedules and deliver them to Slack, Phone Calls, SMS and others",
+              "img": "public/plugins/grafana-oncall-app/assets/img/logo.svg",
+              "url": "/a/grafana-oncall-app",
+              "sortWeight": 2,
+              "isSection": true,
+              "children": [
+                {
+                  "text": "Alert groups",
+                  "url": "/a/grafana-oncall-app/alert-groups",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Users",
+                  "url": "/a/grafana-oncall-app/users",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Integrations",
+                  "url": "/a/grafana-oncall-app/integrations?tab=monitoring-systems",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Escalation chains",
+                  "url": "/a/grafana-oncall-app/escalations",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Schedules",
+                  "url": "/a/grafana-oncall-app/schedules",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Outgoing webhooks",
+                  "url": "/a/grafana-oncall-app/outgoing_webhooks",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Insights",
+                  "url": "/a/grafana-oncall-app/insights",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "text": "Settings",
+                  "url": "/a/grafana-oncall-app/settings",
+                  "pluginId": "grafana-oncall-app",
+                  "parentItem": "[CIRCULAR]"
+                }
+              ],
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "connections",
+          "text": "Connections",
+          "icon": "adjust-circle",
+          "url": "/connections",
+          "sortWeight": -500,
+          "children": [
+            {
+              "id": "connections-add-new-connection",
+              "text": "Add new connection",
+              "subTitle": "Browse and create new connections",
+              "url": "/connections/add-new-connection",
+              "keywords": [
+                "csv",
+                "graphite",
+                "json",
+                "loki",
+                "prometheus",
+                "sql",
+                "tempo"
+              ],
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "connections-datasources",
+              "text": "Data sources",
+              "subTitle": "View and manage your connected data source connections",
+              "url": "/connections/datasources",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "cfg",
+          "text": "Administration",
+          "subTitle": "Organization: Main Org.",
+          "icon": "cog",
+          "url": "/admin",
+          "sortWeight": -200,
+          "children": [
+            {
+              "id": "cfg/general",
+              "text": "General",
+              "subTitle": "Manage default preferences and settings across Grafana",
+              "icon": "shield",
+              "url": "/admin/general",
+              "children": [
+                {
+                  "id": "upgrading",
+                  "text": "Stats and license",
+                  "icon": "unlock",
+                  "url": "/admin/upgrading",
+                  "sortWeight": -1,
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "org-settings",
+                  "text": "Default preferences",
+                  "subTitle": "Manage preferences across an organization",
+                  "icon": "sliders-v-alt",
+                  "url": "/org",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "server-settings",
+                  "text": "Settings",
+                  "subTitle": "View the settings defined in your Grafana config",
+                  "icon": "sliders-v-alt",
+                  "url": "/admin/settings",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "global-orgs",
+                  "text": "Organizations",
+                  "subTitle": "Isolated instances of Grafana running on the same server",
+                  "icon": "building",
+                  "url": "/admin/orgs",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "migrate-to-cloud",
+                  "text": "Migrate to Grafana Cloud",
+                  "subTitle": "Copy configuration from your self-managed installation to a cloud stack",
+                  "url": "/admin/migrate-to-cloud",
+                  "parentItem": "[CIRCULAR]"
+                }
+              ],
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "cfg/plugins",
+              "text": "Plugins and data",
+              "subTitle": "Install plugins and define the relationships between data",
+              "icon": "shield",
+              "url": "/admin/plugins",
+              "children": [
+                {
+                  "id": "plugins",
+                  "text": "Plugins",
+                  "subTitle": "Extend the Grafana experience with plugins",
+                  "icon": "plug",
+                  "url": "/plugins",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "correlations",
+                  "text": "Correlations",
+                  "subTitle": "Add and configure correlations",
+                  "icon": "gf-glue",
+                  "url": "/datasources/correlations",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "extensions",
+                  "text": "Extensions",
+                  "subTitle": "Extend the UI of plugins and Grafana",
+                  "icon": "plug",
+                  "url": "/admin/extensions",
+                  "parentItem": "[CIRCULAR]"
+                }
+              ],
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "cfg/access",
+              "text": "Users and access",
+              "subTitle": "Configure access for individual users, teams, and service accounts",
+              "icon": "shield",
+              "url": "/admin/access",
+              "children": [
+                {
+                  "id": "global-users",
+                  "text": "Users",
+                  "subTitle": "Manage users in Grafana",
+                  "icon": "user",
+                  "url": "/admin/users",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "teams",
+                  "text": "Teams",
+                  "subTitle": "Groups of users that have common dashboard and permission needs",
+                  "icon": "users-alt",
+                  "url": "/org/teams",
+                  "parentItem": "[CIRCULAR]"
+                },
+                {
+                  "id": "serviceaccounts",
+                  "text": "Service accounts",
+                  "subTitle": "Use service accounts to run automated workloads in Grafana",
+                  "icon": "gf-service-account",
+                  "url": "/org/serviceaccounts",
+                  "parentItem": "[CIRCULAR]"
+                }
+              ],
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "authentication",
+              "text": "Authentication",
+              "subTitle": "Manage your auth settings and configure single sign-on",
+              "icon": "signin",
+              "url": "/admin/authentication",
+              "isSection": true,
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "profile",
+          "text": "admin",
+          "img": "/avatar/46d229b033af06a191ff2267bca9ae56",
+          "url": "/profile",
+          "sortWeight": -100,
+          "roundIcon": true,
+          "children": [
+            {
+              "id": "profile/settings",
+              "text": "Profile",
+              "icon": "sliders-v-alt",
+              "url": "/profile",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "profile/notifications",
+              "text": "Notification history",
+              "icon": "bell",
+              "url": "/profile/notifications",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "profile/password",
+              "text": "Change password",
+              "icon": "lock",
+              "url": "/profile/password",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "help",
+          "text": "Help",
+          "subTitle": "Grafana v11.6.0-pre (6019b21cc5)",
+          "icon": "question-circle",
+          "url": "#",
+          "children": [
+            {
+              "id": "support-bundles",
+              "text": "Support bundles",
+              "icon": "wrench",
+              "url": "/support-bundles",
+              "subTitle": "Download support bundles",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        }
+      ]
+    },
+    "not-found": {
+      "text": "Page not found",
+      "subTitle": "404 Error",
+      "icon": "exclamation-triangle"
+    },
+    "error": {
+      "text": "Page error",
+      "subTitle": "An unexpected error",
+      "icon": "exclamation-triangle"
+    },
+    "bookmarks": {
+      "id": "bookmarks",
+      "text": "Bookmarks",
+      "icon": "bookmark",
+      "url": "/bookmarks",
+      "sortWeight": -1900,
+      "emptyMessageId": "bookmarks-empty",
+      "emptyMessage": "Bookmark pages for them to appear here",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred": {
+      "id": "starred",
+      "text": "Starred",
+      "icon": "star",
+      "url": "/dashboards?starred",
+      "sortWeight": -1800,
+      "children": [
+        {
+          "id": "starred/j6T00KRZz",
+          "text": "Grafana Dev Overview & Home",
+          "url": "/d/j6T00KRZz/grafana-dev-overview-and-home",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/Pu8lwQAVz",
+          "text": "Panel Tests - Canvas Connection Examples",
+          "url": "/d/Pu8lwQAVz/panel-tests-canvas-connection-examples",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/adf95uwu7w1s0e",
+          "text": "Panel Tests - Canvas Datalinks",
+          "url": "/d/adf95uwu7w1s0e/panel-tests-canvas-datalinks",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/7p7JkqWVz",
+          "text": "Panel Tests - Canvas Examples",
+          "url": "/d/7p7JkqWVz/panel-tests-canvas-examples",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/a6801696-cc53-4196-b1f9-2403e3909185",
+          "text": "Panel Tests - DashList",
+          "url": "/d/a6801696-cc53-4196-b1f9-2403e3909185/panel-tests-dashlist",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/16f11TZWk",
+          "text": "Panel Tests - Flame Graph",
+          "url": "/d/16f11TZWk/panel-tests-flame-graph",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/U_bZIMRMk",
+          "text": "Panel Tests - React Table",
+          "url": "/d/U_bZIMRMk/panel-tests-react-table",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8",
+          "text": "Panel Tests - Relative time zone support",
+          "url": "/d/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8/panel-tests-relative-time-zone-support",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/n1jR8vnnz",
+          "text": "Panel tests - All panels",
+          "url": "/d/n1jR8vnnz/panel-tests-all-panels",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/xtY_uCAiz",
+          "text": "Panel tests - Slow Queries & Annotations",
+          "url": "/d/xtY_uCAiz/panel-tests-slow-queries-and-annotations",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/TXSTREZ",
+          "text": "Simple Streaming Example",
+          "url": "/d/TXSTREZ/simple-streaming-example",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/1YGJxPUnz",
+          "text": "Table panel - Pagination",
+          "url": "/d/1YGJxPUnz/table-panel-pagination",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/HYaGDGIMk",
+          "text": "Templating - Global variables and interpolation",
+          "url": "/d/HYaGDGIMk/templating-global-variables-and-interpolation",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "starred/1KxMUdE7k",
+          "text": "TimeSeries & BarChart Stacking",
+          "url": "/d/1KxMUdE7k/timeseries-and-barchart-stacking",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "emptyMessageId": "starred-empty",
+      "emptyMessage": "Your starred dashboards will appear here",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/j6T00KRZz": {
+      "id": "starred/j6T00KRZz",
+      "text": "Grafana Dev Overview & Home",
+      "url": "/d/j6T00KRZz/grafana-dev-overview-and-home",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/Pu8lwQAVz": {
+      "id": "starred/Pu8lwQAVz",
+      "text": "Panel Tests - Canvas Connection Examples",
+      "url": "/d/Pu8lwQAVz/panel-tests-canvas-connection-examples",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/adf95uwu7w1s0e": {
+      "id": "starred/adf95uwu7w1s0e",
+      "text": "Panel Tests - Canvas Datalinks",
+      "url": "/d/adf95uwu7w1s0e/panel-tests-canvas-datalinks",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/7p7JkqWVz": {
+      "id": "starred/7p7JkqWVz",
+      "text": "Panel Tests - Canvas Examples",
+      "url": "/d/7p7JkqWVz/panel-tests-canvas-examples",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/a6801696-cc53-4196-b1f9-2403e3909185": {
+      "id": "starred/a6801696-cc53-4196-b1f9-2403e3909185",
+      "text": "Panel Tests - DashList",
+      "url": "/d/a6801696-cc53-4196-b1f9-2403e3909185/panel-tests-dashlist",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/16f11TZWk": {
+      "id": "starred/16f11TZWk",
+      "text": "Panel Tests - Flame Graph",
+      "url": "/d/16f11TZWk/panel-tests-flame-graph",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/U_bZIMRMk": {
+      "id": "starred/U_bZIMRMk",
+      "text": "Panel Tests - React Table",
+      "url": "/d/U_bZIMRMk/panel-tests-react-table",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8": {
+      "id": "starred/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8",
+      "text": "Panel Tests - Relative time zone support",
+      "url": "/d/d41dbaa2-a39e-4536-ab2b-caca52f1a9c8/panel-tests-relative-time-zone-support",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/n1jR8vnnz": {
+      "id": "starred/n1jR8vnnz",
+      "text": "Panel tests - All panels",
+      "url": "/d/n1jR8vnnz/panel-tests-all-panels",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/xtY_uCAiz": {
+      "id": "starred/xtY_uCAiz",
+      "text": "Panel tests - Slow Queries & Annotations",
+      "url": "/d/xtY_uCAiz/panel-tests-slow-queries-and-annotations",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/TXSTREZ": {
+      "id": "starred/TXSTREZ",
+      "text": "Simple Streaming Example",
+      "url": "/d/TXSTREZ/simple-streaming-example",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/1YGJxPUnz": {
+      "id": "starred/1YGJxPUnz",
+      "text": "Table panel - Pagination",
+      "url": "/d/1YGJxPUnz/table-panel-pagination",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/HYaGDGIMk": {
+      "id": "starred/HYaGDGIMk",
+      "text": "Templating - Global variables and interpolation",
+      "url": "/d/HYaGDGIMk/templating-global-variables-and-interpolation",
+      "parentItem": "[CIRCULAR]"
+    },
+    "starred/1KxMUdE7k": {
+      "id": "starred/1KxMUdE7k",
+      "text": "TimeSeries & BarChart Stacking",
+      "url": "/d/1KxMUdE7k/timeseries-and-barchart-stacking",
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/browse": {
+      "id": "dashboards/browse",
+      "text": "Dashboards",
+      "subTitle": "Create and manage dashboards to visualize your data",
+      "icon": "apps",
+      "url": "/dashboards",
+      "sortWeight": -1700,
+      "children": [
+        {
+          "id": "dashboards/playlists",
+          "text": "Playlists",
+          "subTitle": "Groups of dashboards that are displayed in a sequence",
+          "icon": "presentation-play",
+          "url": "/playlists",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/snapshots",
+          "text": "Snapshots",
+          "subTitle": "Interactive, publically available, point-in-time representations of dashboards and panels",
+          "icon": "camera",
+          "url": "/dashboard/snapshots",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/library-panels",
+          "text": "Library panels",
+          "subTitle": "Reusable panels that can be added to multiple dashboards",
+          "icon": "library-panel",
+          "url": "/library-panels",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/public",
+          "text": "Shared dashboards",
+          "icon": "library-panel",
+          "url": "/dashboard/public",
+          "subTitle": "Manage your organization's externally shared dashboards",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/new",
+          "text": "New dashboard",
+          "icon": "plus",
+          "url": "/dashboard/new",
+          "hideFromTabs": true,
+          "isCreateAction": true,
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "dashboards/import",
+          "text": "Import dashboard",
+          "subTitle": "Import dashboard from file or Grafana.com",
+          "icon": "plus",
+          "url": "/dashboard/import",
+          "hideFromTabs": true,
+          "isCreateAction": true,
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/playlists": {
+      "id": "dashboards/playlists",
+      "text": "Playlists",
+      "subTitle": "Groups of dashboards that are displayed in a sequence",
+      "icon": "presentation-play",
+      "url": "/playlists",
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/snapshots": {
+      "id": "dashboards/snapshots",
+      "text": "Snapshots",
+      "subTitle": "Interactive, publically available, point-in-time representations of dashboards and panels",
+      "icon": "camera",
+      "url": "/dashboard/snapshots",
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/library-panels": {
+      "id": "dashboards/library-panels",
+      "text": "Library panels",
+      "subTitle": "Reusable panels that can be added to multiple dashboards",
+      "icon": "library-panel",
+      "url": "/library-panels",
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/public": {
+      "id": "dashboards/public",
+      "text": "Shared dashboards",
+      "icon": "library-panel",
+      "url": "/dashboard/public",
+      "subTitle": "Manage your organization's externally shared dashboards",
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/new": {
+      "id": "dashboards/new",
+      "text": "New dashboard",
+      "icon": "plus",
+      "url": "/dashboard/new",
+      "hideFromTabs": true,
+      "isCreateAction": true,
+      "parentItem": "[CIRCULAR]"
+    },
+    "dashboards/import": {
+      "id": "dashboards/import",
+      "text": "Import dashboard",
+      "subTitle": "Import dashboard from file or Grafana.com",
+      "icon": "plus",
+      "url": "/dashboard/import",
+      "hideFromTabs": true,
+      "isCreateAction": true,
+      "parentItem": "[CIRCULAR]"
+    },
+    "explore": {
+      "id": "explore",
+      "text": "Explore",
+      "subTitle": "Explore your data",
+      "icon": "compass",
+      "url": "/explore",
+      "sortWeight": -1600,
+      "parentItem": "[CIRCULAR]"
+    },
+    "drilldown": {
+      "id": "drilldown",
+      "text": "Drilldown",
+      "subTitle": "Drill down into your data using Grafana's powerful queryless apps",
+      "icon": "drilldown",
+      "url": "/drilldown",
+      "sortWeight": -1500,
+      "children": [
+        {
+          "id": "explore/metrics",
+          "text": "Metrics",
+          "subTitle": "Queryless exploration of your metrics",
+          "icon": "code-branch",
+          "url": "/explore/metrics",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "plugin-page-grafana-lokiexplore-app",
+          "text": "Logs",
+          "subTitle": "Query-less exploration of log data stored in Loki",
+          "img": "public/plugins/grafana-lokiexplore-app/img/logo.svg",
+          "url": "/a/grafana-lokiexplore-app/explore",
+          "sortWeight": 2,
+          "isSection": true,
+          "pluginId": "grafana-lokiexplore-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "plugin-page-grafana-pyroscope-app",
+          "text": "Profiles",
+          "subTitle": "Continuous profiling service powered by Grafana Pyroscope",
+          "img": "public/plugins/grafana-pyroscope-app/img/logo.svg",
+          "url": "/a/grafana-pyroscope-app/explore",
+          "sortWeight": 4,
+          "isSection": true,
+          "pluginId": "grafana-pyroscope-app",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "isNew": true,
+      "parentItem": "[CIRCULAR]"
+    },
+    "explore/metrics": {
+      "id": "explore/metrics",
+      "text": "Metrics",
+      "subTitle": "Queryless exploration of your metrics",
+      "icon": "code-branch",
+      "url": "/explore/metrics",
+      "parentItem": "[CIRCULAR]"
+    },
+    "plugin-page-grafana-lokiexplore-app": {
+      "id": "plugin-page-grafana-lokiexplore-app",
+      "text": "Logs",
+      "subTitle": "Query-less exploration of log data stored in Loki",
+      "img": "public/plugins/grafana-lokiexplore-app/img/logo.svg",
+      "url": "/a/grafana-lokiexplore-app/explore",
+      "sortWeight": 2,
+      "isSection": true,
+      "pluginId": "grafana-lokiexplore-app",
+      "parentItem": "[CIRCULAR]"
+    },
+    "plugin-page-grafana-pyroscope-app": {
+      "id": "plugin-page-grafana-pyroscope-app",
+      "text": "Profiles",
+      "subTitle": "Continuous profiling service powered by Grafana Pyroscope",
+      "img": "public/plugins/grafana-pyroscope-app/img/logo.svg",
+      "url": "/a/grafana-pyroscope-app/explore",
+      "sortWeight": 4,
+      "isSection": true,
+      "pluginId": "grafana-pyroscope-app",
+      "parentItem": "[CIRCULAR]"
+    },
+    "alerts-and-incidents": {
+      "id": "alerts-and-incidents",
+      "text": "Alerts & IRM",
+      "subTitle": "Alerting and incident management apps",
+      "icon": "bell",
+      "url": "/alerts-and-incidents",
+      "sortWeight": -1300,
+      "children": [
+        {
+          "id": "alerting",
+          "text": "Alerting",
+          "subTitle": "Learn about problems in your systems moments after they occur",
+          "icon": "bell",
+          "url": "/alerting",
+          "sortWeight": -1400,
+          "children": [
+            {
+              "id": "alert-list",
+              "text": "Alert rules",
+              "subTitle": "Rules that determine whether an alert will fire",
+              "icon": "list-ul",
+              "url": "/alerting/list",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "receivers",
+              "text": "Contact points",
+              "subTitle": "Choose how to notify your contact points when an alert instance fires",
+              "icon": "comment-alt-share",
+              "url": "/alerting/notifications",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "am-routes",
+              "text": "Notification policies",
+              "subTitle": "Determine how alerts are routed to contact points",
+              "icon": "sitemap",
+              "url": "/alerting/routes",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "silences",
+              "text": "Silences",
+              "subTitle": "Stop notifications from one or more alerting rules",
+              "icon": "bell-slash",
+              "url": "/alerting/silences",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "groups",
+              "text": "Active notifications",
+              "subTitle": "See grouped alerts with active notifications",
+              "icon": "layer-group",
+              "url": "/alerting/groups",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "alerting-admin",
+              "text": "Settings",
+              "icon": "cog",
+              "url": "/alerting/admin",
+              "subTitle": "Manage Alertmanager configurations and enable receiving Grafana-managed alerts",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "alert",
+              "text": "New alert rule",
+              "subTitle": "Create an alert rule",
+              "icon": "plus",
+              "url": "/alerting/new",
+              "hideFromTabs": true,
+              "isCreateAction": true,
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "plugin-page-grafana-oncall-app",
+          "text": "OnCall",
+          "subTitle": "Collect and analyze alerts, escalate based on schedules and deliver them to Slack, Phone Calls, SMS and others",
+          "img": "public/plugins/grafana-oncall-app/assets/img/logo.svg",
+          "url": "/a/grafana-oncall-app",
+          "sortWeight": 2,
+          "isSection": true,
+          "children": [
+            {
+              "text": "Alert groups",
+              "url": "/a/grafana-oncall-app/alert-groups",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Users",
+              "url": "/a/grafana-oncall-app/users",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Integrations",
+              "url": "/a/grafana-oncall-app/integrations?tab=monitoring-systems",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Escalation chains",
+              "url": "/a/grafana-oncall-app/escalations",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Schedules",
+              "url": "/a/grafana-oncall-app/schedules",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Outgoing webhooks",
+              "url": "/a/grafana-oncall-app/outgoing_webhooks",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Insights",
+              "url": "/a/grafana-oncall-app/insights",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "text": "Settings",
+              "url": "/a/grafana-oncall-app/settings",
+              "pluginId": "grafana-oncall-app",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "alerting": {
+      "id": "alerting",
+      "text": "Alerting",
+      "subTitle": "Learn about problems in your systems moments after they occur",
+      "icon": "bell",
+      "url": "/alerting",
+      "sortWeight": -1400,
+      "children": [
+        {
+          "id": "alert-list",
+          "text": "Alert rules",
+          "subTitle": "Rules that determine whether an alert will fire",
+          "icon": "list-ul",
+          "url": "/alerting/list",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "receivers",
+          "text": "Contact points",
+          "subTitle": "Choose how to notify your contact points when an alert instance fires",
+          "icon": "comment-alt-share",
+          "url": "/alerting/notifications",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "am-routes",
+          "text": "Notification policies",
+          "subTitle": "Determine how alerts are routed to contact points",
+          "icon": "sitemap",
+          "url": "/alerting/routes",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "silences",
+          "text": "Silences",
+          "subTitle": "Stop notifications from one or more alerting rules",
+          "icon": "bell-slash",
+          "url": "/alerting/silences",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "groups",
+          "text": "Active notifications",
+          "subTitle": "See grouped alerts with active notifications",
+          "icon": "layer-group",
+          "url": "/alerting/groups",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "alerting-admin",
+          "text": "Settings",
+          "icon": "cog",
+          "url": "/alerting/admin",
+          "subTitle": "Manage Alertmanager configurations and enable receiving Grafana-managed alerts",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "alert",
+          "text": "New alert rule",
+          "subTitle": "Create an alert rule",
+          "icon": "plus",
+          "url": "/alerting/new",
+          "hideFromTabs": true,
+          "isCreateAction": true,
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "alert-list": {
+      "id": "alert-list",
+      "text": "Alert rules",
+      "subTitle": "Rules that determine whether an alert will fire",
+      "icon": "list-ul",
+      "url": "/alerting/list",
+      "parentItem": "[CIRCULAR]"
+    },
+    "receivers": {
+      "id": "receivers",
+      "text": "Contact points",
+      "subTitle": "Choose how to notify your contact points when an alert instance fires",
+      "icon": "comment-alt-share",
+      "url": "/alerting/notifications",
+      "parentItem": "[CIRCULAR]"
+    },
+    "am-routes": {
+      "id": "am-routes",
+      "text": "Notification policies",
+      "subTitle": "Determine how alerts are routed to contact points",
+      "icon": "sitemap",
+      "url": "/alerting/routes",
+      "parentItem": "[CIRCULAR]"
+    },
+    "silences": {
+      "id": "silences",
+      "text": "Silences",
+      "subTitle": "Stop notifications from one or more alerting rules",
+      "icon": "bell-slash",
+      "url": "/alerting/silences",
+      "parentItem": "[CIRCULAR]"
+    },
+    "groups": {
+      "id": "groups",
+      "text": "Active notifications",
+      "subTitle": "See grouped alerts with active notifications",
+      "icon": "layer-group",
+      "url": "/alerting/groups",
+      "parentItem": "[CIRCULAR]"
+    },
+    "alerting-admin": {
+      "id": "alerting-admin",
+      "text": "Settings",
+      "icon": "cog",
+      "url": "/alerting/admin",
+      "subTitle": "Manage Alertmanager configurations and enable receiving Grafana-managed alerts",
+      "parentItem": "[CIRCULAR]"
+    },
+    "alert": {
+      "id": "alert",
+      "text": "New alert rule",
+      "subTitle": "Create an alert rule",
+      "icon": "plus",
+      "url": "/alerting/new",
+      "hideFromTabs": true,
+      "isCreateAction": true,
+      "parentItem": "[CIRCULAR]"
+    },
+    "plugin-page-grafana-oncall-app": {
+      "id": "plugin-page-grafana-oncall-app",
+      "text": "OnCall",
+      "subTitle": "Collect and analyze alerts, escalate based on schedules and deliver them to Slack, Phone Calls, SMS and others",
+      "img": "public/plugins/grafana-oncall-app/assets/img/logo.svg",
+      "url": "/a/grafana-oncall-app",
+      "sortWeight": 2,
+      "isSection": true,
+      "children": [
+        {
+          "text": "Alert groups",
+          "url": "/a/grafana-oncall-app/alert-groups",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Users",
+          "url": "/a/grafana-oncall-app/users",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Integrations",
+          "url": "/a/grafana-oncall-app/integrations?tab=monitoring-systems",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Escalation chains",
+          "url": "/a/grafana-oncall-app/escalations",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Schedules",
+          "url": "/a/grafana-oncall-app/schedules",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Outgoing webhooks",
+          "url": "/a/grafana-oncall-app/outgoing_webhooks",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Insights",
+          "url": "/a/grafana-oncall-app/insights",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "text": "Settings",
+          "url": "/a/grafana-oncall-app/settings",
+          "pluginId": "grafana-oncall-app",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "pluginId": "grafana-oncall-app",
+      "parentItem": "[CIRCULAR]"
+    },
+    "connections": {
+      "id": "connections",
+      "text": "Connections",
+      "icon": "adjust-circle",
+      "url": "/connections",
+      "sortWeight": -500,
+      "children": [
+        {
+          "id": "connections-add-new-connection",
+          "text": "Add new connection",
+          "subTitle": "Browse and create new connections",
+          "url": "/connections/add-new-connection",
+          "keywords": [
+            "csv",
+            "graphite",
+            "json",
+            "loki",
+            "prometheus",
+            "sql",
+            "tempo"
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "connections-datasources",
+          "text": "Data sources",
+          "subTitle": "View and manage your connected data source connections",
+          "url": "/connections/datasources",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "connections-add-new-connection": {
+      "id": "connections-add-new-connection",
+      "text": "Add new connection",
+      "subTitle": "Browse and create new connections",
+      "url": "/connections/add-new-connection",
+      "keywords": [
+        "csv",
+        "graphite",
+        "json",
+        "loki",
+        "prometheus",
+        "sql",
+        "tempo"
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "connections-datasources": {
+      "id": "connections-datasources",
+      "text": "Data sources",
+      "subTitle": "View and manage your connected data source connections",
+      "url": "/connections/datasources",
+      "parentItem": "[CIRCULAR]"
+    },
+    "cfg": {
+      "id": "cfg",
+      "text": "Administration",
+      "subTitle": "Organization: Main Org.",
+      "icon": "cog",
+      "url": "/admin",
+      "sortWeight": -200,
+      "children": [
+        {
+          "id": "cfg/general",
+          "text": "General",
+          "subTitle": "Manage default preferences and settings across Grafana",
+          "icon": "shield",
+          "url": "/admin/general",
+          "children": [
+            {
+              "id": "upgrading",
+              "text": "Stats and license",
+              "icon": "unlock",
+              "url": "/admin/upgrading",
+              "sortWeight": -1,
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "org-settings",
+              "text": "Default preferences",
+              "subTitle": "Manage preferences across an organization",
+              "icon": "sliders-v-alt",
+              "url": "/org",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "server-settings",
+              "text": "Settings",
+              "subTitle": "View the settings defined in your Grafana config",
+              "icon": "sliders-v-alt",
+              "url": "/admin/settings",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "global-orgs",
+              "text": "Organizations",
+              "subTitle": "Isolated instances of Grafana running on the same server",
+              "icon": "building",
+              "url": "/admin/orgs",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "migrate-to-cloud",
+              "text": "Migrate to Grafana Cloud",
+              "subTitle": "Copy configuration from your self-managed installation to a cloud stack",
+              "url": "/admin/migrate-to-cloud",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "cfg/plugins",
+          "text": "Plugins and data",
+          "subTitle": "Install plugins and define the relationships between data",
+          "icon": "shield",
+          "url": "/admin/plugins",
+          "children": [
+            {
+              "id": "plugins",
+              "text": "Plugins",
+              "subTitle": "Extend the Grafana experience with plugins",
+              "icon": "plug",
+              "url": "/plugins",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "correlations",
+              "text": "Correlations",
+              "subTitle": "Add and configure correlations",
+              "icon": "gf-glue",
+              "url": "/datasources/correlations",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "extensions",
+              "text": "Extensions",
+              "subTitle": "Extend the UI of plugins and Grafana",
+              "icon": "plug",
+              "url": "/admin/extensions",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "cfg/access",
+          "text": "Users and access",
+          "subTitle": "Configure access for individual users, teams, and service accounts",
+          "icon": "shield",
+          "url": "/admin/access",
+          "children": [
+            {
+              "id": "global-users",
+              "text": "Users",
+              "subTitle": "Manage users in Grafana",
+              "icon": "user",
+              "url": "/admin/users",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "teams",
+              "text": "Teams",
+              "subTitle": "Groups of users that have common dashboard and permission needs",
+              "icon": "users-alt",
+              "url": "/org/teams",
+              "parentItem": "[CIRCULAR]"
+            },
+            {
+              "id": "serviceaccounts",
+              "text": "Service accounts",
+              "subTitle": "Use service accounts to run automated workloads in Grafana",
+              "icon": "gf-service-account",
+              "url": "/org/serviceaccounts",
+              "parentItem": "[CIRCULAR]"
+            }
+          ],
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "authentication",
+          "text": "Authentication",
+          "subTitle": "Manage your auth settings and configure single sign-on",
+          "icon": "signin",
+          "url": "/admin/authentication",
+          "isSection": true,
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "cfg/general": {
+      "id": "cfg/general",
+      "text": "General",
+      "subTitle": "Manage default preferences and settings across Grafana",
+      "icon": "shield",
+      "url": "/admin/general",
+      "children": [
+        {
+          "id": "upgrading",
+          "text": "Stats and license",
+          "icon": "unlock",
+          "url": "/admin/upgrading",
+          "sortWeight": -1,
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "org-settings",
+          "text": "Default preferences",
+          "subTitle": "Manage preferences across an organization",
+          "icon": "sliders-v-alt",
+          "url": "/org",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "server-settings",
+          "text": "Settings",
+          "subTitle": "View the settings defined in your Grafana config",
+          "icon": "sliders-v-alt",
+          "url": "/admin/settings",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "global-orgs",
+          "text": "Organizations",
+          "subTitle": "Isolated instances of Grafana running on the same server",
+          "icon": "building",
+          "url": "/admin/orgs",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "migrate-to-cloud",
+          "text": "Migrate to Grafana Cloud",
+          "subTitle": "Copy configuration from your self-managed installation to a cloud stack",
+          "url": "/admin/migrate-to-cloud",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "upgrading": {
+      "id": "upgrading",
+      "text": "Stats and license",
+      "icon": "unlock",
+      "url": "/admin/upgrading",
+      "sortWeight": -1,
+      "parentItem": "[CIRCULAR]"
+    },
+    "org-settings": {
+      "id": "org-settings",
+      "text": "Default preferences",
+      "subTitle": "Manage preferences across an organization",
+      "icon": "sliders-v-alt",
+      "url": "/org",
+      "parentItem": "[CIRCULAR]"
+    },
+    "server-settings": {
+      "id": "server-settings",
+      "text": "Settings",
+      "subTitle": "View the settings defined in your Grafana config",
+      "icon": "sliders-v-alt",
+      "url": "/admin/settings",
+      "parentItem": "[CIRCULAR]"
+    },
+    "global-orgs": {
+      "id": "global-orgs",
+      "text": "Organizations",
+      "subTitle": "Isolated instances of Grafana running on the same server",
+      "icon": "building",
+      "url": "/admin/orgs",
+      "parentItem": "[CIRCULAR]"
+    },
+    "migrate-to-cloud": {
+      "id": "migrate-to-cloud",
+      "text": "Migrate to Grafana Cloud",
+      "subTitle": "Copy configuration from your self-managed installation to a cloud stack",
+      "url": "/admin/migrate-to-cloud",
+      "parentItem": "[CIRCULAR]"
+    },
+    "cfg/plugins": {
+      "id": "cfg/plugins",
+      "text": "Plugins and data",
+      "subTitle": "Install plugins and define the relationships between data",
+      "icon": "shield",
+      "url": "/admin/plugins",
+      "children": [
+        {
+          "id": "plugins",
+          "text": "Plugins",
+          "subTitle": "Extend the Grafana experience with plugins",
+          "icon": "plug",
+          "url": "/plugins",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "correlations",
+          "text": "Correlations",
+          "subTitle": "Add and configure correlations",
+          "icon": "gf-glue",
+          "url": "/datasources/correlations",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "extensions",
+          "text": "Extensions",
+          "subTitle": "Extend the UI of plugins and Grafana",
+          "icon": "plug",
+          "url": "/admin/extensions",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "plugins": {
+      "id": "plugins",
+      "text": "Plugins",
+      "subTitle": "Extend the Grafana experience with plugins",
+      "icon": "plug",
+      "url": "/plugins",
+      "parentItem": "[CIRCULAR]"
+    },
+    "correlations": {
+      "id": "correlations",
+      "text": "Correlations",
+      "subTitle": "Add and configure correlations",
+      "icon": "gf-glue",
+      "url": "/datasources/correlations",
+      "parentItem": "[CIRCULAR]"
+    },
+    "extensions": {
+      "id": "extensions",
+      "text": "Extensions",
+      "subTitle": "Extend the UI of plugins and Grafana",
+      "icon": "plug",
+      "url": "/admin/extensions",
+      "parentItem": "[CIRCULAR]"
+    },
+    "cfg/access": {
+      "id": "cfg/access",
+      "text": "Users and access",
+      "subTitle": "Configure access for individual users, teams, and service accounts",
+      "icon": "shield",
+      "url": "/admin/access",
+      "children": [
+        {
+          "id": "global-users",
+          "text": "Users",
+          "subTitle": "Manage users in Grafana",
+          "icon": "user",
+          "url": "/admin/users",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "teams",
+          "text": "Teams",
+          "subTitle": "Groups of users that have common dashboard and permission needs",
+          "icon": "users-alt",
+          "url": "/org/teams",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "serviceaccounts",
+          "text": "Service accounts",
+          "subTitle": "Use service accounts to run automated workloads in Grafana",
+          "icon": "gf-service-account",
+          "url": "/org/serviceaccounts",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "global-users": {
+      "id": "global-users",
+      "text": "Users",
+      "subTitle": "Manage users in Grafana",
+      "icon": "user",
+      "url": "/admin/users",
+      "parentItem": "[CIRCULAR]"
+    },
+    "teams": {
+      "id": "teams",
+      "text": "Teams",
+      "subTitle": "Groups of users that have common dashboard and permission needs",
+      "icon": "users-alt",
+      "url": "/org/teams",
+      "parentItem": "[CIRCULAR]"
+    },
+    "serviceaccounts": {
+      "id": "serviceaccounts",
+      "text": "Service accounts",
+      "subTitle": "Use service accounts to run automated workloads in Grafana",
+      "icon": "gf-service-account",
+      "url": "/org/serviceaccounts",
+      "parentItem": "[CIRCULAR]"
+    },
+    "authentication": {
+      "id": "authentication",
+      "text": "Authentication",
+      "subTitle": "Manage your auth settings and configure single sign-on",
+      "icon": "signin",
+      "url": "/admin/authentication",
+      "isSection": true,
+      "parentItem": "[CIRCULAR]"
+    },
+    "profile": {
+      "id": "profile",
+      "text": "admin",
+      "img": "/avatar/46d229b033af06a191ff2267bca9ae56",
+      "url": "/profile",
+      "sortWeight": -100,
+      "roundIcon": true,
+      "children": [
+        {
+          "id": "profile/settings",
+          "text": "Profile",
+          "icon": "sliders-v-alt",
+          "url": "/profile",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "profile/notifications",
+          "text": "Notification history",
+          "icon": "bell",
+          "url": "/profile/notifications",
+          "parentItem": "[CIRCULAR]"
+        },
+        {
+          "id": "profile/password",
+          "text": "Change password",
+          "icon": "lock",
+          "url": "/profile/password",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "profile/settings": {
+      "id": "profile/settings",
+      "text": "Profile",
+      "icon": "sliders-v-alt",
+      "url": "/profile",
+      "parentItem": "[CIRCULAR]"
+    },
+    "profile/notifications": {
+      "id": "profile/notifications",
+      "text": "Notification history",
+      "icon": "bell",
+      "url": "/profile/notifications",
+      "parentItem": "[CIRCULAR]"
+    },
+    "profile/password": {
+      "id": "profile/password",
+      "text": "Change password",
+      "icon": "lock",
+      "url": "/profile/password",
+      "parentItem": "[CIRCULAR]"
+    },
+    "help": {
+      "id": "help",
+      "text": "Help",
+      "subTitle": "Grafana v11.6.0-pre (6019b21cc5)",
+      "icon": "question-circle",
+      "url": "#",
+      "children": [
+        {
+          "id": "support-bundles",
+          "text": "Support bundles",
+          "icon": "wrench",
+          "url": "/support-bundles",
+          "subTitle": "Download support bundles",
+          "parentItem": "[CIRCULAR]"
+        }
+      ],
+      "parentItem": "[CIRCULAR]"
+    },
+    "support-bundles": {
+      "id": "support-bundles",
+      "text": "Support bundles",
+      "icon": "wrench",
+      "url": "/support-bundles",
+      "subTitle": "Download support bundles",
+      "parentItem": "[CIRCULAR]"
+    }
+  },
+  "appNotifications": {
+    "byId": {
+      "b1788303-58aa-4050-9520-7a3a35528f7b": {
+        "id": "b1788303-58aa-4050-9520-7a3a35528f7b",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742285916399,
+        "showing": false
+      },
+      "e5058710-f457-4334-a0f6-d4b9b679dd6c": {
+        "id": "e5058710-f457-4334-a0f6-d4b9b679dd6c",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742285247293,
+        "showing": false
+      },
+      "2a0eb4d9-268c-43df-b15d-4c04617bdadf": {
+        "id": "2a0eb4d9-268c-43df-b15d-4c04617bdadf",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742285238714,
+        "showing": false
+      },
+      "f87b0b3b-e7d7-416e-94c2-bf351a626716": {
+        "id": "f87b0b3b-e7d7-416e-94c2-bf351a626716",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742285231711,
+        "showing": false
+      },
+      "8a7a174f-2665-4cc4-952e-9bb88cfabca3": {
+        "id": "8a7a174f-2665-4cc4-952e-9bb88cfabca3",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742285066716,
+        "showing": false
+      },
+      "cb5af9bc-9555-4e27-adde-0763011ebfcb": {
+        "id": "cb5af9bc-9555-4e27-adde-0763011ebfcb",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742284890170,
+        "showing": false
+      },
+      "1307f38f-048e-456c-9eef-e129990905a5": {
+        "id": "1307f38f-048e-456c-9eef-e129990905a5",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742284575616,
+        "showing": false
+      },
+      "8dd03405-3169-4e5d-9cc7-023f26c2a2e2": {
+        "id": "8dd03405-3169-4e5d-9cc7-023f26c2a2e2",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742284207678,
+        "showing": false
+      },
+      "a2f82bd9-30f0-4761-a56c-19aeafa8516d": {
+        "id": "a2f82bd9-30f0-4761-a56c-19aeafa8516d",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742284197721,
+        "showing": false
+      },
+      "a15760eb-4e86-460e-b60f-8ce65f1063dc": {
+        "id": "a15760eb-4e86-460e-b60f-8ce65f1063dc",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1742284188011,
+        "showing": false
+      },
+      "6146c858-65b8-453d-89b6-e311930f814c": {
+        "id": "6146c858-65b8-453d-89b6-e311930f814c",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "Unable to load datasource meta data",
+        "text": "",
+        "traceId": "",
+        "timestamp": 1742284181362,
+        "showing": false
+      },
+      "075dd5e7-a742-44b9-b44e-9712eeca15c9": {
+        "id": "075dd5e7-a742-44b9-b44e-9712eeca15c9",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "Unable to load datasource meta data",
+        "text": "",
+        "traceId": "",
+        "timestamp": 1742281116439,
+        "showing": false
+      },
+      "c9d26c0f-22d6-479a-9443-b4767d88c504": {
+        "id": "c9d26c0f-22d6-479a-9443-b4767d88c504",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "gdev-testdata plugin failed",
+        "text": "Error: Could not load plugin: Error: Error loading http://localhost:3000/public/plugins/grafana-testdata-datasource/module.js?_cache=11.6.0-pre (SystemJS Error#3 https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3)",
+        "timestamp": 1742063121469,
+        "showing": false
+      },
+      "2521814c-26eb-4c47-8067-1d8960552dc5": {
+        "id": "2521814c-26eb-4c47-8067-1d8960552dc5",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "-- Dashboard -- plugin failed",
+        "text": "ChunkLoadError: Loading chunk public_app_plugins_datasource_dashboard_module_ts failed.\n(error: http://localhost:3000/public/build/public_app_plugins_datasource_dashboard_module_ts.93c2cdda254efffa7355.js)",
+        "timestamp": 1742063121351,
+        "showing": false
+      },
+      "2eab339b-1401-4450-a5eb-687b82077e46": {
+        "id": "2eab339b-1401-4450-a5eb-687b82077e46",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1741834441899,
+        "showing": false
+      },
+      "7b3baf10-19e7-4261-a097-0b1d6799b5fd": {
+        "id": "7b3baf10-19e7-4261-a097-0b1d6799b5fd",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1741665333955,
+        "showing": false
+      },
+      "3eb92362-c2dd-4ec8-8094-964af4ae65f6": {
+        "id": "3eb92362-c2dd-4ec8-8094-964af4ae65f6",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1741411506897,
+        "showing": false
+      },
+      "1a72b0e8-369c-4e03-8256-7a7378eef003": {
+        "id": "1a72b0e8-369c-4e03-8256-7a7378eef003",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740974917614,
+        "showing": false
+      },
+      "79c31a1d-d166-47bf-8f68-ea9779bb9253": {
+        "id": "79c31a1d-d166-47bf-8f68-ea9779bb9253",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740797269085,
+        "showing": false
+      },
+      "267552b8-fc88-4bb0-ab1c-62612e21685c": {
+        "id": "267552b8-fc88-4bb0-ab1c-62612e21685c",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740685714973,
+        "showing": false
+      },
+      "deec66d6-f002-4010-8d28-b0551a4b6594": {
+        "id": "deec66d6-f002-4010-8d28-b0551a4b6594",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740683780376,
+        "showing": false
+      },
+      "fefbc9e4-e5f5-40e4-a193-a118514afd1d": {
+        "id": "fefbc9e4-e5f5-40e4-a193-a118514afd1d",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740677383405,
+        "showing": false
+      },
+      "12d046ec-0bef-4732-866e-858dc0ea965e": {
+        "id": "12d046ec-0bef-4732-866e-858dc0ea965e",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740652975198,
+        "showing": false
+      },
+      "8560b0ce-7d98-487a-ac76-551dc157fc71": {
+        "id": "8560b0ce-7d98-487a-ac76-551dc157fc71",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740652967755,
+        "showing": false
+      },
+      "19921189-14af-4788-b20b-c25208ef0eb4": {
+        "id": "19921189-14af-4788-b20b-c25208ef0eb4",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "timestamp": 1740652956465,
+        "showing": false
+      },
+      "8413e2a5-a7d1-490c-8ea8-5cc5c57ab7fd": {
+        "title": "An error occurred within the plugin",
+        "text": "",
+        "severity": "error",
+        "icon": "exclamation-triangle",
+        "id": "8413e2a5-a7d1-490c-8ea8-5cc5c57ab7fd",
+        "timestamp": 1742307854087,
+        "showing": false
+      }
+    },
+    "lastRead": 1742307622153
+  },
+  "alertRules": {
+    "items": [],
+    "searchQuery": "",
+    "isLoading": false
+  },
+  "notificationChannel": {
+    "notificationChannelTypes": [],
+    "notificationChannel": {},
+    "notifiers": []
+  },
+  "unifiedAlerting": {
+    "promRules": {},
+    "rulerRules": {},
+    "saveAMConfig": {
+      "loading": false,
+      "dispatched": false
+    },
+    "deleteAMConfig": {
+      "loading": false,
+      "dispatched": false
+    },
+    "amAlertGroups": {},
+    "testReceivers": {
+      "loading": false,
+      "dispatched": false
+    },
+    "managedAlertStateHistory": {
+      "loading": false,
+      "dispatched": false
+    }
+  },
+  "teams": {
+    "teams": [],
+    "page": 1,
+    "query": "",
+    "perPage": 30,
+    "totalPages": 0,
+    "noTeams": false,
+    "hasFetched": false
+  },
+  "team": {
+    "team": {},
+    "members": [],
+    "groups": [],
+    "searchMemberQuery": ""
+  },
+  "apiKeys": {
+    "hasFetched": false,
+    "includeExpired": false,
+    "keys": [],
+    "keysIncludingExpired": [],
+    "searchQuery": "",
+    "migrationResult": {
+      "total": 0,
+      "migrated": 0,
+      "failed": 0,
+      "failedApikeyIDs": [0],
+      "failedDetails": []
+    }
+  },
+  "folder": {
+    "id": 0,
+    "uid": "general",
+    "title": "Dashboards",
+    "url": "",
+    "canSave": true,
+    "canDelete": true,
+    "hasChanged": false,
+    "version": 1,
+    "orgId": 0,
+    "hasAcl": false,
+    "canEdit": true,
+    "canAdmin": true,
+    "createdBy": "Anonymous",
+    "created": "0001-01-01T00:00:00Z",
+    "updatedBy": "Anonymous",
+    "updated": "0001-01-01T00:00:00Z",
+    "accessControl": {
+      "alert.rules:create": true,
+      "alert.rules:delete": true,
+      "alert.rules:read": true,
+      "alert.rules:write": true,
+      "alert.silences:create": true,
+      "alert.silences:read": true,
+      "alert.silences:write": true,
+      "annotations:create": true,
+      "annotations:delete": true,
+      "annotations:read": true,
+      "annotations:write": true,
+      "dashboards.permissions:read": true,
+      "dashboards.permissions:write": true,
+      "dashboards:create": true,
+      "dashboards:delete": true,
+      "dashboards:read": true,
+      "dashboards:write": true,
+      "folders.permissions:read": true,
+      "folders.permissions:write": true,
+      "folders:create": true,
+      "folders:delete": true,
+      "folders:read": true,
+      "folders:write": true,
+      "library.panels:create": true,
+      "library.panels:delete": true,
+      "library.panels:read": true,
+      "library.panels:write": true
+    }
+  },
+  "dashboard": {
+    "initPhase": "Not started",
+    "initError": null
+  },
+  "explore": {
+    "syncedTimes": false,
+    "panes": {},
+    "correlationEditorDetails": {
+      "editorMode": false,
+      "correlationDirty": false,
+      "queryEditorDirty": false,
+      "isExiting": false
+    },
+    "richHistoryStorageFull": false,
+    "richHistoryLimitExceededWarningShown": false,
+    "evenSplitPanes": true,
+    "richHistory": []
+  },
+  "dataSources": {
+    "dataSources": [],
+    "plugins": [],
+    "categories": [],
+    "dataSource": {},
+    "layoutMode": "list",
+    "searchQuery": "",
+    "dataSourcesCount": 0,
+    "dataSourceTypeSearchQuery": "",
+    "isLoadingDataSources": false,
+    "isLoadingDataSourcePlugins": false,
+    "dataSourceMeta": {},
+    "isSortAscending": true
+  },
+  "dataSourceSettings": {
+    "testingStatus": {},
+    "loadError": null,
+    "loading": true,
+    "plugin": null
+  },
+  "users": {
+    "users": [],
+    "searchQuery": "",
+    "page": 0,
+    "perPage": 30,
+    "totalPages": 1,
+    "externalUserMngInfo": "",
+    "externalUserMngLinkName": "",
+    "externalUserMngLinkUrl": "",
+    "isLoading": false,
+    "rolesLoading": false
+  },
+  "serviceAccountProfile": {
+    "serviceAccount": {},
+    "isLoading": true,
+    "tokens": []
+  },
+  "serviceAccounts": {
+    "serviceAccounts": [],
+    "isLoading": true,
+    "roleOptions": [],
+    "query": "",
+    "page": 0,
+    "perPage": 50,
+    "totalPages": 1,
+    "showPaging": false,
+    "serviceAccountStateFilter": "All"
+  },
+  "user": {
+    "orgId": 1,
+    "timeZone": "browser",
+    "weekStart": "browser",
+    "fiscalYearStartMonth": 0,
+    "orgsAreLoading": false,
+    "sessionsAreLoading": false,
+    "teamsAreLoading": false,
+    "isUpdating": false,
+    "orgs": [],
+    "sessions": [],
+    "teams": [],
+    "user": null
+  },
+  "invites": {
+    "ids": [],
+    "entities": {},
+    "status": "idle"
+  },
+  "organization": {
+    "organization": {},
+    "userOrgs": [
+      {
+        "orgId": 1,
+        "name": "Main Org.",
+        "role": "Admin"
+      }
+    ]
+  },
+  "browseDashboards": {
+    "rootItems": {
+      "items": [
+        {
+          "kind": "folder",
+          "uid": "feg6x666m6i9sc",
+          "title": "gdev dashboards",
+          "url": "/dashboards/f/feg6x666m6i9sc/?orgId=1"
+        },
+        {
+          "kind": "dashboard",
+          "uid": "deg70280ulipsd",
+          "title": "OnCall Insights",
+          "url": "/d/deg70280ulipsd/oncall-insights",
+          "tags": ["oncall"],
+          "parentTitle": "Dashboards",
+          "parentKind": "folder"
+        },
+        {
+          "kind": "dashboard",
+          "uid": "TXSTREZ",
+          "title": "Simple Streaming Example",
+          "url": "/d/TXSTREZ/simple-streaming-example",
+          "tags": [],
+          "parentTitle": "Dashboards",
+          "parentKind": "folder"
+        }
+      ],
+      "lastFetchedKind": "dashboard",
+      "lastFetchedPage": 1,
+      "lastKindHasMoreItems": false,
+      "isFullyLoaded": true
+    },
+    "childrenByParentUID": {
+      "feg6x666m6i9sc": {
+        "items": [
+          {
+            "kind": "dashboard",
+            "uid": "edediimbjhdz4b",
+            "title": "A tall dashboard",
+            "url": "/d/edediimbjhdz4b/a-tall-dashboard",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "ed155665",
+            "title": "Annotation filtering",
+            "url": "/d/ed155665/annotation-filtering",
+            "tags": ["annotations", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "vmie2cmWz",
+            "title": "Bar Gauge Demo",
+            "url": "/d/vmie2cmWz/bar-gauge-demo",
+            "tags": ["demo", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "xMsQdBfWz",
+            "title": "Bar Gauge Demo Unfilled",
+            "url": "/d/xMsQdBfWz/bar-gauge-demo-unfilled",
+            "tags": ["demo", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "xCmMwXdVz",
+            "title": "BarChart - Label Rotation & Skipping",
+            "url": "/d/xCmMwXdVz/barchart-label-rotation-and-skipping",
+            "tags": ["barchart", "gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "adoero0hbka9sf",
+            "title": "BarChart - Panel Tests - Series toggle / bar widths",
+            "url": "/d/adoero0hbka9sf/barchart-panel-tests-series-toggle-bar-widths",
+            "tags": ["barchart", "gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "WFlOM-jM1",
+            "title": "BarChart - Panel Tests - Value sizing",
+            "url": "/d/WFlOM-jM1/barchart-panel-tests-value-sizing",
+            "tags": ["barchart", "gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "2I2uMSB7z",
+            "title": "BarChart - Thresholds & Mappings",
+            "url": "/d/2I2uMSB7z/barchart-thresholds-and-mappings",
+            "tags": ["barchart", "gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "MP-Di9F7k",
+            "title": "Candlestick",
+            "url": "/d/MP-Di9F7k/candlestick",
+            "tags": ["gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "c01bf42b-b783-4447-a304-8554cee1843b",
+            "title": "Datagrid example",
+            "url": "/d/c01bf42b-b783-4447-a304-8554cee1843b/datagrid-example",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "wfTJJL5Wz",
+            "title": "Datalinks - variables",
+            "url": "/d/wfTJJL5Wz/datalinks-variables",
+            "tags": ["gdev", "templating"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "ZqZnVvFZz",
+            "title": "Datasource tests -  Shared Queries",
+            "url": "/d/ZqZnVvFZz/datasource-tests-shared-queries",
+            "tags": ["datasource-test", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "es_complex",
+            "title": "Datasource tests - Elasticsearch complex with template variables",
+            "url": "/d/es_complex/84513a4",
+            "tags": ["datasource-test", "elasticsearch", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "es_migration",
+            "title": "Datasource tests - Elasticsearch migration",
+            "url": "/d/es_migration/datasource-tests-elasticsearch-migration",
+            "tags": ["datasource-test", "elasticsearch", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "es_simple",
+            "title": "Datasource tests - Elasticsearch simple",
+            "url": "/d/es_simple/datasource-tests-elasticsearch-simple",
+            "tags": ["datasource-test", "elasticsearch", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "yjRroGsWk",
+            "title": "Datasource tests - InfluxDB Logs",
+            "url": "/d/yjRroGsWk/datasource-tests-influxdb-logs",
+            "tags": ["datasource-test", "gdev", "influxdb"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "000000002",
+            "title": "Datasource tests - InfluxDB Templated",
+            "url": "/d/000000002/datasource-tests-influxdb-templated",
+            "tags": ["datasource-test", "gdev", "influxdb"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "22mq9eSVz",
+            "title": "Datasource tests - Loki",
+            "url": "/d/22mq9eSVz/datasource-tests-loki",
+            "tags": ["datasource-test", "gdev", "loki"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "dc4ec947-7e6b-4c3b-be8f-0abec7b0652a",
+            "title": "Datasource tests - Loki query splitting",
+            "url": "/d/dc4ec947-7e6b-4c3b-be8f-0abec7b0652a/datasource-tests-loki-query-splitting",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "86Js1xRmk",
+            "title": "Datasource tests - MSSQL",
+            "url": "/d/86Js1xRmk/datasource-tests-mssql",
+            "tags": ["datasource-test", "gdev", "mssql"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "GlAqcPgmz",
+            "title": "Datasource tests - MSSQL (unit test)",
+            "url": "/d/GlAqcPgmz/datasource-tests-mssql-unit-test",
+            "tags": ["datasource-test", "gdev", "mssql"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "DGsCac3kz",
+            "title": "Datasource tests - MySQL",
+            "url": "/d/DGsCac3kz/datasource-tests-mysql",
+            "tags": ["datasource-tags", "gdev", "mysql"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "Hmf8FDkmz",
+            "title": "Datasource tests - MySQL (unittest)",
+            "url": "/d/Hmf8FDkmz/datasource-tests-mysql-unittest",
+            "tags": ["datasource-test", "gdev", "mysql"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "tFU1mQyWz",
+            "title": "Datasource tests - OpenTSDB",
+            "url": "/d/tFU1mQyWz/datasource-tests-opentsdb",
+            "tags": ["datasource-test", "gdev", "opentsdb"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "rZRUGik7k",
+            "title": "Datasource tests - OpenTSDB v2.3",
+            "url": "/d/rZRUGik7k/datasource-tests-opentsdb-v2-3",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "JYola5qzz",
+            "title": "Datasource tests - Postgres",
+            "url": "/d/JYola5qzz/datasource-tests-postgres",
+            "tags": ["datasource-test", "gdev", "postgres"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "vHQdlVziz",
+            "title": "Datasource tests - Postgres (unittest)",
+            "url": "/d/vHQdlVziz/datasource-tests-postgres-unittest",
+            "tags": ["datasource-test", "gdev", "postgres"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "cdd412c4",
+            "title": "Devenv - Panel migrations",
+            "url": "/d/cdd412c4/devenv-panel-migrations",
+            "tags": ["angular", "gdev", "migrations"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "XMuLlpZ4k",
+            "title": "Geomap - color field Copy",
+            "url": "/d/XMuLlpZ4k/geomap-color-field-copy",
+            "tags": ["gdev", "geomap", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "inxsweKGz",
+            "title": "Gradient Color modes",
+            "url": "/d/inxsweKGz/gradient-color-modes",
+            "tags": ["demo", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "j6T00KRZz",
+            "title": "Grafana Dev Overview & Home",
+            "url": "/d/j6T00KRZz/grafana-dev-overview-and-home",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "ZXYQTA97ZZ",
+            "title": "Heatmap calculate (log)",
+            "url": "/d/ZXYQTA97ZZ/heatmap-calculate-log",
+            "tags": ["gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "5Y0jv6pVz",
+            "title": "Heatmap X axis",
+            "url": "/d/5Y0jv6pVz/heatmap-x-axis",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "iRY1K9VZk2",
+            "title": "Lazy Loading",
+            "url": "/d/iRY1K9VZk2/lazy-loading",
+            "tags": ["demo", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "YoacZIq7z",
+            "title": "Legacy heatmap",
+            "url": "/d/YoacZIq7z/legacy-heatmap",
+            "tags": ["gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "dbfb47c5-e5e5-4d28-8ac7-35f349b95946",
+            "title": "Link Extensions (onClick)",
+            "url": "/d/dbfb47c5-e5e5-4d28-8ac7-35f349b95946/link-extensions-onclick",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "d1fbb077-cd44-4738-8c8a-d4e66748b719",
+            "title": "Link Extensions (path)",
+            "url": "/d/d1fbb077-cd44-4738-8c8a-d4e66748b719/link-extensions-path",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "liveddluzy",
+            "title": "Live flakey stream",
+            "url": "/d/liveddluzy/live-flakey-stream",
+            "tags": ["gdev", "live-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "liveddluze",
+            "title": "Live flakey stream (w/ liveNow)",
+            "url": "/d/liveddluze/live-flakey-stream-w-livenow",
+            "tags": ["gdev", "live-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "addoomtlivedev",
+            "title": "Live publish test",
+            "url": "/d/addoomtlivedev/live-publish-test",
+            "tags": ["gdev", "live-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "liveb94wbb",
+            "title": "Live streaming examples",
+            "url": "/d/liveb94wbb/live-streaming-examples",
+            "tags": ["gdev", "live-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "ZvPm55mWk",
+            "title": "New Features in v6.2",
+            "url": "/d/ZvPm55mWk/new-features-in-v6-2",
+            "tags": ["demo", "gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "nP8rcffGk",
+            "title": "New Features in v7.4",
+            "url": "/d/nP8rcffGk/new-features-in-v7-4",
+            "tags": ["demo", "gdev", "graph-ng"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "8mux8PqGz",
+            "title": "New Features in v8.0",
+            "url": "/d/8mux8PqGz/new-features-in-v8-0",
+            "tags": ["demo", "gdev", "graph-ng"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "O1Mi-z8Gz",
+            "title": "Panel & data links in stat, gauge and bargauge",
+            "url": "/d/O1Mi-z8Gz/panel-and-data-links-in-stat-gauge-and-bargauge",
+            "tags": ["gdev"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "imQX6j-Gz",
+            "title": "Panel - Panel Library",
+            "url": "/d/imQX6j-Gz/panel-panel-library",
+            "tags": [],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "5mqG8qdZz",
+            "title": "Panel Tests - Auto Decimals",
+            "url": "/d/5mqG8qdZz/panel-tests-auto-decimals",
+            "tags": ["gdev", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "ea33320b-bd97-4fe1-a27c-24bc61a48b41",
+            "title": "Panel Tests - Bar Chart Tooltips & Legends",
+            "url": "/d/ea33320b-bd97-4fe1-a27c-24bc61a48b41/panel-tests-bar-chart-tooltips-and-legends",
+            "tags": ["barchart", "gdev", "graph-ng", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "O6f11TZWk",
+            "title": "Panel Tests - Bar Gauge",
+            "url": "/d/O6f11TZWk/panel-tests-bar-gauge",
+            "tags": ["gdev", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          },
+          {
+            "kind": "dashboard",
+            "uid": "sRrEibfZk",
+            "title": "Panel Tests - Bar Gauge 2",
+            "url": "/d/sRrEibfZk/panel-tests-bar-gauge-2",
+            "tags": ["gdev", "panel-tests"],
+            "parentTitle": "gdev dashboards",
+            "parentKind": "folder",
+            "parentUID": "feg6x666m6i9sc"
+          }
+        ],
+        "lastFetchedKind": "dashboard",
+        "lastFetchedPage": 1,
+        "lastKindHasMoreItems": true,
+        "isFullyLoaded": false
+      }
+    },
+    "openFolders": {
+      "feg6x666m6i9sc": false
+    },
+    "selectedItems": {
+      "dashboard": {},
+      "folder": {},
+      "panel": {},
+      "$all": false
+    }
+  },
+  "ldap": {
+    "connectionInfo": []
+  },
+  "userAdmin": {
+    "sessions": [],
+    "orgs": [],
+    "isLoading": true
+  },
+  "userListAdmin": {
+    "users": [],
+    "query": "",
+    "page": 0,
+    "perPage": 50,
+    "totalPages": 1,
+    "showPaging": false,
+    "filters": [
+      {
+        "name": "activeLast30Days",
+        "value": false
+      }
+    ],
+    "isLoading": true
+  },
+  "userListAnonymousDevices": {
+    "devices": [],
+    "query": "",
+    "page": 0,
+    "perPage": 50,
+    "totalPages": 1,
+    "showPaging": false,
+    "filters": [
+      {
+        "name": "activeLast30Days",
+        "value": true
+      }
+    ]
+  },
+  "importDashboard": {
+    "meta": {
+      "updatedAt": "",
+      "orgName": ""
+    },
+    "dashboard": {},
+    "source": 1,
+    "inputs": {},
+    "state": "NotStarted"
+  },
+  "panelEditor": {
+    "initDone": false,
+    "shouldDiscardChanges": false,
+    "isOpen": false,
+    "isVizPickerOpen": false,
+    "tableViewEnabled": false,
+    "ui": {
+      "isPanelOptionsVisible": true,
+      "rightPaneSize": 400,
+      "topPaneSize": 0.45,
+      "mode": 0
+    }
+  },
+  "panels": {},
+  "templating": {
+    "keys": {}
+  },
+  "supportBundles": {
+    "supportBundles": [],
+    "isLoading": false,
+    "supportBundleCollectors": [],
+    "createBundlePageLoading": false,
+    "loadBundlesError": "",
+    "createBundleError": ""
+  },
+  "authConfig": {
+    "settings": {},
+    "providerStatuses": {},
+    "isLoading": false,
+    "providers": []
+  },
+  "plugins": {
+    "items": {
+      "ids": [],
+      "entities": {}
+    },
+    "requests": {},
+    "plugins": [],
+    "errors": [],
+    "searchQuery": "",
+    "hasFetched": false,
+    "dashboards": [],
+    "isLoadingPluginDashboards": false,
+    "panels": {}
+  },
+  "alertingApi": {
+    "queries": {
+      "prometheusRuleNamespaces({\"dashboardUid\":\"deg70280ulipsd\",\"ruleSourceName\":\"grafana\"})": {
+        "status": "fulfilled",
+        "endpointName": "prometheusRuleNamespaces",
+        "requestId": "5fVtkabDiI9RPBDo5hrNF",
+        "originalArgs": {
+          "ruleSourceName": "grafana",
+          "dashboardUid": "deg70280ulipsd"
+        },
+        "startedTimeStamp": 1742307853632,
+        "data": [],
+        "fulfilledTimeStamp": 1742307853856
+      }
+    },
+    "mutations": {},
+    "provided": {
+      "CombinedAlertRule": {
+        "__internal_without_id": [
+          "prometheusRuleNamespaces({\"dashboardUid\":\"deg70280ulipsd\",\"ruleSourceName\":\"grafana\"})"
+        ]
+      }
+    },
+    "subscriptions": {
+      "prometheusRuleNamespaces({\"dashboardUid\":\"deg70280ulipsd\",\"ruleSourceName\":\"grafana\"})": {
+        "5fVtkabDiI9RPBDo5hrNF": {},
+        "2_zb60WlT_EQoSMQgevl4": {
+          "pollingInterval": 0,
+          "skipPollingIfUnfocused": false
+        }
+      }
+    },
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "alertingApi",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "publicDashboardApi": {
+    "queries": {},
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {},
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": true,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "publicDashboardApi",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "browseDashboardsAPI": {
+    "queries": {
+      "getFolder(\"general\")": {
+        "status": "fulfilled",
+        "endpointName": "getFolder",
+        "requestId": "VxEMcoaOQAzmBJV2inKGv",
+        "originalArgs": "general",
+        "startedTimeStamp": 1742307827040,
+        "data": {
+          "id": 0,
+          "uid": "general",
+          "orgId": 0,
+          "title": "Dashboards",
+          "url": "",
+          "hasAcl": false,
+          "canSave": true,
+          "canEdit": true,
+          "canAdmin": true,
+          "canDelete": true,
+          "createdBy": "Anonymous",
+          "created": "0001-01-01T00:00:00Z",
+          "updatedBy": "Anonymous",
+          "updated": "0001-01-01T00:00:00Z",
+          "accessControl": {
+            "alert.rules:create": true,
+            "alert.rules:delete": true,
+            "alert.rules:read": true,
+            "alert.rules:write": true,
+            "alert.silences:create": true,
+            "alert.silences:read": true,
+            "alert.silences:write": true,
+            "annotations:create": true,
+            "annotations:delete": true,
+            "annotations:read": true,
+            "annotations:write": true,
+            "dashboards.permissions:read": true,
+            "dashboards.permissions:write": true,
+            "dashboards:create": true,
+            "dashboards:delete": true,
+            "dashboards:read": true,
+            "dashboards:write": true,
+            "folders.permissions:read": true,
+            "folders.permissions:write": true,
+            "folders:create": true,
+            "folders:delete": true,
+            "folders:read": true,
+            "folders:write": true,
+            "library.panels:create": true,
+            "library.panels:delete": true,
+            "library.panels:read": true,
+            "library.panels:write": true
+          }
+        },
+        "fulfilledTimeStamp": 1742307827203
+      }
+    },
+    "mutations": {},
+    "provided": {
+      "getFolder": {
+        "general": ["getFolder(\"general\")"]
+      }
+    },
+    "subscriptions": {
+      "getFolder(\"general\")": {}
+    },
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "browseDashboardsAPI",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "migrateToCloudGeneratedAPI": {
+    "queries": {},
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {},
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "migrateToCloudGeneratedAPI",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "iamAPI": {
+    "queries": {},
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {},
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "iamAPI",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "userPreferencesAPI": {
+    "queries": {
+      "getUserPreferences(undefined)": {
+        "status": "fulfilled",
+        "endpointName": "getUserPreferences",
+        "requestId": "zITgcMe5fcGZpDNS6Pk85",
+        "startedTimeStamp": 1742307622457,
+        "data": {
+          "theme": "light",
+          "navbar": {
+            "bookmarkUrls": ["/a/grafana-lokiexplore-app/explore"]
+          }
+        },
+        "fulfilledTimeStamp": 1742307622543
+      }
+    },
+    "mutations": {},
+    "provided": {
+      "UserPreferences": {
+        "__internal_without_id": ["getUserPreferences(undefined)"]
+      }
+    },
+    "subscriptions": {
+      "getUserPreferences(undefined)": {
+        "zITgcMe5fcGZpDNS6Pk85": {
+          "pollingInterval": 0,
+          "skipPollingIfUnfocused": false
+        }
+      }
+    },
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "userPreferencesAPI",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "provisioningAPI": {
+    "queries": {},
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {},
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "provisioningAPI",
+      "invalidationBehavior": "delayed"
+    }
+  },
+  "folderAPI": {
+    "queries": {},
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {},
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 60,
+      "reducerPath": "folderAPI",
+      "invalidationBehavior": "delayed"
+    }
+  }
+}

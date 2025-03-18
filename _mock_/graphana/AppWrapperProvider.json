@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Memo",
+    "value": {
+      "store": "{Symbol(https://github.com/benlesh/symbol-observabl…}",
+      "subscription": "{addNestedSub: addNestedSub() {}, getListeners: get…}",
+      "stabilityCheck": "once",
+      "identityFunctionCheck": "once"
+    },
+    "subHooks": [],
+    "debugInfo": null,
+    "hookSource": {
+      "lineNumber": 686658,
+      "functionName": "Provider",
+      "fileName": "http://localhost:3000/public/build/app.da3a560cba3661e10fbc.js",
+      "columnNumber": 59
+    }
+  },
+  {
+    "name": "Memo",
+    "value": {
+      "navBarTree": [
+        {
+          "id": "home",
+          "text": "Home",
+          "icon": "home-alt",
+          "url": "/",
+          "sortWeight": -2000
+        },
+        {
+          "id": "bookmarks",
+          "text": "Bookmarks",
+          "icon": "bookmark",
+          "url": "/bookmarks",
+          "sortWeight": -1900,
+          "emptyMessageId": "bookmarks-empty",
+          "emptyMessage": "Bookmark pages for them to appear here"
+        },
+        {
+          "id": "starred",
+          "text": "Starred",
+          "icon": "star",
+          "url": "/dashboards?starred",
+          "sortWeight": -1800,
+          "children": "[{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, …]",
+          "emptyMessageId": "starred-empty",
+          "emptyMessage": "Your starred dashboards will appear here"
+        },
+        {
+          "id": "dashboards/browse",
+          "text": "Dashboards",
+          "subTitle": "Create and manage dashboards to visualize your data",
+          "icon": "apps",
+          "url": "/dashboards",
+          "sortWeight": -1700,
+          "children": "[{…}, {…}, {…}, {…}, {…}, {…}]"
+        },
+        {
+          "id": "explore",
+          "text": "Explore",
+          "subTitle": "Explore your data",
+          "icon": "compass",
+          "url": "/explore",
+          "sortWeight": -1600
+        },
+        {
+          "id": "drilldown",
+          "text": "Drilldown",
+          "subTitle": "Drill down into your data using Grafana's powerful queryless apps",
+          "icon": "drilldown",
+          "url": "/drilldown",
+          "sortWeight": -1500,
+          "children": "[{…}, {…}, {…}]",
+          "isNew": true
+        },
+        {
+          "id": "alerts-and-incidents",
+          "text": "Alerts & IRM",
+          "subTitle": "Alerting and incident management apps",
+          "icon": "bell",
+          "url": "/alerts-and-incidents",
+          "sortWeight": -1300,
+          "children": "[{…}, {…}]"
+        },
+        {
+          "id": "connections",
+          "text": "Connections",
+          "icon": "adjust-circle",
+          "url": "/connections",
+          "sortWeight": -500,
+          "children": "[{…}, {…}]"
+        },
+        {
+          "id": "cfg",
+          "text": "Administration",
+          "subTitle": "Organization: Main Org.",
+          "icon": "cog",
+          "url": "/admin",
+          "sortWeight": -200,
+          "children": "[{…}, {…}, {…}, {…}]"
+        },
+        {
+          "id": "profile",
+          "text": "admin",
+          "img": "/avatar/46d229b033af06a191ff2267bca9ae56",
+          "url": "/profile",
+          "sortWeight": -100,
+          "roundIcon": true,
+          "children": "[{…}, {…}, {…}]"
+        },
+        {
+          "id": "help",
+          "text": "Help",
+          "subTitle": "Grafana v11.6.0-pre (6019b21cc5)",
+          "icon": "question-circle",
+          "url": "#",
+          "children": "[{…}]"
+        }
+      ],
+      "navIndex": "{alert: {…}, alert-list: {…}, alerting: {…}, alerti…}",
+      "appNotifications": "{byId: {…}, lastRead: 1742307403240}",
+      "alertRules": "{isLoading: false, items: Array(0), searchQuery: \"\"}",
+      "notificationChannel": "{notificationChannel: {…}, notificationChannelTypes…}",
+      "unifiedAlerting": "{amAlertGroups: {…}, deleteAMConfig: {…}, managedAl…}",
+      "teams": "{hasFetched: false, noTeams: false, page: 1, perPag…}",
+      "team": "{groups: Array(0), members: Array(0), searchMemberQ…}",
+      "apiKeys": "{hasFetched: false, includeExpired: false, keys: Ar…}",
+      "folder": "{canDelete: false, canSave: false, hasChanged: fals…}",
+      "dashboard": "{getModel: getModel() {}, initError: null, initPhas…}",
+      "explore": "{correlationEditorDetails: {…}, evenSplitPanes: tru…}",
+      "dataSources": "{categories: Array(0), dataSource: {…}, dataSourceM…}",
+      "dataSourceSettings": "{loadError: null, loading: true, plugin: null, test…}",
+      "users": "{externalUserMngInfo: \"\", externalUserMngLinkName: …}",
+      "serviceAccountProfile": "{isLoading: true, serviceAccount: {…}, tokens: Arra…}",
+      "serviceAccounts": "{isLoading: true, page: 0, perPage: 50, query: \"\", …}",
+      "user": "{fiscalYearStartMonth: 0, isUpdating: false, orgId:…}",
+      "invites": "{entities: {…}, ids: Array(0), status: \"idle\"}",
+      "organization": "{organization: {…}, userOrgs: Array(0)}",
+      "browseDashboards": "{childrenByParentUID: {…}, openFolders: {…}, rootIt…}",
+      "ldap": "{connectionError: undefined, connectionInfo: Array(…}",
+      "userAdmin": "{error: undefined, isLoading: true, orgs: Array(0),…}",
+      "userListAdmin": "{filters: Array(1), isLoading: true, page: 0, perPa…}",
+      "userListAnonymousDevices": "{devices: Array(0), filters: Array(1), page: 0, per…}",
+      "importDashboard": "{dashboard: {…}, inputs: {…}, meta: {…}, source: 1,…}",
+      "panelEditor": "{getData: getData() {}, getPanel: getPanel() {}, ge…}",
+      "panels": "{}",
+      "templating": "{keys: {…}}",
+      "supportBundles": "{createBundleError: \"\", createBundlePageLoading: fa…}",
+      "authConfig": "{isLoading: false, providerStatuses: {…}, providers…}",
+      "plugins": "{dashboards: Array(0), errors: Array(0), hasFetched…}",
+      "alertingApi": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "publicDashboardApi": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "browseDashboardsAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "migrateToCloudGeneratedAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "iamAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "userPreferencesAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "provisioningAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}",
+      "folderAPI": "{config: {…}, mutations: {…}, provided: {…}, querie…}"
+    },
+    "subHooks": [],
+    "debugInfo": null,
+    "hookSource": {
+      "lineNumber": 686673,
+      "functionName": "Provider",
+      "fileName": "http://localhost:3000/public/build/app.da3a560cba3661e10fbc.js",
+      "columnNumber": 60
+    }
+  },
+  {
+    "name": "LayoutEffect",
+    "value": "() => {}",
+    "subHooks": [],
+    "debugInfo": null,
+    "hookSource": {
+      "lineNumber": 686674,
+      "functionName": "Provider",
+      "fileName": "http://localhost:3000/public/build/app.da3a560cba3661e10fbc.js",
+      "columnNumber": 3
+    }
+  }
+]

@@ -335,4 +335,73 @@ const grafaUiContextDraft = {
     },
   },
 
+
+
+  explore: {
+    GrafanaRoute: {
+      ExplorePage: {},
+      ExplorePageContent: {
+        ExploreActions: {},
+
+        // flex h-100% absolute outline-none overflow-hidden flex-row left-0 right-0
+        SplitPanelWrapper: {},
+
+        // w-100% h-r400px max-h-100vh box-sizing-border-box +
+        // absolute !important, bottom-0 bg-fff box-shadow z-1000 opacity-1
+        ExploreDrawer: {},
+      },
+    },
+  },
+  dashboardEditor: {
+    DashboardPageProxy: {
+      DashboardScenePage: {
+        UrlSyncContextProvider: {
+          SceneComponentWrapperWithoutMemo: {
+            DashboardSceneRenderer: {
+              Page: {
+                DashboardEditPaneSplitter: {
+                  NativeScrollbar: {
+                    NavToolbarActions: {},
+                    DashboardControlsRenderer: {},
+                    DefaultGridLayoutManager: {
+                      SceneGridLayoutRenderer: {
+                        ReactGridLayout: [
+                          {
+                            GridItem: {
+                              SceneGridRow: {}
+                            },
+
+                          },
+                          {
+                            GridItem: {
+                              GridItemWrapper: {
+                                LazyLoader: {
+                                  DashboardGridItem: {
+                                    VizPanel: {
+                                      PanelChrome: {}
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                          }
+
+                        ],
+                      }
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+
 }

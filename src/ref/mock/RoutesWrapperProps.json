@@ -1,0 +1,828 @@
+[
+  {
+    "path": "/a/grafana-lokiexplore-app/*",
+    "sensitive": false
+  },
+  {
+    "path": "/a/grafana-pyroscope-app/*",
+    "sensitive": false
+  },
+  {
+    "path": "/a/:pluginId/*"
+  },
+  {
+    "path": "/",
+    "pageClass": "page-dashboard",
+    "routeName": "home-dashboard",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/d/:uid/:slug?",
+    "pageClass": "page-dashboard",
+    "routeName": "normal-dashboard",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard/new",
+    "pageClass": "page-dashboard",
+    "routeName": "new-dashboard",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard/new-with-ds/:datasourceUid",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard/:type/:slug",
+    "pageClass": "page-dashboard",
+    "routeName": "normal-dashboard",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards/embedding-test",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/d-solo/:uid/:slug?",
+    "routeName": "normal-dashboard",
+    "chromeless": true,
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard-solo/:type/:slug",
+    "routeName": "normal-dashboard",
+    "chromeless": true,
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard/import",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/datasources"
+  },
+  {
+    "path": "/datasources/edit/:uid"
+  },
+  {
+    "path": "/datasources/edit/:uid/dashboards"
+  },
+  {
+    "path": "/datasources/new"
+  },
+  {
+    "path": "/datasources/correlations",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards/f/:uid/:slug",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards/f/:uid",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/explore",
+    "pageClass": "page-explore",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/drilldown"
+  },
+  {
+    "path": "/apps"
+  },
+  {
+    "path": "/alerts-and-incidents"
+  },
+  {
+    "path": "/testing-and-synthetics"
+  },
+  {
+    "path": "/monitoring"
+  },
+  {
+    "path": "/infrastructure"
+  },
+  {
+    "path": "/frontend"
+  },
+  {
+    "path": "/admin/general"
+  },
+  {
+    "path": "/admin/plugins"
+  },
+  {
+    "path": "/admin/extensions",
+    "navId": "extensions",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/access"
+  },
+  {
+    "path": "/org",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/users"
+  },
+  {
+    "path": "/org/users/invite",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/apikeys",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/serviceaccounts",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/serviceaccounts/create",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/serviceaccounts/:id",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/teams",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/teams/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/org/teams/edit/:uid/:page?",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin"
+  },
+  {
+    "path": "/admin/authentication",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/authentication/ldap",
+    "component": {
+      "compare": null
+    }
+  },
+  {
+    "path": "/admin/authentication/:provider",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/settings",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/upgrading",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/users",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/users/create",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/users/edit/:id",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/orgs",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/orgs/edit/:id",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/featuretoggles"
+  },
+  {
+    "path": "/admin/stats",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/admin/migrate-to-cloud",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/login",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    },
+    "pageClass": "login-page",
+    "chromeless": true
+  },
+  {
+    "path": "/invite/:code",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    },
+    "chromeless": true
+  },
+  {
+    "path": "/verify",
+    "pageClass": "login-page",
+    "chromeless": true
+  },
+  {
+    "path": "/signup",
+    "pageClass": "login-page",
+    "chromeless": true
+  },
+  {
+    "path": "/user/password/send-reset-email",
+    "chromeless": true,
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/user/password/reset",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    },
+    "pageClass": "login-page",
+    "chromeless": true
+  },
+  {
+    "path": "/dashboard/snapshots",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/playlists",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/playlists/play/:uid",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/playlists/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/playlists/edit/:uid",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/sandbox/benchmarks",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/sandbox/test",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards/f/:uid/:slug/library-panels",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboards/f/:uid/:slug/alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/library-panels",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/notifications",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/explore/metrics/*",
+    "chromeless": false,
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/bookmarks",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/plugins",
+    "navId": "plugins",
+    "routeName": "plugins-home",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/plugins/browse",
+    "navId": "plugins",
+    "routeName": "plugins-browse",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/plugins/:pluginId/",
+    "navId": "plugins",
+    "routeName": "plugins-details",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/support-bundles",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/support-bundles/create",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/home",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/list",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/routes",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/routes/mute-timing/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/routes/mute-timing/edit",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/silences",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/silence/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/silence/:id/edit",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/notifications",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/notifications/receivers/new",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/notifications/receivers/:name/edit",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/notifications/templates/*",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/notifications/global-config",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/groups/",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/history/",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/new/:type?",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/:id/edit",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/:id/modify-export",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/export-new-rule",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/:sourceName/:id/view",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/:sourceName/:name/find",
+    "pageClass": "page-alerting",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/alerting/admin",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/profile",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/profile/password",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/profile/select-org",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/profile/notifications",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/dashboard/public",
+    "pageClass": "page-dashboard",
+    "routeName": "public-dashboard",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/public-dashboards/:accessToken",
+    "pageClass": "page-dashboard",
+    "routeName": "public-dashboard",
+    "chromeless": true,
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/connections/*",
+    "component": {
+      "_payload": {
+        "_status": -1
+      }
+    }
+  },
+  {
+    "path": "/goto/*"
+  },
+  {
+    "path": "/*"
+  }
+]
