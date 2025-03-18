@@ -168,3 +168,108 @@ export const initialContext = {
     }
   }
 }
+
+
+export const initialGrafanaDocsContext = {
+
+}
+
+export const initialGrafanaUiContext = {
+  globals: {},
+  page: {},
+  hierarchy: {
+    AppWrapper: {
+      ReactReduxProvider: {
+        SkeletonTheme: {
+          CacheProvider: {
+            KBarProvider: {
+              InternalEvents: {},
+              GlobalStyles: {},
+
+              ScopesContextProvider: {
+                ExtensionRegistriesProvider: {
+                  RouterWrapper: {
+                    LocationServiceProvider: {
+                      Routes: {
+                        QueriesDrawerContextProvider: {
+                          ExtraProviders: {
+                            ModalsContextProvider:{
+
+                              // .main-view: flex column, grow-1, relative, min-w-0
+                              AppChrome: {
+                                LinkButton: {},
+
+                                // block, border-r, h-100% fixed, top-0, w-300px, z-2
+                                MegaMenu: {},
+
+                                // header: flex, right-0, left-300px, column, position:fixed
+                                SingleTopbar2: {},
+                                SingleTopbarActions: {},
+                                ScopesDashboards: {},
+                                AngularRoot: {},
+                                AppNotificationList: {},
+
+                                // stack: flex column, gap-0 grow-1
+                                Stack: {
+
+                                  // w-100% grow-1 min-h-0 h-100% relative, overflow-hidden
+                                  GrafanaRouteWrapper: {
+                                    GrafanaRoute: {
+                                      ExplorePage: {},
+                                      ExplorePageContent: {
+                                        ExploreActions: {},
+
+                                        // flex h-100% absolute outline-none overflow-hidden flex-row left-0 right-0
+                                        SplitPanelWrapper: {},
+
+                                        // w-100% h-r400px max-h-100vh box-sizing-border-box +
+                                        // absolute !important, bottom-0 bg-fff box-shadow z-1000 opacity-1
+                                        ExploreDrawer: {},
+                                      },
+
+                                    }
+                                  },
+                                },
+
+                                CommandPalette: {},
+                              },
+                              ModalRoot: {},
+                            },
+                          },
+                        },
+
+                      }
+                    }
+                  }
+                },
+
+              },
+
+            },
+
+
+          },
+        },
+      },
+    },
+  },
+  components: {
+    AppChrome: {},
+    LinkButton: {},
+    MegaMenu: {},
+    SingleTopbar2: {},
+    SingleTopbarActions: {},
+    ScopesDashboards: {},
+    AngularRoot: {},
+    ApplicationList: {},
+    ExploreDrawer: {},
+    SplitPanelWrapper: {},
+    ExploreActions: {},
+    ExplorePageContent: {},
+    ExplorePage: {},
+    GrafanaRoute: {},
+    GrafanaRouteWrapper: {},
+    ModalRoot: {},
+
+  }
+}

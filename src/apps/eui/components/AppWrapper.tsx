@@ -5,6 +5,8 @@ import { AppHeader } from './AppHeader'
 import { contentItems, contentModuleItems, contentAmisEditorItems, componentMapping, componentModuleMapping } from '@/apps/eui/utils/mapping'
 import { defaultContentRenderKey } from '@/apps/eui/utils/constants'
 import { DynamicEditor } from '@/apps/amis/editor/DynamicEditor'
+import { CustomResizeLogic } from '@/apps/modules/grafana-views/views/CustomResizeLogic'
+
 
 interface AppWrapperProps {
     [key: string]: any
@@ -62,6 +64,11 @@ const AppWrapper: React.FC<AppWrapperProps> = ({ ...restProps }) => {
                 <EuiPageTemplate.Section grow={false} paddingSize={'l'}>
                         <Component {...getProps.pageContent} />
                 </EuiPageTemplate.Section>
+
+              {/*<CustomResizeLogic position="bottom" />*/}
+
+              <CustomResizeLogic position="bottom" />
+              {/*<CustomResizeLogic position="bottom" />*/}
             </EuiPageTemplate>
         </>
     )
