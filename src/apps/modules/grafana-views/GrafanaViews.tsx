@@ -1,3 +1,4 @@
+import { dataEvents } from "@/machines/rootMachineUtils.ts";
 import {
   EuiButton,
   EuiFlexGroup,
@@ -19,22 +20,29 @@ import {
   EuiPanel,
 } from "@elastic/eui";
 import { CustomResizeLogic } from "./views/CustomResizeLogic";
+import { useRootMachine } from "@/machines/rootMachineStore.ts";
 
 const flyoutHeadingId = "flyout-grafana-view";
 export const GrafanaViews = () => {
-  const [isFlyoutVisible, setIsFlyoutVisible] = useState(false);
-  const [drawerOpened, setDrawerOpened] = useState(false);
-
-  const closeFlyout = () => setIsFlyoutVisible(false);
-  const toggleFlyout = () => setIsFlyoutVisible(!isFlyoutVisible);
+  const { layout: rootLayout, actor: rootActor } = useRootMachine();
 
   return (
     <>
       <GrafanaThemeProvider>
         <EuiFlexGroup>
-          <EuiButton onClick={toggleFlyout}>Show flyout</EuiButton>
-          <EuiButton onClick={() => setDrawerOpened(!drawerOpened)}>
-            {drawerOpened ? "Close drawer" : "Open drawer"}
+          <EuiButton
+            onClick={() => rootActor.send(dataEvents.flyoutRight.isVisible)}
+          >
+            {rootLayout.flyoutRight.extraProps.isVisible
+              ? "Close flyout Right"
+              : "show flyout Right"}
+          </EuiButton>
+          <EuiButton
+            onClick={() => rootActor.send(dataEvents.flyoutBottom.isVisible)}
+          >
+            {rootLayout.flyoutBottom.extraProps.isVisible
+              ? "Close flyout bottom"
+              : "Open flyout bottom"}
           </EuiButton>
         </EuiFlexGroup>
         <EuiFlexGroup direction="row">
@@ -45,8 +53,21 @@ export const GrafanaViews = () => {
                   <EuiResizablePanel initialSize={20} color="subdued">
                     <EuiText size="s">
                       <p>
-                        This <strong>EuiResizablePanel</strong> changes the
-                        background with <EuiCode>{'color="subdued"'}</EuiCode>.
+                        flyoutBottom.iVisible
+                        <EuiCode>
+                          {JSON.stringify(
+                            rootLayout.flyoutBottom.extraProps.isVisible,
+                          )}
+                        </EuiCode>
+                      </p>
+
+                      <p>
+                        flyoutRight.iVisible
+                        <EuiCode>
+                          {JSON.stringify(
+                            rootLayout.flyoutRight.extraProps.isVisible,
+                          )}
+                        </EuiCode>
                       </p>
                     </EuiText>
                   </EuiResizablePanel>
@@ -102,16 +123,10 @@ export const GrafanaViews = () => {
                 </>
               )}
             </EuiResizableContainer>
-
           </EuiFlexItem>
         </EuiFlexGroup>
 
-        {/*{drawerOpened && (*/}
-        {/*    <CustomResizeLogic position="bottom" />*/}
-        {/*)}*/}
-
-
-        {isFlyoutVisible && (
+        {rootLayout.flyoutRight.extraProps.isVisible && (
           <EuiPortal>
             <EuiFlyoutResizable
               draggable={true}
@@ -119,7 +134,7 @@ export const GrafanaViews = () => {
               ownFocus={false}
               minWidth={250}
               maxWidth={1200}
-              onClose={closeFlyout}
+              onClose={() => rootActor.send(dataEvents.flyoutRight.onClose)}
             >
               <EuiFlyoutHeader hasBorder aria-labelledby={flyoutHeadingId}>
                 <EuiTitle>

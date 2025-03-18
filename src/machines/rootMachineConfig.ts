@@ -1,36 +1,63 @@
-
 export const initialContext = {
-
   global: {
     navigationItems: [
       { type: "link", text: "home", href: "/" },
       { type: "link", text: "Stories", href: "/stories" },
       { type: "link", text: "Button", href: "/stories/render/button" },
-      { type: "link", text: "Right Panel", href: "/stories/components/right-panel" },
-      { type: "link", text: "Renderers Panel", href: "/stories/components/renderers-panel" },
+      {
+        type: "link",
+        text: "Right Panel",
+        href: "/stories/components/right-panel",
+      },
+      {
+        type: "link",
+        text: "Renderers Panel",
+        href: "/stories/components/renderers-panel",
+      },
       { type: "link", text: "AI Ant", href: "/stories/components/ai-ant" },
-      { type: "link", text: "Amis Docs Intro", href: "/stories/components/amis-docs-intro" },
-      { type: "link", text: "Amis Get Renderers", href: "/stories/components/amis-get-renderers" },
-      { type: "link", text: "Core Editor", href: "/stories/components/core-editor" },
-      { type: "link", text: "Dynamic1", href: "/stories/components/dynamic-id-1" },
-      { type: "link", text: "Dynamic2", href: "/stories/components/dynamic-id-2" },
+      {
+        type: "link",
+        text: "Amis Docs Intro",
+        href: "/stories/components/amis-docs-intro",
+      },
+      {
+        type: "link",
+        text: "Amis Get Renderers",
+        href: "/stories/components/amis-get-renderers",
+      },
+      {
+        type: "link",
+        text: "Core Editor",
+        href: "/stories/components/core-editor",
+      },
+      {
+        type: "link",
+        text: "Dynamic1",
+        href: "/stories/components/dynamic-id-1",
+      },
+      {
+        type: "link",
+        text: "Dynamic2",
+        href: "/stories/components/dynamic-id-2",
+      },
     ],
   },
 
   components: {
-    'aiAnt': {
-      'internal': {
+    aiAnt: {
+      internal: {
         activeKey: null,
         headerOpen: false,
         attachedFiles: [],
       },
-      'welcome': {
+      welcome: {
         variant: "borderless",
         title: "Hello, I'm Ant Design X",
-        description: "Base on Ant Design, AGI product interface solution, create a better intelligent vision~",
-        icon:""
+        description:
+          "Base on Ant Design, AGI product interface solution, create a better intelligent vision~",
+        icon: "",
       },
-      'promptsItems': {
+      promptsItems: {
         items: [
           {
             key: "1",
@@ -40,9 +67,9 @@ export const initialContext = {
             key: "2",
             description: "Design Guide",
           },
-        ]
+        ],
       },
-      'promptsGroupped': {
+      promptsGroupped: {
         title: "Do you want?",
         items: [
           {
@@ -83,9 +110,9 @@ export const initialContext = {
               },
             ],
           },
-        ]
+        ],
       },
-      'conversationList': {
+      conversationList: {
         items: [
           {
             key: "0",
@@ -125,12 +152,11 @@ export const initialContext = {
             },
           ],
           onClick: (conversation: any) => (menuInfo: any) => {
-            console.log(`Click ${conversation.key} - ${menuInfo.key}`)
+            console.log(`Click ${conversation.key} - ${menuInfo.key}`);
           },
         },
-
       },
-      'roles': {
+      roles: {
         ai: {
           placement: "start",
           typing: { step: 5, interval: 20 },
@@ -145,13 +171,14 @@ export const initialContext = {
           variant: "shadow",
         },
       },
-      'throughChain': {
+      throughChain: {
         items: [
           {
             title: "Hello Ant Design X!",
             status: "success",
             description: "status: success",
-            content: "Ant Design X help you build AI chat/platform app as ready-to-use 📦.",
+            content:
+              "Ant Design X help you build AI chat/platform app as ready-to-use 📦.",
           },
           {
             title: "Hello World!",
@@ -163,96 +190,15 @@ export const initialContext = {
             status: "pending",
             description: "status: pending",
           },
-        ]
-      }
-    }
-  }
-}
-
-
-export const initialGrafanaDocsContext = {
-
-}
-
-export const initialGrafanaUiContext = {
-  globals: {},
-  page: {},
-  hierarchy: {
-    AppWrapper: {
-      ReactReduxProvider: {
-        SkeletonTheme: {
-          CacheProvider: {
-            KBarProvider: {
-              InternalEvents: {},
-              GlobalStyles: {},
-
-              ScopesContextProvider: {
-                ExtensionRegistriesProvider: {
-                  RouterWrapper: {
-                    LocationServiceProvider: {
-                      Routes: {
-                        QueriesDrawerContextProvider: {
-                          ExtraProviders: {
-                            ModalsContextProvider:{
-
-                              // .main-view: flex column, grow-1, relative, min-w-0
-                              AppChrome: {
-                                LinkButton: {},
-
-                                // block, border-r, h-100% fixed, top-0, w-300px, z-2
-                                MegaMenu: {},
-
-                                // header: flex, right-0, left-300px, column, position:fixed
-                                SingleTopbar2: {},
-                                SingleTopbarActions: {},
-                                ScopesDashboards: {},
-                                AngularRoot: {},
-                                AppNotificationList: {},
-
-                                // stack: flex column, gap-0 grow-1
-                                Stack: {
-
-                                  // w-100% grow-1 min-h-0 h-100% relative, overflow-hidden
-                                  GrafanaRouteWrapper: {
-                                    GrafanaRoute: {
-                                      ExplorePage: {},
-                                      ExplorePageContent: {
-                                        ExploreActions: {},
-
-                                        // flex h-100% absolute outline-none overflow-hidden flex-row left-0 right-0
-                                        SplitPanelWrapper: {},
-
-                                        // w-100% h-r400px max-h-100vh box-sizing-border-box +
-                                        // absolute !important, bottom-0 bg-fff box-shadow z-1000 opacity-1
-                                        ExploreDrawer: {},
-                                      },
-
-                                    }
-                                  },
-                                },
-
-                                CommandPalette: {},
-                              },
-                              ModalRoot: {},
-                            },
-                          },
-                        },
-
-                      }
-                    }
-                  }
-                },
-
-              },
-
-            },
-
-
-          },
-        },
+        ],
       },
     },
   },
+};
+
+export const initialGrafanaDocsContext = {};
+
+export const initialGrafanaUiContext = {
   components: {
     AppChrome: {},
     LinkButton: {},
@@ -270,6 +216,123 @@ export const initialGrafanaUiContext = {
     GrafanaRoute: {},
     GrafanaRouteWrapper: {},
     ModalRoot: {},
+  },
+  layout: {
+    flyoutRight: {
+      props: {
+        size: "m", // s, m, l
+        ownFocus: true,
+        side: "right", // left, right
+        type: "overlay", // push, overlay
+        maxWidth: false, // boolean, number, string
+        outsideClickCloses: true,
+      },
+      extraProps: {
+        title: "Right Panel",
+        isVisible: false,
+      },
+      state: {},
+    },
+    flyoutBottom: {
+      props: {
 
-  }
+        initialHeight: 300,
+        ownFocus: true,
+        side: "right", // left, right
+        type: "overlay", // push, overlay
+      },
+      extraProps: {
+        title: "Bottom Panel",
+        isVisible: false,
+      },
+      state: {},
+
+    },
+    sidepanelLeft: {
+      props: {
+        initialIsCollapsed: false,
+        isCollapsed: false,
+        side: "left", // left, right
+        width: 300,
+        items: []
+      },
+      methods: {
+        onCollapseToggle: () => {},
+      }
+    }
+  },
+};
+
+
+
+const grafaUiContextDraft = {
+  hierarchy: {
+    AppWrapper: {
+      ReactReduxProvider: {
+        SkeletonTheme: {
+          CacheProvider: {
+            KBarProvider: {
+              InternalEvents: {},
+              GlobalStyles: {},
+
+              ScopesContextProvider: {
+                ExtensionRegistriesProvider: {
+                  RouterWrapper: {
+                    LocationServiceProvider: {
+                      Routes: {
+                        QueriesDrawerContextProvider: {
+                          ExtraProviders: {
+                            ModalsContextProvider: {
+                              // .main-view: flex column, grow-1, relative, min-w-0
+                              AppChrome: {
+                                LinkButton: {},
+
+                                // block, border-r, h-100% fixed, top-0, w-300px, z-2
+                                MegaMenu: {},
+
+                                // header: flex, right-0, left-300px, column, position:fixed
+                                SingleTopbar2: {},
+                                SingleTopbarActions: {},
+                                ScopesDashboards: {},
+                                AngularRoot: {},
+                                AppNotificationList: {},
+
+                                // stack: flex column, gap-0 grow-1
+                                Stack: {
+                                  // w-100% grow-1 min-h-0 h-100% relative, overflow-hidden
+                                  GrafanaRouteWrapper: {
+                                    GrafanaRoute: {
+                                      ExplorePage: {},
+                                      ExplorePageContent: {
+                                        ExploreActions: {},
+
+                                        // flex h-100% absolute outline-none overflow-hidden flex-row left-0 right-0
+                                        SplitPanelWrapper: {},
+
+                                        // w-100% h-r400px max-h-100vh box-sizing-border-box +
+                                        // absolute !important, bottom-0 bg-fff box-shadow z-1000 opacity-1
+                                        ExploreDrawer: {},
+                                      },
+                                    },
+                                  },
+                                },
+
+                                CommandPalette: {},
+                              },
+                              ModalRoot: {},
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+
 }

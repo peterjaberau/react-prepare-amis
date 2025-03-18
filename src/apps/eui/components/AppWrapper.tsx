@@ -6,13 +6,17 @@ import { contentItems, contentModuleItems, contentAmisEditorItems, componentMapp
 import { defaultContentRenderKey } from '@/apps/eui/utils/constants'
 import { DynamicEditor } from '@/apps/amis/editor/DynamicEditor'
 import { CustomResizeLogic } from '@/apps/modules/grafana-views/views/CustomResizeLogic'
-
+import { useRootMachine } from "@/machines/rootMachineStore.ts";
 
 interface AppWrapperProps {
     [key: string]: any
 }
 
 const AppWrapper: React.FC<AppWrapperProps> = ({ ...restProps }) => {
+
+  const { layout: rootLayout, actor: rootActor } = useRootMachine()
+
+
     const location = useLocation()
 
 
@@ -67,7 +71,12 @@ const AppWrapper: React.FC<AppWrapperProps> = ({ ...restProps }) => {
 
               {/*<CustomResizeLogic position="bottom" />*/}
 
-              <CustomResizeLogic position="bottom" />
+              {
+                rootLayout.flyoutBottom.extraProps.isVisible && (
+                  <CustomResizeLogic position="bottom" />
+                )
+              }
+
               {/*<CustomResizeLogic position="bottom" />*/}
             </EuiPageTemplate>
         </>

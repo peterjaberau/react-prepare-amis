@@ -10,5 +10,6 @@ export const useRootMachine: any = () => {
     state: state,
     components: state.context.components,
     global: state.context.global,
+    layout: state.context.layout,
   }
 }
