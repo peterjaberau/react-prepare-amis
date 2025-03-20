@@ -1,0 +1,1640 @@
+[
+  {
+    "type": "table",
+    "name": "migration_log",
+    "tbl_name": "migration_log",
+    "rootpage": 2,
+    "sql": "CREATE TABLE `migration_log` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `migration_id` TEXT NOT NULL\n, `sql` TEXT NOT NULL\n, `success` INTEGER NOT NULL\n, `error` TEXT NOT NULL\n, `timestamp` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "sqlite_sequence",
+    "tbl_name": "sqlite_sequence",
+    "rootpage": 3,
+    "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+  },
+  {
+    "type": "table",
+    "name": "user",
+    "tbl_name": "user",
+    "rootpage": 6,
+    "sql": "CREATE TABLE `user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `login` TEXT NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `password` TEXT NULL\n, `salt` TEXT NULL\n, `rands` TEXT NULL\n, `company` TEXT NULL\n, `org_id` INTEGER NOT NULL\n, `is_admin` INTEGER NOT NULL\n, `email_verified` INTEGER NULL\n, `theme` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `help_flags1` INTEGER NOT NULL DEFAULT 0, `last_seen_at` DATETIME NULL, `is_disabled` INTEGER NOT NULL DEFAULT 0, is_service_account BOOLEAN DEFAULT 0, `uid` TEXT NULL, `is_provisioned` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_login",
+    "tbl_name": "user",
+    "rootpage": 5,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_login` ON `user` (`login`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_email",
+    "tbl_name": "user",
+    "rootpage": 7,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_email` ON `user` (`email`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_login_email",
+    "tbl_name": "user",
+    "rootpage": 4,
+    "sql": "CREATE INDEX `IDX_user_login_email` ON `user` (`login`,`email`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_uid",
+    "tbl_name": "user",
+    "rootpage": 8,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_uid` ON `user` (`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "temp_user",
+    "tbl_name": "temp_user",
+    "rootpage": 13,
+    "sql": "CREATE TABLE `temp_user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `role` TEXT NULL\n, `code` TEXT NOT NULL\n, `status` TEXT NOT NULL\n, `invited_by_user_id` INTEGER NULL\n, `email_sent` INTEGER NOT NULL\n, `email_sent_on` DATETIME NULL\n, `remote_addr` TEXT NULL\n, `created` INTEGER NOT NULL DEFAULT 0\n, `updated` INTEGER NOT NULL DEFAULT 0\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_temp_user_email",
+    "tbl_name": "temp_user",
+    "rootpage": 14,
+    "sql": "CREATE INDEX `IDX_temp_user_email` ON `temp_user` (`email`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_temp_user_org_id",
+    "tbl_name": "temp_user",
+    "rootpage": 15,
+    "sql": "CREATE INDEX `IDX_temp_user_org_id` ON `temp_user` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_temp_user_code",
+    "tbl_name": "temp_user",
+    "rootpage": 12,
+    "sql": "CREATE INDEX `IDX_temp_user_code` ON `temp_user` (`code`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_temp_user_status",
+    "tbl_name": "temp_user",
+    "rootpage": 16,
+    "sql": "CREATE INDEX `IDX_temp_user_status` ON `temp_user` (`status`)"
+  },
+  {
+    "type": "table",
+    "name": "star",
+    "tbl_name": "star",
+    "rootpage": 11,
+    "sql": "CREATE TABLE `star` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `dashboard_uid` TEXT NULL, `org_id` INTEGER NULL DEFAULT 1, `updated` DATETIME NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_star_user_id_dashboard_id",
+    "tbl_name": "star",
+    "rootpage": 17,
+    "sql": "CREATE UNIQUE INDEX `UQE_star_user_id_dashboard_id` ON `star` (`user_id`,`dashboard_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_star_user_id_dashboard_uid_org_id",
+    "tbl_name": "star",
+    "rootpage": 19,
+    "sql": "CREATE UNIQUE INDEX `UQE_star_user_id_dashboard_uid_org_id` ON `star` (`user_id`,`dashboard_uid`,`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "org",
+    "tbl_name": "org",
+    "rootpage": 20,
+    "sql": "CREATE TABLE `org` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `address1` TEXT NULL\n, `address2` TEXT NULL\n, `city` TEXT NULL\n, `state` TEXT NULL\n, `zip_code` TEXT NULL\n, `country` TEXT NULL\n, `billing_email` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_org_name",
+    "tbl_name": "org",
+    "rootpage": 21,
+    "sql": "CREATE UNIQUE INDEX `UQE_org_name` ON `org` (`name`)"
+  },
+  {
+    "type": "table",
+    "name": "org_user",
+    "tbl_name": "org_user",
+    "rootpage": 22,
+    "sql": "CREATE TABLE `org_user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `role` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_org_user_org_id",
+    "tbl_name": "org_user",
+    "rootpage": 23,
+    "sql": "CREATE INDEX `IDX_org_user_org_id` ON `org_user` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_org_user_org_id_user_id",
+    "tbl_name": "org_user",
+    "rootpage": 24,
+    "sql": "CREATE UNIQUE INDEX `UQE_org_user_org_id_user_id` ON `org_user` (`org_id`,`user_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_org_user_user_id",
+    "tbl_name": "org_user",
+    "rootpage": 25,
+    "sql": "CREATE INDEX `IDX_org_user_user_id` ON `org_user` (`user_id`)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_tag",
+    "tbl_name": "dashboard_tag",
+    "rootpage": 31,
+    "sql": "CREATE TABLE `dashboard_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `term` TEXT NOT NULL\n, `dashboard_uid` TEXT NULL, `org_id` INTEGER NULL DEFAULT 1)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard",
+    "tbl_name": "dashboard",
+    "rootpage": 32,
+    "sql": "CREATE TABLE `dashboard` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `slug` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `updated_by` INTEGER NULL, `created_by` INTEGER NULL, `gnet_id` INTEGER NULL, `plugin_id` TEXT NULL, `folder_id` INTEGER NOT NULL DEFAULT 0, `is_folder` INTEGER NOT NULL DEFAULT 0, `has_acl` INTEGER NOT NULL DEFAULT 0, `uid` TEXT NULL, `is_public` INTEGER NOT NULL DEFAULT 0, `deleted` DATETIME NULL, `api_version` TEXT NULL, `folder_uid` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_org_id",
+    "tbl_name": "dashboard",
+    "rootpage": 33,
+    "sql": "CREATE INDEX `IDX_dashboard_org_id` ON `dashboard` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_gnet_id",
+    "tbl_name": "dashboard",
+    "rootpage": 26,
+    "sql": "CREATE INDEX `IDX_dashboard_gnet_id` ON `dashboard` (`gnet_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_org_id_plugin_id",
+    "tbl_name": "dashboard",
+    "rootpage": 29,
+    "sql": "CREATE INDEX `IDX_dashboard_org_id_plugin_id` ON `dashboard` (`org_id`,`plugin_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_tag_dashboard_id",
+    "tbl_name": "dashboard_tag",
+    "rootpage": 30,
+    "sql": "CREATE INDEX `IDX_dashboard_tag_dashboard_id` ON `dashboard_tag` (`dashboard_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_org_id_uid",
+    "tbl_name": "dashboard",
+    "rootpage": 36,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_org_id_uid` ON `dashboard` (`org_id`,`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_provisioning",
+    "tbl_name": "dashboard_provisioning",
+    "rootpage": 38,
+    "sql": "CREATE TABLE `dashboard_provisioning` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NULL\n, `name` TEXT NOT NULL\n, `external_id` TEXT NOT NULL\n, `updated` INTEGER NOT NULL DEFAULT 0\n, `check_sum` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_provisioning_dashboard_id",
+    "tbl_name": "dashboard_provisioning",
+    "rootpage": 39,
+    "sql": "CREATE INDEX `IDX_dashboard_provisioning_dashboard_id` ON `dashboard_provisioning` (`dashboard_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_provisioning_dashboard_id_name",
+    "tbl_name": "dashboard_provisioning",
+    "rootpage": 40,
+    "sql": "CREATE INDEX `IDX_dashboard_provisioning_dashboard_id_name` ON `dashboard_provisioning` (`dashboard_id`,`name`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_title",
+    "tbl_name": "dashboard",
+    "rootpage": 37,
+    "sql": "CREATE INDEX `IDX_dashboard_title` ON `dashboard` (`title`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_is_folder",
+    "tbl_name": "dashboard",
+    "rootpage": 42,
+    "sql": "CREATE INDEX `IDX_dashboard_is_folder` ON `dashboard` (`is_folder`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_deleted",
+    "tbl_name": "dashboard",
+    "rootpage": 43,
+    "sql": "CREATE INDEX `IDX_dashboard_deleted` ON `dashboard` (`deleted`)"
+  },
+  {
+    "type": "table",
+    "name": "data_source",
+    "tbl_name": "data_source",
+    "rootpage": 46,
+    "sql": "CREATE TABLE `data_source` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `access` TEXT NOT NULL\n, `url` TEXT NOT NULL\n, `password` TEXT NULL\n, `user` TEXT NULL\n, `database` TEXT NULL\n, `basic_auth` INTEGER NOT NULL\n, `basic_auth_user` TEXT NULL\n, `basic_auth_password` TEXT NULL\n, `is_default` INTEGER NOT NULL\n, `json_data` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `with_credentials` INTEGER NOT NULL DEFAULT 0, `secure_json_data` TEXT NULL, `read_only` INTEGER NULL, `uid` TEXT NOT NULL DEFAULT 0, `is_prunable` INTEGER NULL DEFAULT 0, `api_version` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_data_source_org_id",
+    "tbl_name": "data_source",
+    "rootpage": 45,
+    "sql": "CREATE INDEX `IDX_data_source_org_id` ON `data_source` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_data_source_org_id_name",
+    "tbl_name": "data_source",
+    "rootpage": 47,
+    "sql": "CREATE UNIQUE INDEX `UQE_data_source_org_id_name` ON `data_source` (`org_id`,`name`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_data_source_org_id_uid",
+    "tbl_name": "data_source",
+    "rootpage": 48,
+    "sql": "CREATE UNIQUE INDEX `UQE_data_source_org_id_uid` ON `data_source` (`org_id`,`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_data_source_org_id_is_default",
+    "tbl_name": "data_source",
+    "rootpage": 49,
+    "sql": "CREATE INDEX `IDX_data_source_org_id_is_default` ON `data_source` (`org_id`,`is_default`)"
+  },
+  {
+    "type": "table",
+    "name": "api_key",
+    "tbl_name": "api_key",
+    "rootpage": 53,
+    "sql": "CREATE TABLE `api_key` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `role` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `expires` INTEGER NULL, `service_account_id` INTEGER NULL, `last_used_at` DATETIME NULL, `is_revoked` INTEGER NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_api_key_org_id",
+    "tbl_name": "api_key",
+    "rootpage": 54,
+    "sql": "CREATE INDEX `IDX_api_key_org_id` ON `api_key` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_api_key_key",
+    "tbl_name": "api_key",
+    "rootpage": 52,
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_key` ON `api_key` (`key`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_api_key_org_id_name",
+    "tbl_name": "api_key",
+    "rootpage": 55,
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_org_id_name` ON `api_key` (`org_id`,`name`)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_snapshot",
+    "tbl_name": "dashboard_snapshot",
+    "rootpage": 56,
+    "sql": "CREATE TABLE `dashboard_snapshot` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `delete_key` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `external` INTEGER NOT NULL\n, `external_url` TEXT NOT NULL\n, `dashboard` TEXT NOT NULL\n, `expires` DATETIME NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `external_delete_url` TEXT NULL, `dashboard_encrypted` BLOB NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_snapshot_key",
+    "tbl_name": "dashboard_snapshot",
+    "rootpage": 57,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_snapshot_key` ON `dashboard_snapshot` (`key`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_snapshot_delete_key",
+    "tbl_name": "dashboard_snapshot",
+    "rootpage": 58,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_snapshot_delete_key` ON `dashboard_snapshot` (`delete_key`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_snapshot_user_id",
+    "tbl_name": "dashboard_snapshot",
+    "rootpage": 59,
+    "sql": "CREATE INDEX `IDX_dashboard_snapshot_user_id` ON `dashboard_snapshot` (`user_id`)"
+  },
+  {
+    "type": "table",
+    "name": "quota",
+    "tbl_name": "quota",
+    "rootpage": 60,
+    "sql": "CREATE TABLE `quota` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NULL\n, `user_id` INTEGER NULL\n, `target` TEXT NOT NULL\n, `limit` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_quota_org_id_user_id_target",
+    "tbl_name": "quota",
+    "rootpage": 61,
+    "sql": "CREATE UNIQUE INDEX `UQE_quota_org_id_user_id_target` ON `quota` (`org_id`,`user_id`,`target`)"
+  },
+  {
+    "type": "table",
+    "name": "plugin_setting",
+    "tbl_name": "plugin_setting",
+    "rootpage": 64,
+    "sql": "CREATE TABLE \"plugin_setting\" (\n\t\t\t\"id\" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\t\t\"org_id\" INTEGER NOT NULL DEFAULT 1,\n\t\t\t\"plugin_id\" TEXT NOT NULL,\n\t\t\t\"enabled\" INTEGER NOT NULL,\n\t\t\t\"pinned\" INTEGER NOT NULL,\n\t\t\t\"json_data\" TEXT NULL,\n\t\t\t\"secure_json_data\" TEXT NULL,\n\t\t\t\"created\" DATETIME NOT NULL,\n\t\t\t\"updated\" DATETIME NOT NULL,\n\t\t\t\"plugin_version\" TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_plugin_setting_org_id_plugin_id",
+    "tbl_name": "plugin_setting",
+    "rootpage": 62,
+    "sql": "CREATE UNIQUE INDEX \"UQE_plugin_setting_org_id_plugin_id\" ON \"plugin_setting\" (\"org_id\",\"plugin_id\")"
+  },
+  {
+    "type": "table",
+    "name": "session",
+    "tbl_name": "session",
+    "rootpage": 65,
+    "sql": "CREATE TABLE `session` (\n`key` TEXT PRIMARY KEY NOT NULL\n, `data` BLOB NOT NULL\n, `expiry` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_session_1",
+    "tbl_name": "session",
+    "rootpage": 66,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "playlist",
+    "tbl_name": "playlist",
+    "rootpage": 67,
+    "sql": "CREATE TABLE `playlist` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `interval` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL DEFAULT 0, `updated_at` INTEGER NOT NULL DEFAULT 0, `uid` TEXT NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "table",
+    "name": "playlist_item",
+    "tbl_name": "playlist_item",
+    "rootpage": 68,
+    "sql": "CREATE TABLE `playlist_item` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `playlist_id` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `value` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `order` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "preferences",
+    "tbl_name": "preferences",
+    "rootpage": 69,
+    "sql": "CREATE TABLE `preferences` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `home_dashboard_id` INTEGER NOT NULL\n, `timezone` TEXT NOT NULL\n, `theme` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `team_id` INTEGER NULL, `week_start` TEXT NULL, `json_data` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_preferences_org_id",
+    "tbl_name": "preferences",
+    "rootpage": 70,
+    "sql": "CREATE INDEX `IDX_preferences_org_id` ON `preferences` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_preferences_user_id",
+    "tbl_name": "preferences",
+    "rootpage": 71,
+    "sql": "CREATE INDEX `IDX_preferences_user_id` ON `preferences` (`user_id`)"
+  },
+  {
+    "type": "table",
+    "name": "alert",
+    "tbl_name": "alert",
+    "rootpage": 72,
+    "sql": "CREATE TABLE `alert` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `panel_id` INTEGER NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `message` TEXT NOT NULL\n, `state` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `frequency` INTEGER NOT NULL\n, `handler` INTEGER NOT NULL\n, `severity` TEXT NOT NULL\n, `silenced` INTEGER NOT NULL\n, `execution_error` TEXT NOT NULL\n, `eval_data` TEXT NULL\n, `eval_date` DATETIME NULL\n, `new_state_date` DATETIME NOT NULL\n, `state_changes` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `for` INTEGER NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_org_id_id",
+    "tbl_name": "alert",
+    "rootpage": 75,
+    "sql": "CREATE INDEX `IDX_alert_org_id_id` ON `alert` (`org_id`,`id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_state",
+    "tbl_name": "alert",
+    "rootpage": 76,
+    "sql": "CREATE INDEX `IDX_alert_state` ON `alert` (`state`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_dashboard_id",
+    "tbl_name": "alert",
+    "rootpage": 77,
+    "sql": "CREATE INDEX `IDX_alert_dashboard_id` ON `alert` (`dashboard_id`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_rule_tag",
+    "tbl_name": "alert_rule_tag",
+    "rootpage": 79,
+    "sql": "CREATE TABLE `alert_rule_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `alert_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_tag_alert_id_tag_id",
+    "tbl_name": "alert_rule_tag",
+    "rootpage": 80,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_tag_alert_id_tag_id` ON `alert_rule_tag` (`alert_id`,`tag_id`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_notification",
+    "tbl_name": "alert_notification",
+    "rootpage": 78,
+    "sql": "CREATE TABLE `alert_notification` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `type` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `is_default` INTEGER NOT NULL DEFAULT 0, `frequency` INTEGER NULL, `send_reminder` INTEGER NULL DEFAULT 0, `disable_resolve_message` INTEGER NOT NULL DEFAULT 0, `uid` TEXT NULL, `secure_settings` TEXT NULL)"
+  },
+  {
+    "type": "table",
+    "name": "alert_notification_state",
+    "tbl_name": "alert_notification_state",
+    "rootpage": 82,
+    "sql": "CREATE TABLE `alert_notification_state` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alert_id` INTEGER NOT NULL\n, `notifier_id` INTEGER NOT NULL\n, `state` TEXT NOT NULL\n, `version` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n, `alert_rule_state_updated_version` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_notification_state_org_id_alert_id_notifier_id",
+    "tbl_name": "alert_notification_state",
+    "rootpage": 83,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_notification_state_org_id_alert_id_notifier_id` ON `alert_notification_state` (`org_id`,`alert_id`,`notifier_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_notification_org_id_uid",
+    "tbl_name": "alert_notification",
+    "rootpage": 85,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_notification_org_id_uid` ON `alert_notification` (`org_id`,`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_notification_state_alert_id",
+    "tbl_name": "alert_notification_state",
+    "rootpage": 81,
+    "sql": "CREATE INDEX `IDX_alert_notification_state_alert_id` ON `alert_notification_state` (`alert_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_rule_tag_alert_id",
+    "tbl_name": "alert_rule_tag",
+    "rootpage": 86,
+    "sql": "CREATE INDEX `IDX_alert_rule_tag_alert_id` ON `alert_rule_tag` (`alert_id`)"
+  },
+  {
+    "type": "table",
+    "name": "annotation",
+    "tbl_name": "annotation",
+    "rootpage": 87,
+    "sql": "CREATE TABLE `annotation` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alert_id` INTEGER NULL\n, `user_id` INTEGER NULL\n, `dashboard_id` INTEGER NULL\n, `panel_id` INTEGER NULL\n, `category_id` INTEGER NULL\n, `type` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `text` TEXT NOT NULL\n, `metric` TEXT NULL\n, `prev_state` TEXT NOT NULL\n, `new_state` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `epoch` INTEGER NOT NULL\n, `region_id` INTEGER NULL DEFAULT 0, `tags` TEXT NULL, `created` INTEGER NULL DEFAULT 0, `updated` INTEGER NULL DEFAULT 0, `epoch_end` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_alert_id",
+    "tbl_name": "annotation",
+    "rootpage": 88,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_alert_id` ON `annotation` (`org_id`,`alert_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_type",
+    "tbl_name": "annotation",
+    "rootpage": 89,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_type` ON `annotation` (`org_id`,`type`)"
+  },
+  {
+    "type": "table",
+    "name": "annotation_tag",
+    "tbl_name": "annotation_tag",
+    "rootpage": 95,
+    "sql": "CREATE TABLE `annotation_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `annotation_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_annotation_tag_annotation_id_tag_id",
+    "tbl_name": "annotation_tag",
+    "rootpage": 96,
+    "sql": "CREATE UNIQUE INDEX `UQE_annotation_tag_annotation_id_tag_id` ON `annotation_tag` (`annotation_id`,`tag_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_created",
+    "tbl_name": "annotation",
+    "rootpage": 90,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_created` ON `annotation` (`org_id`,`created`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_updated",
+    "tbl_name": "annotation",
+    "rootpage": 97,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_updated` ON `annotation` (`org_id`,`updated`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_dashboard_id_epoch_end_epoch",
+    "tbl_name": "annotation",
+    "rootpage": 91,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_dashboard_id_epoch_end_epoch` ON `annotation` (`org_id`,`dashboard_id`,`epoch_end`,`epoch`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_org_id_epoch_end_epoch",
+    "tbl_name": "annotation",
+    "rootpage": 92,
+    "sql": "CREATE INDEX `IDX_annotation_org_id_epoch_end_epoch` ON `annotation` (`org_id`,`epoch_end`,`epoch`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_annotation_alert_id",
+    "tbl_name": "annotation",
+    "rootpage": 98,
+    "sql": "CREATE INDEX `IDX_annotation_alert_id` ON `annotation` (`alert_id`)"
+  },
+  {
+    "type": "table",
+    "name": "test_data",
+    "tbl_name": "test_data",
+    "rootpage": 99,
+    "sql": "CREATE TABLE `test_data` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `metric1` TEXT NULL\n, `metric2` TEXT NULL\n, `value_big_int` INTEGER NULL\n, `value_double` REAL NULL\n, `value_float` REAL NULL\n, `value_int` INTEGER NULL\n, `time_epoch` INTEGER NOT NULL\n, `time_date_time` DATETIME NOT NULL\n, `time_time_stamp` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_version",
+    "tbl_name": "dashboard_version",
+    "rootpage": 101,
+    "sql": "CREATE TABLE `dashboard_version` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `parent_version` INTEGER NOT NULL\n, `restored_from` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n, `message` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `api_version` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_version_dashboard_id",
+    "tbl_name": "dashboard_version",
+    "rootpage": 102,
+    "sql": "CREATE INDEX `IDX_dashboard_version_dashboard_id` ON `dashboard_version` (`dashboard_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_version_dashboard_id_version",
+    "tbl_name": "dashboard_version",
+    "rootpage": 103,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_version_dashboard_id_version` ON `dashboard_version` (`dashboard_id`,`version`)"
+  },
+  {
+    "type": "table",
+    "name": "team",
+    "tbl_name": "team",
+    "rootpage": 104,
+    "sql": "CREATE TABLE `team` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `uid` TEXT NULL, `email` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_org_id",
+    "tbl_name": "team",
+    "rootpage": 105,
+    "sql": "CREATE INDEX `IDX_team_org_id` ON `team` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_team_org_id_name",
+    "tbl_name": "team",
+    "rootpage": 106,
+    "sql": "CREATE UNIQUE INDEX `UQE_team_org_id_name` ON `team` (`org_id`,`name`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_team_org_id_uid",
+    "tbl_name": "team",
+    "rootpage": 107,
+    "sql": "CREATE UNIQUE INDEX `UQE_team_org_id_uid` ON `team` (`org_id`,`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "team_member",
+    "tbl_name": "team_member",
+    "rootpage": 108,
+    "sql": "CREATE TABLE `team_member` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `team_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `external` INTEGER NULL, `permission` INTEGER NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_member_org_id",
+    "tbl_name": "team_member",
+    "rootpage": 109,
+    "sql": "CREATE INDEX `IDX_team_member_org_id` ON `team_member` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_team_member_org_id_team_id_user_id",
+    "tbl_name": "team_member",
+    "rootpage": 110,
+    "sql": "CREATE UNIQUE INDEX `UQE_team_member_org_id_team_id_user_id` ON `team_member` (`org_id`,`team_id`,`user_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_member_team_id",
+    "tbl_name": "team_member",
+    "rootpage": 112,
+    "sql": "CREATE INDEX `IDX_team_member_team_id` ON `team_member` (`team_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_member_user_id_org_id",
+    "tbl_name": "team_member",
+    "rootpage": 113,
+    "sql": "CREATE INDEX `IDX_team_member_user_id_org_id` ON `team_member` (`user_id`,`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_acl",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 114,
+    "sql": "CREATE TABLE `dashboard_acl` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `user_id` INTEGER NULL\n, `team_id` INTEGER NULL\n, `permission` INTEGER NOT NULL DEFAULT 4\n, `role` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_acl_dashboard_id",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 116,
+    "sql": "CREATE INDEX `IDX_dashboard_acl_dashboard_id` ON `dashboard_acl` (`dashboard_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_acl_dashboard_id_user_id",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 117,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_acl_dashboard_id_user_id` ON `dashboard_acl` (`dashboard_id`,`user_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_acl_dashboard_id_team_id",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 118,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_acl_dashboard_id_team_id` ON `dashboard_acl` (`dashboard_id`,`team_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_acl_user_id",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 119,
+    "sql": "CREATE INDEX `IDX_dashboard_acl_user_id` ON `dashboard_acl` (`user_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_acl_team_id",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 120,
+    "sql": "CREATE INDEX `IDX_dashboard_acl_team_id` ON `dashboard_acl` (`team_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_acl_org_id_role",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 121,
+    "sql": "CREATE INDEX `IDX_dashboard_acl_org_id_role` ON `dashboard_acl` (`org_id`,`role`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_acl_permission",
+    "tbl_name": "dashboard_acl",
+    "rootpage": 122,
+    "sql": "CREATE INDEX `IDX_dashboard_acl_permission` ON `dashboard_acl` (`permission`)"
+  },
+  {
+    "type": "table",
+    "name": "tag",
+    "tbl_name": "tag",
+    "rootpage": 123,
+    "sql": "CREATE TABLE `tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_tag_key_value",
+    "tbl_name": "tag",
+    "rootpage": 124,
+    "sql": "CREATE UNIQUE INDEX `UQE_tag_key_value` ON `tag` (`key`,`value`)"
+  },
+  {
+    "type": "table",
+    "name": "login_attempt",
+    "tbl_name": "login_attempt",
+    "rootpage": 126,
+    "sql": "CREATE TABLE `login_attempt` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `username` TEXT NOT NULL\n, `ip_address` TEXT NOT NULL\n, `created` INTEGER NOT NULL DEFAULT 0\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_login_attempt_username",
+    "tbl_name": "login_attempt",
+    "rootpage": 127,
+    "sql": "CREATE INDEX `IDX_login_attempt_username` ON `login_attempt` (`username`)"
+  },
+  {
+    "type": "table",
+    "name": "user_auth",
+    "tbl_name": "user_auth",
+    "rootpage": 125,
+    "sql": "CREATE TABLE `user_auth` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_module` TEXT NOT NULL\n, `auth_id` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `o_auth_access_token` TEXT NULL, `o_auth_refresh_token` TEXT NULL, `o_auth_token_type` TEXT NULL, `o_auth_expiry` DATETIME NULL, `o_auth_id_token` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_auth_auth_module_auth_id",
+    "tbl_name": "user_auth",
+    "rootpage": 128,
+    "sql": "CREATE INDEX `IDX_user_auth_auth_module_auth_id` ON `user_auth` (`auth_module`,`auth_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_auth_user_id",
+    "tbl_name": "user_auth",
+    "rootpage": 130,
+    "sql": "CREATE INDEX `IDX_user_auth_user_id` ON `user_auth` (`user_id`)"
+  },
+  {
+    "type": "table",
+    "name": "server_lock",
+    "tbl_name": "server_lock",
+    "rootpage": 131,
+    "sql": "CREATE TABLE `server_lock` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `operation_uid` TEXT NOT NULL\n, `version` INTEGER NOT NULL\n, `last_execution` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_server_lock_operation_uid",
+    "tbl_name": "server_lock",
+    "rootpage": 132,
+    "sql": "CREATE UNIQUE INDEX `UQE_server_lock_operation_uid` ON `server_lock` (`operation_uid`)"
+  },
+  {
+    "type": "table",
+    "name": "user_auth_token",
+    "tbl_name": "user_auth_token",
+    "rootpage": 133,
+    "sql": "CREATE TABLE `user_auth_token` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_token` TEXT NOT NULL\n, `prev_auth_token` TEXT NOT NULL\n, `user_agent` TEXT NOT NULL\n, `client_ip` TEXT NOT NULL\n, `auth_token_seen` INTEGER NOT NULL\n, `seen_at` INTEGER NULL\n, `rotated_at` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n, `revoked_at` INTEGER NULL, `external_session_id` INTEGER NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_auth_token_auth_token",
+    "tbl_name": "user_auth_token",
+    "rootpage": 134,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_auth_token_auth_token` ON `user_auth_token` (`auth_token`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_auth_token_prev_auth_token",
+    "tbl_name": "user_auth_token",
+    "rootpage": 136,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_auth_token_prev_auth_token` ON `user_auth_token` (`prev_auth_token`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_auth_token_user_id",
+    "tbl_name": "user_auth_token",
+    "rootpage": 137,
+    "sql": "CREATE INDEX `IDX_user_auth_token_user_id` ON `user_auth_token` (`user_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_auth_token_revoked_at",
+    "tbl_name": "user_auth_token",
+    "rootpage": 138,
+    "sql": "CREATE INDEX `IDX_user_auth_token_revoked_at` ON `user_auth_token` (`revoked_at`)"
+  },
+  {
+    "type": "table",
+    "name": "cache_data",
+    "tbl_name": "cache_data",
+    "rootpage": 139,
+    "sql": "CREATE TABLE `cache_data` (\n`cache_key` TEXT PRIMARY KEY NOT NULL\n, `data` BLOB NOT NULL\n, `expires` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_cache_data_1",
+    "tbl_name": "cache_data",
+    "rootpage": 140,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "UQE_cache_data_cache_key",
+    "tbl_name": "cache_data",
+    "rootpage": 141,
+    "sql": "CREATE UNIQUE INDEX `UQE_cache_data_cache_key` ON `cache_data` (`cache_key`)"
+  },
+  {
+    "type": "table",
+    "name": "short_url",
+    "tbl_name": "short_url",
+    "rootpage": 142,
+    "sql": "CREATE TABLE `short_url` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `path` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `last_seen_at` INTEGER NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_short_url_org_id_uid",
+    "tbl_name": "short_url",
+    "rootpage": 143,
+    "sql": "CREATE UNIQUE INDEX `UQE_short_url_org_id_uid` ON `short_url` (`org_id`,`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_instance",
+    "tbl_name": "alert_instance",
+    "rootpage": 144,
+    "sql": "CREATE TABLE `alert_instance` (\n\"rule_org_id\" INTEGER NOT NULL\n, \"rule_uid\" TEXT NOT NULL DEFAULT 0\n, `labels` TEXT NOT NULL\n, `labels_hash` TEXT NOT NULL\n, `current_state` TEXT NOT NULL\n, `current_state_since` INTEGER NOT NULL\n, `last_eval_time` INTEGER NOT NULL\n, `current_state_end` INTEGER NOT NULL DEFAULT 0, `current_reason` TEXT NULL, `result_fingerprint` TEXT NULL, `resolved_at` INTEGER NULL, `last_sent_at` INTEGER NULL, PRIMARY KEY ( \"rule_org_id\",\"rule_uid\",`labels_hash` ))"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_alert_instance_1",
+    "tbl_name": "alert_instance",
+    "rootpage": 146,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_instance_rule_org_id_rule_uid_current_state",
+    "tbl_name": "alert_instance",
+    "rootpage": 148,
+    "sql": "CREATE INDEX `IDX_alert_instance_rule_org_id_rule_uid_current_state` ON `alert_instance` (`rule_org_id`,`rule_uid`,`current_state`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_instance_rule_org_id_current_state",
+    "tbl_name": "alert_instance",
+    "rootpage": 147,
+    "sql": "CREATE INDEX `IDX_alert_instance_rule_org_id_current_state` ON `alert_instance` (`rule_org_id`,`current_state`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_rule",
+    "tbl_name": "alert_rule",
+    "rootpage": 150,
+    "sql": "CREATE TABLE `alert_rule` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n, `interval_seconds` INTEGER NOT NULL DEFAULT 60\n, `version` INTEGER NOT NULL DEFAULT 0\n, `uid` TEXT NOT NULL DEFAULT 0\n, `namespace_uid` TEXT NOT NULL\n, `rule_group` TEXT NOT NULL\n, `no_data_state` TEXT NOT NULL DEFAULT 'NoData'\n, `exec_err_state` TEXT NOT NULL DEFAULT 'Alerting'\n, `for` INTEGER NOT NULL DEFAULT 0, `annotations` TEXT NULL, `labels` TEXT NULL, `dashboard_uid` TEXT NULL, `panel_id` INTEGER NULL, `rule_group_idx` INTEGER NOT NULL DEFAULT 1, `is_paused` INTEGER NOT NULL DEFAULT 0, `notification_settings` TEXT NULL, `record` TEXT NULL, `metadata` TEXT NULL, `updated_by` TEXT NULL, `guid` TEXT NOT NULL DEFAULT '', `missing_series_evals_to_resolve` INTEGER NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_org_id_uid",
+    "tbl_name": "alert_rule",
+    "rootpage": 152,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_org_id_uid` ON `alert_rule` (`org_id`,`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_rule_org_id_namespace_uid_rule_group",
+    "tbl_name": "alert_rule",
+    "rootpage": 153,
+    "sql": "CREATE INDEX `IDX_alert_rule_org_id_namespace_uid_rule_group` ON `alert_rule` (`org_id`,`namespace_uid`,`rule_group`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_org_id_namespace_uid_title",
+    "tbl_name": "alert_rule",
+    "rootpage": 151,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_org_id_namespace_uid_title` ON `alert_rule` (`org_id`,`namespace_uid`,`title`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_rule_org_id_dashboard_uid_panel_id",
+    "tbl_name": "alert_rule",
+    "rootpage": 154,
+    "sql": "CREATE INDEX `IDX_alert_rule_org_id_dashboard_uid_panel_id` ON `alert_rule` (`org_id`,`dashboard_uid`,`panel_id`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_rule_version",
+    "tbl_name": "alert_rule_version",
+    "rootpage": 157,
+    "sql": "CREATE TABLE `alert_rule_version` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `rule_org_id` INTEGER NOT NULL\n, `rule_uid` TEXT NOT NULL DEFAULT 0\n, `rule_namespace_uid` TEXT NOT NULL\n, `rule_group` TEXT NOT NULL\n, `parent_version` INTEGER NOT NULL\n, `restored_from` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `interval_seconds` INTEGER NOT NULL\n, `no_data_state` TEXT NOT NULL DEFAULT 'NoData'\n, `exec_err_state` TEXT NOT NULL DEFAULT 'Alerting'\n, `for` INTEGER NOT NULL DEFAULT 0, `annotations` TEXT NULL, `labels` TEXT NULL, `rule_group_idx` INTEGER NOT NULL DEFAULT 1, `is_paused` INTEGER NOT NULL DEFAULT 0, `notification_settings` TEXT NULL, `record` TEXT NULL, `metadata` TEXT NULL, `created_by` TEXT NULL, `rule_guid` TEXT NOT NULL DEFAULT '', `missing_series_evals_to_resolve` INTEGER NULL)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_alert_rule_version_rule_org_id_rule_namespace_uid_rule_group",
+    "tbl_name": "alert_rule_version",
+    "rootpage": 159,
+    "sql": "CREATE INDEX `IDX_alert_rule_version_rule_org_id_rule_namespace_uid_rule_group` ON `alert_rule_version` (`rule_org_id`,`rule_namespace_uid`,`rule_group`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_configuration",
+    "tbl_name": "alert_configuration",
+    "rootpage": 160,
+    "sql": "CREATE TABLE `alert_configuration` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `alertmanager_configuration` TEXT NOT NULL\n, `configuration_version` TEXT NOT NULL\n, `created_at` INTEGER NOT NULL\n, `default` INTEGER NOT NULL DEFAULT 0, `org_id` INTEGER NOT NULL DEFAULT 0, `configuration_hash` TEXT NOT NULL DEFAULT 'not-yet-calculated')"
+  },
+  {
+    "type": "table",
+    "name": "ngalert_configuration",
+    "tbl_name": "ngalert_configuration",
+    "rootpage": 162,
+    "sql": "CREATE TABLE `ngalert_configuration` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alertmanagers` TEXT NULL\n, `created_at` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n, `send_alerts_to` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_ngalert_configuration_org_id",
+    "tbl_name": "ngalert_configuration",
+    "rootpage": 163,
+    "sql": "CREATE UNIQUE INDEX `UQE_ngalert_configuration_org_id` ON `ngalert_configuration` (`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "provenance_type",
+    "tbl_name": "provenance_type",
+    "rootpage": 165,
+    "sql": "CREATE TABLE `provenance_type` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `record_key` TEXT NOT NULL\n, `record_type` TEXT NOT NULL\n, `provenance` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_provenance_type_record_type_record_key_org_id",
+    "tbl_name": "provenance_type",
+    "rootpage": 166,
+    "sql": "CREATE UNIQUE INDEX `UQE_provenance_type_record_type_record_key_org_id` ON `provenance_type` (`record_type`,`record_key`,`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_image",
+    "tbl_name": "alert_image",
+    "rootpage": 167,
+    "sql": "CREATE TABLE `alert_image` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `token` TEXT NOT NULL\n, `path` TEXT NOT NULL\n, `url` TEXT NOT NULL\n, `created_at` DATETIME NOT NULL\n, `expires_at` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_image_token",
+    "tbl_name": "alert_image",
+    "rootpage": 168,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_image_token` ON `alert_image` (`token`)"
+  },
+  {
+    "type": "table",
+    "name": "alert_configuration_history",
+    "tbl_name": "alert_configuration_history",
+    "rootpage": 169,
+    "sql": "CREATE TABLE `alert_configuration_history` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 0\n, `alertmanager_configuration` TEXT NOT NULL\n, `configuration_hash` TEXT NOT NULL DEFAULT 'not-yet-calculated'\n, `configuration_version` TEXT NOT NULL\n, `created_at` INTEGER NOT NULL\n, `default` INTEGER NOT NULL DEFAULT 0\n, `last_applied` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_configuration_org_id",
+    "tbl_name": "alert_configuration",
+    "rootpage": 161,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_configuration_org_id` ON `alert_configuration` (`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "library_element",
+    "tbl_name": "library_element",
+    "rootpage": 170,
+    "sql": "CREATE TABLE `library_element` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `folder_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `kind` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `description` TEXT NOT NULL\n, `model` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n, `updated` DATETIME NOT NULL\n, `updated_by` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `folder_uid` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_library_element_org_id_folder_id_name_kind",
+    "tbl_name": "library_element",
+    "rootpage": 172,
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_folder_id_name_kind` ON `library_element` (`org_id`,`folder_id`,`name`,`kind`)"
+  },
+  {
+    "type": "table",
+    "name": "library_element_connection",
+    "tbl_name": "library_element_connection",
+    "rootpage": 173,
+    "sql": "CREATE TABLE `library_element_connection` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `element_id` INTEGER NOT NULL\n, `kind` INTEGER NOT NULL\n, `connection_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_library_element_connection_element_id_kind_connection_id",
+    "tbl_name": "library_element_connection",
+    "rootpage": 174,
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_connection_element_id_kind_connection_id` ON `library_element_connection` (`element_id`,`kind`,`connection_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_library_element_org_id_uid",
+    "tbl_name": "library_element",
+    "rootpage": 175,
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_uid` ON `library_element` (`org_id`,`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_library_element_org_id_folder_uid_name_kind",
+    "tbl_name": "library_element",
+    "rootpage": 177,
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_folder_uid_name_kind` ON `library_element` (`org_id`,`folder_uid`,`name`,`kind`)"
+  },
+  {
+    "type": "table",
+    "name": "data_keys",
+    "tbl_name": "data_keys",
+    "rootpage": 178,
+    "sql": "CREATE TABLE `data_keys` (\n\"name\" TEXT PRIMARY KEY NOT NULL\n, `active` INTEGER NOT NULL\n, `scope` TEXT NOT NULL\n, `provider` TEXT NOT NULL\n, `encrypted_data` BLOB NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, \"label\" TEXT NOT NULL DEFAULT '')"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_data_keys_1",
+    "tbl_name": "data_keys",
+    "rootpage": 179,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "secrets",
+    "tbl_name": "secrets",
+    "rootpage": 180,
+    "sql": "CREATE TABLE `secrets` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `namespace` TEXT NOT NULL\n, `type` TEXT NOT NULL\n, `value` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "kv_store",
+    "tbl_name": "kv_store",
+    "rootpage": 181,
+    "sql": "CREATE TABLE `kv_store` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `namespace` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_kv_store_org_id_namespace_key",
+    "tbl_name": "kv_store",
+    "rootpage": 182,
+    "sql": "CREATE UNIQUE INDEX `UQE_kv_store_org_id_namespace_key` ON `kv_store` (`org_id`,`namespace`,`key`)"
+  },
+  {
+    "type": "table",
+    "name": "permission",
+    "tbl_name": "permission",
+    "rootpage": 183,
+    "sql": "CREATE TABLE `permission` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `role_id` INTEGER NOT NULL\n, `action` TEXT NOT NULL\n, `scope` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `kind` TEXT NOT NULL DEFAULT '', `attribute` TEXT NOT NULL DEFAULT '', `identifier` TEXT NOT NULL DEFAULT '')"
+  },
+  {
+    "type": "index",
+    "name": "IDX_permission_role_id",
+    "tbl_name": "permission",
+    "rootpage": 184,
+    "sql": "CREATE INDEX `IDX_permission_role_id` ON `permission` (`role_id`)"
+  },
+  {
+    "type": "table",
+    "name": "role",
+    "tbl_name": "role",
+    "rootpage": 186,
+    "sql": "CREATE TABLE `role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `description` TEXT NULL\n, `version` INTEGER NOT NULL\n, `org_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `display_name` TEXT NULL, `group_name` TEXT NULL, `hidden` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_role_org_id",
+    "tbl_name": "role",
+    "rootpage": 187,
+    "sql": "CREATE INDEX `IDX_role_org_id` ON `role` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_role_org_id_name",
+    "tbl_name": "role",
+    "rootpage": 188,
+    "sql": "CREATE UNIQUE INDEX `UQE_role_org_id_name` ON `role` (`org_id`,`name`)"
+  },
+  {
+    "type": "table",
+    "name": "team_role",
+    "tbl_name": "team_role",
+    "rootpage": 190,
+    "sql": "CREATE TABLE `team_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `team_id` INTEGER NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_role_org_id",
+    "tbl_name": "team_role",
+    "rootpage": 193,
+    "sql": "CREATE INDEX `IDX_team_role_org_id` ON `team_role` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_team_role_org_id_team_id_role_id",
+    "tbl_name": "team_role",
+    "rootpage": 194,
+    "sql": "CREATE UNIQUE INDEX `UQE_team_role_org_id_team_id_role_id` ON `team_role` (`org_id`,`team_id`,`role_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_team_role_team_id",
+    "tbl_name": "team_role",
+    "rootpage": 195,
+    "sql": "CREATE INDEX `IDX_team_role_team_id` ON `team_role` (`team_id`)"
+  },
+  {
+    "type": "table",
+    "name": "user_role",
+    "tbl_name": "user_role",
+    "rootpage": 196,
+    "sql": "CREATE TABLE `user_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `group_mapping_uid` TEXT NULL DEFAULT '')"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_role_org_id",
+    "tbl_name": "user_role",
+    "rootpage": 197,
+    "sql": "CREATE INDEX `IDX_user_role_org_id` ON `user_role` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_user_role_user_id",
+    "tbl_name": "user_role",
+    "rootpage": 199,
+    "sql": "CREATE INDEX `IDX_user_role_user_id` ON `user_role` (`user_id`)"
+  },
+  {
+    "type": "table",
+    "name": "builtin_role",
+    "tbl_name": "builtin_role",
+    "rootpage": 200,
+    "sql": "CREATE TABLE `builtin_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `role` TEXT NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 0)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_builtin_role_role_id",
+    "tbl_name": "builtin_role",
+    "rootpage": 201,
+    "sql": "CREATE INDEX `IDX_builtin_role_role_id` ON `builtin_role` (`role_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_builtin_role_role",
+    "tbl_name": "builtin_role",
+    "rootpage": 202,
+    "sql": "CREATE INDEX `IDX_builtin_role_role` ON `builtin_role` (`role`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_builtin_role_org_id",
+    "tbl_name": "builtin_role",
+    "rootpage": 203,
+    "sql": "CREATE INDEX `IDX_builtin_role_org_id` ON `builtin_role` (`org_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_builtin_role_org_id_role_id_role",
+    "tbl_name": "builtin_role",
+    "rootpage": 204,
+    "sql": "CREATE UNIQUE INDEX `UQE_builtin_role_org_id_role_id_role` ON `builtin_role` (`org_id`,`role_id`,`role`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_role_uid",
+    "tbl_name": "role",
+    "rootpage": 189,
+    "sql": "CREATE UNIQUE INDEX `UQE_role_uid` ON `role` (`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_permission_identifier",
+    "tbl_name": "permission",
+    "rootpage": 207,
+    "sql": "CREATE INDEX `IDX_permission_identifier` ON `permission` (`identifier`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_permission_action_scope_role_id",
+    "tbl_name": "permission",
+    "rootpage": 208,
+    "sql": "CREATE UNIQUE INDEX `UQE_permission_action_scope_role_id` ON `permission` (`action`,`scope`,`role_id`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_user_role_org_id_user_id_role_id_group_mapping_uid",
+    "tbl_name": "user_role",
+    "rootpage": 185,
+    "sql": "CREATE UNIQUE INDEX `UQE_user_role_org_id_user_id_role_id_group_mapping_uid` ON `user_role` (`org_id`,`user_id`,`role_id`,`group_mapping_uid`)"
+  },
+  {
+    "type": "table",
+    "name": "query_history",
+    "tbl_name": "query_history",
+    "rootpage": 198,
+    "sql": "CREATE TABLE `query_history` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `datasource_uid` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `comment` TEXT NOT NULL\n, `queries` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_query_history_org_id_created_by_datasource_uid",
+    "tbl_name": "query_history",
+    "rootpage": 210,
+    "sql": "CREATE INDEX `IDX_query_history_org_id_created_by_datasource_uid` ON `query_history` (`org_id`,`created_by`,`datasource_uid`)"
+  },
+  {
+    "type": "table",
+    "name": "query_history_details",
+    "tbl_name": "query_history_details",
+    "rootpage": 211,
+    "sql": "CREATE TABLE `query_history_details` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `query_history_item_uid` TEXT NOT NULL\n, `datasource_uid` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "query_history_star",
+    "tbl_name": "query_history_star",
+    "rootpage": 213,
+    "sql": "CREATE TABLE `query_history_star` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `query_uid` TEXT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 1)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_query_history_star_user_id_query_uid",
+    "tbl_name": "query_history_star",
+    "rootpage": 214,
+    "sql": "CREATE UNIQUE INDEX `UQE_query_history_star_user_id_query_uid` ON `query_history_star` (`user_id`,`query_uid`)"
+  },
+  {
+    "type": "table",
+    "name": "correlation",
+    "tbl_name": "correlation",
+    "rootpage": 218,
+    "sql": "CREATE TABLE `correlation` (\n`uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 0\n, `source_uid` TEXT NOT NULL\n, `target_uid` TEXT NULL\n, `label` TEXT NOT NULL\n, `description` TEXT NOT NULL\n, `config` TEXT NULL\n, `provisioned` INTEGER NOT NULL DEFAULT 0, `type` TEXT NOT NULL DEFAULT 'query', PRIMARY KEY ( `uid`,`org_id`,`source_uid` ))"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_correlation_1",
+    "tbl_name": "correlation",
+    "rootpage": 217,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "IDX_correlation_uid",
+    "tbl_name": "correlation",
+    "rootpage": 219,
+    "sql": "CREATE INDEX `IDX_correlation_uid` ON `correlation` (`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_correlation_source_uid",
+    "tbl_name": "correlation",
+    "rootpage": 220,
+    "sql": "CREATE INDEX `IDX_correlation_source_uid` ON `correlation` (`source_uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_correlation_org_id",
+    "tbl_name": "correlation",
+    "rootpage": 221,
+    "sql": "CREATE INDEX `IDX_correlation_org_id` ON `correlation` (`org_id`)"
+  },
+  {
+    "type": "table",
+    "name": "entity_event",
+    "tbl_name": "entity_event",
+    "rootpage": 215,
+    "sql": "CREATE TABLE `entity_event` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `entity_id` TEXT NOT NULL\n, `event_type` TEXT NOT NULL\n, `created` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "dashboard_public",
+    "tbl_name": "dashboard_public",
+    "rootpage": 216,
+    "sql": "CREATE TABLE \"dashboard_public\" (\n`uid` TEXT PRIMARY KEY NOT NULL\n, `dashboard_uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `time_settings` TEXT NULL\n, `template_variables` TEXT NULL\n, `access_token` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `updated_by` INTEGER NULL\n, `created_at` DATETIME NOT NULL\n, `updated_at` DATETIME NULL\n, `is_enabled` INTEGER NOT NULL DEFAULT 0\n, `annotations_enabled` INTEGER NOT NULL DEFAULT 0, `time_selection_enabled` INTEGER NOT NULL DEFAULT 0, `share` TEXT NOT NULL DEFAULT 'public')"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_dashboard_public_1",
+    "tbl_name": "dashboard_public",
+    "rootpage": 223,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_public_config_uid",
+    "tbl_name": "dashboard_public",
+    "rootpage": 225,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_public_config_uid` ON \"dashboard_public\" (`uid`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_public_config_org_id_dashboard_uid",
+    "tbl_name": "dashboard_public",
+    "rootpage": 224,
+    "sql": "CREATE INDEX `IDX_dashboard_public_config_org_id_dashboard_uid` ON \"dashboard_public\" (`org_id`,`dashboard_uid`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_dashboard_public_config_access_token",
+    "tbl_name": "dashboard_public",
+    "rootpage": 226,
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_public_config_access_token` ON \"dashboard_public\" (`access_token`)"
+  },
+  {
+    "type": "table",
+    "name": "file",
+    "tbl_name": "file",
+    "rootpage": 228,
+    "sql": "CREATE TABLE `file` (\n`path` TEXT NOT NULL\n, `path_hash` TEXT NOT NULL\n, `parent_folder_path_hash` TEXT NOT NULL\n, `contents` BLOB NOT NULL\n, `etag` TEXT NOT NULL\n, `cache_control` TEXT NOT NULL\n, `content_disposition` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n, `created` DATETIME NOT NULL\n, `size` INTEGER NOT NULL\n, `mime_type` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_file_path_hash",
+    "tbl_name": "file",
+    "rootpage": 229,
+    "sql": "CREATE UNIQUE INDEX `UQE_file_path_hash` ON `file` (`path_hash`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_file_parent_folder_path_hash",
+    "tbl_name": "file",
+    "rootpage": 230,
+    "sql": "CREATE INDEX `IDX_file_parent_folder_path_hash` ON `file` (`parent_folder_path_hash`)"
+  },
+  {
+    "type": "table",
+    "name": "file_meta",
+    "tbl_name": "file_meta",
+    "rootpage": 231,
+    "sql": "CREATE TABLE `file_meta` (\n`path_hash` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_file_meta_path_hash_key",
+    "tbl_name": "file_meta",
+    "rootpage": 232,
+    "sql": "CREATE UNIQUE INDEX `UQE_file_meta_path_hash_key` ON `file_meta` (`path_hash`,`key`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_playlist_org_id_uid",
+    "tbl_name": "playlist",
+    "rootpage": 233,
+    "sql": "CREATE UNIQUE INDEX `UQE_playlist_org_id_uid` ON `playlist` (`org_id`,`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "seed_assignment",
+    "tbl_name": "seed_assignment",
+    "rootpage": 235,
+    "sql": "CREATE TABLE \"seed_assignment\" (\n\t\t    id INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\t\tbuiltin_role TEXT,\n\t\t\taction TEXT,\n\t\t\tscope TEXT,\n\t\t\trole_name TEXT\n\t\t, `origin` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_seed_assignment_builtin_role_action_scope",
+    "tbl_name": "seed_assignment",
+    "rootpage": 205,
+    "sql": "CREATE UNIQUE INDEX UQE_seed_assignment_builtin_role_action_scope ON seed_assignment (builtin_role, action, scope)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_seed_assignment_builtin_role_role_name",
+    "tbl_name": "seed_assignment",
+    "rootpage": 206,
+    "sql": "CREATE UNIQUE INDEX UQE_seed_assignment_builtin_role_role_name ON seed_assignment (builtin_role, role_name)"
+  },
+  {
+    "type": "table",
+    "name": "folder",
+    "tbl_name": "folder",
+    "rootpage": 237,
+    "sql": "CREATE TABLE `folder` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `title` TEXT NOT NULL\n, `description` TEXT NULL\n, `parent_uid` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_folder_org_id_uid",
+    "tbl_name": "folder",
+    "rootpage": 239,
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_org_id_uid` ON `folder` (`org_id`,`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "anon_device",
+    "tbl_name": "anon_device",
+    "rootpage": 240,
+    "sql": "CREATE TABLE `anon_device` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `client_ip` TEXT NOT NULL\n, `created_at` DATETIME NOT NULL\n, `device_id` TEXT NOT NULL\n, `updated_at` DATETIME NOT NULL\n, `user_agent` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_anon_device_device_id",
+    "tbl_name": "anon_device",
+    "rootpage": 238,
+    "sql": "CREATE UNIQUE INDEX `UQE_anon_device_device_id` ON `anon_device` (`device_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_anon_device_updated_at",
+    "tbl_name": "anon_device",
+    "rootpage": 241,
+    "sql": "CREATE INDEX `IDX_anon_device_updated_at` ON `anon_device` (`updated_at`)"
+  },
+  {
+    "type": "table",
+    "name": "signing_key",
+    "tbl_name": "signing_key",
+    "rootpage": 242,
+    "sql": "CREATE TABLE `signing_key` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `key_id` TEXT NOT NULL\n, `private_key` TEXT NOT NULL\n, `added_at` DATETIME NOT NULL\n, `expires_at` DATETIME NULL\n, `alg` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_signing_key_key_id",
+    "tbl_name": "signing_key",
+    "rootpage": 243,
+    "sql": "CREATE UNIQUE INDEX `UQE_signing_key_key_id` ON `signing_key` (`key_id`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_dashboard_org_id_folder_id_title",
+    "tbl_name": "dashboard",
+    "rootpage": 245,
+    "sql": "CREATE INDEX `IDX_dashboard_org_id_folder_id_title` ON `dashboard` (`org_id`,`folder_id`,`title`)"
+  },
+  {
+    "type": "table",
+    "name": "sso_setting",
+    "tbl_name": "sso_setting",
+    "rootpage": 34,
+    "sql": "CREATE TABLE `sso_setting` (\n`id` TEXT PRIMARY KEY NOT NULL\n, `provider` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `is_deleted` INTEGER NOT NULL DEFAULT 0\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_sso_setting_1",
+    "tbl_name": "sso_setting",
+    "rootpage": 246,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "cloud_migration_session",
+    "tbl_name": "cloud_migration_session",
+    "rootpage": 251,
+    "sql": "CREATE TABLE `cloud_migration_session` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NULL\n, `auth_token` TEXT NULL\n, `slug` TEXT NOT NULL\n, `stack_id` INTEGER NOT NULL\n, `region_slug` TEXT NOT NULL\n, `cluster_slug` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 1)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_cloud_migration_session_uid",
+    "tbl_name": "cloud_migration_session",
+    "rootpage": 253,
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_session_uid` ON `cloud_migration_session` (`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "cloud_migration_snapshot",
+    "tbl_name": "cloud_migration_snapshot",
+    "rootpage": 247,
+    "sql": "CREATE TABLE `cloud_migration_snapshot` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NULL\n, `session_uid` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `finished` DATETIME NULL\n, `upload_url` TEXT NULL, `status` TEXT NOT NULL, `local_directory` TEXT NULL, `gms_snapshot_uid` TEXT NULL, `encryption_key` TEXT NULL, `error_string` TEXT NULL)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_cloud_migration_snapshot_uid",
+    "tbl_name": "cloud_migration_snapshot",
+    "rootpage": 249,
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_snapshot_uid` ON `cloud_migration_snapshot` (`uid`)"
+  },
+  {
+    "type": "table",
+    "name": "cloud_migration_resource",
+    "tbl_name": "cloud_migration_resource",
+    "rootpage": 248,
+    "sql": "CREATE TABLE `cloud_migration_resource` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `resource_type` TEXT NOT NULL\n, `resource_uid` TEXT NOT NULL\n, `status` TEXT NOT NULL\n, `error_string` TEXT NULL\n, `snapshot_uid` TEXT NOT NULL\n, `name` TEXT NULL, `parent_name` TEXT NULL, `error_code` TEXT NULL)"
+  },
+  {
+    "type": "table",
+    "name": "user_external_session",
+    "tbl_name": "user_external_session",
+    "rootpage": 254,
+    "sql": "CREATE TABLE `user_external_session` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_auth_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_module` TEXT NOT NULL\n, `access_token` TEXT NULL\n, `id_token` TEXT NULL\n, `refresh_token` TEXT NULL\n, `session_id` TEXT NULL\n, `session_id_hash` TEXT NULL\n, `name_id` TEXT NULL\n, `name_id_hash` TEXT NULL\n, `expires_at` DATETIME NULL\n, `created_at` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "alert_rule_state",
+    "tbl_name": "alert_rule_state",
+    "rootpage": 255,
+    "sql": "CREATE TABLE `alert_rule_state` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `rule_uid` TEXT NOT NULL\n, `data` BLOB NOT NULL\n, `updated_at` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_state_org_id_rule_uid",
+    "tbl_name": "alert_rule_state",
+    "rootpage": 257,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_state_org_id_rule_uid` ON `alert_rule_state` (`org_id`,`rule_uid`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_version_rule_org_id_rule_uid_rule_guid_version",
+    "tbl_name": "alert_rule_version",
+    "rootpage": 258,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_version_rule_org_id_rule_uid_rule_guid_version` ON `alert_rule_version` (`rule_org_id`,`rule_uid`,`rule_guid`,`version`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_version_rule_guid_version",
+    "tbl_name": "alert_rule_version",
+    "rootpage": 259,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_version_rule_guid_version` ON `alert_rule_version` (`rule_guid`,`version`)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_alert_rule_guid",
+    "tbl_name": "alert_rule",
+    "rootpage": 260,
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_guid` ON `alert_rule` (`guid`)"
+  },
+  {
+    "type": "table",
+    "name": "resource_migration_log",
+    "tbl_name": "resource_migration_log",
+    "rootpage": 261,
+    "sql": "CREATE TABLE `resource_migration_log` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `migration_id` TEXT NOT NULL\n, `sql` TEXT NOT NULL\n, `success` INTEGER NOT NULL\n, `error` TEXT NOT NULL\n, `timestamp` DATETIME NOT NULL\n)"
+  },
+  {
+    "type": "table",
+    "name": "resource",
+    "tbl_name": "resource",
+    "rootpage": 262,
+    "sql": "CREATE TABLE `resource` (\n`guid` TEXT PRIMARY KEY NOT NULL\n, `resource_version` INTEGER NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` TEXT NULL\n, `action` INTEGER NOT NULL\n, `label_set` TEXT NULL\n, `previous_resource_version` INTEGER NULL, `folder` TEXT NOT NULL DEFAULT '')"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_resource_1",
+    "tbl_name": "resource",
+    "rootpage": 263,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "UQE_resource_namespace_group_resource_name",
+    "tbl_name": "resource",
+    "rootpage": 264,
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_namespace_group_resource_name` ON `resource` (`namespace`,`group`,`resource`,`name`)"
+  },
+  {
+    "type": "table",
+    "name": "resource_history",
+    "tbl_name": "resource_history",
+    "rootpage": 265,
+    "sql": "CREATE TABLE `resource_history` (\n`guid` TEXT PRIMARY KEY NOT NULL\n, `resource_version` INTEGER NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` TEXT NULL\n, `action` INTEGER NOT NULL\n, `label_set` TEXT NULL\n, `previous_resource_version` INTEGER NULL, `folder` TEXT NOT NULL DEFAULT '')"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_resource_history_1",
+    "tbl_name": "resource_history",
+    "rootpage": 266,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "UQE_resource_history_namespace_group_name_version",
+    "tbl_name": "resource_history",
+    "rootpage": 267,
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_history_namespace_group_name_version` ON `resource_history` (`namespace`,`group`,`resource`,`name`,`resource_version`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_resource_history_resource_version",
+    "tbl_name": "resource_history",
+    "rootpage": 268,
+    "sql": "CREATE INDEX `IDX_resource_history_resource_version` ON `resource_history` (`resource_version`)"
+  },
+  {
+    "type": "table",
+    "name": "resource_version",
+    "tbl_name": "resource_version",
+    "rootpage": 269,
+    "sql": "CREATE TABLE `resource_version` (\n`group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `resource_version` INTEGER NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "UQE_resource_version_group_resource",
+    "tbl_name": "resource_version",
+    "rootpage": 270,
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_version_group_resource` ON `resource_version` (`group`,`resource`)"
+  },
+  {
+    "type": "table",
+    "name": "resource_blob",
+    "tbl_name": "resource_blob",
+    "rootpage": 271,
+    "sql": "CREATE TABLE `resource_blob` (\n`uuid` UUID PRIMARY KEY NOT NULL\n, `created` DATETIME NOT NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` BLOB NOT NULL\n, `hash` TEXT NOT NULL\n, `content_type` TEXT NOT NULL\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_resource_blob_1",
+    "tbl_name": "resource_blob",
+    "rootpage": 272,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "IDX_resource_history_namespace_group_name",
+    "tbl_name": "resource_blob",
+    "rootpage": 273,
+    "sql": "CREATE INDEX `IDX_resource_history_namespace_group_name` ON `resource_blob` (`namespace`,`group`,`resource`,`name`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_resource_blob_created",
+    "tbl_name": "resource_blob",
+    "rootpage": 274,
+    "sql": "CREATE INDEX `IDX_resource_blob_created` ON `resource_blob` (`created`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_resource_history_group_resource_resource_version",
+    "tbl_name": "resource_history",
+    "rootpage": 276,
+    "sql": "CREATE INDEX `IDX_resource_history_group_resource_resource_version` ON `resource_history` (`group`,`resource`,`resource_version`)"
+  },
+  {
+    "type": "index",
+    "name": "IDX_resource_group_resource",
+    "tbl_name": "resource",
+    "rootpage": 277,
+    "sql": "CREATE INDEX `IDX_resource_group_resource` ON `resource` (`group`,`resource`)"
+  }
+]

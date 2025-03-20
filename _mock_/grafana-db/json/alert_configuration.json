@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "alertmanager_configuration": "{\n\t\"alertmanager_config\": {\n\t\t\"route\": {\n\t\t\t\"receiver\": \"grafana-default-email\",\n\t\t\t\"group_by\": [\"grafana_folder\", \"alertname\"]\n\t\t},\n\t\t\"receivers\": [{\n\t\t\t\"name\": \"grafana-default-email\",\n\t\t\t\"grafana_managed_receiver_configs\": [{\n\t\t\t\t\"uid\": \"\",\n\t\t\t\t\"name\": \"email receiver\",\n\t\t\t\t\"type\": \"email\",\n\t\t\t\t\"settings\": {\n\t\t\t\t\t\"addresses\": \"<example@email.com>\"\n\t\t\t\t}\n\t\t\t}]\n\t\t}]\n\t}\n}\n",
+    "configuration_version": "v1",
+    "created_at": 1742067996,
+    "default": 1,
+    "org_id": 1,
+    "configuration_hash": "ed091fbc8c639dd8063190127c806946"
+  }
+]

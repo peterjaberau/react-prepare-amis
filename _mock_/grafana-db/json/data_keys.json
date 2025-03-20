@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cefxzb4mp9atce",
+    "active": 1,
+    "scope": "root",
+    "provider": "secretKey.v1",
+    "encrypted_data": "'2A5957567A4C574E6D59672A716758425258786A65FDF59236E9325A55020C6F33F934CEA4C79E08A49B4DEB6C9EE378BD06C79A'",
+    "created": "2025-03-15 19:47:34",
+    "updated": "2025-03-15 19:47:34",
+    "label": "2025-03-16/root@secretKey.v1"
+  },
+  {
+    "name": "aeg6s4cs90kcgc",
+    "active": 1,
+    "scope": "root",
+    "provider": "secretKey.v1",
+    "encrypted_data": "'2A5957567A4C574E6D59672A534F6B5837586C5056E13ED0334A0FA334382F2051C6AC59066EAEC35E63EF6A72E4EF3E25AA9811'",
+    "created": "2025-03-18 06:59:03",
+    "updated": "2025-03-18 06:59:03",
+    "label": "2025-03-18/root@secretKey.v1"
+  },
+  {
+    "name": "feg7uu46yi7eod",
+    "active": 1,
+    "scope": "root",
+    "provider": "secretKey.v1",
+    "encrypted_data": "'2A5957567A4C574E6D59672A4D434330434661614E8BF3954A898014D685FC61D0249654812669F92AF1EB00928136C87C4CAB0C'",
+    "created": "2025-03-18 14:13:04",
+    "updated": "2025-03-18 14:13:04",
+    "label": "2025-03-19/root@secretKey.v1"
+  }
+]

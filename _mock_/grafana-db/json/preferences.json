@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "org_id": 1,
+    "user_id": 1,
+    "version": 1,
+    "home_dashboard_id": 0,
+    "timezone": "",
+    "theme": "light",
+    "created": "2025-03-15 19:47:46",
+    "updated": "2025-03-18 08:18:51",
+    "team_id": 0,
+    "week_start": "",
+    "json_data": "{\"language\":\"\",\"queryHistory\":{\"homeTab\":\"\"},\"cookiePreferences\":null,\"navbar\":{\"bookmarkUrls\":[\"/a/grafana-lokiexplore-app/explore\"]}}"
+  }
+]

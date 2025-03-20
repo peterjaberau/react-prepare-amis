@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "operation_uid": "migrate API keys to service accounts",
+    "version": 8,
+    "last_execution": 1742307184
+  },
+  {
+    "id": 2,
+    "operation_uid": "cleanup expired auth tokens",
+    "version": 7,
+    "last_execution": 1742335984
+  },
+  {
+    "id": 4,
+    "operation_uid": "delete old login attempts",
+    "version": 485,
+    "last_execution": 1742368384
+  },
+  {
+    "id": 5,
+    "operation_uid": "cleanup old anon devices",
+    "version": 8,
+    "last_execution": 1742357584
+  }
+]

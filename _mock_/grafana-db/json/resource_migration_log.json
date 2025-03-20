@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "migration_id": "create resource_migration_log table",
+    "sql": "CREATE TABLE IF NOT EXISTS `resource_migration_log` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `migration_id` TEXT NOT NULL\n, `sql` TEXT NOT NULL\n, `success` INTEGER NOT NULL\n, `error` TEXT NOT NULL\n, `timestamp` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 2,
+    "migration_id": "Initialize resource tables",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 3,
+    "migration_id": "drop table resource",
+    "sql": "DROP TABLE IF EXISTS `resource`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 4,
+    "migration_id": "create table resource",
+    "sql": "CREATE TABLE IF NOT EXISTS `resource` (\n`guid` TEXT PRIMARY KEY NOT NULL\n, `resource_version` INTEGER NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` TEXT NULL\n, `action` INTEGER NOT NULL\n, `label_set` TEXT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 5,
+    "migration_id": "create table resource, index: 0",
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_namespace_group_resource_name` ON `resource` (`namespace`,`group`,`resource`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 6,
+    "migration_id": "drop table resource_history",
+    "sql": "DROP TABLE IF EXISTS `resource_history`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 7,
+    "migration_id": "create table resource_history",
+    "sql": "CREATE TABLE IF NOT EXISTS `resource_history` (\n`guid` TEXT PRIMARY KEY NOT NULL\n, `resource_version` INTEGER NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` TEXT NULL\n, `action` INTEGER NOT NULL\n, `label_set` TEXT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 8,
+    "migration_id": "create table resource_history, index: 0",
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_history_namespace_group_name_version` ON `resource_history` (`namespace`,`group`,`resource`,`name`,`resource_version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 9,
+    "migration_id": "create table resource_history, index: 1",
+    "sql": "CREATE INDEX `IDX_resource_history_resource_version` ON `resource_history` (`resource_version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 10,
+    "migration_id": "drop table resource_version",
+    "sql": "DROP TABLE IF EXISTS `resource_version`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 11,
+    "migration_id": "create table resource_version",
+    "sql": "CREATE TABLE IF NOT EXISTS `resource_version` (\n`group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `resource_version` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 12,
+    "migration_id": "create table resource_version, index: 0",
+    "sql": "CREATE UNIQUE INDEX `UQE_resource_version_group_resource` ON `resource_version` (`group`,`resource`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 13,
+    "migration_id": "drop table resource_blob",
+    "sql": "DROP TABLE IF EXISTS `resource_blob`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 14,
+    "migration_id": "create table resource_blob",
+    "sql": "CREATE TABLE IF NOT EXISTS `resource_blob` (\n`uuid` UUID PRIMARY KEY NOT NULL\n, `created` DATETIME NOT NULL\n, `group` TEXT NOT NULL\n, `resource` TEXT NOT NULL\n, `namespace` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `value` BLOB NOT NULL\n, `hash` TEXT NOT NULL\n, `content_type` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 15,
+    "migration_id": "create table resource_blob, index: 0",
+    "sql": "CREATE INDEX `IDX_resource_history_namespace_group_name` ON `resource_blob` (`namespace`,`group`,`resource`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 16,
+    "migration_id": "create table resource_blob, index: 1",
+    "sql": "CREATE INDEX `IDX_resource_blob_created` ON `resource_blob` (`created`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 17,
+    "migration_id": "Add column previous_resource_version in resource_history",
+    "sql": "alter table `resource_history` ADD COLUMN `previous_resource_version` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 18,
+    "migration_id": "Add column previous_resource_version in resource",
+    "sql": "alter table `resource` ADD COLUMN `previous_resource_version` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 19,
+    "migration_id": "Add index to resource_history for polling",
+    "sql": "CREATE INDEX `IDX_resource_history_group_resource_resource_version` ON `resource_history` (`group`,`resource`,`resource_version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 20,
+    "migration_id": "Add index to resource for loading",
+    "sql": "CREATE INDEX `IDX_resource_group_resource` ON `resource` (`group`,`resource`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 21,
+    "migration_id": "Add column folder in resource_history",
+    "sql": "alter table `resource_history` ADD COLUMN `folder` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 22,
+    "migration_id": "Add column folder in resource",
+    "sql": "alter table `resource` ADD COLUMN `folder` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 23,
+    "migration_id": "Migrate DeletionMarkers to real Resource objects",
+    "sql": "Find rows in resource_history with value LIKE {\"kind\":\"DeletedMarker\"%",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  }
+]

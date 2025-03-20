@@ -48,12 +48,43 @@
       "@plugin-configs/*": ["src/packages/grafana/plugin-configs/*"],
       "@utils/*": ["src/utils/*"],
       "@plugin-ui/*": ["src/packages/grafana/plugin-ui/*"],
+      "~/*": ["./app/*"]
 
 //      plugin-configs
     },
-    "allowSyntheticDefaultImports": true
+    "rootDirs": [".", "./.react-router/types"],
+    "allowSyntheticDefaultImports": true,
+
+
+    "types": [
+      "@types/node",
+      "@remix-run/node",
+      "vite/client",
+      "styled-components",
+      "@types/wicg-file-system-access",
+      "node"
+    ],
+
+
+    "allowJs": true
   },
-  "include": ["src", "global.d.ts"],
+  "include": [
+    "src",
+    "global.d.ts",
+    "env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "declarations.d.ts",
+    ".react-router/types/**/*",
+    "**/.server/**/*.ts",
+    "**/.server/**/*.tsx",
+    "**/.client/**/*.ts",
+    "**/.client/**/*.tsx",
+    ".react-router/types/**/*",
+    "global.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

@@ -1,0 +1,2151 @@
+[
+  {
+    "id": 1,
+    "dashboard_id": 3,
+    "term": "gdev",
+    "dashboard_uid": "es_complex",
+    "org_id": 1
+  },
+  {
+    "id": 2,
+    "dashboard_id": 3,
+    "term": "elasticsearch",
+    "dashboard_uid": "es_complex",
+    "org_id": 1
+  },
+  {
+    "id": 3,
+    "dashboard_id": 3,
+    "term": "datasource-test",
+    "dashboard_uid": "es_complex",
+    "org_id": 1
+  },
+  {
+    "id": 4,
+    "dashboard_id": 6,
+    "term": "gdev",
+    "dashboard_uid": "vmie2cmWz",
+    "org_id": 1
+  },
+  {
+    "id": 5,
+    "dashboard_id": 6,
+    "term": "demo",
+    "dashboard_uid": "vmie2cmWz",
+    "org_id": 1
+  },
+  {
+    "id": 6,
+    "dashboard_id": 7,
+    "term": "gdev",
+    "dashboard_uid": "OYTKK3DVk",
+    "org_id": 1
+  },
+  {
+    "id": 7,
+    "dashboard_id": 7,
+    "term": "panel-tests",
+    "dashboard_uid": "OYTKK3DVk",
+    "org_id": 1
+  },
+  {
+    "id": 8,
+    "dashboard_id": 7,
+    "term": "geomap",
+    "dashboard_uid": "OYTKK3DVk",
+    "org_id": 1
+  },
+  {
+    "id": 9,
+    "dashboard_id": 8,
+    "term": "gdev",
+    "dashboard_uid": "KVxZKdmVz",
+    "org_id": 1
+  },
+  {
+    "id": 10,
+    "dashboard_id": 8,
+    "term": "panel-tests",
+    "dashboard_uid": "KVxZKdmVz",
+    "org_id": 1
+  },
+  {
+    "id": 11,
+    "dashboard_id": 8,
+    "term": "geomap",
+    "dashboard_uid": "KVxZKdmVz",
+    "org_id": 1
+  },
+  {
+    "id": 12,
+    "dashboard_id": 9,
+    "term": "gdev",
+    "dashboard_uid": "000000003",
+    "org_id": 1
+  },
+  {
+    "id": 13,
+    "dashboard_id": 9,
+    "term": "demo",
+    "dashboard_uid": "000000003",
+    "org_id": 1
+  },
+  {
+    "id": 14,
+    "dashboard_id": 10,
+    "term": "gdev",
+    "dashboard_uid": "spVR9LSMk",
+    "org_id": 1
+  },
+  {
+    "id": 15,
+    "dashboard_id": 10,
+    "term": "templating",
+    "dashboard_uid": "spVR9LSMk",
+    "org_id": 1
+  },
+  {
+    "id": 16,
+    "dashboard_id": 12,
+    "term": "panel-test",
+    "dashboard_uid": "Kp9Z0hTik",
+    "org_id": 1
+  },
+  {
+    "id": 17,
+    "dashboard_id": 12,
+    "term": "gdev",
+    "dashboard_uid": "Kp9Z0hTik",
+    "org_id": 1
+  },
+  {
+    "id": 18,
+    "dashboard_id": 12,
+    "term": "polystat",
+    "dashboard_uid": "Kp9Z0hTik",
+    "org_id": 1
+  },
+  {
+    "id": 19,
+    "dashboard_id": 13,
+    "term": "gdev",
+    "dashboard_uid": "pttable",
+    "org_id": 1
+  },
+  {
+    "id": 20,
+    "dashboard_id": 13,
+    "term": "panel-tests",
+    "dashboard_uid": "pttable",
+    "org_id": 1
+  },
+  {
+    "id": 21,
+    "dashboard_id": 14,
+    "term": "gdev",
+    "dashboard_uid": "mIJjFy8Gz",
+    "org_id": 1
+  },
+  {
+    "id": 22,
+    "dashboard_id": 14,
+    "term": "panel-tests",
+    "dashboard_uid": "mIJjFy8Gz",
+    "org_id": 1
+  },
+  {
+    "id": 23,
+    "dashboard_id": 14,
+    "term": "graph-ng",
+    "dashboard_uid": "mIJjFy8Gz",
+    "org_id": 1
+  },
+  {
+    "id": 24,
+    "dashboard_id": 15,
+    "term": "gdev",
+    "dashboard_uid": "WFlOM-jM1",
+    "org_id": 1
+  },
+  {
+    "id": 25,
+    "dashboard_id": 15,
+    "term": "panel-tests",
+    "dashboard_uid": "WFlOM-jM1",
+    "org_id": 1
+  },
+  {
+    "id": 26,
+    "dashboard_id": 15,
+    "term": "barchart",
+    "dashboard_uid": "WFlOM-jM1",
+    "org_id": 1
+  },
+  {
+    "id": 27,
+    "dashboard_id": 15,
+    "term": "graph-ng",
+    "dashboard_uid": "WFlOM-jM1",
+    "org_id": 1
+  },
+  {
+    "id": 28,
+    "dashboard_id": 16,
+    "term": "gdev",
+    "dashboard_uid": "MP-Di9F7k",
+    "org_id": 1
+  },
+  {
+    "id": 29,
+    "dashboard_id": 16,
+    "term": "panel-tests",
+    "dashboard_uid": "MP-Di9F7k",
+    "org_id": 1
+  },
+  {
+    "id": 30,
+    "dashboard_id": 16,
+    "term": "graph-ng",
+    "dashboard_uid": "MP-Di9F7k",
+    "org_id": 1
+  },
+  {
+    "id": 31,
+    "dashboard_id": 17,
+    "term": "gdev",
+    "dashboard_uid": "ea33320b-bd97-4fe1-a27c-24bc61a48b41",
+    "org_id": 1
+  },
+  {
+    "id": 32,
+    "dashboard_id": 17,
+    "term": "panel-tests",
+    "dashboard_uid": "ea33320b-bd97-4fe1-a27c-24bc61a48b41",
+    "org_id": 1
+  },
+  {
+    "id": 33,
+    "dashboard_id": 17,
+    "term": "barchart",
+    "dashboard_uid": "ea33320b-bd97-4fe1-a27c-24bc61a48b41",
+    "org_id": 1
+  },
+  {
+    "id": 34,
+    "dashboard_id": 17,
+    "term": "graph-ng",
+    "dashboard_uid": "ea33320b-bd97-4fe1-a27c-24bc61a48b41",
+    "org_id": 1
+  },
+  {
+    "id": 35,
+    "dashboard_id": 18,
+    "term": "gdev",
+    "dashboard_uid": "wfTJJL5Wz",
+    "org_id": 1
+  },
+  {
+    "id": 36,
+    "dashboard_id": 18,
+    "term": "templating",
+    "dashboard_uid": "wfTJJL5Wz",
+    "org_id": 1
+  },
+  {
+    "id": 37,
+    "dashboard_id": 20,
+    "term": "gdev",
+    "dashboard_uid": "37Dq903mk",
+    "org_id": 1
+  },
+  {
+    "id": 38,
+    "dashboard_id": 20,
+    "term": "panel-tests",
+    "dashboard_uid": "37Dq903mk",
+    "org_id": 1
+  },
+  {
+    "id": 39,
+    "dashboard_id": 20,
+    "term": "graph",
+    "dashboard_uid": "37Dq903mk",
+    "org_id": 1
+  },
+  {
+    "id": 40,
+    "dashboard_id": 21,
+    "term": "gdev",
+    "dashboard_uid": "mIJjFy8Kz",
+    "org_id": 1
+  },
+  {
+    "id": 41,
+    "dashboard_id": 21,
+    "term": "panel-tests",
+    "dashboard_uid": "mIJjFy8Kz",
+    "org_id": 1
+  },
+  {
+    "id": 42,
+    "dashboard_id": 21,
+    "term": "graph-ng",
+    "dashboard_uid": "mIJjFy8Kz",
+    "org_id": 1
+  },
+  {
+    "id": 43,
+    "dashboard_id": 21,
+    "term": "demo",
+    "dashboard_uid": "mIJjFy8Kz",
+    "org_id": 1
+  },
+  {
+    "id": 44,
+    "dashboard_id": 22,
+    "term": "gdev",
+    "dashboard_uid": "gw0K4rmVz",
+    "org_id": 1
+  },
+  {
+    "id": 45,
+    "dashboard_id": 22,
+    "term": "transform",
+    "dashboard_uid": "gw0K4rmVz",
+    "org_id": 1
+  },
+  {
+    "id": 46,
+    "dashboard_id": 24,
+    "term": "gdev",
+    "dashboard_uid": "xCmMwXdVz",
+    "org_id": 1
+  },
+  {
+    "id": 47,
+    "dashboard_id": 24,
+    "term": "panel-tests",
+    "dashboard_uid": "xCmMwXdVz",
+    "org_id": 1
+  },
+  {
+    "id": 48,
+    "dashboard_id": 24,
+    "term": "barchart",
+    "dashboard_uid": "xCmMwXdVz",
+    "org_id": 1
+  },
+  {
+    "id": 49,
+    "dashboard_id": 24,
+    "term": "graph-ng",
+    "dashboard_uid": "xCmMwXdVz",
+    "org_id": 1
+  },
+  {
+    "id": 50,
+    "dashboard_id": 25,
+    "term": "gdev",
+    "dashboard_uid": "a6801696-cc53-4196-b1f9-2403e3909185",
+    "org_id": 1
+  },
+  {
+    "id": 51,
+    "dashboard_id": 25,
+    "term": "panel-tests",
+    "dashboard_uid": "a6801696-cc53-4196-b1f9-2403e3909185",
+    "org_id": 1
+  },
+  {
+    "id": 52,
+    "dashboard_id": 27,
+    "term": "gdev",
+    "dashboard_uid": "kGvJCmGVz",
+    "org_id": 1
+  },
+  {
+    "id": 53,
+    "dashboard_id": 27,
+    "term": "panel-tests",
+    "dashboard_uid": "kGvJCmGVz",
+    "org_id": 1
+  },
+  {
+    "id": 54,
+    "dashboard_id": 27,
+    "term": "graph-ng",
+    "dashboard_uid": "kGvJCmGVz",
+    "org_id": 1
+  },
+  {
+    "id": 55,
+    "dashboard_id": 28,
+    "term": "gdev",
+    "dashboard_uid": "EJ8_d9jZk",
+    "org_id": 1
+  },
+  {
+    "id": 56,
+    "dashboard_id": 28,
+    "term": "panel-tests",
+    "dashboard_uid": "EJ8_d9jZk",
+    "org_id": 1
+  },
+  {
+    "id": 57,
+    "dashboard_id": 28,
+    "term": "graph-ng",
+    "dashboard_uid": "EJ8_d9jZk",
+    "org_id": 1
+  },
+  {
+    "id": 58,
+    "dashboard_id": 29,
+    "term": "gdev",
+    "dashboard_uid": "PMtIInink",
+    "org_id": 1
+  },
+  {
+    "id": 59,
+    "dashboard_id": 29,
+    "term": "transform",
+    "dashboard_uid": "PMtIInink",
+    "org_id": 1
+  },
+  {
+    "id": 60,
+    "dashboard_id": 30,
+    "term": "gdev",
+    "dashboard_uid": "ed155665",
+    "org_id": 1
+  },
+  {
+    "id": 61,
+    "dashboard_id": 30,
+    "term": "annotations",
+    "dashboard_uid": "ed155665",
+    "org_id": 1
+  },
+  {
+    "id": 62,
+    "dashboard_id": 31,
+    "term": "gdev",
+    "dashboard_uid": "XMuLlpZ4k",
+    "org_id": 1
+  },
+  {
+    "id": 63,
+    "dashboard_id": 31,
+    "term": "panel-tests",
+    "dashboard_uid": "XMuLlpZ4k",
+    "org_id": 1
+  },
+  {
+    "id": 64,
+    "dashboard_id": 31,
+    "term": "geomap",
+    "dashboard_uid": "XMuLlpZ4k",
+    "org_id": 1
+  },
+  {
+    "id": 65,
+    "dashboard_id": 32,
+    "term": "gdev",
+    "dashboard_uid": "29Yjn62Gk",
+    "org_id": 1
+  },
+  {
+    "id": 66,
+    "dashboard_id": 32,
+    "term": "panel-tests",
+    "dashboard_uid": "29Yjn62Gk",
+    "org_id": 1
+  },
+  {
+    "id": 67,
+    "dashboard_id": 32,
+    "term": "graph-ng",
+    "dashboard_uid": "29Yjn62Gk",
+    "org_id": 1
+  },
+  {
+    "id": 68,
+    "dashboard_id": 33,
+    "term": "gdev",
+    "dashboard_uid": "n1jR8vnnz",
+    "org_id": 1
+  },
+  {
+    "id": 69,
+    "dashboard_id": 33,
+    "term": "panel-tests",
+    "dashboard_uid": "n1jR8vnnz",
+    "org_id": 1
+  },
+  {
+    "id": 70,
+    "dashboard_id": 33,
+    "term": "all-panels",
+    "dashboard_uid": "n1jR8vnnz",
+    "org_id": 1
+  },
+  {
+    "id": 71,
+    "dashboard_id": 34,
+    "term": "gdev",
+    "dashboard_uid": "liveddluzy",
+    "org_id": 1
+  },
+  {
+    "id": 72,
+    "dashboard_id": 34,
+    "term": "live-tests",
+    "dashboard_uid": "liveddluzy",
+    "org_id": 1
+  },
+  {
+    "id": 73,
+    "dashboard_id": 35,
+    "term": "gdev",
+    "dashboard_uid": "2WaUpZmWk",
+    "org_id": 1
+  },
+  {
+    "id": 74,
+    "dashboard_id": 35,
+    "term": "panel-tests",
+    "dashboard_uid": "2WaUpZmWk",
+    "org_id": 1
+  },
+  {
+    "id": 75,
+    "dashboard_id": 36,
+    "term": "gdev",
+    "dashboard_uid": "_gWgX2JGk",
+    "org_id": 1
+  },
+  {
+    "id": 76,
+    "dashboard_id": 36,
+    "term": "panel-tests",
+    "dashboard_uid": "_gWgX2JGk",
+    "org_id": 1
+  },
+  {
+    "id": 77,
+    "dashboard_id": 36,
+    "term": "graph-ng",
+    "dashboard_uid": "_gWgX2JGk",
+    "org_id": 1
+  },
+  {
+    "id": 78,
+    "dashboard_id": 37,
+    "term": "gdev",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 79,
+    "dashboard_id": 37,
+    "term": "panel-tests",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 80,
+    "dashboard_id": 37,
+    "term": "graph-ng",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 81,
+    "dashboard_id": 37,
+    "term": "timeseries",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 82,
+    "dashboard_id": 37,
+    "term": "trend",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 83,
+    "dashboard_id": 37,
+    "term": "state-timeline",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 84,
+    "dashboard_id": 37,
+    "term": "transform",
+    "dashboard_uid": "8mmCAF1Mz",
+    "org_id": 1
+  },
+  {
+    "id": 85,
+    "dashboard_id": 38,
+    "term": "gdev",
+    "dashboard_uid": "Juj4_7ink",
+    "org_id": 1
+  },
+  {
+    "id": 86,
+    "dashboard_id": 38,
+    "term": "transform",
+    "dashboard_uid": "Juj4_7ink",
+    "org_id": 1
+  },
+  {
+    "id": 87,
+    "dashboard_id": 39,
+    "term": "gdev",
+    "dashboard_uid": "fGWBVW4k",
+    "org_id": 1
+  },
+  {
+    "id": 88,
+    "dashboard_id": 39,
+    "term": "transform",
+    "dashboard_uid": "fGWBVW4k",
+    "org_id": 1
+  },
+  {
+    "id": 89,
+    "dashboard_id": 41,
+    "term": "gdev",
+    "dashboard_uid": "xMsQdBfWz",
+    "org_id": 1
+  },
+  {
+    "id": 90,
+    "dashboard_id": 41,
+    "term": "demo",
+    "dashboard_uid": "xMsQdBfWz",
+    "org_id": 1
+  },
+  {
+    "id": 91,
+    "dashboard_id": 42,
+    "term": "gdev",
+    "dashboard_uid": "16f11TZWk",
+    "org_id": 1
+  },
+  {
+    "id": 92,
+    "dashboard_id": 42,
+    "term": "panel-tests",
+    "dashboard_uid": "16f11TZWk",
+    "org_id": 1
+  },
+  {
+    "id": 93,
+    "dashboard_id": 44,
+    "term": "gdev",
+    "dashboard_uid": "2I2uMSB7z",
+    "org_id": 1
+  },
+  {
+    "id": 94,
+    "dashboard_id": 44,
+    "term": "panel-tests",
+    "dashboard_uid": "2I2uMSB7z",
+    "org_id": 1
+  },
+  {
+    "id": 95,
+    "dashboard_id": 44,
+    "term": "barchart",
+    "dashboard_uid": "2I2uMSB7z",
+    "org_id": 1
+  },
+  {
+    "id": 96,
+    "dashboard_id": 44,
+    "term": "graph-ng",
+    "dashboard_uid": "2I2uMSB7z",
+    "org_id": 1
+  },
+  {
+    "id": 97,
+    "dashboard_id": 45,
+    "term": "gdev",
+    "dashboard_uid": "es_simple",
+    "org_id": 1
+  },
+  {
+    "id": 98,
+    "dashboard_id": 45,
+    "term": "elasticsearch",
+    "dashboard_uid": "es_simple",
+    "org_id": 1
+  },
+  {
+    "id": 99,
+    "dashboard_id": 45,
+    "term": "datasource-test",
+    "dashboard_uid": "es_simple",
+    "org_id": 1
+  },
+  {
+    "id": 100,
+    "dashboard_id": 46,
+    "term": "gdev",
+    "dashboard_uid": "JYola5qzz",
+    "org_id": 1
+  },
+  {
+    "id": 101,
+    "dashboard_id": 46,
+    "term": "postgres",
+    "dashboard_uid": "JYola5qzz",
+    "org_id": 1
+  },
+  {
+    "id": 102,
+    "dashboard_id": 46,
+    "term": "datasource-test",
+    "dashboard_uid": "JYola5qzz",
+    "org_id": 1
+  },
+  {
+    "id": 103,
+    "dashboard_id": 47,
+    "term": "gdev",
+    "dashboard_uid": "cdd412c4",
+    "org_id": 1
+  },
+  {
+    "id": 104,
+    "dashboard_id": 47,
+    "term": "migrations",
+    "dashboard_uid": "cdd412c4",
+    "org_id": 1
+  },
+  {
+    "id": 105,
+    "dashboard_id": 47,
+    "term": "angular",
+    "dashboard_uid": "cdd412c4",
+    "org_id": 1
+  },
+  {
+    "id": 106,
+    "dashboard_id": 49,
+    "term": "panel-tests",
+    "dashboard_uid": "szkuR1umk",
+    "org_id": 1
+  },
+  {
+    "id": 107,
+    "dashboard_id": 49,
+    "term": "gdev",
+    "dashboard_uid": "szkuR1umk",
+    "org_id": 1
+  },
+  {
+    "id": 108,
+    "dashboard_id": 49,
+    "term": "gauge",
+    "dashboard_uid": "szkuR1umk",
+    "org_id": 1
+  },
+  {
+    "id": 109,
+    "dashboard_id": 50,
+    "term": "gdev",
+    "dashboard_uid": "fdn48fmz8f94wc",
+    "org_id": 1
+  },
+  {
+    "id": 110,
+    "dashboard_id": 50,
+    "term": "panel-tests",
+    "dashboard_uid": "fdn48fmz8f94wc",
+    "org_id": 1
+  },
+  {
+    "id": 111,
+    "dashboard_id": 50,
+    "term": "graph-ng",
+    "dashboard_uid": "fdn48fmz8f94wc",
+    "org_id": 1
+  },
+  {
+    "id": 112,
+    "dashboard_id": 50,
+    "term": "demo",
+    "dashboard_uid": "fdn48fmz8f94wc",
+    "org_id": 1
+  },
+  {
+    "id": 113,
+    "dashboard_id": 51,
+    "term": "gdev",
+    "dashboard_uid": "86Js1xRmk",
+    "org_id": 1
+  },
+  {
+    "id": 114,
+    "dashboard_id": 51,
+    "term": "mssql",
+    "dashboard_uid": "86Js1xRmk",
+    "org_id": 1
+  },
+  {
+    "id": 115,
+    "dashboard_id": 51,
+    "term": "datasource-test",
+    "dashboard_uid": "86Js1xRmk",
+    "org_id": 1
+  },
+  {
+    "id": 116,
+    "dashboard_id": 52,
+    "term": "gdev",
+    "dashboard_uid": "e7c29343-6d1e-4167-9c13-803fe5be8c46",
+    "org_id": 1
+  },
+  {
+    "id": 117,
+    "dashboard_id": 52,
+    "term": "templating",
+    "dashboard_uid": "e7c29343-6d1e-4167-9c13-803fe5be8c46",
+    "org_id": 1
+  },
+  {
+    "id": 118,
+    "dashboard_id": 53,
+    "term": "gdev",
+    "dashboard_uid": "liveb94wbb",
+    "org_id": 1
+  },
+  {
+    "id": 119,
+    "dashboard_id": 53,
+    "term": "live-tests",
+    "dashboard_uid": "liveb94wbb",
+    "org_id": 1
+  },
+  {
+    "id": 120,
+    "dashboard_id": 55,
+    "term": "gdev",
+    "dashboard_uid": "cdf3gkge5reo0f",
+    "org_id": 1
+  },
+  {
+    "id": 121,
+    "dashboard_id": 55,
+    "term": "panel-tests",
+    "dashboard_uid": "cdf3gkge5reo0f",
+    "org_id": 1
+  },
+  {
+    "id": 122,
+    "dashboard_id": 55,
+    "term": "graph-ng",
+    "dashboard_uid": "cdf3gkge5reo0f",
+    "org_id": 1
+  },
+  {
+    "id": 123,
+    "dashboard_id": 55,
+    "term": "demo",
+    "dashboard_uid": "cdf3gkge5reo0f",
+    "org_id": 1
+  },
+  {
+    "id": 124,
+    "dashboard_id": 56,
+    "term": "gdev",
+    "dashboard_uid": "OY8Ghjt7k",
+    "org_id": 1
+  },
+  {
+    "id": 125,
+    "dashboard_id": 56,
+    "term": "templating",
+    "dashboard_uid": "OY8Ghjt7k",
+    "org_id": 1
+  },
+  {
+    "id": 126,
+    "dashboard_id": 57,
+    "term": "gdev",
+    "dashboard_uid": "Pu8lwQAVz",
+    "org_id": 1
+  },
+  {
+    "id": 127,
+    "dashboard_id": 57,
+    "term": "panel-tests",
+    "dashboard_uid": "Pu8lwQAVz",
+    "org_id": 1
+  },
+  {
+    "id": 128,
+    "dashboard_id": 57,
+    "term": "canvas",
+    "dashboard_uid": "Pu8lwQAVz",
+    "org_id": 1
+  },
+  {
+    "id": 129,
+    "dashboard_id": 58,
+    "term": "gdev",
+    "dashboard_uid": "5mqG8qdZz",
+    "org_id": 1
+  },
+  {
+    "id": 130,
+    "dashboard_id": 58,
+    "term": "panel-tests",
+    "dashboard_uid": "5mqG8qdZz",
+    "org_id": 1
+  },
+  {
+    "id": 131,
+    "dashboard_id": 59,
+    "term": "gdev",
+    "dashboard_uid": "TX2VU59MZ",
+    "org_id": 1
+  },
+  {
+    "id": 132,
+    "dashboard_id": 59,
+    "term": "panel-tests",
+    "dashboard_uid": "TX2VU59MZ",
+    "org_id": 1
+  },
+  {
+    "id": 133,
+    "dashboard_id": 59,
+    "term": "graph-ng",
+    "dashboard_uid": "TX2VU59MZ",
+    "org_id": 1
+  },
+  {
+    "id": 134,
+    "dashboard_id": 60,
+    "term": "gdev",
+    "dashboard_uid": "Kce7z9TVz",
+    "org_id": 1
+  },
+  {
+    "id": 135,
+    "dashboard_id": 60,
+    "term": "panel-tests",
+    "dashboard_uid": "Kce7z9TVz",
+    "org_id": 1
+  },
+  {
+    "id": 136,
+    "dashboard_id": 60,
+    "term": "state-timeline",
+    "dashboard_uid": "Kce7z9TVz",
+    "org_id": 1
+  },
+  {
+    "id": 137,
+    "dashboard_id": 60,
+    "term": "graph-ng",
+    "dashboard_uid": "Kce7z9TVz",
+    "org_id": 1
+  },
+  {
+    "id": 138,
+    "dashboard_id": 62,
+    "term": "gdev",
+    "dashboard_uid": "pD4vPYhVz",
+    "org_id": 1
+  },
+  {
+    "id": 139,
+    "dashboard_id": 62,
+    "term": "transform",
+    "dashboard_uid": "pD4vPYhVz",
+    "org_id": 1
+  },
+  {
+    "id": 140,
+    "dashboard_id": 63,
+    "term": "gdev",
+    "dashboard_uid": "22mq9eSVz",
+    "org_id": 1
+  },
+  {
+    "id": 141,
+    "dashboard_id": 63,
+    "term": "loki",
+    "dashboard_uid": "22mq9eSVz",
+    "org_id": 1
+  },
+  {
+    "id": 142,
+    "dashboard_id": 63,
+    "term": "datasource-test",
+    "dashboard_uid": "22mq9eSVz",
+    "org_id": 1
+  },
+  {
+    "id": 143,
+    "dashboard_id": 64,
+    "term": "gdev",
+    "dashboard_uid": "GlAqcPgmz",
+    "org_id": 1
+  },
+  {
+    "id": 144,
+    "dashboard_id": 64,
+    "term": "mssql",
+    "dashboard_uid": "GlAqcPgmz",
+    "org_id": 1
+  },
+  {
+    "id": 145,
+    "dashboard_id": 64,
+    "term": "datasource-test",
+    "dashboard_uid": "GlAqcPgmz",
+    "org_id": 1
+  },
+  {
+    "id": 146,
+    "dashboard_id": 65,
+    "term": "gdev",
+    "dashboard_uid": "nP8rcffGk",
+    "org_id": 1
+  },
+  {
+    "id": 147,
+    "dashboard_id": 65,
+    "term": "graph-ng",
+    "dashboard_uid": "nP8rcffGk",
+    "org_id": 1
+  },
+  {
+    "id": 148,
+    "dashboard_id": 65,
+    "term": "demo",
+    "dashboard_uid": "nP8rcffGk",
+    "org_id": 1
+  },
+  {
+    "id": 149,
+    "dashboard_id": 66,
+    "term": "gdev",
+    "dashboard_uid": "2jFpEvp7z",
+    "org_id": 1
+  },
+  {
+    "id": 150,
+    "dashboard_id": 66,
+    "term": "panel-tests",
+    "dashboard_uid": "2jFpEvp7z",
+    "org_id": 1
+  },
+  {
+    "id": 151,
+    "dashboard_id": 66,
+    "term": "geomap",
+    "dashboard_uid": "2jFpEvp7z",
+    "org_id": 1
+  },
+  {
+    "id": 152,
+    "dashboard_id": 68,
+    "term": "gdev",
+    "dashboard_uid": "k3XQFOBMk",
+    "org_id": 1
+  },
+  {
+    "id": 153,
+    "dashboard_id": 68,
+    "term": "panel-tests",
+    "dashboard_uid": "k3XQFOBMk",
+    "org_id": 1
+  },
+  {
+    "id": 154,
+    "dashboard_id": 68,
+    "term": "graph-ng",
+    "dashboard_uid": "k3XQFOBMk",
+    "org_id": 1
+  },
+  {
+    "id": 155,
+    "dashboard_id": 69,
+    "term": "templating",
+    "dashboard_uid": "Repeating-rows-uid",
+    "org_id": 1
+  },
+  {
+    "id": 156,
+    "dashboard_id": 69,
+    "term": "gdev",
+    "dashboard_uid": "Repeating-rows-uid",
+    "org_id": 1
+  },
+  {
+    "id": 157,
+    "dashboard_id": 70,
+    "term": "gdev",
+    "dashboard_uid": "O6f11TZWk",
+    "org_id": 1
+  },
+  {
+    "id": 158,
+    "dashboard_id": 70,
+    "term": "panel-tests",
+    "dashboard_uid": "O6f11TZWk",
+    "org_id": 1
+  },
+  {
+    "id": 159,
+    "dashboard_id": 71,
+    "term": "gdev",
+    "dashboard_uid": "Ya_7opHVz",
+    "org_id": 1
+  },
+  {
+    "id": 160,
+    "dashboard_id": 71,
+    "term": "panel-tests",
+    "dashboard_uid": "Ya_7opHVz",
+    "org_id": 1
+  },
+  {
+    "id": 161,
+    "dashboard_id": 71,
+    "term": "geomap",
+    "dashboard_uid": "Ya_7opHVz",
+    "org_id": 1
+  },
+  {
+    "id": 162,
+    "dashboard_id": 72,
+    "term": "gdev",
+    "dashboard_uid": "c295a76e-79d3-43b3-a688-ef0373224158",
+    "org_id": 1
+  },
+  {
+    "id": 163,
+    "dashboard_id": 72,
+    "term": "panel-tests",
+    "dashboard_uid": "c295a76e-79d3-43b3-a688-ef0373224158",
+    "org_id": 1
+  },
+  {
+    "id": 164,
+    "dashboard_id": 72,
+    "term": "graph-ng",
+    "dashboard_uid": "c295a76e-79d3-43b3-a688-ef0373224158",
+    "org_id": 1
+  },
+  {
+    "id": 165,
+    "dashboard_id": 73,
+    "term": "gdev",
+    "dashboard_uid": "es_migration",
+    "org_id": 1
+  },
+  {
+    "id": 166,
+    "dashboard_id": 73,
+    "term": "elasticsearch",
+    "dashboard_uid": "es_migration",
+    "org_id": 1
+  },
+  {
+    "id": 167,
+    "dashboard_id": 73,
+    "term": "datasource-test",
+    "dashboard_uid": "es_migration",
+    "org_id": 1
+  },
+  {
+    "id": 168,
+    "dashboard_id": 74,
+    "term": "gdev",
+    "dashboard_uid": "P7vAAhvZk",
+    "org_id": 1
+  },
+  {
+    "id": 169,
+    "dashboard_id": 74,
+    "term": "panel-tests",
+    "dashboard_uid": "P7vAAhvZk",
+    "org_id": 1
+  },
+  {
+    "id": 170,
+    "dashboard_id": 75,
+    "term": "gdev",
+    "dashboard_uid": "YObbMr44k",
+    "org_id": 1
+  },
+  {
+    "id": 171,
+    "dashboard_id": 75,
+    "term": "panel-tests",
+    "dashboard_uid": "YObbMr44k",
+    "org_id": 1
+  },
+  {
+    "id": 172,
+    "dashboard_id": 75,
+    "term": "graph-ng",
+    "dashboard_uid": "YObbMr44k",
+    "org_id": 1
+  },
+  {
+    "id": 173,
+    "dashboard_id": 77,
+    "term": "gdev",
+    "dashboard_uid": "inxsweKGz",
+    "org_id": 1
+  },
+  {
+    "id": 174,
+    "dashboard_id": 77,
+    "term": "demo",
+    "dashboard_uid": "inxsweKGz",
+    "org_id": 1
+  },
+  {
+    "id": 175,
+    "dashboard_id": 79,
+    "term": "gdev",
+    "dashboard_uid": "d2d2bb99-42e4-44b8-b93e-3ad1aae31c6b",
+    "org_id": 1
+  },
+  {
+    "id": 176,
+    "dashboard_id": 79,
+    "term": "transform",
+    "dashboard_uid": "d2d2bb99-42e4-44b8-b93e-3ad1aae31c6b",
+    "org_id": 1
+  },
+  {
+    "id": 177,
+    "dashboard_id": 80,
+    "term": "datasource-test",
+    "dashboard_uid": "tFU1mQyWz",
+    "org_id": 1
+  },
+  {
+    "id": 178,
+    "dashboard_id": 80,
+    "term": "gdev",
+    "dashboard_uid": "tFU1mQyWz",
+    "org_id": 1
+  },
+  {
+    "id": 179,
+    "dashboard_id": 80,
+    "term": "opentsdb",
+    "dashboard_uid": "tFU1mQyWz",
+    "org_id": 1
+  },
+  {
+    "id": 180,
+    "dashboard_id": 82,
+    "term": "gdev",
+    "dashboard_uid": "addoomtlivedev",
+    "org_id": 1
+  },
+  {
+    "id": 181,
+    "dashboard_id": 82,
+    "term": "live-tests",
+    "dashboard_uid": "addoomtlivedev",
+    "org_id": 1
+  },
+  {
+    "id": 182,
+    "dashboard_id": 83,
+    "term": "gdev",
+    "dashboard_uid": "aBXrJ0R7z",
+    "org_id": 1
+  },
+  {
+    "id": 183,
+    "dashboard_id": 83,
+    "term": "panel-tests",
+    "dashboard_uid": "aBXrJ0R7z",
+    "org_id": 1
+  },
+  {
+    "id": 184,
+    "dashboard_id": 83,
+    "term": "graph-ng",
+    "dashboard_uid": "aBXrJ0R7z",
+    "org_id": 1
+  },
+  {
+    "id": 185,
+    "dashboard_id": 84,
+    "term": "gdev",
+    "dashboard_uid": "ICiqZ1rGk",
+    "org_id": 1
+  },
+  {
+    "id": 186,
+    "dashboard_id": 84,
+    "term": "panel-tests",
+    "dashboard_uid": "ICiqZ1rGk",
+    "org_id": 1
+  },
+  {
+    "id": 187,
+    "dashboard_id": 84,
+    "term": "graph-ng",
+    "dashboard_uid": "ICiqZ1rGk",
+    "org_id": 1
+  },
+  {
+    "id": 188,
+    "dashboard_id": 86,
+    "term": "gdev",
+    "dashboard_uid": "HeUnbEuZk",
+    "org_id": 1
+  },
+  {
+    "id": 189,
+    "dashboard_id": 86,
+    "term": "templating",
+    "dashboard_uid": "HeUnbEuZk",
+    "org_id": 1
+  },
+  {
+    "id": 190,
+    "dashboard_id": 87,
+    "term": "gdev",
+    "dashboard_uid": "_5rDmaQiz",
+    "org_id": 1
+  },
+  {
+    "id": 191,
+    "dashboard_id": 87,
+    "term": "panel-tests",
+    "dashboard_uid": "_5rDmaQiz",
+    "org_id": 1
+  },
+  {
+    "id": 192,
+    "dashboard_id": 88,
+    "term": "gdev",
+    "dashboard_uid": "eNsFjVBGz",
+    "org_id": 1
+  },
+  {
+    "id": 193,
+    "dashboard_id": 88,
+    "term": "panel-tests",
+    "dashboard_uid": "eNsFjVBGz",
+    "org_id": 1
+  },
+  {
+    "id": 194,
+    "dashboard_id": 88,
+    "term": "graph-ng",
+    "dashboard_uid": "eNsFjVBGz",
+    "org_id": 1
+  },
+  {
+    "id": 195,
+    "dashboard_id": 89,
+    "term": "gdev",
+    "dashboard_uid": "DGsCac3kz",
+    "org_id": 1
+  },
+  {
+    "id": 196,
+    "dashboard_id": 89,
+    "term": "mysql",
+    "dashboard_uid": "DGsCac3kz",
+    "org_id": 1
+  },
+  {
+    "id": 197,
+    "dashboard_id": 89,
+    "term": "datasource-tags",
+    "dashboard_uid": "DGsCac3kz",
+    "org_id": 1
+  },
+  {
+    "id": 198,
+    "dashboard_id": 90,
+    "term": "gdev",
+    "dashboard_uid": "WVpf2jp7z",
+    "org_id": 1
+  },
+  {
+    "id": 199,
+    "dashboard_id": 90,
+    "term": "templating",
+    "dashboard_uid": "WVpf2jp7z",
+    "org_id": 1
+  },
+  {
+    "id": 200,
+    "dashboard_id": 91,
+    "term": "gdev",
+    "dashboard_uid": "iRY1K9VZk2",
+    "org_id": 1
+  },
+  {
+    "id": 201,
+    "dashboard_id": 91,
+    "term": "demo",
+    "dashboard_uid": "iRY1K9VZk2",
+    "org_id": 1
+  },
+  {
+    "id": 202,
+    "dashboard_id": 92,
+    "term": "gdev",
+    "dashboard_uid": "O1Mi-z8Gz",
+    "org_id": 1
+  },
+  {
+    "id": 203,
+    "dashboard_id": 93,
+    "term": "gdev",
+    "dashboard_uid": "ZXYQTA97ZZ",
+    "org_id": 1
+  },
+  {
+    "id": 204,
+    "dashboard_id": 93,
+    "term": "panel-tests",
+    "dashboard_uid": "ZXYQTA97ZZ",
+    "org_id": 1
+  },
+  {
+    "id": 205,
+    "dashboard_id": 93,
+    "term": "graph-ng",
+    "dashboard_uid": "ZXYQTA97ZZ",
+    "org_id": 1
+  },
+  {
+    "id": 206,
+    "dashboard_id": 94,
+    "term": "gdev",
+    "dashboard_uid": "pqnrfd4Vz",
+    "org_id": 1
+  },
+  {
+    "id": 207,
+    "dashboard_id": 94,
+    "term": "panel-tests",
+    "dashboard_uid": "pqnrfd4Vz",
+    "org_id": 1
+  },
+  {
+    "id": 208,
+    "dashboard_id": 94,
+    "term": "graph-ng",
+    "dashboard_uid": "pqnrfd4Vz",
+    "org_id": 1
+  },
+  {
+    "id": 209,
+    "dashboard_id": 95,
+    "term": "gdev",
+    "dashboard_uid": "TkZXxlNG3",
+    "org_id": 1
+  },
+  {
+    "id": 210,
+    "dashboard_id": 95,
+    "term": "panel-tests",
+    "dashboard_uid": "TkZXxlNG3",
+    "org_id": 1
+  },
+  {
+    "id": 211,
+    "dashboard_id": 95,
+    "term": "graph-ng",
+    "dashboard_uid": "TkZXxlNG3",
+    "org_id": 1
+  },
+  {
+    "id": 212,
+    "dashboard_id": 96,
+    "term": "gdev",
+    "dashboard_uid": "5SdHCasdf",
+    "org_id": 1
+  },
+  {
+    "id": 213,
+    "dashboard_id": 96,
+    "term": "panel-tests",
+    "dashboard_uid": "5SdHCasdf",
+    "org_id": 1
+  },
+  {
+    "id": 214,
+    "dashboard_id": 96,
+    "term": "graph",
+    "dashboard_uid": "5SdHCasdf",
+    "org_id": 1
+  },
+  {
+    "id": 215,
+    "dashboard_id": 96,
+    "term": "table",
+    "dashboard_uid": "5SdHCasdf",
+    "org_id": 1
+  },
+  {
+    "id": 216,
+    "dashboard_id": 97,
+    "term": "gdev",
+    "dashboard_uid": "000000002",
+    "org_id": 1
+  },
+  {
+    "id": 217,
+    "dashboard_id": 97,
+    "term": "datasource-test",
+    "dashboard_uid": "000000002",
+    "org_id": 1
+  },
+  {
+    "id": 218,
+    "dashboard_id": 97,
+    "term": "influxdb",
+    "dashboard_uid": "000000002",
+    "org_id": 1
+  },
+  {
+    "id": 219,
+    "dashboard_id": 98,
+    "term": "gdev",
+    "dashboard_uid": "ZvPm55mWk",
+    "org_id": 1
+  },
+  {
+    "id": 220,
+    "dashboard_id": 98,
+    "term": "demo",
+    "dashboard_uid": "ZvPm55mWk",
+    "org_id": 1
+  },
+  {
+    "id": 221,
+    "dashboard_id": 99,
+    "term": "gdev",
+    "dashboard_uid": "sd27_CPGz",
+    "org_id": 1
+  },
+  {
+    "id": 222,
+    "dashboard_id": 99,
+    "term": "panel-tests",
+    "dashboard_uid": "sd27_CPGz",
+    "org_id": 1
+  },
+  {
+    "id": 223,
+    "dashboard_id": 99,
+    "term": "graph-ng",
+    "dashboard_uid": "sd27_CPGz",
+    "org_id": 1
+  },
+  {
+    "id": 224,
+    "dashboard_id": 100,
+    "term": "gdev",
+    "dashboard_uid": "b36b5576-2e3d-4b0c-8dce-e79514d99345",
+    "org_id": 1
+  },
+  {
+    "id": 225,
+    "dashboard_id": 100,
+    "term": "panel-tests",
+    "dashboard_uid": "b36b5576-2e3d-4b0c-8dce-e79514d99345",
+    "org_id": 1
+  },
+  {
+    "id": 226,
+    "dashboard_id": 100,
+    "term": "graph-ng",
+    "dashboard_uid": "b36b5576-2e3d-4b0c-8dce-e79514d99345",
+    "org_id": 1
+  },
+  {
+    "id": 227,
+    "dashboard_id": 100,
+    "term": "trend",
+    "dashboard_uid": "b36b5576-2e3d-4b0c-8dce-e79514d99345",
+    "org_id": 1
+  },
+  {
+    "id": 228,
+    "dashboard_id": 101,
+    "term": "gdev",
+    "dashboard_uid": "fYGWTVW4k",
+    "org_id": 1
+  },
+  {
+    "id": 229,
+    "dashboard_id": 101,
+    "term": "transform",
+    "dashboard_uid": "fYGWTVW4k",
+    "org_id": 1
+  },
+  {
+    "id": 230,
+    "dashboard_id": 102,
+    "term": "gdev",
+    "dashboard_uid": "Hmf8FDkmz",
+    "org_id": 1
+  },
+  {
+    "id": 231,
+    "dashboard_id": 102,
+    "term": "mysql",
+    "dashboard_uid": "Hmf8FDkmz",
+    "org_id": 1
+  },
+  {
+    "id": 232,
+    "dashboard_id": 102,
+    "term": "datasource-test",
+    "dashboard_uid": "Hmf8FDkmz",
+    "org_id": 1
+  },
+  {
+    "id": 233,
+    "dashboard_id": 103,
+    "term": "gdev",
+    "dashboard_uid": "yBCC3aKGk",
+    "org_id": 1
+  },
+  {
+    "id": 234,
+    "dashboard_id": 103,
+    "term": "templating",
+    "dashboard_uid": "yBCC3aKGk",
+    "org_id": 1
+  },
+  {
+    "id": 235,
+    "dashboard_id": 106,
+    "term": "gdev",
+    "dashboard_uid": "ZqZnVvFZz",
+    "org_id": 1
+  },
+  {
+    "id": 236,
+    "dashboard_id": 106,
+    "term": "datasource-test",
+    "dashboard_uid": "ZqZnVvFZz",
+    "org_id": 1
+  },
+  {
+    "id": 237,
+    "dashboard_id": 107,
+    "term": "gdev",
+    "dashboard_uid": "P2jR04WVk",
+    "org_id": 1
+  },
+  {
+    "id": 238,
+    "dashboard_id": 107,
+    "term": "panel-tests",
+    "dashboard_uid": "P2jR04WVk",
+    "org_id": 1
+  },
+  {
+    "id": 239,
+    "dashboard_id": 107,
+    "term": "geomap",
+    "dashboard_uid": "P2jR04WVk",
+    "org_id": 1
+  },
+  {
+    "id": 240,
+    "dashboard_id": 108,
+    "term": "gdev",
+    "dashboard_uid": "5SdHCadmz",
+    "org_id": 1
+  },
+  {
+    "id": 241,
+    "dashboard_id": 108,
+    "term": "panel-tests",
+    "dashboard_uid": "5SdHCadmz",
+    "org_id": 1
+  },
+  {
+    "id": 242,
+    "dashboard_id": 108,
+    "term": "graph",
+    "dashboard_uid": "5SdHCadmz",
+    "org_id": 1
+  },
+  {
+    "id": 243,
+    "dashboard_id": 109,
+    "term": "gdev",
+    "dashboard_uid": "lVE-2YFMz",
+    "org_id": 1
+  },
+  {
+    "id": 244,
+    "dashboard_id": 109,
+    "term": "panel-tests",
+    "dashboard_uid": "lVE-2YFMz",
+    "org_id": 1
+  },
+  {
+    "id": 245,
+    "dashboard_id": 110,
+    "term": "gdev",
+    "dashboard_uid": "1YGJxPUnz",
+    "org_id": 1
+  },
+  {
+    "id": 246,
+    "dashboard_id": 110,
+    "term": "panel-tests",
+    "dashboard_uid": "1YGJxPUnz",
+    "org_id": 1
+  },
+  {
+    "id": 247,
+    "dashboard_id": 111,
+    "term": "gdev",
+    "dashboard_uid": "Ei86FP_Mx",
+    "org_id": 1
+  },
+  {
+    "id": 248,
+    "dashboard_id": 111,
+    "term": "panel-tests",
+    "dashboard_uid": "Ei86FP_Mx",
+    "org_id": 1
+  },
+  {
+    "id": 249,
+    "dashboard_id": 111,
+    "term": "graph-ng",
+    "dashboard_uid": "Ei86FP_Mx",
+    "org_id": 1
+  },
+  {
+    "id": 250,
+    "dashboard_id": 112,
+    "term": "gdev",
+    "dashboard_uid": "yjRroGsWk",
+    "org_id": 1
+  },
+  {
+    "id": 251,
+    "dashboard_id": 112,
+    "term": "influxdb",
+    "dashboard_uid": "yjRroGsWk",
+    "org_id": 1
+  },
+  {
+    "id": 252,
+    "dashboard_id": 112,
+    "term": "datasource-test",
+    "dashboard_uid": "yjRroGsWk",
+    "org_id": 1
+  },
+  {
+    "id": 253,
+    "dashboard_id": 113,
+    "term": "gdev",
+    "dashboard_uid": "liveddluze",
+    "org_id": 1
+  },
+  {
+    "id": 254,
+    "dashboard_id": 113,
+    "term": "live-tests",
+    "dashboard_uid": "liveddluze",
+    "org_id": 1
+  },
+  {
+    "id": 255,
+    "dashboard_id": 114,
+    "term": "gdev",
+    "dashboard_uid": "adf95uwu7w1s0e",
+    "org_id": 1
+  },
+  {
+    "id": 256,
+    "dashboard_id": 114,
+    "term": "panel-tests",
+    "dashboard_uid": "adf95uwu7w1s0e",
+    "org_id": 1
+  },
+  {
+    "id": 257,
+    "dashboard_id": 114,
+    "term": "canvas",
+    "dashboard_uid": "adf95uwu7w1s0e",
+    "org_id": 1
+  },
+  {
+    "id": 258,
+    "dashboard_id": 115,
+    "term": "gdev",
+    "dashboard_uid": "YoacZIq7z",
+    "org_id": 1
+  },
+  {
+    "id": 259,
+    "dashboard_id": 115,
+    "term": "panel-tests",
+    "dashboard_uid": "YoacZIq7z",
+    "org_id": 1
+  },
+  {
+    "id": 260,
+    "dashboard_id": 115,
+    "term": "graph-ng",
+    "dashboard_uid": "YoacZIq7z",
+    "org_id": 1
+  },
+  {
+    "id": 261,
+    "dashboard_id": 116,
+    "term": "gdev",
+    "dashboard_uid": "6HMMh4rMz",
+    "org_id": 1
+  },
+  {
+    "id": 262,
+    "dashboard_id": 116,
+    "term": "panel-tests",
+    "dashboard_uid": "6HMMh4rMz",
+    "org_id": 1
+  },
+  {
+    "id": 263,
+    "dashboard_id": 116,
+    "term": "graph-ng",
+    "dashboard_uid": "6HMMh4rMz",
+    "org_id": 1
+  },
+  {
+    "id": 264,
+    "dashboard_id": 117,
+    "term": "gdev",
+    "dashboard_uid": "sRrEibfZk",
+    "org_id": 1
+  },
+  {
+    "id": 265,
+    "dashboard_id": 117,
+    "term": "panel-tests",
+    "dashboard_uid": "sRrEibfZk",
+    "org_id": 1
+  },
+  {
+    "id": 266,
+    "dashboard_id": 118,
+    "term": "gdev",
+    "dashboard_uid": "1KxMUdE7k",
+    "org_id": 1
+  },
+  {
+    "id": 267,
+    "dashboard_id": 118,
+    "term": "panel-tests",
+    "dashboard_uid": "1KxMUdE7k",
+    "org_id": 1
+  },
+  {
+    "id": 268,
+    "dashboard_id": 118,
+    "term": "graph-ng",
+    "dashboard_uid": "1KxMUdE7k",
+    "org_id": 1
+  },
+  {
+    "id": 269,
+    "dashboard_id": 120,
+    "term": "gdev",
+    "dashboard_uid": "FVl-9CR4z",
+    "org_id": 1
+  },
+  {
+    "id": 270,
+    "dashboard_id": 120,
+    "term": "transform",
+    "dashboard_uid": "FVl-9CR4z",
+    "org_id": 1
+  },
+  {
+    "id": 271,
+    "dashboard_id": 121,
+    "term": "gdev",
+    "dashboard_uid": "8mux8PqGz",
+    "org_id": 1
+  },
+  {
+    "id": 272,
+    "dashboard_id": 121,
+    "term": "graph-ng",
+    "dashboard_uid": "8mux8PqGz",
+    "org_id": 1
+  },
+  {
+    "id": 273,
+    "dashboard_id": 121,
+    "term": "demo",
+    "dashboard_uid": "8mux8PqGz",
+    "org_id": 1
+  },
+  {
+    "id": 274,
+    "dashboard_id": 122,
+    "term": "gdev",
+    "dashboard_uid": "adoero0hbka9sf",
+    "org_id": 1
+  },
+  {
+    "id": 275,
+    "dashboard_id": 122,
+    "term": "panel-tests",
+    "dashboard_uid": "adoero0hbka9sf",
+    "org_id": 1
+  },
+  {
+    "id": 276,
+    "dashboard_id": 122,
+    "term": "barchart",
+    "dashboard_uid": "adoero0hbka9sf",
+    "org_id": 1
+  },
+  {
+    "id": 277,
+    "dashboard_id": 122,
+    "term": "graph-ng",
+    "dashboard_uid": "adoero0hbka9sf",
+    "org_id": 1
+  },
+  {
+    "id": 278,
+    "dashboard_id": 123,
+    "term": "gdev",
+    "dashboard_uid": "XMjIZPmik",
+    "org_id": 1
+  },
+  {
+    "id": 279,
+    "dashboard_id": 123,
+    "term": "panel-tests",
+    "dashboard_uid": "XMjIZPmik",
+    "org_id": 1
+  },
+  {
+    "id": 280,
+    "dashboard_id": 123,
+    "term": "graph",
+    "dashboard_uid": "XMjIZPmik",
+    "org_id": 1
+  },
+  {
+    "id": 281,
+    "dashboard_id": 124,
+    "term": "gdev",
+    "dashboard_uid": "UTv--wqMk",
+    "org_id": 1
+  },
+  {
+    "id": 282,
+    "dashboard_id": 124,
+    "term": "panel-tests",
+    "dashboard_uid": "UTv--wqMk",
+    "org_id": 1
+  },
+  {
+    "id": 283,
+    "dashboard_id": 124,
+    "term": "graph-ng",
+    "dashboard_uid": "UTv--wqMk",
+    "org_id": 1
+  },
+  {
+    "id": 284,
+    "dashboard_id": 126,
+    "term": "gdev",
+    "dashboard_uid": "edf55caay3w8wa",
+    "org_id": 1
+  },
+  {
+    "id": 285,
+    "dashboard_id": 126,
+    "term": "panel-tests",
+    "dashboard_uid": "edf55caay3w8wa",
+    "org_id": 1
+  },
+  {
+    "id": 286,
+    "dashboard_id": 126,
+    "term": "graph-ng",
+    "dashboard_uid": "edf55caay3w8wa",
+    "org_id": 1
+  },
+  {
+    "id": 287,
+    "dashboard_id": 126,
+    "term": "demo",
+    "dashboard_uid": "edf55caay3w8wa",
+    "org_id": 1
+  },
+  {
+    "id": 288,
+    "dashboard_id": 128,
+    "term": "gdev",
+    "dashboard_uid": "templating-repeating-panels",
+    "org_id": 1
+  },
+  {
+    "id": 289,
+    "dashboard_id": 128,
+    "term": "templating",
+    "dashboard_uid": "templating-repeating-panels",
+    "org_id": 1
+  },
+  {
+    "id": 290,
+    "dashboard_id": 129,
+    "term": "gdev",
+    "dashboard_uid": "O6GmNPvWk",
+    "org_id": 1
+  },
+  {
+    "id": 291,
+    "dashboard_id": 129,
+    "term": "templating",
+    "dashboard_uid": "O6GmNPvWk",
+    "org_id": 1
+  },
+  {
+    "id": 292,
+    "dashboard_id": 130,
+    "term": "gdev",
+    "dashboard_uid": "2xuwrgV7z",
+    "org_id": 1
+  },
+  {
+    "id": 293,
+    "dashboard_id": 130,
+    "term": "panel-tests",
+    "dashboard_uid": "2xuwrgV7z",
+    "org_id": 1
+  },
+  {
+    "id": 294,
+    "dashboard_id": 130,
+    "term": "geomap",
+    "dashboard_uid": "2xuwrgV7z",
+    "org_id": 1
+  },
+  {
+    "id": 295,
+    "dashboard_id": 131,
+    "term": "gdev",
+    "dashboard_uid": "U_bZIMRMk",
+    "org_id": 1
+  },
+  {
+    "id": 296,
+    "dashboard_id": 131,
+    "term": "panel-tests",
+    "dashboard_uid": "U_bZIMRMk",
+    "org_id": 1
+  },
+  {
+    "id": 297,
+    "dashboard_id": 132,
+    "term": "gdev",
+    "dashboard_uid": "vHQdlVziz",
+    "org_id": 1
+  },
+  {
+    "id": 298,
+    "dashboard_id": 132,
+    "term": "postgres",
+    "dashboard_uid": "vHQdlVziz",
+    "org_id": 1
+  },
+  {
+    "id": 299,
+    "dashboard_id": 132,
+    "term": "datasource-test",
+    "dashboard_uid": "vHQdlVziz",
+    "org_id": 1
+  },
+  {
+    "id": 300,
+    "dashboard_id": 133,
+    "term": "gdev",
+    "dashboard_uid": "HYaGDGIMk",
+    "org_id": 1
+  },
+  {
+    "id": 301,
+    "dashboard_id": 133,
+    "term": "templating",
+    "dashboard_uid": "HYaGDGIMk",
+    "org_id": 1
+  },
+  {
+    "id": 302,
+    "dashboard_id": 134,
+    "term": "gdev",
+    "dashboard_uid": "-Y-tnEDWk",
+    "org_id": 1
+  },
+  {
+    "id": 303,
+    "dashboard_id": 134,
+    "term": "templating",
+    "dashboard_uid": "-Y-tnEDWk",
+    "org_id": 1
+  },
+  {
+    "id": 304,
+    "dashboard_id": 135,
+    "term": "gdev",
+    "dashboard_uid": "7p7JkqWVz",
+    "org_id": 1
+  },
+  {
+    "id": 305,
+    "dashboard_id": 135,
+    "term": "panel-tests",
+    "dashboard_uid": "7p7JkqWVz",
+    "org_id": 1
+  },
+  {
+    "id": 306,
+    "dashboard_id": 135,
+    "term": "canvas",
+    "dashboard_uid": "7p7JkqWVz",
+    "org_id": 1
+  },
+  {
+    "id": 307,
+    "dashboard_id": 136,
+    "term": "oncall",
+    "dashboard_uid": "deg70280ulipsd",
+    "org_id": 1
+  }
+]

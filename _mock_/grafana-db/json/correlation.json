@@ -1,0 +1,46 @@
+[
+  {
+    "uid": "ceg7uu5ggnm68f",
+    "org_id": 1,
+    "source_uid": "PDDA8E780A17E7EF1",
+    "target_uid": "gdev-jaeger",
+    "label": "Jaeger traces",
+    "description": "Related traces stored in Jaeger",
+    "config": "{\"field\":\"\",\"target\":{}}",
+    "provisioned": 1,
+    "type": "query"
+  },
+  {
+    "uid": "eeg7uu5ggnm69c",
+    "org_id": 1,
+    "source_uid": "PDDA8E780A17E7EF1",
+    "target_uid": "gdev-zipkin",
+    "label": "Zipkin traces",
+    "description": "Related traces stored in Zipkin",
+    "config": "{\"field\":\"\",\"target\":{}}",
+    "provisioned": 1,
+    "type": "query"
+  },
+  {
+    "uid": "deg7uu5gj5iiof",
+    "org_id": 1,
+    "source_uid": "PDDA8E780A17E7EF1",
+    "target_uid": "gdev-tempo",
+    "label": "Tempo traces",
+    "description": "Related traces stored in Tempo",
+    "config": "{\"field\":\"\",\"target\":{}}",
+    "provisioned": 1,
+    "type": "query"
+  },
+  {
+    "uid": "ceg7uu5glnev4c",
+    "org_id": 1,
+    "source_uid": "PDDA8E780A17E7EF1",
+    "target_uid": "gdev-prometheus",
+    "label": "Logs to metrics",
+    "description": "Related metrics stored in Prometheus",
+    "config": "{\"field\":\"traceID\",\"target\":{\"expr\":\"{ job=\\\"test\\\" }\"}}",
+    "provisioned": 1,
+    "type": "query"
+  }
+]

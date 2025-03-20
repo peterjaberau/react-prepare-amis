@@ -1,0 +1,154 @@
+[
+  {
+    "name": "migration_log",
+    "seq": 645
+  },
+  {
+    "name": "user",
+    "seq": 1
+  },
+  {
+    "name": "temp_user",
+    "seq": 0
+  },
+  {
+    "name": "dashboard",
+    "seq": 136
+  },
+  {
+    "name": "dashboard_provisioning",
+    "seq": 133
+  },
+  {
+    "name": "api_key",
+    "seq": 0
+  },
+  {
+    "name": "plugin_setting",
+    "seq": 1
+  },
+  {
+    "name": "alert_rule_tag",
+    "seq": 0
+  },
+  {
+    "name": "annotation_tag",
+    "seq": 0
+  },
+  {
+    "name": "dashboard_version",
+    "seq": 136
+  },
+  {
+    "name": "dashboard_acl",
+    "seq": 2
+  },
+  {
+    "name": "login_attempt",
+    "seq": 0
+  },
+  {
+    "name": "seed_assignment",
+    "seq": 0
+  },
+  {
+    "name": "folder",
+    "seq": 2
+  },
+  {
+    "name": "kv_store",
+    "seq": 11
+  },
+  {
+    "name": "cloud_migration_session",
+    "seq": 0
+  },
+  {
+    "name": "cloud_migration_snapshot",
+    "seq": 0
+  },
+  {
+    "name": "org",
+    "seq": 1
+  },
+  {
+    "name": "org_user",
+    "seq": 1
+  },
+  {
+    "name": "resource_migration_log",
+    "seq": 23
+  },
+  {
+    "name": "alert_configuration",
+    "seq": 1
+  },
+  {
+    "name": "alert_configuration_history",
+    "seq": 1
+  },
+  {
+    "name": "server_lock",
+    "seq": 12
+  },
+  {
+    "name": "signing_key",
+    "seq": 1
+  },
+  {
+    "name": "user_auth_token",
+    "seq": 1
+  },
+  {
+    "name": "preferences",
+    "seq": 1
+  },
+  {
+    "name": "query_history",
+    "seq": 54
+  },
+  {
+    "name": "query_history_details",
+    "seq": 54
+  },
+  {
+    "name": "data_source",
+    "seq": 41
+  },
+  {
+    "name": "secrets",
+    "seq": 41
+  },
+  {
+    "name": "role",
+    "seq": 3
+  },
+  {
+    "name": "builtin_role",
+    "seq": 2
+  },
+  {
+    "name": "permission",
+    "seq": 226
+  },
+  {
+    "name": "user_role",
+    "seq": 1
+  },
+  {
+    "name": "dashboard_tag",
+    "seq": 307
+  },
+  {
+    "name": "playlist",
+    "seq": 1
+  },
+  {
+    "name": "playlist_item",
+    "seq": 1
+  },
+  {
+    "name": "star",
+    "seq": 14
+  }
+]

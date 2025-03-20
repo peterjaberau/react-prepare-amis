@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "org_id": 0,
+    "namespace": "ngalert.migration",
+    "key": "currentAlertingType",
+    "value": "Legacy",
+    "created": "2025-03-15 19:46:36",
+    "updated": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 2,
+    "org_id": 0,
+    "namespace": "datasource",
+    "key": "secretMigrationStatus",
+    "value": "compatible",
+    "created": "2025-03-15 19:46:36",
+    "updated": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 3,
+    "org_id": 0,
+    "namespace": "plugin.angularpatterns",
+    "key": "angular_patterns",
+    "value": "[{\"Name\":\"PanelCtrl\",\"Pattern\":\"PanelCtrl\",\"Type\":\"contains\"},{\"Name\":\"ConfigCtrl\",\"Pattern\":\"ConfigCtrl\",\"Type\":\"contains\"},{\"Name\":\"app/plugins/sdk\",\"Pattern\":\"app/plugins/sdk\",\"Type\":\"contains\"},{\"Name\":\"Angular Specific Function\",\"Pattern\":\"angular.isNumber(\",\"Type\":\"contains\"},{\"Name\":\"ctrl.annotation\",\"Pattern\":\"ctrl.annotation\",\"Type\":\"contains\"},{\"Name\":\"QueryCtrl\",\"Pattern\":\"[\\\"']QueryCtrl[\\\"']\",\"Type\":\"regex\"}]",
+    "created": "2025-03-15 19:46:37",
+    "updated": "2025-03-15 19:46:37"
+  },
+  {
+    "id": 4,
+    "org_id": 0,
+    "namespace": "plugin.angularpatterns",
+    "key": "last_updated",
+    "value": "2025-03-19T11:41:01+11:00",
+    "created": "2025-03-15 19:46:37",
+    "updated": "2025-03-19 11:41:01.871311+11:00"
+  },
+  {
+    "id": 5,
+    "org_id": 0,
+    "namespace": "plugin.angularpatterns",
+    "key": "etag",
+    "value": "\"1a8-1yOry0c74BKAzc7BUbZdNV0sYic\"",
+    "created": "2025-03-15 19:46:37",
+    "updated": "2025-03-15 19:46:37"
+  },
+  {
+    "id": 6,
+    "org_id": 0,
+    "namespace": "plugin.publickeys",
+    "key": "key-7e4d0c6a708866e7",
+    "value": "-----BEGIN PGP PUBLIC KEY BLOCK-----\r\nVersion: OpenPGP.js v4.10.1\r\nComment: https://openpgpjs.org\r\n\r\nxpMEXpTXXxMFK4EEACMEIwQBiOUQhvGbDLvndE0fEXaR0908wXzPGFpf0P0Z\r\nHJ06tsq+0higIYHp7WTNJVEZtcwoYLcPRGaa9OQqbUU63BEyZdgAkPTz3RFd\r\n5+TkDWZizDcaVFhzbDd500yTwexrpIrdInwC/jrgs7Zy/15h8KA59XXUkdmT\r\nYB6TR+OA9RKME+dCJozNGUdyYWZhbmEgPGVuZ0BncmFmYW5hLmNvbT7CvAQQ\r\nEwoAIAUCXpTXXwYLCQcIAwIEFQgKAgQWAgEAAhkBAhsDAh4BAAoJEH5NDGpw\r\niGbnaWoCCQGQ3SQnCkRWrG6XrMkXOKfDTX2ow9fuoErN46BeKmLM4f1EkDZQ\r\nTpq3SE8+My8B5BIH3SOcBeKzi3S57JHGBdFA+wIJAYWMrJNIvw8GeXne+oUo\r\nNzzACdvfqXAZEp/HFMQhCKfEoWGJE8d2YmwY2+3GufVRTI5lQnZOHLE8L/Vc\r\n1S5MXESjzpcEXpTXXxIFK4EEACMEIwQBtHX/SD5Qm3v4V92qpaIZQgtTX0sT\r\ncFPjYWAHqsQ1iENrYN/vg1wU3ADlYATvydOQYvkTyT/tbDvx2Fse8PL84MQA\r\nYKKQ6AJ3gLVvmeouZdU03YoV4MYaT8KbnJUkZQZkqdz2riOlySNI9CG3oYmv\r\nomjUAtzgAgnCcurfGLZkkMxlmY8DAQoJwqQEGBMKAAkFAl6U118CGwwACgkQ\r\nfk0ManCIZuc0jAIJAVw2xdLr4ZQqPUhubrUyFcqlWoW8dQoQagwO8s8ubmby\r\nKuLA9FWJkfuuRQr+O9gHkDVCez3aism7zmJBqIOi38aNAgjJ3bo6leSS2jR/\r\nx5NqiKVi83tiXDPncDQYPymOnMhW0l7CVA7wj75HrFvvlRI/4MArlbsZ2tBn\r\nN1c5v9v/4h6qeA==\r\n=DNbR\r\n-----END PGP PUBLIC KEY BLOCK-----\r\n",
+    "created": "2025-03-15 19:46:37",
+    "updated": "2025-03-15 19:46:37"
+  },
+  {
+    "id": 7,
+    "org_id": 0,
+    "namespace": "plugin.publickeys",
+    "key": "last_updated",
+    "value": "2025-03-16T06:46:37+11:00",
+    "created": "2025-03-15 19:46:37",
+    "updated": "2025-03-15 19:46:37"
+  },
+  {
+    "id": 8,
+    "org_id": 1,
+    "namespace": "alertmanager",
+    "key": "silences",
+    "value": "",
+    "created": "2025-03-15 20:01:36",
+    "updated": "2025-03-15 20:01:36"
+  },
+  {
+    "id": 9,
+    "org_id": 1,
+    "namespace": "alertmanager",
+    "key": "notifications",
+    "value": "",
+    "created": "2025-03-15 20:01:36",
+    "updated": "2025-03-15 20:01:36"
+  },
+  {
+    "id": 10,
+    "org_id": 0,
+    "namespace": "infra.usagestats",
+    "key": "anonymous_id",
+    "value": "e43590be-0d35-4610-a791-efe1d40ae597",
+    "created": "2025-03-17 01:18:12",
+    "updated": "2025-03-17 01:18:12"
+  },
+  {
+    "id": 11,
+    "org_id": 0,
+    "namespace": "infra.usagestats",
+    "key": "last_sent",
+    "value": "2025-03-19T12:18:12+11:00",
+    "created": "2025-03-17 01:18:12",
+    "updated": "2025-03-19 12:18:12.289733+11:00"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "managed:builtins:viewer:permissions",
+    "description": "",
+    "version": 0,
+    "org_id": 1,
+    "uid": "fefy0157cp2bkf",
+    "created": "2025-03-15 19:55:40",
+    "updated": "2025-03-15 19:55:40",
+    "display_name": "",
+    "group_name": "",
+    "hidden": 0
+  },
+  {
+    "id": 2,
+    "name": "managed:builtins:editor:permissions",
+    "description": "",
+    "version": 0,
+    "org_id": 1,
+    "uid": "befy0157f6yo0c",
+    "created": "2025-03-15 19:55:40",
+    "updated": "2025-03-15 19:55:40",
+    "display_name": "",
+    "group_name": "",
+    "hidden": 0
+  },
+  {
+    "id": 3,
+    "name": "managed:users:1:permissions",
+    "description": "",
+    "version": 0,
+    "org_id": 1,
+    "uid": "fefy02jn5dv5sd",
+    "created": "2025-03-15 19:56:06",
+    "updated": "2025-03-15 19:56:06",
+    "display_name": "",
+    "group_name": "",
+    "hidden": 0
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "org_id": 1,
+    "plugin_id": "grafana-oncall-app",
+    "enabled": 1,
+    "pinned": 1,
+    "json_data": "null",
+    "secure_json_data": "{}",
+    "created": "2025-03-18 08:28:04",
+    "updated": "2025-03-18 08:28:04",
+    "plugin_version": "1.15.2"
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "uid": "fefxze6oc7x8gd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068111,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 2,
+    "uid": "eefy030q5dvy8b",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742068575,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 3,
+    "uid": "cefy03lmab85ce",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742068586,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 4,
+    "uid": "aefy03vm36p6oa",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068591,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-c08aaaca-da49-4180-8173-72ab0dd40947-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 5,
+    "uid": "defy03zee58g0c",
+    "org_id": 1,
+    "datasource_uid": "-- Mixed --",
+    "created_by": 1,
+    "created_at": 1742068593,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-82c7cc88-c973-47d4-b2a3-219e9e5eb190-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 6,
+    "uid": "cefy047m3mi2oe",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068597,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-4dbe4d96-9de4-456e-b1c7-d626b5570635-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 7,
+    "uid": "defy04vkbkqv4a",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068610,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-4dbe4d96-9de4-456e-b1c7-d626b5570635-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 8,
+    "uid": "befy083i7wr28d",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068670,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-9f69d6de-5757-45bc-94ac-5243f88b594b-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 9,
+    "uid": "befy0jhgozif4e",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742068883,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-785d9584-d26f-4c01-8ad3-76b94fc60ac8-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 10,
+    "uid": "feg5ajmghy8e8f",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245108,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 11,
+    "uid": "aeg5amvolemtcd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245169,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 12,
+    "uid": "beg5an3jlwh6oa",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245173,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 13,
+    "uid": "aeg5baj7ab7cwf",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245611,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 14,
+    "uid": "aeg5bi7jpewaoe",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245754,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 15,
+    "uid": "ceg5bijb1pdz4b",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742245760,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 16,
+    "uid": "deg5g0ubs5hj4d",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742248793,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 17,
+    "uid": "eeg5qpdniexogd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742255977,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 18,
+    "uid": "aeg5sn6y6icxsa",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742257281,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 19,
+    "uid": "deg5so4g1hq80a",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742257299,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 20,
+    "uid": "ceg5t3podp4hsd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742257590,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 21,
+    "uid": "aeg5teb2s2cjkd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742257788,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 22,
+    "uid": "feg5tgnv0zr40c",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742257832,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 23,
+    "uid": "beg5tu2w54w00b",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742258083,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 24,
+    "uid": "eeg6hvot6xx4wf",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742274255,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 25,
+    "uid": "deg6hvp65wxs0b",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742274256,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 26,
+    "uid": "eeg6i5nck9jpcd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742274441,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 27,
+    "uid": "aeg6i5nnntb0gc",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742274442,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 28,
+    "uid": "eeg6i7so34740d",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742274482,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 29,
+    "uid": "aeg6j8rjh1on4e",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742275172,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 30,
+    "uid": "beg6jefsa5qm8d",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742275278,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 31,
+    "uid": "aeg6jxrkvg5q8a",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742275639,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 32,
+    "uid": "eeg6jzd10vo5ca",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742275669,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 33,
+    "uid": "feg6ryzw7sbgga",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742281043,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 34,
+    "uid": "beg6s0x5axzi8f",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281079,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 35,
+    "uid": "ceg6s1jolyqkgb",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281091,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 36,
+    "uid": "beg6s2ayu1ddsa",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281105,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 37,
+    "uid": "beg6sxn2w6jggf",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281691,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 38,
+    "uid": "eeg6sy4qru0aoc",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281700,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 39,
+    "uid": "feg6sy9tre874c",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742281702,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 40,
+    "uid": "eeg6syjb90hz4b",
+    "org_id": 1,
+    "datasource_uid": "-- Mixed --",
+    "created_by": 1,
+    "created_at": 1742281707,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"key\":\"Q-ab7a69a5-9118-44c0-a2e5-2c64e5b88fd3-0\",\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 41,
+    "uid": "feg6syrqq6ebke",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742281712,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-9b7c147b-24e1-48e9-9f89-a3d8ce6729ba-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 42,
+    "uid": "deg6wm89w6tq8f",
+    "org_id": 1,
+    "datasource_uid": "eeg6v3vguqm0wa",
+    "created_by": 1,
+    "created_at": 1742284168,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-pyroscope-datasource\",\"uid\":\"eeg6v3vguqm0wa\"},\"groupBy\":[],\"key\":\"Q-dd265965-26fc-41dd-abfc-a3fce8746a4b-0\",\"labelSelector\":\"\",\"profileTypeId\":\"\",\"queryType\":\"both\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 43,
+    "uid": "eeg6wmgmvgdmoc",
+    "org_id": 1,
+    "datasource_uid": "befy0156l86ioc",
+    "created_by": 1,
+    "created_at": 1742284172,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"befy0156l86ioc\"},\"key\":\"Q-57c9184a-1eec-4272-a0b3-76a59e889c60-0\",\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 44,
+    "uid": "ceg6wmnb0oydcd",
+    "org_id": 1,
+    "datasource_uid": "eeg6ubkn65yioa",
+    "created_by": 1,
+    "created_at": 1742284176,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"eeg6ubkn65yioa\"},\"key\":\"Q-f3da4515-adec-409e-b259-c0423de1332a-0\",\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 45,
+    "uid": "beg6yhc0s3mdce",
+    "org_id": 1,
+    "datasource_uid": "eeg6ubkn65yioa",
+    "created_by": 1,
+    "created_at": 1742285421,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"eeg6ubkn65yioa\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 46,
+    "uid": "ceg6z6oqog2dcb",
+    "org_id": 1,
+    "datasource_uid": "eeg6ubkn65yioa",
+    "created_by": 1,
+    "created_at": 1742285895,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-testdata-datasource\",\"uid\":\"eeg6ubkn65yioa\"},\"refId\":\"A\",\"scenarioId\":\"random_walk\",\"seriesCount\":1}]"
+  },
+  {
+    "id": 47,
+    "uid": "ceg6z7e6xp8g0a",
+    "org_id": 1,
+    "datasource_uid": "eeg6v3vguqm0wa",
+    "created_by": 1,
+    "created_at": 1742285908,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-pyroscope-datasource\",\"uid\":\"eeg6v3vguqm0wa\"},\"groupBy\":[],\"key\":\"Q-b5310e45-3ea6-4eaa-bc6e-15f55e2ce164-0\",\"labelSelector\":\"{}\",\"queryType\":\"both\",\"refId\":\"A\",\"spanSelector\":[]}]"
+  },
+  {
+    "id": 48,
+    "uid": "beg703x6glq80f",
+    "org_id": 1,
+    "datasource_uid": "eeg6v3vguqm0wa",
+    "created_by": 1,
+    "created_at": 1742286516,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-pyroscope-datasource\",\"uid\":\"eeg6v3vguqm0wa\"},\"groupBy\":[],\"labelSelector\":\"{}\",\"queryType\":\"both\",\"refId\":\"A\",\"spanSelector\":[]}]"
+  },
+  {
+    "id": 49,
+    "uid": "aeg7w18xuqxvkb",
+    "org_id": 1,
+    "datasource_uid": "eeg6v3vguqm0wa",
+    "created_by": 1,
+    "created_at": 1742307989,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-pyroscope-datasource\",\"uid\":\"eeg6v3vguqm0wa\"},\"groupBy\":[],\"labelSelector\":\"{}\",\"queryType\":\"both\",\"refId\":\"A\",\"spanSelector\":[]}]"
+  },
+  {
+    "id": 50,
+    "uid": "beg7w1qf2o5j4e",
+    "org_id": 1,
+    "datasource_uid": "gdev-elasticsearch",
+    "created_by": 1,
+    "created_at": 1742307998,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"elasticsearch\",\"uid\":\"gdev-elasticsearch\"},\"key\":\"Q-180757a4-cdea-4264-95a3-234402a1a103-0\",\"metrics\":[{\"id\":\"1\",\"type\":\"logs\"}],\"query\":\"\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 51,
+    "uid": "beg7w1qzvtp8gc",
+    "org_id": 1,
+    "datasource_uid": "gdev-elasticsearch",
+    "created_by": 1,
+    "created_at": 1742307999,
+    "comment": "",
+    "queries": "[{\"alias\":\"\",\"bucketAggs\":[{\"field\":\"@timestamp\",\"id\":\"2\",\"settings\":{\"interval\":\"auto\"},\"type\":\"date_histogram\"}],\"datasource\":{\"type\":\"elasticsearch\",\"uid\":\"gdev-elasticsearch\"},\"key\":\"Q-180757a4-cdea-4264-95a3-234402a1a103-0\",\"metrics\":[{\"id\":\"1\",\"type\":\"logs\"}],\"query\":\"\",\"refId\":\"A\",\"timeField\":\"@timestamp\"}]"
+  },
+  {
+    "id": 52,
+    "uid": "ceg7w1ym0ojcwa",
+    "org_id": 1,
+    "datasource_uid": "P686FCD4D7E84A649",
+    "created_by": 1,
+    "created_at": 1742308003,
+    "comment": "",
+    "queries": "[{\"alias\":\"\",\"bucketAggs\":[{\"field\":\"@timestamp\",\"id\":\"2\",\"settings\":{\"interval\":\"auto\"},\"type\":\"date_histogram\"}],\"datasource\":{\"type\":\"elasticsearch\",\"uid\":\"P686FCD4D7E84A649\"},\"key\":\"Q-758ae8f8-9266-480e-9bd2-ae319ea69edf-0\",\"metrics\":[{\"id\":\"1\",\"type\":\"logs\"}],\"query\":\"\",\"refId\":\"A\",\"timeField\":\"@timestamp\"}]"
+  },
+  {
+    "id": 53,
+    "uid": "deg7w2ud8pkhsc",
+    "org_id": 1,
+    "datasource_uid": "gdev-pyroscope",
+    "created_by": 1,
+    "created_at": 1742308019,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"grafana-pyroscope-datasource\",\"uid\":\"gdev-pyroscope\"},\"groupBy\":[],\"key\":\"Q-82ed1146-095e-42ae-9cdd-12a99dc7b52c-0\",\"labelSelector\":\"\",\"profileTypeId\":\"\",\"queryType\":\"both\",\"refId\":\"A\"}]"
+  },
+  {
+    "id": 54,
+    "uid": "ceg7w32mw3zswd",
+    "org_id": 1,
+    "datasource_uid": "grafana",
+    "created_by": 1,
+    "created_at": 1742308024,
+    "comment": "",
+    "queries": "[{\"datasource\":{\"type\":\"datasource\",\"uid\":\"grafana\"},\"key\":\"Q-56ce9ac9-f87e-479c-a64c-6a24b1733343-0\",\"queryType\":\"randomWalk\",\"refId\":\"A\"}]"
+  }
+]

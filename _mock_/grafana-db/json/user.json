@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "version": 0,
+    "login": "admin",
+    "email": "admin@localhost",
+    "name": "",
+    "password": "15818af48b976763c5688b029b71e9fe5d54fa9a368837d29c4d5b1a3001759b12894ca118e50716c547755c42c8a881b4f2",
+    "salt": "RCYoPlSFyc",
+    "rands": "LFs8tzp5cR",
+    "company": "",
+    "org_id": 1,
+    "is_admin": 1,
+    "email_verified": 0,
+    "theme": "",
+    "created": "2025-03-15 19:46:36",
+    "updated": "2025-03-15 19:46:36",
+    "help_flags1": 0,
+    "last_seen_at": "2025-03-19 07:20:03",
+    "is_disabled": 0,
+    "is_service_account": 0,
+    "uid": "cefxz80za58g0c",
+    "is_provisioned": 0
+  }
+]

@@ -1,0 +1,5162 @@
+[
+  {
+    "id": 1,
+    "migration_id": "create migration_log table",
+    "sql": "CREATE TABLE IF NOT EXISTS `migration_log` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `migration_id` TEXT NOT NULL\n, `sql` TEXT NOT NULL\n, `success` INTEGER NOT NULL\n, `error` TEXT NOT NULL\n, `timestamp` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 2,
+    "migration_id": "create user table",
+    "sql": "CREATE TABLE IF NOT EXISTS `user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `login` TEXT NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `password` TEXT NULL\n, `salt` TEXT NULL\n, `rands` TEXT NULL\n, `company` TEXT NULL\n, `account_id` INTEGER NOT NULL\n, `is_admin` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 3,
+    "migration_id": "add unique index user.login",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_login` ON `user` (`login`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 4,
+    "migration_id": "add unique index user.email",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_email` ON `user` (`email`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 5,
+    "migration_id": "drop index UQE_user_login - v1",
+    "sql": "DROP INDEX `UQE_user_login`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 6,
+    "migration_id": "drop index UQE_user_email - v1",
+    "sql": "DROP INDEX `UQE_user_email`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 7,
+    "migration_id": "Rename table user to user_v1 - v1",
+    "sql": "ALTER TABLE `user` RENAME TO `user_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 8,
+    "migration_id": "create user table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `login` TEXT NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `password` TEXT NULL\n, `salt` TEXT NULL\n, `rands` TEXT NULL\n, `company` TEXT NULL\n, `org_id` INTEGER NOT NULL\n, `is_admin` INTEGER NOT NULL\n, `email_verified` INTEGER NULL\n, `theme` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 9,
+    "migration_id": "create index UQE_user_login - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_login` ON `user` (`login`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 10,
+    "migration_id": "create index UQE_user_email - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_email` ON `user` (`email`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 11,
+    "migration_id": "copy data_source v1 to v2",
+    "sql": "INSERT INTO `user` (`salt`\n, `org_id`\n, `is_admin`\n, `updated`\n, `id`\n, `version`\n, `password`\n, `rands`\n, `company`\n, `created`\n, `login`\n, `email`\n, `name`) SELECT `salt`\n, `account_id`\n, `is_admin`\n, `updated`\n, `id`\n, `version`\n, `password`\n, `rands`\n, `company`\n, `created`\n, `login`\n, `email`\n, `name` FROM `user_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 12,
+    "migration_id": "Drop old table user_v1",
+    "sql": "DROP TABLE IF EXISTS `user_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 13,
+    "migration_id": "Add column help_flags1 to user table",
+    "sql": "alter table `user` ADD COLUMN `help_flags1` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 14,
+    "migration_id": "Update user table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 15,
+    "migration_id": "Add last_seen_at column to user",
+    "sql": "alter table `user` ADD COLUMN `last_seen_at` DATETIME NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 16,
+    "migration_id": "Add missing user data",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 17,
+    "migration_id": "Add is_disabled column to user",
+    "sql": "alter table `user` ADD COLUMN `is_disabled` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 18,
+    "migration_id": "Add index user.login/user.email",
+    "sql": "CREATE INDEX `IDX_user_login_email` ON `user` (`login`,`email`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 19,
+    "migration_id": "Add is_service_account column to user",
+    "sql": "alter table `user` ADD COLUMN `is_service_account` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 20,
+    "migration_id": "Update is_service_account column to nullable",
+    "sql": "ALTER TABLE user ADD COLUMN tmp_service_account BOOLEAN DEFAULT 0;\nUPDATE user SET tmp_service_account = is_service_account;\nALTER TABLE user DROP COLUMN is_service_account;\nALTER TABLE user RENAME COLUMN tmp_service_account TO is_service_account;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 21,
+    "migration_id": "Add uid column to user",
+    "sql": "alter table `user` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 22,
+    "migration_id": "Update uid column values for users",
+    "sql": "UPDATE user SET uid=printf('u%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 23,
+    "migration_id": "Add unique index user_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_uid` ON `user` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 24,
+    "migration_id": "Add is_provisioned column to user",
+    "sql": "alter table `user` ADD COLUMN `is_provisioned` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 25,
+    "migration_id": "update login field with orgid to allow for multiple service accounts with same name across orgs",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 26,
+    "migration_id": "update service accounts login field orgid to appear only once",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 27,
+    "migration_id": "update login and email fields to lowercase",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 28,
+    "migration_id": "update login and email fields to lowercase2",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 29,
+    "migration_id": "create temp user table v1-7",
+    "sql": "CREATE TABLE IF NOT EXISTS `temp_user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `role` TEXT NULL\n, `code` TEXT NOT NULL\n, `status` TEXT NOT NULL\n, `invited_by_user_id` INTEGER NULL\n, `email_sent` INTEGER NOT NULL\n, `email_sent_on` DATETIME NULL\n, `remote_addr` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 30,
+    "migration_id": "create index IDX_temp_user_email - v1-7",
+    "sql": "CREATE INDEX `IDX_temp_user_email` ON `temp_user` (`email`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 31,
+    "migration_id": "create index IDX_temp_user_org_id - v1-7",
+    "sql": "CREATE INDEX `IDX_temp_user_org_id` ON `temp_user` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 32,
+    "migration_id": "create index IDX_temp_user_code - v1-7",
+    "sql": "CREATE INDEX `IDX_temp_user_code` ON `temp_user` (`code`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 33,
+    "migration_id": "create index IDX_temp_user_status - v1-7",
+    "sql": "CREATE INDEX `IDX_temp_user_status` ON `temp_user` (`status`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 34,
+    "migration_id": "Update temp_user table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 35,
+    "migration_id": "drop index IDX_temp_user_email - v1",
+    "sql": "DROP INDEX `IDX_temp_user_email`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 36,
+    "migration_id": "drop index IDX_temp_user_org_id - v1",
+    "sql": "DROP INDEX `IDX_temp_user_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 37,
+    "migration_id": "drop index IDX_temp_user_code - v1",
+    "sql": "DROP INDEX `IDX_temp_user_code`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 38,
+    "migration_id": "drop index IDX_temp_user_status - v1",
+    "sql": "DROP INDEX `IDX_temp_user_status`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 39,
+    "migration_id": "Rename table temp_user to temp_user_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `temp_user` RENAME TO `temp_user_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 40,
+    "migration_id": "create temp_user v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `temp_user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `email` TEXT NOT NULL\n, `name` TEXT NULL\n, `role` TEXT NULL\n, `code` TEXT NOT NULL\n, `status` TEXT NOT NULL\n, `invited_by_user_id` INTEGER NULL\n, `email_sent` INTEGER NOT NULL\n, `email_sent_on` DATETIME NULL\n, `remote_addr` TEXT NULL\n, `created` INTEGER NOT NULL DEFAULT 0\n, `updated` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 41,
+    "migration_id": "create index IDX_temp_user_email - v2",
+    "sql": "CREATE INDEX `IDX_temp_user_email` ON `temp_user` (`email`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 42,
+    "migration_id": "create index IDX_temp_user_org_id - v2",
+    "sql": "CREATE INDEX `IDX_temp_user_org_id` ON `temp_user` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 43,
+    "migration_id": "create index IDX_temp_user_code - v2",
+    "sql": "CREATE INDEX `IDX_temp_user_code` ON `temp_user` (`code`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 44,
+    "migration_id": "create index IDX_temp_user_status - v2",
+    "sql": "CREATE INDEX `IDX_temp_user_status` ON `temp_user` (`status`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 45,
+    "migration_id": "copy temp_user v1 to v2",
+    "sql": "INSERT INTO `temp_user` (`code`\n, `status`\n, `email_sent`\n, `email_sent_on`\n, `id`\n, `org_id`\n, `invited_by_user_id`\n, `remote_addr`\n, `version`\n, `email`\n, `name`\n, `role`) SELECT `code`\n, `status`\n, `email_sent`\n, `email_sent_on`\n, `id`\n, `org_id`\n, `invited_by_user_id`\n, `remote_addr`\n, `version`\n, `email`\n, `name`\n, `role` FROM `temp_user_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 46,
+    "migration_id": "drop temp_user_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `temp_user_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 47,
+    "migration_id": "Set created for temp users that will otherwise prematurely expire",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 48,
+    "migration_id": "create star table",
+    "sql": "CREATE TABLE IF NOT EXISTS `star` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 49,
+    "migration_id": "add unique index star.user_id_dashboard_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_star_user_id_dashboard_id` ON `star` (`user_id`,`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 50,
+    "migration_id": "Add column dashboard_uid in star",
+    "sql": "alter table `star` ADD COLUMN `dashboard_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 51,
+    "migration_id": "Add column org_id in star",
+    "sql": "alter table `star` ADD COLUMN `org_id` INTEGER NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 52,
+    "migration_id": "Add column updated in star",
+    "sql": "alter table `star` ADD COLUMN `updated` DATETIME NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 53,
+    "migration_id": "add index in star table on dashboard_uid, org_id and user_id columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_star_user_id_dashboard_uid_org_id` ON `star` (`user_id`,`dashboard_uid`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 54,
+    "migration_id": "create org table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `org` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `address1` TEXT NULL\n, `address2` TEXT NULL\n, `city` TEXT NULL\n, `state` TEXT NULL\n, `zip_code` TEXT NULL\n, `country` TEXT NULL\n, `billing_email` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 55,
+    "migration_id": "create index UQE_org_name - v1",
+    "sql": "CREATE UNIQUE INDEX `UQE_org_name` ON `org` (`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 56,
+    "migration_id": "create org_user table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `org_user` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `role` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 57,
+    "migration_id": "create index IDX_org_user_org_id - v1",
+    "sql": "CREATE INDEX `IDX_org_user_org_id` ON `org_user` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 58,
+    "migration_id": "create index UQE_org_user_org_id_user_id - v1",
+    "sql": "CREATE UNIQUE INDEX `UQE_org_user_org_id_user_id` ON `org_user` (`org_id`,`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 59,
+    "migration_id": "create index IDX_org_user_user_id - v1",
+    "sql": "CREATE INDEX `IDX_org_user_user_id` ON `org_user` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 60,
+    "migration_id": "Update org table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 61,
+    "migration_id": "Update org_user table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 62,
+    "migration_id": "Migrate all Read Only Viewers to Viewers",
+    "sql": "UPDATE org_user SET role = 'Viewer' WHERE role = 'Read Only Editor'",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 63,
+    "migration_id": "create dashboard table",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `slug` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `account_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 64,
+    "migration_id": "add index dashboard.account_id",
+    "sql": "CREATE INDEX `IDX_dashboard_account_id` ON `dashboard` (`account_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 65,
+    "migration_id": "add unique index dashboard_account_id_slug",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_account_id_slug` ON `dashboard` (`account_id`,`slug`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 66,
+    "migration_id": "create dashboard_tag table",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `term` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 67,
+    "migration_id": "add unique index dashboard_tag.dasboard_id_term",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_tag_dashboard_id_term` ON `dashboard_tag` (`dashboard_id`,`term`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 68,
+    "migration_id": "drop index UQE_dashboard_tag_dashboard_id_term - v1",
+    "sql": "DROP INDEX `UQE_dashboard_tag_dashboard_id_term`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 69,
+    "migration_id": "Rename table dashboard to dashboard_v1 - v1",
+    "sql": "ALTER TABLE `dashboard` RENAME TO `dashboard_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 70,
+    "migration_id": "create dashboard v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `slug` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 71,
+    "migration_id": "create index IDX_dashboard_org_id - v2",
+    "sql": "CREATE INDEX `IDX_dashboard_org_id` ON `dashboard` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 72,
+    "migration_id": "create index UQE_dashboard_org_id_slug - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_org_id_slug` ON `dashboard` (`org_id`,`slug`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 73,
+    "migration_id": "copy dashboard v1 to v2",
+    "sql": "INSERT INTO `dashboard` (`org_id`\n, `created`\n, `updated`\n, `id`\n, `version`\n, `slug`\n, `title`\n, `data`) SELECT `account_id`\n, `created`\n, `updated`\n, `id`\n, `version`\n, `slug`\n, `title`\n, `data` FROM `dashboard_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 74,
+    "migration_id": "drop table dashboard_v1",
+    "sql": "DROP TABLE IF EXISTS `dashboard_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 75,
+    "migration_id": "alter dashboard.data to mediumtext v1",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 76,
+    "migration_id": "Add column updated_by in dashboard - v2",
+    "sql": "alter table `dashboard` ADD COLUMN `updated_by` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 77,
+    "migration_id": "Add column created_by in dashboard - v2",
+    "sql": "alter table `dashboard` ADD COLUMN `created_by` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 78,
+    "migration_id": "Add column gnetId in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `gnet_id` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 79,
+    "migration_id": "Add index for gnetId in dashboard",
+    "sql": "CREATE INDEX `IDX_dashboard_gnet_id` ON `dashboard` (`gnet_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 80,
+    "migration_id": "Add column plugin_id in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `plugin_id` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 81,
+    "migration_id": "Add index for plugin_id in dashboard",
+    "sql": "CREATE INDEX `IDX_dashboard_org_id_plugin_id` ON `dashboard` (`org_id`,`plugin_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 82,
+    "migration_id": "Add index for dashboard_id in dashboard_tag",
+    "sql": "CREATE INDEX `IDX_dashboard_tag_dashboard_id` ON `dashboard_tag` (`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 83,
+    "migration_id": "Update dashboard table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 84,
+    "migration_id": "Update dashboard_tag table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 85,
+    "migration_id": "Add column folder_id in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `folder_id` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 86,
+    "migration_id": "Add column isFolder in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `is_folder` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 87,
+    "migration_id": "Add column has_acl in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `has_acl` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 88,
+    "migration_id": "Add column uid in dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 89,
+    "migration_id": "Update uid column values in dashboard",
+    "sql": "UPDATE dashboard SET uid=printf('%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 90,
+    "migration_id": "Add unique index dashboard_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_org_id_uid` ON `dashboard` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 91,
+    "migration_id": "Remove unique index org_id_slug",
+    "sql": "DROP INDEX `UQE_dashboard_org_id_slug`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 92,
+    "migration_id": "Update dashboard title length",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 93,
+    "migration_id": "Add unique index for dashboard_org_id_title_folder_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_org_id_folder_id_title` ON `dashboard` (`org_id`,`folder_id`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 94,
+    "migration_id": "create dashboard_provisioning",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_provisioning` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NULL\n, `name` TEXT NOT NULL\n, `external_id` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 95,
+    "migration_id": "Rename table dashboard_provisioning to dashboard_provisioning_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `dashboard_provisioning` RENAME TO `dashboard_provisioning_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 96,
+    "migration_id": "create dashboard_provisioning v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_provisioning` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NULL\n, `name` TEXT NOT NULL\n, `external_id` TEXT NOT NULL\n, `updated` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 97,
+    "migration_id": "create index IDX_dashboard_provisioning_dashboard_id - v2",
+    "sql": "CREATE INDEX `IDX_dashboard_provisioning_dashboard_id` ON `dashboard_provisioning` (`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 98,
+    "migration_id": "create index IDX_dashboard_provisioning_dashboard_id_name - v2",
+    "sql": "CREATE INDEX `IDX_dashboard_provisioning_dashboard_id_name` ON `dashboard_provisioning` (`dashboard_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 99,
+    "migration_id": "copy dashboard_provisioning v1 to v2",
+    "sql": "INSERT INTO `dashboard_provisioning` (`id`\n, `dashboard_id`\n, `name`\n, `external_id`) SELECT `id`\n, `dashboard_id`\n, `name`\n, `external_id` FROM `dashboard_provisioning_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 100,
+    "migration_id": "drop dashboard_provisioning_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `dashboard_provisioning_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 101,
+    "migration_id": "Add check_sum column",
+    "sql": "alter table `dashboard_provisioning` ADD COLUMN `check_sum` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 102,
+    "migration_id": "Add index for dashboard_title",
+    "sql": "CREATE INDEX `IDX_dashboard_title` ON `dashboard` (`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 103,
+    "migration_id": "delete tags for deleted dashboards",
+    "sql": "DELETE FROM dashboard_tag WHERE dashboard_id NOT IN (SELECT id FROM dashboard)",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 104,
+    "migration_id": "delete stars for deleted dashboards",
+    "sql": "DELETE FROM star WHERE dashboard_id NOT IN (SELECT id FROM dashboard)",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 105,
+    "migration_id": "Add index for dashboard_is_folder",
+    "sql": "CREATE INDEX `IDX_dashboard_is_folder` ON `dashboard` (`is_folder`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 106,
+    "migration_id": "Add isPublic for dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `is_public` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 107,
+    "migration_id": "Add deleted for dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `deleted` DATETIME NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 108,
+    "migration_id": "Add index for deleted",
+    "sql": "CREATE INDEX `IDX_dashboard_deleted` ON `dashboard` (`deleted`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 109,
+    "migration_id": "Add column dashboard_uid in dashboard_tag",
+    "sql": "alter table `dashboard_tag` ADD COLUMN `dashboard_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 110,
+    "migration_id": "Add column org_id in dashboard_tag",
+    "sql": "alter table `dashboard_tag` ADD COLUMN `org_id` INTEGER NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 111,
+    "migration_id": "Add missing dashboard_uid and org_id to dashboard_tag",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 112,
+    "migration_id": "Add apiVersion for dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `api_version` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 113,
+    "migration_id": "Add missing dashboard_uid and org_id to star",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 114,
+    "migration_id": "create data_source table",
+    "sql": "CREATE TABLE IF NOT EXISTS `data_source` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `account_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `access` TEXT NOT NULL\n, `url` TEXT NOT NULL\n, `password` TEXT NULL\n, `user` TEXT NULL\n, `database` TEXT NULL\n, `basic_auth` INTEGER NOT NULL\n, `basic_auth_user` TEXT NULL\n, `basic_auth_password` TEXT NULL\n, `is_default` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 115,
+    "migration_id": "add index data_source.account_id",
+    "sql": "CREATE INDEX `IDX_data_source_account_id` ON `data_source` (`account_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 116,
+    "migration_id": "add unique index data_source.account_id_name",
+    "sql": "CREATE UNIQUE INDEX `UQE_data_source_account_id_name` ON `data_source` (`account_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 117,
+    "migration_id": "drop index IDX_data_source_account_id - v1",
+    "sql": "DROP INDEX `IDX_data_source_account_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 118,
+    "migration_id": "drop index UQE_data_source_account_id_name - v1",
+    "sql": "DROP INDEX `UQE_data_source_account_id_name`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 119,
+    "migration_id": "Rename table data_source to data_source_v1 - v1",
+    "sql": "ALTER TABLE `data_source` RENAME TO `data_source_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 120,
+    "migration_id": "create data_source table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `data_source` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `access` TEXT NOT NULL\n, `url` TEXT NOT NULL\n, `password` TEXT NULL\n, `user` TEXT NULL\n, `database` TEXT NULL\n, `basic_auth` INTEGER NOT NULL\n, `basic_auth_user` TEXT NULL\n, `basic_auth_password` TEXT NULL\n, `is_default` INTEGER NOT NULL\n, `json_data` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 121,
+    "migration_id": "create index IDX_data_source_org_id - v2",
+    "sql": "CREATE INDEX `IDX_data_source_org_id` ON `data_source` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 122,
+    "migration_id": "create index UQE_data_source_org_id_name - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_data_source_org_id_name` ON `data_source` (`org_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 123,
+    "migration_id": "Drop old table data_source_v1 #2",
+    "sql": "DROP TABLE IF EXISTS `data_source_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 124,
+    "migration_id": "Add column with_credentials",
+    "sql": "alter table `data_source` ADD COLUMN `with_credentials` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 125,
+    "migration_id": "Add secure json data column",
+    "sql": "alter table `data_source` ADD COLUMN `secure_json_data` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 126,
+    "migration_id": "Update data_source table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 127,
+    "migration_id": "Update initial version to 1",
+    "sql": "UPDATE data_source SET version = 1 WHERE version = 0",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 128,
+    "migration_id": "Add read_only data column",
+    "sql": "alter table `data_source` ADD COLUMN `read_only` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 129,
+    "migration_id": "Migrate logging ds to loki ds",
+    "sql": "UPDATE data_source SET type = 'loki' WHERE type = 'logging'",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 130,
+    "migration_id": "Update json_data with nulls",
+    "sql": "UPDATE data_source SET json_data = '{}' WHERE json_data is null",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 131,
+    "migration_id": "Add uid column",
+    "sql": "alter table `data_source` ADD COLUMN `uid` TEXT NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 132,
+    "migration_id": "Update uid value",
+    "sql": "UPDATE data_source SET uid=printf('%09d',id);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 133,
+    "migration_id": "Add unique index datasource_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_data_source_org_id_uid` ON `data_source` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 134,
+    "migration_id": "add unique index datasource_org_id_is_default",
+    "sql": "CREATE INDEX `IDX_data_source_org_id_is_default` ON `data_source` (`org_id`,`is_default`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 135,
+    "migration_id": "Add is_prunable column",
+    "sql": "alter table `data_source` ADD COLUMN `is_prunable` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 136,
+    "migration_id": "Add api_version column",
+    "sql": "alter table `data_source` ADD COLUMN `api_version` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 137,
+    "migration_id": "create api_key table",
+    "sql": "CREATE TABLE IF NOT EXISTS `api_key` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `account_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `role` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 138,
+    "migration_id": "add index api_key.account_id",
+    "sql": "CREATE INDEX `IDX_api_key_account_id` ON `api_key` (`account_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 139,
+    "migration_id": "add index api_key.key",
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_key` ON `api_key` (`key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 140,
+    "migration_id": "add index api_key.account_id_name",
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_account_id_name` ON `api_key` (`account_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 141,
+    "migration_id": "drop index IDX_api_key_account_id - v1",
+    "sql": "DROP INDEX `IDX_api_key_account_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 142,
+    "migration_id": "drop index UQE_api_key_key - v1",
+    "sql": "DROP INDEX `UQE_api_key_key`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 143,
+    "migration_id": "drop index UQE_api_key_account_id_name - v1",
+    "sql": "DROP INDEX `UQE_api_key_account_id_name`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 144,
+    "migration_id": "Rename table api_key to api_key_v1 - v1",
+    "sql": "ALTER TABLE `api_key` RENAME TO `api_key_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 145,
+    "migration_id": "create api_key table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `api_key` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `role` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 146,
+    "migration_id": "create index IDX_api_key_org_id - v2",
+    "sql": "CREATE INDEX `IDX_api_key_org_id` ON `api_key` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 147,
+    "migration_id": "create index UQE_api_key_key - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_key` ON `api_key` (`key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 148,
+    "migration_id": "create index UQE_api_key_org_id_name - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_api_key_org_id_name` ON `api_key` (`org_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 149,
+    "migration_id": "copy api_key v1 to v2",
+    "sql": "INSERT INTO `api_key` (`id`\n, `org_id`\n, `name`\n, `key`\n, `role`\n, `created`\n, `updated`) SELECT `id`\n, `account_id`\n, `name`\n, `key`\n, `role`\n, `created`\n, `updated` FROM `api_key_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 150,
+    "migration_id": "Drop old table api_key_v1",
+    "sql": "DROP TABLE IF EXISTS `api_key_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 151,
+    "migration_id": "Update api_key table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 152,
+    "migration_id": "Add expires to api_key table",
+    "sql": "alter table `api_key` ADD COLUMN `expires` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 153,
+    "migration_id": "Add service account foreign key",
+    "sql": "alter table `api_key` ADD COLUMN `service_account_id` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 154,
+    "migration_id": "set service account foreign key to nil if 0",
+    "sql": "UPDATE api_key SET service_account_id = NULL WHERE service_account_id = 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 155,
+    "migration_id": "Add last_used_at to api_key table",
+    "sql": "alter table `api_key` ADD COLUMN `last_used_at` DATETIME NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 156,
+    "migration_id": "Add is_revoked column to api_key table",
+    "sql": "alter table `api_key` ADD COLUMN `is_revoked` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 157,
+    "migration_id": "create dashboard_snapshot table v4",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_snapshot` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `dashboard` TEXT NOT NULL\n, `expires` DATETIME NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 158,
+    "migration_id": "drop table dashboard_snapshot_v4 #1",
+    "sql": "DROP TABLE IF EXISTS `dashboard_snapshot`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 159,
+    "migration_id": "create dashboard_snapshot table v5 #2",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_snapshot` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `delete_key` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `external` INTEGER NOT NULL\n, `external_url` TEXT NOT NULL\n, `dashboard` TEXT NOT NULL\n, `expires` DATETIME NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 160,
+    "migration_id": "create index UQE_dashboard_snapshot_key - v5",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_snapshot_key` ON `dashboard_snapshot` (`key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 161,
+    "migration_id": "create index UQE_dashboard_snapshot_delete_key - v5",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_snapshot_delete_key` ON `dashboard_snapshot` (`delete_key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 162,
+    "migration_id": "create index IDX_dashboard_snapshot_user_id - v5",
+    "sql": "CREATE INDEX `IDX_dashboard_snapshot_user_id` ON `dashboard_snapshot` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 163,
+    "migration_id": "alter dashboard_snapshot to mediumtext v2",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 164,
+    "migration_id": "Update dashboard_snapshot table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 165,
+    "migration_id": "Add column external_delete_url to dashboard_snapshots table",
+    "sql": "alter table `dashboard_snapshot` ADD COLUMN `external_delete_url` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 166,
+    "migration_id": "Add encrypted dashboard json column",
+    "sql": "alter table `dashboard_snapshot` ADD COLUMN `dashboard_encrypted` BLOB NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 167,
+    "migration_id": "Change dashboard_encrypted column to MEDIUMBLOB",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 168,
+    "migration_id": "create quota table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `quota` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NULL\n, `user_id` INTEGER NULL\n, `target` TEXT NOT NULL\n, `limit` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 169,
+    "migration_id": "create index UQE_quota_org_id_user_id_target - v1",
+    "sql": "CREATE UNIQUE INDEX `UQE_quota_org_id_user_id_target` ON `quota` (`org_id`,`user_id`,`target`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 170,
+    "migration_id": "Update quota table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 171,
+    "migration_id": "create plugin_setting table",
+    "sql": "CREATE TABLE IF NOT EXISTS `plugin_setting` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NULL\n, `plugin_id` TEXT NOT NULL\n, `enabled` INTEGER NOT NULL\n, `pinned` INTEGER NOT NULL\n, `json_data` TEXT NULL\n, `secure_json_data` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 172,
+    "migration_id": "create index UQE_plugin_setting_org_id_plugin_id - v1",
+    "sql": "CREATE UNIQUE INDEX `UQE_plugin_setting_org_id_plugin_id` ON `plugin_setting` (`org_id`,`plugin_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 173,
+    "migration_id": "Add column plugin_version to plugin_settings",
+    "sql": "alter table `plugin_setting` ADD COLUMN `plugin_version` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 174,
+    "migration_id": "Update plugin_setting table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 175,
+    "migration_id": "update NULL org_id to 1",
+    "sql": "UPDATE plugin_setting SET org_id=1 where org_id IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 176,
+    "migration_id": "make org_id NOT NULL and DEFAULT VALUE 1",
+    "sql": "\n\t\t\tCREATE TABLE \"plugin_setting_new\" (\n\t\t\t\"id\" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\t\t\"org_id\" INTEGER NOT NULL DEFAULT 1,\n\t\t\t\"plugin_id\" TEXT NOT NULL,\n\t\t\t\"enabled\" INTEGER NOT NULL,\n\t\t\t\"pinned\" INTEGER NOT NULL,\n\t\t\t\"json_data\" TEXT NULL,\n\t\t\t\"secure_json_data\" TEXT NULL,\n\t\t\t\"created\" DATETIME NOT NULL,\n\t\t\t\"updated\" DATETIME NOT NULL,\n\t\t\t\"plugin_version\" TEXT NULL);\n\t\t\tINSERT INTO \"plugin_setting_new\" SELECT\n\t\t\t\t\"id\",\n\t\t\t\tCOALESCE(\"org_id\", 1),\n\t\t\t\t\"plugin_id\",\n\t\t\t\t\"enabled\",\n\t\t\t\t\"pinned\",\n\t\t\t\t\"json_data\",\n\t\t\t\t\"secure_json_data\",\n\t\t\t\t\"created\",\n\t\t\t\t\"updated\",\n\t\t\t\t\"plugin_version\"\n\t\t\tFROM \"plugin_setting\";\n\t\t\tDROP TABLE \"plugin_setting\";\n\t\t\tALTER TABLE \"plugin_setting_new\" RENAME TO \"plugin_setting\";\n\t\t\tCREATE UNIQUE INDEX \"UQE_plugin_setting_org_id_plugin_id\" ON \"plugin_setting\" (\"org_id\",\"plugin_id\");\n\t\t",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 177,
+    "migration_id": "create session table",
+    "sql": "CREATE TABLE IF NOT EXISTS `session` (\n`key` TEXT PRIMARY KEY NOT NULL\n, `data` BLOB NOT NULL\n, `expiry` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 178,
+    "migration_id": "Drop old table playlist table",
+    "sql": "DROP TABLE IF EXISTS `playlist`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 179,
+    "migration_id": "Drop old table playlist_item table",
+    "sql": "DROP TABLE IF EXISTS `playlist_item`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 180,
+    "migration_id": "create playlist table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `playlist` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `interval` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 181,
+    "migration_id": "create playlist item table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `playlist_item` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `playlist_id` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `value` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `order` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 182,
+    "migration_id": "Update playlist table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 183,
+    "migration_id": "Update playlist_item table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 184,
+    "migration_id": "Add playlist column created_at",
+    "sql": "alter table `playlist` ADD COLUMN `created_at` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 185,
+    "migration_id": "Add playlist column updated_at",
+    "sql": "alter table `playlist` ADD COLUMN `updated_at` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 186,
+    "migration_id": "drop preferences table v2",
+    "sql": "DROP TABLE IF EXISTS `preferences`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 187,
+    "migration_id": "drop preferences table v3",
+    "sql": "DROP TABLE IF EXISTS `preferences`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 188,
+    "migration_id": "create preferences table v3",
+    "sql": "CREATE TABLE IF NOT EXISTS `preferences` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `home_dashboard_id` INTEGER NOT NULL\n, `timezone` TEXT NOT NULL\n, `theme` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 189,
+    "migration_id": "Update preferences table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 190,
+    "migration_id": "Add column team_id in preferences",
+    "sql": "alter table `preferences` ADD COLUMN `team_id` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 191,
+    "migration_id": "Update team_id column values in preferences",
+    "sql": "UPDATE preferences SET team_id=0 WHERE team_id IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 192,
+    "migration_id": "Add column week_start in preferences",
+    "sql": "alter table `preferences` ADD COLUMN `week_start` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 193,
+    "migration_id": "Add column preferences.json_data",
+    "sql": "alter table `preferences` ADD COLUMN `json_data` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 194,
+    "migration_id": "alter preferences.json_data to mediumtext v1",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 195,
+    "migration_id": "Add preferences index org_id",
+    "sql": "CREATE INDEX `IDX_preferences_org_id` ON `preferences` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 196,
+    "migration_id": "Add preferences index user_id",
+    "sql": "CREATE INDEX `IDX_preferences_user_id` ON `preferences` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 197,
+    "migration_id": "create alert table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `version` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `panel_id` INTEGER NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `message` TEXT NOT NULL\n, `state` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `frequency` INTEGER NOT NULL\n, `handler` INTEGER NOT NULL\n, `severity` TEXT NOT NULL\n, `silenced` INTEGER NOT NULL\n, `execution_error` TEXT NOT NULL\n, `eval_data` TEXT NULL\n, `eval_date` DATETIME NULL\n, `new_state_date` DATETIME NOT NULL\n, `state_changes` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 198,
+    "migration_id": "add index alert org_id & id ",
+    "sql": "CREATE INDEX `IDX_alert_org_id_id` ON `alert` (`org_id`,`id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 199,
+    "migration_id": "add index alert state",
+    "sql": "CREATE INDEX `IDX_alert_state` ON `alert` (`state`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 200,
+    "migration_id": "add index alert dashboard_id",
+    "sql": "CREATE INDEX `IDX_alert_dashboard_id` ON `alert` (`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 201,
+    "migration_id": "Create alert_rule_tag table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_rule_tag` (\n`alert_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 202,
+    "migration_id": "Add unique index alert_rule_tag.alert_id_tag_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_tag_alert_id_tag_id` ON `alert_rule_tag` (`alert_id`,`tag_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 203,
+    "migration_id": "drop index UQE_alert_rule_tag_alert_id_tag_id - v1",
+    "sql": "DROP INDEX `UQE_alert_rule_tag_alert_id_tag_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 204,
+    "migration_id": "Rename table alert_rule_tag to alert_rule_tag_v1 - v1",
+    "sql": "ALTER TABLE `alert_rule_tag` RENAME TO `alert_rule_tag_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 205,
+    "migration_id": "Create alert_rule_tag table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_rule_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `alert_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 206,
+    "migration_id": "create index UQE_alert_rule_tag_alert_id_tag_id - Add unique index alert_rule_tag.alert_id_tag_id V2",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_tag_alert_id_tag_id` ON `alert_rule_tag` (`alert_id`,`tag_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 207,
+    "migration_id": "copy alert_rule_tag v1 to v2",
+    "sql": "INSERT INTO `alert_rule_tag` (`alert_id`\n, `tag_id`) SELECT `alert_id`\n, `tag_id` FROM `alert_rule_tag_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 208,
+    "migration_id": "drop table alert_rule_tag_v1",
+    "sql": "DROP TABLE IF EXISTS `alert_rule_tag_v1`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 209,
+    "migration_id": "create alert_notification table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_notification` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `name` TEXT NOT NULL\n, `type` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 210,
+    "migration_id": "Add column is_default",
+    "sql": "alter table `alert_notification` ADD COLUMN `is_default` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 211,
+    "migration_id": "Add column frequency",
+    "sql": "alter table `alert_notification` ADD COLUMN `frequency` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 212,
+    "migration_id": "Add column send_reminder",
+    "sql": "alter table `alert_notification` ADD COLUMN `send_reminder` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 213,
+    "migration_id": "Add column disable_resolve_message",
+    "sql": "alter table `alert_notification` ADD COLUMN `disable_resolve_message` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 214,
+    "migration_id": "add index alert_notification org_id & name",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_notification_org_id_name` ON `alert_notification` (`org_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 215,
+    "migration_id": "Update alert table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 216,
+    "migration_id": "Update alert_notification table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 217,
+    "migration_id": "create notification_journal table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_notification_journal` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alert_id` INTEGER NOT NULL\n, `notifier_id` INTEGER NOT NULL\n, `sent_at` INTEGER NOT NULL\n, `success` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 218,
+    "migration_id": "add index notification_journal org_id & alert_id & notifier_id",
+    "sql": "CREATE INDEX `IDX_alert_notification_journal_org_id_alert_id_notifier_id` ON `alert_notification_journal` (`org_id`,`alert_id`,`notifier_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 219,
+    "migration_id": "drop alert_notification_journal",
+    "sql": "DROP TABLE IF EXISTS `alert_notification_journal`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 220,
+    "migration_id": "create alert_notification_state table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_notification_state` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alert_id` INTEGER NOT NULL\n, `notifier_id` INTEGER NOT NULL\n, `state` TEXT NOT NULL\n, `version` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n, `alert_rule_state_updated_version` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 221,
+    "migration_id": "add index alert_notification_state org_id & alert_id & notifier_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_notification_state_org_id_alert_id_notifier_id` ON `alert_notification_state` (`org_id`,`alert_id`,`notifier_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 222,
+    "migration_id": "Add for to alert table",
+    "sql": "alter table `alert` ADD COLUMN `for` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 223,
+    "migration_id": "Add column uid in alert_notification",
+    "sql": "alter table `alert_notification` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 224,
+    "migration_id": "Update uid column values in alert_notification",
+    "sql": "UPDATE alert_notification SET uid=printf('%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 225,
+    "migration_id": "Add unique index alert_notification_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_notification_org_id_uid` ON `alert_notification` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 226,
+    "migration_id": "Remove unique index org_id_name",
+    "sql": "DROP INDEX `UQE_alert_notification_org_id_name`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 227,
+    "migration_id": "Add column secure_settings in alert_notification",
+    "sql": "alter table `alert_notification` ADD COLUMN `secure_settings` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 228,
+    "migration_id": "alter alert.settings to mediumtext",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 229,
+    "migration_id": "Add non-unique index alert_notification_state_alert_id",
+    "sql": "CREATE INDEX `IDX_alert_notification_state_alert_id` ON `alert_notification_state` (`alert_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 230,
+    "migration_id": "Add non-unique index alert_rule_tag_alert_id",
+    "sql": "CREATE INDEX `IDX_alert_rule_tag_alert_id` ON `alert_rule_tag` (`alert_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 231,
+    "migration_id": "Drop old annotation table v4",
+    "sql": "DROP TABLE IF EXISTS `annotation`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 232,
+    "migration_id": "create annotation table v5",
+    "sql": "CREATE TABLE IF NOT EXISTS `annotation` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alert_id` INTEGER NULL\n, `user_id` INTEGER NULL\n, `dashboard_id` INTEGER NULL\n, `panel_id` INTEGER NULL\n, `category_id` INTEGER NULL\n, `type` TEXT NOT NULL\n, `title` TEXT NOT NULL\n, `text` TEXT NOT NULL\n, `metric` TEXT NULL\n, `prev_state` TEXT NOT NULL\n, `new_state` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `epoch` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 233,
+    "migration_id": "add index annotation 0 v3",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_alert_id` ON `annotation` (`org_id`,`alert_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 234,
+    "migration_id": "add index annotation 1 v3",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_type` ON `annotation` (`org_id`,`type`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 235,
+    "migration_id": "add index annotation 2 v3",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_category_id` ON `annotation` (`org_id`,`category_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 236,
+    "migration_id": "add index annotation 3 v3",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_dashboard_id_panel_id_epoch` ON `annotation` (`org_id`,`dashboard_id`,`panel_id`,`epoch`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 237,
+    "migration_id": "add index annotation 4 v3",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_epoch` ON `annotation` (`org_id`,`epoch`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 238,
+    "migration_id": "Update annotation table charset",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 239,
+    "migration_id": "Add column region_id to annotation table",
+    "sql": "alter table `annotation` ADD COLUMN `region_id` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 240,
+    "migration_id": "Drop category_id index",
+    "sql": "DROP INDEX `IDX_annotation_org_id_category_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 241,
+    "migration_id": "Add column tags to annotation table",
+    "sql": "alter table `annotation` ADD COLUMN `tags` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 242,
+    "migration_id": "Create annotation_tag table v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `annotation_tag` (\n`annotation_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 243,
+    "migration_id": "Add unique index annotation_tag.annotation_id_tag_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_annotation_tag_annotation_id_tag_id` ON `annotation_tag` (`annotation_id`,`tag_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 244,
+    "migration_id": "drop index UQE_annotation_tag_annotation_id_tag_id - v2",
+    "sql": "DROP INDEX `UQE_annotation_tag_annotation_id_tag_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 245,
+    "migration_id": "Rename table annotation_tag to annotation_tag_v2 - v2",
+    "sql": "ALTER TABLE `annotation_tag` RENAME TO `annotation_tag_v2`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 246,
+    "migration_id": "Create annotation_tag table v3",
+    "sql": "CREATE TABLE IF NOT EXISTS `annotation_tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `annotation_id` INTEGER NOT NULL\n, `tag_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 247,
+    "migration_id": "create index UQE_annotation_tag_annotation_id_tag_id - Add unique index annotation_tag.annotation_id_tag_id V3",
+    "sql": "CREATE UNIQUE INDEX `UQE_annotation_tag_annotation_id_tag_id` ON `annotation_tag` (`annotation_id`,`tag_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 248,
+    "migration_id": "copy annotation_tag v2 to v3",
+    "sql": "INSERT INTO `annotation_tag` (`annotation_id`\n, `tag_id`) SELECT `annotation_id`\n, `tag_id` FROM `annotation_tag_v2`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 249,
+    "migration_id": "drop table annotation_tag_v2",
+    "sql": "DROP TABLE IF EXISTS `annotation_tag_v2`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 250,
+    "migration_id": "Update alert annotations and set TEXT to empty",
+    "sql": "UPDATE annotation SET TEXT = '' WHERE alert_id > 0",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 251,
+    "migration_id": "Add created time to annotation table",
+    "sql": "alter table `annotation` ADD COLUMN `created` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 252,
+    "migration_id": "Add updated time to annotation table",
+    "sql": "alter table `annotation` ADD COLUMN `updated` INTEGER NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 253,
+    "migration_id": "Add index for created in annotation table",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_created` ON `annotation` (`org_id`,`created`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 254,
+    "migration_id": "Add index for updated in annotation table",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_updated` ON `annotation` (`org_id`,`updated`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 255,
+    "migration_id": "Convert existing annotations from seconds to milliseconds",
+    "sql": "UPDATE annotation SET epoch = (epoch*1000) where epoch < 9999999999",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 256,
+    "migration_id": "Add epoch_end column",
+    "sql": "alter table `annotation` ADD COLUMN `epoch_end` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 257,
+    "migration_id": "Add index for epoch_end",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_epoch_epoch_end` ON `annotation` (`org_id`,`epoch`,`epoch_end`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 258,
+    "migration_id": "Make epoch_end the same as epoch",
+    "sql": "UPDATE annotation SET epoch_end = epoch",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 259,
+    "migration_id": "Move region to single row",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 260,
+    "migration_id": "Remove index org_id_epoch from annotation table",
+    "sql": "DROP INDEX `IDX_annotation_org_id_epoch`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 261,
+    "migration_id": "Remove index org_id_dashboard_id_panel_id_epoch from annotation table",
+    "sql": "DROP INDEX `IDX_annotation_org_id_dashboard_id_panel_id_epoch`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 262,
+    "migration_id": "Add index for org_id_dashboard_id_epoch_end_epoch on annotation table",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_dashboard_id_epoch_end_epoch` ON `annotation` (`org_id`,`dashboard_id`,`epoch_end`,`epoch`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 263,
+    "migration_id": "Add index for org_id_epoch_end_epoch on annotation table",
+    "sql": "CREATE INDEX `IDX_annotation_org_id_epoch_end_epoch` ON `annotation` (`org_id`,`epoch_end`,`epoch`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 264,
+    "migration_id": "Remove index org_id_epoch_epoch_end from annotation table",
+    "sql": "DROP INDEX `IDX_annotation_org_id_epoch_epoch_end`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 265,
+    "migration_id": "Add index for alert_id on annotation table",
+    "sql": "CREATE INDEX `IDX_annotation_alert_id` ON `annotation` (`alert_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 266,
+    "migration_id": "Increase tags column to length 4096",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 267,
+    "migration_id": "Increase prev_state column to length 40 not null",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 268,
+    "migration_id": "Increase new_state column to length 40 not null",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 269,
+    "migration_id": "create test_data table",
+    "sql": "CREATE TABLE IF NOT EXISTS `test_data` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `metric1` TEXT NULL\n, `metric2` TEXT NULL\n, `value_big_int` INTEGER NULL\n, `value_double` REAL NULL\n, `value_float` REAL NULL\n, `value_int` INTEGER NULL\n, `time_epoch` INTEGER NOT NULL\n, `time_date_time` DATETIME NOT NULL\n, `time_time_stamp` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 270,
+    "migration_id": "create dashboard_version table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_version` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `parent_version` INTEGER NOT NULL\n, `restored_from` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n, `message` TEXT NOT NULL\n, `data` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 271,
+    "migration_id": "add index dashboard_version.dashboard_id",
+    "sql": "CREATE INDEX `IDX_dashboard_version_dashboard_id` ON `dashboard_version` (`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 272,
+    "migration_id": "add unique index dashboard_version.dashboard_id and dashboard_version.version",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_version_dashboard_id_version` ON `dashboard_version` (`dashboard_id`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 273,
+    "migration_id": "Set dashboard version to 1 where 0",
+    "sql": "UPDATE dashboard SET version = 1 WHERE version = 0",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 274,
+    "migration_id": "save existing dashboard data in dashboard_version table v1",
+    "sql": "INSERT INTO dashboard_version\n(\n\tdashboard_id,\n\tversion,\n\tparent_version,\n\trestored_from,\n\tcreated,\n\tcreated_by,\n\tmessage,\n\tdata\n)\nSELECT\n\tdashboard.id,\n\tdashboard.version,\n\tdashboard.version,\n\tdashboard.version,\n\tdashboard.updated,\n\tCOALESCE(dashboard.updated_by, -1),\n\t'',\n\tdashboard.data\nFROM dashboard;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 275,
+    "migration_id": "alter dashboard_version.data to mediumtext v1",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 276,
+    "migration_id": "Add apiVersion for dashboard_version",
+    "sql": "alter table `dashboard_version` ADD COLUMN `api_version` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 277,
+    "migration_id": "create team table",
+    "sql": "CREATE TABLE IF NOT EXISTS `team` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 278,
+    "migration_id": "add index team.org_id",
+    "sql": "CREATE INDEX `IDX_team_org_id` ON `team` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 279,
+    "migration_id": "add unique index team_org_id_name",
+    "sql": "CREATE UNIQUE INDEX `UQE_team_org_id_name` ON `team` (`org_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 280,
+    "migration_id": "Add column uid in team",
+    "sql": "alter table `team` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 281,
+    "migration_id": "Update uid column values in team",
+    "sql": "UPDATE team SET uid=printf('t%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 282,
+    "migration_id": "Add unique index team_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_team_org_id_uid` ON `team` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 283,
+    "migration_id": "create team member table",
+    "sql": "CREATE TABLE IF NOT EXISTS `team_member` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `team_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 284,
+    "migration_id": "add index team_member.org_id",
+    "sql": "CREATE INDEX `IDX_team_member_org_id` ON `team_member` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 285,
+    "migration_id": "add unique index team_member_org_id_team_id_user_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_team_member_org_id_team_id_user_id` ON `team_member` (`org_id`,`team_id`,`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 286,
+    "migration_id": "add index team_member.team_id",
+    "sql": "CREATE INDEX `IDX_team_member_team_id` ON `team_member` (`team_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 287,
+    "migration_id": "Add column email to team table",
+    "sql": "alter table `team` ADD COLUMN `email` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 288,
+    "migration_id": "Add column external to team_member table",
+    "sql": "alter table `team_member` ADD COLUMN `external` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 289,
+    "migration_id": "Add column permission to team_member table",
+    "sql": "alter table `team_member` ADD COLUMN `permission` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 290,
+    "migration_id": "add unique index team_member_user_id_org_id",
+    "sql": "CREATE INDEX `IDX_team_member_user_id_org_id` ON `team_member` (`user_id`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 291,
+    "migration_id": "create dashboard acl table",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_acl` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `dashboard_id` INTEGER NOT NULL\n, `user_id` INTEGER NULL\n, `team_id` INTEGER NULL\n, `permission` INTEGER NOT NULL DEFAULT 4\n, `role` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 292,
+    "migration_id": "add index dashboard_acl_dashboard_id",
+    "sql": "CREATE INDEX `IDX_dashboard_acl_dashboard_id` ON `dashboard_acl` (`dashboard_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 293,
+    "migration_id": "add unique index dashboard_acl_dashboard_id_user_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_acl_dashboard_id_user_id` ON `dashboard_acl` (`dashboard_id`,`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 294,
+    "migration_id": "add unique index dashboard_acl_dashboard_id_team_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_acl_dashboard_id_team_id` ON `dashboard_acl` (`dashboard_id`,`team_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 295,
+    "migration_id": "add index dashboard_acl_user_id",
+    "sql": "CREATE INDEX `IDX_dashboard_acl_user_id` ON `dashboard_acl` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 296,
+    "migration_id": "add index dashboard_acl_team_id",
+    "sql": "CREATE INDEX `IDX_dashboard_acl_team_id` ON `dashboard_acl` (`team_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 297,
+    "migration_id": "add index dashboard_acl_org_id_role",
+    "sql": "CREATE INDEX `IDX_dashboard_acl_org_id_role` ON `dashboard_acl` (`org_id`,`role`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 298,
+    "migration_id": "add index dashboard_permission",
+    "sql": "CREATE INDEX `IDX_dashboard_acl_permission` ON `dashboard_acl` (`permission`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 299,
+    "migration_id": "save default acl rules in dashboard_acl table",
+    "sql": "\nINSERT INTO dashboard_acl\n\t(\n\t\torg_id,\n\t\tdashboard_id,\n\t\tpermission,\n\t\trole,\n\t\tcreated,\n\t\tupdated\n\t)\n\tVALUES\n\t\t(-1,-1, 1,'Viewer','2017-06-20','2017-06-20'),\n\t\t(-1,-1, 2,'Editor','2017-06-20','2017-06-20')\n\t",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 300,
+    "migration_id": "delete acl rules for deleted dashboards and folders",
+    "sql": "DELETE FROM dashboard_acl WHERE dashboard_id NOT IN (SELECT id FROM dashboard) AND dashboard_id != -1",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 301,
+    "migration_id": "create tag table",
+    "sql": "CREATE TABLE IF NOT EXISTS `tag` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 302,
+    "migration_id": "add index tag.key_value",
+    "sql": "CREATE UNIQUE INDEX `UQE_tag_key_value` ON `tag` (`key`,`value`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 303,
+    "migration_id": "create login attempt table",
+    "sql": "CREATE TABLE IF NOT EXISTS `login_attempt` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `username` TEXT NOT NULL\n, `ip_address` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 304,
+    "migration_id": "add index login_attempt.username",
+    "sql": "CREATE INDEX `IDX_login_attempt_username` ON `login_attempt` (`username`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 305,
+    "migration_id": "drop index IDX_login_attempt_username - v1",
+    "sql": "DROP INDEX `IDX_login_attempt_username`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 306,
+    "migration_id": "Rename table login_attempt to login_attempt_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `login_attempt` RENAME TO `login_attempt_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 307,
+    "migration_id": "create login_attempt v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `login_attempt` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `username` TEXT NOT NULL\n, `ip_address` TEXT NOT NULL\n, `created` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 308,
+    "migration_id": "create index IDX_login_attempt_username - v2",
+    "sql": "CREATE INDEX `IDX_login_attempt_username` ON `login_attempt` (`username`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 309,
+    "migration_id": "copy login_attempt v1 to v2",
+    "sql": "INSERT INTO `login_attempt` (`id`\n, `username`\n, `ip_address`) SELECT `id`\n, `username`\n, `ip_address` FROM `login_attempt_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 310,
+    "migration_id": "drop login_attempt_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `login_attempt_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 311,
+    "migration_id": "create user auth table",
+    "sql": "CREATE TABLE IF NOT EXISTS `user_auth` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_module` TEXT NOT NULL\n, `auth_id` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 312,
+    "migration_id": "create index IDX_user_auth_auth_module_auth_id - v1",
+    "sql": "CREATE INDEX `IDX_user_auth_auth_module_auth_id` ON `user_auth` (`auth_module`,`auth_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 313,
+    "migration_id": "alter user_auth.auth_id to length 190",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 314,
+    "migration_id": "Add OAuth access token to user_auth",
+    "sql": "alter table `user_auth` ADD COLUMN `o_auth_access_token` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 315,
+    "migration_id": "Add OAuth refresh token to user_auth",
+    "sql": "alter table `user_auth` ADD COLUMN `o_auth_refresh_token` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 316,
+    "migration_id": "Add OAuth token type to user_auth",
+    "sql": "alter table `user_auth` ADD COLUMN `o_auth_token_type` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 317,
+    "migration_id": "Add OAuth expiry to user_auth",
+    "sql": "alter table `user_auth` ADD COLUMN `o_auth_expiry` DATETIME NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 318,
+    "migration_id": "Add index to user_id column in user_auth",
+    "sql": "CREATE INDEX `IDX_user_auth_user_id` ON `user_auth` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 319,
+    "migration_id": "Add OAuth ID token to user_auth",
+    "sql": "alter table `user_auth` ADD COLUMN `o_auth_id_token` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 320,
+    "migration_id": "create server_lock table",
+    "sql": "CREATE TABLE IF NOT EXISTS `server_lock` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `operation_uid` TEXT NOT NULL\n, `version` INTEGER NOT NULL\n, `last_execution` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 321,
+    "migration_id": "add index server_lock.operation_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_server_lock_operation_uid` ON `server_lock` (`operation_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 322,
+    "migration_id": "create user auth token table",
+    "sql": "CREATE TABLE IF NOT EXISTS `user_auth_token` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_token` TEXT NOT NULL\n, `prev_auth_token` TEXT NOT NULL\n, `user_agent` TEXT NOT NULL\n, `client_ip` TEXT NOT NULL\n, `auth_token_seen` INTEGER NOT NULL\n, `seen_at` INTEGER NULL\n, `rotated_at` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 323,
+    "migration_id": "add unique index user_auth_token.auth_token",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_auth_token_auth_token` ON `user_auth_token` (`auth_token`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 324,
+    "migration_id": "add unique index user_auth_token.prev_auth_token",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_auth_token_prev_auth_token` ON `user_auth_token` (`prev_auth_token`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 325,
+    "migration_id": "add index user_auth_token.user_id",
+    "sql": "CREATE INDEX `IDX_user_auth_token_user_id` ON `user_auth_token` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 326,
+    "migration_id": "Add revoked_at to the user auth token",
+    "sql": "alter table `user_auth_token` ADD COLUMN `revoked_at` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 327,
+    "migration_id": "add index user_auth_token.revoked_at",
+    "sql": "CREATE INDEX `IDX_user_auth_token_revoked_at` ON `user_auth_token` (`revoked_at`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 328,
+    "migration_id": "add external_session_id to user_auth_token",
+    "sql": "alter table `user_auth_token` ADD COLUMN `external_session_id` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 329,
+    "migration_id": "create cache_data table",
+    "sql": "CREATE TABLE IF NOT EXISTS `cache_data` (\n`cache_key` TEXT PRIMARY KEY NOT NULL\n, `data` BLOB NOT NULL\n, `expires` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 330,
+    "migration_id": "add unique index cache_data.cache_key",
+    "sql": "CREATE UNIQUE INDEX `UQE_cache_data_cache_key` ON `cache_data` (`cache_key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 331,
+    "migration_id": "create short_url table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `short_url` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `path` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `last_seen_at` INTEGER NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 332,
+    "migration_id": "add index short_url.org_id-uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_short_url_org_id_uid` ON `short_url` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 333,
+    "migration_id": "alter table short_url alter column created_by type to bigint",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 334,
+    "migration_id": "delete alert_definition table",
+    "sql": "DROP TABLE IF EXISTS `alert_definition`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 335,
+    "migration_id": "recreate alert_definition table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_definition` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n, `interval_seconds` INTEGER NOT NULL DEFAULT 60\n, `version` INTEGER NOT NULL DEFAULT 0\n, `uid` TEXT NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 336,
+    "migration_id": "add index in alert_definition on org_id and title columns",
+    "sql": "CREATE INDEX `IDX_alert_definition_org_id_title` ON `alert_definition` (`org_id`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 337,
+    "migration_id": "add index in alert_definition on org_id and uid columns",
+    "sql": "CREATE INDEX `IDX_alert_definition_org_id_uid` ON `alert_definition` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 338,
+    "migration_id": "alter alert_definition table data column to mediumtext in mysql",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 339,
+    "migration_id": "drop index in alert_definition on org_id and title columns",
+    "sql": "DROP INDEX `IDX_alert_definition_org_id_title`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 340,
+    "migration_id": "drop index in alert_definition on org_id and uid columns",
+    "sql": "DROP INDEX `IDX_alert_definition_org_id_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 341,
+    "migration_id": "add unique index in alert_definition on org_id and title columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_definition_org_id_title` ON `alert_definition` (`org_id`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 342,
+    "migration_id": "add unique index in alert_definition on org_id and uid columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_definition_org_id_uid` ON `alert_definition` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 343,
+    "migration_id": "Add column paused in alert_definition",
+    "sql": "alter table `alert_definition` ADD COLUMN `paused` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 344,
+    "migration_id": "drop alert_definition table",
+    "sql": "DROP TABLE IF EXISTS `alert_definition`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 345,
+    "migration_id": "delete alert_definition_version table",
+    "sql": "DROP TABLE IF EXISTS `alert_definition_version`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 346,
+    "migration_id": "recreate alert_definition_version table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_definition_version` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `alert_definition_id` INTEGER NOT NULL\n, `alert_definition_uid` TEXT NOT NULL DEFAULT 0\n, `parent_version` INTEGER NOT NULL\n, `restored_from` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `interval_seconds` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 347,
+    "migration_id": "add index in alert_definition_version table on alert_definition_id and version columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_definition_version_alert_definition_id_version` ON `alert_definition_version` (`alert_definition_id`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 348,
+    "migration_id": "add index in alert_definition_version table on alert_definition_uid and version columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_definition_version_alert_definition_uid_version` ON `alert_definition_version` (`alert_definition_uid`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 349,
+    "migration_id": "alter alert_definition_version table data column to mediumtext in mysql",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 350,
+    "migration_id": "drop alert_definition_version table",
+    "sql": "DROP TABLE IF EXISTS `alert_definition_version`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 351,
+    "migration_id": "create alert_instance table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_instance` (\n`def_org_id` INTEGER NOT NULL\n, `def_uid` TEXT NOT NULL DEFAULT 0\n, `labels` TEXT NOT NULL\n, `labels_hash` TEXT NOT NULL\n, `current_state` TEXT NOT NULL\n, `current_state_since` INTEGER NOT NULL\n, `last_eval_time` INTEGER NOT NULL\n, PRIMARY KEY ( `def_org_id`,`def_uid`,`labels_hash` ));",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 352,
+    "migration_id": "add index in alert_instance table on def_org_id, def_uid and current_state columns",
+    "sql": "CREATE INDEX `IDX_alert_instance_def_org_id_def_uid_current_state` ON `alert_instance` (`def_org_id`,`def_uid`,`current_state`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 353,
+    "migration_id": "add index in alert_instance table on def_org_id, current_state columns",
+    "sql": "CREATE INDEX `IDX_alert_instance_def_org_id_current_state` ON `alert_instance` (`def_org_id`,`current_state`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 354,
+    "migration_id": "add column current_state_end to alert_instance",
+    "sql": "alter table `alert_instance` ADD COLUMN `current_state_end` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 355,
+    "migration_id": "remove index def_org_id, def_uid, current_state on alert_instance",
+    "sql": "DROP INDEX `IDX_alert_instance_def_org_id_def_uid_current_state`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 356,
+    "migration_id": "remove index def_org_id, current_state on alert_instance",
+    "sql": "DROP INDEX `IDX_alert_instance_def_org_id_current_state`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 357,
+    "migration_id": "rename def_org_id to rule_org_id in alert_instance",
+    "sql": "ALTER TABLE alert_instance RENAME COLUMN def_org_id TO rule_org_id;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 358,
+    "migration_id": "rename def_uid to rule_uid in alert_instance",
+    "sql": "ALTER TABLE alert_instance RENAME COLUMN def_uid TO rule_uid;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 359,
+    "migration_id": "add index rule_org_id, rule_uid, current_state on alert_instance",
+    "sql": "CREATE INDEX `IDX_alert_instance_rule_org_id_rule_uid_current_state` ON `alert_instance` (`rule_org_id`,`rule_uid`,`current_state`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 360,
+    "migration_id": "add index rule_org_id, current_state on alert_instance",
+    "sql": "CREATE INDEX `IDX_alert_instance_rule_org_id_current_state` ON `alert_instance` (`rule_org_id`,`current_state`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 361,
+    "migration_id": "add current_reason column related to current_state",
+    "sql": "alter table `alert_instance` ADD COLUMN `current_reason` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 362,
+    "migration_id": "add result_fingerprint column to alert_instance",
+    "sql": "alter table `alert_instance` ADD COLUMN `result_fingerprint` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 363,
+    "migration_id": "create alert_rule table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_rule` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n, `interval_seconds` INTEGER NOT NULL DEFAULT 60\n, `version` INTEGER NOT NULL DEFAULT 0\n, `uid` TEXT NOT NULL DEFAULT 0\n, `namespace_uid` TEXT NOT NULL\n, `rule_group` TEXT NOT NULL\n, `no_data_state` TEXT NOT NULL DEFAULT 'NoData'\n, `exec_err_state` TEXT NOT NULL DEFAULT 'Alerting'\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 364,
+    "migration_id": "add index in alert_rule on org_id and title columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_org_id_title` ON `alert_rule` (`org_id`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 365,
+    "migration_id": "add index in alert_rule on org_id and uid columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_org_id_uid` ON `alert_rule` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 366,
+    "migration_id": "add index in alert_rule on org_id, namespace_uid, group_uid columns",
+    "sql": "CREATE INDEX `IDX_alert_rule_org_id_namespace_uid_rule_group` ON `alert_rule` (`org_id`,`namespace_uid`,`rule_group`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 367,
+    "migration_id": "alter alert_rule table data column to mediumtext in mysql",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 368,
+    "migration_id": "add column for to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `for` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 369,
+    "migration_id": "add column annotations to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `annotations` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 370,
+    "migration_id": "add column labels to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `labels` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 371,
+    "migration_id": "remove unique index from alert_rule on org_id, title columns",
+    "sql": "DROP INDEX `UQE_alert_rule_org_id_title`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 372,
+    "migration_id": "add index in alert_rule on org_id, namespase_uid and title columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_org_id_namespace_uid_title` ON `alert_rule` (`org_id`,`namespace_uid`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 373,
+    "migration_id": "add dashboard_uid column to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `dashboard_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 374,
+    "migration_id": "add panel_id column to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `panel_id` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 375,
+    "migration_id": "add index in alert_rule on org_id, dashboard_uid and panel_id columns",
+    "sql": "CREATE INDEX `IDX_alert_rule_org_id_dashboard_uid_panel_id` ON `alert_rule` (`org_id`,`dashboard_uid`,`panel_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 376,
+    "migration_id": "add rule_group_idx column to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `rule_group_idx` INTEGER NOT NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 377,
+    "migration_id": "add is_paused column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `is_paused` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 378,
+    "migration_id": "fix is_paused column for alert_rule table",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 379,
+    "migration_id": "create alert_rule_version table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_rule_version` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `rule_org_id` INTEGER NOT NULL\n, `rule_uid` TEXT NOT NULL DEFAULT 0\n, `rule_namespace_uid` TEXT NOT NULL\n, `rule_group` TEXT NOT NULL\n, `parent_version` INTEGER NOT NULL\n, `restored_from` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `title` TEXT NOT NULL\n, `condition` TEXT NOT NULL\n, `data` TEXT NOT NULL\n, `interval_seconds` INTEGER NOT NULL\n, `no_data_state` TEXT NOT NULL DEFAULT 'NoData'\n, `exec_err_state` TEXT NOT NULL DEFAULT 'Alerting'\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 380,
+    "migration_id": "add index in alert_rule_version table on rule_org_id, rule_uid and version columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_version_rule_org_id_rule_uid_version` ON `alert_rule_version` (`rule_org_id`,`rule_uid`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 381,
+    "migration_id": "add index in alert_rule_version table on rule_org_id, rule_namespace_uid and rule_group columns",
+    "sql": "CREATE INDEX `IDX_alert_rule_version_rule_org_id_rule_namespace_uid_rule_group` ON `alert_rule_version` (`rule_org_id`,`rule_namespace_uid`,`rule_group`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 382,
+    "migration_id": "alter alert_rule_version table data column to mediumtext in mysql",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 383,
+    "migration_id": "add column for to alert_rule_version",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `for` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 384,
+    "migration_id": "add column annotations to alert_rule_version",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `annotations` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 385,
+    "migration_id": "add column labels to alert_rule_version",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `labels` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 386,
+    "migration_id": "add rule_group_idx column to alert_rule_version",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `rule_group_idx` INTEGER NOT NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 387,
+    "migration_id": "add is_paused column to alert_rule_versions table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `is_paused` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 388,
+    "migration_id": "fix is_paused column for alert_rule_version table",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 389,
+    "migration_id": "create_alert_configuration_table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_configuration` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `alertmanager_configuration` TEXT NOT NULL\n, `configuration_version` TEXT NOT NULL\n, `created_at` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 390,
+    "migration_id": "Add column default in alert_configuration",
+    "sql": "alter table `alert_configuration` ADD COLUMN `default` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 391,
+    "migration_id": "alert alert_configuration alertmanager_configuration column from TEXT to MEDIUMTEXT if mysql",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 392,
+    "migration_id": "add column org_id in alert_configuration",
+    "sql": "alter table `alert_configuration` ADD COLUMN `org_id` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 393,
+    "migration_id": "add index in alert_configuration table on org_id column",
+    "sql": "CREATE INDEX `IDX_alert_configuration_org_id` ON `alert_configuration` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 394,
+    "migration_id": "add configuration_hash column to alert_configuration",
+    "sql": "alter table `alert_configuration` ADD COLUMN `configuration_hash` TEXT NOT NULL DEFAULT 'not-yet-calculated' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 395,
+    "migration_id": "create_ngalert_configuration_table",
+    "sql": "CREATE TABLE IF NOT EXISTS `ngalert_configuration` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `alertmanagers` TEXT NULL\n, `created_at` INTEGER NOT NULL\n, `updated_at` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 396,
+    "migration_id": "add index in ngalert_configuration on org_id column",
+    "sql": "CREATE UNIQUE INDEX `UQE_ngalert_configuration_org_id` ON `ngalert_configuration` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 397,
+    "migration_id": "add column send_alerts_to in ngalert_configuration",
+    "sql": "alter table `ngalert_configuration` ADD COLUMN `send_alerts_to` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 398,
+    "migration_id": "create provenance_type table",
+    "sql": "CREATE TABLE IF NOT EXISTS `provenance_type` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `record_key` TEXT NOT NULL\n, `record_type` TEXT NOT NULL\n, `provenance` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 399,
+    "migration_id": "add index to uniquify (record_key, record_type, org_id) columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_provenance_type_record_type_record_key_org_id` ON `provenance_type` (`record_type`,`record_key`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 400,
+    "migration_id": "create alert_image table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_image` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `token` TEXT NOT NULL\n, `path` TEXT NOT NULL\n, `url` TEXT NOT NULL\n, `created_at` DATETIME NOT NULL\n, `expires_at` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 401,
+    "migration_id": "add unique index on token to alert_image table",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_image_token` ON `alert_image` (`token`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 402,
+    "migration_id": "support longer URLs in alert_image table",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 403,
+    "migration_id": "create_alert_configuration_history_table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_configuration_history` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 0\n, `alertmanager_configuration` TEXT NOT NULL\n, `configuration_hash` TEXT NOT NULL DEFAULT 'not-yet-calculated'\n, `configuration_version` TEXT NOT NULL\n, `created_at` INTEGER NOT NULL\n, `default` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 404,
+    "migration_id": "drop non-unique orgID index on alert_configuration",
+    "sql": "DROP INDEX `IDX_alert_configuration_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 405,
+    "migration_id": "drop unique orgID index on alert_configuration if exists",
+    "sql": "DROP INDEX `UQE_alert_configuration_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 406,
+    "migration_id": "extract alertmanager configuration history to separate table",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 407,
+    "migration_id": "add unique index on orgID to alert_configuration",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_configuration_org_id` ON `alert_configuration` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 408,
+    "migration_id": "add last_applied column to alert_configuration_history",
+    "sql": "alter table `alert_configuration_history` ADD COLUMN `last_applied` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 409,
+    "migration_id": "create library_element table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `library_element` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `folder_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `name` TEXT NOT NULL\n, `kind` INTEGER NOT NULL\n, `type` TEXT NOT NULL\n, `description` TEXT NOT NULL\n, `model` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n, `updated` DATETIME NOT NULL\n, `updated_by` INTEGER NOT NULL\n, `version` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 410,
+    "migration_id": "add index library_element org_id-folder_id-name-kind",
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_folder_id_name_kind` ON `library_element` (`org_id`,`folder_id`,`name`,`kind`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 411,
+    "migration_id": "create library_element_connection table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `library_element_connection` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `element_id` INTEGER NOT NULL\n, `kind` INTEGER NOT NULL\n, `connection_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `created_by` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 412,
+    "migration_id": "add index library_element_connection element_id-kind-connection_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_connection_element_id_kind_connection_id` ON `library_element_connection` (`element_id`,`kind`,`connection_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 413,
+    "migration_id": "add unique index library_element org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_uid` ON `library_element` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 414,
+    "migration_id": "increase max description length to 2048",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 415,
+    "migration_id": "alter library_element model to mediumtext",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 416,
+    "migration_id": "add library_element folder uid",
+    "sql": "alter table `library_element` ADD COLUMN `folder_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 417,
+    "migration_id": "populate library_element folder_uid",
+    "sql": "UPDATE library_element\n\tSET folder_uid = dashboard.uid\n\tFROM dashboard\n\tWHERE library_element.folder_id = dashboard.id AND library_element.org_id = dashboard.org_id",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 418,
+    "migration_id": "add index library_element org_id-folder_uid-name-kind",
+    "sql": "CREATE UNIQUE INDEX `UQE_library_element_org_id_folder_uid_name_kind` ON `library_element` (`org_id`,`folder_uid`,`name`,`kind`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 419,
+    "migration_id": "clone move dashboard alerts to unified alerting",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 420,
+    "migration_id": "create data_keys table",
+    "sql": "CREATE TABLE IF NOT EXISTS `data_keys` (\n`name` TEXT PRIMARY KEY NOT NULL\n, `active` INTEGER NOT NULL\n, `scope` TEXT NOT NULL\n, `provider` TEXT NOT NULL\n, `encrypted_data` BLOB NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 421,
+    "migration_id": "create secrets table",
+    "sql": "CREATE TABLE IF NOT EXISTS `secrets` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `namespace` TEXT NOT NULL\n, `type` TEXT NOT NULL\n, `value` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 422,
+    "migration_id": "rename data_keys name column to id",
+    "sql": "ALTER TABLE `data_keys` RENAME COLUMN `name` TO `id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 423,
+    "migration_id": "add name column into data_keys",
+    "sql": "alter table `data_keys` ADD COLUMN `name` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 424,
+    "migration_id": "copy data_keys id column values into name",
+    "sql": "UPDATE data_keys SET name = id",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 425,
+    "migration_id": "rename data_keys name column to label",
+    "sql": "ALTER TABLE `data_keys` RENAME COLUMN `name` TO `label`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 426,
+    "migration_id": "rename data_keys id column back to name",
+    "sql": "ALTER TABLE `data_keys` RENAME COLUMN `id` TO `name`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 427,
+    "migration_id": "create kv_store table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `kv_store` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `namespace` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 428,
+    "migration_id": "add index kv_store.org_id-namespace-key",
+    "sql": "CREATE UNIQUE INDEX `UQE_kv_store_org_id_namespace_key` ON `kv_store` (`org_id`,`namespace`,`key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 429,
+    "migration_id": "update dashboard_uid and panel_id from existing annotations",
+    "sql": "set dashboard_uid and panel_id migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 430,
+    "migration_id": "create permission table",
+    "sql": "CREATE TABLE IF NOT EXISTS `permission` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `role_id` INTEGER NOT NULL\n, `action` TEXT NOT NULL\n, `scope` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 431,
+    "migration_id": "add unique index permission.role_id",
+    "sql": "CREATE INDEX `IDX_permission_role_id` ON `permission` (`role_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 432,
+    "migration_id": "add unique index role_id_action_scope",
+    "sql": "CREATE UNIQUE INDEX `UQE_permission_role_id_action_scope` ON `permission` (`role_id`,`action`,`scope`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 433,
+    "migration_id": "create role table",
+    "sql": "CREATE TABLE IF NOT EXISTS `role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `name` TEXT NOT NULL\n, `description` TEXT NULL\n, `version` INTEGER NOT NULL\n, `org_id` INTEGER NOT NULL\n, `uid` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 434,
+    "migration_id": "add column display_name",
+    "sql": "alter table `role` ADD COLUMN `display_name` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 435,
+    "migration_id": "add column group_name",
+    "sql": "alter table `role` ADD COLUMN `group_name` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 436,
+    "migration_id": "add index role.org_id",
+    "sql": "CREATE INDEX `IDX_role_org_id` ON `role` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 437,
+    "migration_id": "add unique index role_org_id_name",
+    "sql": "CREATE UNIQUE INDEX `UQE_role_org_id_name` ON `role` (`org_id`,`name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 438,
+    "migration_id": "add index role_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_role_org_id_uid` ON `role` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 439,
+    "migration_id": "create team role table",
+    "sql": "CREATE TABLE IF NOT EXISTS `team_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `team_id` INTEGER NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 440,
+    "migration_id": "add index team_role.org_id",
+    "sql": "CREATE INDEX `IDX_team_role_org_id` ON `team_role` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 441,
+    "migration_id": "add unique index team_role_org_id_team_id_role_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_team_role_org_id_team_id_role_id` ON `team_role` (`org_id`,`team_id`,`role_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 442,
+    "migration_id": "add index team_role.team_id",
+    "sql": "CREATE INDEX `IDX_team_role_team_id` ON `team_role` (`team_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 443,
+    "migration_id": "create user role table",
+    "sql": "CREATE TABLE IF NOT EXISTS `user_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 444,
+    "migration_id": "add index user_role.org_id",
+    "sql": "CREATE INDEX `IDX_user_role_org_id` ON `user_role` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 445,
+    "migration_id": "add unique index user_role_org_id_user_id_role_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_role_org_id_user_id_role_id` ON `user_role` (`org_id`,`user_id`,`role_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 446,
+    "migration_id": "add index user_role.user_id",
+    "sql": "CREATE INDEX `IDX_user_role_user_id` ON `user_role` (`user_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 447,
+    "migration_id": "create builtin role table",
+    "sql": "CREATE TABLE IF NOT EXISTS `builtin_role` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `role` TEXT NOT NULL\n, `role_id` INTEGER NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 448,
+    "migration_id": "add index builtin_role.role_id",
+    "sql": "CREATE INDEX `IDX_builtin_role_role_id` ON `builtin_role` (`role_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 449,
+    "migration_id": "add index builtin_role.name",
+    "sql": "CREATE INDEX `IDX_builtin_role_role` ON `builtin_role` (`role`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 450,
+    "migration_id": "Add column org_id to builtin_role table",
+    "sql": "alter table `builtin_role` ADD COLUMN `org_id` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 451,
+    "migration_id": "add index builtin_role.org_id",
+    "sql": "CREATE INDEX `IDX_builtin_role_org_id` ON `builtin_role` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 452,
+    "migration_id": "add unique index builtin_role_org_id_role_id_role",
+    "sql": "CREATE UNIQUE INDEX `UQE_builtin_role_org_id_role_id_role` ON `builtin_role` (`org_id`,`role_id`,`role`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 453,
+    "migration_id": "Remove unique index role_org_id_uid",
+    "sql": "DROP INDEX `UQE_role_org_id_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 454,
+    "migration_id": "add unique index role.uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_role_uid` ON `role` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 455,
+    "migration_id": "create seed assignment table",
+    "sql": "CREATE TABLE IF NOT EXISTS `seed_assignment` (\n`builtin_role` TEXT NOT NULL\n, `role_name` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 456,
+    "migration_id": "add unique index builtin_role_role_name",
+    "sql": "CREATE UNIQUE INDEX `UQE_seed_assignment_builtin_role_role_name` ON `seed_assignment` (`builtin_role`,`role_name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 457,
+    "migration_id": "add column hidden to role table",
+    "sql": "alter table `role` ADD COLUMN `hidden` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 458,
+    "migration_id": "permission kind migration",
+    "sql": "alter table `permission` ADD COLUMN `kind` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 459,
+    "migration_id": "permission attribute migration",
+    "sql": "alter table `permission` ADD COLUMN `attribute` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 460,
+    "migration_id": "permission identifier migration",
+    "sql": "alter table `permission` ADD COLUMN `identifier` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 461,
+    "migration_id": "add permission identifier index",
+    "sql": "CREATE INDEX `IDX_permission_identifier` ON `permission` (`identifier`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 462,
+    "migration_id": "add permission action scope role_id index",
+    "sql": "CREATE UNIQUE INDEX `UQE_permission_action_scope_role_id` ON `permission` (`action`,`scope`,`role_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 463,
+    "migration_id": "remove permission role_id action scope index",
+    "sql": "DROP INDEX `UQE_permission_role_id_action_scope`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 464,
+    "migration_id": "add group mapping UID column to user_role table",
+    "sql": "alter table `user_role` ADD COLUMN `group_mapping_uid` TEXT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 465,
+    "migration_id": "add user_role org ID, user ID, role ID, group mapping UID index",
+    "sql": "CREATE UNIQUE INDEX `UQE_user_role_org_id_user_id_role_id_group_mapping_uid` ON `user_role` (`org_id`,`user_id`,`role_id`,`group_mapping_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 466,
+    "migration_id": "remove user_role org ID, user ID, role ID index",
+    "sql": "DROP INDEX `UQE_user_role_org_id_user_id_role_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 467,
+    "migration_id": "create query_history table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `query_history` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `datasource_uid` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `created_at` INTEGER NOT NULL\n, `comment` TEXT NOT NULL\n, `queries` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 468,
+    "migration_id": "add index query_history.org_id-created_by-datasource_uid",
+    "sql": "CREATE INDEX `IDX_query_history_org_id_created_by_datasource_uid` ON `query_history` (`org_id`,`created_by`,`datasource_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 469,
+    "migration_id": "alter table query_history alter column created_by type to bigint",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 470,
+    "migration_id": "create query_history_details table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `query_history_details` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `query_history_item_uid` TEXT NOT NULL\n, `datasource_uid` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 471,
+    "migration_id": "rbac disabled migrator",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 472,
+    "migration_id": "teams permissions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 473,
+    "migration_id": "dashboard permissions",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 474,
+    "migration_id": "dashboard permissions uid scopes",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 475,
+    "migration_id": "drop managed folder create actions",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 476,
+    "migration_id": "alerting notification permissions",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 477,
+    "migration_id": "create query_history_star table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `query_history_star` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `query_uid` TEXT NOT NULL\n, `user_id` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 478,
+    "migration_id": "add index query_history.user_id-query_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_query_history_star_user_id_query_uid` ON `query_history_star` (`user_id`,`query_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 479,
+    "migration_id": "add column org_id in query_history_star",
+    "sql": "alter table `query_history_star` ADD COLUMN `org_id` INTEGER NOT NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 480,
+    "migration_id": "alter table query_history_star_mig column user_id type to bigint",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 481,
+    "migration_id": "create correlation table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `correlation` (\n`uid` TEXT NOT NULL\n, `source_uid` TEXT NOT NULL\n, `target_uid` TEXT NULL\n, `label` TEXT NOT NULL\n, `description` TEXT NOT NULL\n, PRIMARY KEY ( `uid`,`source_uid` ));",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 482,
+    "migration_id": "add index correlations.uid",
+    "sql": "CREATE INDEX `IDX_correlation_uid` ON `correlation` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 483,
+    "migration_id": "add index correlations.source_uid",
+    "sql": "CREATE INDEX `IDX_correlation_source_uid` ON `correlation` (`source_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 484,
+    "migration_id": "add correlation config column",
+    "sql": "alter table `correlation` ADD COLUMN `config` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 485,
+    "migration_id": "drop index IDX_correlation_uid - v1",
+    "sql": "DROP INDEX `IDX_correlation_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 486,
+    "migration_id": "drop index IDX_correlation_source_uid - v1",
+    "sql": "DROP INDEX `IDX_correlation_source_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 487,
+    "migration_id": "Rename table correlation to correlation_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `correlation` RENAME TO `correlation_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 488,
+    "migration_id": "create correlation v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `correlation` (\n`uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL DEFAULT 0\n, `source_uid` TEXT NOT NULL\n, `target_uid` TEXT NULL\n, `label` TEXT NOT NULL\n, `description` TEXT NOT NULL\n, `config` TEXT NULL\n, PRIMARY KEY ( `uid`,`org_id`,`source_uid` ));",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 489,
+    "migration_id": "create index IDX_correlation_uid - v2",
+    "sql": "CREATE INDEX `IDX_correlation_uid` ON `correlation` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 490,
+    "migration_id": "create index IDX_correlation_source_uid - v2",
+    "sql": "CREATE INDEX `IDX_correlation_source_uid` ON `correlation` (`source_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 491,
+    "migration_id": "create index IDX_correlation_org_id - v2",
+    "sql": "CREATE INDEX `IDX_correlation_org_id` ON `correlation` (`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 492,
+    "migration_id": "copy correlation v1 to v2",
+    "sql": "INSERT INTO `correlation` (`target_uid`\n, `label`\n, `description`\n, `config`\n, `uid`\n, `source_uid`) SELECT `target_uid`\n, `label`\n, `description`\n, `config`\n, `uid`\n, `source_uid` FROM `correlation_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 493,
+    "migration_id": "drop correlation_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `correlation_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 494,
+    "migration_id": "add provisioning column",
+    "sql": "alter table `correlation` ADD COLUMN `provisioned` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 495,
+    "migration_id": "add type column",
+    "sql": "alter table `correlation` ADD COLUMN `type` TEXT NOT NULL DEFAULT 'query' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 496,
+    "migration_id": "create entity_events table",
+    "sql": "CREATE TABLE IF NOT EXISTS `entity_event` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `entity_id` TEXT NOT NULL\n, `event_type` TEXT NOT NULL\n, `created` INTEGER NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 497,
+    "migration_id": "create dashboard public config v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_public_config` (\n`uid` TEXT PRIMARY KEY NOT NULL\n, `dashboard_uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `time_settings` TEXT NOT NULL\n, `refresh_rate` INTEGER NOT NULL DEFAULT 30\n, `template_variables` TEXT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 498,
+    "migration_id": "drop index UQE_dashboard_public_config_uid - v1",
+    "sql": "DROP INDEX `UQE_dashboard_public_config_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 499,
+    "migration_id": "drop index IDX_dashboard_public_config_org_id_dashboard_uid - v1",
+    "sql": "DROP INDEX `IDX_dashboard_public_config_org_id_dashboard_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 500,
+    "migration_id": "Drop old dashboard public config table",
+    "sql": "DROP TABLE IF EXISTS `dashboard_public_config`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 501,
+    "migration_id": "recreate dashboard public config v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_public_config` (\n`uid` TEXT PRIMARY KEY NOT NULL\n, `dashboard_uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `time_settings` TEXT NOT NULL\n, `refresh_rate` INTEGER NOT NULL DEFAULT 30\n, `template_variables` TEXT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 502,
+    "migration_id": "create index UQE_dashboard_public_config_uid - v1",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_public_config_uid` ON `dashboard_public_config` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 503,
+    "migration_id": "create index IDX_dashboard_public_config_org_id_dashboard_uid - v1",
+    "sql": "CREATE INDEX `IDX_dashboard_public_config_org_id_dashboard_uid` ON `dashboard_public_config` (`org_id`,`dashboard_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 504,
+    "migration_id": "drop index UQE_dashboard_public_config_uid - v2",
+    "sql": "DROP INDEX `UQE_dashboard_public_config_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 505,
+    "migration_id": "drop index IDX_dashboard_public_config_org_id_dashboard_uid - v2",
+    "sql": "DROP INDEX `IDX_dashboard_public_config_org_id_dashboard_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 506,
+    "migration_id": "Drop public config table",
+    "sql": "DROP TABLE IF EXISTS `dashboard_public_config`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 507,
+    "migration_id": "Recreate dashboard public config v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `dashboard_public_config` (\n`uid` TEXT PRIMARY KEY NOT NULL\n, `dashboard_uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `time_settings` TEXT NULL\n, `template_variables` TEXT NULL\n, `access_token` TEXT NOT NULL\n, `created_by` INTEGER NOT NULL\n, `updated_by` INTEGER NULL\n, `created_at` DATETIME NOT NULL\n, `updated_at` DATETIME NULL\n, `is_enabled` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 508,
+    "migration_id": "create index UQE_dashboard_public_config_uid - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_public_config_uid` ON `dashboard_public_config` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 509,
+    "migration_id": "create index IDX_dashboard_public_config_org_id_dashboard_uid - v2",
+    "sql": "CREATE INDEX `IDX_dashboard_public_config_org_id_dashboard_uid` ON `dashboard_public_config` (`org_id`,`dashboard_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 510,
+    "migration_id": "create index UQE_dashboard_public_config_access_token - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_public_config_access_token` ON `dashboard_public_config` (`access_token`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 511,
+    "migration_id": "Rename table dashboard_public_config to dashboard_public - v2",
+    "sql": "ALTER TABLE `dashboard_public_config` RENAME TO `dashboard_public`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 512,
+    "migration_id": "add annotations_enabled column",
+    "sql": "alter table `dashboard_public` ADD COLUMN `annotations_enabled` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 513,
+    "migration_id": "add time_selection_enabled column",
+    "sql": "alter table `dashboard_public` ADD COLUMN `time_selection_enabled` INTEGER NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 514,
+    "migration_id": "delete orphaned public dashboards",
+    "sql": "DELETE FROM dashboard_public WHERE dashboard_uid NOT IN (SELECT uid FROM dashboard)",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 515,
+    "migration_id": "add share column",
+    "sql": "alter table `dashboard_public` ADD COLUMN `share` TEXT NOT NULL DEFAULT 'public' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 516,
+    "migration_id": "backfill empty share column fields with default of public",
+    "sql": "UPDATE dashboard_public SET share='public' WHERE share=''",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 517,
+    "migration_id": "create file table",
+    "sql": "CREATE TABLE IF NOT EXISTS `file` (\n`path` TEXT NOT NULL\n, `path_hash` TEXT NOT NULL\n, `parent_folder_path_hash` TEXT NOT NULL\n, `contents` BLOB NOT NULL\n, `etag` TEXT NOT NULL\n, `cache_control` TEXT NOT NULL\n, `content_disposition` TEXT NOT NULL\n, `updated` DATETIME NOT NULL\n, `created` DATETIME NOT NULL\n, `size` INTEGER NOT NULL\n, `mime_type` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 518,
+    "migration_id": "file table idx: path natural pk",
+    "sql": "CREATE UNIQUE INDEX `UQE_file_path_hash` ON `file` (`path_hash`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 519,
+    "migration_id": "file table idx: parent_folder_path_hash fast folder retrieval",
+    "sql": "CREATE INDEX `IDX_file_parent_folder_path_hash` ON `file` (`parent_folder_path_hash`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 520,
+    "migration_id": "create file_meta table",
+    "sql": "CREATE TABLE IF NOT EXISTS `file_meta` (\n`path_hash` TEXT NOT NULL\n, `key` TEXT NOT NULL\n, `value` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 521,
+    "migration_id": "file table idx: path key",
+    "sql": "CREATE UNIQUE INDEX `UQE_file_meta_path_hash_key` ON `file_meta` (`path_hash`,`key`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 522,
+    "migration_id": "set path collation in file table",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 523,
+    "migration_id": "migrate contents column to mediumblob for MySQL",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 524,
+    "migration_id": "managed permissions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 525,
+    "migration_id": "managed folder permissions alert actions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 526,
+    "migration_id": "RBAC action name migrator",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 527,
+    "migration_id": "Add UID column to playlist",
+    "sql": "alter table `playlist` ADD COLUMN `uid` TEXT NOT NULL DEFAULT 0 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 528,
+    "migration_id": "Update uid column values in playlist",
+    "sql": "UPDATE playlist SET uid=printf('%d',id);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 529,
+    "migration_id": "Add index for uid in playlist",
+    "sql": "CREATE UNIQUE INDEX `UQE_playlist_org_id_uid` ON `playlist` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 530,
+    "migration_id": "update group index for alert rules",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 531,
+    "migration_id": "managed folder permissions alert actions repeated migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 532,
+    "migration_id": "admin only folder/dashboard permission",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 533,
+    "migration_id": "add action column to seed_assignment",
+    "sql": "alter table `seed_assignment` ADD COLUMN `action` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 534,
+    "migration_id": "add scope column to seed_assignment",
+    "sql": "alter table `seed_assignment` ADD COLUMN `scope` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 535,
+    "migration_id": "remove unique index builtin_role_role_name before nullable update",
+    "sql": "DROP INDEX `UQE_seed_assignment_builtin_role_role_name`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 536,
+    "migration_id": "update seed_assignment role_name column to nullable",
+    "sql": "ALTER TABLE seed_assignment ADD COLUMN tmp_role_name VARCHAR(190) DEFAULT NULL;\nUPDATE seed_assignment SET tmp_role_name = role_name;\nALTER TABLE seed_assignment DROP COLUMN role_name;\nALTER TABLE seed_assignment RENAME COLUMN tmp_role_name TO role_name;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 537,
+    "migration_id": "add unique index builtin_role_name back",
+    "sql": "CREATE UNIQUE INDEX `UQE_seed_assignment_builtin_role_role_name` ON `seed_assignment` (`builtin_role`,`role_name`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 538,
+    "migration_id": "add unique index builtin_role_action_scope",
+    "sql": "CREATE UNIQUE INDEX `UQE_seed_assignment_builtin_role_action_scope` ON `seed_assignment` (`builtin_role`,`action`,`scope`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 539,
+    "migration_id": "add primary key to seed_assigment",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 540,
+    "migration_id": "add origin column to seed_assignment",
+    "sql": "alter table `seed_assignment` ADD COLUMN `origin` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 541,
+    "migration_id": "add origin to plugin seed_assignment",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 542,
+    "migration_id": "prevent seeding OnCall access",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 543,
+    "migration_id": "managed folder permissions alert actions repeated fixed migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 544,
+    "migration_id": "managed folder permissions library panel actions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 545,
+    "migration_id": "migrate external alertmanagers to datsourcse",
+    "sql": "migrate external alertmanagers to datasource",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 546,
+    "migration_id": "create folder table",
+    "sql": "CREATE TABLE IF NOT EXISTS `folder` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `title` TEXT NOT NULL\n, `description` TEXT NULL\n, `parent_uid` TEXT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 547,
+    "migration_id": "Add index for parent_uid",
+    "sql": "CREATE INDEX `IDX_folder_parent_uid_org_id` ON `folder` (`parent_uid`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 548,
+    "migration_id": "Add unique index for folder.uid and folder.org_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_uid_org_id` ON `folder` (`uid`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 549,
+    "migration_id": "Update folder title length",
+    "sql": "-- NOT REQUIRED",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 550,
+    "migration_id": "Add unique index for folder.title and folder.parent_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_title_parent_uid` ON `folder` (`title`,`parent_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 551,
+    "migration_id": "Remove unique index for folder.title and folder.parent_uid",
+    "sql": "DROP INDEX `UQE_folder_title_parent_uid`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 552,
+    "migration_id": "Add unique index for title, parent_uid, and org_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_title_parent_uid_org_id` ON `folder` (`title`,`parent_uid`,`org_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 553,
+    "migration_id": "Sync dashboard and folder table",
+    "sql": "\n\t\t\tINSERT INTO folder (uid, org_id, title, created, updated)\n\t\t\tSELECT uid, org_id, title, created, updated FROM dashboard WHERE is_folder = 1\n\t\t\tON CONFLICT DO UPDATE SET title=excluded.title, updated=excluded.updated\n\t\t",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 554,
+    "migration_id": "Remove ghost folders from the folder table",
+    "sql": "\n\t\t\tDELETE FROM folder WHERE NOT EXISTS\n\t\t\t\t(SELECT 1 FROM dashboard WHERE dashboard.uid = folder.uid AND dashboard.org_id = folder.org_id AND dashboard.is_folder = true)\n\t",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 555,
+    "migration_id": "Remove unique index UQE_folder_uid_org_id",
+    "sql": "DROP INDEX `UQE_folder_uid_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 556,
+    "migration_id": "Add unique index UQE_folder_org_id_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_org_id_uid` ON `folder` (`org_id`,`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 557,
+    "migration_id": "Remove unique index UQE_folder_title_parent_uid_org_id",
+    "sql": "DROP INDEX `UQE_folder_title_parent_uid_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 558,
+    "migration_id": "Add unique index UQE_folder_org_id_parent_uid_title",
+    "sql": "CREATE UNIQUE INDEX `UQE_folder_org_id_parent_uid_title` ON `folder` (`org_id`,`parent_uid`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 559,
+    "migration_id": "Remove index IDX_folder_parent_uid_org_id",
+    "sql": "DROP INDEX `IDX_folder_parent_uid_org_id`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 560,
+    "migration_id": "Remove unique index UQE_folder_org_id_parent_uid_title",
+    "sql": "DROP INDEX `UQE_folder_org_id_parent_uid_title`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 561,
+    "migration_id": "create anon_device table",
+    "sql": "CREATE TABLE IF NOT EXISTS `anon_device` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `client_ip` TEXT NOT NULL\n, `created_at` DATETIME NOT NULL\n, `device_id` TEXT NOT NULL\n, `updated_at` DATETIME NOT NULL\n, `user_agent` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 562,
+    "migration_id": "add unique index anon_device.device_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_anon_device_device_id` ON `anon_device` (`device_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 563,
+    "migration_id": "add index anon_device.updated_at",
+    "sql": "CREATE INDEX `IDX_anon_device_updated_at` ON `anon_device` (`updated_at`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 564,
+    "migration_id": "create signing_key table",
+    "sql": "CREATE TABLE IF NOT EXISTS `signing_key` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `key_id` TEXT NOT NULL\n, `private_key` TEXT NOT NULL\n, `added_at` DATETIME NOT NULL\n, `expires_at` DATETIME NULL\n, `alg` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 565,
+    "migration_id": "add unique index signing_key.key_id",
+    "sql": "CREATE UNIQUE INDEX `UQE_signing_key_key_id` ON `signing_key` (`key_id`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 566,
+    "migration_id": "set legacy alert migration status in kvstore",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 567,
+    "migration_id": "migrate record of created folders during legacy migration to kvstore",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 568,
+    "migration_id": "Add folder_uid for dashboard",
+    "sql": "alter table `dashboard` ADD COLUMN `folder_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 569,
+    "migration_id": "Populate dashboard folder_uid column",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 570,
+    "migration_id": "Add unique index for dashboard_org_id_folder_uid_title",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 571,
+    "migration_id": "Delete unique index for dashboard_org_id_folder_id_title",
+    "sql": "DROP INDEX `UQE_dashboard_org_id_folder_id_title`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 572,
+    "migration_id": "Delete unique index for dashboard_org_id_folder_uid_title",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 573,
+    "migration_id": "Add unique index for dashboard_org_id_folder_uid_title_is_folder",
+    "sql": "CREATE UNIQUE INDEX `UQE_dashboard_org_id_folder_uid_title_is_folder` ON `dashboard` (`org_id`,`folder_uid`,`title`,`is_folder`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 574,
+    "migration_id": "Restore index for dashboard_org_id_folder_id_title",
+    "sql": "CREATE INDEX `IDX_dashboard_org_id_folder_id_title` ON `dashboard` (`org_id`,`folder_id`,`title`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 575,
+    "migration_id": "Remove unique index for dashboard_org_id_folder_uid_title_is_folder",
+    "sql": "DROP INDEX `UQE_dashboard_org_id_folder_uid_title_is_folder`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 576,
+    "migration_id": "create sso_setting table",
+    "sql": "CREATE TABLE IF NOT EXISTS `sso_setting` (\n`id` TEXT PRIMARY KEY NOT NULL\n, `provider` TEXT NOT NULL\n, `settings` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `is_deleted` INTEGER NOT NULL DEFAULT 0\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 577,
+    "migration_id": "copy kvstore migration status to each org",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 578,
+    "migration_id": "add back entry for orgid=0 migrated status",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 579,
+    "migration_id": "managed dashboard permissions annotation actions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 580,
+    "migration_id": "create cloud_migration table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `cloud_migration` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `auth_token` TEXT NULL\n, `stack` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 581,
+    "migration_id": "create cloud_migration_run table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `cloud_migration_run` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `cloud_migration_uid` TEXT NULL\n, `result` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `finished` DATETIME NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 582,
+    "migration_id": "add stack_id column",
+    "sql": "alter table `cloud_migration` ADD COLUMN `stack_id` INTEGER NOT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 583,
+    "migration_id": "add region_slug column",
+    "sql": "alter table `cloud_migration` ADD COLUMN `region_slug` TEXT NOT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 584,
+    "migration_id": "add cluster_slug column",
+    "sql": "alter table `cloud_migration` ADD COLUMN `cluster_slug` TEXT NOT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 585,
+    "migration_id": "add migration uid column",
+    "sql": "alter table `cloud_migration` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 586,
+    "migration_id": "Update uid column values for migration",
+    "sql": "UPDATE cloud_migration SET uid=printf('u%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 587,
+    "migration_id": "Add unique index migration_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_uid` ON `cloud_migration` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 588,
+    "migration_id": "add migration run uid column",
+    "sql": "alter table `cloud_migration_run` ADD COLUMN `uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 589,
+    "migration_id": "Update uid column values for migration run",
+    "sql": "UPDATE cloud_migration_run SET uid=printf('u%09d',id) WHERE uid IS NULL;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 590,
+    "migration_id": "Add unique index migration_run_uid",
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_run_uid` ON `cloud_migration_run` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 591,
+    "migration_id": "Rename table cloud_migration to cloud_migration_session_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `cloud_migration` RENAME TO `cloud_migration_session_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 592,
+    "migration_id": "create cloud_migration_session v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `cloud_migration_session` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NULL\n, `auth_token` TEXT NULL\n, `slug` TEXT NOT NULL\n, `stack_id` INTEGER NOT NULL\n, `region_slug` TEXT NOT NULL\n, `cluster_slug` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 593,
+    "migration_id": "create index UQE_cloud_migration_session_uid - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_session_uid` ON `cloud_migration_session` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 594,
+    "migration_id": "copy cloud_migration_session v1 to v2",
+    "sql": "INSERT INTO `cloud_migration_session` (`id`\n, `uid`\n, `auth_token`\n, `cluster_slug`\n, `created`\n, `slug`\n, `stack_id`\n, `region_slug`\n, `updated`) SELECT `id`\n, `uid`\n, `auth_token`\n, `cluster_slug`\n, `created`\n, `stack`\n, `stack_id`\n, `region_slug`\n, `updated` FROM `cloud_migration_session_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 595,
+    "migration_id": "drop cloud_migration_session_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `cloud_migration_session_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 596,
+    "migration_id": "Rename table cloud_migration_run to cloud_migration_snapshot_tmp_qwerty - v1",
+    "sql": "ALTER TABLE `cloud_migration_run` RENAME TO `cloud_migration_snapshot_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 597,
+    "migration_id": "create cloud_migration_snapshot v2",
+    "sql": "CREATE TABLE IF NOT EXISTS `cloud_migration_snapshot` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NULL\n, `session_uid` TEXT NULL\n, `result` TEXT NOT NULL\n, `created` DATETIME NOT NULL\n, `updated` DATETIME NOT NULL\n, `finished` DATETIME NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 598,
+    "migration_id": "create index UQE_cloud_migration_snapshot_uid - v2",
+    "sql": "CREATE UNIQUE INDEX `UQE_cloud_migration_snapshot_uid` ON `cloud_migration_snapshot` (`uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 599,
+    "migration_id": "copy cloud_migration_snapshot v1 to v2",
+    "sql": "INSERT INTO `cloud_migration_snapshot` (`result`\n, `created`\n, `updated`\n, `finished`\n, `id`\n, `uid`\n, `session_uid`) SELECT `result`\n, `created`\n, `updated`\n, `finished`\n, `id`\n, `uid`\n, `cloud_migration_uid` FROM `cloud_migration_snapshot_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 600,
+    "migration_id": "drop cloud_migration_snapshot_tmp_qwerty",
+    "sql": "DROP TABLE IF EXISTS `cloud_migration_snapshot_tmp_qwerty`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 601,
+    "migration_id": "add snapshot upload_url column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `upload_url` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 602,
+    "migration_id": "add snapshot status column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `status` TEXT NOT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 603,
+    "migration_id": "add snapshot local_directory column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `local_directory` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 604,
+    "migration_id": "add snapshot gms_snapshot_uid column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `gms_snapshot_uid` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 605,
+    "migration_id": "add snapshot encryption_key column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `encryption_key` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 606,
+    "migration_id": "add snapshot error_string column",
+    "sql": "alter table `cloud_migration_snapshot` ADD COLUMN `error_string` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 607,
+    "migration_id": "create cloud_migration_resource table v1",
+    "sql": "CREATE TABLE IF NOT EXISTS `cloud_migration_resource` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `uid` TEXT NOT NULL\n, `resource_type` TEXT NOT NULL\n, `resource_uid` TEXT NOT NULL\n, `status` TEXT NOT NULL\n, `error_string` TEXT NULL\n, `snapshot_uid` TEXT NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 608,
+    "migration_id": "delete cloud_migration_snapshot.result column",
+    "sql": "ALTER TABLE cloud_migration_snapshot DROP COLUMN result",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 609,
+    "migration_id": "add cloud_migration_resource.name column",
+    "sql": "alter table `cloud_migration_resource` ADD COLUMN `name` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 610,
+    "migration_id": "add cloud_migration_resource.parent_name column",
+    "sql": "alter table `cloud_migration_resource` ADD COLUMN `parent_name` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 611,
+    "migration_id": "add cloud_migration_session.org_id column",
+    "sql": "alter table `cloud_migration_session` ADD COLUMN `org_id` INTEGER NOT NULL DEFAULT 1 ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 612,
+    "migration_id": "add cloud_migration_resource.error_code column",
+    "sql": "alter table `cloud_migration_resource` ADD COLUMN `error_code` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 613,
+    "migration_id": "increase resource_uid column length",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 614,
+    "migration_id": "alter kv_store.value to longtext",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 615,
+    "migration_id": "add notification_settings column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `notification_settings` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 616,
+    "migration_id": "add notification_settings column to alert_rule_version table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `notification_settings` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 617,
+    "migration_id": "removing scope from alert.instances:read action migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 618,
+    "migration_id": "managed folder permissions alerting silences actions migration",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 619,
+    "migration_id": "add record column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `record` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 620,
+    "migration_id": "add record column to alert_rule_version table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `record` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 621,
+    "migration_id": "add resolved_at column to alert_instance table",
+    "sql": "alter table `alert_instance` ADD COLUMN `resolved_at` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 622,
+    "migration_id": "add last_sent_at column to alert_instance table",
+    "sql": "alter table `alert_instance` ADD COLUMN `last_sent_at` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 623,
+    "migration_id": "Enable traceQL streaming for all Tempo datasources",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 624,
+    "migration_id": "Add scope to alert.notifications.receivers:read and alert.notifications.receivers.secrets:read",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 625,
+    "migration_id": "add metadata column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `metadata` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 626,
+    "migration_id": "add metadata column to alert_rule_version table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `metadata` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 627,
+    "migration_id": "delete orphaned service account permissions",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 628,
+    "migration_id": "adding action set permissions",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 629,
+    "migration_id": "create user_external_session table",
+    "sql": "CREATE TABLE IF NOT EXISTS `user_external_session` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `user_auth_id` INTEGER NOT NULL\n, `user_id` INTEGER NOT NULL\n, `auth_module` TEXT NOT NULL\n, `access_token` TEXT NULL\n, `id_token` TEXT NULL\n, `refresh_token` TEXT NULL\n, `session_id` TEXT NULL\n, `session_id_hash` TEXT NULL\n, `name_id` TEXT NULL\n, `name_id_hash` TEXT NULL\n, `expires_at` DATETIME NULL\n, `created_at` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 630,
+    "migration_id": "increase name_id column length to 1024",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 631,
+    "migration_id": "increase session_id column length to 1024",
+    "sql": "SELECT 0;",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 632,
+    "migration_id": "remove scope from alert.notifications.receivers:create",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 633,
+    "migration_id": "add created_by column to alert_rule_version table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `created_by` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 634,
+    "migration_id": "add updated_by column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `updated_by` TEXT NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 635,
+    "migration_id": "add alert_rule_state table",
+    "sql": "CREATE TABLE IF NOT EXISTS `alert_rule_state` (\n`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL\n, `org_id` INTEGER NOT NULL\n, `rule_uid` TEXT NOT NULL\n, `data` BLOB NOT NULL\n, `updated_at` DATETIME NOT NULL\n);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 636,
+    "migration_id": "add index to alert_rule_state on org_id and rule_uid columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_state_org_id_rule_uid` ON `alert_rule_state` (`org_id`,`rule_uid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 637,
+    "migration_id": "add guid column to alert_rule table",
+    "sql": "alter table `alert_rule` ADD COLUMN `guid` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 638,
+    "migration_id": "add rule_guid column to alert_rule_version table",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `rule_guid` TEXT NOT NULL DEFAULT '' ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 639,
+    "migration_id": "drop index in alert_rule_version table on rule_org_id, rule_uid and version columns",
+    "sql": "DROP INDEX `UQE_alert_rule_version_rule_org_id_rule_uid_version`",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 640,
+    "migration_id": "populate rule guid in alert rule table",
+    "sql": "code migration",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 641,
+    "migration_id": "add index in alert_rule_version table on rule_org_id, rule_uid, rule_guid and version columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_version_rule_org_id_rule_uid_rule_guid_version` ON `alert_rule_version` (`rule_org_id`,`rule_uid`,`rule_guid`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 642,
+    "migration_id": "add index in alert_rule_version table on rule_guid and version columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_version_rule_guid_version` ON `alert_rule_version` (`rule_guid`,`version`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 643,
+    "migration_id": "add index in alert_rule table on guid columns",
+    "sql": "CREATE UNIQUE INDEX `UQE_alert_rule_guid` ON `alert_rule` (`guid`);",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 644,
+    "migration_id": "add missing_series_evals_to_resolve column to alert_rule",
+    "sql": "alter table `alert_rule` ADD COLUMN `missing_series_evals_to_resolve` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  },
+  {
+    "id": 645,
+    "migration_id": "add missing_series_evals_to_resolve column to alert_rule_version",
+    "sql": "alter table `alert_rule_version` ADD COLUMN `missing_series_evals_to_resolve` INTEGER NULL ",
+    "success": 1,
+    "error": "",
+    "timestamp": "2025-03-15 19:46:36"
+  }
+]

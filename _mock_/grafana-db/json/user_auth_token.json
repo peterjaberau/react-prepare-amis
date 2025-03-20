@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "auth_token": "1e82ae1daabe0d18b4b44b03523e9166d4faef9dfa70cd935748c7c0f724e74d",
+    "prev_auth_token": "2ab97f840e2b368cce6b4804f3a5869a38af7dc118c57db0689c7a63c0316c84",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "client_ip": "::1",
+    "auth_token_seen": 0,
+    "seen_at": 0,
+    "rotated_at": 1742368803,
+    "created_at": 1742068054,
+    "updated_at": 1742068054,
+    "revoked_at": 0,
+    "external_session_id": 0
+  }
+]
