@@ -1,4 +1,4 @@
-import { matchPath, useLocation, useParams } from 'react-router-dom';
+import { matchPath, useLocation, useParams } from 'react-router';
 import { UrlQueryMap, locationUtil, urlUtil } from '@data/index';
 import { locationSearchToObject } from '@runtime/index';
 import { SceneRouteMatch } from './types';

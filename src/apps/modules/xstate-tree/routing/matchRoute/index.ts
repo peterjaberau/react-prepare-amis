@@ -1,1 +1,0 @@
-export { matchRoute } from "./matchRoute";

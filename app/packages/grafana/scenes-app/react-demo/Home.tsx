@@ -1,7 +1,7 @@
 import { SceneContextProvider, CustomVariable } from '@scenes-react/index';
 import { Stack, TextLink } from '@grafana-ui/index';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { PageWrapper } from './PageWrapper';
 import { DynamicQueriesPage } from './DynamicQueriesPage';

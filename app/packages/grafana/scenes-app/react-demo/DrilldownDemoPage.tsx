@@ -4,7 +4,7 @@ import React from 'react';
 import { DATASOURCE_REF } from '../constants';
 import { PageWrapper } from './PageWrapper';
 import { DemoVizLayout, urlBase } from './utils';
-import { Route, Routes, useParams } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router';
 import { PlainGraphWithRandomWalk } from './PlainGraphWithRandomWalk';
 import { DemoSubTitle } from '../pages/DemoSubTitle';
 

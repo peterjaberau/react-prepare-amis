@@ -1,7 +1,7 @@
 import { NavModelItem, UrlQueryMap, urlUtil } from '@data/index';
 import { locationSearchToObject, locationService } from '@runtime/index';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import { useTimeRange, useVariables } from '../hooks/hooks';
 
 /**

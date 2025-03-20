@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 
 import { UrlQueryMap, urlUtil } from '@data/index';
 import { locationSearchToObject } from '@runtime/index';

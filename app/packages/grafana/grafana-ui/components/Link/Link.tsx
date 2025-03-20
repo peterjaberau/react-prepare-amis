@@ -1,5 +1,5 @@
 import { AnchorHTMLAttributes, forwardRef } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router';
 
 import { locationUtil, textUtil } from '@data/index';
 
