@@ -4,12 +4,6 @@ export default [
   index("routes/index.tsx"),
   route("*?", "routes/catchall.tsx"),
 
-  layout("routes/app.tsx", [
-    layout("routes/home.tsx", []),
-
-  ]),
-
-
   layout("routes/routes.tsx", [
 
     // all dashboards

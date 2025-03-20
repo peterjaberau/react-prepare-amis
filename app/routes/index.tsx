@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import { config } from "~/core/config";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -7,6 +8,17 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 
-export default function Index() {
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+
+
+    return config;
+}
+
+
+export default function Index({ loaderData }: Route.ComponentProps) {
+
+    const config = loaderData;
+    console.log("config", config);
+
     return <><div>Welcome Index</div></>;
 }
