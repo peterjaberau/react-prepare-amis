@@ -8,8 +8,8 @@ import {
   getTimeZone,
 } from '@data/index';
 import { usePluginLinks } from '@runtime/index';
-import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
-import { useSelector } from '@grafana-module/app/types';
+import { getPanelStateForModel } from '~/features/panel/state/selectors';
+import { useSelector } from '~/types';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { PanelModel } from '../../state/PanelModel';

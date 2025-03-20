@@ -4,7 +4,7 @@ import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2, PanelPluginMeta, SelectableValue } from '@data/index';
 import { useStyles2, VerticalGroup, FilterInput } from '@grafana-ui/index';
-import { FolderInfo } from '@grafana-module/app/types';
+import { FolderInfo } from '~/types';
 
 import { FolderFilter } from '../../../../core/components/FolderFilter/FolderFilter';
 import { PanelTypeFilter } from '../../../../core/components/PanelTypeFilter/PanelTypeFilter';

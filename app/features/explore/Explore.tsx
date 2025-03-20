@@ -29,9 +29,9 @@ import {
   withTheme2,
 } from '@grafana-ui/index';
 import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR } from '@grafana-ui/components/Table/types';
-import { supportedFeatures } from '@grafana-module/app/core/history/richHistoryStorageProvider';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
-import { StoreState } from '@grafana-module/app/types';
+import { supportedFeatures } from '~/core/history/richHistoryStorageProvider';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
+import { StoreState } from '~/types';
 
 import { getTimeZone } from '../profile/state/selectors';
 

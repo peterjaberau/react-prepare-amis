@@ -4,7 +4,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps } from '@scenes/index';
 import { Alert, ClipboardButton, Divider, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { getDashboardSceneFor } from '../../utils/utils';
 import ShareInternallyConfiguration from '../ShareInternallyConfiguration';

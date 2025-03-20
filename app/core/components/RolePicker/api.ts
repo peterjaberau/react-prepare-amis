@@ -1,5 +1,5 @@
 import { getBackendSrv, isFetchError } from '@runtime/index';
-import { Role } from '@grafana-module/app/types';
+import { Role } from '~/types';
 
 import { addDisplayNameForFixedRole } from './utils';
 

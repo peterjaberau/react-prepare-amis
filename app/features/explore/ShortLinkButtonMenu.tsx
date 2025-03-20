@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { IconName } from '@data/index';
 import { reportInteraction, config } from '@runtime/index';
 import { ToolbarButton, Dropdown, Menu, MenuGroup, ButtonGroup } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { copyStringToClipboard } from '@grafana-module/app/core/utils/explore';
-import { createAndCopyShortLink } from '@grafana-module/app/core/utils/shortLinks';
-import { useSelector } from '@grafana-module/app/types';
+import { t, Trans } from '~/core/internationalization';
+import { copyStringToClipboard } from '~/core/utils/explore';
+import { createAndCopyShortLink } from '~/core/utils/shortLinks';
+import { useSelector } from '~/types';
 
 import { selectPanes } from './state/selectors';
 import { constructAbsoluteUrl } from './utils/links';

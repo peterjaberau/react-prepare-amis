@@ -4,7 +4,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps } from '@scenes/index';
 import { Alert, ClipboardButton, Divider, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import ShareInternallyConfiguration from '../../ShareInternallyConfiguration';
 import { ShareLinkTab, ShareLinkTabState } from '../../ShareLinkTab';

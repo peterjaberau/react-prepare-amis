@@ -16,8 +16,8 @@ import { FlameGraph } from '@flamegraph/index';
 import { TraceToProfilesOptions } from '@o11y-ds-frontend/index';
 import { config, DataSourceWithBackend, getTemplateSrv } from '@runtime/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
-import { Query } from '@grafana-module/app/plugins/datasource/grafana-pyroscope-datasource/types';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
+import { Query } from '~/plugins/datasource/grafana-pyroscope-datasource/types';
 
 import {
   defaultProfilingKeys,

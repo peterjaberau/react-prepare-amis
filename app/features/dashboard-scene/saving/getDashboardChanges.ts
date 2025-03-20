@@ -8,9 +8,9 @@ import {
   DashboardV2Spec,
   VariableKind,
 } from '@schema/schema/dashboard/v2alpha0/types';
-import { ResponseTransformers } from '@grafana-module/app/features/dashboard/api/ResponseTransformers';
-import { isDashboardV2Spec } from '@grafana-module/app/features/dashboard/api/utils';
-import { DashboardDataDTO, DashboardDTO } from '@grafana-module/app/types';
+import { ResponseTransformers } from '~/features/dashboard/api/ResponseTransformers';
+import { isDashboardV2Spec } from '~/features/dashboard/api/utils';
+import { DashboardDataDTO, DashboardDTO } from '~/types';
 
 import { jsonDiff } from '../settings/version-history/utils';
 

@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Badge, Button, Dropdown, Icon, Menu, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { MetaText } from '../../components/MetaText';
 import MoreButton from '../../components/MoreButton';

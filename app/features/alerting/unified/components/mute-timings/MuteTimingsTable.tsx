@@ -3,14 +3,14 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Alert, Button, LinkButton, LoadingPlaceholder, Stack, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { MuteTimingActionsButtons } from '@grafana-module/app/features/alerting/unified/components/mute-timings/MuteTimingActionsButtons';
+import { Trans, t } from '~/core/internationalization';
+import { MuteTimingActionsButtons } from '~/features/alerting/unified/components/mute-timings/MuteTimingActionsButtons';
 import {
   ALL_MUTE_TIMINGS,
   useExportMuteTimingsDrawer,
-} from '@grafana-module/app/features/alerting/unified/components/mute-timings/useExportMuteTimingsDrawer';
-import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
-import { PROVENANCE_ANNOTATION } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
+} from '~/features/alerting/unified/components/mute-timings/useExportMuteTimingsDrawer';
+import { useAlertmanager } from '~/features/alerting/unified/state/AlertmanagerContext';
+import { PROVENANCE_ANNOTATION } from '~/features/alerting/unified/utils/k8s/constants';
 
 import { Authorize } from '../../components/Authorize';
 import { AlertmanagerAction, useAlertmanagerAbilities, useAlertmanagerAbility } from '../../hooks/useAbilities';

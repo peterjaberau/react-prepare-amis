@@ -2,12 +2,12 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { EmptyState, useStyles2 } from '@grafana-ui/index';
-import { usePinnedItems } from '@grafana-module/app/core/components/AppChrome/MegaMenu/hooks';
-import { findByUrl } from '@grafana-module/app/core/components/AppChrome/MegaMenu/utils';
-import { NavLandingPageCard } from '@grafana-module/app/core/components/NavLandingPage/NavLandingPageCard';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { useSelector } from '@grafana-module/app/types';
+import { usePinnedItems } from '~/core/components/AppChrome/MegaMenu/hooks';
+import { findByUrl } from '~/core/components/AppChrome/MegaMenu/utils';
+import { NavLandingPageCard } from '~/core/components/NavLandingPage/NavLandingPageCard';
+import { Page } from '~/core/components/Page/Page';
+import { t, Trans } from '~/core/internationalization';
+import { useSelector } from '~/types';
 
 export function BookmarksPage() {
   const styles = useStyles2(getStyles);

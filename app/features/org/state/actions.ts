@@ -1,6 +1,6 @@
 import { getBackendSrv } from '@runtime/index';
-import { updateConfigurationSubtitle } from '@grafana-module/app/core/actions';
-import { ThunkResult } from '@grafana-module/app/types';
+import { updateConfigurationSubtitle } from '~/core/actions';
+import { ThunkResult } from '~/types';
 
 import { organizationLoaded, userOrganizationsLoaded } from './reducers';
 

@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { addListener, ExploreQueryParams, useDispatch, useSelector } from '@grafana-module/app/types';
+import { useGrafana } from '~/core/context/GrafanaContext';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { addListener, ExploreQueryParams, useDispatch, useSelector } from '~/types';
 
 import { selectPanes } from '../../state/selectors';
 

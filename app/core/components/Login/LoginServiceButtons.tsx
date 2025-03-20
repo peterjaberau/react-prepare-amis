@@ -3,8 +3,8 @@ import { pickBy } from 'lodash';
 
 import { GrafanaTheme2, DEFAULT_SAML_NAME } from '@data/index';
 import { Icon, IconName, LinkButton, Stack, useStyles2, useTheme2 } from '@grafana-ui/index';
-import config from '@grafana-module/app/core/config';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import config from '~/core/config';
+import { Trans } from '~/core/internationalization';
 
 export interface LoginService {
   bgColor: string;

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Navigate } from 'react-router';
 
 import { Button, Modal } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { Prompt } from './Prompt';
 

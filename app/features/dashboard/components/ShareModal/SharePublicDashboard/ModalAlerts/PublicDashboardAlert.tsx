@@ -1,6 +1,6 @@
 import { Alert, Button, Stack } from '@grafana-ui/index';
 
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 const PUBLIC_DASHBOARD_URL =
   'https://grafana.com/docs/grafana/next/dashboards/share-dashboards-panels/shared-dashboards';

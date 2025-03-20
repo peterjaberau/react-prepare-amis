@@ -1,9 +1,9 @@
 import { PropsWithChildren, createContext, useContext } from 'react';
 
-import { AddedComponentsRegistry } from '@grafana-module/app/features/plugins/extensions/registry/AddedComponentsRegistry';
-import { AddedFunctionsRegistry } from '@grafana-module/app/features/plugins/extensions/registry/AddedFunctionsRegistry';
-import { AddedLinksRegistry } from '@grafana-module/app/features/plugins/extensions/registry/AddedLinksRegistry';
-import { ExposedComponentsRegistry } from '@grafana-module/app/features/plugins/extensions/registry/ExposedComponentsRegistry';
+import { AddedComponentsRegistry } from '~/features/plugins/extensions/registry/AddedComponentsRegistry';
+import { AddedFunctionsRegistry } from '~/features/plugins/extensions/registry/AddedFunctionsRegistry';
+import { AddedLinksRegistry } from '~/features/plugins/extensions/registry/AddedLinksRegistry';
+import { ExposedComponentsRegistry } from '~/features/plugins/extensions/registry/ExposedComponentsRegistry';
 
 import { PluginExtensionRegistries } from './registry/types';
 

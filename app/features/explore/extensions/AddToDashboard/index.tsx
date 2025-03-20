@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react';
 
 import { Modal, ToolbarButton } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { useSelector } from '@grafana-module/app/types';
+import { t } from '~/core/internationalization';
+import { useSelector } from '~/types';
 
 import { getExploreItemSelector } from '../../state/selectors';
 

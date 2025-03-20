@@ -1,13 +1,13 @@
-import { contextSrv } from '@grafana-module/app/core/core';
-import { EmailSharingPricingAlert } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/EmailSharingPricingAlert';
-import { UnsupportedDataSourcesAlert } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/UnsupportedDataSourcesAlert';
-import { UnsupportedTemplateVariablesAlert } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/UnsupportedTemplateVariablesAlert';
+import { contextSrv } from '~/core/core';
+import { EmailSharingPricingAlert } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/EmailSharingPricingAlert';
+import { UnsupportedDataSourcesAlert } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/UnsupportedDataSourcesAlert';
+import { UnsupportedTemplateVariablesAlert } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/UnsupportedTemplateVariablesAlert';
 import {
   isEmailSharingEnabled,
   PublicDashboard,
   PublicDashboardShareType,
-} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { AccessControlAction } from '@grafana-module/app/types';
+} from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { AccessControlAction } from '~/types';
 
 import { NoUpsertPermissionsAlert } from '../../../../dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/NoUpsertPermissionsAlert';
 import { PublicDashboardAlert } from '../../../../dashboard/components/ShareModal/SharePublicDashboard/ModalAlerts/PublicDashboardAlert';

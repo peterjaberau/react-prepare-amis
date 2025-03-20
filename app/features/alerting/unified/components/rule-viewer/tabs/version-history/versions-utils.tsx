@@ -1,13 +1,13 @@
 import { IconName } from '@data/index';
 import { BadgeColor } from '@grafana-ui/index';
-import { RevisionModel } from '@grafana-module/app/core/components/VersionHistory/VersionHistoryComparison';
-import { t } from '@grafana-module/app/core/internationalization';
+import { RevisionModel } from '~/core/components/VersionHistory/VersionHistoryComparison';
+import { t } from '~/core/internationalization';
 import {
   GrafanaAlertRuleDTOField,
   GrafanaRuleDefinition,
   RulerGrafanaRuleDTO,
   TopLevelGrafanaRuleDTOField,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { grafanaAlertPropertiesToIgnore } from '../AlertVersionHistory';
 

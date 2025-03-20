@@ -3,8 +3,8 @@ import { ReactElement, useMemo, useState } from 'react';
 import { PluginExtensionLink, PluginExtensionPoints } from '@data/index';
 import { usePluginLinks } from '@runtime/index';
 import { Dropdown, IconButton } from '@grafana-ui/index';
-import { ConfirmNavigationModal } from '@grafana-module/app/features/explore/extensions/ConfirmNavigationModal';
-import { Alert, CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { ConfirmNavigationModal } from '~/features/explore/extensions/ConfirmNavigationModal';
+import { Alert, CombinedRule } from '~/types/unified-alerting';
 
 import { AlertExtensionPointMenu } from './AlertInstanceExtensionPointMenu';
 

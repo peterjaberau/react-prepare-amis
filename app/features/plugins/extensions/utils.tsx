@@ -20,9 +20,9 @@ import {
 } from '@data/index';
 import { reportInteraction, config, AppPluginConfig } from '@runtime/index';
 import { Modal } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { getPluginSettings } from '@grafana-module/app/features/plugins/pluginSettings';
-import { ShowModalReactEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { getPluginSettings } from '~/features/plugins/pluginSettings';
+import { ShowModalReactEvent } from '~/types/events';
 
 import { ExtensionsLog, log } from './logs/log';
 import { AddedLinkRegistryItem } from './registry/AddedLinksRegistry';

@@ -3,8 +3,8 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, SceneObject, SceneObjectState } from '@scenes/index';
 import { Drawer, useStyles2 } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { ShowModalReactEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { ShowModalReactEvent } from '~/types/events';
 
 export type SceneDrawerProps = {
   scene: SceneObject;

@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneObject, VizPanel } from '@scenes/index';
 import { Box, Icon, IconButton, Stack, Text, useElementSelection, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { DashboardGridItem } from '../scene/layout-default/DashboardGridItem';
 import { isInCloneChain } from '../utils/clone';

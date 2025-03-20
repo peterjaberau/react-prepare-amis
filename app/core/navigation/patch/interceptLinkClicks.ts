@@ -1,6 +1,6 @@
 import { locationUtil, urlUtil } from '@data/index';
 import { locationService, navigationLogger } from '@runtime/index';
-import { config } from '@grafana-module/app/core/config';
+import { config } from '~/core/config';
 
 export function interceptLinkClicks(e: MouseEvent) {
   const anchor = e.target instanceof Element && getParentAnchor(e.target);

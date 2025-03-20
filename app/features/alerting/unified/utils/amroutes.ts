@@ -1,5 +1,5 @@
 import { SelectableValue } from '@data/index';
-import { MatcherOperator, ObjectMatcher, Route, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { MatcherOperator, ObjectMatcher, Route, RouteWithID } from '~/plugins/datasource/alertmanager/types';
 
 import { FormAmRoute } from '../types/amroutes';
 import { MatcherFieldValue } from '../types/silence-form';

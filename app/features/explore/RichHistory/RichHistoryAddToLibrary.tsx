@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { DataQuery } from '@schema/index';
 import { Button } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { useQueryLibraryContext } from '../QueryLibrary/QueryLibraryContext';
 

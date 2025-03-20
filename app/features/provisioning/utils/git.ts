@@ -1,4 +1,4 @@
-import { RepositorySpec } from '@grafana-module/app/api/clients/provisioning';
+import { RepositorySpec } from '~/api/clients/provisioning';
 
 /**
  * Validates a Git branch name according to the following rules:

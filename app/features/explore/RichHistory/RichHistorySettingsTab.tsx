@@ -3,11 +3,11 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { getAppEvents } from '@runtime/index';
 import { useStyles2, Select, Button, Field, InlineField, InlineSwitch, Alert } from '@grafana-ui/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
-import { MAX_HISTORY_ITEMS } from '@grafana-module/app/core/history/RichHistoryLocalStorage';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { dispatch } from '@grafana-module/app/store/store';
+import { notifyApp } from '~/core/actions';
+import { createSuccessNotification } from '~/core/copy/appNotification';
+import { MAX_HISTORY_ITEMS } from '~/core/history/RichHistoryLocalStorage';
+import { Trans, t } from '~/core/internationalization';
+import { dispatch } from '~/store/store';
 
 import { supportedFeatures } from '../../../core/history/richHistoryStorageProvider';
 import { ShowConfirmModalEvent } from '../../../types/events';

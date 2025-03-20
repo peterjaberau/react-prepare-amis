@@ -5,11 +5,11 @@ import ReactGridLayout, { ItemCallback } from 'react-grid-layout';
 import { Subscription } from 'rxjs';
 
 import { config } from '@runtime/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT } from '@grafana-module/app/core/constants';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { VariablesChanged } from '@grafana-module/app/features/variables/types';
-import { DashboardPanelsChangedEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN, GRID_COLUMN_COUNT } from '~/core/constants';
+import { contextSrv } from '~/core/services/context_srv';
+import { VariablesChanged } from '~/features/variables/types';
+import { DashboardPanelsChangedEvent } from '~/types/events';
 
 import { AddLibraryPanelWidget } from '../components/AddLibraryPanelWidget';
 import { DashboardRow } from '../components/DashboardRow';

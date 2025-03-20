@@ -2,8 +2,8 @@ import { difference, groupBy, take, trim, upperFirst } from 'lodash';
 import { ReactNode } from 'react';
 
 import { config } from '@runtime/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { canAdminEntity, shouldUseK8sApi } from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
+import { t } from '~/core/internationalization';
+import { canAdminEntity, shouldUseK8sApi } from '~/features/alerting/unified/utils/k8s/utils';
 import {
   AlertManagerCortexConfig,
   GrafanaManagedContactPoint,
@@ -11,8 +11,8 @@ import {
   MatcherOperator,
   Receiver,
   Route,
-} from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { NotifierDTO, NotifierStatus, ReceiversStateDTO } from '@grafana-module/app/types';
+} from '~/plugins/datasource/alertmanager/types';
+import { NotifierDTO, NotifierStatus, ReceiversStateDTO } from '~/types';
 
 import { OnCallIntegrationDTO } from '../../api/onCallApi';
 import { computeInheritedTree } from '../../utils/notification-policies';

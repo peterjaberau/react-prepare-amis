@@ -5,11 +5,11 @@ import { FieldErrors, FormProvider, SubmitErrorHandler, useForm } from 'react-ho
 import { GrafanaTheme2 } from '@data/index';
 import { isFetchError } from '@runtime/index';
 import { Alert, Button, Field, Input, LinkButton, Stack, useStyles2 } from '@grafana-ui/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { useCleanup } from '@grafana-module/app/core/hooks/useCleanup';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { useValidateContactPoint } from '@grafana-module/app/features/alerting/unified/components/contact-points/useContactPoints';
-import { ManagePermissions } from '@grafana-module/app/features/alerting/unified/components/permissions/ManagePermissions';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { useCleanup } from '~/core/hooks/useCleanup';
+import { Trans } from '~/core/internationalization';
+import { useValidateContactPoint } from '~/features/alerting/unified/components/contact-points/useContactPoints';
+import { ManagePermissions } from '~/features/alerting/unified/components/permissions/ManagePermissions';
 
 import { getMessageFromError } from '../../../../../../core/utils/errors';
 import { logError } from '../../../Analytics';

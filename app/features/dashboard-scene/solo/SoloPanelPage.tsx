@@ -6,12 +6,12 @@ import { useParams } from 'react-router';
 import { GrafanaTheme2 } from '@data/index';
 import { UrlSyncContextProvider } from '@scenes/index';
 import { Alert, Box, Spinner, useStyles2 } from '@grafana-ui/index';
-import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
-import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
-import { t } from '@grafana-module/app/core/internationalization';
-import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
-import { DashboardPageRouteParams } from '@grafana-module/app/features/dashboard/containers/types';
-import { DashboardRoutes } from '@grafana-module/app/types';
+import PageLoader from '~/core/components/PageLoader/PageLoader';
+import { EntityNotFound } from '~/core/components/PageNotFound/EntityNotFound';
+import { t } from '~/core/internationalization';
+import { GrafanaRouteComponentProps } from '~/core/navigation/types';
+import { DashboardPageRouteParams } from '~/features/dashboard/containers/types';
+import { DashboardRoutes } from '~/types';
 
 import { getDashboardScenePageStateManager } from '../pages/DashboardScenePageStateManager';
 import { DashboardScene } from '../scene/DashboardScene';

@@ -1,7 +1,7 @@
 import { Store } from 'redux';
 
-import { initialKeyedVariablesState } from '@grafana-module/app/features/variables/state/keyedVariablesReducer';
-import { StoreState } from '@grafana-module/app/types';
+import { initialKeyedVariablesState } from '~/features/variables/state/keyedVariablesReducer';
+import { StoreState } from '~/types';
 
 export let store: Store<StoreState>;
 

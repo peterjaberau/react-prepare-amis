@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 
 import { Dropdown, ToolbarButton } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types/accessControl';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types/accessControl';
 
 import { Trans } from '../../../../core/internationalization';
 import { ToolbarExtensionPointMenu } from '../ToolbarExtensionPointMenu';

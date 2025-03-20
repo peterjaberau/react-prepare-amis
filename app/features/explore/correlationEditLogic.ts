@@ -1,6 +1,6 @@
 import { template } from 'lodash';
 
-import { CORRELATION_EDITOR_POST_CONFIRM_ACTION } from '@grafana-module/app/types';
+import { CORRELATION_EDITOR_POST_CONFIRM_ACTION } from '~/types';
 
 enum CONSEQUENCES {
   SOURCE_TARGET_CHANGE = 'cause the query in the right pane to be re-ran and links added to that data',

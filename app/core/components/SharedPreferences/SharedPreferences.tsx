@@ -20,11 +20,11 @@ import {
   WeekStart,
   isWeekStart,
 } from '@grafana-ui/index';
-import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { LANGUAGES, PSEUDO_LOCALE } from '@grafana-module/app/core/internationalization/constants';
-import { PreferencesService } from '@grafana-module/app/core/services/PreferencesService';
-import { changeTheme } from '@grafana-module/app/core/services/theme';
+import { DashboardPicker } from '~/core/components/Select/DashboardPicker';
+import { t, Trans } from '~/core/internationalization';
+import { LANGUAGES, PSEUDO_LOCALE } from '~/core/internationalization/constants';
+import { PreferencesService } from '~/core/services/PreferencesService';
+import { changeTheme } from '~/core/services/theme';
 export interface Props {
   resourceUri: string;
   disabled?: boolean;

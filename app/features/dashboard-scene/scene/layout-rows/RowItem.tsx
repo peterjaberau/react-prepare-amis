@@ -1,6 +1,6 @@
 import { sceneGraph, SceneObject, SceneObjectBase, SceneObjectState, VariableDependencyConfig } from '@scenes/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { t } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { ConditionalRendering } from '../../conditional-rendering/ConditionalRendering';
 import { getDefaultVizPanel } from '../../utils/utils';

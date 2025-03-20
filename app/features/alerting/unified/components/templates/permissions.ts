@@ -1,4 +1,4 @@
-import { AccessControlAction } from '@grafana-module/app/types';
+import { AccessControlAction } from '~/types';
 
 /**
  * List of all permissions that allow templates read/write functionality

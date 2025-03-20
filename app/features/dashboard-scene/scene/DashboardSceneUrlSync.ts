@@ -3,9 +3,9 @@ import { Unsubscribable } from 'rxjs';
 import { AppEvents } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { SceneObjectUrlSyncHandler, SceneObjectUrlValues, VizPanel } from '@scenes/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { KioskMode } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { contextSrv } from '~/core/core';
+import { KioskMode } from '~/types';
 
 import { PanelInspectDrawer } from '../inspect/PanelInspectDrawer';
 import { buildPanelEditScene } from '../panel-edit/PanelEditor';

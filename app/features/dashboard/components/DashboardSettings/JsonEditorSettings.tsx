@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, CodeEditor, useStyles2 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { dashboardWatcher } from '@grafana-module/app/features/live/dashboard/dashboardWatcher';
+import { Page } from '~/core/components/Page/Page';
+import { Trans } from '~/core/internationalization';
+import { dashboardWatcher } from '~/features/live/dashboard/dashboardWatcher';
 
 import { getDashboardSrv } from '../../services/DashboardSrv';
 

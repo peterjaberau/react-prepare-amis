@@ -1,4 +1,4 @@
-import { RepositorySpec } from '@grafana-module/app/api/clients/provisioning';
+import { RepositorySpec } from '~/api/clients/provisioning';
 
 import { RepositoryFormData } from '../types';
 

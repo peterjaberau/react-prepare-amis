@@ -4,8 +4,8 @@ import { ConnectedProps, connect } from 'react-redux';
 import { config, reportInteraction } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { Button, Dropdown, Menu, ToolbarButton } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { useSelector } from '@grafana-module/app/types';
+import { t } from '~/core/internationalization';
+import { useSelector } from '~/types';
 
 import { changeDatasource } from './state/datasource';
 import { setQueries } from './state/query';

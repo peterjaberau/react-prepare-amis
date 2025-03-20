@@ -13,13 +13,13 @@ import {
   RuleGroup,
   RuleNamespace,
   RulesSource,
-} from '@grafana-module/app/types/unified-alerting';
+} from '~/types/unified-alerting';
 import {
   PromAlertingRuleState,
   RulerRuleDTO,
   RulerRuleGroupDTO,
   RulerRulesConfigDTO,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../api/alertRuleApi';
 import { GRAFANA_RULER_CONFIG } from '../api/featureDiscoveryApi';

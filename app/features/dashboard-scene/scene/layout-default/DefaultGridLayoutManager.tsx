@@ -11,9 +11,9 @@ import {
   SceneGridItemLike,
   useSceneObjectState,
 } from '@scenes/index';
-import { GRID_COLUMN_COUNT } from '@grafana-module/app/core/constants';
-import { t } from '@grafana-module/app/core/internationalization';
-import DashboardEmpty from '@grafana-module/app/features/dashboard/dashgrid/DashboardEmpty';
+import { GRID_COLUMN_COUNT } from '~/core/constants';
+import { t } from '~/core/internationalization';
+import DashboardEmpty from '~/features/dashboard/dashgrid/DashboardEmpty';
 
 import { NewObjectAddedToCanvasEvent, ObjectRemovedFromCanvasEvent } from '../../edit-pane/shared';
 import { isClonedKey, joinCloneKeys } from '../../utils/clone';

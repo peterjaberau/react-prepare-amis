@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, sceneGraph, VariableDependencyConfig } from '@scenes/index';
 import { ConditionalRenderingVariableKind } from '@schema/schema/dashboard/v2alpha0/types';
 import { Combobox, ComboboxOption, Field, Input, Stack, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ConditionHeader } from './ConditionHeader';
 import { ConditionalRenderingBase, ConditionalRenderingBaseState } from './ConditionalRenderingBase';

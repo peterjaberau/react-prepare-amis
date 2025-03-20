@@ -1,5 +1,5 @@
 import { SceneGridItemLike, SceneGridRow, SceneObjectBase, SceneObjectState, VizPanel } from '@scenes/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { NewObjectAddedToCanvasEvent, ObjectRemovedFromCanvasEvent } from '../../edit-pane/shared';
 import { isClonedKey } from '../../utils/clone';

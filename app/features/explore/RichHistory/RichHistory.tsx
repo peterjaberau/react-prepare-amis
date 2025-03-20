@@ -3,15 +3,15 @@ import { useState, useEffect } from 'react';
 
 import { SelectableValue } from '@data/index';
 import { TabbedContainer, TabConfig } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 import {
   SortOrder,
   RichHistorySearchFilters,
   RichHistorySettings,
   createDatasourcesList,
-} from '@grafana-module/app/core/utils/richHistory';
-import { useSelector } from '@grafana-module/app/types';
-import { RichHistoryQuery } from '@grafana-module/app/types/explore';
+} from '~/core/utils/richHistory';
+import { useSelector } from '~/types';
+import { RichHistoryQuery } from '~/types/explore';
 
 import { supportedFeatures } from '../../../core/history/richHistoryStorageProvider';
 import { Tabs } from '../QueriesDrawer/QueriesDrawerContext';

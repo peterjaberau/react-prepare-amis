@@ -3,7 +3,7 @@ import { Dictionary } from 'lodash';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Checkbox, Icon, RadioButtonDot, ScrollContainer, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ScopesTree } from './ScopesTree';
 import { Node, NodeReason, OnNodeSelectToggle, OnNodeUpdate, TreeScope } from './types';

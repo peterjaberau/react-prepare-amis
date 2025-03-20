@@ -1,10 +1,10 @@
 import { AppEvents, UrlQueryMap } from '@data/index';
 import { FetchError, getBackendSrv } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { dashboardWatcher } from '@grafana-module/app/features/live/dashboard/dashboardWatcher';
-import { DeleteDashboardResponse } from '@grafana-module/app/features/manage-dashboards/types';
-import { SaveDashboardResponseDTO, DashboardDTO } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { dashboardWatcher } from '~/features/live/dashboard/dashboardWatcher';
+import { DeleteDashboardResponse } from '~/features/manage-dashboards/types';
+import { SaveDashboardResponseDTO, DashboardDTO } from '~/types';
 
 import { SaveDashboardCommand } from '../components/SaveDashboard/types';
 

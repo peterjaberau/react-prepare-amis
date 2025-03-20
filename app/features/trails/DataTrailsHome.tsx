@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, sceneGraph, SceneObject, SceneObjectBase, SceneObjectState } from '@scenes/index';
 import { Box, Button, Icon, Stack, TextLink, useStyles2, useTheme2 } from '@grafana-ui/index';
 import { Text } from '@grafana-ui/components/Text/Text';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { DataTrail } from './DataTrail';
 import { DataTrailsBookmarks } from './DataTrailBookmarks';

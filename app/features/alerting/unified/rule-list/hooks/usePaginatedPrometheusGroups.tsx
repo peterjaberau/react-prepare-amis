@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 
-import { PromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { PromRuleGroupDTO } from '~/types/unified-alerting-dto';
 
 import { isLoading, useAsync } from '../../hooks/useAsync';
 

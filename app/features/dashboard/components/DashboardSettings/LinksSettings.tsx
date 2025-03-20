@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import { locationService } from '@runtime/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { NEW_LINK } from '@grafana-module/app/features/dashboard-scene/settings/links/utils';
+import { Page } from '~/core/components/Page/Page';
+import { NEW_LINK } from '~/features/dashboard-scene/settings/links/utils';
 
 import { LinkSettingsEdit, LinkSettingsList } from '../LinksSettings';
 

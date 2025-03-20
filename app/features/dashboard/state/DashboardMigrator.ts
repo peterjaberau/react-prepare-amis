@@ -33,8 +33,8 @@ import { getDataSourceSrv, setDataSourceSrv } from '@runtime/index';
 import { DataTransformerConfig } from '@schema/index';
 import { AxisPlacement, GraphFieldConfig } from '@grafana-ui/index';
 import { migrateTableDisplayModeToCellOptions } from '@grafana-ui/components/Table/utils';
-import { getAllOptionEditors, getAllStandardFieldConfigs } from '@grafana-module/app/core/components/OptionsUI/registry';
-import { config } from '@grafana-module/app/core/config';
+import { getAllOptionEditors, getAllStandardFieldConfigs } from '~/core/components/OptionsUI/registry';
+import { config } from '~/core/config';
 import {
   DEFAULT_PANEL_SPAN,
   DEFAULT_ROW_HEIGHT,
@@ -42,20 +42,20 @@ import {
   GRID_CELL_VMARGIN,
   GRID_COLUMN_COUNT,
   MIN_PANEL_HEIGHT,
-} from '@grafana-module/app/core/constants';
-import getFactors from '@grafana-module/app/core/utils/factors';
-import kbn from '@grafana-module/app/core/utils/kbn';
-import { DatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+} from '~/core/constants';
+import getFactors from '~/core/utils/factors';
+import kbn from '~/core/utils/kbn';
+import { DatasourceSrv } from '~/features/plugins/datasource_srv';
 import {
   RefIdTransformerOptions,
   TimeSeriesTableTransformerOptions,
-} from '@grafana-module/app/features/transformers/timeSeriesTable/timeSeriesTableTransformer';
-import { isConstant, isMulti } from '@grafana-module/app/features/variables/guard';
-import { alignCurrentWithMulti } from '@grafana-module/app/features/variables/shared/multiOptions';
-import { CloudWatchMetricsQuery, LegacyAnnotationQuery } from '@grafana-module/app/plugins/datasource/cloudwatch/types';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
-import { plugin as gaugePanelPlugin } from '@grafana-module/app/plugins/panel/gauge/module';
-import { plugin as statPanelPlugin } from '@grafana-module/app/plugins/panel/stat/module';
+} from '~/features/transformers/timeSeriesTable/timeSeriesTableTransformer';
+import { isConstant, isMulti } from '~/features/variables/guard';
+import { alignCurrentWithMulti } from '~/features/variables/shared/multiOptions';
+import { CloudWatchMetricsQuery, LegacyAnnotationQuery } from '~/plugins/datasource/cloudwatch/types';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
+import { plugin as gaugePanelPlugin } from '~/plugins/panel/gauge/module';
+import { plugin as statPanelPlugin } from '~/plugins/panel/stat/module';
 
 import {
   migrateCloudWatchQuery,

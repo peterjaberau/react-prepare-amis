@@ -3,7 +3,7 @@ import { config, getDataSourceSrv } from '@runtime/index';
 import { AdHocFiltersVariable, dataLayers, sceneGraph, sceneUtils, VizPanel } from '@scenes/index';
 import { DataSourceRef } from '@schema/index';
 import { AdHocFilterItem, PanelContext } from '@grafana-ui/index';
-import { deleteAnnotation, saveAnnotation, updateAnnotation } from '@grafana-module/app/features/annotations/api';
+import { deleteAnnotation, saveAnnotation, updateAnnotation } from '~/features/annotations/api';
 
 import { dashboardSceneGraph } from '../utils/dashboardSceneGraph';
 import { getDashboardSceneFor, getPanelIdForVizPanel, getQueryRunnerFor } from '../utils/utils';

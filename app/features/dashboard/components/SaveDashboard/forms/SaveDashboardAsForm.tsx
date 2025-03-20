@@ -2,9 +2,9 @@ import { ChangeEvent } from 'react';
 
 import { config } from '@runtime/index';
 import { Button, Input, Switch, Form, Field, InputControl, Label, TextArea, Stack } from '@grafana-ui/index';
-import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { validationSrv } from '@grafana-module/app/features/manage-dashboards/services/ValidationSrv';
+import { FolderPicker } from '~/core/components/Select/FolderPicker';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { validationSrv } from '~/features/manage-dashboards/services/ValidationSrv';
 
 import { GenAIDashDescriptionButton } from '../../GenAI/GenAIDashDescriptionButton';
 import { GenAIDashTitleButton } from '../../GenAI/GenAIDashTitleButton';

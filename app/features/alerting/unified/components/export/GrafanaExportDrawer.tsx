@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Drawer } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { RuleInspectorTabs } from '../rule-editor/RuleInspector';
 

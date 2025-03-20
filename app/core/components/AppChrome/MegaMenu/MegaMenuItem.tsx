@@ -6,7 +6,7 @@ import { useLocalStorage } from 'react-use';
 
 import { FeatureState, GrafanaTheme2, NavModelItem, toIconName } from '@data/index';
 import { useStyles2, Text, IconButton, Icon, Stack, FeatureBadge } from '@grafana-ui/index';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { useGrafana } from '~/core/context/GrafanaContext';
 
 import { Indent } from '../../Indent/Indent';
 

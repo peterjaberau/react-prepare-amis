@@ -1,8 +1,8 @@
 import { createAction, createReducer, isAnyOf } from '@reduxjs/toolkit';
 import { inRange } from 'lodash';
 
-import { EditableRuleIdentifier, GrafanaRuleIdentifier, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { PostableRuleDTO, PostableRulerRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { EditableRuleIdentifier, GrafanaRuleIdentifier, RuleIdentifier } from '~/types/unified-alerting';
+import { PostableRuleDTO, PostableRulerRuleGroupDTO } from '~/types/unified-alerting-dto';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';
 import { hashRulerRule } from '../../utils/rule-id';

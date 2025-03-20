@@ -2,12 +2,12 @@ import { PureComponent } from 'react';
 import { ConnectedProps, connect } from 'react-redux';
 
 import { Stack } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import SharedPreferences from '@grafana-module/app/core/components/SharedPreferences/SharedPreferences';
-import { appEvents, contextSrv } from '@grafana-module/app/core/core';
-import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
-import { AccessControlAction, StoreState } from '@grafana-module/app/types';
-import { ShowConfirmModalEvent } from '@grafana-module/app/types/events';
+import { Page } from '~/core/components/Page/Page';
+import SharedPreferences from '~/core/components/SharedPreferences/SharedPreferences';
+import { appEvents, contextSrv } from '~/core/core';
+import { getNavModel } from '~/core/selectors/navModel';
+import { AccessControlAction, StoreState } from '~/types';
+import { ShowConfirmModalEvent } from '~/types/events';
 
 import OrgProfile from './OrgProfile';
 import { loadOrganization, updateOrganization } from './state/actions';

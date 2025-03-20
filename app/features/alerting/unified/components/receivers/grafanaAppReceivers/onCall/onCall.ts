@@ -1,4 +1,4 @@
-import { Receiver } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Receiver } from '~/plugins/datasource/alertmanager/types';
 
 import { OnCallIntegrationDTO } from '../../../../api/onCallApi';
 

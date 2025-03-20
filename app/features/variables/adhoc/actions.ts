@@ -1,8 +1,8 @@
 import { cloneDeep } from 'lodash';
 
 import { AdHocVariableFilter, AdHocVariableModel, DataSourceRef } from '@data/index';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
-import { StoreState, ThunkResult } from '@grafana-module/app/types';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
+import { StoreState, ThunkResult } from '~/types';
 
 import { changeVariableEditorExtended } from '../editor/reducer';
 import { isAdHoc } from '../guard';

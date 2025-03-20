@@ -2,7 +2,7 @@ import { HttpResponse, http } from 'msw';
 
 import { PluginLoadingStrategy, PluginMeta } from '@data/index';
 import { config } from '@runtime/index';
-import { plugins } from '@grafana-module/app/features/alerting/unified/testSetup/plugins';
+import { plugins } from '~/features/alerting/unified/testSetup/plugins';
 
 const PLUGIN_NOT_FOUND_RESPONSE = { message: 'Plugin not found, no installed plugin with that id' };
 

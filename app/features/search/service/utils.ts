@@ -1,7 +1,7 @@
 import { DataFrameView, IconName } from '@data/index';
-import { isSharedWithMe } from '@grafana-module/app/features/browse-dashboards/components/utils';
-import { DashboardViewItemWithUIItems } from '@grafana-module/app/features/browse-dashboards/types';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
+import { isSharedWithMe } from '~/features/browse-dashboards/components/utils';
+import { DashboardViewItemWithUIItems } from '~/features/browse-dashboards/types';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
 
 import { DashboardViewItem, DashboardViewItemKind } from '../types';
 

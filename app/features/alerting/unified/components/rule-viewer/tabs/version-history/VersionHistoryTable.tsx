@@ -2,11 +2,11 @@ import { useMemo, useState } from 'react';
 
 import { dateTimeFormat, dateTimeFormatTimeAgo } from '@data/index';
 import { Badge, Button, Checkbox, Column, InteractiveTable, Stack, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { computeVersionDiff } from '@grafana-module/app/features/alerting/unified/utils/diff';
-import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans, t } from '~/core/internationalization';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { computeVersionDiff } from '~/features/alerting/unified/utils/diff';
+import { RuleIdentifier } from '~/types/unified-alerting';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '~/types/unified-alerting-dto';
 
 import { ConfirmVersionRestoreModal } from './ConfirmVersionRestoreModal';
 import { UpdatedByUser } from './UpdatedBy';

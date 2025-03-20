@@ -14,15 +14,15 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Badge, Button, Icon, Modal, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { dispatch } from '@grafana-module/app/store/store';
+import { Trans } from '~/core/internationalization';
+import { dispatch } from '~/store/store';
 import {
   CombinedRuleGroup,
   CombinedRuleNamespace,
   RuleGroupIdentifier,
   RulerDataSourceConfig,
-} from '@grafana-module/app/types/unified-alerting';
-import { RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting';
+import { RulerRuleDTO } from '~/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { useReorderRuleForRuleGroup } from '../../hooks/ruleGroup/useUpdateRuleGroup';

@@ -4,14 +4,14 @@ import { useLocation } from 'react-router';
 import { locationUtil } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import { Button, Drawer, Dropdown, Icon, Menu, MenuItem } from '@grafana-ui/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { useAppNotification } from '~/core/copy/appNotification';
 import {
   getImportPhrase,
   getNewDashboardPhrase,
   getNewFolderPhrase,
   getNewPhrase,
-} from '@grafana-module/app/features/search/tempI18nPhrases';
-import { FolderDTO } from '@grafana-module/app/types';
+} from '~/features/search/tempI18nPhrases';
+import { FolderDTO } from '~/types';
 
 import { useNewFolderMutation } from '../api/browseDashboardsAPI';
 

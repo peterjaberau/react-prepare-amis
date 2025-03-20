@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, useStyles2 } from '@grafana-ui/index';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { AlertState, AlertmanagerGroup } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { AlertState, AlertmanagerGroup } from '~/plugins/datasource/alertmanager/types';
 
 import { getFiltersFromUrlParams } from '../../utils/misc';
 

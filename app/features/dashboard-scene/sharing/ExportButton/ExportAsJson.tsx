@@ -6,10 +6,10 @@ import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps } from '@scenes/index';
 import { Button, ClipboardButton, CodeEditor, Label, Spinner, Stack, Switch, useStyles2 } from '@grafana-ui/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { dispatch } from '@grafana-module/app/store/store';
+import { notifyApp } from '~/core/actions';
+import { createSuccessNotification } from '~/core/copy/appNotification';
+import { t, Trans } from '~/core/internationalization';
+import { dispatch } from '~/store/store';
 
 import { DashboardInteractions } from '../../utils/interactions';
 import { ShareExportTab } from '../ShareExportTab';

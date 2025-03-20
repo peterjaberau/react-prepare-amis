@@ -12,10 +12,10 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { Container, ScrollContainer, TabContent, TabsBar, useStyles2 } from '@grafana-ui/index';
-import { getConfig } from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { getRulesPermissions } from '@grafana-module/app/features/alerting/unified/utils/access-control';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { getConfig } from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { getRulesPermissions } from '~/features/alerting/unified/utils/access-control';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
 
 import { PanelDataAlertingTab } from './PanelDataAlertingTab';
 import { PanelDataQueriesTab } from './PanelDataQueriesTab';

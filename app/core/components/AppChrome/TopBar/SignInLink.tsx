@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 
 import { GrafanaTheme2, locationUtil, textUtil } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 export function SignInLink() {
   const location = useLocation();

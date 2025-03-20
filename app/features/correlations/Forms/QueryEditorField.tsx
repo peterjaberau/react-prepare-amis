@@ -4,7 +4,7 @@ import { useAsync } from 'react-use';
 import { CoreApp } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Field, LoadingPlaceholder, Alert } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 interface Props {
   dsUid?: string;

@@ -3,10 +3,10 @@ import useAsync from 'react-use/lib/useAsync';
 
 import { DataSourceApi, PanelData, PanelPlugin } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { t } from '~/core/internationalization';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { InspectTab } from '~/features/inspector/types';
 
 import { supportsDataQuery } from '../PanelEditor/utils';
 

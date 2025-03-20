@@ -2,9 +2,9 @@ import { debounce } from 'lodash';
 import { FormEvent } from 'react';
 
 import { locationService } from '@runtime/index';
-import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
-import { StateManagerBase } from '@grafana-module/app/core/services/StateManagerBase';
-import store from '@grafana-module/app/core/store';
+import { TermCount } from '~/core/components/TagFilter/TagFilter';
+import { StateManagerBase } from '~/core/services/StateManagerBase';
+import store from '~/core/store';
 
 import { SEARCH_PANELS_LOCAL_STORAGE_KEY, SEARCH_SELECTED_LAYOUT, SEARCH_SELECTED_SORT } from '../constants';
 import {

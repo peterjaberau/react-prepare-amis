@@ -1,8 +1,8 @@
 import { css } from '@emotion/css';
 
 import { LinkButton, Stack } from '@grafana-ui/index';
-import { getConfig } from '@grafana-module/app/core/config';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { getConfig } from '~/core/config';
+import { Trans } from '~/core/internationalization';
 
 export const UserSignup = () => {
   const href = getConfig().verifyEmailEnabled ? `${getConfig().appSubUrl}/verify` : `${getConfig().appSubUrl}/signup`;

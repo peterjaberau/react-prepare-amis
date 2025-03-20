@@ -9,7 +9,7 @@ import {
   WithAccessControlMetadata,
 } from '@data/index';
 import { IconName } from '@grafana-ui/index';
-import { StoreState, PluginsState } from '@grafana-module/app/types';
+import { StoreState, PluginsState } from '~/types';
 
 export type PluginTypeCode = 'app' | 'panel' | 'datasource';
 

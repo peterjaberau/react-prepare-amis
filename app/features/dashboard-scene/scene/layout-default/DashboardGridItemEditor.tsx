@@ -1,10 +1,10 @@
 import { SelectableValue } from '@data/index';
 import { sceneGraph, SceneGridLayout } from '@scenes/index';
 import { RadioButtonGroup, Select } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
-import { RepeatRowSelect2 } from '@grafana-module/app/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
+import { t } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { RepeatRowSelect2 } from '~/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
 
 import { DashboardGridItem } from './DashboardGridItem';
 

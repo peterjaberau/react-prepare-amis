@@ -2,8 +2,8 @@ import { lastValueFrom } from 'rxjs';
 
 import { isObject } from '@data/index';
 import { FetchResponse, getBackendSrv } from '@runtime/index';
-import { RulerDataSourceConfig } from '@grafana-module/app/types/unified-alerting';
-import { RulerRuleGroupDTO, RulerRulesConfigDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { RulerDataSourceConfig } from '~/types/unified-alerting';
+import { RulerRuleGroupDTO, RulerRulesConfigDTO } from '~/types/unified-alerting-dto';
 
 import { containsPathSeparator } from '../components/rule-editor/util';
 import { RULER_NOT_SUPPORTED_MSG } from '../utils/constants';

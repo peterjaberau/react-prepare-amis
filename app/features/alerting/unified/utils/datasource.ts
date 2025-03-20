@@ -1,21 +1,21 @@
 import { DataSourceInstanceSettings, DataSourceJsonData, DataSourceSettings } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { PERMISSIONS_TIME_INTERVALS } from '@grafana-module/app/features/alerting/unified/components/mute-timings/permissions';
-import { PERMISSIONS_NOTIFICATION_POLICIES } from '@grafana-module/app/features/alerting/unified/components/notification-policies/permissions';
+import { contextSrv } from '~/core/services/context_srv';
+import { PERMISSIONS_TIME_INTERVALS } from '~/features/alerting/unified/components/mute-timings/permissions';
+import { PERMISSIONS_NOTIFICATION_POLICIES } from '~/features/alerting/unified/components/notification-policies/permissions';
 import {
   AlertManagerDataSourceJsonData,
   AlertManagerImplementation,
   AlertmanagerChoice,
-} from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { AccessControlAction } from '@grafana-module/app/types';
+} from '~/plugins/datasource/alertmanager/types';
+import { AccessControlAction } from '~/types';
 import {
   DataSourceRulesSourceIdentifier as DataSourceRulesSourceIdentifier,
   GrafanaRulesSourceIdentifier,
   GrafanaRulesSourceSymbol,
   RulesSource,
   RulesSourceUid,
-} from '@grafana-module/app/types/unified-alerting';
+} from '~/types/unified-alerting';
 
 import { alertmanagerApi } from '../api/alertmanagerApi';
 import { PERMISSIONS_CONTACT_POINTS } from '../components/contact-points/permissions';

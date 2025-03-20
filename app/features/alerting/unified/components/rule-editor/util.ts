@@ -9,11 +9,11 @@ import {
   isTimeSeriesFrames,
 } from '@data/index';
 import { GraphThresholdsStyleMode } from '@schema/index';
-import { config } from '@grafana-module/app/core/config';
-import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
-import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
-import { ClassicCondition, ExpressionQueryType } from '@grafana-module/app/features/expressions/types';
-import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { config } from '~/core/config';
+import { EvalFunction } from '~/features/alerting/state/alertDef';
+import { isExpressionQuery } from '~/features/expressions/guards';
+import { ClassicCondition, ExpressionQueryType } from '~/features/expressions/types';
+import { AlertQuery } from '~/types/unified-alerting-dto';
 
 import { createDagFromQueries, getOriginOfRefId } from './dag';
 

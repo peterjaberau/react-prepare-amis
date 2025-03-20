@@ -5,16 +5,16 @@ import { useLocation } from 'react-router';
 import { PluginType, GrafanaTheme2, SelectableValue } from '@data/index';
 import { locationSearchToObject, reportInteraction } from '@runtime/index';
 import { LoadingPlaceholder, EmptyState, Field, RadioButtonGroup, Tooltip, Combobox, useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { HorizontalGroup } from '@grafana-module/app/features/plugins/admin/components/HorizontalGroup';
-import { RoadmapLinks } from '@grafana-module/app/features/plugins/admin/components/RoadmapLinks';
-import { SearchField } from '@grafana-module/app/features/plugins/admin/components/SearchField';
-import { Sorters } from '@grafana-module/app/features/plugins/admin/helpers';
-import { useHistory } from '@grafana-module/app/features/plugins/admin/hooks/useHistory';
-import { useGetAll, useIsRemotePluginsAvailable } from '@grafana-module/app/features/plugins/admin/state/hooks';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { t, Trans } from '~/core/internationalization';
+import { HorizontalGroup } from '~/features/plugins/admin/components/HorizontalGroup';
+import { RoadmapLinks } from '~/features/plugins/admin/components/RoadmapLinks';
+import { SearchField } from '~/features/plugins/admin/components/SearchField';
+import { Sorters } from '~/features/plugins/admin/helpers';
+import { useHistory } from '~/features/plugins/admin/hooks/useHistory';
+import { useGetAll, useIsRemotePluginsAvailable } from '~/features/plugins/admin/state/hooks';
+import { AccessControlAction } from '~/types';
 
 import { ROUTES } from '../../constants';
 

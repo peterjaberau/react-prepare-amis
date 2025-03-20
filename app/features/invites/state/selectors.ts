@@ -1,6 +1,6 @@
 import { EntityState, createSelector } from '@reduxjs/toolkit';
 
-import { Invitee } from '@grafana-module/app/types';
+import { Invitee } from '~/types';
 
 import { selectors } from './reducers';
 

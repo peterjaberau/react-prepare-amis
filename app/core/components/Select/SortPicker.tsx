@@ -2,8 +2,8 @@ import { useAsync } from 'react-use';
 
 import { SelectableValue } from '@data/index';
 import { Icon, Select } from '@grafana-ui/index';
-import { DEFAULT_SORT } from '@grafana-module/app/features/search/constants';
-import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
+import { DEFAULT_SORT } from '~/features/search/constants';
+import { getGrafanaSearcher } from '~/features/search/service/searcher';
 
 export interface Props {
   onChange: (sortValue: SelectableValue) => void;

@@ -18,7 +18,7 @@ import {
   PanelKind,
   PanelQueryKind,
 } from '@schema/schema/dashboard/v2alpha0/types';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
 
 import { ConditionalRendering } from '../../conditional-rendering/ConditionalRendering';
 import { ConditionalRenderingGroup } from '../../conditional-rendering/ConditionalRenderingGroup';

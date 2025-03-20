@@ -1,4 +1,4 @@
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { StoredNotifications } from './StoredNotifications';
 

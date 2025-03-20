@@ -3,8 +3,8 @@ import { useAsync } from 'react-use';
 
 import { NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { Page } from '~/core/components/Page/Page';
+import { t, Trans } from '~/core/internationalization';
 
 import { PlaylistForm } from './PlaylistForm';
 import { getPlaylistAPI } from './api';

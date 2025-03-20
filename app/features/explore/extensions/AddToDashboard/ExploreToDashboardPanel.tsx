@@ -1,7 +1,7 @@
 import { type ReactElement } from 'react';
 
-import { AddToDashboardForm } from '@grafana-module/app/features/dashboard-scene/addToDashboard/AddToDashboardForm';
-import { useSelector } from '@grafana-module/app/types';
+import { AddToDashboardForm } from '~/features/dashboard-scene/addToDashboard/AddToDashboardForm';
+import { useSelector } from '~/types';
 
 import { getExploreItemSelector } from '../../state/selectors';
 

@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2, LinkModel } from '@data/index';
 import { DataLinkButton, useStyles2 } from '@grafana-ui/index';
 import { VizTooltipRow } from '@grafana-ui/components/VizTooltip/VizTooltipRow';
-import { renderValue } from '@grafana-module/app/plugins/panel/geomap/utils/uiUtils';
+import { renderValue } from '~/plugins/panel/geomap/utils/uiUtils';
 
 import { DisplayValue } from './DataHoverView';
 

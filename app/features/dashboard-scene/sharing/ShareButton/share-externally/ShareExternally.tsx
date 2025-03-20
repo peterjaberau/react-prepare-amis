@@ -5,23 +5,23 @@ import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
 import { Button, ClipboardButton, Divider, Spinner, Stack, useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '~/core/core';
+import { t, Trans } from '~/core/internationalization';
 import {
   useDeletePublicDashboardMutation,
   useGetPublicDashboardQuery,
   usePauseOrResumePublicDashboardMutation,
-} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
-import { Loader } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
+} from '~/features/dashboard/api/publicDashboardApi';
+import { Loader } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboard';
 import {
   generatePublicDashboardUrl,
   isEmailSharingEnabled,
   PublicDashboard,
   PublicDashboardShareType,
-} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
-import { getDashboardSceneFor } from '@grafana-module/app/features/dashboard-scene/utils/utils';
-import { AccessControlAction } from '@grafana-module/app/types';
+} from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
+import { getDashboardSceneFor } from '~/features/dashboard-scene/utils/utils';
+import { AccessControlAction } from '~/types';
 
 import { ShareDrawerConfirmAction } from '../../ShareDrawer/ShareDrawerConfirmAction';
 import { useShareDrawerContext } from '../../ShareDrawer/ShareDrawerContext';

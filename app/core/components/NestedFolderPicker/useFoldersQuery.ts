@@ -3,13 +3,13 @@ import { QueryDefinition, BaseQueryFn, QueryActionCreatorResult } from '@reduxjs
 import { RequestOptions } from 'http';
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 
-import { ListFolderQueryArgs, browseDashboardsAPI } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
-import { PAGE_SIZE } from '@grafana-module/app/features/browse-dashboards/api/services';
-import { getPaginationPlaceholders } from '@grafana-module/app/features/browse-dashboards/state/utils';
-import { DashboardViewItemWithUIItems, DashboardsTreeItem } from '@grafana-module/app/features/browse-dashboards/types';
-import { RootState } from '@grafana-module/app/store/configureStore';
-import { FolderListItemDTO, PermissionLevelString } from '@grafana-module/app/types';
-import { useDispatch, useSelector } from '@grafana-module/app/types/store';
+import { ListFolderQueryArgs, browseDashboardsAPI } from '~/features/browse-dashboards/api/browseDashboardsAPI';
+import { PAGE_SIZE } from '~/features/browse-dashboards/api/services';
+import { getPaginationPlaceholders } from '~/features/browse-dashboards/state/utils';
+import { DashboardViewItemWithUIItems, DashboardsTreeItem } from '~/features/browse-dashboards/types';
+import { RootState } from '~/store/configureStore';
+import { FolderListItemDTO, PermissionLevelString } from '~/types';
+import { useDispatch, useSelector } from '~/types/store';
 
 type ListFoldersQuery = ReturnType<ReturnType<typeof browseDashboardsAPI.endpoints.listFolders.select>>;
 type ListFoldersRequest = QueryActionCreatorResult<

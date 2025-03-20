@@ -3,8 +3,8 @@ import { PropsWithChildren, createContext, useContext, useEffect, useRef } from 
 
 import { AppEvents } from '@data/index';
 import { config, getAppEvents } from '@runtime/index';
-import { AlertmanagerChoice, GrafanaAlertingConfiguration } from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { dispatch } from '@grafana-module/app/store/store';
+import { AlertmanagerChoice, GrafanaAlertingConfiguration } from '~/plugins/datasource/alertmanager/types';
+import { dispatch } from '~/store/store';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';
 import { dataSourcesApi } from '../../api/dataSourcesApi';

@@ -7,8 +7,8 @@ import InfiniteLoader from 'react-window-infinite-loader';
 
 import { GrafanaTheme2, isTruthy } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { t, Trans } from '~/core/internationalization';
+import { DashboardViewItem } from '~/features/search/types';
 
 import { DashboardsTreeCellProps, DashboardsTreeColumn, DashboardsTreeItem, SelectionState } from '../types';
 

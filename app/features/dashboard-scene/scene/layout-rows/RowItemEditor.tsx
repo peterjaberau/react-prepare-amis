@@ -3,12 +3,12 @@ import { useMemo } from 'react';
 import { SelectableValue } from '@data/index';
 import { selectors } from '@selectors/index';
 import { Alert, Input, RadioButtonGroup, Switch, TextLink } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
-import { RepeatRowSelect2 } from '@grafana-module/app/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
-import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { t, Trans } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { RepeatRowSelect2 } from '~/features/dashboard/components/RepeatRowSelect/RepeatRowSelect';
+import { SHARED_DASHBOARD_QUERY } from '~/plugins/datasource/dashboard/constants';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
 
 import { useConditionalRenderingEditor } from '../../conditional-rendering/ConditionalRenderingEditor';
 import { getQueryRunnerFor, useDashboard } from '../../utils/utils';

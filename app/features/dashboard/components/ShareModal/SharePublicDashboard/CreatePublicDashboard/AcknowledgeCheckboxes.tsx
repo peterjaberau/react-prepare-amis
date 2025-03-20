@@ -4,7 +4,7 @@ import { UseFormRegister } from 'react-hook-form';
 import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { Checkbox, FieldSet, HorizontalGroup, LinkButton, useStyles2, VerticalGroup } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { SharePublicDashboardAcknowledgmentInputs } from './CreatePublicDashboard';
 

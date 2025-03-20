@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import { GrafanaTheme2, urlUtil } from '@data/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
 
 import { SuggestedDashboard } from './types';
 

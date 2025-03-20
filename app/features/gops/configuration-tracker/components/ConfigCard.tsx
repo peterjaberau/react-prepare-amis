@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Icon, LoadingPlaceholder, Stack, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { IrmCardConfiguration } from './ConfigureIRM';
 import { ProgressBar, StepsStatus } from './ProgressBar';

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { DeepMap, FieldError, useFormContext } from 'react-hook-form';
 
 import { Button, useStyles2 } from '@grafana-ui/index';
-import { NotificationChannelOption, NotificationChannelSecureFields } from '@grafana-module/app/types';
+import { NotificationChannelOption, NotificationChannelSecureFields } from '~/types';
 
 import { ActionIcon } from '../../../rules/ActionIcon';
 

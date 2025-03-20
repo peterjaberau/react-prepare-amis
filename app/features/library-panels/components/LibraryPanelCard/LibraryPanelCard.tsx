@@ -6,8 +6,8 @@ import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Icon, Link, useStyles2 } from '@grafana-ui/index';
 import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
-import { getPanelPluginNotFound } from '@grafana-module/app/features/panel/components/PanelPluginError';
-import { PanelTypeCard } from '@grafana-module/app/features/panel/components/VizTypePicker/PanelTypeCard';
+import { getPanelPluginNotFound } from '~/features/panel/components/PanelPluginError';
+import { PanelTypeCard } from '~/features/panel/components/VizTypePicker/PanelTypeCard';
 
 import { LibraryElementDTO } from '../../types';
 import { DeleteLibraryPanelModal } from '../DeleteLibraryPanelModal/DeleteLibraryPanelModal';

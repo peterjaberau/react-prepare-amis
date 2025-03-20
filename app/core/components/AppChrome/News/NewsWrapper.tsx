@@ -4,8 +4,8 @@ import { useMeasure } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { News } from '@grafana-module/app/plugins/panel/news/component/News';
-import { useNewsFeed } from '@grafana-module/app/plugins/panel/news/useNewsFeed';
+import { News } from '~/plugins/panel/news/component/News';
+import { useNewsFeed } from '~/plugins/panel/news/useNewsFeed';
 
 interface NewsWrapperProps {
   feedUrl: string;

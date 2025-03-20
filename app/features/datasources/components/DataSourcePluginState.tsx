@@ -1,5 +1,5 @@
 import { PluginState } from '@data/index';
-import { PluginStateInfo } from '@grafana-module/app/features/plugins/components/PluginStateInfo';
+import { PluginStateInfo } from '~/features/plugins/components/PluginStateInfo';
 
 export type Props = {
   state?: PluginState;

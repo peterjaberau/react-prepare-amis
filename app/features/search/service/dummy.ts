@@ -1,5 +1,5 @@
 import { SelectableValue, DataFrame, DataFrameView } from '@data/index';
-import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
+import { TermCount } from '~/core/components/TagFilter/TagFilter';
 
 import { GrafanaSearcher, QueryResponse, SearchQuery } from './types';
 

@@ -4,7 +4,7 @@ import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2, LoadingState } from '@data/index';
 import { EmptyState, Pagination, Stack, TextLink, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { LibraryElementDTO } from '../../types';
 import { LibraryPanelCard } from '../LibraryPanelCard/LibraryPanelCard';

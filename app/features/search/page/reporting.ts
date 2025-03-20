@@ -1,5 +1,5 @@
 import { reportInteraction } from '@runtime/index';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { InspectTab } from '~/features/inspector/types';
 
 import { EventTrackingNamespace, SearchLayout } from '../types';
 

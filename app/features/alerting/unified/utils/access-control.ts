@@ -1,6 +1,6 @@
-import { getConfig } from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { getConfig } from '~/core/config';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
 
 import { GRAFANA_RULES_SOURCE_NAME, isGrafanaRulesSource } from './datasource';
 

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
 import { NavModel, NavModelItem } from '@data/index';
-import { HOME_NAV_ID } from '@grafana-module/app/core/reducers/navModel';
-import { useSelector } from '@grafana-module/app/types';
+import { HOME_NAV_ID } from '~/core/reducers/navModel';
+import { useSelector } from '~/types';
 
 import { Branding } from '../Branding/Branding';
 import { buildBreadcrumbs } from '../Breadcrumbs/utils';

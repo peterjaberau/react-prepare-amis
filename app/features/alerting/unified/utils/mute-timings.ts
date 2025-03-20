@@ -1,6 +1,6 @@
 import { isUndefined, omitBy } from 'lodash';
 
-import { MuteTimeInterval, TimeInterval, TimeRange } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { MuteTimeInterval, TimeInterval, TimeRange } from '~/plugins/datasource/alertmanager/types';
 
 import { MuteTimingFields, MuteTimingIntervalFields } from '../types/mute-timing-form';
 

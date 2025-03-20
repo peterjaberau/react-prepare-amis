@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import { useDispatch } from '@grafana-module/app/types';
+import { useDispatch } from '~/types';
 
 import { cleanUpAction, CleanUpAction } from '../actions/cleanUp';
 

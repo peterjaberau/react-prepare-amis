@@ -32,12 +32,12 @@ import {
   ToolbarButton,
   useStyles2,
 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { OptionFilter } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneOptions';
-import { getPanelPluginNotFound } from '@grafana-module/app/features/panel/components/PanelPluginError';
-import { VizTypeChangeDetails } from '@grafana-module/app/features/panel/components/VizTypePicker/types';
-import { getAllPanelPluginMeta } from '@grafana-module/app/features/panel/state/util';
-import { AngularDeprecationPluginNotice } from '@grafana-module/app/features/plugins/angularDeprecation/AngularDeprecationPluginNotice';
+import { Trans } from '~/core/internationalization';
+import { OptionFilter } from '~/features/dashboard/components/PanelEditor/OptionsPaneOptions';
+import { getPanelPluginNotFound } from '~/features/panel/components/PanelPluginError';
+import { VizTypeChangeDetails } from '~/features/panel/components/VizTypePicker/types';
+import { getAllPanelPluginMeta } from '~/features/panel/state/util';
+import { AngularDeprecationPluginNotice } from '~/features/plugins/angularDeprecation/AngularDeprecationPluginNotice';
 
 import { isUsingAngularPanelPlugin } from '../scene/angular/AngularDeprecation';
 

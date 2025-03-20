@@ -13,7 +13,7 @@ import {
 import { LogRowContextOptions, LogRowModel, getDefaultTimeRange, locationUtil, urlUtil } from '@data/index';
 import { DataQuery } from '@schema/index';
 import { ClipboardButton, IconButton, PopoverContent } from '@grafana-ui/index';
-import { getConfig } from '@grafana-module/app/core/config';
+import { getConfig } from '~/core/config';
 
 import { LogRowStyles } from './getLogRowStyles';
 

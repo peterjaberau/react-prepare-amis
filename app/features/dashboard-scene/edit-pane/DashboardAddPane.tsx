@@ -1,6 +1,6 @@
 import { selectors } from '@selectors/index';
 import { Box, Card, Icon } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { DashboardInteractions } from '../utils/interactions';
 import { getDashboardSceneFor } from '../utils/utils';

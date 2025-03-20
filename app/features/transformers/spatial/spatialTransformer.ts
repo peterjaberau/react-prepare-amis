@@ -1,8 +1,8 @@
 import { mergeMap, from } from 'rxjs';
 
 import { DataFrame, DataTransformerID, DataTransformerInfo, FieldType } from '@data/index';
-import { createGeometryCollection, createLineBetween } from '@grafana-module/app/features/geo/format/utils';
-import { getGeometryField, getLocationMatchers } from '@grafana-module/app/features/geo/utils/location';
+import { createGeometryCollection, createLineBetween } from '~/features/geo/format/utils';
+import { getGeometryField, getLocationMatchers } from '~/features/geo/utils/location';
 
 import { SpatialOperation, SpatialAction, SpatialTransformOptions } from './models.gen';
 import { doGeomeryCalculation, toLineString } from './utils';

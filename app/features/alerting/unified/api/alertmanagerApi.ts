@@ -1,8 +1,8 @@
 import { isEmpty } from 'lodash';
 
-import { encodeMatcher } from '@grafana-module/app/features/alerting/unified/utils/matchers';
-import { dispatch } from '@grafana-module/app/store/store';
-import { ReceiversStateDTO } from '@grafana-module/app/types/alerting';
+import { encodeMatcher } from '~/features/alerting/unified/utils/matchers';
+import { dispatch } from '~/store/store';
+import { ReceiversStateDTO } from '~/types/alerting';
 
 import {
   AlertManagerCortexConfig,

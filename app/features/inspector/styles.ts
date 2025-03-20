@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { stylesFactory } from '@grafana-ui/index';
-import { config } from '@grafana-module/app/core/config';
+import { config } from '~/core/config';
 
 /** @deprecated */
 export const getPanelInspectorStyles = stylesFactory(() => {

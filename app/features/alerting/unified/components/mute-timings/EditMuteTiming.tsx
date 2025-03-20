@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router';
 
-import { useGetMuteTiming } from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
-import { useURLSearchParams } from '@grafana-module/app/features/alerting/unified/hooks/useURLSearchParams';
+import { useGetMuteTiming } from '~/features/alerting/unified/components/mute-timings/useMuteTimings';
+import { useURLSearchParams } from '~/features/alerting/unified/hooks/useURLSearchParams';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { withPageErrorBoundary } from '../../withPageErrorBoundary';

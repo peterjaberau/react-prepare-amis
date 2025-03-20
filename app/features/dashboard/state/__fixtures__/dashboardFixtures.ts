@@ -7,8 +7,8 @@ import {
   RowPanel,
   VariableModel,
 } from '@schema/index';
-import { GetVariables } from '@grafana-module/app/features/variables/state/selectors';
-import { DashboardMeta } from '@grafana-module/app/types';
+import { GetVariables } from '~/features/variables/state/selectors';
+import { DashboardMeta } from '~/types';
 
 import { DashboardModel } from '../DashboardModel';
 

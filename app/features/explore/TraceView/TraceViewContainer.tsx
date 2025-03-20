@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { DataFrame, SplitOpen } from '@data/index';
 import { PanelChrome } from '@grafana-ui/index';
-import { StoreState, useSelector } from '@grafana-module/app/types';
+import { StoreState, useSelector } from '~/types';
 
 import { TraceView } from './TraceView';
 import { transformDataFrames } from './utils/transform';

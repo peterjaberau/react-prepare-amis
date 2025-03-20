@@ -6,15 +6,15 @@ import { CoreApp, GrafanaTheme2, LoadingState } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { defaultTimeZone, TimeZone } from '@schema/index';
 import { TabbedContainer, TabConfig, useStyles2 } from '@grafana-ui/index';
-import { requestIdGenerator } from '@grafana-module/app/core/utils/explore';
-import { ExploreDrawer } from '@grafana-module/app/features/explore/ExploreDrawer';
-import { InspectDataTab } from '@grafana-module/app/features/inspector/InspectDataTab';
-import { InspectErrorTab } from '@grafana-module/app/features/inspector/InspectErrorTab';
-import { InspectJSONTab } from '@grafana-module/app/features/inspector/InspectJSONTab';
-import { InspectStatsTab } from '@grafana-module/app/features/inspector/InspectStatsTab';
-import { QueryInspector } from '@grafana-module/app/features/inspector/QueryInspector';
-import { mixedRequestId } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
-import { StoreState, ExploreItemState } from '@grafana-module/app/types';
+import { requestIdGenerator } from '~/core/utils/explore';
+import { ExploreDrawer } from '~/features/explore/ExploreDrawer';
+import { InspectDataTab } from '~/features/inspector/InspectDataTab';
+import { InspectErrorTab } from '~/features/inspector/InspectErrorTab';
+import { InspectJSONTab } from '~/features/inspector/InspectJSONTab';
+import { InspectStatsTab } from '~/features/inspector/InspectStatsTab';
+import { QueryInspector } from '~/features/inspector/QueryInspector';
+import { mixedRequestId } from '~/plugins/datasource/mixed/MixedDataSource';
+import { StoreState, ExploreItemState } from '~/types';
 
 import { GetDataOptions } from '../query/state/PanelQueryRunner';
 

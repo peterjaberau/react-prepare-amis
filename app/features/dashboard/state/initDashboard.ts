@@ -1,24 +1,24 @@
 import { DataQuery, locationUtil, setWeekStart, DashboardLoadedEvent } from '@data/index';
 import { config, isFetchError, locationService } from '@runtime/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import appEvents from '@grafana-module/app/core/app_events';
-import { createErrorNotification } from '@grafana-module/app/core/copy/appNotification';
-import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
-import { KeybindingSrv } from '@grafana-module/app/core/services/keybindingSrv';
-import store from '@grafana-module/app/core/store';
-import { startMeasure, stopMeasure } from '@grafana-module/app/core/utils/metrics';
-import { dashboardLoaderSrv } from '@grafana-module/app/features/dashboard/services/DashboardLoaderSrv';
-import { DashboardSrv, getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { getTimeSrv, TimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { notifyApp } from '~/core/actions';
+import appEvents from '~/core/app_events';
+import { createErrorNotification } from '~/core/copy/appNotification';
+import { backendSrv } from '~/core/services/backend_srv';
+import { KeybindingSrv } from '~/core/services/keybindingSrv';
+import store from '~/core/store';
+import { startMeasure, stopMeasure } from '~/core/utils/metrics';
+import { dashboardLoaderSrv } from '~/features/dashboard/services/DashboardLoaderSrv';
+import { DashboardSrv, getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { getTimeSrv, TimeSrv } from '~/features/dashboard/services/TimeSrv';
 import {
   HOME_DASHBOARD_CACHE_KEY,
   getDashboardScenePageStateManager,
-} from '@grafana-module/app/features/dashboard-scene/pages/DashboardScenePageStateManager';
-import { buildNewDashboardSaveModel } from '@grafana-module/app/features/dashboard-scene/serialization/buildNewDashboardSaveModel';
-import { getFolderByUid } from '@grafana-module/app/features/folders/state/actions';
-import { dashboardWatcher } from '@grafana-module/app/features/live/dashboard/dashboardWatcher';
-import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
-import { toStateKey } from '@grafana-module/app/features/variables/utils';
+} from '~/features/dashboard-scene/pages/DashboardScenePageStateManager';
+import { buildNewDashboardSaveModel } from '~/features/dashboard-scene/serialization/buildNewDashboardSaveModel';
+import { getFolderByUid } from '~/features/folders/state/actions';
+import { dashboardWatcher } from '~/features/live/dashboard/dashboardWatcher';
+import { playlistSrv } from '~/features/playlist/PlaylistSrv';
+import { toStateKey } from '~/features/variables/utils';
 import {
   DASHBOARD_FROM_LS_KEY,
   DashboardDTO,
@@ -29,7 +29,7 @@ import {
   StoreState,
   ThunkDispatch,
   ThunkResult,
-} from '@grafana-module/app/types';
+} from '~/types';
 
 import { createDashboardQueryRunner } from '../../query/state/DashboardQueryRunner/DashboardQueryRunner';
 import { initVariablesTransaction } from '../../variables/state/actions';

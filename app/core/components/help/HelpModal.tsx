@@ -3,8 +3,8 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Grid, Modal, useStyles2, Text } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { getModKey } from '@grafana-module/app/core/utils/browser';
+import { t, Trans } from '~/core/internationalization';
+import { getModKey } from '~/core/utils/browser';
 
 const getShortcuts = (modKey: string) => {
   return [

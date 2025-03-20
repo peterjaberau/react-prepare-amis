@@ -10,7 +10,7 @@ import {
   PanelKind,
   LibraryPanelKind,
 } from '@schema/schema/dashboard/v2alpha0/types';
-import { contextSrv } from '@grafana-module/app/core/core';
+import { contextSrv } from '~/core/core';
 
 import { DashboardGridItem } from '../../scene/layout-default/DashboardGridItem';
 import { DefaultGridLayoutManager } from '../../scene/layout-default/DefaultGridLayoutManager';

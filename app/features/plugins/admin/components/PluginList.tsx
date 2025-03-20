@@ -2,7 +2,7 @@ import { useLocation } from 'react-router';
 
 import { config } from '@runtime/index';
 import { EmptyState, Grid } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { CatalogPlugin } from '../types';
 

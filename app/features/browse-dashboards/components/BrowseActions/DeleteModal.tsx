@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { config, reportInteraction } from '@runtime/index';
 import { Alert, ConfirmModal, Text, Space } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { useGetAffectedItemsQuery } from '../../api/browseDashboardsAPI';
 import { DashboardTreeSelection } from '../../types';

@@ -1,11 +1,11 @@
 import { camelCase } from 'lodash';
 import { HttpResponse, http } from 'msw';
 
-import { getAlertmanagerConfig } from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from '@grafana-module/app/features/alerting/unified/mocks/server/utils';
-import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Receiver } from '@grafana-module/app/features/alerting/unified/openapi/receiversApi.gen';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { K8sAnnotations, PROVENANCE_NONE } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
+import { getAlertmanagerConfig } from '~/features/alerting/unified/mocks/server/entities/alertmanagers';
+import { ALERTING_API_SERVER_BASE_URL, getK8sResponse } from '~/features/alerting/unified/mocks/server/utils';
+import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Receiver } from '~/features/alerting/unified/openapi/receiversApi.gen';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { K8sAnnotations, PROVENANCE_NONE } from '~/features/alerting/unified/utils/k8s/constants';
 
 const getReceiversList = () => {
   const config = getAlertmanagerConfig(GRAFANA_RULES_SOURCE_NAME);

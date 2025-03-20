@@ -5,7 +5,7 @@ import { ListChildComponentProps, ListOnItemsRenderedProps } from 'react-window'
 import { AbsoluteTimeRange, LogsSortOrder, TimeRange } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
 import { Spinner } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { canScrollBottom, getVisibleRange, ScrollDirection, shouldLoadMore } from '../InfiniteScroll';
 

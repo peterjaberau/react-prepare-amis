@@ -1,13 +1,13 @@
 import Moveable from 'moveable';
 import Selecto from 'selecto';
 
-import { CONNECTION_ANCHOR_DIV_ID } from '@grafana-module/app/plugins/panel/canvas/components/connections/ConnectionAnchors';
+import { CONNECTION_ANCHOR_DIV_ID } from '~/plugins/panel/canvas/components/connections/ConnectionAnchors';
 import {
   CONNECTION_VERTEX_ID,
   CONNECTION_VERTEX_ADD_ID,
-} from '@grafana-module/app/plugins/panel/canvas/components/connections/Connections';
-import { VerticalConstraint, HorizontalConstraint } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
-import { getParent } from '@grafana-module/app/plugins/panel/canvas/utils';
+} from '~/plugins/panel/canvas/components/connections/Connections';
+import { VerticalConstraint, HorizontalConstraint } from '~/plugins/panel/canvas/panelcfg';
+import { getParent } from '~/plugins/panel/canvas/utils';
 
 import { dimensionViewable, constraintViewable, settingsViewable } from './ables';
 import { ElementState } from './element';

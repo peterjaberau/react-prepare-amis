@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { PanelPlugin } from '@data/index';
 import { AngularComponent } from '@runtime/index';
 import { defaultDashboard } from '@schema/index';
-import { DashboardInitError, DashboardInitPhase, DashboardState } from '@grafana-module/app/types';
+import { DashboardInitError, DashboardInitPhase, DashboardState } from '~/types';
 
 import { DashboardModel } from './DashboardModel';
 import { PanelModel } from './PanelModel';

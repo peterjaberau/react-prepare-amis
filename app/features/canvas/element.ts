@@ -3,8 +3,8 @@ import { ComponentType } from 'react';
 import { DataLink, RegistryItem, Action } from '@data/index';
 import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';
 import { ColorDimensionConfig, ScaleDimensionConfig } from '@schema/index';
-import { config } from '@grafana-module/app/core/config';
-import { BackgroundConfig, Constraint, LineConfig, Placement } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
+import { config } from '~/core/config';
+import { BackgroundConfig, Constraint, LineConfig, Placement } from '~/plugins/panel/canvas/panelcfg';
 
 import { LineStyleConfig } from '../../plugins/panel/canvas/editor/LineStyleEditor';
 import { DimensionContext } from '../dimensions';

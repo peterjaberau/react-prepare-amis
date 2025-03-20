@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 
 import { Select } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { t } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 
 import { DashboardLayoutManager } from '../types/DashboardLayoutManager';
 import { isLayoutParent } from '../types/LayoutParent';

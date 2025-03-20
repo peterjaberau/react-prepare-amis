@@ -13,7 +13,7 @@ import {
   LocalValueVariable,
   VariableDependencyConfig,
 } from '@scenes/index';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { ConditionalRendering } from '../../conditional-rendering/ConditionalRendering';
 import { getCloneKey } from '../../utils/clone';

@@ -1,8 +1,8 @@
 import { PureComponent } from 'react';
 
 import { Button, LoadingPlaceholder, ScrollContainer } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { UserDTO, UserOrg } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import { UserDTO, UserOrg } from '~/types';
 
 export interface Props {
   user: UserDTO | null;

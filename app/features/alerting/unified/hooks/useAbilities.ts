@@ -1,20 +1,20 @@
 import { useMemo } from 'react';
 
-import { contextSrv as ctx } from '@grafana-module/app/core/services/context_srv';
-import { PERMISSIONS_CONTACT_POINTS_READ } from '@grafana-module/app/features/alerting/unified/components/contact-points/permissions';
+import { contextSrv as ctx } from '~/core/services/context_srv';
+import { PERMISSIONS_CONTACT_POINTS_READ } from '~/features/alerting/unified/components/contact-points/permissions';
 import {
   PERMISSIONS_TIME_INTERVALS_MODIFY,
   PERMISSIONS_TIME_INTERVALS_READ,
-} from '@grafana-module/app/features/alerting/unified/components/mute-timings/permissions';
+} from '~/features/alerting/unified/components/mute-timings/permissions';
 import {
   PERMISSIONS_NOTIFICATION_POLICIES_MODIFY,
   PERMISSIONS_NOTIFICATION_POLICIES_READ,
-} from '@grafana-module/app/features/alerting/unified/components/notification-policies/permissions';
-import { useFolder } from '@grafana-module/app/features/alerting/unified/hooks/useFolder';
-import { AlertmanagerChoice } from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { AccessControlAction } from '@grafana-module/app/types';
-import { CombinedRule, RuleGroupIdentifierV2 } from '@grafana-module/app/types/unified-alerting';
-import { RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/features/alerting/unified/components/notification-policies/permissions';
+import { useFolder } from '~/features/alerting/unified/hooks/useFolder';
+import { AlertmanagerChoice } from '~/plugins/datasource/alertmanager/types';
+import { AccessControlAction } from '~/types';
+import { CombinedRule, RuleGroupIdentifierV2 } from '~/types/unified-alerting';
+import { RulerRuleDTO } from '~/types/unified-alerting-dto';
 
 import { alertmanagerApi } from '../api/alertmanagerApi';
 import { useAlertmanager } from '../state/AlertmanagerContext';

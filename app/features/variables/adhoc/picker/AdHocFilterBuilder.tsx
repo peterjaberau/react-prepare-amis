@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { AdHocVariableFilter, DataSourceRef, SelectableValue } from '@data/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { AdHocFilterKey, REMOVE_FILTER_KEY } from './AdHocFilterKey';
 import { AdHocFilterRenderer } from './AdHocFilterRenderer';

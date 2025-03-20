@@ -3,7 +3,7 @@ import { PromQuery } from '@prometheus/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { SceneTimeRangeState, VizPanel } from '@scenes/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
-import { getQueryRunnerFor } from '@grafana-module/app/features/dashboard-scene/utils/utils';
+import { getQueryRunnerFor } from '~/features/dashboard-scene/utils/utils';
 
 import { DashboardScene } from '../../dashboard-scene/scene/DashboardScene';
 import { MetricScene } from '../MetricScene';

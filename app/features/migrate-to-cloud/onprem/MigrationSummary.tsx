@@ -1,6 +1,6 @@
 import { Box, Button, Space, Stack, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { formatDate } from '@grafana-module/app/core/internationalization/dates';
+import { Trans, t } from '~/core/internationalization';
+import { formatDate } from '~/core/internationalization/dates';
 
 import { GetSessionApiResponse, GetSnapshotResponseDto } from '../api';
 

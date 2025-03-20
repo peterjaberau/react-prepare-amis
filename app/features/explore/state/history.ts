@@ -11,8 +11,8 @@ import {
   updateCommentInRichHistory,
   updateRichHistorySettings,
   updateStarredInRichHistory,
-} from '@grafana-module/app/core/utils/richHistory';
-import { RichHistoryQuery, ThunkResult } from '@grafana-module/app/types';
+} from '~/core/utils/richHistory';
+import { RichHistoryQuery, ThunkResult } from '~/types';
 
 import { supportedFeatures } from '../../../core/history/richHistoryStorageProvider';
 import { RichHistorySearchFilters, RichHistorySettings } from '../../../core/utils/richHistoryTypes';

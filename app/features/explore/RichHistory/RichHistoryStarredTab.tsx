@@ -5,15 +5,15 @@ import { useAsync } from 'react-use';
 import { DataSourceApi, GrafanaTheme2, SelectableValue } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { useStyles2, Select, MultiSelect, FilterInput, Button } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 import {
   createDatasourcesList,
   SortOrder,
   RichHistorySearchFilters,
   RichHistorySettings,
-} from '@grafana-module/app/core/utils/richHistory';
-import { useSelector } from '@grafana-module/app/types';
-import { RichHistoryQuery } from '@grafana-module/app/types/explore';
+} from '~/core/utils/richHistory';
+import { useSelector } from '~/types';
+import { RichHistoryQuery } from '~/types/explore';
 
 import { selectExploreDSMaps } from '../state/selectors';
 

@@ -4,9 +4,9 @@ import { ReactNode, useEffect } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Alert, Icon, Stack, Text, TextLink, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { Rule, RuleGroupIdentifierV2, RuleHealth, RulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { Labels, PromAlertingRuleState, RulesSourceApplication } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans } from '~/core/internationalization';
+import { Rule, RuleGroupIdentifierV2, RuleHealth, RulesSourceIdentifier } from '~/types/unified-alerting';
+import { Labels, PromAlertingRuleState, RulesSourceApplication } from '~/types/unified-alerting-dto';
 
 import { logError } from '../../Analytics';
 import { MetaText } from '../../components/MetaText';

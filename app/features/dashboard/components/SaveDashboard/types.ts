@@ -1,8 +1,8 @@
 import { Dashboard } from '@schema/index';
-import { ObjectMeta } from '@grafana-module/app/features/apiserver/types';
-import { CloneOptions, DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { Diffs } from '@grafana-module/app/features/dashboard-scene/settings/version-history/utils';
-import { SaveDashboardResponseDTO } from '@grafana-module/app/types';
+import { ObjectMeta } from '~/features/apiserver/types';
+import { CloneOptions, DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { Diffs } from '~/features/dashboard-scene/settings/version-history/utils';
+import { SaveDashboardResponseDTO } from '~/types';
 
 export interface SaveDashboardData {
   clone: Dashboard; // cloned copy

@@ -1,7 +1,7 @@
 import { SelectableValue } from '@data/index';
 import { Icon, RadioButtonList, Tooltip, useStyles2, useTheme2, PopoverContent } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { OrgRole } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import { OrgRole } from '~/types';
 
 import { getStyles } from './styles';
 

@@ -4,8 +4,8 @@ import { useEffect, useMemo } from 'react';
 
 import { DataFrame, DataFrameJSON, GrafanaTheme2, TimeRange } from '@data/index';
 import { Icon, Stack, Text, useStyles2, useTheme2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { Trans, t } from '~/core/internationalization';
+import { CombinedRule } from '~/types/unified-alerting';
 
 import { trackUseCentralHistoryExpandRow } from '../../../Analytics';
 import { stateHistoryApi } from '../../../api/stateHistoryApi';

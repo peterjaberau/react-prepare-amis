@@ -1,5 +1,5 @@
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { StoreState } from '@grafana-module/app/types';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { StoreState } from '~/types';
 
 import { PanelState } from './reducers';
 

@@ -4,11 +4,11 @@ import { CSSProperties } from 'react';
 
 import { LinkModel } from '@data/index';
 import { ColorDimensionConfig, ResourceDimensionConfig, ResourceDimensionMode } from '@schema/index';
-import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
-import { getPublicOrAbsoluteUrl } from '@grafana-module/app/features/dimensions';
-import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
-import { ColorDimensionEditor, ResourceDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
-import { LineConfig } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
+import { SanitizedSVG } from '~/core/components/SVG/SanitizedSVG';
+import { getPublicOrAbsoluteUrl } from '~/features/dimensions';
+import { DimensionContext } from '~/features/dimensions/context';
+import { ColorDimensionEditor, ResourceDimensionEditor } from '~/features/dimensions/editors';
+import { LineConfig } from '~/plugins/panel/canvas/panelcfg';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps, defaultBgColor } from '../element';
 

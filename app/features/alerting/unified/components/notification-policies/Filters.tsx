@@ -3,10 +3,10 @@ import { debounce, isEqual } from 'lodash';
 import { useCallback, useEffect, useRef } from 'react';
 
 import { Button, Field, Icon, Input, Label, Stack, Text, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { ContactPointSelector } from '@grafana-module/app/features/alerting/unified/components/notification-policies/ContactPointSelector';
-import { AlertmanagerAction, useAlertmanagerAbility } from '@grafana-module/app/features/alerting/unified/hooks/useAbilities';
-import { ObjectMatcher, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Trans } from '~/core/internationalization';
+import { ContactPointSelector } from '~/features/alerting/unified/components/notification-policies/ContactPointSelector';
+import { AlertmanagerAction, useAlertmanagerAbility } from '~/features/alerting/unified/hooks/useAbilities';
+import { ObjectMatcher, RouteWithID } from '~/plugins/datasource/alertmanager/types';
 
 import { useURLSearchParams } from '../../hooks/useURLSearchParams';
 import { matcherToObjectMatcher } from '../../utils/alertmanager';

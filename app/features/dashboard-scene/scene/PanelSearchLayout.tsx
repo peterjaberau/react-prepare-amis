@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneGridRow, VizPanel, sceneGraph } from '@scenes/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { forceActivateFullSceneObjectTree } from '../utils/utils';
 

@@ -1,9 +1,9 @@
 import { NavModel, NavModelItem } from '@data/index';
 import { config } from '@runtime/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { getNavSubTitle } from '@grafana-module/app/core/utils/navBarItem-translations';
-import { AccessControlAction, FolderDTO, FolderParent } from '@grafana-module/app/types';
+import { t } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
+import { getNavSubTitle } from '~/core/utils/navBarItem-translations';
+import { AccessControlAction, FolderDTO, FolderParent } from '~/types';
 
 export const FOLDER_ID = 'manage-folder';
 

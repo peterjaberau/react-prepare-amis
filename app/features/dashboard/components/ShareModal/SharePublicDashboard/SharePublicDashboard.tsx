@@ -2,10 +2,10 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Spinner, useStyles2 } from '@grafana-ui/index';
-import { useGetPublicDashboardQuery } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
-import { publicDashboardPersisted } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { ShareModalTabProps } from '@grafana-module/app/features/dashboard/components/ShareModal/types';
-import { useSelector } from '@grafana-module/app/types';
+import { useGetPublicDashboardQuery } from '~/features/dashboard/api/publicDashboardApi';
+import { publicDashboardPersisted } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { ShareModalTabProps } from '~/features/dashboard/components/ShareModal/types';
+import { useSelector } from '~/types';
 
 import { HorizontalGroup } from '../../../../plugins/admin/components/HorizontalGroup';
 

@@ -4,7 +4,7 @@ import { useAsyncFn } from 'react-use';
 import { SelectableValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { AsyncSelect } from '@grafana-ui/index';
-import { Organization, UserOrg } from '@grafana-module/app/types';
+import { Organization, UserOrg } from '~/types';
 
 export type OrgSelectItem = SelectableValue<Organization>;
 

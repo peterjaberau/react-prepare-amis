@@ -5,7 +5,7 @@ import {
   SceneObjectUrlValues,
   VizPanel,
 } from '@scenes/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ObjectRemovedFromCanvasEvent } from '../../edit-pane/shared';
 import { RowsLayoutManager } from '../layout-rows/RowsLayoutManager';

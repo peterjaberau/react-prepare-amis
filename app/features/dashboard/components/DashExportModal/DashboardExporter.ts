@@ -2,10 +2,10 @@ import { defaults, each, sortBy } from 'lodash';
 
 import { DataSourceRef, PanelPluginMeta, VariableOption, VariableRefresh } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
-import config from '@grafana-module/app/core/config';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { getLibraryPanel } from '@grafana-module/app/features/library-panels/state/api';
-import { variableRegex } from '@grafana-module/app/features/variables/utils';
+import config from '~/core/config';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { getLibraryPanel } from '~/features/library-panels/state/api';
+import { variableRegex } from '~/features/variables/utils';
 
 import { isPanelModelLibraryPanel } from '../../../library-panels/guard';
 import { LibraryElementKind } from '../../../library-panels/types';

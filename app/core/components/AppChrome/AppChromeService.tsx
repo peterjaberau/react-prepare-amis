@@ -3,11 +3,11 @@ import { BehaviorSubject, distinctUntilChanged, map } from 'rxjs';
 
 import { AppEvents, NavModel, NavModelItem, PageLayoutType, UrlQueryValue } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { t } from '@grafana-module/app/core/internationalization';
-import store from '@grafana-module/app/core/store';
-import { isShallowEqual } from '@grafana-module/app/core/utils/isShallowEqual';
-import { KioskMode } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { t } from '~/core/internationalization';
+import store from '~/core/store';
+import { isShallowEqual } from '~/core/utils/isShallowEqual';
+import { KioskMode } from '~/types';
 
 import { RouteDescriptor } from '../../navigation/types';
 import { buildBreadcrumbs } from '../Breadcrumbs/utils';

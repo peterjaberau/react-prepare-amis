@@ -1,6 +1,6 @@
 import { PluginLoadingStrategy, PluginMeta, PluginType } from '@data/index';
 import { AppPluginConfig, setPluginComponentsHook, setPluginExtensionsHook } from '@runtime/index';
-import { SupportedPlugin } from '@grafana-module/app/features/alerting/unified/types/pluginBridges';
+import { SupportedPlugin } from '~/features/alerting/unified/types/pluginBridges';
 
 import { mockPluginLinkExtension } from '../mocks';
 

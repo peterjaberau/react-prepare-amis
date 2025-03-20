@@ -5,7 +5,7 @@ import { config, isFetchError } from '@runtime/index';
 import { Dashboard } from '@schema/index';
 import { DashboardV2Spec } from '@schema/schema/dashboard/v2alpha0/types';
 import { Alert, Box, Button, Stack } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { Diffs } from '../settings/version-history/utils';
 

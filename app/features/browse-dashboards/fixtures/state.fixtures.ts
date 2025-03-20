@@ -1,4 +1,4 @@
-import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { DashboardViewItem } from '~/features/search/types';
 
 import { DashboardViewItemCollection } from '../types';
 

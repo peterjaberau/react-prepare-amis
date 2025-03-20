@@ -1,5 +1,5 @@
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
 
 export function getAddToDashboardTitle(): string {
   const canCreateDashboard = contextSrv.hasPermission(AccessControlAction.DashboardsCreate);

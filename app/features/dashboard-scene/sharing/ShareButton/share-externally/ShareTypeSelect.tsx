@@ -3,18 +3,18 @@ import { css } from '@emotion/css';
 import { SelectableValue, toIconName } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { Icon, Label, Select, Spinner, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { contextSrv } from '~/core/core';
+import { Trans } from '~/core/internationalization';
 import {
   publicDashboardApi,
   useUpdatePublicDashboardAccessMutation,
-} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
+} from '~/features/dashboard/api/publicDashboardApi';
 import {
   isEmailSharingEnabled,
   PublicDashboardShareType,
-} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
-import { AccessControlAction } from '@grafana-module/app/types';
+} from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
+import { AccessControlAction } from '~/types';
 
 import { useShareDrawerContext } from '../../ShareDrawer/ShareDrawerContext';
 

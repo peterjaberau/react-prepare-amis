@@ -5,7 +5,7 @@ import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
 import { ConditionalRenderingGroupKind } from '@schema/schema/dashboard/v2alpha0/types';
 import { Divider, Dropdown, Field, Menu, RadioButtonGroup, Stack, ToolbarButton, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { ConditionHeader } from './ConditionHeader';
 import { ConditionalRenderingBase, ConditionalRenderingBaseState } from './ConditionalRenderingBase';

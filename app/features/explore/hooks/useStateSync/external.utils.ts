@@ -1,8 +1,8 @@
 import { isEmpty, isObject, mapValues, omitBy } from 'lodash';
 
 import { ExploreUrlState, toURLRange } from '@data/index';
-import { clearQueryKeys } from '@grafana-module/app/core/utils/explore';
-import { ExploreItemState } from '@grafana-module/app/types';
+import { clearQueryKeys } from '~/core/utils/explore';
+import { ExploreItemState } from '~/types';
 
 export function getUrlStateFromPaneState(pane: ExploreItemState): ExploreUrlState {
   return {

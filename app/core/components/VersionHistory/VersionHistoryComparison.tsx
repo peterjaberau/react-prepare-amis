@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 import { dateTimeFormatTimeAgo } from '@data/index';
 import { Box, Button, Divider, EmptyState, Icon, Stack, Text } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';
-import { DiffViewer } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffViewer';
-import { jsonDiff } from '@grafana-module/app/features/dashboard-scene/settings/version-history/utils';
+import { t, Trans } from '~/core/internationalization';
+import { DiffGroup } from '~/features/dashboard-scene/settings/version-history/DiffGroup';
+import { DiffViewer } from '~/features/dashboard-scene/settings/version-history/DiffViewer';
+import { jsonDiff } from '~/features/dashboard-scene/settings/version-history/utils';
 
 /** Meta information about a version of an entity */
 export interface RevisionModel {

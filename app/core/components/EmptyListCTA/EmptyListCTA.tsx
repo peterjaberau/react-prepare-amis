@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { MouseEvent } from 'react';
 
 import { Alert, Button, CallToActionCard, Icon, IconName, LinkButton } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 export interface Props {
   title: string;

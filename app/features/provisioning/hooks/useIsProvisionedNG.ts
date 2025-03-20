@@ -1,5 +1,5 @@
-import { useGetFrontendSettingsQuery } from '@grafana-module/app/api/clients/provisioning';
-import { useUrlParams } from '@grafana-module/app/core/navigation/hooks';
+import { useGetFrontendSettingsQuery } from '~/api/clients/provisioning';
+import { useUrlParams } from '~/core/navigation/hooks';
 
 import { DashboardScene } from '../../dashboard-scene/scene/DashboardScene';
 

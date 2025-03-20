@@ -6,10 +6,10 @@ import { applyFieldOverrides, DataFrame, SelectableValue, SplitOpen } from '@dat
 import { getTemplateSrv, reportInteraction } from '@runtime/index';
 import { TimeZone } from '@schema/index';
 import { RadioButtonGroup, Table, AdHocFilterItem, PanelChrome } from '@grafana-ui/index';
-import { config } from '@grafana-module/app/core/config';
-import { PANEL_BORDER } from '@grafana-module/app/core/constants';
-import { StoreState, TABLE_RESULTS_STYLE } from '@grafana-module/app/types';
-import { ExploreItemState, TABLE_RESULTS_STYLES, TableResultsStyle } from '@grafana-module/app/types/explore';
+import { config } from '~/core/config';
+import { PANEL_BORDER } from '~/core/constants';
+import { StoreState, TABLE_RESULTS_STYLE } from '~/types';
+import { ExploreItemState, TABLE_RESULTS_STYLES, TableResultsStyle } from '~/types/explore';
 
 import { MetaInfoText } from '../MetaInfoText';
 import RawListContainer from '../PrometheusListView/RawListContainer';

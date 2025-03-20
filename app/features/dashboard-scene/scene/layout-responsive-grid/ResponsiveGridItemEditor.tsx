@@ -1,4 +1,4 @@
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { useConditionalRenderingEditor } from '../../conditional-rendering/ConditionalRenderingEditor';
 

@@ -4,10 +4,10 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { FilterInput, useStyles2 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { t } from '@grafana-module/app/core/internationalization';
-import { ActionRow } from '@grafana-module/app/features/search/page/components/ActionRow';
-import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
+import { Page } from '~/core/components/Page/Page';
+import { t } from '~/core/internationalization';
+import { ActionRow } from '~/features/search/page/components/ActionRow';
+import { getGrafanaSearcher } from '~/features/search/service/searcher';
 
 import { useDispatch } from '../../types';
 

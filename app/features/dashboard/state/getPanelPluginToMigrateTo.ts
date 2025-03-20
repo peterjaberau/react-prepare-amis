@@ -1,4 +1,4 @@
-import config from '@grafana-module/app/core/config';
+import config from '~/core/config';
 
 import { autoMigrateRemovedPanelPlugins, autoMigrateAngular } from './PanelModel';
 

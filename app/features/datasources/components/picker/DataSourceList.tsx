@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { useStyles2, useTheme2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { useDatasources, useKeyboardNavigatableList, useRecentlyUsedDataSources } from '../../hooks';
 

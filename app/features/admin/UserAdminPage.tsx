@@ -5,9 +5,9 @@ import { useParams } from 'react-router';
 import { NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { Stack } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { StoreState, UserDTO, UserOrg, UserSession, SyncInfo, UserAdminError, AccessControlAction } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { contextSrv } from '~/core/core';
+import { StoreState, UserDTO, UserOrg, UserSession, SyncInfo, UserAdminError, AccessControlAction } from '~/types';
 
 import { UserLdapSyncInfo } from './UserLdapSyncInfo';
 import { UserOrgs } from './UserOrgs';

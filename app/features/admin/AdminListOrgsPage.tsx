@@ -3,10 +3,10 @@ import useAsyncFn from 'react-use/lib/useAsyncFn';
 
 import { getBackendSrv, isFetchError } from '@runtime/index';
 import { LinkButton } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction, Organization } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { Trans } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction, Organization } from '~/types';
 
 import { AdminOrgsTable } from './AdminOrgsTable';
 

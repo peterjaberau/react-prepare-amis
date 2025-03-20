@@ -1,9 +1,9 @@
 import { PageLayoutType } from '@data/index';
 import { SceneComponentProps, SceneObjectBase } from '@scenes/index';
-import { Permissions } from '@grafana-module/app/core/components/AccessControl';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { Permissions } from '~/core/components/AccessControl';
+import { Page } from '~/core/components/Page/Page';
+import { contextSrv } from '~/core/core';
+import { AccessControlAction } from '~/types';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { NavToolbarActions } from '../scene/NavToolbarActions';

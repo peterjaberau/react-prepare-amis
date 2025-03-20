@@ -12,7 +12,7 @@ import {
   SceneScopesBridge,
   UrlSyncContextProvider
 } from '@scenes/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { DataTrail } from './DataTrail';
 import { DataTrailsHome } from './DataTrailsHome';

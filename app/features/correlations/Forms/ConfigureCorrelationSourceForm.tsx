@@ -3,9 +3,9 @@ import { Controller, useFormContext } from 'react-hook-form';
 
 import { DataSourceInstanceSettings, GrafanaTheme2 } from '@data/index';
 import { Card, Field, FieldSet, Input, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { Trans, t } from '~/core/internationalization';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
 
 import { getVariableUsageInfo } from '../../explore/utils/links';
 

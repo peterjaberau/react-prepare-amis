@@ -2,10 +2,10 @@ import { debounce } from 'lodash';
 
 import { getBackendSrv } from '@runtime/index';
 import { FetchDataArgs } from '@grafana-ui/index';
-import { updateNavIndex } from '@grafana-module/app/core/actions';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';
-import { AccessControlAction, TeamWithRoles, TeamMember, ThunkResult, Team } from '@grafana-module/app/types';
+import { updateNavIndex } from '~/core/actions';
+import { contextSrv } from '~/core/core';
+import { accessControlQueryParam } from '~/core/utils/accessControl';
+import { AccessControlAction, TeamWithRoles, TeamMember, ThunkResult, Team } from '~/types';
 
 import { buildNavModel } from './navModel';
 import {

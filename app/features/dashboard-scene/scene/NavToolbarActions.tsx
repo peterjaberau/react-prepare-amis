@@ -18,13 +18,13 @@ import {
   ToolbarButtonRow,
   useStyles2,
 } from '@grafana-ui/index';
-import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
-import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
-import { LS_PANEL_COPY_KEY } from '@grafana-module/app/core/constants';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
+import { AppChromeUpdate } from '~/core/components/AppChrome/AppChromeUpdate';
+import { NavToolbarSeparator } from '~/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
+import { LS_PANEL_COPY_KEY } from '~/core/constants';
+import { contextSrv } from '~/core/core';
+import { Trans, t } from '~/core/internationalization';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { playlistSrv } from '~/features/playlist/PlaylistSrv';
 
 import { shareDashboardType } from '../../dashboard/components/ShareModal/utils';
 import { PanelEditor, buildPanelEditScene } from '../panel-edit/PanelEditor';

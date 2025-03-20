@@ -1,6 +1,6 @@
 import { config } from '@runtime/index';
 import { Alert, TextLink } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { Trans, t } from '../../core/internationalization';
 

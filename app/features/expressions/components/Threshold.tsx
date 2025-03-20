@@ -6,9 +6,9 @@ import { FormEvent, useEffect, useReducer } from 'react';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { InlineField, InlineFieldRow, InlineSwitch, Input, Select, Stack, useStyles2 } from '@grafana-ui/index';
-import { config } from '@grafana-module/app/core/config';
-import { t } from '@grafana-module/app/core/internationalization';
-import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
+import { config } from '~/core/config';
+import { t } from '~/core/internationalization';
+import { EvalFunction } from '~/features/alerting/state/alertDef';
 
 import { ClassicCondition, ExpressionQuery, thresholdFunctions } from '../types';
 

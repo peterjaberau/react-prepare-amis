@@ -1,7 +1,7 @@
 import { HttpResponse, http } from 'msw';
 import { SetupServer } from 'msw/node';
 
-import { AlertmanagerStatus } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { AlertmanagerStatus } from '~/plugins/datasource/alertmanager/types';
 
 import vanillaAlertManagerConfig from './alertmanager.vanilla.mock.json';
 

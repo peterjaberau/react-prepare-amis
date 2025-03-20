@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
 
 import { config } from '@runtime/index';
-import { DashboardsTreeItem } from '@grafana-module/app/features/browse-dashboards/types';
-import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { DashboardsTreeItem } from '~/features/browse-dashboards/types';
+import { DashboardViewItem } from '~/features/search/types';
 
 import { getDOMId } from './NestedFolderList';
 

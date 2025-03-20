@@ -8,11 +8,11 @@ import { selectors } from '@selectors/index';
 import { reportInteraction } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { Button, Field, FilterInput, RadioButtonGroup, ScrollContainer, useStyles2 } from '@grafana-ui/index';
-import { LS_VISUALIZATION_SELECT_TAB_KEY } from '@grafana-module/app/core/constants';
-import { VisualizationSelectPaneTab } from '@grafana-module/app/features/dashboard/components/PanelEditor/types';
-import { VisualizationSuggestions } from '@grafana-module/app/features/panel/components/VizTypePicker/VisualizationSuggestions';
-import { VizTypePicker } from '@grafana-module/app/features/panel/components/VizTypePicker/VizTypePicker';
-import { VizTypeChangeDetails } from '@grafana-module/app/features/panel/components/VizTypePicker/types';
+import { LS_VISUALIZATION_SELECT_TAB_KEY } from '~/core/constants';
+import { VisualizationSelectPaneTab } from '~/features/dashboard/components/PanelEditor/types';
+import { VisualizationSuggestions } from '~/features/panel/components/VizTypePicker/VisualizationSuggestions';
+import { VizTypePicker } from '~/features/panel/components/VizTypePicker/VizTypePicker';
+import { VizTypeChangeDetails } from '~/features/panel/components/VizTypePicker/types';
 
 import { PanelModelCompatibilityWrapper } from '../utils/PanelModelCompatibilityWrapper';
 

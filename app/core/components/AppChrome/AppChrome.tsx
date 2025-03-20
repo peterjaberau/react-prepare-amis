@@ -5,12 +5,12 @@ import { PropsWithChildren, useEffect } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { locationSearchToObject, locationService, useScopes } from '@runtime/index';
 import { useStyles2, LinkButton, useTheme2 } from '@grafana-ui/index';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
-import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import store from '@grafana-module/app/core/store';
-import { CommandPalette } from '@grafana-module/app/features/commandPalette/CommandPalette';
-import { ScopesDashboards } from '@grafana-module/app/features/scopes/dashboards/ScopesDashboards';
+import { useGrafana } from '~/core/context/GrafanaContext';
+import { useMediaQueryChange } from '~/core/hooks/useMediaQueryChange';
+import { Trans } from '~/core/internationalization';
+import store from '~/core/store';
+import { CommandPalette } from '~/features/commandPalette/CommandPalette';
+import { ScopesDashboards } from '~/features/scopes/dashboards/ScopesDashboards';
 
 import { AppChromeMenu } from './AppChromeMenu';
 import { DOCKED_LOCAL_STORAGE_KEY, DOCKED_MENU_OPEN_LOCAL_STORAGE_KEY } from './AppChromeService';

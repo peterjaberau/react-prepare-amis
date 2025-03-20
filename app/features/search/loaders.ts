@@ -1,4 +1,4 @@
-import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
+import { backendSrv } from '~/core/services/backend_srv';
 
 import { buildNavModel } from '../folders/state/navModel';
 

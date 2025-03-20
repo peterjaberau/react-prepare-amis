@@ -1,8 +1,8 @@
 import { UrlQueryMap } from '@data/index';
 import { Status } from "@schema/schema/dashboard/v2alpha1/types.status.gen";
-import { Resource } from '@grafana-module/app/features/apiserver/types';
-import { DeleteDashboardResponse } from '@grafana-module/app/features/manage-dashboards/types';
-import { AnnotationsPermissions, SaveDashboardResponseDTO } from '@grafana-module/app/types';
+import { Resource } from '~/features/apiserver/types';
+import { DeleteDashboardResponse } from '~/features/manage-dashboards/types';
+import { AnnotationsPermissions, SaveDashboardResponseDTO } from '~/types';
 
 import { SaveDashboardCommand } from '../components/SaveDashboard/types';
 

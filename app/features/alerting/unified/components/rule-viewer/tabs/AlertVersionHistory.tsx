@@ -2,9 +2,9 @@ import { useCallback, useMemo, useState } from 'react';
 
 import { config } from '@runtime/index';
 import { Alert, Button, EmptyState, LoadingPlaceholder, Stack, Text, Tooltip } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { RuleGroupIdentifierV2, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans, t } from '~/core/internationalization';
+import { RuleGroupIdentifierV2, RuleIdentifier } from '~/types/unified-alerting';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '~/types/unified-alerting-dto';
 
 import {
   LogMessages,

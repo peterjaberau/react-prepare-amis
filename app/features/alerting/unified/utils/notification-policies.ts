@@ -1,7 +1,7 @@
 import { isArray, pick, reduce } from 'lodash';
 
-import { AlertmanagerGroup, ObjectMatcher, Route, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { Labels } from '@grafana-module/app/types/unified-alerting-dto';
+import { AlertmanagerGroup, ObjectMatcher, Route, RouteWithID } from '~/plugins/datasource/alertmanager/types';
+import { Labels } from '~/types/unified-alerting-dto';
 
 import { Label, isLabelMatch, matchLabelsSet, normalizeMatchers, unquoteWithUnescape } from './matchers';
 

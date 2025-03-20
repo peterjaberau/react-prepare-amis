@@ -3,8 +3,8 @@ import { useCallback } from 'react';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { locationService } from '@runtime/index';
 import { IconName, Menu } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { getTrackingSource, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
+import { t } from '~/core/internationalization';
+import { getTrackingSource, shareDashboardType } from '~/features/dashboard/components/ShareModal/utils';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 import { DashboardInteractions } from '../../utils/interactions';

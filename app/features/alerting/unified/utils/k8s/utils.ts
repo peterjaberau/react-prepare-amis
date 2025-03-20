@@ -1,7 +1,7 @@
 import { config } from '@runtime/index';
-import { IoK8SApimachineryPkgApisMetaV1ObjectMeta } from '@grafana-module/app/features/alerting/unified/openapi/receiversApi.gen';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { K8sAnnotations, PROVENANCE_NONE } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
+import { IoK8SApimachineryPkgApisMetaV1ObjectMeta } from '~/features/alerting/unified/openapi/receiversApi.gen';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { K8sAnnotations, PROVENANCE_NONE } from '~/features/alerting/unified/utils/k8s/constants';
 
 /**
  * Should we call the kubernetes-style API for managing alertmanager entities?

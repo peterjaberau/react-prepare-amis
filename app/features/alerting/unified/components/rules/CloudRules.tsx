@@ -5,8 +5,8 @@ import { useLocation } from 'react-router';
 
 import { GrafanaTheme2, urlUtil } from '@data/index';
 import { LinkButton, LoadingPlaceholder, Pagination, Spinner, Text, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { CombinedRuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { Trans } from '~/core/internationalization';
+import { CombinedRuleNamespace } from '~/types/unified-alerting';
 
 import { DEFAULT_PER_PAGE_PAGINATION } from '../../../../../core/constants';
 import { AlertingAction, useAlertingAbility } from '../../hooks/useAbilities';

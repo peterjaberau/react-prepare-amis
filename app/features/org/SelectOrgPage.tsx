@@ -3,8 +3,8 @@ import { useEffectOnce } from 'react-use';
 
 import { config } from '@runtime/index';
 import { Button, Stack } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { StoreState, UserOrg } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { StoreState, UserOrg } from '~/types';
 
 import { getUserOrganizations, setUserOrganization } from './state/actions';
 

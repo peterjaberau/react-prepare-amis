@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { config, GrafanaBootConfig } from '@runtime/index';
 import { LinkButton, Stack, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import { AccessControlAction } from '~/types';
 
 import { contextSrv } from '../../core/services/context_srv';
 

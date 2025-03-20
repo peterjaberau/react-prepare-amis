@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router';
 
 import { urlUtil } from '@data/index';
 import { Alert, ConfirmModal, Stack, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { useRuleWithLocation } from '@grafana-module/app/features/alerting/unified/hooks/useCombinedRule';
-import { stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
-import { rulerRuleToFormValues } from '@grafana-module/app/features/alerting/unified/utils/rule-form';
-import { DiffGroup } from '@grafana-module/app/features/dashboard-scene/settings/version-history/DiffGroup';
-import { jsonDiff } from '@grafana-module/app/features/dashboard-scene/settings/version-history/utils';
-import { GrafanaRuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans, t } from '~/core/internationalization';
+import { useRuleWithLocation } from '~/features/alerting/unified/hooks/useCombinedRule';
+import { stringifyErrorLike } from '~/features/alerting/unified/utils/misc';
+import { rulerRuleToFormValues } from '~/features/alerting/unified/utils/rule-form';
+import { DiffGroup } from '~/features/dashboard-scene/settings/version-history/DiffGroup';
+import { jsonDiff } from '~/features/dashboard-scene/settings/version-history/utils';
+import { GrafanaRuleIdentifier } from '~/types/unified-alerting';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '~/types/unified-alerting-dto';
 
 import { useRestoreVersion } from './useRestoreVersion';
 import { preprocessRuleForDiffDisplay } from './versions-utils';

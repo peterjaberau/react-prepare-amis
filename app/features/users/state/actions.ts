@@ -2,9 +2,9 @@ import { debounce } from 'lodash';
 
 import { getBackendSrv } from '@runtime/index';
 import { FetchDataArgs } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';
-import { OrgUser } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { accessControlQueryParam } from '~/core/utils/accessControl';
+import { OrgUser } from '~/types';
 
 import { AccessControlAction, ThunkResult } from '../../../types';
 

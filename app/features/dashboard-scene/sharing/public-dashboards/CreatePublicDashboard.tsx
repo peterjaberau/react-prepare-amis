@@ -1,5 +1,5 @@
 import { SceneComponentProps } from '@scenes/index';
-import { CreatePublicDashboardBase } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/CreatePublicDashboard/CreatePublicDashboard';
+import { CreatePublicDashboardBase } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/CreatePublicDashboard/CreatePublicDashboard';
 
 import { getDashboardSceneFor } from '../../utils/utils';
 

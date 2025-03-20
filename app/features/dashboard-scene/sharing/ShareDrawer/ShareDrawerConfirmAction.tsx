@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, useStyles2, Spinner, Stack, Text } from '@grafana-ui/index';
 import { ConfirmContent, ConfirmContentProps } from '@grafana-ui/internal';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 export function ShareDrawerConfirmAction({
   onConfirm,

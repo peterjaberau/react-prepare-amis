@@ -1,8 +1,8 @@
 import { connect, ConnectedProps } from 'react-redux';
 import { useMount } from 'react-use';
 
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { StoreState } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { StoreState } from '~/types';
 
 import { ChangePasswordForm } from './ChangePasswordForm';
 import { changePassword, loadUser } from './state/actions';

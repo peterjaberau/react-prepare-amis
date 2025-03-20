@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import { config } from '@runtime/index';
 import { LinkButton } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { ROUTES } from '@grafana-module/app/features/connections/constants';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { Trans } from '~/core/internationalization';
+import { ROUTES } from '~/features/connections/constants';
+import { AccessControlAction } from '~/types';
 
 import { trackAddNewDsClicked } from '../tracking';
 

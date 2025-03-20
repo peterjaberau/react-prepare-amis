@@ -1,32 +1,32 @@
 import { uniq } from 'lodash';
 
-import { SafeDynamicImport } from '@grafana-module/app/core/components/DynamicImports/SafeDynamicImport';
-import { config } from '@grafana-module/app/core/config';
-import { RouteDescriptor } from '@grafana-module/app/core/navigation/types';
+import { SafeDynamicImport } from '~/core/components/DynamicImports/SafeDynamicImport';
+import { config } from '~/core/config';
+import { RouteDescriptor } from '~/core/navigation/types';
 
 const profileRoutes: RouteDescriptor[] = [
   {
     path: '/profile',
     component: SafeDynamicImport(
-      () => import(/* webpackChunkName: "UserProfileEditPage" */ '@grafana-module/app/features/profile/UserProfileEditPage')
+      () => import(/* webpackChunkName: "UserProfileEditPage" */ '~/features/profile/UserProfileEditPage')
     ),
   },
   {
     path: '/profile/password',
     component: SafeDynamicImport(
-      () => import(/* webPackChunkName: "ChangePasswordPage" */ '@grafana-module/app/features/profile/ChangePasswordPage')
+      () => import(/* webPackChunkName: "ChangePasswordPage" */ '~/features/profile/ChangePasswordPage')
     ),
   },
   {
     path: '/profile/select-org',
     component: SafeDynamicImport(
-      () => import(/* webpackChunkName: "SelectOrgPage" */ '@grafana-module/app/features/org/SelectOrgPage')
+      () => import(/* webpackChunkName: "SelectOrgPage" */ '~/features/org/SelectOrgPage')
     ),
   },
   {
     path: '/profile/notifications',
     component: SafeDynamicImport(
-      () => import(/* webpackChunkName: "NotificationsPage"*/ '@grafana-module/app/features/notifications/NotificationsPage')
+      () => import(/* webpackChunkName: "NotificationsPage"*/ '~/features/notifications/NotificationsPage')
     ),
   },
 ];
@@ -40,7 +40,7 @@ export function getProfileRoutes(cfg = config): RouteDescriptor[] {
   return uniquePaths.map((path) => ({
     path,
     component: SafeDynamicImport(
-      () => import(/* webpackChunkName: "ProfileFeatureTogglePage"*/ '@grafana-module/app/features/profile/FeatureTogglePage')
+      () => import(/* webpackChunkName: "ProfileFeatureTogglePage"*/ '~/features/profile/FeatureTogglePage')
     ),
   }));
 }

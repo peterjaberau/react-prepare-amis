@@ -1,6 +1,6 @@
-import { config } from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { config } from '~/core/config';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
 
 export function isGrafanaAdmin(): boolean {
   return config.bootData.user.isGrafanaAdmin;

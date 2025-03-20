@@ -1,7 +1,7 @@
 import { isArray, reduce } from 'lodash';
 
 import { IconName } from '@grafana-ui/index';
-import { QueryPart, QueryPartDef } from '@grafana-module/app/features/alerting/state/query_part';
+import { QueryPart, QueryPartDef } from '~/features/alerting/state/query_part';
 
 const alertQueryDef = new QueryPartDef({
   type: 'query',

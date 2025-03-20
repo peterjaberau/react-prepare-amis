@@ -11,7 +11,7 @@ import {
   VizPanel,
 } from '@scenes/index';
 import { DataSourceRef } from '@schema/index';
-import { sortedDeepCloneWithoutNulls } from '@grafana-module/app/core/utils/object';
+import { sortedDeepCloneWithoutNulls } from '~/core/utils/object';
 
 import {
   DashboardV2Spec,

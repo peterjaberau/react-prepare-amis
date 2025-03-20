@@ -20,7 +20,7 @@ import {
   RuleNamespace,
   RuleWithLocation,
   RulesSource,
-} from '@grafana-module/app/types/unified-alerting';
+} from '~/types/unified-alerting';
 import {
   Annotations,
   GrafanaAlertState,
@@ -36,7 +36,7 @@ import {
   RulerRecordingRuleDTO,
   RulerRuleDTO,
   mapStateWithReasonToBaseState,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { CombinedRuleNamespace } from '../../../../types/unified-alerting';
 import { State } from '../components/StateTag';

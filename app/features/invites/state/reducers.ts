@@ -1,6 +1,6 @@
 import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 
-import { Invitee } from '@grafana-module/app/types';
+import { Invitee } from '~/types';
 
 import { fetchInvitees, revokeInvite } from './actions';
 

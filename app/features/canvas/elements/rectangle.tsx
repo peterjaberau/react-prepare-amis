@@ -3,10 +3,10 @@ import { PureComponent } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { stylesFactory } from '@grafana-ui/index';
-import { config } from '@grafana-module/app/core/config';
-import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
-import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors/ColorDimensionEditor';
-import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/editors/TextDimensionEditor';
+import { config } from '~/core/config';
+import { DimensionContext } from '~/features/dimensions/context';
+import { ColorDimensionEditor } from '~/features/dimensions/editors/ColorDimensionEditor';
+import { TextDimensionEditor } from '~/features/dimensions/editors/TextDimensionEditor';
 
 import {
   CanvasElementItem,

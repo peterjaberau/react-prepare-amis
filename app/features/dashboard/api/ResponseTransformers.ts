@@ -52,16 +52,16 @@ import {
   AnnoKeyUpdatedBy,
   AnnoKeyUpdatedTimestamp,
   DeprecatedInternalId,
-} from '@grafana-module/app/features/apiserver/types';
-import { GRID_ROW_HEIGHT } from '@grafana-module/app/features/dashboard-scene/serialization/const';
-import { TypedVariableModelV2 } from '@grafana-module/app/features/dashboard-scene/serialization/transformSaveModelSchemaV2ToScene';
-import { getDefaultDataSourceRef } from '@grafana-module/app/features/dashboard-scene/serialization/transformSceneToSaveModelSchemaV2';
+} from '~/features/apiserver/types';
+import { GRID_ROW_HEIGHT } from '~/features/dashboard-scene/serialization/const';
+import { TypedVariableModelV2 } from '~/features/dashboard-scene/serialization/transformSaveModelSchemaV2ToScene';
+import { getDefaultDataSourceRef } from '~/features/dashboard-scene/serialization/transformSceneToSaveModelSchemaV2';
 import {
   transformCursorSyncV2ToV1,
   transformSortVariableToEnumV1,
   transformVariableHideToEnumV1,
   transformVariableRefreshToEnumV1,
-} from '@grafana-module/app/features/dashboard-scene/serialization/transformToV1TypesUtils';
+} from '~/features/dashboard-scene/serialization/transformToV1TypesUtils';
 import {
   LEGACY_STRING_VALUE_KEY,
   transformCursorSynctoEnum,
@@ -69,8 +69,8 @@ import {
   transformSortVariableToEnum,
   transformVariableHideToEnum,
   transformVariableRefreshToEnum,
-} from '@grafana-module/app/features/dashboard-scene/serialization/transformToV2TypesUtils';
-import { DashboardDataDTO, DashboardDTO } from '@grafana-module/app/types';
+} from '~/features/dashboard-scene/serialization/transformToV2TypesUtils';
+import { DashboardDataDTO, DashboardDTO } from '~/types';
 
 import { DashboardWithAccessInfo } from './types';
 import { isDashboardResource, isDashboardV0Spec, isDashboardV2Resource } from './utils';

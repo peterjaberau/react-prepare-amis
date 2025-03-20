@@ -17,7 +17,7 @@ import {
   clearButtonStyles,
   useStyles2,
 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { DashboardModel } from '../../../../dashboard/state/DashboardModel';
 import { dashboardApi } from '../../api/dashboardApi';

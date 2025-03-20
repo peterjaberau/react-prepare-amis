@@ -2,8 +2,8 @@ import { uniqBy } from 'lodash';
 
 import { AppEvents, TimeRange, isDateTime, rangeUtil } from '@data/index';
 import { TimeRangePickerProps, TimeRangePicker } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { t } from '@grafana-module/app/core/internationalization';
+import appEvents from '~/core/app_events';
+import { t } from '~/core/internationalization';
 
 import { LocalStorageValueProvider } from '../LocalStorageValueProvider';
 

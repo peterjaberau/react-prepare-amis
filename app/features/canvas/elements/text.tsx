@@ -6,9 +6,9 @@ import { of } from 'rxjs';
 
 import { DataFrame, GrafanaTheme2 } from '@data/index';
 import { Input, usePanelContext, useStyles2 } from '@grafana-ui/index';
-import { DimensionContext } from '@grafana-module/app/features/dimensions/context';
-import { ColorDimensionEditor } from '@grafana-module/app/features/dimensions/editors/ColorDimensionEditor';
-import { TextDimensionEditor } from '@grafana-module/app/features/dimensions/editors/TextDimensionEditor';
+import { DimensionContext } from '~/features/dimensions/context';
+import { ColorDimensionEditor } from '~/features/dimensions/editors/ColorDimensionEditor';
+import { TextDimensionEditor } from '~/features/dimensions/editors/TextDimensionEditor';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps, defaultThemeTextColor } from '../element';
 import { ElementState } from '../runtime/element';

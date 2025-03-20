@@ -4,13 +4,13 @@ import { useAsyncFn } from 'react-use';
 import { locationUtil } from '@data/index';
 import { locationService, reportInteraction } from '@runtime/index';
 import { Dashboard } from '@schema/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { updateDashboardName } from '@grafana-module/app/core/reducers/navBarTree';
-import { useSaveDashboardMutation } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { useDispatch } from '@grafana-module/app/types';
-import { DashboardSavedEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { updateDashboardName } from '~/core/reducers/navBarTree';
+import { useSaveDashboardMutation } from '~/features/browse-dashboards/api/browseDashboardsAPI';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { useDispatch } from '~/types';
+import { DashboardSavedEvent } from '~/types/events';
 
 import { updateDashboardUidLastUsedDatasource } from '../../utils/dashboard';
 

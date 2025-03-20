@@ -3,11 +3,11 @@ import { selectors } from '@selectors/index';
 import { config } from '@runtime/index';
 import { SceneTimeRangeLike, VizPanel } from '@scenes/index';
 import { DataLinksInlineEditor, Input, TextArea, Switch } from '@grafana-ui/index';
-import { GenAIPanelDescriptionButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIPanelDescriptionButton';
-import { GenAIPanelTitleButton } from '@grafana-module/app/features/dashboard/components/GenAI/GenAIPanelTitleButton';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
-import { getPanelLinksVariableSuggestions } from '@grafana-module/app/features/panel/panellinks/link_srv';
+import { GenAIPanelDescriptionButton } from '~/features/dashboard/components/GenAI/GenAIPanelDescriptionButton';
+import { GenAIPanelTitleButton } from '~/features/dashboard/components/GenAI/GenAIPanelTitleButton';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { getPanelLinksVariableSuggestions } from '~/features/panel/panellinks/link_srv';
 
 import { VizPanelLinks } from '../scene/PanelLinks';
 import { PanelTimeRange } from '../scene/PanelTimeRange';

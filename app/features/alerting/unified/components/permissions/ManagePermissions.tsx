@@ -1,8 +1,8 @@
 import { ComponentProps, useState } from 'react';
 
 import { Button, Drawer } from '@grafana-ui/index';
-import { Permissions } from '@grafana-module/app/core/components/AccessControl';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Permissions } from '~/core/components/AccessControl';
+import { Trans, t } from '~/core/internationalization';
 
 type ButtonProps = { onClick: () => void };
 

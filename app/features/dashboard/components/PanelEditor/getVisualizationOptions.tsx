@@ -16,9 +16,9 @@ import {
 } from '@data/utils/OptionsUIBuilders';
 import { VizPanel } from '@scenes/index';
 import { Input } from '@grafana-ui/index';
-import { LibraryVizPanelInfo } from '@grafana-module/app/features/dashboard-scene/panel-edit/LibraryVizPanelInfo';
-import { LibraryPanelBehavior } from '@grafana-module/app/features/dashboard-scene/scene/LibraryPanelBehavior';
-import { getDataLinksVariableSuggestions } from '@grafana-module/app/features/panel/panellinks/link_srv';
+import { LibraryVizPanelInfo } from '~/features/dashboard-scene/panel-edit/LibraryVizPanelInfo';
+import { LibraryPanelBehavior } from '~/features/dashboard-scene/scene/LibraryPanelBehavior';
+import { getDataLinksVariableSuggestions } from '~/features/panel/panellinks/link_srv';
 
 import { OptionsPaneCategoryDescriptor } from './OptionsPaneCategoryDescriptor';
 import { OptionsPaneItemDescriptor } from './OptionsPaneItemDescriptor';

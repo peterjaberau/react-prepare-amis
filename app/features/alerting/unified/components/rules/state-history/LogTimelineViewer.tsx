@@ -4,8 +4,8 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { DataFrame, InterpolateFunction, TimeRange } from '@data/index';
 import { VisibilityMode } from '@schema/index';
 import { LegendDisplayMode, useTheme2 } from '@grafana-ui/index';
-import { TimelineChart } from '@grafana-module/app/core/components/TimelineChart/TimelineChart';
-import { TimelineMode } from '@grafana-module/app/core/components/TimelineChart/utils';
+import { TimelineChart } from '~/core/components/TimelineChart/TimelineChart';
+import { TimelineMode } from '~/core/components/TimelineChart/utils';
 
 interface LogTimelineViewerProps {
   frames: DataFrame[];

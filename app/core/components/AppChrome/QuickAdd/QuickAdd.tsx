@@ -4,8 +4,8 @@ import { useMemo, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Menu, Dropdown, useStyles2, useTheme2, ToolbarButton } from '@grafana-ui/index';
-import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
-import { useSelector } from '@grafana-module/app/types';
+import { useMediaQueryChange } from '~/core/hooks/useMediaQueryChange';
+import { useSelector } from '~/types';
 
 import { NavToolbarSeparator } from '../NavToolbar/NavToolbarSeparator';
 

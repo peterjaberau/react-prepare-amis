@@ -3,8 +3,8 @@ import useAsync from 'react-use/lib/useAsync';
 
 import { config } from '@runtime/index';
 import { ConfirmModal, EmptyState, ScrollContainer, TextLink } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { getDashboardSnapshotSrv, Snapshot } from '@grafana-module/app/features/dashboard/services/SnapshotSrv';
+import { Trans, t } from '~/core/internationalization';
+import { getDashboardSnapshotSrv, Snapshot } from '~/features/dashboard/services/SnapshotSrv';
 
 import { SnapshotListTableRow } from './SnapshotListTableRow';
 

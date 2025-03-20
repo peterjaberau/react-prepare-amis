@@ -1,5 +1,5 @@
 import { Button, Modal, Stack, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { MigrateDataResponseItemDto } from '../api';
 

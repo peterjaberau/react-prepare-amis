@@ -4,15 +4,15 @@ import { Labels, UrlQueryMap } from '@data/index';
 import { GrafanaEdition } from '@data/types/config';
 import { config, isFetchError } from '@runtime/index';
 import { DataSourceRef } from '@schema/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { escapePathSeparators } from '@grafana-module/app/features/alerting/unified/utils/rule-id';
+import { contextSrv } from '~/core/services/context_srv';
+import { escapePathSeparators } from '~/features/alerting/unified/utils/rule-id';
 import {
   alertInstanceKey,
   isCloudRuleIdentifier,
   isGrafanaRuleIdentifier,
   isPrometheusRuleIdentifier,
-} from '@grafana-module/app/features/alerting/unified/utils/rules';
-import { SortOrder } from '@grafana-module/app/plugins/panel/alertlist/types';
+} from '~/features/alerting/unified/utils/rules';
+import { SortOrder } from '~/plugins/panel/alertlist/types';
 import {
   Alert,
   CombinedRule,
@@ -21,13 +21,13 @@ import {
   RuleIdentifier,
   RulesSource,
   SilenceFilterState,
-} from '@grafana-module/app/types/unified-alerting';
+} from '~/types/unified-alerting';
 import {
   GrafanaAlertState,
   PromAlertingRuleState,
   PromRuleDTO,
   mapStateWithReasonToBaseState,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { ALERTMANAGER_NAME_QUERY_KEY } from './constants';
 import { getRulesSourceName } from './datasource';

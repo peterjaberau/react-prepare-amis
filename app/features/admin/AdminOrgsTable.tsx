@@ -5,9 +5,9 @@ import Skeleton from 'react-loading-skeleton';
 import { GrafanaTheme2 } from '@data/index';
 import { Button, ConfirmModal, useStyles2 } from '@grafana-ui/index';
 import { SkeletonComponent, attachSkeleton } from '@grafana-ui/unstable';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { AccessControlAction, Organization } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { Trans } from '~/core/internationalization';
+import { AccessControlAction, Organization } from '~/types';
 
 interface Props {
   orgs: Organization[];

@@ -4,7 +4,7 @@ import { DataSourceInstanceSettings, MetricFindValue, readCSV } from '@data/inde
 import { selectors } from '@selectors/index';
 import { DataSourceRef } from '@schema/index';
 import { Alert, CodeEditor, Field, Switch } from '@grafana-ui/index';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
 
 import { VariableCheckboxField } from './VariableCheckboxField';
 import { VariableLegend } from './VariableLegend';

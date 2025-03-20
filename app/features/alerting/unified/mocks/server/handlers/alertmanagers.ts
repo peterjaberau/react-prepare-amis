@@ -1,17 +1,17 @@
 import { HttpResponse, JsonBodyType, StrictResponse, http } from 'msw';
 
-import { TemplatesTestPayload } from '@grafana-module/app/features/alerting/unified/api/templateApi';
-import receiversMock from '@grafana-module/app/features/alerting/unified/components/contact-points/__mocks__/receivers.mock.json';
-import { MOCK_SILENCE_ID_EXISTING, mockAlertmanagerAlert } from '@grafana-module/app/features/alerting/unified/mocks';
-import { defaultGrafanaAlertingConfigurationStatusResponse } from '@grafana-module/app/features/alerting/unified/mocks/alertmanagerApi';
+import { TemplatesTestPayload } from '~/features/alerting/unified/api/templateApi';
+import receiversMock from '~/features/alerting/unified/components/contact-points/__mocks__/receivers.mock.json';
+import { MOCK_SILENCE_ID_EXISTING, mockAlertmanagerAlert } from '~/features/alerting/unified/mocks';
+import { defaultGrafanaAlertingConfigurationStatusResponse } from '~/features/alerting/unified/mocks/alertmanagerApi';
 import {
   getAlertmanagerConfig,
   getAlertmanagerStatus,
   setAlertmanagerConfig,
-} from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanagers';
-import { MOCK_DATASOURCE_UID_BROKEN_ALERTMANAGER } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/datasources';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { AlertManagerCortexConfig, AlertState } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+} from '~/features/alerting/unified/mocks/server/entities/alertmanagers';
+import { MOCK_DATASOURCE_UID_BROKEN_ALERTMANAGER } from '~/features/alerting/unified/mocks/server/handlers/datasources';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { AlertManagerCortexConfig, AlertState } from '~/plugins/datasource/alertmanager/types';
 
 export const grafanaAlertingConfigurationStatusHandler = (
   response = defaultGrafanaAlertingConfigurationStatusResponse

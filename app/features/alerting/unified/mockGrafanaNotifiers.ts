@@ -1,4 +1,4 @@
-import { GrafanaNotifierType, NotifierDTO } from '@grafana-module/app/types';
+import { GrafanaNotifierType, NotifierDTO } from '~/types';
 
 export const grafanaAlertNotifiers: Record<GrafanaNotifierType, NotifierDTO> = {
   dingding: {

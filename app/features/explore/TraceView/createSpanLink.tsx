@@ -22,7 +22,7 @@ import { PromQuery } from '@prometheus/index';
 import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { Icon } from '@grafana-ui/index';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
 
 import { LokiQuery } from '../../../plugins/datasource/loki/types';
 import { ExploreFieldLinkModel, getFieldLinksForExplore, getVariableUsageInfo } from '../utils/links';

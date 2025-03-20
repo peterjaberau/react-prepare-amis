@@ -4,10 +4,10 @@ import { useLocation } from 'react-router';
 import { AppEvents } from '@data/index';
 import { config, locationService, reportInteraction } from '@runtime/index';
 import { Button, ConfirmModal, Stack } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { removePluginFromNavTree } from '@grafana-module/app/core/reducers/navBarTree';
-import { useDispatch } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { removePluginFromNavTree } from '~/core/reducers/navBarTree';
+import { useDispatch } from '~/types';
 
 import {
   useInstallStatus,

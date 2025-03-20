@@ -2,10 +2,10 @@ import { useMemo, useState } from 'react';
 import { useAsync } from 'react-use';
 
 import { ConfirmModal, EmptyState, LinkButton, TextLink } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import PageActionBar from '@grafana-module/app/core/components/PageActionBar/PageActionBar';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { Page } from '~/core/components/Page/Page';
+import PageActionBar from '~/core/components/PageActionBar/PageActionBar';
+import { Trans, t } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
 
 import { PlaylistPageList } from './PlaylistPageList';
 import { StartModal } from './StartModal';

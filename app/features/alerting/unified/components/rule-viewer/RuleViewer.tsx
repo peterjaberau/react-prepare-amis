@@ -5,13 +5,13 @@ import { useMeasure } from 'react-use';
 
 import { NavModelItem, UrlQueryValue } from '@data/index';
 import { Alert, LinkButton, LoadingBar, Stack, TabContent, Text, TextLink, useStyles2 } from '@grafana-ui/index';
-import { PageInfoItem } from '@grafana-module/app/core/components/Page/types';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import InfoPausedRule from '@grafana-module/app/features/alerting/unified/components/InfoPausedRule';
-import { RuleActionsButtons } from '@grafana-module/app/features/alerting/unified/components/rules/RuleActionsButtons';
-import { AlertInstanceTotalState, CombinedRule, RuleHealth, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { PromAlertingRuleState, PromRuleType } from '@grafana-module/app/types/unified-alerting-dto';
+import { PageInfoItem } from '~/core/components/Page/types';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { Trans, t } from '~/core/internationalization';
+import InfoPausedRule from '~/features/alerting/unified/components/InfoPausedRule';
+import { RuleActionsButtons } from '~/features/alerting/unified/components/rules/RuleActionsButtons';
+import { AlertInstanceTotalState, CombinedRule, RuleHealth, RuleIdentifier } from '~/types/unified-alerting';
+import { PromAlertingRuleState, PromRuleType } from '~/types/unified-alerting-dto';
 
 import { defaultPageNav } from '../../RuleViewer';
 import { shouldUsePrometheusRulesPrimary } from '../../featureToggles';

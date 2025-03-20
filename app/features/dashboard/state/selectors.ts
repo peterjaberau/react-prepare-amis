@@ -1,5 +1,5 @@
 import { PanelPlugin } from '@data/index';
-import { StoreState } from '@grafana-module/app/types';
+import { StoreState } from '~/types';
 
 import { getPanelPluginNotFound } from '../../panel/components/PanelPluginError';
 

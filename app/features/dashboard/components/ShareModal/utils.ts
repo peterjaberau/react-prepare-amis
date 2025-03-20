@@ -1,8 +1,8 @@
 import { dateTime, locationUtil, TimeRange, urlUtil, rangeUtil } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneObjectRef, VizPanel } from '@scenes/index';
-import { createShortLink } from '@grafana-module/app/core/utils/shortLinks';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { createShortLink } from '~/core/utils/shortLinks';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
 
 import { PanelModel } from '../../state/PanelModel';
 

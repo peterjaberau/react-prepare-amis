@@ -1,7 +1,7 @@
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
-import { AccessControlAction, Settings, SettingsSection } from '@grafana-module/app/types';
+import config from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { getBackendSrv } from '~/core/services/backend_srv';
+import { AccessControlAction, Settings, SettingsSection } from '~/types';
 
 import { AuthProviderInfo, GetStatusHook, AuthProviderStatus } from './types';
 

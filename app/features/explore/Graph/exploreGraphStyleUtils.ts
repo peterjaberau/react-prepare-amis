@@ -2,7 +2,7 @@ import { produce } from 'immer';
 
 import { FieldConfigSource, ThresholdsConfig } from '@data/index';
 import { GraphDrawStyle, GraphFieldConfig, GraphThresholdsStyleConfig, StackingMode } from '@schema/index';
-import { ExploreGraphStyle } from '@grafana-module/app/types';
+import { ExploreGraphStyle } from '~/types';
 
 export type FieldConfig = FieldConfigSource<GraphFieldConfig>;
 

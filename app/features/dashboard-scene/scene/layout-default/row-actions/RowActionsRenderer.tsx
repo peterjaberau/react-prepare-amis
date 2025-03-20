@@ -4,9 +4,9 @@ import { useMemo } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, VizPanel } from '@scenes/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { SHARED_DASHBOARD_QUERY } from '@grafana-module/app/plugins/datasource/dashboard/constants';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { t } from '~/core/internationalization';
+import { SHARED_DASHBOARD_QUERY } from '~/plugins/datasource/dashboard/constants';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
 
 import { getQueryRunnerFor, useDashboard, useDashboardState } from '../../../utils/utils';
 import { DashboardGridItem } from '../DashboardGridItem';

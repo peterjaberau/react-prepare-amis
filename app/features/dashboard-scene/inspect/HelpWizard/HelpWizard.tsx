@@ -22,8 +22,8 @@ import {
   Icon,
   Stack,
 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
 
 import { ShowMessage, SnapshotTab, SupportSnapshotService } from './SupportSnapshotService';
 

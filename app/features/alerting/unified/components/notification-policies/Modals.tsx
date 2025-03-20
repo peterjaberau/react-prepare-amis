@@ -2,8 +2,8 @@ import { groupBy } from 'lodash';
 import { FC, useCallback, useMemo, useState } from 'react';
 
 import { Button, Icon, Modal, ModalProps, Spinner, Stack } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { AlertState, AlertmanagerGroup, ObjectMatcher, RouteWithID } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Trans } from '~/core/internationalization';
+import { AlertState, AlertmanagerGroup, ObjectMatcher, RouteWithID } from '~/plugins/datasource/alertmanager/types';
 
 import { FormAmRoute } from '../../types/amroutes';
 import { MatcherFormatter } from '../../utils/matchers';

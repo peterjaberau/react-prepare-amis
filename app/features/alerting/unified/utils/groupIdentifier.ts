@@ -1,4 +1,4 @@
-import { CombinedRule, RuleGroupIdentifier, RuleGroupIdentifierV2 } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRule, RuleGroupIdentifier, RuleGroupIdentifierV2 } from '~/types/unified-alerting';
 
 import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid, getRulesSourceName, isGrafanaRulesSource } from './datasource';
 import { rulerRuleType } from './rules';

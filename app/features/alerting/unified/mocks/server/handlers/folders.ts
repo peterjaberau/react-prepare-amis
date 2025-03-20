@@ -1,8 +1,8 @@
 import { HttpResponse, http } from 'msw';
 
-import { mockFolder } from '@grafana-module/app/features/alerting/unified/mocks';
-import { grafanaRulerRule } from '@grafana-module/app/features/alerting/unified/mocks/grafanaRulerApi';
-import { FolderDTO } from '@grafana-module/app/types';
+import { mockFolder } from '~/features/alerting/unified/mocks';
+import { grafanaRulerRule } from '~/features/alerting/unified/mocks/grafanaRulerApi';
+import { FolderDTO } from '~/types';
 
 const DEFAULT_FOLDERS: FolderDTO[] = [
   mockFolder({

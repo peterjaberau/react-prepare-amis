@@ -3,8 +3,8 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2, PluginType } from '@data/index';
 import { config, featureEnabled } from '@runtime/index';
 import { HorizontalGroup, LinkButton, useStyles2, Alert } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { AccessControlAction } from '~/types';
 
 import { getExternalManageLink } from '../../helpers';
 import { useIsRemotePluginsAvailable } from '../../state/hooks';

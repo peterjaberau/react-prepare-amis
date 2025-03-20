@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { AnnotationEvent, AnnotationQuery, DataFrame, DataFrameView, DataSourceApi } from '@data/index';
 import { config, toDataQueryError } from '@runtime/index';
-import { dispatch } from '@grafana-module/app/store/store';
+import { dispatch } from '~/store/store';
 
 import { createErrorNotification } from '../../../../core/copy/appNotification';
 import { notifyApp } from '../../../../core/reducers/appNotification';

@@ -1,4 +1,4 @@
-import { CombinedRuleGroup } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRuleGroup } from '~/types/unified-alerting';
 
 import { DetailsField } from '../DetailsField';
 

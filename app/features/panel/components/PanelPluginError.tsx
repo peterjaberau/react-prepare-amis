@@ -4,7 +4,7 @@ import { PureComponent, ReactNode } from 'react';
 // Types
 import { PanelProps, PanelPlugin, PluginType, PanelPluginMeta } from '@data/index';
 import { Alert } from '@grafana-ui/index';
-import { AppNotificationSeverity } from '@grafana-module/app/types';
+import { AppNotificationSeverity } from '~/types';
 
 interface Props {
   title: string;

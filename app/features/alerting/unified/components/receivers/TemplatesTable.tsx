@@ -2,10 +2,10 @@ import { Fragment, useState } from 'react';
 
 import { logError } from '@runtime/index';
 import { Badge, ConfirmModal, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { CodeText } from '@grafana-module/app/features/alerting/unified/components/common/TextVariants';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { Trans, t } from '~/core/internationalization';
+import { CodeText } from '~/features/alerting/unified/components/common/TextVariants';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
 
 import { Authorize } from '../../components/Authorize';
 import { AlertmanagerAction } from '../../hooks/useAbilities';

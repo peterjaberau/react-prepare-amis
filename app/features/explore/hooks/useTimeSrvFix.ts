@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { useGrafana } from '~/core/context/GrafanaContext';
 
 /**
  * timeSrv (which is used internally) on init reads `from` and `to` param from the URL and updates itself

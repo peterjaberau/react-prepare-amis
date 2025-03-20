@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import { RootState } from '@grafana-module/app/store/configureStore';
+import { RootState } from '~/store/configureStore';
 
 import { Repository, provisioningAPI } from '../../../api/clients/provisioning/index';
 

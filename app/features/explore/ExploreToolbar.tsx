@@ -15,11 +15,11 @@ import {
   ButtonGroup,
   useStyles2,
 } from '@grafana-ui/index';
-import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
-import { CORRELATION_EDITOR_POST_CONFIRM_ACTION } from '@grafana-module/app/types/explore';
-import { StoreState, useDispatch, useSelector } from '@grafana-module/app/types/store';
+import { AppChromeUpdate } from '~/core/components/AppChrome/AppChromeUpdate';
+import { t, Trans } from '~/core/internationalization';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
+import { CORRELATION_EDITOR_POST_CONFIRM_ACTION } from '~/types/explore';
+import { StoreState, useDispatch, useSelector } from '~/types/store';
 
 import { contextSrv } from '../../core/core';
 import { updateFiscalYearStartMonthForSession, updateTimeZoneForSession } from '../profile/state/reducers';

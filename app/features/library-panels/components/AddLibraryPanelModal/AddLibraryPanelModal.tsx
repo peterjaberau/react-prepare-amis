@@ -4,8 +4,8 @@ import { useAsync, useDebounce } from 'react-use';
 import { config, FetchError, isFetchError } from '@runtime/index';
 import { LibraryPanel } from '@schema/index';
 import { Button, Field, Input, Modal, Stack } from '@grafana-ui/index';
-import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { FolderPicker } from '~/core/components/Select/FolderPicker';
+import { t, Trans } from '~/core/internationalization';
 
 import { PanelModel } from '../../../dashboard/state/PanelModel';
 import { getLibraryPanelByName } from '../../state/api';

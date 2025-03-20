@@ -5,12 +5,12 @@ import { useLocation } from 'react-router';
 import { locationUtil, NavModel, NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, Stack, Text, ToolbarButtonRow } from '@grafana-ui/index';
-import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { t } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
-import { DashboardMetaChangedEvent } from '@grafana-module/app/types/events';
+import { AppChromeUpdate } from '~/core/components/AppChrome/AppChromeUpdate';
+import { Page } from '~/core/components/Page/Page';
+import { t } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
+import { DashboardMetaChangedEvent } from '~/types/events';
 
 import { VariableEditorContainer } from '../../../variables/editor/VariableEditorContainer';
 import { DashboardModel } from '../../state/DashboardModel';

@@ -16,13 +16,13 @@ import {
 } from '@data/index';
 import { config, locationSearchToObject } from '@runtime/index';
 import { Alert } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
-import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
-import { appEvents, contextSrv } from '@grafana-module/app/core/core';
-import { getNotFoundNav, getWarningNav, getExceptionNav } from '@grafana-module/app/core/navigation/errorModels';
-import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
+import { Page } from '~/core/components/Page/Page';
+import PageLoader from '~/core/components/PageLoader/PageLoader';
+import { EntityNotFound } from '~/core/components/PageNotFound/EntityNotFound';
+import { useGrafana } from '~/core/context/GrafanaContext';
+import { appEvents, contextSrv } from '~/core/core';
+import { getNotFoundNav, getWarningNav, getExceptionNav } from '~/core/navigation/errorModels';
+import { getMessageFromError } from '~/core/utils/errors';
 
 import {
   ExtensionRegistriesProvider,

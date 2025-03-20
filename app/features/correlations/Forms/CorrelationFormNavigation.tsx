@@ -1,5 +1,5 @@
 import { Button, Stack } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { useWizardContext } from '../components/Wizard/wizardContext';
 

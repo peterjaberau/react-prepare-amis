@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { ConfirmButton, RadioButtonGroup, Icon, useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { ExternalUserTooltip } from '@grafana-module/app/features/admin/UserOrgs';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { t, Trans } from '~/core/internationalization';
+import { ExternalUserTooltip } from '~/features/admin/UserOrgs';
+import { AccessControlAction } from '~/types';
 
 interface Props {
   isGrafanaAdmin: boolean;

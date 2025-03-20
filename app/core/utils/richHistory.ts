@@ -3,11 +3,11 @@ import { omit } from 'lodash';
 import { DataQuery, DataSourceApi, dateTimeFormat, ExploreUrlState, urlUtil } from '@data/index';
 import { serializeStateToUrlParam } from '@data/utils/url';
 import { getDataSourceSrv } from '@runtime/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createErrorNotification, createWarningNotification } from '@grafana-module/app/core/copy/appNotification';
-import { t } from '@grafana-module/app/core/internationalization';
-import { dispatch } from '@grafana-module/app/store/store';
-import { RichHistoryQuery } from '@grafana-module/app/types/explore';
+import { notifyApp } from '~/core/actions';
+import { createErrorNotification, createWarningNotification } from '~/core/copy/appNotification';
+import { t } from '~/core/internationalization';
+import { dispatch } from '~/store/store';
+import { RichHistoryQuery } from '~/types/explore';
 
 import {
   RichHistoryResults,

@@ -3,14 +3,14 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { config, getBackendSrv, locationService } from '@runtime/index';
 import { Button, Input, Field, FieldSet } from '@grafana-ui/index';
-import { Form } from '@grafana-module/app/core/components/Form/Form';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
-import { fetchRoleOptions, updateUserRoles } from '@grafana-module/app/core/components/RolePicker/api';
-import { RolePickerSelect } from '@grafana-module/app/core/components/RolePickerDrawer/RolePickerSelect';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { AccessControlAction, OrgRole, Role, ServiceAccountCreateApiResponse, ServiceAccountDTO } from '@grafana-module/app/types';
+import { Form } from '~/core/components/Form/Form';
+import { Page } from '~/core/components/Page/Page';
+import { UserRolePicker } from '~/core/components/RolePicker/UserRolePicker';
+import { fetchRoleOptions, updateUserRoles } from '~/core/components/RolePicker/api';
+import { RolePickerSelect } from '~/core/components/RolePickerDrawer/RolePickerSelect';
+import { contextSrv } from '~/core/core';
+import { t, Trans } from '~/core/internationalization';
+import { AccessControlAction, OrgRole, Role, ServiceAccountCreateApiResponse, ServiceAccountDTO } from '~/types';
 
 import { OrgRolePicker } from '../admin/OrgRolePicker';
 

@@ -1,7 +1,7 @@
 import { useFormContext, useFieldArray } from 'react-hook-form';
 
 import { Button, Stack, Text } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import TransformationsEditorRow from './TransformationEditorRow';
 

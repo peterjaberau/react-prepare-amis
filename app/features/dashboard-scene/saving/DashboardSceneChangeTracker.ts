@@ -13,7 +13,7 @@ import {
   VizPanel,
   behaviors,
 } from '@scenes/index';
-import { createWorker } from '@grafana-module/app/features/dashboard-scene/saving/createDetectChangesWorker';
+import { createWorker } from '~/features/dashboard-scene/saving/createDetectChangesWorker';
 
 import { DashboardAnnotationsDataLayer } from '../scene/DashboardAnnotationsDataLayer';
 import { DashboardControls } from '../scene/DashboardControls';

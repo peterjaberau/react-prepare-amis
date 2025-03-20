@@ -1,4 +1,4 @@
-import { UsersState } from '@grafana-module/app/types';
+import { UsersState } from '~/types';
 
 export const getUsers = (state: UsersState) => {
   const regex = new RegExp(state.searchQuery, 'i');

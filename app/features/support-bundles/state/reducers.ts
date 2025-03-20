@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { SupportBundle, SupportBundleCollector, SupportBundlesState } from '@grafana-module/app/types';
+import { SupportBundle, SupportBundleCollector, SupportBundlesState } from '~/types';
 
 export const initialState: SupportBundlesState = {
   supportBundles: [],

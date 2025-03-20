@@ -3,15 +3,15 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { Dropdown, Field, Icon, IconButton, Menu, Spinner, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 import {
   useReshareAccessToRecipientMutation,
   useDeleteRecipientMutation,
   publicDashboardApi,
-} from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
-import { PublicDashboard } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+} from '~/features/dashboard/api/publicDashboardApi';
+import { PublicDashboard } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardScene } from '~/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
 
 const selectors = e2eSelectors.pages.ShareDashboardModal.PublicDashboard.EmailSharingConfiguration;
 

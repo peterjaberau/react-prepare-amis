@@ -1,10 +1,10 @@
 import { LegacyGraphHoverClearEvent, SetPanelAttentionEvent, locationUtil } from '@data/index';
 import { LocationService } from '@runtime/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { getExploreUrl } from '@grafana-module/app/core/utils/explore';
-import { SaveDashboardDrawer } from '@grafana-module/app/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
-import { ShareModal } from '@grafana-module/app/features/dashboard/components/ShareModal/ShareModal';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import appEvents from '~/core/app_events';
+import { getExploreUrl } from '~/core/utils/explore';
+import { SaveDashboardDrawer } from '~/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
+import { ShareModal } from '~/features/dashboard/components/ShareModal/ShareModal';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
 
 import { getTimeSrv } from '../../features/dashboard/services/TimeSrv';
 import {

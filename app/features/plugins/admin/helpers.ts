@@ -2,10 +2,10 @@ import uFuzzy from '@leeoniya/ufuzzy';
 
 import { PluginSignatureStatus, dateTimeParse, PluginError, PluginType, PluginErrorCode } from '@data/index';
 import { config, featureEnabled } from '@runtime/index';
-import { Settings } from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { Settings } from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { getBackendSrv } from '~/core/services/backend_srv';
+import { AccessControlAction } from '~/types';
 
 import {
   CatalogPlugin,

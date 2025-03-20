@@ -1,6 +1,6 @@
-import { AlertingApiExtraOptions } from '@grafana-module/app/features/alerting/unified/api/alertingApi';
-import { Template } from '@grafana-module/app/features/alerting/unified/components/receivers/form/fields/TemplateSelector';
-import { DEFAULT_TEMPLATES } from '@grafana-module/app/features/alerting/unified/utils/template-constants';
+import { AlertingApiExtraOptions } from '~/features/alerting/unified/api/alertingApi';
+import { Template } from '~/features/alerting/unified/components/receivers/form/fields/TemplateSelector';
+import { DEFAULT_TEMPLATES } from '~/features/alerting/unified/utils/template-constants';
 
 import { parseTemplates } from '../components/receivers/form/fields/utils';
 import { generatedTemplatesApi } from '../openapi/templatesApi.gen';

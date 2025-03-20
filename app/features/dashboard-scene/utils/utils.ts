@@ -13,7 +13,7 @@ import {
   VizPanelMenu,
 } from '@scenes/index';
 import { useElementSelection, UseElementSelectionResult } from '@grafana-ui/index';
-import { initialIntervalVariableModelState } from '@grafana-module/app/features/variables/interval/reducer';
+import { initialIntervalVariableModelState } from '~/features/variables/interval/reducer';
 
 import { DashboardDatasourceBehaviour } from '../scene/DashboardDatasourceBehaviour';
 import { DashboardScene, DashboardSceneState } from '../scene/DashboardScene';

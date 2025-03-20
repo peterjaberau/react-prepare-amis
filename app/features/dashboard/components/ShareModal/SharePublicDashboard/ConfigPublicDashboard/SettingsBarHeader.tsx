@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, ReactUtils, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 export interface Props {
   onRowToggle: () => void;

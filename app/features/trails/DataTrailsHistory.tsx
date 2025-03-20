@@ -16,8 +16,8 @@ import {
   SceneVariableValueChangedEvent,
 } from '@scenes/index';
 import { Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { appEvents } from '@grafana-module/app/core/app_events';
-import { RecordHistoryEntryEvent } from '@grafana-module/app/types/events';
+import { appEvents } from '~/core/app_events';
+import { RecordHistoryEntryEvent } from '~/types/events';
 
 import { DataTrail, DataTrailState, getTopSceneFor } from './DataTrail';
 import { SerializedTrailHistory } from './TrailStore/TrailStore';

@@ -23,10 +23,10 @@ import {
   SceneObjectState,
 } from '@scenes/index';
 import { isWeekStart } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { DashboardDTO, DashboardDataDTO } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { DashboardDTO, DashboardDataDTO } from '~/types';
 
 import { addPanelsOnLoadBehavior } from '../addToDashboard/addPanelsOnLoadBehavior';
 import { AlertStatesDataLayer } from '../scene/AlertStatesDataLayer';

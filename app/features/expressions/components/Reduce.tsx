@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { CoreApp, SelectableValue } from '@data/index';
 import { Alert, InlineField, InlineFieldRow, Input, Select, TextLink } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { ExpressionQuery, ExpressionQuerySettings, ReducerMode, reducerModes, reducerTypes } from '../types';
 

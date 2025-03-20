@@ -3,8 +3,8 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { Button, Modal, ModalsController, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { SessionUser } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { Trans, t } from '~/core/internationalization';
+import { SessionUser } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
 
 import { useRevokeAllAccessMutation } from '../../dashboard/api/publicDashboardApi';
 

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useParams } from 'react-router';
 
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { GrafanaRouteComponentProps } from '../../core/navigation/types';
 import { FolderActionsButton } from '../browse-dashboards/components/FolderActionsButton';

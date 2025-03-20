@@ -5,7 +5,7 @@ import * as React from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, getInputStyles, useTheme2, Text } from '@grafana-ui/index';
 import { getFocusStyles, getMouseFocusStyles } from '@grafana-ui/themes/mixins';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { FolderPickerSkeleton } from './Skeleton';
 

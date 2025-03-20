@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRule } from '~/types/unified-alerting';
 
 import { getPendingPeriod } from '../../utils/rules';
 

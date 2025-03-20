@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { useSelector } from '@grafana-module/app/types';
+import { useSelector } from '~/types';
 
 import { OptionsPaneOptions } from './OptionsPaneOptions';
 import { VisualizationButton } from './VisualizationButton';

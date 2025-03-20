@@ -1,11 +1,11 @@
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
 import { LibraryPanel } from '@schema/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { ShareLibraryPanel } from '@grafana-module/app/features/dashboard/components/ShareModal/ShareLibraryPanel';
-import { shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { t } from '~/core/internationalization';
+import { ShareLibraryPanel } from '~/features/dashboard/components/ShareModal/ShareLibraryPanel';
+import { shareDashboardType } from '~/features/dashboard/components/ShareModal/utils';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 
 import { DashboardGridItem } from '../scene/layout-default/DashboardGridItem';
 import { gridItemToPanel, transformSceneToSaveModel } from '../serialization/transformSceneToSaveModel';

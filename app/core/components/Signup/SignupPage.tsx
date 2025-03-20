@@ -2,11 +2,11 @@ import { useForm } from 'react-hook-form';
 
 import { getBackendSrv } from '@runtime/index';
 import { Field, Input, Button, LinkButton, Stack } from '@grafana-ui/index';
-import { getConfig } from '@grafana-module/app/core/config';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
-import { w3cStandardEmailValidator } from '@grafana-module/app/features/admin/utils';
+import { getConfig } from '~/core/config';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { Trans } from '~/core/internationalization';
+import { GrafanaRouteComponentProps } from '~/core/navigation/types';
+import { w3cStandardEmailValidator } from '~/features/admin/utils';
 
 import { InnerBox, LoginLayout } from '../Login/LoginLayout';
 import { PasswordField } from '../PasswordField/PasswordField';

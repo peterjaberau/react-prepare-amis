@@ -1,5 +1,5 @@
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { contextSrv } from '~/core/services/context_srv';
+import { RulerRuleDTO } from '~/types/unified-alerting-dto';
 
 import { featureDiscoveryApi } from '../api/featureDiscoveryApi';
 import { getRulesPermissions } from '../utils/access-control';

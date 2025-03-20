@@ -3,8 +3,8 @@ import { from, forkJoin, timeout, lastValueFrom, catchError, of } from 'rxjs';
 
 import { PanelPlugin, PluginError } from '@data/index';
 import { config, getBackendSrv, isFetchError } from '@runtime/index';
-import { importPanelPlugin } from '@grafana-module/app/features/plugins/importPanelPlugin';
-import { StoreState, ThunkResult } from '@grafana-module/app/types';
+import { importPanelPlugin } from '~/features/plugins/importPanelPlugin';
+import { StoreState, ThunkResult } from '~/types';
 
 import { invalidatePluginInCache } from '../../loader/cache';
 import {

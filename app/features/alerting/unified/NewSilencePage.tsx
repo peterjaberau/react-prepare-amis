@@ -3,9 +3,9 @@ import { useLocation } from 'react-router';
 import {
   defaultsFromQuery,
   getDefaultSilenceFormValues,
-} from '@grafana-module/app/features/alerting/unified/components/silences/utils';
-import { MATCHER_ALERT_RULE_UID } from '@grafana-module/app/features/alerting/unified/utils/constants';
-import { parseQueryParamMatchers } from '@grafana-module/app/features/alerting/unified/utils/matchers';
+} from '~/features/alerting/unified/components/silences/utils';
+import { MATCHER_ALERT_RULE_UID } from '~/features/alerting/unified/utils/constants';
+import { parseQueryParamMatchers } from '~/features/alerting/unified/utils/matchers';
 
 import { AlertmanagerPageWrapper } from './components/AlertingPageWrapper';
 import { GrafanaAlertmanagerDeliveryWarning } from './components/GrafanaAlertmanagerDeliveryWarning';

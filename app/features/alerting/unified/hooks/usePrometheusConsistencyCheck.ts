@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-import { CloudRuleIdentifier, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { CloudRuleIdentifier, RuleIdentifier } from '~/types/unified-alerting';
 
 import { alertRuleApi } from '../api/alertRuleApi';
 import * as ruleId from '../utils/rule-id';

@@ -5,8 +5,8 @@ import { useForm } from 'react-hook-form';
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, Input, Field, useStyles2 } from '@grafana-ui/index';
-import { Branding } from '@grafana-module/app/core/components/Branding/Branding';
-import { t } from '@grafana-module/app/core/internationalization';
+import { Branding } from '~/core/components/Branding/Branding';
+import { t } from '~/core/internationalization';
 
 import { PasswordlessConfirmationFormModel } from './LoginCtrl';
 

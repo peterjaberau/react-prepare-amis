@@ -15,7 +15,7 @@ import {
 import { config } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { ConfirmModal, Icon, PopoverContent, useTheme2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { PopoverMenu } from '../../explore/Logs/PopoverMenu';
 import { UniqueKeyMaker } from '../UniqueKeyMaker';

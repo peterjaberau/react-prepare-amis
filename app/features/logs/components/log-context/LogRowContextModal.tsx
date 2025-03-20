@@ -20,10 +20,10 @@ import {
 import { config, reportInteraction } from '@runtime/index';
 import { DataQuery, TimeZone } from '@schema/index';
 import { Button, Modal, useTheme2 } from '@grafana-ui/index';
-import store from '@grafana-module/app/core/store';
-import { SETTINGS_KEYS } from '@grafana-module/app/features/explore/Logs/utils/logs';
-import { splitOpen } from '@grafana-module/app/features/explore/state/main';
-import { useDispatch } from '@grafana-module/app/types';
+import store from '~/core/store';
+import { SETTINGS_KEYS } from '~/features/explore/Logs/utils/logs';
+import { splitOpen } from '~/features/explore/state/main';
+import { useDispatch } from '~/types';
 
 import { dataFrameToLogsModel } from '../../logsModel';
 import { sortLogRows } from '../../utils';

@@ -1,11 +1,11 @@
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
 import { LibraryPanel } from '@schema/index';
 import { Drawer } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 import {
   LibraryPanelsSearch,
   LibraryPanelsSearchVariant,
-} from '@grafana-module/app/features/library-panels/components/LibraryPanelsSearch/LibraryPanelsSearch';
+} from '~/features/library-panels/components/LibraryPanelsSearch/LibraryPanelsSearch';
 
 import { getDashboardSceneFor, getDefaultVizPanel } from '../utils/utils';
 

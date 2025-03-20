@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { config, FetchError } from '@runtime/index';
 import { Dashboard } from '@schema/index';
 import { Button, ConfirmModal, Modal, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { DashboardModel } from '../../state/DashboardModel';
 

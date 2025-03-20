@@ -1,4 +1,4 @@
-import { AccessControlAction } from '@grafana-module/app/types';
+import { AccessControlAction } from '~/types';
 
 export type ResourcePermission = {
   id: number;

@@ -5,10 +5,10 @@ import { GrafanaTheme2, PageLayoutType } from '@data/index';
 import { SceneComponentProps, SceneObjectBase, sceneUtils } from '@scenes/index';
 import { Dashboard } from '@schema/index';
 import { Alert, Box, Button, CodeEditor, Stack, useStyles2 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { getPrettyJSON } from '@grafana-module/app/features/inspector/utils/utils';
-import { DashboardDTO, SaveDashboardResponseDTO } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { Trans } from '~/core/internationalization';
+import { getPrettyJSON } from '~/features/inspector/utils/utils';
+import { DashboardDTO, SaveDashboardResponseDTO } from '~/types';
 
 import {
   NameAlreadyExistsError,

@@ -1,5 +1,5 @@
-import { t } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { t } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 import { BulkActionElement } from '../scene/types/BulkActionElement';
 import { EditableDashboardElement, EditableDashboardElementInfo } from '../scene/types/EditableDashboardElement';

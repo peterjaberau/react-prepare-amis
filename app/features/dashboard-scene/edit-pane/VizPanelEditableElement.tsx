@@ -4,9 +4,9 @@ import { useMemo } from 'react';
 import { GrafanaTheme2, textUtil } from '@data/index';
 import { sceneGraph, VizPanel } from '@scenes/index';
 import { useStyles2, Text, Icon, Stack, Tooltip } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
-import { OptionsPaneItemDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
+import { t } from '~/core/internationalization';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneItemDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneItemDescriptor';
 
 import {
   PanelBackgroundSwitch,

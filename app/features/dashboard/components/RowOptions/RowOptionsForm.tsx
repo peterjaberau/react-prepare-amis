@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import * as React from 'react';
 
 import { Button, Field, Modal, Input, Alert } from '@grafana-ui/index';
-import { Form } from '@grafana-module/app/core/components/Form/Form';
+import { Form } from '~/core/components/Form/Form';
 
 import { RepeatRowSelect } from '../RepeatRowSelect/RepeatRowSelect';
 

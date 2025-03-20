@@ -1,4 +1,4 @@
-import { useUrlParams } from '@grafana-module/app/core/navigation/hooks';
+import { useUrlParams } from '~/core/navigation/hooks';
 
 export const usePullRequestParam = () => {
   const [params] = useUrlParams();

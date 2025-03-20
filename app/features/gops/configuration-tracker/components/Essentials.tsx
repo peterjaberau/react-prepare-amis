@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Drawer, Dropdown, Icon, LinkButton, Menu, Stack, Text, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { RelativeUrl, createRelativeUrl } from '@grafana-module/app/features/alerting/unified/utils/url';
+import { RelativeUrl, createRelativeUrl } from '~/features/alerting/unified/utils/url';
 
 import { SectionDto, SectionDtoStep, SectionsDto, StepButtonDto } from '../irmHooks';
 

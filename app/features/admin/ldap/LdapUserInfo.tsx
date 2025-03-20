@@ -1,6 +1,6 @@
 import { Box, Stack, Text } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { LdapUser } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import { LdapUser } from '~/types';
 
 import { LdapUserGroups } from './LdapUserGroups';
 import { LdapUserMappingInfo } from './LdapUserMappingInfo';

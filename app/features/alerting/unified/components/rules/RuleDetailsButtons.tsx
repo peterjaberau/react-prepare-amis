@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { textUtil } from '@data/index';
 import { useReturnToPrevious } from '@runtime/index';
 import { Button, LinkButton, Stack } from '@grafana-ui/index';
-import { CombinedRule, RulesSource } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRule, RulesSource } from '~/types/unified-alerting';
 
 import { AlertRuleAction, useAlertRuleAbility } from '../../hooks/useAbilities';
 import { useStateHistoryModal } from '../../hooks/useStateHistoryModal';

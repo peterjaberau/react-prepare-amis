@@ -12,11 +12,11 @@ import {
 } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';
 import { Checkbox, Icon, IconName, TagList, Text, Tooltip } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { t } from '@grafana-module/app/core/internationalization';
-import { formatDate, formatDuration } from '@grafana-module/app/core/internationalization/dates';
-import { PluginIconName } from '@grafana-module/app/features/plugins/admin/types';
-import { ShowModalReactEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { t } from '~/core/internationalization';
+import { formatDate, formatDuration } from '~/core/internationalization/dates';
+import { PluginIconName } from '~/features/plugins/admin/types';
+import { ShowModalReactEvent } from '~/types/events';
 
 import { QueryResponse, SearchResultMeta } from '../../service/types';
 import { getIconForKind } from '../../service/utils';

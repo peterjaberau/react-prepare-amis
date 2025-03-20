@@ -2,9 +2,9 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { reportInteraction } from '@runtime/index';
 import { RadioButtonGroup, LinkButton, FilterInput, InlineField } from '@grafana-ui/index';
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { AccessControlAction, StoreState } from '@grafana-module/app/types';
+import config from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { AccessControlAction, StoreState } from '~/types';
 
 import { selectTotal } from '../invites/state/selectors';
 

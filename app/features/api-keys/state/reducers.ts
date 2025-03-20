@@ -1,6 +1,6 @@
 ﻿import { createSlice } from '@reduxjs/toolkit';
 
-import { ApiKeysState } from '@grafana-module/app/types';
+import { ApiKeysState } from '~/types';
 
 export const initialApiKeysState: ApiKeysState = {
   hasFetched: false,

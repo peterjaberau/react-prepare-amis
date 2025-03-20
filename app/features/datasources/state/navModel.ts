@@ -1,10 +1,10 @@
 import { DataSourceSettings, PluginType, PluginInclude, NavModel, NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
-import { ProBadge } from '@grafana-module/app/core/components/Upgrade/ProBadge';
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { highlightTrial } from '@grafana-module/app/features/admin/utils';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { ProBadge } from '~/core/components/Upgrade/ProBadge';
+import config from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { highlightTrial } from '~/features/admin/utils';
+import { AccessControlAction } from '~/types';
 
 import { GenericDataSourcePlugin } from '../types';
 

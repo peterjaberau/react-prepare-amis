@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 
-import { FolderDTO } from '@grafana-module/app/types';
+import { FolderDTO } from '~/types';
 
 export function mockFolderDTO(seed = 1, partial?: Partial<FolderDTO>): FolderDTO {
   const random = Chance(seed);

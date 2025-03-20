@@ -4,8 +4,8 @@ import { useMemo } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { ExpressionDatasourceUID } from '@grafana-module/app/features/expressions/types';
-import { CombinedRule, RulesSource } from '@grafana-module/app/types/unified-alerting';
+import { ExpressionDatasourceUID } from '~/features/expressions/types';
+import { CombinedRule, RulesSource } from '~/types/unified-alerting';
 
 import { isCloudRulesSource } from '../../utils/datasource';
 import { rulerRuleType } from '../../utils/rules';

@@ -3,9 +3,9 @@ import { PureComponent } from 'react';
 
 import { AppEvents, PluginMeta, DataSourceApi } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { appEvents } from '@grafana-module/app/core/core';
-import DashboardsTable from '@grafana-module/app/features/datasources/components/DashboardsTable';
-import { PluginDashboard } from '@grafana-module/app/types';
+import { appEvents } from '~/core/core';
+import DashboardsTable from '~/features/datasources/components/DashboardsTable';
+import { PluginDashboard } from '~/types';
 
 interface Props {
   plugin: PluginMeta;

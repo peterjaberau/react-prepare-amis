@@ -1,9 +1,9 @@
 import { TimeRange } from '@data/index';
 import { config } from '@runtime/index';
 import { SceneComponentProps, sceneGraph, SceneObjectBase, SceneObjectRef, VizPanel } from '@scenes/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { ShareEmbed } from '@grafana-module/app/features/dashboard/components/ShareModal/ShareEmbed';
-import { buildParams, shareDashboardType } from '@grafana-module/app/features/dashboard/components/ShareModal/utils';
+import { t } from '~/core/internationalization';
+import { ShareEmbed } from '~/features/dashboard/components/ShareModal/ShareEmbed';
+import { buildParams, shareDashboardType } from '~/features/dashboard/components/ShareModal/utils';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { PanelTimeRange } from '../scene/PanelTimeRange';

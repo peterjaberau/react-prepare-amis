@@ -19,17 +19,17 @@ import {
   withTheme2,
   Stack,
 } from '@grafana-ui/index';
-import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { SplitPaneWrapper } from '@grafana-module/app/core/components/SplitPaneWrapper/SplitPaneWrapper';
-import { appEvents } from '@grafana-module/app/core/core';
-import { SubMenuItems } from '@grafana-module/app/features/dashboard/components/SubMenu/SubMenuItems';
-import { SaveLibraryPanelModal } from '@grafana-module/app/features/library-panels/components/SaveLibraryPanelModal/SaveLibraryPanelModal';
-import { PanelModelWithLibraryPanel } from '@grafana-module/app/features/library-panels/types';
-import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
-import { updateTimeZoneForSession } from '@grafana-module/app/features/profile/state/reducers';
-import { StoreState } from '@grafana-module/app/types';
-import { PanelOptionsChangedEvent, ShowModalReactEvent } from '@grafana-module/app/types/events';
+import { AppChromeUpdate } from '~/core/components/AppChrome/AppChromeUpdate';
+import { Page } from '~/core/components/Page/Page';
+import { SplitPaneWrapper } from '~/core/components/SplitPaneWrapper/SplitPaneWrapper';
+import { appEvents } from '~/core/core';
+import { SubMenuItems } from '~/features/dashboard/components/SubMenu/SubMenuItems';
+import { SaveLibraryPanelModal } from '~/features/library-panels/components/SaveLibraryPanelModal/SaveLibraryPanelModal';
+import { PanelModelWithLibraryPanel } from '~/features/library-panels/types';
+import { getPanelStateForModel } from '~/features/panel/state/selectors';
+import { updateTimeZoneForSession } from '~/features/profile/state/reducers';
+import { StoreState } from '~/types';
+import { PanelOptionsChangedEvent, ShowModalReactEvent } from '~/types/events';
 
 import { notifyApp } from '../../../../core/actions';
 import { UnlinkModal } from '../../../dashboard-scene/scene/UnlinkModal';

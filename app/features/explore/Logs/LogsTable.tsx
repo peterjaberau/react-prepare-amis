@@ -20,7 +20,7 @@ import {
 import { config } from '@runtime/index';
 import { AdHocFilterItem, Table } from '@grafana-ui/index';
 import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR } from '@grafana-ui/components/Table/types';
-import { LogsFrame } from '@grafana-module/app/features/logs/logsFrame';
+import { LogsFrame } from '~/features/logs/logsFrame';
 
 import { getFieldLinksForExplore } from '../utils/links';
 

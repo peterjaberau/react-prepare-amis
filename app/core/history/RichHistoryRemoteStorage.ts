@@ -2,7 +2,7 @@ import { lastValueFrom } from 'rxjs';
 
 import { DataQuery } from '@data/index';
 import { getBackendSrv, getDataSourceSrv } from '@runtime/index';
-import { RichHistoryQuery } from '@grafana-module/app/types/explore';
+import { RichHistoryQuery } from '~/types/explore';
 
 import { PreferencesService } from '../services/PreferencesService';
 import { RichHistorySearchFilters, RichHistorySettings, SortOrder } from '../utils/richHistoryTypes';

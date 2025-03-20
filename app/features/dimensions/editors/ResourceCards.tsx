@@ -6,7 +6,7 @@ import { areEqual, FixedSizeGrid as Grid } from 'react-window';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
+import { SanitizedSVG } from '~/core/components/SVG/SanitizedSVG';
 
 import { ResourceItem } from './FolderPickerTab';
 

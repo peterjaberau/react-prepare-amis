@@ -1,8 +1,8 @@
 import { filter, isArray, isNumber, isString } from 'lodash';
 
 import { getBackendSrv } from '@runtime/index';
-import config from '@grafana-module/app/core/config';
-import store from '@grafana-module/app/core/store';
+import config from '~/core/config';
+import store from '~/core/store';
 
 export class ImpressionSrv {
   constructor() {}

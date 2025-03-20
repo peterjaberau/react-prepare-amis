@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import { ReducerID } from '@data/index';
-import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
-import { ExpressionQuery } from '@grafana-module/app/features/expressions/types';
-import { AlertDataQuery, AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { EvalFunction } from '~/features/alerting/state/alertDef';
+import { ExpressionQuery } from '~/features/expressions/types';
+import { AlertDataQuery, AlertQuery } from '~/types/unified-alerting-dto';
 
 import { areQueriesTransformableToSimpleCondition } from '../../../rule-editor/formProcessing';
 

@@ -1,11 +1,11 @@
-import grafanaAlertmanagerConfig from '@grafana-module/app/features/alerting/unified/mocks/server/entities/alertmanager-config/grafana-alertmanager-config';
+import grafanaAlertmanagerConfig from '~/features/alerting/unified/mocks/server/entities/alertmanager-config/grafana-alertmanager-config';
 import {
   ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Matcher,
   ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Route,
   ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1RoutingTree,
-} from '@grafana-module/app/features/alerting/unified/openapi/routesApi.gen';
-import { K8sAnnotations, PROVENANCE_NONE, ROOT_ROUTE_NAME } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
-import { AlertManagerCortexConfig, MatcherOperator, Route } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+} from '~/features/alerting/unified/openapi/routesApi.gen';
+import { K8sAnnotations, PROVENANCE_NONE, ROOT_ROUTE_NAME } from '~/features/alerting/unified/utils/k8s/constants';
+import { AlertManagerCortexConfig, MatcherOperator, Route } from '~/plugins/datasource/alertmanager/types';
 
 /**
  * Normalise matchers from config Route object -> what the k8s API expects to be returning

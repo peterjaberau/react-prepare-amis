@@ -4,8 +4,8 @@ import { AnnotationQuery } from '@data/index';
 import { selectors } from '@selectors/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { Button, DeleteButton, EmptyState, IconButton, Stack, TextLink, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { ListNewButton } from '@grafana-module/app/features/dashboard/components/DashboardSettings/ListNewButton';
+import { t, Trans } from '~/core/internationalization';
+import { ListNewButton } from '~/features/dashboard/components/DashboardSettings/ListNewButton';
 
 import { MoveDirection } from '../AnnotationsEditView';
 

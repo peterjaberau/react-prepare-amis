@@ -5,9 +5,9 @@ import { useLocation } from 'react-router';
 import { DataSourceSettings, GrafanaTheme2 } from '@data/index';
 import { config } from '@runtime/index';
 import { EmptyState, LinkButton, TextLink, useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { StoreState, AccessControlAction, useSelector } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { Trans, t } from '~/core/internationalization';
+import { StoreState, AccessControlAction, useSelector } from '~/types';
 
 import { ROUTES } from '../../connections/constants';
 import { getDataSources, getDataSourcesCount, useLoadDataSources } from '../state';

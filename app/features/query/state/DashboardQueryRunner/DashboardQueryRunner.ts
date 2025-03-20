@@ -3,7 +3,7 @@ import { finalize, map, mapTo, mergeAll, reduce, share, takeUntil } from 'rxjs/o
 
 import { AnnotationQuery } from '@data/index';
 import { RefreshEvent } from '@runtime/index';
-import { dedupAnnotations } from '@grafana-module/app/features/annotations/events_processing';
+import { dedupAnnotations } from '~/features/annotations/events_processing';
 
 import { getTimeSrv, TimeSrv } from '../../../dashboard/services/TimeSrv';
 import { DashboardModel } from '../../../dashboard/state/DashboardModel';

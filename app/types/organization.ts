@@ -1,4 +1,4 @@
-import { UserOrg } from '@grafana-module/app/types';
+import { UserOrg } from '~/types';
 
 export interface Organization {
   name: string;

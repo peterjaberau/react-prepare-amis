@@ -15,8 +15,8 @@ import {
   clearButtonStyles,
   useStyles2,
 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { AlertmanagerAlert, TestTemplateAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Trans } from '~/core/internationalization';
+import { AlertmanagerAlert, TestTemplateAlert } from '~/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';

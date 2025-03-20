@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { Unsubscribable } from 'rxjs';
 
 import { getAppEvents } from '@runtime/index';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
-import { useDispatch } from '@grafana-module/app/types';
-import { AbsoluteTimeEvent, CopyTimeEvent, PasteTimeEvent, ShiftTimeEvent, ZoomOutEvent } from '@grafana-module/app/types/events';
+import { useGrafana } from '~/core/context/GrafanaContext';
+import { useDispatch } from '~/types';
+import { AbsoluteTimeEvent, CopyTimeEvent, PasteTimeEvent, ShiftTimeEvent, ZoomOutEvent } from '~/types/events';
 
 import {
   copyTimeRangeToClipboard,

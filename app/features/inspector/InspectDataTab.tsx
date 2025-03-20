@@ -15,9 +15,9 @@ import {
 } from '@data/index';
 import { getTemplateSrv, reportInteraction } from '@runtime/index';
 import { Button, Spinner, Table } from '@grafana-ui/index';
-import { config } from '@grafana-module/app/core/config';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { GetDataOptions } from '@grafana-module/app/features/query/state/PanelQueryRunner';
+import { config } from '~/core/config';
+import { t, Trans } from '~/core/internationalization';
+import { GetDataOptions } from '~/features/query/state/PanelQueryRunner';
 
 import { dataFrameToLogsModel } from '../logs/logsModel';
 

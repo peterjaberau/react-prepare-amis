@@ -7,7 +7,7 @@ import {
   PromRulesResponse,
   RulerGrafanaRuleDTO,
   RulerRuleGroupDTO,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { PREVIEW_URL, PROM_RULES_URL, PreviewResponse } from '../api/alertRuleApi';
 import { Annotation } from '../utils/constants';

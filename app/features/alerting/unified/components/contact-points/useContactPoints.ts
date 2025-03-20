@@ -6,18 +6,18 @@
 import { merge, set } from 'lodash';
 import { useMemo } from 'react';
 
-import { receiversApi } from '@grafana-module/app/features/alerting/unified/api/receiversK8sApi';
-import { useOnCallIntegration } from '@grafana-module/app/features/alerting/unified/components/receivers/grafanaAppReceivers/onCall/useOnCallIntegration';
-import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Receiver } from '@grafana-module/app/features/alerting/unified/openapi/receiversApi.gen';
-import { BaseAlertmanagerArgs, Skippable } from '@grafana-module/app/features/alerting/unified/types/hooks';
-import { cloudNotifierTypes } from '@grafana-module/app/features/alerting/unified/utils/cloud-alertmanager-notifier-types';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { isK8sEntityProvisioned, shouldUseK8sApi } from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
+import { receiversApi } from '~/features/alerting/unified/api/receiversK8sApi';
+import { useOnCallIntegration } from '~/features/alerting/unified/components/receivers/grafanaAppReceivers/onCall/useOnCallIntegration';
+import { ComGithubGrafanaGrafanaPkgApisAlertingNotificationsV0Alpha1Receiver } from '~/features/alerting/unified/openapi/receiversApi.gen';
+import { BaseAlertmanagerArgs, Skippable } from '~/features/alerting/unified/types/hooks';
+import { cloudNotifierTypes } from '~/features/alerting/unified/utils/cloud-alertmanager-notifier-types';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { isK8sEntityProvisioned, shouldUseK8sApi } from '~/features/alerting/unified/utils/k8s/utils';
 import {
   GrafanaManagedContactPoint,
   GrafanaManagedReceiverConfig,
   Receiver,
-} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+} from '~/plugins/datasource/alertmanager/types';
 
 import { getAPINamespace } from '../../../../../api/utils';
 import { alertmanagerApi } from '../../api/alertmanagerApi';

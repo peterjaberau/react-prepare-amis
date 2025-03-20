@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 
 import { selectors as e2eSelectors } from '@selectors/index';
 import { Button, ButtonGroup, Dropdown, Icon } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { DashboardScene } from '../../scene/DashboardScene';
 

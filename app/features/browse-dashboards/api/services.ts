@@ -1,9 +1,9 @@
 import { config, getBackendSrv } from '@runtime/index';
-import { GENERAL_FOLDER_UID } from '@grafana-module/app/features/search/constants';
-import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
-import { NestedFolderDTO } from '@grafana-module/app/features/search/service/types';
-import { queryResultToViewItem } from '@grafana-module/app/features/search/service/utils';
-import { DashboardViewItem } from '@grafana-module/app/features/search/types';
+import { GENERAL_FOLDER_UID } from '~/features/search/constants';
+import { getGrafanaSearcher } from '~/features/search/service/searcher';
+import { NestedFolderDTO } from '~/features/search/service/types';
+import { queryResultToViewItem } from '~/features/search/service/utils';
+import { DashboardViewItem } from '~/features/search/types';
 
 import { contextSrv } from '../../../core/core';
 import { AccessControlAction } from '../../../types';

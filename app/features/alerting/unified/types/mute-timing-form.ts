@@ -1,4 +1,4 @@
-import { TimeRange } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { TimeRange } from '~/plugins/datasource/alertmanager/types';
 
 export type MuteTimingFields = {
   name: string;

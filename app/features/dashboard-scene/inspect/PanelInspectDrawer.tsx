@@ -11,9 +11,9 @@ import {
   SceneObjectRef,
 } from '@scenes/index';
 import { Alert, Drawer, Tab, TabsBar } from '@grafana-ui/index';
-import { getDataSourceWithInspector } from '@grafana-module/app/features/dashboard/components/Inspector/hooks';
-import { supportsDataQuery } from '@grafana-module/app/features/dashboard/components/PanelEditor/utils';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
+import { getDataSourceWithInspector } from '~/features/dashboard/components/Inspector/hooks';
+import { supportsDataQuery } from '~/features/dashboard/components/PanelEditor/utils';
+import { InspectTab } from '~/features/inspector/types';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { getDashboardUrl } from '../utils/getDashboardUrl';

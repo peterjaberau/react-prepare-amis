@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { GrafanaTheme2 } from '@data/index';
 import { useScopes } from '@runtime/index';
 import { Button, LoadingPlaceholder, ScrollContainer, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 import { ScopesDashboardsService } from './ScopesDashboardsService';
 import { ScopesDashboardsTree } from './ScopesDashboardsTree';

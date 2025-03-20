@@ -1,7 +1,7 @@
 import { VariableModel } from '@schema/index';
 import { VariableKind } from '@schema/schema/dashboard/v2alpha0';
-import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { DashboardScene } from '~/features/dashboard-scene/scene/DashboardScene';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
 
 import { DashboardModel } from '../state/DashboardModel';
 

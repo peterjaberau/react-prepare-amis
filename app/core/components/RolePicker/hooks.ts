@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { useDeepCompareEffect } from 'react-use';
 import useAsync from 'react-use/lib/useAsync';
 
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Role, AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { Role, AccessControlAction } from '~/types';
 
 import { fetchRoleOptions } from './api';
 

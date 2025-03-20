@@ -1,5 +1,5 @@
-import { dispatch } from '@grafana-module/app/store/store';
-import { RuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { dispatch } from '~/store/store';
+import { RuleGroupIdentifier } from '~/types/unified-alerting';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { featureDiscoveryApi } from '../../api/featureDiscoveryApi';

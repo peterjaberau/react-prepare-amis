@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 import { getDataSourceSrv } from '@runtime/index';
-import { Branding } from '@grafana-module/app/core/components/Branding/Branding';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
-import { useNavModel } from '@grafana-module/app/core/hooks/useNavModel';
-import { ExploreQueryParams } from '@grafana-module/app/types';
+import { Branding } from '~/core/components/Branding/Branding';
+import { useGrafana } from '~/core/context/GrafanaContext';
+import { useNavModel } from '~/core/hooks/useNavModel';
+import { ExploreQueryParams } from '~/types';
 
 import { isFulfilled, hasKey } from './utils';
 

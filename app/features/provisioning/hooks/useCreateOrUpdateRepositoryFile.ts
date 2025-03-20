@@ -4,7 +4,7 @@ import {
   ReplaceRepositoryFilesWithPathApiArg,
   useCreateRepositoryFilesWithPathMutation,
   useReplaceRepositoryFilesWithPathMutation,
-} from '@grafana-module/app/api/clients/provisioning';
+} from '~/api/clients/provisioning';
 
 export function useCreateOrUpdateRepositoryFile(name?: string) {
   const [create, createRequest] = useCreateRepositoryFilesWithPathMutation();

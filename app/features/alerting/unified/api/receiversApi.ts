@@ -1,6 +1,6 @@
 /** @deprecated To be deleted - use alertingApiServer API instead */
 
-import { ContactPointsState } from '@grafana-module/app/types';
+import { ContactPointsState } from '~/types';
 
 import { CONTACT_POINTS_STATE_INTERVAL_MS } from '../utils/constants';
 

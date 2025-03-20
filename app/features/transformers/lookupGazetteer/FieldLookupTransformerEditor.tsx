@@ -12,7 +12,7 @@ import {
 } from '@data/index';
 import { InlineField, InlineFieldRow } from '@grafana-ui/index';
 import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
-import { GazetteerPathEditor, GazetteerPathEditorConfigSettings } from '@grafana-module/app/features/geo/editor/GazetteerPathEditor';
+import { GazetteerPathEditor, GazetteerPathEditorConfigSettings } from '~/features/geo/editor/GazetteerPathEditor';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

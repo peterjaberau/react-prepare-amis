@@ -14,10 +14,10 @@ import {
   Icon,
   ScrollContainer,
 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import * as DFImport from '@grafana-module/app/features/dataframe-import';
-import { GrafanaQuery } from '@grafana-module/app/plugins/datasource/grafana/types';
-import { getFileDropToQueryHandler } from '@grafana-module/app/plugins/datasource/grafana/utils';
+import { t, Trans } from '~/core/internationalization';
+import * as DFImport from '~/features/dataframe-import';
+import { GrafanaQuery } from '~/plugins/datasource/grafana/types';
+import { getFileDropToQueryHandler } from '~/plugins/datasource/grafana/utils';
 
 import { useDatasource } from '../../hooks';
 

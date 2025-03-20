@@ -2,8 +2,8 @@ import { isEmpty } from 'lodash';
 
 import { DataFrame, DataFrameView, getDisplayProcessor, SelectableValue, toDataFrame } from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
-import { TermCount } from '@grafana-module/app/core/components/TagFilter/TagFilter';
-import kbn from '@grafana-module/app/core/utils/kbn';
+import { TermCount } from '~/core/components/TagFilter/TagFilter';
+import kbn from '~/core/utils/kbn';
 
 import { getAPINamespace } from '../../../api/utils';
 

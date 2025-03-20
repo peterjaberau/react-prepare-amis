@@ -15,11 +15,11 @@ import {
   Stack,
   useStyles2,
 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { StoreState, ServiceAccountDTO, AccessControlAction, ServiceAccountStateFilter } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import config from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { Trans, t } from '~/core/internationalization';
+import { StoreState, ServiceAccountDTO, AccessControlAction, ServiceAccountStateFilter } from '~/types';
 
 import { ServiceAccountTable } from './ServiceAccountTable';
 import { CreateTokenModal, ServiceAccountToken } from './components/CreateTokenModal';

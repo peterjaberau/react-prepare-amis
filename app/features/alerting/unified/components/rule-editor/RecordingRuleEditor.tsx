@@ -6,11 +6,11 @@ import { CoreApp, GrafanaTheme2, LoadingState, PanelData } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { DataSourceType } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
-import { QueryErrorAlert } from '@grafana-module/app/features/query/components/QueryErrorAlert';
-import { LokiQueryType } from '@grafana-module/app/plugins/datasource/loki/dataquery';
-import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { DataSourceType } from '~/features/alerting/unified/utils/datasource';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
+import { QueryErrorAlert } from '~/features/query/components/QueryErrorAlert';
+import { LokiQueryType } from '~/plugins/datasource/loki/dataquery';
+import { AlertQuery } from '~/types/unified-alerting-dto';
 
 import { isPromOrLokiQuery } from '../../utils/rule-form';
 

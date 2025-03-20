@@ -1,6 +1,6 @@
-import { GENERAL_FOLDER_UID } from '@grafana-module/app/features/search/constants';
-import { DashboardViewItem, DashboardViewItemKind } from '@grafana-module/app/features/search/types';
-import { createAsyncThunk } from '@grafana-module/app/types';
+import { GENERAL_FOLDER_UID } from '~/features/search/constants';
+import { DashboardViewItem, DashboardViewItemKind } from '~/features/search/types';
+import { createAsyncThunk } from '~/types';
 
 import { listDashboards, listFolders, PAGE_SIZE } from '../api/services';
 import { DashboardViewItemWithUIItems, UIDashboardViewItem } from '../types';

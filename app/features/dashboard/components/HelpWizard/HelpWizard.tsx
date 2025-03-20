@@ -20,10 +20,10 @@ import {
   Icon,
   Stack,
 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { AccessControlAction } from '~/types';
 
 import { ShowMessage, SnapshotTab, SupportSnapshotService } from './SupportSnapshotService';
 

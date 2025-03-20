@@ -1,10 +1,10 @@
 import { NavModelItem, NavModel } from '@data/index';
 import { featureEnabled } from '@runtime/index';
-import { ProBadge } from '@grafana-module/app/core/components/Upgrade/ProBadge';
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { highlightTrial } from '@grafana-module/app/features/admin/utils';
-import { AccessControlAction, Team, TeamPermissionLevel } from '@grafana-module/app/types';
+import { ProBadge } from '~/core/components/Upgrade/ProBadge';
+import config from '~/core/config';
+import { contextSrv } from '~/core/services/context_srv';
+import { highlightTrial } from '~/features/admin/utils';
+import { AccessControlAction, Team, TeamPermissionLevel } from '~/types';
 
 const loadingTeam = {
   avatarUrl: 'public/img/user_profile.png',

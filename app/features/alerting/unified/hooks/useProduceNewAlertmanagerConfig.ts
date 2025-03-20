@@ -1,7 +1,7 @@
 import { Action } from '@reduxjs/toolkit';
 import reduceReducers from 'reduce-reducers';
 
-import { AlertManagerCortexConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { AlertManagerCortexConfig } from '~/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../api/alertmanagerApi';
 import { muteTimingsReducer } from '../reducers/alertmanager/muteTimings';

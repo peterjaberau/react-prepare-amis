@@ -24,10 +24,10 @@ import {
   useSplitter,
   useStyles2,
 } from '@grafana-ui/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { ActiveTab as ContactPointsActiveTabs } from '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoints';
-import { TestTemplateAlert } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { Trans, t } from '~/core/internationalization';
+import { ActiveTab as ContactPointsActiveTabs } from '~/features/alerting/unified/components/contact-points/ContactPoints';
+import { TestTemplateAlert } from '~/plugins/datasource/alertmanager/types';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';
 import { makeAMLink, stringifyErrorLike } from '../../utils/misc';

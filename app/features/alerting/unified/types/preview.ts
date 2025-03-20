@@ -1,5 +1,5 @@
 import { PanelData } from '@data/index';
-import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { AlertQuery } from '~/types/unified-alerting-dto';
 
 import { RuleFormType } from './rule-form';
 

@@ -4,11 +4,11 @@ import { connect, ConnectedProps } from 'react-redux';
 
 // Utils
 import { InlineField, InlineSwitch, Modal, Button, EmptyState } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t } from '@grafana-module/app/core/internationalization';
-import { getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
-import { AccessControlAction, ApiKey, ApikeyMigrationResult, StoreState } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { contextSrv } from '~/core/core';
+import { t } from '~/core/internationalization';
+import { getTimeZone } from '~/features/profile/state/selectors';
+import { AccessControlAction, ApiKey, ApikeyMigrationResult, StoreState } from '~/types';
 
 import { ApiKeysActionBar } from './ApiKeysActionBar';
 import { ApiKeysTable } from './ApiKeysTable';

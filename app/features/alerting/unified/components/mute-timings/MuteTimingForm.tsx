@@ -4,13 +4,13 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Alert, Button, Field, FieldSet, Input, LinkButton, LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 import {
   MuteTiming,
   useCreateMuteTiming,
   useUpdateMuteTiming,
   useValidateMuteTiming,
-} from '@grafana-module/app/features/alerting/unified/components/mute-timings/useMuteTimings';
+} from '~/features/alerting/unified/components/mute-timings/useMuteTimings';
 
 import { useAlertmanager } from '../../state/AlertmanagerContext';
 import { MuteTimingFields } from '../../types/mute-timing-form';

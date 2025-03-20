@@ -1,6 +1,6 @@
 import { Badge } from '@grafana-ui/index';
-import { AnnoKeyManagerIdentity, AnnoKeyManagerKind, ManagerKind } from '@grafana-module/app/features/apiserver/types';
-import { DashboardMeta } from '@grafana-module/app/types';
+import { AnnoKeyManagerIdentity, AnnoKeyManagerKind, ManagerKind } from '~/features/apiserver/types';
+import { DashboardMeta } from '~/types';
 
 export default function ManagedDashboardNavBarBadge({ meta }: { meta: DashboardMeta }) {
   const obj = meta.k8s;

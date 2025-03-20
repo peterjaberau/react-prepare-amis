@@ -1,5 +1,5 @@
-import { t } from '@grafana-module/app/core/internationalization';
-import { EditableRuleIdentifier, RuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { t } from '~/core/internationalization';
+import { EditableRuleIdentifier, RuleGroupIdentifier } from '~/types/unified-alerting';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { deleteRuleAction } from '../../reducers/ruler/ruleGroups';

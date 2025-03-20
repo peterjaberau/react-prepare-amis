@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { AlertmanagerGroup } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { AlertmanagerGroup } from '~/plugins/datasource/alertmanager/types';
 
 import { labelsMatchMatchers } from '../utils/alertmanager';
 import { parsePromQLStyleMatcherLooseSafe } from '../utils/matchers';

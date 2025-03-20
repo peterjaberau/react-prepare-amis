@@ -49,20 +49,20 @@ import {
   withTheme2,
 } from '@grafana-ui/index';
 import { mapMouseEventToMode } from '@grafana-ui/components/VizLegend/utils';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import store from '@grafana-module/app/core/store';
-import { createAndCopyShortLink, getLogsPermalinkRange } from '@grafana-module/app/core/utils/shortLinks';
-import { InfiniteScroll } from '@grafana-module/app/features/logs/components/InfiniteScroll';
-import { LogRows } from '@grafana-module/app/features/logs/components/LogRows';
-import { LogRowContextModal } from '@grafana-module/app/features/logs/components/log-context/LogRowContextModal';
-import { LogList } from '@grafana-module/app/features/logs/components/panel/LogList';
-import { ScrollToLogsEvent } from '@grafana-module/app/features/logs/components/panel/virtualization';
-import { LogLevelColor, dedupLogRows, filterLogLevels } from '@grafana-module/app/features/logs/logsModel';
-import { getLogLevel, getLogLevelFromKey, getLogLevelInfo } from '@grafana-module/app/features/logs/utils';
-import { LokiQueryDirection } from '@grafana-module/app/plugins/datasource/loki/dataquery';
-import { isLokiQuery } from '@grafana-module/app/plugins/datasource/loki/queryUtils';
-import { getState } from '@grafana-module/app/store/store';
-import { ExploreItemState, useDispatch } from '@grafana-module/app/types';
+import { Trans } from '~/core/internationalization';
+import store from '~/core/store';
+import { createAndCopyShortLink, getLogsPermalinkRange } from '~/core/utils/shortLinks';
+import { InfiniteScroll } from '~/features/logs/components/InfiniteScroll';
+import { LogRows } from '~/features/logs/components/LogRows';
+import { LogRowContextModal } from '~/features/logs/components/log-context/LogRowContextModal';
+import { LogList } from '~/features/logs/components/panel/LogList';
+import { ScrollToLogsEvent } from '~/features/logs/components/panel/virtualization';
+import { LogLevelColor, dedupLogRows, filterLogLevels } from '~/features/logs/logsModel';
+import { getLogLevel, getLogLevelFromKey, getLogLevelInfo } from '~/features/logs/utils';
+import { LokiQueryDirection } from '~/plugins/datasource/loki/dataquery';
+import { isLokiQuery } from '~/plugins/datasource/loki/queryUtils';
+import { getState } from '~/store/store';
+import { ExploreItemState, useDispatch } from '~/types';
 
 import {
   contentOutlineTrackLevelFilter,

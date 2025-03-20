@@ -4,7 +4,7 @@ import { HTMLAttributes, useEffect } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { reportExperimentView } from '@runtime/index';
 import { Button, Icon, LinkButton, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { t, Trans } from '~/core/internationalization';
 
 type ComponentSize = 'sm' | 'md';
 

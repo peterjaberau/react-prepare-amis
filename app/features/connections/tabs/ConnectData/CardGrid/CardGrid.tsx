@@ -4,17 +4,17 @@ import * as React from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { Card, Grid, useStyles2, Stack, Badge } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 import {
   PluginAngularBadge,
   PluginDeprecatedBadge,
   PluginDisabledBadge,
   PluginInstalledBadge,
   PluginUpdateAvailableBadge,
-} from '@grafana-module/app/features/plugins/admin/components/Badges';
-import { getBadgeColor } from '@grafana-module/app/features/plugins/admin/components/Badges/sharedStyles';
-import { isPluginUpdatable } from '@grafana-module/app/features/plugins/admin/helpers';
-import { CatalogPlugin } from '@grafana-module/app/features/plugins/admin/types';
+} from '~/features/plugins/admin/components/Badges';
+import { getBadgeColor } from '~/features/plugins/admin/components/Badges/sharedStyles';
+import { isPluginUpdatable } from '~/features/plugins/admin/helpers';
+import { CatalogPlugin } from '~/features/plugins/admin/types';
 
 const getStyles = (theme: GrafanaTheme2) => ({
   heading: css({

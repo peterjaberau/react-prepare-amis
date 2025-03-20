@@ -15,7 +15,7 @@ import {
   TextArea,
   useStyles2,
 } from '@grafana-ui/index';
-import { NotificationChannelOption, NotificationChannelSecureFields } from '@grafana-module/app/types';
+import { NotificationChannelOption, NotificationChannelSecureFields } from '~/types';
 
 import { KeyValueMapInput } from './KeyValueMapInput';
 import { StringArrayInput } from './StringArrayInput';

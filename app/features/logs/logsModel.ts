@@ -43,8 +43,8 @@ import { SIPrefix } from '@data/valueFormats/symbolFormatters';
 import { config } from '@runtime/index';
 import { BarAlignment, GraphDrawStyle, StackingMode } from '@schema/index';
 import { colors } from '@grafana-ui/index';
-import { getThemeColor } from '@grafana-module/app/core/utils/colors';
-import { LokiQueryDirection } from '@grafana-module/app/plugins/datasource/loki/types';
+import { getThemeColor } from '~/core/utils/colors';
+import { LokiQueryDirection } from '~/plugins/datasource/loki/types';
 
 import { LogsFrame, parseLogsFrame } from './logsFrame';
 import { createLogRowsMap, getLogLevel, getLogLevelFromKey, sortInAscendingOrder } from './utils';

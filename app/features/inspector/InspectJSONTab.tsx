@@ -7,10 +7,10 @@ import { firstValueFrom } from 'rxjs';
 import { AppEvents, PanelData, SelectableValue, LoadingState } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana-ui/index';
-import { appEvents } from '@grafana-module/app/core/core';
-import { t } from '@grafana-module/app/core/internationalization';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { appEvents } from '~/core/core';
+import { t } from '~/core/internationalization';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 
 import { getPanelDataFrames } from '../dashboard/components/HelpWizard/utils';
 import { getPanelInspectorStyles2 } from '../inspector/styles';

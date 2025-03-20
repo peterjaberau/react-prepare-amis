@@ -3,18 +3,18 @@ import { Fragment, useState } from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Dropdown, LinkButton, Menu, Stack, Text, TextLink, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import ConditionalWrap from '@grafana-module/app/features/alerting/unified/components/ConditionalWrap';
-import { useExportContactPoint } from '@grafana-module/app/features/alerting/unified/components/contact-points/useExportContactPoint';
-import { ManagePermissionsDrawer } from '@grafana-module/app/features/alerting/unified/components/permissions/ManagePermissions';
-import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
-import { K8sAnnotations } from '@grafana-module/app/features/alerting/unified/utils/k8s/constants';
+import { Trans, t } from '~/core/internationalization';
+import ConditionalWrap from '~/features/alerting/unified/components/ConditionalWrap';
+import { useExportContactPoint } from '~/features/alerting/unified/components/contact-points/useExportContactPoint';
+import { ManagePermissionsDrawer } from '~/features/alerting/unified/components/permissions/ManagePermissions';
+import { useAlertmanager } from '~/features/alerting/unified/state/AlertmanagerContext';
+import { K8sAnnotations } from '~/features/alerting/unified/utils/k8s/constants';
 import {
   canDeleteEntity,
   canEditEntity,
   getAnnotation,
   shouldUseK8sApi,
-} from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
+} from '~/features/alerting/unified/utils/k8s/utils';
 
 import { AlertmanagerAction, useAlertmanagerAbility } from '../../hooks/useAbilities';
 import { createRelativeUrl } from '../../utils/url';

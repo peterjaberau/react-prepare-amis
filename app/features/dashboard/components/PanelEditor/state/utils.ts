@@ -1,4 +1,4 @@
-import store from '@grafana-module/app/core/store';
+import store from '~/core/store';
 
 export function saveSectionOpenState(id: string, isOpen: boolean) {
   store.set(`panel-edit-section-${id}`, isOpen ? 'true' : 'false');

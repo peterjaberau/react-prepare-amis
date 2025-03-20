@@ -1,5 +1,5 @@
 import { config } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/core';
+import { contextSrv } from '~/core/core';
 
 import { SortOrder } from '../utils/richHistoryTypes';
 

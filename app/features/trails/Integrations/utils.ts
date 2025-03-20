@@ -1,5 +1,5 @@
 import { QueryBuilderLabelFilter } from '@prometheus/index';
-import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+import { DashboardScene } from '~/features/dashboard-scene/scene/DashboardScene';
 
 import { QueryMetric } from './getQueryMetrics'; // We only support label filters with the '=' operator
 

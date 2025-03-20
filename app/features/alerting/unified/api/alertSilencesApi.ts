@@ -1,6 +1,6 @@
 import { AppEvents } from '@data/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { Silence, SilenceCreatePayload } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import appEvents from '~/core/app_events';
+import { Silence, SilenceCreatePayload } from '~/plugins/datasource/alertmanager/types';
 
 import { alertingApi } from './alertingApi';
 

@@ -6,7 +6,7 @@ import {
   VisualizationSuggestionScore,
 } from '@data/index';
 import { config } from '@runtime/index';
-import { importPanelPlugin } from '@grafana-module/app/features/plugins/importPanelPlugin';
+import { importPanelPlugin } from '~/features/plugins/importPanelPlugin';
 
 export const panelsToCheckFirst = [
   'timeseries',

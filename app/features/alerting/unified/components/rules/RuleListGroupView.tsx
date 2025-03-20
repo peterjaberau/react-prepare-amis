@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 
-import { CombinedRuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRuleNamespace } from '~/types/unified-alerting';
 
 import { LogMessages, logInfo } from '../../Analytics';
 import { AlertingAction } from '../../hooks/useAbilities';

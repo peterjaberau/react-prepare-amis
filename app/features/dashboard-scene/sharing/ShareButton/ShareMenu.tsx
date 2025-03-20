@@ -5,9 +5,9 @@ import { selectors as e2eSelectors } from '@selectors/index';
 import { config, locationService } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { IconName, Menu } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t } from '@grafana-module/app/core/internationalization';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { t } from '~/core/internationalization';
+import { AccessControlAction } from '~/types';
 
 import { isPublicDashboardsEnabled } from '../../../dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
 import { getTrackingSource, shareDashboardType } from '../../../dashboard/components/ShareModal/utils';

@@ -4,9 +4,9 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { GrafanaTheme2 } from '@data/index';
 import { LinkButton, RadioButtonGroup, useStyles2, FilterInput, EmptyState } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
+import { Page } from '~/core/components/Page/Page';
+import { contextSrv } from '~/core/core';
+import { t, Trans } from '~/core/internationalization';
 
 import { AccessControlAction, StoreState, UserFilter } from '../../types';
 

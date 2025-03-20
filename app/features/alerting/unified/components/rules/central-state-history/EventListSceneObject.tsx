@@ -14,14 +14,14 @@ import {
   sceneGraph,
 } from '@scenes/index';
 import { Alert, Icon, LoadingBar, Pagination, Stack, Text, Tooltip, useStyles2, withErrorBoundary } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 import {
   GrafanaAlertStateWithReason,
   isAlertStateWithReason,
   isGrafanaAlertState,
   mapStateWithReasonToBaseState,
   mapStateWithReasonToReason,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { trackUseCentralHistoryFilterByClicking, trackUseCentralHistoryMaxEventsReached } from '../../../Analytics';
 import { stateHistoryApi } from '../../../api/stateHistoryApi';

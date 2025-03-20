@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { ButtonSelect, useStyles2 } from '@grafana-ui/index';
-import { EvalFunction } from '@grafana-module/app/features/alerting/state/alertDef';
+import { EvalFunction } from '~/features/alerting/state/alertDef';
 
 import { thresholdFunctions } from '../types';
 

@@ -3,8 +3,8 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2, LinkModel } from '@data/index';
 import { ScalarDimensionConfig } from '@schema/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { DimensionContext } from '@grafana-module/app/features/dimensions';
-import { ScalarDimensionEditor } from '@grafana-module/app/features/dimensions/editors';
+import { DimensionContext } from '~/features/dimensions';
+import { ScalarDimensionEditor } from '~/features/dimensions/editors';
 
 import { CanvasElementItem, CanvasElementOptions, CanvasElementProps, defaultBgColor } from '../element';
 

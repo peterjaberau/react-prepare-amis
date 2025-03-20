@@ -1,5 +1,5 @@
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Page } from '~/core/components/Page/Page';
+import { Trans } from '~/core/internationalization';
 
 export default function FeatureTogglePage() {
   return (

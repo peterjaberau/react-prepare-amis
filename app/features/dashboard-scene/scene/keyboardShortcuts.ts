@@ -1,10 +1,10 @@
 import { locationUtil, SetPanelAttentionEvent } from '@data/index';
 import { config, locationService } from '@runtime/index';
 import { sceneGraph, VizPanel } from '@scenes/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { KeybindingSet } from '@grafana-module/app/core/services/KeybindingSet';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { KeybindingSet } from '~/core/services/KeybindingSet';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction } from '~/types';
 
 import { shareDashboardType } from '../../dashboard/components/ShareModal/utils';
 import { ShareDrawer } from '../sharing/ShareDrawer/ShareDrawer';

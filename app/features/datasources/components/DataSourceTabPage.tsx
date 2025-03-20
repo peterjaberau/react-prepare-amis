@@ -1,5 +1,5 @@
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { useDataSourceSettingsNav } from '@grafana-module/app/features/connections/hooks/useDataSourceSettingsNav';
+import { Page } from '~/core/components/Page/Page';
+import { useDataSourceSettingsNav } from '~/features/connections/hooks/useDataSourceSettingsNav';
 
 import { EditDataSource } from '../components/EditDataSource';
 import { EditDataSourceActions } from '../components/EditDataSourceActions';

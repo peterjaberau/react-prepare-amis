@@ -4,11 +4,11 @@ import { useLocation } from 'react-router';
 
 import { PanelPlugin } from '@data/index';
 import { locationService } from '@runtime/index';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
-import { getPanelStateForModel } from '@grafana-module/app/features/panel/state/selectors';
-import { StoreState } from '@grafana-module/app/types';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { InspectTab } from '~/features/inspector/types';
+import { getPanelStateForModel } from '~/features/panel/state/selectors';
+import { StoreState } from '~/types';
 
 import { GetDataOptions } from '../../../query/state/PanelQueryRunner';
 import { HelpWizard } from '../HelpWizard/HelpWizard';

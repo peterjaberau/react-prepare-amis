@@ -3,7 +3,7 @@ import { css, keyframes } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { locationService } from '@runtime/index';
 import { Button, HorizontalGroup, Spinner, useStyles2, VerticalGroup } from '@grafana-ui/index';
-import { DashboardInitPhase } from '@grafana-module/app/types';
+import { DashboardInitPhase } from '~/types';
 
 export interface Props {
   initPhase: DashboardInitPhase;

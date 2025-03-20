@@ -7,7 +7,7 @@ import { secondsToHms } from '@data/datetime/rangeutil';
 import { config } from '@runtime/index';
 import { Preview } from '@grafana-sql/components/visual-query-builder/Preview';
 import { Alert, Badge, ErrorBoundaryAlert, LinkButton, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { CombinedRule } from '~/types/unified-alerting';
 
 import { AlertDataQuery, AlertQuery } from '../../../types/unified-alerting-dto';
 import { isExpressionQuery } from '../../expressions/guards';

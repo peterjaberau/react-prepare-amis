@@ -1,6 +1,6 @@
 import { MoveableManagerInterface, Renderer } from 'moveable';
 
-import { VerticalConstraint, HorizontalConstraint } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
+import { VerticalConstraint, HorizontalConstraint } from '~/plugins/panel/canvas/panelcfg';
 
 import { Scene } from './scene';
 import { findElementByTarget } from './sceneElementManagement';

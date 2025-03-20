@@ -2,12 +2,12 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { EmptyState, Stack, TextLink, useStyles2 } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { ViewProps } from '@grafana-module/app/features/datasources/components/DataSourcesList';
-import { DataSourcesListCard } from '@grafana-module/app/features/datasources/components/DataSourcesListCard';
-import { getDataSources, useLoadDataSources } from '@grafana-module/app/features/datasources/state';
-import { AccessControlAction, useSelector } from '@grafana-module/app/types';
+import { t, Trans } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
+import { ViewProps } from '~/features/datasources/components/DataSourcesList';
+import { DataSourcesListCard } from '~/features/datasources/components/DataSourcesListCard';
+import { getDataSources, useLoadDataSources } from '~/features/datasources/state';
+import { AccessControlAction, useSelector } from '~/types';
 
 import { CatalogPlugin } from '../types';
 

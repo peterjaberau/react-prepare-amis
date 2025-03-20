@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router';
 import { NavModelItem } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { Button, Input, Field } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Page } from '~/core/components/Page/Page';
+import { Trans } from '~/core/internationalization';
 
 interface UserDTO {
   name: string;

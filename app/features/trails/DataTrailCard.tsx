@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { dateTimeFormat, GrafanaTheme2 } from '@data/index';
 import { AdHocFiltersVariable, sceneGraph } from '@scenes/index';
 import { Card, IconButton, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { DataTrail } from './DataTrail';
 import { getTrailStore, DataTrailBookmark } from './TrailStore/TrailStore';

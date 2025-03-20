@@ -1,6 +1,6 @@
 import { PanelData, RawTimeRange } from '@data/index';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
 
 import { DashboardModel } from '../dashboard/state/DashboardModel';
 

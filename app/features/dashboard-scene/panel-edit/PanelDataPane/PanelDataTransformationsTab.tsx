@@ -14,7 +14,7 @@ import {
   SceneObjectState,
 } from '@scenes/index';
 import { Button, ButtonGroup, ConfirmModal, Tab, useStyles2 } from '@grafana-ui/index';
-import { TransformationOperationRows } from '@grafana-module/app/features/dashboard/components/TransformationsEditor/TransformationOperationRows';
+import { TransformationOperationRows } from '~/features/dashboard/components/TransformationsEditor/TransformationOperationRows';
 
 import { getQueryRunnerFor } from '../../utils/utils';
 

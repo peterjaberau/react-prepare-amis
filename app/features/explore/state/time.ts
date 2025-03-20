@@ -10,14 +10,14 @@ import {
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
 import { RefreshPicker } from '@grafana-ui/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { t } from '@grafana-module/app/core/internationalization';
-import { getTimeRange, refreshIntervalToSortOrder, stopQueryState } from '@grafana-module/app/core/utils/explore';
-import { getCopiedTimeRange, getShiftedTimeRange, getZoomedTimeRange } from '@grafana-module/app/core/utils/timePicker';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
-import { sortLogsResult } from '@grafana-module/app/features/logs/utils';
-import { getFiscalYearStartMonth, getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
-import { ExploreItemState, ThunkDispatch, ThunkResult } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { t } from '~/core/internationalization';
+import { getTimeRange, refreshIntervalToSortOrder, stopQueryState } from '~/core/utils/explore';
+import { getCopiedTimeRange, getShiftedTimeRange, getZoomedTimeRange } from '~/core/utils/timePicker';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
+import { sortLogsResult } from '~/features/logs/utils';
+import { getFiscalYearStartMonth, getTimeZone } from '~/features/profile/state/selectors';
+import { ExploreItemState, ThunkDispatch, ThunkResult } from '~/types';
 
 import { syncTimesAction } from './main';
 import { runLoadMoreLogsQueries, runQueries } from './query';

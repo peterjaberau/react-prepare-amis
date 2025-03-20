@@ -9,9 +9,9 @@ import {
   SceneObjectState,
   VizPanel,
 } from '@scenes/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
-import { GetDataOptions } from '@grafana-module/app/features/query/state/PanelQueryRunner';
+import { t } from '~/core/internationalization';
+import { InspectTab } from '~/features/inspector/types';
+import { GetDataOptions } from '~/features/query/state/PanelQueryRunner';
 
 import { InspectDataTab as InspectDataTabOld } from '../../inspector/InspectDataTab';
 

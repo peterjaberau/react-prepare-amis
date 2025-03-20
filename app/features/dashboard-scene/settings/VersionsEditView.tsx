@@ -4,7 +4,7 @@ import { PageLayoutType, dateTimeFormat, dateTimeFormatTimeAgo } from '@data/ind
 import { config } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, sceneGraph } from '@scenes/index';
 import { Spinner, Stack } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { DashboardScene } from '../scene/DashboardScene';
 import { NavToolbarActions } from '../scene/NavToolbarActions';

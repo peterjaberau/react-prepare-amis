@@ -13,11 +13,11 @@ import {
 } from '@data/index';
 import { CorrelationData } from '@runtime/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
-import { getQueryKeys } from '@grafana-module/app/core/utils/explore';
-import { getCorrelationsBySourceUIDs } from '@grafana-module/app/features/correlations/utils';
-import { getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
-import { createAsyncThunk, ThunkResult } from '@grafana-module/app/types';
-import { ExploreItemState } from '@grafana-module/app/types/explore';
+import { getQueryKeys } from '~/core/utils/explore';
+import { getCorrelationsBySourceUIDs } from '~/features/correlations/utils';
+import { getTimeZone } from '~/features/profile/state/selectors';
+import { createAsyncThunk, ThunkResult } from '~/types';
+import { ExploreItemState } from '~/types/explore';
 
 import { datasourceReducer } from './datasource';
 import { queryReducer, runQueries } from './query';

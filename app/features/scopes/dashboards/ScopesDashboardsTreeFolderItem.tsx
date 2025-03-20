@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ScopesDashboardsTree } from './ScopesDashboardsTree';
 import { OnFolderUpdate, SuggestedDashboardsFolder, SuggestedDashboardsFoldersMap } from './types';

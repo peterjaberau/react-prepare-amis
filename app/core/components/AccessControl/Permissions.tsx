@@ -5,10 +5,10 @@ import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Text, Box, Button, useStyles2, Space } from '@grafana-ui/index';
-import { SlideDown } from '@grafana-module/app/core/components/Animations/SlideDown';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { getBackendSrv } from '@grafana-module/app/core/services/backend_srv';
-import { DescendantCount } from '@grafana-module/app/features/browse-dashboards/components/BrowseActions/DescendantCount';
+import { SlideDown } from '~/core/components/Animations/SlideDown';
+import { Trans, t } from '~/core/internationalization';
+import { getBackendSrv } from '~/core/services/backend_srv';
+import { DescendantCount } from '~/features/browse-dashboards/components/BrowseActions/DescendantCount';
 
 import { AddPermission } from './AddPermission';
 import { PermissionList } from './PermissionList';

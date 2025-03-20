@@ -13,11 +13,11 @@ import {
   TabsBar,
   Text,
 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { shouldUseK8sApi } from '@grafana-module/app/features/alerting/unified/utils/k8s/utils';
-import { makeAMLink, stringifyErrorLike } from '@grafana-module/app/features/alerting/unified/utils/misc';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { Trans, t } from '~/core/internationalization';
+import { shouldUseK8sApi } from '~/features/alerting/unified/utils/k8s/utils';
+import { makeAMLink, stringifyErrorLike } from '~/features/alerting/unified/utils/misc';
+import { AccessControlAction } from '~/types';
 
 import { AlertmanagerAction, useAlertmanagerAbility } from '../../hooks/useAbilities';
 import { usePagination } from '../../hooks/usePagination';

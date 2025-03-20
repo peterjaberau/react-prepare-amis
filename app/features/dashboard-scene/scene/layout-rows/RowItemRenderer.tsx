@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { selectors } from '@selectors/index';
 import { SceneComponentProps } from '@scenes/index';
 import { clearButtonStyles, Icon, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { useIsClone } from '../../utils/clone';
 import {

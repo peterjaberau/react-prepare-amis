@@ -1,5 +1,5 @@
-import { Permissions } from '@grafana-module/app/core/components/AccessControl';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { Permissions } from '~/core/components/AccessControl';
+import { contextSrv } from '~/core/services/context_srv';
 
 import { AccessControlAction, Team } from '../../types';
 

@@ -5,10 +5,10 @@ import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 import { Card, FilterInput, Icon, Pagination, Select, Stack, TagList, useStyles2 } from '@grafana-ui/index';
-import { DEFAULT_PER_PAGE_PAGINATION } from '@grafana-module/app/core/constants';
-import { getQueryParamValue } from '@grafana-module/app/core/utils/query';
-import { FolderState, useDispatch } from '@grafana-module/app/types';
-import { CombinedRule } from '@grafana-module/app/types/unified-alerting';
+import { DEFAULT_PER_PAGE_PAGINATION } from '~/core/constants';
+import { getQueryParamValue } from '~/core/utils/query';
+import { FolderState, useDispatch } from '~/types';
+import { CombinedRule } from '~/types/unified-alerting';
 
 import { useCombinedRuleNamespaces } from './hooks/useCombinedRuleNamespaces';
 import { usePagination } from './hooks/usePagination';

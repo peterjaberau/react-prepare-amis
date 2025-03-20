@@ -1,4 +1,4 @@
-import { PromBuildInfoResponse } from '@grafana-module/app/types/unified-alerting-dto';
+import { PromBuildInfoResponse } from '~/types/unified-alerting-dto';
 
 export const buildInfoResponse: { prometheus: PromBuildInfoResponse; mimir: PromBuildInfoResponse } = {
   prometheus: {

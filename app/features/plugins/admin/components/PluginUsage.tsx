@@ -7,10 +7,10 @@ import { of } from 'rxjs';
 import { GrafanaTheme2, PluginMeta, PluginType } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, Spinner, useStyles2 } from '@grafana-ui/index';
-import EmptyListCTA from '@grafana-module/app/core/components/EmptyListCTA/EmptyListCTA';
-import { SearchResultsTable } from '@grafana-module/app/features/search/page/components/SearchResultsTable';
-import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
-import { SearchQuery } from '@grafana-module/app/features/search/service/types';
+import EmptyListCTA from '~/core/components/EmptyListCTA/EmptyListCTA';
+import { SearchResultsTable } from '~/features/search/page/components/SearchResultsTable';
+import { getGrafanaSearcher } from '~/features/search/service/searcher';
+import { SearchQuery } from '~/features/search/service/types';
 
 type Props = {
   plugin: PluginMeta;

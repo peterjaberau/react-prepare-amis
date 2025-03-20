@@ -17,15 +17,15 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { AppEvents, DataQueryErrorType, deprecationWarning } from '@data/index';
 import { BackendSrv as BackendService, BackendSrvRequest, config, FetchError, FetchResponse } from '@runtime/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { getConfig } from '@grafana-module/app/core/config';
-import { getSessionExpiry, hasSessionExpiry } from '@grafana-module/app/core/utils/auth';
-import { loadUrlToken } from '@grafana-module/app/core/utils/urlToken';
-import { getDashboardAPI } from '@grafana-module/app/features/dashboard/api/dashboard_api';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { DashboardSearchItem } from '@grafana-module/app/features/search/types';
-import { TokenRevokedModal } from '@grafana-module/app/features/users/TokenRevokedModal';
-import { DashboardDTO, FolderDTO } from '@grafana-module/app/types';
+import appEvents from '~/core/app_events';
+import { getConfig } from '~/core/config';
+import { getSessionExpiry, hasSessionExpiry } from '~/core/utils/auth';
+import { loadUrlToken } from '~/core/utils/urlToken';
+import { getDashboardAPI } from '~/features/dashboard/api/dashboard_api';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { DashboardSearchItem } from '~/features/search/types';
+import { TokenRevokedModal } from '~/features/users/TokenRevokedModal';
+import { DashboardDTO, FolderDTO } from '~/types';
 
 import { ShowModalReactEvent } from '../../types/events';
 import { isContentTypeJson, parseInitFromOptions, parseResponseBody, parseUrlFromOptions } from '../utils/fetch';
@@ -591,7 +591,7 @@ export class BackendSrv implements BackendService {
   /** @deprecated */
   getDashboardByUid(uid: string): Promise<DashboardDTO> {
     // NOTE: When this is removed, we can also remove most instances of:
-    // jest.mock('@grafana-module/app/features/live/dashboard/dashboardWatcher
+    // jest.mock('~/features/live/dashboard/dashboardWatcher
     deprecationWarning('backend_srv', 'getDashboardByUid(uid)', 'getDashboardAPI().getDashboardDTO(uid)');
     return getDashboardAPI().getDashboardDTO(uid);
   }

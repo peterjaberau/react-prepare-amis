@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import { PluginType } from '@data/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import UpdateAllButton from '@grafana-module/app/features/plugins/admin/components/UpdateAllButton';
-import UpdateAllModal from '@grafana-module/app/features/plugins/admin/components/UpdateAllModal';
-import { useGetUpdatable } from '@grafana-module/app/features/plugins/admin/state/hooks';
+import { Page } from '~/core/components/Page/Page';
+import UpdateAllButton from '~/features/plugins/admin/components/UpdateAllButton';
+import UpdateAllModal from '~/features/plugins/admin/components/UpdateAllModal';
+import { useGetUpdatable } from '~/features/plugins/admin/state/hooks';
 
 import { AddNewConnection } from '../tabs/ConnectData';
 

@@ -6,12 +6,12 @@ import { usePrevious } from 'react-use';
 import { PageLayoutType } from '@data/index';
 import { UrlSyncContextProvider } from '@scenes/index';
 import { Box } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
-import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
-import { DashboardPageError } from '@grafana-module/app/features/dashboard/containers/DashboardPageError';
-import { DashboardPageRouteParams, DashboardPageRouteSearchParams } from '@grafana-module/app/features/dashboard/containers/types';
-import { DashboardRoutes } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import PageLoader from '~/core/components/PageLoader/PageLoader';
+import { GrafanaRouteComponentProps } from '~/core/navigation/types';
+import { DashboardPageError } from '~/features/dashboard/containers/DashboardPageError';
+import { DashboardPageRouteParams, DashboardPageRouteSearchParams } from '~/features/dashboard/containers/types';
+import { DashboardRoutes } from '~/types';
 
 import { DashboardPrompt } from '../saving/DashboardPrompt';
 

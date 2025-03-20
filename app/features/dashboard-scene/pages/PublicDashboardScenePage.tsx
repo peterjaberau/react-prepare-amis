@@ -6,17 +6,17 @@ import { GrafanaTheme2, PageLayoutType } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { SceneComponentProps, UrlSyncContextProvider } from '@scenes/index';
 import { Alert, Box, Icon, Stack, useStyles2 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import PageLoader from '@grafana-module/app/core/components/PageLoader/PageLoader';
-import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
-import { PublicDashboardFooter } from '@grafana-module/app/features/dashboard/components/PublicDashboard/PublicDashboardsFooter';
-import { PublicDashboardNotAvailable } from '@grafana-module/app/features/dashboard/components/PublicDashboardNotAvailable/PublicDashboardNotAvailable';
+import { Page } from '~/core/components/Page/Page';
+import PageLoader from '~/core/components/PageLoader/PageLoader';
+import { GrafanaRouteComponentProps } from '~/core/navigation/types';
+import { PublicDashboardFooter } from '~/features/dashboard/components/PublicDashboard/PublicDashboardsFooter';
+import { PublicDashboardNotAvailable } from '~/features/dashboard/components/PublicDashboardNotAvailable/PublicDashboardNotAvailable';
 import {
   PublicDashboardPageRouteParams,
   PublicDashboardPageRouteSearchParams,
-} from '@grafana-module/app/features/dashboard/containers/types';
-import { AppNotificationSeverity } from '@grafana-module/app/types';
-import { DashboardRoutes } from '@grafana-module/app/types/dashboard';
+} from '~/features/dashboard/containers/types';
+import { AppNotificationSeverity } from '~/types';
+import { DashboardRoutes } from '~/types/dashboard';
 
 import { DashboardScene } from '../scene/DashboardScene';
 

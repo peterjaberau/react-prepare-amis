@@ -2,12 +2,12 @@ import { chain, cloneDeep, defaults, find } from 'lodash';
 
 import { PanelPluginMeta } from '@data/index';
 import { locationService } from '@runtime/index';
-import config from '@grafana-module/app/core/config';
-import { LS_PANEL_COPY_KEY } from '@grafana-module/app/core/constants';
-import store from '@grafana-module/app/core/store';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { calculateNewPanelGridPos } from '@grafana-module/app/features/dashboard/utils/panel';
+import config from '~/core/config';
+import { LS_PANEL_COPY_KEY } from '~/core/constants';
+import store from '~/core/store';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { calculateNewPanelGridPos } from '~/features/dashboard/utils/panel';
 
 export const NEW_PANEL_TITLE = 'Panel Title';
 

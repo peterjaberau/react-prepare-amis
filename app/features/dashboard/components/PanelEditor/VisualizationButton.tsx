@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 
 import { ToolbarButton, ButtonGroup } from '@grafana-ui/index';
-import { useDispatch, useSelector } from '@grafana-module/app/types';
+import { useDispatch, useSelector } from '~/types';
 
 import { PanelModel } from '../../state/PanelModel';
 import { getPanelPluginWithFallback } from '../../state/selectors';

@@ -1,7 +1,7 @@
 import { HttpResponse, http } from 'msw';
 
-import { grafanaRulerNamespace } from '@grafana-module/app/features/alerting/unified/mocks/grafanaRulerApi';
-import { DashboardSearchItemType } from '@grafana-module/app/features/search/types';
+import { grafanaRulerNamespace } from '~/features/alerting/unified/mocks/grafanaRulerApi';
+import { DashboardSearchItemType } from '~/features/search/types';
 
 export const FOLDER_TITLE_HAPPY_PATH = 'Folder A';
 

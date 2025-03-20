@@ -1,5 +1,5 @@
-import { config } from '@grafana-module/app/core/config';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { config } from '~/core/config';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 
 export const hiddenReducerTypes = ['percent_diff', 'percent_diff_abs'];
 export class ThresholdMapper {

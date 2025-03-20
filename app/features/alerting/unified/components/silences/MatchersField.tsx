@@ -4,8 +4,8 @@ import { Controller, useFieldArray, useFormContext } from 'react-hook-form';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Button, Divider, Field, IconButton, Input, Select, useStyles2 } from '@grafana-ui/index';
-import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
-import { MatcherOperator } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { alertRuleApi } from '~/features/alerting/unified/api/alertRuleApi';
+import { MatcherOperator } from '~/plugins/datasource/alertmanager/types';
 
 import { SilenceFormFields } from '../../types/silence-form';
 import { matcherFieldOptions } from '../../utils/alertmanager';

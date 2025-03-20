@@ -22,11 +22,11 @@ import {
 } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';
 import { DataQuery, DataSourceJsonData, DataSourceRef, TimeZone } from '@schema/index';
-import { getLocalRichHistoryStorage } from '@grafana-module/app/core/history/richHistoryStorageProvider';
-import { SortOrder } from '@grafana-module/app/core/utils/richHistoryTypes';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
-import { ExplorePanelData, StoreState } from '@grafana-module/app/types';
-import { ExploreItemState, RichHistoryQuery } from '@grafana-module/app/types/explore';
+import { getLocalRichHistoryStorage } from '~/core/history/richHistoryStorageProvider';
+import { SortOrder } from '~/core/utils/richHistoryTypes';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
+import { ExplorePanelData, StoreState } from '~/types';
+import { ExploreItemState, RichHistoryQuery } from '~/types/explore';
 
 import store from '../../../core/store';
 import { setLastUsedDatasourceUID } from '../../../core/utils/explore';

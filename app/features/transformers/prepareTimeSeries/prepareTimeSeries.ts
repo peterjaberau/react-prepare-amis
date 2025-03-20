@@ -12,7 +12,7 @@ import {
   Field,
   MutableDataFrame,
 } from '@data/index';
-import { Labels } from '@grafana-module/app/types/unified-alerting-dto';
+import { Labels } from '~/types/unified-alerting-dto';
 
 import { partitionByValues } from '../partitionByValues/partitionByValues';
 

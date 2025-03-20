@@ -1,8 +1,8 @@
 import { Fragment, useEffect } from 'react';
 
 import { Alert, Box, LoadingPlaceholder, Text } from '@grafana-ui/index';
-import { useQueryParams } from '@grafana-module/app/core/hooks/useQueryParams';
-import { useDispatch } from '@grafana-module/app/types';
+import { useQueryParams } from '~/core/hooks/useQueryParams';
+import { useDispatch } from '~/types';
 
 import { AlertmanagerChoice } from '../../../plugins/datasource/alertmanager/types';
 

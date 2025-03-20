@@ -1,7 +1,7 @@
 import { DataLinkBuiltInVars } from '@data/index';
-import { Graph } from '@grafana-module/app/core/utils/dag';
-import { mapSet } from '@grafana-module/app/core/utils/set';
-import { stringifyPanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { Graph } from '~/core/utils/dag';
+import { mapSet } from '~/core/utils/set';
+import { stringifyPanelModel } from '~/features/dashboard/state/PanelModel';
 
 import { safeStringifyValue } from '../../../core/utils/explore';
 import { DashboardModel } from '../../dashboard/state/DashboardModel';

@@ -7,7 +7,7 @@ import {
   WindowSizeMode,
 } from '@data/transformations/transformers/calculateField';
 import { InlineField, RadioButtonGroup, Select, StatsPicker } from '@grafana-ui/index';
-import { NumberInput } from '@grafana-module/app/core/components/OptionsUI/NumberInput';
+import { NumberInput } from '~/core/components/OptionsUI/NumberInput';
 
 import { LABEL_WIDTH } from './constants';
 

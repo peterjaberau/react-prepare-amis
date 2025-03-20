@@ -4,11 +4,11 @@ import { useDebounce, useDeepCompareEffect } from 'react-use';
 
 import { GrafanaTheme2, dateTime } from '@data/index';
 import { Alert, Badge, Icon, LoadingPlaceholder, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { MatcherFieldValue } from '@grafana-module/app/features/alerting/unified/types/silence-form';
-import { matcherFieldToMatcher } from '@grafana-module/app/features/alerting/unified/utils/alertmanager';
-import { MATCHER_ALERT_RULE_UID } from '@grafana-module/app/features/alerting/unified/utils/constants';
-import { AlertmanagerAlert, Matcher, MatcherOperator } from '@grafana-module/app/plugins/datasource/alertmanager/types';
+import { Trans } from '~/core/internationalization';
+import { MatcherFieldValue } from '~/features/alerting/unified/types/silence-form';
+import { matcherFieldToMatcher } from '~/features/alerting/unified/utils/alertmanager';
+import { MATCHER_ALERT_RULE_UID } from '~/features/alerting/unified/utils/constants';
+import { AlertmanagerAlert, Matcher, MatcherOperator } from '~/plugins/datasource/alertmanager/types';
 
 import { alertmanagerApi } from '../../api/alertmanagerApi';
 import { isNullDate } from '../../utils/time';

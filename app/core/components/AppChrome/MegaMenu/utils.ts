@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 import { NavModelItem } from '@data/index';
 import { config, reportInteraction } from '@runtime/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { HOME_NAV_ID } from '@grafana-module/app/core/reducers/navModel';
+import { t } from '~/core/internationalization';
+import { HOME_NAV_ID } from '~/core/reducers/navModel';
 
 import { ShowModalReactEvent } from '../../../../types/events';
 import appEvents from '../../../app_events';

@@ -1,6 +1,6 @@
 import { AnnotationQuery, getDataSourceRef, NavModelItem } from '@data/index';
 import { getDataSourceSrv, locationService } from '@runtime/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { DashboardModel } from '../../state/DashboardModel';
 import { AnnotationSettingsEdit, AnnotationSettingsList, newAnnotationName } from '../AnnotationSettings';

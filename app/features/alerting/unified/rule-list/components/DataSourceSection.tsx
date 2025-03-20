@@ -4,9 +4,9 @@ import { useToggle } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { IconButton, LinkButton, Stack, Text, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { GrafanaRulesSourceSymbol, RulesSourceIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { RulesSourceApplication } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans, t } from '~/core/internationalization';
+import { GrafanaRulesSourceSymbol, RulesSourceIdentifier } from '~/types/unified-alerting';
+import { RulesSourceApplication } from '~/types/unified-alerting-dto';
 
 import { Spacer } from '../../components/Spacer';
 import { WithReturnButton } from '../../components/WithReturnButton';

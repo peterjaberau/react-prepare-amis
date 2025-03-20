@@ -15,10 +15,10 @@ import { config, getDataSourceSrv } from '@runtime/index';
 import { VizPanel } from '@scenes/index';
 import { AnnotationPanelFilter } from '@schema/raw/dashboard/dashboard_types';
 import { Button, Checkbox, Field, FieldSet, Input, MultiSelect, Select, useStyles2, Stack, Alert } from '@grafana-ui/index';
-import { ColorValueEditor } from '@grafana-module/app/core/components/OptionsUI/color';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import StandardAnnotationQueryEditor from '@grafana-module/app/features/annotations/components/StandardAnnotationQueryEditor';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
+import { ColorValueEditor } from '~/core/components/OptionsUI/color';
+import { Trans } from '~/core/internationalization';
+import StandardAnnotationQueryEditor from '~/features/annotations/components/StandardAnnotationQueryEditor';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
 
 import { getPanelIdForVizPanel } from '../../utils/utils';
 

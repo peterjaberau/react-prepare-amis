@@ -1,7 +1,7 @@
-import { SafeDynamicImport } from '@grafana-module/app/core/components/DynamicImports/SafeDynamicImport';
-import { config } from '@grafana-module/app/core/config';
-import { GrafanaRouteComponent, RouteDescriptor } from '@grafana-module/app/core/navigation/types';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { SafeDynamicImport } from '~/core/components/DynamicImports/SafeDynamicImport';
+import { config } from '~/core/config';
+import { GrafanaRouteComponent, RouteDescriptor } from '~/core/navigation/types';
+import { AccessControlAction } from '~/types';
 
 import { PERMISSIONS_CONTACT_POINTS } from './unified/components/contact-points/permissions';
 import {
@@ -20,20 +20,20 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
     {
       path: '/alerting',
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingHome" */ '@grafana-module/app/features/alerting/unified/home/Home')
+        () => import(/* webpackChunkName: "AlertingHome" */ '~/features/alerting/unified/home/Home')
       ),
     },
     {
       path: '/alerting/home',
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingHome" */ '@grafana-module/app/features/alerting/unified/home/Home')
+        () => import(/* webpackChunkName: "AlertingHome" */ '~/features/alerting/unified/home/Home')
       ),
     },
     {
       path: '/alerting/list',
       roles: evaluateAccess([AccessControlAction.AlertingRuleRead, AccessControlAction.AlertingRuleExternalRead]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertRuleListIndex" */ '@grafana-module/app/features/alerting/unified/RuleList')
+        () => import(/* webpackChunkName: "AlertRuleListIndex" */ '~/features/alerting/unified/RuleList')
       ),
     },
     {
@@ -49,7 +49,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "NotificationPoliciesPage" */ '@grafana-module/app/features/alerting/unified/NotificationPoliciesPage'
+            /* webpackChunkName: "NotificationPoliciesPage" */ '~/features/alerting/unified/NotificationPoliciesPage'
           )
       ),
     },
@@ -63,7 +63,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "NewMuteTiming" */ '@grafana-module/app/features/alerting/unified/components/mute-timings/NewMuteTiming'
+            /* webpackChunkName: "NewMuteTiming" */ '~/features/alerting/unified/components/mute-timings/NewMuteTiming'
           )
       ),
     },
@@ -78,7 +78,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "EditMuteTiming" */ '@grafana-module/app/features/alerting/unified/components/mute-timings/EditMuteTiming'
+            /* webpackChunkName: "EditMuteTiming" */ '~/features/alerting/unified/components/mute-timings/EditMuteTiming'
           )
       ),
     },
@@ -92,7 +92,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "SilencesTablePage" */ '@grafana-module/app/features/alerting/unified/components/silences/SilencesTable'
+            /* webpackChunkName: "SilencesTablePage" */ '~/features/alerting/unified/components/silences/SilencesTable'
           )
       ),
     },
@@ -105,7 +105,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
         AccessControlAction.AlertingSilenceUpdate,
       ]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "NewSilencePage" */ '@grafana-module/app/features/alerting/unified/NewSilencePage')
+        () => import(/* webpackChunkName: "NewSilencePage" */ '~/features/alerting/unified/NewSilencePage')
       ),
     },
     {
@@ -113,7 +113,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "ExistingSilenceEditorPage" */ '@grafana-module/app/features/alerting/unified/components/silences/SilencesEditor'
+            /* webpackChunkName: "ExistingSilenceEditorPage" */ '~/features/alerting/unified/components/silences/SilencesEditor'
           )
       ),
     },
@@ -128,7 +128,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "ContactPoints" */ '@grafana-module/app/features/alerting/unified/components/contact-points/ContactPoints'
+            /* webpackChunkName: "ContactPoints" */ '~/features/alerting/unified/components/contact-points/ContactPoints'
           )
       ),
     },
@@ -142,7 +142,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "NewReceiverView" */ '@grafana-module/app/features/alerting/unified/components/receivers/NewReceiverView'
+            /* webpackChunkName: "NewReceiverView" */ '~/features/alerting/unified/components/receivers/NewReceiverView'
           )
       ),
     },
@@ -161,7 +161,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "EditContactPoint" */ '@grafana-module/app/features/alerting/unified/components/contact-points/EditContactPoint'
+            /* webpackChunkName: "EditContactPoint" */ '~/features/alerting/unified/components/contact-points/EditContactPoint'
           )
       ),
     },
@@ -173,7 +173,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
         ...PERMISSIONS_TEMPLATES,
       ]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "Templates" */ '@grafana-module/app/features/alerting/unified/Templates')
+        () => import(/* webpackChunkName: "Templates" */ '~/features/alerting/unified/Templates')
       ),
     },
     {
@@ -185,7 +185,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "GlobalConfig" */ '@grafana-module/app/features/alerting/unified/components/contact-points/components/GlobalConfig'
+            /* webpackChunkName: "GlobalConfig" */ '~/features/alerting/unified/components/contact-points/components/GlobalConfig'
           )
       ),
     },
@@ -196,7 +196,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
         AccessControlAction.AlertingInstancesExternalRead,
       ]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertGroups" */ '@grafana-module/app/features/alerting/unified/AlertGroups')
+        () => import(/* webpackChunkName: "AlertGroups" */ '~/features/alerting/unified/AlertGroups')
       ),
     },
     {
@@ -205,7 +205,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "HistoryPage" */ '@grafana-module/app/features/alerting/unified/components/rules/central-state-history/CentralAlertHistoryPage'
+            /* webpackChunkName: "HistoryPage" */ '~/features/alerting/unified/components/rules/central-state-history/CentralAlertHistoryPage'
           )
       ),
     },
@@ -214,7 +214,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       pageClass: 'page-alerting',
       roles: evaluateAccess([AccessControlAction.AlertingRuleCreate, AccessControlAction.AlertingRuleExternalWrite]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingRuleForm"*/ '@grafana-module/app/features/alerting/unified/rule-editor/RuleEditor')
+        () => import(/* webpackChunkName: "AlertingRuleForm"*/ '~/features/alerting/unified/rule-editor/RuleEditor')
       ),
     },
     {
@@ -222,7 +222,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       pageClass: 'page-alerting',
       roles: evaluateAccess([AccessControlAction.AlertingRuleUpdate, AccessControlAction.AlertingRuleExternalWrite]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingRuleForm"*/ '@grafana-module/app/features/alerting/unified/rule-editor/RuleEditor')
+        () => import(/* webpackChunkName: "AlertingRuleForm"*/ '~/features/alerting/unified/rule-editor/RuleEditor')
       ),
     },
     {
@@ -232,7 +232,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "AlertingRuleForm"*/ '@grafana-module/app/features/alerting/unified/components/export/GrafanaModifyExport'
+            /* webpackChunkName: "AlertingRuleForm"*/ '~/features/alerting/unified/components/export/GrafanaModifyExport'
           )
       ),
     },
@@ -243,7 +243,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       component: importAlertingComponent(
         () =>
           import(
-            /* webpackChunkName: "AlertingRuleForm"*/ '@grafana-module/app/features/alerting/unified/components/export/ExportNewGrafanaRule'
+            /* webpackChunkName: "AlertingRuleForm"*/ '~/features/alerting/unified/components/export/ExportNewGrafanaRule'
           )
       ),
     },
@@ -252,7 +252,7 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       pageClass: 'page-alerting',
       roles: evaluateAccess([AccessControlAction.AlertingRuleRead, AccessControlAction.AlertingRuleExternalRead]),
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingRule"*/ '@grafana-module/app/features/alerting/unified/RuleViewer')
+        () => import(/* webpackChunkName: "AlertingRule"*/ '~/features/alerting/unified/RuleViewer')
       ),
     },
     {
@@ -261,14 +261,14 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
       roles: evaluateAccess([AccessControlAction.AlertingRuleRead, AccessControlAction.AlertingRuleExternalRead]),
       component: importAlertingComponent(
         () =>
-          import(/* webpackChunkName: "AlertingRedirectToRule"*/ '@grafana-module/app/features/alerting/unified/RedirectToRuleViewer')
+          import(/* webpackChunkName: "AlertingRedirectToRule"*/ '~/features/alerting/unified/RedirectToRuleViewer')
       ),
     },
     {
       path: '/alerting/admin',
       roles: () => ['Admin'],
       component: importAlertingComponent(
-        () => import(/* webpackChunkName: "AlertingSettings" */ '@grafana-module/app/features/alerting/unified/Settings')
+        () => import(/* webpackChunkName: "AlertingSettings" */ '~/features/alerting/unified/Settings')
       ),
     },
   ];
@@ -279,6 +279,6 @@ export function getAlertingRoutes(cfg = config): RouteDescriptor[] {
 // this function will always load the "feature disabled" component for all alerting routes
 function importAlertingComponent(loader: () => any): GrafanaRouteComponent {
   const featureDisabledPageLoader = () =>
-    import(/* webpackChunkName: "AlertingDisabled" */ '@grafana-module/app/features/alerting/unified/AlertingNotEnabled');
+    import(/* webpackChunkName: "AlertingDisabled" */ '~/features/alerting/unified/AlertingNotEnabled');
   return SafeDynamicImport(config.unifiedAlertingEnabled ? loader : featureDisabledPageLoader);
 }

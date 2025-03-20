@@ -2,8 +2,8 @@ import { useCallback, useMemo, useState } from 'react';
 
 import { locationService } from '@runtime/index';
 import { ConfirmModal } from '@grafana-ui/index';
-import { dispatch } from '@grafana-module/app/store/store';
-import { EditableRuleIdentifier, RuleGroupIdentifierV2 } from '@grafana-module/app/types/unified-alerting';
+import { dispatch } from '~/store/store';
+import { EditableRuleIdentifier, RuleGroupIdentifierV2 } from '~/types/unified-alerting';
 
 import { shouldUsePrometheusRulesPrimary } from '../../featureToggles';
 import { useDeleteRuleFromGroup } from '../../hooks/ruleGroup/useDeleteRuleFromGroup';

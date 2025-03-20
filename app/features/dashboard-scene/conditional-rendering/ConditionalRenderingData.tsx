@@ -4,7 +4,7 @@ import { PanelData, SelectableValue } from '@data/index';
 import { SceneComponentProps, SceneDataProvider, sceneGraph } from '@scenes/index';
 import { ConditionalRenderingDataKind } from '@schema/schema/dashboard/v2alpha0/types';
 import { RadioButtonGroup, Stack } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ResponsiveGridItem } from '../scene/layout-responsive-grid/ResponsiveGridItem';
 import { RowItem } from '../scene/layout-rows/RowItem';

@@ -12,18 +12,18 @@ import {
   ActionModel,
 } from '@data/index';
 import { ConfirmModal } from '@grafana-ui/index';
-import { LayerElement } from '@grafana-module/app/core/components/Layers/types';
-import { t } from '@grafana-module/app/core/internationalization';
-import { notFoundItem } from '@grafana-module/app/features/canvas/elements/notFound';
-import { DimensionContext } from '@grafana-module/app/features/dimensions';
+import { LayerElement } from '~/core/components/Layers/types';
+import { t } from '~/core/internationalization';
+import { notFoundItem } from '~/features/canvas/elements/notFound';
+import { DimensionContext } from '~/features/dimensions';
 import {
   BackgroundImageSize,
   Constraint,
   HorizontalConstraint,
   Placement,
   VerticalConstraint,
-} from '@grafana-module/app/plugins/panel/canvas/panelcfg';
-import { getConnectionsByTarget, getRowIndex, isConnectionTarget } from '@grafana-module/app/plugins/panel/canvas/utils';
+} from '~/plugins/panel/canvas/panelcfg';
+import { getConnectionsByTarget, getRowIndex, isConnectionTarget } from '~/plugins/panel/canvas/utils';
 
 import { getActions, getActionsDefaultField } from '../../actions/utils';
 import { CanvasElementItem, CanvasElementOptions } from '../element';

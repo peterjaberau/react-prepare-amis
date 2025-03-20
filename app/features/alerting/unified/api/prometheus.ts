@@ -2,15 +2,15 @@ import { produce } from 'immer';
 import { lastValueFrom } from 'rxjs';
 
 import { getBackendSrv } from '@runtime/index';
-import { logInfo } from '@grafana-module/app/features/alerting/unified/Analytics';
-import { Matcher } from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { RuleGroup, RuleIdentifier, RuleNamespace } from '@grafana-module/app/types/unified-alerting';
+import { logInfo } from '~/features/alerting/unified/Analytics';
+import { Matcher } from '~/plugins/datasource/alertmanager/types';
+import { RuleGroup, RuleIdentifier, RuleNamespace } from '~/types/unified-alerting';
 import {
   PromAlertingRuleState,
   PromRuleGroupDTO,
   PromRuleType,
   PromRulesResponse,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from '../utils/datasource';
 import { isCloudRuleIdentifier, isPrometheusRuleIdentifier } from '../utils/rules';

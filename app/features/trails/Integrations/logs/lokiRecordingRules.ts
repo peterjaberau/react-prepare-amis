@@ -2,7 +2,7 @@ import { lastValueFrom } from 'rxjs';
 
 import type { DataSourceInstanceSettings, DataSourceJsonData } from '@data/index';
 import { getBackendSrv, type BackendSrvRequest, type FetchResponse } from '@runtime/index';
-import { getLogQueryFromMetricsQuery } from '@grafana-module/app/plugins/datasource/loki/queryUtils';
+import { getLogQueryFromMetricsQuery } from '~/plugins/datasource/loki/queryUtils';
 
 import { findHealthyLokiDataSources } from '../../RelatedLogs/RelatedLogsScene';
 

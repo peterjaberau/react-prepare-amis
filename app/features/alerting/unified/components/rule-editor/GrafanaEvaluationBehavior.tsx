@@ -19,8 +19,8 @@ import {
   Tooltip,
   useStyles2,
 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { RulerRuleGroupDTO, RulerRulesConfigDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { Trans, t } from '~/core/internationalization';
+import { RulerRuleGroupDTO, RulerRulesConfigDTO } from '~/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../../api/alertRuleApi';
 import { GRAFANA_RULER_CONFIG } from '../../api/featureDiscoveryApi';

@@ -1,6 +1,6 @@
 import { DefaultBodyType, HttpResponse, HttpResponseResolver, PathParams } from 'msw';
 
-import { PromRuleGroupDTO, PromRulesResponse } from '@grafana-module/app/types/unified-alerting-dto';
+import { PromRuleGroupDTO, PromRulesResponse } from '~/types/unified-alerting-dto';
 
 /** Helper method to help generate a kubernetes-style response with a list of items */
 export const getK8sResponse = <T>(kind: string, items: T[]) => {

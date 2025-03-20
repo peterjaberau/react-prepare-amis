@@ -1,7 +1,7 @@
 import { useAsync } from 'react-use';
 
 import { PluginMeta } from '@data/index';
-import { getPluginSettings } from '@grafana-module/app/features/plugins/pluginSettings';
+import { getPluginSettings } from '~/features/plugins/pluginSettings';
 
 import { PluginID } from '../components/PluginBridge';
 interface PluginBridgeHookResponse {

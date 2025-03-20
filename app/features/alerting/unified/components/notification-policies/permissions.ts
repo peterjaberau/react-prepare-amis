@@ -1,4 +1,4 @@
-import { AccessControlAction } from '@grafana-module/app/types';
+import { AccessControlAction } from '~/types';
 
 /**
  * List of granular permissions that allow viewing notification policies

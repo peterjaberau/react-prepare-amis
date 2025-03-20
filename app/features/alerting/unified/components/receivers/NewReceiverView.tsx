@@ -1,4 +1,4 @@
-import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
+import { useAlertmanager } from '~/features/alerting/unified/state/AlertmanagerContext';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';
 import { withPageErrorBoundary } from '../../withPageErrorBoundary';

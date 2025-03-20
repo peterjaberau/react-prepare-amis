@@ -1,5 +1,5 @@
-import { SEARCH_SELECTED_SORT } from '@grafana-module/app/features/search/constants';
-import { SearchState } from '@grafana-module/app/features/search/types';
+import { SEARCH_SELECTED_SORT } from '~/features/search/constants';
+import { SearchState } from '~/features/search/types';
 
 import { initialState, SearchStateManager } from '../../search/state/SearchStateManager';
 

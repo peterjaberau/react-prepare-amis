@@ -1,6 +1,6 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 
-import { DashboardViewItem, DashboardViewItemKind } from '@grafana-module/app/features/search/types';
+import { DashboardViewItem, DashboardViewItemKind } from '~/features/search/types';
 
 import { isSharedWithMe } from '../components/utils';
 import { BrowseDashboardsState } from '../types';

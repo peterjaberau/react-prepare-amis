@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { GrafanaManagedReceiverConfig } from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { CloudNotifierType, NotifierType } from '@grafana-module/app/types';
+import { GrafanaManagedReceiverConfig } from '~/plugins/datasource/alertmanager/types';
+import { CloudNotifierType, NotifierType } from '~/types';
 
 import { ControlledField } from '../hooks/useControlledFieldArray';
 

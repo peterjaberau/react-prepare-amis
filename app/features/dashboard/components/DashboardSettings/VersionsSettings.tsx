@@ -3,13 +3,13 @@ import * as React from 'react';
 
 import { config } from '@runtime/index';
 import { Spinner, HorizontalGroup } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 import {
   historySrv,
   RevisionsModel,
   VersionHistoryHeader,
   VersionsHistoryButtons,
-} from '@grafana-module/app/features/dashboard-scene/settings/version-history';
+} from '~/features/dashboard-scene/settings/version-history';
 
 import { VersionHistoryComparison } from '../VersionHistory/VersionHistoryComparison';
 import { VersionHistoryTable } from '../VersionHistory/VersionHistoryTable';

@@ -3,9 +3,9 @@ import { useParams } from 'react-router';
 
 import { NavModelItem } from '@data/index';
 import { Badge, Stack, Text } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { PageNotFound } from '@grafana-module/app/core/components/PageNotFound/PageNotFound';
-import { useDispatch, useSelector } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { PageNotFound } from '~/core/components/PageNotFound/PageNotFound';
+import { useDispatch, useSelector } from '~/types';
 
 import { ProviderConfigForm } from './ProviderConfigForm';
 import { UIMap } from './constants';

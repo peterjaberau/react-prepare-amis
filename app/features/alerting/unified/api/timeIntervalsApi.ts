@@ -7,6 +7,6 @@
 // which may help alleviate this when it lands:
 // https://github.com/reduxjs/redux-toolkit/pull/3485
 
-import { generatedTimeIntervalsApi } from '@grafana-module/app/features/alerting/unified/openapi/timeIntervalsApi.gen';
+import { generatedTimeIntervalsApi } from '~/features/alerting/unified/openapi/timeIntervalsApi.gen';
 
 export const timeIntervalsApi = generatedTimeIntervalsApi;

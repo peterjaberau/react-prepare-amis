@@ -4,7 +4,7 @@ import { memo } from 'react';
 import { GrafanaTheme2, LinkTarget } from '@data/index';
 import { config } from '@runtime/index';
 import { Icon, IconName, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 export interface FooterLink {
   target: LinkTarget;

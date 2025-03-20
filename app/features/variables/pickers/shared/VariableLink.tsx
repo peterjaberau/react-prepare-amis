@@ -4,7 +4,7 @@ import { MouseEvent, useCallback } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
 import { LoadingIndicator } from '@grafana-ui/components/PanelChrome/LoadingIndicator';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { getStyles as getTagBadgeStyles } from '../../../../core/components/TagFilter/TagBadge';
 import { ALL_VARIABLE_TEXT } from '../../constants';

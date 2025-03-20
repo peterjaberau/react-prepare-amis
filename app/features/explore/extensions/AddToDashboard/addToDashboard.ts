@@ -1,7 +1,7 @@
 import { DataFrame, ExplorePanelsState } from '@data/index';
 import { DataQuery, DataSourceRef, Panel } from '@schema/index';
 import { DataTransformerConfig } from '@schema/raw/dashboard/dashboard_types';
-import { ExplorePanelData } from '@grafana-module/app/types';
+import { ExplorePanelData } from '~/types';
 
 interface ExploreToDashboardPanelOptions {
   queries: DataQuery[];

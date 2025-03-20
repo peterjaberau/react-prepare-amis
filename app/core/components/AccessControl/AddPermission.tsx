@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { Button, Select, Stack } from '@grafana-ui/index';
-import { CloseButton } from '@grafana-module/app/core/components/CloseButton/CloseButton';
-import { ServiceAccountPicker } from '@grafana-module/app/core/components/Select/ServiceAccountPicker';
-import { TeamPicker } from '@grafana-module/app/core/components/Select/TeamPicker';
-import { UserPicker } from '@grafana-module/app/core/components/Select/UserPicker';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { OrgRole } from '@grafana-module/app/types/acl';
+import { CloseButton } from '~/core/components/CloseButton/CloseButton';
+import { ServiceAccountPicker } from '~/core/components/Select/ServiceAccountPicker';
+import { TeamPicker } from '~/core/components/Select/TeamPicker';
+import { UserPicker } from '~/core/components/Select/UserPicker';
+import { Trans, t } from '~/core/internationalization';
+import { OrgRole } from '~/types/acl';
 
 import { Assignments, PermissionTarget, SetPermission } from './types';
 

@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react';
 import * as React from 'react';
 
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { useGrafana } from '~/core/context/GrafanaContext';
 
 export interface AppChromeUpdateProps {
   actions?: React.ReactNode;

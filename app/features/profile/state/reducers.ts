@@ -3,9 +3,9 @@ import { isEmpty, isString, set } from 'lodash';
 
 import { dateTimeFormatTimeAgo, setWeekStart, TimeZone } from '@data/index';
 import { getWeekStart, WeekStart } from '@grafana-ui/index';
-import config from '@grafana-module/app/core/config';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Team, ThunkResult, UserDTO, UserOrg, UserSession } from '@grafana-module/app/types';
+import config from '~/core/config';
+import { contextSrv } from '~/core/core';
+import { Team, ThunkResult, UserDTO, UserOrg, UserSession } from '~/types';
 
 export interface UserState {
   orgId: number;

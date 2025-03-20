@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { Button, Field, Checkbox, LinkButton, Stack, Alert } from '@grafana-ui/index';
-import { Form } from '@grafana-module/app/core/components/Form/Form';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { StoreState } from '@grafana-module/app/types';
+import { Form } from '~/core/components/Form/Form';
+import { Page } from '~/core/components/Page/Page';
+import { StoreState } from '~/types';
 
 import { loadSupportBundleCollectors, createSupportBundle } from './state/actions';
 

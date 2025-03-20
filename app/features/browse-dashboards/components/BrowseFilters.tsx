@@ -1,6 +1,6 @@
-import { ActionRow } from '@grafana-module/app/features/search/page/components/ActionRow';
-import { getGrafanaSearcher } from '@grafana-module/app/features/search/service/searcher';
-import { useSearchStateManager } from '@grafana-module/app/features/search/state/SearchStateManager';
+import { ActionRow } from '~/features/search/page/components/ActionRow';
+import { getGrafanaSearcher } from '~/features/search/service/searcher';
+import { useSearchStateManager } from '~/features/search/state/SearchStateManager';
 
 export function BrowseFilters() {
   const [searchState, stateManager] = useSearchStateManager();

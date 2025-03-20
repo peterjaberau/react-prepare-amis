@@ -9,12 +9,12 @@ import { reportInteraction } from '@runtime/index';
 import { SceneVariable } from '@scenes/index';
 import { VariableHide, defaultVariableModel } from '@schema/index';
 import { Button, LoadingPlaceholder, ConfirmModal, ModalsController, Stack, useStyles2 } from '@grafana-ui/index';
-import { VariableHideSelect } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableHideSelect';
-import { VariableLegend } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableLegend';
-import { VariableTextAreaField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextAreaField';
-import { VariableTextField } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableTextField';
-import { VariableValuesPreview } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/VariableValuesPreview';
-import { VariableNameConstraints } from '@grafana-module/app/features/variables/editor/types';
+import { VariableHideSelect } from '~/features/dashboard-scene/settings/variables/components/VariableHideSelect';
+import { VariableLegend } from '~/features/dashboard-scene/settings/variables/components/VariableLegend';
+import { VariableTextAreaField } from '~/features/dashboard-scene/settings/variables/components/VariableTextAreaField';
+import { VariableTextField } from '~/features/dashboard-scene/settings/variables/components/VariableTextField';
+import { VariableValuesPreview } from '~/features/dashboard-scene/settings/variables/components/VariableValuesPreview';
+import { VariableNameConstraints } from '~/features/variables/editor/types';
 
 import { VariableTypeSelect } from './components/VariableTypeSelect';
 import { EditableVariableType, getVariableEditor, hasVariableOptions, isEditableVariableType } from './utils';

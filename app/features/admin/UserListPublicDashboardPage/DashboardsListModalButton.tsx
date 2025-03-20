@@ -4,11 +4,11 @@ import { GrafanaTheme2 } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { config } from '@runtime/index';
 import { Button, LoadingPlaceholder, Modal, ModalsController, useStyles2 } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 import {
   generatePublicDashboardConfigUrl,
   generatePublicDashboardUrl,
-} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+} from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
 
 import { useGetActiveUserDashboardsQuery } from '../../dashboard/api/publicDashboardApi';
 

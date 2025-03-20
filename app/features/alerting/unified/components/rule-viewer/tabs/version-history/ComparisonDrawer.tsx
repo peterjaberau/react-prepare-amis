@@ -1,10 +1,10 @@
 import { useCallback, useState } from 'react';
 
 import { Drawer } from '@grafana-ui/index';
-import { VersionHistoryComparison } from '@grafana-module/app/core/components/VersionHistory/VersionHistoryComparison';
-import { t } from '@grafana-module/app/core/internationalization';
-import { GrafanaRuleIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { VersionHistoryComparison } from '~/core/components/VersionHistory/VersionHistoryComparison';
+import { t } from '~/core/internationalization';
+import { GrafanaRuleIdentifier } from '~/types/unified-alerting';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO } from '~/types/unified-alerting-dto';
 
 import { ConfirmVersionRestoreModal } from './ConfirmVersionRestoreModal';
 import { parseVersionInfoToSummary, preprocessRuleForDiffDisplay } from './versions-utils';

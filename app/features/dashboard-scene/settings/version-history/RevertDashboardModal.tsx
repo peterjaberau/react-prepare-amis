@@ -1,6 +1,6 @@
 import { ConfirmModal } from '@grafana-ui/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
 
 import { DecoratedRevisionModel } from '../VersionsEditView';
 

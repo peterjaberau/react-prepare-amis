@@ -9,13 +9,13 @@ import {
 } from '@data/index';
 import { PanelDataErrorViewProps, locationService } from '@runtime/index';
 import { usePanelContext, useStyles2 } from '@grafana-ui/index';
-import { CardButton } from '@grafana-module/app/core/components/CardButton';
-import { LS_VISUALIZATION_SELECT_TAB_KEY } from '@grafana-module/app/core/constants';
-import store from '@grafana-module/app/core/store';
-import { toggleVizPicker } from '@grafana-module/app/features/dashboard/components/PanelEditor/state/reducers';
-import { VisualizationSelectPaneTab } from '@grafana-module/app/features/dashboard/components/PanelEditor/types';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { useDispatch } from '@grafana-module/app/types';
+import { CardButton } from '~/core/components/CardButton';
+import { LS_VISUALIZATION_SELECT_TAB_KEY } from '~/core/constants';
+import store from '~/core/store';
+import { toggleVizPicker } from '~/features/dashboard/components/PanelEditor/state/reducers';
+import { VisualizationSelectPaneTab } from '~/features/dashboard/components/PanelEditor/types';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { useDispatch } from '~/types';
 
 import { changePanelPlugin } from '../state/actions';
 

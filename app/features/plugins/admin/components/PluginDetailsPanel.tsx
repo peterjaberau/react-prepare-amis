@@ -17,8 +17,8 @@ import {
   Button,
   useStyles2,
 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { formatDate } from '@grafana-module/app/core/internationalization/dates';
+import { Trans } from '~/core/internationalization';
+import { formatDate } from '~/core/internationalization/dates';
 
 import { CatalogPlugin } from '../types';
 

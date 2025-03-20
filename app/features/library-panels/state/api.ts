@@ -2,10 +2,10 @@ import { lastValueFrom } from 'rxjs';
 
 import { VizPanel } from '@scenes/index';
 import { LibraryPanel, defaultDashboard } from '@schema/index';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { DashboardGridItem } from '@grafana-module/app/features/dashboard-scene/scene/layout-default/DashboardGridItem';
-import { vizPanelToPanel } from '@grafana-module/app/features/dashboard-scene/serialization/transformSceneToSaveModel';
-import { getLibraryPanelBehavior } from '@grafana-module/app/features/dashboard-scene/utils/utils';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { DashboardGridItem } from '~/features/dashboard-scene/scene/layout-default/DashboardGridItem';
+import { vizPanelToPanel } from '~/features/dashboard-scene/serialization/transformSceneToSaveModel';
+import { getLibraryPanelBehavior } from '~/features/dashboard-scene/utils/utils';
 
 import { getBackendSrv } from '../../../core/services/backend_srv';
 import { DashboardSearchItem } from '../../search/types';

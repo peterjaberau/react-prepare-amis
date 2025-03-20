@@ -9,8 +9,8 @@ import {
   AlertInstanceTotalState,
   CombinedRuleGroup,
   CombinedRuleNamespace,
-} from '@grafana-module/app/types/unified-alerting';
-import { PromAlertingRuleState } from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting';
+import { PromAlertingRuleState } from '~/types/unified-alerting-dto';
 
 interface Props {
   namespaces: CombinedRuleNamespace[];

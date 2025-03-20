@@ -3,11 +3,11 @@ import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { useDeletePublicDashboardMutation } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
-import { ConfigPublicDashboardBase } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/ConfigPublicDashboard/ConfigPublicDashboard';
-import { PublicDashboard } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { useDeletePublicDashboardMutation } from '~/features/dashboard/api/publicDashboardApi';
+import { ConfigPublicDashboardBase } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/ConfigPublicDashboard/ConfigPublicDashboard';
+import { PublicDashboard } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { AccessControlAction } from '~/types';
 
 import { shareDashboardType } from '../../../dashboard/components/ShareModal/utils';
 import { getDashboardSceneFor } from '../../utils/utils';

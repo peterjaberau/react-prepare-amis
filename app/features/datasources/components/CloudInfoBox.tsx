@@ -1,8 +1,8 @@
 import { DataSourceSettings } from '@data/index';
 import { GrafanaEdition } from '@data/types/config';
 import { Alert } from '@grafana-ui/index';
-import { LocalStorageValueProvider } from '@grafana-module/app/core/components/LocalStorageValueProvider';
-import { config } from '@grafana-module/app/core/config';
+import { LocalStorageValueProvider } from '~/core/components/LocalStorageValueProvider';
+import { config } from '~/core/config';
 
 const LOCAL_STORAGE_KEY = 'datasources.settings.cloudInfoBox.isDismissed';
 

@@ -10,7 +10,7 @@ import {
   TestReceiversAlert,
   TestReceiversPayload,
   TestReceiversResult,
-} from '@grafana-module/app/plugins/datasource/alertmanager/types';
+} from '~/plugins/datasource/alertmanager/types';
 
 import { GRAFANA_RULES_SOURCE_NAME, getDatasourceAPIUid } from '../utils/datasource';
 

@@ -1,7 +1,7 @@
-import { updateNavIndex } from '@grafana-module/app/core/actions';
-import { backendSrv } from '@grafana-module/app/core/services/backend_srv';
-import { buildNavModel } from '@grafana-module/app/features/folders/state/navModel';
-import { store } from '@grafana-module/app/store/store';
+import { updateNavIndex } from '~/core/actions';
+import { backendSrv } from '~/core/services/backend_srv';
+import { buildNavModel } from '~/features/folders/state/navModel';
+import { store } from '~/store/store';
 
 export async function updateNavModel(folderUid: string) {
   try {

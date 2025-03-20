@@ -1,6 +1,6 @@
 import { CallToActionCard, EmptyState, LinkButton } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { Trans, t } from '~/core/internationalization';
+import { contextSrv } from '~/core/services/context_srv';
 
 import { getInstancesPermissions } from '../../utils/access-control';
 import { makeAMLink } from '../../utils/misc';

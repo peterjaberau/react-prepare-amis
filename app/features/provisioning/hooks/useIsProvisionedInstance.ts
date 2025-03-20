@@ -1,6 +1,6 @@
 import { skipToken } from '@reduxjs/toolkit/query';
 
-import { RepositoryViewList, useGetFrontendSettingsQuery } from '@grafana-module/app/api/clients/provisioning';
+import { RepositoryViewList, useGetFrontendSettingsQuery } from '~/api/clients/provisioning';
 
 import { checkSyncSettings } from '../utils/checkSyncSettings';
 

@@ -11,9 +11,9 @@ import {
 } from '@data/index';
 import { config } from '@runtime/index';
 import { defaultDashboard } from '@schema/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { MOCK_GRAFANA_ALERT_RULE_TITLE } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/grafanaRuler';
-import { ExpressionQuery, ExpressionQueryType, ReducerMode } from '@grafana-module/app/features/expressions/types';
+import { contextSrv } from '~/core/services/context_srv';
+import { MOCK_GRAFANA_ALERT_RULE_TITLE } from '~/features/alerting/unified/mocks/server/handlers/grafanaRuler';
+import { ExpressionQuery, ExpressionQueryType, ReducerMode } from '~/features/expressions/types';
 import {
   AlertManagerCortexConfig,
   AlertState,
@@ -24,9 +24,9 @@ import {
   MatcherOperator,
   Silence,
   SilenceState,
-} from '@grafana-module/app/plugins/datasource/alertmanager/types';
-import { configureStore } from '@grafana-module/app/store/configureStore';
-import { AccessControlAction, DashboardDTO, FolderDTO, NotifiersState, ReceiversState, StoreState } from '@grafana-module/app/types';
+} from '~/plugins/datasource/alertmanager/types';
+import { configureStore } from '~/store/configureStore';
+import { AccessControlAction, DashboardDTO, FolderDTO, NotifiersState, ReceiversState, StoreState } from '~/types';
 import {
   Alert,
   AlertingRule,
@@ -37,7 +37,7 @@ import {
   RuleGroup,
   RuleNamespace,
   RuleWithLocation,
-} from '@grafana-module/app/types/unified-alerting';
+} from '~/types/unified-alerting';
 import {
   AlertDataQuery,
   AlertQuery,
@@ -52,7 +52,7 @@ import {
   RulerRuleDTO,
   RulerRuleGroupDTO,
   RulerRulesConfigDTO,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { DashboardSearchItem, DashboardSearchItemType } from '../../search/types';
 

@@ -1,6 +1,6 @@
 import { useLocation, useParams } from 'react-router';
 
-import DataSourceTabPage from '@grafana-module/app/features/datasources/components/DataSourceTabPage';
+import DataSourceTabPage from '~/features/datasources/components/DataSourceTabPage';
 
 export function EditDataSourcePage() {
   const { uid = '' } = useParams<{ uid: string }>();

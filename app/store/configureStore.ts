@@ -2,11 +2,11 @@ import { configureStore as reduxConfigureStore, createListenerMiddleware } from 
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { Middleware } from 'redux';
 
-import { browseDashboardsAPI } from '@grafana-module/app/features/browse-dashboards/api/browseDashboardsAPI';
-import { publicDashboardApi } from '@grafana-module/app/features/dashboard/api/publicDashboardApi';
-import { cloudMigrationAPI } from '@grafana-module/app/features/migrate-to-cloud/api';
-import { userPreferencesAPI } from '@grafana-module/app/features/preferences/api';
-import { StoreState } from '@grafana-module/app/types/store';
+import { browseDashboardsAPI } from '~/features/browse-dashboards/api/browseDashboardsAPI';
+import { publicDashboardApi } from '~/features/dashboard/api/publicDashboardApi';
+import { cloudMigrationAPI } from '~/features/migrate-to-cloud/api';
+import { userPreferencesAPI } from '~/features/preferences/api';
+import { StoreState } from '~/types/store';
 
 import { buildInitialState } from '../core/reducers/navModel';
 import { addReducer, createRootReducer } from '../core/reducers/root';

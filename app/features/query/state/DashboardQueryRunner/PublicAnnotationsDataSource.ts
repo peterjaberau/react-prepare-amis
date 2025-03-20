@@ -12,7 +12,7 @@ import {
   toDataFrame,
 } from '@data/index';
 import { config, getBackendSrv } from '@runtime/index';
-import { GRAFANA_DATASOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { GRAFANA_DATASOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
 
 import { GrafanaQueryType } from '../../../../plugins/datasource/grafana/types';
 

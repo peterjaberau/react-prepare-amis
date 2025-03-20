@@ -2,10 +2,10 @@ import { useMemo, useState } from 'react';
 
 import { config } from '@runtime/index';
 import { Button, Field, FieldSet, Input, LinkButton, Stack } from '@grafana-ui/index';
-import { Form } from '@grafana-module/app/core/components/Form/Form';
-import { DashboardPicker } from '@grafana-module/app/core/components/Select/DashboardPicker';
-import { TagFilter } from '@grafana-module/app/core/components/TagFilter/TagFilter';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Form } from '~/core/components/Form/Form';
+import { DashboardPicker } from '~/core/components/Select/DashboardPicker';
+import { TagFilter } from '~/core/components/TagFilter/TagFilter';
+import { Trans, t } from '~/core/internationalization';
 
 import { getGrafanaSearcher } from '../search/service/searcher';
 

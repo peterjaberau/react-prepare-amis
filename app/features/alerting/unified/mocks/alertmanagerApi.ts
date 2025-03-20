@@ -1,7 +1,7 @@
 import { HttpResponse, http } from 'msw';
 import { SetupServer } from 'msw/node';
 
-import { grafanaAlertingConfigurationStatusHandler } from '@grafana-module/app/features/alerting/unified/mocks/server/handlers/alertmanagers';
+import { grafanaAlertingConfigurationStatusHandler } from '~/features/alerting/unified/mocks/server/handlers/alertmanagers';
 
 import {
   AlertmanagerChoice,

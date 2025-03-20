@@ -2,9 +2,9 @@ import { isEqual } from 'lodash';
 
 import { CoreApp, DataSourceApi, ExploreUrlState, isTruthy } from '@data/index';
 import { DataQuery, DataSourceRef } from '@schema/index';
-import { getLastUsedDatasourceUID } from '@grafana-module/app/core/utils/explore';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
-import { MIXED_DATASOURCE_NAME } from '@grafana-module/app/plugins/datasource/mixed/MixedDataSource';
+import { getLastUsedDatasourceUID } from '~/core/utils/explore';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
+import { MIXED_DATASOURCE_NAME } from '~/plugins/datasource/mixed/MixedDataSource';
 
 import { DEFAULT_RANGE } from '../../state/constants';
 import { isFulfilled } from '../utils';

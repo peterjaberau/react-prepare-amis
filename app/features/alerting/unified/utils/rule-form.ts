@@ -13,16 +13,16 @@ import { config, getDataSourceSrv } from '@runtime/index';
 import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { VizPanel, sceneGraph } from '@scenes/index';
 import { DataQuery, DataSourceJsonData, DataSourceRef } from '@schema/index';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 import {
   getDashboardSceneFor,
   getPanelIdForVizPanel,
   getQueryRunnerFor,
-} from '@grafana-module/app/features/dashboard-scene/utils/utils';
-import { ExpressionDatasourceUID, ExpressionQuery, ExpressionQueryType } from '@grafana-module/app/features/expressions/types';
-import { LokiQuery } from '@grafana-module/app/plugins/datasource/loki/types';
-import { RuleWithLocation } from '@grafana-module/app/types/unified-alerting';
+} from '~/features/dashboard-scene/utils/utils';
+import { ExpressionDatasourceUID, ExpressionQuery, ExpressionQueryType } from '~/features/expressions/types';
+import { LokiQuery } from '~/plugins/datasource/loki/types';
+import { RuleWithLocation } from '~/types/unified-alerting';
 import {
   AlertDataQuery,
   AlertQuery,
@@ -34,7 +34,7 @@ import {
   RulerAlertingRuleDTO,
   RulerRecordingRuleDTO,
   RulerRuleDTO,
-} from '@grafana-module/app/types/unified-alerting-dto';
+} from '~/types/unified-alerting-dto';
 
 import { EvalFunction } from '../../state/alertDef';
 import { getDefaultFormValues } from '../rule-editor/formDefaults';

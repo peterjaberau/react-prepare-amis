@@ -9,19 +9,19 @@ import {
   sceneGraph,
   SceneTimeRangeLike,
 } from '@scenes/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createErrorNotification } from '@grafana-module/app/core/copy/appNotification';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { getMessageFromError } from '@grafana-module/app/core/utils/errors';
-import { alertRuleApi } from '@grafana-module/app/features/alerting/unified/api/alertRuleApi';
-import { ungroupRulesByFileName } from '@grafana-module/app/features/alerting/unified/api/prometheus';
-import { Annotation } from '@grafana-module/app/features/alerting/unified/utils/constants';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { prometheusRuleType } from '@grafana-module/app/features/alerting/unified/utils/rules';
-import { dispatch } from '@grafana-module/app/store/store';
-import { AccessControlAction } from '@grafana-module/app/types';
-import { RuleNamespace } from '@grafana-module/app/types/unified-alerting';
-import { PromAlertingRuleState, PromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { notifyApp } from '~/core/actions';
+import { createErrorNotification } from '~/core/copy/appNotification';
+import { contextSrv } from '~/core/core';
+import { getMessageFromError } from '~/core/utils/errors';
+import { alertRuleApi } from '~/features/alerting/unified/api/alertRuleApi';
+import { ungroupRulesByFileName } from '~/features/alerting/unified/api/prometheus';
+import { Annotation } from '~/features/alerting/unified/utils/constants';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { prometheusRuleType } from '~/features/alerting/unified/utils/rules';
+import { dispatch } from '~/store/store';
+import { AccessControlAction } from '~/types';
+import { RuleNamespace } from '~/types/unified-alerting';
+import { PromAlertingRuleState, PromRuleGroupDTO } from '~/types/unified-alerting-dto';
 
 import { getDashboardSceneFor } from '../utils/utils';
 

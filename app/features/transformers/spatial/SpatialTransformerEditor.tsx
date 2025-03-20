@@ -13,7 +13,7 @@ import {
 } from '@data/index';
 import { FrameGeometrySourceMode } from '@schema/index';
 import { useTheme2 } from '@grafana-ui/index';
-import { addLocationFields } from '@grafana-module/app/features/geo/editor/locationEditor';
+import { addLocationFields } from '~/features/geo/editor/locationEditor';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 

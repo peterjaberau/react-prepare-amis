@@ -1,4 +1,4 @@
-import { Alert } from '@grafana-module/app/types/unified-alerting';
+import { Alert } from '~/types/unified-alerting';
 
 import { useAnnotationLinks, useCleanAnnotations } from '../../utils/annotations';
 import { AnnotationDetailsField } from '../AnnotationDetailsField';

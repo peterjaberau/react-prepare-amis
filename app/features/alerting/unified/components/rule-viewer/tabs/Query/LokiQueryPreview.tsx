@@ -1,5 +1,5 @@
 import { RawQuery } from '@plugin-ui/index';
-import lokiGrammar from '@grafana-module/app/plugins/datasource/loki/syntax';
+import lokiGrammar from '~/plugins/datasource/loki/syntax';
 
 interface Props {
   query: string;

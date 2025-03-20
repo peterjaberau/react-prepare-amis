@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { IconName } from '@data/index';
-import { OptionsPaneCategoryDescriptor } from '@grafana-module/app/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
+import { OptionsPaneCategoryDescriptor } from '~/features/dashboard/components/PanelEditor/OptionsPaneCategoryDescriptor';
 
 /**
  * Interface for elements that have options

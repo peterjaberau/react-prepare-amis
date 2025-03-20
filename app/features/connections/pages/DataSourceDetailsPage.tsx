@@ -1,8 +1,8 @@
 import { useParams } from 'react-router';
 
 import { Alert, Badge } from '@grafana-ui/index';
-import { PluginDetailsPage } from '@grafana-module/app/features/plugins/admin/components/PluginDetailsPage';
-import { StoreState, useSelector, AppNotificationSeverity } from '@grafana-module/app/types';
+import { PluginDetailsPage } from '~/features/plugins/admin/components/PluginDetailsPage';
+import { StoreState, useSelector, AppNotificationSeverity } from '~/types';
 
 import { ROUTES } from '../constants';
 

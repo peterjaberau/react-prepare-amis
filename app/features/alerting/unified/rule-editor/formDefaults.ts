@@ -1,8 +1,8 @@
 import { clamp } from 'lodash';
 
 import { config } from '@runtime/index';
-import { RuleWithLocation } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaAlertStateDecision, RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { RuleWithLocation } from '~/types/unified-alerting';
+import { GrafanaAlertStateDecision, RulerRuleDTO } from '~/types/unified-alerting-dto';
 
 import { RuleFormType, RuleFormValues } from '../types/rule-form';
 // TODO Ideally all of these should be moved here

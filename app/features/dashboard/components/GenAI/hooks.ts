@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { openai } from '@grafana/llm';
 import { createMonitoringLogger } from '@runtime/index';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
+import { useAppNotification } from '~/core/copy/appNotification';
 
 import { isLLMPluginEnabled, DEFAULT_OAI_MODEL } from './utils';
 

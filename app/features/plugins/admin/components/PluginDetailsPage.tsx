@@ -6,8 +6,8 @@ import { useMedia } from 'react-use';
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { config } from '@runtime/index';
 import { Alert, Box, Stack, TabContent, useStyles2 } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { AppNotificationSeverity } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { AppNotificationSeverity } from '~/types';
 
 import { AngularDeprecationPluginNotice } from '../../angularDeprecation/AngularDeprecationPluginNotice';
 import { Loader } from '../components/Loader';

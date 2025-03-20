@@ -1,8 +1,8 @@
 import { lastValueFrom, map } from 'rxjs';
 
 import { config, getBackendSrv, FetchResponse } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { DashboardDataDTO, DashboardDTO } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { DashboardDataDTO, DashboardDTO } from '~/types';
 
 import { getAPINamespace } from '../../../api/utils';
 

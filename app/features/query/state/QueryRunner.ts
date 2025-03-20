@@ -16,7 +16,7 @@ import {
   preProcessPanelData,
 } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
 
 import { getNextRequestId } from './PanelQueryRunner';
 import { setStructureRevision } from './processing/revision';

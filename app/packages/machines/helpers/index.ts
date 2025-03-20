@@ -1,7 +1,7 @@
 import { config } from "~/core/config";
 import { appEvents } from "~/core/app_events";
 
-import { getAllOptionEditors } from "~/core/components/Select/SelectOptionEditor";
+// import { getAllOptionEditors } from "~/core/components/Select/SelectOptionEditor";
 
 import {
   standardEditorsRegistry,

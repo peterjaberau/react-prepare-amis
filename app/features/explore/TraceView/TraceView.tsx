@@ -18,10 +18,10 @@ import { getTraceToLogsOptions, TraceToMetricsData, TraceToProfilesData } from '
 import { getTemplateSrv } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { TempoQuery } from '@grafana-module/app/plugins/datasource/tempo/types';
-import { getDatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
-import { getTimeZone } from '@grafana-module/app/features/profile/state/selectors';
-import { useDispatch, useSelector } from '@grafana-module/app/types';
+import { TempoQuery } from '~/plugins/datasource/tempo/types';
+import { getDatasourceSrv } from '~/features/plugins/datasource_srv';
+import { getTimeZone } from '~/features/profile/state/selectors';
+import { useDispatch, useSelector } from '~/types';
 
 import { changePanelState } from '../state/explorePane';
 

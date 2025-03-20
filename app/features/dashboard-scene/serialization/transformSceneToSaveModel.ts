@@ -25,10 +25,10 @@ import {
   VariableModel,
   VariableRefresh,
 } from '@schema/index';
-import { sortedDeepCloneWithoutNulls } from '@grafana-module/app/core/utils/object';
-import { getPanelDataFrames } from '@grafana-module/app/features/dashboard/components/HelpWizard/utils';
-import { DASHBOARD_SCHEMA_VERSION } from '@grafana-module/app/features/dashboard/state/DashboardMigrator';
-import { GrafanaQueryType } from '@grafana-module/app/plugins/datasource/grafana/types';
+import { sortedDeepCloneWithoutNulls } from '~/core/utils/object';
+import { getPanelDataFrames } from '~/features/dashboard/components/HelpWizard/utils';
+import { DASHBOARD_SCHEMA_VERSION } from '~/features/dashboard/state/DashboardMigrator';
+import { GrafanaQueryType } from '~/plugins/datasource/grafana/types';
 
 import { DashboardDataLayerSet } from '../scene/DashboardDataLayerSet';
 import { DashboardScene } from '../scene/DashboardScene';

@@ -6,8 +6,8 @@ import { Tooltip } from '@grafana-ui/index';
 import {
   DashboardLinkButton,
   DashboardLinksDashboard,
-} from '@grafana-module/app/features/dashboard/components/SubMenu/DashboardLinksDashboard';
-import { getLinkSrv } from '@grafana-module/app/features/panel/panellinks/link_srv';
+} from '~/features/dashboard/components/SubMenu/DashboardLinksDashboard';
+import { getLinkSrv } from '~/features/panel/panellinks/link_srv';
 
 import { LINK_ICON_MAP } from '../settings/links/utils';
 

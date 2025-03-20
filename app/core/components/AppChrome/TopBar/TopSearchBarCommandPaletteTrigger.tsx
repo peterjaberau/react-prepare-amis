@@ -5,9 +5,9 @@ import { useMemo, useState } from 'react';
 import { GrafanaTheme2 } from '@data/index';
 import { getInputStyles, Icon, Text, ToolbarButton, useStyles2, useTheme2 } from '@grafana-ui/index';
 import { getFocusStyles } from '@grafana-ui/themes/mixins';
-import { useMediaQueryChange } from '@grafana-module/app/core/hooks/useMediaQueryChange';
-import { t } from '@grafana-module/app/core/internationalization';
-import { getModKey } from '@grafana-module/app/core/utils/browser';
+import { useMediaQueryChange } from '~/core/hooks/useMediaQueryChange';
+import { t } from '~/core/internationalization';
+import { getModKey } from '~/core/utils/browser';
 
 export function TopSearchBarCommandPaletteTrigger() {
   const theme = useTheme2();

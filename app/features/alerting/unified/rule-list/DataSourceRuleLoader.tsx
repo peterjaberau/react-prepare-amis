@@ -1,6 +1,6 @@
 import { memo, useMemo } from 'react';
 
-import { DataSourceRuleGroupIdentifier, Rule, RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { DataSourceRuleGroupIdentifier, Rule, RuleIdentifier } from '~/types/unified-alerting';
 
 import { alertRuleApi } from '../api/alertRuleApi';
 import { featureDiscoveryApi } from '../api/featureDiscoveryApi';

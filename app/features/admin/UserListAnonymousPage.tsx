@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { GrafanaTheme2 } from '@data/index';
 import { RadioButtonGroup, useStyles2, FilterInput } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { StoreState } from '../../types';
 

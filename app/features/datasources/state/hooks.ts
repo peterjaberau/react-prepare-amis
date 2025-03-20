@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 
 import { DataSourcePluginMeta, DataSourceSettings } from '@data/index';
-import { cleanUpAction } from '@grafana-module/app/core/actions/cleanUp';
-import appEvents from '@grafana-module/app/core/app_events';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { AccessControlAction, useDispatch, useSelector } from '@grafana-module/app/types';
-import { ShowConfirmModalEvent } from '@grafana-module/app/types/events';
+import { cleanUpAction } from '~/core/actions/cleanUp';
+import appEvents from '~/core/app_events';
+import { contextSrv } from '~/core/core';
+import { AccessControlAction, useDispatch, useSelector } from '~/types';
+import { ShowConfirmModalEvent } from '~/types/events';
 
 import { ROUTES } from '../../connections/constants';
 import { DataSourceRights } from '../types';

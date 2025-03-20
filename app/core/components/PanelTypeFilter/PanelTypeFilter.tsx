@@ -3,8 +3,8 @@ import { useCallback, useMemo, useState } from 'react';
 
 import { GrafanaTheme2, PanelPluginMeta, SelectableValue } from '@data/index';
 import { Icon, Button, MultiSelect, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { getAllPanelPluginMeta } from '@grafana-module/app/features/panel/state/util';
+import { Trans } from '~/core/internationalization';
+import { getAllPanelPluginMeta } from '~/features/panel/state/util';
 
 export interface Props {
   onChange: (plugins: PanelPluginMeta[]) => void;

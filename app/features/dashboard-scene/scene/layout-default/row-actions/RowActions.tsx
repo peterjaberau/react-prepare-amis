@@ -1,7 +1,7 @@
 import { sceneGraph, SceneGridRow, SceneObjectBase, SceneObjectState } from '@scenes/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import { t } from '@grafana-module/app/core/internationalization';
-import { ShowConfirmModalEvent } from '@grafana-module/app/types/events';
+import appEvents from '~/core/app_events';
+import { t } from '~/core/internationalization';
+import { ShowConfirmModalEvent } from '~/types/events';
 
 import { DefaultGridLayoutManager } from '../DefaultGridLayoutManager';
 import { RowRepeaterBehavior } from '../RowRepeaterBehavior';

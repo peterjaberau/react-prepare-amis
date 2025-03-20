@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 
 import { config } from '@runtime/index';
 import { SceneComponentProps, VizPanel } from '@scenes/index';
-import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN } from '@grafana-module/app/core/constants';
+import { GRID_CELL_HEIGHT, GRID_CELL_VMARGIN } from '~/core/constants';
 
 import { DashboardGridItem, RepeatDirection } from './DashboardGridItem';
 

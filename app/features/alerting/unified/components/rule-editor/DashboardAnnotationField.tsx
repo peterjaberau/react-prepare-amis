@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Icon, useStyles2 } from '@grafana-ui/index';
-import { DashboardDataDTO } from '@grafana-module/app/types';
+import { DashboardDataDTO } from '~/types';
 
 import { makeDashboardLink, makePanelLink } from '../../utils/misc';
 

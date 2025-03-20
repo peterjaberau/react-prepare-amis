@@ -1,5 +1,5 @@
-import { GrafanaRuleGroupIdentifier } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaPromRuleDTO, PromRuleType } from '@grafana-module/app/types/unified-alerting-dto';
+import { GrafanaRuleGroupIdentifier } from '~/types/unified-alerting';
+import { GrafanaPromRuleDTO, PromRuleType } from '~/types/unified-alerting-dto';
 
 import { alertRuleApi } from '../api/alertRuleApi';
 import { GrafanaRulesSource } from '../utils/datasource';

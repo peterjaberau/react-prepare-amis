@@ -1,9 +1,9 @@
 import { cloneDeep } from 'lodash';
 
-import { notFoundItem } from '@grafana-module/app/features/canvas/elements/notFound';
-import { DimensionContext } from '@grafana-module/app/features/dimensions';
-import { HorizontalConstraint, Placement, VerticalConstraint } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
-import { LayerActionID } from '@grafana-module/app/plugins/panel/canvas/types';
+import { notFoundItem } from '~/features/canvas/elements/notFound';
+import { DimensionContext } from '~/features/dimensions';
+import { HorizontalConstraint, Placement, VerticalConstraint } from '~/plugins/panel/canvas/panelcfg';
+import { LayerActionID } from '~/plugins/panel/canvas/types';
 
 import { updateConnectionsForSource } from '../../../plugins/panel/canvas/utils';
 import { CanvasElementItem } from '../element';

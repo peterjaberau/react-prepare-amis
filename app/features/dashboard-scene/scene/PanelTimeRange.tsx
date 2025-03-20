@@ -10,7 +10,7 @@ import {
   VariableDependencyConfig,
 } from '@scenes/index';
 import { Icon, PanelChrome, TimePickerTooltip, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { TimeOverrideResult } from '@grafana-module/app/features/dashboard/utils/panel';
+import { TimeOverrideResult } from '~/features/dashboard/utils/panel';
 
 export interface PanelTimeRangeState extends SceneTimeRangeState {
   timeFrom?: string;

@@ -1,7 +1,7 @@
 import { getBackendSrv } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { FormModel } from '@grafana-module/app/features/org/UserInviteForm';
-import { AccessControlAction, createAsyncThunk, Invitee } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { FormModel } from '~/features/org/UserInviteForm';
+import { AccessControlAction, createAsyncThunk, Invitee } from '~/types';
 
 export const fetchInvitees = createAsyncThunk('users/fetchInvitees', async () => {
   if (!contextSrv.hasPermission(AccessControlAction.OrgUsersAdd)) {

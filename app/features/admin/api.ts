@@ -1,8 +1,8 @@
 import { UrlQueryValue } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { accessControlQueryParam } from '@grafana-module/app/core/utils/accessControl';
-import { OrgUser, AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { accessControlQueryParam } from '~/core/utils/accessControl';
+import { OrgUser, AccessControlAction } from '~/types';
 
 const perPage = 30;
 

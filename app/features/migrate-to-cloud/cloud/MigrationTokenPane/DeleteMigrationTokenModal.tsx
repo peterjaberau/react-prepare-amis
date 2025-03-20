@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Modal, Button, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 interface Props {
   hideModal: () => void;

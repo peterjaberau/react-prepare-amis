@@ -1,6 +1,6 @@
 import { reportInteraction } from '@runtime/index';
 import { Space, TextLink } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 export const RoadmapLinks = () => {
   return (

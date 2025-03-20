@@ -15,12 +15,12 @@ import {
   withTheme2,
   Stack,
 } from '@grafana-ui/index';
-import { UserRolePicker } from '@grafana-module/app/core/components/RolePicker/UserRolePicker';
-import { fetchRoleOptions, updateUserRoles } from '@grafana-module/app/core/components/RolePicker/api';
-import { OrgPicker, OrgSelectItem } from '@grafana-module/app/core/components/Select/OrgPicker';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { AccessControlAction, Organization, OrgRole, Role, UserDTO, UserOrg } from '@grafana-module/app/types';
+import { UserRolePicker } from '~/core/components/RolePicker/UserRolePicker';
+import { fetchRoleOptions, updateUserRoles } from '~/core/components/RolePicker/api';
+import { OrgPicker, OrgSelectItem } from '~/core/components/Select/OrgPicker';
+import { contextSrv } from '~/core/core';
+import { t, Trans } from '~/core/internationalization';
+import { AccessControlAction, Organization, OrgRole, Role, UserDTO, UserOrg } from '~/types';
 
 import { OrgRolePicker } from './OrgRolePicker';
 

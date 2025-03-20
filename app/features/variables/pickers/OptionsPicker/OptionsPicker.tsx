@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import { LoadingState, VariableOption, VariableWithMultiSupport, VariableWithOptions } from '@data/index';
 import { ClickOutsideWrapper } from '@grafana-ui/index';
-import { StoreState, ThunkDispatch } from '@grafana-module/app/types';
+import { StoreState, ThunkDispatch } from '~/types';
 
 import { VARIABLE_PREFIX } from '../../constants';
 import { isMulti } from '../../guard';

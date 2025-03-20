@@ -5,10 +5,10 @@ import { connect, ConnectedProps } from 'react-redux';
 import { NavModelItem } from '@data/index';
 import { featureEnabled } from '@runtime/index';
 import { Alert, Button, Field, Input, Stack } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { Trans } from '@grafana-module/app/core/internationalization';
-import { GrafanaRouteComponentProps } from '@grafana-module/app/core/navigation/types';
+import { Page } from '~/core/components/Page/Page';
+import { contextSrv } from '~/core/core';
+import { Trans } from '~/core/internationalization';
+import { GrafanaRouteComponentProps } from '~/core/navigation/types';
 import {
   AppNotificationSeverity,
   LdapError,
@@ -17,7 +17,7 @@ import {
   SyncInfo,
   LdapConnectionInfo,
   AccessControlAction,
-} from '@grafana-module/app/types';
+} from '~/types';
 
 import {
   loadLdapState,

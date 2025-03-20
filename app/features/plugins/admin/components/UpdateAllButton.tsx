@@ -1,5 +1,5 @@
 import { Button } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 interface UpdateAllButtonProps {
   disabled: boolean;

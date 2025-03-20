@@ -3,8 +3,8 @@ import { Controller, FieldErrors, UseFormReturn } from 'react-hook-form';
 
 import { ExpressionDatasourceRef } from '@runtime/utils/DataSourceWithBackend';
 import { Button, Field, FormFieldErrors, FormsOnSubmit, Stack, Input, Legend } from '@grafana-ui/index';
-import { FolderPicker } from '@grafana-module/app/core/components/Select/FolderPicker';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
+import { FolderPicker } from '~/core/components/Select/FolderPicker';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
 
 import {
   DashboardInput,

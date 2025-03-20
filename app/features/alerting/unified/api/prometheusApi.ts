@@ -1,4 +1,4 @@
-import { GrafanaPromRuleGroupDTO, PromRuleDTO, PromRuleGroupDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { GrafanaPromRuleGroupDTO, PromRuleDTO, PromRuleGroupDTO } from '~/types/unified-alerting-dto';
 
 import { GRAFANA_RULES_SOURCE_NAME } from '../utils/datasource';
 

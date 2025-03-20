@@ -1,7 +1,7 @@
-import { SafeDynamicImport } from '@grafana-module/app/core/components/DynamicImports/SafeDynamicImport';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { RouteDescriptor } from '@grafana-module/app/core/navigation/types';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { SafeDynamicImport } from '~/core/components/DynamicImports/SafeDynamicImport';
+import { contextSrv } from '~/core/core';
+import { RouteDescriptor } from '~/core/navigation/types';
+import { AccessControlAction } from '~/types';
 
 import { PluginAdminRoutes } from './types';
 

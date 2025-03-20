@@ -2,11 +2,11 @@ import { useForm } from 'react-hook-form';
 import { ConnectedProps, connect } from 'react-redux';
 
 import { Button, Field, FieldSet, Input, Stack } from '@grafana-ui/index';
-import { TeamRolePicker } from '@grafana-module/app/core/components/RolePicker/TeamRolePicker';
-import { useRoleOptions } from '@grafana-module/app/core/components/RolePicker/hooks';
-import { SharedPreferences } from '@grafana-module/app/core/components/SharedPreferences/SharedPreferences';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
-import { AccessControlAction, Team } from '@grafana-module/app/types';
+import { TeamRolePicker } from '~/core/components/RolePicker/TeamRolePicker';
+import { useRoleOptions } from '~/core/components/RolePicker/hooks';
+import { SharedPreferences } from '~/core/components/SharedPreferences/SharedPreferences';
+import { contextSrv } from '~/core/services/context_srv';
+import { AccessControlAction, Team } from '~/types';
 
 import { updateTeam } from './state/actions';
 

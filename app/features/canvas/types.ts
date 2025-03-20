@@ -1,6 +1,6 @@
 import { LinkModel } from '@data/index';
 import { ColorDimensionConfig, ResourceDimensionConfig, TextDimensionConfig } from '@schema/index';
-import { BackgroundImageSize } from '@grafana-module/app/plugins/panel/canvas/panelcfg';
+import { BackgroundImageSize } from '~/plugins/panel/canvas/panelcfg';
 
 export enum QuickPlacement {
   Top = 'top',

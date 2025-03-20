@@ -11,9 +11,9 @@ import {
   LoadingState,
 } from '@data/index';
 import { Alert, AlertVariant, Button, Space, Spinner } from '@grafana-ui/index';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 
 import { executeAnnotationQuery } from '../executeAnnotationQuery';
 import { shouldUseLegacyRunner, shouldUseMappingUI, standardAnnotationSupport } from '../standardAnnotationSupport';

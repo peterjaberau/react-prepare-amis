@@ -3,9 +3,9 @@ import { useLocation, useParams } from 'react-router';
 
 import { PageLayoutType } from '@data/index';
 import { SceneComponentProps } from '@scenes/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
-import { useSelector } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { getNavModel } from '~/core/selectors/navModel';
+import { useSelector } from '~/types';
 
 import { DashboardEditPaneSplitter } from '../edit-pane/DashboardEditPaneSplitter';
 

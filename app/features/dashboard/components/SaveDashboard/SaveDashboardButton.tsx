@@ -1,6 +1,6 @@
 import { reportInteraction } from '@runtime/index';
 import { Button, ButtonVariant, ComponentSize, ModalsController } from '@grafana-ui/index';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
 
 import { SaveDashboardDrawer } from './SaveDashboardDrawer';
 

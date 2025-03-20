@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Annotations } from '@grafana-module/app/types/unified-alerting-dto';
+import { Annotations } from '~/types/unified-alerting-dto';
 
 import { Annotation } from './constants';
 import { makeDashboardLink, makePanelLink } from './misc';

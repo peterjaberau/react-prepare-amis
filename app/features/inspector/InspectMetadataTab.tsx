@@ -1,5 +1,5 @@
 import { DataSourceApi, PanelData } from '@data/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 interface InspectMetadataTabProps {
   data: PanelData;

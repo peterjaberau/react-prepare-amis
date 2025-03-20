@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
 import { NavModel } from '@data/index';
-import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
-import { store } from '@grafana-module/app/store/store';
-import { StoreState, useSelector } from '@grafana-module/app/types';
+import { getNavModel } from '~/core/selectors/navModel';
+import { store } from '~/store/store';
+import { StoreState, useSelector } from '~/types';
 
 export function usePageNav(navId?: string, oldProp?: NavModel): NavModel | undefined {
   if (oldProp) {

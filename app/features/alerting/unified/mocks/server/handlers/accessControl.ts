@@ -1,7 +1,7 @@
 import { HttpResponse, http } from 'msw';
 
-import { Description, ResourcePermission } from '@grafana-module/app/core/components/AccessControl/types';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { Description, ResourcePermission } from '~/core/components/AccessControl/types';
+import { AccessControlAction } from '~/types';
 
 // TODO: Expand this out to more realistic use cases as we work on RBAC for contact points
 const resourceDescriptionsMap: Record<string, Description> = {

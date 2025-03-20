@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useAsync } from 'react-use';
 
-import { DashboardPickerDTO } from '@grafana-module/app/core/components/Select/DashboardPicker';
+import { DashboardPickerDTO } from '~/core/components/Select/DashboardPicker';
 
 import { loadDashboards } from './api';
 import { PlaylistItem } from './types';

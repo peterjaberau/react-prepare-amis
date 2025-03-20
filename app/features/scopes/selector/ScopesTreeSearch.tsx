@@ -4,7 +4,7 @@ import { useDebounce } from 'react-use';
 
 import { GrafanaTheme2 } from '@data/index';
 import { FilterInput, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { OnNodeUpdate } from './types';
 

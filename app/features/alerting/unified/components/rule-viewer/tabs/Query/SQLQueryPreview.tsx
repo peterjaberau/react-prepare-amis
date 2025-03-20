@@ -1,5 +1,5 @@
 import { ReactMonacoEditor } from '@grafana-ui/index';
-import { AlertDataQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { AlertDataQuery } from '~/types/unified-alerting-dto';
 
 interface Props {
   expression: string;

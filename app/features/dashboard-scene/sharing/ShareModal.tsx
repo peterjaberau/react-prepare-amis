@@ -3,10 +3,10 @@ import { ComponentProps } from 'react';
 import { config, locationService } from '@runtime/index';
 import { SceneComponentProps, SceneObjectBase, SceneObjectRef, SceneObjectState, VizPanel } from '@scenes/index';
 import { Modal, ModalTabsHeader, TabContent } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
-import { t } from '@grafana-module/app/core/internationalization';
-import { isPublicDashboardsEnabled } from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { AccessControlAction } from '@grafana-module/app/types';
+import { contextSrv } from '~/core/core';
+import { t } from '~/core/internationalization';
+import { isPublicDashboardsEnabled } from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { AccessControlAction } from '~/types';
 
 import { getTrackingSource } from '../../dashboard/components/ShareModal/utils';
 import { DashboardInteractions } from '../utils/interactions';

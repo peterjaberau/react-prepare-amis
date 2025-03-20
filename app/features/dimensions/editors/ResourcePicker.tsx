@@ -15,7 +15,7 @@ import {
   useTheme2,
 } from '@grafana-ui/index';
 import { closePopover } from '@grafana-ui/utils/closePopover';
-import { SanitizedSVG } from '@grafana-module/app/core/components/SVG/SanitizedSVG';
+import { SanitizedSVG } from '~/core/components/SVG/SanitizedSVG';
 
 import { getPublicOrAbsoluteUrl } from '../resource';
 import { MediaType, ResourceFolderName, ResourcePickerSize } from '../types';

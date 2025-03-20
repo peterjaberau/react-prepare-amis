@@ -1,6 +1,6 @@
 import { isEqual, uniqBy } from 'lodash';
 
-import { GrafanaAlertStateWithReason } from '@grafana-module/app/types/unified-alerting-dto';
+import { GrafanaAlertStateWithReason } from '~/types/unified-alerting-dto';
 
 export interface Line {
   previous: GrafanaAlertStateWithReason;

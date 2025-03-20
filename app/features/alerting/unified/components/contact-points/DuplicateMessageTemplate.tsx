@@ -1,8 +1,8 @@
 import { useParams } from 'react-router';
 
 import { Alert, LoadingPlaceholder } from '@grafana-ui/index';
-import { EntityNotFound } from '@grafana-module/app/core/components/PageNotFound/EntityNotFound';
-import { t } from '@grafana-module/app/core/internationalization';
+import { EntityNotFound } from '~/core/components/PageNotFound/EntityNotFound';
+import { t } from '~/core/internationalization';
 
 import { isNotFoundError } from '../../api/util';
 import { useAlertmanager } from '../../state/AlertmanagerContext';

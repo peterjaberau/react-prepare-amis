@@ -7,12 +7,12 @@ import { getDataSourceSrv } from '@runtime/index';
 import { QueryVariable } from '@scenes/index';
 import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';
 import { Field } from '@grafana-ui/index';
-import { QueryEditor } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/QueryEditor';
-import { SelectionOptionsForm } from '@grafana-module/app/features/dashboard-scene/settings/variables/components/SelectionOptionsForm';
-import { DataSourcePicker } from '@grafana-module/app/features/datasources/components/picker/DataSourcePicker';
-import { getVariableQueryEditor } from '@grafana-module/app/features/variables/editor/getVariableQueryEditor';
-import { QueryVariableRefreshSelect } from '@grafana-module/app/features/variables/query/QueryVariableRefreshSelect';
-import { QueryVariableSortSelect } from '@grafana-module/app/features/variables/query/QueryVariableSortSelect';
+import { QueryEditor } from '~/features/dashboard-scene/settings/variables/components/QueryEditor';
+import { SelectionOptionsForm } from '~/features/dashboard-scene/settings/variables/components/SelectionOptionsForm';
+import { DataSourcePicker } from '~/features/datasources/components/picker/DataSourcePicker';
+import { getVariableQueryEditor } from '~/features/variables/editor/getVariableQueryEditor';
+import { QueryVariableRefreshSelect } from '~/features/variables/query/QueryVariableRefreshSelect';
+import { QueryVariableSortSelect } from '~/features/variables/query/QueryVariableSortSelect';
 
 import { VariableLegend } from './VariableLegend';
 import { VariableTextAreaField } from './VariableTextAreaField';

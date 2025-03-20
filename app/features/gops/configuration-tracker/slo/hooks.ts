@@ -1,6 +1,6 @@
-import { sloApi } from '@grafana-module/app/features/alerting/unified/api/sloApi';
-import { usePluginBridge } from '@grafana-module/app/features/alerting/unified/hooks/usePluginBridge';
-import { SupportedPlugin } from '@grafana-module/app/features/alerting/unified/types/pluginBridges';
+import { sloApi } from '~/features/alerting/unified/api/sloApi';
+import { usePluginBridge } from '~/features/alerting/unified/hooks/usePluginBridge';
+import { SupportedPlugin } from '~/features/alerting/unified/types/pluginBridges';
 
 export function useSloChecks() {
   const { installed: sloPluginInstalled } = usePluginBridge(SupportedPlugin.Slo);

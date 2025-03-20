@@ -19,7 +19,7 @@ import {
 import { Button, InlineField, InlineFieldRow, Input, Select } from '@grafana-ui/index';
 import { FieldNamePicker } from '@grafana-ui/components/MatchersUI/FieldNamePicker';
 import { allFieldTypeIconOptions } from '@grafana-ui/components/MatchersUI/FieldTypeMatcherEditor';
-import { findField } from '@grafana-module/app/features/dimensions';
+import { findField } from '~/features/dimensions';
 
 import { getTransformationContent } from '../docs/getTransformationContent';
 import { getTimezoneOptions } from '../utils';

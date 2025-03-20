@@ -15,25 +15,25 @@ import {
   ConfirmModal,
   Badge,
 } from '@grafana-ui/index';
-import { updateNavIndex } from '@grafana-module/app/core/actions';
-import { AppChromeUpdate } from '@grafana-module/app/core/components/AppChrome/AppChromeUpdate';
-import { NavToolbarSeparator } from '@grafana-module/app/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
-import config from '@grafana-module/app/core/config';
-import { useAppNotification } from '@grafana-module/app/core/copy/appNotification';
-import { appEvents } from '@grafana-module/app/core/core';
-import { useBusEvent } from '@grafana-module/app/core/hooks/useBusEvent';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { ID_PREFIX, setStarred } from '@grafana-module/app/core/reducers/navBarTree';
-import { removeNavIndex } from '@grafana-module/app/core/reducers/navModel';
-import AddPanelButton from '@grafana-module/app/features/dashboard/components/AddPanelButton/AddPanelButton';
-import { SaveDashboardDrawer } from '@grafana-module/app/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
-import { getDashboardSrv } from '@grafana-module/app/features/dashboard/services/DashboardSrv';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
-import { playlistSrv } from '@grafana-module/app/features/playlist/PlaylistSrv';
-import { updateTimeZoneForSession } from '@grafana-module/app/features/profile/state/reducers';
-import { KioskMode, StoreState } from '@grafana-module/app/types';
-import { DashboardMetaChangedEvent, ShowModalReactEvent } from '@grafana-module/app/types/events';
+import { updateNavIndex } from '~/core/actions';
+import { AppChromeUpdate } from '~/core/components/AppChrome/AppChromeUpdate';
+import { NavToolbarSeparator } from '~/core/components/AppChrome/NavToolbar/NavToolbarSeparator';
+import config from '~/core/config';
+import { useAppNotification } from '~/core/copy/appNotification';
+import { appEvents } from '~/core/core';
+import { useBusEvent } from '~/core/hooks/useBusEvent';
+import { t, Trans } from '~/core/internationalization';
+import { ID_PREFIX, setStarred } from '~/core/reducers/navBarTree';
+import { removeNavIndex } from '~/core/reducers/navModel';
+import AddPanelButton from '~/features/dashboard/components/AddPanelButton/AddPanelButton';
+import { SaveDashboardDrawer } from '~/features/dashboard/components/SaveDashboard/SaveDashboardDrawer';
+import { getDashboardSrv } from '~/features/dashboard/services/DashboardSrv';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
+import { playlistSrv } from '~/features/playlist/PlaylistSrv';
+import { updateTimeZoneForSession } from '~/features/profile/state/reducers';
+import { KioskMode, StoreState } from '~/types';
+import { DashboardMetaChangedEvent, ShowModalReactEvent } from '~/types/events';
 
 import {
   DynamicDashNavButtonModel,

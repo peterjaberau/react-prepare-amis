@@ -25,19 +25,19 @@ import {
 import { AngularComponent, getAngularLoader, getDataSourceSrv, reportInteraction } from '@runtime/index';
 import { DataQuery } from '@schema/index';
 import { Badge, ErrorBoundaryAlert } from '@grafana-ui/index';
-import { OperationRowHelp } from '@grafana-module/app/core/components/QueryOperationRow/OperationRowHelp';
+import { OperationRowHelp } from '~/core/components/QueryOperationRow/OperationRowHelp';
 import {
   QueryOperationAction,
   QueryOperationToggleAction,
-} from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationAction';
+} from '~/core/components/QueryOperationRow/QueryOperationAction';
 import {
   QueryOperationRow,
   QueryOperationRowRenderProps,
-} from '@grafana-module/app/core/components/QueryOperationRow/QueryOperationRow';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
+} from '~/core/components/QueryOperationRow/QueryOperationRow';
+import { Trans, t } from '~/core/internationalization';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
 
 import { useQueryLibraryContext } from '../../explore/QueryLibrary/QueryLibraryContext';
 

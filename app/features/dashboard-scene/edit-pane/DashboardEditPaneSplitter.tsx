@@ -5,7 +5,7 @@ import { GrafanaTheme2 } from '@data/index';
 import { config, useChromeHeaderHeight } from '@runtime/index';
 import { useSceneObjectState } from '@scenes/index';
 import { ElementSelectionContext, useStyles2 } from '@grafana-ui/index';
-import NativeScrollbar, { DivScrollElement } from '@grafana-module/app/core/components/NativeScrollbar';
+import NativeScrollbar, { DivScrollElement } from '~/core/components/NativeScrollbar';
 
 import { useSnappingSplitter } from '../panel-edit/splitter/useSnappingSplitter';
 import { DashboardScene } from '../scene/DashboardScene';

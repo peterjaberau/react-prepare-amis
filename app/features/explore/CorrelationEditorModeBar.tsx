@@ -5,8 +5,8 @@ import { useBeforeUnload, useUnmount } from 'react-use';
 import { GrafanaTheme2, colorManipulator } from '@data/index';
 import { reportInteraction } from '@runtime/index';
 import { Button, Icon, Stack, Tooltip, useStyles2 } from '@grafana-ui/index';
-import { Prompt } from '@grafana-module/app/core/components/FormPrompt/Prompt';
-import { CORRELATION_EDITOR_POST_CONFIRM_ACTION, ExploreItemState, useDispatch, useSelector } from '@grafana-module/app/types';
+import { Prompt } from '~/core/components/FormPrompt/Prompt';
+import { CORRELATION_EDITOR_POST_CONFIRM_ACTION, ExploreItemState, useDispatch, useSelector } from '~/types';
 
 import { CorrelationUnsavedChangesModal } from './CorrelationUnsavedChangesModal';
 import { showModalMessage } from './correlationEditLogic';

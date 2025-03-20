@@ -2,7 +2,7 @@ import { keyBy } from 'lodash';
 
 import { DataSourceInstanceSettings } from '@data/index';
 import { config, setDataSourceSrv } from '@runtime/index';
-import { DatasourceSrv } from '@grafana-module/app/features/plugins/datasource_srv';
+import { DatasourceSrv } from '~/features/plugins/datasource_srv';
 
 /**
  * Sets up the data sources for the tests.

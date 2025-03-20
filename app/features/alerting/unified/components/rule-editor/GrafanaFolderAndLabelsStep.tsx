@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 
 import { Stack, Text } from '@grafana-ui/index';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
+import { Trans, t } from '~/core/internationalization';
 
 import { KBObjectArray, RuleFormValues } from '../../types/rule-form';
 import { GRAFANA_RULES_SOURCE_NAME } from '../../utils/datasource';

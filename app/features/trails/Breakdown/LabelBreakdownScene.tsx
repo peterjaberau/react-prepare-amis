@@ -28,7 +28,7 @@ import {
 } from '@scenes/index';
 import { DataQuery, SortOrder, TooltipDisplayMode } from '@schema/index';
 import { Alert, Button, Field, LoadingPlaceholder, useStyles2 } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { BreakdownLabelSelector } from '../BreakdownLabelSelector';
 import { DataTrail } from '../DataTrail';

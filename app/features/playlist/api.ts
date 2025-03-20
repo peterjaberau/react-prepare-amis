@@ -2,11 +2,11 @@ import { lastValueFrom } from 'rxjs';
 
 import { DataQueryRequest, DataFrameView } from '@data/index';
 import { getBackendSrv, config } from '@runtime/index';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createErrorNotification, createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
-import { getGrafanaDatasource } from '@grafana-module/app/plugins/datasource/grafana/datasource';
-import { GrafanaQuery, GrafanaQueryType } from '@grafana-module/app/plugins/datasource/grafana/types';
-import { dispatch } from '@grafana-module/app/store/store';
+import { notifyApp } from '~/core/actions';
+import { createErrorNotification, createSuccessNotification } from '~/core/copy/appNotification';
+import { getGrafanaDatasource } from '~/plugins/datasource/grafana/datasource';
+import { GrafanaQuery, GrafanaQueryType } from '~/plugins/datasource/grafana/types';
+import { dispatch } from '~/store/store';
 
 import { ScopedResourceClient } from '../apiserver/client';
 import { Resource, ResourceForCreate, ResourceClient } from '../apiserver/types';

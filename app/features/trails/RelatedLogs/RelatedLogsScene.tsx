@@ -17,7 +17,7 @@ import {
   type SceneVariable,
 } from '@scenes/index';
 import { Stack, LinkButton } from '@grafana-ui/index';
-import { Trans } from '@grafana-module/app/core/internationalization';
+import { Trans } from '~/core/internationalization';
 
 import { MetricsLogsConnector } from '../Integrations/logs/base';
 import { createLabelsCrossReferenceConnector } from '../Integrations/logs/labelsCrossReference';

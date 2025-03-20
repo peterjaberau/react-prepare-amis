@@ -1,6 +1,6 @@
 import { reportInteraction } from '@runtime/index';
 import { Alert, Button } from '@grafana-ui/index';
-import { LocalStorageValueProvider } from '@grafana-module/app/core/components/LocalStorageValueProvider';
+import { LocalStorageValueProvider } from '~/core/components/LocalStorageValueProvider';
 
 const LOCAL_STORAGE_KEY_PREFIX = 'grafana.angularDeprecation.dashboardNoticeAndMigration.isDismissed';
 

@@ -8,7 +8,7 @@ import {
   NotificationChannelOption,
   NotificationChannelState,
   NotifierDTO,
-} from '@grafana-module/app/types';
+} from '~/types';
 
 import unifiedAlertingReducer from '../unified/state/reducers';
 

@@ -4,11 +4,11 @@ import * as React from 'react';
 import { isEmptyObject, SelectableValue, VariableRefresh } from '@data/index';
 import { getBackendSrv } from '@runtime/index';
 import { Button, ClipboardButton, Field, Input, LinkButton, Modal, Select, Spinner, Stack } from '@grafana-ui/index';
-import { t, Trans } from '@grafana-module/app/core/internationalization';
-import { getTimeSrv } from '@grafana-module/app/features/dashboard/services/TimeSrv';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { t, Trans } from '~/core/internationalization';
+import { getTimeSrv } from '~/features/dashboard/services/TimeSrv';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
 
 import { getDashboardSnapshotSrv } from '../../services/SnapshotSrv';
 

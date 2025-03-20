@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { StoreState } from '@grafana-module/app/types';
+import { StoreState } from '~/types';
 
 import { initPanelState } from '../../panel/state/actions';
 import { setPanelInstanceState } from '../../panel/state/reducers';

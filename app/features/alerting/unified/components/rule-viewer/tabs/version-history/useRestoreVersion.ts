@@ -1,10 +1,10 @@
-import { useUpdateRuleInRuleGroup } from '@grafana-module/app/features/alerting/unified/hooks/ruleGroup/useUpsertRuleFromRuleGroup';
-import { useAsync } from '@grafana-module/app/features/alerting/unified/hooks/useAsync';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
-import { fromRulerRuleAndRuleGroupIdentifier } from '@grafana-module/app/features/alerting/unified/utils/rule-id';
-import { getRuleGroupLocationFromRuleWithLocation } from '@grafana-module/app/features/alerting/unified/utils/rules';
-import { RuleWithLocation } from '@grafana-module/app/types/unified-alerting';
-import { GrafanaRuleDefinition, RulerGrafanaRuleDTO, RulerRuleDTO } from '@grafana-module/app/types/unified-alerting-dto';
+import { useUpdateRuleInRuleGroup } from '~/features/alerting/unified/hooks/ruleGroup/useUpsertRuleFromRuleGroup';
+import { useAsync } from '~/features/alerting/unified/hooks/useAsync';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
+import { fromRulerRuleAndRuleGroupIdentifier } from '~/features/alerting/unified/utils/rule-id';
+import { getRuleGroupLocationFromRuleWithLocation } from '~/features/alerting/unified/utils/rules';
+import { RuleWithLocation } from '~/types/unified-alerting';
+import { GrafanaRuleDefinition, RulerGrafanaRuleDTO, RulerRuleDTO } from '~/types/unified-alerting-dto';
 
 export function useRestoreVersion() {
   const [updateRuleInRuleGroup] = useUpdateRuleInRuleGroup();

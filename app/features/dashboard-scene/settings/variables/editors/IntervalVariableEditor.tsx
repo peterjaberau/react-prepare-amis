@@ -5,7 +5,7 @@ import { IntervalVariable } from '@scenes/index';
 import {
   getIntervalsFromQueryString,
   getIntervalsQueryFromNewIntervalModel,
-} from '@grafana-module/app/features/dashboard-scene/utils/utils';
+} from '~/features/dashboard-scene/utils/utils';
 
 import { IntervalVariableForm } from '../components/IntervalVariableForm';
 

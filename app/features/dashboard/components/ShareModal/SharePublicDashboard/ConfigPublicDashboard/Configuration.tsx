@@ -4,8 +4,8 @@ import { TimeRange } from '@data/index';
 import { selectors as e2eSelectors } from '@selectors/index';
 import { FieldSet, Label, Switch, TimeRangeInput, VerticalGroup } from '@grafana-ui/index';
 import { Layout } from '@grafana-ui/components/Layout/Layout';
-import { Trans, t } from '@grafana-module/app/core/internationalization';
-import { DashboardInteractions } from '@grafana-module/app/features/dashboard-scene/utils/interactions';
+import { Trans, t } from '~/core/internationalization';
+import { DashboardInteractions } from '~/features/dashboard-scene/utils/interactions';
 
 import { ConfigPublicDashboardForm } from './ConfigPublicDashboard';
 

@@ -6,7 +6,7 @@ import {
   LoadingState,
   PanelData,
 } from '@data/index';
-import { config } from '@grafana-module/app/core/config';
+import { config } from '~/core/config';
 
 import { SnapshotWorker } from '../../query/state/DashboardQueryRunner/SnapshotWorker';
 import { getTimeSrv } from '../services/TimeSrv';

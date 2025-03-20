@@ -5,10 +5,10 @@ import { useLocation } from 'react-router';
 import { SelectableValue, GrafanaTheme2, PluginType } from '@data/index';
 import { locationSearchToObject } from '@runtime/index';
 import { Select, RadioButtonGroup, useStyles2, Tooltip, Field } from '@grafana-ui/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { getNavModel } from '@grafana-module/app/core/selectors/navModel';
-import { ROUTES as CONNECTIONS_ROUTES } from '@grafana-module/app/features/connections/constants';
-import { useSelector } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { getNavModel } from '~/core/selectors/navModel';
+import { ROUTES as CONNECTIONS_ROUTES } from '~/features/connections/constants';
+import { useSelector } from '~/types';
 
 import { HorizontalGroup } from '../components/HorizontalGroup';
 import { PluginList } from '../components/PluginList';

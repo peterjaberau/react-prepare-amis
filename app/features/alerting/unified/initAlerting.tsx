@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 
 import { config } from '@runtime/index';
-import { contextSrv } from '@grafana-module/app/core/services/context_srv';
+import { contextSrv } from '~/core/services/context_srv';
 
 import { addCustomRightAction } from '../../dashboard/components/DashNav/DashNav';
 

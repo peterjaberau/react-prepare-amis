@@ -3,9 +3,9 @@ import { useMemo } from 'react';
 
 import { GrafanaTheme2, PanelData } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';
-import { isExpressionQuery } from '@grafana-module/app/features/expressions/guards';
-import { ExpressionQuery, ExpressionQueryType } from '@grafana-module/app/features/expressions/types';
-import { AlertQuery } from '@grafana-module/app/types/unified-alerting-dto';
+import { isExpressionQuery } from '~/features/expressions/guards';
+import { ExpressionQuery, ExpressionQueryType } from '~/features/expressions/types';
+import { AlertQuery } from '~/types/unified-alerting-dto';
 
 import { Expression } from '../expressions/Expression';
 

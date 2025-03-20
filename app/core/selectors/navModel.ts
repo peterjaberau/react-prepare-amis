@@ -1,7 +1,7 @@
 import memoizeOne from 'memoize-one';
 
 import { NavModel, NavModelItem, NavIndex } from '@data/index';
-import { FOLDER_ID } from '@grafana-module/app/features/folders/state/navModel';
+import { FOLDER_ID } from '~/features/folders/state/navModel';
 
 import { HOME_NAV_ID } from '../reducers/navModel';
 

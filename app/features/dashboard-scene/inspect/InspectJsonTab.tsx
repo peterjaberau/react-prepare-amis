@@ -17,13 +17,13 @@ import {
 } from '@scenes/index';
 import { LibraryPanel } from '@schema/index';
 import { Button, CodeEditor, Field, Select, useStyles2 } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
-import { getPanelDataFrames } from '@grafana-module/app/features/dashboard/components/HelpWizard/utils';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { getPanelInspectorStyles2 } from '@grafana-module/app/features/inspector/styles';
-import { InspectTab } from '@grafana-module/app/features/inspector/types';
-import { getPrettyJSON } from '@grafana-module/app/features/inspector/utils/utils';
-import { reportPanelInspectInteraction } from '@grafana-module/app/features/search/page/reporting';
+import { t } from '~/core/internationalization';
+import { getPanelDataFrames } from '~/features/dashboard/components/HelpWizard/utils';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { getPanelInspectorStyles2 } from '~/features/inspector/styles';
+import { InspectTab } from '~/features/inspector/types';
+import { getPrettyJSON } from '~/features/inspector/utils/utils';
+import { reportPanelInspectInteraction } from '~/features/search/page/reporting';
 
 import { DashboardGridItem } from '../scene/layout-default/DashboardGridItem';
 import { buildGridItemForPanel } from '../serialization/transformSaveModelToScene';

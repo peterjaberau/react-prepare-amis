@@ -1,5 +1,5 @@
 import { PanelPluginMeta, PluginState, unEscapeStringFromRegex } from '@data/index';
-import { config } from '@grafana-module/app/core/config';
+import { config } from '~/core/config';
 
 export function getAllPanelPluginMeta(): PanelPluginMeta[] {
   const allPanels = config.panels;

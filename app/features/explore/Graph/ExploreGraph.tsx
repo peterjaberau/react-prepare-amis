@@ -28,10 +28,10 @@ import {
   VizLegendOptions,
 } from '@schema/index';
 import { PanelContext, PanelContextProvider, SeriesVisibilityChangeMode, useTheme2 } from '@grafana-ui/index';
-import { GraphFieldConfig } from '@grafana-module/app/plugins/panel/graph/types';
-import { defaultGraphConfig, getGraphFieldConfig } from '@grafana-module/app/plugins/panel/timeseries/config';
-import { Options as TimeSeriesOptions } from '@grafana-module/app/plugins/panel/timeseries/panelcfg.gen';
-import { ExploreGraphStyle } from '@grafana-module/app/types';
+import { GraphFieldConfig } from '~/plugins/panel/graph/types';
+import { defaultGraphConfig, getGraphFieldConfig } from '~/plugins/panel/timeseries/config';
+import { Options as TimeSeriesOptions } from '~/plugins/panel/timeseries/panelcfg.gen';
+import { ExploreGraphStyle } from '~/types';
 
 import { seriesVisibilityConfigFactory } from '../../dashboard/dashgrid/SeriesVisibilityConfigFactory';
 import { useExploreDataLinkPostProcessor } from '../hooks/useExploreDataLinkPostProcessor';

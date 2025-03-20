@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { InteractiveTable } from '@grafana-ui/index';
-import { LdapUserInfo } from '@grafana-module/app/types';
+import { LdapUserInfo } from '~/types';
 
 interface Props {
   info: LdapUserInfo;

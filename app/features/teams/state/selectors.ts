@@ -1,4 +1,4 @@
-import { Team, TeamState } from '@grafana-module/app/types';
+import { Team, TeamState } from '~/types';
 
 export const getTeamGroups = (state: TeamState) => state.groups;
 

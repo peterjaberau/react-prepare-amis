@@ -3,9 +3,9 @@ import { useAsync } from 'react-use';
 
 import { urlUtil } from '@data/index';
 import { Alert, Button, LinkButton } from '@grafana-ui/index';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { useSelector } from '@grafana-module/app/types';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { useSelector } from '~/types';
 
 import { LogMessages, logInfo } from '../../Analytics';
 import { panelToRuleFormValues } from '../../utils/rule-form';

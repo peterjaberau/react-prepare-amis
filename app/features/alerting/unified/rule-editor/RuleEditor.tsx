@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useParams } from 'react-router';
 
 import { NavModelItem } from '@data/index';
-import { RuleIdentifier } from '@grafana-module/app/types/unified-alerting';
+import { RuleIdentifier } from '~/types/unified-alerting';
 
 import { AlertWarning } from '../AlertWarning';
 import { AlertingPageWrapper } from '../components/AlertingPageWrapper';

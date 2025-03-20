@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { NavModelItem } from '@data/index';
 import { locationService } from '@runtime/index';
-import { Page } from '@grafana-module/app/core/components/Page/Page';
+import { Page } from '~/core/components/Page/Page';
 
 import { PlaylistForm } from './PlaylistForm';
 import { getPlaylistAPI, getDefaultPlaylist } from './api';

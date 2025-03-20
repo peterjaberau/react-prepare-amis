@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { reportInteraction } from '@runtime/index';
 import { Button, Stack } from '@grafana-ui/index';
-import { GENERAL_FOLDER_UID } from '@grafana-module/app/features/search/constants';
+import { GENERAL_FOLDER_UID } from '~/features/search/constants';
 
 import appEvents from '../../../core/app_events';
 import { Trans } from '../../../core/internationalization';

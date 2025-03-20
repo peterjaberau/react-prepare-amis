@@ -1,6 +1,6 @@
 import { config } from '@runtime/index';
 import { LinkButton } from '@grafana-ui/index';
-import { contextSrv } from '@grafana-module/app/core/core';
+import { contextSrv } from '~/core/core';
 
 import { useDataSource } from '../state';
 import { trackCreateDashboardClicked, trackDsConfigClicked, trackExploreClicked } from '../tracking';

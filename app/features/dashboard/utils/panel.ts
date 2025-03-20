@@ -2,17 +2,17 @@ import { isString as _isString } from 'lodash';
 
 import { TimeRange, AppEvents, rangeUtil, dateMath, PanelModel as IPanelModel, dateTimeAsMoment } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';
-import appEvents from '@grafana-module/app/core/app_events';
-import config from '@grafana-module/app/core/config';
-import { LS_PANEL_COPY_KEY, PANEL_BORDER } from '@grafana-module/app/core/constants';
-import store from '@grafana-module/app/core/store';
-import { ShareModal } from '@grafana-module/app/features/dashboard/components/ShareModal/ShareModal';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { PanelModel } from '@grafana-module/app/features/dashboard/state/PanelModel';
-import { UnlinkModal } from '@grafana-module/app/features/dashboard-scene/scene/UnlinkModal';
-import { AddLibraryPanelModal } from '@grafana-module/app/features/library-panels/components/AddLibraryPanelModal/AddLibraryPanelModal';
-import { cleanUpPanelState } from '@grafana-module/app/features/panel/state/actions';
-import { dispatch } from '@grafana-module/app/store/store';
+import appEvents from '~/core/app_events';
+import config from '~/core/config';
+import { LS_PANEL_COPY_KEY, PANEL_BORDER } from '~/core/constants';
+import store from '~/core/store';
+import { ShareModal } from '~/features/dashboard/components/ShareModal/ShareModal';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { PanelModel } from '~/features/dashboard/state/PanelModel';
+import { UnlinkModal } from '~/features/dashboard-scene/scene/UnlinkModal';
+import { AddLibraryPanelModal } from '~/features/library-panels/components/AddLibraryPanelModal/AddLibraryPanelModal';
+import { cleanUpPanelState } from '~/features/panel/state/actions';
+import { dispatch } from '~/store/store';
 
 import { ShowConfirmModalEvent, ShowModalReactEvent } from '../../../types/events';
 

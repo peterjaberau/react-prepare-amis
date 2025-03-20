@@ -1,23 +1,23 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
 
 import { config, FetchError, isFetchError } from '@runtime/index';
-import { createBaseQuery } from '@grafana-module/app/api/createBaseQuery';
-import { notifyApp } from '@grafana-module/app/core/actions';
-import { createErrorNotification, createSuccessNotification } from '@grafana-module/app/core/copy/appNotification';
-import { t } from '@grafana-module/app/core/internationalization';
+import { createBaseQuery } from '~/api/createBaseQuery';
+import { notifyApp } from '~/core/actions';
+import { createErrorNotification, createSuccessNotification } from '~/core/copy/appNotification';
+import { t } from '~/core/internationalization';
 import {
   PublicDashboard,
   PublicDashboardSettings,
   PublicDashboardShareType,
   SessionDashboard,
   SessionUser,
-} from '@grafana-module/app/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
-import { DashboardModel } from '@grafana-module/app/features/dashboard/state/DashboardModel';
-import { DashboardScene } from '@grafana-module/app/features/dashboard-scene/scene/DashboardScene';
+} from '~/features/dashboard/components/ShareModal/SharePublicDashboard/SharePublicDashboardUtils';
+import { DashboardModel } from '~/features/dashboard/state/DashboardModel';
+import { DashboardScene } from '~/features/dashboard-scene/scene/DashboardScene';
 import {
   PublicDashboardListWithPagination,
   PublicDashboardListWithPaginationResponse,
-} from '@grafana-module/app/features/manage-dashboards/types';
+} from '~/features/manage-dashboards/types';
 
 function isFetchBaseQueryError(error: unknown): error is { error: FetchError } {
   return typeof error === 'object' && error != null && 'error' in error;

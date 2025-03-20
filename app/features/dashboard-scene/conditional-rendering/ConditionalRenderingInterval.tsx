@@ -4,7 +4,7 @@ import { rangeUtil } from '@data/index';
 import { SceneComponentProps, sceneGraph } from '@scenes/index';
 import { ConditionalRenderingTimeIntervalKind } from '@schema/schema/dashboard/v2alpha0/types';
 import { Field, Input, Stack } from '@grafana-ui/index';
-import { t } from '@grafana-module/app/core/internationalization';
+import { t } from '~/core/internationalization';
 
 import { ConditionHeader } from './ConditionHeader';
 import { ConditionalRenderingBase, ConditionalRenderingBaseState } from './ConditionalRenderingBase';

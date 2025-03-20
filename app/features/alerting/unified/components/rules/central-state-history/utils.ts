@@ -12,7 +12,7 @@ import {
   getDisplayProcessor,
 } from '@data/index';
 import { fieldIndexComparer } from '@data/field/fieldComparers';
-import { mapStateWithReasonToBaseState } from '@grafana-module/app/types/unified-alerting-dto';
+import { mapStateWithReasonToBaseState } from '~/types/unified-alerting-dto';
 
 import { labelsMatchMatchers } from '../../../utils/alertmanager';
 import { parsePromQLStyleMatcherLooseSafe } from '../../../utils/matchers';

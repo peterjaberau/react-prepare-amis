@@ -4,8 +4,8 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Box, useStyles2 } from '@grafana-ui/index';
-import { useAlertmanager } from '@grafana-module/app/features/alerting/unified/state/AlertmanagerContext';
-import { GRAFANA_RULES_SOURCE_NAME } from '@grafana-module/app/features/alerting/unified/utils/datasource';
+import { useAlertmanager } from '~/features/alerting/unified/state/AlertmanagerContext';
+import { GRAFANA_RULES_SOURCE_NAME } from '~/features/alerting/unified/utils/datasource';
 
 import { EditorColumnHeader } from '../../../contact-points/templates/EditorColumnHeader';
 import { TemplateEditor } from '../../TemplateEditor';

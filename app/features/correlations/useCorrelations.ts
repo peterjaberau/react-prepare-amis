@@ -2,7 +2,7 @@ import { useAsyncFn } from 'react-use';
 import { lastValueFrom } from 'rxjs';
 
 import { getDataSourceSrv, FetchResponse, CorrelationData, CorrelationsData } from '@runtime/index';
-import { useGrafana } from '@grafana-module/app/core/context/GrafanaContext';
+import { useGrafana } from '~/core/context/GrafanaContext';
 
 import {
   Correlation,

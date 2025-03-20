@@ -1,8 +1,8 @@
-import { Page } from '@grafana-module/app/core/components/Page/Page';
-import { DataSourceAddButton } from '@grafana-module/app/features/datasources/components/DataSourceAddButton';
-import { DataSourcesList } from '@grafana-module/app/features/datasources/components/DataSourcesList';
-import { getDataSourcesCount } from '@grafana-module/app/features/datasources/state';
-import { StoreState, useSelector } from '@grafana-module/app/types';
+import { Page } from '~/core/components/Page/Page';
+import { DataSourceAddButton } from '~/features/datasources/components/DataSourceAddButton';
+import { DataSourcesList } from '~/features/datasources/components/DataSourcesList';
+import { getDataSourcesCount } from '~/features/datasources/state';
+import { StoreState, useSelector } from '~/types';
 
 export function DataSourcesListPage() {
   const dataSourcesCount = useSelector(({ dataSources }: StoreState) => getDataSourcesCount(dataSources));
