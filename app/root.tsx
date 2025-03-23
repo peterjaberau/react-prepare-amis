@@ -1,17 +1,13 @@
-import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "react-router";
-import type { Route } from "./+types/root"
-
-import stylesheet from "~/styles/styles.css?url";
+import type { LinksFunction } from "react-router";
+import { RootRoute } from "~/app/modules/root/route";
+import global from "@/styles/global.css?url";
+import npStyle from "nprogress/nprogress.css?url";
+import tailwind from "@/styles/tailwind.css?url";
+export { loader } from "~/app/modules/root/loader";
+export { ErrorBoundary } from "~/app/modules/root/error-boundary";
 
 
-export const links: Route.LinksFunction = () => [
+export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -22,54 +18,11 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
-  { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: global },
+  { rel: "stylesheet", href: tailwind },
+  { rel: "stylesheet", href: npStyle },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <Meta />
-        <Links />
-      </head>
-      <body className="min-h-screen bg-background font-sans antialiased">
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
-export default function App() {
-  return <Outlet />;
-}
-
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
-  let message = "Oops!";
-  let details = "An unexpected error occurred.";
-  let stack: string | undefined;
-
-  if (isRouteErrorResponse(error)) {
-    message = error.status === 404 ? "404" : "Error";
-    details = error.status === 404 ? "The requested page could not be found." : error.statusText || details;
-  } else if (import.meta.env.DEV && error && error instanceof Error) {
-    details = error.message;
-    stack = error.stack;
-  }
-
-  return (
-    <main className="container mx-auto p-4 pt-16">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full overflow-x-auto p-4">
-          <code>{stack}</code>
-        </pre>
-      )}
-    </main>
-  );
+export default function Root() {
+  return <RootRoute />;
 }

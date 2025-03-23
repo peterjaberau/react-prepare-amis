@@ -52,6 +52,12 @@ export default defineConfig(({ mode }) => {
     ],
 
     ssr: {
+      noExternal: [
+        "@ant-design/icons",
+        "@ant-design/pro-chat",
+        "@ant-design/pro-editor",
+        "react-intersection-observer",
+      ],
       resolve: {
         conditions: ["workerd", "worker", "browser"],
         externalConditions: ["workerd", "worker"],
@@ -187,7 +193,14 @@ export default defineConfig(({ mode }) => {
       ],
     },
     optimizeDeps: {
-      include: ["react-loading-skeleton", "primjs"],
+      include: [
+        "react-loading-skeleton",
+        "primjs",
+        "@ant-design/icons",
+        "@ant-design/pro-chat",
+        "@ant-design/pro-editor",
+        "react-intersection-observer",
+      ],
       exclude: [],
     },
     worker: {

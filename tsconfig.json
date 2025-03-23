@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "useDefineForClassFields": true,
-    "lib": ["es2020", "DOM", "DOM.Iterable", "ES6", "ES2015", "ES2021"],
+    "lib": ["es2020", "DOM", "DOM.Iterable", "ES6", "ES2015", "ES2021", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -71,19 +71,28 @@
   "include": [
     "app",
     "global.d.ts",
+    "declarations.d.ts",
     "env.d.ts",
+
     "**/*.ts",
     "**/*.tsx",
-    "app/**/*.ts",
-    "app/**/*.tsx",
-    "declarations.d.ts",
-    ".react-router/types/**/*",
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx",
+
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx",
+
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "./app/types/**/*.ts",
+
+    "**/.server/**/*.ts",
+    "**/.server/**/*.tsx",
+
+    "server/index.js",
+
     ".react-router/types/**/*",
-    "global.d.ts"
+    ".react-router/types/**/*.ts"
   ],
   "references": [
     {

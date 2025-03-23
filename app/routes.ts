@@ -1,4 +1,22 @@
 import { type RouteConfig, index, layout, route } from "@react-router/dev/routes"
+import { publicRoutes } from "./app/route"
+
+export const adminRoutes = []
+export const adminAuthRoutes = []
+
+// ======================================= route =======================================
+
+const routes = [...publicRoutes]
+
+// ======================================= export =======================================
+
+export default [
+  ...routes,
+  // route("/api/v1/*", "apis.server/index.ts"),
+] satisfies RouteConfig;
+
+
+/*
 
 export default [
   index("routes/index.tsx"),
@@ -24,7 +42,7 @@ export default [
       ])
     ]),
 
-/*
+
     route("ds", "features/datasource/datasources/index.tsx", [
 
       layout("features/datasource/editing/index.tsx", [
@@ -58,13 +76,13 @@ export default [
 
 
 
- */
+
   ]),
 
 
 
 
-  /*
+
 
   { path: "/", element: <HomePage /> },
 
@@ -130,9 +148,9 @@ export default [
 
 
 
-   */
 
-  /*
+
+
 
 route("pages/Root.tsx", "routes/Root.tsx", [
   route("pages/Home.tsx", "routes/Home.tsx"),
@@ -201,5 +219,6 @@ route("pages/Root.tsx", "routes/Root.tsx", [
   ]),
 
 
-*/
 ] satisfies RouteConfig
+
+*/

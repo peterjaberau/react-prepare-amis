@@ -1,5 +1,7 @@
+/// <reference types="@remix-run/node" />
 /// <reference types="node" />
 /// <reference types="jquery" />
+
 declare module "*.module.css";
 
 type CSSModuleClasses = { readonly [key: string]: string };
@@ -456,3 +458,15 @@ declare global {
         __grafanaBootData__?: any;
     }
 }
+
+
+declare module 'js-export-excel';
+declare module 'lax.js';
+
+declare global {
+    const __APP_INFO__: {
+        pkg: typeof packageJSON;
+        lastBuildTime: string;
+    };
+}
+
