@@ -1,4 +1,4 @@
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 
 import { ChannelValues, ReceiverFormValues } from '../../../types/receiver-form';
 

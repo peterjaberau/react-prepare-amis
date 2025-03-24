@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 import { PluginError, PluginType, unEscapeStringFromRegex } from '@data/index';
 import { reportInteraction } from '@runtime/index';

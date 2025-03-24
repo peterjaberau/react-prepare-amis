@@ -1,4 +1,4 @@
-import { cloneDeep, defaultsDeep, isArray, isEqual } from 'lodash';
+import { cloneDeep, defaultsDeep, isArray, isEqual } from 'lodash-es';
 import { v4 as uuidv4 } from 'uuid';
 
 import {

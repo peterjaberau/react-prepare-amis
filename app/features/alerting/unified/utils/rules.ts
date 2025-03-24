@@ -1,4 +1,4 @@
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 
 import { AlertState } from '@data/index';
 import { config } from '@runtime/index';

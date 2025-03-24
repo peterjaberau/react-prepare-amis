@@ -1,4 +1,4 @@
-import { identity, isEqual, sortBy } from 'lodash';
+import { identity, isEqual, sortBy } from 'lodash-es';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as React from 'react';
 

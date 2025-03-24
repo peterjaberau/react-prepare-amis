@@ -1,4 +1,4 @@
-import { pick } from 'lodash';
+import { pick } from 'lodash-es';
 
 import { openai } from '@grafana/llm';
 import { config } from '@runtime/index';

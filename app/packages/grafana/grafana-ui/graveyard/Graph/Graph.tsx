@@ -1,5 +1,5 @@
 // Libraries
-import { uniqBy } from 'lodash';
+import { uniqBy } from 'lodash-es';
 import { PureComponent } from 'react';
 import * as React from 'react';
 

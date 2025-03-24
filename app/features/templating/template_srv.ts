@@ -1,4 +1,4 @@
-import { escape, isString } from 'lodash';
+import { escape, isString } from 'lodash-es';
 
 import {
   deprecationWarning,

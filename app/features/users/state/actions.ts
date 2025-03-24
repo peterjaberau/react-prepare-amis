@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 import { getBackendSrv } from '@runtime/index';
 import { FetchDataArgs } from '@grafana-ui/index';

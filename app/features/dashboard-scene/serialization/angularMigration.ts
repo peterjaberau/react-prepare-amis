@@ -1,4 +1,4 @@
-import { defaults, cloneDeep } from 'lodash';
+import { defaults, cloneDeep } from 'lodash-es';
 
 import { PanelModel as PanelModelFromData, PanelPlugin } from '@data/index';
 import { autoMigrateAngular, PanelModel } from '~/features/dashboard/state/PanelModel';

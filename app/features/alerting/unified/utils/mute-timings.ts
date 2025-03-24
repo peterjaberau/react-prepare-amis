@@ -1,4 +1,4 @@
-import { isUndefined, omitBy } from 'lodash';
+import { isUndefined, omitBy } from 'lodash-es';
 
 import { MuteTimeInterval, TimeInterval, TimeRange } from '~/plugins/datasource/alertmanager/types';
 

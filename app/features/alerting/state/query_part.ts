@@ -1,4 +1,4 @@
-import { clone, each, map } from 'lodash';
+import { clone, each, map } from 'lodash-es';
 
 export class QueryPartDef {
   type: string;

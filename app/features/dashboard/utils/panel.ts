@@ -1,4 +1,4 @@
-import { isString as _isString } from 'lodash';
+import { isString as _isString } from 'lodash-es';
 
 import { TimeRange, AppEvents, rangeUtil, dateMath, PanelModel as IPanelModel, dateTimeAsMoment } from '@data/index';
 import { getTemplateSrv } from '@runtime/index';

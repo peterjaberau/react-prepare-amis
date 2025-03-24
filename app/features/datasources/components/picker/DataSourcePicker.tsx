@@ -3,7 +3,7 @@ import { autoUpdate, flip, offset, shift, size, useFloating } from '@floating-ui
 import { useDialog } from '@react-aria/dialog';
 import { FocusScope } from '@react-aria/focus';
 import { useOverlay } from '@react-aria/overlays';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import * as React from 'react';
 import { Observable } from 'rxjs';

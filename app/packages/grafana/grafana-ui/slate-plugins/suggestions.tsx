@@ -1,4 +1,4 @@
-import { debounce, sortBy } from 'lodash';
+import { debounce, sortBy } from 'lodash-es';
 import { Editor, Plugin as SlatePlugin } from 'slate-react';
 
 import { BootData } from '@data/index';

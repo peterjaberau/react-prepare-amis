@@ -10,7 +10,7 @@ import {
   Widgets,
 } from '@react-awesome-query-builder/ui';
 import { List } from 'immutable';
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 
 import { dateTime, toOption } from '@data/index';
 import { Button, DateTimePicker, Input, Select } from '@grafana-ui/index';

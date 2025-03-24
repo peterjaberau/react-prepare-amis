@@ -1,5 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/operationUtils.ts
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 import pluralize from 'pluralize';
 
 import { SelectableValue } from '@data/index';

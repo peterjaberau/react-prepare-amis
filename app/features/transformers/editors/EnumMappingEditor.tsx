@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { useEffect, useState } from 'react';
 
 import { DataFrame, EnumFieldConfig, GrafanaTheme2 } from '@data/index';

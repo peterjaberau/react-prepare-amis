@@ -1,5 +1,5 @@
 import { isNearMembraneProxy, ProxyTarget } from '@locker/near-membrane-shared';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import Prism from 'prismjs';
 
 import { CustomVariableSupport, DataSourceApi } from '@data/index';

@@ -1,5 +1,5 @@
 import ansicolor from 'ansicolor';
-import { groupBy, size } from 'lodash';
+import { groupBy, size } from 'lodash-es';
 import { from, isObservable, Observable } from 'rxjs';
 
 import {

@@ -1,4 +1,4 @@
-import { countBy, chain } from 'lodash';
+import { countBy, chain } from 'lodash-es';
 
 import {
   LogLevel,

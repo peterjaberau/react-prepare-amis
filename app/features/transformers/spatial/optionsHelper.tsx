@@ -1,4 +1,4 @@
-import { set, get as lodashGet } from 'lodash';
+import { set, get as lodashGet } from 'lodash-es';
 
 import { StandardEditorContext, TransformerUIProps, PanelOptionsEditorBuilder } from '@data/index';
 import { PanelOptionsSupplier } from '@data/panel/PanelPlugin';

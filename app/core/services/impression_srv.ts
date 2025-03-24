@@ -1,4 +1,4 @@
-import { filter, isArray, isNumber, isString } from 'lodash';
+import { filter, isArray, isNumber, isString } from 'lodash-es';
 
 import { getBackendSrv } from '@runtime/index';
 import config from '~/core/config';

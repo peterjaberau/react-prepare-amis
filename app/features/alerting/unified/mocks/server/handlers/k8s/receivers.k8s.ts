@@ -1,4 +1,4 @@
-import { camelCase } from 'lodash';
+import { camelCase } from 'lodash-es';
 import { HttpResponse, http } from 'msw';
 
 import { getAlertmanagerConfig } from '~/features/alerting/unified/mocks/server/entities/alertmanagers';

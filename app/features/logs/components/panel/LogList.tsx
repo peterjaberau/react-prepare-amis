@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { VariableSizeList } from 'react-window';
 

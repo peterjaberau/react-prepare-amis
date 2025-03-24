@@ -1,4 +1,4 @@
-import { isNumber, isFinite, escape } from 'lodash';
+import { isNumber, isFinite, escape } from 'lodash-es';
 
 import { DecimalCount, formattedValueToString, getValueFormat, stringToJsRegex, ValueFormatter } from '@data/index';
 

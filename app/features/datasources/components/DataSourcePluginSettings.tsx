@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import { createElement, PureComponent } from 'react';
 
 import { DataSourcePluginMeta, DataSourceSettings } from '@data/index';

@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { TypedVariableModel, VariableType } from '@data/index';
 import { locationService } from '@runtime/index';

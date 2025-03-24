@@ -1,5 +1,5 @@
 import { t } from 'i18next';
-import { isArray, negate } from 'lodash';
+import { isArray, negate } from 'lodash-es';
 import { ComponentProps, useCallback, useEffect, useRef, useState } from 'react';
 import * as React from 'react';
 import {

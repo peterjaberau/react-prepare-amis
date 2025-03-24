@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { useState, useCallback, useMemo } from 'react';
 
 import { t } from '../../utils/i18n';

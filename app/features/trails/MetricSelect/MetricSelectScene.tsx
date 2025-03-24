@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { debounce, isEqual } from 'lodash';
+import { debounce, isEqual } from 'lodash-es';
 import { SyntheticEvent, useReducer } from 'react';
 
 import { AdHocVariableFilter, GrafanaTheme2, RawTimeRange, SelectableValue } from '@data/index';

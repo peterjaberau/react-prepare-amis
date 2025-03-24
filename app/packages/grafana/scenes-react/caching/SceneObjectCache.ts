@@ -1,5 +1,5 @@
 import { SceneObject } from '@scenes/index';
-import { isPlainObject } from 'lodash';
+import { isPlainObject } from 'lodash-es';
 import { LRUCache } from 'lru-cache';
 
 export type CacheKey = CacheKeyPart | CacheKeyPart[];

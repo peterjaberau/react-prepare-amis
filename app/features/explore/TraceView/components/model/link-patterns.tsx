@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { uniq as _uniq } from 'lodash';
+import { uniq as _uniq } from 'lodash-es';
 import memoize from 'lru-memoize';
 
 import { Trace } from '../types';

@@ -1,5 +1,5 @@
 import * as H from 'history';
-import { pick } from 'lodash';
+import { pick } from 'lodash-es';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 
 import { reportInteraction } from '../analytics/utils';

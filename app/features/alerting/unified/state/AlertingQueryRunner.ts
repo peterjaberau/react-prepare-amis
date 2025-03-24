@@ -1,4 +1,4 @@
-import { reject } from 'lodash';
+import { reject } from 'lodash-es';
 import { Observable, OperatorFunction, ReplaySubject, Unsubscribable, of } from 'rxjs';
 import { catchError, map, share } from 'rxjs/operators';
 import { v4 as uuidv4 } from 'uuid';

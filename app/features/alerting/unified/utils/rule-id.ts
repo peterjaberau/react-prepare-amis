@@ -1,4 +1,4 @@
-import { nth } from 'lodash';
+import { nth } from 'lodash-es';
 
 import { locationService } from '@runtime/index';
 import {

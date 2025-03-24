@@ -1,4 +1,4 @@
-import { defaults } from 'lodash';
+import { defaults } from 'lodash-es';
 import { map } from 'rxjs/operators';
 
 import { getTimeField } from '../../dataframe/processDataFrame';

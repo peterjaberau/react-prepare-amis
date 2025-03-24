@@ -1,5 +1,5 @@
 import { AnyAction, createAction } from '@reduxjs/toolkit';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { NavIndex, NavModel, NavModelItem } from '@data/index';
 import config from '~/core/config';

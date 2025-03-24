@@ -1,4 +1,4 @@
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 
 import { config } from '@runtime/index';
 import { isExpressionQuery } from '~/features/expressions/guards';

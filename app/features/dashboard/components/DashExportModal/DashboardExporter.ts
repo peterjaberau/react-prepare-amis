@@ -1,4 +1,4 @@
-import { defaults, each, sortBy } from 'lodash';
+import { defaults, each, sortBy } from 'lodash-es';
 
 import { DataSourceRef, PanelPluginMeta, VariableOption, VariableRefresh } from '@data/index';
 import { getDataSourceSrv } from '@runtime/index';

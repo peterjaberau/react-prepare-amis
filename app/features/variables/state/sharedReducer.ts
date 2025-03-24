@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { cloneDeep, defaults as lodashDefaults } from 'lodash';
+import { cloneDeep, defaults as lodashDefaults } from 'lodash-es';
 
 import { LoadingState, VariableType, TypedVariableModel, VariableOption } from '@data/index';
 

@@ -3,7 +3,7 @@ import { QueryVariable as QueryVariableObject, SceneDataQuery } from '@scenes/in
 import { useSceneContext } from '../hooks/hooks';
 import { DataSourceRef, VariableRefresh, VariableSort } from '@schema/index';
 import { VariableProps } from './types';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 export interface QueryVariableProps extends VariableProps {
   query: string | SceneDataQuery;

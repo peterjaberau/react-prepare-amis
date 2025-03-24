@@ -1,4 +1,4 @@
-import { chain, identity } from 'lodash';
+import { chain, identity } from 'lodash-es';
 
 import { jsonDiff } from '~/features/dashboard-scene/settings/version-history/utils';
 

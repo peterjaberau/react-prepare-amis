@@ -1,6 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/components/LabelFilters.tsx
 import { css, cx } from '@emotion/css';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { useEffect, useState } from 'react';
 
 import { SelectableValue } from '@data/index';

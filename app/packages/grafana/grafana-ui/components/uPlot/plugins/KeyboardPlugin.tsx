@@ -1,4 +1,4 @@
-import { clamp } from 'lodash';
+import { clamp } from 'lodash-es';
 import { useLayoutEffect } from 'react';
 import uPlot from 'uplot';
 

@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 import { dateTimeFormatTimeAgo } from '@data/index';
 import { featureEnabled, getBackendSrv, isFetchError, locationService } from '@runtime/index';

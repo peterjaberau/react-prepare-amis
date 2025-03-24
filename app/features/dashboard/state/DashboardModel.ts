@@ -1,4 +1,4 @@
-import { cloneDeep, defaults as _defaults, filter, indexOf, isEqual, map, maxBy, pull } from 'lodash';
+import { cloneDeep, defaults as _defaults, filter, indexOf, isEqual, map, maxBy, pull } from 'lodash-es';
 import { Subscription } from 'rxjs';
 
 import {

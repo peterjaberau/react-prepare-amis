@@ -1,5 +1,5 @@
 import { AnyAction } from '@reduxjs/toolkit';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import { useMemo } from 'react';
 import * as React from 'react';
 

@@ -1,7 +1,7 @@
 import React, { ForwardRefExoticComponent, useImperativeHandle, useRef, useState } from 'react';
 import { useEffectOnce } from 'react-use';
 
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import { css } from '@emotion/css';
 import { useStyles2 } from '@grafana-ui/index';
 

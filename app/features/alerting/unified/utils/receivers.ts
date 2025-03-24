@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { GrafanaManagedReceiverConfig, Receiver } from '~/plugins/datasource/alertmanager/types';
 

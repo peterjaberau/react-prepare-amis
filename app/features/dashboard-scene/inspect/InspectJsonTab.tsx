@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import AutoSizer from 'react-virtualized-auto-sizer';
 
 import { SelectableValue } from '@data/index';

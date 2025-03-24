@@ -1,4 +1,4 @@
-import { isArray } from 'lodash';
+import { isArray } from 'lodash-es';
 import React, { RefCallback, useEffect, useMemo, useState } from 'react';
 import {
   Checkbox,

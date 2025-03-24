@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 
 import { GrafanaTheme2, SelectableValue } from '@data/index';
 

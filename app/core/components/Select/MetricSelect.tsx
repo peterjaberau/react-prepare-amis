@@ -1,4 +1,4 @@
-import { flatten } from 'lodash';
+import { flatten } from 'lodash-es';
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';

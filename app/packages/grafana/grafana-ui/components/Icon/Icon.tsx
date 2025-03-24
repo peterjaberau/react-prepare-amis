@@ -1,3 +1,4 @@
+
 import { css, cx } from '@emotion/css';
 import * as React from 'react';
 import SVG from 'react-inlinesvg';
@@ -59,6 +60,7 @@ export const Icon = React.forwardRef<SVGElement, IconProps>(
     const svgWid = name.startsWith('gf-bar-align') ? 16 : name.startsWith('gf-interp') ? 30 : svgSize;
     const subDir = getIconSubDir(iconName, type);
     const svgPath = `${iconRoot}${subDir}/${iconName}.svg`;
+
 
     const composedClassName = cx(
       styles.icon,

@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { locationService } from '@runtime/index';
 import { Alert, LoadingPlaceholder } from '@grafana-ui/index';

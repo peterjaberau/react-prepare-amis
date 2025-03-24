@@ -1,4 +1,4 @@
-import { compact } from 'lodash';
+import { compact } from 'lodash-es';
 import { Suspense, lazy } from 'react';
 
 import { Button, LoadingPlaceholder, Stack, Text } from '@grafana-ui/index';

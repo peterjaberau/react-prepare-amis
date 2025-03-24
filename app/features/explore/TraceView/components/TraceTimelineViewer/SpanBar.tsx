@@ -14,7 +14,7 @@
 
 import { css } from '@emotion/css';
 import cx from 'classnames';
-import { groupBy as _groupBy } from 'lodash';
+import { groupBy as _groupBy } from 'lodash-es';
 import { useState } from 'react';
 import * as React from 'react';
 

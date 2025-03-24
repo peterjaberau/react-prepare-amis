@@ -1,6 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/QueryPatternsModal.tsx
 import { css } from '@emotion/css';
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 import { useMemo, useState } from 'react';
 
 import { CoreApp, DataQuery, getNextRefId, GrafanaTheme2 } from '@data/index';

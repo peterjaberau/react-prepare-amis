@@ -1,4 +1,4 @@
-import { isEmpty, isObject, mapValues, omitBy } from 'lodash';
+import { isEmpty, isObject, mapValues, omitBy } from 'lodash-es';
 
 import { ExploreUrlState, toURLRange } from '@data/index';
 import { clearQueryKeys } from '~/core/utils/explore';

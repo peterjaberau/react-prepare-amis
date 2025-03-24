@@ -1,4 +1,4 @@
-import { xor } from 'lodash';
+import { xor } from 'lodash-es';
 
 import {
   DataFrame,

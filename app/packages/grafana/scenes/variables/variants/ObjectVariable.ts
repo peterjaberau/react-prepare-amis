@@ -1,4 +1,4 @@
-import { property } from 'lodash';
+import { property } from 'lodash-es';
 
 import { SceneObjectBase } from '../../core/SceneObjectBase';
 import { SceneVariable, SceneVariableState, VariableValue } from '../types';

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { SceneDataQuery, SceneQueryRunner } from '@scenes/index';
 import { DataSourceRef } from '@schema/index';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { CacheKey } from '../caching/SceneObjectCache';
 import { useSceneObject } from './useSceneObject';
 

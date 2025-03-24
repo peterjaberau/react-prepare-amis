@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import { PureComponent } from 'react';
 
 import { DataSourceSettings } from '@data/index';

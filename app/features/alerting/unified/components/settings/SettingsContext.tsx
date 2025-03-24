@@ -1,4 +1,4 @@
-import { debounce, union, without } from 'lodash';
+import { debounce, union, without } from 'lodash-es';
 import { PropsWithChildren, createContext, useContext, useEffect, useRef } from 'react';
 
 import { AppEvents } from '@data/index';

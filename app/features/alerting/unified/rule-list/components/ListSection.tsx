@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 import { PropsWithChildren, ReactNode } from 'react';
 import { useToggle } from 'react-use';
 

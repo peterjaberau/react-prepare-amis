@@ -1,4 +1,4 @@
-import { defaults, isEqual } from 'lodash';
+import { defaults, isEqual } from 'lodash-es';
 
 import { isEmptyObject, ScopedVars, TimeRange } from '@data/index';
 import {

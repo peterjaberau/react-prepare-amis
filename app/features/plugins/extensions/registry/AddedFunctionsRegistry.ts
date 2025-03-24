@@ -1,4 +1,4 @@
-import { isFunction } from 'lodash';
+import { isFunction } from 'lodash-es';
 import { ReplaySubject } from 'rxjs';
 
 import { PluginExtensionAddedFunctionConfig } from '@data/index';

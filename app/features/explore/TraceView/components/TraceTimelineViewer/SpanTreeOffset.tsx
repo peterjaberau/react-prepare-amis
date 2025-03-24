@@ -14,7 +14,7 @@
 
 import { css } from '@emotion/css';
 import cx from 'classnames';
-import { get as _get } from 'lodash';
+import { get as _get } from 'lodash-es';
 import * as React from 'react';
 
 import { GrafanaTheme2 } from '@data/index';

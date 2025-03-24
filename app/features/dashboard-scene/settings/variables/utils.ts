@@ -1,4 +1,4 @@
-import { chain } from 'lodash';
+import { chain } from 'lodash-es';
 
 import { DataSourceInstanceSettings, SelectableValue } from '@data/index';
 import { config, getDataSourceSrv } from '@runtime/index';

@@ -1,4 +1,4 @@
-import { omitBy } from 'lodash';
+import { omitBy } from 'lodash-es';
 
 import { deprecationWarning } from '@data/index';
 import { BackendSrvRequest } from '@runtime/index';

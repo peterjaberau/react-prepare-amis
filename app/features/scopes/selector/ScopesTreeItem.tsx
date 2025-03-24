@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { Dictionary } from 'lodash';
+import { Dictionary } from 'lodash-es';
 
 import { GrafanaTheme2 } from '@data/index';
 import { Checkbox, Icon, RadioButtonDot, ScrollContainer, useStyles2 } from '@grafana-ui/index';

@@ -1,4 +1,4 @@
-import { isArray, isEqual } from 'lodash';
+import { isArray, isEqual } from 'lodash-es';
 
 import {
   LegacyMetricFindQueryOptions,

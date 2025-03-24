@@ -5,7 +5,7 @@
  * Please keep the references to other files here to a minimum, if we reference a file that uses GrafanaBootData from `window` the worker will fail to load.
  */
 
-import { chain, compact } from 'lodash';
+import { chain, compact } from 'lodash-es';
 
 import { parseFlags } from '@data/index';
 import { Matcher, MatcherOperator, ObjectMatcher, Route } from '~/plugins/datasource/alertmanager/types';

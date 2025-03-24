@@ -9,7 +9,7 @@ import { MultiValueVariable, MultiValueVariableState, VariableGetOptionsArgs } f
 import { from, lastValueFrom, map, mergeMap, Observable, of, take, tap } from 'rxjs';
 import { getDataSource } from '../../utils/getDataSource';
 import { InputActionMeta, MultiSelect, Select } from '@grafana-ui/index';
-import { isArray } from 'lodash';
+import { isArray } from 'lodash-es';
 import { dataFromResponse, getQueriesForVariables, handleOptionGroups, responseHasError } from '../utils';
 import { OptionWithCheckbox } from '../components/VariableValueSelect';
 import { GroupByVariableUrlSyncHandler } from './GroupByVariableUrlSyncHandler';

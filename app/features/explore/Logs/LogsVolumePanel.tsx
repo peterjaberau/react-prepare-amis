@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { identity } from 'lodash';
+import { identity } from 'lodash-es';
 import * as React from 'react';
 
 import {

@@ -1,5 +1,5 @@
 import * as H from 'history';
-import { find } from 'lodash';
+import { find } from 'lodash-es';
 import { memo, useContext, useEffect, useState } from 'react';
 
 import { locationService } from '@runtime/index';

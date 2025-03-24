@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { useCallback, useMemo } from 'react';
 
 import { SelectableValue } from '@data/index';

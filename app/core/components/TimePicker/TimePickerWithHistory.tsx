@@ -1,4 +1,4 @@
-import { uniqBy } from 'lodash';
+import { uniqBy } from 'lodash-es';
 
 import { AppEvents, TimeRange, isDateTime, rangeUtil } from '@data/index';
 import { TimeRangePickerProps, TimeRangePicker } from '@grafana-ui/index';

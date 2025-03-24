@@ -1,8 +1,10 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
-import { reactRouter } from "@react-router/dev/vite";
+// import { reactRouter } from "@react-router/dev/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import prism from 'vite-plugin-prismjs';
+// import tailwindcss from 'tailwindcss';
+// import autoprefixer from 'autoprefixer';
 
 import { sessionContextPlugin } from "session-context/vite";
 import path from "path";
@@ -20,9 +22,17 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   process.env = { ...process.env, ...env };
 
+  // @ts-ignore
   return {
     plugins: [
-      reactRouter(),
+      react({
+        babel: {
+          parserOpts: {
+            plugins: ["decorators-legacy", "classProperties"],
+          },
+        },
+      }),
+      // reactRouter(),
       tsconfigPaths(),
       sessionContextPlugin(),
       prism({
@@ -31,15 +41,11 @@ export default defineConfig(({ mode }) => {
         theme: 'tomorrow',
         css: true,
       }),
-      // react({
-      //   babel: {
-      //     parserOpts: {
-      //       plugins: ["decorators-legacy", "classProperties"],
-      //     },
-      //   },
-      // }),
+
 
       svgr({
+        // @ts-ignore
+        exportAsDefault: true,
         svgrOptions: {
           svgProps: {
             className: "icon",
@@ -50,6 +56,12 @@ export default defineConfig(({ mode }) => {
       }),
       monacoEditorPluginDefault({}),
     ],
+
+    // css: {
+    //   postcss: {
+    //     plugins: [tailwindcss, autoprefixer],
+    //   },
+    // },
 
     ssr: {
       noExternal: [
@@ -67,7 +79,9 @@ export default defineConfig(({ mode }) => {
     resolve: {
       mainFields: ["webpack", "browser", "module", "main"],
       alias: [
+        // { find: "@", replacement: path.resolve(__dirname, "src") },
         { find: "~", replacement: path.resolve(__dirname, "./app") },
+        // { find: "@elastic/eui$", replacement: "@elastic/eui/optimize/lib" },
 
         {
           find: "@scenes",
@@ -160,17 +174,17 @@ export default defineConfig(({ mode }) => {
             "node_modules/react-loading-skeleton/dist",
           ),
         },
-        {
-          find: "@grafana/ui",
-          replacement: path.resolve(
-            __dirname,
-            "app/packages/grafana/grafana-ui",
-          ),
-        },
-        {
-          find: "@grafana/data",
-          replacement: path.resolve(__dirname, "app/packages/grafana/data"),
-        },
+        // {
+        //   find: "@grafana/ui",
+        //   replacement: path.resolve(
+        //     __dirname,
+        //     "app/packages/grafana/.client/grafana-ui",
+        //   ),
+        // },
+        // {
+        //   find: "@grafana/data",
+        //   replacement: path.resolve(__dirname, "app/packages/grafana/data"),
+        // },
         {
           find: "@grafana/schema",
           replacement: path.resolve(__dirname, "app/packages/grafana/schema"),
@@ -212,6 +226,9 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         external: [],
       },
+      // dynamicImportVarsOptions: {
+      //   exclude: [],
+      // },
     },
 
     server: {

@@ -12,7 +12,7 @@ import { isSceneObject, SceneComponentProps, SceneLayout, SceneObject } from '..
 
 import { VizPanel } from './VizPanel';
 import { css, cx } from '@emotion/css';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { VizPanelSeriesLimit } from './VizPanelSeriesLimit';
 
 export function VizPanelRenderer({ model }: SceneComponentProps<VizPanel>) {

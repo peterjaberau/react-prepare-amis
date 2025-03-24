@@ -1,5 +1,5 @@
 // Libraries
-import { isString, map as isArray } from 'lodash';
+import { isString, map as isArray } from 'lodash-es';
 import { from, merge, Observable, of, timer } from 'rxjs';
 import { catchError, map, mapTo, mergeMap, share, takeUntil, tap } from 'rxjs/operators';
 

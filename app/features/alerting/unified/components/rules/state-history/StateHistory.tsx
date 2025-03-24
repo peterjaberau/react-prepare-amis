@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { groupBy } from 'lodash';
+import { groupBy } from 'lodash-es';
 import { FormEvent, useCallback, useState } from 'react';
 import * as React from 'react';
 

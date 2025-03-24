@@ -1,4 +1,4 @@
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 
 import { SafeDynamicImport } from '~/core/components/DynamicImports/SafeDynamicImport';
 import { config } from '~/core/config';

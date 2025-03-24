@@ -1,4 +1,4 @@
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 
 import { AnnotationQuery } from '@data/index';
 import { config } from '@runtime/index';

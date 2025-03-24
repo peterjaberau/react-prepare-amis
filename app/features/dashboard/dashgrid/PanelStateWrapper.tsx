@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { PureComponent } from 'react';
 import { Subscription } from 'rxjs';
 

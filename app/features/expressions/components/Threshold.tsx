@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { AnyAction } from '@reduxjs/toolkit';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import * as React from 'react';
 import { FormEvent, useEffect, useReducer } from 'react';
 

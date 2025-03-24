@@ -1,4 +1,4 @@
-import { extend } from 'lodash';
+import { extend } from 'lodash-es';
 import { PureComponent } from 'react';
 
 import { AppEvents, PluginMeta, DataSourceApi } from '@data/index';

@@ -1,4 +1,4 @@
-import { chain, cloneDeep, defaults, find } from 'lodash';
+import { chain, cloneDeep, defaults, find } from 'lodash-es';
 
 import { PanelPluginMeta } from '@data/index';
 import { locationService } from '@runtime/index';

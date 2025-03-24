@@ -1,5 +1,5 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
-import { remove, toArray, unset } from 'lodash';
+import { remove, toArray, unset } from 'lodash-es';
 
 import { AlertManagerCortexConfig } from '~/plugins/datasource/alertmanager/types';
 

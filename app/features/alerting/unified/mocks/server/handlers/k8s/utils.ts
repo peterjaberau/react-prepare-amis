@@ -1,4 +1,4 @@
-import { chain, filter, matchesProperty, trim } from 'lodash';
+import { chain, filter, matchesProperty, trim } from 'lodash-es';
 
 /**
  * Filters a list of k8s items by a selector string

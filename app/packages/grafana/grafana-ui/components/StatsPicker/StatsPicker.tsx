@@ -1,4 +1,4 @@
-import { difference } from 'lodash';
+import { difference } from 'lodash-es';
 import { PureComponent } from 'react';
 
 import { fieldReducers, SelectableValue, FieldReducerInfo } from '@data/index';

@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { Labels } from '../../../../types/unified-alerting-dto';
 import { Label } from '../components/rules/state-history/common';

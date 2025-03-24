@@ -1,4 +1,4 @@
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import React, { useCallback } from 'react';
 
 import { type SelectableValue, toOption } from '@data/index';

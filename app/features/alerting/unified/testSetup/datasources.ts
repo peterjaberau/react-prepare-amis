@@ -1,4 +1,4 @@
-import { keyBy } from 'lodash';
+import { keyBy } from 'lodash-es';
 
 import { DataSourceInstanceSettings } from '@data/index';
 import { config, setDataSourceSrv } from '@runtime/index';

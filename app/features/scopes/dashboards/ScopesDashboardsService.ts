@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { finalize, from } from 'rxjs';
 
 import { ScopeDashboardBinding } from '@data/index';

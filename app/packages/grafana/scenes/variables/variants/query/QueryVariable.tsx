@@ -25,7 +25,7 @@ import { getDataSource } from '../../../utils/getDataSource';
 import { safeStringifyValue } from '../../utils';
 import { DataQuery, DataSourceRef } from '@schema/index';
 import { SEARCH_FILTER_VARIABLE } from '../../constants';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { registerQueryWithController } from '../../../querying/registerQueryWithController';
 import { wrapInSafeSerializableSceneObject } from '../../../utils/wrapInSafeSerializableSceneObject';
 

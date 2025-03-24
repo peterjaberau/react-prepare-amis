@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { keyBy, startCase, uniqueId } from 'lodash';
+import { keyBy, startCase, uniqueId } from 'lodash-es';
 import * as React from 'react';
 
 import { DataSourceInstanceSettings, DataSourceRef, GrafanaTheme2, PanelData, urlUtil } from '@data/index';

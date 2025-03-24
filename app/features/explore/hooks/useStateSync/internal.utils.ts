@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 import { CoreApp, DataSourceApi, ExploreUrlState, isTruthy } from '@data/index';
 import { DataQuery, DataSourceRef } from '@schema/index';

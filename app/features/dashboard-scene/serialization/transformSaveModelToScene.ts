@@ -1,4 +1,4 @@
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 
 import { DataFrameDTO, DataFrameJSON } from '@data/index';
 import { config, logMeasurement, reportInteraction } from '@runtime/index';

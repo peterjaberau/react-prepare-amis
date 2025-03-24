@@ -1,4 +1,4 @@
-﻿import { isArray, isPlainObject } from 'lodash';
+﻿import { isArray, isPlainObject } from 'lodash-es';
 
 /** @returns a deep clone of the object, but with any null value removed */
 export function sortedDeepCloneWithoutNulls<T>(value: T): T {

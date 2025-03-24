@@ -1,5 +1,5 @@
 import { SpanStatusCode } from '@opentelemetry/api';
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 
 import { Trace } from '../components';
 import {

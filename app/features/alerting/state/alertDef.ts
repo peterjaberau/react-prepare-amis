@@ -1,4 +1,4 @@
-import { isArray, reduce } from 'lodash';
+import { isArray, reduce } from 'lodash-es';
 
 import { IconName } from '@grafana-ui/index';
 import { QueryPart, QueryPartDef } from '~/features/alerting/state/query_part';

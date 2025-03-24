@@ -1,4 +1,4 @@
-import { sortBy } from 'lodash';
+import { sortBy } from 'lodash-es';
 
 import { Labels, UrlQueryMap } from '@data/index';
 import { GrafanaEdition } from '@data/types/config';

@@ -1,5 +1,5 @@
 import { OutlierDetector, OutlierOutput } from '@bsull/augurs/outlier';
-import { memoize } from 'lodash';
+import { memoize } from 'lodash-es';
 
 import { DataFrame, doStandardCalcs, fieldReducers, FieldType, outerJoinDataFrames, ReducerID } from '@data/index';
 

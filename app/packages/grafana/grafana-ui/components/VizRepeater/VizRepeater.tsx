@@ -1,4 +1,4 @@
-import { clamp } from 'lodash';
+import { clamp } from 'lodash-es';
 import { PureComponent, CSSProperties } from 'react';
 import * as React from 'react';
 

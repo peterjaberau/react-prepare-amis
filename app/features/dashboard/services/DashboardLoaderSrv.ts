@@ -1,4 +1,4 @@
-import _, { isFunction } from 'lodash'; // eslint-disable-line lodash/import-scope
+import _, { isFunction } from 'lodash-es'; // eslint-disable-line lodash/import-scope
 import moment from 'moment'; // eslint-disable-line no-restricted-imports
 
 import { AppEvents, dateMath, UrlQueryMap, UrlQueryValue } from '@data/index';

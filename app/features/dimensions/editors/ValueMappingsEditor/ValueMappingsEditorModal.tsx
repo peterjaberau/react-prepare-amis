@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import { useEffect, useState } from 'react';
 
 import { GrafanaTheme2, MappingType, SelectableValue, SpecialValueMatch, ValueMapping } from '@data/index';

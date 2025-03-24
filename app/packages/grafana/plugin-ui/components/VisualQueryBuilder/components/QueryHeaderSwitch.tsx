@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import React, { type HTMLProps, useRef } from 'react';
 
 import { type GrafanaTheme2 } from '@data/index';

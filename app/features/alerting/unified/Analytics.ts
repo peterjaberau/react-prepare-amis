@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { createMonitoringLogger } from '@runtime/index';
 import { config, reportInteraction } from '@runtime/index';

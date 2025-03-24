@@ -1,5 +1,5 @@
 import { BaseQueryFn, createApi, defaultSerializeQueryArgs } from '@reduxjs/toolkit/query/react';
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 import { lastValueFrom } from 'rxjs';
 
 import { AppEvents } from '@data/index';

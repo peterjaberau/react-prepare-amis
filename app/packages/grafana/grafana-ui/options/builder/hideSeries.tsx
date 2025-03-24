@@ -1,4 +1,4 @@
-import { startCase } from 'lodash';
+import { startCase } from 'lodash-es';
 import { useCallback } from 'react';
 
 import { FieldConfigEditorBuilder, StandardEditorProps } from '@data/index';

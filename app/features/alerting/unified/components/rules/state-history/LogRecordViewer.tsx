@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { formatDistanceToNowStrict } from 'date-fns';
-import { groupBy, uniqueId } from 'lodash';
+import { groupBy, uniqueId } from 'lodash-es';
 import { Fragment, memo, useEffect } from 'react';
 
 import { GrafanaTheme2, dateTimeFormat } from '@data/index';

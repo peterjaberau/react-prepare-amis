@@ -1,4 +1,4 @@
-import { debounce, trim } from 'lodash';
+import { debounce, trim } from 'lodash-es';
 
 import { isEmptyObject, containsSearchFilter, VariableWithOptions, VariableOption } from '@data/index';
 import { StoreState, ThunkDispatch, ThunkResult } from '~/types';

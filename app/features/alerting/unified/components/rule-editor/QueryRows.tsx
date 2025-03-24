@@ -1,5 +1,5 @@
 import { DragDropContext, DropResult, Droppable } from '@hello-pangea/dnd';
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 import { PureComponent, useState } from 'react';
 
 import {

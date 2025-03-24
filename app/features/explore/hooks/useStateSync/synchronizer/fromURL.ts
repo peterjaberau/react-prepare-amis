@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 import { EventBusSrv } from '@data/index';
 import { changeDatasource } from '~/features/explore/state/datasource';

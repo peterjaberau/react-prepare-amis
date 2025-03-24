@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { omit } from 'lodash';
+import { omit } from 'lodash-es';
 import moment from 'moment';
 import { useState } from 'react';
 

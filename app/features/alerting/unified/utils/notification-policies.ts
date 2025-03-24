@@ -1,4 +1,4 @@
-import { isArray, pick, reduce } from 'lodash';
+import { isArray, pick, reduce } from 'lodash-es';
 
 import { AlertmanagerGroup, ObjectMatcher, Route, RouteWithID } from '~/plugins/datasource/alertmanager/types';
 import { Labels } from '~/types/unified-alerting-dto';

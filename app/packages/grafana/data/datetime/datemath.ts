@@ -1,4 +1,4 @@
-import { isDate } from 'lodash';
+import { isDate } from 'lodash-es';
 
 import { TimeZone } from '@schema/index';
 

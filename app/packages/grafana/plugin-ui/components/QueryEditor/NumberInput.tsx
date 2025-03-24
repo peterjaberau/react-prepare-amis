@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import React, { PureComponent } from 'react';
 
 import { Field, Input } from '@grafana-ui/index';

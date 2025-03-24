@@ -1,4 +1,4 @@
-import { partition } from 'lodash';
+import { partition } from 'lodash-es';
 
 import { DataFrame, Field, FieldWithIndex, LinkModel, LogRowModel } from '@data/index';
 import { safeStringifyValue } from '~/core/utils/explore';

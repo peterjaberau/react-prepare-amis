@@ -1,4 +1,4 @@
-import { isArray, map, replace } from 'lodash';
+import { isArray, map, replace } from 'lodash-es';
 
 import { dateTime, Registry, RegistryItem, textUtil, escapeRegex, urlUtil } from '@data/index';
 import { VariableType, VariableFormatID } from '@schema/index';

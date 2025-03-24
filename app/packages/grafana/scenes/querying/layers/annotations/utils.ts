@@ -4,7 +4,7 @@
 
 import { AnnotationEvent, AnnotationQuery, DataSourceApi } from '@data/index';
 import { config } from '@runtime/index';
-import { cloneDeep, concat, every, find, groupBy, head, map, partition } from 'lodash';
+import { cloneDeep, concat, every, find, groupBy, head, map, partition } from 'lodash-es';
 
 const legacyRunner = [
   'prometheus',

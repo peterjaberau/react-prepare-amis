@@ -1,4 +1,4 @@
-import { find, isEqual, omit } from 'lodash';
+import { find, isEqual, omit } from 'lodash-es';
 
 import { DataQuery, SelectableValue } from '@data/index';
 import { RichHistorySearchFilters, RichHistorySettings } from '~/core/utils/richHistory';

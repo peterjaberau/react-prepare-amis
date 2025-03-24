@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { encodeMatcher } from '~/features/alerting/unified/utils/matchers';
 import { dispatch } from '~/store/store';

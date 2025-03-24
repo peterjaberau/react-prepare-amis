@@ -1,4 +1,4 @@
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { FormEvent } from 'react';
 
 import { locationService } from '@runtime/index';

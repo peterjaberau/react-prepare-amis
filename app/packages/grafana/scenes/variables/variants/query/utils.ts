@@ -1,4 +1,4 @@
-import { isNumber, sortBy, toLower, uniqBy } from 'lodash';
+import { isNumber, sortBy, toLower, uniqBy } from 'lodash-es';
 
 import { stringToJsRegex, VariableSort } from '@data/index';
 

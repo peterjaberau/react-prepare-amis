@@ -1,7 +1,7 @@
 import { QueryVariable, SceneDataQuery, sceneGraph } from '@scenes/index';
 import { useSceneContext } from './hooks';
 import { useEffect } from 'react';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 interface QueryVariableOptions {
   name: string;

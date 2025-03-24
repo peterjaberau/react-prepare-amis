@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { isString, uniqueId } from 'lodash';
+import { isString, uniqueId } from 'lodash-es';
 import { ReactNode, useCallback, useState } from 'react';
 import { Accept, DropEvent, DropzoneOptions, FileError, FileRejection, useDropzone, ErrorCode } from 'react-dropzone';
 

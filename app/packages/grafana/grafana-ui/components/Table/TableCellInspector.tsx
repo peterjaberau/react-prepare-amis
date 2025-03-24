@@ -1,4 +1,4 @@
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 import { useState } from 'react';
 
 import { Trans } from '../../utils/i18n';

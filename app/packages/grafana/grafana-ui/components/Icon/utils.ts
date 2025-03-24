@@ -1,3 +1,5 @@
+import path from "path";
+
 import { IconName, IconSize, IconType } from '../../types/icon';
 
 const alwaysMonoIcons: IconName[] = [
@@ -52,11 +54,15 @@ export function getIconRoot(): string {
   }
 
   const grafanaPublicPath = typeof window !== 'undefined' && window.__grafana_public_path__;
+
   if (grafanaPublicPath) {
     iconRoot = grafanaPublicPath + 'img/icons/';
   } else {
-    iconRoot = 'public/img/icons/';
+    iconRoot = '/img/icons/';
   }
+
+  iconRoot = 'app/packages/grafana/icons/img/icons/'
+
 
   return iconRoot;
 }

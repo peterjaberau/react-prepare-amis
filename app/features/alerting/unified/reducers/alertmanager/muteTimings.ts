@@ -1,5 +1,5 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
-import { remove } from 'lodash';
+import { remove } from 'lodash-es';
 
 import { AlertManagerCortexConfig, MuteTimeInterval } from '~/plugins/datasource/alertmanager/types';
 

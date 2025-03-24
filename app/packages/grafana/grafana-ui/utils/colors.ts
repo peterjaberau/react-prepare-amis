@@ -1,4 +1,4 @@
-import { map, sortBy, flattenDeep, chunk, zip } from 'lodash';
+import { map, sortBy, flattenDeep, chunk, zip } from 'lodash-es';
 import tinycolor from 'tinycolor2';
 
 const PALETTE_ROWS = 4;

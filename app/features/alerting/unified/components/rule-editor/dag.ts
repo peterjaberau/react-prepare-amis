@@ -1,4 +1,4 @@
-import { compact, memoize, reject, uniq } from 'lodash';
+import { compact, memoize, reject, uniq } from 'lodash-es';
 
 import { Edge, Graph, Node } from '~/core/utils/dag';
 import { isExpressionQuery } from '~/features/expressions/guards';

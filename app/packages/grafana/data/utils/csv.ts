@@ -1,5 +1,5 @@
 // Libraries
-import { defaults } from 'lodash';
+import { defaults } from 'lodash-es';
 import Papa, { ParseConfig, Parser, ParseResult } from 'papaparse';
 
 // Types

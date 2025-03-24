@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { GrafanaTheme2, NavModelItem } from '@data/index';
 import { Menu, MenuItem, useStyles2 } from '@grafana-ui/index';

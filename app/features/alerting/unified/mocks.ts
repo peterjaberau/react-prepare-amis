@@ -1,5 +1,5 @@
 import { produce } from 'immer';
-import { isEmpty, pick } from 'lodash';
+import { isEmpty, pick } from 'lodash-es';
 
 import {
   DataSourceInstanceSettings,

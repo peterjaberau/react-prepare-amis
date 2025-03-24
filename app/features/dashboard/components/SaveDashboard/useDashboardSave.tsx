@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import { useAsyncFn } from 'react-use';
 
 import { locationUtil } from '@data/index';

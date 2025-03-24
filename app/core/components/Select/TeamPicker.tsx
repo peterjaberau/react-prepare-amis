@@ -1,5 +1,5 @@
 import debounce from 'debounce-promise';
-import { isNil } from 'lodash';
+import { isNil } from 'lodash-es';
 import { Component } from 'react';
 
 import { SelectableValue } from '@data/index';

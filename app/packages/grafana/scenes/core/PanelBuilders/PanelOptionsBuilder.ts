@@ -1,4 +1,4 @@
-import { cloneDeep, merge } from 'lodash';
+import { cloneDeep, merge } from 'lodash-es';
 import { DeepPartial } from '../types';
 
 export class PanelOptionsBuilder<TOptions extends {} = {}> {

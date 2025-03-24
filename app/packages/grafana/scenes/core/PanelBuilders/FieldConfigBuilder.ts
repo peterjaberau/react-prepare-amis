@@ -1,5 +1,5 @@
 import { FieldConfigSource } from '@data/index';
-import { cloneDeep, merge } from 'lodash';
+import { cloneDeep, merge } from 'lodash-es';
 import { DeepPartial } from '../types';
 import { FieldConfigOverridesBuilder } from './FieldConfigOverridesBuilder';
 import { StandardFieldConfig, StandardFieldConfigInterface } from './types';

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { find as _find, get as _get } from 'lodash';
+import { find as _find, get as _get } from 'lodash-es';
 
 import { TNil, TraceSpan } from '../types';
 

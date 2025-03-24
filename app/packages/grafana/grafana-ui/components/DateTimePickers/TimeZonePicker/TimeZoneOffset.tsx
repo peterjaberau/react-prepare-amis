@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 
 import { GrafanaTheme2, TimeZone, dateTimeFormat } from '@data/index';
 

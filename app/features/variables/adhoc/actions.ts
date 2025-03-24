@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { AdHocVariableFilter, AdHocVariableModel, DataSourceRef } from '@data/index';
 import { getDatasourceSrv } from '~/features/plugins/datasource_srv';

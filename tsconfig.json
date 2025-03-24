@@ -31,7 +31,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["app/*"],
+//      "@/*": ["src/*"],
       "@scenes/*": ["app/packages/grafana/scenes/*"],
       "@schema/*": ["app/packages/grafana/schema/*"],
       "@data/*": ["app/packages/grafana/data/*"],
@@ -52,7 +52,7 @@
 
 //      plugin-configs
     },
-    "rootDirs": [".", "./.react-router/types"],
+//    "rootDirs": [".", "./.react-router/types"],
     "allowSyntheticDefaultImports": true,
 
 
@@ -72,6 +72,8 @@
     "app",
     "global.d.ts",
     "declarations.d.ts",
+    "app/assets.d.ts",
+    "icons.d.ts",
     "env.d.ts",
 
     "**/*.ts",
@@ -79,20 +81,20 @@
     "**/*.ts",
     "**/*.tsx",
 
-    "**/.client/**/*.ts",
-    "**/.client/**/*.tsx",
+//    "**/.client/**/*.ts",
+//    "**/.client/**/*.tsx",
 
     "app/**/*.ts",
     "app/**/*.tsx",
     "./app/types/**/*.ts",
 
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
+//    "**/.server/**/*.ts",
+//    "**/.server/**/*.tsx",
+//
+//    "server/index.js",
 
-    "server/index.js",
-
-    ".react-router/types/**/*",
-    ".react-router/types/**/*.ts"
+//    ".react-router/types/**/*",
+//    ".react-router/types/**/*.ts"
   ],
   "references": [
     {

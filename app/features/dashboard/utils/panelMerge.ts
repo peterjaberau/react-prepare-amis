@@ -1,4 +1,4 @@
-import { isEqualWith } from 'lodash';
+import { isEqualWith } from 'lodash-es';
 
 import { PanelModel as IPanelModel } from '@data/index';
 

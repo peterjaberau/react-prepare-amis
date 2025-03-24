@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 import * as React from 'react';
 
 import { GrafanaTheme2, PluginSignatureType } from '@data/index';

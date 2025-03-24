@@ -1,5 +1,5 @@
 import { Factory } from 'fishery';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 
 import { DataSourceInstanceSettings, PluginType } from '@data/index';
 import { config } from '@runtime/index';

@@ -1,6 +1,6 @@
 // Libraries
 import { css } from '@emotion/css';
-import { cloneDeep, extend } from 'lodash';
+import { cloneDeep, extend } from 'lodash-es';
 import { PureComponent } from 'react';
 
 import { PluginMeta, AppPlugin, deprecationWarning } from '@data/index';

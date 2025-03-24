@@ -1,4 +1,4 @@
-import { concat, every, find, groupBy, head, map, partition } from 'lodash';
+import { concat, every, find, groupBy, head, map, partition } from 'lodash-es';
 
 export function dedupAnnotations(annotations: any) {
   let dedup = [];

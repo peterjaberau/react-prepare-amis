@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 
 import { FetchError, isFetchError } from '@runtime/index';
 import { t } from '~/core/internationalization';

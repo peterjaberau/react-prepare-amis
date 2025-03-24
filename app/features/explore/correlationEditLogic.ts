@@ -1,4 +1,4 @@
-import { template } from 'lodash';
+import { template } from 'lodash-es';
 
 import { CORRELATION_EDITOR_POST_CONFIRM_ACTION } from '~/types';
 

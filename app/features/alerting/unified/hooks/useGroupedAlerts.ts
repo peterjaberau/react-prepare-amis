@@ -1,4 +1,4 @@
-import { uniqBy } from 'lodash';
+import { uniqBy } from 'lodash-es';
 import { useMemo } from 'react';
 
 import { Labels } from '@data/index';

@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { useEffect } from 'react';
 import { BehaviorSubject, filter, map, Observable, pairwise, Unsubscribable } from 'rxjs';
 

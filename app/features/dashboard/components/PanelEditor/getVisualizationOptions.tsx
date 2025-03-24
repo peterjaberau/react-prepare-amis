@@ -1,4 +1,4 @@
-import { get as lodashGet } from 'lodash';
+import { get as lodashGet } from 'lodash-es';
 
 import {
   EventBus,

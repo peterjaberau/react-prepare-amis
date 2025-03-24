@@ -1,4 +1,4 @@
-import { difference, groupBy, take, trim, upperFirst } from 'lodash';
+import { difference, groupBy, take, trim, upperFirst } from 'lodash-es';
 import { ReactNode } from 'react';
 
 import { config } from '@runtime/index';

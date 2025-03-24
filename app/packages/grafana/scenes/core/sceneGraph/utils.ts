@@ -2,7 +2,7 @@ import { SceneObject, SceneObjectState } from '../types';
 
 import { SceneObjectBase } from '../SceneObjectBase';
 import { SceneObjectRef } from '../SceneObjectRef';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 /**
  * Will create new SceneItem with shalled cloned state, but all states items of type SceneObject are deep cloned

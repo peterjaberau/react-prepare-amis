@@ -1,4 +1,4 @@
-import { findIndex } from 'lodash';
+import { findIndex } from 'lodash-es';
 
 import { Column, TableData, QueryResultMeta } from '@data/index';
 

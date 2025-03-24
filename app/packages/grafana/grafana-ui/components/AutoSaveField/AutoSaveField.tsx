@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { useCallback, useMemo, useRef } from 'react';
 import * as React from 'react';
 

@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { locationService } from '@runtime/index';
 import { logMeasurement } from '@runtime/utils/logging';

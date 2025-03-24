@@ -1,4 +1,4 @@
-import { isFunction } from 'lodash';
+import { isFunction } from 'lodash-es';
 
 import { ThresholdsConfig, ThresholdsMode, VizOrientation, getFieldConfigWithMinMax } from '@data/index';
 import { BarGaugeDisplayMode, BarGaugeValueMode, TableCellDisplayMode } from '@schema/index';

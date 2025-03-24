@@ -1,6 +1,6 @@
 import init from '@bsull/augurs/outlier';
 import { css } from '@emotion/css';
-import { isNumber, max, min, throttle } from 'lodash';
+import { isNumber, max, min, throttle } from 'lodash-es';
 import { useEffect, useState } from 'react';
 
 import { DataFrame, FieldType, GrafanaTheme2, PanelData, SelectableValue } from '@data/index';

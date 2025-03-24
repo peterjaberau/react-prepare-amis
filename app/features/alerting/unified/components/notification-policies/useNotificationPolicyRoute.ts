@@ -1,4 +1,4 @@
-import { pick } from 'lodash';
+import { pick } from 'lodash-es';
 import memoize from 'micro-memoize';
 
 import { BaseAlertmanagerArgs, Skippable } from '~/features/alerting/unified/types/hooks';

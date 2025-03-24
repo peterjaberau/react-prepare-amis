@@ -1,4 +1,4 @@
-import { chain, filter } from 'lodash';
+import { chain, filter } from 'lodash-es';
 import { PropsWithChildren } from 'react';
 
 import {

@@ -3,7 +3,7 @@
  * and (if available) it will also fetch the status from the Grafana Managed status endpoint
  */
 
-import { merge, set } from 'lodash';
+import { merge, set } from 'lodash-es';
 import { useMemo } from 'react';
 
 import { receiversApi } from '~/features/alerting/unified/api/receiversK8sApi';

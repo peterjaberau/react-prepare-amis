@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 import { CSSProperties } from 'react';
 
 import { LinkModel } from '@data/index';

@@ -1,4 +1,4 @@
-import { defaults } from 'lodash';
+import { defaults } from 'lodash-es';
 import { useEffect, useMemo, useState } from 'react';
 import { useAsyncFn } from 'react-use';
 

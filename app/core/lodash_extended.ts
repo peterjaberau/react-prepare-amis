@@ -1,5 +1,5 @@
 // eslint-disable-next-line lodash/import-scope
-import _ from 'lodash';
+import _ from 'lodash-es';
 
 /*
   Mixins :)

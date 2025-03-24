@@ -1,4 +1,4 @@
-import { dropRight, last } from 'lodash';
+import { dropRight, last } from 'lodash-es';
 
 import { DataFrame, Labels, roundDecimals } from '@data/index';
 import { CombinedRuleNamespace } from '~/types/unified-alerting';

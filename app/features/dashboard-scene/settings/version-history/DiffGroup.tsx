@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { last } from 'lodash';
+import { last } from 'lodash-es';
 
 import { GrafanaTheme2 } from '@data/index';
 import { useStyles2 } from '@grafana-ui/index';

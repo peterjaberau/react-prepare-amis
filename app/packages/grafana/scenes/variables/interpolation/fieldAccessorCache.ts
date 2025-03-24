@@ -1,4 +1,4 @@
-import { property } from 'lodash';
+import { property } from 'lodash-es';
 
 interface FieldAccessorCache {
   [key: string]: (obj: object) => any;

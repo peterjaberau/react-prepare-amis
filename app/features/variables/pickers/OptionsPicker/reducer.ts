@@ -1,6 +1,6 @@
 import uFuzzy from '@leeoniya/ufuzzy';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { cloneDeep, isString } from 'lodash';
+import { cloneDeep, isString } from 'lodash-es';
 
 import { containsSearchFilter, VariableOption, VariableWithOptions } from '@data/index';
 

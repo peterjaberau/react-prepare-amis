@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import React, { useEffect, useState } from 'react';
 
 import { type SelectableValue } from '@data/index';

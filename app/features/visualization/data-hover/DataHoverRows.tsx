@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 import { FeatureLike } from 'ol/Feature';
 import { useState } from 'react';
 import * as React from 'react';

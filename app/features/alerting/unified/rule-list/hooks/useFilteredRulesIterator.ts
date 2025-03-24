@@ -1,7 +1,7 @@
 import { AsyncIterableX, empty, from } from 'ix/asynciterable/index';
 import { merge } from 'ix/asynciterable/merge';
 import { filter, flatMap, map } from 'ix/asynciterable/operators';
-import { compact } from 'lodash';
+import { compact } from 'lodash-es';
 
 import { Matcher } from '~/plugins/datasource/alertmanager/types';
 import {

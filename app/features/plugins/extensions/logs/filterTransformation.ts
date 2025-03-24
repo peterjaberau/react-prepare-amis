@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 import { Observable, scan } from 'rxjs';
 
 import { createDataFrame, CustomTransformOperator, DataFrame, PartialDataFrame } from '@data/index';

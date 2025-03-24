@@ -1,4 +1,4 @@
-import { set } from 'lodash';
+import { set } from 'lodash-es';
 
 import { RelativeTimeRange } from '@data/index';
 import { t } from '~/core/internationalization';

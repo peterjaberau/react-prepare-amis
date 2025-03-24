@@ -1,4 +1,4 @@
-import { Dictionary, groupBy } from 'lodash';
+import { Dictionary, groupBy } from 'lodash-es';
 import { useMemo } from 'react';
 
 import { ScopesTreeHeadline } from './ScopesTreeHeadline';

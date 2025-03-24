@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 import { locationUtil, UrlQueryMap } from '@data/index';
 import { config, getBackendSrv, isFetchError, locationService } from '@runtime/index';

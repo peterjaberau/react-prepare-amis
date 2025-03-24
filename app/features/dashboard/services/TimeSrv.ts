@@ -1,4 +1,4 @@
-import { cloneDeep, extend, isString } from 'lodash';
+import { cloneDeep, extend, isString } from 'lodash-es';
 
 import {
   dateMath,

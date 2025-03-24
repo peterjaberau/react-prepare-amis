@@ -1,4 +1,4 @@
-import { identity, isEqual } from 'lodash';
+import { identity, isEqual } from 'lodash-es';
 import { MutableRefObject } from 'react';
 
 import { EventBusSrv } from '@data/index';

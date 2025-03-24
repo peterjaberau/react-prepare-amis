@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { isArray, sumBy, uniqueId } from 'lodash';
+import { isArray, sumBy, uniqueId } from 'lodash-es';
 import pluralize from 'pluralize';
 import * as React from 'react';
 import { FC, Fragment, ReactNode, useState } from 'react';

@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 import { finalize, from } from 'rxjs';
 
 import { Scope, ScopeNode } from '@data/index';

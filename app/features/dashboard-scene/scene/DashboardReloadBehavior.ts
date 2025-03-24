@@ -1,4 +1,4 @@
-import { debounce, isEqual } from 'lodash';
+import { debounce, isEqual } from 'lodash-es';
 
 import { UrlQueryMap } from '@data/index';
 import {

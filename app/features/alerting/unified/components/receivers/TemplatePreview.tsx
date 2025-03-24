@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { compact, uniqueId } from 'lodash';
+import { compact, uniqueId } from 'lodash-es';
 import * as React from 'react';
 import { useFormContext } from 'react-hook-form';
 import AutoSizer from 'react-virtualized-auto-sizer';

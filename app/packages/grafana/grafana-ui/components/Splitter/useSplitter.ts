@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { clamp, throttle } from 'lodash';
+import { clamp, throttle } from 'lodash-es';
 import { useCallback, useId, useLayoutEffect, useRef } from 'react';
 import * as React from 'react';
 

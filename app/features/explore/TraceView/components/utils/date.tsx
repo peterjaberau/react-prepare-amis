@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { round as _round, dropWhile as _dropWhile } from 'lodash';
+import { round as _round, dropWhile as _dropWhile } from 'lodash-es';
 import moment from 'moment-timezone';
 
 import { toFloatPrecision } from './number';

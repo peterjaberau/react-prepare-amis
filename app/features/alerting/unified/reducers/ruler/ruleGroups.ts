@@ -1,5 +1,5 @@
 import { createAction, createReducer, isAnyOf } from '@reduxjs/toolkit';
-import { inRange } from 'lodash';
+import { inRange } from 'lodash-es';
 
 import { EditableRuleIdentifier, GrafanaRuleIdentifier, RuleIdentifier } from '~/types/unified-alerting';
 import { PostableRuleDTO, PostableRulerRuleGroupDTO } from '~/types/unified-alerting-dto';

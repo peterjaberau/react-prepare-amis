@@ -1,5 +1,5 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/result_transformer.ts
-import { flatten, forOwn, groupBy, partition } from 'lodash';
+import { flatten, forOwn, groupBy, partition } from 'lodash-es';
 
 import {
   CoreApp,

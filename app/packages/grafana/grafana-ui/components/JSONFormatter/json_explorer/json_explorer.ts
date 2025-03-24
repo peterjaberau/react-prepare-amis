@@ -1,7 +1,7 @@
 // Based on work https://github.com/mohsen1/json-formatter-js
 // License MIT, Copyright (c) 2015 Mohsen Azimi
 
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 
 import { isObject, getObjectName, getType, getValuePreview, cssClass, createElement } from './helpers';
 

@@ -1,7 +1,7 @@
 import { compare, Operation } from 'fast-json-patch';
 // @ts-ignore
 import jsonMap from 'json-source-map';
-import { flow, get, isArray, isEmpty, last, sortBy, tail, toNumber, isNaN } from 'lodash';
+import { flow, get, isArray, isEmpty, last, sortBy, tail, toNumber, isNaN } from 'lodash-es';
 
 export type Diff = {
   op: 'add' | 'replace' | 'remove' | 'copy' | 'test' | '_get' | 'move';

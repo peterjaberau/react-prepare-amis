@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { css } from '@emotion/css';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import { type DataSourceSettings } from '@data/index';
 import { stylesFactory, LegacyForms, Button, Icon } from '@grafana-ui/index';
 

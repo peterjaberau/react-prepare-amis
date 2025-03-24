@@ -1,4 +1,4 @@
-import { clamp } from 'lodash';
+import { clamp } from 'lodash-es';
 
 import { config } from '@runtime/index';
 import { RuleWithLocation } from '~/types/unified-alerting';

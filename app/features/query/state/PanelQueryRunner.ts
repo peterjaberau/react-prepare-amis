@@ -1,4 +1,4 @@
-import { cloneDeep, merge, isEqual } from 'lodash';
+import { cloneDeep, merge, isEqual } from 'lodash-es';
 import { Observable, of, ReplaySubject, Unsubscribable } from 'rxjs';
 import { map, mergeMap, catchError } from 'rxjs/operators';
 

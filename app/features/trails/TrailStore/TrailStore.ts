@@ -1,4 +1,4 @@
-import { debounce, isEqual } from 'lodash';
+import { debounce, isEqual } from 'lodash-es';
 
 import { urlUtil } from '@data/index';
 import { SceneObject, SceneObjectRef, SceneObjectUrlValues, sceneUtils } from '@scenes/index';

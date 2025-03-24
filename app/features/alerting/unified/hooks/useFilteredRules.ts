@@ -1,6 +1,6 @@
 import uFuzzy from '@leeoniya/ufuzzy';
 import { produce } from 'immer';
-import { chain, compact, isEmpty } from 'lodash';
+import { chain, compact, isEmpty } from 'lodash-es';
 import { useCallback, useDeferredValue, useEffect, useMemo } from 'react';
 
 import { getDataSourceSrv } from '@runtime/index';

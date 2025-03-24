@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { css } from '@emotion/css';
-import { sortBy as _sortBy } from 'lodash';
+import { sortBy as _sortBy } from 'lodash-es';
 import * as React from 'react';
 
 import { GrafanaTheme2, TraceKeyValuePair, TraceLog } from '@data/index';

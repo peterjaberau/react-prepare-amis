@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocalStorage } from 'react-use';
-import { uniqBy } from 'lodash';
+import { uniqBy } from 'lodash-es';
 
 import { TimeOption, TimeRange, isDateTime, rangeUtil, toUtc } from '@data/index';
 import { TimeRangePicker } from '@grafana-ui/index';

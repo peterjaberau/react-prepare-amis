@@ -1,5 +1,5 @@
 import { Property } from 'csstype';
-import { clone, sampleSize } from 'lodash';
+import { clone, sampleSize } from 'lodash-es';
 import memoize from 'micro-memoize';
 import { HeaderGroup, Row } from 'react-table';
 import tinycolor from 'tinycolor2';

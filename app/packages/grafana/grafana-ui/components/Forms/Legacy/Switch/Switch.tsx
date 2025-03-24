@@ -1,6 +1,6 @@
 import { css, cx } from '@emotion/css';
 import { Placement } from '@popperjs/core';
-import { uniqueId } from 'lodash';
+import { uniqueId } from 'lodash-es';
 import { PureComponent } from 'react';
 import * as React from 'react';
 

@@ -1,4 +1,4 @@
-import { uniqBy } from 'lodash';
+import { uniqBy } from 'lodash-es';
 import React, { useRef, useState } from 'react';
 import { v4 } from 'uuid';
 

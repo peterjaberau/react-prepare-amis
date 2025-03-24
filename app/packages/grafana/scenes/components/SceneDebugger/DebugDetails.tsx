@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { GrafanaTheme2 } from '@data/index';
 import { Input, JSONFormatter, useStyles2 } from '@grafana-ui/index';
-import { isArray, isPlainObject } from 'lodash';
+import { isArray, isPlainObject } from 'lodash-es';
 import React from 'react';
 import { isSceneObject, SceneObject } from '../../core/types';
 

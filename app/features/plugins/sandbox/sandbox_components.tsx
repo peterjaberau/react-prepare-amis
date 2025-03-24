@@ -1,4 +1,4 @@
-import { isFunction } from 'lodash';
+import { isFunction } from 'lodash-es';
 import { ComponentType, FC } from 'react';
 import * as React from 'react';
 

@@ -1,4 +1,4 @@
-import { isUndefined, omitBy, pick, sum } from 'lodash';
+import { isUndefined, omitBy, pick, sum } from 'lodash-es';
 import pluralize from 'pluralize';
 import * as React from 'react';
 import { Fragment, useDeferredValue, useMemo } from 'react';

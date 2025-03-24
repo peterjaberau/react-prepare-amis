@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { flatten, uniqBy } from 'lodash';
+import { flatten, uniqBy } from 'lodash-es';
 
 import { DataSourceRef } from '@schema/index';
 import { ExploreItemState, StoreState } from '~/types';

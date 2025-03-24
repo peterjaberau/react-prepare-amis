@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 import { ReactElement, useMemo } from 'react';
 
 import { DataFrame, MatcherConfig, SelectableValue } from '@data/index';

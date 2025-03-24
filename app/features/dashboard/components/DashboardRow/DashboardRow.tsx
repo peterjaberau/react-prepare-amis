@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import { indexOf } from 'lodash';
+import { indexOf } from 'lodash-es';
 import { Component } from 'react';
 import { Unsubscribable } from 'rxjs';
 

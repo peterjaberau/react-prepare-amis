@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { chain, isEmpty, truncate } from 'lodash';
+import { chain, isEmpty, truncate } from 'lodash-es';
 import { useState } from 'react';
 import { useMeasure } from 'react-use';
 

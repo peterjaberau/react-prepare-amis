@@ -82,7 +82,7 @@ export const sharedDependenciesMap = {
   // },
   // ...jQueryFlotDeps,
   // add move to lodash for backward compatabilty with plugins
-  lodash: () => import('lodash').then((module) => ({ ...module, move: arrayMove, __useDefault: true })),
+  lodash: () => import('lodash-es').then((module) => ({ ...module, move: arrayMove, __useDefault: true })),
   moment: () => import('moment').then((module) => ({ ...module, __useDefault: true })),
   prismjs: () => import('prismjs'),
   react: () => import('react'),

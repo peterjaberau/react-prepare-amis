@@ -1,4 +1,4 @@
-import { isString } from 'lodash';
+import { isString } from 'lodash-es';
 import { nanoid } from 'nanoid';
 import { Observable, ReplaySubject } from 'rxjs';
 

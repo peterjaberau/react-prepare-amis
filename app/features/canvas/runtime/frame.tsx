@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 
 import { notFoundItem } from '~/features/canvas/elements/notFound';
 import { DimensionContext } from '~/features/dimensions';

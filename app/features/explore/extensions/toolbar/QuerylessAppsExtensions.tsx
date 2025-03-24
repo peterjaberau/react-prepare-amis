@@ -1,4 +1,4 @@
-import { first } from 'lodash';
+import { first } from 'lodash-es';
 
 import { Dropdown, ToolbarButton } from '@grafana-ui/index';
 

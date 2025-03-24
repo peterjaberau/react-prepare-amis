@@ -1,4 +1,4 @@
-import { isEqual, uniqWith } from 'lodash';
+import { isEqual, uniqWith } from 'lodash-es';
 
 import { SelectableValue } from '@data/index';
 import {

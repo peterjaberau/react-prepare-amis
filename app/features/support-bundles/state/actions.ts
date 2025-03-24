@@ -1,4 +1,4 @@
-import { throttle } from 'lodash';
+import { throttle } from 'lodash-es';
 
 import { getBackendSrv, locationService } from '@runtime/index';
 import { SupportBundle, SupportBundleCollector, SupportBundleCreateRequest, ThunkResult } from '~/types';

@@ -1,5 +1,5 @@
 import * as H from 'history';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 import { NavIndex, PanelPlugin } from '@data/index';
 import { config, locationService } from '@runtime/index';

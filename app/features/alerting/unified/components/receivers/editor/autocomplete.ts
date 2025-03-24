@@ -1,4 +1,4 @@
-import { concat } from 'lodash';
+import { concat } from 'lodash-es';
 import type { IDisposable, IRange, Position, editor, languages } from 'monaco-editor/esm/vs/editor/editor.api';
 
 import type { Monaco } from '@grafana-ui/index';

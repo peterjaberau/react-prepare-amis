@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { flatten, groupBy, mapValues, sortBy } from 'lodash';
+import { flatten, groupBy, mapValues, sortBy } from 'lodash-es';
 import { useMemo } from 'react';
 import * as React from 'react';
 

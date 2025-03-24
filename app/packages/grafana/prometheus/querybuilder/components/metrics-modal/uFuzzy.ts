@@ -1,6 +1,6 @@
 // Core Grafana history https://github.com/grafana/grafana/blob/v11.0.0-preview/public/app/plugins/datasource/prometheus/querybuilder/components/metrics-modal/uFuzzy.ts
 import uFuzzy from '@leeoniya/ufuzzy';
-import { debounce as debounceLodash } from 'lodash';
+import { debounce as debounceLodash } from 'lodash-es';
 
 const uf = new uFuzzy({
   intraMode: 1,
