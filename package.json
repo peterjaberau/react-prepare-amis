@@ -236,6 +236,7 @@
     "rc-tree": "5.13.0",
     "re-resizable": "6.10.3",
     "react": "^18.3.1",
+    "react-awesome-query-builder": "^5.4.2",
     "react-calendar": "^5.1.0",
     "react-color": "^2.19.3",
     "react-colorful": "5.6.1",
@@ -281,6 +282,8 @@
     "react-window-infinite-loader": "1.0.10",
     "react-zoom-pan-pinch": "^3.3.0",
     "react18-json-view": "0.2.8",
+    "reactflow": "^11.10.2",
+    "recharts": "^2.15.1",
     "reduce-reducers": "^1.0.4",
     "redux": "5.0.1",
     "redux-thunk": "3.1.0",
@@ -323,7 +326,8 @@
     "xlsx": "^0.18.5",
     "xss": "^1.0.14",
     "xstate": "^5.19.2",
-    "zod": "^3.24.2"
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@betterer/betterer": "5.4.0",

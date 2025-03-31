@@ -1,19 +1,19 @@
-import * as jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
+// import * as jQuery from "jquery";
+// window.$ = window.jQuery = jQuery;
 
-import '@grafana-module/vendor/flot/jquery.flot.js';
-import '@grafana-module/vendor/flot/jquery.flot.selection.js';
-import '@grafana-module/vendor/flot/jquery.flot.time.js';
-import '@grafana-module/vendor/flot/jquery.flot.stack.js';
-import '@grafana-module/vendor/flot/jquery.flot.stackpercent.js';
-import '@grafana-module/vendor/flot/jquery.flot.fillbelow.js';
-import '@grafana-module/vendor/flot/jquery.flot.crosshair.js';
-import '@grafana-module/vendor/flot/jquery.flot.dashes.js';
-import '@grafana-module/vendor/flot/jquery.flot.gauge.js';
+// import '@grafana-module/vendor/flot/jquery.flot.js';
+// import '@grafana-module/vendor/flot/jquery.flot.selection.js';
+// import '@grafana-module/vendor/flot/jquery.flot.time.js';
+// import '@grafana-module/vendor/flot/jquery.flot.stack.js';
+// import '@grafana-module/vendor/flot/jquery.flot.stackpercent.js';
+// import '@grafana-module/vendor/flot/jquery.flot.fillbelow.js';
+// import '@grafana-module/vendor/flot/jquery.flot.crosshair.js';
+// import '@grafana-module/vendor/flot/jquery.flot.dashes.js';
+// import '@grafana-module/vendor/flot/jquery.flot.gauge.js';
 // import 'flot';
 
-console.log(window.jQuery);
-console.log(window.$);
+// console.log(window.jQuery);
+// console.log(window.$);
 import { createRoot } from "react-dom/client";
 import 'react18-json-view/src/style.css'
 import App from "./App";
@@ -27,7 +27,7 @@ import { MachineProviderRGL } from "@/apps/modules/react-grid-layout-refactor/st
 // Expose jQuery globally
 // @ts-ignore
 // window.$ = window.jQuery = $;
-window.__grafana_public_path__ = 'src/apps/modules/grafana/';
+// window.__grafana_public_path__ = 'src/apps/modules/grafana/';
 
 const agent = navigator.userAgent.toLowerCase();
 
