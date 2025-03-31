@@ -1,0 +1,18 @@
+
+@import (reference) url('../../styles/variables.less');
+
+.platform-lineage-container {
+  .lineage-card {
+    height: calc(100vh - 190px);
+  }
+
+  .full-screen-lineage {
+    .lineage-card {
+      height: calc(100vh - 50px);
+    }
+
+    .lineage-container {
+      height: calc(100vh - @om-navbar-height);
+    }
+  }
+}
