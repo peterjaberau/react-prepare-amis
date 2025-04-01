@@ -2,12 +2,6 @@
 import { Col, Row } from 'antd';
 import { get, isEmpty } from 'lodash';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { usePermissionProvider } from '../../context/PermissionProvider/PermissionProvider';
-import {
-  OperationPermission,
-  ResourceEntity,
-} from '../../context/PermissionProvider/PermissionProvider.interface';
-import { useTourProvider } from '../../context/TourProvider/TourProvider';
 import { Table } from '../../generated/entity/data/table';
 import { getCurrentMillis } from '../../utils/date-time/DateTimeUtils';
 import {
@@ -40,14 +34,11 @@ export const DataAssetSummaryPanel = ({
   componentType = DRAWER_NAVIGATION_OPTIONS.explore,
   highlights,
 }: DataAssetSummaryPanelProps) => {
-  const { getEntityPermission } = usePermissionProvider();
   const [additionalInfo, setAdditionalInfo] = useState<
     Record<string, number | string>
   >({});
   const [charts, setCharts] = useState<Chart[]>([]);
-  const [entityPermissions, setEntityPermissions] =
-    useState<OperationPermission | null>(null);
-  const { isTourPage } = useTourProvider();
+
 
   const entityInfo = useMemo(
     () => getEntityOverview(entityType, dataAsset, additionalInfo),
@@ -67,10 +58,7 @@ export const DataAssetSummaryPanel = ({
   const isEntityDeleted = useMemo(() => dataAsset.deleted, [dataAsset]);
 
   const fetchIncidentCount = useCallback(async () => {
-    if (
-      dataAsset?.fullyQualifiedName &&
-      (entityPermissions?.ViewAll || entityPermissions?.ViewDataProfile)
-    ) {
+    if (dataAsset?.fullyQualifiedName) {
       try {
         const { paging } = await getListTestCaseIncidentStatus({
           limit: 0,
@@ -91,7 +79,7 @@ export const DataAssetSummaryPanel = ({
         });
       }
     }
-  }, [dataAsset?.fullyQualifiedName, entityPermissions]);
+  }, [dataAsset?.fullyQualifiedName]);
 
   const fetchChartsDetails = useCallback(async () => {
     try {
@@ -119,23 +107,11 @@ export const DataAssetSummaryPanel = ({
   };
 
   const init = useCallback(async () => {
-    if (dataAsset.id && !isTourPage) {
-      const permissions = await getEntityPermission(
-        ResourceEntity.TABLE,
-        dataAsset.id
-      );
-      setEntityPermissions(permissions);
+    if (dataAsset.id) {
       fetchEntityBasedDetails();
-    } else {
-      setEntityPermissions(null);
     }
-  }, [dataAsset, isTourPage, isEntityDeleted, getEntityPermission]);
+  }, [dataAsset, isEntityDeleted]);
 
-  useEffect(() => {
-    if (entityPermissions) {
-      fetchEntityBasedDetails();
-    }
-  }, [entityPermissions]);
 
   const commonEntitySummaryInfo = useMemo(() => {
     switch (entityType) {
