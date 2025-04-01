@@ -1,25 +1,10 @@
-/*
- *  Copyright 2022 Collate.
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *  http://www.apache.org/licenses/LICENSE-2.0
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
 import { CloseOutlined } from '@ant-design/icons';
 import { Button, Col, Divider, Drawer, Row, Typography } from 'antd';
 import { isUndefined } from 'lodash';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import { Node } from 'reactflow';
 import { ReactComponent as EditIcon } from '../../../assets/svg/edit-new.svg';
-import DescriptionV1 from '../../../components/common/EntityDescription/DescriptionV1';
 import { DE_ACTIVE_COLOR } from '../../../constants/constants';
 import { LINEAGE_SOURCE } from '../../../constants/Lineage.constants';
 import { CSMode } from '../../../enums/codemirror.enum';
@@ -37,7 +22,6 @@ import { getEntityName } from '../../../utils/EntityUtils';
 import Loader from '../../common/Loader/Loader';
 import SchemaEditor from '../../Database/SchemaEditor/SchemaEditor';
 import { ModalWithQueryEditor } from '../../Modals/ModalWithQueryEditor/ModalWithQueryEditor';
-import './entity-info-drawer.less';
 import {
   EdgeInfoDrawerInfo,
   EdgeInformationType,
@@ -212,9 +196,11 @@ const EdgeInfoDrawer = ({
         headerStyle={{ padding: 16 }}
         mask={false}
         open={visible}
-        style={{ position: 'absolute' }}
+        style={{ position: 'absolute', border: '2px solid black' }}
         title={t('label.edge-information')}
+        //@ts-ignore
         onContextMenu={(e) =>
+            //@ts-ignore
             window.updatePopupContent(
                 {
                   data: { component: 'EdgeInfoDrawer'},
@@ -223,7 +209,6 @@ const EdgeInfoDrawer = ({
                 e.target
             )
         }
-        style={{ border: '2px solid black' }}
 
       >
         {isLoading ? (
@@ -242,13 +227,16 @@ const EdgeInfoDrawer = ({
                       {isUndefined(data.link) ? (
                         <Typography.Text>{data.value}</Typography.Text>
                       ) : (
-                        <Link to={data.link}>{data.value}</Link>
+                        <>
+                          {/*<Link to={data.link}>{data.value}</Link>*/}
+                        </>
                       )}
                     </Col>
                   )
               )}
             <Col span={24}>
               <Divider />
+              {/*
               <DescriptionV1
                 description={edgeDescription}
                 entityName="Edge"
@@ -257,6 +245,7 @@ const EdgeInfoDrawer = ({
                 showCommentsIcon={false}
                 onDescriptionUpdate={onDescriptionUpdate}
               />
+              */}
             </Col>
             <Col span={24}>
               <Divider />

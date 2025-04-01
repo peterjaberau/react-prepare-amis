@@ -2,14 +2,14 @@ import { AppContainerRenderer } from "@/apps/modules/lineage/components/AppConta
 import { PlatformLineageRenderer } from "@/apps/modules/lineage/pages/PlatformLineage/PlatformLineageRenderer.tsx";
 import { PageLayoutV1Renderer } from "@/apps/modules/lineage/components/PageLayoutV1/PageLayoutV1Renderer.tsx";
 import { LineageProviderRenderer } from "@/apps/modules/lineage/context/LineageProvider/LineageProviderRenderer.tsx";
-import { LineageRenderer } from "@/apps/modules/lineage/components/Lineage/LineageRenderer.tsx";
-import {
-  CustomControlsRenderer
-} from "@/apps/modules/lineage/components/Entity/EntityLineage/CustomControlsRenderer.tsx";
-import {
-  LineageSearchSelectRenderer
-} from "@/apps/modules/lineage/components/Entity/EntityLineage/LineageSearchSelect/LineageSearchSelectRenderer.tsx";
-import { ExploreQuickFiltersRenderer } from "@/apps/modules/lineage/components/Explore/ExploreQuickFiltersRenderer.tsx";
+// import LineageRenderer from "@/apps/modules/lineage/components/Lineage/LineageRenderer.tsx";
+// import {
+//   CustomControlsRenderer
+// } from "@/apps/modules/lineage/components/Entity/EntityLineage/CustomControlsRenderer.tsx";
+// import {
+//   LineageSearchSelectRenderer
+// } from "@/apps/modules/lineage/components/Entity/EntityLineage/LineageSearchSelect/LineageSearchSelectRenderer.tsx";
+// import { ExploreQuickFiltersRenderer } from "@/apps/modules/lineage/components/Explore/ExploreQuickFiltersRenderer.tsx";
 
 function LinearControlButtonsRenderer() {
   return null;

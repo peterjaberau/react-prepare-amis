@@ -1,16 +1,3 @@
-/*
- *  Copyright 2022 Collate.
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *  http://www.apache.org/licenses/LICENSE-2.0
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
 import { CloseOutlined } from '@ant-design/icons';
 import { Col, Drawer, Row } from 'antd';
 import { cloneDeep, get } from 'lodash';
@@ -21,7 +8,6 @@ import { TagLabel } from '../../../generated/type/tagLabel';
 import entityUtilClassBase from '../../../utils/EntityUtilClassBase';
 import searchClassBase from '../../../utils/SearchClassBase';
 import serviceUtilClassBase from '../../../utils/ServiceUtilClassBase';
-import TitleBreadcrumb from '../../common/TitleBreadcrumb/TitleBreadcrumb.component';
 import { DataAssetSummaryPanel } from '../../DataAssetSummaryPanel/DataAssetSummaryPanel';
 import EntityHeaderTitle from '../EntityHeaderTitle/EntityHeaderTitle.component';
 import './entity-info-drawer.less';
@@ -83,12 +69,16 @@ const EntityInfoDrawer = ({
       headerStyle={{ padding: 16 }}
       mask={false}
       open={show}
-      style={{ position: 'absolute' }}
+      style={{ position: 'absolute', border: '2px solid black' }}
       title={
         <Row gutter={[0, 0]}>
           {selectedNode.entityType === EntityType.TABLE && (
             <Col span={24}>
+              <>
+              {/*
               <TitleBreadcrumb titleLinks={breadcrumbs} />
+              */}
+              </>
             </Col>
           )}
 
@@ -110,8 +100,10 @@ const EntityInfoDrawer = ({
           </Col>
         </Row>
       }
+      //@ts-ignore
       onContextMenu={(e) =>
-          window.updatePopupContent(
+        //@ts-ignore
+        window.updatePopupContent(
               {
                 data: { component: 'EntityInfoDrawer' },
                 logs: {},
@@ -119,7 +111,6 @@ const EntityInfoDrawer = ({
               e.target
           )
       }
-      style={{ border: '2px solid black' }}
 
 
     >
